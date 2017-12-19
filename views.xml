@@ -485,7 +485,7 @@
 &lt;p&gt;&lt;i&gt;Metadata&lt;/i&gt;&lt;/p&gt;
 {% for dataset in values.project.dataset %}
 &lt;p&gt;
-	&lt;i&gt;Dataset {{ dataset.id }}:&lt;/i&gt; {{ dataset.interoperability }}
+	&lt;i&gt;Dataset {{ dataset.id }}:&lt;/i&gt; {{ dataset.interoperability | join:' '}}
 &lt;/p&gt;
 {% endfor %}
 
@@ -997,7 +997,7 @@ FAIR Data Management in Horizon 2020", Online: http://ec.europa.eu/research/part
 &lt;/b&gt;&lt;/p&gt;
 {% for dataset in values.project.dataset %}
 &lt;p&gt;
-    &lt;i&gt;Dataset {{ dataset.id }}:&lt;/i&gt; {{ dataset.interoperability }}
+    &lt;i&gt;Dataset {{ dataset.id }}:&lt;/i&gt; {{ dataset.interoperability | join:' '}}
 &lt;/p&gt;
 {% endfor %}
 
