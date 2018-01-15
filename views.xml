@@ -997,7 +997,7 @@ FAIR Data Management in Horizon 2020", Online: http://ec.europa.eu/research/part
 &lt;/b&gt;&lt;/p&gt;
 {% for dataset in values.project.dataset %}
 &lt;p&gt;
-    &lt;i&gt;Dataset {{ dataset.id }}:&lt;/i&gt; {{ dataset.interoperability }}
+    &lt;i&gt;Dataset {{ dataset.id }}:&lt;/i&gt; {{ dataset.interoperability | join:'; ' }}
 &lt;/p&gt;
 {% endfor %}
 
@@ -1170,4 +1170,199 @@ FAIR Data Management in Horizon 2020", Online: http://ec.europa.eu/research/part
 &lt;p&gt;
     {{ values.project.additional_requirements.yesno | yesno:'Yes,No' }}.
     {{ values.project.additional_requirements.requirements }}
+&lt;/p&gt;</template></view><view><dc:uri>https://rdmorganiser.github.io/terms/views/snf</dc:uri><dc:comment>Source: http://www.snf.ch/SiteCollectionDocuments/DMP_content_mySNF-form_de.pdf</dc:comment><title lang="en">SNF Template</title><title lang="de">SNF Vorlage</title><help lang="en">DMP of the SNF (Switzerland)</help><help lang="de">DMP für die SNF (Schweiz)</help><template>&lt;h1&gt;Data Management Plan - SNF Formular&lt;/h1&gt;
+
+&lt;h2&gt;1. Datenerhebung und -dokumentation&lt;/h2&gt;
+
+&lt;h3&gt;1.1. Welche Daten werden Sie erheben, beobachten, generieren oder wiederverwerten?&lt;/h3&gt;
+
+&lt;p&gt;&lt;b&gt;1.1.1. Welche Art, welches Format und welches Volumen von Daten werden Sie erheben, beobachten, generieren oder weiterverwenden?&lt;/p&gt;&lt;/b&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt;Datensatz {{ dataset.id }}:&lt;/em&gt; 
+{{ dataset.description }}; Format: {{dataset.format}}, Volumen: {{dataset.size.volume}}&lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;&lt;b&gt;1.1.2. Welche bestehenden (eigene oder externe) werden Sie weiterverarbeiten?&lt;/p&gt;&lt;/b&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt; Datensatz {{ dataset.id}}: &lt;/em&gt; 
+Datensatzerzeuger: {{ dataset.creator.name }}, Verfügbar unter: {{ project.dataset.uri}}&lt;/p&gt;
+{% endfor %}
+
+&lt;h3&gt;1.2 Wie werden die Daten erhoben, beobachtet oder generiert?&lt;/h3&gt;
+
+&lt;p&gt;&lt;b&gt;1.2.1. Welche Standards, Methoden oder Qualitätssicherungsverfahren werden Sie verwenden?&lt;/b&gt;&lt;/p&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt;Datensatz {{ dataset.id }}:&lt;/em&gt; 
+Methoden: {{ project.dataset.creation_methods}}
+Technologien: {{ dataset.usage_technology}} 
+Qualitätssicherungsverfahren: {{dataset.quality_assurance}} 
+Datenintegration: {{dataset.integration}}&lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;&lt;b&gt;1.2.2. Wie werden Sie ihre Daten verwalten, wie gestalten Sie Versionierungen?&lt;/p&gt;&lt;/b&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt; Datensatz {{ dataset.id}}: &lt;/em&gt; 
+Datenstruktur: {{dataset.structure}},  {{dataset.storage.organisation_policy}}
+Datenbennenung: {{dataset.storage.naming_policy}}
+Versionierung: {{ dataset.versioning_strategy}}, Tool: {{dataset.versioning_tool}}&lt;/p&gt;
+{% endfor %}
+
+&lt;h3&gt;1.3. Welche Dokumentationen, Metadaten  und Standards für Metadaten sehen Sie im Zusammenhang mit den Daten vor?&lt;/h3&gt;
+
+&lt;p&gt;&lt;b&gt;1.3.1. Welche Informationen benötigen Benutzer (Computer oder Menschen), um die Daten in Zukunft zu lesen und zu interpretieren?&lt;/p&gt;&lt;/b&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt;Datensatz {{ dataset.id }}:&lt;/em&gt; 
+{{values.project.dataset.metadata.scope}}&lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;&lt;b&gt;1.3.2. Wie werden diese Informationen erstellt?&lt;/p&gt;&lt;/b&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt; Datensatz {{ dataset.id}}: &lt;/em&gt; 
+Standards: {{values.project.dataset.metadata.standards}}
+Automatisch:{{dataset.metadata.creation_automatic}} 
+Semi-automatisch:{{dataset.metadata.creation_semi_automatic}}
+Manuell:{{dataset.metadata.creation_manual}}&lt;/p&gt;
+{% endfor %}
+
+&lt;h2&gt;2. Ethische, rechtliche und Sicherheitsfragen&lt;/h2&gt;
+
+&lt;h3&gt;2.1. Wie gestalten sich der Umfang mit und die Behandlung von ethischen Fragen?&lt;/h3&gt;
+
+&lt;p&gt;&lt;b&gt;2.1.1. Welche Sicherheitsstandards sind für ihre Daten relevant? Sind Sie an eine Vertraulichkeitsvereinbarung gebunden?&lt;/p&gt;&lt;/b&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt;Datensatz {{ dataset.id }}:&lt;/em&gt; 
+Sicherheitsstandards:  
+Vertrauchlichkeitsvereinbarung: &lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;&lt;b&gt;2.1.2. Verfügen Sie über die notwendigen Genehmigungen, um die Daten einzuholen, zu verarbeiten, zu speichern und weiterzuverarbeiten?&lt;/p&gt;&lt;/b&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt; Datensatz {{ dataset.id}}: &lt;/em&gt; 
+Rechtinhaber: {{dataset.ipr.name}}&lt;/p&gt;
+{% if dataset.ipr.copyrights %}
+&lt;p&gt;{{ dataset.ipr.copyrights |join:', ' }}&lt;/p&gt;
+{% endif %}
+{% if dataset.ipr.other_rights %}
+&lt;p&gt;{{ dataset.ipr.other_rights |join:', ' }}&lt;/p&gt;
+{% endif %}
+{% endfor %}
+
+&lt;p&gt;&lt;b&gt;2.1.3. Wurden die Personen, deren Daten verwendet werden, informiert oder haben sie ihre Zustimmung gegeben?&lt;/p&gt;&lt;/b&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt;Datensatz {{ dataset.id }}:&lt;/em&gt; 
+{{dataset.sensitive_data.personal_data.consent.extent}}, abegelegt: {{dataset.sensitive_data.personal_data.consent.record}}&lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;&lt;b&gt;2.1.4. Mit welchen Methoden und Vorkehrungen planen Sie Personendaten und andere sensbile Daten zu schützen?&lt;/p&gt;&lt;/b&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt;Datensatz {{ dataset.id }}:&lt;/em&gt; 
+{{dataset.sensitive_data.personal_data.anonymization}}&lt;/p&gt;
+{% endfor %}
+
+&lt;h3&gt;2.2. Wie werden der Zugriff auf Daten und die Datensicherung verwaltet?&lt;/h3&gt;
+
+&lt;p&gt;&lt;b&gt;2.2.1. Welche sind die wesentlichen Bedenken bei der Datensicherheit, wie groß sind die Risiken und welche Maßnahmen zum Umgang mit Sicherheitsrisiken stehen zur Verfügung?&lt;/p&gt;&lt;/b&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt;Datensatz {{ dataset.id }}:&lt;/em&gt; 
+Maßnahmen: {{dataset.data_security.security_measures}} 
+Backups: {{dataset.data_security.backups}}&lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;&lt;b&gt;2.2.2. Wie werden Sie Zugriffsrechte auf Daten/Genehemigungen zur Sicherstellung der Datensicherheit behandeln?&lt;/p&gt;&lt;/b&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;2.2.3. Wir wird im Umgang mit Personendaten oder mit anderen sensiblen Daten die sichere Datenspeicherung und -übertragung gewährleistet?&lt;/p&gt;&lt;/b&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt;Datensatz {{ dataset.id }}:&lt;/em&gt; 
+{{dataset.collaboration_organisation}}&lt;/p&gt;
+{% endfor %}
+
+&lt;h3&gt;2.3. Wie lösen Sie Urheberrechtsfragen und Fragen des geistigen Eigentums?&lt;/h3&gt;
+
+&lt;p&gt;&lt;b&gt;2.3.1. Wer ist der Eigner der Daten?&lt;/p&gt;&lt;/b&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt;Datensatz {{ dataset.id }}:&lt;/em&gt; {{dataset.ipr.name}}&lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;&lt;b&gt;2.3.2. Welche Lizenzen gelten für die Daten?&lt;/p&gt;&lt;/b&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt;Datensatz {{ dataset.id }}:&lt;/em&gt; 
+{{values.project.dataset.sharing.conditions}}&lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;&lt;b&gt;2.3.3. Welche Einschränkungen gelten für die Weiterverwendung von externen Daten?&lt;/p&gt;&lt;/b&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt;Datensatz {{ dataset.id }}:&lt;/em&gt; 
+{{dataset.sharing.restrictions_explanation}}&lt;/p&gt;
+{% endfor %}
+
+&lt;h2&gt; 3. Datenspeicherung und Datenerhalt&lt;/h2&gt;
+
+&lt;h3&gt;3.1. Wie werden Ihre Daten während der Forschungsarbeit gespeichert und gesichert?&lt;/h3&gt;
+
+&lt;p&gt;&lt;b&gt;3.1.1. Über welche Speicherkapazitäten verfügen Sie und wo werden die Daten gespeichert?&lt;/p&gt;&lt;/b&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt;Datensatz {{ dataset.id }}:&lt;/em&gt; Ort: {{dataset.storage.type}}&lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;&lt;b&gt;3.1.2. Welche Verfahren dienen zur Datensicherung?&lt;/p&gt;&lt;/b&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt;Datensatz {{ dataset.id }}:&lt;/em&gt; 
+Zugangerlaubnis: {{dataset.data_security.access_permissions}}
+Backups: {{dataset.data_security.backups}} 
+Verantwortlichkeit: {{values.project.dataset.data_security.backup_responsible.name}}
+Maßnahmen: {{dataset.data_security.security_measures}}&lt;/p&gt;
+{% endfor %}
+
+&lt;h3&gt;3.2. Wie gestaltet sich ihre Planung für den Datenerhalt?&lt;/h3&gt;
+
+&lt;p&gt;&lt;b&gt;3.2.1. Mittels welchen Verfahren werden die zu erhaltenden Daten ausgewählt?&lt;/p&gt;&lt;/b&gt;
+&lt;p&gt; {{preservation.selection_criteria}} 
+Zuständigkeit: {{preservation.responsible_person.name}}&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;3.2.2. Welche Dateiformate werden zum Datenerhalt eingesetzt?&lt;/p&gt;&lt;/b&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt;Datensatz {{ dataset.id }}:&lt;/em&gt;
+Muss aufbeahrt werden: {{values.project.dataset.preservation.yesno | yesno:'Ja,Nein'}} \
+Begründung: {{values.project.dataset.preservation.purpose}} 
+Dauer: {{dataset.preservation.duration}} 
+Nachnutzung: {{dataset.preservation.reuse_duration}} 
+Ort: {{values.project.dataset.preservation.repository}} 
+Zertifizierung: {{dataset.preservation.certification}}&lt;/p&gt;
+{% endfor %}
+
+&lt;h2&gt; 4. Datenaustausch und Weiterverwendung von Daten&lt;/h2&gt;
+
+&lt;h3&gt; 4.1. Wie und wo werden die Daten zugänglich gemacht? &lt;/h3&gt; 
+
+&lt;p&gt;&lt;b&gt; 4.1.1. In welchem Datenarchiv wollen Sie Ihre Daten zur Verfügung stellen?&lt;/p&gt;&lt;/b&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt;Datensatz {{ dataset.id }}:&lt;/em&gt; 
+Repository: {{values.project.dataset.preservation.repository}}
+Zertifiziert?: {{dataset.preservation.certification}}
+Archivierungslösungen: {{dataset.preservation.repository_arrangements}} 
+wann archiviert: {{dataset.preservation.data_archiving_date}} &lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;&lt;b&gt;4.1.2. Wie erfahren potentielle Benutzer von Ihren Daten?&lt;/p&gt;&lt;/b&gt;
+{% for dataset in values.project.dataset %}
+&lt;p&gt;&lt;em&gt;Datensatz {{ dataset.id }}:&lt;/em&gt;
+ Persistente Identifikatoren? {{dataset.pids.yesno | yesno:'Ja,Nein'}} 
+System: {{dataset.pids.system}}&lt;/p&gt;
+{% endfor %}
+
+&lt;h3&gt; 4.2. Sind bestimmte Einschränkungen erforderlich, um sensible Daten zu schützen?&lt;/h3&gt; 
+&lt;p&gt; Datenzugangskommitee: {{legal_aspects.official_approval.data_access_committee}}&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;4.2.1. Unter welchen Bedingungen werden die Daten zur Verfügung gestellt (Zeitpunkt der Datenfreigabe, Gründe für allfällige Verzögerungen)?&lt;/p&gt;&lt;/b&gt;
+&lt;p&gt; Datenzugangskommitee: {{legal_aspects.official_approval.data_access_committee}}
+{% for dataset in values.project.dataset %}
+&lt;em&gt;Datensatz {{ dataset.id }}:&lt;/em&gt; 
+Embargo-Zeit: {{dataset.preservation.embargo_period}}
+{% endfor %}&lt;/p&gt;
+
+&lt;h3&gt; 4.3. Ich werde digitale Archive nutzen, die den FAIR Data Principiles entsprechen &lt;/h3&gt; 
+
+&lt;h3&gt; 4.4.  Ich werde digitale Archive wählen, die von einer gemeinnützigen Organisation verwaltet werden.&lt;/h3&gt; 
+&lt;p&gt; {{ values.project.nonprofit.yesno | yesno:'Ja,Nein' }}
 &lt;/p&gt;</template></view></views>
