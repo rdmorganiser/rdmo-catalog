@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<views xmlns:dc="http://purl.org/dc/elements/1.1/"><view><dc:uri>https://rdmorganiser.github.io/terms/views/bielefeld</dc:uri><dc:comment></dc:comment><title lang="en">Bielefeld</title><title lang="de">Bielefeld</title><help lang="en">DMP template from the University of Bielefeld.</help><help lang="de">DMP Vorlage der Universität Bielefeld.</help><template>&lt;h1&gt;DMP der Universität Bielefeld&lt;/h1&gt;
+<views xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <view>
+    <dc:uri>https://rdmorganiser.github.io/terms/views/bielefeld</dc:uri>
+    <dc:comment/>
+    <title lang="en">Bielefeld</title>
+    <title lang="de">Bielefeld</title>
+    <help lang="en">DMP template from the University of Bielefeld.</help>
+    <help lang="de">DMP Vorlage der Universität Bielefeld.</help>
+    <template>&lt;h1&gt;DMP der Universität Bielefeld&lt;/h1&gt;
 
 &lt;h2&gt;1. Allgemeine Angaben zum Forschungsvorhaben&lt;/h2&gt;
 
@@ -327,7 +335,16 @@
 	8.4 Stehen alle Verantwortlichen und Beteiligten hinter den Plänen zum Datenmanagement? Wenn
     nein, ist es notwendig, den individuellen und allgemeinen Nutzen herauszuarbeiten oder
     Anreizsysteme einzuführen?
-&lt;/b&gt;&lt;/p&gt;</template></view><view><dc:uri>http://example.com/terms/views/citec</dc:uri><dc:comment></dc:comment><title lang="en">CITEC DMP</title><title lang="de">CITEC DMP</title><help lang="en">DMP template from the University of Bielefeld for CITEC funded research projects.</help><help lang="de">DMP Vorlage der Universität Bielefeld für CITEC geförderte Projekte.</help><template>&lt;h1&gt;CITEC Data management plan&lt;/h1&gt;
+&lt;/b&gt;&lt;/p&gt;</template>
+  </view>
+  <view>
+    <dc:uri>http://example.com/terms/views/citec</dc:uri>
+    <dc:comment/>
+    <title lang="en">CITEC DMP</title>
+    <title lang="de">CITEC DMP</title>
+    <help lang="en">DMP template from the University of Bielefeld for CITEC funded research projects.</help>
+    <help lang="de">DMP Vorlage der Universität Bielefeld für CITEC geförderte Projekte.</help>
+    <template>&lt;h1&gt;CITEC Data management plan&lt;/h1&gt;
 
 &lt;p&gt;Name of the project:&lt;/p&gt;
 
@@ -454,7 +471,16 @@
     License: {{ dataset.sharing_license }})
     {% endif %}
 &lt;/p&gt;
-{% endfor %}</template></view><view><dc:uri>https://rdmorganiser.github.io/terms/views/dmponline</dc:uri><dc:comment>Source: https://dmponline.dcc.ac.uk/</dc:comment><title lang="en">DMPonline template</title><title lang="de">DMPonline template</title><help lang="en">Template from DMPonline, online https://dmponline.dcc.ac.uk</help><help lang="de">Vorlage von DMPonline, Online: https://dmponline.dcc.ac.uk</help><template>&lt;h1&gt;DMPonline Template&lt;/h1&gt;
+{% endfor %}</template>
+  </view>
+  <view>
+    <dc:uri>https://rdmorganiser.github.io/terms/views/dmponline</dc:uri>
+    <dc:comment>Source: https://dmponline.dcc.ac.uk/</dc:comment>
+    <title lang="en">DMPonline template</title>
+    <title lang="de">DMPonline template</title>
+    <help lang="en">Template from DMPonline, online https://dmponline.dcc.ac.uk</help>
+    <help lang="de">Vorlage von DMPonline, Online: https://dmponline.dcc.ac.uk</help>
+    <template>&lt;h1&gt;DMPonline Template&lt;/h1&gt;
 
 &lt;h2&gt;Data Collection&lt;/h2&gt;
 	
@@ -578,7 +604,16 @@
 &lt;p&gt;
 &lt;i&gt;Dataset {{ dataset.id }}:&lt;/i&gt; {{ dataset.size.volume }}
 &lt;/p&gt;
-{% endfor %}</template></view><view><dc:uri>https://rdmorganiser.github.io/terms/views/dmptool</dc:uri><dc:comment>Source: https://dmptool.org/ and based on the template "NSF-GEN: Generic"</dc:comment><title lang="en">DMPTool template</title><title lang="de">DMPTool template</title><help lang="en">Template from DMPtool, based on "NSF-GEN: Generic", online: https://dmptool.org</help><help lang="de">Vorlage von DMPtool, basiert auf on "NSF-GEN: Generic", Online: https://dmptool.org</help><template>&lt;h1&gt;DMPTool&lt;/h1&gt;
+{% endfor %}</template>
+  </view>
+  <view>
+    <dc:uri>https://rdmorganiser.github.io/terms/views/dmptool</dc:uri>
+    <dc:comment>Source: https://dmptool.org/ and based on the template "NSF-GEN: Generic"</dc:comment>
+    <title lang="en">DMPTool template</title>
+    <title lang="de">DMPTool template</title>
+    <help lang="en">Template from DMPtool, based on "NSF-GEN: Generic", online: https://dmptool.org</help>
+    <help lang="de">Vorlage von DMPtool, basiert auf on "NSF-GEN: Generic", Online: https://dmptool.org</help>
+    <template>&lt;h1&gt;DMPTool&lt;/h1&gt;
 &lt;h2&gt;Types of data produced&lt;/h2&gt;
 
 &lt;p&gt;&lt;b&gt;What data will be generated in the research?&lt;/b&gt;&lt;/p&gt;
@@ -779,9 +814,18 @@
     
 &lt;p&gt;&lt;b&gt;What metadata/ documentation will be submitted alongside the data or created on deposit/ transformation in order to make the data reusable?&lt;/b&gt;&lt;/p&gt;
     
-&lt;p&gt;&lt;b&gt;What related information will be deposited?&lt;/b&gt;&lt;/p&gt;</template></view><view><dc:uri>https://rdmorganiser.github.io/terms/views/horizon2020</dc:uri><dc:comment>Source: http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf</dc:comment><title lang="en">Horizon 2020 FAIR Data Management Plan template</title><title lang="de">Horizon 2020 FAIR Data Management Plan template</title><help lang="en">Template for Horizon 2020, from "Guidelines on
-FAIR Data Management in Horizon 2020", online: http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf</help><help lang="de">Vorlage für Horizon 2020, aus "Guidelines on
-FAIR Data Management in Horizon 2020", Online: http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf</help><template>&lt;h1&gt;Horizon 2020&lt;/h1&gt;
+&lt;p&gt;&lt;b&gt;What related information will be deposited?&lt;/b&gt;&lt;/p&gt;</template>
+  </view>
+  <view>
+    <dc:uri>https://rdmorganiser.github.io/terms/views/horizon2020</dc:uri>
+    <dc:comment>Source: http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf</dc:comment>
+    <title lang="en">Horizon 2020 FAIR Data Management Plan template</title>
+    <title lang="de">Horizon 2020 FAIR Data Management Plan template</title>
+    <help lang="en">Template for Horizon 2020, from "Guidelines on
+FAIR Data Management in Horizon 2020", online: http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf</help>
+    <help lang="de">Vorlage für Horizon 2020, aus "Guidelines on
+FAIR Data Management in Horizon 2020", Online: http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf</help>
+    <template>&lt;h1&gt;Horizon 2020&lt;/h1&gt;
 &lt;h2&gt;1. Data Summary&lt;/h2&gt;
 
 &lt;p&gt;&lt;b&gt;
@@ -1170,7 +1214,16 @@ FAIR Data Management in Horizon 2020", Online: http://ec.europa.eu/research/part
 &lt;p&gt;
     {{ values.project.additional_requirements.yesno | yesno:'Yes,No' }}.
     {{ values.project.additional_requirements.requirements }}
-&lt;/p&gt;</template></view><view><dc:uri>https://rdmorganiser.github.io/terms/views/snf</dc:uri><dc:comment>Source: http://www.snf.ch/SiteCollectionDocuments/DMP_content_mySNF-form_de.pdf</dc:comment><title lang="en">SNF Template</title><title lang="de">SNF Vorlage</title><help lang="en">DMP of the SNF (Switzerland)</help><help lang="de">DMP für die SNF (Schweiz)</help><template>&lt;h1&gt;Data Management Plan - SNF Formular&lt;/h1&gt;
+&lt;/p&gt;</template>
+  </view>
+  <view>
+    <dc:uri>https://rdmorganiser.github.io/terms/views/snf</dc:uri>
+    <dc:comment>Source: http://www.snf.ch/SiteCollectionDocuments/DMP_content_mySNF-form_de.pdf</dc:comment>
+    <title lang="en">SNF Template</title>
+    <title lang="de">SNF Vorlage</title>
+    <help lang="en">DMP of the SNF (Switzerland)</help>
+    <help lang="de">DMP für die SNF (Schweiz)</help>
+    <template>&lt;h1&gt;Data Management Plan - SNF Formular&lt;/h1&gt;
 
 &lt;h2&gt; Allgemein &lt;/h2&gt;
 
@@ -1368,4 +1421,6 @@ Embargo-Zeit: {{dataset.preservation.embargo_period}}&lt;/p&gt;
 &lt;h3&gt; 4.4.  Ich werde digitale Archive wählen, die von einer gemeinnützigen Organisation verwaltet werden.&lt;/h3&gt; 
 &lt;p&gt; {{values.project.nonprofit.yesno | yesno:'Ja,Nein' }}
 {{values.project.preservation.archive.nonprofit.explanation}} 
-&lt;/p&gt;</template></view></views>
+&lt;/p&gt;</template>
+  </view>
+</views>
