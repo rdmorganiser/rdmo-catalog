@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rdmo xmlns:dc="http://purl.org/dc/elements/1.1/">
 	<view dc:uri="https://rdmorganiser.github.io/terms/views/bielefeld">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -9,342 +9,438 @@
 		<help lang="en">DMP template from the University of Bielefeld.</help>
 		<help lang="de">DMP Vorlage der Universität Bielefeld.</help>
 		<template>{% load view_tags %}
-{% get_set 'project/partner' as partners %}{% get_set 'project/dataset' as datasets %}
+
+{% get_set 'project/partner' as partners %}
+{% get_set 'project/dataset' as datasets %}
+
 &lt;h1&gt;DMP der Universität Bielefeld&lt;/h1&gt;
 
 &lt;h2&gt;1. Allgemeine Angaben zum Forschungsvorhaben&lt;/h2&gt;
 
 &lt;p&gt;
-	&lt;b&gt;1.1 Titel des Projektvorhabens&lt;/b&gt;
+    &lt;b&gt;1.1 Titel des Projektvorhabens&lt;/b&gt;
 &lt;/p&gt;
-&lt;p&gt;{% render_value 'project/research_question' %}&lt;/p&gt;
-
 &lt;p&gt;
-	&lt;b&gt;1.2 Ziele des Projekts&lt;/b&gt;
+    {% render_value 'project/research_question/title' %}
 &lt;/p&gt;
 
 &lt;p&gt;
-	&lt;b&gt;1.3 Externe Projektpartner&lt;/b&gt;
+    &lt;b&gt;1.2 Ziele des Projekts&lt;/b&gt;
 &lt;/p&gt;
-&lt;p&gt;{% render_value 'project/partner' %}&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;1.4 Projektleiter/Verantwortliche&lt;/p&gt;&lt;/b&gt;
-&lt;p&gt;{% render_value_inline_list 'project/coordination' %}
-
-&lt;p&gt;&lt;b&gt;1.5 Mitarbeiter und Funktionen&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;1.6 Genehmigte / angestrebte Laufzeit&lt;/p&gt;&lt;/b&gt;
 &lt;p&gt;
-	Projektbeginn: {% render_value 'project/schedule' %}
-	Projektende: {% render_value 'project/schedule' %}
+    &lt;b&gt;1.3 Externe Projektpartner&lt;/b&gt;
 &lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;
-	1.7 Welche Anforderungen gibt es seitens der Projektförderer bezüglich der Erstellung
-	eines DMPs und seiner Durchführung?
-&lt;/p&gt;&lt;/b&gt;
-&lt;p&gt;{% render_value 'project/funder' %}
-
-&lt;p&gt;&lt;b&gt;
-	1.8 Gibt es für Ihr Projektvorhaben institutionelle oder fakultätsinterne Policies,
-	die in dem DMP berücksicht werden müssen?&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;
-{% render_value 'project/additional_requirements' %}
-	{% render_value 'project/additional_requirements' %}
+    {% render_value 'project/partner/name' %}
 &lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;1.9 Gibt es Abhängigkeiten zu weiteren Policies?&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;1.4 Projektleiter / Verantwortliche&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    {% render_value_inline_list 'project/coordination/name' %}
+&lt;/p&gt;
 
-&lt;h2&gt;2. Existierende Daten&lt;/h2&gt;
+&lt;p&gt;
+    &lt;b&gt;1.5 Mitarbeiter und Funktionen&lt;/b&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;
-	2.1 Baut die Forschungsarbeit auf Daten Dritter oder auf generierte Daten aus anderen
-    abgeschlossenen Projekten (oder auch teilweise) auf?
-&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;1.6 Genehmigte / angestrebte Laufzeit&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    Projektbeginn: {% render_value 'project/schedule/project_start' %}
+    Projektende: {% render_value 'project/schedule/project_end' %}
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;b&gt;1.7 Welche Anforderungen gibt es seitens der Projektförderer bezüglich der Erstellung
+    eines DMPs und seiner Durchführung?&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    {% render_value 'project/funder/requirements' %}
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;b&gt;1.8 Gibt es für Ihr Projektvorhaben institutionelle oder fakultätsinterne Policies,
+    die in dem DMP berücksicht werden müssen?&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    {% render_value 'project/additional_requirements/yesno' %}
+    {% render_value 'project/additional_requirements/requirements' %}
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;b&gt;1.9 Gibt es Abhängigkeiten zu weiteren Policies?&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;h2&gt;2/ Existierende Daten&lt;/h2&gt;
+
+&lt;p&gt;
+    &lt;b&gt;2.1 Baut die Forschungsarbeit auf Daten Dritter oder auf generierte Daten aus anderen
+    abgeschlossenen Projekten (oder auch teilweise) auf?&lt;/b&gt;
+&lt;/p&gt;
 {% for dataset in datasets %}
 &lt;p&gt;
-	&lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt; Datensatzherkunft: {% render_set_value dataset 'project/dataset/id' %}.
-	Datensatzerzeuger: {% render_set_value dataset 'project/dataset/creator' %}
+    &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+    Datensatzherkunft: {% render_set_value dataset 'project/dataset/origin' %}/
+    Datensatzerzeuger: {% render_set_value dataset 'project/dataset/creator/name' %}
 &lt;/p&gt;
 {% endfor %}
 
-&lt;p&gt;&lt;b&gt;
-	2.1.1 Wenn ja, welche Bedeutung haben die vorhandenen Daten für das Vorhabensziel?
-	Warum sind die Daten wichtig?
-&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;2.1.1 Wenn ja, welche Bedeutung haben die vorhandenen Daten für das Vorhabensziel?
+    Warum sind die Daten wichtig?&lt;/b&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;
-	2.2 Gibt es Möglichkeiten der Nachnutzung existierender Datensätze? Wurde nach diesen
-	innerhalb der eigenen Institution und von anderen diversen Datendrittanbietern recherchiert?
-&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;2.2 Gibt es Möglichkeiten der Nachnutzung existierender Datensätze? Wurde nach diesen
+    innerhalb der eigenen Institution und von anderen diversen Datendrittanbietern recherchiert?&lt;/b&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;
-	2.3 Wie wird die Integration zwischen den bereits existierenden Daten und den neu zu
-    generierenden Daten bewerkstelligt? Wie wird die Nutzung der existierenden Daten dokumentiert?
-&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;2.3 Wie wird die Integration zwischen den bereits existierenden Daten und den neu zu
+    generierenden Daten bewerkstelligt? Wie wird die Nutzung der existierenden
+    Daten dokumentiert?&lt;/b&gt;
+&lt;/p&gt;
 {% for dataset in datasets %}
-&lt;p&gt;&lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt; {% render_set_value dataset 'project/dataset/id' %}&lt;/p&gt;
+&lt;p&gt;
+    &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+    {% render_set_value dataset 'project/dataset/technical_integration' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;h2&gt;3. Im Projekt generierten Daten&lt;/h2&gt;
 
-&lt;p&gt;&lt;b&gt;
-	3.1 Beschreiben Sie die Daten, die im Rahmen Ihres Forschungsvorhabens anfallen.
-&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;3.1 Beschreiben Sie die Daten, die im Rahmen Ihres Forschungsvorhabens anfallen&lt;/b&gt;
+&lt;/p&gt;
 {% for dataset in datasets %}
-&lt;p&gt;&lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt; {% render_set_value dataset 'project/dataset/id' %}&lt;/p&gt;
+&lt;p&gt;
+    &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+    {% render_set_value dataset 'project/dataset/description' %}
+&lt;/p&gt;
 {% endfor %}
 
-&lt;p&gt;&lt;b&gt;Wie werden Daten erfasst oder erstellt?&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;3.2 Wie werden Daten erfasst oder erstellt?&lt;/b&gt;
+&lt;/p&gt;
 {% for dataset in datasets %}
-&lt;p&gt;&lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt; {% render_set_value dataset 'project/dataset/id' %}&lt;/p&gt;
+&lt;p&gt;
+    &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+    {% render_set_value dataset 'project/dataset/creation_methods' %}
+&lt;/p&gt;
 {% endfor %}
 
-&lt;p&gt;&lt;b&gt;
-	In welchen Dateiformaten werden die Daten vorliegen? Und benötigt man für die Nachnutzung
-	oder Nachvollziehbarkeit der Daten besondere Softwarelösungen (sowohl frei als auch kommerziell)?
-&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;3.3 In welchen Dateiformaten werden die Daten vorliegen? Und benötigt man für die Nachnutzung
+    oder Nachvollziehbarkeit der Daten besondere Softwarelösungen
+    (sowohl frei als auch kommerziell)?&lt;/b&gt;
+&lt;/p&gt;
 {% for dataset in datasets %}
-&lt;p&gt;&lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt; {% render_set_value dataset 'project/dataset/id' %}&lt;/p&gt;
+&lt;p&gt;
+    &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+    {% render_set_value dataset 'project/dataset/format' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;h2&gt;4. Datenorganisation&lt;/h2&gt;
 
-&lt;p&gt;&lt;b&gt;4.1 Gibt es projektinterne Richtlinie zur Benennung der entstehenden Daten?&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;4.1 Gibt es projektinterne Richtlinie zur Benennung der entstehenden Daten?&lt;/b&gt;
+&lt;/p&gt;
 {% for dataset in datasets %}
-&lt;p&gt;&lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt; {% render_set_value dataset 'project/dataset/id/naming' %}&lt;/p&gt;
+&lt;p&gt;
+    &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+    {% render_set_value dataset 'project/dataset/storage/naming' %}
+&lt;/p&gt;
 {% endfor %}
 
-&lt;p&gt;&lt;b&gt;4.2 Gibt es auch Richtlinien zur einheitlichen Organisation der Daten?&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;4.2 Gibt es auch Richtlinien zur einheitlichen Organisation der Daten?&lt;/b&gt;
+&lt;/p&gt;
 {% for dataset in datasets %}
-&lt;p&gt;&lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt; {% render_set_value dataset 'project/dataset/id/organisation' %}&lt;/p&gt;
+&lt;p&gt;
+    &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+    {% render_set_value dataset 'project/dataset/storage/organisation' %}
+&lt;/p&gt;
 {% endfor %}
 
-&lt;p&gt;&lt;b&gt;
-	4.3 Wie werden Daten von einem Ort zum anderen transferiert (z.B. von lokaler Festplatte
-	auf ein Netzlaufwerk oder Server). Werden Synchronisationsmethoden angewandt?
-&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;4.3 Wie werden Daten von einem Ort zum anderen transferiert (z.B. von lokaler Festplatte
+    auf ein Netzlaufwerk oder Server). Werden Synchronisationsmethoden angewandt?&lt;/b&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;4.4 Wie ist das kollaborative Arbeiten an den selben Dateien geregelt?&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;4.4 Wie ist das kollaborative Arbeiten an den selben Dateien geregelt?&lt;/b&gt;
+&lt;/p&gt;
 {% for dataset in datasets %}
-&lt;p&gt;&lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt; {% render_set_value dataset 'project/dataset/id' %}&lt;/p&gt;
+&lt;p&gt;
+    &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+    {% render_set_value dataset 'project/dataset/collaboration_organisation' %}
+&lt;/p&gt;
 {% endfor %}
 
-&lt;p&gt;&lt;b&gt;
-	4.5 Wie sieht die Versionierungsstrategie für die entstehenden Daten oder Dokumente aus?
-&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;4.5 Wie sieht die Versionierungsstrategie für die entstehenden Daten oder Dokumente aus?&lt;/b&gt;
+&lt;/p&gt;
 {% for dataset in datasets %}
-&lt;p&gt;&lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt; {% render_set_value dataset 'project/dataset/id' %}&lt;/p&gt;
+&lt;p&gt;
+    &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+    {% render_set_value dataset 'project/dataset/versioning_strategy' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;h2&gt;5. Administrative und rechtliche Aspekte&lt;/h2&gt;
 
-&lt;p&gt;&lt;b&gt;
-	5.1 Existieren für Ihr Projekt Vorgaben seitens der Forschungsförderer bezüglich bestimmter
-	Aspekte des Forschungsdatenmanagements?
-&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;{% render_value 'project/funder' %}
-
-&lt;p&gt;&lt;b&gt;
-	5.2 Gibt es bereits Überlegungen, was mit den Daten geschieht, wenn die Vorgaben oder andere
-	Erhaltungsmaßnahmen nicht mehr greifen?
-&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;
-	5.3 Werden fremde Forschungsdaten oder Software verwendet, welche dem Urheberrecht, dem
-	Patenrecht oder anderen geistigen Eigentumsrechten unterliegen? Wenn ja, wer besitzt die Rechte?
-&lt;/b&gt;&lt;/p&gt;
-{% render_value 'project/legal_aspects' %}
-
-&lt;p&gt;&lt;b&gt;
-	5.4 Unterliegen die eigenen Forschungsdaten oder andere Forschungsartefakte (z.B. Software,
-	Hardware) dem Urheberrecht, dem Patentrecht oder anderen geistigen Eigentumsrechten? Wenn ja,
-    gibt es bereits Überlegungen zur Lizenzierung oder Vergabe von Nutzungsrrechten?
-&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;
-	5.5 Existieren Schutzfristen für die eigenen Forschungsdaten, welche während des
-	Aufbewahrungszeitraumes enden?
-&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;5.6 Sind die im Projekt erzeugten Daten von einem öffentlichen Interesse?&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;
-	5.7 Sind die Nutzungsziele (und die Nutzerzielgruppe) und die Anforderungen an die Nutzung der
-    Daten dokumentiert?
-&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;
-	5.8 Wie werden die Nutzungsbeschränkungen organisatorisch gehandhabt? Sind hierfür die
-	Verantwortlichen klar definiert?
-&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;5.9 Unterliegen die erzeugten Daten dem Datenschutz?&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;{% render_value_inline_list 'project/legal_aspects' %}
-
-&lt;p&gt;&lt;b&gt;
-	5.10 Welche Anstrengungen werden unternommen, um den Anforderungen des Datenschutzes zu genügen?
-&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;{% render_value 'project/legal_aspects' %}
-
-&lt;p&gt;&lt;b&gt;
-	5.11 Gibt es ethisch, kommerziell oder in anderer Hinsicht sensible Daten? Wenn ja, welche
-    Maßnahmen werden zum Schutz dieser Daten getroffen?
-&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;
-{% render_value 'project/legal_aspects' %}
+    &lt;b&gt;5.1 Existieren für Ihr Projekt Vorgaben seitens der Forschungsförderer bezüglich bestimmter
+    Aspekte des Forschungsdatenmanagements?&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    {% render_value 'project/funder/requirements' %}
 &lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;
-	5.12 Wer ist während des Projekts und nach dem Projekt verantwortlich für die Speicherung der
-    Daten?
-&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;5.2 Gibt es bereits Überlegungen, was mit den Daten geschieht, wenn die Vorgaben oder andere
+    Erhaltungsmaßnahmen nicht mehr greifen?&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;b&gt;5.3 Werden fremde Forschungsdaten oder Software verwendet, welche dem Urheberrecht, dem
+    Patenrecht oder anderen geistigen Eigentumsrechten unterliegen?
+    Wenn ja, wer besitzt die Rechte?&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    {% render_value 'project/legal_aspects/ipr/yesno' %}
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;b&gt;5.4 Unterliegen die eigenen Forschungsdaten oder andere Forschungsartefakte (z.B. Software,
+    Hardware) dem Urheberrecht, dem Patentrecht oder anderen geistigen Eigentumsrechten? Wenn ja,
+    gibt es bereits Überlegungen zur Lizenzierung oder Vergabe von Nutzungsrrechten?&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;b&gt;5.5 Existieren Schutzfristen für die eigenen Forschungsdaten, welche während des
+    Aufbewahrungszeitraumes enden?&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;b&gt;5.6 Sind die im Projekt erzeugten Daten von einem öffentlichen Interesse?&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;b&gt;5.7 Sind die Nutzungsziele (und die Nutzerzielgruppe) und die Anforderungen an die
+    Nutzung der Daten dokumentiert?&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;b&gt;5.8 Wie werden die Nutzungsbeschränkungen organisatorisch gehandhabt? Sind hierfür die
+    Verantwortlichen klar definiert?&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;b&gt;5.9 Unterliegen die erzeugten Daten dem Datenschutz?&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    {% render_value_inline_list 'project/legal_aspects/sensitive_data/personal_data/privacy_laws' %}
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;b&gt;5.10 Welche Anstrengungen werden unternommen, um den Anforderungen des Datenschutzes
+    zu genügen?&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    {% render_value 'project/legal_aspects/sensitive_data/personal_data/anonymization' %}
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;5.11 Gibt es ethisch, kommerziell oder in anderer Hinsicht sensible Daten? Wenn ja, welche
+    Maßnahmen werden zum Schutz dieser Daten getroffen?&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    {% render_value 'project/legal_aspects/sensitive_data/other_sensitive_data/yesno' %}
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;b&gt;5.12 Wer ist während des Projekts und nach dem Projekt verantwortlich für die Speicherung der
+    Daten?&lt;/b&gt;
+&lt;/p&gt;
 {% for dataset in datasets %}
 &lt;p&gt;
-	&lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt; {% render_set_value dataset 'project/dataset/id/responsible_person.name' %}
+    &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+    {% render_set_value dataset 'project/dataset/storage/responsible_person/name' %}
 &lt;/p&gt;
 {% endfor %}
 
-&lt;p&gt;&lt;b&gt;
-	5.13 Werden regelmäßig Sicherheitskopien der aktuellen Arbeitsdateien erzeugt? Mit
-	welchenTechnologien erfolgt dies und an welchem Ort?
-&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;5.13 Werden regelmäßig Sicherheitskopien der aktuellen Arbeitsdateien erzeugt? Mit
+    welchenTechnologien erfolgt dies und an welchem Ort?&lt;/b&gt;
+&lt;/p&gt;
 {% for dataset in datasets %}
-&lt;p&gt;&lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt; {% render_set_value dataset 'project/dataset/id/backup_frequency' %}&lt;/p&gt;
+&lt;p&gt;
+    &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+    {% render_set_value dataset 'project/dataset/storage/backup_frequency' %}
+&lt;/p&gt;
 {% endfor %}
 
-&lt;p&gt;&lt;b&gt;
-	5.14 Wie sehen die technischen Lösungen für die Backupstrategie aus? (auch für mobile Geräte,
-	wie Laptops?)
-&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;5.14 Wie sehen die technischen Lösungen für die Backupstrategie aus? (auch für
+    mobile Geräte, wie Laptops?)&lt;/b&gt;
+&lt;/p&gt;
 
 &lt;h2&gt;6. Archivierung, Datenaustausch und Datenpublikation&lt;/h2&gt;
 
-&lt;p&gt;&lt;b&gt;
-	6.1 Wieso und für wie lange müssen Daten archiviert werden? Welche Daten sind das genau, und
-    durch wen und womit erfolgt die Auswahl der zu archivierenden Daten?
-&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;
-{% render_value 'project/dataset' %}
-    {% render_value 'project/dataset' %}
-    {% render_value 'project/dataset' %}
-    {% render_value 'project/preservation' %}
-    {% render_value_inline_list 'project/preservation' %}
+    &lt;b&gt;6.1 Wieso und für wie lange müssen Daten archiviert werden? Welche Daten sind
+    das genau, und durch wen und womit erfolgt die Auswahl der zu archivierenden Daten?&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    {% render_value 'project/dataset/preservation/yesno' %}
+    {% render_value 'project/dataset/preservation/motivation' %}
+    {% render_value 'project/dataset/preservation/duration' %}
+    {% render_value 'project/preservation/criteria' %}
+    {% render_value_inline_list 'project/preservation/responsible_person/name' %}
 &lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;6.2 Was geschieht mit den Daten nach Ablauf der Aufbewahrungsdauer?&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;6.2 Was geschieht mit den Daten nach Ablauf der Aufbewahrungsdauer?&lt;/b&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;
-	6.3 Ist es geplant, dass die Daten innerhalb oder außerhalb des Projekts von Anderen
-	genutzt werden? Wenn nein, bitte Gründe nennen.
-&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;6.3 Ist es geplant, dass die Daten innerhalb oder außerhalb des Projekts von Anderen
+    genutzt werden? Wenn nein, bitte Gründe nennen.&lt;/b&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;6.4 Gibt es eine Verpflichtung, die Daten freizugeben?&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;6.4 Gibt es eine Verpflichtung, die Daten freizugeben?&lt;/b&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;
-	6.5 Wie werden Veröffentlichung (Datenpublikation), Suchbarkeit und der Zugriff auf die Daten
+&lt;p&gt;
+    &lt;b&gt;6.5 Wie werden Veröffentlichung (Datenpublikation), Suchbarkeit und der Zugriff auf die Daten
     realisiert? Werden hierfür institutionelle Dienste der Universität Bielefeld in Anspruch
-    genommen (z.B. DOI Registrierung)? Oder externe fachspezifische Datenservices?
-&lt;/b&gt;&lt;/p&gt;
+    genommen (z.B. DOI Registrierung)? Oder externe fachspezifische Datenservices?&lt;/b&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;6.6 Gibt es definierte Workflows für die Identifikation von Datenobjekten?&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;6.6 Gibt es definierte Workflows für die Identifikation von Datenobjekten?&lt;/b&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;
-	6.7 Werden Metadaten für die (maschinen-lesbare) Beschreibung von Objekten oder im Rahmen der
-    Dokumentation des Forschungsprozesses verwendet? Welchem Zweck dient das Metadatensystem?
-&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;6.7 Werden Metadaten für die (maschinen-lesbare) Beschreibung von Objekten oder im Rahmen
+    der Dokumentation des Forschungsprozesses verwendet? Welchem Zweck dient das Metadatensystem?&lt;/b&gt;
+&lt;/p&gt;
 {% for dataset in datasets %}
-&lt;p&gt;&lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt; {% render_set_value dataset 'project/dataset/id/description' %}
+&lt;p&gt;
+    &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+    {% render_set_value dataset 'project/dataset/metadata/description' %}
+&lt;/p&gt;
 {% endfor %}
 
-&lt;p&gt;&lt;b&gt;
-	6.8 Welche Informationen (des Forschungsprozesses) sollen durch Metadaten beschriebenwerden?
-&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;6.8 Welche Informationen (des Forschungsprozesses) sollen durch Metadaten
+    beschriebenwerden?&lt;/b&gt;
+&lt;/p&gt;
 {% for dataset in datasets %}
-&lt;p&gt;&lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt; {% render_set_value dataset 'project/dataset/id/information' %}&lt;/p&gt;
+&lt;p&gt;
+    &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+    {% render_set_value dataset 'project/dataset/metadata/information' %}
+&lt;/p&gt;
 {% endfor %}
 
-&lt;p&gt;&lt;b&gt;6.9 Gibt es Metadaten, die automatisch erhoben werden können?&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;6.9 Gibt es Metadaten, die automatisch erhoben werden können?&lt;/b&gt;
+&lt;/p&gt;
 {% for dataset in datasets %}
-&lt;p&gt;&lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt; {% render_set_value dataset 'project/dataset/id/creation_automatic' %}&lt;/p&gt;
+&lt;p&gt;
+    &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+    {% render_set_value dataset 'project/dataset/creation_automatic' %}
+&lt;/p&gt;
 {% endfor %}
 
-&lt;p&gt;&lt;b&gt;
-	6.10 Welche Voraussetzungen muss Hardware und Software erfüllen, um die Metadatenverarbeiten
-    zu können? Und welche Vorkenntnisse/Fachkenntnisse sind zum Verständnis bzw.Verarbeitung dieser
-    Metadaten notwendig?
-&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;6.10 Welche Voraussetzungen muss Hardware und Software erfüllen, um die Metadatenverarbeiten
+    zu können? Und welche Vorkenntnisse/Fachkenntnisse sind zum Verständnis bzw/Verarbeitung dieser
+    Metadaten notwendig?&lt;/b&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;
-	6.11 Werden bestimmte Restriktionen für die Nutzung von den publizierten Daten erhoben?
-&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;6.11 Werden bestimmte Restriktionen für die Nutzung von den publizierten Daten erhoben?&lt;/b&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;
-	6.12 Spielt bei dem Datentausch die Interoperabilität zwischen der eigenenen Infrastruktur und
-    den anderen beteiligten Infrastrukturen eine Rolle?
-&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;6.12 Spielt bei dem Datentausch die Interoperabilität zwischen der eigenenen Infrastruktur
+    und den anderen beteiligten Infrastrukturen eine Rolle?&lt;/b&gt;
+&lt;/p&gt;
 
 &lt;h2&gt;7. Verantwortlichkeiten und Pflichten&lt;/h2&gt;
 
-&lt;p&gt;&lt;b&gt;7.1 Wer ist innerhalb des Projekts verantwortlich für das Datenmanagement?&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;7.1 Wer ist innerhalb des Projekts verantwortlich für das Datenmanagement?&lt;/b&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;7.2 Gibt es eine Regelung zur Überprüfung der Einhaltung des Datenmanagement Plans?&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;7.2 Gibt es eine Regelung zur Überprüfung der Einhaltung des Datenmanagement Plans?&lt;/b&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;7.3 Wie, wann und von wem wird der DMP bei Bedarf aktualisiert?&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;7.3 Wie, wann und von wem wird der DMP bei Bedarf aktualisiert?&lt;/b&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;
-	7.4 Sind andere Institutionen oder universitäre Dienste am Datenmanagement für das
-    Projektbeteiligt?
-&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;7.4 Sind andere Institutionen oder universitäre Dienste am Datenmanagement für das
+    Projektbeteiligt?&lt;/b&gt;
+&lt;/p&gt;
 
 &lt;p&gt;&lt;b&gt;Begründung:&lt;/b&gt;&lt;/p&gt;
 
 &lt;h2&gt;8. Kosten und Ressourcen&lt;/h2&gt;
 
-&lt;p&gt;&lt;b&gt;
-	8.1 Sind die Kosten und der Personalaufwand für das Datenmanagement von Forschungsdaten
-    abgeschätzt worden?
-&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;
-	8.2 Welche Kosten entstehen während und nach der Projektlaufzeit? Und wie hoch ist das im
-    Projekt veranschlagte Budget für Datenmanagement?
-&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;
-	Personalaufwand für das Datenmanagement im Rahmen der Erhebung, Erstellung oder Akquise der
-    Daten: {% render_value 'project/costs' %}
-&lt;/p&gt;
-&lt;p&gt;
-	Sachkosten für das Datenmanagement im Rahmen der Erhebung, Erstellung oder Akquise der Daten:
-    {% render_value 'project/costs' %}
-&lt;/p&gt;
-&lt;p&gt;
-	Personalaufwand für das Datenmanagement im Zusammenhang mit der Nutzung der Daten:
-    {% render_value 'project/costs' %}
-&lt;/p&gt;
-&lt;p&gt;
-	Sachkosten für das Datenmanagement im Zusammenhang mit der Nutzung der Daten:
-    {% render_value 'project/costs' %}
-&lt;/p&gt;
-&lt;p&gt;
-	Personalaufwand im Zusammenhang mit der Speicherung der Daten:
-    {% render_value 'project/costs' %}
-&lt;/p&gt;
-&lt;p&gt;
-	Sachkosten im Zusammenhang mit der Speicherung der Datensätze:
-    {% render_value 'project/costs' %}
+    &lt;b&gt;8.1 Sind die Kosten und der Personalaufwand für das Datenmanagement von Forschungsdaten
+    abgeschätzt worden?&lt;/b&gt;
 &lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;
-	8.3 Wurden innerhalb des Projektes die Gründe für das Management von Forschungsdaten
-    kommuniziert und sind diese allen beteiligten Mitarbeitern klar?
-&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;8.2 Welche Kosten entstehen während und nach der Projektlaufzeit? Und wie hoch ist das im
+    Projekt veranschlagte Budget für Datenmanagement?&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    Personalaufwand für das Datenmanagement im Rahmen der Erhebung, Erstellung oder Akquise der
+    Daten: {% render_value 'project/costs/creation/personnel' %}
+&lt;/p&gt;
+&lt;p&gt;
+    Sachkosten für das Datenmanagement im Rahmen der Erhebung, Erstellung oder Akquise der Daten:
+    {% render_value 'project/costs/creation/expenses' %}
+&lt;/p&gt;
+&lt;p&gt;
+    Personalaufwand für das Datenmanagement im Zusammenhang mit der Nutzung der Daten:
+    {% render_value 'project/costs/usage/personnel' %}
+&lt;/p&gt;
+&lt;p&gt;
+    Sachkosten für das Datenmanagement im Zusammenhang mit der Nutzung der Daten:
+    {% render_value 'project/costs/usage/expenses' %}
+&lt;/p&gt;
+&lt;p&gt;
+    Personalaufwand im Zusammenhang mit der Speicherung der Daten:
+    {% render_value 'project/costs/storage/personnel' %}
+&lt;/p&gt;
+&lt;p&gt;
+    Sachkosten im Zusammenhang mit der Speicherung der Datensätze:
+    {% render_value 'project/costs/storage/expenses' %}
+&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;
-	8.4 Stehen alle Verantwortlichen und Beteiligten hinter den Plänen zum Datenmanagement? Wenn
+&lt;p&gt;
+    &lt;b&gt;8.3 Wurden innerhalb des Projektes die Gründe für das Management von Forschungsdaten
+    kommuniziert und sind diese allen beteiligten Mitarbeitern klar?&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;b&gt;8.4 Stehen alle Verantwortlichen und Beteiligten hinter den Plänen zum Datenmanagement? Wenn
     nein, ist es notwendig, den individuellen und allgemeinen Nutzen herauszuarbeiten oder
-    Anreizsysteme einzuführen?
-&lt;/b&gt;&lt;/p&gt;</template>
+    Anreizsysteme einzuführen?&lt;/b&gt;
+&lt;/p&gt;</template>
 	</view>
 	<view dc:uri="http://example.com/terms/views/citec">
 		<uri_prefix/>
@@ -355,6 +451,7 @@
 		<help lang="en">DMP template from the University of Bielefeld for CITEC funded research projects.</help>
 		<help lang="de">DMP Vorlage der Universität Bielefeld für CITEC geförderte Projekte.</help>
 		<template>{% load view_tags %}
+
 {% get_set 'project/partner' as partners %}
 {% get_set 'project/dataset' as datasets %}
 
@@ -477,32 +574,39 @@
 &lt;p&gt;
     &lt;b&gt;Does the project involve co-operations outside of Bielefeld University?&lt;/b&gt;
 &lt;/p&gt;
-
-&lt;p&gt;
-    {% render_value 'project/partner' %}
-&lt;/p&gt;
+&lt;ul&gt;
+{% for partner in partners %}
+&lt;li&gt;
+    {% render_set_value partner 'project/partner/name' %}
+&lt;/li&gt;
+{% endfor %}
+&lt;/ul&gt;
 
 &lt;p&gt;
     &lt;b&gt;Are there requirements by others concerning data publication?&lt;/b&gt;
 &lt;/p&gt;
-
-&lt;p&gt;
-    {% render_value 'project/partner' %}
-&lt;/p&gt;
+&lt;ul&gt;
+{% for partner in partners %}
+&lt;li&gt;
+    {% render_set_value partner 'project/partner/name' %}:
+    {% render_set_value partner 'project/partner/rdm_policy' %}
+&lt;/li&gt;
+{% endfor %}
+&lt;/ul&gt;
 
 &lt;p&gt;
     &lt;b&gt;Will the data be published?&lt;/b&gt;
 &lt;/p&gt;
 
 {% for dataset in datasets %}
-    &lt;p&gt;
-    	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-        {% get_set_value dataset 'project/dataset/sharing/yesno' as val %}
-        {% if val.is_true %}
-            {% render_set_value dataset 'project/dataset/sharing/conditions' %}
-            License: {% render_set_value dataset 'project/dataset/sharing/sharing_license' %}
-        {% endif %}
-    &lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% get_set_value dataset 'project/dataset/sharing/yesno' as val %}
+	{% if val.is_true %}
+	{% render_set_value dataset 'project/dataset/sharing/conditions' %}
+	License: {% render_set_value dataset 'project/dataset/sharing/sharing_license' %}
+	{% endif %}
+&lt;/p&gt;
 {% endfor %}</template>
 	</view>
 	<view dc:uri="https://rdmorganiser.github.io/terms/views/dmponline">
@@ -514,9 +618,9 @@
 		<help lang="en">Template from DMPonline, online https://dmponline.dcc.ac.uk</help>
 		<help lang="de">Vorlage von DMPonline, Online: https://dmponline.dcc.ac.uk</help>
 		<template>{% load view_tags %}
+
 {% get_set 'project/partner' as partners %}
 {% get_set 'project/dataset' as datasets %}
-
 
 &lt;h1&gt;DMPonline Template&lt;/h1&gt;
 
@@ -526,21 +630,21 @@
 &lt;/p&gt;
 
 {% for dataset in datasets %}
-    &lt;p&gt;
-      &lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-      {% render_set_value dataset 'project/dataset/description' %},
-      data format: {% render_set_value dataset 'project/dataset/format' %}
-    &lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/description' %},
+	data format: {% render_set_value dataset 'project/dataset/format' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
     &lt;b&gt;How will the data be collected or created?&lt;/b&gt;
 &lt;/p&gt;
 {% for dataset in datasets %}
-	&lt;p&gt;
-        &lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-        {% render_set_value dataset 'project/dataset/creation_methods' %}
-    &lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/creation_methods' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;h2&gt;Documentation and Metadata&lt;/h2&gt;
@@ -552,20 +656,20 @@
     &lt;i&gt;Metadata&lt;/i&gt;
 &lt;/p&gt;
 {% for dataset in datasets %}
-    &lt;p&gt;
-    	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-        {% render_set_value dataset 'project/dataset/interoperability' %}
-    &lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/interoperability' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
     &lt;i&gt;Documentation&lt;/i&gt;
 &lt;/p&gt;
 {% for dataset in datasets %}
-    &lt;p&gt;
-        &lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-        {% render_set_value dataset 'project/dataset/id/standards' %}
-    &lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/id/standards' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;h2&gt;Ethics and Legal Compliance&lt;/h2&gt;
@@ -583,12 +687,20 @@
 &lt;/p&gt;
 
 {% for dataset in datasets %}
-    &lt;p&gt;
-        &lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-    &lt;/p&gt;
-    &lt;p&gt;Applicable copyrights: {% render_set_value dataset 'project/dataset/ipr/copyrights' %}&lt;/p&gt;
-    &lt;p&gt;Other applicable intellectual property rights: {% render_set_value dataset 'project/dataset/ipr/other_rights' %}&lt;/p&gt;
-    &lt;p&gt;Rightsholder: {% render_set_value dataset 'project/dataset/ipr/owner/name' %}&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	Applicable copyrights:
+    {% render_set_value dataset 'project/dataset/ipr/copyrights' %}
+&lt;/p&gt;
+&lt;p&gt;
+	Other applicable intellectual property rights:
+    {% render_set_value dataset 'project/dataset/ipr/other_rights' %}
+&lt;/p&gt;
+&lt;p&gt;
+	Rightsholder: {% render_set_value dataset 'project/dataset/ipr/owner/name' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;h2&gt;Storage and Backup&lt;/h2&gt;
@@ -596,10 +708,10 @@
     &lt;b&gt;How will the data be stored and backed up during the research?&lt;/b&gt;
 &lt;/p&gt;
 {% for dataset in datasets %}
-    &lt;p&gt;
-        &lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-        {% render_set_value dataset 'project/dataset/storage/type' %}
-    &lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/storage/type' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
@@ -613,11 +725,11 @@
     &lt;b&gt;Which data are of long-term value and should be retained, shared, and/or preserved?&lt;/b&gt;
 &lt;/p&gt;
 {% for dataset in datasets %}
-    &lt;p&gt;
-        &lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-        {% render_set_value dataset 'project/dataset/preservation/yesno' %}.
-        {% render_set_value_inline_list dataset 'project/dataset/preservation/purpose' %}.
-    &lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/preservation/yesno' %}.
+	{% render_set_value_inline_list dataset 'project/dataset/preservation/purpose' %}.
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
@@ -625,11 +737,11 @@
 &lt;/p&gt;
 
 {% for dataset in datasets %}
-    &lt;p&gt;
-    	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-        {% render_set_value dataset 'project/dataset/preservation/duration' %}.
-    	In: {% render_set_value dataset 'project/dataset/preservation/repository' %}
-    &lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/preservation/duration' %}.
+	In: {% render_set_value dataset 'project/dataset/preservation/repository' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;h2&gt;Data Sharing&lt;/h2&gt;
@@ -639,10 +751,10 @@
 &lt;/p&gt;
 
 {% for dataset in datasets %}
-    &lt;p&gt;
-    	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-        {% render_set_value dataset 'project/dataset/metadata/standards' %}
-    &lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/metadata/standards' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
@@ -650,10 +762,10 @@
 &lt;/p&gt;
 
 {% for dataset in datasets %}
-    &lt;p&gt;
-        &lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-        {% render_set_value dataset 'project/dataset/sharing/conditions' %}
-    &lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/sharing/conditions' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;h2&gt;Responsibilities and Resources&lt;/h2&gt;
@@ -663,18 +775,20 @@
 &lt;/p&gt;
 
 {% for dataset in datasets %}
-    &lt;p&gt;
-        &lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-    &lt;/p&gt;
-    &lt;p&gt;
-        Responsible person for the backups: {% render_set_value dataset 'project/dataset/backup_responsible/name' %}
-    &lt;/p&gt;
-    &lt;p&gt;
-        Responsible person for documenting the metadata and context information: {% render_set_value dataset 'project/dataset/metadata/responsible_person/name' %}
-    &lt;/p&gt;
-    &lt;p&gt;
-        Responsible person for the maintenance of the PIDs and the object maintenance: {% render_set_value dataset 'project/dataset/pids/responsible_person/name' %}
-    &lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	Responsible person for the backups:
+	{% render_set_value dataset 'project/dataset/backup_responsible/name' %}
+&lt;/p&gt;
+&lt;p&gt;
+	Responsible person for documenting the metadata and context information:
+	{% render_set_value dataset 'project/dataset/metadata/responsible_person/name' %}
+&lt;/p&gt;
+	Responsible person for the maintenance of the PIDs and the object maintenance:
+	{% render_set_value dataset 'project/dataset/pids/responsible_person/name' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
@@ -712,46 +826,48 @@
 
 &lt;p&gt;
     &lt;i&gt;Data sizes&lt;/i&gt;
-    {% for dataset in datasets %}
-        &lt;p&gt;
-            &lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-            {% render_set_value dataset 'project/dataset/id/volume' %}
-        &lt;/p&gt;
-    {% endfor %}
-&lt;/p&gt;</template>
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/id/volume' %}
+&lt;/p&gt;
+{% endfor %}</template>
 	</view>
 	<view dc:uri="https://rdmorganiser.github.io/terms/views/dmptool">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>dmptool</key>
-		<dc:comment>Source: https://dmptool.org/ and based on the template &quot;NSF-GEN: Generic&quot;</dc:comment>
+		<dc:comment>Source: https://dmptool.org/ and based on the template "NSF-GEN: Generic"</dc:comment>
 		<title lang="en">DMPTool template</title>
 		<title lang="de">DMPTool template</title>
-		<help lang="en">Template from DMPtool, based on &quot;NSF-GEN: Generic&quot;, online: https://dmptool.org</help>
-		<help lang="de">Vorlage von DMPtool, basiert auf on &quot;NSF-GEN: Generic&quot;, Online: https://dmptool.org</help>
+		<help lang="en">Template from DMPtool, based on "NSF-GEN: Generic", online: https://dmptool.org</help>
+		<help lang="de">Vorlage von DMPtool, basiert auf on "NSF-GEN: Generic", Online: https://dmptool.org</help>
 		<template>{% load view_tags %}
+
 {% get_set 'project/partner' as partners %}{% get_set 'project/dataset' as datasets %}
+
 &lt;h1&gt;DMPTool&lt;/h1&gt;
+
 &lt;h2&gt;Types of data produced&lt;/h2&gt;
 
 &lt;p&gt;
 	&lt;b&gt;What data will be generated in the research?&lt;/b&gt;
 &lt;/p&gt;
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/description' %}
-	&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/description' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
 	&lt;b&gt;What data types will you be creating or capturing?&lt;/b&gt;
 &lt;/p&gt;
-
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/format' %}
-	&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/format' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
@@ -759,10 +875,10 @@
 &lt;/p&gt;
 
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/creation_methods' %}
-	&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/creation_methods' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
@@ -770,43 +886,40 @@
 &lt;/p&gt;
 
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/origin' %}
-	&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/origin' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
 	&lt;b&gt;What is the relationship between the data you are collecting and any existing data?&lt;/b&gt;
 &lt;/p&gt;
-
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/structure' %}
-	&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/structure' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
 	&lt;b&gt;How will the data be processed?&lt;/b&gt;
 &lt;/p&gt;
-
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/usage_description' %}
-	&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/usage_description' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
 	&lt;b&gt;What quality assurance &amp;amp; quality control measures will you employ?&lt;/b&gt;
 &lt;/p&gt;
-
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/quality_assurance' %}
-	&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/quality_assurance' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;h2&gt;Data and metadata standards&lt;/h2&gt;
@@ -814,36 +927,39 @@
 &lt;p&gt;
 	&lt;b&gt;Which file formats will you use for your data, and why?&lt;/b&gt;
 &lt;/p&gt;
-
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/format' %}
-	&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/format' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
 	&lt;b&gt;What form will the metadata describing/documenting your data take?&lt;/b&gt;
 &lt;/p&gt;
-
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/metadata/mappings/yesno' %}
-	&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/metadata/mappings/yesno' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
 	&lt;b&gt;How will you create or capture these details?&lt;/b&gt;
 &lt;/p&gt;
-
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-	&lt;/p&gt;
-	&lt;p&gt;automatic: {% render_set_value dataset 'project/dataset/metadata/creation_automatic' %}
-	&lt;p&gt;semi-automatic: {% render_set_value dataset 'project/dataset/metadata/creation_semi_automatic' %}
-	&lt;p&gt;manual: {% render_set_value dataset 'project/dataset/metadata/creation_manual' %}
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	automatic: {% render_set_value dataset 'project/dataset/metadata/creation_automatic' %}
+&lt;/p&gt;
+&lt;p&gt;
+	semi-automatic: {% render_set_value dataset 'project/dataset/metadata/creation_semi_automatic' %}
+&lt;/p&gt;
+&lt;p&gt;
+	manual: {% render_set_value dataset 'project/dataset/metadata/creation_manual' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
@@ -851,10 +967,10 @@
 &lt;/p&gt;
 
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/metadata/standards' %}
-	&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/metadata/standards' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
@@ -863,10 +979,10 @@
 &lt;/p&gt;
 
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/metadata/scope' %}
-	&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/metadata/scope' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;h2&gt;Policies for access and sharing&lt;/h2&gt;
@@ -879,10 +995,10 @@
 	&lt;i&gt;Sharing&lt;/i&gt;
 &lt;/p&gt;
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/sharing/yesno' %}
-	&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/sharing/yesno' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
@@ -897,17 +1013,21 @@
 &lt;p&gt;
 	&lt;i&gt;Metadata costs&lt;/i&gt;
 &lt;/p&gt;
-&lt;p&gt; Personnel: {% render_value 'project/costs/metadata/personnel' %} PM&lt;/p&gt;
-&lt;p&gt; Other: {% render_value 'project/costs/metadata/non_personnel' %} Euro&lt;/p&gt;
+&lt;p&gt;
+	Personnel: {% render_value 'project/costs/metadata/personnel' %} PM
+&lt;/p&gt;
+&lt;p&gt;
+	Other: {% render_value 'project/costs/metadata/non_personnel' %} Euro
+&lt;/p&gt;
 
 &lt;p&gt;
 	&lt;b&gt;When will you make the data available?&lt;/b&gt;
 &lt;/p&gt;
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/data_publication_date' %}
-	&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/data_publication_date' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
@@ -929,10 +1049,10 @@
 &lt;/p&gt;
 
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-		{% render_set_value dataset 'project/datasetpreservation/embargo_period' %}
-	&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/datasetpreservation/embargo_period' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
@@ -940,10 +1060,10 @@
 &lt;/p&gt;
 
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:
-		&lt;/i&gt; {% render_set_value dataset 'project/dataset/preservation/accessibility' %}
-	&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:
+	&lt;/i&gt; {% render_set_value dataset 'project/dataset/preservation/accessibility' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
@@ -954,19 +1074,19 @@
 	{% render_value 'project/legal_aspects' %}
 	{% get_value 'values/project/legal_aspects/sensitive_data/personal_data' as val %}
 &lt;/p&gt;
-	{% if val.is_true %}
-		&lt;p&gt;
-			Applicable law(s):
-		    {% render_value_inline_list 'project/legal_aspects/sensitive_data/personal_data/privacy_law' %}
-		&lt;/p&gt;
-		&lt;p&gt;
-			Data will be anonymised or pseudonymised:
-		    {% render_value 'project/legal_aspects/sensitive_data/personal_data/anonymization' %}
-		&lt;/p&gt;
-		&lt;p&gt;
-			&quot;Informed consent&quot; will be obtained from the person(s) concerned:
-		    {% render_value 'project/legal_aspects/sensitive_data/personal_data/consent/extent' %}
-		&lt;/p&gt;
+{% if val.is_true %}
+&lt;p&gt;
+	Applicable law(s):
+	{% render_value_inline_list 'project/legal_aspects/sensitive_data/personal_data/privacy_law' %}
+&lt;/p&gt;
+&lt;p&gt;
+	Data will be anonymised or pseudonymised:
+	{% render_value 'project/legal_aspects/sensitive_data/personal_data/anonymization' %}
+&lt;/p&gt;
+&lt;p&gt;
+	"Informed consent" will be obtained from the person(s) concerned:
+	{% render_value 'project/legal_aspects/sensitive_data/personal_data/consent/extent' %}
+&lt;/p&gt;
 {% endif %}
 
 &lt;p&gt;
@@ -980,20 +1100,23 @@
 &lt;p&gt;
 	&lt;b&gt;Who will hold the intellectual property rights to the data and how might this affect data access?&lt;/b&gt;
 &lt;/p&gt;
-
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/ipr/owner/name' %}
-	&lt;/p&gt;
-	{% get_set_value dataset 'project/dataset/ipr/copyrights' %}
-	{% if val.is_true %}
-		&lt;p&gt;{% render_set_value_inline_list dataset 'project/dataset/ipr/copyrights' %}&lt;/p&gt;
-	{% endif %}
-	{% get_set_value dataset 'project/dataset/ipr/other_rights' %}
-	{% if val.is_true %}
-		&lt;p&gt;{% render_set_value_inline_list dataset 'project/dataset/ipr/other_rights' %}&lt;/p&gt;
-	{% endif %}
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/ipr/owner/name' %}
+&lt;/p&gt;
+{% get_set_value dataset 'project/dataset/ipr/copyrights' %}
+{% if val.is_true %}
+&lt;p&gt;
+	{% render_set_value_inline_list dataset 'project/dataset/ipr/copyrights' %}
+&lt;/p&gt;
+{% endif %}
+{% get_set_value dataset 'project/dataset/ipr/other_rights' %}
+{% if val.is_true %}
+&lt;p&gt;
+	{% render_set_value_inline_list dataset 'project/dataset/ipr/other_rights' %}
+&lt;/p&gt;
+{% endif %}
 {% endfor %}
 
 &lt;h2&gt;Policies for re-use, redistribution&lt;/h2&gt;
@@ -1014,10 +1137,10 @@
 &lt;/p&gt;
 
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/reuse_scenario' %}
-	&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/reuse_scenario' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
@@ -1025,10 +1148,10 @@
 &lt;/p&gt;
 
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/reuse_scenario' %}
-	&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/reuse_scenario' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;h2&gt;Plans for archiving and preservation&lt;/h2&gt;
@@ -1039,18 +1162,18 @@
 
 {% get_value 'values/project/values/project/preservation'}
 {% if val.is_true %}
-	{% for dataset in datasets %}
-		&lt;p&gt;
-			&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-			{% render_set_value dataset 'project/dataset/preservation/purpose' %}
-		&lt;/p&gt;
-		&lt;p&gt;
-			{% render_set_value dataset 'project/dataset/preservation/duration' %}
-		&lt;/p&gt;
-		&lt;p&gt;
-			{% render_set_value dataset 'project/dataset/costs/preserved/cover_how' %}
-		&lt;/p&gt;
-	{% endfor %}
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/preservation/purpose' %}
+&lt;/p&gt;
+&lt;p&gt;
+	{% render_set_value dataset 'project/dataset/preservation/duration' %}
+&lt;/p&gt;
+&lt;p&gt;
+	{% render_set_value dataset 'project/dataset/costs/preserved/cover_how' %}
+&lt;/p&gt;
+{% endfor %}
 {% endif %}
 
 &lt;p&gt;
@@ -1058,10 +1181,10 @@
 &lt;/p&gt;
 
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/preservation/repository' %}
-	&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/preservation/repository' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
@@ -1069,12 +1192,18 @@
 &lt;/p&gt;
 
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-	&lt;/p&gt;
-	&lt;p&gt;Responsible person for the backups: {% render_set_value dataset 'project/dataset/backup_responsible/name' %}&lt;/p&gt;
-	&lt;p&gt;Responsible person for documenting the metadata and context information: {% render_set_value dataset 'project/dataset/metadata/responsible_person/name' %}&lt;/p&gt;
-	&lt;p&gt;Responsible person for the maintenance of the PIDs and the object maintenance: {% render_set_value dataset 'project/dataset/pids/responsible_person/name' %}&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	Responsible person for the backups:
+    {% render_set_value dataset 'project/dataset/backup_responsible/name' %}&lt;/p&gt;
+&lt;p&gt;
+	Responsible person for documenting the metadata and context information:
+    {% render_set_value dataset 'project/dataset/metadata/responsible_person/name' %}&lt;/p&gt;
+&lt;p&gt;
+	Responsible person for the maintenance of the PIDs and the object maintenance:
+    {% render_set_value dataset 'project/dataset/pids/responsible_person/name' %}&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
@@ -1082,24 +1211,27 @@
 &lt;/p&gt;
 
 {% for dataset in datasets %}
-	&lt;p&gt;
-		&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/preservation/duration' %}
-	&lt;/p&gt;
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/preservation/duration' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
 	&lt;b&gt;What data will be preserved for the long-term?&lt;/b&gt;
 &lt;/p&gt;
 
-&lt;p&gt;{% render_value 'project/preservation/selection_criteria' %}&lt;/b&gt;
+&lt;p&gt;
+	{% render_value 'project/preservation/selection_criteria' %}
+&lt;/b&gt;
 
 &lt;p&gt;
 	&lt;b&gt;What transformations will be necessary to prepare data for preservation / data sharing?&lt;/b&gt;
 &lt;/p&gt;
 
 &lt;p&gt;
-	&lt;b&gt;What metadata/ documentation will be submitted alongside the data or created on deposit/ transformation in order to make the data reusable?&lt;/b&gt;
+	&lt;b&gt;What metadata / documentation will be submitted alongside the data
+    or created on deposit / transformation in order to make the data reusable?&lt;/b&gt;
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -1112,10 +1244,10 @@
 		<dc:comment>Source: http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf</dc:comment>
 		<title lang="en">Horizon 2020 FAIR Data Management Plan template</title>
 		<title lang="de">Horizon 2020 FAIR Data Management Plan template</title>
-		<help lang="en">Template for Horizon 2020, from &quot;Guidelines on
-FAIR Data Management in Horizon 2020&quot;, online: http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf</help>
-		<help lang="de">Vorlage für Horizon 2020, aus &quot;Guidelines on
-FAIR Data Management in Horizon 2020&quot;, Online: http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf</help>
+		<help lang="en">Template for Horizon 2020, from "Guidelines on
+FAIR Data Management in Horizon 2020", online: http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf</help>
+		<help lang="de">Vorlage für Horizon 2020, aus "Guidelines on
+FAIR Data Management in Horizon 2020", Online: http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf</help>
 		<template>{% load view_tags %}
 
 &lt;h1&gt;Horizon 2020&lt;/h1&gt;
@@ -1266,7 +1398,7 @@ FAIR Data Management in Horizon 2020&quot;, Online: http://ec.europa.eu/research
 &lt;/p&gt;
 {% for dataset in datasets %}
 &lt;p&gt;
-		&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; 
+		&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;
 		{% render_set_value dataset 'project/dataset/sharing/yesno' %}
 &lt;/p&gt;
 {% endfor %}
@@ -1276,7 +1408,7 @@ FAIR Data Management in Horizon 2020&quot;, Online: http://ec.europa.eu/research
 &lt;/p&gt;
 {% for dataset in datasets %}
 &lt;p&gt;
-		&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; 
+		&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;
 		{% render_set_value dataset 'project/dataset/preservation/repository' %}
 &lt;/p&gt;
 {% endfor %}
@@ -1320,7 +1452,7 @@ FAIR Data Management in Horizon 2020&quot;, Online: http://ec.europa.eu/research
 &lt;p&gt;
 		&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;
 		{% render_set_value dataset 'project/dataset/preservation/repository' %}
-		
+
 		{% get_set_values dataset 'project/dataset/preservation/certification' as certification %}
 		{% if certification.is_true %}
 		(certified)
@@ -1379,7 +1511,7 @@ FAIR Data Management in Horizon 2020&quot;, Online: http://ec.europa.eu/research
 {% for dataset in datasets %}
 &lt;p&gt;
 		&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;
-&lt;/p&gt;   
+&lt;/p&gt;
 &lt;ul&gt;
 		{% render_set_value_list dataset 'project/dataset/interoperability' %}
 &lt;/ul&gt;
@@ -1465,11 +1597,11 @@ FAIR Data Management in Horizon 2020&quot;, Online: http://ec.europa.eu/research
 		&lt;b&gt;What are the costs for making data FAIR in your project?&lt;/b&gt;
 &lt;/p&gt;
 &lt;p&gt;
-		Personnel: 
+		Personnel:
 		{% render_value 'project/costs/metadata/personnel' %}
 &lt;/p&gt;
 &lt;p&gt;
-		Other: 
+		Other:
 		{% render_value 'project/costs/metadata/non_personnel' %}
 &lt;/p&gt;
 
@@ -1487,7 +1619,7 @@ FAIR Data Management in Horizon 2020&quot;, Online: http://ec.europa.eu/research
 &lt;/p&gt;
 {% for partner in partners %}
 &lt;p&gt;
-		&lt;i&gt;Partner {{ partner.value }}:&lt;/i&gt; 
+		&lt;i&gt;Partner {{ partner.value }}:&lt;/i&gt;
 &lt;/p&gt;
 &lt;ul&gt;
 		{% render_set_value_list partner 'project/partner/contact_person/name' %}
@@ -1512,7 +1644,7 @@ FAIR Data Management in Horizon 2020&quot;, Online: http://ec.europa.eu/research
 		{% render_value 'project/costs/preservation/personnel' %}
 &lt;/p&gt;
 &lt;p&gt;
-		Other: 
+		Other:
 		{% render_value 'project/costs/preservation/non_personnel' %}
 &lt;/p&gt;
 
@@ -1601,10 +1733,13 @@ FAIR Data Management in Horizon 2020&quot;, Online: http://ec.europa.eu/research
 		<help lang="en">DMP of the SNF (Switzerland)</help>
 		<help lang="de">DMP für die SNF (Schweiz)</help>
 		<template>{% load view_tags %}
-{% get_set 'project/partner' as partners %}{% get_set 'project/dataset' as datasets %}
+
+{% get_set 'project/partner' as partners %}
+{% get_set 'project/dataset' as datasets %}
+
 &lt;h1&gt;Data Management Plan - SNF Formular&lt;/h1&gt;
 
-&lt;h2&gt; Allgemein &lt;/h2&gt;
+&lt;h2&gt;Allgemein&lt;/h2&gt;
 
 &lt;p&gt;
     &lt;b&gt;Welche Personen oder Institutionen sind verantwortlich für die Projektkoordination?&lt;/b&gt;
@@ -1612,72 +1747,80 @@ FAIR Data Management in Horizon 2020&quot;, Online: http://ec.europa.eu/research
 &lt;p&gt;{% render_value_inline_list 'project/coordination' %}&lt;/p&gt;
 
 &lt;p&gt;
-    &lt;b&gt;Gibt es an Ihrer Einrichtung Regeln oder Richtlinien zum Umgang mit den im Projekt erhobenen Forschungsdaten?
-        Wenn ja, skizzieren Sie diese kurz und verweisen Sie ggf. auf weiterführende Informationen. Geben Sie bitte auch an,
-        welchen Grad an Verbindlichkeit sie haben.
-        {% render_value 'project/additional_requirements/yesno' %}
-        {% render_value 'project/additional_requirements/requirements' %}
-        Wer ist bei diesem Partner der/die Ansprechpartner/in für das Datenmanagement?
-    &lt;/b&gt;
+    &lt;b&gt;Gibt es an Ihrer Einrichtung Regeln oder Richtlinien zum Umgang mit den im
+    Projekt erhobenen Forschungsdaten? Wenn ja, skizzieren Sie diese kurz und verweisen
+    Sie ggf. auf weiterführende Informationen. Geben Sie bitte auch an, welchen Grad an
+    Verbindlichkeit sie haben.&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	{% render_value 'project/additional_requirements/yesno' %}
+	{% render_value 'project/additional_requirements/requirements' %}
 &lt;/p&gt;
 
+&lt;p&gt;
+	&lt;b&gt;Wer ist bei diesem Partner der/die Ansprechpartner/in für das Datenmanagement?&lt;/b&gt;
+&lt;/p&gt;
 {% for partner in partners %}
 &lt;p&gt;
-    &lt;i&gt;{% render_set_value partner 'partner/name' %}:&lt;/i&gt;
-    Richtlinien: {% render_set_value partner 'partner/rdm_policy' %},
-    Ansprechpartner: {% render_set_value_inline_list partner 'partner/contact_person/name' %}&lt;/p&gt;
+    &lt;i&gt;{% render_set_value partner 'project/partner/name' %}:&lt;/i&gt;
+    Richtlinien: {% render_set_value partner 'project/partner/rdm_policy' %},
+    Ansprechpartner: {% render_set_value_inline_list partner 'project/partner/contact_person/name' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;h2&gt;1. Datenerhebung und -dokumentation&lt;/h2&gt;
 &lt;h3&gt;1.1. Welche Daten werden Sie erheben, beobachten, generieren oder wiederverwerten?&lt;/h3&gt;
-&lt;p&gt;
-    &lt;b&gt;1.1.1. Welche Art, welches Format und welches Volumen von Daten werden Sie erheben, beobachten, generieren oder weiterverwenden?&lt;/b&gt;
-&lt;/p&gt;
 
+&lt;p&gt;
+    &lt;b&gt;1.1.1. Welche Art, welches Format und welches Volumen von Daten werden Sie
+    erheben, beobachten, generieren oder weiterverwenden?&lt;/b&gt;
+&lt;/p&gt;
 {% for dataset in datasets %}
-    &lt;p&gt;
+&lt;p&gt;
         &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
         {% render_set_value dataset 'project/dataset/description' %};
         Format: {% render_set_value dataset 'project/dataset/format' %},
         Volumen: {% render_set_value dataset 'project/dataset/size/volume' %},
         Rate: {% render_set_value dataset 'project/dataset/rate' %}
-    &lt;/p&gt;
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
     &lt;b&gt;1.1.2. Welche bestehenden (eigene oder externe) Daten werden Sie weiterverarbeiten?&lt;/p&gt;
 &lt;/b&gt;
-
 {% for dataset in datasets %}
-    &lt;p&gt;
-        &lt;em&gt; Datensatz {% render_set_value dataset 'project/dataset/id' %}: &lt;/em&gt;
+&lt;p&gt;
+	&lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
     Datensatzerzeuger: {% render_set_value dataset 'project/dataset/creator/name' %},
     Verfügbar unter: {% render_set_value dataset 'project/dataset/uri' %}
-    &lt;/p&gt;
+&lt;/p&gt;
 {% endfor %}
 
 &lt;h3&gt;1.2 Wie werden die Daten erhoben, beobachtet oder generiert?&lt;/h3&gt;
 &lt;p&gt;
     &lt;b&gt;1.2.1. Welche Standards, Methoden oder Qualitätssicherungsverfahren werden Sie verwenden?&lt;/b&gt;
 &lt;/p&gt;
-
 {% for dataset in datasets %}
-    &lt;p&gt;
+&lt;p&gt;
         &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
-        Methoden: {% render_set_value dataset 'project/dataset/creation_methods' %}
-        Technologien: {% render_set_value dataset 'project/dataset/usage_technology' %}
-        Qualitätssicherungsverfahren: {% render_set_value dataset 'project/dataset/control_tools' %}
-        Korrektheit &amp;amp; Vollständigkeit: {% render_set_value dataset 'project/dataset/quality_assurance' %}
+        Methoden:
+        {% render_set_value dataset 'project/dataset/creation_methods' %}
+        Technologien:
+        {% render_set_value dataset 'project/dataset/usage_technology' %}
+        Qualitätssicherungsverfahren:
+        {% render_set_value dataset 'project/dataset/control_tools' %}
+        Korrektheit &amp;amp; Vollständigkeit:
+        {% render_set_value dataset 'project/dataset/quality_assurance' %}
         Datenintegration: {% render_set_value dataset 'project/dataset/integration' %}
+&lt;/p&gt;
 {% endfor %}
 
 &lt;p&gt;
     &lt;b&gt;1.2.2. Wie werden Sie ihre Daten verwalten, wie gestalten Sie Versionierungen?&lt;/p&gt;
 &lt;/b&gt;
-
 {% for dataset in datasets %}
-    &lt;p&gt;
-        &lt;em&gt; Datensatz {% render_set_value dataset 'project/dataset/id' %}: &lt;/em&gt;
+&lt;p&gt;
+	&lt;em&gt; Datensatz {% render_set_value dataset 'project/dataset/id' %}: &lt;/em&gt;
     Datenstruktur: {% render_set_value dataset 'project/dataset/structure' %}, {% render_set_value dataset 'project/storage/organisation_policy' %}
     Dateibenennung: {% render_set_value dataset 'project/dataset/storage/naming_policy' %}
     Versionierung: {% render_set_value dataset 'project/dataset/versioning_yesno' %}, {% render_set_value dataset 'project/dataset/versioning_strategy' %},
@@ -1706,14 +1849,20 @@ FAIR Data Management in Horizon 2020&quot;, Online: http://ec.europa.eu/research
 {% for dataset in datasets %}
     &lt;p&gt;
         &lt;em&gt; Datensatz {% render_set_value dataset 'project/dataset/id' %}: &lt;/em&gt;
-        Standards: {% render_set_value dataset 'project/dataset/metadata/standards' %}
-        Automatisch:{% render_set_value dataset 'project/dataset/metadata/creation_automatic' %}
-        Semi-automatisch:{% render_set_value dataset 'project/dataset/metadata/creation_semi_automatic' %}
-        Manuell:{% render_set_value dataset 'project/dataset/metadata/creation_manual' %}
-        Mappings: {% render_set_value dataset 'project/dataset/metadata/mappings' %}
+        Standards:
+        {% render_set_value dataset 'project/dataset/metadata/standards' %}
+        Automatisch:
+        {% render_set_value dataset 'project/dataset/metadata/creation_automatic' %}
+        Semi-automatisch:
+        {% render_set_value dataset 'project/dataset/metadata/creation_semi_automatic' %}
+        Manuell:
+        {% render_set_value dataset 'project/dataset/metadata/creation_manual' %}
+        Mappings:
+        {% render_set_value dataset 'project/dataset/metadata/mappings' %}
     &lt;/p&gt;
     &lt;p&gt;
-        Verantwortlicher für Richtigkeit: {% render_set_value_inline_list dataset 'project/dataset/metadata/responsible_person/name' %}
+        Verantwortlicher für Richtigkeit:
+        {% render_set_value_inline_list dataset 'project/dataset/metadata/responsible_person/name' %}
     &lt;/p&gt;
 {% endfor %}
 
@@ -1732,7 +1881,7 @@ FAIR Data Management in Horizon 2020&quot;, Online: http://ec.europa.eu/research
 {% endfor %}
 
 &lt;p&gt;
-    Rechtliche Situation verschiedener Länder: {% render_value 'legal_aspects/international_yesno' %}
+    Rechtliche Situation verschiedener Länder: {% render_value 'project/legal_aspects/international_yesno' %}
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -1842,7 +1991,7 @@ FAIR Data Management in Horizon 2020&quot;, Online: http://ec.europa.eu/research
 &lt;h2&gt; 3. Datenspeicherung und Datenerhalt&lt;/h2&gt;
 &lt;h3&gt;3.1. Wie werden Ihre Daten während der Forschungsarbeit gespeichert und gesichert?&lt;/h3&gt;
 &lt;p&gt;
-    &lt;b&gt;3.1.1. Über welche Speicherkapazitäten verfügen Sie und wo werden die Daten gespeichert?&lt;/bs&gt;
+    &lt;b&gt;3.1.1. Über welche Speicherkapazitäten verfügen Sie und wo werden die Daten gespeichert?&lt;/b&gt;
 &lt;/p&gt;
 
 {% for dataset in datasets %}
