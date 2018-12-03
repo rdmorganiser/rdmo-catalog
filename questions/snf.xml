@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" ?>
 <rdmo xmlns:dc="http://purl.org/dc/elements/1.1/">
 	<catalog dc:uri="https://rdmorganiser.github.io/terms/questions/snf">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -18,25 +18,17 @@
 		<title lang="en">General</title>
 		<title lang="de">Allgemein</title>
 	</section>
-	<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners-name">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>project-partners</key>
-		<path>snf/general/project-partners</path>
-		<dc:comment/>
-		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general"/>
-		<order>2</order>
-		<title lang="en">Project partners</title>
-		<title lang="de">Projektpartner</title>
-	</subsection>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners/name">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>name</key>
-		<path>snf/general/project-partners/name</path>
+		<key>project-partners-name</key>
+		<path>snf/general/project-partners-name</path>
 		<dc:comment/>
 		<attribute/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general"/>
 		<is_collection>False</is_collection>
-		<order>0</order>
+		<order>20</order>
+		<title lang="en">Project coordination</title>
+		<title lang="de">Projektkoordination</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en"/>
@@ -45,13 +37,13 @@
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners/name/name">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners-name/name">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>name</key>
-		<path>snf/general/project-partners/name/name</path>
+		<path>snf/general/project-partners-name/name</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/name"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners/name"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners-name"/>
 		<is_collection>True</is_collection>
 		<order>0</order>
 		<help lang="en"/>
@@ -71,15 +63,17 @@
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners/partner">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners-partner">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>partner</key>
-		<path>snf/general/project-partners/partner</path>
+		<key>project-partners-partner</key>
+		<path>snf/general/project-partners-partner</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner"/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general"/>
 		<is_collection>True</is_collection>
-		<order>1</order>
+		<order>21</order>
+		<title lang="en">Project partners</title>
+		<title lang="de">Projektpartner</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en">project partner</verbose_name>
@@ -88,13 +82,13 @@
 		<verbose_name_plural lang="de">Projektpartner</verbose_name_plural>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners/partner/name">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners-partner/name">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>name</key>
-		<path>snf/general/project-partners/partner/name</path>
+		<path>snf/general/project-partners-partner/name</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/name"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners/partner"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners-partner"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<help lang="en"/>
@@ -114,18 +108,18 @@
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners/partner/rdm_policy">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners-partner/rdm_policy">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>rdm_policy</key>
-		<path>snf/general/project-partners/partner/rdm_policy</path>
+		<path>snf/general/project-partners-partner/rdm_policy</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/rdm_policy"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners/partner"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners-partner"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en">More and more universities and scientific institutions adopt research data management policies. These contain, among other things, recommendations and / or demands concerning the handling of research data by researchers of the institution. 
- &lt;a href="https://data.uni-bielefeld.de/en/policy" target=_blank"&gt;Principles and guidelines on handling research data at Bielefeld University&lt;/a&gt; or the &lt;a href="http://www.uni-goettingen.de/en/488918.html" target=_blank"&gt;Research data policy of the Georg-August University Goettingen&lt;/a&gt;.</help>
-		<help lang="de">Immer mehr Hochschulen und wissenschaftliche Einrichtungen verabschieden Leitlinien oder Richtlinien (oft auch als „Policies“ bezeichnet) zum Forschungsdatenmanagement. Diese enthalten unter anderem Empfehlungen und/oder Vorgaben zum Umgang mit Forschungsdaten, die die Wissenschaftlerinnen und Wissenschaftler der Einrichtung beachten sollten oder müssen (je nach Grad der Verbindlichkeit). Beispiele für solche Richtlinien sind die &lt;a href="https://data.uni-bielefeld.de/de/policy" target=_blank"&gt;Grundsätze zu Forschungsdaten&lt;/a&gt; der Universität Bielefeld oder die &lt;a href="http://www.uni-goettingen.de/de/01-juli-2014-forschungsdaten-leitlinie-der-universitaet-goettingen-einschl-umg/488918.html" target=_blank"&gt;Leitlinien zum Umgang mit Forschungsdaten&lt;/a&gt; der Georg-August-Universität Göttingen.</help>
+ &lt;a href=&quot;https://data.uni-bielefeld.de/en/policy&quot; target=_blank&quot;&gt;Principles and guidelines on handling research data at Bielefeld University&lt;/a&gt; or the &lt;a href=&quot;http://www.uni-goettingen.de/en/488918.html&quot; target=_blank&quot;&gt;Research data policy of the Georg-August University Goettingen&lt;/a&gt;.</help>
+		<help lang="de">Immer mehr Hochschulen und wissenschaftliche Einrichtungen verabschieden Leitlinien oder Richtlinien (oft auch als „Policies“ bezeichnet) zum Forschungsdatenmanagement. Diese enthalten unter anderem Empfehlungen und/oder Vorgaben zum Umgang mit Forschungsdaten, die die Wissenschaftlerinnen und Wissenschaftler der Einrichtung beachten sollten oder müssen (je nach Grad der Verbindlichkeit). Beispiele für solche Richtlinien sind die &lt;a href=&quot;https://data.uni-bielefeld.de/de/policy&quot; target=_blank&quot;&gt;Grundsätze zu Forschungsdaten&lt;/a&gt; der Universität Bielefeld oder die &lt;a href=&quot;http://www.uni-goettingen.de/de/01-juli-2014-forschungsdaten-leitlinie-der-universitaet-goettingen-einschl-umg/488918.html&quot; target=_blank&quot;&gt;Leitlinien zum Umgang mit Forschungsdaten&lt;/a&gt; der Georg-August-Universität Göttingen.</help>
 		<text lang="en">Does your institution have rules or guidelines for the handling of research data? If yes, please briefly outline them and refer to more detailed sources of information if necessary. Please also indicate, if the rules / guidelines are mandatory or optional.</text>
 		<text lang="de">Gibt es an Ihrer Einrichtung Regeln oder Richtlinien zum Umgang mit den im Projekt erhobenen Forschungsdaten? Wenn ja, skizzieren Sie diese kurz und verweisen Sie ggf. auf weiterführende Informationen. Geben Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</text>
 		<verbose_name lang="en"/>
@@ -141,13 +135,13 @@
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners/partner/contact">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners-partner/contact">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>contact</key>
-		<path>snf/general/project-partners/partner/contact</path>
+		<path>snf/general/project-partners-partner/contact</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/contact_person/name"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners/partner"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/general/project-partners-partner"/>
 		<is_collection>True</is_collection>
 		<order>3</order>
 		<help lang="en">Please give the name and an email address.</help>
@@ -178,25 +172,17 @@ an.</help>
 		<title lang="en">Data collection and documentation</title>
 		<title lang="de">Datenerhebung und -dokumentation</title>
 	</section>
-	<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data-dataset">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>data</key>
-		<path>snf/content-classification/data</path>
-		<dc:comment/>
-		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification"/>
-		<order>0</order>
-		<title lang="en">Data</title>
-		<title lang="de">Daten</title>
-	</subsection>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data/dataset">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>dataset</key>
-		<path>snf/content-classification/data/dataset</path>
+		<key>data-dataset</key>
+		<path>snf/content-classification/data-dataset</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification"/>
 		<is_collection>True</is_collection>
 		<order>0</order>
+		<title lang="en">Data set</title>
+		<title lang="de">Datensatz</title>
 		<help lang="en">The following questions collect information on the data that is produced or used in the project. They also help to estimate the value of the data in terms of potential re-use and long-term preservation. 
 
 Before data is newly created, it is advisable to check if there is existing data that could be re-used. This way, redundant collection or creation of research data is prevented. This saves efforts and costs. Also, there shall be collected no more information than necessary.
@@ -213,13 +199,13 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data/dataset/description">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data-dataset/description">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>description</key>
-		<path>snf/content-classification/data/dataset/description</path>
+		<path>snf/content-classification/data-dataset/description</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/description"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data/dataset"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data-dataset"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en">Please briefly describe the data type and / or the method used to create or collect the data, for example:   
@@ -247,15 +233,17 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data/existing_data">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data-existing_data">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>existing_data</key>
-		<path>snf/content-classification/data/existing_data</path>
+		<key>data-existing_data</key>
+		<path>snf/content-classification/data-existing_data</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification"/>
 		<is_collection>True</is_collection>
 		<order>1</order>
+		<title lang="en">Data origin</title>
+		<title lang="de">Datenursprung</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
@@ -264,13 +252,13 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data/existing_data/origin">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data-existing_data/origin">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>origin</key>
-		<path>snf/content-classification/data/existing_data/origin</path>
+		<path>snf/content-classification/data-existing_data/origin</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data/existing_data"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data-existing_data"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en"/>
@@ -292,13 +280,13 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data/existing_data/creator_name">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data-existing_data/creator_name">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>creator_name</key>
-		<path>snf/content-classification/data/existing_data/creator_name</path>
+		<path>snf/content-classification/data-existing_data/creator_name</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator/name"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data/existing_data"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data-existing_data"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en"/>
@@ -318,13 +306,13 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data/existing_data/uri">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data-existing_data/uri">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>uri</key>
-		<path>snf/content-classification/data/existing_data/uri</path>
+		<path>snf/content-classification/data-existing_data/uri</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/uri"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data/existing_data"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data-existing_data"/>
 		<is_collection>False</is_collection>
 		<order>3</order>
 		<help lang="en"/>
@@ -344,15 +332,17 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data/volume">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data-volume">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>volume</key>
-		<path>snf/content-classification/data/volume</path>
+		<key>data-volume</key>
+		<path>snf/content-classification/data-volume</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification"/>
 		<is_collection>True</is_collection>
 		<order>3</order>
+		<title lang="en">Data size</title>
+		<title lang="de">Datengröße</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
@@ -361,13 +351,13 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data/volume/volume">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data-volume/volume">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>volume</key>
-		<path>snf/content-classification/data/volume/volume</path>
+		<path>snf/content-classification/data-volume/volume</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/size/volume"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data/volume"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data-volume"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en"/>
@@ -389,13 +379,13 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data/volume/rate">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data-volume/rate">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>rate</key>
-		<path>snf/content-classification/data/volume/rate</path>
+		<path>snf/content-classification/data-volume/rate</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/rate"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data/volume"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data-volume"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en">Optional. This is only of concern if the data production rate reaches TB scale.</help>
@@ -415,15 +405,17 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data/formats">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data-formats">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>formats</key>
-		<path>snf/content-classification/data/formats</path>
+		<key>data-formats</key>
+		<path>snf/content-classification/data-formats</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification"/>
 		<is_collection>True</is_collection>
 		<order>4</order>
+		<title lang="en">Formats</title>
+		<title lang="de">Formate</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
@@ -432,17 +424,17 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data/formats/format">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data-formats/format">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>format</key>
-		<path>snf/content-classification/data/formats/format</path>
+		<path>snf/content-classification/data-formats/format</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/format"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data/formats"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/data-formats"/>
 		<is_collection>False</is_collection>
 		<order>4</order>
-		<help lang="en">When choosing a data format, one should consider the consequences for collaborative use, long-term preservation as well as re-use. It is advisable to prefer formats that are standardised, open, non-proprietary and well-established in the respective scholarly community. More criteria and detailed explanations can be found e.g. in the &lt;a href="http://www.wissgrid.de/publikationen/Leitfaden_Data-Management-WissGrid.pdf" target=_blank"&gt;WissGrid-Leitfaden, pp. 22 f.&lt;/a&gt;).</help>
-		<help lang="de">Bei der Wahl des Dateiformates sollten auch die Konsequenzen für die kollaborative Nutzung, die Langzeitarchivierung sowie die Nachnutzung beachtet werden. Es empfiehlt sich, möglichst standardisierte, nicht-proprietäre und allgemein bzw. in der spezifischen Community verbreitete Formate zu nutzen. Weitere Kriterien sowie detaillierte Erläuterungen sind z.B. im &lt;a href="http://www.wissgrid.de/publikationen/Leitfaden_Data-Management-WissGrid.pdf" target=_blank"&gt;WissGrid-Leitfaden, S. 22 f.&lt;/a&gt;) zu finden.</help>
+		<help lang="en">When choosing a data format, one should consider the consequences for collaborative use, long-term preservation as well as re-use. It is advisable to prefer formats that are standardised, open, non-proprietary and well-established in the respective scholarly community. More criteria and detailed explanations can be found e.g. in the &lt;a href=&quot;http://www.wissgrid.de/publikationen/Leitfaden_Data-Management-WissGrid.pdf&quot; target=_blank&quot;&gt;WissGrid-Leitfaden, pp. 22 f.&lt;/a&gt;).</help>
+		<help lang="de">Bei der Wahl des Dateiformates sollten auch die Konsequenzen für die kollaborative Nutzung, die Langzeitarchivierung sowie die Nachnutzung beachtet werden. Es empfiehlt sich, möglichst standardisierte, nicht-proprietäre und allgemein bzw. in der spezifischen Community verbreitete Formate zu nutzen. Weitere Kriterien sowie detaillierte Erläuterungen sind z.B. im &lt;a href=&quot;http://www.wissgrid.de/publikationen/Leitfaden_Data-Management-WissGrid.pdf&quot; target=_blank&quot;&gt;WissGrid-Leitfaden, S. 22 f.&lt;/a&gt;) zu finden.</help>
 		<text lang="en">Which file formats are used?</text>
 		<text lang="de">In welchen Formaten liegen die Daten vor?</text>
 		<verbose_name lang="en"/>
@@ -458,25 +450,17 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<optionsets/>
 		<conditions/>
 	</question>
-	<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-tools">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>technical</key>
-		<path>snf/content-classification/technical</path>
-		<dc:comment/>
-		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification"/>
-		<order>1</order>
-		<title lang="en">Way of data collection</title>
-		<title lang="de">Art der Erhebung</title>
-	</subsection>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/tools">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>tools</key>
-		<path>snf/content-classification/technical/tools</path>
+		<key>technical-tools</key>
+		<path>snf/content-classification/technical-tools</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification"/>
 		<is_collection>True</is_collection>
-		<order>0</order>
+		<order>10</order>
+		<title lang="en">Way of data collection</title>
+		<title lang="de">Art der Erhebung</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
@@ -485,13 +469,13 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/tools/creation_methods">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-tools/creation_methods">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>creation_methods</key>
-		<path>snf/content-classification/technical/tools/creation_methods</path>
+		<path>snf/content-classification/technical-tools/creation_methods</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creation_methods"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/tools"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-tools"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en">This information is necessary to be able to reconstruct the process by which the data was generated. It is also a prerequisite to judge the objectivity, reliability and validity of the dataset.  
@@ -512,13 +496,13 @@ For reproducible data, it is also required to re-generate the data if need be.</
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/tools/usage_technology">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-tools/usage_technology">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>usage_technology</key>
-		<path>snf/content-classification/technical/tools/usage_technology</path>
+		<path>snf/content-classification/technical-tools/usage_technology</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_technology"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/tools"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-tools"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en">To be able to re-use data (e.g. to replicate studies, for meta analysis or to solve new research questions), along with the data the software, equipment and knowledge about special methods to use the data are required . 
@@ -540,13 +524,13 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/tools/documentation">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-tools/documentation">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>documentation</key>
-		<path>snf/content-classification/technical/tools/documentation</path>
+		<path>snf/content-classification/technical-tools/documentation</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/software_documentation"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/tools"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-tools"/>
 		<is_collection>False</is_collection>
 		<order>3</order>
 		<help lang="en"/>
@@ -566,13 +550,13 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/tools/control_tools">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-tools/control_tools">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>control_tools</key>
-		<path>snf/content-classification/technical/tools/control_tools</path>
+		<path>snf/content-classification/technical-tools/control_tools</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/control_tool"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/tools"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-tools"/>
 		<is_collection>True</is_collection>
 		<order>4</order>
 		<help lang="en"/>
@@ -594,15 +578,17 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		</optionsets>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/versioning">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-versioning">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>versioning</key>
-		<path>snf/content-classification/technical/versioning</path>
+		<key>technical-versioning</key>
+		<path>snf/content-classification/technical-versioning</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification"/>
 		<is_collection>True</is_collection>
-		<order>1</order>
+		<order>11</order>
+		<title lang="en">Versioning</title>
+		<title lang="de">Versionierung</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
@@ -611,13 +597,13 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/versioning/yesno">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-versioning/yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>yesno</key>
-		<path>snf/content-classification/technical/versioning/yesno</path>
+		<path>snf/content-classification/technical-versioning/yesno</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/versioning_yesno"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/versioning"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-versioning"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en"/>
@@ -637,13 +623,13 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/versioning/strategy">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-versioning/strategy">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>strategy</key>
-		<path>snf/content-classification/technical/versioning/strategy</path>
+		<path>snf/content-classification/technical-versioning/strategy</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/versioning_strategy"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/versioning"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-versioning"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en">Please briefly describe the project-internal regulations for the versioning of data sets (e.g.: What kind of changes require a new version? How are changes documented? What are the naming rules for different versions?)</help>
@@ -663,13 +649,13 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/versioning/tool">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-versioning/tool">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>tool</key>
-		<path>snf/content-classification/technical/versioning/tool</path>
+		<path>snf/content-classification/technical-versioning/tool</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/versioning_tool"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/versioning"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-versioning"/>
 		<is_collection>False</is_collection>
 		<order>3</order>
 		<help lang="en"/>
@@ -691,15 +677,17 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		</optionsets>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/yesno">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>yesno</key>
-		<path>snf/content-classification/technical/yesno</path>
+		<key>technical-yesno</key>
+		<path>snf/content-classification/technical-yesno</path>
 		<dc:comment/>
 		<attribute/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification"/>
 		<is_collection>False</is_collection>
-		<order>2</order>
+		<order>12</order>
+		<title lang="en">Other requirements I</title>
+		<title lang="de">Weitere Anforderungen I</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en"/>
@@ -708,28 +696,28 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/yesno/yesno">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-yesno/yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>yesno</key>
-		<path>snf/content-classification/technical/yesno/yesno</path>
+		<path>snf/content-classification/technical-yesno/yesno</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/yesno"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/yesno"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-yesno"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<help lang="en">Examples of discipline-specific requirements are: 
 
-- &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/guidelines_biodiversity_research.pdf" target=_blank"&gt;Guidelines on the Handling of Research Data in Biodiversity Research&lt;/a&gt;
-- &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_bildungsforschung.pdf" target=_blank"&gt;Guidelines for the provision and use of quantitative data in education research (German)&lt;/a&gt;
-- &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/foerderkriterien_editionen_literaturwissenschaft.pdf" target=_blank"&gt;Elegibility criteria for funding for scholarly editions in the literary studies (German)&lt;/a&gt;
-- Recommendations on &lt;a href="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_sprachkorpora.pdf" target=_blank"&gt;data standards and tools&lt;/a&gt; as well as &lt;a href="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf" target=_blank"&gt;legal aspects&lt;/a&gt; associated with language corpora (German)</help>
+- &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/guidelines_biodiversity_research.pdf&quot; target=_blank&quot;&gt;Guidelines on the Handling of Research Data in Biodiversity Research&lt;/a&gt;
+- &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_bildungsforschung.pdf&quot; target=_blank&quot;&gt;Guidelines for the provision and use of quantitative data in education research (German)&lt;/a&gt;
+- &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/foerderkriterien_editionen_literaturwissenschaft.pdf&quot; target=_blank&quot;&gt;Elegibility criteria for funding for scholarly editions in the literary studies (German)&lt;/a&gt;
+- Recommendations on &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_sprachkorpora.pdf&quot; target=_blank&quot;&gt;data standards and tools&lt;/a&gt; as well as &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=_blank&quot;&gt;legal aspects&lt;/a&gt; associated with language corpora (German)</help>
 		<help lang="de">Beispiele für fachspezifische Empfehlungen und Richtlinien sind: 
 
-- &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_biodiversitaetsforschung.pdf" target=_blank"&gt;Richtlinien zum Umgang mit Forschungsdaten in der Biodiversitätsforschung&lt;/a&gt;
-- Empfehlungen zur &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_bildungsforschung.pdf" target=_blank"&gt;Bereitstellung und Nutzung quantitativer Daten in der Bildungsforschung&lt;/a&gt;
-- &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/foerderkriterien_editionen_literaturwissenschaft.pdf" target=_blank"&gt;Förderkriterien für wissenschaftliche Editionen in der Literaturwissenschaft&lt;/a&gt;
-- Empfehlungen zu &lt;a href="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_sprachkorpora.pdf" target=_blank"&gt;datentechnischen Standards und Tools&lt;/a&gt; sowie zu 
-- &lt;a href="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf" target=_blank"&gt;rechtlichen Fragen&lt;/a&gt; bei der Erhebung von Sprachkorpora</help>
+- &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_biodiversitaetsforschung.pdf&quot; target=_blank&quot;&gt;Richtlinien zum Umgang mit Forschungsdaten in der Biodiversitätsforschung&lt;/a&gt;
+- Empfehlungen zur &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_bildungsforschung.pdf&quot; target=_blank&quot;&gt;Bereitstellung und Nutzung quantitativer Daten in der Bildungsforschung&lt;/a&gt;
+- &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/foerderkriterien_editionen_literaturwissenschaft.pdf&quot; target=_blank&quot;&gt;Förderkriterien für wissenschaftliche Editionen in der Literaturwissenschaft&lt;/a&gt;
+- Empfehlungen zu &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_sprachkorpora.pdf&quot; target=_blank&quot;&gt;datentechnischen Standards und Tools&lt;/a&gt; sowie zu 
+- &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=_blank&quot;&gt;rechtlichen Fragen&lt;/a&gt; bei der Erhebung von Sprachkorpora</help>
 		<text lang="en">Are there requirements regarding the data management from other parties  (e.g. the scholarly/scientific community)?</text>
 		<text lang="de">Gibt es von weiteren Seiten (z. B. von der Fachcommunity) Anforderungen an das Datenmanagement, die beachtet werden müssen?</text>
 		<verbose_name lang="en"/>
@@ -747,15 +735,17 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		</optionsets>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/requirements">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-requirements">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>requirements</key>
-		<path>snf/content-classification/technical/requirements</path>
+		<key>technical-requirements</key>
+		<path>snf/content-classification/technical-requirements</path>
 		<dc:comment/>
 		<attribute/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification"/>
 		<is_collection>False</is_collection>
-		<order>3</order>
+		<order>13</order>
+		<title lang="en">Other requirements II</title>
+		<title lang="de">Weitere Anforderungen II</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en"/>
@@ -766,13 +756,13 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/additional_rdm_policy"/>
 		</conditions>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/requirements/requirements">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-requirements/requirements">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>requirements</key>
-		<path>snf/content-classification/technical/requirements/requirements</path>
+		<path>snf/content-classification/technical-requirements/requirements</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/requirements"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/requirements"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-requirements"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<help lang="en">Please briefly outline them and refer to more detailed sources of information if necessary. Please also indicate, if the rules / guidelines are mandatory or optional.</help>
@@ -792,16 +782,18 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/integration">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-integration">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>integration</key>
-		<path>snf/content-classification/technical/integration</path>
+		<key>technical-integration</key>
+		<path>snf/content-classification/technical-integration</path>
 		<dc:comment>the stipulation that re-used and created data are of the same type (= and thus capable to be integrated) is problematic, since this implies properties of the  data that are not a given. May be this shoud be reformulated to : Is the connection between 
 re-used and created data ensures (which goes into the provenance realm)</dc:comment>
 		<attribute/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification"/>
 		<is_collection>False</is_collection>
-		<order>4</order>
+		<order>14</order>
+		<title lang="en">Data integration</title>
+		<title lang="de">Datenintegration</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en"/>
@@ -810,14 +802,14 @@ re-used and created data ensures (which goes into the provenance realm)</dc:comm
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/integration/integration">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-integration/integration">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>integration</key>
-		<path>snf/content-classification/technical/integration/integration</path>
+		<path>snf/content-classification/technical-integration/integration</path>
 		<dc:comment>the stipulation that re-used and created data are of the same type (= and thus capable to be integrated) is problematic, since this implies properties of the  data that are not a given. May be this shoud be reformulated to : Is the connection between 
 re-used and created data ensures (which goes into the provenance realm)</dc:comment>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/integration"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/integration"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-integration"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<help lang="en"/>
@@ -837,15 +829,17 @@ re-used and created data ensures (which goes into the provenance realm)</dc:comm
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/structure">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-structure">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>structure</key>
-		<path>snf/content-classification/technical/structure</path>
+		<key>technical-structure</key>
+		<path>snf/content-classification/technical-structure</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification"/>
 		<is_collection>True</is_collection>
-		<order>5</order>
+		<order>15</order>
+		<title lang="en">Data structure</title>
+		<title lang="de">Datenstruktur</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
@@ -854,13 +848,13 @@ re-used and created data ensures (which goes into the provenance realm)</dc:comm
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/structure/structure">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-structure/structure">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>structure</key>
-		<path>snf/content-classification/technical/structure/structure</path>
+		<path>snf/content-classification/technical-structure/structure</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/structure"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical/structure"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-structure"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<help lang="en"/>
@@ -880,25 +874,17 @@ re-used and created data ensures (which goes into the provenance realm)</dc:comm
 		<optionsets/>
 		<conditions/>
 	</question>
-	<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-dataset">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>metadata</key>
-		<path>snf/content-classification/metadata</path>
-		<dc:comment/>
-		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification"/>
-		<order>2</order>
-		<title lang="en">Metadata</title>
-		<title lang="de">Metadaten</title>
-	</subsection>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/dataset">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>dataset</key>
-		<path>snf/content-classification/metadata/dataset</path>
+		<key>metadata-dataset</key>
+		<path>snf/content-classification/metadata-dataset</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification"/>
 		<is_collection>True</is_collection>
-		<order>0</order>
+		<order>20</order>
+		<title lang="en">Metadata</title>
+		<title lang="de">Metadaten</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
@@ -907,13 +893,13 @@ re-used and created data ensures (which goes into the provenance realm)</dc:comm
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/dataset/scope">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-dataset/scope">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>scope</key>
-		<path>snf/content-classification/metadata/dataset/scope</path>
+		<path>snf/content-classification/metadata-dataset/scope</path>
 		<dc:comment>probably we should introduce  a separate question for  being  findable and re-used</dc:comment>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/scope"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/dataset"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-dataset"/>
 		<is_collection>True</is_collection>
 		<order>0</order>
 		<help lang="en"/>
@@ -935,13 +921,13 @@ re-used and created data ensures (which goes into the provenance realm)</dc:comm
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/dataset/standards">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-dataset/standards">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>standards</key>
-		<path>snf/content-classification/metadata/dataset/standards</path>
+		<path>snf/content-classification/metadata-dataset/standards</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/standards"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/dataset"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-dataset"/>
 		<is_collection>True</is_collection>
 		<order>1</order>
 		<help lang="en"/>
@@ -963,13 +949,13 @@ re-used and created data ensures (which goes into the provenance realm)</dc:comm
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/dataset/mappings">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-dataset/mappings">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>mappings</key>
-		<path>snf/content-classification/metadata/dataset/mappings</path>
+		<path>snf/content-classification/metadata-dataset/mappings</path>
 		<dc:comment>original H2020 question</dc:comment>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/mappings"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/dataset"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-dataset"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en">This information is needed for a Horizon 2020 data management plan.</help>
@@ -989,13 +975,13 @@ re-used and created data ensures (which goes into the provenance realm)</dc:comm
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/dataset/creation_automatic">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-dataset/creation_automatic">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>creation_automatic</key>
-		<path>snf/content-classification/metadata/dataset/creation_automatic</path>
+		<path>snf/content-classification/metadata-dataset/creation_automatic</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/creation_automatic"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/dataset"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-dataset"/>
 		<is_collection>False</is_collection>
 		<order>3</order>
 		<help lang="en"/>
@@ -1015,13 +1001,13 @@ re-used and created data ensures (which goes into the provenance realm)</dc:comm
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/dataset/creation_semi_automatic">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-dataset/creation_semi_automatic">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>creation_semi_automatic</key>
-		<path>snf/content-classification/metadata/dataset/creation_semi_automatic</path>
+		<path>snf/content-classification/metadata-dataset/creation_semi_automatic</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/creation_semi_automatic"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/dataset"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-dataset"/>
 		<is_collection>False</is_collection>
 		<order>4</order>
 		<help lang="en"/>
@@ -1041,13 +1027,13 @@ re-used and created data ensures (which goes into the provenance realm)</dc:comm
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/dataset/creation_manual">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-dataset/creation_manual">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>creation_manual</key>
-		<path>snf/content-classification/metadata/dataset/creation_manual</path>
+		<path>snf/content-classification/metadata-dataset/creation_manual</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/creation_manual"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/dataset"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-dataset"/>
 		<is_collection>False</is_collection>
 		<order>5</order>
 		<help lang="en"/>
@@ -1067,13 +1053,13 @@ re-used and created data ensures (which goes into the provenance realm)</dc:comm
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/dataset/quality_assurance">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-dataset/quality_assurance">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>quality_assurance</key>
-		<path>snf/content-classification/metadata/dataset/quality_assurance</path>
+		<path>snf/content-classification/metadata-dataset/quality_assurance</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/quality_assurance"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/dataset"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-dataset"/>
 		<is_collection>True</is_collection>
 		<order>6</order>
 		<help lang="en"/>
@@ -1095,13 +1081,13 @@ re-used and created data ensures (which goes into the provenance realm)</dc:comm
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/dataset/responsible_person">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-dataset/responsible_person">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>responsible_person</key>
-		<path>snf/content-classification/metadata/dataset/responsible_person</path>
+		<path>snf/content-classification/metadata-dataset/responsible_person</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/responsible_person/name"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/dataset"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-dataset"/>
 		<is_collection>True</is_collection>
 		<order>7</order>
 		<help lang="en"/>
@@ -1121,13 +1107,13 @@ re-used and created data ensures (which goes into the provenance realm)</dc:comm
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/dataset/public">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-dataset/public">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>public</key>
-		<path>snf/content-classification/metadata/dataset/public</path>
+		<path>snf/content-classification/metadata-dataset/public</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/public"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/dataset"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-dataset"/>
 		<is_collection>False</is_collection>
 		<order>8</order>
 		<help lang="en"/>
@@ -1147,34 +1133,36 @@ re-used and created data ensures (which goes into the provenance realm)</dc:comm
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/pids">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-pids">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>pids</key>
-		<path>snf/content-classification/metadata/pids</path>
+		<key>metadata-pids</key>
+		<path>snf/content-classification/metadata-pids</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification"/>
 		<is_collection>True</is_collection>
-		<order>1</order>
-		<help lang="en">The purpose of Persistent Identifiers (PIDs) is to ensure the permanent reference of (in particular) digital objects like online publications and research data. When traditional hyperlinks are used as reference, they point directly to the storage location of the data. The problem is, that if the storage location is changed, the link will not work anymore. A PID serves as an intermediate from which requests are directed to the current object location (this is called "resolving" of a PID). The PID stays the same, even if the storage location changes. While a mere hyperlink in this case would lead to nowhere, via the PID the object is still accessible. 
+		<order>21</order>
+		<title lang="en">Persistent Identifiers (PIDs)</title>
+		<title lang="de">Persistente Identifikatoren (PIDs)</title>
+		<help lang="en">The purpose of Persistent Identifiers (PIDs) is to ensure the permanent reference of (in particular) digital objects like online publications and research data. When traditional hyperlinks are used as reference, they point directly to the storage location of the data. The problem is, that if the storage location is changed, the link will not work anymore. A PID serves as an intermediate from which requests are directed to the current object location (this is called &quot;resolving&quot; of a PID). The PID stays the same, even if the storage location changes. While a mere hyperlink in this case would lead to nowhere, via the PID the object is still accessible. 
 
-You can find more information about the mode of operation, usage and different kinds of PIDs in e.g. an &lt;a href="http://training.dasish.eu/training/3/" target=_blank"&gt;online tutorial&lt;/a&gt; created by the DASISH project or in the &lt;a href="http://www.ands.org.au/guides#identify" target=_blank"&gt;information material of the Australian National Data Service (ANDS)&lt;/a&gt; (scroll down to "Identifying data and researchers").</help>
+You can find more information about the mode of operation, usage and different kinds of PIDs in e.g. an &lt;a href=&quot;http://training.dasish.eu/training/3/&quot; target=_blank&quot;&gt;online tutorial&lt;/a&gt; created by the DASISH project or in the &lt;a href=&quot;http://www.ands.org.au/guides#identify&quot; target=_blank&quot;&gt;information material of the Australian National Data Service (ANDS)&lt;/a&gt; (scroll down to &quot;Identifying data and researchers&quot;).</help>
 		<help lang="de">Persistente Identifikatoren (PIDs) sollen die dauerhafte Referenzierung von (insbesondere) digitalen Objekten wie Publikationen oder Forschungsdaten ermöglichen. Statt, wie i.d.R. bei der Angabe eines Hyperlinks als Referenz der Fall, direkt auf den Speicherort des Objektes zu verweisen, fungiert die PID als eine Zwischeninstanz, von der aus zum Objekt weitergeleitet wird (dies nennt man „Auflösen“ der PID). Die PID bleibt gleich, auch wenn der Speicherort des Objektes sich ändert. Während ein Hyperlink in diesem Fall ins Nichts führen würde, ist das Objekt über die PID weiterhin erreichbar.
 
-Mehr Informationen zur Funktionsweise, Verwendung und verschiedenen Arten von PIDs gibt es z.B. in einem vom Projekt DASISH erstellten &lt;a href="http://training.dasish.eu/training/3/" target=_blank"&gt;Online-Tutorial&lt;/a&gt; oder in den &lt;a href="http://www.ands.org.au/guides#identify" target=_blank"&gt;Informationsmaterialien des Australian National Data Service (ANDS)&lt;/a&gt; (nach unten scrollen zu "Identifying data and researchers").</help>
+Mehr Informationen zur Funktionsweise, Verwendung und verschiedenen Arten von PIDs gibt es z.B. in einem vom Projekt DASISH erstellten &lt;a href=&quot;http://training.dasish.eu/training/3/&quot; target=_blank&quot;&gt;Online-Tutorial&lt;/a&gt; oder in den &lt;a href=&quot;http://www.ands.org.au/guides#identify&quot; target=_blank&quot;&gt;Informationsmaterialien des Australian National Data Service (ANDS)&lt;/a&gt; (nach unten scrollen zu &quot;Identifying data and researchers&quot;).</help>
 		<verbose_name lang="en">dataset</verbose_name>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/pids/yesno">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-pids/yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>yesno</key>
-		<path>snf/content-classification/metadata/pids/yesno</path>
+		<path>snf/content-classification/metadata-pids/yesno</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/pids/yesno"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/pids"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-pids"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<help lang="en"/>
@@ -1194,13 +1182,13 @@ Mehr Informationen zur Funktionsweise, Verwendung und verschiedenen Arten von PI
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/pids/system">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-pids/system">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>system</key>
-		<path>snf/content-classification/metadata/pids/system</path>
+		<path>snf/content-classification/metadata-pids/system</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/pids/system"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/pids"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-pids"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en"/>
@@ -1222,13 +1210,13 @@ Mehr Informationen zur Funktionsweise, Verwendung und verschiedenen Arten von PI
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/pids/subentities">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-pids/subentities">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>subentities</key>
-		<path>snf/content-classification/metadata/pids/subentities</path>
+		<path>snf/content-classification/metadata-pids/subentities</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/pids/subentities"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata/pids"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/metadata-pids"/>
 		<is_collection>False</is_collection>
 		<order>3</order>
 		<help lang="en"/>
@@ -1258,25 +1246,17 @@ Mehr Informationen zur Funktionsweise, Verwendung und verschiedenen Arten von PI
 		<title lang="en">Ethics, legal and security questions</title>
 		<title lang="de">Ethische, rechtliche und Sicherheitsfragen</title>
 	</section>
-	<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/general-legal-issues">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/general-legal-issues-international_yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>general-legal-issues</key>
-		<path>snf/legal-and-ethics/general-legal-issues</path>
+		<key>general-legal-issues-international_yesno</key>
+		<path>snf/legal-and-ethics/general-legal-issues-international_yesno</path>
 		<dc:comment/>
+		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics"/>
+		<is_collection>False</is_collection>
 		<order>0</order>
 		<title lang="en">General legal issues</title>
 		<title lang="de">Recht allgemein</title>
-	</subsection>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/general-legal-issues/international_yesno">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>international_yesno</key>
-		<path>snf/legal-and-ethics/general-legal-issues/international_yesno</path>
-		<dc:comment/>
-		<attribute/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/general-legal-issues"/>
-		<is_collection>False</is_collection>
-		<order>0</order>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en"/>
@@ -1285,17 +1265,17 @@ Mehr Informationen zur Funktionsweise, Verwendung und verschiedenen Arten von PI
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/general-legal-issues/international_yesno/international_yesno">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/general-legal-issues-international_yesno/international_yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>international_yesno</key>
-		<path>snf/legal-and-ethics/general-legal-issues/international_yesno/international_yesno</path>
+		<path>snf/legal-and-ethics/general-legal-issues-international_yesno/international_yesno</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/international_yesno"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/general-legal-issues/international_yesno"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/general-legal-issues-international_yesno"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
-		<help lang="en">If you answer this question with "Yes", please get in touch with the legal department or a respective contact person at your institution to clarify if this has consequences for the project and its data management and if yes, what consequences these are.</help>
-		<help lang="de">Falls Sie diese Frage mit "Ja" beantworten, setzen Sie sich bitte mit der Rechtsabteilung bzw. einem/r entsprechenden Ansprechpartner/in an Ihrer Institution in Verbindung, um zu klären, ob sich daraus Konsequenzen für Ihr Projekt ergeben und wenn ja, welche dies sind.</help>
+		<help lang="en">If you answer this question with &quot;Yes&quot;, please get in touch with the legal department or a respective contact person at your institution to clarify if this has consequences for the project and its data management and if yes, what consequences these are.</help>
+		<help lang="de">Falls Sie diese Frage mit &quot;Ja&quot; beantworten, setzen Sie sich bitte mit der Rechtsabteilung bzw. einem/r entsprechenden Ansprechpartner/in an Ihrer Institution in Verbindung, um zu klären, ob sich daraus Konsequenzen für Ihr Projekt ergeben und wenn ja, welche dies sind.</help>
 		<text lang="en">Does the legal situation of different countries have to be considered?</text>
 		<text lang="de">Muss die rechtliche Situation verschiedener Länder berücksichtigt werden?</text>
 		<verbose_name lang="en"/>
@@ -1311,25 +1291,17 @@ Mehr Informationen zur Funktionsweise, Verwendung und verschiedenen Arten von PI
 		<optionsets/>
 		<conditions/>
 	</question>
-	<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>sensitive-data</key>
-		<path>snf/legal-and-ethics/sensitive-data</path>
-		<dc:comment/>
-		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics"/>
-		<order>1</order>
-		<title lang="en">Sensitive data</title>
-		<title lang="de">Sensible Daten</title>
-	</subsection>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/yesno">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>yesno</key>
-		<path>snf/legal-and-ethics/sensitive-data/yesno</path>
+		<key>sensitive-data-yesno</key>
+		<path>snf/legal-and-ethics/sensitive-data-yesno</path>
 		<dc:comment/>
 		<attribute/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics"/>
 		<is_collection>False</is_collection>
-		<order>0</order>
+		<order>10</order>
+		<title lang="en">Personal data</title>
+		<title lang="de">Personenbezogene Daten</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en"/>
@@ -1338,41 +1310,41 @@ Mehr Informationen zur Funktionsweise, Verwendung und verschiedenen Arten von PI
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/yesno/yesno">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-yesno/yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>yesno</key>
-		<path>snf/legal-and-ethics/sensitive-data/yesno/yesno</path>
+		<path>snf/legal-and-ethics/sensitive-data-yesno/yesno</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data_yesno/yesno"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/yesno"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-yesno"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<help lang="en">European Data Protection Law may apply.
 
-The Switzer Federal  Act defines personal data as „all information related to particular or  determinable person” &lt;a href="https://www.admin.ch/opc/de/classified-compilation/19920153/201401010000/235.1.pdf" target=_blank"&gt;(Art. 3 Bst. a des Bundesgesetzes über den Datenschutz)&lt;/a&gt;).  
+The Switzer Federal  Act defines personal data as „all information related to particular or  determinable person” &lt;a href=&quot;https://www.admin.ch/opc/de/classified-compilation/19920153/201401010000/235.1.pdf&quot; target=_blank&quot;&gt;(Art. 3 Bst. a des Bundesgesetzes über den Datenschutz)&lt;/a&gt;).  
   
 A person is “identified” when it is obvious whom the data is associated with. A person is “identifiable” when it is possible to find out which person the data refers to with additional information (See Häder 2009, p. 7).   
   
 The handling of personal information is regulated by law. More information (in German only) can be found in the following publications:   
 
-* &lt;a href="http://www.ratswd.de/download/RatSWD_WP_2009/RatSWD_WP_90.pdf" target=_blank"&gt;Michael Häder (2009): Der Datenschutz in den Sozialwissenschaften. RatSWD Working Paper No. 90.&lt;/a&gt;   
+* &lt;a href=&quot;http://www.ratswd.de/download/RatSWD_WP_2009/RatSWD_WP_90.pdf&quot; target=_blank&quot;&gt;Michael Häder (2009): Der Datenschutz in den Sozialwissenschaften. RatSWD Working Paper No. 90.&lt;/a&gt;   
 
-* &lt;a href="http://www.gesis.org/fileadmin/upload/forschung/publikationen/gesis_reihen/gesis_methodenberichte/2012/TechnicalReport_2012-07.pdf" target=_blank"&gt;Uwe Jensen (2012): Leitlinien zum Management von Forschungsdaten. Sozialwissenschaftliche Umfragedaten. GESIS Technical Report 2012|07.&lt;/a&gt; (esp. pp. 13 ff)     
+* &lt;a href=&quot;http://www.gesis.org/fileadmin/upload/forschung/publikationen/gesis_reihen/gesis_methodenberichte/2012/TechnicalReport_2012-07.pdf&quot; target=_blank&quot;&gt;Uwe Jensen (2012): Leitlinien zum Management von Forschungsdaten. Sozialwissenschaftliche Umfragedaten. GESIS Technical Report 2012|07.&lt;/a&gt; (esp. pp. 13 ff)     
 
-* &lt;a href="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf" target=_blank"&gt;Handreichung: Informationen zu rechtlichen Aspekten bei der Handhabung von Sprachkorpora.&lt;/a&gt; (esp. part 1.1 and part 2.2)</help>
+* &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=_blank&quot;&gt;Handreichung: Informationen zu rechtlichen Aspekten bei der Handhabung von Sprachkorpora.&lt;/a&gt; (esp. part 1.1 and part 2.2)</help>
 		<help lang="de">Europäisches Recht kann Geltung haben.
 
-Das Schweizer Bundesgesetz definiert Personendaten als "alle Angaben, die sich auf eine bestimmte oder bestimmbare Person beziehen“  &lt;a href="https://www.admin.ch/opc/de/classified-compilation/19920153/201401010000/235.1.pdf" target=_blank"&gt;(Art. 3 Bst. a des Bundesgesetzes über den Datenschutz)&lt;/a&gt;
+Das Schweizer Bundesgesetz definiert Personendaten als &quot;alle Angaben, die sich auf eine bestimmte oder bestimmbare Person beziehen“  &lt;a href=&quot;https://www.admin.ch/opc/de/classified-compilation/19920153/201401010000/235.1.pdf&quot; target=_blank&quot;&gt;(Art. 3 Bst. a des Bundesgesetzes über den Datenschutz)&lt;/a&gt;
   
 Dabei wird von einer „bestimmten Person“ gesprochen, wenn eindeutig erkennbar ist, zu welcher Person die Daten gehören. Um eine „bestimmbare Person“ handelt es sich, wenn mittels Zusatzinformationen ermittelt werden kann, um welche Person es geht. (Vgl. Häder 2009, S. 7).  
  
 Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar auf bestimmte Disziplinen / Datentypen fokussiert, aber übertragbar) zum Thema bieten bspw.:  
 
-* &lt;a href="http://www.ratswd.de/download/RatSWD_WP_2009/RatSWD_WP_90.pdf" target=_blank"&gt;Michael Häder (2009): Der Datenschutz in den Sozialwissenschaften. RatSWD Working Paper No. 90.&lt;/a&gt;
+* &lt;a href=&quot;http://www.ratswd.de/download/RatSWD_WP_2009/RatSWD_WP_90.pdf&quot; target=_blank&quot;&gt;Michael Häder (2009): Der Datenschutz in den Sozialwissenschaften. RatSWD Working Paper No. 90.&lt;/a&gt;
  
-* &lt;a href="http://www.gesis.org/fileadmin/upload/forschung/publikationen/gesis_reihen/gesis_methodenberichte/2012/TechnicalReport_2012-07.pdf" target=_blank"&gt;Uwe Jensen (2012): Leitlinien zum Management von Forschungsdaten. Sozialwissenschaftliche Umfragedaten. GESIS Technical Report 2012|07.&lt;/a&gt; (v.a. S. 13ff.)  
+* &lt;a href=&quot;http://www.gesis.org/fileadmin/upload/forschung/publikationen/gesis_reihen/gesis_methodenberichte/2012/TechnicalReport_2012-07.pdf&quot; target=_blank&quot;&gt;Uwe Jensen (2012): Leitlinien zum Management von Forschungsdaten. Sozialwissenschaftliche Umfragedaten. GESIS Technical Report 2012|07.&lt;/a&gt; (v.a. S. 13ff.)  
 
-* &lt;a href="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf" target=_blank"&gt;Handreichung: Informationen zu rechtlichen Aspekten bei der Handhabung von Sprachkorpora.&lt;/a&gt; (v.a.  Teil 1.1 und Teil 2.2)</help>
+* &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=_blank&quot;&gt;Handreichung: Informationen zu rechtlichen Aspekten bei der Handhabung von Sprachkorpora.&lt;/a&gt; (v.a.  Teil 1.1 und Teil 2.2)</help>
 		<text lang="en">Does this dataset contain personal data?</text>
 		<text lang="de">Enthält dieser Datensatz personenbezogene Daten?</text>
 		<verbose_name lang="en"/>
@@ -1388,15 +1360,17 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/personal_data">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-personal_data">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>personal_data</key>
-		<path>snf/legal-and-ethics/sensitive-data/personal_data</path>
+		<key>sensitive-data-personal_data</key>
+		<path>snf/legal-and-ethics/sensitive-data-personal_data</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics"/>
 		<is_collection>True</is_collection>
-		<order>2</order>
+		<order>12</order>
+		<title lang="en">Sensitive data</title>
+		<title lang="de">Sensible Daten</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
@@ -1407,13 +1381,13 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/personal_data"/>
 		</conditions>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/personal_data/anonymization">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-personal_data/anonymization">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>anonymization</key>
-		<path>snf/legal-and-ethics/sensitive-data/personal_data/anonymization</path>
+		<path>snf/legal-and-ethics/sensitive-data-personal_data/anonymization</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/anonymization"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/personal_data"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-personal_data"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<help lang="en"/>
@@ -1435,19 +1409,19 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/personal_data/extent">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-personal_data/extent">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>extent</key>
-		<path>snf/legal-and-ethics/sensitive-data/personal_data/extent</path>
+		<path>snf/legal-and-ethics/sensitive-data-personal_data/extent</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/consent/extent"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/personal_data"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-personal_data"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en">Basically, the collection, processing, archiving and publication of personal data is only admissible, when the “informed consent” of the person in question has been obtained. There are only very few cases in which this is not the case (see, also for more information: &lt;a href="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf" target=_blank"&gt;Informationen zu rechtlichen Aspekten bei der Handhabung von Sprachkorpora&lt;/a&gt;, p. 6).</help>
-		<help lang="de">Grundsätzlich gilt, dass eine Erhebung, Verarbeitung, Archivierung und Veröffentlichung personenbezogener Daten nur zulässig ist, wenn eine entsprechende „informierte Einwilligung“ der Betroffenen vorliegt. Nur in ganz wenigen, jeweils in den Datenschutzgesetzen definierten Ausnahmefällen wird diese nicht benötigt (vgl., auch für mehr Information, &lt;a href="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf" target=_blank"&gt;Informationen zu rechtlichen Aspekten bei der Handhabung von Sprachkorpora&lt;/a&gt;, S. 6).</help>
-		<text lang="en">To what extent is the "informed consent" obtained from the persons concerned?</text>
-		<text lang="de">In welchem Umfang wird die "informierte Einwilligung" der Betroffenen eingeholt?</text>
+		<help lang="en">Basically, the collection, processing, archiving and publication of personal data is only admissible, when the “informed consent” of the person in question has been obtained. There are only very few cases in which this is not the case (see, also for more information: &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=_blank&quot;&gt;Informationen zu rechtlichen Aspekten bei der Handhabung von Sprachkorpora&lt;/a&gt;, p. 6).</help>
+		<help lang="de">Grundsätzlich gilt, dass eine Erhebung, Verarbeitung, Archivierung und Veröffentlichung personenbezogener Daten nur zulässig ist, wenn eine entsprechende „informierte Einwilligung“ der Betroffenen vorliegt. Nur in ganz wenigen, jeweils in den Datenschutzgesetzen definierten Ausnahmefällen wird diese nicht benötigt (vgl., auch für mehr Information, &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=_blank&quot;&gt;Informationen zu rechtlichen Aspekten bei der Handhabung von Sprachkorpora&lt;/a&gt;, S. 6).</help>
+		<text lang="en">To what extent is the &quot;informed consent&quot; obtained from the persons concerned?</text>
+		<text lang="de">In welchem Umfang wird die &quot;informierte Einwilligung&quot; der Betroffenen eingeholt?</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -1463,19 +1437,19 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/personal_data/statement">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-personal_data/statement">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>statement</key>
-		<path>snf/legal-and-ethics/sensitive-data/personal_data/statement</path>
+		<path>snf/legal-and-ethics/sensitive-data-personal_data/statement</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/consent/statement"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/personal_data"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-personal_data"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en"/>
 		<help lang="de"/>
-		<text lang="en">If no "informed consent" is obtained, please give the reasons for not doing so.</text>
-		<text lang="de">Wenn keine "informierte Einwilligung" eingeholt wird, begründen Sie dies bitte.</text>
+		<text lang="en">If no &quot;informed consent&quot; is obtained, please give the reasons for not doing so.</text>
+		<text lang="de">Wenn keine &quot;informierte Einwilligung&quot; eingeholt wird, begründen Sie dies bitte.</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -1489,19 +1463,19 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/personal_data/record">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-personal_data/record">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>record</key>
-		<path>snf/legal-and-ethics/sensitive-data/personal_data/record</path>
+		<path>snf/legal-and-ethics/sensitive-data-personal_data/record</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/consent/record"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/personal_data"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-personal_data"/>
 		<is_collection>False</is_collection>
 		<order>3</order>
 		<help lang="en"/>
 		<help lang="de"/>
-		<text lang="en">Where and how is the "informed consent" documented?</text>
-		<text lang="de">Wo und wie sind die "informierten Einwilligungen" abgelegt?</text>
+		<text lang="en">Where and how is the &quot;informed consent&quot; documented?</text>
+		<text lang="de">Wo und wie sind die &quot;informierten Einwilligungen&quot; abgelegt?</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -1515,13 +1489,13 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/personal_data/deletion">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-personal_data/deletion">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>deletion</key>
-		<path>snf/legal-and-ethics/sensitive-data/personal_data/deletion</path>
+		<path>snf/legal-and-ethics/sensitive-data-personal_data/deletion</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/deletion"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/personal_data"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-personal_data"/>
 		<is_collection>False</is_collection>
 		<order>4</order>
 		<help lang="en"/>
@@ -1541,13 +1515,13 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/personal_data/organisation">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-personal_data/organisation">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>organisation</key>
-		<path>snf/legal-and-ethics/sensitive-data/personal_data/organisation</path>
+		<path>snf/legal-and-ethics/sensitive-data-personal_data/organisation</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/collaboration_organisation"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/personal_data"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-personal_data"/>
 		<is_collection>False</is_collection>
 		<order>8</order>
 		<help lang="en"/>
@@ -1567,15 +1541,17 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/official_approval">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-official_approval">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>official_approval</key>
-		<path>snf/legal-and-ethics/sensitive-data/official_approval</path>
+		<key>sensitive-data-official_approval</key>
+		<path>snf/legal-and-ethics/sensitive-data-official_approval</path>
 		<dc:comment/>
 		<attribute/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics"/>
 		<is_collection>False</is_collection>
-		<order>4</order>
+		<order>14</order>
+		<title lang="en">Official approval</title>
+		<title lang="de">Offizielle Genehmigung</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en"/>
@@ -1584,13 +1560,13 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/official_approval/ethics_committee">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-official_approval/ethics_committee">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>ethics_committee</key>
-		<path>snf/legal-and-ethics/sensitive-data/official_approval/ethics_committee</path>
+		<path>snf/legal-and-ethics/sensitive-data-official_approval/ethics_committee</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval/ethics_committee"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/official_approval"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-official_approval"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<help lang="en"/>
@@ -1612,13 +1588,13 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/official_approval/yesno">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-official_approval/yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>yesno</key>
-		<path>snf/legal-and-ethics/sensitive-data/official_approval/yesno</path>
+		<path>snf/legal-and-ethics/sensitive-data-official_approval/yesno</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval/statutatory_approval/yesno"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/official_approval"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-official_approval"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en"/>
@@ -1640,13 +1616,13 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/official_approval/title">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-official_approval/title">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>title</key>
-		<path>snf/legal-and-ethics/sensitive-data/official_approval/title</path>
+		<path>snf/legal-and-ethics/sensitive-data-official_approval/title</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval/statutatory_approval/title"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/official_approval"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-official_approval"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en"/>
@@ -1666,13 +1642,13 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/official_approval/data_access_committee">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-official_approval/data_access_committee">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>data_access_committee</key>
-		<path>snf/legal-and-ethics/sensitive-data/official_approval/data_access_committee</path>
+		<path>snf/legal-and-ethics/sensitive-data-official_approval/data_access_committee</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval/data_access_committee"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data/official_approval"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/sensitive-data-official_approval"/>
 		<is_collection>False</is_collection>
 		<order>4</order>
 		<help lang="en"/>
@@ -1692,25 +1668,17 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		<optionsets/>
 		<conditions/>
 	</question>
-	<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access-data_security">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>access</key>
-		<path>snf/legal-and-ethics/access</path>
-		<dc:comment/>
-		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics"/>
-		<order>2</order>
-		<title lang="en">Access and security</title>
-		<title lang="de">Zugriff und Datensicherung</title>
-	</subsection>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access/data_security">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>data_security</key>
-		<path>snf/legal-and-ethics/access/data_security</path>
+		<key>access-data_security</key>
+		<path>snf/legal-and-ethics/access-data_security</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics"/>
 		<is_collection>True</is_collection>
-		<order>0</order>
+		<order>20</order>
+		<title lang="en">Access and security</title>
+		<title lang="de">Zugriff und Datensicherung</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
@@ -1719,13 +1687,13 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access/data_security/access_permissions">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access-data_security/access_permissions">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>access_permissions</key>
-		<path>snf/legal-and-ethics/access/data_security/access_permissions</path>
+		<path>snf/legal-and-ethics/access-data_security/access_permissions</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/access_permissions"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access/data_security"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access-data_security"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en"/>
@@ -1745,13 +1713,13 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access/data_security/backups">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access-data_security/backups">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>backups</key>
-		<path>snf/legal-and-ethics/access/data_security/backups</path>
+		<path>snf/legal-and-ethics/access-data_security/backups</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backups"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access/data_security"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access-data_security"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en">This question refers to backups while the data is being worked with. Questions of  long-term preservation will be adressed in the respective section.</help>
@@ -1771,13 +1739,13 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access/data_security/name">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access-data_security/name">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>name</key>
-		<path>snf/legal-and-ethics/access/data_security/name</path>
+		<path>snf/legal-and-ethics/access-data_security/name</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backup_responsible/name"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access/data_security"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access-data_security"/>
 		<is_collection>True</is_collection>
 		<order>3</order>
 		<help lang="en">This question refers to backups while the data is being worked with. Questions of  long-term preservation will be adressed in the respective section.</help>
@@ -1797,13 +1765,13 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access/data_security/security_measures">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access-data_security/security_measures">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>security_measures</key>
-		<path>snf/legal-and-ethics/access/data_security/security_measures</path>
+		<path>snf/legal-and-ethics/access-data_security/security_measures</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/security_measures"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access/data_security"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/access-data_security"/>
 		<is_collection>False</is_collection>
 		<order>4</order>
 		<help lang="en"/>
@@ -1823,25 +1791,17 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		<optionsets/>
 		<conditions/>
 	</question>
-	<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights-yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>intellectual-property-rights</key>
-		<path>snf/legal-and-ethics/intellectual-property-rights</path>
-		<dc:comment/>
-		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics"/>
-		<order>3</order>
-		<title lang="en">Intellectual property rights</title>
-		<title lang="de">Urheber- oder verwandte Schutzrechte</title>
-	</subsection>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights/yesno">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>yesno</key>
-		<path>snf/legal-and-ethics/intellectual-property-rights/yesno</path>
+		<key>intellectual-property-rights-yesno</key>
+		<path>snf/legal-and-ethics/intellectual-property-rights-yesno</path>
 		<dc:comment/>
 		<attribute/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics"/>
 		<is_collection>False</is_collection>
-		<order>0</order>
+		<order>30</order>
+		<title lang="en">Intellectual property rights I</title>
+		<title lang="de">Urheber- oder verwandte Schutzrechte I</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en"/>
@@ -1850,13 +1810,13 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights/yesno/yesno">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights-yesno/yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>yesno</key>
-		<path>snf/legal-and-ethics/intellectual-property-rights/yesno/yesno</path>
+		<path>snf/legal-and-ethics/intellectual-property-rights-yesno/yesno</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ipr/yesno"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights/yesno"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights-yesno"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<help lang="en">Data or software can be subject to intellectual or industrial property rights. Applicable laws differ broadly even within EU.
@@ -1884,15 +1844,17 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights/dataset">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights-dataset">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>dataset</key>
-		<path>snf/legal-and-ethics/intellectual-property-rights/dataset</path>
+		<key>intellectual-property-rights-dataset</key>
+		<path>snf/legal-and-ethics/intellectual-property-rights-dataset</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics"/>
 		<is_collection>True</is_collection>
-		<order>1</order>
+		<order>31</order>
+		<title lang="en">Intellectual property rights II</title>
+		<title lang="de">Urheber- oder verwandte Schutzrechte II</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
@@ -1903,13 +1865,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/intellectual_property_rights"/>
 		</conditions>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights/dataset/copyrights">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights-dataset/copyrights">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>copyrights</key>
-		<path>snf/legal-and-ethics/intellectual-property-rights/dataset/copyrights</path>
+		<path>snf/legal-and-ethics/intellectual-property-rights-dataset/copyrights</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/copyrights"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights/dataset"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights-dataset"/>
 		<is_collection>True</is_collection>
 		<order>0</order>
 		<help lang="en"/>
@@ -1931,13 +1893,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights/dataset/owner">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights-dataset/owner">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>owner</key>
-		<path>snf/legal-and-ethics/intellectual-property-rights/dataset/owner</path>
+		<path>snf/legal-and-ethics/intellectual-property-rights-dataset/owner</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner/name"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights/dataset"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights-dataset"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en"/>
@@ -1959,13 +1921,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights/dataset/other_rights">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights-dataset/other_rights">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>other_rights</key>
-		<path>snf/legal-and-ethics/intellectual-property-rights/dataset/other_rights</path>
+		<path>snf/legal-and-ethics/intellectual-property-rights-dataset/other_rights</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/other_rights"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights/dataset"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights-dataset"/>
 		<is_collection>True</is_collection>
 		<order>1</order>
 		<help lang="en"/>
@@ -1997,25 +1959,17 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<title lang="en">Data storage and long-term preservation</title>
 		<title lang="de">Datenspeicherung und Datenerhalt</title>
 	</section>
-	<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/storage_project">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/storage_project-storage">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>storage_project</key>
-		<path>snf/storage-and-long-term-preservation/storage_project</path>
-		<dc:comment/>
-		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation"/>
-		<order>0</order>
-		<title lang="en">Data storage</title>
-		<title lang="de">Datenspeicherung</title>
-	</subsection>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/storage_project/storage">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>storage</key>
-		<path>snf/storage-and-long-term-preservation/storage_project/storage</path>
+		<key>storage_project-storage</key>
+		<path>snf/storage-and-long-term-preservation/storage_project-storage</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/storage_project"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation"/>
 		<is_collection>True</is_collection>
 		<order>0</order>
+		<title lang="en">Storage location</title>
+		<title lang="de">Speicherort</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
@@ -2024,13 +1978,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/storage_project/storage/type">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/storage_project-storage/type">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>type</key>
-		<path>snf/storage-and-long-term-preservation/storage_project/storage/type</path>
+		<path>snf/storage-and-long-term-preservation/storage_project-storage/type</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage/type"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/storage_project/storage"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/storage_project-storage"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<help lang="en"/>
@@ -2050,15 +2004,17 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/storage_project/usage">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/storage_project-usage">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>usage</key>
-		<path>snf/storage-and-long-term-preservation/storage_project/usage</path>
+		<key>storage_project-usage</key>
+		<path>snf/storage-and-long-term-preservation/storage_project-usage</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/storage_project"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation"/>
 		<is_collection>True</is_collection>
 		<order>1</order>
+		<title lang="en">Data storage</title>
+		<title lang="de">Datenspeicherung</title>
 		<help lang="en">The following questions will help to estimate, which ressources are necessary to enable the envisioned data usage scenarios during the project. These can be technical / IT resources as well as expertise brought in by e.g. data managment or IT experts.</help>
 		<help lang="de">Die folgenden Fragen dienen dazu einzuschätzen, welche Ressourcen für die geplante Nutzung der Daten während der Projektlaufzeit nötig sind. Dabei kann es sich um technische bzw. IT-Ressourcen handeln, aber auch um Expertise, die z.B. durch Datenmanagement- oder IT-ExpertInnen eingebracht wird.</help>
 		<verbose_name lang="en">dataset</verbose_name>
@@ -2067,13 +2023,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/storage_project/usage/infrastructure">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/storage_project-usage/infrastructure">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>infrastructure</key>
-		<path>snf/storage-and-long-term-preservation/storage_project/usage/infrastructure</path>
+		<path>snf/storage-and-long-term-preservation/storage_project-usage/infrastructure</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_infrastructure"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/storage_project/usage"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/storage_project-usage"/>
 		<is_collection>False</is_collection>
 		<order>4</order>
 		<help lang="en"/>
@@ -2095,13 +2051,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/storage_project/usage/support">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/storage_project-usage/support">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>support</key>
-		<path>snf/storage-and-long-term-preservation/storage_project/usage/support</path>
+		<path>snf/storage-and-long-term-preservation/storage_project-usage/support</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_support"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/storage_project/usage"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/storage_project-usage"/>
 		<is_collection>False</is_collection>
 		<order>5</order>
 		<help lang="en"/>
@@ -2123,25 +2079,17 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		</optionsets>
 		<conditions/>
 	</question>
-	<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-criteria">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>long-term-preservation</key>
-		<path>snf/storage-and-long-term-preservation/long-term-preservation</path>
-		<dc:comment/>
-		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation"/>
-		<order>1</order>
-		<title lang="en">Long-term preservation</title>
-		<title lang="de">Langzeitarchivierung</title>
-	</subsection>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/criteria">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>criteria</key>
-		<path>snf/storage-and-long-term-preservation/long-term-preservation/criteria</path>
+		<key>long-term-preservation-criteria</key>
+		<path>snf/storage-and-long-term-preservation/long-term-preservation-criteria</path>
 		<dc:comment/>
 		<attribute/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation"/>
 		<is_collection>False</is_collection>
-		<order>0</order>
+		<order>10</order>
+		<title lang="en">Selection</title>
+		<title lang="de">Auswahl</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en"/>
@@ -2150,13 +2098,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/criteria/selection_criteria">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-criteria/selection_criteria">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>selection_criteria</key>
-		<path>snf/storage-and-long-term-preservation/long-term-preservation/criteria/selection_criteria</path>
+		<path>snf/storage-and-long-term-preservation/long-term-preservation-criteria/selection_criteria</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/preservation/selection_criteria"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/criteria"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-criteria"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<help lang="en"/>
@@ -2176,13 +2124,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/criteria/responsible_person">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-criteria/responsible_person">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>responsible_person</key>
-		<path>snf/storage-and-long-term-preservation/long-term-preservation/criteria/responsible_person</path>
+		<path>snf/storage-and-long-term-preservation/long-term-preservation-criteria/responsible_person</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/preservation/responsible_person/name"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/criteria"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-criteria"/>
 		<is_collection>True</is_collection>
 		<order>0</order>
 		<help lang="en"/>
@@ -2202,13 +2150,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/criteria/selection_format">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-criteria/selection_format">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>selection_format</key>
-		<path>snf/storage-and-long-term-preservation/long-term-preservation/criteria/selection_format</path>
+		<path>snf/storage-and-long-term-preservation/long-term-preservation-criteria/selection_format</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/preservation/selection_format"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/criteria"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-criteria"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en"/>
@@ -2228,15 +2176,17 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>datasets</key>
-		<path>snf/storage-and-long-term-preservation/long-term-preservation/datasets</path>
+		<key>long-term-preservation-datasets</key>
+		<path>snf/storage-and-long-term-preservation/long-term-preservation-datasets</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation"/>
 		<is_collection>True</is_collection>
-		<order>1</order>
+		<order>11</order>
+		<title lang="en">Long-term preservation</title>
+		<title lang="de">Langzeitarchivierung</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
@@ -2245,13 +2195,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets/yesno">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets/yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>yesno</key>
-		<path>snf/storage-and-long-term-preservation/long-term-preservation/datasets/yesno</path>
+		<path>snf/storage-and-long-term-preservation/long-term-preservation-datasets/yesno</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/yesno"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en"/>
@@ -2271,13 +2221,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets/purpose">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets/purpose">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>purpose</key>
-		<path>snf/storage-and-long-term-preservation/long-term-preservation/datasets/purpose</path>
+		<path>snf/storage-and-long-term-preservation/long-term-preservation-datasets/purpose</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/purpose"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets"/>
 		<is_collection>True</is_collection>
 		<order>2</order>
 		<help lang="en"/>
@@ -2299,13 +2249,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets/duration">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets/duration">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>duration</key>
-		<path>snf/storage-and-long-term-preservation/long-term-preservation/datasets/duration</path>
+		<path>snf/storage-and-long-term-preservation/long-term-preservation-datasets/duration</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/duration"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets"/>
 		<is_collection>False</is_collection>
 		<order>3</order>
 		<help lang="en"/>
@@ -2325,13 +2275,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets/reuse_duration">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets/reuse_duration">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>reuse_duration</key>
-		<path>snf/storage-and-long-term-preservation/long-term-preservation/datasets/reuse_duration</path>
+		<path>snf/storage-and-long-term-preservation/long-term-preservation-datasets/reuse_duration</path>
 		<dc:comment>Original H2020 question</dc:comment>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/reuse_duration"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets"/>
 		<is_collection>False</is_collection>
 		<order>4</order>
 		<help lang="en"/>
@@ -2351,13 +2301,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets/repository">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets/repository">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>repository</key>
-		<path>snf/storage-and-long-term-preservation/long-term-preservation/datasets/repository</path>
+		<path>snf/storage-and-long-term-preservation/long-term-preservation-datasets/repository</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets"/>
 		<is_collection>True</is_collection>
 		<order>5</order>
 		<help lang="en"/>
@@ -2379,13 +2329,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets/certification">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets/certification">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>certification</key>
-		<path>snf/storage-and-long-term-preservation/long-term-preservation/datasets/certification</path>
+		<path>snf/storage-and-long-term-preservation/long-term-preservation-datasets/certification</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/certification"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets"/>
 		<is_collection>False</is_collection>
 		<order>6</order>
 		<help lang="en"/>
@@ -2407,13 +2357,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets/repository_arrangements">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets/repository_arrangements">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>repository_arrangements</key>
-		<path>snf/storage-and-long-term-preservation/long-term-preservation/datasets/repository_arrangements</path>
+		<path>snf/storage-and-long-term-preservation/long-term-preservation-datasets/repository_arrangements</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository_arrangements"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets"/>
 		<is_collection>False</is_collection>
 		<order>7</order>
 		<help lang="en">(original question from Horizon 2020 FAIR Data Management Plan)</help>
@@ -2433,13 +2383,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets/embargo_period">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets/embargo_period">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>embargo_period</key>
-		<path>snf/storage-and-long-term-preservation/long-term-preservation/datasets/embargo_period</path>
+		<path>snf/storage-and-long-term-preservation/long-term-preservation-datasets/embargo_period</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/embargo_period"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets"/>
 		<is_collection>False</is_collection>
 		<order>8</order>
 		<help lang="en"/>
@@ -2459,13 +2409,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets/access_authentication">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets/access_authentication">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>access_authentication</key>
-		<path>snf/storage-and-long-term-preservation/long-term-preservation/datasets/access_authentication</path>
+		<path>snf/storage-and-long-term-preservation/long-term-preservation-datasets/access_authentication</path>
 		<dc:comment>Original from H2020 FAIR Data Management Plan</dc:comment>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/access_authentication"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets"/>
 		<is_collection>False</is_collection>
 		<order>9</order>
 		<help lang="en"/>
@@ -2485,13 +2435,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets/data_archiving_date">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets/data_archiving_date">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>data_archiving_date</key>
-		<path>snf/storage-and-long-term-preservation/long-term-preservation/datasets/data_archiving_date</path>
+		<path>snf/storage-and-long-term-preservation/long-term-preservation-datasets/data_archiving_date</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/data_archiving_date"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation/datasets"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/storage-and-long-term-preservation/long-term-preservation-datasets"/>
 		<is_collection>False</is_collection>
 		<order>10</order>
 		<help lang="en"/>
@@ -2521,25 +2471,17 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<title lang="en">Data exchange and reuse of data</title>
 		<title lang="de">Datenaustausch und Weiterverwendug von Daten</title>
 	</section>
-	<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use-interoperability">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>data-sharing-and-re-use</key>
-		<path>snf/data-usage/data-sharing-and-re-use</path>
-		<dc:comment/>
-		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage"/>
-		<order>0</order>
-		<title lang="en">Data sharing and re-use</title>
-		<title lang="de">Weitergabe und Veröffentlichung</title>
-	</subsection>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use/interoperability">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>interoperability</key>
-		<path>snf/data-usage/data-sharing-and-re-use/interoperability</path>
+		<key>data-sharing-and-re-use-interoperability</key>
+		<path>snf/data-usage/data-sharing-and-re-use-interoperability</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage"/>
 		<is_collection>True</is_collection>
 		<order>1</order>
+		<title lang="en">Interoperability</title>
+		<title lang="de">Interoperabilität</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
@@ -2548,13 +2490,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use/interoperability/interoperability">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use-interoperability/interoperability">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>interoperability</key>
-		<path>snf/data-usage/data-sharing-and-re-use/interoperability/interoperability</path>
+		<path>snf/data-usage/data-sharing-and-re-use-interoperability/interoperability</path>
 		<dc:comment>wortlaut noch relativ nah an Original-H2020-Frage</dc:comment>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/interoperability"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use/interoperability"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use-interoperability"/>
 		<is_collection>True</is_collection>
 		<order>1</order>
 		<help lang="en"/>
@@ -2576,13 +2518,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use/interoperability/organisation_policy">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use-interoperability/organisation_policy">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>organisation_policy</key>
-		<path>snf/data-usage/data-sharing-and-re-use/interoperability/organisation_policy</path>
+		<path>snf/data-usage/data-sharing-and-re-use-interoperability/organisation_policy</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage/organisation_policy"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use/interoperability"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use-interoperability"/>
 		<is_collection>False</is_collection>
 		<order>3</order>
 		<help lang="en"/>
@@ -2604,13 +2546,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use/interoperability/naming_policy">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use-interoperability/naming_policy">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>naming_policy</key>
-		<path>snf/data-usage/data-sharing-and-re-use/interoperability/naming_policy</path>
+		<path>snf/data-usage/data-sharing-and-re-use-interoperability/naming_policy</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage/naming_policy"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use/interoperability"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use-interoperability"/>
 		<is_collection>False</is_collection>
 		<order>4</order>
 		<help lang="en"/>
@@ -2632,15 +2574,17 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		</optionsets>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use/publication">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use-publication">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>publication</key>
-		<path>snf/data-usage/data-sharing-and-re-use/publication</path>
+		<key>data-sharing-and-re-use-publication</key>
+		<path>snf/data-usage/data-sharing-and-re-use-publication</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage"/>
 		<is_collection>True</is_collection>
 		<order>2</order>
+		<title lang="en">Data sharing and re-use</title>
+		<title lang="de">Weitergabe und Veröffentlichung</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
@@ -2649,13 +2593,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use/publication/yesno">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use-publication/yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>yesno</key>
-		<path>snf/data-usage/data-sharing-and-re-use/publication/yesno</path>
+		<path>snf/data-usage/data-sharing-and-re-use-publication/yesno</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/yesno"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use/publication"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use-publication"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en"/>
@@ -2677,13 +2621,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use/publication/explanation">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use-publication/explanation">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>explanation</key>
-		<path>snf/data-usage/data-sharing-and-re-use/publication/explanation</path>
+		<path>snf/data-usage/data-sharing-and-re-use-publication/explanation</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/explanation"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use/publication"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use-publication"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en"/>
@@ -2703,17 +2647,17 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use/publication/conditions">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use-publication/conditions">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>conditions</key>
-		<path>snf/data-usage/data-sharing-and-re-use/publication/conditions</path>
+		<path>snf/data-usage/data-sharing-and-re-use-publication/conditions</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/conditions"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use/publication"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use-publication"/>
 		<is_collection>True</is_collection>
 		<order>3</order>
-		<help lang="en">The options refer to the licenses of the &lt;a href="https://creativecommons.org/share-your-work/licensing-types-examples/" target=_blank"&gt;Creative Commons family&lt;/a&gt;.</help>
-		<help lang="de">Die Auswahlmöglichkeiten orientieren sich an Lizenzen der &lt;a href="http://de.creativecommons.org/was-ist-cc/" target=_blank"&gt;Creative-Commons-Familie&lt;/a&gt;.</help>
+		<help lang="en">The options refer to the licenses of the &lt;a href=&quot;https://creativecommons.org/share-your-work/licensing-types-examples/&quot; target=_blank&quot;&gt;Creative Commons family&lt;/a&gt;.</help>
+		<help lang="de">Die Auswahlmöglichkeiten orientieren sich an Lizenzen der &lt;a href=&quot;http://de.creativecommons.org/was-ist-cc/&quot; target=_blank&quot;&gt;Creative-Commons-Familie&lt;/a&gt;.</help>
 		<text lang="en">If yes, under which terms of use or license will the dataset be published or shared?</text>
 		<text lang="de">Wenn ja, unter welchen Nutzungsbedingungen oder welcher Lizenz sollen die Daten veröffentlicht bzw. geteilt werden?</text>
 		<verbose_name lang="en"/>
@@ -2731,13 +2675,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use/publication/restrictions_explanation">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use-publication/restrictions_explanation">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>restrictions_explanation</key>
-		<path>snf/data-usage/data-sharing-and-re-use/publication/restrictions_explanation</path>
+		<path>snf/data-usage/data-sharing-and-re-use-publication/restrictions_explanation</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/restrictions_explanation"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use/publication"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use-publication"/>
 		<is_collection>False</is_collection>
 		<order>4</order>
 		<help lang="en"/>
@@ -2757,13 +2701,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use/publication/data_publication_date">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use-publication/data_publication_date">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>data_publication_date</key>
-		<path>snf/data-usage/data-sharing-and-re-use/publication/data_publication_date</path>
+		<path>snf/data-usage/data-sharing-and-re-use-publication/data_publication_date</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_publication_date"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use/publication"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/data-sharing-and-re-use-publication"/>
 		<is_collection>False</is_collection>
 		<order>6</order>
 		<help lang="en"/>
@@ -2785,25 +2729,17 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/data_sharing"/>
 		</conditions>
 	</question>
-	<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair-fair">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>fair</key>
-		<path>snf/data-usage/fair</path>
-		<dc:comment/>
-		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage"/>
-		<order>1</order>
-		<title lang="en">digital archive</title>
-		<title lang="de">Digitales Archiv</title>
-	</subsection>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair/fair">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>fair</key>
-		<path>snf/data-usage/fair/fair</path>
+		<key>fair-fair</key>
+		<path>snf/data-usage/fair-fair</path>
 		<dc:comment/>
 		<attribute/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage"/>
 		<is_collection>False</is_collection>
-		<order>0</order>
+		<order>10</order>
+		<title lang="en">Digital archive I</title>
+		<title lang="de">Digitales Archiv I</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en"/>
@@ -2812,13 +2748,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair/fair/yesno">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair-fair/yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>yesno</key>
-		<path>snf/data-usage/fair/fair/yesno</path>
+		<path>snf/data-usage/fair-fair/yesno</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/preservation/archive/yesno"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair/fair"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair-fair"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<help lang="en"/>
@@ -2838,13 +2774,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair/fair/fair_archive">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair-fair/fair_archive">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>fair_archive</key>
-		<path>snf/data-usage/fair/fair/fair_archive</path>
+		<path>snf/data-usage/fair-fair/fair_archive</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/preservation/archive/fair_archive"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair/fair"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair-fair"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en">If there is no digital archive for your research area, which match the conditions, put a copie of your data on a generic data platform, please. If you will not share your data, this is a policy statement.</help>
@@ -2864,15 +2800,17 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair/nonprofit">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair-nonprofit">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>nonprofit</key>
-		<path>snf/data-usage/fair/nonprofit</path>
+		<key>fair-nonprofit</key>
+		<path>snf/data-usage/fair-nonprofit</path>
 		<dc:comment/>
 		<attribute/>
-		<subsection dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage"/>
 		<is_collection>False</is_collection>
-		<order>1</order>
+		<order>11</order>
+		<title lang="en">Digital archive II</title>
+		<title lang="de">Digitales Archiv II</title>
 		<help lang="en"/>
 		<help lang="de"/>
 		<verbose_name lang="en"/>
@@ -2881,39 +2819,13 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair/nonprofit/explanation">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>explanation</key>
-		<path>snf/data-usage/fair/nonprofit/explanation</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/preservation/archive/nonprofit/explanation"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair/nonprofit"/>
-		<is_collection>False</is_collection>
-		<order>0</order>
-		<help lang="en"/>
-		<help lang="de"/>
-		<text lang="en">With negative answer: Please explain why the data will be stored at for-profit digitala archives.</text>
-		<text lang="de">Bei negativer Antwort: Bitte erläutern Sie, aus welchen Gründen die Daten auf gewinnortientierten Datenarchiven abgelegt werden.</text>
-		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="en"/>
-		<verbose_name_plural lang="de"/>
-		<widget_type>text</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<optionsets/>
-		<conditions/>
-	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair/nonprofit/yesno">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair-nonprofit/yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>yesno</key>
-		<path>snf/data-usage/fair/nonprofit/yesno</path>
+		<path>snf/data-usage/fair-nonprofit/yesno</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/preservation/archive/nonprofit/yesno"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair/nonprofit"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair-nonprofit"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<help lang="en"/>
@@ -2928,6 +2840,32 @@ verwaltet werden.</text>
 		<verbose_name_plural lang="de"/>
 		<widget_type>yesno</widget_type>
 		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair-nonprofit/explanation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>explanation</key>
+		<path>snf/data-usage/fair-nonprofit/explanation</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/preservation/archive/nonprofit/explanation"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/data-usage/fair-nonprofit"/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">With negative answer: Please explain why the data will be stored at for-profit digitala archives.</text>
+		<text lang="de">Bei negativer Antwort: Bitte erläutern Sie, aus welchen Gründen die Daten auf gewinnortientierten Datenarchiven abgelegt werden.</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
