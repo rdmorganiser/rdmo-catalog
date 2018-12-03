@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/additional_rdm_policy">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>additional_rdm_policy</key>
+		<dc:comment>There are additional data management requirements.</dc:comment>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/yesno"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/other_requirements_options/146"/>
+	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/data_sharing">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>data_sharing</key>
+		<dc:comment>The data will be shared.</dc:comment>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/yesno"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options/69"/>
+	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/infrastructure_resources">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>infrastructure_resources</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_infrastructure"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/infrastructure_resources/261"/>
+	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/intellectual_property_rights">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>intellectual_property_rights</key>
+		<dc:comment>The project uses data or software that is protected by intellectual property rights.</dc:comment>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ipr/yesno"/>
+		<relation>eq</relation>
+		<target_text>1</target_text>
+		<target_option/>
+	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/international">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>international</key>
+		<dc:comment>The legal situation of different countries has to be considered.</dc:comment>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/international_yesno"/>
+		<relation>eq</relation>
+		<target_text>1</target_text>
+		<target_option/>
+	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/law_international">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>law_international</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/international_yesno"/>
+		<relation>eq</relation>
+		<target_text>1</target_text>
+		<target_option/>
+	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/other_sensitive_data">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>other_sensitive_data</key>
+		<dc:comment>Other sensitive data being used in the project.</dc:comment>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/other/yesno"/>
+		<relation>eq</relation>
+		<target_text>1</target_text>
+		<target_option/>
+	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/personal_data">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>personal_data</key>
+		<dc:comment>Personal data is used in the project.</dc:comment>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data_yesno/yesno"/>
+		<relation>eq</relation>
+		<target_text>1</target_text>
+		<target_option/>
+	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/personal_inf_bdsg_3_9">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>personal_inf_bdsg_3_9</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/bdsg_3_9"/>
+		<relation>eq</relation>
+		<target_text>1</target_text>
+		<target_option/>
+	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/rights_owner_clear">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>rights_owner_clear</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner/name"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/yes_with_text_no/yes"/>
+	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/rights_owner_unclear">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>rights_owner_unclear</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner/name"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/yes_with_text_no/no"/>
+	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/usage_support">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>usage_support</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_support"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/yes_with_text_no/yes"/>
+	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/versioning_tool_undecided">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>versioning_tool_undecided</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/versioning_tool"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/software_versioning_technology_options/164"/>
+	</condition>
+</rdmo>

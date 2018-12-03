@@ -6,13 +6,17 @@ This repository contains the content for [RDMO](https://github.com/rdmorganiser/
 To install the catalog into a freshly installed instance of RDMO, use
 
 ```
-./manage.py import /path/to/options.xml
-./manage.py import /path/to/conditions.xml
-./manage.py import /path/to/domain.xml
-./manage.py import /path/to/conditions.xml  # yes, again
-./manage.py import /path/to/questions.xml
-./manage.py import /path/to/views.xml
+./manage.py import /path/to/domain/rdmo.xml
+./manage.py import /path/to/conditions/rdmo.xml  # yes, again
+./manage.py import /path/to/options/rdmo.xml
+./manage.py import /path/to/conditions/rdmo.xml  # yes, again
+./manage.py import /path/to/questions/rdmo.xml
+./manage.py import /path/to/tasks/rdmo.xml
+./manage.py import /path/to/views/rdmo.xml
 ```
+
+Use the same order when importing over the RDMO web interface.
+
 
 Reindent
 --------
