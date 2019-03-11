@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" ?>
 <rdmo xmlns:dc="http://purl.org/dc/elements/1.1/">
 	<catalog dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -475,7 +475,7 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/yesno"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/other-requirements-yesno"/>
 		<is_collection>False</is_collection>
-		<order>0</order>
+		<order>1</order>
 		<help lang="en">Examples of discipline-specific requirements are:
 
 - &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/guidelines_biodiversity_research.pdf" target=_blank"&gt;Guidelines on the Handling of Research Data in Biodiversity Research&lt;/a&gt;
@@ -544,7 +544,7 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/requirements"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/other-requirements-requirements"/>
 		<is_collection>False</is_collection>
-		<order>1</order>
+		<order>0</order>
 		<help lang="en">Please briefly outline them and refer to more detailed sources of information if necessary. Please also indicate, if the rules / guidelines are mandatory or optional.</help>
 		<help lang="de">Bitte skizzieren Sie sie kurz und verweisen Sie ggf. auf weiterführende Informationen. Geben Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</help>
 		<text lang="en">Which are these additional requirements regarding data management?</text>
@@ -1755,7 +1755,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<help lang="en"/>
 		<help lang="de"/>
 		<text lang="en">Is this dataset interoperable, i.e. allowing data exchange and re-use between researchers, institutions, organisations, countries etc.?</text>
-		<text lang="de">Ist der Datensatz interoperabel, d.h. geeignet für den Datenaustausch und die Nachnutzung zwischen bzw. von unterschiedlichen Forschenden, Institutionen, Oranisationen und Ländern?</text>
+		<text lang="de">Ist der Datensatz interoperabel, d.h. geeignet für den Datenaustausch und die Nachnutzung zwischen bzw. von unterschiedlichen Forschenden, Institutionen, Organisationen und Ländern?</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -2321,34 +2321,6 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/metadata-and-referencing/metadata-dataset/scope">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>scope</key>
-		<path>rdmo/metadata-and-referencing/metadata-dataset/scope</path>
-		<dc:comment>probably we should introduce a separate question for being findable and re-used</dc:comment>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/scope"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/metadata-and-referencing/metadata-dataset"/>
-		<is_collection>True</is_collection>
-		<order>1</order>
-		<help lang="en"/>
-		<help lang="de"/>
-		<text lang="en">Which information is necessary for other parties to understand the data (that is, to understand their collection or creation, analysis, and research results obtained on its basis) and to re-use it?</text>
-		<text lang="de">Welche Informationen sind für Außenstehende notwendig, um die Daten zu verstehen (d. h. ihre Erhebung bzw. Entstehung, Analyse sowie die auf ihrer Basis gewonnenen Forschungsergebnisse nachvollziehen) und nachnutzen zu können?</text>
-		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="en"/>
-		<verbose_name_plural lang="de"/>
-		<widget_type>checkbox</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<optionsets>
-			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/mandatory_metadata_options"/>
-		</optionsets>
-		<conditions/>
-	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/metadata-and-referencing/metadata-dataset/standards">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>standards</key>
@@ -2357,7 +2329,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/standards"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/metadata-and-referencing/metadata-dataset"/>
 		<is_collection>True</is_collection>
-		<order>2</order>
+		<order>1</order>
 		<help lang="en"/>
 		<help lang="de"/>
 		<text lang="en">Which standards, ontologies, classifications etc. are used to describe the data and context information?</text>
@@ -2385,7 +2357,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/creation_automatic"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/metadata-and-referencing/metadata-dataset"/>
 		<is_collection>False</is_collection>
-		<order>3</order>
+		<order>2</order>
 		<help lang="en"/>
 		<help lang="de"/>
 		<text lang="en">Which metadata are collected automatically?</text>
@@ -2411,7 +2383,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/mappings"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/metadata-and-referencing/metadata-dataset"/>
 		<is_collection>False</is_collection>
-		<order>4</order>
+		<order>3</order>
 		<help lang="en">This information is needed for a Horizon 2020 data management plan.</help>
 		<help lang="de">Diese Information wird für einen Horizon 2020 Datenmanagementplan benötigt.</help>
 		<text lang="en">In case it is unavoidable that you use uncommon or generate project-specific ontologies or vocabularies, will you provide mappings to more commonly used ontologies?</text>
@@ -2437,7 +2409,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/creation_semi_automatic"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/metadata-and-referencing/metadata-dataset"/>
 		<is_collection>False</is_collection>
-		<order>5</order>
+		<order>4</order>
 		<help lang="en"/>
 		<help lang="de"/>
 		<text lang="en">Which metadata are collected semi-automatically?</text>
@@ -2463,7 +2435,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/creation_manual"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/metadata-and-referencing/metadata-dataset"/>
 		<is_collection>False</is_collection>
-		<order>6</order>
+		<order>5</order>
 		<help lang="en"/>
 		<help lang="de"/>
 		<text lang="en">Which metadata are collected manually?</text>
@@ -2489,7 +2461,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/quality_assurance"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/metadata-and-referencing/metadata-dataset"/>
 		<is_collection>True</is_collection>
-		<order>7</order>
+		<order>6</order>
 		<help lang="en"/>
 		<help lang="de"/>
 		<text lang="en">Are metadata and context information being checked for correctness and completeness?</text>
@@ -2517,7 +2489,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/responsible_person/name"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/metadata-and-referencing/metadata-dataset"/>
 		<is_collection>True</is_collection>
-		<order>8</order>
+		<order>7</order>
 		<help lang="en"/>
 		<help lang="de"/>
 		<text lang="en">Who is responsible for documenting the metadata and context information and for checking if they are correct and complete?</text>
@@ -2740,7 +2712,7 @@ Mehr Informationen zur Funktionsweise, Verwendung und verschiedenen Arten von PI
 		<help lang="en"/>
 		<help lang="de"/>
 		<text lang="en">Which (sub-) entities / sub units should be referenced using identifiers? Which of those identifiers should be persistent and citable?</text>
-		<text lang="de">Welche (Sub-)Entitäten / Untereinheiten sollten sinnvollerweise eigene Identifikatoren erhalten? Welche dieser Identifikatoren sollten dauerhaft und zitierfähig sein?</text>
+		<text lang="de">Welche Untereinheiten/Teildatensätze sollten sinnvollerweise eigene Identifikatoren erhalten? Welche dieser Identifikatoren sollten dauerhaft und zitierfähig sein?</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -3034,7 +3006,7 @@ Für Hochschulen finden weiterhin die Landesdatenschutzgesetze Anwendung, die be
 
 In bestimmten Bereichen gelten spezifische Gesetze, die über den Landesdatenschutzgesetzen bzw. &lt;a href="http://www.gesetze-im-internet.de/bdsg_2018/"&gt;Bundesdatenschutzgesetz&lt;/a&gt; stehen.
 
-- Für medizinischen Daten ist bspw. das Zehnte Sozialgesetzbuch (SBG X) anwendbar,
+- Für medizinischen Daten ist bspw. das Zehnte Sozialgesetzbuch (SGB X) anwendbar,
 
 - Für Daten des Mikrozensus das Bundesstatistikgesetz (BStatG).
 
@@ -3090,7 +3062,7 @@ Demzufolge können je nach Forschungsprojekt auch mehrere Gesetze betroffen sein
 		<order>1</order>
 		<help lang="en">According to the GDPR, this includes &#8220;personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, and the processing of genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health or data concerning a natural person&#8217;s sex life or sexual orientation&#8220; (&lt;a href="http://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32016R0679"&gt;Art. 9(1) GPDR&lt;/a&gt;).
 
-Such data is considered to be particularly sensitive and requires even more stringent protective measures than are generally required for personal data.
+Such data is considered to be particularly sensitive and requires even more stringent protective measures than those required for personal data in general.
 
 If you answer &quot;Yes&quot; to this question, please contact the data protection officer of your institution to find out what additional protection measures are necessary.
 
@@ -4383,108 +4355,110 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/project-schedule/schedule/project_duration">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>project_duration</key>
-		<path>rdmo/project-schedule-schedule/project_duration</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/schedule/duration"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/project-schedule-schedule"/>
-		<is_collection>False</is_collection>
-		<order>3</order>
-		<help lang="en"/>
-		<help lang="de"/>
-		<text lang="en">Projektlaufzeit (Monate)</text>
-		<text lang="de">Projektlaufzeit (Monate)</text>
-		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="en"/>
-		<verbose_name_plural lang="de"/>
-		<widget_type>textarea</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<optionsets/>
-		<conditions/>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/project-schedule-schedule/project_duration">
+	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	  <key>project_duration</key>
+	  <path>rdmo/general/project-schedule-schedule/project_duration</path>
+	  <dc:comment/>
+	  <attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/schedule/project_duration"/>
+	  <questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/project-schedule-schedule"/>
+	  <is_collection>False</is_collection>
+	  <order>3</order>
+	  <help lang="en"/>
+	  <help lang="de"/>
+	  <text lang="en">Projektlaufzeit (Monate)</text>
+	  <text lang="de">Projektlaufzeit (Monate)</text>
+	  <verbose_name lang="en"/>
+	  <verbose_name lang="de"/>
+	  <verbose_name_plural lang="en"/>
+	  <verbose_name_plural lang="de"/>
+	  <widget_type>textarea</widget_type>
+	  <value_type>text</value_type>
+	  <maximum/>
+	  <minimum/>
+	  <step/>
+	  <unit/>
+	  <optionsets/>
+	  <conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/other-requirements/abstract">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>conditions</key>
-		<path>rdmo//general/other-requirements/abstract</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/other-requirements/conditions"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/"/>
-		<is_collection>False</is_collection>
-		<order>0</order>
-		<help lang="en"/>
-		<help lang="de"/>
-		<text lang="en">Bestehen von **irgendeiner** Seite Anforderungen an das Datenmanagement in Form von Policies, Vorgaben etc?</text>
-		<text lang="de">Bestehen von **irgendeiner** Seite Anforderungen an das Datenmanagement in Form von Policies, Vorgaben etc?</text>
-		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="en"/>
-		<verbose_name_plural lang="de"/>
-		<widget_type>textarea</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<optionsets/>
-		<conditions/>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/other-requirements-yesno/abstract">
+	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	  <key>conditions</key>
+	  <path>rdmo//general/other-requirements/abstract</path>
+	  <dc:comment/>
+	  <attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/conditions"/>
+	  <questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/other-requirements-yesno"/>
+	  <is_collection>False</is_collection>
+	  <order>0</order>
+	  <help lang="en"/>
+	  <help lang="de"/>
+	  <text lang="en">Bestehen von **irgendeiner** Seite Anforderungen an das Datenmanagement in Form von Policies, Vorgaben etc?</text>
+	  <text lang="de">Bestehen von **irgendeiner** Seite Anforderungen an das Datenmanagement in Form von Policies, Vorgaben etc?</text>
+	  <verbose_name lang="en"/>
+	  <verbose_name lang="de"/>
+	  <verbose_name_plural lang="en"/>
+	  <verbose_name_plural lang="de"/>
+	  <widget_type>textarea</widget_type>
+	  <value_type>text</value_type>
+	  <maximum/>
+	  <minimum/>
+	  <step/>
+	  <unit/>
+	  <optionsets/>
+	  <conditions/>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use/abstract">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>restriction</key>
-		<path>rdmo/data-usage/data-sharing-and-re-use/abstract</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/restrictions"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use-interoperability"/>
-		<is_collection>False</is_collection>
-		<order>0</order>
-		<help lang="en"/>
-		<help lang="de"/>
-		<text lang="en">Bestehen generell Einschränkungen bei dem Zugriff und der Nachnutzung der Daten (rechtliche Gründe, Schutzrechte, Betriebsgeheimnisse etc)?</text>
-		<text lang="de">Bestehen generell Einschränkungen bei dem Zugriff und der Nachnutzung der Daten (rechtliche Gründe, Schutzrechte, Betriebsgeheimnisse etc)?</text>
-		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="en"/>
-		<verbose_name_plural lang="de"/>
-		<widget_type>textarea</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<optionsets/>
-		<conditions/>
+	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	  <key>restriction</key>
+	  <path>rdmo/data-usage/data-sharing-and-re-use/abstract</path>
+	  <dc:comment/>
+	  <attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/restriction"/>
+	  <questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use-interoperability"/>
+	  <is_collection>False</is_collection>
+	  <order>0</order>
+	  <help lang="en"/>
+	  <help lang="de"/>
+	  <text lang="en">Bestehen generell Einschränkungen bei dem Zugriff und der Nachnutzung der Daten (rechtliche Gründe, Schutzrechte, Betriebsgeheimnisse etc)?</text>
+	  <text lang="de">Bestehen generell Einschränkungen bei dem Zugriff und der Nachnutzung der Daten (rechtliche Gründe, Schutzrechte, Betriebsgeheimnisse etc)?</text>
+	  <verbose_name lang="en"/>
+	  <verbose_name lang="de"/>
+	  <verbose_name_plural lang="en"/>
+	  <verbose_name_plural lang="de"/>
+	  <widget_type>textarea</widget_type>
+	  <value_type>text</value_type>
+	  <maximum/>
+	  <minimum/>
+	  <step/>
+	  <unit/>
+	  <optionsets/>
+	  <conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/metadata-and-referencing/metadata/abstract">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key></key>
-		<path>rdmo/metadata-and-referencing/metadata/abstract</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/metadata-and-referencing/metadata-dataset"/>
-		<is_collection>False</is_collection>
-		<order>0</order>
-		<help lang="en">Welche Informationen sind für Außenstehende notwendig, um die Daten zu verstehen (d. h. ihre Erhebung bzw. Entstehung, Analyse sowie die auf ihrer Basis gewonnenen Forschungsergebnisse nachvollziehen) und nachnutzen zu können?</help>
-		<help lang="de">Welche Informationen sind für Außenstehende notwendig, um die Daten zu verstehen (d. h. ihre Erhebung bzw. Entstehung, Analyse sowie die auf ihrer Basis gewonnenen Forschungsergebnisse nachvollziehen) und nachnutzen zu können?</help>
-		<text lang="en">Welche Metadaten werden erhoben? Werden Standards, Ontologien oder Klassifikationen verwendet?</text>
-		<text lang="de">Welche Metadaten werden erhoben? Werden Standards, Ontologien oder Klassifikationen verwendet?</text>
-		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="en"/>
-		<verbose_name_plural lang="de"/>
-		<widget_type>textarea</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<optionsets/>
-		<conditions/>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/metadata-and-referencing/metadata-dataset/abstract">
+	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	  <key></key>
+	  <path>rdmo/metadata-and-referencing/metadata/abstract</path>
+	  <dc:comment/>
+	  <attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/scope"/>
+	  <questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/metadata-and-referencing/metadata-dataset"/>
+	  <is_collection>False</is_collection>
+	  <order>0</order>
+	  <help lang="en">Welche Informationen sind für Außenstehende notwendig, um die Daten zu verstehen (d. h. ihre Erhebung bzw. Entstehung, Analyse sowie die auf ihrer Basis gewonnenen Forschungsergebnisse nachvollziehen) und nachnutzen zu können?</help>
+	  <help lang="de">Welche Informationen sind für Außenstehende notwendig, um die Daten zu verstehen (d. h. ihre Erhebung bzw. Entstehung, Analyse sowie die auf ihrer Basis gewonnenen Forschungsergebnisse nachvollziehen) und nachnutzen zu können?</help>
+	  <text lang="en">Welche Metadaten werden erhoben? Werden Standards, Ontologien oder Klassifikationen verwendet?</text>
+	  <text lang="de">Welche Metadaten werden erhoben? Werden Standards, Ontologien oder Klassifikationen verwendet?</text>
+	  <verbose_name lang="en"/>
+	  <verbose_name lang="de"/>
+	  <verbose_name_plural lang="en"/>
+	  <verbose_name_plural lang="de"/>
+	  <widget_type>checkbox</widget_type>
+	  <value_type>text</value_type>
+	  <maximum/>
+	  <minimum/>
+	  <step/>
+	  <unit/>
+	  <optionsets>
+	    <optionset dc:uri="https://rdmorganiser.github.io/terms/options/mandatory_metadata_options"/>
+	  </optionsets>
+	  <conditions/>
 	</question>
 </rdmo>
