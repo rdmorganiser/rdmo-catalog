@@ -28,20 +28,20 @@ In the folowing provide details what needs to be changed.
 - [ ] condition
 - [ ] attribute
 
-** Original setting or content 
+** Original setting or content ** 
 What is the current content or setting e.g. 
 
 ```xml
  <text lang="en">Projektlaufzeit (Monate)</text>
 ```
 
-** Proposed setting or content 
+** Proposed setting or content ** 
 What should it look like in the new version, e.g. 
 ```xml
  <text lang="en">Projektlaufzeit </text>
 ```   
 
-**Example of a question in xml
+**Example of a question in xml **
 ```xml
 <question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/project-schedule-schedule/project_duration">
 	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
