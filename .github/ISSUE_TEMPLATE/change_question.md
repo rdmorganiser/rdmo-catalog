@@ -1,9 +1,8 @@
 ---
-name: Change question request
-about: Create a report to help us improve the question in rdmo catlog UA Ruhr 
-title: 'Request to change rdmo question: xyz'
-labels: '"change request"'
-assignees: ''
+name: New/Edit Question
+about: Create a report to help us improve a question in RDMO catalog UA Ruhr. Provide suggestions for a new RDMO question or for updating an existing one.
+title: 'New/Edit Question: TYPE PATH URI HERE
+labels: '"Question Issue"'
 
 ---
 
@@ -12,7 +11,8 @@ A clear and concise description of what the request is.
 
 
 **Precise details **
-In the folowing provide details what needs to be changed.  
+Provide details what needs to be changed for an existing question.
+When requesting a new question provide `question text` (mandatory) and, if possible, the other content and parameters, too (optional).    
 - [ ] uri
 - [ ] key
 - [ ] path
