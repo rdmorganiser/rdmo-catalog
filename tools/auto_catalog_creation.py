@@ -6,7 +6,7 @@ from lxml import etree
 from lxml.etree import Element
 
 def main():
-    root = read_xml("../rdmorganiser/questions/all_questions.xml")
+    root = read_xml("all_questions.xml")
     life_cycle_content = read_yaml("cat_member.yaml")
     cat_list = []
     cat_list_tmp = []
@@ -16,12 +16,6 @@ def main():
     # for now this is the global namespace
     xmlns = "{http://purl.org/dc/elements/1.1/}"
     xml_nsmap = root.nsmap
-    # if later necessary the name space cen be retrieved using something like this
-    # where question is an element with the subelement questionset
-    # qset_ns = question.find("questionset").nsmap
-    # qset_ns_key = list(qset_ns.keys())[0]
-    # XHTML_NAMESPACE = qset_ns[qset_ns_key]
-    # XHTML = "{%s}" % XHTML_NAMESPACE
 
     for question in root.iterchildren("question"):
         # finding the questionset of the question
@@ -34,14 +28,10 @@ def main():
         sec_xpath = ".section[@dc:uri='" + sec_uri + "']"
         sec = root.find(sec_xpath, xml_nsmap)
 
-        # assert qset.tag == "questionset"
-        # assert qset.get(xmlns + "uri") == qset_uri
-        # qset_nsmap = question.find("questionset").nsmap
-        # assert qset_nsmap == xml_nsmap
-
         for n, cat_info in enumerate(life_cycle_content["catalogs"]):
             # use path as key for check of membership to catalog
             if life_cycle_content[question.find("path").text][cat_info[0]]:
+                # check if qset and sec are already in catalog
                 if cat_list[n].find(qset_xpath, xml_nsmap) == None:
                     if cat_list[n].find(sec_xpath, xml_nsmap) == None:
                         tmp_sec = change_path(sec, cat_info[0])
@@ -49,41 +39,27 @@ def main():
                     tmp_qset = change_path(qset, cat_info[0])
                     cat_list[n].append(deepcopy(tmp_qset))
                 tmp_question = change_path(question, cat_info[0])
-                cat_list[n].append(deepcopy(tmp_question))
+                # sort the questions below their respective questionsets
+                cat_qset = cat_list[n].find(qset_xpath, xml_nsmap)
+                index = cat_list[n].index(cat_qset)
+                cat_list[n].insert(index+1, deepcopy(tmp_question))
             else:
                 continue
-
-        #         change_path(section, cat_info[0])
-        #         cat_list[n].append(deepcopy(question))
-
-    # # these loops write all the sections and questions sets to the catalogs and
-    # # then sort the questions accordingly
-    # for section in root.iterchildren("section"):
-    #     for n, cat in enumerate(cat_list):
-    #         change_path(section, life_cycle_content["catalogs"][n][0])
-    #         cat.append(deepcopy(section))
-    #
-    # for qset in root.iterchildren("questionset"):
-    #         for n, cat in enumerate(cat_list):
-    #             change_path(qset, life_cycle_content["catalogs"][n][0])
-    #             cat.append(deepcopy(qset))
-    #
-    # for question in root.iterchildren("question"):
-    #     for n, cat_info in enumerate(life_cycle_content["catalogs"]):
-    #         change_path(section, cat_info[0])
-    #         if life_cycle_content[question.find("path").text][cat_info[0]]:
-    #             cat_list[n].append(deepcopy(question))
 
     write_catalogs(cat_list, life_cycle_content["catalogs"])
     change_uri(life_cycle_content["catalogs"])
 
 def write_catalogs(cat_list, name_list):
+    # takes a list of root elements and file names and writes them to the specified
+    # relative directory
     for n, cat in enumerate(cat_list):
         tree = etree.ElementTree(cat)
         tree.write("../rdmorganiser/questions/" + name_list[n][0] + ".xml",
                     xml_declaration=True, encoding="UTF-8")
 
 def change_path(element, name):
+    # takes an etree.Element and catalog key and changes the path variable of
+    # the element
     element = deepcopy(element)
     path = element.find("path")
     remove_index = path.text.find("/")
@@ -92,7 +68,8 @@ def change_path(element, name):
     return element
 
 def change_uri(name_list):
-    # this is rather a workaround than a solution
+    # this is rather a workaround than a solution, but prefixes on Attributes make things
+    # unnecessary hard to access and change
     default_uri = "https://rdmorganiser.github.io/terms/questions/ua_ruhr"
     for name in name_list:
         cat = open("../rdmorganiser/questions/" + name[0] + ".xml", "r", encoding="UTF-8")
@@ -106,6 +83,8 @@ def change_uri(name_list):
         cat.close()
 
 def make_root(cat_vars):
+    # takes a list of catalog variables [key, name] and generates a root element
+    # with a predefined name space among other informations
     XHTML_NAMESPACE = "http://purl.org/dc/elements/1.1/"
     XHTML = "{%s}" % XHTML_NAMESPACE
     NSMAP = {"dc":XHTML_NAMESPACE} # the default namespace with prefix
@@ -126,11 +105,13 @@ def make_root(cat_vars):
     return root
 
 def read_yaml(file_name):
+    # reads in a yaml file and returns the content of it
     data_file = open(os.path.abspath(file_name), "r")
     content = yaml.safe_load(data_file)
     return content
 
 def read_xml(file_name):
+    # reads in a xml file and returns it as etree.Element
     tree = etree.parse(os.path.abspath(file_name))
     root = tree.getroot()
     return root

@@ -35,32 +35,6 @@
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/topic-research_question/title">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>title</key>
-		<path>consultation/general/topic-research_question/title</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question/title"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/topic-research_question"/>
-		<is_collection>False</is_collection>
-		<order>1</order>
-		<help lang="en"/>
-		<help lang="de"/>
-		<text lang="en">What is the main research question of the project?</text>
-		<text lang="de">Wie lautet die primäre Forschungsfrage des Projektes?</text>
-		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="en"/>
-		<verbose_name_plural lang="de"/>
-		<widget_type>textarea</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<optionsets/>
-		<conditions/>
-	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/topic-research_question/keywords">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>keywords</key>
@@ -79,6 +53,32 @@
 		<verbose_name_plural lang="en">keywords</verbose_name_plural>
 		<verbose_name_plural lang="de">Schlagwörter</verbose_name_plural>
 		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/topic-research_question/title">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>title</key>
+		<path>consultation/general/topic-research_question/title</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question/title"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/topic-research_question"/>
+		<is_collection>False</is_collection>
+		<order>1</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">What is the main research question of the project?</text>
+		<text lang="de">Wie lautet die primäre Forschungsfrage des Projektes?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
@@ -106,6 +106,32 @@
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/topic-research_field/name">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>name</key>
+		<path>consultation/general/topic-research_field/name</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/name"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/topic-research_field"/>
+		<is_collection>True</is_collection>
+		<order>2</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">Which persons or institutions are responsible for the project coordination?</text>
+		<text lang="de">Welche Personen oder Institutionen sind verantwortlich für die Projektkoordination?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/topic-research_field/research_field">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>research_field</key>
@@ -134,32 +160,6 @@
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/topic-research_field/name">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>name</key>
-		<path>consultation/general/topic-research_field/name</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/name"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/topic-research_field"/>
-		<is_collection>True</is_collection>
-		<order>2</order>
-		<help lang="en"/>
-		<help lang="de"/>
-		<text lang="en">Which persons or institutions are responsible for the project coordination?</text>
-		<text lang="de">Welche Personen oder Institutionen sind verantwortlich für die Projektkoordination?</text>
-		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="en"/>
-		<verbose_name_plural lang="de"/>
-		<widget_type>text</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<optionsets/>
-		<conditions/>
-	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/project-partners-partner">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>project-partners-partner</key>
@@ -179,19 +179,19 @@
 		<verbose_name_plural lang="de">Projektpartner</verbose_name_plural>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/project-partners-partner/name">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/project-partners-partner/contact">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>name</key>
-		<path>consultation/general/project-partners-partner/name</path>
+		<key>contact</key>
+		<path>consultation/general/project-partners-partner/contact</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/name"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/contact_person/name"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/project-partners-partner"/>
-		<is_collection>False</is_collection>
-		<order>0</order>
-		<help lang="en"/>
-		<help lang="de"/>
-		<text lang="en">Project partner</text>
-		<text lang="de">Projektpartner</text>
+		<is_collection>True</is_collection>
+		<order>3</order>
+		<help lang="en">Please give the name and an email address.</help>
+		<help lang="de">Bitte geben Sie den Namen und eine Email Adresse an.</help>
+		<text lang="en">Who is/are the contact person(s) for data management questions?</text>
+		<text lang="de">Wer ist bei diesem Partner der/die Ansprechpartner/in für das Datenmanagement?</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -233,19 +233,19 @@
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/project-partners-partner/contact">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/project-partners-partner/name">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>contact</key>
-		<path>consultation/general/project-partners-partner/contact</path>
+		<key>name</key>
+		<path>consultation/general/project-partners-partner/name</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/contact_person/name"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/name"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/project-partners-partner"/>
-		<is_collection>True</is_collection>
-		<order>3</order>
-		<help lang="en">Please give the name and an email address.</help>
-		<help lang="de">Bitte geben Sie den Namen und eine Email Adresse an.</help>
-		<text lang="en">Who is/are the contact person(s) for data management questions?</text>
-		<text lang="de">Wer ist bei diesem Partner der/die Ansprechpartner/in für das Datenmanagement?</text>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">Project partner</text>
+		<text lang="de">Projektpartner</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -398,6 +398,32 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/content-classification/data-existing_data/creator_name">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>creator_name</key>
+		<path>consultation/content-classification/data-existing_data/creator_name</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator/name"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/content-classification/data-existing_data"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">If re-used, who created the dataset?</text>
+		<text lang="de">Wenn nachgenutzt, wer hat den Datensatz erzeugt?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/content-classification/data-existing_data/origin">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>origin</key>
@@ -424,32 +450,6 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin_options"/>
 		</optionsets>
-		<conditions/>
-	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/content-classification/data-existing_data/creator_name">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>creator_name</key>
-		<path>consultation/content-classification/data-existing_data/creator_name</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator/name"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/content-classification/data-existing_data"/>
-		<is_collection>False</is_collection>
-		<order>2</order>
-		<help lang="en"/>
-		<help lang="de"/>
-		<text lang="en">If re-used, who created the dataset?</text>
-		<text lang="de">Wenn nachgenutzt, wer hat den Datensatz erzeugt?</text>
-		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="en"/>
-		<verbose_name_plural lang="de"/>
-		<widget_type>textarea</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<optionsets/>
 		<conditions/>
 	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/content-classification/data-reproducibility">
@@ -532,6 +532,32 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/technical-classification/data-volume/rate">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>rate</key>
+		<path>consultation/technical-classification/data-volume/rate</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/rate"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/technical-classification/data-volume"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<help lang="en">Optional. This is only of concern if the data production rate reaches TB scale.</help>
+		<help lang="de">Optional. Dies ist nur relevant, wenn das Wachstum die TB-Größenordnung erreicht.</help>
+		<text lang="en">How much data is produced per year?</text>
+		<text lang="de">Wie hoch ist die erwartete Erzeugungsrate der Daten pro Jahr?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>integer</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/technical-classification/data-volume/volume">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>volume</key>
@@ -558,32 +584,6 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_size_options"/>
 		</optionsets>
-		<conditions/>
-	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/technical-classification/data-volume/rate">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>rate</key>
-		<path>consultation/technical-classification/data-volume/rate</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/rate"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/technical-classification/data-volume"/>
-		<is_collection>False</is_collection>
-		<order>2</order>
-		<help lang="en">Optional. This is only of concern if the data production rate reaches TB scale.</help>
-		<help lang="de">Optional. Dies ist nur relevant, wenn das Wachstum die TB-Größenordnung erreicht.</help>
-		<text lang="en">How much data is produced per year?</text>
-		<text lang="de">Wie hoch ist die erwartete Erzeugungsrate der Daten pro Jahr?</text>
-		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="en"/>
-		<verbose_name_plural lang="de"/>
-		<widget_type>text</widget_type>
-		<value_type>integer</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<optionsets/>
 		<conditions/>
 	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/technical-classification/data-formats">
