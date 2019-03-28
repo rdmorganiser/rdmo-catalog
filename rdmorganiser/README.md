@@ -3,7 +3,7 @@ UA Ruhr catalogs
 
 This repository contains the resaearch data management life cycle catalogs for [RDMO](https://github.com/rdmorganiser/rdmo) prepared by the work group FDM UA Ruhr.
 
-To install the catalogs into a freshly installed instance of RDMO, use
+To import the catalogs into a freshly installed instance of RDMO, use
 
 ```
 ./manage.py import /path/to/domain/rdmo.xml
@@ -16,3 +16,15 @@ To install the catalogs into a freshly installed instance of RDMO, use
 ```
 
 Use the same order when importing over the RDMO web interface.
+
+=======
+
+
+Reindent
+--------
+
+To indent the XML files use:
+
+```bash
+for f in *.xml; do xmllint --format $f > /tmp/$f; mv /tmp/$f $f; done
+```
