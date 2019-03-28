@@ -1,21 +1,23 @@
-RDMO catalog
+UA Ruhr catalogs
 ============
 
-This repository contains the content for [RDMO](https://github.com/rdmorganiser/rdmo) prepared by the [RDMO-Project](https://rdmorganiser.github.io).
+This repository contains the resaearch data management life cycle catalogs for [RDMO](https://github.com/rdmorganiser/rdmo) prepared by the work group FDM UA Ruhr.
 
-To install the catalog into a freshly installed instance of RDMO, use
+To import the catalogs into a freshly installed instance of RDMO, use
 
 ```
 ./manage.py import /path/to/domain/rdmo.xml
-./manage.py import /path/to/conditions/rdmo.xml  # yes, again
+./manage.py import /path/to/conditions/rdmo.xml
 ./manage.py import /path/to/options/rdmo.xml
 ./manage.py import /path/to/conditions/rdmo.xml  # yes, again
-./manage.py import /path/to/questions/rdmo.xml
+./manage.py import /path/to/questions/uaruhr.xml  # repeat this for every catalog file
 ./manage.py import /path/to/tasks/rdmo.xml
 ./manage.py import /path/to/views/rdmo.xml
 ```
 
 Use the same order when importing over the RDMO web interface.
+
+=======
 
 
 Reindent
