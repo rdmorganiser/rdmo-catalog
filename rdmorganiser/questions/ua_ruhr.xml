@@ -1,12 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/"><catalog dc:uri="https://rdmorganiser.github.io/terms/questions/ua-ruhr">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<catalog dc:uri="https://rdmorganiser.github.io/terms/questions/ua-ruhr">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>ua_ruhr</key>
 		<dc:comment/>
 		<order>0</order>
 		<title lang="en">UA Ruhr</title>
 		<title lang="de">UA Ruhr</title>
-	    </catalog><section dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/general">
+	</catalog>
+	<section dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/general">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>general</key>
 		<path>ua_ruhr/general</path>
@@ -179,6 +181,32 @@
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/general/project-schedule-schedule/project_duration">
+	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	  <key>project_duration</key>
+	  <path>ua_ruhr/general/project-schedule-schedule/project_duration</path>
+	  <dc:comment/>
+	  <attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/schedule/project_duration"/>
+	  <questionset dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/general/project-schedule-schedule"/>
+	  <is_collection>False</is_collection>
+	  <order>3</order>
+	  <help lang="en"/>
+	  <help lang="de"/>
+	  <text lang="en">Projektlaufzeit (Monate)</text>
+	  <text lang="de">Projektlaufzeit (Monate)</text>
+	  <verbose_name lang="en"/>
+	  <verbose_name lang="de"/>
+	  <verbose_name_plural lang="en"/>
+	  <verbose_name_plural lang="de"/>
+	  <widget_type>textarea</widget_type>
+	  <value_type>text</value_type>
+	  <maximum/>
+	  <minimum/>
+	  <step/>
+	  <unit/>
+	  <optionsets/>
+	  <conditions/>
+	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/general/project-schedule-schedule/project_end">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>project_end</key>
@@ -465,6 +493,32 @@
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/general/other-requirements-yesno/abstract">
+	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	  <key>abstract</key>
+	  <path>ua_ruhr/general/other-requirements-yesno/abstract</path>
+	  <dc:comment/>
+	  <attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/conditions"/>
+	  <questionset dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/general/other-requirements-yesno"/>
+	  <is_collection>False</is_collection>
+	  <order>0</order>
+	  <help lang="en"/>
+	  <help lang="de"/>
+	  <text lang="en">Bestehen von **irgendeiner** Seite Anforderungen an das Datenmanagement in Form von Policies, Vorgaben etc?</text>
+	  <text lang="de">Bestehen von **irgendeiner** Seite Anforderungen an das Datenmanagement in Form von Policies, Vorgaben etc?</text>
+	  <verbose_name lang="en"/>
+	  <verbose_name lang="de"/>
+	  <verbose_name_plural lang="en"/>
+	  <verbose_name_plural lang="de"/>
+	  <widget_type>textarea</widget_type>
+	  <value_type>text</value_type>
+	  <maximum/>
+	  <minimum/>
+	  <step/>
+	  <unit/>
+	  <optionsets/>
+	  <conditions/>
+	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/general/other-requirements-yesno/yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>yesno</key>
@@ -1741,6 +1795,32 @@ For reproducible data, it is also required to re-generate the data if need be.</
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/data-usage/data-sharing-and-re-use/abstract">
+	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	  <key>restriction</key>
+	  <path>ua_ruhr/data-usage/data-sharing-and-re-use/abstract</path>
+	  <dc:comment/>
+	  <attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/restriction"/>
+	  <questionset dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/data-usage/data-sharing-and-re-use-interoperability"/>
+	  <is_collection>False</is_collection>
+	  <order>0</order>
+	  <help lang="en"/>
+	  <help lang="de"/>
+	  <text lang="en">Bestehen generell Einschränkungen bei dem Zugriff und der Nachnutzung der Daten (rechtliche Gründe, Schutzrechte, Betriebsgeheimnisse etc)?</text>
+	  <text lang="de">Bestehen generell Einschränkungen bei dem Zugriff und der Nachnutzung der Daten (rechtliche Gründe, Schutzrechte, Betriebsgeheimnisse etc)?</text>
+	  <verbose_name lang="en"/>
+	  <verbose_name lang="de"/>
+	  <verbose_name_plural lang="en"/>
+	  <verbose_name_plural lang="de"/>
+	  <widget_type>textarea</widget_type>
+	  <value_type>text</value_type>
+	  <maximum/>
+	  <minimum/>
+	  <step/>
+	  <unit/>
+	  <optionsets/>
+	  <conditions/>
+	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/data-usage/data-sharing-and-re-use-interoperability/interoperability">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>interoperability</key>
@@ -2319,7 +2399,35 @@ For reproducible data, it is also required to re-generate the data if need be.</
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/metadata-and-referencing/metadata-dataset/responsible_person">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/metadata-and-referencing/metadata-dataset/abstract">
+	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	  <key>abstract</key>
+	  <path>ua_ruhr/metadata-and-referencing/metadata-dataset/abstract</path>
+	  <dc:comment/>
+	  <attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/abstract"/>
+	  <questionset dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/metadata-and-referencing/metadata-dataset"/>
+	  <is_collection>False</is_collection>
+	  <order>0</order>
+	  <help lang="en"/>
+	  <help lang="de"/>
+	  <text lang="en">Welche Metadaten werden erhoben? Werden Standards, Ontologien oder Klassifikationen verwendet?</text>
+	  <text lang="de">Welche Metadaten werden erhoben? Werden Standards, Ontologien oder Klassifikationen verwendet?</text>
+	  <verbose_name lang="en"/>
+	  <verbose_name lang="de"/>
+	  <verbose_name_plural lang="en"/>
+	  <verbose_name_plural lang="de"/>
+	  <widget_type>checkbox</widget_type>
+	  <value_type>text</value_type>
+	  <maximum/>
+	  <minimum/>
+	  <step/>
+	  <unit/>
+	  <optionsets>
+	    <optionset dc:uri="https://rdmorganiser.github.io/terms/options/mandatory_metadata_options"/>
+	  </optionsets>
+	  <conditions/>
+	</question>
+<question dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/metadata-and-referencing/metadata-dataset/responsible_person">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>responsible_person</key>
 		<path>ua_ruhr/metadata-and-referencing/metadata-dataset/responsible_person</path>
