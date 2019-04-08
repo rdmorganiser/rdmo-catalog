@@ -1,14 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/">
-	<catalog dc:uri="https://rdmorganiser.github.io/terms/questions/ua-ruhr">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/"><catalog dc:uri="https://rdmorganiser.github.io/terms/questions/ua-ruhr">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>ua_ruhr</key>
 		<dc:comment/>
 		<order>0</order>
 		<title lang="en">UA Ruhr</title>
 		<title lang="de">UA Ruhr</title>
-	</catalog>
-	<section dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/general">
+	    </catalog><section dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/general">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>general</key>
 		<path>ua_ruhr/general</path>
@@ -192,18 +190,18 @@
 	  <order>3</order>
 	  <help lang="en"/>
 	  <help lang="de"/>
-	  <text lang="en">Projektlaufzeit (Monate)</text>
+	  <text lang="en">Project duration (month)</text>
 	  <text lang="de">Projektlaufzeit (Monate)</text>
 	  <verbose_name lang="en"/>
 	  <verbose_name lang="de"/>
 	  <verbose_name_plural lang="en"/>
 	  <verbose_name_plural lang="de"/>
-	  <widget_type>textarea</widget_type>
-	  <value_type>text</value_type>
+	  <widget_type>range slider</widget_type>
+	  <value_type>integer</value_type>
 	  <maximum/>
 	  <minimum/>
 	  <step/>
-	  <unit/>
+	  <unit>month</unit>
 	  <optionsets/>
 	  <conditions/>
 	</question>
@@ -504,7 +502,7 @@
 	  <order>0</order>
 	  <help lang="en"/>
 	  <help lang="de"/>
-	  <text lang="en">Bestehen von **irgendeiner** Seite Anforderungen an das Datenmanagement in Form von Policies, Vorgaben etc?</text>
+	  <text lang="en">Are there requirements to the data management in the form of policies from ANY site?</text>
 	  <text lang="de">Bestehen von **irgendeiner** Seite Anforderungen an das Datenmanagement in Form von Policies, Vorgaben etc?</text>
 	  <verbose_name lang="en"/>
 	  <verbose_name lang="de"/>
@@ -1806,7 +1804,7 @@ For reproducible data, it is also required to re-generate the data if need be.</
 	  <order>0</order>
 	  <help lang="en"/>
 	  <help lang="de"/>
-	  <text lang="en">Bestehen generell Einschränkungen bei dem Zugriff und der Nachnutzung der Daten (rechtliche Gründe, Schutzrechte, Betriebsgeheimnisse etc)?</text>
+	  <text lang="en">Are there restrictions accessing and re-using the data in general?</text>
 	  <text lang="de">Bestehen generell Einschränkungen bei dem Zugriff und der Nachnutzung der Daten (rechtliche Gründe, Schutzrechte, Betriebsgeheimnisse etc)?</text>
 	  <verbose_name lang="en"/>
 	  <verbose_name lang="de"/>
@@ -2410,7 +2408,7 @@ For reproducible data, it is also required to re-generate the data if need be.</
 	  <order>0</order>
 	  <help lang="en"/>
 	  <help lang="de"/>
-	  <text lang="en">Welche Metadaten werden erhoben? Werden Standards, Ontologien oder Klassifikationen verwendet?</text>
+	  <text lang="en">Which types of metadata are collected? Do you use any kind of standard, ontology or classification?</text>
 	  <text lang="de">Welche Metadaten werden erhoben? Werden Standards, Ontologien oder Klassifikationen verwendet?</text>
 	  <verbose_name lang="en"/>
 	  <verbose_name lang="de"/>
