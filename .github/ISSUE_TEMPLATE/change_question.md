@@ -6,11 +6,11 @@ labels: '"Question Issue"'
 
 ---
 
-**Describe the request **
+**Describe the request**  
 A clear and concise description of what the request is.
 
 
-**Precise details **
+**Precise details**  
 Provide details what needs to be changed for an existing question.
 When requesting a new question provide `question text` (mandatory) and, if possible, the other content and parameters, too (optional).    
 - [ ] uri
@@ -28,20 +28,20 @@ When requesting a new question provide `question text` (mandatory) and, if possi
 - [ ] condition
 - [ ] attribute
 
-** Original setting or content ** 
+**Original setting or content**   
 What is the current content or setting e.g. 
 
 ```xml
  <text lang="en">Projektlaufzeit (Monate)</text>
 ```
 
-** Proposed setting or content ** 
+**Proposed setting or content**   
 What should it look like in the new version, e.g. 
 ```xml
  <text lang="en">Projektlaufzeit </text>
 ```   
 
-**Example of a question in xml **
+**Example of a question in xml**  
 ```xml
 <question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/project-schedule-schedule/project_duration">
 	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
