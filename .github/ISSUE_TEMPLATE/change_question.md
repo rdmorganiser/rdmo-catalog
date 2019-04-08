@@ -1,5 +1,5 @@
 ---
-name: Edit Question
+name: change_question
 about: Create a report to help us improve a question in RDMO catalog UA Ruhr. Provide suggestions for a new RDMO question or for updating an existing one.
 title: 'Edit Question: TYPE PATH URI HERE
 labels: '"Question Issue"'
