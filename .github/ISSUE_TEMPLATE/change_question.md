@@ -7,12 +7,29 @@ labels: '"Question Issue"'
 ---
 
 **Describe the request**  
-A clear and concise description of what the request is.
+A clear and concise description of what the request is  
 
 
-**Precise details**  
-Provide details what needs to be changed for an existing question.
-When requesting a new question provide `question text` (mandatory) and, if possible, the other content and parameters, too (optional).    
+**Propose what exactly should be changed**  
+As suggested below, please choose from the list in Additional context and provide the uptaded values.
+
+
+**Original setting or content**   
+What is the current content or setting e.g. 
+
+*question text en*  
+"original text"
+
+**Proposed setting or content**   
+What should it look like in the new version, e.g. 
+
+*question text en*  
+"new text"
+
+**Additional context**
+Add any other context about the problem here.
+
+**From the following list delete everything that is NOT content of your proposal. Once a subject of change is approved it will be marked accordingly in the list.**  
 - [ ] uri
 - [ ] key
 - [ ] path
@@ -27,50 +44,3 @@ When requesting a new question provide `question text` (mandatory) and, if possi
 - [ ] optionset
 - [ ] condition
 - [ ] attribute
-
-**Original setting or content**   
-What is the current content or setting e.g. 
-
-```xml
- <text lang="en">Projektlaufzeit (Monate)</text>
-```
-
-**Proposed setting or content**   
-What should it look like in the new version, e.g. 
-```xml
- <text lang="en">Projektlaufzeit </text>
-```   
-
-**Example of a question in xml**  
-```xml
-<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/project-schedule-schedule/project_duration">
-	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-	  <key>project_duration</key>
-	  <path>ua-ruhr/general/project-schedule-schedule/project_duration</path>
-	  <dc:comment/>
-	  <attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/schedule/project_duration"/>
-	  <questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/project-schedule-schedule"/>
-	  <is_collection>False</is_collection>
-	  <order>3</order>
-	  <help lang="en"/>
-	  <help lang="de"/>
-	  <text lang="en">Projektlaufzeit (Monate)</text>
-	  <text lang="de">Projektlaufzeit (Monate)</text>
-	  <verbose_name lang="en"/>
-	  <verbose_name lang="de"/>
-	  <verbose_name_plural lang="en"/>
-	  <verbose_name_plural lang="de"/>
-	  <widget_type>textarea</widget_type>
-	  <value_type>text</value_type>
-	  <maximum/>
-	  <minimum/>
-	  <step/>
-	  <unit/>
-	  <optionsets/>
-	  <conditions/>
-</question>
-```
-
-
-**Additional context**
-Add any other context about the problem here.
