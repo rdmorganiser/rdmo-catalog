@@ -1,7 +1,7 @@
 ---
-name: New/Edit Question
+name: Edit Question
 about: Create a report to help us improve a question in RDMO catalog UA Ruhr. Provide suggestions for a new RDMO question or for updating an existing one.
-title: 'New/Edit Question: TYPE PATH URI HERE
+title: 'Edit Question: TYPE PATH URI HERE
 labels: '"Question Issue"'
 
 ---
