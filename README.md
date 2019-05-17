@@ -2,7 +2,8 @@
 This repository contains the content for [RDMO](https://github.com/rdmorganiser/rdmo) prepared by [FDM-UARUHR](https://github.com/organizations/FDM-UARuhr).
 
 ## Changes and additions 
-the following items lit the chanages and additions made w.r.t. to [rdmorganiser/rdmo-catalog](https://github.com/rdmorganiser/rdmo-catalog)  
+the following items list the changes and additions made w.r.t. to [rdmorganiser/rdmo-catalog](https://github.com/rdmorganiser/rdmo-catalog)  
+* UA Ruhr specific https://fdm-uaruhr.github.io/rdmo-catalog-uaruhr/questions/ua_changes.html
 * Updating questions with respect to GDPR see [wiki](https://github.com/FDM-UARuhr/rdmo-catalog-uaruhr/wiki/Update-GDPR-related-questions)
 
 ## Generation of catalogs for rdm life-cycle   
