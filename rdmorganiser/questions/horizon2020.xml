@@ -1,0 +1,1969 @@
+<?xml version="1.0" ?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<catalog dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>horizon2020</key>
+		<dc:comment>Bei diesem Fragebogen wurde eine neue Sortierung erarbeitet, die einen weiteren Zugang zu den Fragen für ein Horizon2020-DMP bieten soll. Während das Template von Horizon2020 die FAIR data Prinzipien im Vordergrund hat, soll die Sortierung in diesem Fragebogen inhaltliche Zusammenhänge darstellen und so die Beantwortung der Fragen zu erleichtern.
+Bei der jeweiligen Frage befindet sich im Kommentarfeld ein Hinweis auf welche Original-H2020-Frage die aktuelle Frage in RDMO abzielt. Die Nummerierung existiert so im H2020-Template nicht, sie wurde zum besseren Überblick ergänzt.</dc:comment>
+		<order>3</order>
+		<title lang="en">Horizon2020</title>
+		<title lang="de">Horizon2020</title>
+	</catalog>
+	<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/general">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>general</key>
+		<path>horizon2020/general</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020"/>
+		<order>1</order>
+		<title lang="en">1. General information about the research project</title>
+		<title lang="de">1. Allgemeine Daten zum Forschungsvorhaben</title>
+	</section>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/general/topic-description">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>topic-description</key>
+		<path>horizon2020/general/topic-description</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/general"/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<title lang="en">Purpose of the project</title>
+		<title lang="de">Zweck</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/general/topic-description/description">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>description</key>
+		<path>horizon2020/general/topic-description/description</path>
+		<dc:comment>H2020: 1.1 What is the purpose of the data collection/generation and its relation to the objectives of the project?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_description"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/general/topic-description"/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<help lang="en">Please give an overview of the aim of the project and describe the individual work packages or sub-projects in which data are collected.</help>
+		<help lang="de">Bitte geben Sie einen Überblick über das Ziel des Projekts und beschreiben Sie die einzelnen Arbeitspakete bzw. Teilprojekte in denen Daten erhoben werden.</help>
+		<text lang="en">1.1 What is the purpose of the data collection/generation and its relation to the objectives of the project?</text>
+		<text lang="de">1.1 Zu welchem Zweck erfolgt die Datenerhebung im Projekt?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/general/selection-contact">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>selection-contact</key>
+		<path>horizon2020/general/selection-contact</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/general"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<title lang="en">Contact person</title>
+		<title lang="de">Ansprechpartner</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/general/selection-contact/contact">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>contact</key>
+		<path>horizon2020/general/selection-contact/contact</path>
+		<dc:comment>H2020: 3.3 Who will be responsible for data management in your project?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/contact_person/name"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/general/selection-contact"/>
+		<is_collection>True</is_collection>
+		<order>0</order>
+		<help lang="en">Please give the name and an email address.</help>
+		<help lang="de">Bitte geben Sie den Namen und eine E-Mail-Adresse an.</help>
+		<text lang="en">1.2 Who will be responsible for data management in your project?</text>
+		<text lang="de">1.2 Wer ist bei diesem Partner der/die Ansprechpartner/in für das Datenmanagement?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/general/dmp_ver-dmp_ver">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>dmp_ver-dmp_ver</key>
+		<path>horizon2020/general/dmp_ver-dmp_ver</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/support"/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/general"/>
+		<is_collection>False</is_collection>
+		<order>3</order>
+		<title lang="en">Processing status</title>
+		<title lang="de">Bearbeitungsstand</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de">Bearbeitungstand DMP</verbose_name>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/general/dmp_ver-dmp_ver/vers_bez">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>vers_bez</key>
+		<path>horizon2020/general/dmp_ver-dmp_ver/vers_bez</path>
+		<dc:comment>not included in Original-H2020-Template</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/support"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/general/dmp_ver-dmp_ver"/>
+		<is_collection>True</is_collection>
+		<order>0</order>
+		<help lang="en">Please note version number and date of last development (e.g. V01_2018-12-12)</help>
+		<help lang="de">z.B. durch Eingabe der Versionsnummer und des Bearbeitungsdatums (V01_2018-12-12)</help>
+		<text lang="en">1.3 Versionnumber and date</text>
+		<text lang="de">1.3 Bearbeitungsstand des Datenmanagementplans</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/content-classification">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>content-classification</key>
+		<path>horizon2020/content-classification</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020"/>
+		<order>2</order>
+		<title lang="en">2. Existing data</title>
+		<title lang="de">2. Existierende Daten</title>
+	</section>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/content-classification/data-existing_data">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>data-existing_data</key>
+		<path>horizon2020/content-classification/data-existing_data</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/content-classification"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<title lang="en">Data</title>
+		<title lang="de">Daten</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/content-classification/data-existing_data/origin">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>origin</key>
+		<path>horizon2020/content-classification/data-existing_data/origin</path>
+		<dc:comment>H2020: 1.3 Will you re-use any existing data and how?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/content-classification/data-existing_data"/>
+		<is_collection>False</is_collection>
+		<order>1</order>
+		<help lang="en">If existing data are reused, please describe under which conditions they can be used (which institution provides the data ; which requirements are to take care of e.g. proposals, agreements for data reuse).</help>
+		<help lang="de">Wenn bereits existierende Daten genutzt werden sollen, ist anzugeben, wo und unter welchen Bedingungen diese genutzt werden können (wer ist die datenhaltende Stelle, welche Voraussetzungen sind damit verbunden: Anträge, Verträge zur Datennutzung).</help>
+		<text lang="en">2.1. Is it planned to integrate or reuse existing data?</text>
+		<text lang="de">2.1. Ist es vorgesehen, existierende Daten zu integrieren oder nachzunutzen?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/content-classification/data-existing_data/creator_name">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>creator_name</key>
+		<path>horizon2020/content-classification/data-existing_data/creator_name</path>
+		<dc:comment>H2020: 1.4 What is the origin of the data?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator/name"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/content-classification/data-existing_data"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<help lang="en">Please specify under which address, PID or URL the dataset is already available.</help>
+		<help lang="de">Bitte geben Sie auch an,  unter welcher Adresse, PID oder URL der Datensatz bereits verfügbar ist.</help>
+		<text lang="en">2.2 When data is reused, who created the record?</text>
+		<text lang="de">2.2 Wenn Daten nachgenutzt werden, wer hat den Datensatz erzeugt?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/content-classification/data-existing_data/system">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>system</key>
+		<path>horizon2020/content-classification/data-existing_data/system</path>
+		<dc:comment>H2020: 2.1.1 (for used data) Are the data produced and/or used in the project discoverable with metadata, identifiable and locatable by means of a standard identification mechanism (e.g. persistent and unique identifiers such as Digital Object Identifiers)</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/pids"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/content-classification/data-existing_data"/>
+		<is_collection>False</is_collection>
+		<order>8</order>
+		<help lang="en">Please describe them:</help>
+		<help lang="de">Bitte beschreiben Sie diese:</help>
+		<text lang="en">2.3 Are the data used in the project discoverable with metadata, identifiable and locatable by means of a standard identification mechanism (e.g. persistent and unique identifiers such as Digital Object Identifiers &quot;DOI&quot;)? If yes, which meachnism is used?</text>
+		<text lang="de">2.3 Sind die im Projekt verwendeten Daten mit Metadaten auffindbar, identifizierbar und mittels eines Standardidentifizierungsmechanismus (z.B. persistente und eindeutige Identifikatoren wie Digital Object Identifiers) lokalisierbar? Wenn ja, welche werden verwendet?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/technical-classification">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>technical-classification</key>
+		<path>horizon2020/technical-classification</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020"/>
+		<order>3</order>
+		<title lang="en">3. Generated data</title>
+		<title lang="de">3. Generierte Daten</title>
+	</section>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/technical-classification/data-data">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>data-data</key>
+		<path>horizon2020/technical-classification/data-data</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/technical-classification"/>
+		<is_collection>True</is_collection>
+		<order>0</order>
+		<title lang="en">Data</title>
+		<title lang="de">Daten</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/technical-classification/data-data/format">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>format</key>
+		<path>horizon2020/technical-classification/data-data/format</path>
+		<dc:comment>H2020: 1.2 What types and formats of data will the project generate/collect?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/format"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/technical-classification/data-data"/>
+		<is_collection>False</is_collection>
+		<order>3</order>
+		<help lang="en">When choosing a data format, one should consider the consequences for collaborative use, long-term preservation as well as re-use. It is advisable to prefer formats that are standardised, open, non-proprietary and well-established in the respective scholarly community. More criteria and detailed explanations can be found e.g. in the &lt;a href=&quot;http://www.wissgrid.de/publikationen/Leitfaden_Data-Management-WissGrid.pdf&quot; target=_blank&quot;&gt;WissGrid-Leitfaden, pp. 22 f.&lt;/a&gt;).</help>
+		<help lang="de">Bei der Wahl des Dateiformates sollten auch die Konsequenzen für die kollaborative Nutzung, die Langzeitarchivierung sowie die Nachnutzung beachtet werden. Es empfiehlt sich, möglichst standardisierte, nicht-proprietäre und allgemein bzw. in der spezifischen Community verbreitete Formate zu nutzen. Weitere Kriterien sowie detaillierte Erläuterungen sind z.B. im &lt;a href=&quot;http://www.wissgrid.de/publikationen/Leitfaden_Data-Management-WissGrid.pdf&quot; target=_blank&quot;&gt;WissGrid-Leitfaden, S. 22 f.&lt;/a&gt;) zu finden.</help>
+		<text lang="en">3.1 What types and formats of data will the project generate/collect?</text>
+		<text lang="de">3.1 Welche Dateitypen und Dateiformate werden während des Projekts generiert?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/technical-classification/data-data/volume">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>volume</key>
+		<path>horizon2020/technical-classification/data-data/volume</path>
+		<dc:comment>H2020: 1.5 What is the expected size of the data?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/size/volume"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/technical-classification/data-data"/>
+		<is_collection>False</is_collection>
+		<order>4</order>
+		<help lang="en">Please estimate the size of the dataset (it is important for the storage during or longterm preservation after the project).</help>
+		<help lang="de">Hier sollte eine Abschätzung der anfallenden Datenmenge erfolgen (relevant für Speicherung während des Projekts bzw nach Projektende).</help>
+		<text lang="en">3.2 What is the actual or expected size of the dataset?</text>
+		<text lang="de">3.2 Was ist die tatsächliche oder erwartete Größe des Datensatzes?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_size_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>metadata-and-referencing</key>
+		<path>horizon2020/metadata-and-referencing</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020"/>
+		<order>4</order>
+		<title lang="en">4. Metadata and referencing</title>
+		<title lang="de">4. Metadaten und Referenzierung</title>
+	</section>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/metadata-metadata">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>metadata-metadata</key>
+		<path>horizon2020/metadata-and-referencing/metadata-metadata</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing"/>
+		<is_collection>True</is_collection>
+		<order>1</order>
+		<title lang="en">Metadata</title>
+		<title lang="de">Metadaten</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/metadata-metadata/creation_metadata">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>creation_metadata</key>
+		<path>horizon2020/metadata-and-referencing/metadata-metadata/creation_metadata</path>
+		<dc:comment>H2020: 2.1.5 What metadata will be created? In case metadata standards do not exist in your discipline, please outline what type of metadata will be created and how.</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/metadata-metadata"/>
+		<is_collection>True</is_collection>
+		<order>0</order>
+		<help lang="en"/>
+		<help lang="de">Damit Forschungsdaten langfristig verständlich bleiben und eine Nachnutzung zu ermöglichen, ist eine Beschreibung der Daten unerlässlich. Diese Beschreibung umfasst u.a. Angaben zum Ort, Zeitpunkt, den verwendeten Erhebungsinstrumenten, den angewandten Auswertungsmethoden usw.</help>
+		<text lang="en">4.1 What metadata will be created? In case metadata standards do not exist in your discipline, please outline what type of metadata will be created and how.</text>
+		<text lang="de">4.1 Welche Metadaten werden erhoben? Bitte geben Sie für alle anfallenden Daten in Stichpunkten an, welche Metadaten erfasst werden.</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/metadata-metadata/creation_automatic">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>creation_automatic</key>
+		<path>horizon2020/metadata-and-referencing/metadata-metadata/creation_automatic</path>
+		<dc:comment>H2020: 2.1.5 What metadata will be created? In case metadata standards do not exist in your discipline, please outline what type of metadata will be created and how.</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/creation_automatic"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/metadata-metadata"/>
+		<is_collection>False</is_collection>
+		<order>1</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">4.1.1 Which metadata will be generated automatically?</text>
+		<text lang="de">4.1.1 Welche Metadaten werden automatisch generiert?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/metadata-metadata/creation_semi-automatic">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>creation_semi-automatic</key>
+		<path>horizon2020/metadata-and-referencing/metadata-metadata/creation_semi-automatic</path>
+		<dc:comment>H2020: 2.1.5 What metadata will be created? In case metadata standards do not exist in your discipline, please outline what type of metadata will be created and how.</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/creation_semi_automatic"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/metadata-metadata"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">4.1.2 Which metadata will be generated semi-automatically?</text>
+		<text lang="de">4.1.2 Welche Metadaten werden semi-automatisch generiert?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/metadata-metadata/creation_manual">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>creation_manual</key>
+		<path>horizon2020/metadata-and-referencing/metadata-metadata/creation_manual</path>
+		<dc:comment>H2020: 2.1.5 What metadata will be created? In case metadata standards do not exist in your discipline, please outline what type of metadata will be created and how.</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/creation_manual"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/metadata-metadata"/>
+		<is_collection>False</is_collection>
+		<order>3</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">4.1.3 Which metadata will be created manually?</text>
+		<text lang="de">4.1.3 Welche Metadaten werden manuell erstellt?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/metadata-mapping">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>metadata-mapping</key>
+		<path>horizon2020/metadata-and-referencing/metadata-mapping</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing"/>
+		<is_collection>True</is_collection>
+		<order>2</order>
+		<title lang="en">Metadata standards</title>
+		<title lang="de">Metadatenstandards</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/metadata-mapping/standards">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>standards</key>
+		<path>horizon2020/metadata-and-referencing/metadata-mapping/standards</path>
+		<dc:comment>H2020: 2.3.2 What data and metadata vocabularies, standards or methodologies will you follow to make your data interoperable?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/standards"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/metadata-mapping"/>
+		<is_collection>False</is_collection>
+		<order>4</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">4.2 What data and metadata vocabularies, standards or methodologies will you follow to make your data interoperable?</text>
+		<text lang="de">4.2 Welche Metadaten-Standards, Ontologien, Klassifikationen etc. werden zur Beschreibung der Daten und Kontextinformation genutzt?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/metadata-mapping/standards1">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>standards1</key>
+		<path>horizon2020/metadata-and-referencing/metadata-mapping/standards1</path>
+		<dc:comment>H2020: 2.3.3 Will you be using standard vocabularies for all data types present in your data set, to allow inter-disciplinary interoperability?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/scope"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/metadata-mapping"/>
+		<is_collection>False</is_collection>
+		<order>5</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">4.3 Will you be using standard vocabularies for all data types present in your data set, to allow inter-disciplinary interoperability?</text>
+		<text lang="de">4.3 Wird Standardvokabular für den im Datensatz vorhandenen Datentypen verwendet, um eine interdisziplinäre Interoperabilität zu ermöglichen?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/metadata-mapping/mappings">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>mappings</key>
+		<path>horizon2020/metadata-and-referencing/metadata-mapping/mappings</path>
+		<dc:comment>H2020: 2.3.4 In case it is unavoidable that you use uncommon or generate project specific ontologies or vocabularies, will you provide mappings to more commonly used ontologies?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/mappings"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/metadata-mapping"/>
+		<is_collection>False</is_collection>
+		<order>6</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">4.4 In case it is unavoidable that you use uncommon or generate project-specific ontologies or vocabularies, will you provide mappings to more commonly used ontologies?</text>
+		<text lang="de">4.4 Sollte es unvermeidbar sein, projektspezifische oder seltene Ontologien, Metadatenschemata oder Vokabulare zu nutzen, werden Mappings zu gängigen Ontologien etc. erstellt?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/metadata-pids">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>metadata-pids</key>
+		<path>horizon2020/metadata-and-referencing/metadata-pids</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing"/>
+		<is_collection>True</is_collection>
+		<order>5</order>
+		<title lang="en">PIDs</title>
+		<title lang="de">PIDs</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/metadata-pids/system">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>system</key>
+		<path>horizon2020/metadata-and-referencing/metadata-pids/system</path>
+		<dc:comment>H2020: 2.1.1 (generated data) Are the data produced and/or used in the project discoverable with metadata, identifiable and locatable by means of a standard identification mechanism (e.g. persistent and unique identifiers such as Digital Object Identifiers)?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/pids/system"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/metadata-pids"/>
+		<is_collection>False</is_collection>
+		<order>8</order>
+		<help lang="en">Please describe:</help>
+		<help lang="de">Bitte beschreiben Sie diese:</help>
+		<text lang="en">4.5 Are the data produced in the project discoverable with metadata, identifiable and locatable by means of a standard identification mechanism (e.g. persistent and unique identifiers such as Digital Object Identifiers &quot;DOI&quot;)? If yes, which meachnism is used?</text>
+		<text lang="de">4.5 Sind die im Projekt produzierten Daten mit Metadaten auffindbar, identifizierbar und mittels eines Standardidentifizierungsmechanismus (z.B. persistente und eindeutige Identifikatoren wie Digital Object Identifiers &quot;DOI&quot;) lokalisierbar? Wenn ja, welche werden verwendet?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/topic-keywords">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>topic-keywords</key>
+		<path>horizon2020/metadata-and-referencing/topic-keywords</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing"/>
+		<is_collection>True</is_collection>
+		<order>6</order>
+		<title lang="en">Subject heading</title>
+		<title lang="de">Schlagworte</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/topic-keywords/keywords">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>keywords</key>
+		<path>horizon2020/metadata-and-referencing/topic-keywords/keywords</path>
+		<dc:comment>H2020: 2.1.3 Will search keywords be provided that optimize possibilities for re-use?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question/keywords"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/metadata-and-referencing/topic-keywords"/>
+		<is_collection>True</is_collection>
+		<order>0</order>
+		<help lang="en">These keywords are intended to make it possible to find the data for subsequent use.</help>
+		<help lang="de">Diese Schlagworte sollen das Auffinden der Daten für eine spätere Nachnutzung ermöglichen.</help>
+		<text lang="en">4.6 Will search keywords be provided that optimize possibilities for re-use of data?</text>
+		<text lang="de">4.6 Werden Suchbegriffe angegeben, um die Möglichkeiten der Nachnutzung der Daten zu optimieren?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/data-usage">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>data-usage</key>
+		<path>horizon2020/data-usage</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020"/>
+		<order>5</order>
+		<title lang="en">5. Data organisation and security</title>
+		<title lang="de">5. Datenorganisation und -sicherheit</title>
+	</section>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/data-usage/data-storage-and-security-naming_policy">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>data-storage-and-security-naming_policy</key>
+		<path>horizon2020/data-usage/data-storage-and-security-naming_policy</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/data-usage"/>
+		<is_collection>False</is_collection>
+		<order>1</order>
+		<title lang="en">Guidelines</title>
+		<title lang="de">Richtlinien</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/data-usage/data-storage-and-security-naming_policy/naming_policy">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>naming_policy</key>
+		<path>horizon2020/data-usage/data-storage-and-security-naming_policy/naming_policy</path>
+		<dc:comment>H2020: 2.1.2 What naming conventions do you follow?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage/naming_policy"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/data-usage/data-storage-and-security-naming_policy"/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<help lang="en">Here you should describe how the data/files used in the project are named and how it is stored in a file/folder structure. It is recommended to define uniform rules for file storage, directory and file naming as well as versioning in the project and to record these in the data management plan. This is important to ensure that the data used remains traceable during the research process and to avoid data loss or changes due to accidental deletion, overwriting or relocation. In addition, uniform naming reduces the effort required for later data archiving.</help>
+		<help lang="de">Hier sollte beschrieben werden, wie die verwendeten Daten/Dateien im Projekt benannt werden und wie und wo sie gespeichert werden. Es ist zu empfehlen, einheitliche Regelungen zur Dateiablage, Verzeichnis- und Dateibenennung sowie zur Versionierung im Projekt festzulegen und diese im Datenmanagementplan festzuhalten. Dies ist wichtig, damit die verwendeten Daten während des Forschungsprozesses auffindbar bleiben und Datenverluste oder Datenveränderungen durch versehentliches Löschen, Überschreiben oder Verlegen vermieden werden. Zudem reduziert eine einheitliche Benennung den Aufwand für eine spätere Datenarchivierung.</help>
+		<text lang="en">5.1 Is there an internal project policy for naming the data? If so, please outlinenaming conventions briefly and link to more detailed documentation if necessary.</text>
+		<text lang="de">5.1 Gibt es eine projektinterne Richtlinie zur Benennung der Daten? Wenn ja, bitte skizzieren Sie sie kurz und verlinken Sie ggf. zu einer ausführlicheren Dokumentation.</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/data-usage/data-storage-and-security-strategy">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>data-storage-and-security-strategy</key>
+		<path>horizon2020/data-usage/data-storage-and-security-strategy</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/data-usage"/>
+		<is_collection>True</is_collection>
+		<order>2</order>
+		<title lang="en">Version strategy</title>
+		<title lang="de">Versionierungsstrategie</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/data-usage/data-storage-and-security-strategy/strategy">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>strategy</key>
+		<path>horizon2020/data-usage/data-storage-and-security-strategy/strategy</path>
+		<dc:comment>H2020: 2.1.4 Do you provide clear version numbers?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/versioning_strategy"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/data-usage/data-storage-and-security-strategy"/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<help lang="en">Please describe briefly the internal project rules for versioning data sets (e.g: Which changes require a new version? How are the changes documented? How are the different versions named?)</help>
+		<help lang="de">Bitte beschreiben Sie hier kurz projektinterne Regelungen zur Versionierung von Datensätzen (z.B.: Welche Änderungen machen eine neue Version erforderlich? Wie werden die Änderungen dokumentiert? Wie werden die verschiedenen Versionen benannt?)</help>
+		<text lang="en">5.2 Which versioning strategy is used for data records?</text>
+		<text lang="de">5.2 Welche Versionierungsstrategie werden für diese Datensätze angewandt?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/data-usage/data-storage-and-security-strategy/access_permissions">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>access_permissions</key>
+		<path>horizon2020/data-usage/data-storage-and-security-strategy/access_permissions</path>
+		<dc:comment>H2020: 2.2.11 Are there well described conditions for access (i.e. a machine readable license)?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/access_permissions"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/data-usage/data-storage-and-security-strategy"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<help lang="en">Please describe the procedures to protect the data against unallowed access (e.g. access authorisation and restrictions, encryption, password protection, firewall)</help>
+		<help lang="de">Bitte beschreiben Sie die Maßnahmen, die zum Schutz vor unbefugtem Zugriff ergriffen werden (z.B. Zugriffsrechte und -restriktionen, Verschlüsselung, Passwortschutz, Firewall)</help>
+		<text lang="en">5.3. Are there well described conditions for access (rights management)?</text>
+		<text lang="de">5.3 Wer darf auf den Datensatz zugreifen? Gibt es festgelegte Zugangsregelungen?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/data-usage/data-storage-and-security-security_measures">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>data-storage-and-security-security_measures</key>
+		<path>horizon2020/data-usage/data-storage-and-security-security_measures</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/data-usage"/>
+		<is_collection>True</is_collection>
+		<order>4</order>
+		<title lang="en">Data security</title>
+		<title lang="de">Datensicherheit</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/data-usage/data-storage-and-security-security_measures/restrictions">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>restrictions</key>
+		<path>horizon2020/data-usage/data-storage-and-security-security_measures/restrictions</path>
+		<dc:comment>H2020: 2.2.9 If there are restrictions on use, how will access be provided?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/restrictions_explanation"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/data-usage/data-storage-and-security-security_measures"/>
+		<is_collection>False</is_collection>
+		<order>-1</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">5.4 If there are restrictions on use, how will access be provided?</text>
+		<text lang="de">5.4 Wenn es Nutzungseinschränkungen gibt, wie wird der Zugang ermöglicht?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/data-usage/data-storage-and-security-security_measures/security_measures">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>security_measures</key>
+		<path>horizon2020/data-usage/data-storage-and-security-security_measures/security_measures</path>
+		<dc:comment>H2020: 2.2.12 How will the identity of the person accessing the data be ascertained?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/security_measures"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/data-usage/data-storage-and-security-security_measures"/>
+		<is_collection>False</is_collection>
+		<order>8</order>
+		<help lang="en"/>
+		<help lang="de">Bitte machen Sie hier Angaben zum Backup,  zur Datenwiederherstellung und zur Übertragung sensibler Daten.</help>
+		<text lang="en">5.5 How will the identity of the person accessing the data be ascertained?</text>
+		<text lang="de">5.5 Welche Maßnahmen werden zur Gewährleistung der Datensicherheit getroffen?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/data-usage/data-storage-and-security-security_measures/security_backups">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>security_backups</key>
+		<path>horizon2020/data-usage/data-storage-and-security-security_measures/security_backups</path>
+		<dc:comment>H2020: 4.1 What provisions are in place for data security (including data recovery as well as secure storage and transfer of sensitive data)?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backups"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/data-usage/data-storage-and-security-security_measures"/>
+		<is_collection>False</is_collection>
+		<order>9</order>
+		<help lang="en"/>
+		<help lang="de">Bitte machen Sie hier Angaben zum Backup, zur Datenwiederherstellung und zur Übertragung sensibler Daten.</help>
+		<text lang="en">5.6 What provisions are in place for data security (including data recovery as well as secure storage and transfer of sensitive data)?</text>
+		<text lang="de">5.6 Welche Bestimmungen gibt es für die Datensicherheit (einschließlich Datenwiederherstellung sowie sichere Speicherung und Übertragung sensibler Daten)?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/legal-and-ethics">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>legal-and-ethics</key>
+		<path>horizon2020/legal-and-ethics</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020"/>
+		<order>6</order>
+		<title lang="en">6. Legal and ethics</title>
+		<title lang="de">6. Rechtliche und ethische Fragen</title>
+	</section>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/legal-and-ethics/sensitive-data-yesno">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>sensitive-data-yesno</key>
+		<path>horizon2020/legal-and-ethics/sensitive-data-yesno</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/legal-and-ethics"/>
+		<is_collection>True</is_collection>
+		<order>21</order>
+		<title lang="en">Sensitive data</title>
+		<title lang="de">Sensible Daten</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/legal-and-ethics/sensitive-data-yesno/yesno">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>yesno</key>
+		<path>horizon2020/legal-and-ethics/sensitive-data-yesno/yesno</path>
+		<dc:comment>H2020: 5.1 Are there any ethical or legal issues that can have an impact on data sharing? These can also be discussed in the context of the ethics review. If relevant, include references to ethics deliverables and ethics chapter in the Description of the Action (DoA).</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/other/description"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/legal-and-ethics/sensitive-data-yesno"/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<help lang="en">It's to check if there are legal determinations e.g. data protection, rights of disposal or use. 
+Legal arrangements influence in which way data can be generated, edited  or stored. Please mention if there are rights of disposal and if there are personal data which underlie the protection of data privacy. 
+There may also be copyrights on the used measuring devices.</help>
+		<help lang="de">Für das Forschungsprojekt ist zu überprüfen, welche rechtlichen Bestimmungen (z.B. Datenschutz, Nutzungs- und Verfügungsrechte) für den Umgang mit den erhobenen Forschungsdaten bestehen. Diese sollten entsprechend benannt werden.
+
+Rechtliche Regelungen beeinflussen, in welcher Form die Daten erhoben, verarbeitet und gespeichert werden dürfen. Hierzu zählt z. B. die Frage, wer die Verfügungs- und Nutzungsrechte an den Daten besitzt und ob im Rahmen des Forschungsprojektes personenbezogene Daten erhoben werden, die dem Datenschutz unterliegen. Bspw. können auch Urheberrechte an verwendeten Instrumenten bestehen.</help>
+		<text lang="en">6.1 Are there any ethical or legal issues that can have an impact on data sharing? These can also be discussed in the context of the ethics review. If relevant, include references to ethics deliverables and ethics chapter in the Description of the Action (DoA).</text>
+		<text lang="de">6.1 Enthält dieser Datensatz nicht-personenbezogene sensible Daten?
+Falls relevant, fügen Sie in der Beschreibung der Maßnahme (DoA) Verweise auf das Kapitel über ethische Ergebnisse und Ethik ein.</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/legal-and-ethics/sensitive-data-yesno_person">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>sensitive-data-yesno_person</key>
+		<path>horizon2020/legal-and-ethics/sensitive-data-yesno_person</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/legal-and-ethics"/>
+		<is_collection>True</is_collection>
+		<order>22</order>
+		<title lang="en">Personal data</title>
+		<title lang="de">Personenbezogene Daten</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/legal-and-ethics/sensitive-data-yesno_person/yesno_person">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>yesno_person</key>
+		<path>horizon2020/legal-and-ethics/sensitive-data-yesno_person/yesno_person</path>
+		<dc:comment>H2020: 5.2 Is informed consent for data sharing and long term preservation included in questionnaires dealing with personal data?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data_yesno/yesno"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/legal-and-ethics/sensitive-data-yesno_person"/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<help lang="en">European Data Protection Law may apply.
+
+The German Federal Data Protection Act defines personal data as „any information concerning the personal or material circumstances of an identified or identifiable individual (the data subject)” &lt;a href=&quot;https://www.gesetze-im-internet.de/bdsg_1990/__3.html&quot; target=_blank&quot;&gt;(BDSG, §3 Abs. 1)&lt;/a&gt;).  
+  
+A person is “identified” when it is obvious whom the data is associated with. A person is “identifiable” when it is possible to find out which person the data refers to with additional information (See Häder 2009, p. 7).   
+  
+The handling of personal information is regulated by law. More information (in German only) can be found in the following publications:   
+
+* &lt;a href=&quot;http://www.ratswd.de/download/RatSWD_WP_2009/RatSWD_WP_90.pdf&quot; target=_blank&quot;&gt;Michael Häder (2009): Der Datenschutz in den Sozialwissenschaften. RatSWD Working Paper No. 90.&lt;/a&gt;   
+
+* &lt;a href=&quot;http://www.gesis.org/fileadmin/upload/forschung/publikationen/gesis_reihen/gesis_methodenberichte/2012/TechnicalReport_2012-07.pdf&quot; target=_blank&quot;&gt;Uwe Jensen (2012): Leitlinien zum Management von Forschungsdaten. Sozialwissenschaftliche Umfragedaten. GESIS Technical Report 2012|07.&lt;/a&gt; (esp. pp. 13 ff)     
+
+* &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=_blank&quot;&gt;Handreichung: Informationen zu rechtlichen Aspekten bei der Handhabung von Sprachkorpora.&lt;/a&gt; (esp. part 1.1 and part 2.2)</help>
+		<help lang="de">Europäisches Recht kann Geltung haben.
+
+Das Bundesdatenschutzgesetz definiert personenbezogene Daten als „Einzelangaben über persönliche oder sachliche Verhältnisse einer bestimmten oder bestimmbaren natürlichen Person“ &lt;a href=&quot;https://www.gesetze-im-internet.de/bdsg_1990/__3.html&quot; target=_blank&quot;&gt;(BDSG, §3 Abs. 1)&lt;/a&gt;
+  
+Dabei wird von einer „bestimmten Person“ gesprochen, wenn eindeutig erkennbar ist, zu welcher Person die Daten gehören. Um eine „bestimmbare Person“ handelt es sich, wenn mittels Zusatzinformationen ermittelt werden kann, um welche Person es geht. (Vgl. Häder 2009, S. 7).  
+ 
+Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar auf bestimmte Disziplinen / Datentypen fokussiert, aber übertragbar) zum Thema bieten bspw.:  
+
+* &lt;a href=&quot;http://www.ratswd.de/download/RatSWD_WP_2009/RatSWD_WP_90.pdf&quot; target=_blank&quot;&gt;Michael Häder (2009): Der Datenschutz in den Sozialwissenschaften. RatSWD Working Paper No. 90.&lt;/a&gt;
+ 
+* &lt;a href=&quot;http://www.gesis.org/fileadmin/upload/forschung/publikationen/gesis_reihen/gesis_methodenberichte/2012/TechnicalReport_2012-07.pdf&quot; target=_blank&quot;&gt;Uwe Jensen (2012): Leitlinien zum Management von Forschungsdaten. Sozialwissenschaftliche Umfragedaten. GESIS Technical Report 2012|07.&lt;/a&gt; (v.a. S. 13ff.)  
+
+* &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=_blank&quot;&gt;Handreichung: Informationen zu rechtlichen Aspekten bei der Handhabung von Sprachkorpora.&lt;/a&gt; (v.a.  Teil 1.1 und Teil 2.2)</help>
+		<text lang="en">6.2 Does the datasets contain personal data?</text>
+		<text lang="de">6.2 Enthalten die Datensätze personenbezogene Daten?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/legal-and-ethics/sensitive-data-extent">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>sensitive-data-extent</key>
+		<path>horizon2020/legal-and-ethics/sensitive-data-extent</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/legal-and-ethics"/>
+		<is_collection>True</is_collection>
+		<order>23</order>
+		<title lang="en">Acquiescence</title>
+		<title lang="de">Einwilligung</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/legal-and-ethics/sensitive-data-extent/extent">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>extent</key>
+		<path>horizon2020/legal-and-ethics/sensitive-data-extent/extent</path>
+		<dc:comment>H2020: 5.2 Is informed consent for data sharing and long term preservation included in questionnaires dealing with personal data?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/consent/extent"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/legal-and-ethics/sensitive-data-extent"/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<help lang="en">Basically, the collection, processing, archiving and publication of personal data is only admissible, when the “informed consent” of the person in question has been obtained. There are only very few cases in which this is not the case (see, also for more information: &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=_blank&quot;&gt;Informationen zu rechtlichen Aspekten bei der Handhabung von Sprachkorpora&lt;/a&gt;, p. 6).</help>
+		<help lang="de">Grundsätzlich gilt, dass eine Erhebung, Verarbeitung, Archivierung und Veröffentlichung personenbezogener Daten nur zulässig ist, wenn eine entsprechende „informierte Einwilligung“ der Betroffenen vorliegt. Nur in ganz wenigen, jeweils in den Datenschutzgesetzen definierten Ausnahmefällen wird diese nicht benötigt (vgl., auch für mehr Information, &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=_blank&quot;&gt;Informationen zu rechtlichen Aspekten bei der Handhabung von Sprachkorpora&lt;/a&gt;, S. 6).</help>
+		<text lang="en">6.3 Is informed consent for data sharing and long term preservation included in questionnaires dealing with personal data?</text>
+		<text lang="de">6.3 In welchem Umfang wird die &quot;informierte Einwilligung&quot; der Betroffenen eingeholt?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/re-use">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>re-use</key>
+		<path>horizon2020/re-use</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020"/>
+		<order>7</order>
+		<title lang="en">7. Re-use</title>
+		<title lang="de">7. Weiterverwendung</title>
+	</section>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/re-use/data-storage-and-security-access_technology">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>data-storage-and-security-access_technology</key>
+		<path>horizon2020/re-use/data-storage-and-security-access_technology</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/re-use"/>
+		<is_collection>True</is_collection>
+		<order>0</order>
+		<title lang="en">Data access technology</title>
+		<title lang="de">Technologien zur Datennutzung</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/re-use/data-storage-and-security-access_technology/usage_technology">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>usage_technology</key>
+		<path>horizon2020/re-use/data-storage-and-security-access_technology/usage_technology</path>
+		<dc:comment>H2020: 2.2.4 What methods or software tools are needed to access the data?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_technology"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/re-use/data-storage-and-security-access_technology"/>
+		<is_collection>False</is_collection>
+		<order>4</order>
+		<help lang="en">To be able to re-use data (e.g. to replicate studies, for meta analysis or to solve new research questions), along with software, equipment and knowledge about special methods to use the data are required. 
+Just as with the formats, the recommendation is: the more standardised, open and established, the better for re-use.</help>
+		<help lang="de">Um Daten nachnutzen zu können, bspw. für die Replikation von Studien, Metaanalysen oder die Beantwortung neuer Forschungsfragen, werden neben den Daten selbst auch die Software, Geräte etc. und das Wissen über spezielle Verfahren zur Nutzung benötigt.
+Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablierter diese sind, desto einfacher ist i.d.R. eine Nachnutzung möglich.</help>
+		<text lang="en">7.1 What methods or software tools are needed to access and re-use the data?</text>
+		<text lang="de">7.1 Welche Software, Verfahren oder Technologien sind notwendig, um die Daten zu öffnen und zu nutzen?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/re-use/data-storage-and-security-access_technology/documentation">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>documentation</key>
+		<path>horizon2020/re-use/data-storage-and-security-access_technology/documentation</path>
+		<dc:comment>H2020: 2.2.5 Is documentation about the software needed to access the data included?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/software_documentation"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/re-use/data-storage-and-security-access_technology"/>
+		<is_collection>False</is_collection>
+		<order>5</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">7.2 Is documentation about the software needed to access the data included?</text>
+		<text lang="de">7.2 Wird die Dokumentation von ggf. zur Nutzung notwendiger Software benötigt, um die Daten zu nutzen?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/re-use/data-storage-and-security-access_technology/documentation1">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>documentation1</key>
+		<path>horizon2020/re-use/data-storage-and-security-access_technology/documentation1</path>
+		<dc:comment>H2020: 2.2.6 Is it possible to include the relevant software (e.g. in open source code)?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/yesno"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/re-use/data-storage-and-security-access_technology"/>
+		<is_collection>False</is_collection>
+		<order>6</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">7.3 Is it possible to include the relevant software (e.g. in open source code)?</text>
+		<text lang="de">7.3 Ist es möglich, die zum Öffnen und verwenden benötigte Software mit abzuspeichern?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/re-use/data-storage-and-security-access_permissions">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>data-storage-and-security-access_permissions</key>
+		<path>horizon2020/re-use/data-storage-and-security-access_permissions</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/re-use"/>
+		<is_collection>True</is_collection>
+		<order>1</order>
+		<title lang="en">Data access</title>
+		<title lang="de">Datenzugang</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/re-use/data-storage-and-security-access_permissions/scenario">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>scenario</key>
+		<path>horizon2020/re-use/data-storage-and-security-access_permissions/scenario</path>
+		<dc:comment>H2020: 1.6 To whom might it be useful ('data utility')?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reuse_scenario"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/re-use/data-storage-and-security-access_permissions"/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">7.4 For which persons, groups or institutions  might the dataset be useful  ('data utility')? What are possible scenarios?</text>
+		<text lang="de">7.4 Für welche Personen, Gruppen oder Institutionen könnte dieser Datensatz (für die Nachnutzung) von Interesse sein? Für welche Szenarien ist dies denkbar?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/re-use/selection-data_publication">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>selection-data_publication</key>
+		<path>horizon2020/re-use/selection-data_publication</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/re-use"/>
+		<is_collection>True</is_collection>
+		<order>2</order>
+		<title lang="en">Embargo</title>
+		<title lang="de">Embargo</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/re-use/selection-data_publication/data_publication_date">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>data_publication_date</key>
+		<path>horizon2020/re-use/selection-data_publication/data_publication_date</path>
+		<dc:comment>H2020: 2.4.2 When will the data be made available for re-use? If an embargo is sought to give time to publish or seek patents, specify why and how long this will apply, bearing in mind that research data should be made available as soon as possible.</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_publication_date"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/re-use/selection-data_publication"/>
+		<is_collection>False</is_collection>
+		<order>1</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">7.5 When will the data be made available for re-use?</text>
+		<text lang="de">7.5 Wann werden die Daten veröffentlicht?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/re-use/selection-data_publication/restriction_explanation">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>restriction_explanation</key>
+		<path>horizon2020/re-use/selection-data_publication/restriction_explanation</path>
+		<dc:comment>H2020: 2.4.3 Are the data produced and/or used in the project useable by third parties, in particular after the end of the project? If the re-use of some data is restricted, explain why.</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/embargo_period"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/re-use/selection-data_publication"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">7.5.1 If an embargo is sought to give time to publish or seek patents, specify why and how long this will apply, bearing in mind that research data should be made available as soon as possible.</text>
+		<text lang="de">7.5.1 Wenn ein Embargo vorliegt, geben Sie an, warum und wie lange dies gilt, unter Berücksichtigung, dass diese Forschungsdaten so bald wie möglich zur Verfügung gestellt werden sollten.</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>storage-and-long-term-preservation</key>
+		<path>horizon2020/storage-and-long-term-preservation</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020"/>
+		<order>8</order>
+		<title lang="en">8. Storage and long-term preservation</title>
+		<title lang="de">8. Speicherung und Langzeitarchivierung</title>
+	</section>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-interoperability">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>selection-interoperability</key>
+		<path>horizon2020/storage-and-long-term-preservation/selection-interoperability</path>
+		<dc:comment>wortlaut noch relativ nah an Original-H2020-Frage</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation"/>
+		<is_collection>True</is_collection>
+		<order>1</order>
+		<title lang="en">Interoperability</title>
+		<title lang="de">Interoperabilität</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-interoperability/interoperability">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>interoperability</key>
+		<path>horizon2020/storage-and-long-term-preservation/selection-interoperability/interoperability</path>
+		<dc:comment>H2020: 2.3.1 Are the data produced in the project interoperable, that is allowing data exchange and re-use between researchers, institutions, organisations, countries, etc. (i.e. adhering to standards for formats, as much as possible compliant with available (open) software applications, and in particular facilitating re-combinations with different datasets from different origins)?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/interoperability"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-interoperability"/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<help lang="en">(i.e. adhering to standards for formats, as much as possible compliant with available (open) software applications, and in particular facilitating re-combinations with different datasets from different origins)</help>
+		<help lang="de">Hier ist anzugeben, ob und in welcher Weise eine Verfügbarmachung der Daten für weitere Untersuchungen geplant ist. Auch falls eine Bereitstellung der im Projekt erhobenen Daten für Sekundäranalysen für nicht möglich gehalten wird, sollte dies kurz begründet werden.</help>
+		<text lang="en">8.1 Is the data set interoperable, i.e. suitable for data exchange and re-use between or by different researchers, institutions, organisations and countries?</text>
+		<text lang="de">8.1 Ist der Datensatz interoperabel, d.h. geeignet für den Datenaustausch und die Nachnutzung zwischen bzw. von unterschiedlichen Forschenden, Institutionen, Oranisationen und Ländern?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-interoperability/storage">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>storage</key>
+		<path>horizon2020/storage-and-long-term-preservation/selection-interoperability/storage</path>
+		<dc:comment>H2020: 2.2.3 How will the data be made accessible (e.g. by deposition in a repository)?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage/type"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-interoperability"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<help lang="en">Please indicate the procedures for data security  and data privacy laws. This includes also information about storage location and backup. Preference should be given to certified repositories which support open access where possible.</help>
+		<help lang="de">Bitte machen Sie Angaben zur Datensicherheit und zur Einhaltung der datenschutzrechtlichen Vorgaben. Dies umfasst ebenfalls Angaben zum Speicherort sowie zum Backup. Vorzugsweise sollten die Daten auf zertifizierten Repositorien gespeichert werden, auf der die Veröffentlichung der Daten in Open Access möglich wäre.</help>
+		<text lang="en">8.2 Where will the data (including metadata, documentation, and any relevant code or software) be deposited? Preference should be given to certified repositories which support open access where possible.</text>
+		<text lang="de">8.2 Wo werden die Daten während des Projekts gespeichert?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-explanation">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>selection-explanation</key>
+		<path>horizon2020/storage-and-long-term-preservation/selection-explanation</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<title lang="en">Data publication and licencing</title>
+		<title lang="de">Veröffentlichung der Daten und Lizenzierung</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-explanation/explanation">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>explanation</key>
+		<path>horizon2020/storage-and-long-term-preservation/selection-explanation/explanation</path>
+		<dc:comment>H2020: 2.2.1 Which data produced and/or used in the project will be made openly available as the default? If certain datasets cannot be shared (or need to be shared under restrictions), explain why, clearly separating legal and contractual reasons from voluntary restrictions.
+H2020: 2.2.2 Note that in multi-beneficiary projects it is also possible for specific beneficiaries to keep their data closed if relevant provisions are made in the consortium agreement and are in line with the reasons for opting out.</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/explanation"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-explanation"/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<help lang="en">Note that in multi-beneficiary projects it is also possible for specific beneficiaries to keep their data closed if relevant provisions are made in the consortium agreement and are in line with the reasons for opting out.</help>
+		<help lang="de">Bei drittmittelgeförderten  Projekten müssen Vorgaben der Forschungsförderer hinsichtlich der Archivierung und Bereitstellung von Forschungsdaten berücksichtigt werden.</help>
+		<text lang="en">8.3 Which data produced and/or used in the project will be made openly available as the default? If certain data sets cannot be shared (or need to be shared under restrictions), explain why, clearly separating legal and contractual reasons from voluntary restrictions.</text>
+		<text lang="de">8.3 Welche generierten oder nachgenutzten Daten können standardmäßig veröffentlicht oder geteilt werden? Wenn spezielle Datensätze Einschränkungen zur Veröffentlichung unterliegen, begründen Sie dies bitte und unterscheiden Sie dabei zwischen rechtlichen und/oder vertraglichen Gründen und freiwilligen Einschränkungen.</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-explanation/conditions">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>conditions</key>
+		<path>horizon2020/storage-and-long-term-preservation/selection-explanation/conditions</path>
+		<dc:comment>H2020: 2.4.1 How will the data be licensed to permit the widest re-use possible?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/conditions"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-explanation"/>
+		<is_collection>True</is_collection>
+		<order>1</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">8.4 Under which conditions of use and which license should the data be published or shared  to permit widest re-use possible?</text>
+		<text lang="de">8.4 Unter welchen Nutzungsbedingungen und welcher Lizenz sollen die Daten veröffentlicht oder geteilt werden?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-repository">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>selection-repository</key>
+		<path>horizon2020/storage-and-long-term-preservation/selection-repository</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation"/>
+		<is_collection>True</is_collection>
+		<order>7</order>
+		<title lang="en">Repository</title>
+		<title lang="de">Repository</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-repository/repository">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>repository</key>
+		<path>horizon2020/storage-and-long-term-preservation/selection-repository/repository</path>
+		<dc:comment>H2020: 2.2.7 Where will the data and associated metadata, documentation and code be deposited? Preference should be given to certified repositories which support open access where possible.</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-repository"/>
+		<is_collection>True</is_collection>
+		<order>0</order>
+		<help lang="en">Will the metadata, the sourcecode and relevant software also be stored?</help>
+		<help lang="de"/>
+		<text lang="en">8.5 Where is the data (including metadata, documentation, and any relevant code or software) stored or archived after the end of the project?</text>
+		<text lang="de">8.5 Wo werden die Daten (einschließlich Metadaten, Dokumentation und ggf. relevantem Code bzw. relevanter Software) nach Projektende gespeichert bzw. archiviert?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-repository/certification">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>certification</key>
+		<path>horizon2020/storage-and-long-term-preservation/selection-repository/certification</path>
+		<dc:comment>H2020: 2.2.7 Where will the data and associated metadata, documentation and code be deposited? Preference should be given to certified repositories which support open access where possible. 
+H2020: 4.2 Is the data safely stored in certified repositories for long term preservation and curation?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/certification"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-repository"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<help lang="en">If the dataset is archived at several places, you may answer this question with yes, if this applies to at least one of these.</help>
+		<help lang="de">Wurden mehrere Langzeitarchivierungsoptionen ausgewählt, kann die Frage bejaht werden, wenn dies auf mindestens eine der Optionen zutrifft.</help>
+		<text lang="en">8.6 Is the repository or data centre chosen certified (e.g. Data Seal of Approval, nestor Seal or ISO 16363)?</text>
+		<text lang="de">8.6 Handelt es sich dabei um ein zertifiziertes Repositorium oder Datenzentrum (z.B. durch das Data Seal of Approval, nestor-Siegel oder ISO 16363)?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-repository/repository_arrangements">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>repository_arrangements</key>
+		<path>horizon2020/storage-and-long-term-preservation/selection-repository/repository_arrangements</path>
+		<dc:comment>H2020: 2.2.8 Have you explored appropriate arrangements with the identified repository?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository_arrangements"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-repository"/>
+		<is_collection>False</is_collection>
+		<order>3</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">8.7 Have you explored appropriate arrangements with the identified repository?</text>
+		<text lang="de">8.7 Wurde mit dem Repositorium oder Datenzentrum bereits angemessene Archivierungslösungen besprochen?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-quality">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>selection-quality</key>
+		<path>horizon2020/storage-and-long-term-preservation/selection-quality</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation"/>
+		<is_collection>True</is_collection>
+		<order>9</order>
+		<title lang="en">Data quality</title>
+		<title lang="de">Datenqualität</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-quality/quality_process">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>quality_process</key>
+		<path>horizon2020/storage-and-long-term-preservation/selection-quality/quality_process</path>
+		<dc:comment>H2020: 2.4.5 Are data quality assurance processes described?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/quality_assurance"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-quality"/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">8.8 Are data quality assurance processes described?</text>
+		<text lang="de">8.8 Werden Datenqualitätssicherung-Prozesse beschrieben?</text>
+		<verbose_name lang="en">Data quality assurance</verbose_name>
+		<verbose_name lang="de">Datenqualitätssicherung</verbose_name>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-committee">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>selection-committee</key>
+		<path>horizon2020/storage-and-long-term-preservation/selection-committee</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation"/>
+		<is_collection>False</is_collection>
+		<order>10</order>
+		<title lang="en">Data access committee</title>
+		<title lang="de">Datenzugangskommission</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-committee/data_access_committee">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>data_access_committee</key>
+		<path>horizon2020/storage-and-long-term-preservation/selection-committee/data_access_committee</path>
+		<dc:comment>H2020: 2.2.10 Is there a need for a data access committee?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval/data_access_committee"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-committee"/>
+		<is_collection>False</is_collection>
+		<order>1</order>
+		<help lang="en">The data access committee decides if access to the project data is allowed.</help>
+		<help lang="de"/>
+		<text lang="en">8.9 Is there a need for a data access committee?</text>
+		<text lang="de">8.9 Wird eine Datenzugangs-Kommission benötigt, die bei Zugriffsanfragen auf vom Projekt veröffentlichte Daten entscheidet, ob Zugang gewährt wird oder nicht?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-duration">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>selection-duration</key>
+		<path>horizon2020/storage-and-long-term-preservation/selection-duration</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation"/>
+		<is_collection>True</is_collection>
+		<order>12</order>
+		<title lang="en">Storage duration</title>
+		<title lang="de">Langzeitarchivierung</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-duration/duration">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>duration</key>
+		<path>horizon2020/storage-and-long-term-preservation/selection-duration/duration</path>
+		<dc:comment>H2020: 2.4.4 How long is it intended that the data remains re-usable?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/duration"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/storage-and-long-term-preservation/selection-duration"/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<help lang="en">Please describe how long the data will be stored and what deadlines for deletion are in force.</help>
+		<help lang="de">Bitte geben Sie Dauer der Archivierung der Daten an bzw. welche Löschfristen für welche Daten gelten.</help>
+		<text lang="en">8.10 How long is it intended that the data remains re-usable?</text>
+		<text lang="de">8.10 Wie lange müssen die Daten aufbewahrt werden?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>costs</key>
+		<path>horizon2020/costs</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020"/>
+		<order>9</order>
+		<title lang="en">9. Costs</title>
+		<title lang="de">9. Kosten und Ressourcen</title>
+	</section>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs/support-additional">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>support-additional</key>
+		<path>horizon2020/costs/support-additional</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs"/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<title lang="en">Additional support</title>
+		<title lang="de">Weitere Unterstützung</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs/support-additional/benefit">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>benefit</key>
+		<path>horizon2020/costs/support-additional/benefit</path>
+		<dc:comment>H2020: 2.4.6 Further to the FAIR principles, DMPs should also address:</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_support"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs/support-additional"/>
+		<is_collection>False</is_collection>
+		<order>1</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">9.1 Are there actual or potential usage scenarios that could benefit from support by a data management or IT expert, or that even require such support?</text>
+		<text lang="de">9.1 Gibt es tatsächliche oder potenzielle Nutzungsszenarien, die von der Unterstützung durch Datenmanagement- oder IT-Experten profitieren könnten oder die sogar eine solche Unterstützung benötigen?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs/support-additional/support">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>support</key>
+		<path>horizon2020/costs/support-additional/support</path>
+		<dc:comment>H2020: 6.1 Do you make use of other national/funder/sectorial/departmental procedures for data management? If yes, which ones?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/rdm_policy"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs/support-additional"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">9.2 Do you make use of other national/funder/sectorial/departmental procedures for data management? If yes, which ones?</text>
+		<text lang="de">9.2 Gibt es an Ihrer Einrichtung Regeln oder Richtlinien zum Umgang mit den im Projekt erhobenen Forschungsdaten? Wenn ja, skizzieren Sie diese kurz und verweisen Sie ggf. auf weiterführende Informationen. Geben Sie bitte auch an, welchen Grad an Verbindlichkeit Sie haben.</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/horizon2020/costs/ressource-FAIR">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>ressource-FAIR</key>
+		<path>horizon2020/costs/ressource-FAIR</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs"/>
+		<is_collection>False</is_collection>
+		<order>1</order>
+		<title lang="en">FAIR - Costs</title>
+		<title lang="de">FAIR-Kosten</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs/ressource-FAIR/personnel">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>personnel</key>
+		<path>horizon2020/costs/ressource-FAIR/personnel</path>
+		<dc:comment>H2020: 3.1 What are the costs for making data FAIR in your project?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/metadata/personnel"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/horizon2020/costs/ressource-FAIR"/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">9.3 What are the personel costs for making data FAIR in your project?</text>
+		<text lang="de">9.3 Welcher Personalaufwand entsteht im Zusammenhang mit dem Datenmanagement und den FAIR-Prinzipien im Projekt?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>float</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit>PM</unit>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs/ressource-FAIR/non_personnel">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>non_personnel</key>
+		<path>horizon2020/costs/ressource-FAIR/non_personnel</path>
+		<dc:comment>H2020: 3.1 What are the costs for making data FAIR in your project?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/metadata/non_personnel"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/horizon2020/costs/ressource-FAIR"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<help lang="en">If possible, please estimate the costs in  **Euro**.</help>
+		<help lang="de">Falls möglich, bitte schätzen Sie die Kosten in  **Euro**.</help>
+		<text lang="en">9.4 What are the non-personnel costs for making data FAIR in your project?</text>
+		<text lang="de">9.4 Welche Sachkosten entstehen im Zusammenhang mit dem Datenmanagement und den FAIR-Prinzipien im Projekt?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>float</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit>Euro</unit>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs/ressource-ltp">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>ressource-ltp</key>
+		<path>horizon2020/costs/ressource-ltp</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<title lang="en">Costs for long term preservation</title>
+		<title lang="de">Kosten für Langzeitarchivierung</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs/ressource-ltp/personnel_ltp">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>personnel_ltp</key>
+		<path>horizon2020/costs/ressource-ltp/personnel_ltp</path>
+		<dc:comment>H2020: 3.4 Are the resources for long term preservation discussed (costs and potential value, who decides and how what data will be kept and for how long)?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/preservation/personnel"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs/ressource-ltp"/>
+		<is_collection>False</is_collection>
+		<order>1</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">9.5 What are the personnel costs associated with long-term preservation for the project?</text>
+		<text lang="de">9.5 Welcher Personalaufwand entsteht im Zusammenhang mit Langzeitarchivierung für dieses Projekt?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>float</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit>PM</unit>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs/ressource-ltp/non_personnel_ltp">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>non_personnel_ltp</key>
+		<path>horizon2020/costs/ressource-ltp/non_personnel_ltp</path>
+		<dc:comment>H2020: 3.4 Are the resources for long term preservation discussed (costs and potential value, who decides and how what data will be kept and for how long)?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/preservation/non_personnel"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs/ressource-ltp"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<help lang="en">If possible, please estimate the costs in **Euro**.</help>
+		<help lang="de">Falls möglich, bitte schätzen Sie die Kosten in **Euro**.</help>
+		<text lang="en">9.6 What is the amount of non-personnel-costs regarding long-term preservation for the project?</text>
+		<text lang="de">9.6 Welche Sachkosten entstehen im Zusammenhang mit Langzeitarchivierung für dieses Projekt?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>float</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit>Euro</unit>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs/ressource-ltp/ltp-cover">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>ltp-cover</key>
+		<path>horizon2020/costs/ressource-ltp/ltp-cover</path>
+		<dc:comment>H2020: 3.4 Are the resources for long term preservation discussed (costs and potential value, who decides and how what data will be kept and for how long)?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/preservation/responsible_person/name"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs/ressource-ltp"/>
+		<is_collection>False</is_collection>
+		<order>3</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">9.7 Are the resources for long term preservation discussed (costs and potential value, who decides and how what data will be kept and for how long)?</text>
+		<text lang="de">9.7 Wurden die Ressourcen für die Langzeitarchivierung besprochen (Kosten und Nutzen der Aufbewahrung, wer entscheidet, wie und für wie lange welche Daten aufbewahrt werden)?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs/ressource-cover_how">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>ressource-cover_how</key>
+		<path>horizon2020/costs/ressource-cover_how</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs"/>
+		<is_collection>False</is_collection>
+		<order>6</order>
+		<title lang="en">Cost</title>
+		<title lang="de">Kosten</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs/ressource-cover_how/cover_how">
+		<uri_prefix>https://rdmo1.ub.uni-due.de/terms</uri_prefix>
+		<key>cover_how</key>
+		<path>horizon2020/costs/ressource-cover_how/cover_how</path>
+		<dc:comment>H2020: 3.2 How will these be covered? Note that costs related to open access to research data are eligible as part of the Horizon 2020 grant (if compliant with the Grant Agreement conditions).</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/preservation/cover_how"/>
+		<questionset dc:uri="https://rdmo1.ub.uni-due.de/terms/questions/horizon2020/costs/ressource-cover_how"/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<help lang="en">Note that costs related to open access to research data are eligible as part of the Horizon 2020 grant (if compliant with the Grant Agreement conditions).</help>
+		<help lang="de">Beachten Sie, dass Kosten im Zusammenhang mit Open Access der Forschungsdaten im Rahmen des Horizont-2020-Zuschusses förderfähig sind (wenn sie mit den Bedingungen der Fördervereinbarung übereinstimmen).</help>
+		<text lang="en">9.8 How will these costs be covered?</text>
+		<text lang="de">9.8 Wie werden die Kosten für das Datenmanagement im Projekt aufgebracht?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+</rdmo>
