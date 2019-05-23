@@ -101,7 +101,7 @@ def make_root(cat_vars):
         """))
     root[0][1].text = cat_vars[0]
     root[0][4].text = cat_vars[1]
-    root[0][5].text = cat_vars[1]
+    root[0][5].text = cat_vars[2]
     return root
 
 def read_yaml(file_name):
