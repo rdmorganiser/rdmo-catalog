@@ -4,7 +4,7 @@
 | consultation | use for a first assesment of the project | FDM UA Ruhr | 2019 |
 | proposal     | use when project is ready for a proposal | FDM UA Ruhr | 2019 |
 | archive      | use when project is nearly finished      | FDM UA Ruhr | 2019 |
-| horizon2020  | EU Horizon2020 specific | FDM UA Ruhr | 2019 | 
+| horizon2020  | EU Horizon2020 specific [see wiki](https://github.com/FDM-UARuhr/rdmo-catalog-uaruhr/wiki/Horizon2020-Catalog)| FDM UA Ruhr | 2019 | 
 |rdmo          |generic, detailed |	RDMO team	|2016|
 |snf|	for Schweizer Nationalfonds|	RDMO team|	2018	
 |fhpshort|	brief version of rdmo catalog |	RDMO team |	2018
