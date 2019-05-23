@@ -1,6 +1,6 @@
 | catalog	| usage | author | creation date |
 |---------|------|--------|---------------|
-| uaruhr       | complete catalog of UA Ruhr            | FDM UA Ruhr | 2019 |
+| uaruhr       | complete catalog of UA Ruhr [documentation](https://fdm-uaruhr.github.io/rdmo-catalog-uaruhr/catalogs/index.html)           | FDM UA Ruhr | 2019 |
 | consultation | first fdm questions (uaruhr subset)| FDM UA Ruhr | 2019 |
 | proposal     | proposal specific  (uaruhr subset)| FDM UA Ruhr | 2019 |
 | archive      | data storage and description   (uaruhr subset)  | FDM UA Ruhr | 2019 |
