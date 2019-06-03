@@ -4345,8 +4345,8 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<order>2</order>
 		<help lang="en"/>
 		<help lang="de"/>
-		<text lang="en">What are the reasons this dataset has to be preserved for the long-term?</text>
-		<text lang="de">Aus welchen Gründen müssen die Daten langfristig aufbewahrt werden?</text>
+		<text lang="en">If **yes**, what are the reasons this dataset has to be preserved for the long-term?</text>
+		<text lang="de">Wenn **ja**, aus welchen Gründen müssen die Daten langfristig aufbewahrt werden?</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -4360,7 +4360,9 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_motivation_options"/>
 		</optionsets>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/long-term"/>
+		</conditions>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/storage-and-long-term-preservation/long-term-preservation-datasets/yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -4373,19 +4375,21 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<order>1</order>
 		<help lang="en"/>
 		<help lang="de"/>
-		<text lang="en">Does this dataset have to preserved for the long-term?</text>
+		<text lang="en">Does this dataset have to be preserved for the long-term?</text>
 		<text lang="de">Muss dieser Datensatz langfristig aufbewahrt werden?</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
 		<verbose_name_plural lang="de"/>
-		<widget_type>yesno</widget_type>
+		<widget_type>radio</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
-		<optionsets/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/yes_with_text_no"/>
+		</optionsets>
 		<conditions/>
 	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/storage-and-long-term-preservation/long-term-preservation-costs">
