@@ -35,7 +35,7 @@ class sanitizer():
         h = self.hash_string(
             re.search(r'(?<=\/shared\/).*?(?=\/)', self.filename).group(0)
         )
-        return 'https://' + h
+        return 'https://' + h + '.rdmo'
 
     def replace_uri(self, rxmatch, line):
         if bool(re.search(rxmatch, line)) is True:
