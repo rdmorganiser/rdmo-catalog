@@ -8,8 +8,8 @@
 		<title lang="en">DCC Checklist 4.0</title>
 		<title lang="de">DCC Checkliste 4.0</title>
 	</catalog>
-	<section dc:uri="http://example.com/terms/questions/dcc/administrative">
-		<uri_prefix/>
+	<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/administrative">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>administrative</key>
 		<path>dcc/administrative</path>
 		<dc:comment/>
@@ -18,13 +18,13 @@
 		<title lang="en">Administrative Data</title>
 		<title lang="de">Verwaltungsdaten</title>
 	</section>
-	<questionset dc:uri="http://example.com/terms/questions/dcc/administrative/project-description">
-		<uri_prefix/>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/administrative/project-description">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>project-description</key>
 		<path>dcc/administrative/project-description</path>
 		<dc:comment/>
 		<attribute/>
-		<section dc:uri="http://example.com/terms/questions/dcc/administrative"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/administrative"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<title lang="en">Project description</title>
@@ -43,13 +43,11 @@
 		<path>dcc/administrative/project-description/title</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question/title"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/administrative/project-description"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/administrative/project-description"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en">Briefly summarise the type of study to help others understand the purposes
-for which the data are being collected or created.</help>
-		<help lang="de">Fassen Sie kurz die Art der Studie zusammen, um anderen zu helfen, die Ziele zu verstehen,
-für die die Daten erhoben oder erstellt werden.</help>
+		<help lang="en">Briefly summarise the type of study to help others understand the purposes for which the data are being collected or created.</help>
+		<help lang="de">Fassen Sie kurz die Art der Studie zusammen, um anderen zu helfen, die Ziele zu verstehen, für die die Daten erhoben oder erstellt werden.</help>
 		<text lang="en">What is the main research question of the project?</text>
 		<text lang="de">Wie lautet die primäre Forschungsfrage des Projektes?</text>
 		<verbose_name lang="en"/>
@@ -71,7 +69,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/administrative/project-description/name</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/name"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/administrative/project-description"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/administrative/project-description"/>
 		<is_collection>True</is_collection>
 		<order>2</order>
 		<help lang="en"/>
@@ -96,8 +94,8 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<key>data_contact</key>
 		<path>dcc/administrative/project-description/data_contact</path>
 		<dc:comment/>
-		<attribute dc:uri="http://example.com/terms/domain/project/data_management/name"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/administrative/project-description"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/name"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/administrative/project-description"/>
 		<is_collection>True</is_collection>
 		<order>3</order>
 		<help lang="en"/>
@@ -117,13 +115,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="http://example.com/terms/questions/dcc/administrative/project-policies">
-		<uri_prefix/>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/administrative/project-policies">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>project-policies</key>
 		<path>dcc/administrative/project-policies</path>
 		<dc:comment/>
 		<attribute/>
-		<section dc:uri="http://example.com/terms/questions/dcc/administrative"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/administrative"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<title lang="en">Project policies</title>
@@ -142,15 +140,15 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/administrative/project-policies/rdm_policy</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/rdm_policy"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/administrative/project-policies"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/administrative/project-policies"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en"/>
 		<help lang="de"/>
 		<text lang="en">Does your institution have rules or guidelines for the handling of research data? If yes, please briefly outline them and refer to more detailed sources of information if necessary. Please also indicate, if the rules / guidelines are
-                                        mandatory or optional.</text>
+			mandatory or optional.</text>
 		<text lang="de">Gibt es an Ihrer Einrichtung Regeln oder Richtlinien zum Umgang mit den im Projekt erhobenen Forschungsdaten? Wenn ja, skizzieren Sie diese kurz und verweisen Sie ggf. auf weiterführende Informationen. Geben Sie bitte auch an, welchen
-                                        Grad an Verbindlichkeit sie haben.</text>
+			Grad an Verbindlichkeit sie haben.</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -170,18 +168,18 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/administrative/project-policies/funder_policy</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/rdm_policy"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/administrative/project-policies"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/administrative/project-policies"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en">Funders of research also increasingly specify requirements regarding the management of research data in funded projects. Examples are the &lt;a
-                                        href=&quot;http://www.dfg.de/en/research_funding/proposal_review_decision/applicants/submitting_proposal/research_data/index.html&quot; target=_blank&quot;&gt;DFG Guidelines on the Handling of Reserach Data&lt;/a&gt; or the &lt;a
-                                        href=&quot;http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf&quot; target=_blank&quot;&gt;Guidelines on Data Management in Horizon 2020&lt;/a&gt; of the European Commission.</help>
+			href=&quot;http://www.dfg.de/en/research_funding/proposal_review_decision/applicants/submitting_proposal/research_data/index.html&quot; target=_blank&quot;&gt;DFG Guidelines on the Handling of Reserach Data&lt;/a&gt; or the &lt;a
+			href=&quot;http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf&quot; target=_blank&quot;&gt;Guidelines on Data Management in Horizon 2020&lt;/a&gt; of the European Commission.</help>
 		<help lang="de">Auch Forschungsförderer stellen zunehmend Anforderungen an das Datenmanagement in von ihnen geförderten Projekten. Beispiele sind die &lt;a
-                                        href=&quot;http://www.dfg.de/foerderung/antragstellung_begutachtung_entscheidung/antragstellende/antragstellung/nachnutzung_forschungsdaten/&quot; target=_blank&quot;&gt;DFG-Leitlinien zum Umgang mit Forschungsdaten&lt;/a&gt; oder die &lt;a
-                                        href=&quot;http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf&quot; target=_blank&quot;&gt;Guidelines on Data Management in Horizon 2020&lt;/a&gt; der Europäischen Komission.</help>
+			href=&quot;http://www.dfg.de/foerderung/antragstellung_begutachtung_entscheidung/antragstellende/antragstellung/nachnutzung_forschungsdaten/&quot; target=_blank&quot;&gt;DFG-Leitlinien zum Umgang mit Forschungsdaten&lt;/a&gt; oder die &lt;a
+			href=&quot;http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf&quot; target=_blank&quot;&gt;Guidelines on Data Management in Horizon 2020&lt;/a&gt; der Europäischen Komission.</help>
 		<text lang="en">Does the funder have rules or recommendations for data management? If yes, please briefly outline them and refer to more detailed sources of information if necessary. Please also indicate, if the rules / guidelines are mandatory or optional.</text>
 		<text lang="de">Gibt es von Seiten des Forschungsförderers Vorgaben oder Richtlinien bezüglich des Umgangs mit den im Projekt erhobenen Forschungsdaten? Wenn ja, skizzieren Sie diese kurz und verweisen Sie ggf. auf weiterführende Informationen. Geben
-                                        Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</text>
+			Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -201,7 +199,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/administrative/project-policies/requirements</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/requirements"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/administrative/project-policies"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/administrative/project-policies"/>
 		<is_collection>False</is_collection>
 		<order>3</order>
 		<help lang="en"/>
@@ -221,8 +219,8 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<optionsets/>
 		<conditions/>
 	</question>
-	<section dc:uri="http://example.com/terms/questions/dcc/collection">
-		<uri_prefix/>
+	<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/collection">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>collection</key>
 		<path>dcc/collection</path>
 		<dc:comment>123</dc:comment>
@@ -237,7 +235,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/collection/dataset-dataset</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<section dc:uri="http://example.com/terms/questions/dcc/collection"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/collection"/>
 		<is_collection>True</is_collection>
 		<order>11</order>
 		<title lang="en">What data will you collect or create?</title>
@@ -259,16 +257,9 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/collection/dataset-dataset"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en">Please briefly describe the data type and / or the method used to create or collect the data, for example:
-
-* quantitative online survey
-* 3D model / digital reconstruction of a stone age settlement
-* software developed within the project</help>
-		<help lang="de">Bitte beschreiben Sie hier kurz, um welchen Datentyp es sich handelt und mit welcher Methode die Daten erhoben oder erstellt wurden, z.B.:
-
-* quantitative Online-Befragung
-* 3D-Modellierung / digitale Rekonstruktion einer steinzeitlichen Siedlung
-* Software, die im Projekt entwickelt wird</help>
+		<help lang="en">Please briefly describe the data type and / or the method used to create or collect the data, for example: * quantitative online survey * 3D model / digital reconstruction of a stone age settlement * software developed within the project</help>
+		<help lang="de">Bitte beschreiben Sie hier kurz, um welchen Datentyp es sich handelt und mit welcher Methode die Daten erhoben oder erstellt wurden, z.B.: * quantitative Online-Befragung * 3D-Modellierung / digitale Rekonstruktion einer
+			steinzeitlichen Siedlung * Software, die im Projekt entwickelt wird</help>
 		<text lang="en">What kind of data is it?</text>
 		<text lang="de">Um was für einen Daten handelt es sich?</text>
 		<verbose_name lang="en"/>
@@ -364,13 +355,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="http://example.com/terms/questions/dcc/collection/dataset-format_size">
-		<uri_prefix/>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/collection/dataset-format_size">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>dataset-format_size</key>
 		<path>dcc/collection/dataset-format_size</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<section dc:uri="http://example.com/terms/questions/dcc/collection"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/collection"/>
 		<is_collection>True</is_collection>
 		<order>12</order>
 		<title lang="en">Which data size do you expect?</title>
@@ -389,12 +380,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/collection/dataset-format_size/format</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/format"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/collection/dataset-format_size"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/collection/dataset-format_size"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
-		<help lang="en">When choosing a data format, one should consider the consequences for collaborative use, long-term preservation as well as re-use. It is advisable to prefer formats that are standardised, open, non-proprietary and well-established in the respective scholarly community.</help>
+		<help lang="en">When choosing a data format, one should consider the consequences for collaborative use, long-term preservation as well as re-use. It is advisable to prefer formats that are standardised, open, non-proprietary and well-established in
+			the respective scholarly community.</help>
 		<help lang="de">Bei der Wahl des Dateiformates sollten auch die Konsequenzen für die kollaborative Nutzung, die Langzeitarchivierung sowie die Nachnutzung beachtet werden. Es empfiehlt sich, möglichst standardisierte, nicht-proprietäre und allgemein
-                                        bzw. in der spezifischen Community verbreitete Formate zu nutzen.</help>
+			bzw. in der spezifischen Community verbreitete Formate zu nutzen.</help>
 		<text lang="en">Which file formats are used?</text>
 		<text lang="de">In welchen Formaten liegen die Daten vor?</text>
 		<verbose_name lang="en"/>
@@ -416,7 +408,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/collection/dataset-format_size/volume</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/size/volume"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/collection/dataset-format_size"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/collection/dataset-format_size"/>
 		<is_collection>False</is_collection>
 		<order>6</order>
 		<help lang="en"/>
@@ -438,13 +430,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		</optionsets>
 		<conditions/>
 	</question>
-	<questionset dc:uri="http://example.com/terms/questions/dcc/collection/process-structure">
-		<uri_prefix/>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/collection/process-structure">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>process-structure</key>
 		<path>dcc/collection/process-structure</path>
 		<dc:comment/>
 		<attribute/>
-		<section dc:uri="http://example.com/terms/questions/dcc/collection"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/collection"/>
 		<is_collection>False</is_collection>
 		<order>22</order>
 		<title lang="en">How will the data be collected or created?</title>
@@ -463,12 +455,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/collection/process-structure/creation_methods</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creation_methods"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/collection/process-structure"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/collection/process-structure"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en">Outline how the data will be collected/created and which community data standards will be used. This information is necessary to be able to reconstruct the process by which the data was generated. It is also a prerequisite to judge the objectivity, reliability and validity of the dataset.</help>
-		<help lang="de">Erläutern Sie, wie die Daten erhoben/erstellt werden und welche Datenstandards verwendet werden. Diese Informationen sind für alle Arten von Daten relevant, um ihre Genese nachvollziehen zu können. Bei reproduzierbaren Daten kommt ein weiterer Aspekt hinzu. Diese müssen nicht notwendigerweise aufbewahrt werden - allerdings müssen
-                                        alle Geräte, Software und auch Informationen über die Vorgehensweise erhalten bleiben, die notwendig sind, um die Daten erneut erstellen zu können.</help>
+		<help lang="en">Outline how the data will be collected/created and which community data standards will be used. This information is necessary to be able to reconstruct the process by which the data was generated. It is also a prerequisite to judge
+			the objectivity, reliability and validity of the dataset.</help>
+		<help lang="de">Erläutern Sie, wie die Daten erhoben/erstellt werden und welche Datenstandards verwendet werden. Diese Informationen sind für alle Arten von Daten relevant, um ihre Genese nachvollziehen zu können. Bei reproduzierbaren Daten kommt ein
+			weiterer Aspekt hinzu. Diese müssen nicht notwendigerweise aufbewahrt werden - allerdings müssen alle Geräte, Software und auch Informationen über die Vorgehensweise erhalten bleiben, die notwendig sind, um die Daten erneut erstellen zu können.</help>
 		<text lang="en">Which tools, software, technologies or processes are used to generate or collect the data?</text>
 		<text lang="de">Welche Instrumente, Software, Technologien oder Verfahren werden zur Erzeugung oder Erfassung der Daten genutzt?</text>
 		<verbose_name lang="en"/>
@@ -490,7 +483,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/collection/process-structure/organisation_policy</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage/organisation_policy"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/collection/process-structure"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/collection/process-structure"/>
 		<is_collection>False</is_collection>
 		<order>3</order>
 		<help lang="en"/>
@@ -518,7 +511,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/collection/process-structure/naming_policy</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage/naming_policy"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/collection/process-structure"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/collection/process-structure"/>
 		<is_collection>False</is_collection>
 		<order>4</order>
 		<help lang="en"/>
@@ -546,7 +539,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/collection/process-structure/measures</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/quality_assurance"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/collection/process-structure"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/collection/process-structure"/>
 		<is_collection>False</is_collection>
 		<order>20</order>
 		<help lang="en"/>
@@ -566,13 +559,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="http://example.com/terms/questions/dcc/collection/process-versioning">
-		<uri_prefix/>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/collection/process-versioning">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>process-versioning</key>
 		<path>dcc/collection/process-versioning</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<section dc:uri="http://example.com/terms/questions/dcc/collection"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/collection"/>
 		<is_collection>True</is_collection>
 		<order>22</order>
 		<title lang="en">How will you handle versioning?</title>
@@ -591,7 +584,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/collection/process-versioning/yesno</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/versioning_yesno"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/collection/process-versioning"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/collection/process-versioning"/>
 		<is_collection>False</is_collection>
 		<order>11</order>
 		<help lang="en"/>
@@ -617,7 +610,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/collection/process-versioning/strategy</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/versioning_strategy"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/collection/process-versioning"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/collection/process-versioning"/>
 		<is_collection>False</is_collection>
 		<order>12</order>
 		<help lang="en">Please briefly describe the project-internal regulations for the versioning of data sets (e.g.: What kind of changes require a new version? How are changes documented? What are the naming rules for different versions?)</help>
@@ -643,7 +636,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/collection/process-versioning/tool</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/versioning_tool"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/collection/process-versioning"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/collection/process-versioning"/>
 		<is_collection>False</is_collection>
 		<order>13</order>
 		<help lang="en"/>
@@ -665,8 +658,8 @@ für die die Daten erhoben oder erstellt werden.</help>
 		</optionsets>
 		<conditions/>
 	</question>
-	<section dc:uri="http://example.com/terms/questions/dcc/documentation_metadata">
-		<uri_prefix/>
+	<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/documentation_metadata">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>documentation_metadata</key>
 		<path>dcc/documentation_metadata</path>
 		<dc:comment/>
@@ -675,13 +668,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<title lang="en">Documentation and Metadata</title>
 		<title lang="de">Dokumentation und Metadaten</title>
 	</section>
-	<questionset dc:uri="http://example.com/terms/questions/dcc/documentation_metadata/documentation-metadata">
-		<uri_prefix/>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/documentation_metadata/documentation-metadata">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>documentation-metadata</key>
 		<path>dcc/documentation_metadata/documentation-metadata</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/scope"/>
-		<section dc:uri="http://example.com/terms/questions/dcc/documentation_metadata"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/documentation_metadata"/>
 		<is_collection>False</is_collection>
 		<order>11</order>
 		<title lang="en">What documentation and metadata will accompany the data?</title>
@@ -700,7 +693,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/documentation_metadata/documentation-metadata/scope</path>
 		<dc:comment>probably we should introduce a separate question for being findable and re-used</dc:comment>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/scope"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/documentation_metadata/documentation-metadata"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/documentation_metadata/documentation-metadata"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en"/>
@@ -720,13 +713,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="http://example.com/terms/questions/dcc/documentation_metadata/documentation-metadata/creation">
-		<uri_prefix/>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/documentation_metadata/documentation-metadata/creation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>creation</key>
 		<path>dcc/documentation_metadata/documentation-metadata/creation</path>
 		<dc:comment/>
-		<attribute dc:uri="http://example.com/terms/domain/project/dataset/metadata/creation"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/documentation_metadata/documentation-metadata"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/creation"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/documentation_metadata/documentation-metadata"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en"/>
@@ -752,7 +745,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/documentation_metadata/documentation-metadata/standards</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/standards"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/documentation_metadata/documentation-metadata"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/documentation_metadata/documentation-metadata"/>
 		<is_collection>True</is_collection>
 		<order>3</order>
 		<help lang="en"/>
@@ -780,7 +773,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/documentation_metadata/documentation-metadata/responsible_person</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/responsible_person/name"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/documentation_metadata/documentation-metadata"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/documentation_metadata/documentation-metadata"/>
 		<is_collection>True</is_collection>
 		<order>4</order>
 		<help lang="en"/>
@@ -800,8 +793,8 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<optionsets/>
 		<conditions/>
 	</question>
-	<section dc:uri="http://example.com/terms/questions/dcc/ethics_legal">
-		<uri_prefix/>
+	<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/ethics_legal">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>ethics_legal</key>
 		<path>dcc/ethics_legal</path>
 		<dc:comment/>
@@ -810,13 +803,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<title lang="en">Ethics and Legal Compliance</title>
 		<title lang="de">Ethik und Recht</title>
 	</section>
-	<questionset dc:uri="http://example.com/terms/questions/dcc/ethics_legal/ethics-personal_data">
-		<uri_prefix/>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/ethics_legal/ethics-personal_data">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>ethics-personal_data</key>
 		<path>dcc/ethics_legal/ethics-personal_data</path>
 		<dc:comment/>
 		<attribute/>
-		<section dc:uri="http://example.com/terms/questions/dcc/ethics_legal"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/ethics_legal"/>
 		<is_collection>False</is_collection>
 		<order>10</order>
 		<title lang="en">How will you manage any ethical issues?</title>
@@ -835,7 +828,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/ethics_legal/ethics-personal_data/yesno</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data_yesno/yesno"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/ethics_legal/ethics-personal_data"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/ethics_legal/ethics-personal_data"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en"/>
@@ -861,7 +854,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/ethics_legal/ethics-personal_data/anonymization</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/anonymization"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/ethics_legal/ethics-personal_data"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/ethics_legal/ethics-personal_data"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en"/>
@@ -889,16 +882,16 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/ethics_legal/ethics-personal_data/extent</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/consent/extent"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/ethics_legal/ethics-personal_data"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/ethics_legal/ethics-personal_data"/>
 		<is_collection>False</is_collection>
 		<order>3</order>
 		<help lang="en">Basically, the collection, processing, archiving and publication of personal data is only admissible, when the “informed consent” of the person in question has been obtained. There are only very few cases in which this is not the case
-                                        (see, also for more information: &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=_blank&quot;&gt;Informationen zu rechtlichen Aspekten bei
-                                        der Handhabung von Sprachkorpora&lt;/a&gt;, p. 6).</help>
+			(see, also for more information: &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=_blank&quot;&gt;Informationen zu rechtlichen
+			Aspekten bei der Handhabung von Sprachkorpora&lt;/a&gt;, p. 6).</help>
 		<help lang="de">Grundsätzlich gilt, dass eine Erhebung, Verarbeitung, Archivierung und Veröffentlichung personenbezogener Daten nur zulässig ist, wenn eine entsprechende „informierte Einwilligung“ der Betroffenen vorliegt. Nur in ganz wenigen,
-                                        jeweils in den Datenschutzgesetzen definierten Ausnahmefällen wird diese nicht benötigt (vgl., auch für mehr Information, &lt;a
-                                        href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=_blank&quot;&gt;Informationen zu rechtlichen Aspekten bei der Handhabung von
-                                        Sprachkorpora&lt;/a&gt;, S. 6).</help>
+			jeweils in den Datenschutzgesetzen definierten Ausnahmefällen wird diese nicht benötigt (vgl., auch für mehr Information, &lt;a
+			href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=_blank&quot;&gt;Informationen zu rechtlichen Aspekten bei der Handhabung von
+			Sprachkorpora&lt;/a&gt;, S. 6).</help>
 		<text lang="en">To what extent is the &quot;informed consent&quot; obtained from the persons concerned?</text>
 		<text lang="de">In welchem Umfang wird die &quot;informierte Einwilligung&quot; der Betroffenen eingeholt?</text>
 		<verbose_name lang="en"/>
@@ -916,13 +909,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		</optionsets>
 		<conditions/>
 	</question>
-	<questionset dc:uri="http://example.com/terms/questions/dcc/ethics_legal/ipr-ipr">
-		<uri_prefix/>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/ethics_legal/ipr-ipr">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>ipr-ipr</key>
 		<path>dcc/ethics_legal/ipr-ipr</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<section dc:uri="http://example.com/terms/questions/dcc/ethics_legal"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/ethics_legal"/>
 		<is_collection>True</is_collection>
 		<order>20</order>
 		<title lang="en">How will you manage copyright and Intellectual Property Rights (IPR) issues?</title>
@@ -941,7 +934,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/ethics_legal/ipr-ipr/copyrights</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/copyrights"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/ethics_legal/ipr-ipr"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/ethics_legal/ipr-ipr"/>
 		<is_collection>True</is_collection>
 		<order>2</order>
 		<help lang="en"/>
@@ -969,7 +962,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/ethics_legal/ipr-ipr/other_rights</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/other_rights"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/ethics_legal/ipr-ipr"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/ethics_legal/ipr-ipr"/>
 		<is_collection>True</is_collection>
 		<order>3</order>
 		<help lang="en"/>
@@ -997,7 +990,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/ethics_legal/ipr-ipr/conditions</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/conditions"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/ethics_legal/ipr-ipr"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/ethics_legal/ipr-ipr"/>
 		<is_collection>True</is_collection>
 		<order>3</order>
 		<help lang="en">The options refer to the licenses of the &lt;a href=&quot;https://creativecommons.org/share-your-work/licensing-types-examples/&quot; target=_blank&quot;&gt;Creative Commons family&lt;/a&gt;.</help>
@@ -1025,7 +1018,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/ethics_legal/ipr-ipr/owner</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner/name"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/ethics_legal/ipr-ipr"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/ethics_legal/ipr-ipr"/>
 		<is_collection>False</is_collection>
 		<order>4</order>
 		<help lang="en"/>
@@ -1047,8 +1040,8 @@ für die die Daten erhoben oder erstellt werden.</help>
 		</optionsets>
 		<conditions/>
 	</question>
-	<section dc:uri="http://example.com/terms/questions/dcc/storage_backup">
-		<uri_prefix/>
+	<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/storage_backup">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>storage_backup</key>
 		<path>dcc/storage_backup</path>
 		<dc:comment/>
@@ -1063,7 +1056,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/storage_backup/storage_backup-storage</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<section dc:uri="http://example.com/terms/questions/dcc/storage_backup"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/storage_backup"/>
 		<is_collection>True</is_collection>
 		<order>11</order>
 		<title lang="en">How will the data be stored and backed up during the research?</title>
@@ -1154,13 +1147,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="http://example.com/terms/questions/dcc/storage_backup/security-access">
-		<uri_prefix/>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/storage_backup/security-access">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>security-access</key>
 		<path>dcc/storage_backup/security-access</path>
 		<dc:comment/>
 		<attribute/>
-		<section dc:uri="http://example.com/terms/questions/dcc/storage_backup"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/storage_backup"/>
 		<is_collection>False</is_collection>
 		<order>20</order>
 		<title lang="en">How will you manage access and security?</title>
@@ -1173,13 +1166,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
-	<question dc:uri="http://example.com/terms/questions/dcc/storage_backup/security-access/risks">
-		<uri_prefix/>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/storage_backup/security-access/risks">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>risks</key>
 		<path>dcc/storage_backup/security-access/risks</path>
 		<dc:comment/>
-		<attribute dc:uri="http://example.com/terms/domain/project/dataset/data_security/risks"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/storage_backup/security-access"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/risks"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/storage_backup/security-access"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en"/>
@@ -1205,7 +1198,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/storage_backup/security-access/security_measures</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/security_measures"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/storage_backup/security-access"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/storage_backup/security-access"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en"/>
@@ -1225,8 +1218,8 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<optionsets/>
 		<conditions/>
 	</question>
-	<section dc:uri="http://example.com/terms/questions/dcc/selection_preservation">
-		<uri_prefix/>
+	<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/selection_preservation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>selection_preservation</key>
 		<path>dcc/selection_preservation</path>
 		<dc:comment/>
@@ -1235,13 +1228,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<title lang="en">Selection and Preservation</title>
 		<title lang="de">Auswahl und Archvierung</title>
 	</section>
-	<questionset dc:uri="http://example.com/terms/questions/dcc/selection_preservation/selection-selection">
-		<uri_prefix/>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/selection_preservation/selection-selection">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>selection-selection</key>
 		<path>dcc/selection_preservation/selection-selection</path>
 		<dc:comment/>
 		<attribute/>
-		<section dc:uri="http://example.com/terms/questions/dcc/selection_preservation"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/selection_preservation"/>
 		<is_collection>False</is_collection>
 		<order>10</order>
 		<title lang="en">Which data should be retained, shared, and/or preserved?</title>
@@ -1260,7 +1253,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/selection_preservation/selection-selection/selection_criteria</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/preservation/selection_criteria"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/selection_preservation/selection-selection"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/selection_preservation/selection-selection"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en"/>
@@ -1286,7 +1279,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/selection_preservation/selection-selection/embargo_period</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/embargo_period"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/selection_preservation/selection-selection"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/selection_preservation/selection-selection"/>
 		<is_collection>False</is_collection>
 		<order>3</order>
 		<help lang="en"/>
@@ -1312,7 +1305,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/selection_preservation/selection-selection/scenario</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reuse_scenario"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/selection_preservation/selection-selection"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/selection_preservation/selection-selection"/>
 		<is_collection>False</is_collection>
 		<order>3</order>
 		<help lang="en"/>
@@ -1332,13 +1325,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="http://example.com/terms/questions/dcc/selection_preservation/selection-selection/retained">
-		<uri_prefix/>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/selection_preservation/selection-selection/retained">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>retained</key>
 		<path>dcc/selection_preservation/selection-selection/retained</path>
 		<dc:comment/>
-		<attribute dc:uri="http://example.com/terms/domain/project/preservation/retained"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/selection_preservation/selection-selection"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/preservation/retained"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/selection_preservation/selection-selection"/>
 		<is_collection>False</is_collection>
 		<order>4</order>
 		<help lang="en"/>
@@ -1358,13 +1351,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="http://example.com/terms/questions/dcc/selection_preservation/preservation-archive">
-		<uri_prefix/>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/selection_preservation/preservation-archive">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>preservation-archive</key>
 		<path>dcc/selection_preservation/preservation-archive</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<section dc:uri="http://example.com/terms/questions/dcc/selection_preservation"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/selection_preservation"/>
 		<is_collection>True</is_collection>
 		<order>20</order>
 		<title lang="en">What is the long-term preservation plan for the dataset?</title>
@@ -1383,7 +1376,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/selection_preservation/preservation-archive/repository</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/selection_preservation/preservation-archive"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/selection_preservation/preservation-archive"/>
 		<is_collection>True</is_collection>
 		<order>1</order>
 		<help lang="en"/>
@@ -1411,7 +1404,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/selection_preservation/preservation-archive/duration</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/duration"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/selection_preservation/preservation-archive"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/selection_preservation/preservation-archive"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en"/>
@@ -1437,7 +1430,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/selection_preservation/preservation-archive/personnel</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/preservation/personnel"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/selection_preservation/preservation-archive"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/selection_preservation/preservation-archive"/>
 		<is_collection>False</is_collection>
 		<order>3</order>
 		<help lang="en">Please estimate the effort in person months.</help>
@@ -1463,7 +1456,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/selection_preservation/preservation-archive/non_personnel</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/preservation/non_personnel"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/selection_preservation/preservation-archive"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/selection_preservation/preservation-archive"/>
 		<is_collection>False</is_collection>
 		<order>4</order>
 		<help lang="en">Please estimate the costs in **Euro**.</help>
@@ -1483,8 +1476,8 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<optionsets/>
 		<conditions/>
 	</question>
-	<section dc:uri="http://example.com/terms/questions/dcc/sharing">
-		<uri_prefix/>
+	<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/sharing">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>sharing</key>
 		<path>dcc/sharing</path>
 		<dc:comment/>
@@ -1493,13 +1486,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<title lang="en">Data Sharing</title>
 		<title lang="de">Daten teilen</title>
 	</section>
-	<questionset dc:uri="http://example.com/terms/questions/dcc/sharing/sharing-sharing">
-		<uri_prefix/>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/sharing/sharing-sharing">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>sharing-sharing</key>
 		<path>dcc/sharing/sharing-sharing</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<section dc:uri="http://example.com/terms/questions/dcc/sharing"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/sharing"/>
 		<is_collection>True</is_collection>
 		<order>10</order>
 		<title lang="en">How will you share the data?</title>
@@ -1518,7 +1511,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/sharing/sharing-sharing/yesno</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/yesno"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/sharing/sharing-sharing"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/sharing/sharing-sharing"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en"/>
@@ -1546,7 +1539,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/sharing/sharing-sharing/explanation</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/explanation"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/sharing/sharing-sharing"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/sharing/sharing-sharing"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en"/>
@@ -1566,13 +1559,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="http://example.com/terms/questions/dcc/sharing/sharing-sharing/findability">
-		<uri_prefix/>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/sharing/sharing-sharing/findability">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>findability</key>
 		<path>dcc/sharing/sharing-sharing/findability</path>
 		<dc:comment/>
-		<attribute dc:uri="http://example.com/terms/domain/project/dataset/sharing/findability"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/sharing/sharing-sharing"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/findability"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/sharing/sharing-sharing"/>
 		<is_collection>False</is_collection>
 		<order>4</order>
 		<help lang="en"/>
@@ -1598,7 +1591,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/sharing/sharing-sharing/data_publication_date</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_publication_date"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/sharing/sharing-sharing"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/sharing/sharing-sharing"/>
 		<is_collection>False</is_collection>
 		<order>6</order>
 		<help lang="en"/>
@@ -1618,13 +1611,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="http://example.com/terms/questions/dcc/sharing/sharing-pid">
-		<uri_prefix/>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/sharing/sharing-pid">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>sharing-pid</key>
 		<path>dcc/sharing/sharing-pid</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<section dc:uri="http://example.com/terms/questions/dcc/sharing"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/sharing"/>
 		<is_collection>True</is_collection>
 		<order>12</order>
 		<title lang="en">Will you pursue getting a persistent identifier f or your data?</title>
@@ -1643,7 +1636,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/sharing/sharing-pid/yesno</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/pids/yesno"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/sharing/sharing-pid"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/sharing/sharing-pid"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<help lang="en"/>
@@ -1669,7 +1662,7 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/sharing/sharing-pid/system</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/pids/system"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/sharing/sharing-pid"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/sharing/sharing-pid"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en"/>
@@ -1697,14 +1690,14 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/sharing/sharing-pid/name</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/pids/responsible_person/name"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/sharing/sharing-pid"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/sharing/sharing-pid"/>
 		<is_collection>True</is_collection>
 		<order>4</order>
 		<help lang="en">A prerequisite for PIDs to work as promised is that they - as well as the objects they refer to - are maintained in a continuous and reliable way.. This means, for example, that if the object location changes, this information is
-                                        updated. When the data are stored in a data centre or repository, these tasks are usually taken care of by the data centre / repository. However, to be sure, the responsibilities should be checked beforehand.</help>
+			updated. When the data are stored in a data centre or repository, these tasks are usually taken care of by the data centre / repository. However, to be sure, the responsibilities should be checked beforehand.</help>
 		<help lang="de">Die Voraussetzung dafür, dass persistente Identifikatoren auch wirklich halten, was sie versprechen, ist, dass sie - wie auch die Objekte, auf die referenziert wird - dauerhaft und verlässlich gepflegt werden. D.h. beispielsweise,
-                                        dass bei einer Änderung des Speicherortes des Objekts die Information über den neuen Speicherort entsprechend aktualisiert werden muss. Werden die Daten in einem Datenzentrum oder -repositorium gespeichert, wird diese Verantwortung i.d.R. von diesem
-                                        übernommen. Um sicher zu sein, sollten die Verantwortlichkeiten jedoch in jedem Fall geprüft bzw. geklärt werden.</help>
+			dass bei einer Änderung des Speicherortes des Objekts die Information über den neuen Speicherort entsprechend aktualisiert werden muss. Werden die Daten in einem Datenzentrum oder -repositorium gespeichert, wird diese Verantwortung i.d.R. von diesem
+			übernommen. Um sicher zu sein, sollten die Verantwortlichkeiten jedoch in jedem Fall geprüft bzw. geklärt werden.</help>
 		<text lang="en">Who is responsible for the maintenance of the PIDs and the object maintenance (i.e. who is responsible notifying the PID-Service about object relocation and the new address)?</text>
 		<text lang="de">Wer ist verantwortlich für die Pflege der PIDs und die Objektpflege (d. h. die Langzeitarchivierung des Objekts und somit dafür, dem PID-Service einen Objektumzug und die neue Adresse mitzuteilen)?</text>
 		<verbose_name lang="en"/>
@@ -1720,13 +1713,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="http://example.com/terms/questions/dcc/sharing/restrictions-restrictions">
-		<uri_prefix/>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/sharing/restrictions-restrictions">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>restrictions-restrictions</key>
 		<path>dcc/sharing/restrictions-restrictions</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<section dc:uri="http://example.com/terms/questions/dcc/sharing"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/sharing"/>
 		<is_collection>True</is_collection>
 		<order>20</order>
 		<title lang="en">Are any restrictions on data sharing required?</title>
@@ -1745,15 +1738,13 @@ für die die Daten erhoben oder erstellt werden.</help>
 		<path>dcc/sharing/restrictions-restrictions/restrictions_explanation</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/restrictions_explanation"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/sharing/restrictions-restrictions"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/sharing/restrictions-restrictions"/>
 		<is_collection>False</is_collection>
 		<order>5</order>
-		<help lang="en">Outline any expected difficulties in sharing data with acknowledged long-term value, 
-along with causes and possible measures to overcome these. Restrictions may be due to
-confidentiality, lack of consent agreements or IPR, for example. Consider whether a nondisclosure
-agreement would give sufficient protection for confidential data.</help>
-		<help lang="de">Erläutern Sie alle zu erwartenden Schwierigkeiten bei der gemeinsamen Nutzung von Daten mit anerkanntem Langzeitwert, 
-zusammen mit den Ursachen und möglichen Maßnahmen zu deren Überwindung. Einschränkungen können folgende Ursachen haben: Vertraulichkeit, fehlende Zustimmungsvereinbarungen oder Immaterialgüterrechte. Überlegen Sie, ob eine Verschwiegenheitsklausel einen ausreichenden Schutz für vertrauliche Daten bieten würde.</help>
+		<help lang="en">Outline any expected difficulties in sharing data with acknowledged long-term value, along with causes and possible measures to overcome these. Restrictions may be due to confidentiality, lack of consent agreements or IPR, for
+			example. Consider whether a nondisclosure agreement would give sufficient protection for confidential data.</help>
+		<help lang="de">Erläutern Sie alle zu erwartenden Schwierigkeiten bei der gemeinsamen Nutzung von Daten mit anerkanntem Langzeitwert, zusammen mit den Ursachen und möglichen Maßnahmen zu deren Überwindung. Einschränkungen können folgende Ursachen
+			haben: Vertraulichkeit, fehlende Zustimmungsvereinbarungen oder Immaterialgüterrechte. Überlegen Sie, ob eine Verschwiegenheitsklausel einen ausreichenden Schutz für vertrauliche Daten bieten würde.</help>
 		<text lang="en">If there are any restrictions on the re-use of this dataset, please explain why.</text>
 		<text lang="de">Sollte die Nachnutzung dieses Datensatzes Einschränkungen unterliegen, erläutern Sie bitte die Gründe.</text>
 		<verbose_name lang="en"/>
@@ -1769,8 +1760,8 @@ zusammen mit den Ursachen und möglichen Maßnahmen zu deren Überwindung. Einsc
 		<optionsets/>
 		<conditions/>
 	</question>
-	<section dc:uri="http://example.com/terms/questions/dcc/responsibilities_resources">
-		<uri_prefix/>
+	<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/responsibilities_resources">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>responsibilities_resources</key>
 		<path>dcc/responsibilities_resources</path>
 		<dc:comment/>
@@ -1779,13 +1770,13 @@ zusammen mit den Ursachen und möglichen Maßnahmen zu deren Überwindung. Einsc
 		<title lang="en">Responsibilities and Resources</title>
 		<title lang="de">Verantwortlichkeiten und Ressourcen</title>
 	</section>
-	<questionset dc:uri="http://example.com/terms/questions/dcc/responsibilities_resources/responsibilities-contact">
-		<uri_prefix/>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/responsibilities_resources/responsibilities-contact">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>responsibilities-contact</key>
 		<path>dcc/responsibilities_resources/responsibilities-contact</path>
 		<dc:comment/>
 		<attribute/>
-		<section dc:uri="http://example.com/terms/questions/dcc/responsibilities_resources"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/responsibilities_resources"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<title lang="en">Who will be responsible for data management?</title>
@@ -1798,13 +1789,13 @@ zusammen mit den Ursachen und möglichen Maßnahmen zu deren Überwindung. Einsc
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
-	<question dc:uri="http://example.com/terms/questions/dcc/responsibilities_resources/responsibilities-contact/dmp_contact">
-		<uri_prefix/>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/responsibilities_resources/responsibilities-contact/dmp_contact">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>dmp_contact</key>
 		<path>dcc/responsibilities_resources/responsibilities-contact/dmp_contact</path>
 		<dc:comment/>
-		<attribute dc:uri="http://example.com/terms/domain/project/dmp/name"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/responsibilities_resources/responsibilities-contact"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/name"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/responsibilities_resources/responsibilities-contact"/>
 		<is_collection>True</is_collection>
 		<order>1</order>
 		<help lang="en"/>
@@ -1824,13 +1815,13 @@ zusammen mit den Ursachen und möglichen Maßnahmen zu deren Überwindung. Einsc
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="http://example.com/terms/questions/dcc/responsibilities_resources/responsibilities-contact/partner_contact">
-		<uri_prefix/>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/responsibilities_resources/responsibilities-contact/partner_contact">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>partner_contact</key>
 		<path>dcc/responsibilities_resources/responsibilities-contact/partner_contact</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/contact_person/name"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/responsibilities_resources/responsibilities-contact"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/responsibilities_resources/responsibilities-contact"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en"/>
@@ -1850,13 +1841,13 @@ zusammen mit den Ursachen und möglichen Maßnahmen zu deren Überwindung. Einsc
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="http://example.com/terms/questions/dcc/responsibilities_resources/responsibilities-contact/agreement">
-		<uri_prefix/>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/responsibilities_resources/responsibilities-contact/agreement">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>agreement</key>
 		<path>dcc/responsibilities_resources/responsibilities-contact/agreement</path>
 		<dc:comment/>
-		<attribute dc:uri="http://example.com/terms/domain/project/partner/agreement"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/responsibilities_resources/responsibilities-contact"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/agreement"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/responsibilities_resources/responsibilities-contact"/>
 		<is_collection>False</is_collection>
 		<order>4</order>
 		<help lang="en"/>
@@ -1876,13 +1867,13 @@ zusammen mit den Ursachen und möglichen Maßnahmen zu deren Überwindung. Einsc
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="http://example.com/terms/questions/dcc/responsibilities_resources/resources-resources">
-		<uri_prefix/>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/responsibilities_resources/resources-resources">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>resources-resources</key>
 		<path>dcc/responsibilities_resources/resources-resources</path>
 		<dc:comment/>
 		<attribute/>
-		<section dc:uri="http://example.com/terms/questions/dcc/responsibilities_resources"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/responsibilities_resources"/>
 		<is_collection>False</is_collection>
 		<order>20</order>
 		<title lang="en">What resources will you require to deliver your plan?</title>
@@ -1901,7 +1892,7 @@ zusammen mit den Ursachen und möglichen Maßnahmen zu deren Überwindung. Einsc
 		<path>dcc/responsibilities_resources/resources-resources/cover_how</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/preservation/cover_how"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/responsibilities_resources/resources-resources"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/responsibilities_resources/resources-resources"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en"/>
@@ -1927,7 +1918,7 @@ zusammen mit den Ursachen und möglichen Maßnahmen zu deren Überwindung. Einsc
 		<path>dcc/responsibilities_resources/resources-resources/infrastructure</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_infrastructure"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/responsibilities_resources/resources-resources"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/responsibilities_resources/resources-resources"/>
 		<is_collection>False</is_collection>
 		<order>3</order>
 		<help lang="en"/>
@@ -1955,7 +1946,7 @@ zusammen mit den Ursachen und möglichen Maßnahmen zu deren Überwindung. Einsc
 		<path>dcc/responsibilities_resources/resources-resources/support</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_support"/>
-		<questionset dc:uri="http://example.com/terms/questions/dcc/responsibilities_resources/resources-resources"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/dcc/responsibilities_resources/resources-resources"/>
 		<is_collection>False</is_collection>
 		<order>5</order>
 		<help lang="en"/>
