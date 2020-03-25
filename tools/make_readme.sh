@@ -5,7 +5,7 @@ basedir=$(echo "${scriptdir}" | grep -Po ".*(?=\/)")
 arr=($(find "${basedir}/shared" -regex ".*\.xml$" | sort))
 
 tmpfile="/tmp/rdmocatalogtable.tmp"
-readme_tpl="${basedir}/readme.tpl"
+readme_tpl="${scriptdir}/readme.tpl"
 readme_out="${basedir}/readme.md"
 
 rm -f "${tmpfile}"
