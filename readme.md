@@ -9,7 +9,7 @@ Content shared by RDMO Users can be found under `shared`. There may be multiple 
 Different scripts are located in `tools`. These are interesting for people maintaining this repo.
 
 
-## Shared catalogs
+## Shared Catalogs
 
 |Name|File|
 |---|---|
