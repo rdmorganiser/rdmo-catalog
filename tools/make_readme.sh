@@ -14,9 +14,11 @@ function ec(){
     echo -e "${1}" >> "${readme_out}"
 }
 
+c=0
 echo "Generate shared catalog table "
 for f in "${arr[@]}"; do
     if [[ $(grep -Pc "<catalog\sdc:uri=.*>" "${f}") != 0 ]]; then
+        c=$((c+1))
         title=$(
             cat "${f}" \
             | tr '\n' ' ' \
@@ -34,5 +36,6 @@ ec "\n\n## Shared catalogs"
 ec "\n|Name|File|"
 ec "|---|---|"
 cat "${tmpfile}" | sort >> "${readme_out}"
+ec "\n${c} catalogs shared"
 
 echo "Done"

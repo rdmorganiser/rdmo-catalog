@@ -9,7 +9,7 @@ Content shared by RDMO Users can be found under `shared`. There may be multiple 
 Different scripts are located in `tools`. These are interesting for people maintaining this repo.
 
 
-## Shared Catalogs
+## Shared catalogs
 
 |Name|File|
 |---|---|
@@ -21,3 +21,5 @@ Different scripts are located in `tools`. These are interesting for people maint
 |Horizon 2020 Grants|shared/ub_fau_erlangen_nuernberg/eHum_H2020/eHum_H2020_Fragebogen.xml|
 |RDMO Mechanical Engineering V0.1 - 28.03.2019|shared/nfdi4ing/rdmo_mechanical_engineering/catalog_mb_20190124.xml|
 |Sociology + DFG|shared/fodako/catalog_ratswd_dfg.xml|
+
+8 catalogs shared
