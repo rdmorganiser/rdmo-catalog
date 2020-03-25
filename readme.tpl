@@ -6,4 +6,4 @@ The files that are officially provided by the RDMO project are in the `rdmorgani
 
 Content shared by RDMO Users can be found under `shared`. There may be multiple files in a folder like for example conditions, options and questions. Files in the same folder belong together. All of them should be imported. Please pay attention to the order in which you import files. Question catalogs referring to other content should be imported at last.
 
-In `sanitizer` is a tool that is used to automatically replace the default URI in XML files. It is rather uninteresting for the average RDMO user but of relevance for the project and therefore included here.
+Different scripts are located in `tools`. These are interesting for people maintaining this repo.
