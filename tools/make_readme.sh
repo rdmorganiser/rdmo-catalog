@@ -33,7 +33,7 @@ done
 
 cat "${readme_tpl}" > "${readme_out}"
 ec "\n\n## Shared catalogs"
-ec "\n|Name|File|"
+ec "\n|Title|File|"
 ec "|---|---|"
 cat "${tmpfile}" | sort >> "${readme_out}"
 ec "\n${c} catalogs shared"

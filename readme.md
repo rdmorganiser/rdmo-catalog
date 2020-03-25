@@ -11,7 +11,7 @@ Different scripts are located in `tools`. These are interesting for people maint
 
 ## Shared catalogs
 
-|Name|File|
+|Title|File|
 |---|---|
 |All questions|shared/fodako/catalog_all.xml|
 |DFG grants (scientific editions in litary studies)|shared/ub_fau_erlangen_nuernberg/DFG_Editionen/DFG_editions.xml|
