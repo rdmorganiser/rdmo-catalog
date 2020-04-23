@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" ?>
 <rdmo xmlns:dc="http://purl.org/dc/elements/1.1/">
 	<view dc:uri="https://rdmorganiser.github.io/terms/views/bielefeld">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>bielefeld</key>
 		<dc:comment/>
 		<title lang="en">Bielefeld</title>
-		<title lang="de">Bielefeld</title>
 		<help lang="en">DMP template from the University of Bielefeld.</help>
+		<title lang="de">Bielefeld</title>
 		<help lang="de">DMP Vorlage der Universität Bielefeld.</help>
 		<template>{% load view_tags %}
 
@@ -442,13 +442,13 @@
     Anreizsysteme einzuführen?&lt;/b&gt;
 &lt;/p&gt;</template>
 	</view>
-	<view dc:uri="http://example.com/terms/views/citec">
+	<view dc:uri="https://rdmorganiser.github.io/terms/views/citec">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>citec</key>
 		<dc:comment/>
 		<title lang="en">CITEC DMP</title>
-		<title lang="de">CITEC DMP</title>
 		<help lang="en">DMP template from the University of Bielefeld for CITEC funded research projects.</help>
+		<title lang="de">CITEC DMP</title>
 		<help lang="de">DMP Vorlage der Universität Bielefeld für CITEC geförderte Projekte.</help>
 		<template>{% load view_tags %}
 
@@ -609,13 +609,196 @@
 &lt;/p&gt;
 {% endfor %}</template>
 	</view>
+	<view dc:uri="https://rdmorganiser.github.io/terms/views/costs">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>costs</key>
+		<dc:comment/>
+		<title lang="en">Cost overview</title>
+		<help lang="en">Overview of the personnel and non_personnel costs</help>
+		<title lang="de">Kostenübersicht</title>
+		<help lang="de">Übersicht der Personal- und Sachkosten</help>
+		<template>{% load view_tags %}
+{% load mathfilters %}
+
+{% get_set 'project/dataset' as datasets %}
+{% get_value 'project/costs/creation/personnel' as creationp %}
+{% get_value 'project/costs/creation/non_personnel' as creationnp %}
+{% get_value 'project/costs/usage/personnel' as usagep %}
+{% get_value 'project/costs/usage/non_personnel' as usagenp %}
+{% get_value 'project/costs/storage/personnel' as storagep %}
+{% get_value 'project/costs/storage/non_personnel' as storagenp %}
+{% get_value 'project/costs/metadata/personnel' as metadatap %}
+{% get_value 'project/costs/metadata/non_personnel' as metadatanp %}
+{% get_value 'project/costs/pid/personnel' as pidp %}
+{% get_value 'project/costs/pid/non_personnel' as pidnp %}
+{% get_value 'project/costs/sensitive_data/anonymization/personnel' as anonymizationp %}
+{% get_value 'project/costs/sensitive_data/anonymization/non_personnel' as anonymizationnp %}
+{% get_value 'project/costs/sensitive_data/security/personnel' as securityp %}
+{% get_value 'project/costs/sensitive_data/security/non_personnel' as securitynp %}
+{% get_value 'project/costs/ipr/personnel' as iprp %}
+{% get_value 'project/costs/ipr/non_personnel' as iprnp %}
+{% get_value 'project/costs/preservation/personnel' as preservationp %}
+{% get_value 'project/costs/preservation/non_personnel' as preservationnp %}
+
+&lt;h1&gt;
+	Kostenübersicht&lt;/h1&gt;
+
+&lt;h2&gt;1. Datengröße
+&lt;/h2&gt;
+
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;th&gt;
+			&lt;b&gt;Datensatz&lt;/b&gt;
+		&lt;/th&gt;
+		&lt;th&gt;
+			&lt;b&gt;Datengröße&lt;/b&gt;
+		&lt;/th&gt;
+		&lt;th&gt;
+			&lt;b&gt;Zuwachsrate / Jahr&lt;/b&gt;
+		&lt;/th&gt;
+	&lt;/tr&gt;
+	{% for dataset in datasets %}
+		&lt;tr&gt;
+			&lt;td&gt;{% render_set_value dataset 'project/dataset/id' %}&lt;/td&gt;
+			&lt;td&gt;{% render_set_value dataset 'project/dataset/size/volume' %}&lt;/td&gt;
+			&lt;td&gt;{% render_set_value dataset 'project/dataset/rate' %}&lt;/td&gt;
+		&lt;/tr&gt;
+	{% endfor %}
+&lt;/table&gt;
+
+&lt;p&gt;
+	&lt;b&gt;
+		Laufzeit des Projekts
+	&lt;/b&gt;:
+	{% render_value 'project/schedule/project_start' %}
+	bis
+	{% render_value 'project/schedule/project_end' %}
+&lt;/p&gt;
+
+&lt;p&gt;
+	In welchem Umfang werden
+	&lt;b&gt;Infrastrukturressourcen&lt;/b&gt;
+	benötigt?:
+	{% render_value 'project/dataset/usage_infrastructure' %}
+&lt;/p&gt;
+&lt;h2&gt;
+	2. Personal- und Sachkosten
+&lt;/h2&gt;
+
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;th&gt;
+			&lt;b&gt;Kategorie&lt;/b&gt;
+		&lt;/th&gt;
+		&lt;th&gt;
+			&lt;b&gt;Personalkosten&lt;/b&gt;
+		&lt;/th&gt;
+		&lt;th&gt;
+			&lt;b&gt;Sachkosten&lt;/b&gt;
+		&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			Datenerhebung
+		&lt;/td&gt;
+		&lt;td&gt;
+			{% render_value 'project/costs/creation/personnel' %}&lt;/td&gt;
+		&lt;td&gt;
+			{% render_value 'project/costs/creation/non_personnel' %}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			Datennutzung
+		&lt;/td&gt;
+		&lt;td&gt;
+			{% render_value 'project/costs/usage/personnel' %}&lt;/td&gt;
+		&lt;td&gt;
+			{% render_value 'project/costs/usage/non_personnel' %}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			Datenspeicherung
+		&lt;/td&gt;
+		&lt;td&gt;
+			{% render_value 'project/costs/storage/personnel' %}&lt;/td&gt;
+		&lt;td&gt;
+			{% render_value 'project/costs/storage/non_personnel' %}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			Metadaten&lt;/td&gt;
+		&lt;td&gt;
+			{% render_value 'project/costs/metadata/personnel' %}&lt;/td&gt;
+		&lt;td&gt;
+			{% render_value 'project/costs/metadata/non_personnel' %}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			Persistente Identifikatoren&lt;/td&gt;
+		&lt;td&gt;
+			{% render_value 'project/costs/pid/personnel' %}&lt;/td&gt;
+		&lt;td&gt;
+			{% render_value 'project/costs/pid/non_personnel' %}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			Anonymisierung sensibler Daten&lt;/td&gt;
+		&lt;td&gt;
+			{% render_value 'project/costs/sensitive_data/anonymization/personnel' %}&lt;/td&gt;
+		&lt;td&gt;
+			{% render_value 'project/costs/sensitive_data/anonymization/non_personnel' %}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			Sicherheitsmaßnahmen für sensible Daten&lt;/td&gt;
+		&lt;td&gt;
+			{% render_value 'project/costs/sensitive_data/security/personnel' %}&lt;/td&gt;
+		&lt;td&gt;
+			{% render_value 'project/costs/sensitive_data/security/non_personnel' %}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			Urheber- und Schutzrechte&lt;/td&gt;
+		&lt;td&gt;
+			{% render_value 'project/costs/ipr/personnel' %}&lt;/td&gt;
+		&lt;td&gt;
+			{% render_value 'project/costs/ipr/non_personnel' %}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			Langzeitarchivierung&lt;/td&gt;
+		&lt;td&gt;
+			{% render_value 'project/costs/preservation/personnel' %}&lt;/td&gt;
+		&lt;td&gt;
+			{% render_value 'project/costs/preservation/non_personnel' %}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;
+			&lt;b&gt;Summe&lt;/b&gt;
+		&lt;/td&gt;
+		&lt;td&gt;
+			{{ creationp.as_number | addition:usagep.as_number | addition:storagep.as_number | addition:metadatap.as_number | addition:pidp.as_number | addition:anonymizationp | addition:securityp | addition:iprp | addition:preservationp }}
+			PM
+		&lt;/td&gt;
+		&lt;td&gt;
+			{{ creationnp.as_number | addition:usagenp.as_number | addition:storagenp.as_number | addition:metadatanp.as_number | addition:pidnp.as_number | addition:anonymizationnp | addition:securitynp | addition:iprnp | addition:preservationnp }}
+			Euro&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;
+	Wie werden die Kosten für das Datenmanagement im Projekt aufgebracht?
+	{% render_value 'project/costs/preservation/cover_how' %}
+&lt;/p&gt;</template>
+	</view>
 	<view dc:uri="https://rdmorganiser.github.io/terms/views/dmponline">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>dmponline</key>
 		<dc:comment>Source: https://dmponline.dcc.ac.uk/</dc:comment>
 		<title lang="en">DMPonline template</title>
-		<title lang="de">DMPonline template</title>
 		<help lang="en">Template from DMPonline, online https://dmponline.dcc.ac.uk</help>
+		<title lang="de">DMPonline template</title>
 		<help lang="de">Vorlage von DMPonline, Online: https://dmponline.dcc.ac.uk</help>
 		<template>{% load view_tags %}
 
@@ -837,11 +1020,11 @@
 	<view dc:uri="https://rdmorganiser.github.io/terms/views/dmptool">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>dmptool</key>
-		<dc:comment>Source: https://dmptool.org/ and based on the template "NSF-GEN: Generic"</dc:comment>
+		<dc:comment>Source: https://dmptool.org/ and based on the template &quot;NSF-GEN: Generic&quot;</dc:comment>
 		<title lang="en">DMPTool template</title>
+		<help lang="en">Template from DMPtool, based on &quot;NSF-GEN: Generic&quot;, online: https://dmptool.org</help>
 		<title lang="de">DMPTool template</title>
-		<help lang="en">Template from DMPtool, based on "NSF-GEN: Generic", online: https://dmptool.org</help>
-		<help lang="de">Vorlage von DMPtool, basiert auf on "NSF-GEN: Generic", Online: https://dmptool.org</help>
+		<help lang="de">Vorlage von DMPtool, basiert auf on &quot;NSF-GEN: Generic&quot;, Online: https://dmptool.org</help>
 		<template>{% load view_tags %}
 
 {% get_set 'project/partner' as partners %}{% get_set 'project/dataset' as datasets %}
@@ -1084,7 +1267,7 @@
 	{% render_value 'project/legal_aspects/sensitive_data/personal_data/anonymization' %}
 &lt;/p&gt;
 &lt;p&gt;
-	"Informed consent" will be obtained from the person(s) concerned:
+	&quot;Informed consent&quot; will be obtained from the person(s) concerned:
 	{% render_value 'project/legal_aspects/sensitive_data/personal_data/consent/extent' %}
 &lt;/p&gt;
 {% endif %}
@@ -1243,11 +1426,11 @@
 		<key>horizon2020</key>
 		<dc:comment>Source: http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf</dc:comment>
 		<title lang="en">Horizon 2020 FAIR Data Management Plan template</title>
+		<help lang="en">Template for Horizon 2020, from &quot;Guidelines on
+FAIR Data Management in Horizon 2020&quot;, online: http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf</help>
 		<title lang="de">Horizon 2020 FAIR Data Management Plan template</title>
-		<help lang="en">Template for Horizon 2020, from "Guidelines on
-FAIR Data Management in Horizon 2020", online: http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf</help>
-		<help lang="de">Vorlage für Horizon 2020, aus "Guidelines on
-FAIR Data Management in Horizon 2020", Online: http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf</help>
+		<help lang="de">Vorlage für Horizon 2020, aus &quot;Guidelines on
+FAIR Data Management in Horizon 2020&quot;, Online: http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf</help>
 		<template>{% load view_tags %}
 
 &lt;h1&gt;Horizon 2020&lt;/h1&gt;
@@ -1729,8 +1912,8 @@ FAIR Data Management in Horizon 2020", Online: http://ec.europa.eu/research/part
 		<key>snf</key>
 		<dc:comment>Source: http://www.snf.ch/SiteCollectionDocuments/DMP_content_mySNF-form_de.pdf</dc:comment>
 		<title lang="en">SNF Template</title>
-		<title lang="de">SNF Vorlage</title>
 		<help lang="en">DMP of the SNF (Switzerland)</help>
+		<title lang="de">SNF Vorlage</title>
 		<help lang="de">DMP für die SNF (Schweiz)</help>
 		<template>{% load view_tags %}
 
