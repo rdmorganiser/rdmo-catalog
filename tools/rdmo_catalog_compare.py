@@ -37,6 +37,11 @@ def get_new_root_content(root):
                     help_en.append("")
                 else:
                     help_en.append(help.text)
+    # remove white spaces and line breaks ect. 
+    questions_en = [ ' '.join(element.split()) for element in questions_en]
+    questions_de = [ ' '.join(element.split()) for element in questions_de]
+    help_en = [ ' '.join(element.split()) for element in help_en]
+    help_de = [ ' '.join(element.split()) for element in help_de]
     assert len(uris) == len(questions_de)
     assert len(uris) == len(questions_en)
     return uris, questions_de, questions_en, help_de, help_en
