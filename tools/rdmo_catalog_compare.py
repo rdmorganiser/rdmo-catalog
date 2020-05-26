@@ -4,10 +4,10 @@ import xml.etree.ElementTree as ET
 def read_xml():
     # read in the xml files from both versions and return tree objects
     # This is reads in rdmo >v0.11 data model 
-    xml_example = codecs.open(os.path.abspath("rdmo_questions.xml"),
+    xml_example = codecs.open(os.path.abspath("rdmo_questions_old.xml"),
                     "r", "utf-8")
     old_tree = ET.parse(xml_example)
-    xml_example = codecs.open(os.path.abspath("rdmo_catalog_latest_commit.xml"),
+    xml_example = codecs.open(os.path.abspath("rdmo_questions_new.xml"),
                     "r", "utf-8")
     new_tree = ET.parse(xml_example)
     return old_tree, new_tree
