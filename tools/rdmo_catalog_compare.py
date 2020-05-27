@@ -4,13 +4,49 @@ import xml.etree.ElementTree as ET
 def read_xml():
     # read in the xml files from both versions and return tree objects
     # This is reads in rdmo >v0.11 data model 
-    xml_example = codecs.open(os.path.abspath("rdmo_questions_old.xml"),
+    xml_example = codecs.open(os.path.abspath("rdmo_questions.xml"),
                     "r", "utf-8")
     old_tree = ET.parse(xml_example)
-    xml_example = codecs.open(os.path.abspath("rdmo_questions_new.xml"),
+    xml_example = codecs.open(os.path.abspath("rdmo_catalog_latest_commit.xml"),
                     "r", "utf-8")
     new_tree = ET.parse(xml_example)
     return old_tree, new_tree
+
+def get_old_root_content(root, name_space):
+    '''
+    root: The root of an xml.etree.ElementTree Object
+    name_space: A dictionary with name space prefix as key and the
+                name space as value of that key
+
+    This function is specifically for the input of the rdmo question catalog "question.xml" (version 0.1.0).
+    '''
+    questions_de = []
+    questions_en = []
+    uris = []
+    help_de = []
+    help_en = []
+    for question in root.iter("question"):
+        for text in question.findall("text"):
+            if text.attrib["lang"] == "de":
+                questions_de.append(text.text)
+            elif text.attrib["lang"] == "en":
+                questions_en.append(text.text)
+        for uri in question.findall("dc:uri", name_space):
+            uris.append(uri.text)
+        for help in question.findall("help"):
+            if help.attrib["lang"] == "de":
+                if help.text == None:
+                    help_de.append("")
+                else:
+                    help_de.append(help.text)
+            elif help.attrib["lang"] == "en":
+                if help.text == None:
+                    help_en.append("")
+                else:
+                    help_en.append(help.text)
+    assert len(uris) == len(questions_de)
+    assert len(uris) == len(questions_en)
+    return uris, questions_de, questions_en, help_de, help_en
 
 def get_new_root_content(root):
     questions_de = []
@@ -37,13 +73,13 @@ def get_new_root_content(root):
                     help_en.append("")
                 else:
                     help_en.append(help.text)
-    # remove white spaces and line breaks ect. 
+    # remove white spaces and line breaks ect.                
     questions_en = [ ' '.join(element.split()) for element in questions_en]
     questions_de = [ ' '.join(element.split()) for element in questions_de]
     help_en = [ ' '.join(element.split()) for element in help_en]
     help_de = [ ' '.join(element.split()) for element in help_de]
-    assert len(uris) == len(questions_de)
-    assert len(uris) == len(questions_en)
+    assert len(uris) == len(questions_de) == len(help_de)
+    assert len(uris) == len(questions_en) == len(help_en)
     return uris, questions_de, questions_en, help_de, help_en
 
 def strip_uris(uris):
