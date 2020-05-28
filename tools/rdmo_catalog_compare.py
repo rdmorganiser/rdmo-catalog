@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 
 def read_xml():
     # read in the xml files from both versions and return tree objects
+    # Note, the question's URIs prefixes must be identical in both files.
     # This is reads in rdmo >v0.11 data model 
     xml_example = codecs.open(os.path.abspath("rdmo_questions.xml"),
                     "r", "utf-8")
@@ -114,7 +115,8 @@ def main():
             identical_uris += 1
             # mapping the current URI of the new catalog to the old one
             list_index = old_uris_s.index(new_uris_s[x])
-            output.write(new_uris[x][52:] + "\n")
+            # The output of the uri string is cut 
+            output.write(new_uris[x][46:] + "\n")
             if new_questions_de[x] != old_questions_de[list_index]:
                 output.write("different question texts: \n" +
                 "new: " + new_questions_de[x] + "\n" +
@@ -134,13 +136,13 @@ def main():
             output.write("----------------------------------------------------- \n")
         else:
             # there is no identical uri in the other dataset
-            output.write("new uri: " + new_uris[x][52:]  + "\n" +
+            output.write("new uri: " + new_uris[x][46:]  + "\n" +
             new_questions_de[x] + "\n" + new_help_de[x] + "\n" +
             new_questions_en[x] + "\n" + new_help_en[x] + "\n")
             output.write("----------------------------------------------------- \n")
         if old_uris_s[x] not in new_uris_s:
             # grabbing removed (or changed) uris
-            output.write("removed old uri: " + old_uris[x][52:]  + "\n" +
+            output.write("removed old uri: " + old_uris[x][46:]  + "\n" +
             old_questions_de[x] + "\n" + old_help_de[x] + "\n" +
             old_questions_en[x] + "\n" + old_help_en[x] + "\n")
             output.write("----------------------------------------------------- \n")

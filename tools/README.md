@@ -5,7 +5,7 @@
 After a successful run the results will be available in three files `deleted.xml`, `changed.xml`, and `added.xml`.  
 
 ## Comparing rdmo question files 
-`rdmo_catalog_compare.py` will compare rdmo question files. As input two files must be present `rdmo_questions.xml` and `rdmo_catalog_latest_commit.xml`.  
+`rdmo_catalog_compare.py` will compare rdmo question files. As input two files must be present `rdmo_questions.xml` and `rdmo_catalog_latest_commit.xml`. Note, the question's URIs prefixes must be identical in both files. Furtermore, this script only works for question files with content matching rdmorganiser/rdmo >= v0.11 data model specifications.   
 The output 'questions_differences' will print all question uris. If differences are detected they are printed on the question text and help texts level.   
 
 ## Catalog Generation
