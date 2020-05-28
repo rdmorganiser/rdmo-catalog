@@ -100,3 +100,6 @@ Here are some important assumptions and choices made by the script.
 
 
 A detailed explanation about how these files work can be found in [the wiki of this repository](https://github.com/FDM-UARuhr/rdmo-catalog-uaruhr/wiki/UA-Ruhr-Catalog-Creation).
+
+## Generate a html view of the catalogs 
+`catalog_html_conversion.py` reads in `all_questions.xml` and `cat_member.yaml` and outputs html pages for all catalogs being specified in `cat_member.yaml` catalog section. The output can be reused in the `gh-pages` branch. 
