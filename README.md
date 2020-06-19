@@ -1,3 +1,6 @@
+Latest stable [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/fdm-uaruhr/rdmo-catalog-uaruhr?sort=semver&style=flat-square)](https://github.com/FDM-UARuhr/rdmo-catalog-uaruhr/releases)
+
+
 # rdmo-catalog-uaruhr
 This repository contains the content for [RDMO](https://github.com/rdmorganiser/rdmo) prepared by [FDM-UARUHR](https://github.com/organizations/FDM-UARuhr).
 
