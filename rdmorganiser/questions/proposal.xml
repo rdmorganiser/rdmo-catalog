@@ -70,8 +70,8 @@
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general/topic-research_question"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en"/>
-		<help lang="de"/>
+    <help lang="en">Describe briefly the project and its goals.</help>
+    <help lang="de">Bitte beschreiben Sie kurz das Projekt und dessen Ziele.</help>
 		<text lang="en">What is the main research question of the project?</text>
 		<text lang="de">Wie lautet die primäre Forschungsfrage des Projektes?</text>
 		<verbose_name lang="en"/>
@@ -214,10 +214,8 @@
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general/project-partners-partner"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en">More and more universities and scientific institutions adopt research data management policies. These contain, among other things, recommendations and / or demands concerning the handling of research data by researchers of the institution.
-
-&lt;a href="https://uni-bielefeld.de/(en)/forschungsdaten/fdm-bi/resolution/" target="_blank"&gt;Principles and guidelines on handling research data at Bielefeld University&lt;/a&gt; or the &lt;a href="http://www.uni-goettingen.de/en/488918.html" target="_blank"&gt;Research data policy of the Georg-August University Goettingen&lt;/a&gt;.</help>
-		<help lang="de">Immer mehr Hochschulen und wissenschaftliche Einrichtungen verabschieden Leitlinien oder Richtlinien (oft auch als „Policies“ bezeichnet) zum Forschungsdatenmanagement. Diese enthalten unter anderem Empfehlungen und/oder Vorgaben zum Umgang mit Forschungsdaten, die die Wissenschaftlerinnen und Wissenschaftler der Einrichtung beachten sollten oder müssen (je nach Grad der Verbindlichkeit). Beispiele für solche Richtlinien sind die &lt;a href="https://uni-bielefeld.de/(de)/forschungsdaten/fdm-bi/resolution/" target="_blank"&gt;Grundsätze zu Forschungsdaten&lt;/a&gt; der Universität Bielefeld oder die &lt;a href="http://www.uni-goettingen.de/de/01-juli-2014-forschungsdaten-leitlinie-der-universitaet-goettingen-einschl-umg/488918.html" target="_blank"&gt;Leitlinien zum Umgang mit Forschungsdaten&lt;/a&gt; der Georg-August-Universität Göttingen.</help>
+    <help lang="en"> More and more universities and scientific institutions adopt research data management policies. These contain, among other things, recommendations and / or demands concerning the handling of research data by researchers of the institution, for example the &lt;a href="http://www.uni-goettingen.de/en/488918.html" target="_blank"&gt;Research data policy&lt;/a&gt; of the Georg-August University Goettingen.</help>
+    <help lang="de"> Immer mehr Hochschulen und wissenschaftliche Einrichtungen verabschieden Leitlinien oder Richtlinien (oft auch als „Policies“ bezeichnet) zum Forschungsdatenmanagement. Diese enthalten unter anderem Empfehlungen und/oder Vorgaben zum Umgang mit Forschungsdaten, die die Wissenschaftlerinnen und Wissenschaftler der Einrichtung beachten sollten oder müssen (je nach Grad der Verbindlichkeit), zum Beispiel die &lt;a href="http://www.uni-goettingen.de/de/01-juli-2014-forschungsdaten-leitlinie-der-universitaet-goettingen-einschl-umg/488918.html" target="_blank"&gt;Leitlinien zum Umgang mit Forschungsdatena&lt;/a&gt; der Georg-August-Universität Göttingen.</help>
 		<text lang="en">Does your institution have rules or guidelines for the handling of research data? If yes, please briefly outline them and refer to more detailed sources of information if necessary. Please also indicate, if the rules / guidelines are mandatory or optional.</text>
 		<text lang="de">Gibt es an Ihrer Einrichtung Regeln oder Richtlinien zum Umgang mit den im Projekt erhobenen Forschungsdaten? Wenn ja, skizzieren Sie diese kurz und verweisen Sie ggf. auf weiterführende Informationen. Geben Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</text>
 		<verbose_name lang="en"/>
@@ -242,8 +240,8 @@
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general/project-partners-partner"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
-		<help lang="en"/>
-		<help lang="de"/>
+    <help lang="en">Please insert the name of project partner in detail.</help>
+    <help lang="de">Bitte geben Sie hier den vollständigen Namen des Projektpartners an.</help>
 		<text lang="en">Project partner</text>
 		<text lang="de">Projektpartner</text>
 		<verbose_name lang="en"/>
@@ -278,6 +276,37 @@
 		<verbose_name_plural lang="de">Förderer</verbose_name_plural>
 		<conditions/>
 	</questionset>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general/funding-funder/funder_policy">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>funder_policy</key>
+		<path>proposal/general/funding-funder/funder_policy</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/rdm_policy"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general/funding-funder"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<help lang="en">Funders of research also increasingly specify requirements regarding the management of research data in funded projects. Examples are the &lt;a
+			href="https://www.dfg.de/en/research_funding/proposal_review_decision/applicants/research_data/index.html" target_blank"&gt;DFG Guidelines on the Handling of Reserach Data&lt;/a&gt; or the &lt;a
+			href="http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf" target_blank"&gt;Guidelines on Data Management in Horizon 2020&lt;/a&gt; of the European Commission.</help>
+		<text lang="en">Does the funder have rules or recommendations for data management? If yes, please briefly outline them and refer to more detailed sources of information if necessary. Please also indicate, if the rules / guidelines are mandatory or optional.</text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Auch Forschungsförderer stellen zunehmend Anforderungen an das Datenmanagement in von ihnen geförderten Projekten. Beispiele sind die &lt;a
+			href="https://www.dfg.de/foerderung/antrag_gutachter_gremien/antragstellende/nachnutzung_forschungsdaten/index.html" target_blank"&gt;DFG-Leitlinien zum Umgang mit Forschungsdaten&lt;/a&gt; oder die &lt;a
+			href="http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf" target_blank"&gt;Guidelines on Data Management in Horizon 2020&lt;/a&gt; der Europäischen Komission.</help>
+		<text lang="de">Gibt es von Seiten des Forschungsförderers Vorgaben oder Richtlinien bezüglich des Umgangs mit den im Projekt erhobenen Forschungsdaten? Wenn ja, skizzieren Sie diese kurz und verweisen Sie ggf. auf weiterführende Informationen. Geben
+			Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</text>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general/funding-funder/title">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>title</key>
@@ -381,7 +410,7 @@
 
 	- &lt;a href="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf" target="_blank"&gt;rechtlichen Fragen&lt;/a&gt; bei der Erhebung von Sprachkorpora</help>
 		<text lang="en">Are there requirements regarding the data management from other parties (e.g. the scholarly/scientific community)?</text>
-		<text lang="de">Gibt es von weiteren Seiten (z. B. von der Fachcommunity) Anforderungen an das Datenmanagement, die beachtet werden müssen?</text>
+		<text lang="de">Gibt es von weiteren Seiten (z.B. von der Fachcommunity) Anforderungen an das Datenmanagement, die beachtet werden müssen?</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -653,7 +682,7 @@ Other data cannot be collected or created anew. Examples are all kinds of "time 
 
 Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei jeglicher Art von episodischer Beobachtungen, sei es sozialwissenschaftlicher oder naturwissenschaftlicher Art, der Fall, da diese ein bestimmtes Phänomen an einem bestimmten Zeitpunkt und/oder Ort abbilden und somit i.d.R. nicht wiederholbar sind. Ihr Wert für die Nachnutzung durch andere wie auch der Verlust bei einer nicht erfolgten oder misslungenen Langzeitarchivierung ist ungleich höher als bei reproduzierbaren Daten.</help>
 		<text lang="en">Is the dataset reproducible in the sense that it could be created / collected anew in case it got lost?</text>
-		<text lang="de">Ist der Datensatz reproduzierbar, d. h. ließe sich er sich, wenn er verloren ginge, erneut erstellen oder erheben?</text>
+		<text lang="de">Ist der Datensatz reproduzierbar, d.h. ließe sich er sich, wenn er verloren ginge, erneut erstellen oder erheben?</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -851,8 +880,8 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/technical-classification/data-formats"/>
 		<is_collection>False</is_collection>
 		<order>4</order>
-		<help lang="en">When choosing a data format, one should consider the consequences for collaborative use, long-term preservation as well as re-use. It is advisable to prefer formats that are standardised, open, non-proprietary and well-established in the respective scholarly community. More criteria and detailed explanations can be found e.g. in the &lt;a href="https://www.forschungsdaten.org/index.php/Datei:Leitfaden_Data-Management-WissGrid.pdf" target="_blank"&gt;WissGrid-Leitfaden, pp. 22 f.&lt;/a&gt;).</help>
-		<help lang="de">Bei der Wahl des Dateiformates sollten auch die Konsequenzen für die kollaborative Nutzung, die Langzeitarchivierung sowie die Nachnutzung beachtet werden. Es empfiehlt sich, möglichst standardisierte, nicht-proprietäre und allgemein bzw. in der spezifischen Community verbreitete Formate zu nutzen. Weitere Kriterien sowie detaillierte Erläuterungen sind z.B. im &lt;a href="https://www.forschungsdaten.org/index.php/Datei:Leitfaden_Data-Management-WissGrid.pdf" target="_blank"&gt;WissGrid-Leitfaden, S. 22 f.&lt;/a&gt;) zu finden.</help>
+		<help lang="en">When choosing a data format, one should consider the consequences for collaborative use, long-term preservation as well as re-use. It is advisable to prefer formats that are standardised, open, non-proprietary and well-established in the respective scholarly community. More criteria and detailed explanations can be found e.g. in the &lt;a href="https://www.forschungsdaten.org/images/b/b0/Leitfaden_Data-Management-WissGrid.pdf" target="_blank"&gt;WissGrid-Leitfaden, pp. 22 f.&lt;/a&gt;).</help>
+		<help lang="de">Bei der Wahl des Dateiformates sollten auch die Konsequenzen für die kollaborative Nutzung, die Langzeitarchivierung sowie die Nachnutzung beachtet werden. Es empfiehlt sich, möglichst standardisierte, nicht-proprietäre und allgemein bzw. in der spezifischen Community verbreitete Formate zu nutzen. Weitere Kriterien sowie detaillierte Erläuterungen sind z.B. im &lt;a href="https://www.forschungsdaten.org/images/b/b0/Leitfaden_Data-Management-WissGrid.pdf" target="_blank"&gt;WissGrid-Leitfaden, S. 22 f.&lt;/a&gt;) zu finden.</help>
 		<text lang="en">Which file formats are used?</text>
 		<text lang="de">In welchen Formaten liegen die Daten vor?</text>
 		<verbose_name lang="en"/>
@@ -1259,7 +1288,7 @@ For reproducible data, it is also required to re-generate the data if need be.</
 		<help lang="en"/>
 		<help lang="de"/>
 		<text lang="en">Which measures or provisions are in place to ensure data security (e.g. protection against unauthorized access, data recovery, transfer of sensitive data)?</text>
-		<text lang="de">Welche Maßnahmen zur Gewährleistung der Datensicherheit werden getroffen (z. B. Schutz vor unbefugtem Zugriff, Datenwiederherstellung, Übertragung sensibler Daten)?</text>
+		<text lang="de">Welche Maßnahmen zur Gewährleistung der Datensicherheit werden getroffen (z.B. Schutz vor unbefugtem Zugriff, Datenwiederherstellung, Übertragung sensibler Daten)?</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -1334,8 +1363,8 @@ For reproducible data, it is also required to re-generate the data if need be.</
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/data-usage/data-storage-and-security-data_security"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en"/>
-		<help lang="de"/>
+    <help lang="en">e.g. project members, partners of the project, only in-house, external partners</help>
+    <help lang="de">z.B. Projektmitglieder, Projektpartner, nur Interne, externe Partner</help>
 		<text lang="en">Who is allowed to access the dataset?</text>
 		<text lang="de">Wer darf auf den Datensatz zugreifen?</text>
 		<verbose_name lang="en"/>
@@ -1504,7 +1533,7 @@ For reproducible data, it is also required to re-generate the data if need be.</
 		<help lang="en"/>
 		<help lang="de"/>
 		<text lang="en">How is the collaborative work on the same files organised?</text>
-		<text lang="de">Wie ist das kollaborative Arbeiten an den selben Dateien geregelt?</text>
+		<text lang="de">Wie ist das kollaborative Arbeiten an denselben Dateien geregelt?</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -1600,8 +1629,8 @@ For reproducible data, it is also required to re-generate the data if need be.</
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/data-usage/quality-assurance-dataset"/>
 		<is_collection>False</is_collection>
 		<order>7</order>
-		<help lang="en"/>
-		<help lang="de"/>
+    <help lang="en">Examples are checks for completeness, data reconciliation, or sampling procedures. These measures serve to identify documentation errors and arithmetical anomalies.</help>
+    <help lang="de">Beispiele sind Überprüfung auf Vollständigkeit, Datenabgleich oder Stichprobenverfahren. Diese Maßnahmen dienen dazu Dokumentationsfehler und rechnerische Auffälligkeiten zu ermitteln.</help>
 		<text lang="en">Which measures of quality assurance are taken for this dataset?</text>
 		<text lang="de">Welche Maßnahmen zur Qualitätssicherung werden für diesen Datensatz ergriffen?</text>
 		<verbose_name lang="en"/>
@@ -1645,8 +1674,8 @@ For reproducible data, it is also required to re-generate the data if need be.</
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/data-usage/quality-assurance-integration"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
-		<help lang="en"/>
-		<help lang="de"/>
+    <help lang="en">For example, how are the origin and quality of the data documented?</help>
+    <help lang="de">Wie wird z.B. Herkunft und Qualität der Daten dokumentiert?</help>
 		<text lang="en">Is the integration between the re-used and newly created data ensured? If yes, by which means?</text>
 		<text lang="de">Wird die Integration zwischen nachgenutzten und erzeugten Daten gewährleistet? Wenn ja, wie?</text>
 		<verbose_name lang="en"/>
@@ -1716,8 +1745,8 @@ For reproducible data, it is also required to re-generate the data if need be.</
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/data-usage/costs-dataset"/>
 		<is_collection>False</is_collection>
 		<order>5</order>
-		<help lang="en">Please estimate the effort in person months.</help>
-		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten.</help>
+		<help lang="en">Please estimate the effort in person months ( 1 PM = monthly working time of a full-time employee).</help>
+		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten (1 PM = Monatsarbeitszeit eines Vollzeitbeschäftigten).</help>
 		<text lang="en">What are the personnel costs associated with data storage and data security in the project?</text>
 		<text lang="de">Welcher Personalaufwand entsteht im Zusammenhang mit der Speicherung der Daten und Maßnahmen zur Datensicherheit während des Projektes?</text>
 		<verbose_name lang="en"/>
@@ -1768,8 +1797,8 @@ For reproducible data, it is also required to re-generate the data if need be.</
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/data-usage/costs-dataset"/>
 		<is_collection>False</is_collection>
 		<order>3</order>
-		<help lang="en">Please estimate the effort in person months.</help>
-		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten.</help>
+		<help lang="en">Please estimate the effort in person months ( 1 PM = monthly working time of a full-time employee).</help>
+		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten (1 PM = Monatsarbeitszeit eines Vollzeitbeschäftigten).</help>
 		<text lang="en">What are the personnel costs for data management associated with the the usage of data in the project?</text>
 		<text lang="de">Welcher Personalaufwand für das Datenmanagement entsteht im Zusammenhang mit der Nutzung der Daten im Projekt?</text>
 		<verbose_name lang="en"/>
@@ -1822,8 +1851,8 @@ For reproducible data, it is also required to re-generate the data if need be.</
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/data-usage/costs-dataset"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en">Please estimate the effort in person months.</help>
-		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten.</help>
+		<help lang="en">Please estimate the effort in person months ( 1 PM = monthly working time of a full-time employee).</help>
+		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten ( 1 PM = Monatsarbeitszeit eines Vollzeitbeschäftigten).</help>
 		<text lang="en">What are the personnel costs for data management associated with the creation or acquisition of data in the project?</text>
 		<text lang="de">Welcher Personalaufwand für das Datenmanagement entsteht im Rahmen der Erhebung, Erstellung oder Akquise der Daten im Projekt?</text>
 		<verbose_name lang="en"/>
@@ -1934,7 +1963,7 @@ For reproducible data, it is also required to re-generate the data if need be.</
 		<help lang="en"/>
 		<help lang="de"/>
 		<text lang="en">Which information is necessary for other parties to understand the data (that is, to understand their collection or creation, analysis, and research results obtained on its basis) and to re-use it?</text>
-		<text lang="de">Welche Informationen sind für Außenstehende notwendig, um die Daten zu verstehen (d. h. ihre Erhebung bzw. Entstehung, Analyse sowie die auf ihrer Basis gewonnenen Forschungsergebnisse nachvollziehen) und nachnutzen zu können?</text>
+		<text lang="de">Welche Informationen sind für Außenstehende notwendig, um die Daten zu verstehen (d.h. ihre Erhebung bzw. Entstehung, Analyse sowie die auf ihrer Basis gewonnenen Forschungsergebnisse nachvollziehen) und nachnutzen zu können?</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -2004,8 +2033,8 @@ For reproducible data, it is also required to re-generate the data if need be.</
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/metadata-and-referencing/metadata-costs"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en">Please estimate the effort in person months.</help>
-		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten.</help>
+		<help lang="en">Please estimate the effort in person months ( 1 PM = monthly working time of a full-time employee).</help>
+		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten (1 PM = Monatsarbeitszeit eines Vollzeitbeschäftigten).</help>
 		<text lang="en">What are the personnel costs associated with the the creation of metadata and context information in the project?</text>
 		<text lang="de">Welcher Personalaufwand entsteht im Zusammenhang mit der Erstellung von Metadaten und Kontextinformation im Projekt?</text>
 		<verbose_name lang="en"/>
@@ -2105,7 +2134,7 @@ When the data are stored in a data centre or repository, these tasks are usually
 
 Werden die Daten in einem Datenzentrum oder -repositorium gespeichert, wird diese Verantwortung i.d.R. von diesem übernommen. Um sicher zu sein, sollten die Verantwortlichkeiten jedoch in jedem Fall geprüft bzw. geklärt werden.</help>
 		<text lang="en">Who is responsible for the maintenance of the PIDs and the object maintenance (i.e. who is responsible notifying the PID-Service about object relocation and the new address)?</text>
-		<text lang="de">Wer ist verantwortlich für die Pflege der PIDs und die Objektpflege (d. h. die Langzeitarchivierung des Objekts und somit dafür, dem PID-Service einen Objektumzug und die neue Adresse mitzuteilen)?</text>
+		<text lang="de">Wer ist verantwortlich für die Pflege der PIDs und die Objektpflege (d.h. die Langzeitarchivierung des Objekts und somit dafür, dem PID-Service einen Objektumzug und die neue Adresse mitzuteilen)?</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -2526,7 +2555,7 @@ Bitte informieren Sie sich ggf. bei der/dem Datenschutzbeauftragten Ihrer Instit
 * &lt;a href="https://www.uni-due.de/verwaltung/organisation/just_datenschutz.php" target="_blank"&gt;Universität of Duisburg-Essen&lt;/a&gt;
 
 * &lt;a href="https://www.tu-dortmund.de/universitaet/organisation/beauftragte-vertrauenspersonen/#accordion-2213-764" target="_blank"&gt;Technische Universität Dortmund&lt;/a&gt;</help>
-		<text lang="en">To what extent is the "informed consent" of the perspms concerned obtained?</text>
+		<text lang="en">To what extent is the "informed consent" of the data subjects obtained?</text>
 		<text lang="de">In welchem Umfang wird die "informierte Einwilligung" der Betroffenen eingeholt?</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
@@ -2618,34 +2647,6 @@ Bitte informieren Sie sich ggf. bei der/dem Datenschutzbeauftragten Ihrer Instit
 			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/other_sensitive_data"/>
 		</conditions>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/legal-and-ethics/sensitive-data-other/funder_policy">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>funder_policy</key>
-		<path>proposal/legal-and-ethics/sensitive-data-other/funder_policy</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/rdm_policy"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/legal-and-ethics/sensitive-data-other"/>
-		<is_collection>False</is_collection>
-		<order>2</order>
-		<help lang="en">Funders of research also increasingly specify requirements regarding the management of research data in funded projects.
-
-Examples are the &lt;a href="https://www.dfg.de/en/research_funding/proposal_review_decision/applicants/research_data/index.html" target="_blank"&gt;DFG Guidelines on the Handling of Reserach Data&lt;/a&gt; or the &lt;a href="http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf" target="_blank"&gt;Guidelines on Data Management in Horizon 2020&lt;/a&gt; of the European Commission.</help>
-		<help lang="de">Auch Forschungsförderer stellen zunehmend Anforderungen an das Datenmanagement in von ihnen geförderten Projekten. Beispiele sind die &lt;a href="https://www.dfg.de/foerderung/antrag_gutachter_gremien/antragstellende/nachnutzung_forschungsdaten/index.html" target="_blank"&gt;DFG-Leitlinien zum Umgang mit Forschungsdaten&lt;/a&gt; oder die &lt;a href="http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf" target="_blank"&gt;Guidelines on Data Management in Horizon 2020&lt;/a&gt; der Europäischen Komission.</help>
-		<text lang="en">Does the funder have rules or recommendations for data management? If yes, please briefly outline them and refer to more detailed sources of information if necessary. Please also indicate, if the rules / guidelines are mandatory or optional.</text>
-		<text lang="de">Gibt es von Seiten des Forschungsförderers Vorgaben oder Richtlinien bezüglich des Umgangs mit den im Projekt erhobenen Forschungsdaten? Wenn ja, skizzieren Sie diese kurz und verweisen Sie ggf. auf weiterführende Informationen. Geben Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</text>
-		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="en"/>
-		<verbose_name_plural lang="de"/>
-		<widget_type>textarea</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<optionsets/>
-		<conditions/>
-	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/legal-and-ethics/sensitive-data-other/yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>yesno</key>
@@ -2671,7 +2672,7 @@ Examples are the &lt;a href="https://www.dfg.de/en/research_funding/proposal_rev
 		<unit/>
 		<optionsets/>
 		<conditions/>
-	</question>
+  </question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/legal-and-ethics/sensitive-data-costs">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>sensitive-data-costs</key>
@@ -2781,8 +2782,8 @@ Examples are the &lt;a href="https://www.dfg.de/en/research_funding/proposal_rev
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/legal-and-ethics/sensitive-data-costs"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en">Please estimate the effort in person months.</help>
-		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten.</help>
+		<help lang="en">Please estimate the effort in person months (1 PM = monthly working time of a full-time employee).</help>
+		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten (1 PM = Monatsarbeitszeit eines Vollzeitbeschäftigten).</help>
 		<text lang="en">What are the personnel costs associated with the anonymization of sensitive data in the project?</text>
 		<text lang="de">Welcher Personalaufwand entsteht für die Anonymisierung von sensiblen Daten im Projekt?</text>
 		<verbose_name lang="en"/>
@@ -3117,8 +3118,8 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/legal-and-ethics/intellectual-property-rights-costs"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en">Please estimate the effort in person months.</help>
-		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten.</help>
+		<help lang="en">Please estimate the effort in person months (1 PM = monthly working time of a full-time employee).</help>
+		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten (1 PM = Monatsarbeitszeit eines Vollzeitbeschäftigten).</help>
 		<text lang="en">What are the personnel costs associated with intellectual property rights in the project?</text>
 		<text lang="de">Welcher Personalaufwand entsteht im Zusammenhang mit Urheber- oder verwandten Schutzrechten im Projekt?</text>
 		<verbose_name lang="en"/>
@@ -3198,8 +3199,8 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/storage-and-long-term-preservation/selection-criteria"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
-		<help lang="en"/>
-		<help lang="de"/>
+    <help lang="en">Examples: data are a basis for a publication, for re-use, legal or contractual conditions, documentation (socially or politically relevant).</help>
+    <help lang="de">Beispiele: die Daten sind Grundlage einer Publikation, für Nachnutzung, rechtliche oder vertragliche Auflagen, Dokumentation (gesellschaftlich oder politisch relevant).</help>
 		<text lang="en">What are the criteria / rules for the selection of the data to be archived (after the end of the project)?</text>
 		<text lang="de">Auf Basis welcher Kriterien / Regeln werden die Daten zur Archivierung (nach Projektende) ausgesucht?</text>
 		<verbose_name lang="en"/>
@@ -3377,8 +3378,8 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<order>2</order>
 		<help lang="en"/>
 		<help lang="de"/>
-		<text lang="en">If **yes**, what are the reasons this dataset has to be preserved for the long-term?</text>
-		<text lang="de">Wenn **ja**, aus welchen Gründen müssen die Daten langfristig aufbewahrt werden?</text>
+		<text lang="en">For what reasons must the data set be preserved in the long term?</text>
+		<text lang="de">Aus welchen Gründen müssen die Daten langfristig aufbewahrt werden?</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -3407,7 +3408,7 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<order>1</order>
 		<help lang="en"/>
 		<help lang="de"/>
-		<text lang="en">Does this dataset have to be preserved for the long-term?</text>
+		<text lang="en">Does this dataset have to be preserved in the long term?</text>
 		<text lang="de">Muss dieser Datensatz langfristig aufbewahrt werden?</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
