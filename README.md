@@ -23,3 +23,8 @@ Different scripts are located in `tools`. These are interesting for people maint
 |Sociology + DFG|shared/fodako/catalog_ratswd_dfg.xml|
 
 8 catalogs shared
+
+
+## Issues
+
+If you encounter any problems or bugs with the RDMO Software, or if you want to request a feature, https://github.com/rdmorganiser/rdmo/issues. For problems or bugs with the RDMO Software, please use the issues in the [rdmo](https://github.com/rdmorganiser/rdmo-catalog) repository: https://github.com/rdmorganiser/rdmo/issues. In order to file issues, you will need a GitHub account.
