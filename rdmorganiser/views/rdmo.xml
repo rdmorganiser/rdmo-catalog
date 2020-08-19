@@ -9,7 +9,7 @@
 		<title lang="de">Bielefeld</title>
 		<help lang="de">DMP Vorlage der Universität Bielefeld.</help>
 		<title lang="fr">Bielefeld</title>
-		<help lang="fr">sModèle DMP de l'Université de Bielefeld.</help>
+		<help lang="fr">Modèle DMP de l'Université de Bielefeld.</help>
 		<template>{% load view_tags %}
 
 {% get_set 'project/partner' as partners %}
@@ -69,8 +69,8 @@
     die in dem DMP berücksicht werden müssen?&lt;/b&gt;
 &lt;/p&gt;
 &lt;p&gt;
-    {% render_value 'project/additional_requirements/yesno' %}
-    {% render_value 'project/additional_requirements/requirements' %}
+    {% render_value 'project/additional_rdm_requirements/yesno' %}
+    {% render_value 'project/additional_rdm_requirements/requirements' %}
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -109,7 +109,7 @@
 {% for dataset in datasets %}
 &lt;p&gt;
     &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
-    {% render_set_value dataset 'project/dataset/technical_integration' %}
+			{% render_set_value dataset 'project/dataset/integration' %}
 &lt;/p&gt;
 {% endfor %}
 
@@ -155,7 +155,7 @@
 {% for dataset in datasets %}
 &lt;p&gt;
     &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
-    {% render_set_value dataset 'project/dataset/storage/naming' %}
+    {% render_set_value dataset 'project/dataset/storage/naming_policy' %}
 &lt;/p&gt;
 {% endfor %}
 
@@ -165,7 +165,7 @@
 {% for dataset in datasets %}
 &lt;p&gt;
     &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
-    {% render_set_value dataset 'project/dataset/storage/organisation' %}
+    {% render_set_value dataset 'project/dataset/storage/organisation_policy' %}
 &lt;/p&gt;
 {% endfor %}
 
@@ -201,7 +201,7 @@
     Aspekte des Forschungsdatenmanagements?&lt;/b&gt;
 &lt;/p&gt;
 &lt;p&gt;
-    {% render_value 'project/funder/requirements' %}
+    {% render_value 'project/funder/rdm_policy' %}
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -247,7 +247,7 @@
     &lt;b&gt;5.9 Unterliegen die erzeugten Daten dem Datenschutz?&lt;/b&gt;
 &lt;/p&gt;
 &lt;p&gt;
-    {% render_value_inline_list 'project/legal_aspects/sensitive_data/personal_data/privacy_laws' %}
+    {% render_value_inline_list 'project/legal_aspects/sensitive_data/privacy_law' %}
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -255,14 +255,14 @@
     zu genügen?&lt;/b&gt;
 &lt;/p&gt;
 &lt;p&gt;
-    {% render_value 'project/legal_aspects/sensitive_data/personal_data/anonymization' %}
+    {% render_value 'project/dataset/sensitive_data/personal_data/anonymization' %}
 &lt;/p&gt;
 &lt;p&gt;
     &lt;b&gt;5.11 Gibt es ethisch, kommerziell oder in anderer Hinsicht sensible Daten? Wenn ja, welche
     Maßnahmen werden zum Schutz dieser Daten getroffen?&lt;/b&gt;
 &lt;/p&gt;
 &lt;p&gt;
-    {% render_value 'project/legal_aspects/sensitive_data/other_sensitive_data/yesno' %}
+    {% render_value 'project/legal_aspects/sensitive_data/other/yesno' %}
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -272,7 +272,7 @@
 {% for dataset in datasets %}
 &lt;p&gt;
     &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
-    {% render_set_value dataset 'project/dataset/storage/responsible_person/name' %}
+			{% render_set_value dataset 'project/dataset/preservation/responsible_person' %}
 &lt;/p&gt;
 {% endfor %}
 
@@ -283,7 +283,7 @@
 {% for dataset in datasets %}
 &lt;p&gt;
     &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
-    {% render_set_value dataset 'project/dataset/storage/backup_frequency' %}
+			{% render_set_value dataset 'project/dataset/data_security/backups' %}
 &lt;/p&gt;
 {% endfor %}
 
@@ -300,9 +300,9 @@
 &lt;/p&gt;
 &lt;p&gt;
     {% render_value 'project/dataset/preservation/yesno' %}
-    {% render_value 'project/dataset/preservation/motivation' %}
+    {% render_value 'project/dataset/preservation/purpose' %}
     {% render_value 'project/dataset/preservation/duration' %}
-    {% render_value 'project/preservation/criteria' %}
+    {% render_value 'project/preservation/selection_criteria' %}
     {% render_value_inline_list 'project/preservation/responsible_person/name' %}
 &lt;/p&gt;
 
@@ -357,7 +357,7 @@
 {% for dataset in datasets %}
 &lt;p&gt;
     &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
-    {% render_set_value dataset 'project/dataset/creation_automatic' %}
+			{% render_set_value dataset 'project/dataset/metadata/creation_automatic' %}
 &lt;/p&gt;
 {% endfor %}
 
@@ -414,7 +414,7 @@
 &lt;/p&gt;
 &lt;p&gt;
     Sachkosten für das Datenmanagement im Rahmen der Erhebung, Erstellung oder Akquise der Daten:
-    {% render_value 'project/costs/creation/expenses' %}
+    {% render_value 'project/costs/creation/non_personnel' %}
 &lt;/p&gt;
 &lt;p&gt;
     Personalaufwand für das Datenmanagement im Zusammenhang mit der Nutzung der Daten:
@@ -422,7 +422,7 @@
 &lt;/p&gt;
 &lt;p&gt;
     Sachkosten für das Datenmanagement im Zusammenhang mit der Nutzung der Daten:
-    {% render_value 'project/costs/usage/expenses' %}
+    {% render_value 'project/costs/usage/non_personnel' %}
 &lt;/p&gt;
 &lt;p&gt;
     Personalaufwand im Zusammenhang mit der Speicherung der Daten:
@@ -430,7 +430,7 @@
 &lt;/p&gt;
 &lt;p&gt;
     Sachkosten im Zusammenhang mit der Speicherung der Datensätze:
-    {% render_value 'project/costs/storage/expenses' %}
+    {% render_value 'project/costs/storage/non_personnel' %}
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -867,8 +867,8 @@
     &lt;b&gt;How will you manage any ethical issues?&lt;/b&gt;
 &lt;/p&gt;
 &lt;p&gt;
-    {% render_value 'project/legal_aspects/sensitive_data/other_sensitive_data/yesno' %}
-    {% render_value 'project/legal_aspects/sensitive_data/other_sensitive_data/description' %}
+    {% render_value 'project/legal_aspects/sensitive_data/other/yesno' %}
+    {% render_value 'project/legal_aspects/sensitive_data/other/description' %}
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -906,7 +906,7 @@
 &lt;p&gt;
     &lt;b&gt;How will you manage access and security?&lt;/b&gt;
 &lt;/p&gt;
-&lt;p&gt;{% render_value 'project/data_security' %}
+			&lt;p&gt;{% render_value 'project/dataset/data_security' %}
 
 &lt;h2&gt;Selection and Preservation&lt;/h2&gt;
 
@@ -1109,7 +1109,7 @@
 {% for dataset in datasets %}
 &lt;p&gt;
 	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-	{% render_set_value dataset 'project/dataset/quality_assurance' %}
+	{% render_set_value dataset 'project/dataset/metadata/quality_assurance' %}
 &lt;/p&gt;
 {% endfor %}
 
@@ -1131,7 +1131,7 @@
 {% for dataset in datasets %}
 &lt;p&gt;
 	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-	{% render_set_value dataset 'project/dataset/metadata/mappings/yesno' %}
+	{% render_set_value dataset 'project/dataset/metadata/mappings' %}
 &lt;/p&gt;
 {% endfor %}
 
@@ -1227,7 +1227,7 @@
 
 {% for dataset in datasets %}
 &lt;p&gt;
-	{% render_value 'project/preservation/access_authentication' %}
+	{% render_set_value dataset'project/dataset/preservation/access_authentication' %}
 &lt;/p&gt;
 {% endfor %}
 
@@ -1242,7 +1242,7 @@
 {% for dataset in datasets %}
 &lt;p&gt;
 	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
-	{% render_set_value dataset 'project/datasetpreservation/embargo_period' %}
+			{% render_set_value dataset 'project/dataset/preservation/embargo_period' %}
 &lt;/p&gt;
 {% endfor %}
 
@@ -1253,7 +1253,7 @@
 {% for dataset in datasets %}
 &lt;p&gt;
 	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:
-	&lt;/i&gt; {% render_set_value dataset 'project/dataset/preservation/accessibility' %}
+	&lt;/i&gt; {% render_set_value dataset 'project/dataset/preservation/authentication' %}
 &lt;/p&gt;
 {% endfor %}
 
@@ -1263,29 +1263,32 @@
 &lt;p&gt;
 	Personal data is being used:
 	{% render_value 'project/legal_aspects' %}
-	{% get_value 'values/project/legal_aspects/sensitive_data/personal_data' as val %}
+	{% get_value 'values/project/dataset/sensitive_data/personal_data' as val %}
 &lt;/p&gt;
 {% if val.is_true %}
 &lt;p&gt;
 	Applicable law(s):
-	{% render_value_inline_list 'project/legal_aspects/sensitive_data/personal_data/privacy_law' %}
+	{% render_value_inline_list 'project/legal_aspects/sensitive_data/privacy_law' %}
 &lt;/p&gt;
 &lt;p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
 	Data will be anonymised or pseudonymised:
-	{% render_value 'project/legal_aspects/sensitive_data/personal_data/anonymization' %}
+	{% render_set_value dataset 'project/dataset/sensitive_data/personal_data/anonymization' %}
 &lt;/p&gt;
 &lt;p&gt;
 	&quot;Informed consent&quot; will be obtained from the person(s) concerned:
-	{% render_value 'project/legal_aspects/sensitive_data/personal_data/consent/extent' %}
+	{% render_set_value dataset 'project/dataset/sensitive_data/personal_data/consent/extent' %}
 &lt;/p&gt;
 {% endif %}
-
+{% endfor %}
+			
 &lt;p&gt;
 	&lt;b&gt;What have you done to comply with your obligations in your IRB Protocol?&lt;/b&gt;
 &lt;/p&gt;
 
 &lt;p&gt;
-	{% render_value 'project/legal_aspects/official_approval/data_access_committee/yesno' %}
+	{% render_value 'project/legal_aspects/official_approval/data_access_committee' %}
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -1360,12 +1363,12 @@
 &lt;/p&gt;
 &lt;p&gt;
 	{% render_set_value dataset 'project/dataset/preservation/duration' %}
-&lt;/p&gt;
-&lt;p&gt;
-	{% render_set_value dataset 'project/dataset/costs/preserved/cover_how' %}
-&lt;/p&gt;
+			&lt;/p&gt;
 {% endfor %}
 {% endif %}
+&lt;p&gt;
+	{% render_value 'project/costs/preservation/cover_how' %}
+&lt;/p&gt;
 
 &lt;p&gt;
 	&lt;b&gt;Which archive/repository/database have you identified as a place to deposit data?&lt;/b&gt;
@@ -1937,7 +1940,7 @@
 &lt;p&gt;
     &lt;b&gt;Welche Personen oder Institutionen sind verantwortlich für die Projektkoordination?&lt;/b&gt;
 &lt;/p&gt;
-&lt;p&gt;{% render_value_inline_list 'project/coordination' %}&lt;/p&gt;
+&lt;p&gt;{% render_value_inline_list 'project/coordination/name' %}&lt;/p&gt;
 
 &lt;p&gt;
     &lt;b&gt;Gibt es an Ihrer Einrichtung Regeln oder Richtlinien zum Umgang mit den im
@@ -1946,8 +1949,8 @@
     Verbindlichkeit sie haben.&lt;/b&gt;
 &lt;/p&gt;
 &lt;p&gt;
-	{% render_value 'project/additional_requirements/yesno' %}
-	{% render_value 'project/additional_requirements/requirements' %}
+	{% render_value 'project/additional_rdm_requirements/yesno' %}
+	{% render_value 'project/additional_rdm_requirements/requirements' %}
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -2001,9 +2004,9 @@
         Technologien:
         {% render_set_value dataset 'project/dataset/usage_technology' %}
         Qualitätssicherungsverfahren:
-        {% render_set_value dataset 'project/dataset/control_tools' %}
+        {% render_set_value dataset 'project/dataset/control_tool' %}
         Korrektheit &amp;amp; Vollständigkeit:
-        {% render_set_value dataset 'project/dataset/quality_assurance' %}
+        {% render_set_value dataset 'project/dataset/metadata/quality_assurance' %}
         Datenintegration: {% render_set_value dataset 'project/dataset/integration' %}
 &lt;/p&gt;
 {% endfor %}
@@ -2246,7 +2249,7 @@
         Zertifiziert?: {% render_set_value dataset 'project/dataset/preservation/certification' %}
         Archivierungslösungen: {% render_set_value dataset 'project/dataset/preservation/repository_arrangements' %}
         wann archiviert: {% render_set_value dataset 'project/dataset/preservation/data_archiving_date' %}
-        veröffentlicht: {% render_set_value dataset 'project/dataset/data_publication_date/data_publication_date' %}
+        veröffentlicht: {% render_set_value dataset 'project/dataset/data_publication_date' %}
     &lt;/p&gt;
 {% endfor %}
 
@@ -2291,7 +2294,7 @@
 
 &lt;h3&gt; 4.4.  Ich werde digitale Archive wählen, die von einer gemeinnützigen Organisation verwaltet werden.&lt;/h3&gt;
 &lt;p&gt;
-    {% render_value 'project/nonprofit/yesno' %}
+    {% render_value 'project/preservation/archive/nonprofit/yesno' %}
     {% render_value 'project/preservation/archive/nonprofit/explanation' %}
 &lt;/p&gt;</template>
 	</view>
