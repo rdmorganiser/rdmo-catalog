@@ -12,6 +12,7 @@ if __name__ == '__main__':
         basedir = sys.argv[1]
     except IndexError:
         basedir = os.getcwd()
+        print('No base dir arg given. Base dir set to: ' + basedir)
 
     utl = util(basedir)
 
