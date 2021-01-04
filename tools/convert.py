@@ -43,42 +43,43 @@ output = {
     'views': []
 }
 
-for root, dirs, files in os.walk('.'):
-    if not root.startswith('./.'):
-        root_path = Path(root)
+for path in ['rdmorganiser', 'shared']:
+    for root, dirs, files in os.walk(path):
+        if not root.startswith('./.'):
+            root_path = Path(root)
 
-        for file in files:
-            file_path = root_path / file
+            for file in files:
+                file_path = root_path / file
 
-            if file_path.suffix == '.xml':
-                logger.info('Processing %s', file_path)
+                if file_path.suffix == '.xml':
+                    logger.info('Processing %s', file_path)
 
-                tree = et.parse(file_path)
-                root_node = tree.getroot()
+                    tree = et.parse(file_path)
+                    root_node = tree.getroot()
 
-                if root_node.tag == 'rdmo':
-                    for element_node in root_node:
-                        element = OrderedDict()
-                        element['type'] = element_node.tag
-                        element['uri'] = element_node.attrib['{dc}uri'.format(**nsmap)]
+                    if root_node.tag == 'rdmo':
+                        for element_node in root_node:
+                            element = OrderedDict()
+                            element['type'] = element_node.tag
+                            element['uri'] = element_node.attrib['{dc}uri'.format(**nsmap)]
 
-                        for child_node in element_node:
-                            if child_node.tag.startswith(nsmap['dc']):
-                                key = child_node.tag[len(nsmap['dc']):]
-                            elif 'lang' in child_node.attrib:
-                                key = child_node.tag + '_' + child_node.attrib['lang']
-                            else:
-                                key = child_node.tag
+                            for child_node in element_node:
+                                if child_node.tag.startswith(nsmap['dc']):
+                                    key = child_node.tag[len(nsmap['dc']):]
+                                elif 'lang' in child_node.attrib:
+                                    key = child_node.tag + '_' + child_node.attrib['lang']
+                                else:
+                                    key = child_node.tag
 
-                            if child_node.attrib.get('{dc}uri'.format(**nsmap)):
-                                value = child_node.attrib.get('{dc}uri'.format(**nsmap))
-                            else:
-                                value = child_node.text
+                                if child_node.attrib.get('{dc}uri'.format(**nsmap)):
+                                    value = child_node.attrib.get('{dc}uri'.format(**nsmap))
+                                else:
+                                    value = child_node.text
 
-                            element[key] = value
+                                element[key] = value
 
-                        module = modulemap[element_node.tag]
-                        output[module].append(element)
+                            module = modulemap[element_node.tag]
+                            output[module].append(element)
 
 output_path = Path(args.format)
 output_path.mkdir(exist_ok=True)
