@@ -59,6 +59,7 @@ for root, dirs, files in os.walk('.'):
                 if root_node.tag == 'rdmo':
                     for element_node in root_node:
                         element = OrderedDict()
+                        element['type'] = element_node.tag
                         element['uri'] = element_node.attrib['{dc}uri'.format(**nsmap)]
 
                         for child_node in element_node:
