@@ -7,7 +7,7 @@
 		<title lang="en">ERC Data Management Plan template</title>
 		<help lang="en">Template from European Research Council Version 1.0 (21 April 2017), online: https://ec.europa.eu/research/participants/data/ref/h2020/gm/reporting/h2020-erc-tpl-oa-data-mgt-plan_en.docx</help>
 		<title lang="de">ERC Data Management Plan template</title>
-		<help lang="de">Vorlage des European Research Council Version 1.0 (21 April 2017), Online: https://ec.europa.eu/research/participants/data/ref/h2020/gm/reporting/h2020-erc-tpl-oa-data-mgt-plan_en.docx</help>
+		<help lang="de">Vorlage des European Research Council Version 1.0 (21 April 2017), Online: ec.europa.eu/research/participants/data/ref/h2020/gm/reporting/h2020-erc-tpl-oa-data-mgt-plan_en.docx</help>
 		<template>{% load view_tags %}
 
 &lt;h1&gt;ERC&lt;/h1&gt;
@@ -64,7 +64,7 @@
 {% for dataset in datasets %}
 &lt;p&gt;
 		&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;
-		{% render_set_value dataset 'project/size/volume' %}
+		{% render_set_value dataset 'project/dataset/size/volume' %}
 &lt;/p&gt;
 {% endfor %}
 
@@ -176,7 +176,7 @@
 {% for dataset in datasets %}
 &lt;p&gt;
 		&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/software_documentation/yesno' %}
+		{% render_set_value dataset 'project/dataset/software_documentation' %}
 &lt;/p&gt;
 {% endfor %}
 
@@ -325,17 +325,6 @@
 {% endfor %}
 
 &lt;p&gt;
-		&lt;b&gt;Are the data produced and/or used in the project useable by third parties, in particular
-		after the end of the project? If the re-use of some data is restricted, explain why.&lt;/b&gt;
-&lt;/p&gt;
-{% for dataset in datasets %}
-&lt;p&gt;
-		&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;
-		{% render_set_value dataset 'project/dataset/reuse_scenario' %}
-&lt;/p&gt;
-{% endfor %}
-
-&lt;p&gt;
 		&lt;b&gt;How long is it intended that the data remains re-usable?&lt;/b&gt;
 &lt;/p&gt;
 {% for dataset in datasets %}
@@ -417,7 +406,7 @@
 		as secure storage and transfer of sensitive data)?&lt;/b&gt;
 &lt;/p&gt;
 &lt;p&gt;
-		{% render_value 'project/legal_aspects/security_measures' %}
+		{% render_value 'project/dataset/data_security/security_measures' %}
 &lt;/p&gt;
 
 &lt;p&gt;
