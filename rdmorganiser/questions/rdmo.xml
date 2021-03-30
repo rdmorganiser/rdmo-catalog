@@ -153,16 +153,16 @@
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/topic-research_field"/>
 		<is_collection>True</is_collection>
 		<order>0</order>
-		<help lang="en">The list of disciplines follows the &lt;a href="http://www.dfg.de/en/dfg_profile/statutory_bodies/review_boards/subject_areas/index.jsp" target=_blank"&gt;subject classification of the DFG (German Research Foundation)&lt;/a&gt;.</help>
+		<help lang="en">The list of disciplines follows the &lt;a href=&quot;http://www.dfg.de/en/dfg_profile/statutory_bodies/review_boards/subject_areas/index.jsp&quot; target=&quot;_blank&quot;&gt;subject classification of the DFG (German Research Foundation)&lt;/a&gt;.</help>
 		<text lang="en">Which research field(s) does this project belong to?</text>
 		<verbose_name lang="en">discipline</verbose_name>
 		<verbose_name_plural lang="en">disciplines</verbose_name_plural>
-		<help lang="de">Die Liste der Disziplinen entspricht der &lt;a href="http://www.dfg.de/dfg_profil/gremien/fachkollegien/faecher/" target="_blank"&gt;Fachsystematik der Deutschen Forschungsgemeinschaft (DFG)&lt;/a&gt;.</help>
+		<help lang="de">Die Liste der Disziplinen entspricht der &lt;a href=&quot;http://www.dfg.de/dfg_profil/gremien/fachkollegien/faecher/&quot; target="_blank"&gt;Fachsystematik der Deutschen Forschungsgemeinschaft (DFG)&lt;/a&gt;.</help>
 		<text lang="de">Welcher Disziplin / welchen Disziplinen ist das Projekt zuzuordnen?</text>
 		<verbose_name lang="de">Forschungsdisziplin</verbose_name>
 		<verbose_name_plural lang="de">Forschungsdisziplinen</verbose_name_plural>
-		<help lang="fr">La liste des disciplines suivantes &lt;a href="http://www.dfg.de/en/dfg_profile/statutory_bodies/review_boards/subject_areas/index.jsp" target=_blank"&gt; est une classification par sujet du DFG (Fond allemand scientifique)&lt;/a&gt;.</help>
-		<help lang="it">La lista delle discipline &lt;a href="http://www.dfg.de/en/dfg_profile/statutory_bodies/review_boards/subject_areas/index.jsp" target=_blank"&gt; è tratta da una classificatione sistematica per campi di ricerca della DFG (Comunità tedesca della Ricerca)&lt;/a&gt;</help>
+		<help lang="fr">La liste des disciplines suivants &lt;a href=&quot;http://www.dfg.de/en/dfg_profile/statutory_bodies/review_boards/subject_areas/index.jsp&quot; target=&quot;_blank&quot;&gt; est une classification par sujet de la DFG (Fond allemand scientifique)&lt;/a&gt;.</help>
+		<help lang="it">La lista delle discipline &lt;a href=&quot;http://www.dfg.de/en/dfg_profile/statutory_bodies/review_boards/subject_areas/index.jsp&quot; target=_blank"&gt; è tratta da una classificatione sistematica per campi di ricerca della DFG (Comunità tedesca della Ricerca)&lt;/a&gt;</help>
 		<text lang="fr">À quel(s) domaine(s) de recherche ce projet appartient-il ?</text>
 		<text lang="it">In quale/i campo/i di ricerca si inserisce questo progetto?</text>
 		<verbose_name lang="fr">domaine</verbose_name>
@@ -452,7 +452,8 @@ If yes, please briefly outline them and refer to more detailed sources of inform
 Diese enthalten unter anderem Empfehlungen und/oder Vorgaben zum Umgang mit Forschungsdaten, die die Wissenschaftlerinnen und Wissenschaftler der Einrichtung beachten sollten oder müssen (je nach Grad der Verbindlichkeit), zum Beispiel die &lt;a href="http://www.uni-goettingen.de/de/01-juli-2014-forschungsdaten-leitlinie-der-universitaet-goettingen-einschl-umg/488918.html" target="_blank"&gt;Leitlinien zum Umgang mit Forschungsdaten&lt;/a&gt; der Georg-August-Universität Göttingen.
 		</help>
 		<text lang="de">Gibt es an Ihrer Einrichtung Regeln oder Richtlinien zum Umgang mit den im Projekt erhobenen Forschungsdaten?
-Wenn ja, skizzieren Sie diese kurz und verweisen Sie ggf. auf weiterführende Informationen. Geben Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</text>
+Wenn ja, skizzieren Sie diese kurz und verweisen Sie ggf. auf weiterführende Informationen.
+Geben Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
 		<help lang="fr">De plus en plus d'universités et d'institutions scientifiques adoptent des politiques de gestion des données de recherche.
@@ -822,26 +823,35 @@ target="_blank"&gt;Deutschen Forschungsgemeinschaft (DFG)&lt;/a&gt; bereitgestel
 		<is_collection>True</is_collection>
 		<order>1</order>
 		<title lang="en">Datasets</title>
-		<help lang="en">The following questions collect information on the data that is produced or used in the project. They also help to estimate the value of the data in terms of potential re-use and long-term preservation.
-Before data is newly created, it is advisable to check if there is existing data that could be re-used. This way, redundant collection or creation of research data is prevented. This saves efforts and costs.
+		<help lang="en">The following questions collect information on the data that is produced or used in the project.
+They also help to estimate the value of the data in terms of potential re-use and long-term preservation.
+Before data is newly created, it is advisable to check if there is existing data that could be re-used.
+This way, redundant collection or creation of research data is prevented. This saves efforts and costs.
 		</help>
 		<verbose_name lang="en">dataset</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
 		<title lang="de">Datensätze</title>
-		<help lang="de">Die nächsten Fragen dienen zur Beschreibung der Datensätze, die im Projekt erzeugt und/oder verwendet werden. Sie helfen zudem, den Wert der Daten hinsichtlich der potentiellen Nachnutzung und einer späteren Archivierung einschätzen zu können.
+		<help lang="de">Die nächsten Fragen dienen zur Beschreibung der Datensätze, die im Projekt erzeugt und/oder verwendet werden.
+Sie helfen zudem, den Wert der Daten hinsichtlich der potentiellen Nachnutzung und einer späteren Archivierung einschätzen zu können.
 Vor der Erzeugung von Daten empfiehlt es sich, zu prüfen, ob bereits vorhandene Daten nachgenutzt werden können. Die Vermeidung doppelter Erhebungen spart Aufwand und Kosten.
-Handelt es sich um personenbezogene Daten, gelten die Grundsätze der EU-Datenschutzgrundverordnung (&lt;a href="https://dsgvo-gesetz.de/" target="_blank"&gt;DSGVO&lt;/a&gt;) wie z.B. Datenminimierung (&lt;a href="https://dsgvo-gesetz.de/art-5-dsgvo/" target="_blank"&gt;Art.5 Abs.1&lt;/a&gt;) und das Bundesdatenschutzgesetz (&lt;a ="https://dsgvo-gesetz.de/bdsg/" target="_blank"&gt;BDSG&lt;/a&gt;).
-Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Datensätzen“ strukturiert. Die Definition dessen, was jeweils ein Datensatz ist, ist eine wichtige konzeptionelle Entscheidung, die für jedes Vorhaben bzw. Projekt individuell getroffen und sorgfältig abgewogen werden muss.
-		</help>
+Handelt es sich um personenbezogene Daten, gelten die Grundsätze der EU-Datenschutzgrundverordnung (&lt;a href=&quot;https://dsgvo-gesetz.de/&quot; target=&quot;_blank&quot;&gt;DSGVO&lt;/a&gt;)
+wie z. B. Datenminimierung (&lt;a href=&quot;https://dsgvo-gesetz.de/art-5-dsgvo/&quot; target=&quot;_blank&quot;&gt;Art.5 Abs.1&lt;/a&gt;)
+und das Bundesdatenschutzgesetz (&lt;a =&quot;https://dsgvo-gesetz.de/bdsg/&quot; target=&quot;_blank&quot;&gt;BDSG&lt;/a&gt;).
+Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Datensätzen“ strukturiert.
+Die Definition dessen, was jeweils ein Datensatz ist, ist eine wichtige konzeptionelle Entscheidung, die für jedes Vorhaben bzw. Projekt individuell getroffen und sorgfältig abgewogen werden muss.
+    </help>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<title lang="fr">jeux de données</title>
 		<title lang="it">raccolte di dati</title>
-		<help lang="fr">Les questions suivantes collectent des informations sur les données produites ou utilisées dans le projet. Ils aident également à estimer la valeur des données en termes de réutilisation potentielle et de conservation à long terme.
-Avant de créer de nouvelles données, il est conseillé de vérifier s'il existe des données existantes qui pourraient être réutilisées. De cette façon, la collecte ou la création de données de recherche redondantes est empêchée. Cela permet d'économiser des efforts et des coûts.
+		<help lang="fr">Les questions suivantes collectent des informations sur les données produites ou utilisées dans le projet.
+Ils aident également à estimer la valeur des données en termes de réutilisation potentielle et de conservation à long terme.
+Avant de créer de nouvelles données, il est conseillé de vérifier s'il existe des données existantes qui pourraient être réutilisées.
+De cette façon, la collecte ou la création de données de recherche redondantes est empêchée. Cela permet d'économiser des efforts et des coûts.
 		</help>
-		<help lang="it">Le domande seguenti servono a descrivere le raccolte di dati generate e/o utilizzate nel progetto. Inoltre aiutano a stimare il valore dei dati sulla base del potenziale riutilizzo.
-Prima di generare dati nuovi conviene verificare l'eventuale disponibilità di dati già esistenti e riutilizzabili, in modo da evitare una superflua doppia acquisizione. Questa procedura permette di economizzare sforzi e costi.
+		<help lang="it">Le domande seguenti servono a descrivere le raccolte di dati generate e/o utilizzate nel progetto.
+Inoltre aiutano a stimare il valore dei dati sulla base del potenziale riutilizzo.
+Prima di generare dati nuovi conviene verificare la possibilità di riutilizzare dati già esistenti, in modo da evitare lavoro superfluo e risparmiare sforzi e costi.
 		</help>
 		<verbose_name lang="fr">jeu de données</verbose_name>
 		<verbose_name lang="it">raccolta di dati</verbose_name>
@@ -866,7 +876,7 @@ Prima di generare dati nuovi conviene verificare l'eventuale disponibilità di d
 		<text lang="en">What kind of dataset is it?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Bitte beschreiben Sie hier kurz, um welchen Datentyp es sich handelt und mit welcher Methode die Daten erhoben oder erstellt wurden, z.B.: 
+		<help lang="de">Bitte beschreiben Sie hier kurz, um welchen Datentyp es sich handelt und mit welcher Methode die Daten erhoben oder erstellt wurden, z. B.: 
 &lt;ul&gt;&lt;li&gt;quantitative Online-Befragung&lt;/li&gt;
 &lt;li&gt;3D-Modellierung / digitale Rekonstruktion einer steinzeitlichen Siedlung&lt;/li&gt;
 &lt;li&gt;Software, die im Projekt entwickelt wird&lt;/li&gt;&lt;/ul&gt;
@@ -1563,7 +1573,8 @@ It is advisable to prefer formats that are standardised, open, non-proprietary a
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bei der Wahl des Dateiformates sollten auch die Konsequenzen für die kollaborative Nutzung, die Langzeitarchivierung sowie die Nachnutzung beachtet werden.
-Es empfiehlt sich, möglichst standardisierte, nicht-proprietäre und allgemein bzw. in der spezifischen Community verbreitete Formate zu nutzen. Weitere Kriterien sowie detaillierte Erläuterungen sind z.B. im &lt;a href="https://www.forschungsdaten.org/images/b/b0/Leitfaden_Data-Management-WissGrid.pdf" target="_blank"&gt;WissGrid-Leitfaden, S. 22 f.&lt;/a&gt; zu finden.
+Es empfiehlt sich, möglichst standardisierte, nicht-proprietäre und allgemein bzw. in der spezifischen Community verbreitete Formate zu nutzen. Weitere Kriterien sowie detaillierte Erläuterungen sind z. B.
+   im &lt;a href=&quot;https://www.forschungsdaten.org/images/b/b0/Leitfaden_Data-Management-WissGrid.pdf&quot;	target=&quot;_blank&quot;&gt;WissGrid-Leitfaden, S. 22 f.&lt;/a&gt; zu finden.
 		</help>
 		<text lang="de">In welchen Formaten liegen die Daten vor?</text>
 		<verbose_name lang="de"/>
@@ -1571,7 +1582,8 @@ Es empfiehlt sich, möglichst standardisierte, nicht-proprietäre und allgemein 
 		<help lang="fr">Lors du choix d'un format de données, il convient de tenir compte des conséquences pour l'utilisation collaborative, la conservation à long terme ainsi que la réutilisation.
 Il est conseillé de préférer des formats standardisés, ouverts, non propriétaires et bien établis dans la communauté respective.
 		</help>
-		<help lang="it">Nella scelta di un formato di dati bisogna tenere conto delle consequenze per l'utilizzo condiviso, la conservazione a lungo termine e il riutilizzo. Si raccomanda di usare dove possibile dei formati standard, aperti e generici o per lo meno ben stabiliti nella comunità rispettiva.
+		<help lang="it">Nella scelta di un formato di dati bisogna tenere conto delle consequenze per l'utilizzo condiviso, la conservazione a lungo termine e il riutilizzo.
+Si raccomanda di usare dove possibile dei formati standard, aperti e generici o per lo meno ben stabiliti nella comunità rispettiva.
 		</help>
 		<text lang="fr">Quels formats de fichiers sont utilisés ?</text>
 		<text lang="it">Quali formati di file vengono utilizzati?</text>
@@ -1624,22 +1636,26 @@ Il est conseillé de préférer des formats standardisés, ouverts, non proprié
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/technical-classification/data-tools"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en">This information is necessary to be able to reconstruct the process by which the data was generated. It is also a prerequisite to judge the objectivity, reliability and validity of the dataset.
+		<help lang="en">This information is necessary to be able to reconstruct the process by which the data was generated.
+It is also a prerequisite to judge the objectivity, reliability and validity of the dataset.
 For reproducible data, it is also required to re-generate the data if necessary.
 		</help>
 		<text lang="en">Which tools, software, technologies or processes are used to generate or collect the data?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Diese Informationen sind für alle Arten von Daten relevant, um ihre Genese nachvollziehen zu können. Bei reproduzierbaren Daten kommt ein weiterer Aspekt hinzu.
-Diese müssen nicht notwendigerweise aufbewahrt werden - allerdings müssen alle Geräte, Software und auch Informationen über die Vorgehensweise erhalten bleiben, die notwendig sind, um die Daten erneut erstellen zu können.
+		<help lang="de">Diese Informationen sind für alle Arten von Daten relevant, um ihre Genese nachvollziehen zu können.
+Bei reproduzierbaren Daten kommt ein weiterer Aspekt hinzu. Diese müssen nicht notwendigerweise aufbewahrt werden - allerdings müssen
+alle Geräte, Software und auch Informationen über die Vorgehensweise erhalten bleiben, die notwendig sind, um die Daten erneut erstellen zu können.
 		</help>
 		<text lang="de">Welche Instrumente, Software, Technologien oder Verfahren werden zur Erzeugung oder Erfassung der Daten genutzt?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<help lang="fr">Ces informations sont nécessaires pour pouvoir reconstruire le processus par lequel les données ont été générées. C'est également une condition préalable pour juger de l'objectivité, de la fiabilité et de la validité du jeu de données.
+		<help lang="fr">Ces informations sont nécessaires pour pouvoir reconstruire le processus par lequel les données ont été générées.
+C'est également une condition préalable pour juger de l'objectivité, de la fiabilité et de la validité du jeu de données.
 Pour les données reproductibles, elles sont également indispensables pour recréer les données si nécessaire.
 		</help>
-		<help lang="it">Queste informazioni sono necessarie per poter ricostruire la procedura di generazione dei dati. Sono altresì un prerequisito per valutare l'obiettività, l'affidabilità e la validità della raccolta di dati.
+		<help lang="it">Queste informazioni sono necessarie per poter ricostruire la procedura di generazione dei dati.
+Sono altresì un prerequisito per valutare l'obiettività, l'affidabilità e la validità della raccolta di dati.
 Per i dati riproducibili, sono anche indispensabili per ricreare i dati in caso di necessità.
 		</help>
 		<text lang="fr">Quels outils, logiciels, technologies ou processus sont utilisés pour générer ou collecter les données ?</text>
@@ -1666,22 +1682,26 @@ Per i dati riproducibili, sono anche indispensabili per ricreare i dati in caso 
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/technical-classification/data-tools"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
-		<help lang="en">To be able to re-use data (e.g. to replicate studies, for meta analysis or to solve new research questions), along with the data the software, equipment and knowledge about special methods to use the data are required.
+		<help lang="en">To be able to re-use data (e.g. to replicate studies, for meta analysis or to solve new research questions),
+along with the data the software, equipment and knowledge about special methods to use the data are required.
 Just as with the formats, the recommendation is: the more standardised, open and established, the better for re-use.
 		</help>
 		<text lang="en">Which software, processes or technologies are necessary to use the data?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Um Daten nachnutzen zu können, bspw. für die Replikation von Studien, Metaanalysen oder die Beantwortung neuer Forschungsfragen, werden neben den Daten selbst auch die Software, Geräte etc. und das Wissen über spezielle Verfahren zur Nutzung benötigt.
+		<help lang="de">Um Daten nachnutzen zu können, bspw. für die Replikation von Studien, Metaanalysen oder die Beantwortung neuer Forschungsfragen,
+werden neben den Daten selbst auch die Software, Geräte etc. und das Wissen über spezielle Verfahren zur Nutzung benötigt.
 Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablierter diese sind, desto einfacher ist i.d.R. eine Nachnutzung möglich.
 		</help>
 		<text lang="de">Welche Software, Verfahren oder Technologien sind notwendig, um die Daten zu nutzen?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<help lang="fr">Pour pouvoir réutiliser les données (par exemple pour répliquer des études, pour une méta-analyse ou pour résoudre de nouvelles questions de recherche), ainsi que les données, le logiciel, l'équipement et les connaissances sur les méthodes spéciales d'utilisation des données sont nécessaires.
+		<help lang="fr">Pour pouvoir réutiliser les données (par exemple pour répliquer des études, pour une méta-analyse ou pour résoudre de nouvelles questions de recherche),
+ainsi que les données, le logiciel, l'équipement et les connaissances sur les méthodes spéciales d'utilisation des données sont nécessaires.
 Tout comme pour les formats, la recommandation est: plus ils sont standardisés, ouverts et établis, mieux ils sont réutilisables.
 		</help>
-		<help lang="it">Per poter riutilizzare i dati (es. Per replicare studi, eseguire una metaanalisi o per affrontare nuovi argomenti di ricerca), insieme ai dati sono necessari i programmi, l'attrezzatura e conoscenze specifiche sui metodi di riuso dei dati.
+		<help lang="it">Per poter riutilizzare i dati (es. Per replicare studi, eseguire una metaanalisi o per affrontare nuovi argomenti di ricerca),
+insieme ai dati sono necessari i programmi, l'attrezzatura e conoscenze specifiche sui metodi di riuso dei dati.
 Analogamente ai formati, si raccomanda di adottare metodi il più standard, aperti e diffusi possibile.
 		</help>
 		<text lang="fr">Quels logiciels, processus ou technologies sont nécessaires pour utiliser les données ?</text>
@@ -1810,7 +1830,7 @@ Analogamente ai formati, si raccomanda di adottare metodi il più standard, aper
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bitte beschreiben Sie hier kurz projektinterne Regelungen zur Versionierung von Datensätzen
-(z.B.: Welche Änderungen machen eine neue Version erforderlich? Wie werden die Änderungen dokumentiert? Wie werden die verschiedenen Versionen benannt?)
+(z. B.: Welche Änderungen machen eine neue Version erforderlich? Wie werden die Änderungen dokumentiert? Wie werden die verschiedenen Versionen benannt?)
 		</help>
 		<text lang="de">Welche Versionierungsstrategie wird für diesen Datensatz angewandt?</text>
 		<verbose_name lang="de"/>
@@ -1900,7 +1920,7 @@ These can be technical / IT resources as well as expertise brought in by e.g. da
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
 		<title lang="de">Nutzungsszenarien</title>
 		<help lang="de">Die folgenden Fragen dienen dazu einzuschätzen, welche Ressourcen für die geplante Nutzung der Daten während der Projektlaufzeit nötig sind.
-Dabei kann es sich um technische bzw. IT-Ressourcen handeln, aber auch um Expertise, die z.B. Datenmanagement- oder IT-ExpertInnen eingebracht wird.
+Dabei kann es sich um technische bzw. IT-Ressourcen handeln, aber auch um Expertise, die z. B. Datenmanagement- oder IT-ExpertInnen eingebracht wird.
 		</help>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
@@ -2265,7 +2285,7 @@ Queste possono essere risorse tecniche o informatiche, ma anche l’utilizzo del
 		<text lang="en">Who is allowed to access the dataset?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">z.B. Projektmitglieder, Projektpartner, nur Interne, externe Partner</help>
+		<help lang="de">z. B. Projektmitglieder, Projektpartner, nur Interne, externe Partner</help>
 		<text lang="de">Wer darf auf den Datensatz zugreifen?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
@@ -2429,7 +2449,7 @@ Queste possono essere risorse tecniche o informatiche, ma anche l’utilizzo del
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
-		<text lang="de">Ist der Datensatz interoperabel, d.h. geeignet für den Datenaustausch und die Nachnutzung zwischen bzw. von unterschiedlichen Forschenden, Institutionen, Organisationen und Ländern?</text>
+		<text lang="de">Ist der Datensatz interoperabel, d. h. geeignet für den Datenaustausch und die Nachnutzung zwischen bzw. von unterschiedlichen Forschenden, Institutionen, Organisationen und Ländern?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
 		<help lang="fr"/>
@@ -3631,9 +3651,12 @@ A PID serves as an intermediate from which requests are directed to the current 
 		<verbose_name lang="en">dataset</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
 		<title lang="de">Persistente Identifikatoren (PIDs)</title>
-		<help lang="de">Persistente Identifikatoren (PIDs) sollen die dauerhafte Referenzierung von (insbesondere) digitalen Objekten wie Publikationen oder Forschungsdaten ermöglichen. Statt, wie i.d.R. bei der Angabe eines Hyperlinks als Referenz der Fall, auf den Speicherort des Objektes zu verweisen, fungiert die PID als eine Zwischeninstanz, von der aus zum Objekt weitergeleitet wird (dies nennt man „Auflösen“ der PID). Die PID bleibt gleich, auch wenn sich der Speicherort des Objektes ändert. Während ein Hyperlink in diesem Fall ins Nichts führen würde, ist das Objekt über die PID weiterhin erreichbar.
-Weitere Informationen zur Funktionsweise, Verwendung und den verschiedenen Arten von PIDs findet man z.B. im &lt;a 			href="https://www.dpconline.org/handbook/technical-solutions-and-tools/persistent-identifiers" target="_blank"&gt; Handbook der Digital Preservation Coalition&lt;/a&gt; oder in den Informationsmaterialien des &lt;a 			href="http://www.ands.org.au/guides#identify" target="_blank"&gt; Australian National Data Service (ANDS)&lt;/a&gt; (bitte scrollen Sie zu dem Abschnitt "Identifying data and researchers").
-		</help>
+		<help lang="de">Persistente Identifikatoren (PIDs) sollen die dauerhafte Referenzierung von (insbesondere) digitalen Objekten wie Publikationen oder Forschungsdaten ermöglichen.
+Statt, wie i.d.R. bei der Angabe eines Hyperlinks als Referenz der Fall, auf den Speicherort des Objektes zu verweisen, fungiert die PID als eine Zwischeninstanz, von der aus zum Objekt weitergeleitet wird (dies nennt man „Auflösen“ der PID).
+Die PID bleibt gleich, auch wenn sich der Speicherort des Objektes ändert. Während ein Hyperlink in diesem Fall ins Nichts führen würde, ist das Objekt über die PID weiterhin erreichbar.
+Weitere Informationen zur Funktionsweise, Verwendung und den verschiedenen Arten von PIDs findet man z. B. im &lt;a href=&quot;https://www.dpconline.org/handbook/technical-solutions-and-tools/persistent-identifiers&quot; target=&quot;_blank&quot;&gt; Handbook der Digital Preservation Coalition&lt;/a&gt;
+oder in den Informationsmaterialien des &lt;a href=&quot;http://www.ands.org.au/guides#identify&quot; target=&quot;_blank&quot;&gt; Australian National Data Service (ANDS)&lt;/a&gt; (bitte scrollen Sie zu dem Abschnitt &quot;Identifying data and researchers&quot;).
+    </help>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<title lang="fr">Identifiants persistants (PIDs)</title>
@@ -3762,26 +3785,34 @@ Un PID sert d'intermédiaire à partir duquel les demandes sont dirigées vers l
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/metadata-and-referencing/structure-granularity-and-referencing-pids"/>
 		<is_collection>True</is_collection>
 		<order>4</order>
-		<help lang="en">A prerequisite for PIDs to work as promised is that they - as well as the objects they refer to - are maintained in a continuous and reliable way. This means, for example, that if the object location changes, this information is updated.
+		<help lang="en">A prerequisite for PIDs to work as promised is that they - as well as the objects they refer to -
+are maintained in a continuous and reliable way. This means, for example, that if the object location changes, this information is updated.
 When the data are stored in a data centre or repository, these tasks are usually taken care of by the data centre / repository.
 However, to be sure, the responsibilities should be checked beforehand.
 		</help>
 		<text lang="en">Who is responsible for the maintenance of the PIDs and the object maintenance (i.e. who is responsible notifying the PID-Service about object relocation and the new address)?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Die Voraussetzung dafür, dass persistente Identifikatoren auch wirklich halten, was sie versprechen, ist, dass sie - wie auch die Objekte, auf die referenziert wird - dauerhaft und verlässlich gepflegt werden.
-D.h. beispielsweise, dass bei einer Änderung des Speicherortes des Objekts die Information über den neuen Speicherort entsprechend aktualisiert werden muss.
-Werden die Daten in einem Datenzentrum oder -repositorium gespeichert, wird diese Verantwortung i.d.R. von diesem übernommen. Um sicher zu sein, sollten die Verantwortlichkeiten jedoch in jedem Fall geprüft bzw. geklärt werden.
+		<help lang="de">Die Voraussetzung dafür, dass persistente Identifikatoren auch wirklich halten, was sie versprechen,
+ist, dass sie - wie auch die Objekte, auf die referenziert wird - dauerhaft und verlässlich gepflegt werden.
+D. h. beispielsweise, dass bei einer Änderung des Speicherortes des Objekts die Information über den neuen Speicherort entsprechend aktualisiert werden muss.
+Werden die Daten in einem Datenzentrum oder -repositorium gespeichert, wird diese Verantwortung i. d. R. von diesem übernommen.
+Um sicher zu sein, sollten die Verantwortlichkeiten jedoch in jedem Fall geprüft bzw. geklärt werden.
 		</help>
 		<text lang="de">Wer ist verantwortlich für die Pflege der PIDs und die Objektpflege (d. h. die Langzeitarchivierung des Objekts und somit dafür, dem PID-Service einen Objektumzug und die neue Adresse mitzuteilen)?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<help lang="fr">Une condition préalable pour que les PID fonctionnent comme promis est qu'ils - ainsi que les objets auxquels ils se réfèrent - sont maintenus de manière continue et fiable.
-Cela signifie, par exemple, que si l'emplacement de l'objet change, ces informations sont mis à jour. Lorsque les données sont stockées dans un centre de données ou un référentiel, ces tâches sont généralement prises en charge par le centre de données/référentiel.
+		<help lang="fr">Une condition préalable pour que les PID fonctionnent comme promis
+est qu'ils - ainsi que les objets auxquels ils se réfèrent - sont maintenus de manière continue et fiable.
+Cela signifie, par exemple, que si l'emplacement de l'objet change, ces informations sont mis à jour.
+Lorsque les données sont stockées dans un centre de données ou un référentiel, ces tâches sont généralement prises en charge par le centre de données/référentiel.
 Cependant, pour être sûr, les responsabilités doivent être vérifiées au préalable.
 		</help>
-		<help lang="it">Una condizione necessaria per il corretto funzionamento degli identificatori persistenti è un lavoro di mantenimento continuo e affidabile, anche degli oggetti collegati.
-Per esempio, ciò richiede che in caso di rilocazione dell'oggetto collegato, l'indirizzo collegato venga aggiornato in modo conseguente. Qualora i dati siano salvato in un centro dati o repositorio, di regola l'aggiornamento ricade sotto la responsabilità di questo. In ogni caso, per sicurezza, è opportuno verificare o chiarire le competenze.
+		<help lang="it">Una condizione necessaria per il corretto funzionamento degli identificatori persistenti
+è un lavoro di mantenimento continuo e affidabile, anche degli oggetti collegati.
+Per esempio, ciò richiede che in caso di rilocazione dell'oggetto collegato, l'indirizzo collegato venga aggiornato in modo conseguente.
+Qualora i dati siano salvato in un centro dati o repositorio, di regola l'aggiornamento ricade sotto la responsabilità di questo.
+In ogni caso, per sicurezza, è opportuno verificare o chiarire le competenze.
 		</help>
 		<text lang="fr">Qui est responsable de la maintenance des PID et de la maintenance des objets (c'est-à-dire qui est responsable, au cas d'une relocalisation des données, de la notification de la nouvelle adresse au service PID) ?</text>
 		<text lang="it">Chi è responsabile per il mantenimento dei PID e degli oggetti stessi (ovvero chi ha l'incarico, in caso di spostamento dei dati, di comunicare il nuovo indirizzo al servizio dei PID)?</text>
@@ -4007,7 +4038,17 @@ Per esempio, ciò richiede che in caso di rilocazione dell'oggetto collegato, l'
 		<text lang="en">Does this dataset contain personal data?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Der Umgang und die Verarbeitung personenbezogener Daten ist gesetzlich geregelt. Die EU-weit einheitliche Anwendung erfolgt nach der &lt;a href="https://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32016R0679" target="_blank"&gt;EU-Datenschutz-Grundverordnung (DSGVO)&lt;/a&gt;. Sie gestattet Regelungsspielräume auf nationaler Ebene. In Deutschland regelt dies das &lt;a href="http://www.gesetze-im-internet.de/bdsg_2018/" target="_blank"&gt;Bundesdatenschutzgesetz (BDSG)&lt;/a&gt;. Für Hochschulen gelten zum großen Teil die individuellen Datenschutzgesetze der Länder, z.B. das &lt;a href="https://recht.nrw.de/lmi/owa/br_text_anzeigen?v_id=3520071121100436275" target="_blank"&gt;Datenschutzgesetz Nordrhein-Westfalen (DSG NRW)&lt;/a&gt;. Die europäische DSGVO definiert personenbezogene Daten als alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen (Art. 4 DSGVO, Abs. 1). &lt;b&gt;Identifiziert &lt;/b&gt;ist eine Person, wenn eindeutig erkennbar ist, zu welcher Person die Daten gehören. &lt;b&gt;Identifizierbar&lt;/b&gt; wird eine Person, wenn sie mittels Zusatzinformationen identifiziert werden kann. Mehr Informationen zum Thema finden Sie auf den Webseiten der Datenschutzbeauftragten der UA Ruhr. * &lt;a href="https://dsb.ruhr-uni-bochum.de/" target="_blank"&gt;Ruhr-Universität Bochum&lt;/a&gt; * &lt;a href="https://www.uni-due.de/verwaltung/organisation/just_datenschutz.php" target="_blank"&gt;Universität von Duisburg-Essen&lt;/a&gt; * &lt;a href="https://www.tu-dortmund.de/universitaet/organisation/beauftragte-vertrauenspersonen/#accordion-2213-764" target="_blank"&gt;Technische Universität Dortmund&lt;/a&gt;</help>
+		<help lang="de">Der Umgang und die Verarbeitung personenbezogener Daten ist gesetzlich geregelt.
+Die EU-weit einheitliche Anwendung erfolgt nach der &lt;a href=&quot;https://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32016R0679&quot; target=&quot;_blank&quot;&gt;EU-Datenschutz-Grundverordnung (DSGVO)&lt;/a&gt;.
+Sie gestattet Regelungsspielräume auf nationaler Ebene. In Deutschland regelt dies das &lt;a href=&quot;http://www.gesetze-im-internet.de/bdsg_2018/&quot; target=&quot;_blank&quot;&gt;Bundesdatenschutzgesetz (BDSG)&lt;/a&gt;.
+Für Hochschulen gelten zum großen Teil die individuellen Datenschutzgesetze der Länder, z. B. das &lt;a	href=&quot;https://recht.nrw.de/lmi/owa/br_text_anzeigen?v_id=3520071121100436275&quot; target=&quot;_blank&quot;&gt;Datenschutzgesetz Nordrhein-Westfalen (DSG NRW)&lt;/a&gt;.
+Die europäische DSGVO definiert personenbezogene Daten als alle	Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen (Art. 4 DSGVO, Abs. 1).
+&lt;b&gt;Identifiziert &lt;/b&gt;ist eine Person, wenn eindeutig erkennbar ist, zu welcher Person die Daten gehören.
+&lt;b&gt;Identifizierbar&lt;/b&gt; wird eine Person, wenn sie mittels Zusatzinformationen identifiziert werden kann.
+Mehr Informationen zum Thema finden Sie auf den Webseiten der Datenschutzbeauftragten der UA Ruhr.
+* &lt;a href=&quot;https://dsb.ruhr-uni-bochum.de/&quot; target=&quot;_blank&quot;&gt;Ruhr-Universität Bochum&lt;/a&gt;
+* &lt;a href=&quot;https://www.uni-due.de/verwaltung/organisation/just_datenschutz.php&quot; target=&quot;_blank&quot;&gt;Universität von	Duisburg-Essen&lt;/a&gt;
+* &lt;a href=&quot;https://www.tu-dortmund.de/universitaet/organisation/beauftragte-vertrauenspersonen/#accordion-2213-764&quot; target=&quot;_blank&quot;&gt;Technische Universität Dortmund&lt;/a&gt;</help>
 		<text lang="de">Enthält dieser Datensatz personenbezogene Daten?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
@@ -4070,13 +4111,14 @@ Per esempio, ciò richiede che in caso di rilocazione dell'oggetto collegato, l'
 		<text lang="en">Which law applies with respect to the aspects of data protection in the project?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Die &lt;a href="https://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32016R0679" target="_blank"&gt;EU Datenschutzgrundverordnung (DSGVO)&lt;/a&gt; hat Vorrang vor nationalem Recht. Sie findet seit dem 25.05.2018 Anwendung.
-Für Hochschulen finden weiterhin die Landesdatenschutzgesetze Anwendung, die bestimmte Regelungen der DSGVO ausgestalten können, z.B. &lt;a href="https://recht.nrw.de/lmi/owa/br_text_anzeigen?v_id=3520071121100436275" target="_blank"&gt;Datenschutzgesetz Nordrhein-Westfalen (DSG NRW)&lt;/a&gt;.
-In bestimmten Bereichen gelten spezifische Gesetze, die über den Landesdatenschutzgesetzen bzw. &lt;a 	href="http://www.gesetze-im-internet.de/bdsg_2018/" target="_blank"&gt;Bundesdatenschutzgesetz (BDSG)&lt;/a&gt; stehen.
+		<help lang="de">Die &lt;a href=&quot;https://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32016R0679&quot; target=&quot;_blank&quot;&gt;EU Datenschutzgrundverordnung (DSGVO)&lt;/a&gt;
+hat Vorrang vor nationalem Recht. Sie findet seit dem 25.05.2018 Anwendung. Für Hochschulen finden weiterhin die Landesdatenschutzgesetze Anwendung, die bestimmte Regelungen der DSGVO ausgestalten können,
+z. B. &lt;a href=&quot;https://recht.nrw.de/lmi/owa/br_text_anzeigen?v_id=3520071121100436275&quot; target=&quot;_blank&quot;&gt;Datenschutzgesetz Nordrhein-Westfalen (DSG NRW)&lt;/a&gt;.
+In bestimmten Bereichen gelten spezifische Gesetze, die über den Landesdatenschutzgesetzen bzw. &lt;a href=&quot;http://www.gesetze-im-internet.de/bdsg_2018/&quot; target=&quot;_blank&quot;&gt;Bundesdatenschutzgesetz (BDSG)&lt;/a&gt; stehen.
 * Für medizinischen Daten ist bspw. das Zehnte Sozialgesetzbuch (SGB X) anwendbar,
-* Für Daten des Mikrozensus das Bundesstatistikgesetz (BstatG).
-* Für Forschung in Schulen in NRW das Schulgesetz NRW (SchulG NRW).
-Demzufolge können je nach Forschungsprojekt auch mehrere Gesetze betroffen sein.</help>
+* Für Daten des Mikrozensus	das Bundesstatistikgesetz (BStatG).
+* Für Forschung in Schulen in NRW das Schulgesetz NRW (SchulG NRW) Demzufolge können je nach Forschungsprojekt auch mehrere Gesetze betroffen sein.
+    </help>
 		<text lang="de">Welche Gesetze sind neben der europäischen DSGVO bezüglich der Fragen des Datenschutzes für das Projekt zu beachten?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
@@ -4858,13 +4900,20 @@ Solche Daten gelten als besonders sensibel und erfordern noch strengere Schutzma
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Daten oder Software können Urheber- oder anderen Schutzrechten unterliegen. Die Rechtslage kann selbst in der EU von Land zu Land erheblich abweichen.
 In Deutschland sind nach dem Urheberrechtsgesetz (UrhG) Werke der Literatur, Wissenschaft und Kunst, die eine „persönliche geistige Schöpfung“ darstellen, urheberrechtlich geschützt.
-Der urheberrechtliche Schutz erlischt 70 Jahre nach dem Tod der bzw. des Urheberin/s. Reine Daten, z.B. Messdaten oder Surveydaten, aber auch Metadaten (bis auf ggf. „beschreibende“ Metadaten) sind hingegen nicht schutzfähig.
-In § 2 nennt das UrhG folgende geschützte Werkarten, wobei die Aufzählung nicht abschließend ist: * Sprachwerke, wie Schriftwerke, Reden und Computerprogramme * Werke der Musik * pantomimische Werke einschließlich Werke der Tanzkunst * Werke der bildenden Künste einschließlich der Werke der Baukunst und der angewandten Kunst und Entwürfe solcher Werke * Lichtbildwerke einschließlich der Werke, die ähnlich wie Lichtbildwerke geschaffen werden * Darstellungen wissenschaftlicher oder technischer Art wie Zeichnungen, Pläne, Karten, Skizzen, Tabellen und plastische Darstellungen.
-Nach § 3 sind auch „Übersetzungen und andere Bearbeitungen“ von Werken geschützt, die persönliche geistige Schöpfungen des Bearbeiters sind“.
-Schließlich sind nach § 4 auch Sammelwerke und Datenbankwerke geschützt, was im Bereich Forschungsdaten durchaus relevant sein kann. Sammelwerke werden dabei definiert als „Sammlungen von Werken, Daten oder anderen unabhängigen Elementen, die aufgrund der Auswahl oder Anordnung der Elemente eine persönliche geistige Schöpfung sind“.
+Der urheberrechtliche Schutz erlischt 70 Jahre nach dem Tod der bzw. des Urheberin/s. Reine Daten, z. B. Messdaten oder Surveydaten, aber auch Metadaten (bis auf ggf. „beschreibende“ Metadaten) sind hingegen nicht schutzfähig.
+In § 2 nennt das UrhG folgende geschützte Werkarten, wobei die Aufzählung nicht abschließend ist:
+* Sprachwerke, wie Schriftwerke, Reden und Computerprogramme
+* Werke der Musik
+* pantomimische Werke einschließlich Werke der Tanzkunst
+* Werke der bildenden Künste einschließlich der Werke der Baukunst und der angewandten Kunst und Entwürfe solcher Werke
+* Lichtbildwerke einschließlich der Werke, die ähnlich wie Lichtbildwerke geschaffen werden
+* Darstellungen wissenschaftlicher oder technischer Art wie Zeichnungen, Pläne, Karten, Skizzen, Tabellen und plastische Darstellungen.
+Nach § 3 sind auch „Übersetzungen und andere Bearbeitungen“ von Werken geschützt, persönliche geistige Schöpfungen des Bearbeiters sind“.
+Schließlich sind nach § 4 auch Sammelwerke und Datenbankwerke geschützt, was im Bereich Forschungsdaten durchaus relevant sein kann.
+Sammelwerke werden dabei definiert als „Sammlungen von Werken, Daten oder anderen unabhängigen Elementen, die aufgrund der Auswahl oder Anordnung der Elemente eine persönliche geistige Schöpfung sind“.
 Bei einem „Datenbankwerk im Sinne des Gesetzes“ handelt es sich um ein „Sammelwerk, dessen Elemente systematisch oder methodisch angeordnet und einzeln mit Hilfe elektronischer Mittel oder auf andere Weise zugänglich sind“.
 Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmuster, Sortenschutz [bei Pflanzenzüchtungen], Halbleiterschutz, Marken, geographische Herkunftsangaben, eingetragene Designs oder geschäftliche Bezeichnungen sein.
-		</help>
+</help>
 		<text lang="de">Werden Daten genutzt und/oder erstellt, die durch Urheber- oder verwandte Schutzrechte geschützt sind?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
@@ -5443,7 +5492,7 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Wurde der Datensatz an mehreren Orten archiviert, kann die Frage bejaht werden, wenn dies auf mindestens eine der Optionen zutrifft.</help>
-		<text lang="de">Handelt es sich dabei um ein zertifiziertes Repositorium oder Datenzentrum (z.B. durch das Data Seal of Approval, nestor-Siegel oder ISO 16363)?</text>
+		<text lang="de">Handelt es sich dabei um ein zertifiziertes Repositorium oder Datenzentrum (z. B. durch das Data Seal of Approval, nestor-Siegel oder ISO 16363)?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
 		<help lang="fr">Dans le cas où le jeu de données est archivé en plusieurs endroits, la question a une réponse affirmative, pourvu que cela s’applique au moins à l’un d’eux.</help>
