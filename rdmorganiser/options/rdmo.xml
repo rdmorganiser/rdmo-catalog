@@ -342,10 +342,23 @@
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why"/>
 		<order>2</order>
 		<text lang="en">Achievement of intellectual property rights such as</text>
-		<text lang="de">Erlangung intellektueller Rechte sowie</text>
+		<text lang="de">Erlangung intellektueller Rechte wie</text>
 		<text lang="fr">Obtention de droits de propriété intellectuelle tels que</text>
 		<text lang="it">Conseguimento di diritti di proprietà intellettuale come</text>
 		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why/thesis">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>thesis</key>
+		<path>embargo_why/thesis</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why"/>
+		<order>3</order>
+		<text lang="en">Finishing of a bachelor/master/doctor thesis</text>
+		<text lang="de">Anfertigung einer Abschlussarbeit (Bachelor-, Master- oder Doktor-)</text>
+		<text lang="fr">Complètement d'une thèse (de licence, de master ou de doctorat)</text>
+		<text lang="it">Completamento di una tesi (triennale, specialistica o di dottorato)</text>
+		<additional_input>False</additional_input>
 	</option>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why/other">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -378,7 +391,7 @@
 		<text lang="de">CC-BY</text>
 		<text lang="fr">CC-BY</text>
 		<text lang="it">CC-BY</text>
-		<additional_input>False</additional_input>
+		<additional_input>True</additional_input>
 	</option>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/licence/CC-BY-SA">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -391,7 +404,20 @@
 		<text lang="de">CC-BY-SA</text>
 		<text lang="fr">CC-BY-SA</text>
 		<text lang="it">CC-BY-SA</text>
-		<additional_input>False</additional_input>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/licence/ODC">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>ODC</key>
+		<path>licence/ODC</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/licence"/>
+		<order>3</order>
+		<text lang="en">Open Data Commons</text>
+		<text lang="de">Open Data Commons</text>
+		<text lang="fr">Open Data Commons</text>
+		<text lang="it">Open Data Commons</text>
+		<additional_input>True</additional_input>
 	</option>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/licence/other">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -766,43 +792,17 @@
 		<order>0</order>
 		<conditions/>
 	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_certification/WDS">
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_certification/nestor">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>WDS</key>
-		<path>repository_certification/WDS</path>
+		<key>nestor</key>
+		<path>repository_certification/nestor</path>
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_certification"/>
 		<order>1</order>
-		<text lang="en">WDS</text>
-		<text lang="de">WDS</text>
-		<text lang="fr">WDS</text>
-		<text lang="it">WDS</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_certification/DSA">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>DSA</key>
-		<path>repository_certification/DSA</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_certification"/>
-		<order>2</order>
-		<text lang="en">DSA</text>
-		<text lang="de">DSA</text>
-		<text lang="fr">DSA</text>
-		<text lang="it">DSA</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_certification/RatSWD">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>RatSWD</key>
-		<path>repository_certification/RatSWD</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_certification"/>
-		<order>3</order>
-		<text lang="en">RatSWD</text>
-		<text lang="de">RatSWD</text>
-		<text lang="fr">RatSWD</text>
-		<text lang="it">RatSWD</text>
+		<text lang="en">nestor</text>
+		<text lang="de">nestor</text>
+		<text lang="fr">nestor</text>
+		<text lang="it">nestor</text>
 		<additional_input>False</additional_input>
 	</option>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_certification/CLARIN">
@@ -811,7 +811,7 @@
 		<path>repository_certification/CLARIN</path>
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_certification"/>
-		<order>4</order>
+		<order>2</order>
 		<text lang="en">CLARIN</text>
 		<text lang="de">CLARIN</text>
 		<text lang="fr">CLARIN</text>
@@ -824,24 +824,24 @@
 		<path>repository_certification/TrustSeal</path>
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_certification"/>
-		<order>5</order>
+		<order>3</order>
 		<text lang="en">Core TrustSeal</text>
 		<text lang="de">Core TrustSeal</text>
 		<text lang="fr">Core TrustSeal</text>
 		<text lang="it">Core TrustSeal</text>
 		<additional_input>False</additional_input>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_certification/DINI">
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_certification/RatSWD">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>DINI</key>
-		<path>repository_certification/DINI</path>
+		<key>RatSWD</key>
+		<path>repository_certification/RatSWD</path>
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_certification"/>
-		<order>6</order>
-		<text lang="en">DINI</text>
-		<text lang="de">DINI</text>
-		<text lang="fr">DINI</text>
-		<text lang="it">DINI</text>
+		<order>4</order>
+		<text lang="en">RatSWD</text>
+		<text lang="de">RatSWD</text>
+		<text lang="fr">RatSWD</text>
+		<text lang="it">RatSWD</text>
 		<additional_input>False</additional_input>
 	</option>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_certification/TRAC">
@@ -850,11 +850,24 @@
 		<path>repository_certification/TRAC</path>
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_certification"/>
-		<order>7</order>
+		<order>5</order>
 		<text lang="en">TRAC</text>
 		<text lang="de">TRAC</text>
 		<text lang="fr">TRAC</text>
 		<text lang="it">TRAC</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_certification/ISO16363">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>ISO16363</key>
+		<path>repository_certification/ISO16363</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_certification"/>
+		<order>6</order>
+		<text lang="en">ISO 16363</text>
+		<text lang="de">ISO 16363</text>
+		<text lang="fr">ISO 16363</text>
+		<text lang="it">ISO 16363</text>
 		<additional_input>False</additional_input>
 	</option>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_certification/DIN31644">
@@ -863,7 +876,7 @@
 		<path>repository_certification/DIN31644</path>
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_certification"/>
-		<order>8</order>
+		<order>7</order>
 		<text lang="en">DIN 31644</text>
 		<text lang="de">DIN 31644</text>
 		<text lang="fr">DIN 31644</text>
