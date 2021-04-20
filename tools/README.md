@@ -14,6 +14,7 @@ The output 'questions_differences' will print all question uris. If differences 
   - be sure, that all references to the domain, option sets and conditions are correct as well
 - provide catalog information and composition within `cat_member.yaml`
 - run `python3 auto_catalog_creation.py`
+- for the 'training' catalog there is an additional manual step (see [README_training.md](README_training.md)
 
 ### Detailed Guide
 #### Catalogs
