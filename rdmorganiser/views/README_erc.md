@@ -18,12 +18,12 @@ The structure of the view is based on the official [ERC Data Management Template
     - Do you provide clear version numbers? 
     - What metadata will be created? In case metadata standards do not exist in your discipline, please outline what type of metadata will be created and how. 
 3. Making data openly accessible
-    - Which data produced and/or used in the project will be made openly available as the default? If certain datasets cannot be shared (or need to be shared under restrictions), explain why. (shortened)
+    - Which data produced and/or used in the project will be made openly available as the default? If certain datasets cannot be shared (or need to be shared under restrictions), explain why. *(shortened)*
     - How will the data be made accessible (e.g. by deposition in a repository)? 
     - What methods or software tools are needed to access the data? 
     - Is documentation about the software needed to access the data included? 
     - Is it possible to include the relevant software (e.g. in open source code)?
-    - Where will the data and associated metadata, documentation and code be deposited? (shortened)
+    - Where will the data and associated metadata, documentation and code be deposited? *(shortened)*
 4. Making data interoperable
     - Are the data produced in the project interoperable, that is allowing data exchange and re-use between researchers, institutions, organisations, countries, etc. (i.e. adhering to standards for formats, as much as possible compliant with available (open) software applications, and in particular facilitating re-combinations with different datasets from different origins)?
     - What data and metadata vocabularies, standards or methodologies will you follow to make your data interoperable? 
@@ -31,12 +31,12 @@ The structure of the view is based on the official [ERC Data Management Template
     - In case it is unavoidable that you use uncommon or generate project specific ontologies or vocabularies, will you provide mappings to more commonly used ontologies? 
 5. Increase data re-use
     - How will the data be licensed to permit the widest re-use possible? 
-    - When will the data be made available for re-use? If an embargo is sought to give time to publish or seek patents, specify why and how long this will apply. (shortened)
+    - When will the data be made available for re-use? If an embargo is sought to give time to publish or seek patents, specify why and how long this will apply. *(shortened)*
     - To whom might it be useful ('data utility')?
-    - Are there any ethical or legal issues that can have an impact on data sharing? (shortened)
+    - Are there any ethical or legal issues that can have an impact on data sharing? *(shortened)*
 6. Allocation of resources and data security
     - What are the costs for making data FAIR in your project? 
-    - How will these be covered? (shortened)
+    - How will these be covered? *(shortened)*
     - Who will be responsible for data management in your project?
     - Are the resources for long term preservation discussed (costs and potential value, who decides and how what data will be kept and for how long)? 
     - What provisions are in place for data security (including data recovery as well as secure storage and transfer of sensitive data)?
