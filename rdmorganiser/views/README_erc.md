@@ -3,7 +3,7 @@ This view is to be used with the 'UA Ruhr-Proposal' catalog.
 
 ## Development
 
-The structure of the view is based on the official [ERC Data Management Template](ec.europa.eu/research/participants/data/ref/h2020/gm/reporting/h2020-erc-tpl-oa-data-mgt-plan_en.docx) (Version 1.0, 2017). Since this template is based on the [Horizon 2020 FAIR Data Management Plan template](https://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf) (Version 3.0, 2016), the contents of the existing H2020 view could be largely incorporated into the new ERC view. Therefor questions of the H2020 view were mapped to the six sections pointed out by the ERC Data Management Template as follows: 
+The structure of the [erc view](erc.xml) is based on the official [ERC Data Management Template](ec.europa.eu/research/participants/data/ref/h2020/gm/reporting/h2020-erc-tpl-oa-data-mgt-plan_en.docx) (Version 1.0, 2017). Since this template is based on the [Horizon 2020 FAIR Data Management Plan template](https://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf) (Version 3.0, 2016), the contents of the existing [H2020 view](rdmo.xml) could be largely incorporated into the new ERC view. To do this, questions of the H2020 view were mapped to the six sections pointed out by the ERC Data Management Template as follows: 
 
 1. Summary
     - What is the purpose of the data collection/generation and its relation to the objectives of the project?
