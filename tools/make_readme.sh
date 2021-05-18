@@ -6,7 +6,7 @@ arr=($(find "${basedir}/shared" -regex ".*\.xml$" | sort))
 
 tmpfile="/tmp/rdmocatalogtable.tmp"
 readme_tpl="${scriptdir}/readme.tpl"
-readme_out="${basedir}/readme.md"
+readme_out="${basedir}/README.md"
 
 rm -f "${tmpfile}"
 
