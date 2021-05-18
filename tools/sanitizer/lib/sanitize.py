@@ -1,22 +1,24 @@
 import hashlib
-import re
+
+from lib.util import rxmatch, rxsearch
 
 
-class sanitizer():
-    def __init__(self, content, filename):
+class Sanitize():
+    def __init__(self, content, filename, rdmo_uris):
         self.content = content
         self.filename = filename
         self.new_uri = self.new_uri()
+        self.rdmo_uris = rdmo_uris
         self.default_uri_prefix = 'https://rdmorganiser.github.io/terms'
         self.things_to_replace = [
             '<uri_prefix',
-            '<catalog\sdc:uri',
-            '<question\sdc:uri',
-            '<questionset\sdc:uri',
-            '<section\sdc:uri',
-            '<option\sdc:uri',
-            '<optionset\sdc:uri',
-            '<condition\sdc:uri',
+            '<catalog dc:uri',
+            '<question dc:uri',
+            '<questionset dc:uri',
+            '<section dc:uri',
+            '<option dc:uri',
+            '<optionset dc:uri',
+            '<condition dc:uri',
         ]
 
     def process(self):
@@ -33,11 +35,20 @@ class sanitizer():
 
     def new_uri(self):
         h = self.hash_string(
-            re.search(r'(?<=\/shared\/).*?(?=\/)', self.filename).group(0)
+            rxsearch(r'(?<=\/shared\/).*?(?=\/)', self.filename)
         )
         return 'https://' + h + '.rdmo'
 
-    def replace_uri(self, rxmatch, line):
-        if bool(re.search(rxmatch, line)) is True:
+    def replace_uri(self, rxscheme, line):
+        if rxmatch(rxscheme, line) is True \
+                and self.contains_rdmo_uri(line) is False:
             line = line.replace(self.default_uri_prefix, self.new_uri)
         return line
+
+    def contains_rdmo_uri(self, s):
+        b = False
+        for uri in self.rdmo_uris:
+            if rxmatch(uri, s):
+                b = True
+                break
+        return b

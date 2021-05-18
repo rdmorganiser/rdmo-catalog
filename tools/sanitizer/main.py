@@ -1,27 +1,29 @@
 #!/usr/bin/python3
 
 import os
-import sys
+import re
+from os.path import join as pj
 
-from lib.sanitizer import sanitizer
-from lib.util import util
+from lib.init import Init
+from lib.sanitize import Sanitize
+from lib.util import read_xml, write_xml
 
 if __name__ == '__main__':
+    dirs = {}
+    dirs['base'] = re.search(r'.*rdmo-catalog?', os.getcwd()).group(0)
+    dirs['shared'] = pj(dirs['base'], 'shared')
+    dirs['rdmo'] = pj(dirs['base'], 'rdmorganiser')
+    dirs['temp'] = pj(dirs['base'], 'tmp')
 
-    try:
-        basedir = sys.argv[1]
-    except IndexError:
-        basedir = os.getcwd()
-        print('No base dir arg given. Base dir set to: ' + basedir)
-
-    utl = util(basedir)
-
-    for filename in utl.xml_files:
-        print('\nStart to process ' + filename)
-        content = utl.read_xml(filename)
-        san = sanitizer(content, filename)
+    conf = Init(dirs)
+    max = len(conf.shared_xmls)-1
+    for idx, filename in enumerate(conf.shared_xmls):
+        prog = '\n[' + str(idx) + '/' + str(max) + '] '
+        print(prog + 'Start to process ' + filename)
+        content = read_xml(filename)
+        san = Sanitize(content, filename, conf.rdmo_uris)
         san.process()
 
-        outfile = utl.output_filename(filename)
-        utl.write_xml(san.content, outfile)
+        outfolder, outfile = conf.output_filename(filename)
+        write_xml(san.content, outfolder, outfile)
         print('Done.')
