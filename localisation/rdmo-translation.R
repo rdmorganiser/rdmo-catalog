@@ -1,5 +1,5 @@
 library(xml2); library(stringr); library(magrittr); library(tidyverse)
-setwd("C:/Users/lanza01/Desktop/lavori in corso/RDMO 2020")
+# setwd("C:/Users/MYPATH")    # enter path
 
 rm(list=ls())
 Dateiname <- "PRONTO/rdmo-questions.xml"
