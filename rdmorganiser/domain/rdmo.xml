@@ -406,6 +406,27 @@
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>documentation</key>
+		<path>project/dataset/documentation</path>
+		<dc:comment>Added for the question which documentation will be available together with the data</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation/where">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>where</key>
+		<path>project/dataset/documentation/where</path>
+		<dc:comment>Added for the question where the documentation can be found</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation_on_request">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>documentation_on_request</key>
+		<path>project/dataset/documentation_on_request</path>
+		<dc:comment>Added for the question which data documention is only available on request. The question may be of relevance for DFG projects in educational research, see Petra Stanat, Bereitstellung und Nutzung quantitativer Forschungsdaten in der Bildungsforschung: Memorandum des Fachkollegiums „Erziehungswissenschaft“ der DFG, https://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_bildungsforschung.pdf</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/format">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>format</key>
@@ -454,6 +475,13 @@
 		<path>project/dataset/ipr/owner/name</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner"/>
+	</attribute>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/status">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>status</key>
+		<path>project/dataset/ipr/status</path>
+		<dc:comment>In the  &quot;Information for Building Language Corpora Under German Law&quot; of the DFG Review Board on Linguistics, https://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/guidelines_review_board_linguistics_corpora.pdf, is explicitly pointed to single rights of the originator and the necessity to obtain these rights. For the question &quot;Which rights have been obtained or what is the status of the rights collection?&quot; this attribute has been added.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -712,6 +740,13 @@
 		<key>reproducibility</key>
 		<path>project/dataset/reproducibility</path>
 		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reuse_existing">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>reuse_existing</key>
+		<path>project/dataset/reuse_existing</path>
+		<dc:comment>Added for the question, if similar research data are already available and why these cannot be used. The DFG Review Board 112 &quot;Economics&quot; and the German Federal Ministry of Education and Research (BMBF) recommend suggestions concerning this question, e.g. &quot;Bereitstellung und Nutzung quantitativer Forschungsdaten in der Bildungsforschung: Memorandum des Fachkollegiums „Erziehungswissenschaft“, https://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_bildungsforschung.pdf</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reuse_scenario">
@@ -1132,6 +1167,13 @@
 		<key>agency</key>
 		<path>project/legal_aspects/official_approval/statutatory_approval/agency</path>
 		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval/statutatory_approval"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval/statutatory_approval/conditions">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>conditions</key>
+		<path>project/legal_aspects/official_approval/statutatory_approval/conditions</path>
+		<dc:comment>Added for the question &quot;What are the conditions for the permit?&quot;, recommended in the Manual on handling research data of the DFG review board &quot;Ancient Cultures&quot;, i.e. Fachkollegium „Alte Kulturen“, Handreichung zum Umgang mit Forschungsdaten, https://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/handreichung_fachkollegium_101_forschungsdaten.pdf</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval/statutatory_approval"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval/statutatory_approval/title">
