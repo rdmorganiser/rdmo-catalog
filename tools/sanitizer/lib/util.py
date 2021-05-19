@@ -1,4 +1,5 @@
 import os
+import pprint as ppr
 import re
 from os.path import join as pj
 
@@ -34,6 +35,11 @@ def mkdir(folder):
         pass
 
 
+def pprint(obj):
+    pp = ppr.PrettyPrinter(indent=4)
+    pp.pprint(obj)
+
+
 def rxmatch(rxscheme, s):
     return bool(re.search(rxscheme, s))
 
@@ -59,10 +65,11 @@ def read_xml(filename):
     return(arr)
 
 
-def write_xml(data, folder, filename):
+def write_xml(data, folder, filename, debug=False):
     mkdir(folder)
     target = pj(folder, filename)
     print('Write file ' + target)
-    with open(target, 'w') as fp:
-        for line in data:
-            fp.write(line + '\n')
+    if debug is False:
+        with open(target, 'w') as fp:
+            for line in data:
+                fp.write(line + '\n')

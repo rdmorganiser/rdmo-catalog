@@ -7,19 +7,21 @@ from lib.util import detect_xml_files, get_uris_from_file, mkdir
 
 
 class Init():
-    def __init__(self, dirs):
-        self.dirs = dirs
+    def __init__(self, dirs, args):
+        self.conf = {}
+        self.conf['dirs'] = dirs
+        self.conf['args'] = args
         self.check_dirs()
-        self.shared_xmls = detect_xml_files(self.dirs["shared"])
-        self.rdmo_xmls = detect_xml_files(self.dirs["rdmo"])
+        self.shared_xmls = detect_xml_files(self.conf['dirs']['input'])
+        self.rdmo_xmls = detect_xml_files(self.conf['dirs']['rdmo'])
         self.detect_rdmos_uris()
 
     def check_dirs(self):
-        mkdir(self.dirs["temp"])
-        for key in self.dirs:
-            val = self.dirs[key]
+        mkdir(self.conf['dirs']['output'])
+        for key in self.conf['dirs']:
+            val = self.conf['dirs'][key]
             if os.path.isdir(val) is False:
-                print('Folder config seems to be wrong. Immediate exit.')
+                print('\nFolder does not exist ' + val + '\nExit.\n')
                 sys.exit(1)
 
     def detect_rdmos_uris(self):
@@ -32,4 +34,4 @@ class Init():
     def output_filename(self, filename):
         folder = re.search('shared.*(?=/)', filename).group(0)
         shortname = re.search('[^/]+$', filename).group(0)
-        return pj(self.dirs["temp"], folder), shortname
+        return pj(self.conf['dirs']['output'], folder), shortname
