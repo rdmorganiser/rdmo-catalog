@@ -3,6 +3,7 @@ from os.path import abspath
 
 
 def parse_args(dirs):
+    default_uri_prefix = 'https://rdmorganiser.github.io/terms'
     parser = argparse.ArgumentParser(
         description='Rdmo catalog sanitizer replacing accidentally used uris',
         formatter_class=argparse.RawTextHelpFormatter
@@ -16,8 +17,12 @@ def parse_args(dirs):
         help='folder to work in, default: ' + dirs['output']
     )
     parser.add_argument(
-        '-u', '--new_uri', default=None,
-        help='new uri, will be generated if not given'
+        '-f', '--old_uri_prefix', default=default_uri_prefix,
+        help='old uri to find and be replaced, default: ' + default_uri_prefix
+    )
+    parser.add_argument(
+        '-n', '--new_uri_prefix', default=None,
+        help='new uri replacing the old one, if not given generated'
     )
     parser.add_argument(
         '-d', '--debug', action='store_true', default=False,

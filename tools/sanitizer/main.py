@@ -23,12 +23,12 @@ if __name__ == '__main__':
 
     conf = Init(dirs, args)
 
-    max = len(conf.shared_xmls)-1
+    max = len(conf.shared_xmls)
     for idx, filename in enumerate(conf.shared_xmls):
-        prog = '\n[' + str(idx) + '/' + str(max) + '] '
+        prog = '\n[' + str(idx+1) + '/' + str(max) + '] '
         print(prog + 'Start to process ' + filename)
         content = read_xml(filename)
-        san = Sanitize(content, filename, conf.rdmo_uris)
+        san = Sanitize(content, filename, conf)
         if args.debug is False:
             san.process()
         outfolder, outfile = conf.output_filename(filename)
