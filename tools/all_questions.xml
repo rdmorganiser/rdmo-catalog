@@ -1075,8 +1075,8 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/technical-classification/data-volume"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en"/>
-		<help lang="de"/>
+		<help lang="en">If large amounts of data are involved, financial resources for the provision of the infrastructure should be considered (see also section &quot;Funding&quot;)</help>
+		<help lang="de">Wenn große Datenmengen anfallen sollten finanzielle Mittel zur Bereitstellung der Infrastruktur berücksichtigt werden (siehe auch Abschnitt „Förderung“)</help>
 		<text lang="en">What is the actual or expected size of the dataset?</text>
 		<text lang="de">Was ist die tatsächliche oder erwartete Größe des Datensatzes?</text>
 		<verbose_name lang="en"/>
@@ -1103,8 +1103,8 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/technical-classification/data-volume"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
-		<help lang="en">Optional. This is only of concern if the data production rate reaches TB scale.</help>
-		<help lang="de">Optional. Dies ist nur relevant, wenn das Wachstum die TB-Größenordnung erreicht.</help>
+		<help lang="en"/>
+		<help lang="de"/>
 		<text lang="en">How much data is produced per year?</text>
 		<text lang="de">Wie hoch ist die erwartete Erzeugungsrate der Daten pro Jahr?</text>
 		<verbose_name lang="en"/>
@@ -1195,8 +1195,8 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<order>1</order>
 		<help lang="en">This information is necessary to be able to reconstruct the process by which the data was generated. It is also a prerequisite to judge the objectivity, reliability and validity of the dataset.
 
-For reproducible data, it is also required to re-generate the data if need be.</help>
-		<help lang="de">Diese Informationen sind für alle Arten von Daten relevant, um ihre Genese nachvollziehen zu können. Bei reproduzierbaren Daten kommt ein weiterer Aspekt hinzu. Diese müssen nicht notwendigerweise aufbewahrt werden - allerdings müssen alle Geräte, Software und auch Informationen über die Vorgehensweise erhalten bleiben, die notwendig sind, um die Daten erneut erstellen zu können.</help>
+For reproducible data, it is also required to re-generate the data if need be. Therefore all devices, software, software version and also information about the procedure necessary to be able to recreate the data must be preserved.</help>
+		<help lang="de">Diese Informationen sind für alle Arten von Daten relevant, um ihre Genese nachvollziehen zu können. Bei reproduzierbaren Daten kommt ein weiterer Aspekt hinzu. Diese müssen nicht notwendigerweise aufbewahrt werden - allerdings müssen alle Geräte, Software, Softwareversion und auch Informationen über die Vorgehensweise erhalten bleiben, die notwendig sind, um die Daten erneut erstellen zu können.</help>
 		<text lang="en">Which tools, software, technologies or processes are used to generate or collect the data?</text>
 		<text lang="de">Welche Instrumente, Software, Technologien oder Verfahren werden zur Erzeugung oder Erfassung der Daten genutzt?</text>
 		<verbose_name lang="en"/>
@@ -2968,9 +2968,11 @@ Werden die Daten in einem Datenzentrum oder -repositorium gespeichert, wird dies
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/legal-and-ethics/sensitive-data-personal_data_yesno"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en">The handling and processing of **personal data** is regulated by law. The uniform application throughout the EU is based on the &lt;a href="http://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32016R0679" target="_blank"&gt;EU General Data Protection Regulation (GDPR)&lt;/a&gt;. It allows for regulatory leeway at national level.
+		<help lang="en">If yes: Please also check whether you have completed section &quot;Data usage / Data storage and security&quot; with the appropriate measures to protect the data in accordance with the applicable data protection laws.
 
-In Germany, this is regulated by the &lt;a href="http://www.gesetze-im-internet.de/bdsg_2018/" target="_blank"&gt;Federal Data Protection Act (BDSG)&lt;/a&gt;, and for universities, the individual data protection laws of the individual federal states apply, e.g. the &lt;a href="https://recht.nrw.de/lmi/owa/br_text_anzeigen?v_id=3520071121100436275" target="_blank"&gt;data protection law of North Rhine-Westphalia (DSG NRW)&lt;/a&gt;.
+The handling and processing of **personal data** is regulated by law. The uniform application throughout the EU is based on the &lt;a href=&quot;http://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32016R0679&quot; target=&quot;_blank&quot;&gt;EU General Data Protection Regulation (GDPR)&lt;/a&gt;. It allows for regulatory leeway at national level.
+
+In Germany, this is regulated by the &lt;a href=&quot;http://www.gesetze-im-internet.de/bdsg_2018/&quot; target=&quot;_blank&quot;&gt;Federal Data Protection Act (BDSG)&lt;/a&gt;, and for universities, the individual data protection laws of the individual federal states apply, e.g. the &lt;a href=&quot;https://recht.nrw.de/lmi/owa/br_text_anzeigen?v_id=3520071121100436275&quot; target=&quot;_blank&quot;&gt;data protection law of North Rhine-Westphalia (DSG NRW)&lt;/a&gt;.
 
 The european GDPR defines personal data as all information relating to an identified or identifiable natural person (Art. 4(1) GPDR).
 
@@ -2980,12 +2982,14 @@ A person becomes **identifiable** if it can be identified by means of additional
 
 More information (in German only) can be found on the websites of the data protection officers of the UA Ruhr.
 
-* &lt;a href="https://dsb.ruhr-uni-bochum.de/" target="_blank"&gt;Ruhr-University Bochum&lt;/a&gt;
+* &lt;a href=&quot;https://dsb.ruhr-uni-bochum.de/&quot; target=&quot;_blank&quot;&gt;Ruhr-University Bochum&lt;/a&gt;
 
-* &lt;a href="https://www.uni-due.de/verwaltung/organisation/just_datenschutz.php" target="_blank"&gt;University Duisburg-Essen&lt;/a&gt;
+* &lt;a href=&quot;https://www.uni-due.de/verwaltung/organisation/just_datenschutz.php&quot; target=&quot;_blank&quot;&gt;University Duisburg-Essen&lt;/a&gt;
 
-* &lt;a href="https://www.tu-dortmund.de/universitaet/organisation/beauftragte-vertrauenspersonen/#accordion-2213-764" target="_blank"&gt;TU Dortmund University&lt;/a&gt;</help>
-		<help lang="de">Der Umgang und die Verarbeitung **personenbezogener** Daten ist gesetzlich geregelt. Die EU-weit einheitliche Anwendung erfolgt nach der &lt;a href="http://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32016R0679" target="_blank"&gt;EU-Datenschutz-Grundverordnung (DSGVO)&lt;/a&gt;. Sie gestattet Regelungsspielräume auf nationaler Ebene. In Deutschland regelt dies das &lt;a href="http://www.gesetze-im-internet.de/bdsg_2018/" target="_blank"&gt;Bundesdatenschutzgesetz (BDSG)&lt;/a&gt;. Für Hochschulen gelten zum großen Teil die individuellen Datenschutzgesetze der Länder, z.B. das &lt;a href="https://recht.nrw.de/lmi/owa/br_text_anzeigen?v_id=3520071121100436275" target="_blank"&gt;Datenschutzgesetz Nordrhein-Westfalen (DSG NRW)&lt;/a&gt;.
+* &lt;a href=&quot;https://www.tu-dortmund.de/universitaet/organisation/beauftragte-vertrauenspersonen/#accordion-2213-764&quot; target=&quot;_blank&quot;&gt;TU Dortmund University&lt;/a&gt;</help>
+		<help lang="de">Wenn ja: Bitte prüfen Sie auch, ob Sie den Abschnitt &quot;Datennutzung / Datenspeicherung und -sicherheit&quot; mit den entsprechenden Maßnahmen zum Schutz der Daten gemäß den geltenden Datenschutzgesetzen ausgefüllt haben.
+
+Der Umgang und die Verarbeitung **personenbezogener** Daten ist gesetzlich geregelt. Die EU-weit einheitliche Anwendung erfolgt nach der &lt;a href=&quot;http://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32016R0679&quot; target=&quot;_blank&quot;&gt;EU-Datenschutz-Grundverordnung (DSGVO)&lt;/a&gt;. Sie gestattet Regelungsspielräume auf nationaler Ebene. In Deutschland regelt dies das &lt;a href=&quot;http://www.gesetze-im-internet.de/bdsg_2018/&quot; target=&quot;_blank&quot;&gt;Bundesdatenschutzgesetz (BDSG)&lt;/a&gt;. Für Hochschulen gelten zum großen Teil die individuellen Datenschutzgesetze der Länder, z.B. das &lt;a href=&quot;https://recht.nrw.de/lmi/owa/br_text_anzeigen?v_id=3520071121100436275&quot; target=&quot;_blank&quot;&gt;Datenschutzgesetz Nordrhein-Westfalen (DSG NRW)&lt;/a&gt;.
 
 Die europäische DSGVO definiert personenbezogene Daten als alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen (Art. 4 DSGVO, Abs. 1).
 
@@ -2995,11 +2999,10 @@ Die europäische DSGVO definiert personenbezogene Daten als alle Informationen, 
 
 Mehr Informationen zum Thema finden Sie auf den Webseiten der Datenschutzbeauftragten der UA Ruhr.
 
-* &lt;a href="https://dsb.ruhr-uni-bochum.de/" target="_blank"&gt;Ruhr-Universität Bochum&lt;/a&gt;
+* &lt;a href=&quot;https://dsb.ruhr-uni-bochum.de/&quot; target=&quot;_blank&quot;&gt;Ruhr-Universität Bochum&lt;/a&gt;
 
-* &lt;a href="https://www.uni-due.de/verwaltung/organisation/just_datenschutz.php" target="_blank"&gt;Universität of Duisburg-Essen&lt;/a&gt;
-
-* &lt;a href="https://www.tu-dortmund.de/universitaet/organisation/beauftragte-vertrauenspersonen/#accordion-2213-764" target="_blank"&gt;Technische Universität Dortmund&lt;/a&gt;</help>
+* &lt;a href=&quot;https://www.uni-due.de/verwaltung/organisation/just_datenschutz.php&quot; target=&quot;_blank&quot;&gt;Universität of Duisburg-Essen&lt;/a&gt;
+* &lt;a href=&quot;https://www.tu-dortmund.de/universitaet/organisation/beauftragte-vertrauenspersonen/#accordion-2213-764&quot; target=&quot;_blank&quot;&gt;Technische Universität Dortmund&lt;/a&gt;</help>
 		<text lang="en">Does this dataset contain personal data?</text>
 		<text lang="de">Enthält dieser Datensatz personenbezogene Daten?</text>
 		<verbose_name lang="en"/>
@@ -4281,6 +4284,58 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<verbose_name_plural lang="de"/>
 		<widget_type>date</widget_type>
 		<value_type>datetime</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/storage-and-long-term-preservation/long-term-preservation-datasets/responsible_person_name">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>responsible_person_name</key>
+		<path>ua_ruhr/storage-and-long-term-preservation/long-term-preservation-datasets/responsible_person_name</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/responsible_person/name"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/storage-and-long-term-preservation/long-term-preservation-datasets"/>
+		<is_collection>False</is_collection>
+		<order>11</order>
+		<help lang="en">A similar question is, what happens if the access data is lost or, for example, if the chair holder retires? This should be taken into consideration later on by means of a workflow.</help>
+		<text lang="en">Who is the permanent project owner/data owner who can decide on the data after the researcher leaves? Please enter the name.</text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Eine ähnliche Fragestellung ist, was passiert bei Verlust der Zugangsdaten oder beispielsweise beim Ausscheiden/Ruhestand des Lehrstuhlinhabers? Dies sollte später über einen Workflow mit bedacht werden.</help>
+		<text lang="de">Wer ist der dauerhafter Besitzer der Daten, der nach dem Weggang des Forschenden über die Daten entscheiden kann? Bitte geben Sie den Name an.</text>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/storage-and-long-term-preservation/long-term-preservation-datasets/responsible_person_email">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>responsible_person_email</key>
+		<path>ua_ruhr/storage-and-long-term-preservation/long-term-preservation-datasets/responsible_person_email</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/responsible_person/email"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/ua_ruhr/storage-and-long-term-preservation/long-term-preservation-datasets"/>
+		<is_collection>False</is_collection>
+		<order>12</order>
+		<help lang="en"/>
+		<text lang="en">Please provide the email address of the permanent owner of the data requested above.</text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Bitte geben Sie die E-Mail-Adresse des oben gefragten dauerhaften Besitzer der Daten an.</text>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
