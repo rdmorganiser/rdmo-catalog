@@ -647,6 +647,51 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		</optionsets>
 		<conditions/>
 	</question>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/content-classification/data-reuse">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>data-reuse</key>
+		<path>proposal/content-classification/data-reuse</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/content-classification"/>
+		<is_collection>True</is_collection>
+		<order>3</order>
+		<title lang="en">Reuse</title>
+		<title lang="de">Nachnutzung</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/content-classification/data-reuse/scenario">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>scenario</key>
+		<path>proposal/content-classification/data-reuse/scenario</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reuse_scenario"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/content-classification/data-reuse"/>
+		<is_collection>False</is_collection>
+		<order>1</order>
+    <help lang="en">It is important to set the fundamental course as to whether or not the data will be permitted for reuse. Of course, the potential for subsequent use can not be the sole decision criterion, but legal impediments, such as privacy, copyright and business secrets must be taken into account. Otherwise, consider the re-use potential against the disadvantages, e.g. a decrease in the readiness to participate and the expected extra effort of a data publication.</help>
+    <help lang="de">Wichtig ist die grundsätzliche Weichenstellung, ob die Daten zur Nachnutzung zugelassen werden oder nicht. Selbstverständlich kann das Nachnutzungspotential dabei nicht alleiniges Entscheidungskriterium sein, sondern rechtliche Hinderungsgründe, wie z.B. Datenschutz, Urheberrecht und die Wahrung von Geschäftsgeheimnissen, müssen berücksichtigt werden. Wägen Sie ansonsten das Nachnutzungspotential gegen die Nachteile ab, beispielsweise gegen ein Absinken der Teilnahmebereitschaft und den zu erwartenden Mehraufwand einer Datenveröffentlichung.</help>
+		<text lang="en">Which individuals, groups or institutions could be interested in re-using this dataset? What consequences does the re-use potential have for the provision of the data later?</text>
+		<text lang="de">Für welche Personen, Gruppen oder Institutionen könnte dieser Datensatz (für die Nachnutzung) von Interesse sein? Welche Konsequenzen hat das Nachnutzungspotential später für die Bereitstellung der Daten?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/content-classification/data-reproducibility">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>data-reproducibility</key>
@@ -1156,6 +1201,32 @@ For reproducible data, it is also required to re-generate the data if need be.</
 		</optionsets>
 		<conditions/>
 	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/data-usage/scenarios-usage/description">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>description</key>
+		<path>proposal/data-usage/scenarios-usage/description</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_description"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/data-usage/scenarios-usage"/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">How / for what purpose will this dataset be used during the project?</text>
+		<text lang="de">Wozu / wie wird dieser Datensatz während des Projektes genutzt?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/data-usage/data-storage-and-security-storage">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>data-storage-and-security-storage</key>
@@ -1473,6 +1544,34 @@ For reproducible data, it is also required to re-generate the data if need be.</
 		<conditions>
 			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/data_sharing"/>
 		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/data-usage/data-sharing-and-re-use-publication/conditions">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>conditions</key>
+		<path>proposal/data-usage/data-sharing-and-re-use-publication/conditions</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/conditions"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/data-usage/data-sharing-and-re-use-publication"/>
+		<is_collection>True</is_collection>
+		<order>3</order>
+		<help lang="en">The options refer to the licenses of the &lt;a href="https://creativecommons.org/share-your-work/licensing-types-examples/" target="_blank"&gt;Creative Commons family&lt;/a&gt;.</help>
+		<help lang="de">Die Auswahlmöglichkeiten orientieren sich an Lizenzen der &lt;a href="https://de.creativecommons.org/was-ist-cc/" target="_blank"&gt;Creative-Commons-Familie&lt;/a&gt;.</help>
+		<text lang="en">If yes, under which terms of use or license will the dataset be published or shared?</text>
+		<text lang="de">Wenn ja, unter welchen Nutzungsbedingungen oder welcher Lizenz sollen die Daten veröffentlicht bzw. geteilt werden?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types"/>
+		</optionsets>
+		<conditions/>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/data-usage/data-sharing-and-re-use-publication/yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1915,6 +2014,110 @@ For reproducible data, it is also required to re-generate the data if need be.</
 		<verbose_name_plural lang="en"/>
 		<verbose_name_plural lang="de"/>
 		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/metadata-and-referencing/metadata-dataset/creation_manual">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>creation_manual</key>
+		<path>proposal/metadata-and-referencing/metadata-dataset/creation_manual</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/creation_manual"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/metadata-and-referencing/metadata-dataset"/>
+		<is_collection>False</is_collection>
+		<order>5</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">Which metadata are collected manually?</text>
+		<text lang="de">Welche Metadaten werden manuell erhoben?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/metadata-and-referencing/metadata-dataset/creation_semi_automatic">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>creation_semi_automatic</key>
+		<path>proposal/metadata-and-referencing/metadata-dataset/creation_semi_automatic</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/creation_semi_automatic"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/metadata-and-referencing/metadata-dataset"/>
+		<is_collection>False</is_collection>
+		<order>4</order>
+    <help lang="en">Which metadata is automatically collected by computer or software, but must be verified?</help>
+    <help lang="de">Welche Metadaten werden durch den Computer / die Software automatisch erhoben, müssen aber überprüft werden?</help>
+		<text lang="en">Which metadata are collected semi-automatically?</text>
+		<text lang="de">Welche Metadaten werden semi-automatisch erhoben?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/metadata-and-referencing/metadata-dataset/mappings">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>mappings</key>
+		<path>proposal/metadata-and-referencing/metadata-dataset/mappings</path>
+		<dc:comment>original H2020 question</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/mappings"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/metadata-and-referencing/metadata-dataset"/>
+		<is_collection>False</is_collection>
+		<order>3</order>
+		<help lang="en">This information is needed for a Horizon 2020 data management plan.</help>
+		<help lang="de">Diese Information wird für einen Horizon 2020 Datenmanagementplan benötigt.</help>
+		<text lang="en">In case it is unavoidable that you use uncommon or generate project-specific ontologies or vocabularies, will you provide mappings to more commonly used ontologies?</text>
+		<text lang="de">Sollte es unvermeidbar sein, projektspezifische oder seltene Ontologien, Metadatenschemata oder Vokabulare zu nutzen, werden Mappings zu gängigen Ontologien etc. erstellt?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/metadata-and-referencing/metadata-dataset/creation_automatic">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>creation_automatic</key>
+		<path>proposal/metadata-and-referencing/metadata-dataset/creation_automatic</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/creation_automatic"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/metadata-and-referencing/metadata-dataset"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">Which metadata are collected automatically?</text>
+		<text lang="de">Welche Metadaten werden automatisch erhoben?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
@@ -3287,6 +3490,58 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<optionsets/>
 		<conditions/>
 	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/storage-and-long-term-preservation/long-term-preservation-datasets/repository_arrangements">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>repository_arrangements</key>
+		<path>proposal/storage-and-long-term-preservation/long-term-preservation-datasets/repository_arrangements</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository_arrangements"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/storage-and-long-term-preservation/long-term-preservation-datasets"/>
+		<is_collection>False</is_collection>
+		<order>7</order>
+		<help lang="en">(original question from Horizon 2020 FAIR Data Management Plan)</help>
+		<help lang="de"/>
+		<text lang="en">Have you explored appropriate arrangements with the identified repository?</text>
+		<text lang="de">Wurde mit dem Repositorium oder Datenzentrum bereits angemessene Archivierungslösungen besprochen?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/storage-and-long-term-preservation/long-term-preservation-datasets/certification">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>certification</key>
+		<path>proposal/storage-and-long-term-preservation/long-term-preservation-datasets/certification</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/certification"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/storage-and-long-term-preservation/long-term-preservation-datasets"/>
+		<is_collection>False</is_collection>
+		<order>6</order>
+    <help lang="en">If the dataset is archived at several places, you may answer this question with yes, if this applies to at least one of these.</help>
+    <help lang="de">Wurde der Datensatz an mehreren Orten archiviert, kann die Frage bejaht werden, wenn dies auf mindestens eine der Optionen zutrifft.</help>
+		<text lang="en">Is the repository or data centre chosen certified (e.g. Data Seal of Approval, nestor Seal or ISO 16363)?</text>
+		<text lang="de">Handelt es sich dabei um ein zertifiziertes Repositorium oder Datenzentrum (z.B. durch das Data Seal of Approval, nestor-Siegel oder ISO 16363)?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/storage-and-long-term-preservation/long-term-preservation-datasets/repository">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>repository</key>
@@ -3423,6 +3678,103 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/yes_with_text_no"/>
 		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/storage-and-long-term-preservation/long-term-preservation-costs">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>long-term-preservation-costs</key>
+		<path>proposal/storage-and-long-term-preservation/long-term-preservation-costs</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/storage-and-long-term-preservation"/>
+		<is_collection>False</is_collection>
+		<order>13</order>
+		<title lang="en">Long-term preservation costs</title>
+		<title lang="de">Langzeitarchivierungskosten</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/storage-and-long-term-preservation/long-term-preservation-costs/cover_how">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>cover_how</key>
+		<path>proposal/storage-and-long-term-preservation/long-term-preservation-costs/cover_how</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/preservation/cover_how"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/storage-and-long-term-preservation/long-term-preservation-costs"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<help lang="en"/>
+		<help lang="de"/>
+		<text lang="en">How will the datamanagement costs of the project be covered?</text>
+		<text lang="de">Wie werden die Kosten für das Datenmanagement im Projekt aufgebracht?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/storage-and-long-term-preservation/long-term-preservation-costs/non_personnel">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>non_personnel</key>
+		<path>proposal/storage-and-long-term-preservation/long-term-preservation-costs/non_personnel</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/preservation/non_personnel"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/storage-and-long-term-preservation/long-term-preservation-costs"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<help lang="en">Please estimate the costs in **Euro**.</help>
+		<help lang="de">Bitte schätzen sie die Kosten in **Euro**.</help>
+		<text lang="en">What is the amount of non-personnel-costs regarding long-term preservation for the project?</text>
+		<text lang="de">Welche Sachkosten entstehen im Zusammenhang mit Langzeitarchivierung für dieses Projekt?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>float</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit>Euro</unit>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/storage-and-long-term-preservation/long-term-preservation-costs/personnel">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>personnel</key>
+		<path>proposal/storage-and-long-term-preservation/long-term-preservation-costs/personnel</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/preservation/personnel"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/storage-and-long-term-preservation/long-term-preservation-costs"/>
+		<is_collection>False</is_collection>
+		<order>1</order>
+		<help lang="en">Please estimate the effort in person months (1 PM = monthly working time of a full-time employee).</help>
+		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten (1 PM = Monatsarbeitszeit eines Vollzeitbeschäftigten).</help>
+		<text lang="en">What are the personnel costs associated with long-term preservation for the project?</text>
+		<text lang="de">Welcher Personalaufwand entsteht im Zusammenhang mit Langzeitarchivierung für dieses Projekt?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>range</widget_type>
+		<value_type>float</value_type>
+		<maximum>12.0</maximum>
+		<minimum>0.0</minimum>
+		<step>0.1</step>
+		<unit>PM</unit>
+		<optionsets/>
 		<conditions/>
 	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general/project-schedule-schedule">
