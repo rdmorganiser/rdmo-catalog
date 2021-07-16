@@ -7,6 +7,7 @@
 		<order>0</order>
 		<title lang="en">RDMO</title>
 		<title lang="de">RDMO</title>
+		<title lang="fr">RDMO</title>
 	</catalog>
 	<section dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -17,6 +18,7 @@
 		<order>0</order>
 		<title lang="en">General</title>
 		<title lang="de">Allgemein</title>
+		<title lang="fr">Général</title>
 	</section>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/topic-research_question">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -35,6 +37,10 @@
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<title lang="fr">Sujet</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/topic-research_question/title">
@@ -54,6 +60,10 @@
 		<text lang="de">Wie lautet die primäre Forschungsfrage des Projektes?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quelle est la principale thématique de recherche du projet?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -80,6 +90,10 @@
 		<text lang="de">Bitte geben Sie einige Schlagworte zur Forschungsfrage an.</text>
 		<verbose_name lang="de">Schlagwort</verbose_name>
 		<verbose_name_plural lang="de">Schlagwörter</verbose_name_plural>
+		<help lang="fr"/>
+		<text lang="fr">Veuillez donner quelques mots clés décrivant la question de recherche.</text>
+		<verbose_name lang="fr">mot-clé</verbose_name>
+		<verbose_name_plural lang="fr">mots clés</verbose_name_plural>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -106,6 +120,10 @@
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<title lang="fr">Domaine de recherche</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/topic-research_field/research_field">
@@ -125,6 +143,10 @@
 		<text lang="de">Welcher Disziplin / welchen Disziplinen ist das Projekt zuzuordnen?</text>
 		<verbose_name lang="de">Forschungsdisziplin</verbose_name>
 		<verbose_name_plural lang="de">Forschungsdisziplinen</verbose_name_plural>
+		<help lang="fr">La liste des disciplines suivants &lt;a href=&quot;http://www.dfg.de/en/dfg_profile/statutory_bodies/review_boards/subject_areas/index.jsp&quot; target=_blank&quot;&gt; est une classification par sujet du DFG (German Research Foundation)&lt;/a&gt;.</help>
+		<text lang="fr">À quel(s) domaine(s) de recherche ce projet appartient-il?</text>
+		<verbose_name lang="fr">domaine</verbose_name>
+		<verbose_name_plural lang="fr">domaines</verbose_name_plural>
 		<widget_type>select</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -153,6 +175,10 @@
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<title lang="fr">Calendrier du projet</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/project-schedule-schedule/project_start">
@@ -168,10 +194,14 @@
 		<text lang="en">When does the project start?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Geben Sie das voraussichtliche Datum an, falls das Projekt noch nciht gestartet ist.</help>
+		<help lang="de">Geben Sie das voraussichtliche Datum an, falls das Projekt noch nicht gestartet ist.</help>
 		<text lang="de">Wann beginnt die Projektlaufzeit?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quand commence le projet?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>date</widget_type>
 		<value_type>datetime</value_type>
 		<maximum/>
@@ -198,6 +228,10 @@
 		<text lang="de">Wann endet die Projektlaufzeit?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quand se termine le projet?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>date</widget_type>
 		<value_type>datetime</value_type>
 		<maximum/>
@@ -224,6 +258,10 @@
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<title lang="fr">Coordination du projet</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/project-partners-name/name">
@@ -243,6 +281,10 @@
 		<text lang="de">Welche Personen oder Institutionen sind verantwortlich für die Projektkoordination?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quelles personnes ou institutions sont responsables de la coordination du projet?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -269,6 +311,10 @@
 		<help lang="de"/>
 		<verbose_name lang="de">Projektpartner</verbose_name>
 		<verbose_name_plural lang="de">Projektpartner</verbose_name_plural>
+		<title lang="fr">Partenaire du projet</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr">Partenaire du projet</verbose_name>
+		<verbose_name_plural lang="fr">Partenaires du projet</verbose_name_plural>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/project-partners-partner/name">
@@ -288,6 +334,10 @@
 		<text lang="de">Projektpartner</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Partenaire du projet</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -320,6 +370,13 @@
 			Grad an Verbindlichkeit sie haben.</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">
+			De plus en plus d'universités et d'institutions scientifiques adoptent des politiques de gestion des données de recherche. Celles-ci contiennent, entre autres, des recommandations et / ou des exigences concernant le traitement des données de
+			recherche par les chercheurs de l'établissement.</help>
+		<text lang="fr">Votre établissement a-t-il des règles ou des directives pour le traitement des données de recherche? Si oui, veuillez les décrire brièvement et vous référer à des sources d'informations plus détaillées si nécessaire. Veuillez
+			également indiquer si les règles / directives sont obligatoires ou facultatives.</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -346,6 +403,10 @@
 		<text lang="de">Wer ist bei diesem Partner der/die Ansprechpartner/in für das Datenmanagement?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Veuillez donner le nom et une adresse e-mail.</help>
+		<text lang="fr">Qui est/sont la(les) personne(s) de contact pour les questions de gestion des données?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -372,6 +433,10 @@
 		<help lang="de"/>
 		<verbose_name lang="de">Förderer</verbose_name>
 		<verbose_name_plural lang="de">Förderer</verbose_name_plural>
+		<title lang="fr">Financement</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr">Organisme de financement</verbose_name>
+		<verbose_name_plural lang="fr">Organismes de financement</verbose_name_plural>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/funding-funder/name">
@@ -391,6 +456,10 @@
 		<text lang="de">Wer fördert das Projekt?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Qui finance le projet?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -417,6 +486,10 @@
 		<text lang="de">In welcher Förderlinie und/oder welchem Förderprogramm wird das Projekt gefördert?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Le projet fait-il partie d'un programme de financement spécial?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -441,11 +514,18 @@
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Auch Forschungsförderer stellen zunehmend Anforderungen an das Datenmanagement in von ihnen geförderten Projekten. Beispiele sind die &lt;a
 			href=&quot;https://www.dfg.de/foerderung/antrag_gutachter_gremien/antragstellende/nachnutzung_forschungsdaten/index.html&quot; target=&quot;_blank&quot;&gt;DFG-Leitlinien zum Umgang mit Forschungsdaten&lt;/a&gt; oder die &lt;a
-			href=&quot;http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf&quot; target=&quot;_blank&quot;&gt;Guidelines on Data Management in Horizon 2020&lt;/a&gt; der Europäischen Komission.</help>
+			href=&quot;http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf&quot; target=&quot;_blank&quot;&gt;Guidelines on Data Management in Horizon 2020&lt;/a&gt; der Europäischen Komission.
+			Weitere fachspezifische Empfehlungen und Richtlinien zum Umgang mit Forschungsdaten werden beispielsweise von der &lt;a href=&quot;https://www.dfg.de/foerderung/antrag_gutachter_gremien/antragstellende/nachnutzung_forschungsdaten/&quot;
+			target=&quot;_blank&quot;&gt;Deutschen Forschungsgemeinschaft (DFG)&lt;/a&gt; bereitgestellt.</help>
 		<text lang="de">Gibt es von Seiten des Forschungsförderers Vorgaben oder Richtlinien bezüglich des Umgangs mit den im Projekt erhobenen Forschungsdaten? Wenn ja, skizzieren Sie diese kurz und verweisen Sie ggf. auf weiterführende Informationen. Geben
 			Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Les organismes de financement de la recherche spécifient également de plus en plus d'exigences concernant la gestion des données de recherche dans les projets financés.</help>
+		<text lang="fr">L'organisme de financement a-t-il des règles ou des recommandations pour la gestion des données? Si oui, veuillez les décrire brièvement et vous référer à des sources d'informations plus détaillées si nécessaire. Veuillez également
+			indiquer si les règles / directives sont obligatoires ou facultatives.</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -472,6 +552,10 @@
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<title lang="fr">Autres exigences I</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/other-requirements-yesno/yesno">
@@ -483,26 +567,36 @@
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/other-requirements-yesno"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
-    <help lang="en">Examples of discipline-specific requirements</help>
+    		<help lang="en">Examples of discipline-specific requirements: 
+			
+- &lt;a href=&quot;https://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/guidelines_biodiversity_research.pdf&quot; target=&quot;_blank&quot;&gt;Guidelines on the Handling of Research Data in Biodiversity Research&lt;/a&gt; 
+			
+- &lt;a href=&quot;https://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/guidelines_review_board_linguistics_corpora.pdf&quot; target=&quot;_blank&quot;&gt;Guidelines by the DFG Review Board on Linguistics Language Corpora&lt;/a&gt;. 
+  
+ Further discipline-specific guidelines on the handling of Research Data are provided by the &lt;a href=&quot;https://www.dfg.de/en/research_funding/proposal_review_decision/applicants/research_data/index.html&quot; target=&quot;_blank&quot;&gt;DFG (German Research Foundation)&lt;/a&gt;.</help>
 		<text lang="en">Are there requirements regarding the data management from other parties (e.g. the scholarly/scientific community)?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Beispiele für fachspezifische Empfehlungen und Richtlinien sind:
+		<help lang="de">Beispiele für fachspezifische Empfehlungen und Richtlinien sind: 
 
-- &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_biodiversitaetsforschung.pdf" target=&quot;_blank&quot;&gt;Richtlinien zum Umgang mit Forschungsdaten in der Biodiversitätsforschung&lt;/a&gt;
+- &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_biodiversitaetsforschung.pdf&quot; target=&quot;_blank&quot;&gt;Richtlinien zum Umgang mit Forschungsdaten in der Biodiversitätsforschung&lt;/a&gt; 
 
-- Empfehlungen zur &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_bildungsforschung.pdf" target=&quot;_blank&quot;&gt;Bereitstellung und Nutzung quantitativer Daten in der Bildungsforschung&lt;/a&gt;
+- Empfehlungen zur &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_bildungsforschung.pdf&quot; target=&quot;_blank&quot;&gt;Bereitstellung und Nutzung quantitativer Daten in der Bildungsforschung&lt;/a&gt;
 
-- &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/foerderkriterien_editionen_literaturwissenschaft.pdf" target=&quot;_blank&quot;&gt;Förderkriterien für wissenschaftliche Editionen in der Literaturwissenschaft&lt;/a&gt;
+- &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/foerderkriterien_editionen_literaturwissenschaft.pdf&quot; target=&quot;_blank&quot;&gt;Förderkriterien für wissenschaftliche Editionen in der Literaturwissenschaft&lt;/a&gt; 
 
-- Empfehlungen zu
+- Empfehlungen zu 
 
-	- &lt;a href="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_sprachkorpora.pdf" target=&quot;_blank&quot;&gt;datentechnischen Standards und Tools&lt;/a&gt; sowie zu
-
-	- &lt;a href="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf" target=&quot;_blank&quot;&gt;rechtlichen Fragen&lt;/a&gt; bei der Erhebung von Sprachkorpora</help>
-		<text lang="de">Gibt es von weiteren Seiten (z.B. von der Fachcommunity) Anforderungen an das Datenmanagement, die beachtet werden müssen?</text>
+  - &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_sprachkorpora.pdf&quot; target=&quot;_blank&quot;&gt;datentechnischen Standards und Tools&lt;/a&gt; sowie zu 
+    
+  - &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=&quot;_blank&quot;&gt;rechtlichen Fragen&lt;/a&gt; bei der Erhebung von Sprachkorpora. Weitere fachspezifische Empfehlungen und Richtlinien zum Umgang mit Forschungsdaten werden beispielsweise von der &lt;a href=&quot;https://www.dfg.de/foerderung/antrag_gutachter_gremien/antragstellende/nachnutzung_forschungsdaten/&quot; target=&quot;_blank&quot;&gt;Deutschen Forschungsgemeinschaft (DFG)&lt;/a&gt; bereitgestellt.</help>
+		<text lang="de">Gibt es von weiteren Seiten (z. B. von der Fachcommunity) Anforderungen an das Datenmanagement, die beachtet werden müssen?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Exemples d'exigences propres à une discipline</help>
+		<text lang="fr">Existe-t-il des exigences concernant la gestion des données d'autres parties (par exemple, la communauté universitaire / scientifique)?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>radio</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
@@ -531,6 +625,10 @@
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<title lang="fr">Autres exigences II</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<conditions>
 			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/additional_rdm_policy"/>
 		</conditions>
@@ -552,6 +650,10 @@
 		<text lang="de">Welche Anforderungen an das Datenmanagement sind dies?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Veuillez les décrire brièvement et vous référer à des sources d'informations plus détaillées si nécessaire. Veuillez également indiquer si les règles / directives sont obligatoires ou facultatives.</help>
+		<text lang="fr">Quelles sont ces exigences supplémentaires concernant la gestion des données?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -570,6 +672,7 @@
 		<order>1</order>
 		<title lang="en">Content classification</title>
 		<title lang="de">Inhaltliche Einordnung</title>
+		<title lang="fr">Classification du contenu</title>
 	</section>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/content-classification/data-dataset">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -582,10 +685,7 @@
 		<order>1</order>
 		<title lang="en">Datasets</title>
 		<help lang="en">The following questions collect information on the data that is produced or used in the project. They also help to estimate the value of the data in terms of potential re-use and long-term preservation. Before data is newly created,
-			it is advisable to check if there is existing data that could be re-used. This way, redundant collection or creation of research data is prevented. This saves efforts and costs. Furthermore, in the case of personal data, the principles of the General
-			Data Protection Regulation (&lt;a href=&quot;https://gdpr-info.eu/&quot; target=&quot;_blank&quot;&gt;GDPR&lt;/a&gt;) like data minimisation (&lt;a href=&quot;https://gdpr-info.eu/art-5-gdpr/&quot; target=&quot;_blank&quot;&gt;Art.5 Section 1&lt;/a&gt;) and in
-			Germany the Bundesdatenschutzgesetz (&lt;a =&quot;https://dsgvo-gesetz.de/bdsg/&quot; target=&quot;_blank&quot;&gt; BDSG&lt;/a&gt;) apply. The information regarding the data collected, produced or used in the project is gathered along datasets. The of
-			these datasets is an important conceptional decision that has to be made individually and carefully for each project.</help>
+			it is advisable to check if there is existing data that could be re-used. This way, redundant collection or creation of research data is prevented. This saves efforts and costs.</help>
 		<verbose_name lang="en">dataset</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
 		<title lang="de">Datensätze</title>
@@ -593,9 +693,15 @@
 			können. Vor der Erzeugung von Daten empfiehlt es sich zu prüfen, ob bereits vorhandene Daten nachgenutzt werden können. Die Vermeidung doppelter Erhebungen spart Aufwand und Kosten. Handelt es sich um personenbezogene Daten, gelten die Grundsätze der
 			EU-Datenschutzgrundverordnung (&lt;a href=&quot;https://dsgvo-gesetz.de/&quot; target=&quot;_blank&quot;&gt;DSGVO&lt;/a&gt;) wie z.B. Datenminimierung (&lt;a href=&quot;https://dsgvo-gesetz.de/art-5-dsgvo/&quot; target=&quot;_blank&quot;&gt;Art.5
 			Abs.1&lt;/a&gt;) und das Bundesdatenschutzgesetz (&lt;a =&quot;https://dsgvo-gesetz.de/bdsg/&quot; target=&quot;_blank&quot;&gt;BDSG&lt;/a&gt;). Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Datensätzen“ strukturiert. Die
-			Definition dessen, was jeweils ein ist, ist eine wichtige konzeptionelle Entscheidung, die für jedes Vorhaben bzw. Projekt individuell getroffen und sorgfältig abgewogen werden muss.</help>
+			Definition dessen, was jeweils ein Datensatz ist, ist eine wichtige konzeptionelle Entscheidung, die für jedes Vorhaben bzw. Projekt individuell getroffen und sorgfältig abgewogen werden muss.</help>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<title lang="fr">jeux de données</title>
+		<help lang="fr">Les questions suivantes collectent des informations sur les données produites ou utilisées dans le projet. Ils aident également à estimer la valeur des données en termes de réutilisation potentielle et de conservation à long terme.
+
+Avant de créer de nouvelles données, il est conseillé de vérifier s'il existe des données existantes qui pourraient être réutilisées. De cette façon, la collecte ou la création de données de recherche redondantes est empêchée. Cela permet d'économiser des efforts et des coûts.</help>
+		<verbose_name lang="fr">jeu de données</verbose_name>
+		<verbose_name_plural lang="fr">jeux de données</verbose_name_plural>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/content-classification/data-dataset/description">
@@ -627,6 +733,16 @@
 		<text lang="de">Um was für einen Datensatz handelt es sich?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Veuillez décrire brièvement le type de données et/ou la méthode utilisée pour créer ou collecter les données, par exemple:
+			
+* enquête quantitative en ligne 
+			
+* modèle 3D / reconstruction numérique d'une colonie de l'âge de pierre 
+			
+* logiciel développé dans le cadre du projet</help>
+		<text lang="fr">De quel type de jeu de données s'agit-il?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -653,6 +769,10 @@
 		<help lang="de"/>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<title lang="fr">Origine des données</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr">jeu de données</verbose_name>
+		<verbose_name_plural lang="fr">jeux de données</verbose_name_plural>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/content-classification/data-existing_data/origin">
@@ -672,6 +792,10 @@
 		<text lang="de">Wird der Datensatz selbst erzeugt oder nachgenutzt?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Le jeu de données est-il en cours de création ou de réutilisation?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>radio</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -700,6 +824,10 @@
 		<text lang="de">Wenn nachgenutzt, wer hat den Datensatz erzeugt?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">S'il est réutilisé, qui a créé le jeu de données?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -726,6 +854,10 @@
 		<text lang="de">Wenn nachgenutzt, unter welcher Adresse, PID oder URL ist der Datensatz verfügbar?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">S'il est réutilisé, sous quelle adresse, PID ou URL le jeu de données peut-il être trouvé?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -752,6 +884,10 @@
 		<help lang="de"/>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<title lang="fr">Réutilisation</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr">jeu de données</verbose_name>
+		<verbose_name_plural lang="fr">jeux de données</verbose_name_plural>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/content-classification/data-reuse/scenario">
@@ -763,7 +899,7 @@
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/content-classification/data-reuse"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en">It is important to set the fundamental course as to whether or not the data will be permitted for reuse. Of course, the potential for subsequent use can not be the sole decision criterion, but legal impediments, such as privacy,
+		<help lang="en">It is important to set the fundamental course as to whether or not the data will be permitted for reuse. Of course, the potential for subsequent use can not be the sole decision criterion, but legal impediments, such as Privacy,
 			copyright and business secrets must be taken into account. Otherwise, consider the re-use potential against the disadvantages, e.g. a decrease in the readiness to participate and the expected extra effort of a data publication.</help>
 		<text lang="en">Which individuals, groups or institutions could be interested in re-using this dataset? What are possible scenarios?</text>
 		<verbose_name lang="en"/>
@@ -774,6 +910,10 @@
 		<text lang="de">Für welche Personen, Gruppen oder Institutionen könnte dieser Datensatz (für die Nachnutzung) von Interesse sein? Welche Konsequenzen hat das Nachnutzungspotential später für die Bereitstellung der Daten?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quels individus, groupes ou institutions pourraient être intéressés à réutiliser ce jeu de données? Quels sont les scénarios possibles?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -800,6 +940,10 @@
 		<help lang="de"/>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<title lang="fr">Reproductibilité</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr">jeu de données</verbose_name>
+		<verbose_name_plural lang="fr">jeux de données</verbose_name_plural>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/content-classification/data-reproducibility/reproducibility">
@@ -811,21 +955,24 @@
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/content-classification/data-reproducibility"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
-		<help lang="en">Some data can, technically, be created anew at any time, as is the case with scientific experiments or digitised versions of analog objects (as long as the originals are still there and in good shape). However, this can consume a
-			considerable amount of time and cost. With respect to long-term preservation, the effort of re-creation has to be weighed up against the effort of long-term preservation. Other data cannot be collected or created anew. Examples are all kinds of
-			&quot;time stamped&quot; observations, be they from social science, astrophysics or any other discipline. Observations represent a certain phenomenon at a certain time and / or place and are therefore not repeatable. Their value for re-use as well as
-			the loss in case of failed preservation is much higher than that of reproducible data.</help>
+		<help lang="en">Some data can, technically, be created anew at any time, as is the case with scientific experiments or digitised versions of analog objects (as long as the originals are still there and in good shape). However, this can consume a considerable amount of time and cost. With respect to long-term preservation, the effort of re-creation has to be weighed up against the effort of long-term preservation. 
+			
+Other data cannot be collected or created anew.</help>
 		<text lang="en">Is the dataset reproducible in the sense that it could be created / collected anew in case it got lost?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Manche Daten können im Prinzip jederzeit neu erstellt werden. Beispiele hierfür sind etwa naturwissenschaftliche Experimentdaten oder auch Digitalisate analoger Objekte (solange die Originale nicht verlorengehen). Der Aufwand und die
-			Kosten hierfür können natürlich durchaus beträchtlich sein. Im Hinblick auf die Frage der Notwendigkeit einer späteren Langzeitarchivierung sollte in diesen Fällen der Aufwand einer erneuten Erstellung gegen den Aufwand der Langzeitarchivierung
-			abgewogen werden. Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei jeglicher Art von episodischer Beobachtungen, sei es sozialwissenschaftlicher oder naturwissenschaftlicher Art, der Fall, da diese ein bestimmtes
-			Phänomen an einem bestimmten Zeitpunkt und/oder Ort abbilden und somit i.d.R. nicht wiederholbar sind. Ihr Wert für die Nachnutzung durch andere wie auch der Verlust bei einer nicht erfolgten oder misslungenen Langzeitarchivierung ist ungleich höher
-			als bei reproduzierbaren Daten.</help>
-		<text lang="de">Ist der Datensatz reproduzierbar, d.h. ließe sich er sich, wenn er verloren ginge, erneut erstellen oder erheben?</text>
+		<help lang="de">Manche Daten können im Prinzip jederzeit neu erstellt werden. Beispiele hierfür sind etwa naturwissenschaftliche Experimentdaten oder auch Digitalisate analoger Objekte (solange die Originale nicht verlorengehen). Der Aufwand und die Kosten hierfür können natürlich durchaus beträchtlich sein. Im Hinblick auf die Frage der Notwendigkeit einer späteren Langzeitarchivierung sollte in diesen Fällen der Aufwand einer erneuten Erstellung gegen den Aufwand der Langzeitarchivierung abgewogen werden. 
+		
+Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei jeglicher Art von episodischer Beobachtungen, sei es sozialwissenschaftlicher oder naturwissenschaftlicher Art, der Fall, da diese ein bestimmtes Phänomen an einem bestimmten Zeitpunkt und/oder Ort abbilden und somit i.d.R. nicht wiederholbar sind. Ihr Wert für die Nachnutzung durch andere wie auch der Verlust bei einer nicht erfolgten oder misslungenen Langzeitarchivierung ist ungleich höher als bei reproduzierbaren Daten.</help>
+		<text lang="de">Ist der Datensatz reproduzierbar, d.h. ließe er sich, wenn er verloren ginge, erneut erstellen oder erheben?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Certaines données peuvent, techniquement, être recréées à tout moment, comme c'est le cas avec des expériences scientifiques ou des versions numérisées d'objets analogiques (tant que les originaux sont toujours là et en bon état).
+			
+Cependant, cela peut consommer beaucoup de temps et d'argent. En ce qui concerne la conservation à long terme, l'effort de recréation doit être mis en balance avec l'effort de conservation à long terme. D'autres données ne peuvent pas être collectées ou recréées.</help>
+		<text lang="fr">L'jeu de données est-il reproductible au sens où il pourrait être créé / collecté à nouveau en cas de perte?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>radio</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -846,6 +993,7 @@
 		<order>2</order>
 		<title lang="en">Technical classification</title>
 		<title lang="de">Technische Einordnung</title>
+		<title lang="fr">Classification technique</title>
 	</section>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/technical-classification/data-dates">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -861,9 +1009,13 @@
 		<verbose_name lang="en">dataset</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
 		<title lang="de">Datenerhebung</title>
-		<help lang="de">Geben Sie Zeitangaben an insofern (bereits) bekannt.</help>
+		<help lang="de">Geben Sie Zeitangaben an, sofern diese (bereits) bekannt sind.</help>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<title lang="fr">Collecte de données</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr">jeu de données</verbose_name>
+		<verbose_name_plural lang="fr">jeux de données</verbose_name_plural>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/technical-classification/data-dates/data_collection_start">
@@ -883,6 +1035,10 @@
 		<text lang="de">Wann beginnt die Erhebung bzw. Erstellung der Daten?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quand commence la collecte ou la création de données?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>date</widget_type>
 		<value_type>datetime</value_type>
 		<maximum/>
@@ -909,6 +1065,10 @@
 		<text lang="de">Wann endet die Erhebung bzw. Erstellung der Daten?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quand la collecte ou la création de données prend-elle fin?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>date</widget_type>
 		<value_type>datetime</value_type>
 		<maximum/>
@@ -935,6 +1095,10 @@
 		<text lang="de">Wann beginnt die Datenbereinigung / -aufbereitung?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quand commence le nettoyage / la préparation des données?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>date</widget_type>
 		<value_type>datetime</value_type>
 		<maximum/>
@@ -961,6 +1125,10 @@
 		<text lang="de">Wann endet die Datenbereinigung / -aufbereitung?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quand se termine le nettoyage / la préparation des données?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>date</widget_type>
 		<value_type>datetime</value_type>
 		<maximum/>
@@ -987,6 +1155,10 @@
 		<text lang="de">Wann beginnt die Datenanalyse?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quand l'analyse des données commence-t-elle?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>date</widget_type>
 		<value_type>datetime</value_type>
 		<maximum/>
@@ -1013,6 +1185,10 @@
 		<text lang="de">Wann endet die Datenanalyse?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quand l'analyse des données prend-elle fin?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>date</widget_type>
 		<value_type>datetime</value_type>
 		<maximum/>
@@ -1039,6 +1215,10 @@
 		<help lang="de"/>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<title lang="fr">Volume des données</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr">jeu de données</verbose_name>
+		<verbose_name_plural lang="fr">jeux de données</verbose_name_plural>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/technical-classification/data-volume/volume">
@@ -1058,6 +1238,10 @@
 		<text lang="de">Was ist die tatsächliche oder erwartete Größe des Datensatzes?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quelle est la taille actuelle ou attendue du jeu de données?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>radio</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
@@ -1086,6 +1270,10 @@
 		<text lang="de">Wie hoch ist die erwartete Erzeugungsrate der Daten pro Jahr?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Optionnel. Cela n'est concerné que si le taux de production des données atteint l'échelle de TB.</help>
+		<text lang="fr">Combien de données sont produites par an?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>text</widget_type>
 		<value_type>integer</value_type>
 		<maximum/>
@@ -1112,6 +1300,10 @@
 		<help lang="de"/>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<title lang="fr">Formats</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr">jeu de données</verbose_name>
+		<verbose_name_plural lang="fr">jeux de données</verbose_name_plural>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/technical-classification/data-formats/format">
@@ -1131,10 +1323,14 @@
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bei der Wahl des Dateiformates sollten auch die Konsequenzen für die kollaborative Nutzung, die Langzeitarchivierung sowie die Nachnutzung beachtet werden. Es empfiehlt sich, möglichst standardisierte, nicht-proprietäre und allgemein
 			bzw. in der spezifischen Community verbreitete Formate zu nutzen. Weitere Kriterien sowie detaillierte Erläuterungen sind z.B. im &lt;a href=&quot;https://www.forschungsdaten.org/images/b/b0/Leitfaden_Data-Management-WissGrid.pdf&quot;
-			target=&quot;_blank&quot;&gt;WissGrid-Leitfaden, S. 22 f.&lt;/a&gt;) zu finden.</help>
+			target=&quot;_blank&quot;&gt;WissGrid-Leitfaden, S. 22 f.&lt;/a&gt; zu finden.</help>
 		<text lang="de">In welchen Formaten liegen die Daten vor?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Lors du choix d'un format de données, il convient de tenir compte des conséquences pour l'utilisation collaborative, la conservation à long terme ainsi que la réutilisation. Il est conseillé de préférer des formats standardisés, ouverts, non propriétaires et bien établis dans la communauté respective.</help>
+		<text lang="fr">Quels formats de fichiers sont utilisés?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -1161,6 +1357,10 @@
 		<help lang="de"/>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<title lang="fr">Outils</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr">jeu de données</verbose_name>
+		<verbose_name_plural lang="fr">jeux de données</verbose_name_plural>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/technical-classification/data-tools/creation_methods">
@@ -1172,13 +1372,24 @@
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/technical-classification/data-tools"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en">This information is necessary to be able to reconstruct the process by which the data was generated. It is also a prerequisite to judge the objectivity, reliability and validity of the dataset. For reproducible data, it is also
-			required to re-generate the data if need be.</help>
+		<help lang="en">This information is necessary to be able to reconstruct the process by which the data was generated. It is also a prerequisite to judge the objectivity, reliability and validity of the dataset. 
+			
+For reproducible data, it is also required to re-generate the data if necessary.</help>
 		<text lang="en">Which tools, software, technologies or processes are used to generate or collect the data?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de">Diese Informationen sind für alle Arten von Daten relevant, um ihre Genese nachvollziehen zu können. 
+			
+Bei reproduzierbaren Daten kommt ein weiterer Aspekt hinzu. Diese müssen nicht notwendigerweise aufbewahrt werden - allerdings müssen alle Geräte, Software und auch Informationen über die Vorgehensweise erhalten bleiben, die notwendig sind, um die Daten erneut erstellen zu können.</help>
+		<text lang="de">Welche Instrumente, Software, Technologien oder Verfahren werden zur Erzeugung oder Erfassung der Daten genutzt?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Ces informations sont nécessaires pour pouvoir reconstruire le processus par lequel les données ont été générées. C'est également une condition préalable pour juger de l'objectivité, de la fiabilité et de la validité du jeu de données. 
+			
+Pour les données reproductibles, il est également nécessaire pour recréer les données si nécessaire.</help>
+		<text lang="fr">Quels outils, logiciels, technologies ou processus sont utilisés pour générer ou collecter les données?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -1209,6 +1420,12 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<text lang="de">Welche Software, Verfahren oder Technologien sind notwendig, um die Daten zu nutzen?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Pour pouvoir réutiliser les données (par exemple pour répliquer des études, pour une méta-analyse ou pour résoudre de nouvelles questions de recherche), ainsi que les données, le logiciel, l'équipement et les connaissances sur les méthodes spéciales d'utilisation des données sont nécessaires. 
+			
+Tout comme pour les formats, la recommandation est: plus ils sont standardisés, ouverts et établis, mieux ils sont réutilisables.</help>
+		<text lang="fr">Quels logiciels, processus ou technologies sont nécessaires pour utiliser les données?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -1235,6 +1452,10 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<text lang="de">Wird die Dokumentation von ggf. zur Nutzung notwendiger Software benötigt, um die Daten zu nutzen?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Une documentation sur les logiciels pertinents est-elle nécessaire pour utiliser les données?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>yesno</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
@@ -1261,6 +1482,10 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<help lang="de"/>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<title lang="fr">Versioning</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr">jeu de données</verbose_name>
+		<verbose_name_plural lang="fr">jeux de données</verbose_name_plural>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/technical-classification/data-versioning/yesno">
@@ -1280,6 +1505,10 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<text lang="de">Werden verschiedene Versionen des Datensatzes erzeugt?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Des versions différentes du jeu de données sont-elles créées?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>yesno</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
@@ -1306,6 +1535,11 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<text lang="de">Welche Versionierungsstrategie wird für diesen Datensatz angewandt?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Veuillez décrire brièvement les réglementations internes au projet pour la gestion des versions des jeux de données (par exemple: quels types de modifications nécessitent une nouvelle version? Comment les modifications sont-elles
+			documentées? Quelles sont les règles de dénomination pour les différentes versions?)</help>
+		<text lang="fr">Quelle stratégie de version est appliquée pour cet jeu de données?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -1332,6 +1566,10 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<text lang="de">Welche Technologie bzw. welches Tool wird zur Versionierung verwendet?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quelle technologie ou quel outil est utilisé pour le contrôle de version?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>radio</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -1352,6 +1590,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<order>3</order>
 		<title lang="en">Data usage</title>
 		<title lang="de">Datennutzung</title>
+		<title lang="fr">Utilisation de données</title>
 	</section>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/scenarios-usage">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1363,14 +1602,17 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<is_collection>True</is_collection>
 		<order>0</order>
 		<title lang="en">Usage scenarios</title>
-		<help lang="en">The following questions will help to estimate, which ressources are necessary to enable the envisioned data usage scenarios during the project. These can be technical / IT resources as well as expertise brought in by e.g. data or IT experts.</help>
+		<help lang="en">The following questions will help to estimate, which ressources are necessary to enable the envisioned data usage scenarios during the project. These can be technical / IT resources as well as expertise brought in by e.g. data management or IT experts.</help>
 		<verbose_name lang="en">dataset</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
 		<title lang="de">Nutzungsszenarien</title>
-		<help lang="de">Die folgenden Fragen dienen dazu einzuschätzen, welche Ressourcen für die geplante Nutzung der Daten während der Projektlaufzeit nötig sind. Dabei kann es sich um technische bzw. IT-Ressourcen handeln, aber auch um Expertise, die z.B.
-			Datenmanagement- oder IT-ExpertInnen eingebracht wird.</help>
+		<help lang="de">Die folgenden Fragen dienen dazu einzuschätzen, welche Ressourcen für die geplante Nutzung der Daten während der Projektlaufzeit nötig sind. Dabei kann es sich um technische bzw. IT-Ressourcen handeln, aber auch um Expertise, die z.B. durch Datenmanagement- oder IT-ExpertInnen eingebracht wird.</help>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<title lang="fr">Scénarios d'utilisation</title>
+		<help lang="fr">Les questions suivantes aideront à estimer les ressources nécessaires pour permettre les scénarios d'utilisation des données envisagés pendant le projet. Il peut s'agir de ressources techniques / informatiques ainsi que de l'expertise apportée par ex. experts en gestion de données ou en informatique.</help>
+		<verbose_name lang="fr">jeu de données</verbose_name>
+		<verbose_name_plural lang="fr">jeux de données</verbose_name_plural>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/scenarios-usage/description">
@@ -1390,6 +1632,10 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<text lang="de">Wozu / wie wird dieser Datensatz während des Projektes genutzt?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Comment / dans quel but ce jeu de données sera-t-il utilisé pendant le projet?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -1416,6 +1662,10 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<text lang="de">Wie häufig wird dieser Datensatz genutzt?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">À quelle fréquence ce jeu de données sera-t-il utilisé?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -1442,6 +1692,10 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<text lang="de">In welchem Umfang werden Infrastrukturressourcen benötigt (CPU-Stunden, Bandbreite, Speicherplatz etc.)?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Dans quelle mesure les ressources d'infrastructure seront-elles nécessaires (par exemple, heures CPU, bande passante, espace de stockage ... etc.).</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>radio</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -1470,6 +1724,10 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<text lang="de">Gibt es beabsichtigte (ggf. auch potentielle) Nutzungsszenarien, für die die Unterstützung durch Datenmanagement- oder IT-ExpertInnen sinnvoll oder notwendig ist?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Existe-t-il des scénarios d'utilisation réels ou potentiels qui pourraient bénéficier de l'assistance d'un expert en gestion de données ou en informatique, ou qui nécessitent même une telle assistance?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>radio</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -1496,6 +1754,10 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
 		<title lang="de">Datenorganisation</title>
 		<help lang="de"/>
+		<title lang="fr">Organisation des données</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr">jeu de données</verbose_name>
+		<verbose_name_plural lang="fr">jeux de données</verbose_name_plural>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
@@ -1517,6 +1779,10 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<text lang="de">Wo wird der Datensatz während des Projektes gespeichert?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Où le jeu de données est-il stocké pendant le projet?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -1543,6 +1809,10 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<text lang="de">Unter welcher URL kann der Datensatz während des Projektes abgerufen werden?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Sous quelle URL le jeu de données peut-il être consulté pendant le projet?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -1562,13 +1832,17 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<is_collection>False</is_collection>
 		<order>3</order>
 		<help lang="en"/>
-		<text lang="en">Are there internal project guidelines for a consistent organisation of the data? If so, where they are documented?</text>
+		<text lang="en">Are there internal project guidelines for a consistent organisation of the data? If so, where are they documented?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Gibt es projektinterne Richtlinien zur einheitlichen Organisation der Daten? Wenn ja, wo sind diese festgehalten?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Existe-t-il des directives internes du projet pour une organisation cohérente des données? Si oui, où sont-ils documentés?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>radio</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -1597,6 +1871,10 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<text lang="de">Gibt es eine projektinterne Richtlinie zur Benennung der Daten? Wenn ja, bitte skizzieren Sie sie kurz und verlinken Sie ggf. zu einer ausführlicheren Dokumentation.</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Existe-t-il une directive de projet interne pour nommer les données? Dans l'affirmative, veuillez brièvement décrire les conventions de dénomination et, si nécessaire, un lien vers la documentation.</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>radio</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -1625,6 +1903,10 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<help lang="de"/>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<title lang="fr">Stockage et sécurité des données</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr">jeu de données</verbose_name>
+		<verbose_name_plural lang="fr">jeux de données</verbose_name_plural>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-storage-and-security-data_security/access_permissions">
