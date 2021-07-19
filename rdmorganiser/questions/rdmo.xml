@@ -1926,6 +1926,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="de">Wer darf auf den Datensatz zugreifen?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Qui est autorisé à accéder au jeu de données?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -1952,6 +1956,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="de">Wie und wie oft werden Backups der Daten erstellt?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Cette question fait référence aux sauvegardes pendant le traitement des données. Les questions de conservation à long terme seront traitées dans la section correspondante.</help>
+		<text lang="fr">Comment et à quelle fréquence les sauvegardes des données seront-elles créées?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -1978,6 +1986,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="de">Wer ist verantwortlich für die Erstellung der Backups?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Cette question fait référence aux sauvegardes pendant le traitement des données. Les questions de conservation à long terme seront traitées dans la section correspondante.</help>
+		<text lang="fr">Qui est responsable des sauvegardes?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -2004,6 +2016,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="de">Welche Maßnahmen zur Gewährleistung der Datensicherheit werden getroffen (z.B. Schutz vor unbefugtem Zugriff, Datenwiederherstellung, Übertragung sensibler Daten)?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quelles mesures ou dispositions sont en place pour garantir la sécurité des données (par exemple, la protection contre les accès non autorisés, la récupération de données, le transfert de données sensibles)?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -2030,6 +2046,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<help lang="de"/>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<title lang="fr">Interopérabilité</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr">jeu de données</verbose_name>
+		<verbose_name_plural lang="fr">jeux de données</verbose_name_plural>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use-interoperability/interoperability">
@@ -2049,6 +2069,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="de">Ist der Datensatz interoperabel, d.h. geeignet für den Datenaustausch und die Nachnutzung zwischen bzw. von unterschiedlichen Forschenden, Institutionen, Organisationen und Ländern?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Cet jeu de données est-il interopérable, c'est-à-dire permettant l'échange et la réutilisation de données entre chercheurs, institutions, organisations, pays, etc.?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>checkbox</widget_type>
 		<value_type>option</value_type>
 		<maximum/>
@@ -2077,6 +2101,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<help lang="de"/>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<title lang="fr">Partage et réutilisation des données</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr">jeu de données</verbose_name>
+		<verbose_name_plural lang="fr">jeux de données</verbose_name_plural>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use-publication/yesno">
@@ -2096,6 +2124,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="de">Soll dieser Datensatz veröffentlicht oder geteilt werden?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Ce jeu de données sera-t-il publié ou partagé?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>radio</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
@@ -2124,6 +2156,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="de">Wenn nicht, begründen Sie dies bitte und unterscheiden Sie dabei zwischen rechtlichen und/oder vertraglichen Gründen und freiwilligen Einschränkungen.</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Si non, veuillez expliquer pourquoi. Veuillez différencier les raisons légales et contractuelles des restrictions volontaires.</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -2142,7 +2178,7 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use-publication"/>
 		<is_collection>True</is_collection>
 		<order>3</order>
-		<help lang="en">The options refer to the licenses of the &lt;a href=&quot;https://creativecommons.org/share-your-work/licensing-types-examples/&quot; target=&quot;_blank&quot;&gt;Creative Commons family&lt;/a&gt;.</help>
+		<help lang="en">The options refer to the &lt;a href=&quot;https://creativecommons.org/licenses/?lang=en&quot; target=&quot;_blank&quot;&gt;Creative Commons copyright licenses&lt;/a&gt;.</help>
 		<text lang="en">If yes, under which terms of use or license will the dataset be published or shared?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -2150,6 +2186,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="de">Wenn ja, unter welchen Nutzungsbedingungen oder welcher Lizenz sollen die Daten veröffentlicht bzw. geteilt werden?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Les options se réfèrent aux licences de creativecommons.org</help>
+		<text lang="fr">Si oui, selon quelles conditions d'utilisation ou de licence le jeu de données sera-t-il publié ou partagé?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>checkbox</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -2178,6 +2218,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="de">Sollte die Nachnutzung dieses Datensatzes Einschränkungen unterliegen, erläutern Sie bitte die Gründe.</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">S'il existe des restrictions sur la réutilisation de cet jeu de données, veuillez expliquer pourquoi.</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -2204,6 +2248,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="de">Wann werden die Daten veröffentlicht?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quand les données seront-elles publiées (si elles le sont)?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>date</widget_type>
 		<value_type>datetime</value_type>
 		<maximum/>
@@ -2232,6 +2280,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<help lang="de"/>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<title lang="fr">Travail collaboratif</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr">jeu de données</verbose_name>
+		<verbose_name_plural lang="fr">jeux de données</verbose_name_plural>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/collaborative-work-collaboration/yesno">
@@ -2251,6 +2303,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="de">Werden die Daten kollaborativ genutzt?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Les données seront-elles utilisées en collaboration?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>radio</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -2279,6 +2335,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="de">Welche Plattform, welche Werkzeuge werden zum kollaborativen Arbeiten an Daten und Publikationen genutzt?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quelle plateforme / quels outils sont / sont utilisés pour travailler en collaboration sur les données et les publications?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -2305,6 +2365,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="de">Wie ist das kollaborative Arbeiten an denselben Dateien geregelt?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Comment le travail collaboratif sur les mêmes fichiers est-il organisé?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -2331,6 +2395,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<help lang="de"/>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<title lang="fr">Contrôle de la qualité</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr">jeu de données</verbose_name>
+		<verbose_name_plural lang="fr">jeux de données</verbose_name_plural>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/quality-assurance-dataset/measures">
@@ -2350,6 +2418,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="de">Welche Maßnahmen zur Qualitätssicherung werden für diesen Datensatz ergriffen?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quelles mesures de contrôle de la qualité sont prises pour ce jeu de données?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -2377,6 +2449,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<title lang="fr">Intégration de données</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/quality-assurance-integration/integration">
@@ -2389,14 +2465,18 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/quality-assurance-integration"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
-		<help lang="en">For example, how are the origin and quality of the data documented?</help>
+		<help lang="en">For example, how is the origin and quality of the data documented?</help>
 		<text lang="en">Is the integration between the re-used and newly created data ensured? If yes, by which means?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Wie wird z.B. Herkunft und Qualität der Daten dokumentiert?</help>
+		<help lang="de">Wie wird z. B. Herkunft und Qualität der Daten dokumentiert?</help>
 		<text lang="de">Wird die Integration zwischen nachgenutzten und erzeugten Daten gewährleistet? Wenn ja, wie?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">L'intégration entre les données réutilisées et nouvellement créées est-elle assurée? Si oui, par quels moyens?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -2423,6 +2503,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<title lang="fr">Coûts</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/costs-dataset/creation_personnel">
@@ -2434,14 +2518,18 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/costs-dataset"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en">Please estimate the effort in person months ( 1 PM = monthly working time of a full-time employee).</help>
+		<help lang="en">Please estimate the effort in person months.</help>
 		<text lang="en">What are the personnel costs for data management associated with the creation or acquisition of data in the project?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten ( 1 PM = Monatsarbeitszeit eines Vollzeitbeschäftigten).</help>
+		<help lang="de">Bitte schätzen Sie den Aufwand in Personenmonaten (1 PM = Monatsarbeitszeit eines Vollzeitbeschäftigten).</help>
 		<text lang="de">Welcher Personalaufwand für das Datenmanagement entsteht im Rahmen der Erhebung, Erstellung oder Akquise der Daten im Projekt?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Veuillez estimer l'effort en mois-personnes.</help>
+		<text lang="fr">Quels sont les frais de personnel pour la gestion des données associés à la création ou à l'acquisition de données dans le projet?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>range</widget_type>
 		<value_type>float</value_type>
 		<maximum>12.0</maximum>
@@ -2464,10 +2552,14 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="en">What is the amount of non-personnel-costs for data management associated with the creation or acquisiton of data in the project?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Bitte schätzen sie die Kosten in **Euro**.</help>
+		<help lang="de">Bitte schätzen Sie die Kosten in **Euro**.</help>
 		<text lang="de">Welche Sachkosten für das Datenmanagement entstehen im Rahmen der Erhebung, Erstellung oder Akquise der Daten im Projekt?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Veuillez estimer l'effort en **Euro**.</help>
+		<text lang="fr">Quel est le montant des dépenses non liées au personnel pour la gestion des données associées à la création ou à l'acquisition de données dans le projet?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>text</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
@@ -2488,14 +2580,18 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/costs-dataset"/>
 		<is_collection>False</is_collection>
 		<order>3</order>
-		<help lang="en">Please estimate the effort in person months ( 1 PM = monthly working time of a full-time employee).</help>
+		<help lang="en">Please estimate the effort in person months.</help>
 		<text lang="en">What are the personnel costs for data management associated with the the usage of data in the project?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten. (1 PM = Monatsarbeitszeit eines Vollzeitbeschäftigten)</help>
+		<help lang="de">Bitte schätzen Sie den Aufwand in Personenmonaten (1 PM = Monatsarbeitszeit eines Vollzeitbeschäftigten).</help>
 		<text lang="de">Welcher Personalaufwand für das Datenmanagement entsteht im Zusammenhang mit der Nutzung der Daten im Projekt?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Veuillez estimer l'effort en mois-personne.</help>
+		<text lang="fr">Quels sont les coûts de personnel pour la gestion des données associés à l'utilisation des données dans le projet?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>range</widget_type>
 		<value_type>float</value_type>
 		<maximum>12.0</maximum>
@@ -2518,10 +2614,14 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="en">What is the amount of non-personnel-costs for data management associated with the usage of data in the project?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Bitte schätzen sie die Kosten in **Euro**.</help>
+		<help lang="de">Bitte schätzen Sie die Kosten in **Euro**.</help>
 		<text lang="de">Welche Sachkosten für das Datenmanagement entstehen im Zusammenhang mit der Nutzung der Daten im Projekt?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Veuillez estimer les coûts en **Euro**.</help>
+		<text lang="fr">Quel est le montant des dépenses non liées au personnel pour la gestion des données associées à l'utilisation des données dans le projet?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>text</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
@@ -2540,14 +2640,18 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/costs-dataset"/>
 		<is_collection>False</is_collection>
 		<order>5</order>
-		<help lang="en">Please estimate the effort in person months ( 1 PM = monthly working time of a full-time employee).</help>
+		<help lang="en">Please estimate the effort in person months.</help>
 		<text lang="en">What are the personnel costs associated with data storage and data security in the project?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten. (1 PM = Monatsarbeitszeit eines Vollzeitbeschäftigten)</help>
+		<help lang="de">Bitte schätzen Sie den Aufwand in Personenmonaten. (1 PM = Monatsarbeitszeit eines Vollzeitbeschäftigten).</help>
 		<text lang="de">Welcher Personalaufwand entsteht im Zusammenhang mit der Speicherung der Daten und Maßnahmen zur Datensicherheit während des Projektes?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Veuillez estimer l'effort en mois-personne.</help>
+		<text lang="fr">Quels sont les coûts de personnel associés au stockage et à la sécurité des données dans le projet?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>range</widget_type>
 		<value_type>float</value_type>
 		<maximum>12.0</maximum>
@@ -2570,10 +2674,14 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="en">What is the amount of non-personnel costs associated with the storage of the data sets during the project?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Bitte schätzen sie die Kosten in **Euro**.</help>
+		<help lang="de">Bitte schätzen Sie die Kosten in **Euro**.</help>
 		<text lang="de">Welche Sachkosten entstehen im Zusammenhang mit der Speicherung der Datensätze während des Projektes?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Veuillez estimer les coûts en **Euro**.</help>
+		<text lang="fr">Quel est le montant des dépenses non liées au personnel associées au stockage des jeux de données pendant le projet?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>text</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
@@ -2592,6 +2700,7 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<order>4</order>
 		<title lang="en">Metadata and referencing</title>
 		<title lang="de">Metadaten und Referenzierung</title>
+		<title lang="fr">Métadonnées et référencement</title>
 	</section>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/metadata-and-referencing/metadata-dataset">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -2610,6 +2719,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<help lang="de"/>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<title lang="fr">Métadonnées</title>
+		<help lang="fr"/>
+		<verbose_name lang="fr">jeu de données</verbose_name>
+		<verbose_name_plural lang="fr">jeux de données</verbose_name_plural>
 		<conditions/>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/metadata-and-referencing/metadata-dataset/scope">
@@ -2629,6 +2742,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="de">Welche Informationen sind für Außenstehende notwendig, um die Daten zu verstehen (d.h. ihre Erhebung bzw. Entstehung, Analyse sowie die auf ihrer Basis gewonnenen Forschungsergebnisse nachvollziehen) und nachnutzen zu können?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quelles informations sont nécessaires aux autres parties pour comprendre les données (c'est-à-dire pour comprendre leur collecte ou leur création, les résultats d'analyse et de recherche obtenus sur leur base) et pour les réutiliser?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>checkbox</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -2657,6 +2774,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="de">Welche Standards, Ontologien, Klassifikationen etc. werden zur Beschreibung der Daten und Kontextinformation genutzt?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quelles normes, ontologies, classifications, etc. sont utilisées pour décrire les données et les informations contextuelles?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>checkbox</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -2685,6 +2806,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="de">Sollte es unvermeidbar sein, projektspezifische oder seltene Ontologien, Metadatenschemata oder Vokabulare zu nutzen, werden Mappings zu gängigen Ontologien etc. erstellt?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr">Ces informations sont nécessaires pour un plan de gestion des données Horizon 2020.</help>
+		<text lang="fr">Dans le cas où il est inévitable que vous utilisiez des outils peu courants ou que vous génériez des ontologies ou des vocabulaires spécifiques au projet, fournirez-vous des mappages à des ontologies plus couramment utilisées?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>yesno</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
@@ -2711,6 +2836,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="de">Welche Metadaten werden automatisch erhoben?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quelles métadonnées sont collectées automatiquement?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -2733,10 +2862,14 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="en">Which metadata are collected semi-automatically?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Welche Metadaten werden durch den Computer / die Software automatisch erhoben, müssen aber überprüft werden?</help>
+		<help lang="de">Welche Metadaten werden also durch den Computer / die Software automatisch erhoben, müssen aber überprüft werden?</help>
 		<text lang="de">Welche Metadaten werden semi-automatisch erhoben?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quelles métadonnées sont collectées semi-automatiquement?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -2759,10 +2892,14 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="en">Which metadata are collected manually?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Dafür bietet sich ein Metadaeneditor an.</help>
+		<help lang="de">Dafür bietet sich ein Metadateneditor an.</help>
 		<text lang="de">Welche Metadaten werden manuell erhoben?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Quelles métadonnées sont collectées manuellement?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -2789,6 +2926,10 @@ Tout comme pour les formats, la recommandation est: plus ils sont standardisés,
 		<text lang="de">Werden Metadaten und Kontextinformation auf Korrektheit und Vollständigkeit geprüft?</text>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr">Les métadonnées et les informations contextuelles sont-elles vérifiées pour leur exactitude et leur exhaustivité?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
 		<widget_type>checkbox</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
