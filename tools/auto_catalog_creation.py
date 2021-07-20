@@ -7,6 +7,7 @@ from lxml import etree
 # from lxml.etree import Element
 
 
+
 def main():
     # Read XML catalog containing all files
     root = read_xml("all_questions.xml")
@@ -18,6 +19,7 @@ def main():
     life_cycle_content = read_yaml("cat_member.yaml")
 
     cat_list = []
+    # cat_list_tmp = []  # TODO this variable is unused
     for cat_vars in life_cycle_content["catalogs"]:
         cat_list.append(make_root(cat_vars))
 
@@ -47,7 +49,7 @@ def main():
                 # check if qset and sec are already in catalog
                 if cat_list[n].find(qset_xpath, xml_nsmap) is None:
                     if cat_list[n].find(sec_xpath, xml_nsmap) is None:
-                        tmp_sec = change_path(sec, catalog_key)
+                        tmp_sec = change_path(sec, cat_info[0])
                         cat_list[n].append(deepcopy(tmp_sec))
                     tmp_qset = change_path(qset, catalog_key)
                     cat_list[n].append(deepcopy(tmp_qset))
@@ -68,11 +70,8 @@ def write_catalogs(cat_list, name_list):
     # specified relative directory
     for n, cat in enumerate(cat_list):
         tree = etree.ElementTree(cat)
-        tree.write(
-            "../rdmorganiser/questions/" + name_list[n]["key"] + ".xml",
-            xml_declaration=True,
-            encoding="UTF-8",
-        )
+        tree.write("../rdmorganiser/questions/" + name_list[n][0] + ".xml",
+                   xml_declaration=True, encoding="UTF-8")
 
 
 def change_path(element, name):
@@ -110,16 +109,14 @@ def change_uri(name_list):
         cat.close()
 
 
-def make_root(catalog_vars):
+def make_root(cat_vars):
     # takes a list of catalog variables [key, name] and generates a
     # root element with a predefined name space among other information
     XHTML_NAMESPACE = "http://purl.org/dc/elements/1.1/"
     # XHTML = "{%s}" % XHTML_NAMESPACE  # TODO this variable is unused
     NSMAP = {"dc": XHTML_NAMESPACE}  # the default namespace with prefix
     root = etree.Element("rdmo", nsmap=NSMAP)  # lxml only!
-    root.append(
-        etree.fromstring(
-            """
+    root.append(etree.fromstring("""
         <catalog xmlns:dc="http://purl.org/dc/elements/1.1/" dc:uri="https://rdmorganiser.github.io/terms/questions/ua-ruhr">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key></key>
