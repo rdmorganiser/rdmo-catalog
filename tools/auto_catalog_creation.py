@@ -5,11 +5,12 @@ from copy import deepcopy
 from lxml import etree
 from lxml.etree import Element
 
+
 def main():
     root = read_xml("all_questions.xml")
     life_cycle_content = read_yaml("cat_member.yaml")
     cat_list = []
-    cat_list_tmp = []
+    # cat_list_tmp = []  # TODO this variable is unused
     for cat_vars in life_cycle_content["catalogs"]:
         cat_list.append(make_root(cat_vars))
 
@@ -32,8 +33,8 @@ def main():
             # use path as key for check of membership to catalog
             if life_cycle_content[question.find("path").text][cat_info[0]]:
                 # check if qset and sec are already in catalog
-                if cat_list[n].find(qset_xpath, xml_nsmap) == None:
-                    if cat_list[n].find(sec_xpath, xml_nsmap) == None:
+                if cat_list[n].find(qset_xpath, xml_nsmap) is None:
+                    if cat_list[n].find(sec_xpath, xml_nsmap) is None:
                         tmp_sec = change_path(sec, cat_info[0])
                         cat_list[n].append(deepcopy(tmp_sec))
                     tmp_qset = change_path(qset, cat_info[0])
@@ -49,13 +50,15 @@ def main():
     write_catalogs(cat_list, life_cycle_content["catalogs"])
     change_uri(life_cycle_content["catalogs"])
 
+
 def write_catalogs(cat_list, name_list):
-    # takes a list of root elements and file names and writes them to the specified
-    # relative directory
+    # takes a list of root elements and file names and writes them to the
+    # specified relative directory
     for n, cat in enumerate(cat_list):
         tree = etree.ElementTree(cat)
         tree.write("../rdmorganiser/questions/" + name_list[n][0] + ".xml",
-                    xml_declaration=True, encoding="UTF-8")
+                   xml_declaration=True, encoding="UTF-8")
+
 
 def change_path(element, name):
     # takes an etree.Element and catalog key and changes the path variable of
@@ -67,9 +70,10 @@ def change_path(element, name):
     path.text = name + path.text
     return element
 
+
 def change_uri(name_list):
-    # this is rather a workaround than a solution, but prefixes on Attributes make things
-    # unnecessary hard to access and change
+    # this is rather a workaround than a solution, but prefixes on Attributes
+    # make things unnecessary hard to access and change
     default_uri = "https://rdmorganiser.github.io/terms/questions/ua_ruhr"
     for name in name_list:
         cat = open("../rdmorganiser/questions/" + name[0] + ".xml", "r", encoding="UTF-8")
@@ -82,13 +86,14 @@ def change_uri(name_list):
             cat.write(line)
         cat.close()
 
+
 def make_root(cat_vars):
-    # takes a list of catalog variables [key, name] and generates a root element
-    # with a predefined name space among other informations
+    # takes a list of catalog variables [key, name] and generates a
+    # root element with a predefined name space among other information
     XHTML_NAMESPACE = "http://purl.org/dc/elements/1.1/"
-    XHTML = "{%s}" % XHTML_NAMESPACE
-    NSMAP = {"dc":XHTML_NAMESPACE} # the default namespace with prefix
-    root = etree.Element("rdmo", nsmap=NSMAP) # lxml only!
+    # XHTML = "{%s}" % XHTML_NAMESPACE  # TODO this variable is unused
+    NSMAP = {"dc": XHTML_NAMESPACE}  # the default namespace with prefix
+    root = etree.Element("rdmo", nsmap=NSMAP)  # lxml only!
     root.append(etree.fromstring("""
         <catalog xmlns:dc="http://purl.org/dc/elements/1.1/" dc:uri="https://rdmorganiser.github.io/terms/questions/ua-ruhr">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -104,17 +109,20 @@ def make_root(cat_vars):
     root[0][5].text = cat_vars[2]
     return root
 
+
 def read_yaml(file_name):
     # reads in a yaml file and returns the content of it
     data_file = open(os.path.abspath(file_name), "r")
     content = yaml.safe_load(data_file)
     return content
 
+
 def read_xml(file_name):
     # reads in a xml file and returns it as etree.Element
     tree = etree.parse(os.path.abspath(file_name))
     root = tree.getroot()
     return root
+
 
 if __name__ == "__main__":
     main()
