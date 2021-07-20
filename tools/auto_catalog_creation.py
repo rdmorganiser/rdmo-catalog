@@ -43,7 +43,7 @@ def main():
                 # sort the questions below their respective questionsets
                 cat_qset = cat_list[n].find(qset_xpath, xml_nsmap)
                 index = cat_list[n].index(cat_qset)
-                cat_list[n].insert(index+1, deepcopy(tmp_question))
+                cat_list[n].insert(index + 1, deepcopy(tmp_question))
             else:
                 continue
 
@@ -56,8 +56,11 @@ def write_catalogs(cat_list, name_list):
     # specified relative directory
     for n, cat in enumerate(cat_list):
         tree = etree.ElementTree(cat)
-        tree.write("../rdmorganiser/questions/" + name_list[n][0] + ".xml",
-                   xml_declaration=True, encoding="UTF-8")
+        tree.write(
+            "../rdmorganiser/questions/" + name_list[n][0] + ".xml",
+            xml_declaration=True,
+            encoding="UTF-8",
+        )
 
 
 def change_path(element, name):
@@ -76,10 +79,14 @@ def change_uri(name_list):
     # make things unnecessary hard to access and change
     default_uri = "https://rdmorganiser.github.io/terms/questions/ua_ruhr"
     for name in name_list:
-        cat = open("../rdmorganiser/questions/" + name[0] + ".xml", "r", encoding="UTF-8")
+        cat = open(
+            "../rdmorganiser/questions/" + name[0] + ".xml", "r", encoding="UTF-8"
+        )
         lines = cat.readlines()
         cat.close()
-        cat = open("../rdmorganiser/questions/" + name[0] + ".xml", "w", encoding="UTF-8")
+        cat = open(
+            "../rdmorganiser/questions/" + name[0] + ".xml", "w", encoding="UTF-8"
+        )
         for line in lines:
             if default_uri in line:
                 line = line.replace("ua_ruhr", name[0])
@@ -94,7 +101,9 @@ def make_root(cat_vars):
     # XHTML = "{%s}" % XHTML_NAMESPACE  # TODO this variable is unused
     NSMAP = {"dc": XHTML_NAMESPACE}  # the default namespace with prefix
     root = etree.Element("rdmo", nsmap=NSMAP)  # lxml only!
-    root.append(etree.fromstring("""
+    root.append(
+        etree.fromstring(
+            """
         <catalog xmlns:dc="http://purl.org/dc/elements/1.1/" dc:uri="https://rdmorganiser.github.io/terms/questions/ua-ruhr">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key></key>
@@ -103,7 +112,9 @@ def make_root(cat_vars):
 		<title lang="en"></title>
 		<title lang="de"></title>
 	    </catalog>
-        """))
+        """
+        )
+    )
     root[0][1].text = cat_vars[0]
     root[0][4].text = cat_vars[1]
     root[0][5].text = cat_vars[2]
