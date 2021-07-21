@@ -3,6 +3,7 @@ import os
 import yaml
 from copy import deepcopy
 from lxml import etree
+
 # from lxml.etree import Element
 
 
@@ -91,12 +92,16 @@ def change_uri(name_list):
     default_uri = "https://rdmorganiser.github.io/terms/questions/ua_ruhr"
     for catalog in name_list:
         cat = open(
-            "../rdmorganiser/questions/" + catalog["key"] + ".xml", "r", encoding="UTF-8"
+            "../rdmorganiser/questions/" + catalog["key"] + ".xml",
+            "r",
+            encoding="UTF-8",
         )
         lines = cat.readlines()
         cat.close()
         cat = open(
-            "../rdmorganiser/questions/" + catalog["key"] + ".xml", "w", encoding="UTF-8"
+            "../rdmorganiser/questions/" + catalog["key"] + ".xml",
+            "w",
+            encoding="UTF-8",
         )
         for line in lines:
             if default_uri in line:
