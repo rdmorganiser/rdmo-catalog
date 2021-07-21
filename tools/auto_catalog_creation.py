@@ -3,9 +3,7 @@ import os
 import yaml
 from copy import deepcopy
 from lxml import etree
-
 # from lxml.etree import Element
-
 
 
 def main():
@@ -19,7 +17,6 @@ def main():
     life_cycle_content = read_yaml("cat_member.yaml")
 
     cat_list = []
-    # cat_list_tmp = []  # TODO this variable is unused
     for cat_vars in life_cycle_content["catalogs"]:
         cat_list.append(make_root(cat_vars))
 
