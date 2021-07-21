@@ -128,6 +128,7 @@ def make_root(catalog_vars):
     )
 
     root[0][1].text = catalog_vars["key"]
+    root[0][2].text = catalog_vars["help_text"]
     root[0][4].text = catalog_vars["title_en"]
     root[0][5].text = catalog_vars["title_de"]
     for r in root:
