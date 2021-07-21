@@ -46,7 +46,7 @@ def main():
                 # check if qset and sec are already in catalog
                 if cat_list[n].find(qset_xpath, xml_nsmap) is None:
                     if cat_list[n].find(sec_xpath, xml_nsmap) is None:
-                        tmp_sec = change_path(sec, cat_info[0])
+                        tmp_sec = change_path(sec, catalog_key)
                         cat_list[n].append(deepcopy(tmp_sec))
                     tmp_qset = change_path(qset, catalog_key)
                     cat_list[n].append(deepcopy(tmp_qset))
@@ -68,7 +68,7 @@ def write_catalogs(cat_list, name_list):
     for n, cat in enumerate(cat_list):
         tree = etree.ElementTree(cat)
         tree.write(
-            "../rdmorganiser/questions/" + name_list[n][0] + ".xml",
+            "../rdmorganiser/questions/" + name_list[n]["key"] + ".xml",
             xml_declaration=True,
             encoding="UTF-8",
         )
@@ -89,14 +89,14 @@ def change_uri(name_list):
     # this is rather a workaround than a solution, but prefixes on Attributes
     # make things unnecessary hard to access and change
     default_uri = "https://rdmorganiser.github.io/terms/questions/ua_ruhr"
-    for name in name_list:
+    for catalog in name_list:
         cat = open(
-            "../rdmorganiser/questions/" + name[0] + ".xml", "r", encoding="UTF-8"
+            "../rdmorganiser/questions/" + catalog["key"] + ".xml", "r", encoding="UTF-8"
         )
         lines = cat.readlines()
         cat.close()
         cat = open(
-            "../rdmorganiser/questions/" + name[0] + ".xml", "w", encoding="UTF-8"
+            "../rdmorganiser/questions/" + catalog["key"] + ".xml", "w", encoding="UTF-8"
         )
         for line in lines:
             if default_uri in line:
@@ -105,7 +105,7 @@ def change_uri(name_list):
         cat.close()
 
 
-def make_root(cat_vars):
+def make_root(catalog_vars):
     # takes a list of catalog variables [key, name] and generates a
     # root element with a predefined name space among other information
     XHTML_NAMESPACE = "http://purl.org/dc/elements/1.1/"
@@ -126,9 +126,12 @@ def make_root(cat_vars):
         """
         )
     )
-    root[0][1].text = cat_vars[0]
-    root[0][4].text = cat_vars[1]
-    root[0][5].text = cat_vars[2]
+
+    root[0][1].text = catalog_vars["key"]
+    root[0][4].text = catalog_vars["title_en"]
+    root[0][5].text = catalog_vars["title_de"]
+    for r in root:
+        print(list(r))
     return root
 
 
