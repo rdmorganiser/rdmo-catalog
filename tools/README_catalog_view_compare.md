@@ -15,7 +15,7 @@
 1. open commandline and change directory to the R bin folder
 2. type `R`
 3. if necessary: install required packages via `install.packages(c("yaml", "stringr", "XML"))`
-4. change R working directory with `setwd("path/to/rdmo_uaruhr/rdmo-catalog-uaruhr")` (only forward slashes!)
+4. change R working directory to your local path to rdmo-catalog-uaruhr with `setwd("path/to/rdmo-catalog-uaruhr")` (only forward slashes allowed)
 5. execute script with `source("tools/catalog_view_compare.R")`
 6. use function `compare(catalogName, viewName, path=getwd())`. A csv file will be saved in the working directory by default or in another directory specified by `path`. Prints "Done" when finished.
     - Examples:
