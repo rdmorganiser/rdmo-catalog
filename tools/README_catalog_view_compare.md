@@ -1,7 +1,7 @@
 # Automatic comparison between catalog and view
 
 ### Background
-`catalog_view_compare.R` creates a function to check which attributes of the general UA Ruhr catalog appear in a specified view and catalog. Output is a csv table as follows:
+`catalog_view_compare.R` creates a function to check which attributes appear in a specified view and catalog. Output is a csv table as follows:
 
 | attribute | inView | inCatalog |
 | --------- | ------ | --------- |
