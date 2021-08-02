@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<condition dc:uri="https://rdmo.publisso.de/terms4life/conditions/chemicals_yes">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>chemicals_yes</key>
+		<dc:comment>Information about chemicals can only be told if there are any. Otherwise the questions are obsolete.</dc:comment>
+		<source dc:uri="https://rdmo.publisso.de/terms4life/domain/project/exposures/chemicals/yesno"/>
+		<relation>eq</relation>
+		<target_text>1</target_text>
+		<target_option/>
+	</condition>
+	<condition dc:uri="https://rdmo.publisso.de/terms4life/conditions/closed_data">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>closed_data</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmo.publisso.de/terms4life/domain/project/dataset/sharing/question"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmo.publisso.de/terms4life/options/open_data_sharing_options/no_open_data"/>
+	</condition>
+	<condition dc:uri="https://rdmo.publisso.de/terms4life/conditions/exposures_yes">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>exposures_yes</key>
+		<dc:comment>Information about exposures can only be told if there are any. Otherwise the questions are obsolete.</dc:comment>
+		<source dc:uri="https://rdmo.publisso.de/terms4life/domain/project/exposures/yesno"/>
+		<relation>eq</relation>
+		<target_text>1</target_text>
+		<target_option/>
+	</condition>
+	<condition dc:uri="https://rdmo.publisso.de/terms4life/conditions/open_data">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>open_data</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmo.publisso.de/terms4life/domain/project/dataset/sharing/question"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmo.publisso.de/terms4life/options/open_data_sharing_options/yes_open_data"/>
+	</condition>
+	<condition dc:uri="https://rdmo.publisso.de/terms4life/conditions/other_factors_yes">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>other_factors_yes</key>
+		<dc:comment>Information about other factors that (can) have effects on the measurements can only be told if there are any. Otherwise the questions are obsolete.</dc:comment>
+		<source dc:uri="https://rdmo.publisso.de/terms4life/domain/project/exposures/other_factors/yesno"/>
+		<relation>eq</relation>
+		<target_text>1</target_text>
+		<target_option/>
+	</condition>
+</rdmo>
