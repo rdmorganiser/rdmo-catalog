@@ -43,7 +43,7 @@ output = {
     'views': []
 }
 
-for root, dirs, files in os.walk('rdmorganiser'):
+for root, dirs, files in os.walk('.'):
     if not root.startswith('./.'):
         root_path = Path(root)
 
