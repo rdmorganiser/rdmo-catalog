@@ -21,5 +21,5 @@
     - Examples:
         - `compare("proposal", "horizon2020")` (path not specified)
         - `compare("archive", "bielefeld", "C:/Users")` (path specified)
-    - possible values for `catalogName`: archive, consultation, dcc, fhpshort, horizon2020, proposal, rdmo, snf, training, ua_ruhr
-    - possible values for `viewName`: bielefeld, BMBF, citec, dmponline, dmptool, horizon2020, snf
+    - possible values for `catalogName`: file name of any xml file in folder [_rdmorganiser/questions_](https://github.com/FDM-UARuhr/rdmo-catalog-uaruhr/tree/master/rdmorganiser/questions) without extension e.g. archive, consultation, training, horizon2020 
+    - possible values for `viewName`: either the name of a view which [rdmo.xml](https://github.com/FDM-UARuhr/rdmo-catalog-uaruhr/blob/master/rdmorganiser/views/rdmo.xml) contains (bielefeld, BMBF, citec, dmponline, dmptool, horizon2020, snf) or any other file name of an xml file in folder [_rdmorganiser/views_](https://github.com/FDM-UARuhr/rdmo-catalog-uaruhr/tree/master/rdmorganiser/views) without extension e.g. erc
