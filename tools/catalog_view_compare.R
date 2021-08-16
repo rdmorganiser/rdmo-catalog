@@ -4,12 +4,17 @@ library(stringr)
 library(XML)
 
 compare <- function(catalogName, viewName, path=getwd()) {
-  views <- xmlTreeParse("rdmorganiser/views/rdmo.xml") #import views
-  for(i in 1:length(views$doc$children$rdmo)) { #find specified view
-    rawView <- as.character(unlist(views$doc$children$rdmo[i]))
-    if(str_detect(rawView[8], viewName)) {
-      view <- paste0(rawView, collapse = "") #creates character with length=1 (important for later if-condition)
+  if (viewName == "bielefeld" | viewName == "BMBF" | viewName == "citec" | viewName == "dmponline" | viewName == "dmptool" | viewName == "horizon2020" | viewName == "snf") {
+    views <- xmlTreeParse("rdmorganiser/views/rdmo.xml") #import all views
+    for (i in 1:length(views$doc$children$rdmo)) { #find specified view
+      rawView <- as.character(unlist(views$doc$children$rdmo[i]))
+      if (str_detect(rawView[8], viewName)) {
+        view <- paste0(rawView, collapse = "") #creates character with length=1 (important for later if-condition)
+      }
     }
+  } else { #any other view as xml can be imported 
+    view <- xmlTreeParse(paste0("rdmorganiser/views/", viewName, ".xml"))
+    view <- paste0(view, collapse = "") #creates character with length=1 (important for later if-condition)
   }
   catalog <- xmlTreeParse(paste0("rdmorganiser/questions/", catalogName, ".xml")) #import specified catalog
   catalog <- paste0(as.character(catalog), collapse = "") #creates character with length=1
