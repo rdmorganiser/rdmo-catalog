@@ -2505,6 +2505,40 @@ In caso affermativo, si prega di descrivere succintamente le convenzioni per i n
 		</optionsets>
 		<conditions/>
 	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use-publication/repository">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>repository</key>
+		<path>rdmo/data-usage/data-sharing-and-re-use-publication/repository</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/repository"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use-publication"/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<help lang="en">Please provide information about the database/repository.</help>
+		<text lang="en">If yes, where should the data be published?</text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Nennen Sie die/das Datenbank/Repositorium, ggf. mit Link.</help>
+		<text lang="de">Wenn ja, wo sollen die Daten veröffentlicht werden?</text>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+    <help lang="fr">Veuillez fournir des informations sur la base de données ou le référentiel.</help>
+    <help lang="it">Si prega di fornire informazioni sul database o sul repository.</help>
+		<text lang="fr">Si oui, où les données doivent-elles être publiées?</text>
+		<text lang="it">Se sì, dove dovrebbero essere pubblicati i dati?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name lang="it"/>
+		<verbose_name_plural lang="fr"/>
+		<verbose_name_plural lang="it"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use-publication/explanation">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>explanation</key>
@@ -2513,7 +2547,7 @@ In caso affermativo, si prega di descrivere succintamente le convenzioni per i n
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/explanation"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use-publication"/>
 		<is_collection>False</is_collection>
-		<order>2</order>
+		<order>3</order>
 		<help lang="en"/>
 		<text lang="en">If no, please explain why not. Please differentiate between legal and contractual reasons and voluntary restrictions.</text>
 		<verbose_name lang="en"/>
@@ -2547,7 +2581,7 @@ In caso affermativo, si prega di descrivere succintamente le convenzioni per i n
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/conditions"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use-publication"/>
 		<is_collection>True</is_collection>
-		<order>3</order>
+		<order>4</order>
 		<help lang="en">The options refer to the licenses of the &lt;a href=&quot;https://creativecommons.org/licenses/?lang=en&quot; target=&quot;_blank&quot;&gt;Creative Commons family&lt;/a&gt;.</help>
 		<text lang="en">If yes, under which terms of use or license will the dataset be published or shared?</text>
 		<verbose_name lang="en"/>
@@ -2583,7 +2617,7 @@ In caso affermativo, si prega di descrivere succintamente le convenzioni per i n
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/restrictions_explanation"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use-publication"/>
 		<is_collection>False</is_collection>
-		<order>4</order>
+		<order>5</order>
 		<help lang="en"/>
 		<text lang="en">If there are any restrictions on the re-use of this dataset, please explain why.</text>
 		<verbose_name lang="en"/>
