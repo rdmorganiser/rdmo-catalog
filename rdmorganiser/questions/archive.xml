@@ -72,8 +72,8 @@
 		<order>1</order>
     <help lang="en">Describe briefly the project and its goals.</help>
     <help lang="de">Bitte beschreiben Sie kurz das Projekt und dessen Ziele.</help>
-		<text lang="en">What is the main research question of the project?</text>
-		<text lang="de">Wie lautet die primäre Forschungsfrage des Projektes?</text>
+		<text lang="en">Please briefly describe the contents of the project.</text>
+		<text lang="de">Bitte beschreiben Sie kurz die Inhalte des Projekts.</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -189,7 +189,7 @@
 		<is_collection>True</is_collection>
 		<order>3</order>
 		<help lang="en">Please give the name and an email address.</help>
-		<help lang="de">Bitte geben Sie den Namen und eine Email Adresse an.</help>
+		<help lang="de">Bitte geben Sie den Namen und eine E-Mail-Adresse an.</help>
 		<text lang="en">Who is/are the contact person(s) for data management questions?</text>
 		<text lang="de">Wer ist bei diesem Partner der/die Ansprechpartner/in für das Datenmanagement?</text>
 		<verbose_name lang="en"/>
@@ -328,14 +328,18 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 
 * 3D model / digital reconstruction of a stone age settlement
 
-* software developed within the project</help>
+* software developed within the project
+
+Please also explain whether this is a fixed data set stored at a certain point in time or whether it is created dynamically over a certain period of time.</help>
 		<help lang="de">Bitte beschreiben Sie hier kurz, um welchen Datentyp es sich handelt und mit welcher Methode die Daten erhoben oder erstellt wurden, z.B.:
 
 * quantitative Online-Befragung
 
 * 3D-Modellierung / digitale Rekonstruktion einer steinzeitlichen Siedlung
 
-* Software, die im Projekt entwickelt wird</help>
+* Software, die im Projekt entwickelt wird
+
+Bitte erläutern Sie ergänzend, ob es sich um einen festen, zu einem bestimmten Zeitpunkt gespeicherten Datensatz handelt oder ob dieser dynamisch also laufend über einen bestimmten Zeitraum entsteht.</help>
 		<text lang="en">What kind of dataset is it?</text>
 		<text lang="de">Um was für einen Datensatz handelt es sich?</text>
 		<verbose_name lang="en"/>
@@ -391,8 +395,8 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<order>2</order>
 		<help lang="en"/>
 		<help lang="de"/>
-		<text lang="en">When does data collection or creation end?</text>
-		<text lang="de">Wann endet die Erhebung bzw. Erstellung der Daten?</text>
+		<text lang="en">When does/did data collection or creation end?</text>
+		<text lang="de">Wann endet/endete die Erhebung bzw. Erstellung der Daten?</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -417,8 +421,8 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<order>1</order>
 		<help lang="en"/>
 		<help lang="de"/>
-		<text lang="en">When does data collection or creation start?</text>
-		<text lang="de">Wann beginnt die Erhebung bzw. Erstellung der Daten?</text>
+		<text lang="en">When does/did data collection or creation start?</text>
+		<text lang="de">Wann beginnt/begann die Erhebung bzw. Erstellung der Daten?</text>
 		<verbose_name lang="en"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
@@ -460,8 +464,8 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/archive/technical-classification/data-volume"/>
 		<is_collection>False</is_collection>
 		<order>2</order>
-		<help lang="en">Optional. This is only of concern if the data production rate reaches TB scale.</help>
-		<help lang="de">Optional. Dies ist nur relevant, wenn das Wachstum die TB-Größenordnung erreicht.</help>
+		<help lang="en"/>
+		<help lang="de"/>
 		<text lang="en">How much data is produced per year?</text>
 		<text lang="de">Wie hoch ist die erwartete Erzeugungsrate der Daten pro Jahr?</text>
 		<verbose_name lang="en"/>
@@ -486,8 +490,8 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/archive/technical-classification/data-volume"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en"/>
-		<help lang="de"/>
+		<help lang="en">If large amounts of data are involved, financial resources for the provision of the infrastructure should be considered (see also section "Funding")</help>
+		<help lang="de">Wenn große Datenmengen anfallen sollten finanzielle Mittel zur Bereitstellung der Infrastruktur berücksichtigt werden (siehe auch Abschnitt „Förderung“)</help>
 		<text lang="en">What is the actual or expected size of the dataset?</text>
 		<text lang="de">Was ist die tatsächliche oder erwartete Größe des Datensatzes?</text>
 		<verbose_name lang="en"/>
@@ -533,8 +537,8 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/archive/technical-classification/data-formats"/>
 		<is_collection>False</is_collection>
 		<order>4</order>
-		<help lang="en">When choosing a data format, one should consider the consequences for collaborative use, long-term preservation as well as re-use. It is advisable to prefer formats that are standardised, open, non-proprietary and well-established in the respective scholarly community. More criteria and detailed explanations can be found e.g. in the &lt;a href="https://www.forschungsdaten.org/images/b/b0/Leitfaden_Data-Management-WissGrid.pdf" target="_blank"&gt;WissGrid-Leitfaden, pp. 22 f.&lt;/a&gt;.</help>
-		<help lang="de">Bei der Wahl des Dateiformates sollten auch die Konsequenzen für die kollaborative Nutzung, die Langzeitarchivierung sowie die Nachnutzung beachtet werden. Es empfiehlt sich, möglichst standardisierte, nicht-proprietäre und allgemein bzw. in der spezifischen Community verbreitete Formate zu nutzen. Weitere Kriterien sowie detaillierte Erläuterungen sind z.B. im &lt;a href="https://www.forschungsdaten.org/images/b/b0/Leitfaden_Data-Management-WissGrid.pdf" target="_blank"&gt;WissGrid-Leitfaden, S. 22 f.&lt;/a&gt; zu finden.</help>
+		<help lang="en">When choosing a data format, one should consider the consequences for collaborative use, long-term preservation as well as re-use. It is advisable to prefer formats that are standardised, open, non-proprietary and well-established in the respective scholarly community. More criteria and detailed explanations can be found e.g. in the &lt;a href="https://www.forschungsdaten.org/images/b/b0/Leitfaden_Data-Management-WissGrid.pdf" target="_blank"&gt;WissGrid-Leitfaden, pp. 22 f.&lt;/a&gt;).</help>
+		<help lang="de">Bei der Wahl des Dateiformates sollten auch die Konsequenzen für die kollaborative Nutzung, die Langzeitarchivierung sowie die Nachnutzung beachtet werden. Es empfiehlt sich, möglichst standardisierte, nicht-proprietäre und allgemein bzw. in der spezifischen Community verbreitete Formate zu nutzen. Weitere Kriterien sowie detaillierte Erläuterungen sind z.B. im &lt;a href="https://www.forschungsdaten.org/images/b/b0/Leitfaden_Data-Management-WissGrid.pdf" target="_blank"&gt;WissGrid-Leitfaden, S. 22 f.&lt;/a&gt;) zu finden.</help>
 		<text lang="en">Which file formats are used?</text>
 		<text lang="de">In welchen Formaten liegen die Daten vor?</text>
 		<verbose_name lang="en"/>
@@ -610,8 +614,8 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<order>1</order>
 		<help lang="en">This information is necessary to be able to reconstruct the process by which the data was generated. It is also a prerequisite to judge the objectivity, reliability and validity of the dataset.
 
-For reproducible data, it is also required to re-generate the data if necessary.</help>
-		<help lang="de">Diese Informationen sind für alle Arten von Daten relevant, um ihre Genese nachvollziehen zu können. Bei reproduzierbaren Daten kommt ein weiterer Aspekt hinzu. Diese müssen nicht notwendigerweise aufbewahrt werden - allerdings müssen alle Geräte, Software und auch Informationen über die Vorgehensweise erhalten bleiben, die notwendig sind, um die Daten erneut erstellen zu können.</help>
+For reproducible data, it is also required to re-generate the data if need be. Therefore all devices, software, software version and also information about the procedure necessary to be able to recreate the data must be preserved.</help>
+		<help lang="de">Diese Informationen sind für alle Arten von Daten relevant, um ihre Genese nachvollziehen zu können. Bei reproduzierbaren Daten kommt ein weiterer Aspekt hinzu. Diese müssen nicht notwendigerweise aufbewahrt werden - allerdings müssen alle Geräte, Software, Softwareversion und auch Informationen über die Vorgehensweise erhalten bleiben, die notwendig sind, um die Daten erneut erstellen zu können.</help>
 		<text lang="en">Which tools, software, technologies or processes are used to generate or collect the data?</text>
 		<text lang="de">Welche Instrumente, Software, Technologien oder Verfahren werden zur Erzeugung oder Erfassung der Daten genutzt?</text>
 		<verbose_name lang="en"/>
@@ -656,6 +660,38 @@ For reproducible data, it is also required to re-generate the data if necessary.
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/archive/data-usage/data-sharing-and-re-use-publication/repository">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>repository</key>
+		<path>archive/data-usage/data-sharing-and-re-use-publication/repository</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/repository"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/archive/data-usage/data-sharing-and-re-use-publication"/>
+		<is_collection>False</is_collection>
+		<order>4</order>
+		<help lang="en">
+		Please provide information about the database/repository.
+		</help>
+		<text lang="en">If yes, where should the data be published?</text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">
+		Nennen Sie die/das Datenbank/Repositorium, ggf. mit Link.
+		</help>
+		<text lang="de">
+		Wenn ja, wo sollen die Daten veröffentlicht werden?
+		</text>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/archive/data-usage/data-sharing-and-re-use-publication/conditions">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>conditions</key>
@@ -710,6 +746,51 @@ For reproducible data, it is also required to re-generate the data if necessary.
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options"/>
 		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/archive/data-usage/costs-dataset">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>costs-dataset</key>
+		<path>archive/data-usage/costs-dataset</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/archive/data-usage"/>
+		<is_collection>False</is_collection>
+		<order>70</order>
+		<title lang="en">Costs</title>
+		<title lang="de">Kosten</title>
+		<help lang="en"/>
+		<help lang="de"/>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/archive/data-usage/costs-dataset/storage_non_personnel">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>storage_non_personnel</key>
+		<path>archive/data-usage/costs-dataset/storage_non_personnel</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/storage/non_personnel"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/archive/data-usage/costs-dataset"/>
+		<is_collection>False</is_collection>
+		<order>6</order>
+		<help lang="en">Please estimate the costs in **Euro**.</help>
+		<help lang="de">Bitte schätzen Sie die Kosten in **Euro**.</help>
+		<text lang="en">What is the amount of non-personnel costs associated with the storage of the data sets during the project?</text>
+		<text lang="de">Welche Sachkosten entstehen im Zusammenhang mit der Speicherung der Datensätze während des Projektes?</text>
+		<verbose_name lang="en"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="en"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>float</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit>Euro</unit>
+		<optionsets/>
 		<conditions/>
 	</question>
 	<section dc:uri="https://rdmorganiser.github.io/terms/questions/archive/metadata-and-referencing">
@@ -1012,7 +1093,9 @@ Weitere Informationen zur Funktionsweise, Verwendung und den verschiedenen Arten
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/archive/legal-and-ethics/sensitive-data-personal_data_yesno"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en">The handling and processing of **personal data** is regulated by law. The uniform application throughout the EU is based on the &lt;a href="http://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32016R0679" target="_blank"&gt;EU General Data Protection Regulation (GDPR)&lt;/a&gt;. It allows for regulatory leeway at national level.
+		<help lang="en">If yes: Please also check whether you have completed section "Data usage / Data storage and security" with the appropriate measures to protect the data in accordance with the applicable data protection laws.
+
+The handling and processing of **personal data** is regulated by law. The uniform application throughout the EU is based on the &lt;a href="http://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32016R0679" target="_blank"&gt;EU General Data Protection Regulation (GDPR)&lt;/a&gt;. It allows for regulatory leeway at national level.
 
 In Germany, this is regulated by the &lt;a href="http://www.gesetze-im-internet.de/bdsg_2018/" target="_blank"&gt;Federal Data Protection Act (BDSG)&lt;/a&gt;, and for universities, the individual data protection laws of the individual federal states apply, e.g. the &lt;a href="https://recht.nrw.de/lmi/owa/br_text_anzeigen?v_id=3520071121100436275" target="_blank"&gt;data protection law of North Rhine-Westphalia (DSG NRW)&lt;/a&gt;.
 
@@ -1029,7 +1112,9 @@ More information (in German only) can be found on the websites of the data prote
 * &lt;a href="https://www.uni-due.de/verwaltung/organisation/just_datenschutz.php" target="_blank"&gt;University Duisburg-Essen&lt;/a&gt;
 
 * &lt;a href="https://www.tu-dortmund.de/universitaet/organisation/beauftragte-vertrauenspersonen/#accordion-2213-764" target="_blank"&gt;TU Dortmund University&lt;/a&gt;</help>
-		<help lang="de">Der Umgang und die Verarbeitung **personenbezogener** Daten ist gesetzlich geregelt. Die EU-weit einheitliche Anwendung erfolgt nach der &lt;a href="http://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32016R0679" target="_blank"&gt;EU-Datenschutz-Grundverordnung (DSGVO)&lt;/a&gt;. Sie gestattet Regelungsspielräume auf nationaler Ebene. In Deutschland regelt dies das &lt;a href="http://www.gesetze-im-internet.de/bdsg_2018/" target="_blank"&gt;Bundesdatenschutzgesetz (BDSG)&lt;/a&gt;. Für Hochschulen gelten zum großen Teil die individuellen Datenschutzgesetze der Länder, z.B. das &lt;a href="https://recht.nrw.de/lmi/owa/br_text_anzeigen?v_id=3520071121100436275" target="_blank"&gt;Datenschutzgesetz Nordrhein-Westfalen (DSG NRW)&lt;/a&gt;.
+		<help lang="de">Wenn ja: Bitte prüfen Sie auch, ob Sie den Abschnitt "Datennutzung / Datenspeicherung und -sicherheit" mit den entsprechenden Maßnahmen zum Schutz der Daten gemäß den geltenden Datenschutzgesetzen ausgefüllt haben.
+
+Der Umgang und die Verarbeitung **personenbezogener** Daten ist gesetzlich geregelt. Die EU-weit einheitliche Anwendung erfolgt nach der &lt;a href="http://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32016R0679" target="_blank"&gt;EU-Datenschutz-Grundverordnung (DSGVO)&lt;/a&gt;. Sie gestattet Regelungsspielräume auf nationaler Ebene. In Deutschland regelt dies das &lt;a href="http://www.gesetze-im-internet.de/bdsg_2018/" target="_blank"&gt;Bundesdatenschutzgesetz (BDSG)&lt;/a&gt;. Für Hochschulen gelten zum großen Teil die individuellen Datenschutzgesetze der Länder, z.B. das &lt;a href="https://recht.nrw.de/lmi/owa/br_text_anzeigen?v_id=3520071121100436275" target="_blank"&gt;Datenschutzgesetz Nordrhein-Westfalen (DSG NRW)&lt;/a&gt;.
 
 Die europäische DSGVO definiert personenbezogene Daten als alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen (Art. 4 DSGVO, Abs. 1).
 
@@ -1042,7 +1127,6 @@ Mehr Informationen zum Thema finden Sie auf den Webseiten der Datenschutzbeauftr
 * &lt;a href="https://dsb.ruhr-uni-bochum.de/" target="_blank"&gt;Ruhr-Universität Bochum&lt;/a&gt;
 
 * &lt;a href="https://www.uni-due.de/verwaltung/organisation/just_datenschutz.php" target="_blank"&gt;Universität of Duisburg-Essen&lt;/a&gt;
-
 * &lt;a href="https://www.tu-dortmund.de/universitaet/organisation/beauftragte-vertrauenspersonen/#accordion-2213-764" target="_blank"&gt;Technische Universität Dortmund&lt;/a&gt;</help>
 		<text lang="en">Does this dataset contain personal data?</text>
 		<text lang="de">Enthält dieser Datensatz personenbezogene Daten?</text>
@@ -1088,6 +1172,58 @@ Mehr Informationen zum Thema finden Sie auf den Webseiten der Datenschutzbeauftr
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/archive/storage-and-long-term-preservation/long-term-preservation-datasets/responsible_person_email">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>responsible_person_email</key>
+		<path>archive/storage-and-long-term-preservation/long-term-preservation-datasets/responsible_person_email</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/responsible_person/email"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/archive/storage-and-long-term-preservation/long-term-preservation-datasets"/>
+		<is_collection>False</is_collection>
+		<order>12</order>
+		<help lang="en"/>
+		<text lang="en">Please provide the email address of the permanent owner of the data requested above.</text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Bitte geben Sie die E-Mail-Adresse des oben gefragten dauerhaften Besitzer der Daten an.</text>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/archive/storage-and-long-term-preservation/long-term-preservation-datasets/responsible_person_name">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>responsible_person_name</key>
+		<path>archive/storage-and-long-term-preservation/long-term-preservation-datasets/responsible_person_name</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/responsible_person/name"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/archive/storage-and-long-term-preservation/long-term-preservation-datasets"/>
+		<is_collection>False</is_collection>
+		<order>11</order>
+		<help lang="en">A similar question is, what happens if the access data is lost or, for example, if the chair holder retires? This should be taken into consideration later on by means of a workflow.</help>
+		<text lang="en">Who is the permanent project owner/data owner who can decide on the data after the researcher leaves? Please enter the name.</text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Eine ähnliche Fragestellung ist, was passiert bei Verlust der Zugangsdaten oder beispielsweise beim Ausscheiden/Ruhestand des Lehrstuhlinhabers? Dies sollte später über einen Workflow mit bedacht werden.</help>
+		<text lang="de">Wer ist der dauerhafter Besitzer der Daten, der nach dem Weggang des Forschenden über die Daten entscheiden kann? Bitte geben Sie den Name an.</text>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions/>
+	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/archive/storage-and-long-term-preservation/long-term-preservation-datasets/access_authentication">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>access_authentication</key>
