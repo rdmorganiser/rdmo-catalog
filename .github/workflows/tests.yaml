@@ -1,0 +1,23 @@
+on: push
+
+name: Run tests
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    - name: Install xmllint
+      run: sudo apt-get install libxml2-utils
+
+    - name: Install requirements
+      run: pip install pytest
+
+    - name: Run tests
+      run: pytest
