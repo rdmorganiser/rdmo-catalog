@@ -1,20 +1,24 @@
 # Tools 
 
-## Comparing rdmo domain files 
+## Comparing two rdmo domain files 
 `python3 compare_domains.py` compares two rdmo domains. Two files must be present at execution of the script: `domain.xml` and `rdmo.xml`.
 After a successful run the results will be available in three files `deleted.xml`, `changed.xml`, and `added.xml`.  
 
-## Comparing rdmo question files 
+## Comparing two rdmo question files 
 `rdmo_catalog_compare.py` will compare rdmo question files. As input two files must be present `rdmo_questions.xml` and `rdmo_catalog_latest_commit.xml`. Note, the question's URIs prefixes must be identical in both files. Furtermore, this script only works for question files with content matching rdmorganiser/rdmo >= v0.11 data model specifications.   
 The output 'questions_differences' will print all question uris. If differences are detected they are printed on the question text and help texts level.   
 
-## Catalog Generation
+## Checking compatibility between a Catalog and a View 
+
+see [README_catalog_view_compare.md](README_catalog_view_compare.md)
+
+## Automatized Catalog Generation 
 ### Quick Guide
 - implement changes regarding content and presentation to `all_questions.xml`
   - be sure, that all references to the domain, option sets and conditions are correct as well
 - provide catalog information and composition within `cat_member.yaml`
 - run `python3 auto_catalog_creation.py`
-- for the 'training' catalog there is an additional manual step (see [README_training.md](README_training.md)
+- IMPORTANT NOTE: for the 'training' catalog there is an additional manual step (see [README_training.md](README_training.md)
 
 ### Detailed Guide
 #### Catalogs
