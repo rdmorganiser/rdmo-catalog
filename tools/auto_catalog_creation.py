@@ -4,8 +4,6 @@ import yaml
 from copy import deepcopy
 from lxml import etree
 
-# from lxml.etree import Element
-
 
 def main():
     # Read XML catalog containing all files
@@ -127,16 +125,20 @@ def make_root(catalog_vars):
 		<order>0</order>
 		<title lang="en"></title>
 		<title lang="de"></title>
+		<help lang="en"></help>
+		<help lang="de"></help>
 	    </catalog>
         """
         )
     )
 
     root[0][1].text = catalog_vars["key"]
-    root[0][2].text = catalog_vars["help_text_en"]
+    # comment remains empty
+    # order remains empty
     root[0][4].text = catalog_vars["title_en"]
     root[0][5].text = catalog_vars["title_de"]
-
+    root[0][6].text = catalog_vars["help_text_en"]
+    root[0][7].text = catalog_vars["help_text_de"]
     return root
 
 
