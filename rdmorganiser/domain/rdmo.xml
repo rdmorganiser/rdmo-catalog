@@ -520,8 +520,8 @@
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/available_after_data_is_no_longer_available">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>available_after_data_is_no_longer_available</key>
-		<path>project/dataset/metadata/available_after_data_is_no_longer_available</path>
+		<key>available_without_data</key>
+		<path>project/dataset/metadata/available_without_data</path>
 		<dc:comment>Added for the question &quot;Will metadata be guaranteed to remain available after data is no longer available?&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata"/>
 	</attribute>
@@ -1526,12 +1526,19 @@
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question"/>
 	</attribute>
-	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question/acronym">
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/acronym">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>acronym</key>
-		<path>project/research_question/acronym</path>
-		<dc:comment>Short title, added for the text field &quot;Action Acronym&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
-		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question"/>
+		<path>project/acronym</path>
+		<dc:comment>Short project title, added for the text field &quot;Action Acronym&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/title">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>title</key>
+		<path>project/title</path>
+		<dc:comment>Full project title, added for the text field &quot;Action Title&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question/title">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1637,5 +1644,5 @@
 		<path>project/dmp/name</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
-	</attribute>
+	</attribute>	 
 </rdmo>
