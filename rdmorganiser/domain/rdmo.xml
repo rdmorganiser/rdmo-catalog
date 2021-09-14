@@ -501,7 +501,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>status</key>
 		<path>project/dataset/ipr/status</path>
-		<dc:comment>In the  &quot;Information for Building Language Corpora Under German Law&quot; of the DFG Review Board on Linguistics, https://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/guidelines_review_board_linguistics_corpora.pdf, is explicitly pointed to single rights of the originator and the necessity to obtain these rights. For the question &quot;Which rights have been obtained or what is the status of the rights collection?&quot; this attribute has been added.</dc:comment>
+		<dc:comment>In the &quot;Information for Building Language Corpora Under German Law&quot; of the DFG Review Board on Linguistics, https://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/guidelines_review_board_linguistics_corpora.pdf, is explicitly pointed to single rights of the originator and the necessity to obtain these rights. For the question &quot;Which rights have been obtained or what is the status of the rights collection?&quot; this attribute has been added.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata">
@@ -1644,5 +1644,12 @@
 		<path>project/dmp/name</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
-	</attribute>	 
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/repository">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>repository</key>
+		<path>project/dataset/sharing/repository</path>
+		<dc:comment>Refers to the place of publication, which must be distinguished from the place of storaging and archiving (see https://github.com/rdmorganiser/rdmo-catalog/issues/55)</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing"/>
+	</attribute>
 </rdmo>
