@@ -1,5 +1,12 @@
 <?xml version="1.0" ?>
 <rdmo xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>project</key>
+		<path>project</path>
+		<dc:comment/>
+		<parent/>
+	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/title">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>title</key>
@@ -13,27 +20,6 @@
 		<path>project/acronym</path>
 		<dc:comment>Short project title, added for the text field &quot;Action Acronym&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
-	</attribute>
-	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/dmp_date">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>dmp_date</key>
-		<path>project/dmp/dmp_date</path>
-		<dc:comment>Date of this data management plan version, added for the text field &quot;Date&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
-		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
-	</attribute>
-	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/dmp_version">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>dmp_version</key>
-		<path>project/dmp/dmp_version</path>
-		<dc:comment>Version of this data management plan, added for the text field &quot;DMP version&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
-		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
-	</attribute>
-	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>project</key>
-		<path>project</path>
-		<dc:comment/>
-		<parent/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1657,6 +1643,20 @@
 		<key>name</key>
 		<path>project/dmp/name</path>
 		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/dmp_date">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>dmp_date</key>
+		<path>project/dmp/dmp_date</path>
+		<dc:comment>Date of this data management plan version, added for the text field &quot;Date&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/dmp_version">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>dmp_version</key>
+		<path>project/dmp/dmp_version</path>
+		<dc:comment>Version of this data management plan, added for the text field &quot;DMP version&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/repository">
