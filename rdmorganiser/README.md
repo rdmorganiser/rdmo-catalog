@@ -17,6 +17,8 @@ To import the catalogs into a freshly installed instance of RDMO, use
 
 Use the same order when importing over the RDMO web interface.
 
+Please note that the master branch will only work with the latest version of RDMO. If you need the xml files for an older version, please browse the releases or contact us.
+
 NOTE: The domain of rdmo-catalog-uaruhr `domain/rdmo.xml` is required to cover additional the content of the present catalogs w.r.t. [https://github.com/rdmorganiser/rdmo-catalog](https://github.com/rdmorganiser/rdmo-catalog).
 
 =======
