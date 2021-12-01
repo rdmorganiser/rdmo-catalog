@@ -7,6 +7,20 @@
 		<dc:comment/>
 		<parent/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/title">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>title</key>
+		<path>project/title</path>
+		<dc:comment>Full project title, added for the text field &quot;Action Title&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/acronym">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>acronym</key>
+		<path>project/acronym</path>
+		<dc:comment>Short project title, added for the text field &quot;Action Acronym&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
+	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>additional_rdm_policy</key>
@@ -111,6 +125,27 @@
 		<path>project/costs/metadata/personnel</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/metadata"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/other_research_output">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>other_research_output</key>
+		<path>project/costs/other_research_output</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/other_research_output/non_personnel">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>non_personnel</key>
+		<path>project/costs/other_research_output/non_personnel</path>
+		<dc:comment>Added for the question about costs associated with other research output, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/other_research_output"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/other_research_output/personnel">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>personnel</key>
+		<path>project/costs/other_research_output/personnel</path>
+		<dc:comment>Added for the question about costs associated with other research output, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/other_research_output"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/pid">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -406,6 +441,27 @@
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>documentation</key>
+		<path>project/dataset/documentation</path>
+		<dc:comment>Added for the question which documentation will be available together with the data</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation/where">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>where</key>
+		<path>project/dataset/documentation/where</path>
+		<dc:comment>Added for the question where the documentation can be found</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation_on_request">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>documentation_on_request</key>
+		<path>project/dataset/documentation_on_request</path>
+		<dc:comment>Added for the question &quot;Which data documention is only available on request?&quot; The question was of relevance for DFG projects in educational research until 2021, see Petra Stanat, Bereitstellung und Nutzung quantitativer Forschungsdaten in der Bildungsforschung: Memorandum des Fachkollegiums &quot;Erziehungswissenschaft&quot; der DFG, 2015, https://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/forschungsdaten/richtlinien_forschungsdaten_bildungsforschung.pdf.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/format">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>format</key>
@@ -454,6 +510,13 @@
 		<path>project/dataset/ipr/owner/name</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner"/>
+	</attribute>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/status">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>status</key>
+		<path>project/dataset/ipr/status</path>
+		<dc:comment>In the  &quot;Information for Building Language Corpora Under German Law&quot; of the DFG Review Board on Linguistics, https://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/guidelines_review_board_linguistics_corpora.pdf, is explicitly pointed to single rights of the originator and the necessity to obtain these rights. For the question &quot;Which rights have been obtained or what is the status of the rights collection?&quot; this attribute has been added.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -537,6 +600,55 @@
 		<key>creation</key>
 		<path>project/dataset/metadata/creation</path>
 		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/access_info">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>access_info</key>
+		<path>project/dataset/metadata/access_info</path>
+		<dc:comment>Added for the question &quot;Will metadata contain information to enable the user to access the data?&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/available_without_data">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>available_without_data</key>
+		<path>project/dataset/metadata/available_without_data</path>
+		<dc:comment>Added for the question &quot;Will metadata be guaranteed to remain available after data is no longer available?&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/harvesting">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>harvesting</key>
+		<path>project/dataset/metadata/harvesting</path>
+		<dc:comment>Added for the question &quot;Will metadata be offered in such a way that it can be harvested and indexed?&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/license_for_metadata">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>license_for_metadata</key>
+		<path>project/dataset/metadata/license_for_metadata</path>
+		<dc:comment>Added for the question &quot;Will metadata be made openly available and licenced under a public domain dedication CC0, as per the Grant Agreement? If not, please clarify why.&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/references_to_other_data">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>references_to_other_data</key>
+		<path>project/dataset/metadata/references_to_other_data</path>
+		<dc:comment>Added for the question &quot;Will your data include qualified references to other data (e.g. other data from your project, or datasets from previous research)?&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/search_keywords">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>search_keywords</key>
+		<path>project/dataset/metadata/search_keywords</path>
+		<dc:comment>Added for the question &quot;Will search keywords be provided in the metadata to optimize the possibility for discovery and then potential re-use?&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/vocabularies_open">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>vocabularies_open</key>
+		<path>project/dataset/metadata/vocabularies_open</path>
+		<dc:comment>Added for the question &quot;Will you openly publish the generated ontologies or vocabularies to allow reusing, refining or extending them?&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/include_software">
@@ -679,6 +791,13 @@
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/trusted">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>trusted</key>
+		<path>project/dataset/preservation/trusted</path>
+		<dc:comment>Added for the question &quot;Will the data be deposites in a trusted repository?&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation"/>
+	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>yesno</key>
@@ -692,6 +811,27 @@
 		<path>project/dataset/preservation/data_archiving_date</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/provenance">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>provenance</key>
+		<path>project/dataset/provenance</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/provenance/content">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>content</key>
+		<path>project/dataset/provenance/content</path>
+		<dc:comment>Added for the question &quot;What is the provenance of the data?&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/provenance"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/provenance/standards">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>standards</key>
+		<path>project/dataset/provenance/standards</path>
+		<dc:comment>Added for the question &quot;Will the provenance of the data be thoroughly documented using the appropriate standards?&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/provenance"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/quality_assurance">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -712,6 +852,13 @@
 		<key>reproducibility</key>
 		<path>project/dataset/reproducibility</path>
 		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reuse_existing">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>reuse_existing</key>
+		<path>project/dataset/reuse_existing</path>
+		<dc:comment>Added for the purpose of stating the reasons &quot;if re-use of any existing data has been considered but discarded&quot;. EU Horizon Europe requires suggestions concerning this question, see Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reuse_scenario">
@@ -1022,6 +1169,13 @@
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/grant_nr">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>grant_nr</key>
+		<path>project/funder/grant_nr</path>
+		<dc:comment>Added for the text field &quot;Action Number&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder"/>
+	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/id">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>id</key>
@@ -1134,6 +1288,13 @@
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval/statutatory_approval"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval/statutatory_approval/conditions">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>conditions</key>
+		<path>project/legal_aspects/official_approval/statutatory_approval/conditions</path>
+		<dc:comment>Added for the question &quot;What are the conditions for the permit?&quot;, recommended in Fachkollegium &quot;Alte Kulturen&quot;, Handreichung zum Umgang mit Forschungsdaten, 2020, https://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/forschungsdaten/handreichung_fachkollegium_101_forschungsdaten.pdf</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval/statutatory_approval"/>
+	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval/statutatory_approval/title">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>title</key>
@@ -1196,6 +1357,20 @@
 		<path>project/legal_aspects/sensitive_data/yesno</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/sensitive_data"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/other_research_output">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>other_research_output</key>
+		<path>project/other_research_output</path>
+		<dc:comment>Some research funders not only expect information about research data in a data management plan. Other research output can be digital as software, workflows and models, or physical as new materials, antibodies, reagents, samples, etc.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/other_research_output/plan">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>plan</key>
+		<path>project/other_research_output/plan</path>
+		<dc:comment>Added for the question &quot;In addition to the management of data, beneficiaries should also consider and plan for the management of other research outputs that may be generated or re-used throughout their projects. Such outputs can be either digital (e.g. software, workflows, protocols, models, etc.) or physical (e.g. new materials, antibodies, reagents, samples, etc.). Beneficiaries should consider which of the questions pertaining to FAIR data above, can apply to the management of other research outputs, and should strive to provide sufficient detail on how their research outputs will be managed and shared, or made available for re-use, in line with the FAIR principles. &quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/other_research_output"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1462,5 +1637,47 @@
 		<path>project/dmp/name</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/dmp_date">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>dmp_date</key>
+		<path>project/dmp/dmp_date</path>
+		<dc:comment>Date of this data management plan version, added for the text field &quot;Date&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/dmp_version">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>dmp_version</key>
+		<path>project/dmp/dmp_version</path>
+		<dc:comment>Version of this data management plan, added for the text field &quot;DMP version&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/repository">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>repository</key>
+		<path>project/dataset/sharing/repository</path>
+		<dc:comment>Refers to the place of publication, which must be distinguished from the place of storaging and archiving (see https://github.com/rdmorganiser/rdmo-catalog/issues/55)</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/responsible_person/name">
+	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	  <key>name</key>
+	  <path>project/dataset/preservation/responsible_person/name</path>
+	  <dc:comment>Refers to the permanent project owner: see https://github.com/rdmorganiser/rdmo-catalog/issues/110</dc:comment>
+	  <parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/responsible_person"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/responsible_person/email">
+	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	  <key>email</key>
+	  <path>project/dataset/preservation/responsible_person/email</path>
+	  <dc:comment>Refers to the permanent project owner: see https://github.com/rdmorganiser/rdmo-catalog/issues/110</dc:comment>
+	  <parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/responsible_person"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/responsible_person">
+	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	  <key>responsible_person</key>
+	  <path>project/dataset/preservation/responsible_person</path>
+	  <dc:comment>Refers to the permanent project owner: see https://github.com/rdmorganiser/rdmo-catalog/issues/110</dc:comment>
+	  <parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation"/>
 	</attribute>
 </rdmo>
