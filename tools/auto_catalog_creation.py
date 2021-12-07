@@ -117,8 +117,8 @@ def make_root(catalog_vars):
     root = etree.Element("rdmo", nsmap=NSMAP)  # lxml only!
     root.append(
         etree.fromstring(
-            """
-        <catalog xmlns:dc="http://purl.org/dc/elements/1.1/" dc:uri="https://rdmorganiser.github.io/terms/questions/ua-ruhr">
+        f"""
+	<catalog xmlns:dc="http://purl.org/dc/elements/1.1/" dc:uri="https://rdmorganiser.github.io/terms/questions/{catalog_vars["key"]}">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key></key>
 		<dc:comment/>
@@ -127,7 +127,7 @@ def make_root(catalog_vars):
 		<title lang="de"></title>
 		<help lang="en"></help>
 		<help lang="de"></help>
-	    </catalog>
+	</catalog>
         """
         )
     )
