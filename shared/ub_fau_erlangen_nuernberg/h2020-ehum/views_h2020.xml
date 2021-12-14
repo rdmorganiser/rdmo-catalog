@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<view dc:uri="https://fdm-bayern.org/eHumanities/views/H2020_ULB_View_tabular">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<key>H2020_ULB_View_tabular</key>
+		<dc:comment/>
+		<title lang="en">H2020 DMP (in table form)</title>
+		<help lang="en">This view was designed with the "Horizon 2020 Grants" DMP in mind. It rearranges some of the answers and lists the different datasets in separate tables. Instead of yes-no answers the view contains some generic text passages. The view assumes that the answers are submitted in English.
+
+Note that the layout cannot be mapped to all export formats.</help>
+		<title lang="de">H2020 DMP (Tabellarisch)</title>
+		<help lang="de">Diese Ansicht wurde für den "Horizon 2020 Katalog" entworfen. Die Ansicht geht davon aus, dass der DMP in englischer Sprache beantwortet wurde. Die Antworten werden etwas umarrangiert und die Informationen zu den verschiedenen Datensätzen, wenn möglich, tabellarisch dargestellt. Anstelle von Ja-Nein-Antworten werden kurze generische Textbausteine eingefügt. Es wird in der Ansicht davon ausgegangen, dass die Antworten in Englisch verfasst wurden.
+
+Bitte beachten Sie: Das Layout kann nicht von allen Exportformaten dargestellt werden.</help>
+		<catalogs>
+			<catalog dc:uri="https://fdm-bayern.org/eHumanities/questions/Horizon2020"/>
+		</catalogs>
+		<template>{% load view_tags %}
+&lt;h1&gt;Data Management Plan&lt;/h1&gt; 
+
+{% get_set 'project/dataset' as datasets %}
+{% get_set 'project/partner' as partners %}
+{% get_set 'H2020/PI' as pis %}
+
+
+&lt;p&gt;
+EC H2020 grant number: {% render_value 'project/funder/programme/title' %}
+&lt;/p&gt;
+
+&lt;h2&gt;Principal Investigators &lt;/h2&gt;
+
+
+{% for prin in pis %}
+&lt;p&gt;
+&lt;table&gt;
+    &lt;style&gt;
+         table{
+             border: 1px solid black;
+         }
+         th, td{
+             padding-top: 5px;
+              padding-bottom: 5px;
+              padding-left: 5px;
+              padding-right: 5px;
+			  vertical-align: top;
+			  border: 1px solid black;
+			  table-layout: fixed;			  
+         }  
+    &lt;/style&gt;
+   &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Principal Investigator &lt;/th&gt;
+      &lt;th&gt; {% render_set_value prin 'H2020/PI/given_name' %} {% render_set_value prin 'H2020/PI/name' %}&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Affiliation &lt;/td&gt;
+      &lt;td&gt; {% render_set_value prin 'H2020/PI/affiliation' %}&lt;/td&gt;
+    &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Contact &lt;/td&gt;
+      &lt;td&gt; {% render_set_value prin 'H2020/PI/email' %}&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ORCID &lt;/td&gt;
+      &lt;td&gt; {% render_set_value prin 'H2020/PI/orcid' %}&lt;/td&gt;
+    &lt;/tr&gt;
+                {% get_set_value prin 'H2020/PI/data_contact' as contactperson %}
+  &lt;/tbody&gt;
+&lt;/table&gt;
+    {% if contactperson.is_true %}
+    {% render_set_value prin 'H2020/PI/given_name' %} {% render_set_value prin 'H2020/PI/name' %} is designated as a contact person for data management issues.
+   {% endif %}
+&lt;/p&gt;
+{% endfor %}
+
+&lt;h2&gt;Data summary&lt;/h2&gt;
+
+The Projects creates or reuses the following datasets:
+
+&lt;ul&gt;
+{% for dataset in datasets %}
+&lt;li&gt;{{ dataset.value }} &lt;/li&gt;
+{% endfor %}
+&lt;/ul&gt;
+
+Each dataset consists of multiple data files and is handled in a different way. Therefore, this DMP considers each set separately. 
+
+{% for dataset in datasets %}
+&lt;p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Dataset&lt;/th&gt;
+      &lt;th&gt; {{ dataset.value }}  &lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Purpose and relation to project objectives   &lt;/td&gt;
+      &lt;td&gt; {% render_set_value dataset 'project/dataset/usage_description' %}&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Data types and Formats &lt;/td&gt;
+      &lt;td&gt; {% render_set_value dataset 'project/dataset/format' %}&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Reuse of existing data &lt;br/&gt; (data source)&lt;/td&gt;
+      &lt;td&gt; {% render_set_value dataset 'project/dataset/creation_methods' %} &lt;br/&gt;
+		   ({% render_set_value dataset 'project/dataset/origin' %})&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Expected data volume &lt;/td&gt;
+      &lt;td&gt;{% render_set_value dataset 'project/dataset/size/volume' %}&lt;/td&gt;
+   &lt;/tr&gt;         
+   &lt;tr&gt;
+      &lt;td&gt;Data utility and re-use potential &lt;/td&gt;
+      &lt;td&gt;{% render_set_value dataset 'project/dataset/reuse_scenario' %} &lt;/td&gt;
+   &lt;/tr&gt;  
+  &lt;/tbody&gt;
+ &lt;/table&gt;
+&lt;/p&gt;
+{% endfor %}
+
+&lt;h2&gt;FAIR principles&lt;/h2&gt;
+
+{# Hier ggf.- ein allgemeiner Einleitungssatz an die Institution angepasst - Beispiel noch entwerfen #}
+
+ &lt;h3&gt;Making data findable, including provisions for metadata&lt;/h3&gt;
+ 
+{% for dataset in datasets %}
+&lt;p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Dataset&lt;/th&gt;
+      &lt;th&gt; {{ dataset.value }}  &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Metadata&lt;/td&gt;
+      &lt;td&gt;{% render_set_value dataset 'project/dataset/metadata/creation_manual' %}&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Identification mechnisms and use of PIDs &lt;/td&gt;
+      &lt;td&gt; {% render_set_value dataset 'project/dataset/pids/system' %}&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Naming conventions&lt;/td&gt;
+      &lt;td&gt; {% render_set_value dataset 'project/dataset/storage/naming_policy' %}&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Search keywords and controlled terms&lt;/td&gt;
+      &lt;td&gt;	{% render_set_value dataset 'project/dataset/keywords' %} &lt;/td&gt;
+   &lt;/tr&gt;  
+   &lt;tr&gt;
+      &lt;td&gt;Versioning&lt;/td&gt;
+      &lt;td&gt;	{% render_set_value dataset 'project/dataset/versioning_strategy' %}&lt;/td&gt;
+   &lt;/tr&gt;           
+  &lt;/tbody&gt;
+ &lt;/table&gt;
+&lt;/p&gt;
+{% endfor %}
+ 
+&lt;h3&gt;Making data accessible&lt;/h3&gt; 
+  
+{% for dataset in datasets %}
+&lt;p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Dataset&lt;/th&gt;
+      &lt;th&gt; {{ dataset.value }}  &lt;/th&gt;
+    &lt;/tr&gt;
+   &lt;/thead&gt;
+ &lt;tbody&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Data Access and Restrictions&lt;/td&gt;
+      &lt;td&gt;{% render_set_value dataset 'project/dataset/sharing/explanation' %}&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Prerequisites: tools/software &lt;/td&gt;
+      &lt;td&gt;{% render_set_value dataset 'project/dataset/usage_technology' %}&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Data publication / deposit&lt;/td&gt;
+      &lt;td&gt; {% render_set_value dataset 'project/dataset/preservation/repository_information' %}&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Deposit cleared by repository:&lt;/td&gt;
+      &lt;td&gt;{% get_value 'project/additional_rdm_policy/requirements' as val %}
+	  {% if val.is_true %} 
+	  The suitability of the repository for the dataset has been verified.  The necessary steps for the deposition of the dataset have already been determined.
+      {% endif %}
+	  {% if val.is_false %} 	
+	  We are still in the process of ascertaining the needed steps (data processing and cleansing) to make the data compliant with the repository recommendations. Once this is finished, arrangements that are more concrete will be explored.
+	  {% endif %}
+	  &lt;/td&gt;
+   &lt;/tr&gt;  
+   &lt;tr&gt;
+      &lt;td&gt;Access Procedures&lt;/td&gt;
+      &lt;td&gt;{% render_set_value dataset 'project/dataset/preservation/access_authentication' %}&lt;/td&gt;
+   &lt;/tr&gt;  
+   &lt;tr&gt;
+      &lt;td&gt;Clear Access Conditions&lt;/td&gt;
+      &lt;td&gt;{% render_set_value dataset 'project/dataset/data_security/access_permissions' %}&lt;/td&gt;
+   &lt;/tr&gt;  
+  &lt;/tbody&gt;
+ &lt;/table&gt;
+&lt;/p&gt;
+{% endfor %}
+ 
+ 
+&lt;h3&gt;Making data interoperable&lt;/h3&gt;
+
+
+{% for dataset in datasets %}
+&lt;p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Dataset&lt;/th&gt;
+      &lt;th&gt; {{ dataset.value }}  &lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Data Interoperability&lt;/td&gt;
+      &lt;td&gt;{% render_set_value dataset 'project/dataset/interoperability' %}&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Standards / Vocabularies / Methodologies &lt;/td&gt;
+      &lt;td&gt;&lt;div style="padding-left: 15px;"&gt;{% render_set_value_list dataset 'project/dataset/metadata/standards' %}&lt;/div&gt;&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Mappings to Common ontologies&lt;/td&gt;
+      &lt;td&gt;{% render_set_value dataset 'project/dataset/metadata/mappings' %}&lt;/td&gt;
+   &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/p&gt;
+{% endfor %}
+
+&lt;h3&gt;Increase data re-use (through clarifying licences)&lt;/h3&gt;
+
+{% for dataset in datasets %}
+&lt;p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Dataset&lt;/th&gt;
+      &lt;th&gt; {{ dataset.value }}  &lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Licences&lt;/td&gt;
+      &lt;td&gt;{% render_set_value dataset 'project/dataset/sharing/sharing_license' %}&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;QA process&lt;/td&gt;
+      &lt;td&gt;{% render_set_value dataset 'project/dataset/quality_assurance' %}&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Date / Length &lt;/td&gt;
+      &lt;td&gt;{% render_set_value dataset 'project/dataset/data_publication_date' %}
+	  &lt;br/&gt;{% render_set_value dataset 'project/dataset/preservation/reuse_duration' %}&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Embargo Periods&lt;/td&gt;
+      &lt;td&gt;{% render_set_value dataset 'project/dataset/preservation/embargo_period' %}&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Re-Use Restriction&lt;/td&gt;
+      &lt;td&gt;{% render_set_value dataset 'project/dataset/sharing/restrictions_explanation' %}&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Long-term value&lt;/td&gt;
+      &lt;td&gt;{% render_set_value dataset 'project/dataset/preservation/longterm_value' %}&lt;/td&gt;
+   &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td&gt;Selection Process&lt;/td&gt;
+      &lt;td&gt;{% render_set_value dataset 'project/dataset/pids/responsible_person/name' %}.&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;h2&gt;Allocation of resources&lt;/h2&gt;
+&lt;h3&gt;Costs for making data FAIR&lt;/h3&gt;
+
+&lt;p&gt;
+	&lt;b&gt;Personnel cost for making all data FAIR. Numbers given in person months. &lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+		{% render_value 'project/costs/metadata/personnel' %}
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;b&gt;Non-personnel costs for making all data FAIR. Numbers given in Euro. &lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+		{% render_value 'project/costs/metadata/non_personnel' %}
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;b&gt;Covering the costs of making data FAIR: &lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+		{% render_value 'project/costs/preservation/cover_how' %}
+&lt;/p&gt;
+
+
+&lt;h3&gt;Costs - long-term preservation&lt;/h3&gt;
+
+&lt;p&gt;
+	&lt;b&gt; Personnel costs for long-term preservation for the whole project. Cost given in person months. &lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+		{% render_value 'project/costs/preservation/personnel' %}
+&lt;/p&gt;
+
+
+&lt;p&gt;
+	&lt;b&gt;Non-personnel costs for long-term preservation. Numbers in Euro&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	{% render_value 'project/costs/preservation/non_personnel' %}
+&lt;/p&gt;
+
+
+
+&lt;h2&gt;Data security and responsibilities&lt;/h2&gt;
+&lt;p&gt;
+Contact persons for data management issues and question within the project are:
+{% get_values 'project/partner/contact_person/name' set_index=0 as name %}
+    &lt;ul&gt;
+	{% for value in name %}
+        &lt;li&gt;
+        	{{value.value }}
+        &lt;/li&gt;
+    {% endfor %}
+	&lt;/ul&gt;
+&lt;/p&gt;
+
+
+
+{% for dataset in datasets %}
+&lt;p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Dataset name&lt;/th&gt;
+      &lt;th&gt; {{ dataset.value }}  &lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Provisions for data security&lt;/td&gt;
+      &lt;td&gt;{% render_set_value dataset 'project/dataset/data_security/security_measures' %}&lt;/td&gt;
+   &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Long term preservation and curation&lt;/td&gt;
+      &lt;td&gt;{% render_set_value dataset 'project/dataset/data_security/security_measures' %}&lt;/td&gt;
+   &lt;/tr&gt;
+   
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;h2&gt;Ethical Aspects&lt;/h2&gt;
+
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    {% get_set_value dataset 'project/dataset/sensitive_data/other/yesno' as val %}
+    {% if val.is_false %}
+	There are no ethical or legal aspects that will affect the sharing of this dataset. 
+	{% endif %}
+	{% if val.is_true %}
+	 We anticipate the following potential issues: {% render_set_value dataset 'project/dataset/sensitive_data/other/description' %} &lt;br/&gt;
+	 Regarding informed consent: {% render_set_value dataset 'project/dataset/sensitive_data/personal_data/consent/extent' %}
+    {% endif %}
+&lt;/p&gt;
+{% endfor %}
+
+&lt;h2&gt;Other Aspects and data management requirements&lt;/h2&gt;
+
+{% get_value 'project/additional_rdm_policy/requirements' as val %}
+&lt;p&gt;
+{% if val.is_true %}
+In addition to the H2020 data management guidelines and FAIR principles, the project adheres to the following guidelines and procedures: &lt;br /&gt;
+{% render_value 'project/additional_rdm_policy/requirements' %}  
+{% endif %}
+{% if val.is_false %}
+There are no further national, departmental, or sectorial data management procedures or requirements.  
+{% endif %}</template>
+	</view>
+	<view dc:uri="https://fdm-bayern.org/eHumanities/views/H2020_View_ULB">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<key>H2020_View_ULB</key>
+		<dc:comment/>
+		<title lang="en">View for the H2020 DMP</title>
+		<help lang="en">This view was designed for the "Horizon 2020 Grants" DMP. It will be incomplete if used with a different DMP catalog. The view assumes that all answers are in English (as the grant application is generally in English).</help>
+		<title lang="de">Ansicht für den H2020 DMP</title>
+		<help lang="de">Englisch-sprachige Ansicht für den "Horizon 2020 Katalog". Die Fragen und Antworten werden bis auf wenige Ausnahmen wörtlich übernommen. Die Ansicht geht davon aus, dass der DMP in englischer Sprache beantwortet wurde. 
+
+Diese Ansicht sollte nicht für andere Fragekataloge verwendet werden, da sonst Antworten fehlen werden.</help>
+		<catalogs>
+			<catalog dc:uri="https://fdm-bayern.org/eHumanities/questions/Horizon2020"/>
+		</catalogs>
+		<template>{% load view_tags %}
+&lt;h1&gt;Data Mangement Plan&lt;/h1&gt; {# Überschrift geändert #}
+
+{% get_set 'project/dataset' as datasets %}
+{% get_set 'project/partner' as partners %}
+{% get_set 'H2020/PI' as pis %}
+
+{% comment %}
+hier wäre nett wenn man den Titel des Projektes aus der RDMO-Projektinformation ziehen könnte, Ich frage bei RDMO nach.
+&lt;p&gt;
+&lt;h2&gt;Project Title: {% render_value ??? %} &lt;/h2&gt;
+&lt;/p&gt;
+{% endcomment %}
+&lt;p&gt;
+EC H2020 grant number: {% render_value 'project/funder/programme/title' %}
+&lt;/p&gt;
+
+&lt;h2&gt;Principal Investigators &lt;/h2&gt;
+
+
+{% for prin in pis %}
+&lt;p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;style&gt;
+         table{
+             border: 1px solid black;
+         }
+         th, td{
+             padding-top: 5px;
+              padding-bottom: 5px;
+              padding-left: 5px;
+              padding-right: 5px;
+         }
+         
+    &lt;/style&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Principal Investigator &lt;/th&gt;
+      &lt;th&gt; {% render_set_value prin 'H2020/PI/given_name' %} {% render_set_value prin 'H2020/PI/name' %}&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Affiliation &lt;/td&gt;
+      &lt;td&gt; {% render_set_value prin 'H2020/PI/affiliation' %}&lt;/td&gt;
+    &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;Contact &lt;/td&gt;
+      &lt;td&gt; {% render_set_value prin 'H2020/PI/email' %}&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ORCID &lt;/td&gt;
+      &lt;td&gt; {% render_set_value prin 'H2020/PI/orcid' %}&lt;/td&gt;
+    &lt;/tr&gt;
+                {% get_set_value prin 'H2020/PI/data_contact' as contactperson %}
+  &lt;/tbody&gt;
+&lt;/table&gt;
+    {% if contactperson.is_true %}
+    {% render_set_value prin 'H2020/PI/given_name' %} {% render_set_value prin 'H2020/PI/name' %} is designated as a contact person for data management issues.
+                {% endif %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;h2&gt;Data summary&lt;/h2&gt;
+&lt;h3&gt;Datasets - description and formats&lt;/h3&gt;
+
+&lt;p&gt;
+	&lt;b&gt;What is the purpose of the data collection / generation and its relation to the objectives of the project?&lt;/b&gt;
+&lt;/p&gt;
+
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/usage_description' %}
+&lt;p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt;What types and formats of data will be generated in the project?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/format' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;h3&gt;Datasets - re-use&lt;/h3&gt;
+
+&lt;p&gt;
+	&lt;b&gt;Will you be re-using any existing dataset and how?&lt;/b
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/creation_methods' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt;What is the origin of the data?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/origin' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;h3&gt;Datasets - size and utility&lt;/h3&gt;
+
+&lt;p&gt;
+	&lt;b&gt;What is the expected size of the data(set)?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/size/volume' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt;Outline the data utility; to whom will the data(set) be useful?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/reuse_scenario' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;h2&gt;FAIR data principles&lt;/h2&gt;
+&lt;h3&gt;Making data findable, including provisions for metadata I&lt;/h3&gt; {# "fo"--&gt; "for" und das "I" eintfernt #}
+
+&lt;p&gt;
+	&lt;b&gt;Are the data produced and / or used in the project discoverable with metadata?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/fairprinciples/findable' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+{# die überschrift II : &lt;h3&gt;Making data findable, including provisions for metadata II&lt;/h3&gt; ist wohl nicht nötig #}
+
+&lt;p&gt;
+	&lt;b&gt; Outline the identifiability of data and refer to standard identification mechanisms. Do you make use of persistent and unique identifiers, such as Digital Object Identifiers (DOI), to make sure the data can be identified and located?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/pids/system' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt;What naming conventions do you follow?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/storage/naming_policy' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt;Will search keywords be provided that optimize possibilities for re-use?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/keywords' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt;Outline the approach to clear versioning. Do you provide clear version numbers?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/versioning_strategy' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt; What metadata will be created? Specify standards for metadata creation (if any). If there are no standards in your discipline describe what kind of metadata will be created and how.&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/metadata/creation_manual' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;h3&gt;Making data openly accessible&lt;/h3&gt; {# wieder das "I" entfernt, da man keine zwie übeschirften braucht #}
+
+&lt;p&gt;
+	&lt;b&gt;Specify what methods or software tools are needed to access the data? Is documentation about the software needed to access the data? Is it possible to include the relevant software (e.g. open source code)?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/usage_technology' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt;Where and how will the data and associated metadata, documentation and code be deposited? Preference should be given to certified repositories which support open access where possible.&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/preservation/repository_information' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt;Have you explored appropriate arrangements with the identified repository?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/preservation/repository_arrangements' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt;If there are restrictions, how will access be provided? Is there a need for a data access committee? How will the identity of the person accessing the data be ascertained (if necessary)?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/preservation/access_authentication' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt; Are there well described conditions for access (i.e. a machine readable license)?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/data_security/access_permissions' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+{# hier wieder die Zwischenüberschrift II entfernt &lt;h3&gt;Making data openly accessible II&lt;/h3&gt; #}
+
+&lt;p&gt;
+	&lt;b&gt;Specify which data will be made openly available? If some data are kept closed, cannot be shared (or only under restrictions) provide the rational for doing so. Separate legal and contractual reasons from voluntary restrictions.&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/sharing/explanation' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;h3&gt;Making data interoperable&lt;/h3&gt;
+
+&lt;p&gt;
+	&lt;b&gt;Are the data produced in the project interoperable, that is allowing data exchange and re-use between researchers, institutions, organizations, countries, etc. (i.e. adhering to standards for formats, as much as possible compliant with available (open) software applications, and in particular facilitating re-combinations with different datasets from different origins)?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/interoperability' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt;What data and metadata vocabularies, standards or methodologies will you follow to make your data interoperable? Will you be using standard vocabularies for all data types present in your dataset, to allow inter-disciplinary interoperability?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	&lt;ul&gt;
+		{% render_set_value_list dataset 'project/dataset/metadata/standards' %}
+	&lt;/ul&gt;   
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt; In case it is unavoidable that you use uncommon or generate project-specific ontologies or vocabularies, will you provide mappings to more commonly used ontologies?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/metadata/mappings' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;h3&gt;Increase data re-use (through clarifying licences)&lt;/h3&gt;
+
+&lt;p&gt;
+	&lt;b&gt;How will the data be licensed to permit the widest re-use possible?&lt;/b&gt;
+&lt;/p&gt;
+
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/sharing/sharing_license' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt;When will the data be made available for re-use?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/data_publication_date' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt;If an embargo is sought to give time to publish or seek patents, specify why and how long this will apply, bearing in mind that research data should be made available as soon as possible.&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/preservation/embargo_period' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt;Are the data produced and / or used in the project useable by third parties, in particular after the end of the project? If the re-use of some data is restricted, explain why.&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/sharing/restrictions_explanation' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt;How long is it intended that the data remains re-usable?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/preservation/reuse_duration' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt; Describe the data quality assurance process.&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/quality_assurance' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;h2&gt;Allocation of resources&lt;/h2&gt;
+&lt;h3&gt;Costs for making data FAIR&lt;/h3&gt;
+
+
+&lt;p&gt;
+	&lt;b&gt;Estimate the costs of needed personnel for making your data FAIR. Give the number of person months.&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+		{% render_value 'project/costs/metadata/personnel' %}
+&lt;/p&gt;
+
+
+&lt;p&gt;
+	&lt;b&gt;Estimate the non-personnel costs for making your data FAIR.&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+		{% render_value 'project/costs/metadata/non_personnel' %}
+&lt;/p&gt;
+
+
+&lt;p&gt;
+	&lt;b&gt;How will these be covered? Note that costs related to open access to research data are eligible as part of the Horizon 2020 grant (if compliant with the Grant Agreement conditions).&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+		{% render_value 'project/costs/preservation/cover_how' %}
+&lt;/p&gt;
+
+
+&lt;h3&gt;Costs - long term preservation&lt;/h3&gt;
+
+
+&lt;p&gt;
+	&lt;b&gt;Estimate the personnel costs for long-term preservation for the whole project. Give the number of person months.&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+		{% render_value 'project/costs/preservation/personnel' %}
+&lt;/p&gt;
+
+
+&lt;p&gt;
+	&lt;b&gt;Estimate the non-personnel costs for long-term preservation.&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+		{% render_value 'project/costs/preservation/non_personnel' %}
+&lt;/p&gt;
+
+
+&lt;h3&gt;Responsibilities&lt;/h3&gt;
+
+&lt;p&gt;
+	&lt;b&gt;Who will be responsible for data management in your project?&lt;/b&gt;
+&lt;/p&gt;
+
+
+{% get_values 'project/partner/contact_person/name' set_index=0 as name %}
+    {% for value in name %}
+        &lt;p&gt;
+        	{{value.value }}
+        &lt;/p&gt;
+    {% endfor %}
+    
+
+&lt;h3&gt;Costs - long term archiving&lt;/h3&gt;
+
+
+&lt;p&gt;
+	&lt;b&gt;Who selects the data to be long-term archived?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/pids/responsible_person/name' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt; Why should this dataset be long term preserved? What is its future value?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/preservation/longterm_value' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;h2&gt;Data security&lt;/h2&gt;
+&lt;h3&gt;Transfer and storage&lt;/h3&gt;
+
+
+&lt;p&gt;
+	&lt;b&gt;What provisions are in place for data security (including data recovery as well as secure storage and transfer of sensitive data)?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/data_security/security_measures' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt; Is the dataset safely stored in certified repositories for long term preservation and curation?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/preservation/certification' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;h2&gt;Ethical Aspects&lt;/h2&gt;
+&lt;h3&gt;General&lt;/h3&gt;
+
+
+&lt;p&gt;
+	&lt;b&gt;Are there any ethical or legal issues that can have an impact on data sharing?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+    {% get_set_value dataset 'project/dataset/sensitive_data/other/yesno' as val %}
+    {% if val.is_false %}
+	There are no ethical or legal aspects that will impact the sharing of this dataset. 
+    {% endif %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;p&gt;
+	&lt;b&gt;Discuss the corresponding ethics and legal issues. These can also be discussed in the context of the ethics review. If relevant, include references to ethics deliverables and ethics chapter in the Description of the Action (DoA).&lt;/b&gt;
+&lt;/p&gt;
+  {% for dataset in datasets %}
+    {% get_set_value dataset 'project/dataset/sensitive_data/other/yesno' as val %}
+      {% if val.is_true %}
+          &lt;p&gt;
+              &lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+              {% render_set_value dataset 'project/dataset/sensitive_data/other/description' %}
+          &lt;/p&gt;
+	  {% endif %}
+  {% endfor %}
+
+
+&lt;h3&gt;General information&lt;/h3&gt;
+
+&lt;p&gt;
+	&lt;b&gt; Is informed consent for data sharing and long term preservation included in questionnaires dealing with personal data?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;{{ dataset.value }}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/sensitive_data/personal_data/consent/extent' %}
+&lt;/p&gt;
+{% endfor %}
+
+
+&lt;h2&gt;Other&lt;/h2&gt;
+&lt;h3&gt;Data management requirements&lt;/h3&gt;
+
+&lt;p&gt;
+	&lt;b&gt;Do you make use of other national/funder/sectorial/departmental procedures for data management?&lt;/b&gt;
+&lt;/p&gt;
+{% render_value 'project/additional_rdm_policy/yesno' %}
+&lt;/p&gt;
+
+
+{% get_value 'project/additional_rdm_policy/requirements' as val %}
+{% if val.is_true %}
+&lt;p&gt;
+	&lt;b&gt;If there are other procedures, which ones?&lt;/b&gt;
+&lt;/p&gt;
+	{% render_value 'project/additional_rdm_policy/requirements' %}
+{% endif %}
+&lt;/p&gt;</template>
+	</view>
+	</rdmo>
