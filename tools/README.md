@@ -1,5 +1,32 @@
-# Tools 
+# Content management for UA Ruhr 
+The general philosophy for managing the content of this repository (fork) is to keep the content in sync with the upstream https://github.com/rdmorganiser/rdmo-catalog. 
+Therefore, the majority of the content of this fork is in sync with the upstream.  
 
+If new content needs to be added or changed, then
+* 1. Check if this is accepted as a pull request at Upstream https://github.com/rdmorganiser/rdmo-catalog.
+* 2. If not, e.g. if the content is only relevant to UA Ruhr, save the content under xml files at `rdmorganiser/_changes`.
+
+# merge upstream and content  
+local changes that need to be merged are stored in xml files under `rdmorganiser/_changes`.
+
+* `new_attribute.xml` new attributes from UA Ruhr 
+* `new_questions.xml` new questions from UA Ruhr
+
+If there was any content that needed to be overwritten (currently there is no such case), this content would be stored in a file like `changed_questions.xml`. In this file, the full xml element, i.e. `<question> ... </question>`, which contains a change, would be stored.
+  
+## Merging domains 
+* merge content `<rdmo> ... </rdmo>` xml elements of `rdmorganiser/_changes/new_attributes.xml` into to `rdmorganiser/domain/rdmo.xml` and commit the latter. 
+ 
+## Merging questions 
+
+* take all  content of `<rdmo> ... </rdmo>` except `<catalog> ... </catalog>`  of
+    * 1. `rdmorganiser/_changes/new_questions.xml` and 
+    * 2. `rdmorganiser/questions/rdmo.xml`
+    * 3. store these xml elements in `tools/all_questions.xml` after `<catalog> ... </catalog>` section and remove the old content  except  `<catalog> ... </catalog>`. 
+
+
+
+# Tools 
 ## Comparing two rdmo domain files 
 `python3 compare_domains.py` compares two rdmo domains. Two files must be present at execution of the script: `domain.xml` and `rdmo.xml`.
 After a successful run the results will be available in three files `deleted.xml`, `changed.xml`, and `added.xml`.  
@@ -14,8 +41,8 @@ see [README_catalog_view_compare.md](README_catalog_view_compare.md)
 
 ## Automatized Catalog Generation 
 ### Quick Guide
-- implement changes regarding content and presentation to `all_questions.xml`
-  - be sure, that all references to the domain, option sets and conditions are correct as well
+- implement changes regarding content and presentation to `tools/all_questions.xml`
+  - be sure, that all references to the domain, option sets and conditions are correct as well 
 - provide catalog information and composition within `cat_member.yaml`
 - run `python3 auto_catalog_creation.py`
 - IMPORTANT NOTE: for the 'training' catalog there is an additional manual step (see [README_training.md](README_training.md)
