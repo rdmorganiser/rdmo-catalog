@@ -1,12 +1,12 @@
 # Content management for UA Ruhr 
 The general philosophy for managing the content of this repository (fork) is to keep the content in sync with the upstream https://github.com/rdmorganiser/rdmo-catalog. 
-Therefore, the majority of the content of this fork is in sync with the upstream.  
+Therefore, the majority of the content of this fork is identical to the upstream.  
 
 If new content needs to be added or changed, then
 * 1. Check if this is accepted as a pull request at Upstream https://github.com/rdmorganiser/rdmo-catalog.
 * 2. If not, e.g. if the content is only relevant to UA Ruhr, save the content under xml files at `rdmorganiser/_changes`.
 
-# merge upstream and content  
+# Merge upstream and content  
 local changes that need to be merged are stored in xml files under `rdmorganiser/_changes`.
 
 * `new_attribute.xml` new attributes from UA Ruhr 
@@ -15,14 +15,14 @@ local changes that need to be merged are stored in xml files under `rdmorganiser
 If there was any content that needed to be overwritten (currently there is no such case), this content would be stored in a file like `changed_questions.xml`. In this file, the full xml element, i.e. `<question> ... </question>`, which contains a change, would be stored.
   
 ## Merging domains 
-* merge content `<rdmo> ... </rdmo>` xml elements of `rdmorganiser/_changes/new_attributes.xml` into to `rdmorganiser/domain/rdmo.xml` and commit the latter. 
+* merge content `<rdmo> ... </rdmo>` xml elements of `rdmorganiser/_changes/new_attributes.xml` into `rdmorganiser/domain/rdmo.xml` and commit the latter. 
  
 ## Merging questions 
 
 * take all  content of `<rdmo> ... </rdmo>` except `<catalog> ... </catalog>`  of
     * 1. `rdmorganiser/_changes/new_questions.xml` and 
     * 2. `rdmorganiser/questions/rdmo.xml`
-    * 3. store these xml elements in `tools/all_questions.xml` after `<catalog> ... </catalog>` section and remove the old content  except  `<catalog> ... </catalog>`. 
+    * 3. store these xml elements in `tools/all_questions.xml` after `<catalog> ... </catalog>` section and remove the old content except `<catalog> ... </catalog>`. 
 
 
 
