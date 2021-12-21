@@ -1,4 +1,4 @@
-UA Ruhr catalogs
+RDMO catalog
 ============
 
 This repository contains the resaearch data management life cycle catalogs for [RDMO](https://github.com/rdmorganiser/rdmo) prepared by the work group FDM UA Ruhr.

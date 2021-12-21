@@ -25,15 +25,16 @@
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<title lang="en">Topic</title>
-		<title lang="de">Thema</title>
 		<help lang="en"/>
-		<help lang="de"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<title lang="de">Thema</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
@@ -45,21 +46,27 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question/keywords"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/topic-research_question"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en"/>
-		<help lang="de"/>
 		<text lang="en">Please give some keywords describing the research question.</text>
-		<text lang="de">Bitte geben Sie einige Schlagworte zur Forschungsfrage an.</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en">keyword</verbose_name>
-		<verbose_name lang="de">Schlagwort</verbose_name>
 		<verbose_name_plural lang="en">keywords</verbose_name_plural>
+		<help lang="de"/>
+		<text lang="de">Bitte geben Sie einige Schlagworte zur Forschungsfrage an.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Schlagwort</verbose_name>
 		<verbose_name_plural lang="de">Schlagwörter</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -71,21 +78,27 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question/title"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/topic-research_question"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
-    <help lang="en">Describe briefly the project and its goals.</help>
-    <help lang="de">Bitte beschreiben Sie kurz das Projekt und dessen Ziele.</help>
-		<text lang="en">Please briefly describe the contents of the project.</text>
-		<text lang="de">Bitte beschreiben Sie kurz die Inhalte des Projekts.</text>
+		<help lang="en">Describe briefly the project and its aims.</help>
+		<text lang="en">What is the main research question of the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de">Bitte beschreiben Sie kurz das Projekt und dessen Ziele.</help>
+		<text lang="de">Wie lautet die primäre Forschungsfrage des Projektes?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -96,44 +109,19 @@
 		<dc:comment>for Germany, the classification works, but we might consider also DDC as an option</dc:comment>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<title lang="en">Research field</title>
-		<title lang="de">Disziplin</title>
 		<help lang="en"/>
-		<help lang="de"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<title lang="de">Disziplin</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/topic-research_field/name">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>name</key>
-		<path>consultation/general/topic-research_field/name</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/name"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/topic-research_field"/>
-		<is_collection>True</is_collection>
-		<order>2</order>
-		<help lang="en"/>
-		<help lang="de"/>
-		<text lang="en">Which persons or institutions are responsible for the project coordination?</text>
-		<text lang="de">Welche Personen oder Institutionen sind verantwortlich für die Projektkoordination?</text>
-		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="en"/>
-		<verbose_name_plural lang="de"/>
-		<widget_type>text</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<optionsets/>
-		<conditions/>
-	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/topic-research_field/research_field">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>research_field</key>
@@ -142,24 +130,82 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_field/title"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/topic-research_field"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en">The list of disciplines follows the &lt;a href="http://www.dfg.de/en/dfg_profile/statutory_bodies/review_boards/subject_areas/index.jsp" target="_blank"&gt;subject classification of the DFG (German Research Foundation)&lt;/a&gt;.</help>
-		<help lang="de">Die Liste der Disziplinen entspricht der &lt;a href="http://www.dfg.de/dfg_profil/gremien/fachkollegien/faecher/" target="_blank"&gt;Fachsystematik der Deutschen Forschungsgemeinschaft (DFG)&lt;/a&gt;.</help>
 		<text lang="en">Which research field(s) does this project belong to?</text>
-		<text lang="de">Welcher Disziplin / welchen Disziplinen ist das Projekt zuzuordnen?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en">discipline</verbose_name>
-		<verbose_name lang="de">Forschungsdisziplin</verbose_name>
 		<verbose_name_plural lang="en">disciplines</verbose_name_plural>
+		<help lang="de">Die Liste der Disziplinen entspricht der &lt;a href="http://www.dfg.de/dfg_profil/gremien/fachkollegien/faecher/" target="_blank"&gt;Fachsystematik der Deutschen Forschungsgemeinschaft (DFG)&lt;/a&gt;.</help>
+		<text lang="de">Welcher Disziplin / welchen Disziplinen ist das Projekt zuzuordnen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Forschungsdisziplin</verbose_name>
 		<verbose_name_plural lang="de">Forschungsdisziplinen</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>select</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/research_fields"/>
 		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/project-schedule-schedule">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>project-schedule-schedule</key>
+		<path>consultation/general/project-schedule-schedule</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>10</order>
+		<title lang="en">Project schedule</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Projektablauf</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/project-schedule-schedule/project_duration">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>project_duration</key>
+		<path>consultation/general/project-schedule-schedule/project_duration</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/schedule/project_duration"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/project-schedule-schedule"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en"/>
+		<text lang="en">Projektlaufzeit (Monate)</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Projektlaufzeit (Monate)</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
 		<conditions/>
 	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/project-partners-partner">
@@ -167,17 +213,18 @@
 		<key>project-partners-partner</key>
 		<path>consultation/general/project-partners-partner</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/id"/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general"/>
+		<questionset/>
 		<is_collection>True</is_collection>
 		<order>21</order>
 		<title lang="en">Project partners</title>
-		<title lang="de">Projektpartner</title>
 		<help lang="en"/>
-		<help lang="de"/>
 		<verbose_name lang="en">project partner</verbose_name>
-		<verbose_name lang="de">Projektpartner</verbose_name>
 		<verbose_name_plural lang="en">project partners</verbose_name_plural>
+		<title lang="de">Projektpartner</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Projektpartner</verbose_name>
 		<verbose_name_plural lang="de">Projektpartner</verbose_name_plural>
 		<conditions/>
 	</questionset>
@@ -189,21 +236,27 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/contact_person/name"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/project-partners-partner"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>3</order>
-		<help lang="en">Please give the name and an email address.</help>
-		<help lang="de">Bitte geben Sie den Namen und eine E-Mail-Adresse an.</help>
+		<help lang="en">Please give the name and an e-mail address.</help>
 		<text lang="en">Who is/are the contact person(s) for data management questions?</text>
-		<text lang="de">Wer ist bei diesem Partner der/die Ansprechpartner/in für das Datenmanagement?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de">Bitte geben Sie den Namen und eine E-Mail-Adresse an.</help>
+		<text lang="de">Wer ist bei diesem Partner der/die Ansprechpartner/in für das Datenmanagement?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -215,21 +268,27 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/rdm_policy"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/project-partners-partner"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
-    <help lang="en"> More and more universities and scientific institutions adopt research data management policies. These contain, among other things, recommendations and / or demands concerning the handling of research data by researchers of the institution, for example the &lt;a href="http://www.uni-goettingen.de/en/488918.html" target="_blank"&gt;Research data policy&lt;/a&gt; of the Georg-August University Goettingen.</help>
-    <help lang="de"> Immer mehr Hochschulen und wissenschaftliche Einrichtungen verabschieden Leitlinien oder Richtlinien (oft auch als „Policies“ bezeichnet) zum Forschungsdatenmanagement. Diese enthalten unter anderem Empfehlungen und/oder Vorgaben zum Umgang mit Forschungsdaten, die die Wissenschaftlerinnen und Wissenschaftler der Einrichtung beachten sollten oder müssen (je nach Grad der Verbindlichkeit), zum Beispiel die &lt;a href="http://www.uni-goettingen.de/de/01-juli-2014-forschungsdaten-leitlinie-der-universitaet-goettingen-einschl-umg/488918.html" target="_blank"&gt;Leitlinien zum Umgang mit Forschungsdatena&lt;/a&gt; der Georg-August-Universität Göttingen.</help>
+		<help lang="en">More and more universities and scientific institutions adopt research data management policies. These contain, among other things, recommendations and / or demands concerning the handling of research data by researchers of the institution.</help>
 		<text lang="en">Does your institution have rules or guidelines for the handling of research data? If yes, please briefly outline them and refer to more detailed sources of information if necessary. Please also indicate, if the rules / guidelines are mandatory or optional.</text>
-		<text lang="de">Gibt es an Ihrer Einrichtung Regeln oder Richtlinien zum Umgang mit den im Projekt erhobenen Forschungsdaten? Wenn ja, skizzieren Sie diese kurz und verweisen Sie ggf. auf weiterführende Informationen. Geben Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de">Immer mehr Hochschulen und wissenschaftliche Einrichtungen verabschieden Leitlinien oder Richtlinien (oft auch als "Policies" bezeichnet) zum Forschungsdatenmanagement. Diese enthalten unter anderem Empfehlungen und/oder Vorgaben zum Umgang mit Forschungsdaten, die die Wissenschaftlerinnen und Wissenschaftler der Einrichtung beachten sollten oder müssen (je nach Grad der Verbindlichkeit), zum Beispiel die &lt;a href="http://www.uni-goettingen.de/de/01-juli-2014-forschungsdaten-leitlinie-der-universitaet-goettingen-einschl-umg/488918.html" target="_blank"&gt;Leitlinien zum Umgang mit Forschungsdaten&lt;/a&gt; der Georg-August-Universität Göttingen.</help>
+		<text lang="de">Gibt es an Ihrer Einrichtung Regeln oder Richtlinien zum Umgang mit den im Projekt erhobenen Forschungsdaten? Wenn ja, skizzieren Sie diese kurz und verweisen Sie ggf. auf weiterführende Informationen. Geben Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -241,21 +300,27 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/name"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/project-partners-partner"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
-    <help lang="en">Please insert the name of project partner in detail.</help>
-    <help lang="de">Bitte geben Sie hier den vollständigen Namen des Projektpartners an.</help>
+		<help lang="en">Please insert the name of project partner in detail.</help>
 		<text lang="en">Project partner</text>
-		<text lang="de">Projektpartner</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de">Bitte geben Sie hier den ausführlichen Namen des Projektpartners an.</help>
+		<text lang="de">Projektpartner</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -264,17 +329,18 @@
 		<key>funding-funder</key>
 		<path>consultation/general/funding-funder</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/id"/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general"/>
+		<questionset/>
 		<is_collection>True</is_collection>
 		<order>40</order>
 		<title lang="en">Funding</title>
-		<title lang="de">Förderung</title>
 		<help lang="en"/>
-		<help lang="de"/>
 		<verbose_name lang="en">funder</verbose_name>
-		<verbose_name lang="de">Förderer</verbose_name>
 		<verbose_name_plural lang="en">funders</verbose_name_plural>
+		<title lang="de">Förderung</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Förderer</verbose_name>
 		<verbose_name_plural lang="de">Förderer</verbose_name_plural>
 		<conditions/>
 	</questionset>
@@ -286,21 +352,79 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/name"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/funding-funder"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en"/>
-		<help lang="de"/>
 		<text lang="en">Who is funding the project?</text>
-		<text lang="de">Wer fördert das Projekt?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wer fördert das Projekt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/other-requirements-yesno">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>other-requirements-yesno</key>
+		<path>consultation/general/other-requirements-yesno</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>50</order>
+		<title lang="en">Other requirements I</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Weitere Anforderungen I</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/other-requirements-yesno/abstract">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>abstract</key>
+		<path>consultation/general/other-requirements-yesno/abstract</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/conditions"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/other-requirements-yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en"/>
+		<text lang="en">Are there requirements to the data management in the form of policies from ANY site?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Bestehen von **irgendeiner** Seite Anforderungen an das Datenmanagement in Form von Policies, Vorgaben etc?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -319,25 +443,28 @@
 		<key>data-dataset</key>
 		<path>consultation/content-classification/data-dataset</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/content-classification"/>
+		<questionset/>
 		<is_collection>True</is_collection>
 		<order>1</order>
 		<title lang="en">Datasets</title>
-		<title lang="de">Datensätze</title>
-		<help lang="en">The following questions collect information on the data that is produced or used in the project. They also help to estimate the value of the data in terms of potential re-use and long-term preservation.
+		<help lang="en">The following questions collect information on the data that is produced or used in the project. They also help to estimate the value of the data in terms of potential re-use and long-term preservation. 
 
-Before data is newly created, is advisable to check if there is existing data that could be re-used. This way, redundant collection or creation of research data is prevented. This saves efforts and costs. Furthermore, in the case of personal data, the &lt;a href="http://www.gesetze-im-internet.de/englisch_bdsg/englisch_bdsg.html" target="_blank"&gt;German Federal Data Protection Act&lt;/a&gt; allows the collection of personal daa only when there are no other reasonable means to clarify the research (re-use of existing data would be such a reasonable means). Also, there shall be collected no more information than necessary.
+Before data are newly created, it is advisable to check if there are existing data that could be re-used. This way, redundant collection or creation of research data is prevented. This saves efforts and costs. 
 
-The information regarding the data collected, produced or used in the project is gathered along datasets. The of these datasets is an important conceptional decision that has to be made individually and carefully for each project.</help>
-		<help lang="de">Die nächsten Fragen dienen zur Beschreibung der Datensätze, die im Projekt erzeugt und/oder verwendet werden. Sie helfen zudem, den Wert der Daten hinsichtlich der potentiellen Nachnutzung und einer späteren Archivierung einschätzen können.
-
-Vor der Erzeugung von Daten empfiehlt es sich, zu prüfen, ob bereits vorhandene Daten nachgenutzt werden können. Die Vermeidung doppelter Erhebungen spart Aufwand und Kosten. Handelt es sich um personenbezogene Daten, ist dies zudem durch Grundsatz der Erforderlichkeit (&lt;a href="https://www.gesetze-im-internet.de/bdsg_2018/" target="_blank"&gt;BDSG&lt;/a&gt;) sowie das Prinzip der Datenvermeidung und Datensparsamkeit (&lt;a href="https://www.gesetze-im-internet.de/bdsg_2018" target="_blank"&gt;§3a BDSG&lt;/a&gt;) geboten.
-
-Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Datensätzen“ strukturiert. Die Definition dessen, was jeweils ein Datensatz ist, ist eine wichtige konzeptionelle Entscheidung, die für jedes Vorhaben bzw. Projekt individuell getroffen und sorgfältig abgewogen werden muss.</help>
+For example, a data set can consist of more data files of different types (numeric, image, text...) grouped together, which collect exhaustedly all results coming from an investigation series on a given research object.</help>
 		<verbose_name lang="en">dataset</verbose_name>
-		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Datensätze</title>
+		<help lang="de">Die nächsten Fragen dienen zur Beschreibung der Datensätze, die im Projekt erzeugt und/oder verwendet werden. Sie helfen zudem, den Wert der Daten hinsichtlich der potentiellen Nachnutzung und einer späteren Archivierung einschätzen zu können. 
+
+Vor der Erzeugung von Daten empfiehlt es sich, zu prüfen, ob bereits vorhandene Daten nachgenutzt werden können. Die Vermeidung doppelter Erhebungen spart Aufwand und Kosten. Handelt es sich um personenbezogene Daten, gelten die Grundsätze der EU-Datenschutzgrundverordnung (&lt;a href="https://dsgvo-gesetz.de/" target="_blank"&gt;DSGVO&lt;/a&gt;) wie z. B. Datenminimierung (&lt;a href="https://dsgvo-gesetz.de/art-5-dsgvo/" target="_blank"&gt;Art.5 Abs.1&lt;/a&gt;) und das Bundesdatenschutzgesetz (&lt;a href="https://dsgvo-gesetz.de/bdsg/" target="_blank"&gt;BDSG&lt;/a&gt;). 
+
+Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach "Datensätzen" strukturiert. Die Definition dessen, was jeweils ein Datensatz ist, ist eine wichtige konzeptionelle Entscheidung, die für jedes Vorhaben bzw. Projekt individuell getroffen und sorgfältig abgewogen werden muss.
+
+Ein Datensatz kann beispielweise aus mehreren zusammen gruppierten Dateien verschiedener Arten (numerisch, bild- oder textbasiert...) bestehen, die alle aus einer Versuchsreihe auf einem definierten Versuchsobjekt entstandene Ergebnisse enthalten.</help>
+		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
@@ -349,37 +476,39 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/description"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/content-classification/data-dataset"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
-		<help lang="en">Please briefly describe the data type and / or the method used to create or collect the data, for example:
+		<help lang="en">Please briefly describe the data type and / or the method used to create or collect the data, for example:  
 
-* quantitative online survey
-
-* 3D model / digital reconstruction of a stone age settlement
-
+* quantitative online survey  
+* 3D model / digital reconstruction of a stone age settlement  
 * software developed within the project
 
 Please also explain whether this is a fixed data set stored at a certain point in time or whether it is created dynamically over a certain period of time.</help>
-		<help lang="de">Bitte beschreiben Sie hier kurz, um welchen Datentyp es sich handelt und mit welcher Methode die Daten erhoben oder erstellt wurden, z.B.:
+		<text lang="en">What kind of dataset is it?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Bitte beschreiben Sie hier kurz, um welchen Datentyp es sich handelt und mit welcher Methode die Daten erhoben oder erstellt wurden, z. B.:  
 
-* quantitative Online-Befragung
-
-* 3D-Modellierung / digitale Rekonstruktion einer steinzeitlichen Siedlung
-
+* quantitative Online-Befragung  
+* 3D-Modellierung / digitale Rekonstruktion einer steinzeitlichen Siedlung  
 * Software, die im Projekt entwickelt wird
 
 Bitte erläutern Sie ergänzend, ob es sich um einen festen, zu einem bestimmten Zeitpunkt gespeicherten Datensatz handelt oder ob dieser dynamisch also laufend über einen bestimmten Zeitraum entsteht.</help>
-		<text lang="en">What kind of dataset is it?</text>
 		<text lang="de">Um was für einen Datensatz handelt es sich?</text>
-		<verbose_name lang="en"/>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
-		<verbose_name_plural lang="en"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -388,17 +517,18 @@ Bitte erläutern Sie ergänzend, ob es sich um einen festen, zu einem bestimmten
 		<key>data-existing_data</key>
 		<path>consultation/content-classification/data-existing_data</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/content-classification"/>
+		<questionset/>
 		<is_collection>True</is_collection>
 		<order>2</order>
 		<title lang="en">Data origin</title>
-		<title lang="de">Datenursprung</title>
 		<help lang="en"/>
-		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
-		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Datenursprung</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
@@ -410,21 +540,27 @@ Bitte erläutern Sie ergänzend, ob es sich um einen festen, zu einem bestimmten
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator/name"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/content-classification/data-existing_data"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en"/>
-		<help lang="de"/>
 		<text lang="en">If re-used, who created the dataset?</text>
-		<text lang="de">Wenn nachgenutzt, wer hat den Datensatz erzeugt?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wenn nachgenutzt, wer hat den Datensatz erzeugt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -436,21 +572,27 @@ Bitte erläutern Sie ergänzend, ob es sich um einen festen, zu einem bestimmten
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/content-classification/data-existing_data"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en"/>
-		<help lang="de"/>
 		<text lang="en">Is the dataset being created or re-used?</text>
-		<text lang="de">Wird der Datensatz selbst erzeugt oder nachgenutzt?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wird der Datensatz selbst erzeugt oder nachgenutzt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>radio</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin_options"/>
 		</optionsets>
@@ -461,17 +603,18 @@ Bitte erläutern Sie ergänzend, ob es sich um einen festen, zu einem bestimmten
 		<key>data-reproducibility</key>
 		<path>consultation/content-classification/data-reproducibility</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/content-classification"/>
+		<questionset/>
 		<is_collection>True</is_collection>
 		<order>4</order>
 		<title lang="en">Reproducibility</title>
-		<title lang="de">Reproduzierbarkeit</title>
 		<help lang="en"/>
-		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
-		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Reproduzierbarkeit</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
@@ -483,25 +626,31 @@ Bitte erläutern Sie ergänzend, ob es sich um einen festen, zu einem bestimmten
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reproducibility"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/content-classification/data-reproducibility"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
-		<help lang="en">Some data can, technically, be created anew at any time, as is the case with scientific experiments or digitised versions of analog objects (as long as the originals are still there and in good shape). However, this can consume a considerable amount of time and cost. With respect to  long-term preservation, the effort of re-creation has to be weighed up against the effort of long-term preservation.
+		<help lang="en">Some data can, technically, be created anew at any time, as is the case with scientific experiments or digitised versions of analog objects (as long as the originals are still there and in good shape). However, this can consume a considerable amount of time and cost. With respect to long-term preservation, the effort of re-creation has to be weighed up against the effort of long-term preservation. 
 
-Other data cannot be collected or created anew. Examples are all kinds of "time stamped" observations, be they from social science,  astrophysics or any other discipline. Observations represent a certain phenomenon at a certain time and / or place and are therefore not repeatable. Their value for re-use as well as the loss in case of failed preservation is much higher than that of reproducible data.</help>
-		<help lang="de">Manche Daten können im Prinzip jederzeit neu erstellt werden. Beispiele hierfür sind etwa naturwissenschaftliche Experimentdaten oder auch Digitalisate analoger Objekte (solange die Originale nicht verlorengehen). Der Aufwand und die Kosten hierfür können natürlich durchaus beträchtlich sein. Im Hinblick auf die Frage der Notwendigkeit einer späteren Langzeitarchivierung sollte in diesen Fällen der Aufwand einer erneuten Erstellung gegen den Aufwand der Langzeitarchivierung abgewogen werden.
+Other data cannot be collected or created anew.</help>
+		<text lang="en">Is the dataset reproducible in the sense that it could be created / collected anew in case it got lost?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Manche Daten können im Prinzip jederzeit neu erstellt werden. Beispiele hierfür sind etwa naturwissenschaftliche Experimentdaten oder auch Digitalisate analoger Objekte (solange die Originale nicht verlorengehen). Der Aufwand und die Kosten hierfür können natürlich durchaus beträchtlich sein. Im Hinblick auf die Frage der Notwendigkeit einer späteren Langzeitarchivierung sollte in diesen Fällen der Aufwand einer erneuten Erstellung gegen den Aufwand der Langzeitarchivierung abgewogen werden. 
 
 Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei jeglicher Art von episodischer Beobachtungen, sei es sozialwissenschaftlicher oder naturwissenschaftlicher Art, der Fall, da diese ein bestimmtes Phänomen an einem bestimmten Zeitpunkt und/oder Ort abbilden und somit i.d.R. nicht wiederholbar sind. Ihr Wert für die Nachnutzung durch andere wie auch der Verlust bei einer nicht erfolgten oder misslungenen Langzeitarchivierung ist ungleich höher als bei reproduzierbaren Daten.</help>
-		<text lang="en">Is the dataset reproducible in the sense that it could be created / collected anew in case it got lost?</text>
-		<text lang="de">Ist der Datensatz reproduzierbar, d.h. ließe er sich, wenn er verloren ginge, erneut erstellen oder erheben?</text>
-		<verbose_name lang="en"/>
+		<text lang="de">Ist der Datensatz reproduzierbar, d. h. ließe er sich, wenn er verloren ginge, erneut erstellen oder erheben?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
-		<verbose_name_plural lang="en"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>radio</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_reproducible_options"/>
 		</optionsets>
@@ -522,17 +671,18 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<key>data-volume</key>
 		<path>consultation/technical-classification/data-volume</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/technical-classification"/>
+		<questionset/>
 		<is_collection>True</is_collection>
 		<order>2</order>
 		<title lang="en">Data size</title>
-		<title lang="de">Datengröße</title>
 		<help lang="en"/>
-		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
-		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Datengröße</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
@@ -544,21 +694,27 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/rate"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/technical-classification/data-volume"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en"/>
-		<help lang="de"/>
 		<text lang="en">How much data is produced per year?</text>
-		<text lang="de">Wie hoch ist die erwartete Erzeugungsrate der Daten pro Jahr?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wie hoch ist die erwartete Erzeugungsrate der Daten pro Jahr?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>integer</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -570,21 +726,27 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/size/volume"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/technical-classification/data-volume"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
-		<help lang="en">If large amounts of data are involved, financial resources for the provision of the infrastructure should be considered (see also section "Funding")</help>
-		<help lang="de">Wenn große Datenmengen anfallen sollten finanzielle Mittel zur Bereitstellung der Infrastruktur berücksichtigt werden (siehe auch Abschnitt „Förderung“)</help>
+		<help lang="en">If large amounts of data are involved, financial resources for the provision of the infrastructure should be considered (see also section "Funding").</help>
 		<text lang="en">What is the actual or expected size of the dataset?</text>
-		<text lang="de">Was ist die tatsächliche oder erwartete Größe des Datensatzes?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de">Wenn große Datenmengen anfallen, sollten finanzielle Mittel zur Bereitstellung der Infrastruktur berücksichtigt werden (siehe auch Abschnitt „Förderung“).</help>
+		<text lang="de">Was ist die tatsächliche oder erwartete Größe des Datensatzes?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>radio</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_size_options"/>
 		</optionsets>
@@ -595,17 +757,18 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<key>data-formats</key>
 		<path>consultation/technical-classification/data-formats</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/technical-classification"/>
+		<questionset/>
 		<is_collection>True</is_collection>
 		<order>3</order>
 		<title lang="en">Formats</title>
-		<title lang="de">Formate</title>
 		<help lang="en"/>
-		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
-		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Formate</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
@@ -617,21 +780,27 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/format"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/technical-classification/data-formats"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>4</order>
-		<help lang="en">When choosing a data format, one should consider the consequences for collaborative use, long-term preservation as well as re-use. It is advisable to prefer formats that are standardised, open, non-proprietary and well-established in the respective scholarly community. More criteria and detailed explanations can be found e.g. in the &lt;a href="https://www.forschungsdaten.org/images/b/b0/Leitfaden_Data-Management-WissGrid.pdf" target="_blank"&gt;WissGrid-Leitfaden, pp. 22 f.&lt;/a&gt;).</help>
-		<help lang="de">Bei der Wahl des Dateiformates sollten auch die Konsequenzen für die kollaborative Nutzung, die Langzeitarchivierung sowie die Nachnutzung beachtet werden. Es empfiehlt sich, möglichst standardisierte, nicht-proprietäre und allgemein bzw. in der spezifischen Community verbreitete Formate zu nutzen. Weitere Kriterien sowie detaillierte Erläuterungen sind z.B. im &lt;a href="https://www.forschungsdaten.org/images/b/b0/Leitfaden_Data-Management-WissGrid.pdf" target="_blank"&gt;WissGrid-Leitfaden, S. 22 f.&lt;/a&gt;) zu finden.</help>
+		<help lang="en">When choosing a data format, one should consider the consequences for collaborative use, long-term preservation as well as re-use. It is advisable to prefer formats that are standardised, open, non-proprietary and well-established in the respective scholarly community.		</help>
 		<text lang="en">Which file formats are used?</text>
-		<text lang="de">In welchen Formaten liegen die Daten vor?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de">Bei der Wahl des Dateiformates sollten auch die Konsequenzen für die kollaborative Nutzung, die Langzeitarchivierung sowie die Nachnutzung beachtet werden. Es empfiehlt sich, möglichst standardisierte, nicht-proprietäre und allgemein bzw. in der spezifischen Community verbreitete Formate zu nutzen. Weitere Kriterien sowie detaillierte Erläuterungen sind z. B. im &lt;a href="https://www.forschungsdaten.org/images/b/b0/Leitfaden_Data-Management-WissGrid.pdf" target="_blank"&gt;WissGrid-Leitfaden, S. 22 f.&lt;/a&gt; zu finden.</help>
+		<text lang="de">In welchen Formaten liegen die Daten vor?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -650,17 +819,18 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<key>scenarios-usage</key>
 		<path>consultation/data-usage/scenarios-usage</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/data-usage"/>
+		<questionset/>
 		<is_collection>True</is_collection>
 		<order>0</order>
 		<title lang="en">Usage scenarios</title>
-		<title lang="de">Nutzungsszenarien</title>
-		<help lang="en">The following questions will help to estimate, which ressources are necessary to enable the envisioned data usage scenarios during the project. These can be technical / IT resources as well as expertise brought in by e.g. data or IT experts.</help>
-		<help lang="de">Die folgenden Fragen dienen dazu einzuschätzen, welche Ressourcen für die geplante Nutzung der Daten während der Projektlaufzeit nötig sind. Dabei kann es sich um technische bzw. IT-Ressourcen handeln, aber auch um Expertise, die z.B. Datenmanagement- oder IT-ExpertInnen eingebracht wird.</help>
+		<help lang="en">The following questions will help to estimate, which ressources are necessary to enable the envisioned data usage scenarios during the project. These can be technical / IT resources as well as expertise brought in by e.g. data management or IT experts.</help>
 		<verbose_name lang="en">dataset</verbose_name>
-		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Nutzungsszenarien</title>
+		<help lang="de">Die folgenden Fragen dienen dazu einzuschätzen, welche Ressourcen für die geplante Nutzung der Daten während der Projektlaufzeit nötig sind. Dabei kann es sich um technische bzw. IT-Ressourcen handeln, aber auch um Expertise, die z. B. Datenmanagement- oder IT-ExpertInnen eingebracht wird.</help>
+		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
@@ -672,21 +842,27 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_infrastructure"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/data-usage/scenarios-usage"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>4</order>
 		<help lang="en"/>
-		<help lang="de"/>
 		<text lang="en">To what extent will infrastructure resources be required (e.g. CPU hours, bandwidth, storage space... etc.).</text>
-		<text lang="de">In welchem Umfang werden Infrastrukturressourcen benötigt (CPU-Stunden, Bandbreite, Speicherplatz etc.)?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">In welchem Umfang werden Infrastrukturressourcen benötigt (CPU-Stunden, Bandbreite, Speicherplatz etc.)?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>radio</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/infrastructure_resources"/>
 		</optionsets>
@@ -697,17 +873,18 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<key>data-storage-and-security-storage</key>
 		<path>consultation/data-usage/data-storage-and-security-storage</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/data-usage"/>
+		<questionset/>
 		<is_collection>True</is_collection>
 		<order>11</order>
 		<title lang="en">Data organisation</title>
-		<title lang="de">Datenorganisation</title>
 		<help lang="en"/>
-		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
-		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Datenorganisation</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
@@ -719,21 +896,79 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage/type"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/data-usage/data-storage-and-security-storage"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en"/>
-		<help lang="de"/>
 		<text lang="en">Where is the dataset stored during the project?</text>
-		<text lang="de">Wo wird der Datensatz während des Projektes gespeichert?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wo wird der Datensatz während des Projektes gespeichert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/data-usage/data-sharing-and-re-use-interoperability">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>data-sharing-and-re-use-interoperability</key>
+		<path>consultation/data-usage/data-sharing-and-re-use-interoperability</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/data-usage"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>51</order>
+		<title lang="en">Interoperability</title>
+		<help lang="en"/>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Interoperabilität</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/data-usage/data-sharing-and-re-use-interoperability/abstract">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>abstract</key>
+		<path>consultation/data-usage/data-sharing-and-re-use-interoperability/abstract</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/restriction"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/data-usage/data-sharing-and-re-use-interoperability"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en"/>
+		<text lang="en">Are there restrictions accessing and re-using the data in general?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Bestehen generell Einschränkungen bei dem Zugriff und der Nachnutzung der Daten (rechtliche Gründe, Schutzrechte, Betriebsgeheimnisse etc)?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -742,17 +977,18 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<key>data-sharing-and-re-use-publication</key>
 		<path>consultation/data-usage/data-sharing-and-re-use-publication</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/data-usage"/>
+		<questionset/>
 		<is_collection>True</is_collection>
 		<order>52</order>
 		<title lang="en">Data sharing and re-use</title>
-		<title lang="de">Weitergabe und Veröffentlichung</title>
 		<help lang="en"/>
-		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
-		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Weitergabe und Veröffentlichung</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
@@ -764,21 +1000,27 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/yesno"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/data-usage/data-sharing-and-re-use-publication"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en"/>
-		<help lang="de"/>
 		<text lang="en">Will this dataset be published or shared?</text>
-		<text lang="de">Soll dieser Datensatz veröffentlicht oder geteilt werden?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Soll dieser Datensatz veröffentlicht oder geteilt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>radio</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options"/>
 		</optionsets>
@@ -789,17 +1031,18 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<key>collaborative-work-collaboration</key>
 		<path>consultation/data-usage/collaborative-work-collaboration</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/data-usage"/>
+		<questionset/>
 		<is_collection>True</is_collection>
 		<order>53</order>
 		<title lang="en">Collaborative work</title>
-		<title lang="de">Kollaboratives Arbeiten</title>
 		<help lang="en"/>
-		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
-		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Kollaboratives Arbeiten</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
@@ -811,21 +1054,27 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/collaboration_yesno"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/data-usage/collaborative-work-collaboration"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>6</order>
 		<help lang="en"/>
-		<help lang="de"/>
 		<text lang="en">Will the data be collaboratively used?</text>
-		<text lang="de">Werden die Daten kollaborativ genutzt?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Werden die Daten kollaborativ genutzt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>radio</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_collaboration_options"/>
 		</optionsets>
@@ -841,22 +1090,75 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<title lang="en">Metadata and referencing</title>
 		<title lang="de">Metadaten und Referenzierung</title>
 	</section>
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/metadata-and-referencing/metadata-dataset">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>metadata-dataset</key>
+		<path>consultation/metadata-and-referencing/metadata-dataset</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/metadata-and-referencing"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>10</order>
+		<title lang="en">Metadata</title>
+		<help lang="en"/>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Metadaten</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/metadata-and-referencing/metadata-dataset/abstract">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>abstract</key>
+		<path>consultation/metadata-and-referencing/metadata-dataset/abstract</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/abstract"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/metadata-and-referencing/metadata-dataset"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en"/>
+		<text lang="en">Which types of metadata are collected? Do you use any kind of standard, ontology or classification?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Welche Metadaten werden erhoben? Werden Standards, Ontologien oder Klassifikationen verwendet?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/metadata-and-referencing/structure-granularity-and-referencing-structure">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>structure-granularity-and-referencing-structure</key>
 		<path>consultation/metadata-and-referencing/structure-granularity-and-referencing-structure</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/metadata-and-referencing"/>
+		<questionset/>
 		<is_collection>True</is_collection>
 		<order>20</order>
 		<title lang="en">Structure, granularity, and referencing</title>
-		<title lang="de">Objektstruktur, Granularität und Referenzierung</title>
 		<help lang="en"/>
-		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
-		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Objektstruktur, Granularität und Referenzierung</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
@@ -868,21 +1170,34 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/structure"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/metadata-and-referencing/structure-granularity-and-referencing-structure"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en"/>
-		<help lang="de"/>
-		<text lang="en">What is the structure of the data? How are the individual components of the dataset related to each other? How is the dataset related to other datasets used in the project?</text>
-		<text lang="de">Wie sind die Daten strukturiert? In welchem Verhältnis stehen die einzelnen Komponenten zueinander? In welchem Verhältnis steht der Datensatz zu anderen im Projekt erhobenen oder genutzten Datensätzen?</text>
+		<text lang="en">Please briefly explain the structure and relationship of their data to each other.  
+* What is the structure of the data?  
+* How are the individual components of the dataset related to each other?  
+* How is the dataset related to other datasets used in the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Bitte erläutern Sie kurz die Struktur und den Zusammenhang ihrer Daten untereinander:  
+
+* Wie sind die Daten strukturiert?  
+* In welchem Verhältnis stehen die einzelnen Komponenten zueinander?  
+* In welchem Verhältnis steht der Datensatz zu anderen im Projekt erhobenen oder genutzten Datensätzen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -901,17 +1216,18 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<key>sensitive-data-personal_data_yesno</key>
 		<path>consultation/legal-and-ethics/sensitive-data-personal_data_yesno</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/legal-and-ethics"/>
+		<questionset/>
 		<is_collection>True</is_collection>
 		<order>21</order>
 		<title lang="en">Personal data</title>
-		<title lang="de">Personenbezogene Daten</title>
 		<help lang="en"/>
-		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
-		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Personenbezogene Daten</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
@@ -923,54 +1239,33 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data_yesno/yesno"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/legal-and-ethics/sensitive-data-personal_data_yesno"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
-		<help lang="en">If yes: Please also check whether you have completed section "Data usage / Data storage and security" with the appropriate measures to protect the data in accordance with the applicable data protection laws.
-
-The handling and processing of **personal data** is regulated by law. The uniform application throughout the EU is based on the &lt;a href="http://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32016R0679" target="_blank"&gt;EU General Data Protection Regulation (GDPR)&lt;/a&gt;. It allows for regulatory leeway at national level.
-
-In Germany, this is regulated by the &lt;a href="http://www.gesetze-im-internet.de/bdsg_2018/" target="_blank"&gt;Federal Data Protection Act (BDSG)&lt;/a&gt;, and for universities, the individual data protection laws of the individual federal states apply, e.g. the &lt;a href="https://recht.nrw.de/lmi/owa/br_text_anzeigen?v_id=3520071121100436275" target="_blank"&gt;data protection law of North Rhine-Westphalia (DSG NRW)&lt;/a&gt;.
-
-The european GDPR defines personal data as all information relating to an identified or identifiable natural person (Art. 4(1) GPDR).
-
-A person is **identified** if it is clearly identifiable to whom the data belongs.
-
-A person becomes **identifiable** if it can be identified by means of additional information.
-
-More information (in German only) can be found on the websites of the data protection officers of the UA Ruhr.
-
-* &lt;a href="https://dsb.ruhr-uni-bochum.de/" target="_blank"&gt;Ruhr-University Bochum&lt;/a&gt;
-
-* &lt;a href="https://www.uni-due.de/verwaltung/organisation/just_datenschutz.php" target="_blank"&gt;University Duisburg-Essen&lt;/a&gt;
-
-* &lt;a href="https://www.tu-dortmund.de/universitaet/organisation/beauftragte-vertrauenspersonen/#accordion-2213-764" target="_blank"&gt;TU Dortmund University&lt;/a&gt;</help>
-		<help lang="de">Wenn ja: Bitte prüfen Sie auch, ob Sie den Abschnitt "Datennutzung / Datenspeicherung und -sicherheit" mit den entsprechenden Maßnahmen zum Schutz der Daten gemäß den geltenden Datenschutzgesetzen ausgefüllt haben.
-
-Der Umgang und die Verarbeitung **personenbezogener** Daten ist gesetzlich geregelt. Die EU-weit einheitliche Anwendung erfolgt nach der &lt;a href="http://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32016R0679" target="_blank"&gt;EU-Datenschutz-Grundverordnung (DSGVO)&lt;/a&gt;. Sie gestattet Regelungsspielräume auf nationaler Ebene. In Deutschland regelt dies das &lt;a href="http://www.gesetze-im-internet.de/bdsg_2018/" target="_blank"&gt;Bundesdatenschutzgesetz (BDSG)&lt;/a&gt;. Für Hochschulen gelten zum großen Teil die individuellen Datenschutzgesetze der Länder, z.B. das &lt;a href="https://recht.nrw.de/lmi/owa/br_text_anzeigen?v_id=3520071121100436275" target="_blank"&gt;Datenschutzgesetz Nordrhein-Westfalen (DSG NRW)&lt;/a&gt;.
-
-Die europäische DSGVO definiert personenbezogene Daten als alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen (Art. 4 DSGVO, Abs. 1).
-
-**Identifiziert** ist eine Person, wenn eindeutig erkennbar ist, zu welcher Person die Daten gehören.
-
-**Identifizierbar** wird eine Person, wenn sie mittels Zusatzinformationen identifiziert werden kann.
-
-Mehr Informationen zum Thema finden Sie auf den Webseiten der Datenschutzbeauftragten der UA Ruhr.
-
-* &lt;a href="https://dsb.ruhr-uni-bochum.de/" target="_blank"&gt;Ruhr-Universität Bochum&lt;/a&gt;
-
-* &lt;a href="https://www.uni-due.de/verwaltung/organisation/just_datenschutz.php" target="_blank"&gt;Universität of Duisburg-Essen&lt;/a&gt;
-* &lt;a href="https://www.tu-dortmund.de/universitaet/organisation/beauftragte-vertrauenspersonen/#accordion-2213-764" target="_blank"&gt;Technische Universität Dortmund&lt;/a&gt;</help>
+		<help lang="en">If yes: Please also check whether you have completed the sections "Data usage" and "Data storage and security" with the appropriate measures to protect the data in accordance with the applicable data protection laws. European Data Protection Law may apply.</help>
 		<text lang="en">Does this dataset contain personal data?</text>
-		<text lang="de">Enthält dieser Datensatz personenbezogene Daten?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de">Wenn ja: Bitte prüfen Sie auch, ob Sie die Abschnitte "Datennutzung" und "Datenspeicherung und -sicherheit" mit den entsprechenden Maßnahmen zum Schutz der Daten gemäß den geltenden Datenschutzgesetzen ausgefüllt haben. Der Umgang und die Verarbeitung personenbezogener Daten ist gesetzlich geregelt. Die EU-weit einheitliche Anwendung erfolgt nach der &lt;a href="https://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32016R0679" target="_blank"&gt;EU-Datenschutz-Grundverordnung (DSGVO)&lt;/a&gt;. Sie gestattet Regelungsspielräume auf nationaler Ebene. In Deutschland regelt dies das &lt;a href="http://www.gesetze-im-internet.de/bdsg_2018/" target="_blank"&gt;Bundesdatenschutzgesetz (BDSG)&lt;/a&gt;. Für Hochschulen gelten zum großen Teil die individuellen Datenschutzgesetze der Länder, z. B. das &lt;a href="https://recht.nrw.de/lmi/owa/br_text_anzeigen?v_id=3520071121100436275" target="_blank"&gt;Datenschutzgesetz Nordrhein-Westfalen (DSG NRW)&lt;/a&gt;. Die europäische DSGVO definiert personenbezogene Daten als alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen (Art. 4 DSGVO, Abs. 1). &lt;b&gt;Identifiziert &lt;/b&gt;ist eine Person, wenn eindeutig erkennbar ist, zu welcher Person die Daten gehören. &lt;b&gt;Identifizierbar&lt;/b&gt; wird eine Person, wenn sie mittels Zusatzinformationen identifiziert werden kann. Mehr Informationen zum Thema finden Sie auf den Webseiten der Datenschutzbeauftragten der UA Ruhr. 
+			
+* &lt;a href="https://dsb.ruhr-uni-bochum.de/" target="_blank"&gt;Ruhr-Universität Bochum&lt;/a&gt; 
+			
+* &lt;a href="https://www.uni-due.de/verwaltung/organisation/just_datenschutz.php" target="_blank"&gt;Universität von Duisburg-Essen&lt;/a&gt; 
+			
+* &lt;a href="https://www.tu-dortmund.de/universitaet/organisation/beauftragte-vertrauenspersonen/#accordion-2213-764" target="_blank"&gt;Technische Universität Dortmund&lt;/a&gt;</help>
+		<text lang="de">Enthält dieser Datensatz personenbezogene Daten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>yesno</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -979,17 +1274,18 @@ Mehr Informationen zum Thema finden Sie auf den Webseiten der Datenschutzbeauftr
 		<key>sensitive-data-personal_data</key>
 		<path>consultation/legal-and-ethics/sensitive-data-personal_data</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/legal-and-ethics"/>
+		<questionset/>
 		<is_collection>True</is_collection>
 		<order>24</order>
 		<title lang="en">Sensitive data</title>
-		<title lang="de">Sensible Daten</title>
 		<help lang="en"/>
-		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
-		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Sensible Daten</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions>
 			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/personal_data"/>
@@ -1003,21 +1299,27 @@ Mehr Informationen zum Thema finden Sie auf den Webseiten der Datenschutzbeauftr
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/anonymization"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/legal-and-ethics/sensitive-data-personal_data"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en"/>
-		<help lang="de"/>
 		<text lang="en">Will the data be anonymised or pseudonymised?</text>
-		<text lang="de">Werden die Daten anonymisiert oder pseudonymisiert?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Werden die Daten anonymisiert oder pseudonymisiert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>radio</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_anonymisation"/>
 		</optionsets>
@@ -1028,17 +1330,18 @@ Mehr Informationen zum Thema finden Sie auf den Webseiten der Datenschutzbeauftr
 		<key>sensitive-data-other</key>
 		<path>consultation/legal-and-ethics/sensitive-data-other</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/legal-and-ethics"/>
+		<questionset/>
 		<is_collection>True</is_collection>
 		<order>26</order>
 		<title lang="en">Other sensitive data</title>
-		<title lang="de">Weitere sensible Daten</title>
 		<help lang="en"/>
-		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
-		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Weitere sensible Daten</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
@@ -1050,24 +1353,30 @@ Mehr Informationen zum Thema finden Sie auf den Webseiten der Datenschutzbeauftr
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/other/yesno"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/legal-and-ethics/sensitive-data-other"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en">Examples are data that contain trade or business secrets or geoinformation on endangered species.</help>
-		<help lang="de">Beispiele hierfür sind etwa Daten, die Betriebs- oder Geschäftsgeheimnisse oder Ortsangaben zu bedrohten Tier- oder Pflanzenarten enthalten.</help>
 		<text lang="en">Does this dataset contain sensitive data other than personal data?</text>
-		<text lang="de">Enthält dieser Datensatz nicht-personenbezogene sensible Daten?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de">Beispiele hierfür sind etwa Daten, die Betriebs- oder Geschäftsgeheimnisse oder Ortsangaben zu bedrohten Tier- oder Pflanzenarten enthalten.</help>
+		<text lang="de">Enthält dieser Datensatz nicht-personenbezogene sensible Daten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>yesno</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
-  </question>
+	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/legal-and-ethics/intellectual-property-rights-yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>intellectual-property-rights-yesno</key>
@@ -1075,15 +1384,16 @@ Mehr Informationen zum Thema finden Sie auf den Webseiten der Datenschutzbeauftr
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/legal-and-ethics"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>30</order>
 		<title lang="en">Intellectual property rights I</title>
-		<title lang="de">Urheber- oder verwandte Schutzrechte I</title>
 		<help lang="en"/>
-		<help lang="de"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<title lang="de">Urheber- oder verwandte Schutzrechte I</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
@@ -1095,61 +1405,46 @@ Mehr Informationen zum Thema finden Sie auf den Webseiten der Datenschutzbeauftr
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ipr/yesno"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/legal-and-ethics/intellectual-property-rights-yesno"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
-		<help lang="en">Data or software can be subject to intellectual or industrial property rights. Applicable laws differ broadly even within EU.
+		<help lang="en">Data or software can be subject to intellectual or industrial property rights. Applicable laws differ broadly even within EU.</help>
+		<text lang="en">Does the project use and/or produce data that is protected by intellectual or industrial property rights?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Daten oder Software können Urheber- oder anderen Schutzrechten unterliegen. Die Rechtslage kann selbst in der EU von Land zu Land erheblich abweichen. In Deutschland sind nach dem Urheberrechtsgesetz (UrhG) Werke der Literatur, Wissenschaft und Kunst, die eine „persönliche geistige Schöpfung“ darstellen, urheberrechtlich geschützt. Der urheberrechtliche Schutz erlischt 70 Jahre nach dem Tod der bzw. des Urheberin/s. 
 
-According to the German copyright law (UrhG) works of literature, scholarship and the arts that can be regarded as a “personal intellectual creation” are protected by copyright. Copyright protection expires 70 years after the death of the copyright holder.
+Reine Daten, z. B. Messdaten oder Surveydaten, aber auch Metadaten (bis auf ggf. „beschreibende“ Metadaten) sind hingegen nicht schutzfähig. 
 
-Mere data, e.g. measured data or survey data, and metadata (except in some cases descriptive metadata) are not protected by copyright.
+In § 2 nennt das UrhG folgende geschützte Werkarten, wobei die Aufzählung nicht abschließend ist:  
 
-§ 2 of the UrhG lists the following kinds of protected works (list is not concluded):
+* Sprachwerke, wie Schriftwerke, Reden und Computerprogramme  
+* Werke der Musik  
+* pantomimische Werke einschließlich Werke der Tanzkunst  
+* Werke der bildenden Künste einschließlich der Werke der Baukunst und der angewandten Kunst und Entwürfe solcher Werke  
+* Lichtbildwerke einschließlich der Werke, die ähnlich wie Lichtbildwerke geschaffen werden  
+* Darstellungen wissenschaftlicher oder technischer Art wie Zeichnungen, Pläne, Karten, Skizzen, Tabellen und plastische Darstellungen. 
 
-* linguistic works such as written works, speeches and computer programs
-* works of music
-* pantomimic works including works of the art of dance
-* works or the fine arts including works of architecture and the applied arts as well as sketches of such works
-* works of photography and cinematography
-* descriptions and illustrations of scholarly or technical nature such as drawings, plans, maps, sketches, tables and three-dimensional represenations
+Nach § 3 sind auch „Übersetzungen und andere Bearbeitungen von Werken geschützt, die persönliche geistige Schöpfungen des Bearbeiters sind“. 
 
-According to § 3, copyright is also applicable to translations and other modifications or adaptions of a work if they are individual intellectual creations of the editor.
+Schließlich sind nach § 4 auch Sammelwerke und Datenbankwerke geschützt, was im Bereich Forschungsdaten durchaus relevant sein kann. Sammelwerke werden dabei definiert als „Sammlungen von Werken, Daten oder anderen unabhängigen Elementen, die aufgrund der Auswahl oder Anordnung der Elemente eine persönliche geistige Schöpfung sind“. 
 
-Finally, according to § 4 copyright also extents to collected editions and database works. Collected editions are “collections of work, data or other independent elements that are individual intellectual creations based on the selection and arrangement of the elements”. Database works are defined as “collected editions, the elements of which are arranged in a systematic or methodical way and can be accessed individually by electronic means or in other ways”.
-
-Other relevant property rights can be trademarks, patents, utility models, plant variety rights protection, integrated circuit layout design protection, geographical indications or registered designs.</help>
-		<help lang="de">Daten oder Software können Urheber- oder anderen Schutzrechten unterliegen. Die Rechtslage kann selbst in der EU von Land zu Land erheblich abweichen.
-
-In Deutschland sind nach dem Urheberrechtsgesetz (UrhG) Werke der Literatur, Wissenschaft und Kunst, die eine „persönliche geistige Schöpfung“ darstellen, urheberrechtlich geschützt. Der urheberrechtliche Schutz erlischt 70 Jahre nach dem Tod der bzw. des Urheberin/s.
-
-Reine Daten, z.B. Messdaten oder Surveydaten, aber auch Metadaten (bis auf ggf. „beschreibende“ Metadaten) sind hingegen nicht schutzfähig.
-
-In § 2 nennt das UrhG folgende geschützte Werkarten, wobei die Aufzählung nicht abschließend ist:
-
-* Sprachwerke, wie Schriftwerke, Reden und Computerprogramme
-* Werke der Musik
-* pantomimische Werke einschließlich Werke der Tanzkunst
-* Werke der bildenden Künste einschließlich der Werke der Baukunst und der angewandten Kunst und Entwürfe solcher Werke
-* Lichtbildwerke einschließlich der Werke, die ähnlich wie Lichtbildwerke geschaffen werden
-* Darstellungen wissenschaftlicher oder technischer Art wie Zeichnungen, Pläne, Karten, Skizzen, Tabellen und plastische Darstellungen.
-
-Nach § 3 sind auch „Übersetzungen und andere Bearbeitungen“ von Werken geschützt, die persönliche geistige Schöpfungen des Bearbeiters sind“.
-
-Schließlich sind nach § 4 auch Sammelwerke und Datenbankwerke geschützt, was im Bereich Forschungsdaten durchaus relevant sein kann. Sammelwerke werden dabei definiert als „Sammlungen von Werken, Daten oder anderen unabhängigen Elementen, die aufgrund der Auswahl oder Anordnung der Elemente eine persönliche geistige Schöpfung sind“.
-
-Bei einem „Datenbankwerk im Sinne des Gesetzes“ handelt es sich um ein „Sammelwerk, dessen Elemente systematisch oder methodisch angeordnet und einzeln mit Hilfe elektronischer Mittel oder auf andere Weise zugänglich sind“.
+Bei einem „Datenbankwerk im Sinne des Gesetzes“ handelt es sich um ein „Sammelwerk, dessen Elemente systematisch oder methodisch angeordnet und einzeln mit Hilfe elektronischer Mittel oder auf andere Weise zugänglich sind“. 
 
 Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmuster, Sortenschutz [bei Pflanzenzüchtungen], Halbleiterschutz, Marken, geographische Herkunftsangaben, eingetragene Designs oder geschäftliche Bezeichnungen sein.</help>
-		<text lang="en">Does the project use and/or produce data that is protected by intellectual or industrial property rights?</text>
 		<text lang="de">Werden Daten genutzt und/oder erstellt, die durch Urheber- oder verwandte Schutzrechte geschützt sind?</text>
-		<verbose_name lang="en"/>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
-		<verbose_name_plural lang="en"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>yesno</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1168,17 +1463,18 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<key>long-term-preservation-datasets</key>
 		<path>consultation/storage-and-long-term-preservation/long-term-preservation-datasets</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/storage-and-long-term-preservation"/>
+		<questionset/>
 		<is_collection>True</is_collection>
 		<order>11</order>
 		<title lang="en">Long-term preservation</title>
-		<title lang="de">Langzeitarchivierung</title>
 		<help lang="en"/>
-		<help lang="de"/>
 		<verbose_name lang="en">dataset</verbose_name>
-		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Langzeitarchivierung</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
 		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
 		<conditions/>
 	</questionset>
@@ -1190,202 +1486,28 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/duration"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/storage-and-long-term-preservation/long-term-preservation-datasets"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>3</order>
 		<help lang="en"/>
-		<help lang="de"/>
 		<text lang="en">How long will the data be stored?</text>
-		<text lang="de">Wie lange müssen die Daten aufbewahrt werden?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
 		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wie lange müssen die Daten aufbewahrt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/project-schedule-schedule">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>project-schedule-schedule</key>
-		<path>consultation/general/project-schedule-schedule</path>
-		<dc:comment/>
-		<attribute/>
-		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general"/>
-		<is_collection>False</is_collection>
-		<order>10</order>
-		<title lang="en">Project schedule</title>
-		<title lang="de">Projektablauf</title>
-		<help lang="en"/>
-		<help lang="de"/>
-		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="en"/>
-		<verbose_name_plural lang="de"/>
-		<conditions/>
-	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/project-schedule-schedule/project_duration">
-	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-	  <key>project_duration</key>
-	  <path>consultation/general/project-schedule-schedule/project_duration</path>
-	  <dc:comment/>
-	  <attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/schedule/project_duration"/>
-	  <questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/project-schedule-schedule"/>
-	  <is_collection>False</is_collection>
-	  <order>3</order>
-	  <help lang="en"/>
-	  <help lang="de"/>
-	  <text lang="en">Project duration (month)</text>
-	  <text lang="de">Projektlaufzeit (Monate)</text>
-	  <verbose_name lang="en"/>
-	  <verbose_name lang="de"/>
-	  <verbose_name_plural lang="en"/>
-	  <verbose_name_plural lang="de"/>
-	  <widget_type>range</widget_type>
-	  <value_type>integer</value_type>
-	  <maximum/>
-	  <minimum/>
-	  <step/>
-	  <unit>month</unit>
-	  <optionsets/>
-	  <conditions/>
-	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/other-requirements-yesno">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>other-requirements-yesno</key>
-		<path>consultation/general/other-requirements-yesno</path>
-		<dc:comment/>
-		<attribute/>
-		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general"/>
-		<is_collection>False</is_collection>
-		<order>50</order>
-		<title lang="en">Other requirements I</title>
-		<title lang="de">Weitere Anforderungen I</title>
-		<help lang="en"/>
-		<help lang="de"/>
-		<verbose_name lang="en"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="en"/>
-		<verbose_name_plural lang="de"/>
-		<conditions/>
-	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/other-requirements-yesno/abstract">
-	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-	  <key>abstract</key>
-	  <path>consultation/general/other-requirements-yesno/abstract</path>
-	  <dc:comment/>
-	  <attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/conditions"/>
-	  <questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/general/other-requirements-yesno"/>
-	  <is_collection>False</is_collection>
-	  <order>0</order>
-	  <help lang="en"/>
-	  <help lang="de"/>
-	  <text lang="en">Are there requirements to the data management in the form of policies from ANY site?</text>
-	  <text lang="de">Bestehen von **irgendeiner** Seite Anforderungen an das Datenmanagement in Form von Policies, Vorgaben etc?</text>
-	  <verbose_name lang="en"/>
-	  <verbose_name lang="de"/>
-	  <verbose_name_plural lang="en"/>
-	  <verbose_name_plural lang="de"/>
-	  <widget_type>textarea</widget_type>
-	  <value_type>text</value_type>
-	  <maximum/>
-	  <minimum/>
-	  <step/>
-	  <unit/>
-	  <optionsets/>
-	  <conditions/>
-	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/data-usage/data-sharing-and-re-use-interoperability">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>data-sharing-and-re-use-interoperability</key>
-		<path>consultation/data-usage/data-sharing-and-re-use-interoperability</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/data-usage"/>
-		<is_collection>True</is_collection>
-		<order>51</order>
-		<title lang="en">Interoperability</title>
-		<title lang="de">Interoperabilität</title>
-		<help lang="en"/>
-		<help lang="de"/>
-		<verbose_name lang="en">dataset</verbose_name>
-		<verbose_name lang="de">Datensatz</verbose_name>
-		<verbose_name_plural lang="en">datasets</verbose_name_plural>
-		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
-		<conditions/>
-	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/data-usage/data-sharing-and-re-use-interoperability/abstract">
-	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-	  <key>abstract</key>
-	  <path>consultation/data-usage/data-sharing-and-re-use-interoperability/abstract</path>
-	  <dc:comment/>
-	  <attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/restriction"/>
-	  <questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/data-usage/data-sharing-and-re-use-interoperability"/>
-	  <is_collection>False</is_collection>
-	  <order>0</order>
-	  <help lang="en"/>
-	  <help lang="de"/>
-	  <text lang="en">Are there restrictions accessing and re-using the data in general?</text>
-	  <text lang="de">Bestehen generell Einschränkungen bei dem Zugriff und der Nachnutzung der Daten (rechtliche Gründe, Schutzrechte, Betriebsgeheimnisse etc)?</text>
-	  <verbose_name lang="en"/>
-	  <verbose_name lang="de"/>
-	  <verbose_name_plural lang="en"/>
-	  <verbose_name_plural lang="de"/>
-	  <widget_type>textarea</widget_type>
-	  <value_type>text</value_type>
-	  <maximum/>
-	  <minimum/>
-	  <step/>
-	  <unit/>
-	  <optionsets/>
-	  <conditions/>
-	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/metadata-and-referencing/metadata-dataset">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>metadata-dataset</key>
-		<path>consultation/metadata-and-referencing/metadata-dataset</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
-		<section dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/metadata-and-referencing"/>
-		<is_collection>True</is_collection>
-		<order>10</order>
-		<title lang="en">Metadata</title>
-		<title lang="de">Metadaten</title>
-		<help lang="en"/>
-		<help lang="de"/>
-		<verbose_name lang="en">dataset</verbose_name>
-		<verbose_name lang="de">Datensatz</verbose_name>
-		<verbose_name_plural lang="en">datasets</verbose_name_plural>
-		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
-		<conditions/>
-	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/metadata-and-referencing/metadata-dataset/abstract">
-	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-	  <key>abstract</key>
-	  <path>consultation/metadata-and-referencing/metadata-dataset/abstract</path>
-	  <dc:comment/>
-	  <attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/abstract"/>
-	  <questionset dc:uri="https://rdmorganiser.github.io/terms/questions/consultation/metadata-and-referencing/metadata-dataset"/>
-	  <is_collection>False</is_collection>
-	  <order>0</order>
-	  <help lang="en"/>
-	  <help lang="de"/>
-	  <text lang="en">Which types of metadata are collected? Do you use any kind of standard, ontology or classification?</text>
-	  <text lang="de">Welche Metadaten werden erhoben? Werden Standards, Ontologien oder Klassifikationen verwendet?</text>
-	  <verbose_name lang="en"/>
-	  <verbose_name lang="de"/>
-	  <verbose_name_plural lang="en"/>
-	  <verbose_name_plural lang="de"/>
-	  <widget_type>textarea</widget_type>
-	  <value_type>text</value_type>
-	  <maximum/>
-	  <minimum/>
-	  <step/>
-	  <unit/>
-	  <optionsets/>
-	  <conditions/>
-	</question>
-</rdmo>
+	</rdmo>
