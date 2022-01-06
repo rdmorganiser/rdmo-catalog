@@ -9,7 +9,8 @@ This repository contains the content for [RDMO](https://github.com/rdmorganiser/
 Three new catalogs are tailored to serve the following use cases (see https://github.com/FDM-UARuhr/rdmo-catalog-uaruhr/tree/master/rdmorganiser/questions): 
 * **consultation** (~20 questions)
 * **proposal** (~90 questions)
-* **archive** (~ 25 questions).  
+* **archive** (~ 25 questions)
+* **training** (~20 questions).  
 
 A detailed human-readable summary of can be found [here](https://fdm-uaruhr.github.io/rdmo-catalog-uaruhr/catalogs/index.html).
 
