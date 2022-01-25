@@ -144,7 +144,7 @@ def make_root(catalog_vars):
 
 def read_yaml(file_name):
     # reads in a yaml file and returns the content of it
-    data_file = open(os.path.abspath(file_name), "r")
+    data_file = open(os.path.abspath(file_name), "r", encoding='UTF-8')
     content = yaml.safe_load(data_file)
     return content
 
