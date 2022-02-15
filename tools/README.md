@@ -22,9 +22,8 @@ If there was any content that needed to be overwritten (currently there is no su
 * take all  content of `<rdmo> ... </rdmo>` except `<catalog> ... </catalog>`  of
     * 1. `rdmorganiser/_changes/new_questions.xml` and 
     * 2. `rdmorganiser/questions/rdmo.xml`
-    * 3. store these xml elements in `tools/all_questions.xml` after `<catalog> ... </catalog>` section and remove the old content except `<catalog> ... </catalog>`. 
-
-
+    * 3. store these xml elements in `tools/all_questions.xml` after `<catalog> ... </catalog>` section and remove the old content except `<catalog> ... </catalog>`
+    * 4. replace all occurrences of `rdmo/` with `ua_ruhr/` and `/rdmo` with `/ua_ruhr`
 
 # Tools 
 ## Comparing two rdmo domain files 
