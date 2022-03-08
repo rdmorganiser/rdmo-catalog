@@ -153,7 +153,7 @@ def make_root(cat_vars):
 
 def read_yaml(file_name):
     # reads in a yaml file and returns the content of it
-    data_file = open(os.path.abspath(file_name), "r")
+    data_file = open(os.path.abspath(file_name), "r", encoding="utf-8")
     content = yaml.safe_load(data_file)
     return content
 
