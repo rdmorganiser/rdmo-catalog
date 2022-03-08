@@ -30,15 +30,15 @@ def main():
 
         for n, cat_info in enumerate(life_cycle_content["catalogs"]):
             # use path as key for check of membership to catalog
-            if life_cycle_content[question.find("path").text][cat_info[0]]:
+            if life_cycle_content[question.find("path").text][cat_info["key"]]:
                 # check if qset and sec are already in catalog
                 if cat_list[n].find(qset_xpath, xml_nsmap) == None:
                     if cat_list[n].find(sec_xpath, xml_nsmap) == None:
-                        tmp_sec = change_path(sec, cat_info[0])
+                        tmp_sec = change_path(sec, cat_info["key"])
                         cat_list[n].append(deepcopy(tmp_sec))
-                    tmp_qset = change_path(qset, cat_info[0])
+                    tmp_qset = change_path(qset, cat_info["key"])
                     cat_list[n].append(deepcopy(tmp_qset))
-                tmp_question = change_path(question, cat_info[0])
+                tmp_question = change_path(question, cat_info["key"])
                 # sort the questions below their respective questionsets
                 cat_qset = cat_list[n].find(qset_xpath, xml_nsmap)
                 index = cat_list[n].index(cat_qset)
@@ -142,9 +142,9 @@ def make_root(cat_vars):
 		<title lang="de"></title>
 	    </catalog>
         """))
-    root[0][1].text = cat_vars[0]
-    root[0][4].text = cat_vars[1]
-    root[0][5].text = cat_vars[1]
+    root[0][1].text = cat_vars["key"]
+    root[0][4].text = cat_vars["title_en"]
+    root[0][5].text = cat_vars["title_de"]
     return root
 
 def read_yaml(file_name):
