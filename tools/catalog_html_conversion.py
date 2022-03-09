@@ -57,6 +57,10 @@ def main():
 
     write_html(cat_list[3], "en", "archive_en")
     write_html(cat_list[3], "de", "archive_de")
+	
+    write_html(cat_list[4], "en", "training_en")
+    write_html(cat_list[4], "de", "training_de")
+	
     quit()
     # write_catalogs(cat_list, life_cycle_content["catalogs"])
     # change_uri(life_cycle_content["catalogs"])
