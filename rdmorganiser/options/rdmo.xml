@@ -269,8 +269,8 @@
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
 		<order>1</order>
-		<text lang="en">Legal restrictions: Permission is required to access the data or the researched object, and the grantors do not consent to the data being published</text>
-		<text lang="de">Rechtliche Hinderungsgründe: Für den Zugang zu den Daten oder zum beforschten Objekt ist eine Genehmigung erforderlich und die Erteiler der Genehmigung sind mit einer Veröffentlichung der Daten nicht einverstanden</text>
+		<text lang="en">Legal restrictions: Data obtained with the permission of third parties, which did not agree to make the data publicly available</text>
+		<text lang="de">Rechtliche Hinderungsgründe: Daten erhalten mit der Genehmigung Dritter, die mit einer Veröffentlichung der Daten nicht einverstanden sind</text>
 		<text lang="fr">Restrictions juridiques : les données sont soumises au consentement d'un tiers, qui n'a pas accordé leur ouverture au publique</text>
 		<text lang="it">Restrizioni legali: dati ottenuti con l'autorizzazione di un soggetto terzo, che non ha acconsentito alla loro diffusione pubblica</text>
 		<additional_input>True</additional_input>
@@ -282,8 +282,8 @@
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
 		<order>2</order>
-		<text lang="en">Legal restrictions: Opening the data could reveal personal data for whose publication there is no consent</text>
-		<text lang="de">Rechtliche Hinderungsgründe: durch Öffnung der Daten könnten personenbezogene Daten preisgegeben werden, für deren Veröffentlichung es keine Einwilligung gibt</text>
+		<text lang="en">Legal restrictions: Data sharing might disclose the identity of a manufacturer or other confidential information</text>
+		<text lang="de">Rechtliche Hinderungsgründe: durch Öffnung der Daten könnten die Identität der Erzeugenden oder andere vertrauliche Informationen preisgegeben</text>
 		<text lang="fr">Restrictions juridiques : le partage des données peut révéler l'identité d'un fabricant ou d'autres informations confidentiels</text>
 		<text lang="it">Restrizioni legali: la condivisione dei dati potrebbe rivelare l'identità di un fornitore o altre informazioni confidenziali</text>
 		<additional_input>True</additional_input>
@@ -295,8 +295,8 @@
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
 		<order>3</order>
-		<text lang="en">Legal restrictions: Parts of the data are intellectual property of third parties or a partner and the project does not own the right to publish the data</text>
-		<text lang="de">Rechtliche Hinderungsgründe: Teile der Daten sind geistiges Eigentum Dritter oder eines Partners und das Projekt besitzt nicht das Recht zur Veröffentlichung der Daten</text>
+		<text lang="en">Legal restrictions: Data contain commercially sensitive information, and their sharing might compromise the protection of a partner(s) intellectual property</text>
+		<text lang="de">Rechtliche Hinderungsgründe: Daten enthalten wirtschaftlich sensible Informationen und ihre Weitergabe könnte den Schutz des geistigen Eigentums eines Partners gefährden</text>
 		<text lang="fr">Restrictions juridiques : les données contiennent des informations relevant du secret des affaires et leur partage peut fragiliser la propriété intellectuelle de certains partenaires</text>
 		<text lang="it">Restrizioni legali: i dati contengono informazioni coperte dal segreto commerciale e la loro condivisione potrebbe indebolire la proprietà intellettuale di un partner</text>
 		<additional_input>True</additional_input>
@@ -366,13 +366,26 @@
 		<text lang="it">Restrizioni volontarie: mancata pertinenza dei dati rispetto al soggetto principale della pubblicazione</text>
 		<additional_input>True</additional_input>
 	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/future">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>future</key>
+		<path>dataset_sharing_restrictions/future</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
+		<order>9</order>
+		<text lang="en">Voluntary restrictions: Intention to use underlying information in (near) future textual publications</text>
+		<text lang="de">Freiwillige Beschränkungen: Absicht, zugrunde liegende Informationen in (nahen) zukünftigen Textveröffentlichungen zu verwenden</text>
+		<text lang="fr">Restrictions propres : intention d'utiliser dans un future proche l'information sous-jacente pour une publication écrite</text>
+		<text lang="it">Restrizioni volontarie: intenzione di utilizzare l'informazione contenuta nei dati in future pubblicazioni testuali</text>
+		<additional_input>True</additional_input>
+	</option>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/redundancy">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>redundancy</key>
 		<path>dataset_sharing_restrictions/redundancy</path>
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
-		<order>9</order>
+		<order>10</order>
 		<text lang="en">Voluntary restrictions: Redundancy of the data with the information already made available within a textual publication</text>
 		<text lang="de">Freiwillige Beschränkungen: Redundanz der Daten, wobei die Daten bereits in einer Textpublikation mit zur Verfügung gestellt worden sind</text>
 		<text lang="fr">Restrictions propres : redondance des données avec l'information rendue disponible dans une publication écrite</text>
@@ -385,7 +398,7 @@
 		<path>dataset_sharing_restrictions/other</path>
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
-		<order>10</order>
+		<order>11</order>
 		<text lang="en">Other restrictions</text>
 		<text lang="de">Andere Hinderungsgründe</text>
 		<text lang="fr">Autres restrictions</text>
@@ -471,8 +484,8 @@
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/documentation"/>
 		<order>6</order>
-		<text lang="en">Survey instruments (questionnaires, ...), interviewer instructions, codebooks, scale manuals, technical reports for surveys</text>
-		<text lang="de">Erhebungsinstrumente (Fragebögen, ...), Intervieweranweisungen, Codebücher, Skalenhandbücher und technische Berichte zu Umfragen</text>
+		<text lang="en">For survey data: survey instruments (questionnaires, ...), interviewer instructions, codebooks, scale manuals, technical reports</text>
+		<text lang="de">Für Umfragedaten: Erhebungsinstrumente (Fragebögen, ...), Intervieweranweisungen, Codebücher, Skalenhandbücher, technische Berichte</text>
 		<text lang="fr">En cas d'entrevues : questionnaires, instructions pour les sondeurs, livres de code, manuelles d'échelle, rapports techniques</text>
 		<text lang="it">In caso di sondaggi: questionari, istruzioni per gli intervistatori, libri di codice, manuali di scala, rapporti tecnici</text>
 		<additional_input>True</additional_input>
