@@ -333,7 +333,7 @@
 		<path>dataset_sharing_restrictions/comprehensibility</path>
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
-		<order>5</order>
+		<order>6</order>
 		<text lang="en">Voluntary restrictions: Data economy and better comprehensibility (no publication of pre-processed data without a clear reason for doing so)</text>
 		<text lang="de">Freiwillige Beschränkungen: Datensparsamkeit und bessere Verständlichkeit (keine Veröffentlichung von Zwischenergebnissen ohnen einen triftigen Grund)</text>
 		<text lang="fr">Restrictions propres : économie de données et cohérence (aucune publication de données intermédiaires sans raison clairement valable)</text>
@@ -346,7 +346,7 @@
 		<path>dataset_sharing_restrictions/confirmation</path>
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
-		<order>6</order>
+		<order>7</order>
 		<text lang="en">Voluntary restrictions: Use of results taken from past publications for confirmatory reasons only</text>
 		<text lang="de">Freiwillige Beschränkungen: Verwendung von Ergebnissen früherer Veröffentlichungen nur zu Bestätigungszwecken</text>
 		<text lang="fr">Restrictions propres : les résultats publiés existants ne sont utilisés que pour comparaison</text>
@@ -359,7 +359,7 @@
 		<path>dataset_sharing_restrictions/relevance</path>
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
-		<order>7</order>
+		<order>8</order>
 		<text lang="en">Voluntary restrictions: No direct relevance of the data for the main topic of the publication</text>
 		<text lang="de">Freiwillige Beschränkungen: keine direkte Relevanz der Daten für das Hauptthema der Textpublikation</text>
 		<text lang="fr">Restrictions propres : aucune pertinence des données pour le sujet principal de la publication</text>
@@ -372,7 +372,7 @@
 		<path>dataset_sharing_restrictions/future</path>
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
-		<order>8</order>
+		<order>9</order>
 		<text lang="en">Voluntary restrictions: Intention to use underlying information in (near) future textual publications</text>
 		<text lang="de">Freiwillige Beschränkungen: Absicht, zugrunde liegende Informationen in (nahen) zukünftigen Textveröffentlichungen zu verwenden</text>
 		<text lang="fr">Restrictions propres : intention d'utiliser dans un future proche l'information sous-jacente pour une publication écrite</text>
@@ -385,7 +385,7 @@
 		<path>dataset_sharing_restrictions/redundancy</path>
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
-		<order>9</order>
+		<order>10</order>
 		<text lang="en">Voluntary restrictions: Redundancy of the data with the information already made available within a textual publication</text>
 		<text lang="de">Freiwillige Beschränkungen: Redundanz der Daten, wobei die Daten bereits in einer Textpublikation mit zur Verfügung gestellt worden sind</text>
 		<text lang="fr">Restrictions propres : redondance des données avec l'information rendue disponible dans une publication écrite</text>
@@ -398,7 +398,7 @@
 		<path>dataset_sharing_restrictions/other</path>
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
-		<order>10</order>
+		<order>11</order>
 		<text lang="en">Other restrictions</text>
 		<text lang="de">Andere Hinderungsgründe</text>
 		<text lang="fr">Autres restrictions</text>
@@ -743,104 +743,6 @@
 		<text lang="de">Das Mitliefern von Konkordanzen is nicht notwendig aufgrund der Kompatibilität der verwendeten Terminologie mit der bestehenden Literatur</text>
 		<text lang="fr">Comme le jeu de données utilise des terminologies de référence ou compatibles avec la littérature existante, aucune correspondance est nécessaire</text>
 		<text lang="it">Non c'è bisogno di riportare corrispondenze, dato cha la terminologia usata è compatibile con la letteratura esistente</text>
-		<additional_input>True</additional_input>
-	</option>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/metadata">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>metadata</key>
-		<dc:comment/>
-		<order>0</order>
-		<conditions/>
-	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/metadata/time">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>time</key>
-		<path>metadata/time</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/metadata"/>
-		<order>3</order>
-		<text lang="en">time stamp</text>
-		<text lang="de">Zeitstempel</text>
-		<text lang="fr">horodatage</text>
-		<text lang="it">marca temporale</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/metadata/place">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>place</key>
-		<path>metadata/place</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/metadata"/>
-		<order>4</order>
-		<text lang="en">place</text>
-		<text lang="de">Ort</text>
-		<text lang="fr">emplacement</text>
-		<text lang="it">collocazione</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/metadata/technique">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>technique</key>
-		<path>metadata/technique</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/metadata"/>
-		<order>5</order>
-		<text lang="en">experimental technique</text>
-		<text lang="de">Experimentelle Technik</text>
-		<text lang="fr">technique expérimentale</text>
-		<text lang="it">tecnica sperimentale</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/metadata/sample">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>sample</key>
-		<path>metadata/sample</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/metadata"/>
-		<order>6</order>
-		<text lang="en">sample</text>
-		<text lang="de">Probe</text>
-		<text lang="fr">échantillon</text>
-		<text lang="it">campione</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/metadata/creator">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>creator</key>
-		<path>metadata/creator</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/metadata"/>
-		<order>7</order>
-		<text lang="en">data creator</text>
-		<text lang="de">Datenerzeuger</text>
-		<text lang="fr">créateur de données</text>
-		<text lang="it">creatore dei dati</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/metadata/version_nr">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>version_nr</key>
-		<path>metadata/version_nr</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/metadata"/>
-		<order>8</order>
-		<text lang="en">version number</text>
-		<text lang="de">Versionnummer</text>
-		<text lang="fr">numéro de version</text>
-		<text lang="it">numero di versione</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/metadata/other">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>other</key>
-		<path>metadata/other</path>
-		<dc:comment>This optionset just lists the objects of the project</dc:comment>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/metadata"/>
-		<order>20</order>
-		<text lang="en">Other</text>
-		<text lang="de">Sonstiges</text>
-		<text lang="fr">Autre</text>
-		<text lang="it">Altro</text>
 		<additional_input>True</additional_input>
 	</option>
 	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output">
@@ -2367,10 +2269,10 @@
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types"/>
 		<order>8</order>
-		<text lang="en">Other</text>
-		<text lang="de">Andere</text>
-		<text lang="fr">Autres</text>
-		<text lang="it">Altri</text>
+		<text lang="en">Other, or exact designation - if known</text>
+		<text lang="de">Andere, bzw. genaue Bezeichnung - falls bekannt</text>
+		<text lang="fr">Autre, ou dénomination exacte - si connue</text>
+		<text lang="it">Altra, o denominazione esatta - qualora nota</text>
 		<additional_input>True</additional_input>
 	</option>
 	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin_options">
@@ -3327,7 +3229,7 @@
 		<text lang="de">Ja</text>
 		<text lang="fr">Oui</text>
 		<text lang="it">Sì</text>
-		<additional_input>False</additional_input>
+		<additional_input>True</additional_input>
 	</option>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_requirements_options/144">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
