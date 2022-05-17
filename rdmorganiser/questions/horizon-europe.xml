@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2022-03-23T14:34:34.907039+01:00">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2022-05-17T02:06:28.406393+02:00">
 	<catalog dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>horizon-europe</key>
-		<dc:comment>Vorlage für das Förderrahmenprogramm "Horizon Europe" (2021-2027) der Europäischen Kommission</dc:comment>
+		<dc:comment>RDMO questionnaire for the funding framework program &quot;Horizon Europe&quot; (2021-2027) of the European Commission</dc:comment>
 		<order>5</order>
 		<title lang="en">Horizon Europe</title>
 		<help lang="en"/>
@@ -969,7 +969,7 @@ Si prega di spiegare anche se la raccolta di dati è fissa e memorizzata in un c
 		<verbose_name lang="en">dataset</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
 		<title lang="de">Auffindbarkeit</title>
-		<help lang="de">Daten auffindbar machen, einschließlich der Bereitstellung von Metadaten. &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx" target=_blank&gt;Originalfragen:
+		<help lang="de">Daten auffindbar machen, einschließlich der Bereitstellung von Metadaten. &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx" target=_blank&gt;Originalfragen:&lt;/a&gt;
 
 - &lt;i&gt;Will data be identified by a persistent identifier?&lt;/i&gt;
 
@@ -1044,7 +1044,7 @@ Si prega di spiegare anche se la raccolta di dati è fissa e memorizzata in un c
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/pids/system"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/fair_data/findable_data"/>
-		<is_collection>False</is_collection>
+		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en"/>
@@ -1088,26 +1088,26 @@ Si prega di spiegare anche se la raccolta di dati è fissa e memorizzata in un c
 		<dc:comment>Horizon Europe meint hier suchbare Metadaten. Hilfe: Wenn Art der Metadaten oder Automatisierungsgrad noch unklar sein sollte, bei manuell eintragen und "noch (mit Repositorium) zu klären" vermerken. View: Bezüglich Standards auf 2.3-23 verweisen</dc:comment>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/creation_automatic"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/fair_data/findable_data"/>
-		<is_collection>True</is_collection>
+		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en">Metadata are data about data and are stored with the research dataset. Metadata are crucial for the searchability of research data, because the search for suitable, reusable data in research data repositories is usually only possible in the metadata.
 
-Most metadata must be entered manually, such as authors, title and description. However, many repositories supplement the manually entered metadata with automatically generated metadata. A timestamp and provenance information about storage are often added automatically. If it is not yet known which metadata will be generated automatically, "to be clarified with repository" can be entered here.</help>
+Most metadata must be entered manually, such as authors, title and description. However, many repositories supplement the manually entered metadata with automatically generated metadata. A timestamp and provenance information about storage are often added automatically.</help>
 		<text lang="en">Which metadata are collected automatically?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Metadaten sind Daten über Daten und werden zusammen mit dem Forschungsdatensatz gespeichert. Metadaten sind für die Suchbarkeit von Forschungsdaten ganz entscheidend, weil die Suche nach geeigneten, nachnutzbaren Daten in Forschungsdatenrepositorien meist nur in den Metadaten möglich ist.
 
- Die meisten Metadaten müssen manuell eingetragen werden, wie beispielsweise Autoren, Titel und Beschreibung. Viele Repositorien ergänzen die manuell eingetragenen Metadaten aber durch automatisch erzeugte. Ein Zeitstempel und Provenienzinformationen für die Speicherung werden häufig automatisch ergänzt. Falls noch nicht bekannt ist, welche Metadaten automatisch erzeugt werden, kann hier "noch mit Repositorium zu klären" eingetragen werden.</help>
+ Die meisten Metadaten müssen manuell eingetragen werden, wie beispielsweise Autoren, Titel und Beschreibung. Viele Repositorien ergänzen die manuell eingetragenen Metadaten aber durch automatisch erzeugte. Ein Zeitstempel und Provenienzinformationen für die Speicherung werden häufig automatisch ergänzt.</help>
 		<text lang="de">Welche Metadaten werden automatisch erhoben?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
 		<help lang="fr">Les métadonnées sont des données sur les données et sont stockées avec l'ensemble de données de recherche. Les métadonnées sont cruciales pour la recherche des données de recherche, car la recherche de données appropriées et réutilisables dans les répertoires de dépôt de données de recherche n'est généralement possible que dans les métadonnées.
 
-La plupart des métadonnées doivent être saisies manuellement, telles que les auteurs, le titre et la description. Cependant, de nombreux dépôts complètent les métadonnées saisies manuellement par des métadonnées générées automatiquement. Un horodatage et des informations de provenance sur le stockage sont souvent ajoutés automatiquement. Si l'on ne sait pas encore quelles métadonnées seront générées automatiquement, "à clarifier avec le gestionnaire de dépôt" peut être saisi ici.</help>
+La plupart des métadonnées doivent être saisies manuellement, telles que les auteurs, le titre et la description. Cependant, de nombreux dépôts complètent les métadonnées saisies manuellement par des métadonnées générées automatiquement. Un horodatage et des informations de provenance sur le stockage sont souvent ajoutés automatiquement.</help>
 		<text lang="fr">Quelles métadonnées sont collectées automatiquement??</text>
 		<default_text lang="fr"/>
 		<verbose_name lang="fr"/>
@@ -1119,16 +1119,14 @@ La plupart des métadonnées doivent être saisies manuellement, telles que les 
 		<verbose_name_plural lang="it"/>
 		<default_option/>
 		<default_external_id/>
-		<widget_type>checkbox</widget_type>
+		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
 		<width/>
-		<optionsets>
-			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/metadata"/>
-		</optionsets>
+		<optionsets/>
 		<conditions/>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/fair_data/findable_data/metadata_semi_automatic">
@@ -1138,7 +1136,7 @@ La plupart des métadonnées doivent être saisies manuellement, telles que les 
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/creation_semi_automatic"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/fair_data/findable_data"/>
-		<is_collection>True</is_collection>
+		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<order>3</order>
 		<help lang="en">So what metadata are automatically collected by the computer/software, but must be checked?</help>
@@ -1163,16 +1161,14 @@ La plupart des métadonnées doivent être saisies manuellement, telles que les 
 		<verbose_name_plural lang="it"/>
 		<default_option/>
 		<default_external_id/>
-		<widget_type>checkbox</widget_type>
+		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
 		<width/>
-		<optionsets>
-			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/metadata"/>
-		</optionsets>
+		<optionsets/>
 		<conditions/>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/fair_data/findable_data/metadata_manual">
@@ -1182,15 +1178,15 @@ La plupart des métadonnées doivent être saisies manuellement, telles que les 
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/creation_manual"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/fair_data/findable_data"/>
-		<is_collection>True</is_collection>
+		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<order>4</order>
-		<help lang="en">A metadata editor is suitable for this.</help>
+		<help lang="en">If it is not yet known which metadata have to be specified, "to be clarified with repository" can be entered here.</help>
 		<text lang="en">Which metadata are collected manually?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Dafür bietet sich ein Metadateneditor an.</help>
+		<help lang="de">Falls noch nicht bekannt ist, welche Metadaten eingetragen werden müssen, kann hier "noch mit Repositorium zu klären" eingetragen werden.</help>
 		<text lang="de">Welche Metadaten werden manuell erhoben?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1207,16 +1203,14 @@ La plupart des métadonnées doivent être saisies manuellement, telles que les 
 		<verbose_name_plural lang="it"/>
 		<default_option/>
 		<default_external_id/>
-		<widget_type>checkbox</widget_type>
+		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
 		<width/>
-		<optionsets>
-			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/metadata"/>
-		</optionsets>
+		<optionsets/>
 		<conditions/>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/fair_data/findable_data/metadata_keywords">
@@ -1574,14 +1568,14 @@ La question &lt;i&gt;Est-il nécessaire d'avoir un comité d'accès aux données
 		<order>1</order>
 		<help lang="en">From the &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf" target=_blank&gt;Horizon Europe Programme Guide&lt;/a&gt;:
 
-Beneficiaries of Horizon Europe have to ensure open access to research data generated in their projects under the principle as open as possible and as closed as necessary. This means that data are in principle open, unless beneficiaries decide to restrict access to some or all their research data for legitimate reasons.</help>
+Beneficiaries of Horizon Europe have to ensure open access to research data generated in their projects under the principle "as open as possible and as closed as necessary". This means that data are in principle open, unless beneficiaries decide to restrict access to some or all their research data for legitimate reasons.</help>
 		<text lang="en">Will this dataset be published or shared?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Aus dem &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf" target=_blank&gt;Horizon Europe Programme Guide (englisch)&lt;/a&gt;:
 
-Begünstigte von Horizon Europe müssen einen offenen Zugang zu Forschungsdaten, die in ihren Projekten generiert werden, nach dem Prinzip so offen wie möglich und so geschlossen wie nötig" gewährleisten. Dies bedeutet, dass Daten grundsätzlich offen sind, es sei denn, Begünstigte entscheiden sich aus legitimen Gründen dafür, den Zugang zu einigen oder allen ihrer Forschungsdaten einzuschränken.</help>
+Begünstigte von Horizon Europe müssen einen offenen Zugang zu Forschungsdaten, die in ihren Projekten generiert werden, nach dem Prinzip "so offen wie möglich und so geschlossen wie nötig" gewährleisten. Dies bedeutet, dass Daten grundsätzlich offen sind, es sei denn, Begünstigte entscheiden sich aus legitimen Gründen dafür, den Zugang zu einigen oder allen ihrer Forschungsdaten einzuschränken.</help>
 		<text lang="de">Soll dieser Datensatz veröffentlicht oder geteilt werden?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1710,12 +1704,12 @@ Les bénéficiaires d'Horizon Europe doivent garantir un accès ouvert aux donn�
 		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
 		<order>4</order>
-		<help lang="en">The options refer to the licenses of the &lt;a href="https://creativecommons.org/licenses/?lang=en" target="_blank"&gt;Creative Commons family&lt;/a&gt;.</help>
+		<help lang="en">The options refer to the &lt;a href="https://creativecommons.org/licenses/?lang=en" target="_blank"&gt;Creative Commons licenses&lt;/a&gt;. The text field can be used to describe the license or (even with a CC license) to specify it exactly, e.g. "CC BY 4.0 International".</help>
 		<text lang="en">If yes, under which terms of use or license will the dataset be published or shared?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Die Auswahlmöglichkeiten orientieren sich an Lizenzen der &lt;a href="https://creativecommons.org/licenses/?lang=de" target="_blank"&gt;Creative-Commons-Familie&lt;/a&gt;.</help>
+		<help lang="de">Die Auswahlmöglichkeiten orientieren sich an Lizenzen von &lt;a href="https://creativecommons.org/licenses/?lang=de" target="_blank"&gt;Creative Commons&lt;/a&gt;. Das Textfeld kann genutzt werden, um die Lizenz zu beschreiben oder (auch im Falle einer CC-Lizenz) genau zu bezeichnen, z.B. "CC BY 4.0 International".</help>
 		<text lang="de">Wenn ja, unter welchen Nutzungsbedingungen oder welcher Lizenz sollen die Daten veröffentlicht bzw. geteilt werden?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -2498,38 +2492,20 @@ une référence à la rubrique « Données FAIR / Accessibilité : données » e
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/fair_data/reusable_data"/>
-		<is_collection>False</is_collection>
+		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
 		<order>1</order>
-		<help lang="en">Examples:
-
-* Codebooks, interviewer instructions, technical reports and scale manuals on survey data
-* Quality control report
-* Version information
-
-In this field, enter the components of the data documentation that are available with the data set and are not only supplied on request in the context of good scientific practice later.</help>
+		<help lang="en">In this field, enter the components of the data documentation that are available with the data set and are not only supplied on request in the context of good scientific practice later.</help>
 		<text lang="en">Which components of the data documentation are available together with the dataset?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Beispiele:
-
-* Codebücher, Intervieweranweisungen, technische Berichte und Skalenhandbücher zu Umfragedaten
-* Qualitätskontrollbericht
-* Versionsinformation
-
-Tragen Sie in dieses Feld die Bestandteile der Datendokumentation ein, die mit dem Datensatz zur Verfügung stehen und nicht nur später auf Anfrage geliefert werden.</help>
+		<help lang="de">Tragen Sie in dieses Feld die Bestandteile der Datendokumentation ein, die mit dem Datensatz zur Verfügung stehen und nicht nur später auf Anfrage geliefert werden.</help>
 		<text lang="de">Welche Komponenten der Datendokumentation stehen zusammen mit dem Datensatz zur Verfügung?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<help lang="fr">Exemples:
-
-* Livres de codes, instructions pour les enquêteurs, rapports techniques et manuels sur les données d'enquête
-* Rapport de contrôle qualité
-* Information sur la version
-
-Dans ce champ, entrez les éléments de la documentation des données qui sont disponibles avec le jeu de données et ne sont pas uniquement fournis sur demande dans le cadre de bonnes pratiques scientifiques ultérieures.</help>
+		<help lang="fr">Dans ce champ, entrez les éléments de la documentation des données qui sont disponibles avec le jeu de données et ne sont pas uniquement fournis sur demande dans le cadre de bonnes pratiques scientifiques ultérieures.</help>
 		<text lang="fr">Quels composants de la documentation des données sont disponibles avec l'ensemble de données ?</text>
 		<default_text lang="fr"/>
 		<verbose_name lang="fr"/>
@@ -4509,8 +4485,7 @@ Dans ce qui suit, vous disposerez d'un espace jusqu'à la fin du questionnaire p
 - &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/af_he-ria-ia-stage-1_en.pdf" target=_blank"&gt;Standard Proposal Template&lt;/a&gt;
 
 - &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx" target=_blank"&gt;Data Management Plan Template&lt;/a&gt;
-
-An &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx" target=_blank"&gt;annotated version of the Data Management Plan Template&lt;/a&gt; exists for Societal Challenge 1 participants.</help>
+</help>
 		<text lang="en">Does the funder have rules or recommendations for data management? If yes, please briefly outline them and refer to more detailed sources of information if necessary.</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
@@ -4524,8 +4499,7 @@ An &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021
 - &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/af_he-ria-ia-stage-1_en.pdf" target=_blank"&gt;Standard Proposal Template&lt;/a&gt;
 
 - &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx" target=_blank"&gt;Data Management Plan Template&lt;/a&gt;
-
-Eine &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx" target=_blank"&gt;annotierte Version des Data Management Plan Template&lt;/a&gt; existiert für Societal Challenge 1 Teilnehmer.</help>
+</help>
 		<text lang="de">Gibt es von Seiten des Forschungsförderers Vorgaben oder Richtlinien bezüglich des Umgangs mit den im Projekt erhobenen Forschungsdaten? Wenn ja, skizzieren Sie diese kurz und verweisen Sie ggf. auf weiterführende Informationen.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -4536,8 +4510,7 @@ Eine &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/20
 - &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf" target="_blank"&gt;Modèle d'Accord de Subvention Annoté&lt;/a&gt;
 - &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/af_he-ria-ia-stage-1_en.pdf" target=_blank"&gt;Modèle de proposition standard&lt;/a&gt;
 - &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx" target=_blank"&gt;Modèle de plan de gestion des données&lt;/a&gt;
-
-Une &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx" target=_blank"&gt;version annotée du modèle de plan de gestion des données&lt;/a&gt; existe pour les participants au Défi de société 1.</help>
+</help>
 		<text lang="fr">Le bailleur de fonds a-t-il des règles ou des recommandations pour la gestion des données ? Si oui, veuillez les décrire brièvement et faire référence à des sources d'informations plus détaillées si nécessaire.</text>
 		<default_text lang="fr"/>
 		<verbose_name lang="fr"/>
@@ -4548,8 +4521,7 @@ Une &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/202
 - &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf" target="_blank"&gt;Modello annotato dell'accordo di sovvenzione&lt;/a&gt;
 - &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/af/af_he-ria-ia-stage-1_en.pdf" target=_blank"&gt;Modello standard di proposta&lt;/a&gt;
 - &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx" target=_blank"&gt;Modello per il piano di gestione dei dati&lt;/a&gt;
-
-È disponibile inoltre una &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx" target=_blank"&gt;versione annotata del piano di gestione dei dati&lt;/a&gt; per i partecipanti della "Sfida comunitaria 1".</help>
+</help>
 		<text lang="it">.....</text>
 		<default_text lang="it"/>
 		<verbose_name lang="it"/>
