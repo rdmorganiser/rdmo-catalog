@@ -37,7 +37,7 @@
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<title lang="en">Basic information on the project</title>
-		<help lang="en">This questionnaire is intended for research projects funded by EU Horizon Europe. It is compiled according to the &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx" target=_blank&gt;Data Management Plan Template, Version 1.0 from May 5, 2021&lt;/a&gt;. Some of the EU questions are broken down into sub-questions. In addition, for many questions there is the option of answering the question on a database-specific basis. There is a suitable view for the output of the data management plan, which
+		<help lang="en">This questionnaire is intended for research projects funded by EU Horizon Europe. It is compiled according to the &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx" target=_blank&gt;Data Management Plan Template, Version 1.0 from May 5, 2021&lt;/a&gt;. Some of the EU questions are broken down into sub-questions. In addition, for many questions there is the option of answering the question on a dataset-specific basis. There is a suitable view for the output of the data management plan, which
 
 - outputs the data management plan in the deliverable form desired by the EU,
 - uses the original EU questions,
@@ -468,7 +468,7 @@ La sous-question &lt;i&gt;"et dans quel but allez-vous les réutiliser ?"&lt;/i&
 
 * quantitative online survey
 * 3D model / digital reconstruction of a stone age settlement
-* software developed within the project
+* scanning electron micrographs
 
 Please also explain whether this is a fixed data set stored at a certain point in time or whether it is created dynamically over a certain period of time.</help>
 		<text lang="en">What kind of dataset is it?</text>
@@ -479,7 +479,7 @@ Please also explain whether this is a fixed data set stored at a certain point i
 
 * quantitative Online-Befragung
 * 3D-Modellierung / digitale Rekonstruktion einer steinzeitlichen Siedlung
-* Software, die im Projekt entwickelt wird
+* rasterelektronenmikroskopische Aufnahmen
 
 Bitte erläutern Sie ergänzend, ob es sich um einen festen, zu einem bestimmten Zeitpunkt gespeicherten Datensatz handelt oder ob dieser dynamisch also laufend über einen bestimmten Zeitraum entsteht.</help>
 		<text lang="de">Um was für einen Datensatz handelt es sich?</text>
@@ -766,16 +766,14 @@ Si prega di spiegare anche se la raccolta di dati è fissa e memorizzata in un c
 		<verbose_name_plural lang="it"/>
 		<default_option/>
 		<default_external_id/>
-		<widget_type>checkbox</widget_type>
+		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
 		<width/>
-		<optionsets>
-			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin"/>
-		</optionsets>
+		<optionsets/>
 		<conditions/>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/data_summary/provenance/creator_name">
@@ -900,23 +898,23 @@ Si prega di spiegare anche se la raccolta di dati è fissa e memorizzata in un c
 		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
 		<order>4</order>
-		<help lang="en">It is important to set the fundamental course as to whether or not the data will be permitted for reuse. Of course, the potential for subsequent use can not be the sole decision criterion, but legal impediments, such as Privacy, copyright and business secrets must be taken into account. Otherwise, consider the re-use potential against the disadvantages, e.g. a decrease in the readiness to participate and the expected extra effort of a data publication.</help>
-		<text lang="en">Which individuals, groups or institutions could be interested in re-using this dataset? What are possible scenarios?</text>
+		<help lang="en">It is important to set the fundamental course as to whether or not the data will be permitted for reuse. Of course, the potential for subsequent use can not be the sole decision criterion, but legal impediments, such as privacy, copyright and business secrets must be taken into account. Otherwise, consider the re-use potential against the disadvantages, e.g. a decrease in the readiness to participate and the expected extra effort of a data publication.</help>
+		<text lang="en">Which individuals, groups or institutions could be interested in re-using this dataset?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Wichtig ist die grundsätzliche Weichenstellung, ob die Daten zur Nachnutzung zugelassen werden oder nicht. Selbstverständlich kann das Nachnutzungspotential dabei nicht alleiniges Entscheidungskriterium sein, sondern rechtliche Hinderungsgründe, wie z.B. Datenschutz, Urheberrecht und die Wahrung von Geschäftsgeheimnissen, müssen berücksichtigt werden. Wägen Sie ansonsten das Nachnutzungspotential gegen die Nachteile ab, beispielsweise gegen ein Absinken der Teilnahmebereitschaft und den zu erwartenden Mehraufwand einer Datenveröffentlichung.</help>
-		<text lang="de">Für welche Personen, Gruppen oder Institutionen könnte dieser Datensatz (für die Nachnutzung) von Interesse sein? Welche Konsequenzen hat das Nachnutzungspotential später für die Bereitstellung der Daten?</text>
+		<text lang="de">Für welche Personen, Gruppen oder Institutionen könnte dieser Datensatz (für die Nachnutzung) von Interesse sein?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
 		<help lang="fr">C'est important de prendre une décision raisonnée, si les données doivent être partagées pour la réutilisation ou non. Bien sûr le potentiel pour la réutilisation ne peut pas être le seul critère pour la décision, mais on doit tenir compte aussi de restrictions légales, comme la sauvegarde de la vie privée, de la propriété intellectuelle et des secrets industriels. Dans les autres cas, le potentiel pour la réutilisation doit être pesé contre les désavantage, par exemple une diminution dans la disponibilité à coopérer où l'effort additionel prévu dû à la publication des données.</help>
-		<text lang="fr">Quels individus, groupes ou institutions pourraient être intéressés à réutiliser ce jeu de données?? Quels sont les scénarios possibles??</text>
+		<text lang="fr">Quels individus, groupes ou institutions pourraient être intéressés à réutiliser ce jeu de données??</text>
 		<default_text lang="fr"/>
 		<verbose_name lang="fr"/>
 		<verbose_name_plural lang="fr"/>
 		<help lang="it">È importante prendere una decisione ragionata, se i dati devono essere condivisi per il riutilizzo oppure no. Ovviamente, il potenziale per il riutilizzo non può essere l'unico criterio alla base della decisione, ma bisogna tenere conto anche di restrizioni legali, tra cui la privacy, la proprietà intellettuale e il segreto industriale. Escludendo questi casi, il potenziale per il riutilizzo va soppesato di fronte a possibili svantaggi, per esempio una diminuzione della disponibilità alla collaborazione e il prevedibile lavoro aggiuntivo dovuto al processo di pubblicazione.</help>
-		<text lang="it">Quali persone, categorie o istituzioni potrebbero essere interessate al riutilizzo di questa raccolta di dati? Quali sono gli scenari possibili?</text>
+		<text lang="it">Quali persone, categorie o istituzioni potrebbero essere interessate al riutilizzo di questa raccolta di dati?</text>
 		<default_text lang="it"/>
 		<verbose_name lang="it"/>
 		<verbose_name_plural lang="it"/>
@@ -1748,22 +1746,22 @@ Les bénéficiaires d'Horizon Europe doivent garantir un accès ouvert aux donn�
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<order>5</order>
-		<help lang="en">One possible description: &lt;a href="https://wellcome.org/sites/default/files/governance-of-data-access-annexes-eagda-jun15.pdf" target="_blank" /&gt;</help>
+		<help lang="en"></help>
 		<text lang="en">If there are any restrictions on the re-use of this dataset, please explain why.</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Eine mögliche Beschreibung: &lt;a href="https://wellcome.org/sites/default/files/governance-of-data-access-annexes-eagda-jun15.pdf" target="_blank" /&gt;</help>
+		<help lang="de"></help>
 		<text lang="de">Sollte die Nachnutzung dieses Datensatzes Einschränkungen unterliegen, erläutern Sie bitte die Gründe.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<help lang="fr">Une description possible : &lt;a href="https://wellcome.org/sites/default/files/governance-of-data-access-annexes-eagda-jun15.pdf" target="_blank" /&gt;</help>
+		<help lang="fr"></help>
 		<text lang="fr">S'il existe des restrictions sur la réutilisation de ce jeu de données, veuillez expliquer pourquoi.</text>
 		<default_text lang="fr"/>
 		<verbose_name lang="fr"/>
 		<verbose_name_plural lang="fr"/>
-		<help lang="it">Una descrizione possibile: &lt;a href="https://wellcome.org/sites/default/files/governance-of-data-access-annexes-eagda-jun15.pdf" target="_blank" /&gt;</help>
+		<help lang="it"></help>
 		<text lang="it">Se ci sono restrizioni sul riutilizzo di questa raccolta di dati, si prega di giustificarle.</text>
 		<default_text lang="it"/>
 		<verbose_name lang="it"/>
@@ -1909,17 +1907,15 @@ Les bénéficiaires d'Horizon Europe doivent garantir un accès ouvert aux donn�
 
 - &lt;i&gt;Will metadata be made openly available and licenced under a public domain dedication CC0, as per the Grant Agreement? If not, please clarify why. Will metadata contain information to enable the user to access the data?&lt;/i&gt;
 
-- &lt;i&gt;If an embargo is applied to give time to publish or seek protection of the intellectual property (e.g. patents), specify why and how long this will apply, bearing in mind that research data should be made available as soon as possible.&lt;/i&gt;
+- &lt;i&gt;How long will the data remain available and findable? Will metadata be guaranteed to remain available after data are no longer available?&lt;/i&gt;
 
-- &lt;i&gt;How long will the data remain available and findable? Will metadata be guaranteed to remain available after data are no longer available?&lt;/i&gt;</help>
+- &lt;i&gt;Will documentation or reference about any software be needed to access or read the data be included? Will it be possible to include the relevant software (e.g. in open source code)?&lt;/i&gt;</help>
 		<verbose_name lang="en">dataset</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
 		<title lang="de">Zugänglichkeit: Metadaten</title>
 		<help lang="de">&lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx" target=_blank&gt;Originalfragen:&lt;/a&gt;
 
 - &lt;i&gt;Will metadata be made openly available and licenced under a public domain dedication CC0, as per the Grant Agreement? If not, please clarify why. Will metadata contain information to enable the user to access the data?&lt;/i&gt;
-
-- &lt;i&gt;If an embargo is applied to give time to publish or seek protection of the intellectual property (e.g. patents), specify why and how long this will apply, bearing in mind that research data should be made available as soon as possible.&lt;/i&gt;
 
 - &lt;i&gt;How long will the data remain available and findable? Will metadata be guaranteed to remain available after data are no longer available?&lt;/i&gt;
 
@@ -1930,7 +1926,6 @@ Les bénéficiaires d'Horizon Europe doivent garantir un accès ouvert aux donn�
 		<help lang="fr">&lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx" target=_blank&gt;Questions initiales :&lt;/a&gt;
 
 - &lt;i&gt;Les métadonnées seront-elles rendues librement accessibles et concédées sous une licence de domaine public CC0, conformément à l'accord de subvention ? Si non, veuillez préciser pourquoi. Les métadonnées contiendront-elles des informations nécessaire à l'accès aux données ?&lt;/i&gt;
-- &lt;i&gt;Si un embargo est appliqué pour donner le temps de publier ou de demander la protection de la propriété intellectuelle (par exemple, des brevets), précisez la durée et la raison, en gardant à l'esprit que les données de recherche doivent être mises à disposition dès que possible. &lt;/i&gt;
 - &lt;i&gt;Combien de temps les données resteront-elles disponibles et trouvables ? Les métadonnées resteront-elles disponibles une fois que les données ne seront plus disponibles ?&lt;/i&gt;</help>
 		<verbose_name lang="fr">jeu de données</verbose_name>
 		<verbose_name_plural lang="fr">jeux de données</verbose_name_plural>
@@ -2385,8 +2380,8 @@ A qualified reference is a cross-reference that explains its intent. For example
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Ein qualifizierter Verweis ist ein Querverweis, der seine Absicht erklärt. Zum Beispiel ist "X ist Regulator von Y" eine viel qualifiziertere Referenz als "X ist mit Y verbunden", oder "X siehe auch Y". Ziel ist es daher, möglichst viele sinnvolle Verknüpfungen zwischen (Meta-)Datenressourcen zu schaffen, um das Kontextwissen über die Daten zu bereichern.</help>
-		<text lang="de">Werden Ihre Daten geeignete Verweise auf andere Daten enthalten (z. B. auf andere Daten aus Ihrem Projekt oder auf Datensätze aus früheren Forschungsarbeiten)?</text>
+		<help lang="de">Eine qualifizierte Referenz ist ein Querverweis, der seine Absicht erklärt. Zum Beispiel ist "X ist Regulator von Y" eine viel qualifiziertere Referenz als "X ist mit Y verbunden", oder "X siehe auch Y". Ziel ist es daher, möglichst viele sinnvolle Verknüpfungen zwischen (Meta-)Datenressourcen zu schaffen, um das Kontextwissen über die Daten zu bereichern.</help>
+		<text lang="de">Werden Ihre Daten qualifizierte Referenzen auf andere Daten enthalten (z. B. auf andere Daten aus Ihrem Projekt oder auf Datensätze aus früheren Forschungsarbeiten)?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
@@ -3405,7 +3400,7 @@ Si ce plan de gestion des données est généré à l'aide de la vue associée, 
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
-		<text lang="de">Wie lange müssen die Daten aufbewahrt werden?</text>
+		<text lang="de">Wie lange werden die Daten aufbewahrt werden?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
@@ -3474,7 +3469,7 @@ Si ce plan de gestion des données est généré à l'aide de la vue associée, 
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Beispiele: Grundlage einer Publikation; Potenzial für Nachnutzung; rechtliche oder vertragliche Auflagen; gesellschaftliche oder politisch Relevanz; Qualitätserwägungen; Wiederherstellbarkeit; usw.</help>
+		<help lang="de">Beispiele: Grundlage einer Publikation; Potenzial für Nachnutzung; rechtliche oder vertragliche Auflagen; gesellschaftliche oder politische Relevanz; Qualitätserwägungen; Wiederherstellbarkeit; usw.</help>
 		<text lang="de">Auf Basis welcher Kriterien / Regeln werden die Daten zur Archivierung (nach Projektende) ausgesucht?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -4261,12 +4256,6 @@ Auf diese beiden Fragen beziehen sich alle Detailfragen bis zum Ende des Abschni
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Daten oder Software können Urheber- oder anderen Schutzrechten unterliegen. Die Rechtslage kann selbst in der EU von Land zu Land erheblich abweichen. In Deutschland sind nach dem Urheberrechtsgesetz (UrhG) Werke der Literatur, Wissenschaft und Kunst, die eine "persönliche geistige Schöpfung" darstellen, urheberrechtlich geschützt. Der urheberrechtliche Schutz erlischt 70 Jahre nach dem Tod der bzw. des Urheberin/s. Reine Daten, z.B. Messdaten oder Surveydaten, aber auch Metadaten (bis auf ggf. "beschreibende" Metadaten) sind hingegen nicht schutzfähig. In § 2 nennt das UrhG folgende geschützte Werkarten, wobei die Aufzählung nicht abschließend ist:
 
-
-
-
-
-																							  
-
  * Sprachwerke, wie Schriftwerke, Reden und Computerprogramme
  * Werke der Musik
  * pantomimische Werke einschließlich Werke der Tanzkunst
@@ -4274,7 +4263,7 @@ Auf diese beiden Fragen beziehen sich alle Detailfragen bis zum Ende des Abschni
  * Lichtbildwerke einschließlich der Werke, die ähnlich wie Lichtbildwerke geschaffen werden
  * Darstellungen wissenschaftlicher oder technischer Art wie Zeichnungen, Pläne, Karten, Skizzen, Tabellen und plastische Darstellungen.
 
- Nach § 3 sind auch "Übersetzungen und andere Bearbeitungen" von Werken geschützt, die persönliche geistige Schöpfungen des Bearbeiters sind". Schließlich sind nach § 4 auch Sammelwerke und Datenbankwerke geschützt, was im Bereich Forschungsdaten durchaus relevant sein kann. Sammelbankwerke werden dabei definiert als "Sammlungen von Werken, Daten oder anderen unabhängigen Elementen, die aufgrund der Auswahl oder Anordnung der Elemente eine persönliche geistige Schöpfung sind". Bei einem "Datenbankwerk im Sinne des Gesetzes" handelt es sich um ein "Sammelwerk, dessen Elemente systematisch oder methodisch angeordnet und einzeln mit Hilfe elektronischer Mittel oder auf andere Weise zugänglich sind". Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmuster, Sortenschutz [bei Pflanzenzüchtungen], Halbleiterschutz, Marken, geographische Herkunftsangaben, eingetragene Designs oder geschäftliche Bezeichnungen sein.</help>
+ Nach § 3 sind auch "Übersetzungen und andere Bearbeitungen" von Werken geschützt, die persönliche geistige Schöpfungen des Bearbeiters sind". Schließlich sind nach § 4 auch Sammelwerke und Datenbankwerke geschützt, was im Bereich Forschungsdaten durchaus relevant sein kann. Sammelwerke werden dabei definiert als "Sammlungen von Werken, Daten oder anderen unabhängigen Elementen, die aufgrund der Auswahl oder Anordnung der Elemente eine persönliche geistige Schöpfung sind". Bei einem "Datenbankwerk im Sinne des Gesetzes" handelt es sich um ein "Sammelwerk, dessen Elemente systematisch oder methodisch angeordnet und einzeln mit Hilfe elektronischer Mittel oder auf andere Weise zugänglich sind". Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmuster, Sortenschutz [bei Pflanzenzüchtungen], Halbleiterschutz, Marken, geographische Herkunftsangaben, eingetragene Designs oder geschäftliche Bezeichnungen sein.</help>
 		<text lang="de">Werden Daten genutzt und/oder erstellt, die durch Urheber- oder verwandte Schutzrechte geschützt sind?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -4330,7 +4319,9 @@ Auf diese beiden Fragen beziehen sich alle Detailfragen bis zum Ende des Abschni
 		<help lang="it"/>
 		<verbose_name lang="it">raccolta di dati</verbose_name>
 		<verbose_name_plural lang="it">raccolte di dati</verbose_name_plural>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/intellectual_property_rights"/>
+		</conditions>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/ethics/intellectual-property-rights-dataset/copyrights">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -4548,7 +4539,7 @@ Dans ce qui suit, vous disposerez d'un espace jusqu'à la fin du questionnaire p
 		<questionset/>
 		<is_collection>True</is_collection>
 		<order>2</order>
-		<title lang="en">project partners</title>
+		<title lang="en">Project partners</title>
 		<help lang="en"/>
 		<verbose_name lang="en">project partner</verbose_name>
 		<verbose_name_plural lang="en">project partners</verbose_name_plural>
@@ -4577,7 +4568,7 @@ Dans ce qui suit, vous disposerez d'un espace jusqu'à la fin du questionnaire p
 		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en">Please insert the name of project partner in detail.</help>
-		<text lang="en">project partner</text>
+		<text lang="en">Project partner</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -4627,7 +4618,7 @@ Dans ce qui suit, vous disposerez d'un espace jusqu'à la fin du questionnaire p
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Immer mehr Hochschulen und wissenschaftliche Einrichtungen verabschieden Leitlinien oder Richtlinien (oft auch als "Policies" bezeichnet) zum Forschungsdatenmanagement. Diese enthalten unter anderem Empfehlungen und/oder Vorgaben zum Umgang mit Forschungsdaten, die die Wissenschaftlerinnen und Wissenschaftler der Einrichtung beachten sollten oder müssen (je nach Grad der Verbindlichkeit).
 
-Eine &lt;a href="https://www.forschungsdaten.org/index.php/Data_Policies#Institutionelle_Policies" target="_blank"&gt;Sammlung institutioneller Leitlinien deutscher Universitäten und Forschungseinrichtungen&lt;/a&gt; wird auf Forschungsdaten.org gepflegt.</help>
+Eine &lt;a href="https://www.forschungsdaten.org/index.php/Data_Policies#Institutionelle_Policies" target="_blank"&gt;Sammlung institutioneller Leitlinien deutscher Universitäten und Forschungseinrichtungen&lt;/a&gt; wird auf forschungsdaten.org gepflegt.</help>
 					 
 		<text lang="de">Gibt es an Ihrer Einrichtung Regeln oder Richtlinien zum Umgang mit den im Projekt erhobenen Forschungsdaten? Wenn ja, skizzieren Sie diese kurz und verweisen Sie ggf. auf weiterführende Informationen. Geben Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</text>
 											
