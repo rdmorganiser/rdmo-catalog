@@ -13,8 +13,11 @@ jobs:
       with:
         python-version: '3.8'
 
+    - name: Update package index
+      run: sudo apt-get update
+
     - name: Install xmllint
-      run: sudo apt-get install libxml2-utils
+      run: sudo apt-get install -y libxml2-utils
 
     - name: Install requirements
       run: pip install pytest
