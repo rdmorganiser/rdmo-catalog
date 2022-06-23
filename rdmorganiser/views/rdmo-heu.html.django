@@ -50,12 +50,7 @@
 			<tr id="Intro2">	<td><b>Action Acronym:</b></td>	<td>{{ values.project.acronym }}</td>	</tr>
 			<tr id="Intro3">	<td><b>Action title:</b></td>	<td>{{ values.project.title }}</td>	</tr>
 			<tr id="Intro4">	<td><b>Date:</b></td>	<td>{{ values.project.dmp.dmp_date }}</td>	</tr>
-			<tr id="Intro5">	<td><b>DMP version:</b>&emsp;</td>
-				<td>{% for i in range(6) %}<input type="radio" name="dmp_version" value="i"
-					{% if values.project.dmp.dmp_version==i %} checked="checked" {% endif %} />
-					<label for="i">i</label>{% endfor %}
-				</td>
-			</tr>
+			<tr id="Intro5">	<td><b>DMP version:</b>&emsp;</td>	<td>{{ values.project.dmp.dmp_version }}</td>	</tr>
 		</table>
 	</div>
 	<div>
@@ -68,25 +63,18 @@
 	<h2 id="1">1. Data Summary</h2>
 
 	<div id="Q01">
-		<p class="question">1. Will you re-use any existing data and what will you re-use it for?
+		<p class="question">1. Will you re-use any existing data and what will you re-use them for?
 		<br />State the reasons if re-use of any existing data has been considered but discarded.</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	This project will re-use:
-•	Project confidential data
-•	Internal data of the project partners
-•	Publicly available data
-•	No data
-
-These data will be used for this purpose:
-•	Validation of the project’s results
-•	…
-			{% render_value project/dataset/origin %}<br />
-			{% render_value project/dataset/reuse_existing %}</p>
+		<p>	{% if values.project.dataset.origin == "reused" %} Yes, the project re-uses existing data. See also <a href="#Q03">Question 03</a> for further details. 
+		{% else %} No, this project uses only newly generated data.
+		{% endif %}
+		<br />	{% render_value 'project/dataset/reuse_existing' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	This project re-used the following publicly available datasets:{% render_set_value project/dataset/origin %}<br />
-			{% render_set_value project/dataset/reuse_existing %}</p>
+		<p>	This project re-used the following publicly available datasets: {% render_set_value dataset 'project/dataset/origin' %}<br />
+			{% render_set_value dataset 'project/dataset/reuse_existing' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -95,12 +83,12 @@ These data will be used for this purpose:
 
 		{% if values.project.dmp.dmp_version == 1 %}
 		<p>	The project will collect:
-			{% render_value project/dataset/description %}<br />
-			{% render_value project/dataset/format %}</p>
+			{% render_value 'project/dataset/description' %}<br />
+			{% render_value 'project/dataset/format' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/description %}<br />
-			{% render_set_value project/dataset/format %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/description' %}<br />
+			{% render_set_value dataset 'project/dataset/format' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -108,10 +96,10 @@ These data will be used for this purpose:
 		<p class="question">3. What is the purpose of the data generation or re-use and its relation to the objectives of the project?</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	{% render_value project/dataset/usage_description %}</p>
+		<p>	{% render_value 'project/dataset/usage_description' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/usage_description %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/usage_description' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -119,10 +107,10 @@ These data will be used for this purpose:
 		<p class="question">4. What is the expected size of the data that you intend to generate or re-use?</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	The overall size of the data is expected to be in the range : {% render_value project/dataset/size/volume %}.</p>
+		<p>	The overall size of the data is expected to be in the range: {% render_value 'project/dataset/size/volume' %}.</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/size/volume %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/size/volume' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -130,29 +118,20 @@ These data will be used for this purpose:
 		<p class="question">5. What is the origin/provenance of the data, either generated or re-used?</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	{% render_value project/dataset/provenance/content %}<br />
-			{% render_value project/dataset/creator/name %}<br />
-			{% render_value project/dataset/uri %}</p>
+		<p>	The data are {% render_value 'project/dataset/provenance/content' %}<br />
+			{% render_value 'project/dataset/creator/name' %}<br />
+			{% render_value 'project/dataset/uri' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/provenance/content %}<br />
-			{% render_set_value project/dataset/creator/name %}<br />
-			{% render_set_value project/dataset/uri %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/provenance/content' %}<br />
+			{% render_set_value dataset 'project/dataset/creator/name' %}<br />
+			{% render_set_value dataset 'project/dataset/uri' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
 	<div id="Q06">
 		<p class="question">6. To whom might your data be useful ('data utility'), outside your project?</p>
-		<p> The data might be useful to:
-		•	Stakeholders from industry: …
-		•	Standardisation bodies: …
-		•	NMIs/Dis: …
-		•	Other scientists working in the field:…
-		•	Economical actors: …
-		•	Decision makers: …
-		•	Citizens
-{% render_set_value project/dataset/reuse_scenario %}
-	</p>
+		<p> The data might be useful to: {% render_set_value dataset 'project/dataset/reuse_scenario' %}</p>
 	</div>
 
 	<h2 id="2">2. FAIR data</h2>
@@ -163,21 +142,14 @@ These data will be used for this purpose:
 		<p class="question">7. Will data be identified by a persistent identifier?</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	Yes, each of the project’s deposited datasets will be identified by:
-•	DOI
-•	Commit/tag on Git repository
-•	Handle
-•	Other
-{% render_value project/dataset/pids/yesno %}</p>
+		<p>	{% if values.project.dataset.pids.yesno == "yes" %}
+		Yes, each of the project’s deposited datasets will be identified by: {% render_value 'project/dataset/pids/system' %}
+		{% else %} {% render_value 'project/dataset/pids/system' %} {% endif %}</p>
 		{% else %}
-
 		{% for dataset in datasets %}
-		<p>	Yes, each of the project’s deposited datasets is identified by:
-•	DOI
-•	Commit/tag on Git repository
-•	Handle
-•	Other
-{% render_set_value project/dataset/pids/yesno %}</p>
+		<p>	{% if values.project.dataset.pids.yesno == "yes" %}
+		Yes, the dataset is identified by: {% render_value 'project/dataset/pids/system' %}
+		{% else %} {% render_value 'project/dataset/pids/system' %} {% endif %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -187,16 +159,21 @@ These data will be used for this purpose:
 
 		{% if values.project.dmp.dmp_version == 1 %}
 
-		<p>	The metadata created for all of the project's datasets will fulfil the Grant Agreement’s requirement for a minimum set of metadata about: the datasets (description, date of deposit, author(s), venue and embargo); the European Partnership on Metrology funding; the project acronym and number; licensing terms; persistent identifiers for the dataset, the authors involved, and, if possible, their organisations and the project. Where applicable, the metadata will include persistent identifiers for related publications and other research outputs.
-			{% render_value project/dataset/metadata/creation_automatic %}<br />
-			{% render_value project/dataset/metadata/creation_semi_automatic %}<br />
-			{% render_value project/dataset/metadata/creation_manual %}</p>
+		<p>The data will be described using the following metadata:</p>
+		<ul>
+			<li>Automatically created: {% render_value 'project/dataset/metadata/creation_automatic' %}</li>
+			<li>Automatically created, manually corrected: {% render_value 'project/dataset/metadata/creation_semi_automatic' %}</li>
+			<li>Manually created: {% render_value 'project/dataset/metadata/creation_manual' %}</li>
+		</ul>
+		<small>The metadata created for all of the project's datasets will fulfil the Grant Agreement’s requirement for a minimum set of metadata about: the datasets (description, date of deposit, author(s), venue and embargo); the European Partnership on Metrology funding; the project acronym and number; licensing terms; persistent identifiers for the dataset, the authors involved, and, if possible, their organisations and the project.</small>
+		<p>Where applicable, the metadata will include persistent identifiers for related publications and other research outputs.</p>
+
 		{% else %}
 		{% for dataset in datasets %}
 		<p>	The metadata created for all of the project's datasets fulfilled the Grant Agreement’s requirement for a minimum set of metadata about: the datasets (description, date of deposit, author(s), venue and embargo); the European Partnership on Metrology funding; the project acronym and number; licensing terms; persistent identifiers for the dataset, the authors involved, and, if possible, their organisations and the project. Where applicable, the metadata included persistent identifiers for related publications and other research outputs.
-			{% render_set_value project/dataset/metadata/creation_automatic %}<br />
-			{% render_set_value project/dataset/metadata/creation_semi_automatic %}<br />
-			{% render_set_value project/dataset/metadata/creation_manual %}</p>
+			{% render_set_value dataset 'project/dataset/metadata/creation_automatic' %}<br />
+			{% render_set_value dataset 'project/dataset/metadata/creation_semi_automatic' %}<br />
+			{% render_set_value dataset 'project/dataset/metadata/creation_manual' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -205,11 +182,11 @@ These data will be used for this purpose:
 
 		{% if values.project.dmp.dmp_version == 1 %}
 		<p>	Yes, the following search keywords will be provided in the metadata to optimise the discovery and potential re-use of the deposited datasets:
-			{% render_value project/dataset/metadata/search_keywords %}</p>
+			{% render_value 'project/dataset/metadata/search_keywords' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
 		<p>	Yes, the following search keywords were provided in the metadata to optimise the discovery and potential re-use of the deposited datasets:
-			{% render_set_value project/dataset/metadata/search_keywords %}</p>
+			{% render_set_value dataset 'project/dataset/metadata/search_keywords' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -218,10 +195,10 @@ These data will be used for this purpose:
 
 		{% if values.project.dmp.dmp_version == 1 %}
 		<p>	Yes, the chosen repository complies with the FAIR data principles (https://about.zenodo.org/principles/). The metadata are indexed in a searchable resource. Metadata are licensed under CC0, except for email addresses. All metadata are exported via OAI PMH and can be harvested.
-{% render_value project/dataset/metadata/harvesting %}</p>
+{% render_value 'project/dataset/metadata/harvesting' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/metadata/harvesting %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/metadata/harvesting' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -234,10 +211,12 @@ These data will be used for this purpose:
 		<p class="question">11. Will the data be deposited in a trusted repository?</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	Yes, the data and associated metadata, documentation and code will be deposited {% render_value project/dataset/preservation/certification %}</p>
+		<p>	Yes, the data and associated metadata, documentation and code will be deposited in the
+		{% render_value 'project/dataset/preservation/trusted' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	Yes, the data were made accessible by deposition in an open access repository{% render_set_value project/dataset/preservation/certification %}</p>
+		<p>	Yes, the data were made accessible by deposition in an open access repository
+		{% render_set_value dataset 'project/dataset/preservation/trusted' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -245,13 +224,11 @@ These data will be used for this purpose:
 		<p class="question">12. Have you explored appropriate arrangements with the identified repository where your data will be deposited?</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>
-			•	Yes, separate arrangements with the host of the repository are necessary because of their big size / particular format / confidential nature / legal issues (see Question xxx for further details).
-	•	No, the data will be uploaded via a standard procedure and require no special arrangements.
-{% render_value project/dataset/preservation/repository_arrangements %}</p>
+		<p>{% render_value 'project/dataset/preservation/repository_arrangements' %}</p>
 		{% else %}
+		
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/preservation/repository_arrangements %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/preservation/repository_arrangements' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -260,11 +237,11 @@ These data will be used for this purpose:
 
 		{% if values.project.dmp.dmp_version == 1 %}
 		<p>	Yes, the chosen repository will assign an identifier (DOI) to each of the project’s deposited datasets. The repository will resolve the identifier to a digital object.
-			{% render_value project/dataset/metadata/references_to_other_data %}</p>
+			{% render_value 'project/dataset/metadata/references_to_other_data' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
 		<p>	Yes, the chosen repository assigned an identifier (DOI) to each of the project’s deposited datasets. The repository resolves the identifier to a digital object.
-			{% render_set_value project/dataset/metadata/references_to_other_data %}</p>
+			{% render_set_value dataset 'project/dataset/metadata/references_to_other_data' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -289,12 +266,12 @@ The level of data made available will also be considered, for example, pre-proce
 <i>Datasets which cannot be shared - legal / contractual reasons</i><br />
 All of the data from the project will be made available, with the exception of market or customer survey data, which are commercially sensitive and cannot be shared.
 
-			{% render_value project/dataset/sharing/yesno %}<br />
-			{% render_value project/dataset/sharing/explanation %}</p>
+			{% render_value 'project/dataset/sharing/yesno' %}<br />
+			{% render_value 'project/dataset/sharing/explanation' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/sharing/yesno %}<br />
-			{% render_set_value project/dataset/sharing/explanation %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/sharing/yesno' %}<br />
+			{% render_set_value dataset 'project/dataset/sharing/explanation' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -303,10 +280,10 @@ All of the data from the project will be made available, with the exception of m
 
 		{% if values.project.dmp.dmp_version == 1 %}
 		<p>	The data used in scientific publications, posters and oral communications will be made available for re use as soon as is reasonably possible. Some of the data are expected to be subject to an embargo period of 18 months whilst a patent application is pending.
-			{% render_value project/dataset/preservation/embargo_period %}</p>
+			{% render_value 'project/dataset/preservation/embargo_period' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/preservation/embargo_period %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/preservation/embargo_period' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -314,10 +291,10 @@ All of the data from the project will be made available, with the exception of m
 		<p class="question">16. Will the data be accessible through a free and standardized access protocol?</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	{% render_value project/dataset/sharing/conditions %}</p>
+		<p>	{% render_value 'project/dataset/sharing/conditions' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/sharing/conditions %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/sharing/conditions' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -325,10 +302,10 @@ All of the data from the project will be made available, with the exception of m
 		<p class="question">17. If there are restrictions on use, how will access be provided to the data, both during and after the end of the project?</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	{% render_value project/dataset/sharing/restrictions_explanation %}</p>
+		<p>	{% render_value 'project/dataset/sharing/restrictions_explanation' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/sharing/restrictions_explanation %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/sharing/restrictions_explanation' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -336,17 +313,17 @@ All of the data from the project will be made available, with the exception of m
 		<p class="question">18. How will the identity of the person accessing the data be ascertained?</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	{% render_value project/dataset/preservation/access_authentication %}</p>
+		<p>	{% render_value 'project/dataset/preservation/access_authentication' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/preservation/access_authentication %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/preservation/access_authentication' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
 	<div id="Q19">
 		<p class="question">19. Is there a need for a data access committee (<i>e.g.</i> to evaluate/approve access requests to personal/sensitive data)?</p>
 
-		<p>	{% render_value project/legal_aspects/official_approval/data_access_committee %}</p>
+		<p>	{% render_value 'project/legal_aspects/official_approval/data_access_committee' %}</p>
 	</div>
 
 	<h4 id="2.2c">Metadata:</h4>
@@ -356,12 +333,12 @@ All of the data from the project will be made available, with the exception of m
 		If not, please clarify why. Will metadata contain information to enable the user to access the data?</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	{% render_value project/dataset/metadata/license_for_metadata %}<br />
-			{% render_value project/dataset/metadata/access_info %}</p>
+		<p>	{% render_value 'project/dataset/metadata/license_for_metadata' %}<br />
+			{% render_value 'project/dataset/metadata/access_info' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/metadata/license_for_metadata %}<br />
-			{% render_set_value project/dataset/metadata/access_info %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/metadata/license_for_metadata' %}<br />
+			{% render_set_value dataset 'project/dataset/metadata/access_info' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -370,12 +347,12 @@ All of the data from the project will be made available, with the exception of m
 
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	{% render_value project/dataset/preservation/reuse_duration %}<br />
-			{% render_value project/dataset/metadata/available_without_data %}</p>
+		<p>	{% render_value 'project/dataset/preservation/reuse_duration' %}<br />
+			{% render_value 'project/dataset/metadata/available_without_data' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/preservation/reuse_duration %}<br />
-			{% render_set_value project/dataset/metadata/available_without_data %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/preservation/reuse_duration' %}<br />
+			{% render_set_value dataset 'project/dataset/metadata/available_without_data' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -384,10 +361,10 @@ All of the data from the project will be made available, with the exception of m
 		Will it be possible to include the relevant software (<i>e.g.</i> in open source code)?</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	{% render_value project/dataset/software_documentation %}</p>
+		<p>	{% render_value 'project/dataset/software_documentation' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/software_documentation %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/software_documentation' %}</p>
 		{% endfor %}
 		{% endif %}
 		<p>See also <a href="#Q23">the following question</a> for further details.</p>
@@ -400,12 +377,12 @@ All of the data from the project will be made available, with the exception of m
 		Will you follow community-endorsed interoperability best practices? Which ones?</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	{% render_value project/dataset/metadata/standards %}<br />
-			{% render_value project/dataset/interoperability %}</p>
+		<p>	{% render_value 'project/dataset/metadata/standards' %}<br />
+			{% render_value 'project/dataset/interoperability' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/metadata/standards %}<br />
-			{% render_set_value project/dataset/interoperability %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/metadata/standards' %}<br />
+			{% render_set_value dataset 'project/dataset/interoperability' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -414,12 +391,12 @@ All of the data from the project will be made available, with the exception of m
 		Will you openly publish the generated ontologies or vocabularies to allow reusing, refining or extending them?</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	{% render_value project/dataset/metadata/mappings %}<br />
-			{% render_value project/dataset/metadata/vocabularies_open %}</p>
+		<p>	{% render_value 'project/dataset/metadata/mappings' %}<br />
+			{% render_value 'project/dataset/metadata/vocabularies_open' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/metadata/mappings %}<br />
-			{% render_set_value project/dataset/metadata/vocabularies_open %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/metadata/mappings' %}<br />
+			{% render_set_value dataset 'project/dataset/metadata/vocabularies_open' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -427,10 +404,10 @@ All of the data from the project will be made available, with the exception of m
 		<p class="question">25. Will your data include qualified references <a href="#Note1">[1]</a> to other data (<i>e.g.</i> other data from your project, or datasets from previous research)?</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	{% render_value project/dataset/metadata/references_to_other_data %}</p>
+		<p>	{% render_value 'project/dataset/metadata/references_to_other_data' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/metadata/references_to_other_data %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/metadata/references_to_other_data' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -442,14 +419,14 @@ All of the data from the project will be made available, with the exception of m
 		(<i>e.g.</i> readme files with information on methodology, codebooks, data cleaning, analyses, variable definitions, units of measurement, etc.)?</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	{% render_value project/dataset/documentation %}<br />
-			{% render_value project/dataset/documentation/where %}<br />
-			{% render_value project/dataset/documentation_on_request %}</p>
+		<p>	{% render_value 'project/dataset/documentation' %}<br />
+			{% render_value 'project/dataset/documentation/where' %}<br />
+			{% render_value 'project/dataset/documentation_on_request' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/documentation %}<br />
-			{% render_set_value project/dataset/documentation/where %}<br />
-			{% render_set_value project/dataset/documentation_on_request %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/documentation' %}<br />
+			{% render_set_value dataset 'project/dataset/documentation/where' %}<br />
+			{% render_set_value dataset 'project/dataset/documentation_on_request' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -468,10 +445,10 @@ All of the data from the project will be made available, with the exception of m
 		<p class="question">29. Will the provenance of the data be thoroughly documented using the appropriate standards?</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	{% render_value project/dataset/provenance/standards %}</p>
+		<p>	{% render_value 'project/dataset/provenance/standards' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/provenance/standards %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/provenance/standards' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -479,14 +456,13 @@ All of the data from the project will be made available, with the exception of m
 		<p class="question">30. Describe all relevant data quality assurance processes.</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	{% render_value project/dataset/quality_assurance %}</p>
+		<p>	{% render_value 'project/dataset/quality_assurance' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/quality_assurance %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/quality_assurance' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
-
 	<div id="Q31">
 		<p class="question">31. Further to the FAIR principles, DMPs should also address research outputs other than data, and should carefully consider aspects related to the allocation of resources, data security and ethical aspects.</p>
 
@@ -503,7 +479,7 @@ All of the data from the project will be made available, with the exception of m
 	<div id="Q33">
 		<p class="question">33. Beneficiaries should consider which of the questions pertaining to FAIR data above can apply to the management of other research outputs, and should strive to provide sufficient detail on how their research outputs will be managed and shared, or made available for re-use, in line with the FAIR principles.</p>
 
-		<p>	{% render_value project/other_research_output/plan %}</p>
+		<p>	{% render_value 'project/other_research_output/plan' %}</p>
 	</div>
 
 	<h2 id="4">4. Allocation of resources</h2>
@@ -512,33 +488,33 @@ All of the data from the project will be made available, with the exception of m
 		<p class="question">34. What will the costs be for making data or other research outputs FAIR in your project<br />
 		(<i>e.g.</i> direct and indirect costs related to storage, archiving, re-use, security, etc.)?</p>
 
-		<p>	{% render_value project/costs/metadata/personnel %}<br />
-			{% render_value project/costs/metadata/non_personnel %}<br />
-			{% render_value project/costs/pid/personnel %}<br />
-			{% render_value project/costs/pid/non_personnel %}<br />
-			{% render_value project/costs/preservation/personnel %}<br />
-			{% render_value project/costs/preservation/non_personnel %}<br />
-			{% render_value project/costs/other_research_output/personnel %}<br />
-			{% render_value project/costs/other_research_output/non_personnel %}</p>
+		<p>	{% render_value 'project/costs/metadata/personnel' %}<br />
+			{% render_value 'project/costs/metadata/non_personnel' %}<br />
+			{% render_value 'project/costs/pid/personnel' %}<br />
+			{% render_value 'project/costs/pid/non_personnel' %}<br />
+			{% render_value 'project/costs/preservation/personnel' %}<br />
+			{% render_value 'project/costs/preservation/non_personnel' %}<br />
+			{% render_value 'project/costs/other_research_output/personnel' %}<br />
+			{% render_value 'project/costs/other_research_output/non_personnel' %}</p>
 	</div>
 	<div id="Q35">
 		<p class="question">35. How will these be covered?<br />
 		Note that costs related to research data/output management are eligible as part of the Horizon Europe grant (if compliant with the Grant Agreement conditions).</p>
 
-		<p>	{% render_value project/costs/preservation/cover_how %}</p>
+		<p>	{% render_value 'project/costs/preservation/cover_how' %}</p>
 	</div>
 	<div id="Q36">
 		<p class="question">36. Who will be responsible for data management in your project?</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	{% render_value project/dataset/data_security/backup_responsible/name %}<br />
-			{% render_value project/dataset/metadata/responsible_person/name %}<br />
-			{% render_value project/dataset/pids/responsible_person/name %}</p>
+		<p>	{% render_value 'project/dataset/data_security/backup_responsible/name' %}<br />
+			{% render_value 'project/dataset/metadata/responsible_person/name' %}<br />
+			{% render_value 'project/dataset/pids/responsible_person/name' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/data_security/backup_responsible/name %}<br />
-			{% render_set_value project/dataset/metadata/responsible_person/name %}<br />
-			{% render_set_value project/dataset/pids/responsible_person/name %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/data_security/backup_responsible/name' %}<br />
+			{% render_set_value dataset 'project/dataset/metadata/responsible_person/name' %}<br />
+			{% render_set_value dataset 'project/dataset/pids/responsible_person/name' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -547,18 +523,18 @@ All of the data from the project will be made available, with the exception of m
 		(costs and potential value, who decides and how, what data will be kept and for how long).</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	{% render_value project/dataset/preservation/yesno %}<br />
-			{% render_value project/dataset/preservation/purpose %}<br />
-			{% render_value project/dataset/preservation/duration %}</p>
+		<p>	{% render_value 'project/dataset/preservation/yesno' %}<br />
+			{% render_value 'project/dataset/preservation/purpose' %}<br />
+			{% render_value 'project/dataset/preservation/duration' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/preservation/yesno %}<br />
-			{% render_set_value project/dataset/preservation/purpose %}<br />
-			{% render_set_value project/dataset/preservation/duration %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/preservation/yesno' %}<br />
+			{% render_set_value dataset 'project/dataset/preservation/purpose' %}<br />
+			{% render_set_value dataset 'project/dataset/preservation/duration' %}</p>
 		{% endfor %}
 		{% endif %}
-		<p>	{% render_value project/preservation/selection_criteria %}<br />
-			{% render_value project/preservation/responsible_person/name %}</p>
+		<p>	{% render_value 'project/preservation/selection_criteria' %}<br />
+			{% render_value 'project/preservation/responsible_person/name' %}</p>
 		<p>Costs: {{ value.project.costs.preservation.personnel|add:value.costs.preservation.non_personnel }}
 		<span style="color:purple;">ODER:</span> see <a href="#Q34">Question 34</a>.<br />
 		Potential value: see <a href="#Q06">Question 6</a>.
@@ -571,10 +547,10 @@ All of the data from the project will be made available, with the exception of m
 		<p class="question">38. What provisions are or will be in place for data security(including data recovery as well as secure storage/archiving and transfer of sensitive data)?</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	{% render_value project/dataset/data_security/security_measures %}</p>
+		<p>	{% render_value 'project/dataset/data_security/security_measures' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/data_security/security_measures %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/data_security/security_measures' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
@@ -597,20 +573,19 @@ All of the data from the project will be made available, with the exception of m
 		<p class="question">41. Will informed consent for data sharing and long term preservation be included in questionnaires dealing with personal data?</p>
 
 		{% if values.project.dmp.dmp_version == 1 %}
-		<p>	{% render_value project/dataset/sensitive_data/personal_data_yesno/yesno %}<br />
-			{% render_value project/dataset/sensitive_data/personal_data/consent/extent %}<br />
-			{% render_value project/dataset/sensitive_data/personal_data/consent/statement %}</p>
+		<p>	{% render_value 'project/dataset/sensitive_data/personal_data_yesno/yesno' %}<br />
+			{% render_value 'project/dataset/sensitive_data/personal_data/consent/extent' %}<br />
+			{% render_value 'project/dataset/sensitive_data/personal_data/consent/statement' %}</p>
 		{% else %}
 		{% for dataset in datasets %}
-		<p>	{% render_set_value project/dataset/sensitive_data/personal_data_yesno/yesno %}<br />
-			{% render_set_value project/dataset/sensitive_data/personal_data/consent/extent %}<br />
-			{% render_set_value project/dataset/sensitive_data/personal_data/consent/statement %}</p>
+		<p>	{% render_set_value dataset 'project/dataset/sensitive_data/personal_data_yesno/yesno' %}<br />
+			{% render_set_value dataset 'project/dataset/sensitive_data/personal_data/consent/extent' %}<br />
+			{% render_set_value dataset 'project/dataset/sensitive_data/personal_data/consent/statement' %}</p>
 		{% endfor %}
 		{% endif %}
 	</div>
 
 	<h2 id="7">7. Other issues</h2>
-
 
 	<div id="Q42">
 		<p class="question">42. Do you, or will you, make use of other national/funder/sectorial/departmental procedures for data management?<br />
@@ -619,20 +594,19 @@ All of the data from the project will be made available, with the exception of m
 		<p>The data management within our project is compliant with</p>
 		<ul>
 			<li>The European laws about data security and protection of privacy (e.g. GDPR).</li>
-			<li>The research data policy of the funder: {% render_value project/funder/rdm_policy|urlize %}.</li>
+			<li>The research data policy of the funder: {% render_value 'project/funder/rdm_policy'|urlize %}.</li>
 			{% if values.project.partner.rdm_policy|length > 0 %}
-			<li>The research data policy of our research centres: {% render_set_value partner/rdm_policy|urlize %} ({{ partner/id }})</li>
+			<li>The research data policy of the involved partner institutions: {% for partner in partners %}{{ values.partner.rdm_policy|urlize }} ({{ values.partner.id }}){% endfor %}</li>
 			{% endif %}
 		</ul>
 	</div>
 
-<br />
-
-<div id="Note1">[1] A qualified reference is a cross-reference that explains its intent.
- For example, "X is regulator of Y" is a much more qualified reference than "X is associated with Y", or "X see also Y".
- The goal therefore is to create as many meaningful links as possible between (meta)data resources to enrich the contextual knowledge about the data.
- (Source: <a href="https://www.go-fair.org/fair-principles/i3-metadata-include-qualified-references-metadata/" target="_blank">https://www.go-fair.org/fair-principles/i3-metadata-include-qualified-references-metadata/</a>)
-</div>
+	<br/>
+	<div id="Note1">
+		[1] A qualified reference is a cross-reference that explains its intent. For example, "X is regulator of Y" is a much more qualified reference than "X is associated with Y", or "X see also Y".
+		The goal therefore is to create as many meaningful links as possible between (meta)data resources to enrich the contextual knowledge about the data.
+		(Source: <a href="https://www.go-fair.org/fair-principles/i3-metadata-include-qualified-references-metadata/" target="_blank">https://www.go-fair.org/fair-principles/i3-metadata-include-qualified-references-metadata/</a>)
+	</div>
 
 </body>
 </html>
