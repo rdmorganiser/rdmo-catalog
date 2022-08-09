@@ -31,6 +31,7 @@ If you encounter any problems with the questionaires, the domain model, or other
 |DFG 111 Social Sciences|shared/fodako/ratswd_dfg.xml|
 |DFG 104 Spoken corpus|shared/fodako/spokencorpus_dfg.xml|
 |DFG 104 Text corpus|shared/fodako/textcorpus_dfg.xml|
+|DFG Chemistry|shared/fodako/chem_dfg.xml.xml|
 |HeFDI DMP|shared/HeFDI/4_hefdi_template_questions_1.4.xml|
 |RDMO Mechanical Engineering V0.1 - 28.03.2019|shared/nfdi4ing/rdmo_mechanical_engineering/catalog_mb_20190124.xml|
 |DFG grants (Ancient Cultures, Review Board 101)|shared/ub_fau_erlangen_nuernberg/dfg-alte-kulturen/dfg_alte_kulturen_fk101.xml|
@@ -40,4 +41,4 @@ If you encounter any problems with the questionaires, the domain model, or other
 ||shared/ub_fau_erlangen_nuernberg/h2020-ehum/views_h2020.xml|
 |VW Foundation - Science Europe Research Data Management Plan|shared/ub_fau_erlangen_nuernberg/ScienceEurope_VW_Stiftung/catalog_VW_SE.xml|
 
-21 catalogs shared
+22 catalogs shared
