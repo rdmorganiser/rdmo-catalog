@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdmo created="2021-09-28T14:12:36.665444+02:00" xmlns:dc="http://purl.org/dc/elements/1.1/">
-	<view dc:uri="https://rdmorganiser.github.io/terms/views/costs">
+	<view dc:uri="https://rdmorganiser.github.io/terms/views/costs-en">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>costs</key>
+		<key>costs-en</key>
 		<dc:comment/>
-		<title lang="en">Cost overview</title>
-		<help lang="en">Overview of the personnel and non_personnel costs</help>
-		<title lang="de">Kostenübersicht</title>
-		<help lang="de">Übersicht der Personal- und Sachkosten</help>
+		<title lang="en">Cost overview [en]</title>
+		<help lang="en">Overview of the personnel and non-personnel costs [en]</help>
+		<title lang="de">Kostenübersicht [en]</title>
+		<help lang="de">Übersicht der Personal- und Sachkosten [en]</help>
 		<catalogs/>
 		<template>{% load view_tags %}
 {% load mathfilters %}
@@ -33,21 +33,21 @@
 {% get_number 'project/costs/preservation/non_personnel' as preservationnp %}
 
 &lt;h1&gt;
-	Kostenübersicht&lt;/h1&gt;
+	Cost Overview&lt;/h1&gt;
 
-&lt;h2&gt;1. Datengröße
+&lt;h2&gt;1. Data Sizes
 &lt;/h2&gt;
 
 &lt;table&gt;
 	&lt;tr&gt;
 		&lt;th&gt;
-			&lt;b&gt;Datensatz&lt;/b&gt;
+			&lt;b&gt;Data set&lt;/b&gt;
 		&lt;/th&gt;
 		&lt;th&gt;
-			&lt;b&gt;Datengröße&lt;/b&gt;
+			&lt;b&gt;Date size&lt;/b&gt;
 		&lt;/th&gt;
 		&lt;th&gt;
-			&lt;b&gt;Zuwachsrate / Jahr&lt;/b&gt;
+			&lt;b&gt;Growth rate / Year&lt;/b&gt;
 		&lt;/th&gt;
 	&lt;/tr&gt;
 	{% for dataset in datasets %}
@@ -61,7 +61,7 @@
 
 &lt;p&gt;
 	&lt;b&gt;
-		Laufzeit des Projekts
+		Duration of the project
 	&lt;/b&gt;:
 	{% render_value 'project/schedule/project_start' %}
 	bis
@@ -69,30 +69,30 @@
 &lt;/p&gt;
 
 &lt;p&gt;
-	In welchem Umfang werden
-	&lt;b&gt;Infrastrukturressourcen&lt;/b&gt;
-	benötigt?:
+	To what extent will
+	&lt;b&gt;infrastructure resources&lt;/b&gt;
+	required?
 	{% render_value 'project/dataset/usage_infrastructure' %}
 &lt;/p&gt;
 &lt;h2&gt;
-	2. Personal- und Sachkosten
+	2. Personnel and material costs
 &lt;/h2&gt;
 
 &lt;table&gt;
 	&lt;tr&gt;
 		&lt;th&gt;
-			&lt;b&gt;Kategorie&lt;/b&gt;
+			&lt;b&gt;Category&lt;/b&gt;
 		&lt;/th&gt;
 		&lt;th&gt;
-			&lt;b&gt;Personalkosten&lt;/b&gt;
+			&lt;b&gt;Personnel costs&lt;/b&gt;
 		&lt;/th&gt;
 		&lt;th&gt;
-			&lt;b&gt;Sachkosten&lt;/b&gt;
+			&lt;b&gt;Material costs&lt;/b&gt;
 		&lt;/th&gt;
 	&lt;/tr&gt;
 	&lt;tr&gt;
 		&lt;td&gt;
-			Datenerhebung
+			Data collection
 		&lt;/td&gt;
 		&lt;td&gt;
 			{% render_value 'project/costs/creation/personnel' %}&lt;/td&gt;
@@ -101,7 +101,7 @@
 	&lt;/tr&gt;
 	&lt;tr&gt;
 		&lt;td&gt;
-			Datennutzung
+			Data use
 		&lt;/td&gt;
 		&lt;td&gt;
 			{% render_value 'project/costs/usage/personnel' %}&lt;/td&gt;
@@ -110,7 +110,7 @@
 	&lt;/tr&gt;
 	&lt;tr&gt;
 		&lt;td&gt;
-			Datenspeicherung
+			Data storage
 		&lt;/td&gt;
 		&lt;td&gt;
 			{% render_value 'project/costs/storage/personnel' %}&lt;/td&gt;
@@ -119,7 +119,7 @@
 	&lt;/tr&gt;
 	&lt;tr&gt;
 		&lt;td&gt;
-			Metadaten&lt;/td&gt;
+			Meta data&lt;/td&gt;
 		&lt;td&gt;
 			{% render_value 'project/costs/metadata/personnel' %}&lt;/td&gt;
 		&lt;td&gt;
@@ -127,7 +127,7 @@
 	&lt;/tr&gt;
 	&lt;tr&gt;
 		&lt;td&gt;
-			Persistente Identifikatoren&lt;/td&gt;
+			Persistent identifiers&lt;/td&gt;
 		&lt;td&gt;
 			{% render_value 'project/costs/pid/personnel' %}&lt;/td&gt;
 		&lt;td&gt;
@@ -135,7 +135,7 @@
 	&lt;/tr&gt;
 	&lt;tr&gt;
 		&lt;td&gt;
-			Anonymisierung sensibler Daten&lt;/td&gt;
+			Anonymising sensitive data&lt;/td&gt;
 		&lt;td&gt;
 			{% render_value 'project/costs/sensitive_data/anonymization/personnel' %}&lt;/td&gt;
 		&lt;td&gt;
@@ -143,7 +143,7 @@
 	&lt;/tr&gt;
 	&lt;tr&gt;
 		&lt;td&gt;
-			Sicherheitsmaßnahmen für sensible Daten&lt;/td&gt;
+			Security measures for sensitive data&lt;/td&gt;
 		&lt;td&gt;
 			{% render_value 'project/costs/sensitive_data/security/personnel' %}&lt;/td&gt;
 		&lt;td&gt;
@@ -151,7 +151,7 @@
 	&lt;/tr&gt;
 	&lt;tr&gt;
 		&lt;td&gt;
-			Urheber- und Schutzrechte&lt;/td&gt;
+			Copyright and property rights&lt;/td&gt;
 		&lt;td&gt;
 			{% render_value 'project/costs/ipr/personnel' %}&lt;/td&gt;
 		&lt;td&gt;
@@ -159,7 +159,7 @@
 	&lt;/tr&gt;
 	&lt;tr&gt;
 		&lt;td&gt;
-			Langzeitarchivierung&lt;/td&gt;
+			Long-term archiving&lt;/td&gt;
 		&lt;td&gt;
 			{% render_value 'project/costs/preservation/personnel' %}&lt;/td&gt;
 		&lt;td&gt;
@@ -167,7 +167,7 @@
 	&lt;/tr&gt;
 	&lt;tr&gt;
 		&lt;td&gt;
-			&lt;b&gt;Summe&lt;/b&gt;
+			&lt;b&gt;Total&lt;/b&gt;
 		&lt;/td&gt;
 		&lt;td&gt;
 			{{ creationp | addition:usagep | addition:storagep | addition:metadatap | addition:pidp | addition:anonymizationp | addition:securityp | addition:iprp | addition:preservationp }}
@@ -180,7 +180,7 @@
 &lt;/table&gt;
 
 &lt;p&gt;
-	Wie werden die Kosten für das Datenmanagement im Projekt aufgebracht?
+	How are the costs for data management raised in the project?
 	{% render_value 'project/costs/preservation/cover_how' %}
 &lt;/p&gt;</template>
 	</view>
