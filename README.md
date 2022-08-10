@@ -38,5 +38,4 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 | Mechanical Engineering                          | [NFDI4Ing](shared/nfdi4ing/rdmo_mechanical_engineering/catalog_mb_20190124.xml)                                                                                                       |
 | VW Foundation - Science Europe                  | [FAU Erlangen](shared/ub_fau_erlangen_nuernberg/ScienceEurope_VW_Stiftung/catalog_VW_SE.xml)                                                                                          |
 
-
 22 catalogs shared
