@@ -12,33 +12,31 @@ Different scripts are located in `tools`. These are interesting for people maint
 
 ## Issues
 
-If you encounter any problems with the questionaires, the domain model, or other content of this repository, please file an issue here: https://github.com/rdmorganiser/rdmo-catalog/issues. For problems or bugs with the RDMO Software, please use the issues in the [rdmo](https://github.com/rdmorganiser/rdmo) repository: https://github.com/rdmorganiser/rdmo/issues. In order to file issues, you will need a GitHub account.
+If you encounter any problems with the questionaires, the domain model, or other content of this repository, please file an issue here: https://github.com/rdmorganiser/rdmo-catalog/issues.
+
+For problems or bugs with the RDMO Software, please use the issues in the [rdmo](https://github.com/rdmorganiser/rdmo) repository: https://github.com/rdmorganiser/rdmo/issues. In order to file issues, you will need a GitHub account.
 
 ## Shared catalogs
 
-|Title|File|
-|---|---|
-|EmiMin lead V1.0|shared/EmiMin/publisso_terms4life_emimin_lead_V1_questions.xml|
-|EmiMin V1.0|shared/EmiMin/publisso_terms4life_emiminV1_questions.xml|
-|DFG 101 Ancient Cultures|shared/fodako/101_dfg.xml|
-|DFG 106  	Social and Cultural Anthropology, Non-Europ. Cultures, Jewish Studies, Religious Studies|shared/fodako/106_dfg.xml|
-|All questions|shared/fodako/all.xml|
-|DFG Biodiversity research|shared/fodako/biodiversity_dfg.xml|
-|DFG|shared/fodako/dfg.xml|
-|DFG 112 Economics|shared/fodako/economics_dfg.xml|
-|DFG 105 Edition|shared/fodako/edition_dfg.xml|
-|DFG 109 Educational Research|shared/fodako/edu_dfg.xml|
-|DFG 111 Social Sciences|shared/fodako/ratswd_dfg.xml|
-|DFG 104 Spoken corpus|shared/fodako/spokencorpus_dfg.xml|
-|DFG 104 Text corpus|shared/fodako/textcorpus_dfg.xml|
-|DFG Chemistry|shared/fodako/chem_dfg.xml.xml|
-|HeFDI DMP|shared/HeFDI/4_hefdi_template_questions_1.4.xml|
-|RDMO Mechanical Engineering V0.1 - 28.03.2019|shared/nfdi4ing/rdmo_mechanical_engineering/catalog_mb_20190124.xml|
-|DFG grants (Ancient Cultures, Review Board 101)|shared/ub_fau_erlangen_nuernberg/dfg-alte-kulturen/dfg_alte_kulturen_fk101.xml|
-|DFG grants (scientific editions in litary studies)|shared/ub_fau_erlangen_nuernberg/dfg-editionen/dfg_editions.xml|
-|DFG grants (sozial &amp; cultural anthropology, Judaic studies, religious studies)|shared/ub_fau_erlangen_nuernberg/dfg-sozkulttheo/dfg_sozkulttheo_fk106.xml|
-|Horizon 2020 Grants|shared/ub_fau_erlangen_nuernberg/h2020-ehum/ehum_h2020_fragebogen.xml|
-||shared/ub_fau_erlangen_nuernberg/h2020-ehum/views_h2020.xml|
-|VW Foundation - Science Europe Research Data Management Plan|shared/ub_fau_erlangen_nuernberg/ScienceEurope_VW_Stiftung/catalog_VW_SE.xml|
+| Coverage (funder, subject, geographical region) | File                                                                                                                                                                                  |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| All questions                                   | [FoDaKo](shared/fodako/all.xml)                                                                                                                                                       |
+| DFG                                             | [FoDaKo](shared/fodako/dfg.xml)                                                                                                                                                       |
+| DFG Biodiversity research                       | [FoDaKo](shared/fodako/biodiversity_dfg.xml)                                                                                                                                          |
+| DFG Chemistry                                   | [FoDaKo](shared/fodako/chem_dfg.xml)                                                                                                                                                  |
+| DFG 101 Ancient Cultures                        | [FoDaKo](shared/fodako/101_dfg.xml); [FAU Erlangen](shared/ub_fau_erlangen_nuernberg/dfg-alte-kulturen/dfg_alte_kulturen_fk101.xml)                                                   |
+| DFG 104 Spoken corpus                           | [FoDaKo](shared/fodako/spokencorpus_dfg.xml)                                                                                                                                          |
+| DFG 104 Text corpus                             | [FoDaKo](shared/fodako/textcorpus_dfg.xml)                                                                                                                                            |
+| DFG 105 Editions                                | [FoDaKo](shared/fodako/edition_dfg.xml); [FAU Erlangen](shared/ub_fau_erlangen_nuernberg/dfg-editionen/dfg_editions.xml)                                                              |
+| DFG 106 Social and Cultural Anthropology. [...] | [FoDaKo](shared/fodako/106_dfg.xml); [FAU Erlangen](shared/ub_fau_erlangen_nuernberg/dfg-sozkulttheo/dfg_sozkulttheo_fk106.xml)                                                       |
+| DFG 109 Educational Research                    | [FoDaKo](shared/fodako/edu_dfg.xml)                                                                                                                                                   |
+| DFG 111 Social Sciences                         | [FoDaKo](shared/fodako/ratswd_dfg.xml)                                                                                                                                                |
+| DFG 112 Economics                               | [FoDaKo](shared/fodako/economics_dfg.xml)                                                                                                                                             |
+| Emissions in animal husbandry                   | [EmiMin](shared/EmiMin/publisso_terms4life_emiminV1_questions.xml); [EmiMin (lead)](shared/EmiMin/publisso_terms4life_emimin_lead_V1_questions.xml)                                   |
+| Hessen State                                    | [HeFDI](shared/HeFDI/4_hefdi_template_questions_1.4.xml)                                                                                                                              |
+| Horizon 2020 eHumanities                        | [FAU Erlangen (questions)](shared/ub_fau_erlangen_nuernberg/h2020-ehum/ehum_h2020_fragebogen.xml); [FAU Erlangen (view)](shared/ub_fau_erlangen_nuernberg/h2020-ehum/views_h2020.xml) |
+| Mechanical Engineering                          | [NFDI4Ing](shared/nfdi4ing/rdmo_mechanical_engineering/catalog_mb_20190124.xml)                                                                                                       |
+| VW Foundation - Science Europe                  | [FAU Erlangen](shared/ub_fau_erlangen_nuernberg/ScienceEurope_VW_Stiftung/catalog_VW_SE.xml)                                                                                          |
+
 
 22 catalogs shared
