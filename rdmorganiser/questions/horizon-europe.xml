@@ -1502,6 +1502,55 @@ La plupart des métadonnées doivent être saisies manuellement, telles que les 
 		<verbose_name_plural lang="it">raccolte di dati</verbose_name_plural>
 		<conditions/>
 	</questionset>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/fair_data/accessible_repository/repository_identifier">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>repository_identifier</key>
+		<path>horizon-europe/fair_data/accessible_repository/repository_identifier</path>
+		<dc:comment>Ausführliche Hilfe nötig, wie Fragen zusammenhängen, in Ansicht teilweise übernehmen!</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/fair_data/accessible_repository"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en"/>
+		<text lang="en">Where will the data (including metadata, documentation and, if applicable, relevant code) be stored or archived after the end of the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wo werden die Daten (einschließlich Metadaten, Dokumentation und ggf. relevantem Code bzw. relevanter Software) nach Projektende gespeichert bzw. archiviert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<help lang="es"/>
+		<text lang="es">¿Dónde se almacenarán o archivarán los datos (incluidos los metadatos, la documentación y, si corresponde, el código de software) una vez finalizado el proyecto?</text>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<verbose_name_plural lang="es"/>
+		<help lang="fr"/>
+		<text lang="fr">Où les données (y compris les métadonnées, la documentation et, le cas échéant, le code pertinent) seront-elles stockées ou archivées après la fin du projet&#8239;?</text>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
+		<help lang="it"/>
+		<text lang="it">Dove vengono immagazzinati o archiviati i dati (compresi i metadati, la documentazione e il relativo codice software, se pertinente) dopo la fine del progetto?</text>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<verbose_name_plural lang="it"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/fair_data/accessible_repository/repository_trusted">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>repository_trusted</key>
@@ -1511,7 +1560,7 @@ La plupart des métadonnées doivent être saisies manuellement, telles que les 
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/fair_data/accessible_repository"/>
 		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
-		<order>1</order>
+		<order>2</order>
 		<help lang="en">If the dataset is archived at several places, you may answer this question with yes, if this applies to at least one of these.
 
 From the &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf" target=_blank&gt;Annotated Model Grant Agreement&lt;/a&gt;: Trusted repositories are:
@@ -1550,7 +1599,7 @@ D'après le &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/
 &lt;li&gt;Les répertoires de dépôt à usage général ou les répertoires de dépôt institutionnels qui présentent les caractéristiques essentielles des répertoires de dépôt de confiance, c'est-à-dire&#8239;:
 
 &lt;ul&gt;&lt;li&gt;présenter des caractéristiques spécifiques de qualité organisationnelle, technique et procédurale telles que des services, des mécanismes et/ou des dispositions visant à garantir l'intégrité et l'authenticité de leur contenu, facilitant ainsi leur utilisation et leur réutilisation dans le court et le long terme. Les répertoires de dépôt de confiance ont des dispositions spécifiques en place et offrent des informations explicites en ligne sur leurs politiques, qui définissent leurs services (par exemple, l'acquisition, l'accès, la sécurité du contenu, la durabilité à long terme du service, y compris le financement, etc.).&lt;/li&gt;
-&lt;li&gt;fournir un accès large, équitable et idéalement ouvert au contenu gratuit d'utilisation, le cas échéant, et respecter les limites légales et éthiques applicables. Ils attribuent des identifiants uniques persistants aux contenus (par exemple DOI, descripteurs, etc.), de sorte que les contenus (publications, données et autres résultats de recherche) sont référencés sans équivoque et donc citables. Ils garantissent que les contenus sont accompagnés de métadonnées suffisamment détaillées et de qualité suffisamment élevée pour permettre la découverte, la réutilisation et la citation et contiennent des informations sur la provenance et la licence ; les métadonnées sont exploitables par une machine et standardisées (par exemple, Dublin Core, Data Cite, etc.) en utilisant de préférence des formats communs non propriétaires et en suivant les normes de la communauté respective desservie par le répertoires de dépôt, le cas échéant.&lt;/li&gt;
+&lt;li&gt;fournir un accès large, équitable et idéalement ouvert au contenu gratuit d'utilisation, le cas échéant, et respecter les limites légales et éthiques applicables. Ils attribuent des identifiants uniques persistants aux contenus (par exemple DOI, descripteurs, etc.), de sorte que les contenus (publications, données et autres résultats de recherche) sont référencés sans équivoque et donc citables. Ils garantissent que les contenus sont accompagnés de métadonnées suffisamment détaillées et de qualité suffisamment élevée pour permettre la découverte, la réutilisation et la citation et contiennent des informations sur la provenance et la licence&#8239;; les métadonnées sont exploitables par une machine et standardisées (par exemple, Dublin Core, Data Cite, etc.) en utilisant de préférence des formats communs non propriétaires et en suivant les normes de la communauté respective desservie par le répertoires de dépôt, le cas échéant.&lt;/li&gt;
 &lt;li&gt;faciliter la conservation à moyen et long terme du matériel déposé. Ils ont des mécanismes ou des dispositions pour la conservation d'experts et l'assurance qualité pour l'exactitude et l'intégrité des ensembles de données et des métadonnées, ainsi que des procédures pour assurer la liaison avec les déposants lorsque des problèmes sont détectés. Ils répondent aux critères de sécurité internationaux et nationaux généralement acceptés pour empêcher l'accès non autorisé et la diffusion de contenu et ont différents niveaux de sécurité en fonction de la sensibilité des données déposées pour maintenir la vie privée et la confidentialité.&lt;/li&gt;&lt;/ul&gt;&lt;/ul &gt;</help>
 		<text lang="fr">Les données seront-elles déposées dans un répertoire de dépôt de confiance&#8239;?</text>
 		<default_text lang="fr"/>
@@ -1575,6 +1624,53 @@ D'après le &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/
 		</optionsets>
 		<conditions/>
 	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/fair_data/accessible_repository/resolver">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>resolver</key>
+		<path>horizon-europe/fair_data/accessible_repository/resolver</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/pids/resolver"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/fair_data/accessible_repository"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en"></help>
+		<text lang="en">Will the repository resolve the identifier to a digital object?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"></help>
+		<text lang="de">Löst das Repository die Kennung auf ein digitales Objekt auf?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<help lang="es"></help>
+		<text lang="es">¿Puede el repositorio resolver el identificador a un objeto digital?</text>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<verbose_name_plural lang="es"/>
+		<help lang="fr"></help>
+		<text lang="fr">Le référentiel résoudra-t-il l'identificateur à un objet numérique&#8239;?</text>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
+		<help lang="it"></help>
+		<text lang="it">Il repositorio risolverà l'identificatore a un oggetto digitale?</text>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<verbose_name_plural lang="it"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/fair_data/accessible_repository/repository_arrangements">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>repository_arrangements</key>
@@ -1584,7 +1680,7 @@ D'après le &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/fair_data/accessible_repository"/>
 		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
-		<order>2</order>
+		<order>4</order>
 		<help lang="en">In addition to questions of quality assurance and data curation, it should also be discussed whether a persistent identifier is assigned to the data.</help>
 		<text lang="en">Have you explored appropriate arrangements with the identified repository?</text>
 		<default_text lang="en"/>
@@ -1621,55 +1717,6 @@ D'après le &lt;a href="https://ec.europa.eu/info/funding-tenders/opportunities/
 		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why"/>
-		</optionsets>
-		<conditions/>
-	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/fair_data/accessible_repository/repository_identifier">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>repository_identifier</key>
-		<path>horizon-europe/fair_data/accessible_repository/repository_identifier</path>
-		<dc:comment>Ausführliche Hilfe nötig, wie Fragen zusammenhängen, in Ansicht teilweise übernehmen!</dc:comment>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/horizon-europe/fair_data/accessible_repository"/>
-		<is_collection>True</is_collection>
-		<is_optional>False</is_optional>
-		<order>3</order>
-		<help lang="en"/>
-		<text lang="en">Where will the data (including metadata, documentation and, if applicable, relevant code) be stored or archived after the end of the project?</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<verbose_name_plural lang="en"/>
-		<help lang="de"/>
-		<text lang="de">Wo werden die Daten (einschließlich Metadaten, Dokumentation und ggf. relevantem Code bzw. relevanter Software) nach Projektende gespeichert bzw. archiviert?</text>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="de"/>
-		<help lang="es"/>
-		<text lang="es">¿Dónde se almacenarán o archivarán los datos (incluidos los metadatos, la documentación y, si corresponde, el código de software) una vez finalizado el proyecto?</text>
-		<default_text lang="es"/>
-		<verbose_name lang="es"/>
-		<verbose_name_plural lang="es"/>
-		<help lang="fr"/>
-		<text lang="fr">Où les données (y compris les métadonnées, la documentation et, le cas échéant, le code pertinent) seront-elles stockées ou archivées après la fin du projet&#8239;?</text>
-		<default_text lang="fr"/>
-		<verbose_name lang="fr"/>
-		<verbose_name_plural lang="fr"/>
-		<help lang="it"/>
-		<text lang="it">Dove vengono immagazzinati o archiviati i dati (compresi i metadati, la documentazione e il relativo codice software, se pertinente) dopo la fine del progetto?</text>
-		<default_text lang="it"/>
-		<verbose_name lang="it"/>
-		<verbose_name_plural lang="it"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>checkbox</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets>
-			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options"/>
 		</optionsets>
 		<conditions/>
 	</question>
@@ -3068,18 +3115,18 @@ une référence à la rubrique «&#8239;Données FAIR / Accessibilité&#8239;: d
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<help lang="es"></help>
-		<text lang="es"></text>
+		<help lang="es">.....</help>
+		<text lang="es">¿Qué aspectos de gestión (principios FAIR; costes y recursos; seguridad, aspectos jurídicos y éticos) se aplicarán también a los demás productos de investigación mencionados en el proyecto?</text>
 		<default_text lang="es"/>
 		<verbose_name lang="es"/>
 		<verbose_name_plural lang="es"/>
-		<help lang="fr"></help>
-		<text lang="fr"></text>
+		<help lang="fr">.....</help>
+		<text lang="fr">Quels aspects de la gestion (principes FAIR&#8239;; coûts et ressources&#8239;; sécurité, aspects juridiques et éthiques) seront également appliqués aux autres produits de recherche mentionnés ci-dessus dans votre projet&#8239;?</text>
 		<default_text lang="fr"/>
 		<verbose_name lang="fr"/>
 		<verbose_name_plural lang="fr"/>
-		<help lang="it"></help>
-		<text lang="it"></text>
+		<help lang="it">.....</help>
+		<text lang="it">Quali aspetti di gestione (principi FAIR, costi e risorse; sicurezza, aspetti giuridici ed etici) saranno applicati anche ai suddetti altri risultati di ricerca nell'ambito del progetto?</text>
 		<default_text lang="it"/>
 		<verbose_name lang="it"/>
 		<verbose_name_plural lang="it"/>
@@ -3731,7 +3778,7 @@ Zu vermeiden ist im Rahmen der Kuratierung außerdem, dass Daten nicht mehr lesb
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
 		<help lang="es">.....</help>
-		<text lang="es">.....</text>
+		<text lang="es">¿Quién es responsable de la curación de datos una vez que el proyecto haya terminado?</text>
 		<default_text lang="es"/>
 		<verbose_name lang="es"/>
 		<verbose_name_plural lang="es"/>
