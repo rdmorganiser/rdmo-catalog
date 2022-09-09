@@ -1,261 +1,606 @@
-
-rdmocatalog
-
-    Management
-    Admin
-
-    Language
-    Giacomo Lanza
-
-Views
-View https://rdmorganiser.github.io/terms/views/bielefeld
-
-    Bielefeld
-
-    DMP template from the University of Bielefeld.
-
-View https://rdmorganiser.github.io/terms/views/citec
-
-    CITEC DMP
-
-    DMP template from the University of Bielefeld for CITEC funded research projects.
-
-View https://rdmorganiser.github.io/terms/views/costs
-
-    Cost overview
-
-    Overview of the personnel and non_personnel costs
-
-View https://rdmorganiser.github.io/terms/views/dmponline
-
-    DMPonline template
-
-    Template from DMPonline, online https://dmponline.dcc.ac.uk
-
-View https://rdmorganiser.github.io/terms/views/dmptool
-
-    DMPTool template
-
-    Template from DMPtool, based on "NSF-GEN: Generic", online: https://dmptool.org
-
-View https://rdmorganiser.github.io/terms/views/horizon2020
-
-    Horizon 2020 FAIR Data Management Plan template
-
-    Template for Horizon 2020, from "Guidelines on FAIR Data Management in Horizon 2020", online: http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf
-
-View https://rdmorganiser.github.io/terms/views/horizon-europe
-
-    Horizon Europe
-
-    View (export template) for the funding framework program "Horizon Europe" (2021-2027) of the European Commission (version 1.0, 5th May 2021)
-
-View https://rdmorganiser.github.io/terms/views/variable_check
-
-    List of all variables
-
-    for internal control
-
-View https://rdmorganiser.github.io/terms/views/snf
-
-    SNF Template
-
-    DMP of the SNF (Switzerland)
-
-View http://example.com/terms/views/test
-
-    Test of output
-
-    Different ways to recall a variable
-
-Template
-Template
-
-1
-
 {% load view_tags %}
-
-2
-
 {% get_set 'project/dataset/id' as datasets %}
-
-3
-
 {% get_set 'project/partner/id' as partners %}
-
-4
-
 {% get_set 'project/funder/id' as funders %}
 
-5
-
-​
-
-6
-
-<metadata>
-
-7
-
-{
-
-8
-
-    "title": "DMP_{% render_value 'project/funder/grant_nr' %}_{% render_value 'project/acronym' %}_v{% render_value 'project/dmp/dmp_version'|default:"1" %}",
-
-9
-
-    "category": "{% render_value 'project/funder/grant_nr' %}",
-
-10
-
-    "subject": "{% render_value 'project/acronym' %}",
-
-11
-
-    "description": "{% render_value 'project/title' %}",
-
-12
-
-    "keywords": ["Jochen", "Olaf"],
-
-13
-
-    "contentStatus": "135",
-
-14
-
-    "abstract": "{% render_value 'project/research_question/title' %}"
-
-15
-
-}
-
-16
-
-</metadata>
-
-17
-
-​
-
-18
-
 <style type="text/css">
-
-19
-
-    body {  font-family: arial; }
-
-20
-
-    h1, h2, h3, h4 {    font-family: verdana; font-weight:bold; }
-
-21
-
-    table { table-layout: fixed; border: 0; white-space: nowrap; margin-left: auto; margin-right: auto; }
-
-22
-
-    td, th {    padding: 10px;  }
-
-23
-
-    #Titel {    text-align: center; line-height: 21mm; font-size: 2.5em; font-weight: bold; }
-
-24
-
-    #Note1 {    font-size: small;   }
-
-25
-
-    p { margin-left: 10px;  }
-
-26
-
-    .question { color: green; font-weight:bold; }
-
-27
-
-    .questionpart { color: green; }
-
-28
-
+	body {	font-family: arial;	}
+	h1, h2, h3, h4 {	font-family: verdana; font-weight:bold;	}
+	table {	table-layout: fixed; border: 0; white-space: nowrap; margin-left: auto; margin-right: auto;	}
+	td, th {	padding: 10px;	}
+	#Titel {	text-align: center; line-height: 21mm; font-size: 2.5em; font-weight: bold;	}
+	#Note1 {	font-size: small;	}
+	p {	margin-left: 10px;	}
+	.question {	color: green; font-weight:bold;	}
+	.questionpart {	color: green; }
 </style>
 
-29
-
-​
-
-30
-
 <div id="Titel" style="text-align: center; line-height: 21mm; font-size: 2.5em; font-weight: bold;">
+	<br /><img src="https://ec.europa.eu/info/sites/default/themes/europa/images/svg/logo/logo--en.svg" alt="EC banner" width="200" />
+	<br /><img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="EU Flag" width="400" />
+	<br /><h1>Horizon Europe<br />Data Management Plan Template</h1>
+</div>
 
-31
+<div id="Intro" style="height:80mm">
+	<br />
+	<table>
+		<tr id="Intro1">	<td><b>Action Number:</b></td>	<td>{% render_value 'project/funder/grant_nr' %}</td>	</tr>
+		<tr id="Intro2">	<td><b>Action Acronym:</b>&emsp;</td>	<td>{% render_value 'project/acronym' %}</td>	</tr>
+		<tr id="Intro3">	<td><b>Action title:</b></td>	<td>{% render_value 'project/title' %}</td>	</tr>
+		<tr id="Intro4">	<td><b>Date:</b></td>	<td>{% now "D M Y H T " %}{% render_value 'project/dmp/dmp_date' %}</td>	</tr>
+		<tr id="Intro5">	<td><b>DMP version:</b></td>	<td>{% render_value 'project/dmp/dmp_version' %}</td>	</tr>
+	</table>
+</div>
+<div>
+	The Horizon Europe Model Grant Agreement requires that a data management plan (‘DMP’) is established and regularly updated.
+	<br />The use of this template is recommended for Horizon Europe beneficiaries.
+	<br />In completing the sections of the template, the requirements for research data management of Horizon Europe
+	as described in article 17 and analysed in the Annotated Grant Agreement, article 17, must be addressed.
+</div>
 
-    <br /><img src="https://ec.europa.eu/info/sites/default/themes/europa/images/svg/logo/logo--en.svg" alt="EC banner" width="200" />
+<h2 id="1">1. Data Summary</h2>
 
-32
+<div id="Q01">
+	<p class="question">1a. Will you re-use any existing data and what will you re-use them for?</p>
 
-    <br /><img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="EU Flag" width="400" />
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		This dataset is {% render_set_value dataset 'project/dataset/origin'|lower %}.<br />
+		{% render_set_value dataset 'project/dataset/usage_description' %}</p>
+	{% endfor %}
+		
+	<p class="question">1b. State the reasons if re-use of any existing data has been considered but discarded.</p>
 
-33
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/reuse_existing' %}</p>
+	{% endfor %}
+</div>
 
-    <br /><h1>Horizon Europe<br />Data Management Plan Template</h1>
+<div id="Q02">
+	<p class="question">2. What types and formats of data will the project generate or re-use?</p>
 
-34
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/description' %}
+	<br />{% render_set_value dataset 'project/dataset/format' %}</p>
+	{% endfor %}
+</div>
+
+<div id="Q03">
+	<p class="question">3. What is the purpose of the data generation or re-use and its relation to the objectives of the project?</p>
+
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/usage_description' %}</p>
+	{% endfor %}
+</div>
+
+<div id="Q04">
+	<p class="question">4. What is the expected size of the data that you intend to generate or re-use?</p>
+
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i> {% render_set_value dataset 'project/dataset/size/volume' %}</p>
+	{% endfor %}
+</div>
+
+<div id="Q05">
+	<p class="question">5. What is the origin/provenance of the data, either generated or re-used?</p>
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/provenance/content' %}
+		{% if "re-used" in values.project.dataset.origin %}
+		<br />The data were created by {% render_set_value dataset 'project/dataset/creator/name' %}
+		and can be found at the following address: {% render_set_value dataset 'project/dataset/uri' %}
+		{% endif %}
+	</p>
+	{% endfor %}
+</div>
+
+<div id="Q06">
+	<p class="question">6. To whom might your data be useful ('data utility'), outside your project?</p>
+
+	{% for dataset in datasets %}
+	{% get_set 'project/dataset/reuse_scenario' as utility %}
+	{% if utility|length > 0 %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		The data might be useful to: {% render_set_value_list dataset 'project/dataset/reuse_scenario' %}</p>
+	{% endif %}
+	{% endfor %}
+</div>
+
+<h2 id="2">2. FAIR data</h2>
+
+<h3 id="2.1">2.1. Making data findable, including provisions for metadata</h3>
+
+<div id="Q07">
+	<p class="question">7. Will data be identified by a persistent identifier?</p>
+
+	{% for dataset in datasets %}
+	{% get_set_value dataset 'project/dataset/pids/yesno' as pids %}
+		<p><i>Dataset {{ dataset.value }}:</i> {{ pids.value }}.
+		{% if pids.is_true %} {% render_set_value dataset 'project/dataset/pids/system' %} {% endif %}
+		</p>
+	{% endfor %}
+</div>
+
+<div id="Q08">
+	<p class="question">8. Will rich metadata be provided to allow discovery? What metadata will be created? What disciplinary or general standards will be followed?<br />
+	In case metadata standards do not exist in your discipline, please outline what type of metadata will be created and how.</p>
+
+	<p>The data will be described using the following metadata:</p>
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i></p>
+	<ul>
+		{% if 'project/dataset/metadata/creation_automatic'|length > 0 %}<li>Automatically created: {% render_set_value dataset 'project/dataset/metadata/creation_automatic' %}</li>{% endif %}
+		{% if 'project.dataset.metadata.creation_semi_automatic'|length > 0 %}<li>Automatically created, manually corrected: {% render_set_value dataset 'project/dataset/metadata/creation_semi_automatic' %}</li>{% endif %}
+		{% if 'project.dataset.metadata.creation_manual'|length > 0 %}<li>Manually created: {% render_set_value dataset 'project/dataset/metadata/creation_manual' %}</li>{% endif %}
+	</ul>
+	{% endfor %}
+</div>
+
+<div id="Q09">
+	<p class="question">9. Will search keywords be provided in the metadata to optimize the possibility for discovery and then potential re-use?</p>
+
+	<p>	Yes, the following search keywords will be provided in the metadata to optimise the discovery and potential re-use of the deposited datasets:
+		{% render_value_list 'project/research_question/keywords' %}</p>
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i> {% render_set_value dataset 'project/dataset/metadata/search_keywords' %}</p>
+	{% endfor %}
+</div>
+
+<div id="Q10">
+	<p class="question">10. Will metadata be offered in such a way that they can be harvested and indexed?</p>
+
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/metadata/harvesting' %}</p>
+	{% endfor %}
+</div>
+
+<h3 id="2.2">2.2. Making data accessible</h3>
+
+<h4 id="2.2a">Repository:</h4>
+
+<div id="Q11">
+	<p class="question">11. Will the data be deposited in a trusted repository?</p>
+
+	{% for dataset in datasets %}
+	{% get_set_values dataset 'project/dataset/sharing/yesno' as shared %}
+		{% if shared != "No" %}
+		<p><i>Dataset {{ dataset.value }}:</i>
+        The dataset is stored in a {% render_set_value_inline_list dataset 'project/dataset/preservation/repository' %}.
+        This repository is trusted because
+			{% render_set_value_list dataset 'project/dataset/preservation/trusted' %}<br />
+		</p>
+		{% endif %}
+	{% endfor %}
+</div>
+
+<div id="Q12">
+	<p class="question">12. Have you explored appropriate arrangements with the identified repository where your data will be deposited?</p>
+
+	{% for dataset in datasets %}
+	{% get_set_values dataset 'project/dataset/sharing/yesno' as shared %}
+		{% if "No" in shared %}{% else %}
+		<p><i>Dataset {{ dataset.value }}:</i>
+			{% render_value 'project/dataset/preservation/repository_arrangements' %}</p>
+		{% endif %}
+	{% endfor %}
+</div>
+
+<div id="Q13">
+	<p class="question">13a. Does the repository ensure that the data are assigned an identifier?</p>
+
+	{% for dataset in datasets %}
+	{% get_set_value dataset 'project/dataset/pids/yesno' as pids %}
+		<p><i>Dataset {{ dataset.value }}:</i> {{ pids.value }}.</p>
+	{% endfor %}
+    
+   
+	<p class="question">13b. Will the repository resolve the identifier to a digital object?</p>
+
+	{% for dataset in datasets %}
+	{% get_set_values dataset 'project/dataset/sharing/yesno' as shared %}
+		{% if "No" not in shared %}
+		<p><i>Dataset {{ dataset.value }}:</i>
+        	{% render_value 'project/dataset/pids/resolver' %}
+		{% endif %}
+	{% endfor %}
+</div>
+
+<h4 id="2.2b">Data:</h4>
+
+<div id="Q14">
+	<p class="question">14a. Will all data be made openly available?</p>
+	
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/sharing/yesno' %}</p>
+	{% endfor %}
+	
+	<p class="question">14b. If certain datasets cannot be shared (or need to be shared under restricted access conditions), explain why, clearly separating legal and contractual reasons from intentional restrictions.<br />
+	<small>Note that in multi-beneficiary projects it is also possible for specific beneficiaries to keep their data closed, if opening their data goes against their legitimate interests or other constraints as per the Grant Agreement.</small></p>
+
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/sharing/explanation' %}</p>
+	{% endfor %}
+</div>
+
+<div id="Q15">
+	<p class="question">15. If an embargo is applied to give time to publish or seek protection of the intellectual property (<i>e.g.</i> patents), specify why and how long this will apply, bearing in mind that research data should be made available as soon as possible.</p>
+
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/preservation/embargo_period' %}</p>
+	{% endfor %}
 
 </div>
 
-35
+<div id="Q16">
+	<p class="question">16. Will the data be accessible through a free and standardized access protocol?</p>
 
-​
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i> {% render_set_value dataset 'project/dataset/sharing/conditions' %}</p>
+	{% endfor %}
+</div>
 
-36
+<div id="Q17">
+	<p class="question">17. If there are restrictions on use, how will access be provided to the data, both during and after the end of the project?</p>
 
-<div id="Intro" style="height:80mm">
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i> {% render_set_value dataset 'project/dataset/sharing/restrictions_explanation' %}</p>
+	{% endfor %}
 
-37
+</div>
 
-    <br />
+<div id="Q18">
+	<p class="question">18. How will the identity of the person accessing the data be ascertained?</p>
+	
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/preservation/access_authentication' %}</p>
+	{% endfor %}
+</div>
 
-38
+<div id="Q19">
+	<p class="question">19. Is there a need for a data access committee (<i>e.g.</i> to evaluate/approve access requests to personal/sensitive data)?</p>
 
-    <table>
+	<p>	{% render_value 'project/legal_aspects/official_approval/data_access_committee' %}</p>
+</div>
 
-39
+<h4 id="2.2c">Metadata:</h4>
 
-        <tr id="Intro1">    <td><b>Action Number:</b></td>  <td>{% render_value 'project/funder/grant_nr' %}</td>   </tr>
+<div id="Q20">
+	<p class="question">20a. Will metadata be made openly available and licenced under a public domain dedication CC0, as per the Grant Agreement? If not, please clarify why.</p>
 
-The template for this view, written in Django template language.
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/metadata/license_for_metadata' %}</p>
+	{% endfor %}
 
-Filter views
-Options
+	<p class="question">20b. Will metadata contain information to enable the user to access the data?</p>
+	
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/metadata/access_info' %}</p>
+	{% endfor %}
+</div>
 
-    Create new view
+<div id="Q21">
+	<p class="question">21a. How long will the data remain available and findable?</p>
+	{% for dataset in datasets %}
 
-Export
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/preservation/reuse_duration' %}</p>
+	{% endfor %}	
 
-    PDF
-    Rich Text Format
-    Open Office
-    Microsoft Office
-    HTML
-    Markdown
-    mediawiki
-    LaTeX
+	<p class="question">21b. Will metadata be guaranteed to remain available after data are no longer available?</p>
+	
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/metadata/available_without_data' %}</p>
+	{% endfor %}
+</div>
 
-    XML
+<div id="Q22">
+	<p class="question">22. Will documentation or reference about any software be needed to access or read the data be included?<br />
+	Will it be possible to include the relevant software (<i>e.g.</i> in open source code)?</p>
 
-Import
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/software_documentation' %}</p>
+	{% endfor %}
+	<p>See also <a href="#Q23">the following question</a> for further details.</p>
+</div>
 
-    Select file
+<h3 id="2.3">2.3. Making data interoperable</h3>
 
-About RDMO
+<div id="Q23">
+	<p class="question">23a. What data and metadata vocabularies, standards, formats or methodologies will you follow to make your data interoperable to allow data exchange and re-use within and across disciplines?</p>
 
-The Research Data Management Organiser supports the systematic planning, organisation and implementation of the data management throughout the course of a research project.
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/metadata/standards' %}</p>
+	{% endfor %}
 
-RDMO is open source software and available at https://github.com/rdmorganiser/rdmo
-Contact
+	<p class="question">23b. Will you follow community-endorsed interoperability best practices? Which ones?</p>
 
-Imprint and data protection
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i> 
+		{% render_set_value dataset 'project/dataset/interoperability' %}</p>
+	{% endfor %}
+</div>
+
+<div id="Q24">
+	<p class="question">24a. In case it is unavoidable that you use uncommon or generate project specific ontologies or vocabularies,will you provide mappings to more commonly used ontologies?</p>
+
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/metadata/mappings' %}</p>
+	{% endfor %}
+
+	<p class="question">24b. Will you openly publish the generated ontologies or vocabularies to allow reusing, refining or extending them?</p>
+
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/metadata/vocabularies_open' %}</p>
+	{% endfor %}
+</div>
+
+<div id="Q25">
+	<p class="question">25. Will your data include qualified references <a href="#Note1">[1]</a> to other data (<i>e.g.</i> other data from your project, or datasets from previous research)?</p>
+
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i> {% render_set_value_list dataset 'project/dataset/metadata/references_to_other_data' %}</p>
+	{% endfor %}
+</div>
+
+<div id="Note1" style="font-size: small;">
+	[1] A qualified reference is a cross-reference that explains its intent. For example, "X is regulator of Y" is a much more qualified reference than "X is associated with Y", or "X see also Y". The goal therefore is to create as many meaningful links as possible between (meta)data resources to enrich the contextual knowledge about the data.
+	(Source: <a href="https://www.go-fair.org/fair-principles/i3-metadata-include-qualified-references-metadata/" target="_blank">https://www.go-fair.org/fair-principles/i3-metadata-include-qualified-references-metadata/</a>)
+</div>
+
+<h3 id="2.4">2.4. Increase data re-use</h3>
+
+<div id="Q26">
+	<p class="question">26. How will you provide documentation needed to validate data analysis and facilitate data re-use<br/>
+	(<i>e.g.</i> readme files with information on methodology, codebooks, data cleaning, analyses, variable definitions, units of measurement, etc.)?</p>
+
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		We will provide documentation {% render_set_value dataset 'project/dataset/documentation/where' %}
+		in the form of {% render_set_value_list dataset 'project/dataset/documentation' %}</p>
+	{% endfor %}
+</div>
+
+<div id="Q27">
+	<p class="question">27a. Will your data be made freely available in the public domain to permit the widest re-use possible?</p>
+
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/sharing/yesno' %}</p>
+	{% endfor %}
+	
+	<p class="question">27b. Will your data be licensed using standard reuse licenses, in line with the obligations set out in the Grant Agreement?</p>
+
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/sharing/conditions' %}</p>
+	{% endfor %}
+		
+	<p>See <a href="#2.2">Section 2.2</a> for further details.</p>
+</div>
+
+<div id="Q28">
+	<p class="question">28. Will the data produced in the project be useable by third parties, in particular after the end of the project?</p>
+
+	<p>The data will be available for re-use, as far as reported in <a href="#Q21">Question 21</a>.</p>
+</div>
+
+<div id="Q29">
+	<p class="question">29. Will the provenance of the data be thoroughly documented using the appropriate standards?</p>
+
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i> {% render_set_value dataset 'project/dataset/provenance/standards' %}</p>
+	{% endfor %}
+</div>
+
+<div id="Q30">
+	<p class="question">30. Describe all relevant data quality assurance processes.</p>
+
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i> {% render_set_value dataset 'project/dataset/quality_assurance' %}</p>
+	{% endfor %}
+</div>
+
+<div id="Q31">
+	<p class="question">31. Further to the FAIR principles, DMPs should also address research outputs other than data, and should carefully consider aspects related to the allocation of resources, data security and ethical aspects.</p>
+
+	<p>We will address these aspects in <a href="#3">the following section</a>.</p>
+</div>
+
+<h2 id="3">3. Other research outputs</h2>
+
+<div id="Q32">
+	<p class="question">32. In addition to the management of data, beneficiaries should also consider and plan for the management of other research outputs that may be generated or re-used throughout their projects.<br />
+	Such outputs can be either digital (<i>e.g.</i> software, workflows, protocols, models, etc.) or physical (<i>e.g.</i> new materials, antibodies, reagents, samples, etc.).</p>
+
+	<p>The project will produce research output also of the following types: {% render_value_list 'project/other_research_output/plan' %}</p>
+</div>
+
+<div id="Q33">
+	<p class="question">33. Beneficiaries should consider which of the questions pertaining to FAIR data above can apply to the management of other research outputs, and should strive to provide sufficient detail on how their research outputs will be managed and shared, or made available for re-use, in line with the FAIR principles.</p>
+
+	<p>The following aspects are relevant and will be considered within the project: {% render_value 'project/other_research_output/fair' %}</p>
+</div>
+
+<h2 id="4">4. Allocation of resources</h2>
+
+<div id="Q34">
+	<p class="question">34. What will the costs be for making data or other research outputs FAIR in your project<br />
+	(<i>e.g.</i> direct and indirect costs related to storage, archiving, re-use, security, etc.)?</p>
+
+	<p>	For metadata: {% render_value 'project/costs/metadata/personnel' %}. {% render_value 'project/costs/metadata/non_personnel' %}.<br />
+	For PIDs: {% render_value 'project/costs/pid/personnel' %}. {% render_value 'project/costs/pid/non_personnel' %}.<br />
+	For data preservation: {% render_value 'project/costs/preservation/personnel' %}. {% render_value 'project/costs/preservation/non_personnel' %}.<br />
+	For management of other research outputs: {% render_value 'project/costs/other_research_output/personnel' %}. {% render_value 'project/costs/other_research_output/non_personnel' %}.</p>
+</div>
+
+<div id="Q35">
+	<p class="question">35. How will these be covered?<br />
+	<small>Note that costs related to research data/output management are eligible as part of the Horizon Europe grant (if compliant with the Grant Agreement conditions).</small></p>
+
+	<p>	{% render_value 'project/costs/preservation/cover_how' %}</p>
+</div>
+
+<div id="Q36">
+	<p class="question">36. Who will be responsible for data management in your project?</p>
+
+	{% for partner in partners %}
+	{% get_set_value partner 'project/partner/contact_person/name' as responsible %}
+	{% if responsible|length > 0 %}
+	<p><i>Partner {{ partner.value }}:</i></p>
+		{% render_set_value_list partner 'project/partner/contact_person/name' %}
+	{% endif %}
+	{% endfor %}
+</div>
+
+<div id="Q37">
+	<p class="question">37. How will long term preservation be ensured? Discuss the necessary resources to accomplish this<br />
+	(costs and potential value, who decides and how, what data will be kept and for how long).</p>
+
+	<p class="questionpart">Duration of preservation:</p>
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/preservation/duration' %}</p>
+	{% endfor %}
+
+	<p class="questionpart">Costs:</p>
+	<p>See <a href="#Q34">Question 34</a>.</p>
+	
+	<p class="questionpart">Potential value:</p>
+	<p>See <a href="#Q06">Question 6</a>.</p>
+	
+	<p class="questionpart">Preservation decisions:</p>
+	<p>All decision related to preservation fall under the responsibility of {% render_value_inline_list 'project/preservation/responsible_person/name'|lower %}</p>
+
+	<p class="questionpart">Criteria for preservation:</p>
+	<p>{% render_value 'project/preservation/selection_criteria' %}</p>
+
+	<p class="questionpart">Motivation for long-term preservation:</p>
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/preservation/purpose' %}</p>
+	{% endfor %}
+</div>
+
+<h2 id="5">5. Data security</h2>
+
+<div id="Q38">
+	<p class="question">38. What provisions are or will be in place for data security (including data recovery as well as secure storage/archiving and transfer of sensitive data)?</p>
+
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value_list dataset 'project/dataset/data_security/security_measures' %}</p>
+	{% endfor %}
+</div>
+<div id="Q39">
+	<p class="question">39. Will the data be safely stored in trusted repositories for long-term preservation and curation?</p>
+
+	<p>Yes, the chosen repositories are trustworthy. See <a href="#Q11">Question 11</a> for further details.</p>
+
+{% for dataset in datasets %}
+<p><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/preservation/repository' %}
+
+{% get_set_value dataset 'project/dataset/preservation/certification' as certification %}
+{% if certification.is_true %} (certified)
+{% else %} (not certified) {% endif %}
+</p>
+{% endfor %}
+
+</div>
+
+<h2 id="6">6. Ethics</h2>
+
+<div id="Q40">
+	<p class="question">40. Are there, or could there be, any ethics or legal issues that can have an impact on data sharing?<br />
+	<small>These can also be discussed in the context of the ethics review. If relevant, include references to ethics deliverables and ethics chapter in the Description of the Action (DoA).</small></p>
+
+	<p class="questionpart">Personal data</p>
+ 	{% for dataset in datasets %}
+	{% get_set_value dataset 'project/dataset/sensitive_data/personal_data_yesno/yesno' as personal %}
+		{% if personal.is_true %}
+		<p><i>Dataset {{ dataset.value }}:</i>   
+		The dataset contains personal data (see <a href="#Q41">the following question</a> for more details).</p>
+        {% get_set_value dataset 'project/dataset/sensitive_data/personal_data/bdsg_3_9' as identifying %}
+		<p>{% if identifying.is_true %} Some data contain information allowing person identification. {% endif %}</p>
+        {% get_set_value dataset 'project/dataset/sensitive_data/personal_data/anonymization' as anonymization %}
+		<p>{%if anonymization == "No" %}{% else %} The personal data will be anonymised/pseudonymised {% render_set_value dataset 'project/dataset/sensitive_data/personal_data/anonymization' %}{% endif %}</p>
+		<p>The personal data will be safely deleted {% render_set_value dataset 'project/dataset/sensitive_data/personal_data/deletion' %}</p>
+	{% endif %}
+	{% endfor %}
+	
+   	<p class="questionpart">Other sensitive data</p>
+	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i>
+		{% render_set_value dataset 'project/dataset/sensitive_data/other/description' %}</p>
+	{% endfor %}
+	
+	<p class="questionpart">Official approval</p>
+ 	{% for dataset in datasets %}
+	<p><i>Dataset {{ dataset.value }}:</i></p>
+	<p>[Ethics committee:] {% render_set_value dataset 'project/legal_aspects/official_approval/ethics_committee' %}</p>
+	<p>[Statutory approval:] {% render_set_value dataset 'project/legal_aspects/official_approval/statutatory_approval/yesno' %}</p>
+	<p>{% render_set_value dataset 'project/legal_aspects/official_approval/statutatory_approval/title' %}</p>
+	<p>{% render_set_value dataset 'project/legal_aspects/official_approval/statutatory_approval/agency' %}</p>
+	{% endfor %}
+	
+	<p class="questionpart">Intellectual property rights</p>
+	{% for dataset in datasets %}
+	{% get_set_value dataset 'project/legal_aspects/ipr/yesno' as ipr %}
+		{% if ipr.is_true %}
+		<p><i>Dataset {{ dataset.value }}:</i>
+		<p>{% render_set_value dataset 'project/dataset/ipr/copyrights' %}</p>
+		<p>{% render_set_value dataset 'project/dataset/ipr/other_rights' %}</p>
+	{% endif %}
+	{% endfor %}
+
+
+	<p>See <a href="#Q17">Question 17</a> for further details.</p>
+</div>
+
+<div id="Q41">
+	<p class="question">41. Will informed consent for data sharing and long term preservation be included in questionnaires dealing with personal data?</p>
+
+	{% for dataset in datasets %}
+	{% get_set_value dataset 'project/dataset/sensitive_data/personal_data_yesno/yesno' as personal_data %}	
+		{% if personal_data.is_true %}
+		<p><i>Dataset {{ dataset.value }}:</i>
+			{% render_set_value dataset 'project/dataset/sensitive_data/personal_data/consent/extent' %}<br />
+			{% render_set_value dataset 'project/dataset/sensitive_data/personal_data/consent/statement' %}
+		</p>{% endif %}
+	{% endfor %}
+</div>
+
+<h2 id="7">7. Other issues</h2>
+
+<div id="Q42">
+	<p class="question">42. Do you, or will you, make use of other national/funder/sectorial/departmental procedures for data management?<br />
+	If yes, which ones? (Please list and briefly describe them.)</p>
+
+	<p class="questionpart">Regulations of the funder</p>
+	<p>{% render_value 'project/funder/rdm_policy'|urlize %}</p>
+
+	<p class="questionpart">Regulations of the involved partner institutions</p>
+
+	{% for partner in partners %}
+	<p><i>Partner {{ partner.value }}:</i>{% render_set_value_list partner 'project/partner/rdm_policy' %}</p>
+	{% endfor %}
+
+	<p class="questionpart">Project-internal regulations</p>
+	<p>{% render_value_list 'project/dataset/storage/organisation_policy' %}
+
+	<p class="questionpart">Other regulations</p>
+	<p>{% render_value_list 'project/additional_rdm_policy/requirements' %}</p>
+</div>
