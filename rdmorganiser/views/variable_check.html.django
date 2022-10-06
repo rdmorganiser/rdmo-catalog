@@ -1,0 +1,245 @@
+{% load view_tags %}
+{% get_set 'project/dataset/id' as datasets %}
+{% get_set 'project/partner/id' as partners %}
+{% get_set 'project/funder/id' as funders %}
+
+<table>
+<tr><td><b>	project	:</b></td><td> {% render_value_inline_list 'project' %}		</td></tr>
+<tr><td><b>	project/acronym	:</b></td><td> {% render_value_inline_list 'project/acronym' %}		</td></tr>
+<tr><td><b>	project/additional_rdm_policy	:</b></td><td> {% render_value_inline_list 'project/additional_rdm_policy' %}		</td></tr>
+<tr><td><b>	project/additional_rdm_policy/requirements	:</b></td><td> {% render_value_inline_list 'project/additional_rdm_policy/requirements' %}		</td></tr>
+<tr><td><b>	project/additional_rdm_policy/yesno	:</b></td><td> {% render_value_inline_list 'project/additional_rdm_policy/yesno' %}		</td></tr>
+<tr><td><b>	project/coordination	:</b></td><td> {% render_value_inline_list 'project/coordination' %}		</td></tr>
+<tr><td><b>	project/coordination/name	:</b></td><td> {% render_value_inline_list 'project/coordination/name' %}		</td></tr>
+<tr><td><b>	project/costs	:</b></td><td> {% render_value_inline_list 'project/costs' %}		</td></tr>
+<tr><td><b>	project/costs/creation	:</b></td><td> {% render_value_inline_list 'project/costs/creation' %}		</td></tr>
+<tr><td><b>	project/costs/creation/non_personnel	:</b></td><td> {% render_value_inline_list 'project/costs/creation/non_personnel' %}		</td></tr>
+<tr><td><b>	project/costs/creation/personnel	:</b></td><td> {% render_value_inline_list 'project/costs/creation/personnel' %}		</td></tr>
+<tr><td><b>	project/costs/ipr	:</b></td><td> {% render_value_inline_list 'project/costs/ipr' %}		</td></tr>
+<tr><td><b>	project/costs/ipr/non_personnel	:</b></td><td> {% render_value_inline_list 'project/costs/ipr/non_personnel' %}		</td></tr>
+<tr><td><b>	project/costs/ipr/personnel	:</b></td><td> {% render_value_inline_list 'project/costs/ipr/personnel' %}		</td></tr>
+<tr><td><b>	project/costs/metadata	:</b></td><td> {% render_value_inline_list 'project/costs/metadata' %}		</td></tr>
+<tr><td><b>	project/costs/metadata/non_personnel	:</b></td><td> {% render_value_inline_list 'project/costs/metadata/non_personnel' %}		</td></tr>
+<tr><td><b>	project/costs/metadata/personnel	:</b></td><td> {% render_value_inline_list 'project/costs/metadata/personnel' %}		</td></tr>
+<tr><td><b>	project/costs/other_research_output	:</b></td><td> {% render_value_inline_list 'project/costs/other_research_output' %}		</td></tr>
+<tr><td><b>	project/costs/other_research_output/non_personnel	:</b></td><td> {% render_value_inline_list 'project/costs/other_research_output/non_personnel' %}		</td></tr>
+<tr><td><b>	project/costs/other_research_output/personnel	:</b></td><td> {% render_value_inline_list 'project/costs/other_research_output/personnel' %}		</td></tr>
+<tr><td><b>	project/costs/pid	:</b></td><td> {% render_value_inline_list 'project/costs/pid' %}		</td></tr>
+<tr><td><b>	project/costs/pid/non_personnel	:</b></td><td> {% render_value_inline_list 'project/costs/pid/non_personnel' %}		</td></tr>
+<tr><td><b>	project/costs/pid/personnel	:</b></td><td> {% render_value_inline_list 'project/costs/pid/personnel' %}		</td></tr>
+<tr><td><b>	project/costs/preservation	:</b></td><td> {% render_value_inline_list 'project/costs/preservation' %}		</td></tr>
+<tr><td><b>	project/costs/preservation/cover_how	:</b></td><td> {% render_value_inline_list 'project/costs/preservation/cover_how' %}		</td></tr>
+<tr><td><b>	project/costs/preservation/non_personnel	:</b></td><td> {% render_value_inline_list 'project/costs/preservation/non_personnel' %}		</td></tr>
+<tr><td><b>	project/costs/preservation/personnel	:</b></td><td> {% render_value_inline_list 'project/costs/preservation/personnel' %}		</td></tr>
+<tr><td><b>	project/costs/sensitive_data	:</b></td><td> {% render_value_inline_list 'project/costs/sensitive_data' %}		</td></tr>
+<tr><td><b>	project/costs/sensitive_data/anonymization	:</b></td><td> {% render_value_inline_list 'project/costs/sensitive_data/anonymization' %}		</td></tr>
+<tr><td><b>	project/costs/sensitive_data/anonymization/non_personnel	:</b></td><td> {% render_value_inline_list 'project/costs/sensitive_data/anonymization/non_personnel' %}		</td></tr>
+<tr><td><b>	project/costs/sensitive_data/anonymization/personnel	:</b></td><td> {% render_value_inline_list 'project/costs/sensitive_data/anonymization/personnel' %}		</td></tr>
+<tr><td><b>	project/costs/sensitive_data/security	:</b></td><td> {% render_value_inline_list 'project/costs/sensitive_data/security' %}		</td></tr>
+<tr><td><b>	project/costs/sensitive_data/security/non_personnel	:</b></td><td> {% render_value_inline_list 'project/costs/sensitive_data/security/non_personnel' %}		</td></tr>
+<tr><td><b>	project/costs/sensitive_data/security/personnel	:</b></td><td> {% render_value_inline_list 'project/costs/sensitive_data/security/personnel' %}		</td></tr>
+<tr><td><b>	project/costs/storage	:</b></td><td> {% render_value_inline_list 'project/costs/storage' %}		</td></tr>
+<tr><td><b>	project/costs/storage/non_personnel	:</b></td><td> {% render_value_inline_list 'project/costs/storage/non_personnel' %}		</td></tr>
+<tr><td><b>	project/costs/storage/personnel	:</b></td><td> {% render_value_inline_list 'project/costs/storage/personnel' %}		</td></tr>
+<tr><td><b>	project/costs/usage	:</b></td><td> {% render_value_inline_list 'project/costs/usage' %}		</td></tr>
+<tr><td><b>	project/costs/usage/non_personnel	:</b></td><td> {% render_value_inline_list 'project/costs/usage/non_personnel' %}		</td></tr>
+<tr><td><b>	project/costs/usage/personnel	:</b></td><td> {% render_value_inline_list 'project/costs/usage/personnel' %}		</td></tr>
+<tr><td><b>	project/data_management	:</b></td><td> {% render_value_inline_list 'project/data_management' %}		</td></tr>
+<tr><td><b>	project/data_management/name	:</b></td><td> {% render_value_inline_list 'project/data_management/name' %}		</td></tr>
+<tr><td><b>	project/dmp	:</b></td><td> {% render_value_inline_list 'project/dmp' %}		</td></tr>
+<tr><td><b>	project/dmp/dmp_date	:</b></td><td> {% render_value_inline_list 'project/dmp/dmp_date' %}		</td></tr>
+<tr><td><b>	project/dmp/dmp_version	:</b></td><td> {% render_value_inline_list 'project/dmp/dmp_version' %}		</td></tr>
+<tr><td><b>	project/dmp/name	:</b></td><td> {% render_value_inline_list 'project/dmp/name' %}		</td></tr>
+<tr><td><b>	project/external_services	:</b></td><td> {% render_value_inline_list 'project/external_services' %}		</td></tr>
+<tr><td><b>	project/legal_aspects	:</b></td><td> {% render_value_inline_list 'project/legal_aspects' %}		</td></tr>
+<tr><td><b>	project/legal_aspects/international_yesno	:</b></td><td> {% render_value_inline_list 'project/legal_aspects/international_yesno' %}		</td></tr>
+<tr><td><b>	project/legal_aspects/ipr	:</b></td><td> {% render_value_inline_list 'project/legal_aspects/ipr' %}		</td></tr>
+<tr><td><b>	project/legal_aspects/ipr/yesno	:</b></td><td> {% render_value_inline_list 'project/legal_aspects/ipr/yesno' %}		</td></tr>
+<tr><td><b>	project/legal_aspects/official_approval	:</b></td><td> {% render_value_inline_list 'project/legal_aspects/official_approval' %}		</td></tr>
+<tr><td><b>	project/legal_aspects/official_approval/data_access_committee	:</b></td><td> {% render_value_inline_list 'project/legal_aspects/official_approval/data_access_committee' %}		</td></tr>
+<tr><td><b>	project/legal_aspects/official_approval/ethics_committee	:</b></td><td> {% render_value_inline_list 'project/legal_aspects/official_approval/ethics_committee' %}		</td></tr>
+<tr><td><b>	project/legal_aspects/official_approval/statutatory_approval	:</b></td><td> {% render_value_inline_list 'project/legal_aspects/official_approval/statutatory_approval' %}		</td></tr>
+<tr><td><b>	project/legal_aspects/official_approval/statutatory_approval/agency	:</b></td><td> {% render_value_inline_list 'project/legal_aspects/official_approval/statutatory_approval/agency' %}		</td></tr>
+<tr><td><b>	project/legal_aspects/official_approval/statutatory_approval/conditions	:</b></td><td> {% render_value_inline_list 'project/legal_aspects/official_approval/statutatory_approval/conditions' %}		</td></tr>
+<tr><td><b>	project/legal_aspects/official_approval/statutatory_approval/title	:</b></td><td> {% render_value_inline_list 'project/legal_aspects/official_approval/statutatory_approval/title' %}		</td></tr>
+<tr><td><b>	project/legal_aspects/official_approval/statutatory_approval/yesno	:</b></td><td> {% render_value_inline_list 'project/legal_aspects/official_approval/statutatory_approval/yesno' %}		</td></tr>
+<tr><td><b>	project/legal_aspects/sensitive_data	:</b></td><td> {% render_value_inline_list 'project/legal_aspects/sensitive_data' %}		</td></tr>
+<tr><td><b>	project/legal_aspects/sensitive_data/other	:</b></td><td> {% render_value_inline_list 'project/legal_aspects/sensitive_data/other' %}		</td></tr>
+<tr><td><b>	project/legal_aspects/sensitive_data/other/yesno	:</b></td><td> {% render_value_inline_list 'project/legal_aspects/sensitive_data/other/yesno' %}		</td></tr>
+<tr><td><b>	project/legal_aspects/sensitive_data/personal_data	:</b></td><td> {% render_value_inline_list 'project/legal_aspects/sensitive_data/personal_data' %}		</td></tr>
+<tr><td><b>	project/legal_aspects/sensitive_data/personal_data/yesno	:</b></td><td> {% render_value_inline_list 'project/legal_aspects/sensitive_data/personal_data/yesno' %}		</td></tr>
+<tr><td><b>	project/legal_aspects/sensitive_data/privacy_law	:</b></td><td> {% render_value_inline_list 'project/legal_aspects/sensitive_data/privacy_law' %}		</td></tr>
+<tr><td><b>	project/legal_aspects/sensitive_data/yesno	:</b></td><td> {% render_value_inline_list 'project/legal_aspects/sensitive_data/yesno' %}		</td></tr>
+<tr><td><b>	project/other_research_output	:</b></td><td> {% render_value_inline_list 'project/other_research_output' %}		</td></tr>
+<tr><td><b>	project/other_research_output/plan	:</b></td><td> {% render_value_inline_list 'project/other_research_output/plan' %}		</td></tr>
+<tr><td><b>	project/physical_objects	:</b></td><td> {% render_value_inline_list 'project/physical_objects' %}		</td></tr>
+<tr><td><b>	project/preservation	:</b></td><td> {% render_value_inline_list 'project/preservation' %}		</td></tr>
+<tr><td><b>	project/preservation/archive	:</b></td><td> {% render_value_inline_list 'project/preservation/archive' %}		</td></tr>
+<tr><td><b>	project/preservation/archive/fair_archive	:</b></td><td> {% render_value_inline_list 'project/preservation/archive/fair_archive' %}		</td></tr>
+<tr><td><b>	project/preservation/archive/nonprofit	:</b></td><td> {% render_value_inline_list 'project/preservation/archive/nonprofit' %}		</td></tr>
+<tr><td><b>	project/preservation/archive/nonprofit/explanation	:</b></td><td> {% render_value_inline_list 'project/preservation/archive/nonprofit/explanation' %}		</td></tr>
+<tr><td><b>	project/preservation/archive/nonprofit/yesno	:</b></td><td> {% render_value_inline_list 'project/preservation/archive/nonprofit/yesno' %}		</td></tr>
+<tr><td><b>	project/preservation/archive/yesno	:</b></td><td> {% render_value_inline_list 'project/preservation/archive/yesno' %}		</td></tr>
+<tr><td><b>	project/preservation/responsible_person	:</b></td><td> {% render_value_inline_list 'project/preservation/responsible_person' %}		</td></tr>
+<tr><td><b>	project/preservation/responsible_person/name	:</b></td><td> {% render_value_inline_list 'project/preservation/responsible_person/name' %}		</td></tr>
+<tr><td><b>	project/preservation/retained	:</b></td><td> {% render_value_inline_list 'project/preservation/retained' %}		</td></tr>
+<tr><td><b>	project/preservation/selection_criteria	:</b></td><td> {% render_value_inline_list 'project/preservation/selection_criteria' %}		</td></tr>
+<tr><td><b>	project/preservation/selection_format	:</b></td><td> {% render_value_inline_list 'project/preservation/selection_format' %}		</td></tr>
+<tr><td><b>	project/research_field	:</b></td><td> {% render_value_inline_list 'project/research_field' %}		</td></tr>
+<tr><td><b>	project/research_field/title	:</b></td><td> {% render_value_inline_list 'project/research_field/title' %}		</td></tr>
+<tr><td><b>	project/research_question	:</b></td><td> {% render_value_inline_list 'project/research_question' %}		</td></tr>
+<tr><td><b>	project/research_question/keywords	:</b></td><td> {% render_value_inline_list 'project/research_question/keywords' %}		</td></tr>
+<tr><td><b>	project/research_question/title	:</b></td><td> {% render_value_inline_list 'project/research_question/title' %}		</td></tr>
+<tr><td><b>	project/schedule	:</b></td><td> {% render_value_inline_list 'project/schedule' %}		</td></tr>
+<tr><td><b>	project/schedule/project_end	:</b></td><td> {% render_value_inline_list 'project/schedule/project_end' %}		</td></tr>
+<tr><td><b>	project/schedule/project_start	:</b></td><td> {% render_value_inline_list 'project/schedule/project_start' %}		</td></tr>
+<tr><td><b>	project/support	:</b></td><td> {% render_value_inline_list 'project/support' %}		</td></tr>
+<tr><td><b>	project/support/costs	:</b></td><td> {% render_value_inline_list 'project/support/costs' %}		</td></tr>
+<tr><td><b>	project/support/yesno	:</b></td><td> {% render_value_inline_list 'project/support/yesno' %}		</td></tr>
+<tr><td><b>	project/title	:</b></td><td> {% render_value_inline_list 'project/title' %}		</td></tr>
+<tr><td><b>	project/funder	:</b></td><td> {% for funder in funders %} <br /><i>Funder {{ funder.value }}:</i> {% render_set_value_inline_list funder 'project/funder' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/funder/grant_nr	:</b></td><td> {% for funder in funders %} <br /><i>Funder {{ funder.value }}:</i> {% render_set_value_inline_list funder 'project/funder/grant_nr' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/funder/id	:</b></td><td> {% for funder in funders %} <br /><i>Funder {{ funder.value }}:</i> {% render_set_value_inline_list funder 'project/funder/id' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/funder/name	:</b></td><td> {% for funder in funders %} <br /><i>Funder {{ funder.value }}:</i> {% render_set_value_inline_list funder 'project/funder/name' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/funder/programme	:</b></td><td> {% for funder in funders %} <br /><i>Funder {{ funder.value }}:</i> {% render_set_value_inline_list funder 'project/funder/programme' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/funder/programme/title	:</b></td><td> {% for funder in funders %} <br /><i>Funder {{ funder.value }}:</i> {% render_set_value_inline_list funder 'project/funder/programme/title' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/funder/programme/url	:</b></td><td> {% for funder in funders %} <br /><i>Funder {{ funder.value }}:</i> {% render_set_value_inline_list funder 'project/funder/programme/url' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/funder/rdm_policy	:</b></td><td> {% for funder in funders %} <br /><i>Funder {{ funder.value }}:</i> {% render_set_value_inline_list funder 'project/funder/rdm_policy' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/funder/yesno	:</b></td><td> {% for funder in funders %} <br /><i>Funder {{ funder.value }}:</i> {% render_set_value_inline_list funder 'project/funder/yesno' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/partner	:</b></td><td> {% for partner in partners %} <br /><i>Partner {{ partner.value }}:</i> {% render_set_value_inline_list partner 'project/partner' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/partner/agreement	:</b></td><td> {% for partner in partners %} <br /><i>Partner {{ partner.value }}:</i> {% render_set_value_inline_list partner 'project/partner/agreement' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/partner/contact_person	:</b></td><td> {% for partner in partners %} <br /><i>Partner {{ partner.value }}:</i> {% render_set_value_inline_list partner 'project/partner/contact_person' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/partner/contact_person/name	:</b></td><td> {% for partner in partners %} <br /><i>Partner {{ partner.value }}:</i> {% render_set_value_inline_list partner 'project/partner/contact_person/name' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/partner/contact_person/phone	:</b></td><td> {% for partner in partners %} <br /><i>Partner {{ partner.value }}:</i> {% render_set_value_inline_list partner 'project/partner/contact_person/phone' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/partner/id	:</b></td><td> {% for partner in partners %} <br /><i>Partner {{ partner.value }}:</i> {% render_set_value_inline_list partner 'project/partner/id' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/partner/name	:</b></td><td> {% for partner in partners %} <br /><i>Partner {{ partner.value }}:</i> {% render_set_value_inline_list partner 'project/partner/name' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/partner/rdm_policy	:</b></td><td> {% for partner in partners %} <br /><i>Partner {{ partner.value }}:</i> {% render_set_value_inline_list partner 'project/partner/rdm_policy' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/partner/responsibilities	:</b></td><td> {% for partner in partners %} <br /><i>Partner {{ partner.value }}:</i> {% render_set_value_inline_list partner 'project/partner/responsibilities' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/collaboration_organisation	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/collaboration_organisation' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/collaboration_tools	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/collaboration_tools' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/collaboration_yesno	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/collaboration_yesno' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/control_tool	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/control_tool' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/creation_methods	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/creation_methods' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/creator	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/creator' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/creator/name	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/creator/name' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/data_analysis_end	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/data_analysis_end' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/data_analysis_start	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/data_analysis_start' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/data_cleansing_end	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/data_cleansing_end' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/data_cleansing_start	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/data_cleansing_start' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/data_collection_end	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/data_collection_end' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/data_collection_start	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/data_collection_start' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/data_publication_date	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/data_publication_date' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/data_security	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/data_security' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/data_security/access_permissions	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/data_security/access_permissions' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/data_security/backup_responsible	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/data_security/backup_responsible' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/data_security/backup_responsible/name	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/data_security/backup_responsible/name' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/data_security/backups	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/data_security/backups' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/data_security/risks	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/data_security/risks' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/data_security/security_measures	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/data_security/security_measures' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/description	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/description' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/documentation/where	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/documentation/where' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/documentation_on_request	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/documentation_on_request' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/format	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/format' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/id	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/id' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/include_software	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/include_software' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/integration	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/integration' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/interoperability	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/interoperability' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/ipr	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/ipr' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/ipr/copyrights	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/ipr/copyrights' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/ipr/other_rights	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/ipr/other_rights' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/ipr/owner	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/ipr/owner' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/ipr/owner/name	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/ipr/owner/name' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/metadata	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/metadata' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/metadata/access_info	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/metadata/access_info' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/metadata/available_without_data	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/metadata/available_without_data' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/metadata/creation	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/metadata/creation' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/metadata/creation_automatic	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/metadata/creation_automatic' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/metadata/creation_manual	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/metadata/creation_manual' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/metadata/creation_semi_automatic	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/metadata/creation_semi_automatic' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/metadata/harvesting	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/metadata/harvesting' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/metadata/license_for_metadata	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/metadata/license_for_metadata' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/metadata/mappings	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/metadata/mappings' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/metadata/public	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/metadata/public' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/metadata/quality_assurance	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/metadata/quality_assurance' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/metadata/references_to_other_data	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/metadata/references_to_other_data' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/metadata/responsible_person	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/metadata/responsible_person' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/metadata/responsible_person/name	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/metadata/responsible_person/name' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/metadata/scope	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/metadata/scope' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/metadata/search_keywords	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/metadata/search_keywords' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/metadata/standards	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/metadata/standards' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/metadata/vocabularies_open	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/metadata/vocabularies_open' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/method	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/method' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/origin	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/origin' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/pids	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/pids' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/pids/responsible_person	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/pids/responsible_person' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/pids/responsible_person/name	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/pids/responsible_person/name' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/pids/subentities	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/pids/subentities' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/pids/system	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/pids/system' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/pids/yesno	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/pids/yesno' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/preservation	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/preservation' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/preservation/access_authentication	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/preservation/access_authentication' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/preservation/certification	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/preservation/certification' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/preservation/data_archiving_date	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/preservation/data_archiving_date' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/preservation/duration	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/preservation/duration' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/preservation/embargo_period	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/preservation/embargo_period' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/preservation/purpose	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/preservation/purpose' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/preservation/repository	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/preservation/repository' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/preservation/repository_arrangements	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/preservation/repository_arrangements' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/preservation/responsible_person	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/preservation/responsible_person' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/preservation/responsible_person/email	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/preservation/responsible_person/email' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/preservation/responsible_person/name	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/preservation/responsible_person/name' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/preservation/reuse_duration	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/preservation/reuse_duration' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/preservation/trusted	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/preservation/trusted' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/preservation/yesno	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/preservation/yesno' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/provenance	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/provenance' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/provenance/content	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/provenance/content' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/provenance/standards	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/provenance/standards' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/quality_assurance	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/quality_assurance' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/rate	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/rate' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/reproducibility	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/reproducibility' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/reuse_existing	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/reuse_existing' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/reuse_scenario	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/reuse_scenario' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sensitive_data	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sensitive_data' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sensitive_data/other	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sensitive_data/other' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sensitive_data/other/description	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sensitive_data/other/description' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sensitive_data/other/yesno	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sensitive_data/other/yesno' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sensitive_data/personal_data	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sensitive_data/personal_data' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sensitive_data/personal_data/anonymization	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sensitive_data/personal_data/anonymization' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sensitive_data/personal_data/bdsg_3_9	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sensitive_data/personal_data/bdsg_3_9' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sensitive_data/personal_data/consent	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sensitive_data/personal_data/consent' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sensitive_data/personal_data/consent/extent	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sensitive_data/personal_data/consent/extent' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sensitive_data/personal_data/consent/record	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sensitive_data/personal_data/consent/record' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sensitive_data/personal_data/consent/statement	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sensitive_data/personal_data/consent/statement' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sensitive_data/personal_data/deletion	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sensitive_data/personal_data/deletion' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sensitive_data/personal_data_yesno	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sensitive_data/personal_data_yesno' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sensitive_data/personal_data_yesno/yesno	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sensitive_data/personal_data_yesno/yesno' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sharing	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sharing' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sharing/conditions	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sharing/conditions' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sharing/explanation	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sharing/explanation' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sharing/findability	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sharing/findability' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sharing/repository	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sharing/repository' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sharing/restrictions_explanation	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sharing/restrictions_explanation' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sharing/sharing_license	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sharing/sharing_license' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/sharing/yesno	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/sharing/yesno' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/size	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/size' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/size/number_files	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/size/number_files' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/size/volume	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/size/volume' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/software_documentation	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/software_documentation' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/storage	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/storage' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/storage/naming_policy	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/storage/naming_policy' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/storage/organisation_policy	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/storage/organisation_policy' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/storage/type	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/storage/type' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/storage/uri	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/storage/uri' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/structure	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/structure' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/title	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/title' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/uri	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/uri' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/usage_description	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/usage_description' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/usage_frequency	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/usage_frequency' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/usage_infrastructure	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/usage_infrastructure' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/usage_support	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/usage_support' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/usage_technology	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/usage_technology' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/versioning_strategy	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/versioning_strategy' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/versioning_tool	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/versioning_tool' %}	{% endfor %}	</td></tr>
+<tr><td><b>	project/dataset/versioning_yesno	:</b></td><td> {% for dataset in datasets %} <br /><i>Dataset {{ dataset.value }}:</i> {% render_set_value_inline_list dataset 'project/dataset/versioning_yesno' %}	{% endfor %}	</td></tr>
+</table>
