@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo created="2022-11-02T09:04:45.595640+01:00" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdmo created="2022-11-11T20:00:23.289299+01:00" xmlns:dc="http://purl.org/dc/elements/1.1/">
 	<catalog dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage">
 		<uri_prefix>https://rdmo.nfdi4ing.de/terms</uri_prefix>
 		<key>NFDI4Ing_Vorlage</key>
@@ -97,7 +97,7 @@ Die Einteilung in Datensätze hilft, den Wert der Daten hinsichtlich der potenti
 		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en">In engineering, the way in which data is created in your project can depend heavily on the individual sub-disciplines - such as electrical engineering, information technology, civil engineering, etc. Therefore this information is relevant for all types of data.</help>
-		<text lang="en">How is new data created in your project?</text>
+		<text lang="en">How does your project generate new data?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -133,7 +133,7 @@ Die Einteilung in Datensätze hilft, den Wert der Daten hinsichtlich der potenti
 		<help lang="en">&lt;p&gt;Existing data is often reused in engineering. They can form the basis of a new project or can only be used for parts of the project. This also includes data that you use to compare your data.&lt;/p&gt;
 &lt;p&gt;The sources of the reused data range from working group internal databases, e.g. for DFT calculations, to open and freely accessible databases such as Kaggle, to (openly accessible) repositories such as Zenodo or, more specifically, the Sequence Read Archive (SRA). &lt;/br&gt;
 Very often data from databases like &lt;i&gt;&lt;a href=&quot;https://www.oqmd.org/materials/&quot; target=&quot;_blank&quot;&gt;Open Quantum Materials&lt;/a&gt;&lt;/i&gt;, &lt;i&gt; &lt;a href=&quot;https://icsd.fiz-karlsruhe.de/search/basic.xhtml;jsessionid=3E38CBFD6DABF1686D0F84DBFDA12FED&quot; target=&quot;_blank&quot;&gt;Inorganic Crystal Structure Database&lt;/a&gt;&lt;/i&gt;, &lt;i&gt;&lt;a href=&quot;https://materialsproject.org/&quot; target=&quot;_blank&quot;&gt;Materials Project&lt;/a&gt;&lt;/i&gt;, &lt;i&gt;&lt;a href=&quot;https://atomwork-adv.nims.go. jp/&quot; target=&quot;_blank&quot;&gt;AtomWorkAdv.&lt;/a&gt;&lt;/i&gt; or &lt;i&gt;&lt;a href=&quot;http://webbdcrista1.ehu.es/magndata/&quot; target=&quot;_blank&quot;&gt;MAGNDATA&lt;/ a&gt;&lt;/i&gt; reused. &lt;/p&gt;</help>
-		<text lang="en">Will existing data be reused?</text>
+		<text lang="en">Is existing data reused?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -190,7 +190,7 @@ Sehr oft werden auch Daten aus Datenbanken wie &lt;i&gt;&lt;a href=&quot;https:/
 		<order>0</order>
 		<help lang="en">When choosing the file format, it is advisable to use formats that are standardized, non-proprietary and generally used in engineering. Please keep in mind that the data can be used for more than 10 years and should not lead to conflicts in collaborative use or subsequent use.  &lt;br/&gt;
 When it comes to the question of origin, the initial creation of data is meant, as well as the processing and further processing of the data during the project period.</help>
-		<text lang="en">Which data types, in terms of data formats, are created in your project?</text>
+		<text lang="en">Which data types (in terms of data formats like image data, text data or measurement data) arise in your project?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -225,7 +225,7 @@ Bei der Frage der Entstehung ist die erstmalige Erstellung von Daten gemeint, so
 		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en"/>
-		<text lang="en">How is the data processed in your project?</text>
+		<text lang="en">In what way is the data processed in your project?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -257,7 +257,7 @@ Bei der Frage der Entstehung ist die erstmalige Erstellung von Daten gemeint, so
 		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en">Please also state the unit of measure.</help>
-		<text lang="en">To what extent are these incurred for your data set or what data volume can be expected for the data set?</text>
+		<text lang="en">To what extent do these arise or what is the anticipated data volume?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -322,7 +322,7 @@ Bei der Frage der Entstehung ist die erstmalige Erstellung von Daten gemeint, so
 		<order>0</order>
 		<help lang="en">&lt;p&gt;Metadata standards are used for the structured documentation of data. Here, both general standards such as ISO or Dublin Core as well as engineering-specific standards such as Metagenomics Sequences Sample (MIMS), International Data Spaces Information Model or ACM Computing Classification are used.&lt;/p&gt;
 &lt;p&gt;If you are not using a metadata standard, please provide individual metadata for this question. These can be e.g. the device or simulation settings, the test parameters and the workflow. The software (incl. version) and the hardware also count here. Administrative metadata is also often documented, such as the date, name of the responsible scientist, the project, etc.&lt;/p&gt;</help>
-		<text lang="en">Which approaches are followed in order to describe the data in a comprehensible manner (e.g. use of existing metadata or documentation standards or ontologies)?</text>
+		<text lang="en">What approaches are being taken to describe the data in a comprehensible manner (such as the use of available metadata, documentation standards or ontologies)?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -415,7 +415,7 @@ Die Etablierung von Standards bei Methoden, bei der Anwendung von Software, der 
 		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en">The quality of the data can be secured by various measures and dependents on your engineering sub-discipline.</help>
-		<text lang="en">What measures are taken to ensure high quality of the data?</text>
+		<text lang="en">What measures are being adopted to ensure high data quality?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -450,7 +450,7 @@ Die Etablierung von Standards bei Methoden, bei der Anwendung von Software, der 
 		<order>1</order>
 		<help lang="en">&lt;p&gt;Quality controls can be done in different ways. They can be heavily dependent on your engineering sub-discipline, on your structures at the institute or in the project.&lt;/p&gt;
 &lt;p&gt;It is important that the quality control is independent of the measures taken and refers to the product &quot;data&quot;. Examples would be: through an assessment by a colleague, supervisor, data steward/ess, through a tool, checksums, or by calculating the distribution (minimum, maximum, mean value) and standard deviation, etc.&lt;/p&gt;</help>
-		<text lang="en">Are quality controls planned and if so, how?</text>
+		<text lang="en">Are quality controls in place and if so, how do they operate?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -479,7 +479,7 @@ Die Etablierung von Standards bei Methoden, bei der Anwendung von Software, der 
 		<dc:comment/>
 		<catalog dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage"/>
 		<order>2</order>
-		<title lang="en">Storage and technical backup during the project</title>
+		<title lang="en">Storage and technical archiving the project</title>
 		<title lang="de">Speicherung und technische Sicherung während des Projektverlaufs</title>
 	</section>
 	<questionset dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/storage_backup/data_storage">
@@ -514,7 +514,7 @@ Die Etablierung von Standards bei Methoden, bei der Anwendung von Software, der 
 		<order>0</order>
 		<help lang="en">&lt;p&gt;During the project, different storage locations for the actively used data may be used. &lt;u&gt;Note&lt;/u&gt; that depending on the storage location, your data is &lt;u&gt;not&lt;/u&gt; automatically secured.&lt;/p&gt;
 &lt;p&gt;You can find out which storage media have which advantages and disadvantages on &lt;i&gt;&lt;a href=&quot;https://forschungsdaten.info/themen/speichern-und-rechnen/datenspeicherung-und-die-lebensdauer-von-datentraegern/&quot; target=&quot;_blank&quot;&gt;www.forschungsdaten.info&lt;/a&gt;&lt;/i&gt;.&lt;/p&gt;</help>
-		<text lang="en">How is the data stored and backed up during the project period?</text>
+		<text lang="en">How is the data to be stored and archived throughout the project duration?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -572,7 +572,7 @@ Die Etablierung von Standards bei Methoden, bei der Anwendung von Software, der 
 If you have any questions about personal data and its security, please contact the data protection officer at your university or research institution. &lt;/p&gt;
 &lt;p&gt;In the case of industrial cooperation, the access and usage rights are usually recorded in the non-disclosure agreements. For example, restrictive rights management is implemented for data from industrial collaborations. Employees are made aware of their special rights, some of which are also recorded internally in writing in the form of contracts.&lt;br/&gt;
 If you have any questions, you can contact the &lt;i&gt;&lt;a href=&quot;https://www.nfdi.de/section-elsa/&quot; target=&quot;_blank&quot;&gt;ELSA&lt;/a&gt;&lt;/i&gt; section, for example (for ethical, legal and social aspects) of the NFDI. &lt;/p&gt;</help>
-		<text lang="en">How is the security of sensitive data guaranteed during the project period (access and usage management)?</text>
+		<text lang="en">What is in place to secure sensitive data throughout the project duration (access and usage rights)?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -603,7 +603,7 @@ Wenn Sie dazu Fragen haben, können Sie sich z.B. an die Sektion &lt;i&gt;&lt;a 
 		<dc:comment/>
 		<catalog dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage"/>
 		<order>3</order>
-		<title lang="en">Legal obligations and framework conditions</title>
+		<title lang="en">Legal obligations and conditions</title>
 		<title lang="de">Rechtliche Verpflichtungen und Rahmenbedingungen</title>
 	</section>
 	<questionset dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/rights/publication_restrictions">
@@ -642,7 +642,7 @@ Wenn Sie dazu Fragen haben, können Sie sich z.B. an die Sektion &lt;i&gt;&lt;a 
  Confidentiality related to security issues can also be a reason. You can also find more information in &lt;i&gt;&lt;a href=&quot;https://wissenschaften-integritaet.de/kodex/fertigung-von-offentlichem-zugang-zu-forschungsales/&quot; target=&quot;_blank&quot;&gt;Guideline 13 of the code on Good Scientific Practice&lt;/a&gt;&lt;/i&gt;.&lt;br/&gt;
 Please keep in mind that the data can be published after a certain blocking or embargo period and that you can also prepare this publication now.
 &lt;/p&gt;</help>
-		<text lang="en">Are there any impacts or limitations on subsequent publication or accessibility?</text>
+		<text lang="en">Do you anticipate any implications or restrictions regarding subsequent publication or accessibility?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -701,7 +701,7 @@ Bedenken Sie bitte, dass nach einer gewissen Sperr- oder Embargofrist eine Publi
 		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en">&lt;p&gt;In addition to general scientific codes, there are also engineer-specific codes, for example the „Ethical principles of the engineering profession“ or the acatech-Projekt „Responsibility in the technological sciences“. If you do not know these, the DFG's page on &lt;i&gt;&lt;a href=&quot;https://wissenschaftliche-integritaet.de/en/comments/further-links-relating-to-legal-and-ethical-frameworks/&quot; target=&quot;_blank&quot;&gt;scientific integrity&lt;/a&gt;&lt;/i&gt; will help you further. Here you will find references to laws, subject-specific comments on the guidelines and explanations as well as case studies.&lt;/p&gt;</help>
-		<text lang="en">Are there important scientific codes or professional standards that should be taken into account?</text>
+		<text lang="en">Are there any significant research codes or professional standards to be taken into account?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -757,7 +757,7 @@ Bedenken Sie bitte, dass nach einer gewissen Sperr- oder Embargofrist eine Publi
 		<help lang="en">&lt;p&gt;With a data set, the various legal aspects must be taken into account. Whether your data is subject to copyright protection, depends - among other things - on the level of originality. Information on this can be found, for example, in the &lt;i&gt;&lt;a href=&quot;https://www.rwth-aachen.de/global/show_document.asp?id=aaaaaaaaaavchxo&quot; target=&quot;_blank&quot;&gt;Information sheet on copyright protection of research data&lt;/a&gt;&lt;/i&gt; or at &lt;i&gt;&lt;a href=&quot;https://zenodo.org/record/5243232&quot; target=&quot;_blank&quot;&gt; Research Data Copyright and Licensing&lt;/a&gt;&lt;/i&gt;.&lt;br/&gt;
 You can find answers to legal questions about Open Science in the book: &lt;i&gt;&lt;a href=&quot;https://hup.sub.uni-hamburg.de/oa-pub/catalog/book/205&quot; target=&quot;_blank&quot;&gt;&quot;Rechtsfragen bei Open Science&quot;&lt;/a&gt;&lt;/i&gt; by Kreutzer and Lahmann.
 &lt;/p&gt;</help>
-		<text lang="en">How are usage and copyright aspects as well as ownership issues taken into account?</text>
+		<text lang="en">What is in place to consider aspects of use and copyright law as well as ownership issues?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -791,7 +791,7 @@ Antworten zu rechtlichen Fragen bei Open Science können Sie im Buch: &lt;i&gt;&
 		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en">Examples include: Does the legal situation in different countries have to be taken into account? Does every employee have the same access rights?</help>
-		<text lang="en">What legal peculiarities exist in connection with the handling of research data in your project?</text>
+		<text lang="en">What are the legal specifics associated with the handling of research data in your project?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -819,7 +819,7 @@ Antworten zu rechtlichen Fragen bei Open Science können Sie im Buch: &lt;i&gt;&
 		<dc:comment/>
 		<catalog dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage"/>
 		<order>4</order>
-		<title lang="en">Data exchange and permanent accessibility of data</title>
+		<title lang="en">Data exchange and long-term data accessibility</title>
 		<title lang="de">Datenaustausch und dauerhafte Zugänglichkeit der Daten</title>
 	</section>
 	<questionset dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/exchange_access/reuse">
@@ -857,7 +857,7 @@ Antworten zu rechtlichen Fragen bei Open Science können Sie im Buch: &lt;i&gt;&
 &lt;li&gt;Some data can in principle be recreated at any time. Examples of this are scientific experiment data or digital copies of analog objects (as long as the originals are not lost). The effort and costs for this can be quite considerable. With regard to the question of the need for archiving that goes beyond 10 years, the effort involved in re-creating the data should be weighed against the effort and costs of archiving in these cases.&lt;/li&gt;
 &lt;li&gt;Other data, on the other hand, cannot be collected again per se. This is the case, for example, with any kind of episodic observation, be it social science or natural science, as these depict a specific phenomenon at a specific point in time and/or place and are therefore usually not repeatable. Their value for subsequent use by others as well as the loss of long-term archiving that has not taken place or has failed is incomparably higher than that of reproducible data.&lt;/li&gt;
 &lt;/ul&gt;</help>
-		<text lang="en">Does this data set lend itself to subsequent use in other contexts?</text>
+		<text lang="en">Is this data set especially suitable for use in other contexts?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -895,7 +895,7 @@ Antworten zu rechtlichen Fragen bei Open Science können Sie im Buch: &lt;i&gt;&
 		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en"/>
-		<text lang="en">According to which criteria is this data record selected in order to make it available for subsequent use by others?</text>
+		<text lang="en">Which criteria are used to select research data to make it available for subsequent use by others?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -940,7 +940,7 @@ The importance of data publication is underscored once again by the
 &lt;/ul&gt;
 &lt;/p&gt;
 &lt;p&gt;Currently, in addition to NOMAD and Kadi4Mat, the generic repository Zenodo is also widely used.&lt;/p&gt;</help>
-		<text lang="en">When can this data set be used by third parties?</text>
+		<text lang="en">When is the research data available for use by third parties?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -1041,7 +1041,7 @@ Damit die Daten verfügbar und auffindbar bleiben, müssen diese auch über das 
 		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en"/>
-		<text lang="en">If yes, how and where?</text>
+		<text lang="en">If so, how and where?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -1075,7 +1075,7 @@ Damit die Daten verfügbar und auffindbar bleiben, müssen diese auch über das 
 		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en"/>
-		<text lang="en">Are there any blocking periods?</text>
+		<text lang="en">Are there any retention periods?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -1137,7 +1137,7 @@ Damit die Daten verfügbar und auffindbar bleiben, müssen diese auch über das 
 		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en">We recommend specifying the persons in the following form: Title; First Name, Last Name; ORCID (if any); professional position; institute; Contact details; role in the project.</help>
-		<text lang="en">Who is responsible for the adequate handling of the research data (description of the roles and responsibilities within the project)?</text>
+		<text lang="en">Who is responsible for adequate handling of the research data (description of the roles and responsibilities within the project)?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -1169,7 +1169,7 @@ Damit die Daten verfügbar und auffindbar bleiben, müssen diese auch über das 
 		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en">We recommend specifying the persons in the following form: Title; First Name, Last Name; ORCID (if any); professional position; institute; Contact details; role in the project.</help>
-		<text lang="en">Who is responsible for curating the data after the project has ended?</text>
+		<text lang="en">Who is responsible for curating the data once the project has ended?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -1222,7 +1222,7 @@ Damit die Daten verfügbar und auffindbar bleiben, müssen diese auch über das 
 		<order>0</order>
 		<help lang="en">This can involve technical or IT resources as well as expertise that is brought in, for example, by data management or IT experts.&lt;br/&gt;
 If necessary, provide more detailed information on the respective items.</help>
-		<text lang="en">What resources (costs, time or other) are required to implement adequate handling of research data in the project?</text>
+		<text lang="en">Which resources (costs; time or other) are required to implement adequate handling of research data within the project?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
