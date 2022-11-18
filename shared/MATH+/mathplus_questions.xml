@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2022-11-07T19:25:51.488056+01:00">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2022-11-18T18:10:09.309595+01:00">
 	<catalog dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus">
 		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
 		<key>mathplus</key>
@@ -10,130 +10,6 @@
 		<title lang="de">DFG</title>
 		<help lang="de"/>
 	</catalog>
-	<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general">
-		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
-		<key>general</key>
-		<path>mathplus/general</path>
-		<dc:comment/>
-		<catalog dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus"/>
-		<order>0</order>
-		<title lang="en">General</title>
-		<title lang="de">Allgemein</title>
-	</section>
-	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general/other-requirements-yesno">
-		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
-		<key>other-requirements-yesno</key>
-		<path>mathplus/general/other-requirements-yesno</path>
-		<dc:comment/>
-		<attribute/>
-		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general"/>
-		<questionset/>
-		<is_collection>False</is_collection>
-		<order>50</order>
-		<title lang="en">Requirements I</title>
-		<help lang="en">In DFG-funded projects, the &lt;a href="https://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/guidelines_research_data.pdf" target=_blank&gt;DFG Guidelines on the Handling of Research Data&lt;/a&gt; guidelines for dealing with DFG research data &lt;/a&gt; are taken into account.</help>
-		<verbose_name lang="en"/>
-		<verbose_name_plural lang="en"/>
-		<title lang="de">Anforderungen I</title>
-		<help lang="de">In DFG-geförderten Projekten sollten in jedem Falle die &lt;a href="https://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten.pdf" target=_blank&gt;Leitlinien zum Umgang mit Forschungsdaten&lt;/a&gt; der DFG beachtet werden.</help>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="de"/>
-		<conditions/>
-	</questionset>
-	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general/other-requirements-yesno/yesno">
-		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
-		<key>yesno</key>
-		<path>mathplus/general/other-requirements-yesno/yesno</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/yesno"/>
-		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general/other-requirements-yesno"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<order>0</order>
-		<help lang="en">One example of discipline-specific requirements: 
-
-- &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/guidelines_biodiversity_research.pdf" target=_blank"&gt;Guidelines on the Handling of Research Data in Biodiversity Research&lt;/a&gt;
-&lt;p /&gt;</help>
-		<text lang="en">Are there requirements regarding the data management from your scholarly/scientific community?</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<verbose_name_plural lang="en"/>
-		<help lang="de">Ein Beispiel für fachspezifische Empfehlungen und Richtlinien ist: 
-
-- &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_biodiversitaetsforschung.pdf" target=_blank"&gt;Richtlinien zum Umgang mit Forschungsdaten in der Biodiversitätsforschung&lt;/a&gt;
-&lt;p /&gt;</help>
-		<text lang="de">Gibt es von Seiten Eurer Fachcommunity Anforderungen an das Datenmanagement, die beachtet werden müssen?</text>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>radio</widget_type>
-		<value_type>boolean</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets>
-			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_requirements_options"/>
-		</optionsets>
-		<conditions/>
-	</question>
-	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general/other-requirements-requirements">
-		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
-		<key>other-requirements-requirements</key>
-		<path>mathplus/general/other-requirements-requirements</path>
-		<dc:comment/>
-		<attribute/>
-		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general"/>
-		<questionset/>
-		<is_collection>False</is_collection>
-		<order>51</order>
-		<title lang="en">Requirements II</title>
-		<help lang="en"/>
-		<verbose_name lang="en"/>
-		<verbose_name_plural lang="en"/>
-		<title lang="de">Anforderungen II</title>
-		<help lang="de"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="de"/>
-		<conditions>
-			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/additional_rdm_policy"/>
-		</conditions>
-	</questionset>
-	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general/other-requirements-requirements/requirements">
-		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
-		<key>requirements</key>
-		<path>mathplus/general/other-requirements-requirements/requirements</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/requirements"/>
-		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general/other-requirements-requirements"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<order>0</order>
-		<help lang="en">Please briefly outline them and refer to more detailed sources of information via link if necessary. Please also indicate, if the rules / guidelines are mandatory or optional.</help>
-		<text lang="en">Which are these additional requirements regarding data management?</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<verbose_name_plural lang="en"/>
-		<help lang="de">Bitte skizzieren Sie sie kurz und verweisen Sie ggf. per Link auf weiterführende Informationen. Geben Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</help>
-		<text lang="de">Welche Anforderungen an das Datenmanagement sind dies?</text>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>textarea</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
 	<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/content-classification">
 		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
 		<key>content-classification</key>
@@ -1727,6 +1603,128 @@ Eine Handreichung zum Umgang mit Schutzrechten in der Wissenschaft findet sich a
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options"/>
 		</optionsets>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>general</key>
+		<path>mathplus/general</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus"/>
+		<order>20</order>
+		<title lang="en">Possible further requirements (e.g. in interdisciplinary projects)</title>
+		<title lang="de">Mögliche weitere Anforderungen (z.B. bei interdisziplinären Projekten)</title>
+	</section>
+	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general/other-requirements-yesno">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>other-requirements-yesno</key>
+		<path>mathplus/general/other-requirements-yesno</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>50</order>
+		<title lang="en">Requirements I</title>
+		<help lang="en">In DFG-funded projects, the &lt;a href="https://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/guidelines_research_data.pdf" target=_blank&gt;DFG Guidelines on the Handling of Research Data&lt;/a&gt; guidelines for dealing with DFG research data &lt;/a&gt; are taken into account.</help>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Anforderungen I</title>
+		<help lang="de">In DFG-geförderten Projekten sollten in jedem Falle die &lt;a href="https://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten.pdf" target=_blank&gt;Leitlinien zum Umgang mit Forschungsdaten&lt;/a&gt; der DFG beachtet werden.</help>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general/other-requirements-yesno/yesno">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>yesno</key>
+		<path>mathplus/general/other-requirements-yesno/yesno</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/yesno"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general/other-requirements-yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en">One example of discipline-specific requirements: 
+
+- &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/guidelines_biodiversity_research.pdf" target=_blank"&gt;Guidelines on the Handling of Research Data in Biodiversity Research&lt;/a&gt;&lt;p /&gt;</help>
+		<text lang="en">Are there special or further requirements - beyond the MATH+ standards - regarding the data management from your scholarly/scientific community?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Ein Beispiel für fachspezifische Empfehlungen und Richtlinien ist: 
+
+- &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_biodiversitaetsforschung.pdf" target=_blank"&gt;Richtlinien zum Umgang mit Forschungsdaten in der Biodiversitätsforschung&lt;/a&gt;&lt;p /&gt;</help>
+		<text lang="de">Gibt es von Seiten Eurer Fachcommunity - über die Standards von MATH+ hinaus - weitere Anforderungen an das Datenmanagement, die beachtet werden müssen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_requirements_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general/other-requirements-requirements">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>other-requirements-requirements</key>
+		<path>mathplus/general/other-requirements-requirements</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>51</order>
+		<title lang="en">Requirements II</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Anforderungen II</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/additional_rdm_policy"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general/other-requirements-requirements/requirements">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>requirements</key>
+		<path>mathplus/general/other-requirements-requirements/requirements</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/requirements"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general/other-requirements-requirements"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en">Please briefly outline them and refer to more detailed sources of information via link if necessary. Please also indicate, if the rules / guidelines are mandatory or optional.</help>
+		<text lang="en">Which are these additional requirements regarding data management?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Bitte skizzieren Sie sie kurz und verweisen Sie ggf. per Link auf weiterführende Informationen. Geben Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</help>
+		<text lang="de">Welche Anforderungen an das Datenmanagement sind dies?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
 		<conditions/>
 	</question>
 </rdmo>
