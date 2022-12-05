@@ -13,10 +13,10 @@ Furthermore, this SMP template was inspired by some documentations, specially:
 
 # Implementing
 The catalogue uses some of the generic elements from RDMO. Therefore, all generic elements from "Conditions", "Domain", "Options" and "Questions" must already be implemented in advance.
-To use this SMP, the additional SMP elements "Condition", "Domains" and "Questions" must then be imported into the own RDMO system. The respective order can be found in the generic readme of the RDMO and must be observed.
+To use this SMP, the additional SMP elements "Condition", "Domain" and "Questions" must then be imported into the own RDMO system. The respective order is documented in the [generic Readme file of the RDMO content](https://github.com/rdmorganiser/rdmo-catalog/tree/master/rdmorganiser#readme) and must be observed.
 
 # Transferability
-This catalogue uses many custom domains, as the generic RDMO elements do not always cover the specific aspects of software. For this reason, the existing views in RDMO cannot be used for this catalogue, or only to a very limited extent.
+This catalogue introduces many custom attributes, as the generic RDMO attributes do not always cover the specific aspects of software. For this reason, the existing views in RDMO cannot be used for this catalogue, or only to a very limited extent.
 
 # Feedback
 Of course, we are always happy to receive feedback: rdmo@mpdl.mpg.de.
