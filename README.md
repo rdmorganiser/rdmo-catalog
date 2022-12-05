@@ -34,7 +34,8 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 | Emissions in animal husbandry                   | [EmiMin](shared/EmiMin/publisso_terms4life_emiminV1_questions.xml); [EmiMin (lead)](shared/EmiMin/publisso_terms4life_emimin_lead_V1_questions.xml)                                   |
 | Hessen State                                    | [HeFDI](shared/HeFDI/4_hefdi_template_questions_1.4.xml)                                                                                                                              |
 | Horizon 2020 eHumanities                        | [FAU Erlangen (questions)](shared/ub_fau_erlangen_nuernberg/h2020-ehum/ehum_h2020_fragebogen.xml); [FAU Erlangen (view)](shared/ub_fau_erlangen_nuernberg/h2020-ehum/views_h2020.xml) |
-| Mechanical Engineering                          | [NFDI4Ing](shared/nfdi4ing/rdmo_mechanical_engineering/catalog_mb_20190124.xml)                                                                                                       |
+| Mechanical Engineering                          | [NFDI4Ing](shared/nfdi4ing/rdmo_mechanical_engineering/catalog_mb_20190124.xml)
+| Software Management Plan                          | [MPDL](shared/Max-Planck-Digital-Library/Software-Management-Plan/SMP-Questions.xml)                                                                                                        |
 | VW Foundation - Science Europe                  | [FAU Erlangen](shared/ub_fau_erlangen_nuernberg/ScienceEurope_VW_Stiftung/catalog_VW_SE.xml)                                                                                          |
 
-21 catalogs shared
+22 catalogs shared
