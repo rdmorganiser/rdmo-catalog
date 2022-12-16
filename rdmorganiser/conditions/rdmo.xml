@@ -1,23 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdmo xmlns:dc="http://purl.org/dc/elements/1.1/">
-	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/embargo">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>embargo</key>
-		<dc:comment/>
-		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/embargo_period"/>
-		<relation>gt</relation>
-		<target_text>0</target_text>
-		<target_option/>
-	</condition>
-	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/repository_extern">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>repository_extern</key>
-		<dc:comment/>
-		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository"/>
-		<relation>neq</relation>
-		<target_text/>
-		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options/138"/>
-	</condition>
 	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/additional_rdm_policy">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>additional_rdm_policy</key>
@@ -27,6 +9,15 @@
 		<target_text/>
 		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/other_requirements_options/146"/>
 	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/costs_relevant">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>costs_relevant</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs"/>
+		<relation>eq</relation>
+		<target_text>1</target_text>
+		<target_option/>
+	</condition>
 	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/data_sharing">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>data_sharing</key>
@@ -35,6 +26,15 @@
 		<relation>eq</relation>
 		<target_text/>
 		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options/69"/>
+	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/embargo">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>embargo</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/embargo_period"/>
+		<relation>gt</relation>
+		<target_text>0</target_text>
+		<target_option/>
 	</condition>
 	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/infrastructure_resources">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -72,6 +72,15 @@
 		<target_text>1</target_text>
 		<target_option/>
 	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/long_term_preservation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>long_term_preservation</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation"/>
+		<relation>eq</relation>
+		<target_text>1</target_text>
+		<target_option/>
+	</condition>
 	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/other_sensitive_data">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>other_sensitive_data</key>
@@ -98,6 +107,15 @@
 		<relation>eq</relation>
 		<target_text>1</target_text>
 		<target_option/>
+	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/repository_extern">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>repository_extern</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository"/>
+		<relation>neq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options/138"/>
 	</condition>
 	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/rights_owner_clear">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
