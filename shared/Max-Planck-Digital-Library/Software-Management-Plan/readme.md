@@ -1,0 +1,3 @@
+This questionnaire was developed by the Max Planck Digital Library in the Collections area in late summer and autumn 2022. It can be used to create a software management plan in RDMO. Of course, we are always happy to receive feedback: rdmo@mpdl.mpg.de.
+
+The catalogue is available under the CC0 licence (https://creativecommons.org/share-your-work/public-domain/cc0/), so that it can be freely (re)used. Changes and adaptations by the RDMO community are of course welcome and can easily be made via GitHub.

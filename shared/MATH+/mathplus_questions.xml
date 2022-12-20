@@ -1,0 +1,1730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2022-11-18T18:10:09.309595+01:00">
+	<catalog dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>mathplus</key>
+		<dc:comment>Dieser Fragenkatalog ist eine Anpassung an die Erfordernisse der mathematischen DMP im Umfeld der Berliner Mathematik. Er basiert in großen Teilen auf dem DFG-Fragenkatalog aus dem Projekt "FoDaKo - Forschungsdatenmanagement in Kooperation" (https://github.com/rdmorganiser/rdmo-catalog/tree/master/shared/fodako). Er ist eine Teilmenge des Katalogs "RDMO" und enthält nur die Fragen, die die Anforderungen in den "Leitlinien zum Umgang mit Forschungsdaten" der DFG, http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten, abdecken. Die Fragen sind somit ausgesucht für Datenmanagementpläne, die Förderanträgen an die Deutsche Forschungsgemeinschaft (DFG) beigelegt werden sollen und keine fachspezifischen Zusatzanforderungen zu erfüllen haben.</dc:comment>
+		<order>500</order>
+		<title lang="en">DFG</title>
+		<help lang="en"/>
+		<title lang="de">DFG</title>
+		<help lang="de"/>
+	</catalog>
+	<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/content-classification">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>content-classification</key>
+		<path>mathplus/content-classification</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus"/>
+		<order>1</order>
+		<title lang="en">Content classification</title>
+		<title lang="de">Inhaltliche Einordnung</title>
+	</section>
+	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/content-classification/data-dataset">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>data-dataset</key>
+		<path>mathplus/content-classification/data-dataset</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/content-classification"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>1</order>
+		<title lang="en">Datasets</title>
+		<help lang="en">The following questions collect information on the data that is used in the project. What are research data anyway? A more theoretical overview can be found here: &lt;a href="https://library.leeds.ac.uk/info/14062/research_data_management/61/research_data_management_explained"&gt;https://library.leeds.ac.uk/info/14062/research_data_management/61/research_data_management_explained&lt;/a&gt;. A very rough estimate would be that anything I use my mathematics on is research data.</help>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Datensätze</title>
+		<help lang="de">Die nächsten zwei Fragen dienen zur Beschreibung der Datensätze, die im Projekt erzeugt oder verwendet werden.
+Was sind eigentlich Forschungsdaten? Eine eher theoretische Übersicht findet man hier: &lt;a href="https://www.forschungsdaten.org/index.php/Forschungsdaten"&gt;https://www.forschungsdaten.org/index.php/Forschungsdaten&lt;/a&gt;. Prinzipiell sind Forschungsdaten alles, worauf ich meine Mathematik anwende.</help>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/content-classification/data-dataset/description">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>description</key>
+		<path>mathplus/content-classification/data-dataset/description</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/description"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/content-classification/data-dataset"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">Please briefly describe the data type and / or the method used to create or collect the data, for example: 
+
+* SPSS data - quantitative online survey 
+
+* 3D model / digital reconstruction of a stone age settlement 
+
+* Software developed within the project
+
+* Trained Neural Networks</help>
+		<text lang="en">What kind of dataset is it?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Bitte beschreiben Sie hier kurz, um welche Art von Daten es sich handelt und mit welcher Methode die Daten erhoben oder erstellt wurden, z.B.: 
+
+* SPSS Datensatz - quantitative Online-Befragung 
+
+* 3D-Modell / digitale Rekonstruktion einer steinzeitlichen Siedlung 
+
+* Software, die im Projekt entwickelt wird
+
+* Trained Neural Networks</help>
+		<text lang="de">Um was für einen Datensatz handelt es sich?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/content-classification/data-existing_data">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>data-existing_data</key>
+		<path>mathplus/content-classification/data-existing_data</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/content-classification"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>2</order>
+		<title lang="en">Data origin</title>
+		<help lang="en"/>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Datenursprung</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/content-classification/data-existing_data/origin">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>origin</key>
+		<path>mathplus/content-classification/data-existing_data/origin</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/content-classification/data-existing_data"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en"/>
+		<text lang="en">Is the dataset being created or re-used?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wird der Datensatz selbst erzeugt oder nachgenutzt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/content-classification/data-existing_data/creator_name">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>creator_name</key>
+		<path>mathplus/content-classification/data-existing_data/creator_name</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator/name"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/content-classification/data-existing_data"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en"/>
+		<text lang="en">If re-used, who created the dataset?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wenn nachgenutzt, wer hat den Datensatz erzeugt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/content-classification/data-existing_data/uri">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>uri</key>
+		<path>mathplus/content-classification/data-existing_data/uri</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/uri"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/content-classification/data-existing_data"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en"/>
+		<text lang="en">If re-used, under which address, PID or URL can the dataset be found?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wenn nachgenutzt, unter welcher Adresse, PID oder URL ist der Datensatz verfügbar?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/technical-classification">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>technical-classification</key>
+		<path>mathplus/technical-classification</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus"/>
+		<order>2</order>
+		<title lang="en">Technical classification</title>
+		<title lang="de">Technische Einordnung</title>
+	</section>
+	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/technical-classification/data-volume">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>data-volume</key>
+		<path>mathplus/technical-classification/data-volume</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/technical-classification"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>2</order>
+		<title lang="en">Data size</title>
+		<help lang="en"/>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Datengröße</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/technical-classification/data-volume/volume">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>volume</key>
+		<path>mathplus/technical-classification/data-volume/volume</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/size/volume"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/technical-classification/data-volume"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en"/>
+		<text lang="en">What is the actual or expected size of the dataset?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Was ist die tatsächliche oder erwartete Größe des Datensatzes?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>float</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_size_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/technical-classification/data-volume/rate">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>rate</key>
+		<path>mathplus/technical-classification/data-volume/rate</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/rate"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/technical-classification/data-volume"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">Optional. This is only of concern if the data production rate reaches TB scale.</help>
+		<text lang="en">How much data is produced per year?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Optional. Dies ist nur relevant, wenn das Wachstum die TB-Größenordnung erreicht.</help>
+		<text lang="de">Wie hoch ist die erwartete Erzeugungsrate der Daten pro Jahr?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>integer</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/technical-classification/data-formats">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>data-formats</key>
+		<path>mathplus/technical-classification/data-formats</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/technical-classification"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>3</order>
+		<title lang="en">Formats</title>
+		<help lang="en"/>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Formate</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/technical-classification/data-formats/format">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>format</key>
+		<path>mathplus/technical-classification/data-formats/format</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/format"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/technical-classification/data-formats"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>4</order>
+		<help lang="en">When choosing a data format, one should consider the consequences for collaborative use, long-term preservation as well as re-use. It is advisable to prefer formats that are standardised, open, non-proprietary and well-established in the respective scholarly community. &lt;i&gt;Some examples here would be nice &lt;/i&gt;</help>
+		<text lang="en">Which file formats are used?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Bei der Wahl des Dateiformates sollten auch die Konsequenzen für die kollaborative Nutzung, die Langzeitarchivierung sowie die Nachnutzung beachtet werden. Es empfiehlt sich, möglichst standardisierte, nicht-proprietäre und allgemein bzw. in der spezifischen Community verbreitete Formate zu nutzen. &lt;i&gt; Hier ein paar Beispiele einfügen &lt;/i&gt;</help>
+		<text lang="de">In welchen Formaten liegen die Daten vor?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/technical-classification/data-tools">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>data-tools</key>
+		<path>mathplus/technical-classification/data-tools</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/technical-classification"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>4</order>
+		<title lang="en">Tools</title>
+		<help lang="en"/>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Werkzeuge</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/technical-classification/data-tools/creation_methods">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>creation_methods</key>
+		<path>mathplus/technical-classification/data-tools/creation_methods</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creation_methods"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/technical-classification/data-tools"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">This information is necessary to be able to reconstruct the process by which the data was generated.</help>
+		<text lang="en">Which tools, software, technologies or processes are used to generate or collect the data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Diese Informationen sind für alle Arten von Daten relevant, um ihre Genese nachvollziehen zu können.</help>
+		<text lang="de">Welche Instrumente, Software, Technologien oder Verfahren werden zur Erzeugung oder Erfassung der Daten genutzt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/technical-classification/data-tools/usage_technology">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>usage_technology</key>
+		<path>mathplus/technical-classification/data-tools/usage_technology</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_technology"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/technical-classification/data-tools"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">To be able to re-use data maybe the software, equipment and knowledge about special methods to use the data are required. If you have the possibility to choose from various options, bear in mind the recommendation is: the more standardised, open and established, the better for re-use.</help>
+		<text lang="en">Which software, processes or technologies are necessary to use the data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Um Daten nachnutzen zu können, werden neben den Daten selbst unter Umständen auch die Software, Geräte etc. und das Wissen über spezielle Verfahren zur Nutzung benötigt. Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablierter diese sind, desto einfacher ist i.d.R. eine Nachnutzung möglich.</help>
+		<text lang="de">Welche Software, Verfahren oder Technologien sind notwendig, um die Daten zu nutzen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/technical-classification/data-tools/documentation">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>documentation</key>
+		<path>mathplus/technical-classification/data-tools/documentation</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/software_documentation"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/technical-classification/data-tools"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en"/>
+		<text lang="en">Is documentation about relevant software needed to use the data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Ist zur Interpretation der Daten spezielle Software nötig, deren Dokumentation zur Verfügung gestellt werden kann?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>data-usage</key>
+		<path>mathplus/data-usage</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus"/>
+		<order>3</order>
+		<title lang="en">Data usage</title>
+		<title lang="de">Datennutzung</title>
+	</section>
+	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-storage-and-security-storage">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>data-storage-and-security-storage</key>
+		<path>mathplus/data-usage/data-storage-and-security-storage</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>11</order>
+		<title lang="en">Data organisation</title>
+		<help lang="en"/>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Datenorganisation</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-storage-and-security-storage/access_permissions">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>access_permissions</key>
+		<path>mathplus/data-usage/data-storage-and-security-storage/access_permissions</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/access_permissions"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-storage-and-security-storage"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">e.g. project members, partners of the project, only in-house, external partners</help>
+		<text lang="en">Who is allowed to access the dataset?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">z.B. Projektmitglieder, Projektpartner, nur Interne, externe Partner</help>
+		<text lang="de">Wer darf auf den Datensatz zugreifen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-storage-and-security-storage/type">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>type</key>
+		<path>mathplus/data-usage/data-storage-and-security-storage/type</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage/type"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-storage-and-security-storage"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">Ideally, there is a shared folder in your working group where the data sets and related documentation are stored. If not, now would be a good time to set one up.</help>
+		<text lang="en">Where is the dataset stored during the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Idealerweise gibt es in Eurer Arbeitsgruppe ein gemeinsam genutzten Ordner, in dem die Datensätze und zugehörige Dokumentation gespeichert werden. Wenn nicht, wäre das jetzt ein guter Zeitpunkt, einen einzurichten.</help>
+		<text lang="de">Wo wird der Datensatz während des Projektes gespeichert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-storage-and-security-storage/backups">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>backups</key>
+		<path>mathplus/data-usage/data-storage-and-security-storage/backups</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backups"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-storage-and-security-storage"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">This question refers to backups while the data is being worked with. Questions of long-term preservation will be adressed in the respective section.</help>
+		<text lang="en">How and how often will backups of the data be created?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Die Frage bezieht sich auf Backups während der Zeit, in denen mit den Daten gearbeitet wird. Fragen der Langzeitarchivierung werden gesondert im entsprechenden Abschnitt behandelt.</help>
+		<text lang="de">Wie und wie oft werden Backups der Daten erstellt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-storage-and-security-storage/name">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>name</key>
+		<path>mathplus/data-usage/data-storage-and-security-storage/name</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backup_responsible/name"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-storage-and-security-storage"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en">A department or functional unit such as ITDS could also be entered here. In another line, you could then name the software used and, if you want to make it really elegant, the backup regime (daily, weekly, incremental, full, ...).</help>
+		<text lang="en">Who is responsible for the backups?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Hier könnte auch eine Abteilung oder Funktionseinheit wie etwa ITDS stehen. In einer weiteren Zeile könnte man dann die eingesetzte Software nennen und wenn es ganz elegant werden soll auch noch das Backupregime (täglich, wöchentlich, inkrementell, full, ...)</help>
+		<text lang="de">Wer ist verantwortlich für die Erstellung der Backups?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-storage-and-security-storage/security_measures">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>security_measures</key>
+		<path>mathplus/data-usage/data-storage-and-security-storage/security_measures</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/security_measures"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-storage-and-security-storage"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>4</order>
+		<help lang="en">This is more of an awareness-raising request than a question. It is definitely worth thinking about, especially if you are dealing with data from real people.</help>
+		<text lang="en">Have you thought about taking data security and sefety measures (e.g. protection against unauthorised access, data recovery, transfer of sensitive data)? If so, which ones?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Das ist mehr ein Sensibilisierungswunsch als eine Frage. Es lohnt sich durchaus, sich darüber Gedanken zu machen, speziell, wenn Ihr mit personenbezogenen Daten umgeht.</help>
+		<text lang="de">Habt Ihr dran gedacht, Maßnahmen zur Datensicherheit zu treffen (z. B. Schutz vor unbefugtem Zugriff, Datenwiederherstellung, Übertragung sensibler Daten)? Wenn ja, welche?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-sharing-and-re-use-publication">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>data-sharing-and-re-use-publication</key>
+		<path>mathplus/data-usage/data-sharing-and-re-use-publication</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>52</order>
+		<title lang="en">Data sharing and re-use</title>
+		<help lang="en"/>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Weitergabe und Veröffentlichung</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-sharing-and-re-use-publication/yesno">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>yesno</key>
+		<path>mathplus/data-usage/data-sharing-and-re-use-publication/yesno</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/yesno"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-sharing-and-re-use-publication"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en"/>
+		<text lang="en">Will this dataset be published or shared?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Soll dieser Datensatz veröffentlicht oder geteilt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-sharing-and-re-use-publication/Repository">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>Repository</key>
+		<path>mathplus/data-usage/data-sharing-and-re-use-publication/Repository</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-sharing-and-re-use-publication"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">Do you already have a place for your data? This could be one of the institutional repositories, like &lt;a href="https://www.depositonce.tu-berlin.de/"&gt;DepositOnce&lt;/a&gt; or &lt;a href="https://refubium.fu-berlin.de/"&gt;ReFuBium&lt;/a&gt;.
+If you are looking for a discipline specific repository please give &lt;a href="https://www.re3data.org/"&gt;Re3Data&lt;/a&gt; a try.
+If you don't find a suitable repository, there are always the generic repos like &lt;a href="https://datadryad.org/"&gt;Dryad&lt;/a&gt; oder &lt;a href="https://zenodo.org/"&gt;Zenodo&lt;/a&gt;.</help>
+		<text lang="en">Where will your data be published?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Gibt es bereits einen Platz für die Daten? Das könnte eines der institutionellen Repositorien sein, wie etwa &lt;a href="https://www.depositonce.tu-berlin.de/"&gt;DepositOnce&lt;/a&gt; oder &lt;a href="https://refubium.fu-berlin.de/"&gt;ReFuBium&lt;/a&gt;.
+Bei der Suche nach einem disziplinspezifischen Repositorium hilft &lt;a href="https://www.re3data.org/"&gt;Re3Data&lt;/a&gt;.
+Wenn auch da nichts passendes dabei sein sollte, gibt es immer noch die generischen Forschungsdatenrepositorien wie etwa &lt;a href="https://datadryad.org/"&gt;Dryad&lt;/a&gt; oder &lt;a href="https://zenodo.org/"&gt;Zenodo&lt;/a&gt;.</help>
+		<text lang="de">Wo sollen die Daten veröffentlicht werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.mathplus.de/terms/options/choose_repo"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-sharing-and-re-use-publication/uri">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>uri</key>
+		<path>mathplus/data-usage/data-sharing-and-re-use-publication/uri</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/uri"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-sharing-and-re-use-publication"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en"/>
+		<text lang="en">Here you can place the link to your published data (URL, DOI, ...)</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Hier kann der Link zu den veröffentlichten Daten angegeben werden (URL, DOI, ...)</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-sharing-and-re-use-publication/data_publication_date">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>data_publication_date</key>
+		<path>mathplus/data-usage/data-sharing-and-re-use-publication/data_publication_date</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_publication_date"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-sharing-and-re-use-publication"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>4</order>
+		<help lang="en"/>
+		<text lang="en">When will the data be published (if they are)?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wann (wenn überhaupt) sollen die Daten veröffentlicht werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>date</widget_type>
+		<value_type>datetime</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/data_sharing"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-sharing-and-re-use-publication/explanation">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>explanation</key>
+		<path>mathplus/data-usage/data-sharing-and-re-use-publication/explanation</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/explanation"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-sharing-and-re-use-publication"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>5</order>
+		<help lang="en"/>
+		<text lang="en">If not, please give two or three key points why not, distinguishing between legal or contractual reasons and voluntary restrictions.</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wenn nicht, gib bitte zwei, drei Stichpunkte warum nicht und unterscheide dabei zwischen rechtlichen oder vertraglichen Gründen und freiwilligen Einschränkungen.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-sharing-and-re-use-publication/conditions">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>conditions</key>
+		<path>mathplus/data-usage/data-sharing-and-re-use-publication/conditions</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/conditions"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/data-sharing-and-re-use-publication"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>6</order>
+		<help lang="en">In the sciences, attribution has always been a matter of course. The choices here are based on licences in the &lt;a href="http://de.creativecommons.org/" target=_blank"&gt;Creative Commons family&lt;/a&gt;, where this would correspond to CC BY.</help>
+		<text lang="en">If yes, under which terms of use or license will the dataset be published or shared?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Im Wissenschaftsbereich ist schon immer die Namensnennung selbstverständlich. Die Auswahlmöglichkeiten orientieren sich hier an Lizenzen der &lt;a href="http://de.creativecommons.org/" target=_blank"&gt;Creative-Commons-Familie&lt;/a&gt;, wo das dem CC BY entsprechen würde.</help>
+		<text lang="de">Wenn ja, unter welchen Nutzungsbedingungen oder welcher Lizenz sollen die Daten veröffentlicht bzw. geteilt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/costs_matter">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>costs_matter</key>
+		<path>mathplus/data-usage/costs_matter</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs"/>
+		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>60</order>
+		<title lang="en">Costs for data handling</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Kosten für Datenhandhabung</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/costs_matter/costs_relevant">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>costs_relevant</key>
+		<path>mathplus/data-usage/costs_matter/costs_relevant</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/costs_matter"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en">If this is an initial proposal or your working group is responsible or any costs you create by handling your data, you should choose "Yes" and answer the following questions. If money is of no concern in your project hit "No" and the questionaire will skip the money part.</help>
+		<text lang="en">Does it matter if the data of your project handling induces costs?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Bei einem Erstantrag oder wenn Eure AG verantwortlich ist für Kosten, die möglicherweise im Zuge des Forschungsdatenmanagements entstehen, solltest Du "Ja" wählen und die dann folgenden Fragen dieses Abschnitts beantworten. Falls Geld für Datenhandhabung keine Rolle spielt, einfach "Nein" anklicken. Das Interview springt dann zum nächsten Abschnitt.</help>
+		<text lang="de">Spielen die möglicherweise entstehenden Kosten bei der Datenhandhabung eine Rolle?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/yes_with_text_no"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/costs-dataset">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>costs-dataset</key>
+		<path>mathplus/data-usage/costs-dataset</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>70</order>
+		<title lang="en">Costs</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Kosten</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/costs_relevant"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/costs-dataset/creation_personnel">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>creation_personnel</key>
+		<path>mathplus/data-usage/costs-dataset/creation_personnel</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/creation/personnel"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/costs-dataset"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">Please estimate the effort in person months.</help>
+		<text lang="en">What are the personnel costs for data management associated with the creation or acquisition of data in the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten ( 1 PM = Monatsarbeitszeit eines Vollzeitbeschäftigten).</help>
+		<text lang="de">Welcher Personalaufwand für das Datenmanagement entsteht im Rahmen der Erhebung, Erstellung oder Akquise der Daten im Projekt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>range</widget_type>
+		<value_type>float</value_type>
+		<maximum>12.0</maximum>
+		<minimum>0.0</minimum>
+		<step>0.1</step>
+		<unit>PM</unit>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/costs-dataset/creation_non_personnel">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>creation_non_personnel</key>
+		<path>mathplus/data-usage/costs-dataset/creation_non_personnel</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/creation/non_personnel"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/costs-dataset"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">Please estimate the effort in **Euro**.</help>
+		<text lang="en">What is the amount of non-personnel-costs for data management associated with the creation or acquisiton of data in the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Bitte schätzen sie die Kosten in **Euro**.</help>
+		<text lang="de">Welche Sachkosten für das Datenmanagement entstehen im Rahmen der Erhebung, Erstellung oder Akquise der Daten im Projekt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>float</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit>Euro</unit>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/additional_rdm_policy"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/costs-dataset/usage_personnel">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>usage_personnel</key>
+		<path>mathplus/data-usage/costs-dataset/usage_personnel</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/usage/personnel"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/costs-dataset"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en">Please estimate the effort in person months.</help>
+		<text lang="en">What are the personnel costs for data management associated with the the usage of data in the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten. (1 PM = Monatsarbeitszeit eines Vollzeitbeschäftigten)</help>
+		<text lang="de">Welcher Personalaufwand für das Datenmanagement entsteht im Zusammenhang mit der Nutzung der Daten im Projekt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>range</widget_type>
+		<value_type>float</value_type>
+		<maximum>12.0</maximum>
+		<minimum>0.0</minimum>
+		<step>0.1</step>
+		<unit>PM</unit>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/costs-dataset/usage_non_personnel">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>usage_non_personnel</key>
+		<path>mathplus/data-usage/costs-dataset/usage_non_personnel</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/usage/non_personnel"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/costs-dataset"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>4</order>
+		<help lang="en">Please estimate the costs in **Euro**.</help>
+		<text lang="en">What is the amount of non-personnel-costs for data management associated with the usage of data in the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Bitte schätzen sie die Kosten in **Euro**.</help>
+		<text lang="de">Welche Sachkosten für das Datenmanagement entstehen im Zusammenhang mit der Nutzung der Daten im Projekt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>float</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit>Euro</unit>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/costs-dataset/storage_personnel">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>storage_personnel</key>
+		<path>mathplus/data-usage/costs-dataset/storage_personnel</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/storage/personnel"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/costs-dataset"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>5</order>
+		<help lang="en">Please estimate the effort in person months.</help>
+		<text lang="en">What are the personnel costs associated with data storage and data security in the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten. (1 PM = Monatsarbeitszeit eines Vollzeitbeschäftigten)</help>
+		<text lang="de">Welcher Personalaufwand entsteht im Zusammenhang mit der Speicherung der Daten und Maßnahmen zur Datensicherheit während des Projektes?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>range</widget_type>
+		<value_type>float</value_type>
+		<maximum>12.0</maximum>
+		<minimum>0.0</minimum>
+		<step>0.1</step>
+		<unit>PM</unit>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/costs-dataset/storage_non_personnel">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>storage_non_personnel</key>
+		<path>mathplus/data-usage/costs-dataset/storage_non_personnel</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/storage/non_personnel"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/data-usage/costs-dataset"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>6</order>
+		<help lang="en">Please estimate the costs in **Euro**.</help>
+		<text lang="en">What is the amount of non-personnel costs associated with the storage of the data sets during the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Bitte schätzen sie die Kosten in **Euro**.</help>
+		<text lang="de">Welche Sachkosten entstehen im Zusammenhang mit der Speicherung der Datensätze während des Projektes?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>float</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit>Euro</unit>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/legal-and-ethics">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>legal-and-ethics</key>
+		<path>mathplus/legal-and-ethics</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus"/>
+		<order>5</order>
+		<title lang="en">Legal and ethics</title>
+		<title lang="de">Rechtliche und ethische Fragen</title>
+	</section>
+	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/legal-and-ethics/sensitive-data-personal_data_yesno">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>sensitive-data-personal_data_yesno</key>
+		<path>mathplus/legal-and-ethics/sensitive-data-personal_data_yesno</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/legal-and-ethics"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>21</order>
+		<title lang="en">Personal data</title>
+		<help lang="en"/>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Personenbezogene Daten</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/legal-and-ethics/sensitive-data-personal_data_yesno/yesno">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>yesno</key>
+		<path>mathplus/legal-and-ethics/sensitive-data-personal_data_yesno/yesno</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data_yesno/yesno"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/legal-and-ethics/sensitive-data-personal_data_yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">The EU General Data Protection Regulation (GDPR) defines in Art. 4 personal data as "any information relating to an identified or identifiable natural person". An identifiable natural person is "one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person".</help>
+		<text lang="en">Does this dataset contain personal data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Die EU Datenschutz-Grundverordnung (DSGVO) definiert in Art. 4 personenbezogene Daten als "alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen". Als identifizierbar wird "eine natürliche Person angesehen, die direkt oder indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind".</help>
+		<text lang="de">Enthält dieser Datensatz personenbezogene Daten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/legal-and-ethics/sensitive-data-personal_data">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>sensitive-data-personal_data</key>
+		<path>mathplus/legal-and-ethics/sensitive-data-personal_data</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/legal-and-ethics"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>24</order>
+		<title lang="en">Sensitive data</title>
+		<help lang="en"/>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Sensible Daten</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/personal_data"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/legal-and-ethics/sensitive-data-personal_data/anonymization">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>anonymization</key>
+		<path>mathplus/legal-and-ethics/sensitive-data-personal_data/anonymization</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/anonymization"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/legal-and-ethics/sensitive-data-personal_data"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en"/>
+		<text lang="en">Will the data be anonymised or pseudonymised?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Werden die Daten anonymisiert oder pseudonymisiert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_anonymisation"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/legal-and-ethics/intellectual-property-rights-yesno">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>intellectual-property-rights-yesno</key>
+		<path>mathplus/legal-and-ethics/intellectual-property-rights-yesno</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/legal-and-ethics"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>30</order>
+		<title lang="en">Intellectual property rights I</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Urheber- oder verwandte Schutzrechte I</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/legal-and-ethics/intellectual-property-rights-yesno/yesno">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>yesno</key>
+		<path>mathplus/legal-and-ethics/intellectual-property-rights-yesno/yesno</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ipr/yesno"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/legal-and-ethics/intellectual-property-rights-yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en">Data or software may be subject to copyright or other protective rights. Works of literature, science and art that constitute a "personal intellectual creation" are usually protected by copyright.&lt;br /&gt;
+Pure data, e.g. &lt;b&gt;measurement data or survey data,&lt;/b&gt; but also metadata (except for "descriptive" metadata, if applicable), on the other hand, are &lt;b&gt;not eligible&lt;/b&gt; for protection.&lt;p /&gt;
+A handout on dealing with intellectual property rights in science can be found on the Federal Government's website at &lt;a href="https://www.bundesregierung.de/breg-de/service/publikationen/copyright-in-academic-work-1753436"&gt;https://www.bundesregierung.de/breg-de/service/publikationen/copyright-in-academic-work-1753436&lt;/a&gt;</help>
+		<text lang="en">Does the project use and/or produce data that is protected by intellectual or industrial property rights?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Daten oder Software können Urheber- oder anderen Schutzrechten unterliegen. Werke der Literatur, Wissenschaft und Kunst, die eine „persönliche geistige Schöpfung“ darstellen, sind in der Regel urheberrechtlich geschützt.&lt;br /&gt;
+Reine Daten, z.B. &lt;b&gt;Messdaten oder Surveydaten,&lt;/b&gt; aber auch Metadaten (bis auf ggf. „beschreibende“ Metadaten) sind hingegen &lt;b&gt;nicht schutzfähig.&lt;/b&gt;&lt;p /&gt;
+Eine Handreichung zum Umgang mit Schutzrechten in der Wissenschaft findet sich auf den Seiten der Bundesregierung unter &lt;a href="https://www.bundesregierung.de/breg-de/service/publikationen/urheberrecht-in-der-wissenschaft-1682304"&gt;https://www.bundesregierung.de/breg-de/service/publikationen/urheberrecht-in-der-wissenschaft-1682304&lt;/a&gt;</help>
+		<text lang="de">Werden Daten genutzt und/oder erstellt, die durch Urheber- oder verwandte Schutzrechte geschützt sind?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/legal-and-ethics/intellectual-property-rights-dataset">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>intellectual-property-rights-dataset</key>
+		<path>mathplus/legal-and-ethics/intellectual-property-rights-dataset</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/legal-and-ethics"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>31</order>
+		<title lang="en">Intellectual property rights II</title>
+		<help lang="en"/>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Urheber- oder verwandte Schutzrechte II</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/intellectual_property_rights"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/legal-and-ethics/intellectual-property-rights-dataset/copyrights">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>copyrights</key>
+		<path>mathplus/legal-and-ethics/intellectual-property-rights-dataset/copyrights</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/copyrights"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/legal-and-ethics/intellectual-property-rights-dataset"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en"/>
+		<text lang="en">Does copyright law apply to this dataset?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Be- oder entstehen an diesem Datensatz Urheberrechte?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_copyright_laws"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/legal-and-ethics/intellectual-property-rights-dataset/other_rights">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>other_rights</key>
+		<path>mathplus/legal-and-ethics/intellectual-property-rights-dataset/other_rights</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/other_rights"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/legal-and-ethics/intellectual-property-rights-dataset"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en"/>
+		<text lang="en">Do other intellectual property rights apply to this dataset?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Be- oder entstehen an diesem Datensatz andere Schutzrechte?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_other_rights"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/storage-and-long-term-preservation">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>storage-and-long-term-preservation</key>
+		<path>mathplus/storage-and-long-term-preservation</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus"/>
+		<order>10</order>
+		<title lang="en">Long Term Availability</title>
+		<title lang="de">Langfristige Verfügbarkeit</title>
+	</section>
+	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/storage-and-long-term-preservation/long-term-preservation-datasets_necessary">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>long-term-preservation-datasets_necessary</key>
+		<path>mathplus/storage-and-long-term-preservation/long-term-preservation-datasets_necessary</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/storage-and-long-term-preservation"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>11</order>
+		<title lang="en">Long-term preservation</title>
+		<help lang="en">The DFG expects primary data that is the basis of a publication to be stored in the researcher's own institution or an appropriate nationwide infrastructure long-term (for at least 10 years).</help>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Langzeitarchivierung</title>
+		<help lang="de">Die DFG erwartet, dass Primärdaten, die Grundlage einer Publikation sind, langfristig (für mindestens 10 Jahre) in der eigenen Einrichtung  oder in einer fachlich einschlägigen, überregionalen Infrastruktur gespeichert werden.</help>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/storage-and-long-term-preservation/long-term-preservation-datasets_necessary/yesno">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>yesno</key>
+		<path>mathplus/storage-and-long-term-preservation/long-term-preservation-datasets_necessary/yesno</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/storage-and-long-term-preservation/long-term-preservation-datasets_necessary"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en"/>
+		<text lang="en">Does this dataset have to preserved for the long-term?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Muss dieser Datensatz langfristig aufbewahrt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/yes_with_text_no"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/storage-and-long-term-preservation/long-term-preservation-datasets">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>long-term-preservation-datasets</key>
+		<path>mathplus/storage-and-long-term-preservation/long-term-preservation-datasets</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/storage-and-long-term-preservation"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>20</order>
+		<title lang="en">Long-term preservation</title>
+		<help lang="en">The DFG expects primary data that is the basis of a publication to be stored in the researcher's own institution or an appropriate nationwide infrastructure long-term (for at least 10 years).</help>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Langzeitarchivierung</title>
+		<help lang="de">Die DFG erwartet, dass Primärdaten, die Grundlage einer Publikation sind, langfristig (für mindestens 10 Jahre) in der eigenen Einrichtung  oder in einer fachlich einschlägigen, überregionalen Infrastruktur gespeichert werden.</help>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/long_term_preservation"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/storage-and-long-term-preservation/long-term-preservation-datasets/purpose">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>purpose</key>
+		<path>mathplus/storage-and-long-term-preservation/long-term-preservation-datasets/purpose</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/purpose"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/storage-and-long-term-preservation/long-term-preservation-datasets"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en"/>
+		<text lang="en">What are the reasons this dataset has to be preserved for the long-term?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Aus welchen Gründen müssen die Daten langfristig aufbewahrt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_motivation_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/storage-and-long-term-preservation/long-term-preservation-datasets/duration">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>duration</key>
+		<path>mathplus/storage-and-long-term-preservation/long-term-preservation-datasets/duration</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/duration"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/storage-and-long-term-preservation/long-term-preservation-datasets"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en"/>
+		<text lang="en">How long will the data be stored?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wie lange müssen die Daten aufbewahrt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/storage-and-long-term-preservation/long-term-preservation-datasets/repository">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>repository</key>
+		<path>mathplus/storage-and-long-term-preservation/long-term-preservation-datasets/repository</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/storage-and-long-term-preservation/long-term-preservation-datasets"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>5</order>
+		<help lang="en"/>
+		<text lang="en">Where will the data (including metadata, documentation and, if applicable, relevant code) be stored or archived after the end of the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wo werden die Daten (einschließlich Metadaten, Dokumentation und ggf. relevantem Code bzw. relevanter Software) nach Projektende gespeichert bzw. archiviert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>general</key>
+		<path>mathplus/general</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus"/>
+		<order>20</order>
+		<title lang="en">Possible further requirements (e.g. in interdisciplinary projects)</title>
+		<title lang="de">Mögliche weitere Anforderungen (z.B. bei interdisziplinären Projekten)</title>
+	</section>
+	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general/other-requirements-yesno">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>other-requirements-yesno</key>
+		<path>mathplus/general/other-requirements-yesno</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>50</order>
+		<title lang="en">Requirements I</title>
+		<help lang="en">In DFG-funded projects, the &lt;a href="https://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/guidelines_research_data.pdf" target=_blank&gt;DFG Guidelines on the Handling of Research Data&lt;/a&gt; guidelines for dealing with DFG research data &lt;/a&gt; are taken into account.</help>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Anforderungen I</title>
+		<help lang="de">In DFG-geförderten Projekten sollten in jedem Falle die &lt;a href="https://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten.pdf" target=_blank&gt;Leitlinien zum Umgang mit Forschungsdaten&lt;/a&gt; der DFG beachtet werden.</help>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general/other-requirements-yesno/yesno">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>yesno</key>
+		<path>mathplus/general/other-requirements-yesno/yesno</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/yesno"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general/other-requirements-yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en">One example of discipline-specific requirements: 
+
+- &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/guidelines_biodiversity_research.pdf" target=_blank"&gt;Guidelines on the Handling of Research Data in Biodiversity Research&lt;/a&gt;&lt;p /&gt;</help>
+		<text lang="en">Are there special or further requirements - beyond the MATH+ standards - regarding the data management from your scholarly/scientific community?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Ein Beispiel für fachspezifische Empfehlungen und Richtlinien ist: 
+
+- &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_biodiversitaetsforschung.pdf" target=_blank"&gt;Richtlinien zum Umgang mit Forschungsdaten in der Biodiversitätsforschung&lt;/a&gt;&lt;p /&gt;</help>
+		<text lang="de">Gibt es von Seiten Eurer Fachcommunity - über die Standards von MATH+ hinaus - weitere Anforderungen an das Datenmanagement, die beachtet werden müssen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_requirements_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general/other-requirements-requirements">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>other-requirements-requirements</key>
+		<path>mathplus/general/other-requirements-requirements</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>51</order>
+		<title lang="en">Requirements II</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Anforderungen II</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/additional_rdm_policy"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general/other-requirements-requirements/requirements">
+		<uri_prefix>https://rdmo.mathplus.de/terms</uri_prefix>
+		<key>requirements</key>
+		<path>mathplus/general/other-requirements-requirements/requirements</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/requirements"/>
+		<questionset dc:uri="https://rdmo.mathplus.de/terms/questions/mathplus/general/other-requirements-requirements"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en">Please briefly outline them and refer to more detailed sources of information via link if necessary. Please also indicate, if the rules / guidelines are mandatory or optional.</help>
+		<text lang="en">Which are these additional requirements regarding data management?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Bitte skizzieren Sie sie kurz und verweisen Sie ggf. per Link auf weiterführende Informationen. Geben Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</help>
+		<text lang="de">Welche Anforderungen an das Datenmanagement sind dies?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+</rdmo>
