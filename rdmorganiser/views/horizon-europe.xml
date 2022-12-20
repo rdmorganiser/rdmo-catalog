@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2022-10-06T08:54:22.933973+02:00">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2022-12-20T07:59:09.012934+01:00">
 	<view dc:uri="https://rdmorganiser.github.io/terms/views/horizon-europe">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>horizon-europe</key>
@@ -56,7 +56,7 @@
 	{% for dataset in datasets %}
 		{% get_set_value dataset 'project/dataset/origin' as origin %}
 		&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;
-		This dataset is {{ origin.value|lower|cut:&quot;Both (&quot;|cut:&quot;)&quot; }}.&lt;br /&gt;
+		This dataset is {{ origin.value|lower|cut:&quot;both (&quot;|cut:&quot;)&quot; }}.&lt;br /&gt;
 		{% render_set_value dataset 'project/dataset/usage_description' %}&lt;/p&gt;
 	{% endfor %}
 
@@ -79,7 +79,7 @@
 			The data are
 			{% render_set_value_inline_list dataset 'project/dataset/description' %}.&lt;br /&gt;
 			They are provided in the following formats:
-			{% render_set_value_inline_list dataset 'project/dataset/format' %}&lt;/p&gt;
+			{% render_set_value_inline_list dataset 'project/dataset/format' %}.&lt;/p&gt;
 		{% endif %}
 	{% endfor %}
 &lt;/div&gt;
@@ -124,11 +124,11 @@
 &lt;div id=&quot;Q06&quot;&gt;
 	&lt;p class=&quot;question&quot;&gt;6. To whom might your data be useful ('data utility'), outside your project?&lt;/p&gt;
 	{% for dataset in datasets %}
-	{% get_set 'project/dataset/reuse_scenario' as utility %}
-	{% if utility %}
-		&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; The data might be useful to:&lt;/p&gt;
-		&lt;ul&gt;{% render_set_value_list dataset 'project/dataset/reuse_scenario' %}&lt;/ul&gt;
-	{% endif %}
+		{% get_set_values dataset 'project/dataset/reuse_scenario' as utility %}
+		{% if not utility|is_empty %}
+			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; The data might be useful to:&lt;/p&gt;
+			&lt;ul&gt;{% render_set_value_list dataset 'project/dataset/reuse_scenario' %}&lt;/ul&gt;
+		{% endif %}
 	{% endfor %}
 &lt;/div&gt;
 
@@ -159,9 +159,9 @@
 		{% if creation_automatic or creation_semi_automatic or creation_manual %}
 			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;&lt;/p&gt;
 			&lt;ul&gt;
-				{% if creation_automatic %}	&lt;li&gt;Automatically created: {{ creation_automatic.value }}&lt;/li&gt;{% endif %}
-				{% if creation_semi_automatic %}	&lt;li&gt;Automatically created, manually corrected: {{ creation_semi_automatic.value }}&lt;/li&gt;{% endif %}
-				{% if creation_manual %}	&lt;li&gt;Manually created: {{ creation_manual.value }}&lt;/li&gt;{% endif %}
+				{% if creation_automatic %}	     &lt;li&gt;Automatically created:                     {{ creation_automatic.value }}.     &lt;/li&gt;{% endif %}
+				{% if creation_semi_automatic %} &lt;li&gt;Automatically created, manually corrected: {{ creation_semi_automatic.value }}.&lt;/li&gt;{% endif %}
+				{% if creation_manual %}	     &lt;li&gt;Manually created:                          {{ creation_manual.value }}.        &lt;/li&gt;{% endif %}
 			&lt;/ul&gt;
 		{% endif %}
 	{% endfor %}
@@ -194,19 +194,25 @@
 &lt;div id=&quot;Q11&quot;&gt;
 	&lt;p class=&quot;question&quot;&gt;11. Will the data be deposited in a trusted repository?&lt;/p&gt;
 	{% for dataset in datasets %}
-		{% get_set_value dataset 'project/dataset/preservation/repository' as repository %}
-		&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;&lt;br /&gt;
-		The dataset is stored in a {% render_set_value_inline_list dataset 'project/dataset/preservation/repository' %}.&lt;br /&gt;
-		This repository is trusted because:&lt;/p&gt;
-		&lt;ul&gt;{% render_set_value_list dataset 'project/dataset/preservation/trusted' %}&lt;/ul&gt;
+		{% get_set_values dataset 'project/dataset/preservation/repository' as repository %}
+		{% get_set_values dataset 'project/dataset/preservation/trusted' as trusted %}
+		{% if repository|length &gt; 0 %}
+			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;&lt;br /&gt;
+			The dataset is stored in a {% render_set_value_inline_list dataset 'project/dataset/preservation/repository' %}.&lt;br /&gt;
+			{% if trusted|length &gt; 0 %} This repository is trusted because:&lt;/p&gt;
+			&lt;ul&gt;{% render_set_value_list dataset 'project/dataset/preservation/trusted' %}&lt;/ul&gt;
+			{% endif %}
+		{% endif %}
 	{% endfor %}
 &lt;/div&gt;
 
 &lt;div id=&quot;Q12&quot;&gt;
 	&lt;p class=&quot;question&quot;&gt;12. Have you explored appropriate arrangements with the identified repository where your data will be deposited?&lt;/p&gt;
 	{% for dataset in datasets %}
-		{% get_set_value dataset 'project/dataset/preservation/repository_arrangements' as repository_arrangements %}
-		&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {% render_set_value_inline_list dataset 'project/dataset/preservation/repository_arrangements' %}&lt;/p&gt;
+		{% get_set_values dataset 'project/dataset/preservation/repository_arrangements' as repository_arrangements %}
+		{% if repository_arrangements|length &gt; 0 %}
+			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {% render_set_value_inline_list dataset 'project/dataset/preservation/repository_arrangements' %}&lt;/p&gt;
+		{% endif %}
 	{% endfor %}
 &lt;/div&gt;
 
@@ -221,9 +227,11 @@
 
 	&lt;p class=&quot;question&quot;&gt;13b. Will the repository resolve the identifier to a digital object?&lt;/p&gt;
 	{% for dataset in datasets %}
-		{% get_set_values dataset 'project/dataset/sharing/yesno' as shared %}
-		{% if &quot;No&quot; not in shared %}
-			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {% render_value 'project/dataset/pids/resolver' %}&lt;/p&gt;
+		{% get_set_value dataset 'project/dataset/pids/resolver' as resolver %}
+		{% if resolver %}
+			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {{ resolver.value }}
+			{% if &quot;No&quot; not in resolver.value %}, the repository will resolve the identifier to a digital object{% endif %}
+			.&lt;/p&gt;
 		{% endif %}
 	{% endfor %}
 &lt;/div&gt;
@@ -244,9 +252,14 @@
 	&lt;small&gt;Note that in multi-beneficiary projects it is also possible for specific beneficiaries to keep their data closed,
 	if opening their data goes against their legitimate interests or other constraints as per the Grant Agreement.&lt;/small&gt;&lt;/p&gt;
 	{% for dataset in datasets %}
-		{% get_set_value dataset 'project/dataset/sharing/explanation' as sharing_explanation %}
-		{% if sharing_explanation %}
-			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {{ sharing_explanation.value }}&lt;/p&gt;
+		{% get_set_values dataset 'project/dataset/sharing/explanation' as sharing_explanation %}
+		{% if sharing_explanation|is_not_empty  %}
+			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;&lt;/p&gt;
+			&lt;ul&gt;
+			{% for explanation in sharing_explanation|is_not_empty %}
+			&lt;li&gt;{{ explanation.value }}&lt;/li&gt;
+			{% endfor %}
+			&lt;/ul&gt;
 		{% endif %}
 	{% endfor %}
 &lt;/div&gt;
@@ -255,9 +268,9 @@
 	&lt;p class=&quot;question&quot;&gt;15. If an embargo is applied to give time to publish or seek protection of the intellectual property (&lt;i&gt;e.g.&lt;/i&gt; patents),
 	specify why and how long this will apply, bearing in mind that research data should be made available as soon as possible.&lt;/p&gt;
 	{% for dataset in datasets %}
-		{% get_set_value dataset 'project/dataset/preservation/embargo_period' as embargo_period %}
-		{% if embargo_period %}
-			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {% render_set_value_inline_list dataset 'project/dataset/preservation/embargo_period' %}&lt;/p&gt;
+		{% get_set_values dataset 'project/dataset/preservation/embargo_period' as embargo_period %}
+		{% if not embargo_period.is_empty and embargo_period.0.value != None %}
+			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; An embargo is applied, for the {% render_set_value_inline_list dataset 'project/dataset/preservation/embargo_period' %}&lt;/p&gt;
 		{% else %}
 			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; No embargo is applied.&lt;/p&gt;
 		{% endif %}
@@ -269,7 +282,7 @@
 	{% for dataset in datasets %}
 		{% get_set_value dataset 'project/dataset/sharing/conditions' as sharing_conditions %}
 		{% if sharing_conditions %}
-			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {{ sharing_conditions.value }}&lt;/p&gt;
+			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; The data will be shared under the following conditions: {{ sharing_conditions.value }}.&lt;/p&gt;
 		{% endif %}
 	{% endfor %}
 &lt;/div&gt;
@@ -278,7 +291,7 @@
 	&lt;p class=&quot;question&quot;&gt;17. If there are restrictions on use, how will access be provided to the data, both during and after the end of the project?&lt;/p&gt;
 	{% for dataset in datasets %}
 		{% get_set_value dataset 'project/dataset/sharing/restrictions_explanation' as restrictions_explanation %}
-		{% if restrictions_explanation %}
+		{% if not restrictions_explanation.is_empty and restrictions_explanation.value != None %}
 			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {{ restrictions_explanation.value }}.&lt;/p&gt;
 		{% endif %}
 	{% endfor %}
@@ -288,7 +301,7 @@
 	&lt;p class=&quot;question&quot;&gt;18. How will the identity of the person accessing the data be ascertained?&lt;/p&gt;
 	{% for dataset in datasets %}
 		{% get_set_value dataset 'project/dataset/preservation/access_authentication' as access_authentication %}
-		{% if access_authentication %}
+		{% if access_authentication.value != None %}
 			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {{ access_authentication.value }}.&lt;/p&gt;
 		{% endif %}
 	{% endfor %}
@@ -296,7 +309,14 @@
 
 &lt;div id=&quot;Q19&quot;&gt;
 	&lt;p class=&quot;question&quot;&gt;19. Is there a need for a data access committee (&lt;i&gt;e.g.&lt;/i&gt; to evaluate/approve access requests to personal/sensitive data)?&lt;/p&gt;
-	&lt;p&gt;{% render_value 'project/legal_aspects/official_approval/data_access_committee' %}&lt;/p&gt;
+	{% get_value 'project/legal_aspects/official_approval/data_access_committee' as data_access_committee %}
+	{% if 'Yes' in data_access_committee %}
+		&lt;p&gt;This consortium will have a Data Access Committee. Their remit will be to select the data that will be openly accessible on a case-by-case basis. Ethical aspects and data security, including intellectual property requirements, will be considered as will access requests to personal/sensitive data. If necessary, some or all of a potential publication’s data will be withheld. This will be decided in consultation with the relevant partner(s).&lt;/p&gt;
+	{% elif 'No' in data_access_committee %}
+		&lt;p&gt;This consortium will not have a Data Access Committee, because the project is not going to produce sensitive data. All results will be publicly available without restrictions.&lt;/p&gt;
+	{% else %}
+		&lt;p&gt;This consortium has not established a Data Access Committee. The appointed data responsible / corresponding author will decide alone about granting access to the data.&lt;/p&gt;
+	{% endif %}
 &lt;/div&gt;
 
 &lt;h4 id=&quot;2.2c&quot;&gt;Metadata:&lt;/h4&gt;
@@ -323,8 +343,8 @@
 	&lt;p class=&quot;question&quot;&gt;21a. How long will the data remain available and findable?&lt;/p&gt;
 	{% for dataset in datasets %}
 		{% get_set_value dataset 'project/dataset/preservation/reuse_duration' as reuse_duration %}
-		{% if reuse_duration %}
-			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {{ reuse_duration.value }}&lt;/p&gt;
+		{% if reuse_duration.value != None %}
+			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {{ reuse_duration.value }}.&lt;/p&gt;
 		{% endif %}
 	{% endfor %}
 
@@ -345,7 +365,7 @@
 			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {{ software_documentation.value }}&lt;/p&gt;
 		{% endif %}
 	{% endfor %}
-	&lt;p&gt;See also &lt;a href=&quot;#Q23&quot;&gt;the following question&lt;/a&gt; for further details.&lt;/p&gt;
+	&lt;p&gt;See &lt;a href=&quot;#Q23&quot;&gt;the following question&lt;/a&gt; for further details.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h3 id=&quot;2.3&quot;&gt;2.3. Making data interoperable&lt;/h3&gt;
@@ -408,7 +428,7 @@
 	{% for dataset in datasets %}
 		{% get_set_value dataset 'project/dataset/documentation/where' as documentation_where %}
 		{% if documentation_where %}
-		&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;&lt;br /&gt;
+		&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;
 			We will provide documentation {{ documentation_where.value|lower }}, in the form of:&lt;/p&gt;
 			&lt;ul&gt;{% render_set_value_list dataset 'project/dataset/documentation' %}&lt;/ul&gt;
 		{% endif %}
@@ -421,7 +441,7 @@
 		{% get_set_value dataset 'project/dataset/sharing/yesno' as dataset_sharing %}
 		{% if dataset_sharing %}
 			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;
-			{% render_set_value dataset 'project/dataset/sharing/yesno' %}&lt;/p&gt;
+			{% render_set_value dataset 'project/dataset/sharing/yesno' %}.&lt;/p&gt;
 		{% endif %}
 	{% endfor %}
 
@@ -430,7 +450,7 @@
 		{% get_set_value dataset 'project/dataset/sharing/conditions' as sharing_conditions %}
 		{% if sharing_conditions %}
 			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;
-			Yes, with the following license {{ sharing_conditions.value }}&lt;/p&gt;
+			Yes, with the following license: {{ sharing_conditions.value }}.&lt;/p&gt;
 		{% endif %}
 	{% endfor %}
 		
@@ -447,7 +467,7 @@
 	{% for dataset in datasets %}
 		{% get_set_value dataset 'project/dataset/provenance/standards' as provenance_standards %}
 		{% if provenance_standards %}
-			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {{ provenance_standards.value }}&lt;/p&gt;
+			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {{ provenance_standards.value }}.&lt;/p&gt;
 		{% endif %}
 	{% endfor %}
 &lt;/div&gt;
@@ -455,9 +475,10 @@
 &lt;div id=&quot;Q30&quot;&gt;
 	&lt;p class=&quot;question&quot;&gt;30. Describe all relevant data quality assurance processes.&lt;/p&gt;
 	{% for dataset in datasets %}
-		{% get_set_value dataset 'project/dataset/quality_assurance' as quality_assurance %}
-		{% if quality_assurance %}
-			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {{ quality_assurance.value }}&lt;/p&gt;
+		{% get_set_values dataset 'project/dataset/quality_assurance' as quality_assurance %}
+		{% if quality_assurance|length &gt; 0 and quality_assurance.0.value != None %}
+			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;&lt;/p&gt;
+			&lt;ul&gt;{% render_set_value_list dataset 'project/dataset/quality_assurance' %}&lt;/ul&gt;
 		{% endif %}
 	{% endfor %}
 &lt;/div&gt;
@@ -465,7 +486,7 @@
 &lt;div id=&quot;Q31&quot;&gt;
 	&lt;p class=&quot;question&quot;&gt;31. Further to the FAIR principles, DMPs should also address research outputs other than data,
 	and should carefully consider aspects related to the allocation of resources, data security and ethical aspects.&lt;/p&gt;
-	&lt;p&gt;We will address these aspects in &lt;a href=&quot;#3&quot;&gt;the following section&lt;/a&gt;.&lt;/p&gt;
+	&lt;p&gt;&amp;#8594; We will address these aspects in &lt;a href=&quot;#3&quot;&gt;the following section&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;3&quot;&gt;3. Other research outputs&lt;/h2&gt;
@@ -504,9 +525,9 @@
 &lt;div id=&quot;Q36&quot;&gt;
 	&lt;p class=&quot;question&quot;&gt;36. Who will be responsible for data management in your project?&lt;/p&gt;
 	{% for partner in partners %}
-		{% get_set_value partner 'project/partner/contact_person/name' as responsible %}
-		{% if responsible %}
-			&lt;p&gt;&lt;i&gt;{{ partner.value }}:&lt;/i&gt; {{ responsible.value }}&lt;/p&gt;
+		{% get_set_values partner 'project/partner/contact_person/name' as responsible %}
+		{% if not responsible|is_empty %}
+			&lt;p&gt;&lt;i&gt;{{ partner.value }}:&lt;/i&gt; {% render_value_inline_list 'project/partner/contact_person/name' %}{{ responsible.value }}&lt;/p&gt;
 		{% endif %}
 	{% endfor %}
 &lt;/div&gt;
@@ -515,7 +536,7 @@
 	&lt;p class=&quot;question&quot;&gt;37. How will long term preservation be ensured? Discuss the necessary resources to accomplish this&lt;br /&gt;
 	(costs and potential value, who decides and how, what data will be kept and for how long).&lt;/p&gt;
 
-	&lt;p class=&quot;questionpart&quot;&gt;Duration of preservation:&lt;/p&gt;
+	&lt;p class=&quot;questionpart&quot;&gt;Duration of preservation&lt;/p&gt;
 	{% for dataset in datasets %}
 		{% get_set_value dataset 'project/dataset/preservation/duration' as duration %}
 		{% if duration %}
@@ -523,22 +544,22 @@
 		{% endif %}
 	{% endfor %}
 
-	&lt;p class=&quot;questionpart&quot;&gt;Costs:&lt;/p&gt;
-	&lt;p&gt;See &lt;a href=&quot;#Q34&quot;&gt;Question 34&lt;/a&gt;.&lt;/p&gt;
+	&lt;p class=&quot;questionpart&quot;&gt;Costs&lt;/p&gt;
+	&lt;p&gt;&amp;#8594; See &lt;a href=&quot;#Q34&quot;&gt;Question 34&lt;/a&gt;.&lt;/p&gt;
 
-	&lt;p class=&quot;questionpart&quot;&gt;Potential value:&lt;/p&gt;
-	&lt;p&gt;See &lt;a href=&quot;#Q06&quot;&gt;Question 6&lt;/a&gt;.&lt;/p&gt;
+	&lt;p class=&quot;questionpart&quot;&gt;Potential value&lt;/p&gt;
+	&lt;p&gt;&amp;#8594; See &lt;a href=&quot;#Q06&quot;&gt;Question 6&lt;/a&gt;.&lt;/p&gt;
 
 	{% get_value 'project/preservation/responsible_person/name' as responsible %}
 	{% if responsible %}
-		&lt;p class=&quot;questionpart&quot;&gt;Preservation decisions:&lt;/p&gt;
+		&lt;p class=&quot;questionpart&quot;&gt;Preservation decisions&lt;/p&gt;
 		&lt;p&gt;All decision related to preservation fall under the responsibility of {{ responsible.value|lower }}.&lt;/p&gt;
 	{% endif %}
 
-	&lt;p class=&quot;questionpart&quot;&gt;Criteria for preservation:&lt;/p&gt;
+	&lt;p class=&quot;questionpart&quot;&gt;Criteria for preservation&lt;/p&gt;
 	&lt;p&gt;{% render_value_inline_list 'project/preservation/selection_criteria' %}.&lt;/p&gt;
 
-	&lt;p class=&quot;questionpart&quot;&gt;Motivation for long-term preservation:&lt;/p&gt;
+	&lt;p class=&quot;questionpart&quot;&gt;Motivation for long-term preservation&lt;/p&gt;
 	{% for dataset in datasets %}
 		{% get_set_value dataset 'project/dataset/preservation/purpose' as purpose %}
 		{% if purpose %}
@@ -552,10 +573,14 @@
 &lt;div id=&quot;Q38&quot;&gt;
 	&lt;p class=&quot;question&quot;&gt;38. What provisions are or will be in place for data security (including data recovery as well as secure storage/archiving and transfer of sensitive data)?&lt;/p&gt;
 	{% for dataset in datasets %}
-		{% get_set_value dataset 'project/dataset/data_security/security_measures' as security_measures %}
-		{% if security_measures %}
-			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;&lt;/p&gt;
-			&lt;ul&gt;{% render_set_value_list dataset 'project/dataset/data_security/security_measures' %}&lt;/ul&gt;
+		{% get_set_values dataset 'project/dataset/data_security/security_measures' as security_measures %}
+		{% if security_measures|is_not_empty %}
+		  &lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;&lt;/p&gt;
+		  &lt;ul&gt;
+		  {% for measure in security_measures|is_not_empty %}
+			&lt;li&gt;{{ measure.value }}&lt;/li&gt;
+		  {% endfor %}
+		  &lt;/ul&gt;
 		{% endif %}
 	{% endfor %}
 &lt;/div&gt;
@@ -589,7 +614,7 @@
 			{% get_set_value dataset 'project/dataset/sensitive_data/personal_data/bdsg_3_9' as identifying %}
 			{% if identifying.is_true %}&lt;br /&gt;Some data contain information allowing person identification.{% endif %}
 			{% get_set_value dataset 'project/dataset/sensitive_data/personal_data/anonymization' as anonymization %}
-			{% if anonymization.is_not_empty %}{% else %}&lt;br /&gt;The personal data will be anonymised/pseudonymised: {{ anonymization.value|cut:&quot;Yes, &quot; }}.{% endif %}
+			{% if not anonymization.is_empty %}&lt;br /&gt;The personal data will be anonymised/pseudonymised: {{ anonymization.value|cut:&quot;Yes, &quot; }}.{% endif %}
 			{% get_set_value dataset 'project/dataset/sensitive_data/personal_data/deletion' as deletion %}
 			{% if deletion.is_not_empty %}&lt;br /&gt;The personal data will be safely deleted {% render_set_value dataset 'project/dataset/sensitive_data/personal_data/deletion' %}.{% endif %}
 			&lt;/p&gt;
@@ -599,27 +624,31 @@
 	&lt;p class=&quot;questionpart&quot;&gt;Other sensitive data&lt;/p&gt;
 	{% for dataset in datasets %}
 		{% get_set_value dataset 'project/dataset/sensitive_data/other/description' as sensitive_other %}
-		{% if sensitive_other %}
+		{% if not sensitive_other.is_empty and sensitive_other.value != None %}
 			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {{ sensitive_other.value }}.&lt;/p&gt;
 		{% endif %}
 	{% endfor %}
 
 	&lt;p class=&quot;questionpart&quot;&gt;Official approval&lt;/p&gt;
-	{% for dataset in datasets %}
-		{% get_set_value dataset 'project/legal_aspects/official_approval/ethics_committee' as ethics_committee %}
-		{% get_set_value dataset 'project/legal_aspects/official_approval/statutatory_approval/yesno' as statutatory_approval %}
-		{% if ethics_committee or statutatory_approval %}
-			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;
-			{% if ethics_committee %}
-				&lt;br /&gt;The research has been {{ ethics_committee.value|cut:&quot;Yes, &quot; }}.
-			{% endif %}
-			{% if statutatory_approval %}
-				&lt;br /&gt;The research has been approved under the title {% render_set_value dataset 'project/legal_aspects/official_approval/statutatory_approval/title' %}
-				by the following agency: {% render_set_value dataset 'project/legal_aspects/official_approval/statutatory_approval/agency' %}.
-			{% endif %}
-			&lt;/p&gt;
+							  
+	{% get_value 'project/legal_aspects/official_approval/ethics_committee' as ethics_committee %}
+	{% get_value 'project/legal_aspects/official_approval/statutatory_approval/yesno' as statutatory_approval %}
+	{% if ethics_committee or statutatory_approval %}
+														   
+		{% if ethics_committee %}
+			&lt;p&gt;The research has been {{ ethics_committee.value|cut:&quot;Yes, &quot; }}.&lt;/p&gt;
 		{% endif %}
-	{% endfor %}
+		{% if statutatory_approval %}
+			{% get_value 'project/legal_aspects/official_approval/statutatory_approval/title' as approval_title %}
+			{% get_value 'project/legal_aspects/official_approval/statutatory_approval/agency' as approval_agency %}
+			{% if approval_title or approval_agency %}
+				&lt;p&gt;The research has been approved
+				    {% if approval_title %}under the title {{ approval_title.value }}{% endif %}
+					{% if approval_agency %}by the following agency: {{ approval_agency.value }}{% endif %}.
+	       		&lt;/p&gt;
+			{% endif %}
+		{% endif %}
+	{% endif %}
 
 	&lt;p class=&quot;questionpart&quot;&gt;Intellectual property rights&lt;/p&gt;
 	{% for dataset in datasets %}
@@ -640,9 +669,9 @@
 	{% for dataset in datasets %}
 		{% get_set_value dataset 'project/dataset/sensitive_data/personal_data/consent/extent' as consent_extent %}
 		{% get_set_value dataset 'project/dataset/sensitive_data/personal_data/consent/statement' as consent_statement %}
-		{% if consent_extent or consent_statement %}
-			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {{ consent_extent.value }}
-				{% if consent_statement.is_not_empty %}&lt;br /&gt;{{ consent_statement.value }}{% endif %}
+		{% if consent_extent.value != None or consent_statement.value != None %}
+			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {{ consent_extent.value }}.
+				{% if not consent_statement.is_empty %}&lt;br /&gt;{{ consent_statement.value }}.{% endif %}
 			&lt;/p&gt;
 		{% endif %}
 	{% endfor %}
