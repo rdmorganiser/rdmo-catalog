@@ -26,7 +26,7 @@
 &lt;/style&gt;
 
 &lt;div id=&quot;Titel&quot; style=&quot;text-align: center; line-height: 21mm; font-size: 2.5em; font-weight: bold;&quot;&gt;
-&lt;!--	&lt;br /&gt;&lt;img src=&quot;https://ec.europa.eu/info/sites/default/themes/europa/images/svg/logo/logo--en.svg&quot; alt=&quot;EC banner&quot; width=&quot;200&quot; /&gt; --&gt;
+	&lt;br /&gt;&lt;img src=&quot;https://ec.europa.eu/info/sites/default/themes/europa/images/svg/logo/logo--en.svg&quot; alt=&quot;EC banner&quot; width=&quot;200&quot; /&gt;
 	&lt;br /&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg&quot; alt=&quot;EU Flag&quot; width=&quot;400&quot; /&gt;
 	&lt;br /&gt;&lt;h1&gt;Horizon Europe&lt;br /&gt;Data Management Plan Template&lt;/h1&gt;
 &lt;/div&gt;
@@ -201,7 +201,7 @@
 			The dataset is stored in a {% render_set_value_inline_list dataset 'project/dataset/preservation/repository' %}.&lt;br /&gt;
 			{% if trusted|length &gt; 0 %} This repository is trusted because:&lt;/p&gt;
 			&lt;ul&gt;{% render_set_value_list dataset 'project/dataset/preservation/trusted' %}&lt;/ul&gt;
-        	{% endif %}
+			{% endif %}
 		{% endif %}
 	{% endfor %}
 &lt;/div&gt;
@@ -211,7 +211,7 @@
 	{% for dataset in datasets %}
 		{% get_set_values dataset 'project/dataset/preservation/repository_arrangements' as repository_arrangements %}
 		{% if repository_arrangements|length &gt; 0 %}
-        	&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {% render_set_value_inline_list dataset 'project/dataset/preservation/repository_arrangements' %}&lt;/p&gt;
+			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {% render_set_value_inline_list dataset 'project/dataset/preservation/repository_arrangements' %}&lt;/p&gt;
 		{% endif %}
 	{% endfor %}
 &lt;/div&gt;
@@ -231,7 +231,7 @@
 		{% if resolver %}
 			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {{ resolver.value }}
 			{% if &quot;No&quot; not in resolver.value %}, the repository will resolve the identifier to a digital object{% endif %}
-            .&lt;/p&gt;
+			.&lt;/p&gt;
 		{% endif %}
 	{% endfor %}
 &lt;/div&gt;
@@ -254,12 +254,12 @@
 	{% for dataset in datasets %}
 		{% get_set_values dataset 'project/dataset/sharing/explanation' as sharing_explanation %}
 		{% if sharing_explanation|is_not_empty  %}
-        	&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;&lt;/p&gt;
-            &lt;ul&gt;
-            {% for explanation in sharing_explanation|is_not_empty %}
-            &lt;li&gt;{{ explanation.value }}&lt;/li&gt;
-            {% endfor %}
-            &lt;/ul&gt;
+			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;&lt;/p&gt;
+			&lt;ul&gt;
+			{% for explanation in sharing_explanation|is_not_empty %}
+			&lt;li&gt;{{ explanation.value }}&lt;/li&gt;
+			{% endfor %}
+			&lt;/ul&gt;
 		{% endif %}
 	{% endfor %}
 &lt;/div&gt;
@@ -310,9 +310,9 @@
 &lt;div id=&quot;Q19&quot;&gt;
 	&lt;p class=&quot;question&quot;&gt;19. Is there a need for a data access committee (&lt;i&gt;e.g.&lt;/i&gt; to evaluate/approve access requests to personal/sensitive data)?&lt;/p&gt;
 	{% get_value 'project/legal_aspects/official_approval/data_access_committee' as data_access_committee %}
-    {% if 'Yes' in data_access_committee %}
-    	&lt;p&gt;This consortium will have a Data Access Committee. Their remit will be to select the data that will be openly accessible on a case-by-case basis. Ethical aspects and data security, including intellectual property requirements, will be considered as will access requests to personal/sensitive data. If necessary, some or all of a potential publication’s data will be withheld. This will be decided in consultation with the relevant partner(s).&lt;/p&gt;
-    {% elif 'No' in data_access_committee %}
+	{% if 'Yes' in data_access_committee %}
+		&lt;p&gt;This consortium will have a Data Access Committee. Their remit will be to select the data that will be openly accessible on a case-by-case basis. Ethical aspects and data security, including intellectual property requirements, will be considered as will access requests to personal/sensitive data. If necessary, some or all of a potential publication’s data will be withheld. This will be decided in consultation with the relevant partner(s).&lt;/p&gt;
+	{% elif 'No' in data_access_committee %}
 		&lt;p&gt;This consortium will not have a Data Access Committee, because the project is not going to produce sensitive data. All results will be publicly available without restrictions.&lt;/p&gt;
 	{% else %}
 		&lt;p&gt;This consortium has not established a Data Access Committee. The appointed data responsible / corresponding author will decide alone about granting access to the data.&lt;/p&gt;
@@ -478,7 +478,7 @@
 		{% get_set_values dataset 'project/dataset/quality_assurance' as quality_assurance %}
 		{% if quality_assurance|length &gt; 0 and quality_assurance.0.value != None %}
 			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;&lt;/p&gt;
-            &lt;ul&gt;{% render_set_value_list dataset 'project/dataset/quality_assurance' %}&lt;/ul&gt;
+			&lt;ul&gt;{% render_set_value_list dataset 'project/dataset/quality_assurance' %}&lt;/ul&gt;
 		{% endif %}
 	{% endfor %}
 &lt;/div&gt;
@@ -575,13 +575,13 @@
 	{% for dataset in datasets %}
 		{% get_set_values dataset 'project/dataset/data_security/security_measures' as security_measures %}
 		{% if security_measures|is_not_empty %}
-          &lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;&lt;/p&gt;
-          &lt;ul&gt;
-          {% for measure in security_measures|is_not_empty %}
-            &lt;li&gt;{{ measure.value }}&lt;/li&gt;
-          {% endfor %}
-          &lt;/ul&gt;
-		{% endif %}			
+		  &lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt;&lt;/p&gt;
+		  &lt;ul&gt;
+		  {% for measure in security_measures|is_not_empty %}
+			&lt;li&gt;{{ measure.value }}&lt;/li&gt;
+		  {% endfor %}
+		  &lt;/ul&gt;
+		{% endif %}
 	{% endfor %}
 &lt;/div&gt;
 
@@ -630,18 +630,20 @@
 	{% endfor %}
 
 	&lt;p class=&quot;questionpart&quot;&gt;Official approval&lt;/p&gt;
+							  
 	{% get_value 'project/legal_aspects/official_approval/ethics_committee' as ethics_committee %}
 	{% get_value 'project/legal_aspects/official_approval/statutatory_approval/yesno' as statutatory_approval %}
 	{% if ethics_committee or statutatory_approval %}
+														   
 		{% if ethics_committee %}
 			&lt;p&gt;The research has been {{ ethics_committee.value|cut:&quot;Yes, &quot; }}.&lt;/p&gt;
 		{% endif %}
 		{% if statutatory_approval %}
-           	{% get_value 'project/legal_aspects/official_approval/statutatory_approval/title' as approval_title %}
-            {% get_value 'project/legal_aspects/official_approval/statutatory_approval/agency' as approval_agency %}
-            {% if approval_title or approval_agency %}
+			{% get_value 'project/legal_aspects/official_approval/statutatory_approval/title' as approval_title %}
+			{% get_value 'project/legal_aspects/official_approval/statutatory_approval/agency' as approval_agency %}
+			{% if approval_title or approval_agency %}
 				&lt;p&gt;The research has been approved
-            	    {% if approval_title %}under the title {{ approval_title.value }}{% endif %}
+				    {% if approval_title %}under the title {{ approval_title.value }}{% endif %}
 					{% if approval_agency %}by the following agency: {{ approval_agency.value }}{% endif %}.
 	       		&lt;/p&gt;
 			{% endif %}
