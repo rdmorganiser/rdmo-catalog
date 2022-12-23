@@ -18,7 +18,6 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 
 ## Shared catalogs
 
-
 | Coverage (funder, subject, geographical region) | File                                                                                                                                                                                                    | Last update |
 | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
 | All questions (long)                            | [RDMO team](rdmorganiser/questions/rdmo.xml); [FoDaKo](shared/fodako/all_5.xml)                                                                                                                         | 2016        |
