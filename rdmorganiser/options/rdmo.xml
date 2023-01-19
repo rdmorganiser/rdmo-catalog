@@ -345,7 +345,7 @@
 		<optionset dc:uri="http://rdmo-dfg.de/options/dfg_publication-restrictions"/>
 		<order>0</order>
 		<text lang="en">Yes, the data is subject to a non-disclosure agreement. A publication can be made in</text>
-		<text lang="de">Ja, die Daten unterliegen einer Geheimhaltungserklärung. Eine Veröffentlichung kann vorgenommen werden in</text>
+		<text lang="de">Ja, die Daten unterliegen einer Geheimhaltungserklärung und können erst nach folgenden Jahren veröffentlicht werden</text>
 		<additional_input>True</additional_input>
 	</option>
 	<option dc:uri="http://rdmo-dfg.de/options/dfg_publication-restrictions/dfg-publ_01">
@@ -419,7 +419,7 @@
 		<optionset dc:uri="http://rdmo-dfg.de/options/dfg_resources"/>
 		<order>1</order>
 		<text lang="en">infrastructure resource: storage/repository</text>
-		<text lang="de">Infrastrukturressource: Speicher/ Repositorium</text>
+		<text lang="de">Infrastrukturressource: Speicher/Repositorium</text>
 		<additional_input>True</additional_input>
 	</option>
 	<option dc:uri="http://rdmo-dfg.de/options/dfg_resources/dfg-r_03">
@@ -528,8 +528,8 @@
 		<dc:comment/>
 		<optionset dc:uri="http://rdmo-dfg.de/options/dfg_resources"/>
 		<order>12</order>
-		<text lang="en">infrastructure resource: Sharepoint</text>
-		<text lang="de">Infrastrukturressource: Sharepoint</text>
+		<text lang="en">infrastructure resource: Shared workspace</text>
+		<text lang="de">Infrastrukturressource: Gemeinsamer Arbeitsbereich</text>
 		<additional_input>True</additional_input>
 	</option>
 	<option dc:uri="http://rdmo-dfg.de/options/dfg_resources/dfg-r_14">
@@ -648,7 +648,7 @@
 		<order>3</order>
 		<text lang="en">No, no existing data will be used.</text>
 		<text lang="de">Nein, es werden keine existierenden Daten verwendet.</text>
-		<additional_input>False</additional_input>
+		<additional_input>True</additional_input>
 	</option>
 	<option dc:uri="http://rdmo-dfg.de/options/dfg_reuse/dfg-re_04">
 		<uri_prefix>http://rdmo-dfg.de</uri_prefix>
@@ -677,7 +677,7 @@
 		<optionset dc:uri="http://rdmo-dfg.de/options/dfg_reuse_context"/>
 		<order>0</order>
 		<text lang="en">Yes, the data can be used scientifically by</text>
-		<text lang="de">Ja, die Daten können wissenschaftlich nachgenutzt werden von</text>
+		<text lang="de">Ja, eine Nachnutzung der Daten durch Forschende der folgenden Disziplin ist denkbar</text>
 		<additional_input>True</additional_input>
 	</option>
 	<option dc:uri="http://rdmo-dfg.de/options/dfg_reuse_context/dfg-rsc_01">
@@ -722,7 +722,7 @@
 		<order>4</order>
 		<text lang="en">No, I can't imagine a future use scenario for the data, because</text>
 		<text lang="de">Nein, ich kann mir kein Nachnutzungsszenario für die Daten vorstellen, weil</text>
-		<additional_input>False</additional_input>
+		<additional_input>True</additional_input>
 	</option>
 	<optionset dc:uri="http://rdmo-dfg.de/options/dfg_scientific_guidelines">
 		<uri_prefix>http://rdmo-dfg.de</uri_prefix>
@@ -979,6 +979,17 @@
 		<text lang="de">Der Datensatz wird für Dritte nicht nutzbar sein.</text>
 		<additional_input>False</additional_input>
 	</option>
+	<option dc:uri="http://rdmo-dfg.de/options/dfg_using_when/dfg-uw_08">
+		<uri_prefix>http://rdmo-dfg.de</uri_prefix>
+		<key>dfg-uw_08</key>
+		<path>dfg_using_when/dfg-uw_08</path>
+		<dc:comment/>
+		<optionset dc:uri="http://rdmo-dfg.de/options/dfg_using_when"/>
+		<order>8</order>
+		<text lang="en">...</text>
+		<text lang="de">Dieser Datensatz wird von uns nachgenutzt und ist bereits publiziert.</text>
+		<additional_input>False</additional_input>
+	</option>
 	<optionset dc:uri="http://rdmo-dfg.de/options/ds_quality">
 		<uri_prefix>http://rdmo-dfg.de</uri_prefix>
 		<key>ds_quality</key>
@@ -1040,7 +1051,7 @@
 		<order>5</order>
 		<text lang="en">Use of a controlled vocabulary</text>
 		<text lang="de">Nutzung eines kontrollierten Vokabulars</text>
-		<additional_input>False</additional_input>
+		<additional_input>True</additional_input>
 	</option>
 	<option dc:uri="http://rdmo-dfg.de/options/ds_quality/dfg-dsq_06">
 		<uri_prefix>http://rdmo-dfg.de</uri_prefix>
@@ -1514,7 +1525,7 @@
 		<optionset dc:uri="https://rdmo-dfg.de/options/qualitycontrol"/>
 		<order>2</order>
 		<text lang="en">Using the tool</text>
-		<text lang="de">Mithilfe des Tools</text>
+		<text lang="de">Mithilfe des Werkzeugs</text>
 		<additional_input>True</additional_input>
 	</option>
 	<option dc:uri="https://rdmo-dfg.de/options/qualitycontrol/dfg-qc_03">
@@ -1536,7 +1547,7 @@
 		<optionset dc:uri="https://rdmo-dfg.de/options/qualitycontrol"/>
 		<order>4</order>
 		<text lang="en">Visual check (on Outlier…)</text>
-		<text lang="de">Visuelle Überprüfung (auf Outlier…)</text>
+		<text lang="de">Visuelle Überprüfung (auf Ausreißer…)</text>
 		<additional_input>False</additional_input>
 	</option>
 	<option dc:uri="https://rdmo-dfg.de/options/qualitycontrol/dfg-qc_05">
@@ -3009,7 +3020,7 @@
 		<provider_key/>
 		<conditions/>
 	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_size_options/251">
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_size_options/248">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>251</key>
 		<path>dataset_size_options/251</path>
@@ -3078,6 +3089,17 @@
 		<text lang="fr">taille exacte</text>
 		<text lang="it">dimensione esatta</text>
 		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_size_options/240">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>240</key>
+		<path>dataset_size_options/240</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_size_options"/>
+		<order>4</order>
+		<text lang="en">not yet determined</text>
+		<text lang="de">noch nicht bestimmt</text>
+		<additional_input>False</additional_input>
 	</option>
 	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_versioning_technology_options">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
