@@ -39,47 +39,14 @@ The division into data sets helps to assess the value of the data with regard to
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<title lang="de">Inhaltliche Datenbeschreibung</title>
-		<help lang="de">&lt;p&gt;Der vorliegende Fragenkatalog ist die von der DFG herausgegebene Checkliste ergänzt um Hilfetexte, Auswahllisten mit Textvorschlägen und weiterführende Hinweise. Die DFG Checkliste muss bei Antragstellung sowie bei Projektabschluss mit eingereicht werden und soll Ihnen helfen, Ihr Datenmanagement zu strukturieren. Bei Fragen wenden Sie sich bitte an das zentrale FDM-Team ihrer Einrichtung.&lt;br/&gt;
-Darüber hinaus bietet RDMO die Möglichkeit, die erstellten Checklisten als Ausgangspunkt für einen Datenmanagementplan, der im Rahmen eines Forschungsprojektes erstellt wird, nachzunutzen. Hierzu stellt RDMO allgemeine, aber auch fach- und drittmittelgeberspezifische Fragebögen zur Verfügung.&lt;/p&gt;
-&lt;p&gt;&lt;u&gt;Strukturierung in Datensätze:&lt;/u&gt;Die folgenden Fragen dienen der Beschreibung Ihrer Datensätze, die Sie im Projekt erzeugen und/oder verwenden. Wählen Sie als Datensatz eine logische Einheit Ihrer Forschungsdaten, für die gleiche Angaben bezüglich Methodik, Technik, Zugänglichkeit, usw. gelten. Zum Beispiel könnten Sie für eine Einteilung ihrer Datensätze folgende Kriterien verwenden: Nachgenutzte oder selbst erzeugte bzw. selbst erhobene Daten, verschiedene Arten der Datenerhebung (Modalitäten), oder ob es sich um gemessene, simulierte oder analysierte Daten handelt.&lt;/p&gt;
+		<help lang="de">&lt;p&gt;&lt;u&gt;Allgemeine Hinweise:&lt;/u&gt; Der vorliegende Fragenkatalog ist die von der DFG herausgegebene Checkliste ergänzt um Hilfetexte, Auswahllisten mit Textvorschlägen und weiterführende Hinweise. Die DFG Checkliste muss bei Antragstellung sowie bei Projektabschluss mit eingereicht werden und soll Ihnen helfen, Ihr Datenmanagement zu strukturieren. Bei Fragen wenden Sie sich bitte an das zentrale FDM-Team ihrer Einrichtung.&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Strukturierung in Datensätze:&lt;/u&gt; Wählen Sie als Datensatz eine logische Einheit Ihrer Forschungsdaten, für die gleiche Angaben bezüglich Methodik, Technik, Zugänglichkeit, usw. gelten. Zum Beispiel verschiedene Arten der Datenerhebung (Modalitäten), oder ob es sich um gemessene, simulierte oder analysierte Daten handelt. Die folgenden Fragen werden für jeden Datensatz beantwortet.&lt;/p&gt;
 &lt;p&gt;
 Die Einteilung in Datensätze hilft, den Wert der Daten hinsichtlich der potentiellen Nachnutzung und einer späteren Archivierung einschätzen zu können. Da alle Fragen für jeden einzelnen Datensatz beantwortet werden müssen, ist eine allzu feingranulare Struktur nicht sinnvoll.&lt;/p&gt;</help>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
 		<conditions/>
 	</questionset>
-	<question dc:uri="http://rdmo-dfg.de/questions/DFG-Checkliste/data_description/data_content/ds_description">
-		<uri_prefix>http://rdmo-dfg.de/</uri_prefix>
-		<key>ds_description</key>
-		<path>DFG-Checkliste/data_description/data_content/ds_description</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/description"/>
-		<questionset dc:uri="http://rdmo-dfg.de/questions/DFG-Checkliste/data_description/data_content"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<order>0</order>
-		<help lang="en"/>
-		<text lang="en">What kind of dataset is it?</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<verbose_name_plural lang="en"/>
-		<help lang="de"/>
-		<text lang="de">Um was für einen Datensatz handelt es sich?</text>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>text</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width>12</width>
-		<optionsets/>
-		<conditions/>
-	</question>
 	<question dc:uri="http://rdmo-dfg.de/questions/DFG-Checkliste/data_description/data_content/ds_newData">
 		<uri_prefix>http://rdmo-dfg.de/</uri_prefix>
 		<key>ds_newData</key>
@@ -99,8 +66,8 @@ Please briefly describe the methodology used to generate the data.</help>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Diese Informationen sind für alle Arten von Daten relevant, um ihre Genese nachvollziehen zu können. &lt;br/&gt;
 Die Art und Weise, wie Daten in Ihrem Projekt entstehen, hängt von den beteiligten Disziplinen ab – beispielsweise kann es sich um eine 3D-Modellierung, die Synthese eines Moleküls, eine selbst entwickelte Software, eine quantitative Online-Befragung, usw. handeln. &lt;br/&gt; 
-Bitte beschreiben Sie kurz, mit welcher Methodik die Daten generiert werden.</help>
-		<text lang="de">Auf welche Weise entstehen in Ihrem Projekt neue Daten?</text>
+Bitte wählen Sie aus, mit welcher Methodik die Daten generiert werden.</help>
+		<text lang="de">Auf welche Weise entstehen neue Daten?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
@@ -138,10 +105,10 @@ Other data, on the other hand, cannot be collected again per se. This is the cas
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Hier sind sowohl eigene Daten aus vorherigen Projekten als auch öffentlich oder kommerziell verfügbare Daten gemeint. Soll z. B. ein Vergleich mit alten Messungen Teil des Projektes sein oder ein alter Datensatz unter neuen Aspekten ausgewertet werden, kann dies hier angegeben werden. Auch wenn man Daten anderer Wissenschaftler nachnutzt, sollte das hier erwähnt werden. Falls Daten verwendet werden, die nicht im Projekt entstehen, geben Sie den Kontext an, aus dem die Daten stammen, möglichst als zitierfähige Quelle (z.B. über eine DOI). Ansonsten empfiehlt sich ein Hinweis, dass nach eigener Recherche keine geeigneten Daten zur Verfügung stehen. &lt;br/&gt;
+		<help lang="de">Hier sind sowohl eigene Daten aus vorherigen Projekten als auch öffentlich oder kommerziell verfügbare Daten gemeint. Auch die Nachnutzung von Daten anderer Forschender sollte hier erwähnt werden. Falls Daten verwendet werden, die nicht im Rahmen dieses Projekt entstehen, geben Sie den Kontext an, aus dem die Daten stammen, möglichst als zitierfähige Quelle (z.B. über eine DOI). Ansonsten empfiehlt sich ein Hinweis, dass nach eigener Recherche keine geeigneten Daten zur Verfügung stehen. &lt;br/&gt;
 &lt;details&gt;
 &lt;summary style=&quot;color:blue; cursor:pointer;&quot;&gt;Erläuterung:&lt;/summary&gt;&lt;br/&gt;
-&lt;p&gt;Manche Daten können im Prinzip jederzeit neu erstellt werden. Beispiele hierfür sind etwa naturwissenschaftliche Experimentdaten oder auch Digitalisate analoger Objekte (solange die Originale nicht verlorengehen). Der Aufwand und die Kosten hierfür können natürlich durchaus beträchtlich sein. Im Hinblick auf die Frage der Notwendigkeit einer späteren Langzeitarchivierung sollte in diesen Fällen der Aufwand einer erneuten Erstellung gegen den Aufwand der Langzeitarchivierung abgewogen werden. 
+&lt;p&gt;Manche Daten können im Prinzip jederzeit neu erstellt werden. Beispiele hierfür sind etwa naturwissenschaftliche Experimentdaten oder auch Digitalisate analoger Objekte (solange die Originale vorhanden sind). Der Aufwand und die Kosten hierfür können natürlich durchaus beträchtlich sein. Im Hinblick auf die Frage der Notwendigkeit einer späteren Langzeitarchivierung sollte in diesen Fällen der Aufwand einer erneuten Erstellung gegen den Aufwand der Langzeitarchivierung abgewogen werden. 
 Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei jeglicher Art von episodischer Beobachtungen, sei es sozialwissenschaftlicher oder naturwissenschaftlicher Art, der Fall, da diese ein bestimmtes Phänomen an einem bestimmten Zeitpunkt und/oder Ort abbilden und somit i.d.R. nicht wiederholbar sind. Ihr Wert für die Nachnutzung durch andere wie auch der Verlust bei einer nicht erfolgten oder misslungenen Langzeitarchivierung ist ungleich höher als bei reproduzierbaren Daten.&lt;/p&gt;
 &lt;/details&gt;</help>
 		<text lang="de">Werden existierende Daten wiederverwendet?</text>
@@ -231,7 +198,7 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de"/>
+		<help lang="de">Bitte beschreiben Sie kurz, wie die Daten zum Beispiel ausgewertet werden: verwendete mathematische Berechnungen, Aggregationen, Preprocessing, Referenzen zu anderen Datensätzen, benutzte Software, etc.</help>
 		<text lang="de">Auf welche Weise werden die Daten in Ihrem Projekt weiterverarbeitet?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -263,8 +230,8 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Geben Sie bitte außerdem die Maßeinheit an.</help>
-		<text lang="de">In welchem Umfang fallen diese für Ihren Datensatz an bzw. welches Datenvolumen ist für den Datensatz zu erwarten?</text>
+		<help lang="de">Geben Sie bitte außerdem die Maßeinheit an, z.B. “10 GB”.</help>
+		<text lang="de">Welches Datenvolumen ist für den Datensatz zu erwarten?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
@@ -460,7 +427,7 @@ Die Etablierung von Standards bei Methoden, bei der Anwendung von Software, der 
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">&lt;p&gt;Qualitätskontrollen können auf unterschiedlichen Wegen erfolgen. Sie können stark abhängig sein von Ihrer Disziplin und Ihren Strukturen am Institut oder im Projekt.&lt;/p&gt;
+		<help lang="de">&lt;p&gt;Qualitätskontrollen können auf unterschiedlichen Wegen erfolgen. Sie können stark abhängig von Ihrer Disziplin und Ihren Strukturen am Institut oder im Projekt sein.&lt;/p&gt;
 &lt;p&gt;Wichtig ist, dass die Qualitätskontrolle unabhängig von den getroffenen Maßnahmen ist und sich auf das Produkt „Daten“ bezieht.&lt;/p&gt;</help>
 		<text lang="de">Sind Qualitätskontrollen vorgesehen und wenn ja, auf welche Weise?</text>
 		<default_text lang="de"/>
@@ -718,8 +685,8 @@ Bedenken Sie bitte, dass nach einer gewissen Sperr- oder Embargofrist eine Publi
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">&lt;p&gt;Neben allgemeinen wissenschaftlichen Kodizes (Antwortoptionen) kann es auch fachwissenschaftliche Kodizes geben. Falls Ihnen diese nicht bekannt sind, informieren Sie sich bei passenden NFDI-Konsortien oder Fachvereinigungen. Aufschluss gibt auch die Seite der &lt;i&gt;&lt;a href=&quot;https://wissenschaftliche-integritaet.de/&quot; target=&quot;_blank&quot;&gt;DFG zur wissenschaftlichen Integrität&lt;/a&gt;&lt;/i&gt;. Hier finden sie Verweise auf Gesetze, &lt;a href=&quot;https://www.dfg.de/foerderung/grundlagen_rahmenbedingungen/forschungsdaten/empfehlungen/index.html&quot; target=&quot;_blank&quot;&gt;fachspezifische Kommentierungen der Leitlinien&lt;/a&gt;&lt;/i&gt; und Erläuterungen sowie Fallbeispiele.&lt;/p&gt;
-&lt;p&gt;Fachspezifische Normen finden Sie im Normen-Infopoint. Erkundigen Sie sich bei Ihrer Einrichtung nach dem für Sie zuständigen.&lt;/p&gt;</help>
+		<help lang="de">&lt;p&gt;Neben allgemeinen wissenschaftlichen Kodizes kann es auch fachwissenschaftliche Kodizes geben. Falls Ihnen diese nicht bekannt sind, informieren Sie sich bei passenden NFDI-Konsortien oder Fachvereinigungen. Aufschluss gibt auch die Seite der &lt;i&gt;&lt;a href=&quot;https://wissenschaftliche-integritaet.de/&quot; target=&quot;_blank&quot;&gt;DFG zur wissenschaftlichen Integrität&lt;/a&gt;&lt;/i&gt;. Hier finden Sie Verweise auf Gesetze, &lt;a href=&quot;https://www.dfg.de/foerderung/grundlagen_rahmenbedingungen/forschungsdaten/empfehlungen/index.html&quot; target=&quot;_blank&quot;&gt;fachspezifische Kommentierungen der Leitlinien&lt;/a&gt;&lt;/i&gt; und Erläuterungen sowie Fallbeispiele.&lt;/p&gt;
+&lt;p&gt;Erkundigen Sie sich bei Ihrer Einrichtung nach dem für Sie zuständigen.&lt;/p&gt;</help>
 		<text lang="de">Existieren wichtige wissenschaftliche Kodizes bzw. fachliche Normen, die Berücksichtigung finden sollten?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -808,7 +775,7 @@ If you have any questions about intellectual property or need support for patent
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Zu nennen wäre beispielsweise: Muss die rechtliche Situation verschiedener Länder beachtet werden? Hat jeder Mitarbeiter die gleichen Zugriffsrechte?</help>
+		<help lang="de">Zu nennen wäre beispielsweise: Muss die rechtliche Situation verschiedener Länder beachtet werden? Haben alle Mitarbeitenden die gleichen Zugriffsrechte?</help>
 		<text lang="de">Welche rechtlichen Besonderheiten bestehen im Zusammenhang mit dem Umgang mit Forschungsdaten in Ihrem Projekt?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1237,7 +1204,7 @@ If necessary, provide more detailed information on the respective items.</help>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Es kann sich hierbei sowohl um technische bzw. IT-Ressourcen handeln, als auch um Expertise, die z.B. durch Datenmanagement- oder IT-ExpertInnen eingebracht wird.&lt;br/&gt;
+		<help lang="de">Es kann sich hierbei sowohl um technische bzw. IT-Ressourcen handeln, als auch um Expertise, die z.B. für das Datenmanagement oder die IT eingebracht wird&lt;br/&gt;
 Machen Sie ggf. genauere Angaben zu den jeweiligen Posten.</help>
 		<text lang="de">Welche Ressourcen (Kosten, Zeit oder anderes) sind erforderlich, um einen adäquaten Umgang mit Forschungsdaten im Projekt umzusetzen?</text>
 		<default_text lang="de"/>
