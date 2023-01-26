@@ -5,6 +5,7 @@
 		<key>access_authentication</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/access_authentication/registration">
@@ -63,1573 +64,12 @@
 		<text lang="it">Non è necessaria un'identificazione di persone che ottengono l'accesso ai dati</text>
 		<additional_input>False</additional_input>
 	</option>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/data_utility">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>data_utility</key>
-		<dc:comment/>
-		<order>0</order>
-		<conditions/>
-	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_utility/science">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>science</key>
-		<path>data_utility/science</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/data_utility"/>
-		<order>1</order>
-		<text lang="en">Other scientists (from the own or another field)</text>
-		<text lang="de">Andere Wissenschaftlerinnen und Wissenschaftler (aus dem eigenen oder anderen Forschungsfeldern)</text>
-		<text lang="es">Otros científicos (del mismo campo o de otro)</text>
-		<text lang="fr">Scientifiques autres (du même domaine ou non)</text>
-		<text lang="it">Altri ricercatori (nello stesso o in un altro campo)</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_utility/economy">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>economy</key>
-		<path>data_utility/economy</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/data_utility"/>
-		<order>2</order>
-		<text lang="en">Stakeholders from industry / economy</text>
-		<text lang="de">Entscheidungsträger aus Industrie / Wirtschaft</text>
-		<text lang="es">Actores de la industria o de la economía</text>
-		<text lang="fr">Acteurs industriels ou de l'économie</text>
-		<text lang="it">Attori dal mondo dell'industria o dell'economia</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_utility/standardisation">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>standardisation</key>
-		<path>data_utility/standardisation</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/data_utility"/>
-		<order>3</order>
-		<text lang="en">Standardisation bodies</text>
-		<text lang="de">Normungsgremien</text>
-		<text lang="es">Organismos normativos</text>
-		<text lang="fr">Organismes de normalisation</text>
-		<text lang="it">Enti normativi</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_utility/politics">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>politics</key>
-		<path>data_utility/politics</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/data_utility"/>
-		<order>4</order>
-		<text lang="en">Politics / Decision makers</text>
-		<text lang="de">Politik / Entscheidungsträger</text>
-		<text lang="es">Responsables políticos o de la toma de decisiones</text>
-		<text lang="fr">Représentants politiques ou décideurs</text>
-		<text lang="it">Politici o decisori</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_utility/citizenship">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>citizenship</key>
-		<path>data_utility/citizenship</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/data_utility"/>
-		<order>5</order>
-		<text lang="en">Citizens</text>
-		<text lang="de">Öffentlichkeit</text>
-		<text lang="es">Ciudadanos</text>
-		<text lang="fr">Citoyens</text>
-		<text lang="it">Cittadini</text>
-		<additional_input>True</additional_input>
-	</option>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>dataset_origin</key>
-		<dc:comment/>
-		<order>0</order>
-		<conditions/>
-	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin/project_data">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>project_data</key>
-		<path>dataset_origin/project_data</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin"/>
-		<order>1</order>
-		<text lang="en">Existing data: project own data</text>
-		<text lang="de">Bereits existierende Daten: projekteigene Daten</text>
-		<text lang="es">Datos existentes: datos específicos del proyecto</text>
-		<text lang="fr">Données existantes&#8239;: elles appartiennent au projet</text>
-		<text lang="it">Dati esistenti: disponibili internamente al progetto</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin/project_partner_data">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>project_partner_data</key>
-		<path>dataset_origin/project_partner_data</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin"/>
-		<order>2</order>
-		<text lang="en">Existing data: internal data of the project partners</text>
-		<text lang="de">Bereits existierende Daten: von Projektpartner geliefert</text>
-		<text lang="es">Datos existentes: datos internos de los socios del proyecto</text>
-		<text lang="fr">Données existantes&#8239;: elles appartiennent à certains partenaires du projet</text>
-		<text lang="it">Dati esistenti: forniti da membri del progetto</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin/public_data">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>public_data</key>
-		<path>dataset_origin/public_data</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin"/>
-		<order>3</order>
-		<text lang="en">Existing data: publicly available data</text>
-		<text lang="de">Bereits existierende Daten: öffentlich zugängliche Daten</text>
-		<text lang="es">Datos existentes: datos disponibles públicamente</text>
-		<text lang="fr">Données existantes&#8239;: elles sont déjà ouvertes au publique</text>
-		<text lang="it">Dati esistenti: già pubblicati</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin/experiments">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>experiments</key>
-		<path>dataset_origin/experiments</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin"/>
-		<order>5</order>
-		<text lang="en">Generated data: from experiments</text>
-		<text lang="de">Selbst erzeugte Daten: aus Experimenten</text>
-		<text lang="es">Datos generados: a partir de experimentos</text>
-		<text lang="fr">Données produites&#8239;: à partir d'expériences</text>
-		<text lang="it">Dati generati: da esperimenti</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin/simulations">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>simulations</key>
-		<path>dataset_origin/simulations</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin"/>
-		<order>6</order>
-		<text lang="en">Generated data: from simulations</text>
-		<text lang="de">Selbst erzeugte Daten: aus Simulationen</text>
-		<text lang="es">Datos generados: a partir de simulaciones</text>
-		<text lang="fr">Données produites&#8239;: à partir de simulations</text>
-		<text lang="it">Dati generati: da simulazioni</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin/observations">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>observations</key>
-		<path>dataset_origin/observations</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin"/>
-		<order>7</order>
-		<text lang="en">Generated data: from observations</text>
-		<text lang="de">Selbst erzeugte Daten: aus Beobachtungen</text>
-		<text lang="es">Datos generados: a partir de observaciones</text>
-		<text lang="fr">Données produites&#8239;: à partir d'observations</text>
-		<text lang="it">Dati generati: da studi osservativi</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin/surveys">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>surveys</key>
-		<path>dataset_origin/surveys</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin"/>
-		<order>8</order>
-		<text lang="en">Generated data: from surveys</text>
-		<text lang="de">Selbst erzeugte Daten: aus Umfragen</text>
-		<text lang="es">Datos generados: a partir de encuestas</text>
-		<text lang="fr">Données produites&#8239;: à partir de questionnaires ou sondages</text>
-		<text lang="it">Dati generati: da questionari o sondaggi</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin/transformation">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>transformation</key>
-		<path>dataset_origin/transformation</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin"/>
-		<order>9</order>
-		<text lang="en">Generated data: from transformation/analysis of other data</text>
-		<text lang="de">Selbst erzeugte Daten: durch Transformation / Analyse anderer Daten</text>
-		<text lang="es">Datos generados: a partir de transformación o análisis de otros datos</text>
-		<text lang="fr">Données produites&#8239;: à partir de l'analyse ou du raffinement de données existantes</text>
-		<text lang="it">Dati generati: dalla trasformazione o analisi di dati esistenti</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin/other">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>other</key>
-		<path>dataset_origin/other</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin"/>
-		<order>10</order>
-		<text lang="en">Other</text>
-		<text lang="de">Sonstiges</text>
-		<text lang="es">Otro</text>
-		<text lang="fr">Autre</text>
-		<text lang="it">Altro</text>
-		<additional_input>True</additional_input>
-	</option>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>dataset_sharing_restrictions</key>
-		<dc:comment/>
-		<order>0</order>
-		<conditions/>
-	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/permission">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>permission</key>
-		<path>dataset_sharing_restrictions/permission</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
-		<order>1</order>
-		<text lang="en">Legal restrictions: Permission is required to access the data or the researched object, and the grantors do not consent to the data being disseminated</text>
-		<text lang="de">Rechtliche Hinderungsgründe: Für den Zugang zu den Daten oder zum beforschten Objekt ist eine Genehmigung erforderlich und die Erteiler der Genehmigung sind mit einer Weitergabe der Daten nicht einverstanden</text>
-		<text lang="es">Restricciones legales: el acceso a los datos es condicionado a un permiso, pero el responsable de eso no no aceptó poner los datos a disposición del público</text>
-		<text lang="fr">Restrictions juridiques&#8239;: une autorisation est nécessaire pour l'accès aux données, mais le responsable n'a pas accordé leur ouverture au publique</text>
-		<text lang="it">Restrizioni legali: l'accesso ai dati avviene previa autorizzazione, ma il responsabile  non ha acconsentito alla loro diffusione pubblica</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/privacy">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>privacy</key>
-		<path>dataset_sharing_restrictions/privacy</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
-		<order>2</order>
-		<text lang="en">Legal restrictions: sharing the data might reveal personal information for whose dissemination there is no consent</text>
-		<text lang="de">Rechtliche Hinderungsgründe: durch das Teilen der Daten könnten personenbezogene Informationen preisgegeben werden, für deren Weitergabe es keine Einwilligung gibt</text>
-		<text lang="es">Restricciones legales: El intercambio de datos podría revelar informaciones personales, para cuya condivisión no hay un acuerdo</text>
-		<text lang="fr">Restrictions juridiques&#8239;: le partage des données pourrait révéler des informations personnelles, dont la condivision n'est pas réglé par un accord</text>
-		<text lang="it">Restrizioni legali: la condivisione dei dati potrebbe rivelare informazioni personali sulla cui condivisione non è stato raggiunto un accordo</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/ipr">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>ipr</key>
-		<path>dataset_sharing_restrictions/ipr</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
-		<order>3</order>
-		<text lang="en">Legal restrictions: Parts of the data are intellectual property of a partner or of third parties and the project does not own the right to disseminate them</text>
-		<text lang="de">Rechtliche Hinderungsgründe: Teile der Daten sind geistiges Eigentum eines Partners oder Dritter und das Projekt besitzt nicht das Recht zu deren Weitergabe</text>
-		<text lang="es">Restricciones legales: una parte de los datos es propiedad intelectual de un socio o de terceros y el proyecto no conseguió autorización para compartirlos</text>
-		<text lang="fr">Restrictions juridiques&#8239;: une partie des données est propriété intellectuelle d'un partnenaire o de tiers et le projet n'a pas obtenu l'autorisation pour les partager</text>
-		<text lang="it">Restrizioni legali: una parte dei dati è proprietà intellettuale di un partner o di terzi e il progetto non è autorizzato a condividerli</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/law">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>law</key>
-		<path>dataset_sharing_restrictions/law</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
-		<order>4</order>
-		<text lang="en">Legal restrictions: Risk of possible violation of (inter)national law or any constraints from the Grant Agreement</text>
-		<text lang="de">Rechtliche Hinderungsgründe: Risiko einer möglichen Verletzung (inter)nationalen Rechts oder von Bedingungen im Fördervertrag</text>
-		<text lang="es">Restricciones legales: Riesgo de posible violación de la legislación (inter)nacional o de cualquier restricción del acuerdo de subvención</text>
-		<text lang="fr">Restrictions juridiques&#8239;: il existe un risque de violation d'une loi (y compris à l'étranger) ou d'une régle de l'accord de subvention</text>
-		<text lang="it">Restrizioni legali: rischio di possibile violazione di una legge (anche estera) o di una regola dell'accordo di finanziamento</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/ethics">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>ethics</key>
-		<path>dataset_sharing_restrictions/ethics</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
-		<order>5</order>
-		<text lang="en">Ethical restrictions, e.g. prevention of dual use, protection of vulnerable groups or endangered species, exclusion of stolen cultural assets</text>
-		<text lang="de">Ethische Hinderungsgründe, z.B. Beschränkung militärischer Nachnutzung, Schutz vulnerabler Gruppe oder gefährdeter Spezies, Ausschluss geraubter Kulturgüter</text>
-		<text lang="es">Restricciones éticas, por ejemplo, prevención del doble uso, protección de grupos vulnerables o especies en peligro, exclusión de bienes culturales robados</text>
-		<text lang="fr">Restrictions éthiques concernant par exemple des applications militaires, des groupes vulnérables, des espèces protégées ou l'exclusion de biens culturels volés</text>
-		<text lang="it">Restrizioni etiche: es. impedimento di riutilizzi militari, protezione di gruppi vulnerabili o specie protette, esclusione di beni culturali rubati</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/comprehensibility">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>comprehensibility</key>
-		<path>dataset_sharing_restrictions/comprehensibility</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
-		<order>6</order>
-		<text lang="en">Voluntary restrictions: Data economy and better comprehensibility (no publication of pre-processed data without a clear reason for doing so)</text>
-		<text lang="de">Freiwillige Beschränkungen: Datensparsamkeit und bessere Verständlichkeit (keine Veröffentlichung von Zwischenergebnissen ohnen einen triftigen Grund)</text>
-		<text lang="es">Restricciones voluntarias: Economía de datos y mayor comprensibilidad (no se publican datos preprocesados sin una razón clara para hacerlo)</text>
-		<text lang="fr">Restrictions propres&#8239;: économie de données et cohérence (aucune publication de données intermédiaires sans raison clairement valable)</text>
-		<text lang="it">Restrizioni volontarie: economia e comprensibilità (non pubblicazione di risultati intermedi senza una ragione specifica)</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/confirmation">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>confirmation</key>
-		<path>dataset_sharing_restrictions/confirmation</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
-		<order>7</order>
-		<text lang="en">Voluntary restrictions: Use of results taken from past publications for confirmatory reasons only</text>
-		<text lang="de">Freiwillige Beschränkungen: Verwendung von Ergebnissen früherer Veröffentlichungen nur zu Bestätigungszwecken</text>
-		<text lang="es">Restricciones voluntarias: Utilización de resultados tomados de publicaciones anteriores sólo por razones de confirmación</text>
-		<text lang="fr">Restrictions propres&#8239;: les résultats publiés existants ne sont utilisés que pour comparaison</text>
-		<text lang="it">Restrizioni volontarie: utilizzo di risultati da pubblicazioni precedenti unicamente per confronto o conferma dei risultati</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/relevance">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>relevance</key>
-		<path>dataset_sharing_restrictions/relevance</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
-		<order>8</order>
-		<text lang="en">Voluntary restrictions: No direct relevance of the data for the main topic of the publication</text>
-		<text lang="de">Freiwillige Beschränkungen: keine direkte Relevanz der Daten für das Hauptthema der Textpublikation</text>
-		<text lang="es">Restricciones voluntarias: No hay relevancia directa de los datos para el tema principal de la publicación</text>
-		<text lang="fr">Restrictions propres&#8239;: aucune pertinence des données pour le sujet principal de la publication</text>
-		<text lang="it">Restrizioni volontarie: mancata pertinenza dei dati rispetto al soggetto principale della pubblicazione</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/redundancy">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>redundancy</key>
-		<path>dataset_sharing_restrictions/redundancy</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
-		<order>10</order>
-		<text lang="en">Voluntary restrictions: Redundancy of the data with the information already made available within a textual publication</text>
-		<text lang="de">Freiwillige Beschränkungen: Redundanz der Daten, wobei die Daten bereits in einer Textpublikation mit zur Verfügung gestellt worden sind</text>
-		<text lang="es">Restricciones voluntarias: Redundancia de los datos con la información ya disponible dentro de una publicación textual</text>
-		<text lang="fr">Restrictions propres&#8239;: redondance des données avec l'information rendue disponible dans une publication écrite</text>
-		<text lang="it">Restrizioni volontarie: ridondanza dei dati con l'informazione già contenuta in una pubblicazione testuale</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/other">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>other</key>
-		<path>dataset_sharing_restrictions/other</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
-		<order>11</order>
-		<text lang="en">Other restrictions</text>
-		<text lang="de">Andere Hinderungsgründe</text>
-		<text lang="es">Otras restricciones</text>
-		<text lang="fr">Autres restrictions</text>
-		<text lang="it">Altre restrizioni</text>
-		<additional_input>True</additional_input>
-	</option>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/documentation">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>documentation</key>
-		<dc:comment/>
-		<order>0</order>
-		<conditions/>
-	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/documentation/generation">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>generation</key>
-		<path>documentation/generation</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/documentation"/>
-		<order>1</order>
-		<text lang="en">Information on methodology used for data generation (creation or re-use) and transformation</text>
-		<text lang="de">Information zu Verfahren der Datenerzeugung und Weiterverarbeitung der Daten (auch bei Nachnutzung)</text>
-		<text lang="es">Información sobre la metodología utilizada para la generación (creación o reutilización) y transformación de datos</text>
-		<text lang="fr">Information sur la méthodologie employée pour la génération des données (création ou réutilisation) et leur transformation</text>
-		<text lang="it">Informazioni sui metodi usati per la creazione e la trasformazione dei dati</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/documentation/analysis">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>analysis</key>
-		<path>documentation/analysis</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/documentation"/>
-		<order>2</order>
-		<text lang="en">Information on methodology used for data cleaning and analysis</text>
-		<text lang="de">Information zu Verfahren der Datenbereinigung und -analyse</text>
-		<text lang="es">Información sobre la metodología utilizada para la selección y el análisis de los datos</text>
-		<text lang="fr">Information sur la méthodologie employée pour la filtration et l'analyse des données</text>
-		<text lang="it">Informazioni sui metodi usati per la selezione e l'analisi dei dati</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/documentation/variables">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>variables</key>
-		<path>documentation/variables</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/documentation"/>
-		<order>3</order>
-		<text lang="en">Description of variables used and respective units of measurement</text>
-		<text lang="de">Beschreibung der verwendeten Variablen und zugehörigen Maßeinheiten</text>
-		<text lang="es">Descripción de las variables utilizadas y sus respectivas unidades de medida</text>
-		<text lang="fr">Description des variables en jeu et leurs unités de mesure respectives</text>
-		<text lang="it">Descrizione delle variabili in gioco e delle rispettive unità di misura</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/documentation/quality">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>quality</key>
-		<path>documentation/quality</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/documentation"/>
-		<order>4</order>
-		<text lang="en">Quality control report</text>
-		<text lang="de">Qualitätskontrollbericht</text>
-		<text lang="es">Reporte de control de calidad</text>
-		<text lang="fr">Rapport de contrôle qualité</text>
-		<text lang="it">Rapporto del controllo qualità</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/documentation/versioning">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>versioning</key>
-		<path>documentation/versioning</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/documentation"/>
-		<order>5</order>
-		<text lang="en">Version information</text>
-		<text lang="de">Versionsinformation</text>
-		<text lang="es">Información sobre la versión</text>
-		<text lang="fr">Information de version</text>
-		<text lang="it">Informazione di versione</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/documentation/interviews">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>interviews</key>
-		<path>documentation/interviews</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/documentation"/>
-		<order>6</order>
-		<text lang="en">For survey data: survey instruments (questionnaires, ...), interviewer instructions, codebooks, scale manuals, technical reports</text>
-		<text lang="de">Für Umfragedaten: Erhebungsinstrumente (Fragebögen, ...), Intervieweranweisungen, Codebücher, Skalenhandbücher, technische Berichte</text>
-		<text lang="es">Para los datos de las encuestas: instrumentos de encuesta (cuestionarios, ...), instrucciones para el entrevistador, libros de códigos, manuales de escalas, informes técnicos</text>
-		<text lang="fr">En cas d'entrevues&#8239;: questionnaires, instructions pour les sondeurs, livres de code, manuelles d'échelle, rapports techniques</text>
-		<text lang="it">In caso di sondaggi: questionari, istruzioni per gli intervistatori, libri di codice, manuali di scala, rapporti tecnici</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/documentation/other">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>other</key>
-		<path>documentation/other</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/documentation"/>
-		<order>10</order>
-		<text lang="en">Other</text>
-		<text lang="de">Sonstiges</text>
-		<text lang="es">Otro</text>
-		<text lang="fr">Autre</text>
-		<text lang="it">Altro</text>
-		<additional_input>True</additional_input>
-	</option>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>embargo_why</key>
-		<dc:comment/>
-		<order>0</order>
-		<conditions/>
-	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why/publication">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>publication</key>
-		<path>embargo_why/publication</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why"/>
-		<order>1</order>
-		<text lang="en">Publication of the results in a peer-reviewed journal</text>
-		<text lang="de">Veröffentlichung der Ergebnisse in einer fachreferierten Zeitschrift</text>
-		<text lang="es">Publicación de los resultados en una revista revisada por expertos</text>
-		<text lang="fr">Publication des résultats dans une revue à comité de lecture</text>
-		<text lang="it">Pubblicazione dei risultati in una rivista con peer review</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why/rights">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>rights</key>
-		<path>embargo_why/rights</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why"/>
-		<order>2</order>
-		<text lang="en">Achievement of intellectual property rights such as</text>
-		<text lang="de">Erlangung intellektueller Rechte wie</text>
-		<text lang="es">Consecución de derechos de propiedad intelectual como</text>
-		<text lang="fr">Obtention de droits de propriété intellectuelle tels que</text>
-		<text lang="it">Conseguimento di diritti di proprietà intellettuale come</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why/thesis">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>thesis</key>
-		<path>embargo_why/thesis</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why"/>
-		<order>3</order>
-		<text lang="en">Finishing of a bachelor/master/doctor thesis</text>
-		<text lang="de">Anfertigung einer Abschlussarbeit (Bachelor-, Master- oder Doktor-)</text>
-		<text lang="es">Finalización de una tesis de pregrado/máster/doctorado</text>
-		<text lang="fr">Réalisation d'une thèse (de licence, de master ou de doctorat)</text>
-		<text lang="it">Completamento di una tesi (triennale, specialistica o di dottorato)</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why/other">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>other</key>
-		<path>embargo_why/other</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why"/>
-		<order>10</order>
-		<text lang="en">Other</text>
-		<text lang="de">Sonstiges</text>
-		<text lang="es">Otro</text>
-		<text lang="fr">Autre</text>
-		<text lang="it">Altro</text>
-		<additional_input>True</additional_input>
-	</option>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>file_type</key>
-		<dc:comment/>
-		<order>0</order>
-		<conditions/>
-	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/DT">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>DT</key>
-		<path>file_type/DT</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
-		<order>1</order>
-		<text lang="en">table</text>
-		<text lang="de">Tabelle</text>
-		<text lang="es">tabla</text>
-		<text lang="fr">tableau</text>
-		<text lang="it">tabella</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/GR">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>GR</key>
-		<path>file_type/GR</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
-		<order>2</order>
-		<text lang="en">graphics</text>
-		<text lang="de">Grafik</text>
-		<text lang="es">gráfico</text>
-		<text lang="fr">graphique</text>
-		<text lang="it">grafico</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/VO">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>VO</key>
-		<path>file_type/VO</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
-		<order>3</order>
-		<text lang="en">video</text>
-		<text lang="de">Video</text>
-		<text lang="es">video</text>
-		<text lang="fr">vidéo</text>
-		<text lang="it">video</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/AO">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>AO</key>
-		<path>file_type/AO</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
-		<order>4</order>
-		<text lang="en">audio</text>
-		<text lang="de">Audio</text>
-		<text lang="es">audio</text>
-		<text lang="fr">audio</text>
-		<text lang="it">audio</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/TT">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>TT</key>
-		<path>file_type/TT</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
-		<order>5</order>
-		<text lang="en">text</text>
-		<text lang="de">Text</text>
-		<text lang="es">texto</text>
-		<text lang="fr">texte</text>
-		<text lang="it">testo</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/DB">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>DB</key>
-		<path>file_type/DB</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
-		<order>6</order>
-		<text lang="en">database</text>
-		<text lang="de">Datenbank</text>
-		<text lang="es">base de datos</text>
-		<text lang="fr">base de données</text>
-		<text lang="it">banca dati</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/GG">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>GG</key>
-		<path>file_type/GG</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
-		<order>7</order>
-		<text lang="en">geospatial data</text>
-		<text lang="de">Geografische Information</text>
-		<text lang="es">datos geoespaciales</text>
-		<text lang="fr">données géospatiales</text>
-		<text lang="it">Dati geospaziali</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/CD">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>CD</key>
-		<path>file_type/CD</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
-		<order>8</order>
-		<text lang="en">computer-aided design</text>
-		<text lang="de">Computer Aided Design</text>
-		<text lang="es">diseño asistido por ordenador</text>
-		<text lang="fr">conception assistée par ordinateur</text>
-		<text lang="it">computer-aided design</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/ST">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>ST</key>
-		<path>file_type/ST</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
-		<order>9</order>
-		<text lang="en">statistical analysis</text>
-		<text lang="de">Statistische Auswertung</text>
-		<text lang="es">análisis estadístico</text>
-		<text lang="fr">analyse statistique</text>
-		<text lang="it">analisi statistica</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/SO">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>SO</key>
-		<path>file_type/SO</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
-		<order>10</order>
-		<text lang="en">Other</text>
-		<text lang="de">Sonstiges</text>
-		<text lang="es">Otro</text>
-		<text lang="fr">Autre</text>
-		<text lang="it">Altro</text>
-		<additional_input>True</additional_input>
-	</option>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/mappings">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>mappings</key>
-		<dc:comment/>
-		<order>0</order>
-		<conditions/>
-	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/mappings/informal">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>informal</key>
-		<path>mappings/informal</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/mappings"/>
-		<order>1</order>
-		<text lang="en">The generated ontologies and vocabularies for the published data are provided, together with appropriate mappings in an informal, lightweight form (glossaries, alignment tables, …) to more commonly used ontologies</text>
-		<text lang="de">Die generierten Ontologien und Vokabularien für die veröffentlichten Daten werden mitgeliefert, zusammen mit passenden Konkordanzen zu gängiger Terminologie, in einer leichten und informellen Weise (Glossar, Korrespondenztabelle, ...)</text>
-		<text lang="es">Se adjuntan las ontologías y vocabularios generados para los datos publicados. La correspondencia con terminologías de uso común se expresa de forma ligera e informal (glosario, tabla de alineación, ...).</text>
-		<text lang="fr">Les ontologies et vocabulaires générés pour les données publiées sont fournis. Les correspondances appropriées sont disposées de manière informelle et claire (glossaires, tableaux de correspondance, ...)</text>
-		<text lang="it">Le ontologie e i vocabolari generati per i dati pubblicati sono allegati. La corrispondenza a terminologie di uso comune è espressa in modo leggero e informale (glossario, tabella di allineamento, ...)</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/mappings/formal">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>formal</key>
-		<path>mappings/formal</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/mappings"/>
-		<order>2</order>
-		<text lang="en">The generated ontologies and vocabularies for the published data are provided, together with appropriate mappings in a formal, heavyweight form (OWL, RDF, …) to more commonly used ontologies</text>
-		<text lang="de">Die generierten Ontologien und Vokabularien für die veröffentlichten Daten werden mitgeliefert, zusammen mit passenden Konkordanzen zu gängiger Terminologie, in einer vertieften und formellen Weise (OWL-Sprache, RDF-Modell, ...)</text>
-		<text lang="es">Se adjuntan las ontologías y vocabularios generados para los datos publicados. La correspondencia con las terminologías de uso común se expresa de manera formal y detallada (lenguaje OWL, modelo RDF, ...).</text>
-		<text lang="fr">Les ontologies et vocabulaires générés pour les données publiées sont fournis. Les correspondances appropriées sont disposées de manière formelle et détaillée (langage OWL, modèle RDF, ...)</text>
-		<text lang="it">Le ontologie e i vocabolari generati per i dati pubblicati sono allegati. La corrispondenza a terminologie di uso comune è espressa in modo formale e dettagliato (linguaggio OWL, modello RDF, ...)</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/mappings/none">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>none</key>
-		<path>mappings/none</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/mappings"/>
-		<order>3</order>
-		<text lang="en">No mappings are necessary, as the datasets are described using standard terminologies / There is no need for a mapping, since the used terminology is chosen to be compatible with the existing literature</text>
-		<text lang="de">Das Mitliefern von Konkordanzen is nicht notwendig aufgrund der Kompatibilität der verwendeten Terminologie mit der bestehenden Literatur</text>
-		<text lang="es">No es necesario realizar mapeos, ya que los conjuntos de datos se describen utilizando terminologías estándar / No es necesario realizar mapeos, ya que la terminología utilizada se elige para que sea compatible con la literatura existente</text>
-		<text lang="fr">Comme le jeu de données utilise des terminologies de référence ou compatibles avec la littérature existante, aucune correspondance est nécessaire</text>
-		<text lang="it">Non c'è bisogno di riportare corrispondenze, dato cha la terminologia usata è compatibile con la letteratura esistente</text>
-		<additional_input>True</additional_input>
-	</option>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>other_research_output</key>
-		<dc:comment>Such outputs can be either digital (e.g. software, workflows, protocols, models, etc.) or physical (e.g. new materials, antibodies, reagents, samples, etc.).</dc:comment>
-		<order>0</order>
-		<conditions/>
-	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/software">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>software</key>
-		<path>other_research_output/software</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output"/>
-		<order>1</order>
-		<text lang="en">Software</text>
-		<text lang="de">Programme</text>
-		<text lang="es">Programas</text>
-		<text lang="fr">Logiciels</text>
-		<text lang="it">Programmi</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/workflows">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>workflows</key>
-		<path>other_research_output/workflows</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output"/>
-		<order>2</order>
-		<text lang="en">Workflows</text>
-		<text lang="de">Workflows</text>
-		<text lang="es">Workflows</text>
-		<text lang="fr">Workflows</text>
-		<text lang="it">Workflows</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/protocols">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>protocols</key>
-		<path>other_research_output/protocols</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output"/>
-		<order>3</order>
-		<text lang="en">Protocols</text>
-		<text lang="de">Protokolle</text>
-		<text lang="es">Protocolos</text>
-		<text lang="fr">Protocoles</text>
-		<text lang="it">Protocolli</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/models">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>models</key>
-		<path>other_research_output/models</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output"/>
-		<order>4</order>
-		<text lang="en">Models</text>
-		<text lang="de">Modelle</text>
-		<text lang="es">Modelos</text>
-		<text lang="fr">Modèles</text>
-		<text lang="it">Modelli</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/samples">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>samples</key>
-		<path>other_research_output/samples</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output"/>
-		<order>5</order>
-		<text lang="en">Samples</text>
-		<text lang="de">Proben</text>
-		<text lang="es">Muestras</text>
-		<text lang="fr">Échantillons</text>
-		<text lang="it">Campioni</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/materials">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>materials</key>
-		<path>other_research_output/materials</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output"/>
-		<order>6</order>
-		<text lang="en">New materials</text>
-		<text lang="de">Neue Werkstoffe</text>
-		<text lang="es">Nuevos materiales</text>
-		<text lang="fr">Nouveaux matériaux</text>
-		<text lang="it">Nuovi materiali</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/chemicals">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>chemicals</key>
-		<path>other_research_output/chemicals</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output"/>
-		<order>7</order>
-		<text lang="en">New chemical substances (reagents, ...)</text>
-		<text lang="de">Neue chemische Substanzen (Reagenzien, ...)</text>
-		<text lang="es">Nuevas sustancias químicas (reactivos, ...)</text>
-		<text lang="fr">Nouvelles substances chimiques (réactants, ...)</text>
-		<text lang="it">Nuove sostanze chimiche (reagenti, ...)</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/biological">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>biological</key>
-		<path>other_research_output/biological</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output"/>
-		<order>8</order>
-		<text lang="en">New biological substances (antibodies, ...)</text>
-		<text lang="de">Neue biologische Substanzen (Antikörper, ...)</text>
-		<text lang="es">Nuevas sustancias biológicas (anticuerpos, ...)</text>
-		<text lang="fr">Nouvelles substances biologiques (anticorps, ...)</text>
-		<text lang="it">Nuove sostanze biologiche (anticorpi, ...)</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/other">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>other</key>
-		<path>other_research_output/other</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output"/>
-		<order>10</order>
-		<text lang="en">Other</text>
-		<text lang="de">Sonstiges</text>
-		<text lang="es">Otro</text>
-		<text lang="fr">Autre</text>
-		<text lang="it">Altro</text>
-		<additional_input>True</additional_input>
-	</option>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>preservation_responsible</key>
-		<dc:comment/>
-		<order>0</order>
-		<conditions/>
-	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible/repository">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>repository</key>
-		<path>preservation_responsible/repository</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible"/>
-		<order>1</order>
-		<text lang="en">The repository</text>
-		<text lang="de">Das Repositorium</text>
-		<text lang="es">El repositorio</text>
-		<text lang="fr">Le dépôt</text>
-		<text lang="it">Il repositorio</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible/lib">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>lib</key>
-		<path>preservation_responsible/lib</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible"/>
-		<order>2</order>
-		<text lang="en">The institutional library</text>
-		<text lang="de">Die Bibliothek des Instituts</text>
-		<text lang="es">La biblioteca institucional</text>
-		<text lang="fr">Le centre de documentation de l'institution</text>
-		<text lang="it">La biblioteca dell’istituto</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible/calc">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>calc</key>
-		<path>preservation_responsible/calc</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible"/>
-		<order>3</order>
-		<text lang="en">The IT department of the institute</text>
-		<text lang="de">Das Rechenzentrum des Instituts</text>
-		<text lang="es">El departamento de informática del instituto</text>
-		<text lang="fr">Le service informatique de l'institution</text>
-		<text lang="it">Il centro di calcolo dell’istituto</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible/coordinator">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>coordinator</key>
-		<path>preservation_responsible/coordinator</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible"/>
-		<order>4</order>
-		<text lang="en">The project coordinator</text>
-		<text lang="de">Der Projektkoordinator</text>
-		<text lang="es">El coordinador del proyecto</text>
-		<text lang="fr">Le coordinateur du projet</text>
-		<text lang="it">Il coordinatore del progetto</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible/datacoord">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>datacoord</key>
-		<path>preservation_responsible/datacoord</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible"/>
-		<order>5</order>
-		<text lang="en">The data coordinator</text>
-		<text lang="de">Der Datenkoordinator</text>
-		<text lang="es">El responsable de los datos</text>
-		<text lang="fr">Le responsable des données</text>
-		<text lang="it">Il responsabile dei dati</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible/other">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>other</key>
-		<path>preservation_responsible/other</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible"/>
-		<order>10</order>
-		<text lang="en">Other</text>
-		<text lang="de">Sonstiges</text>
-		<text lang="es">Otro</text>
-		<text lang="fr">Autre</text>
-		<text lang="it">Altro</text>
-		<additional_input>True</additional_input>
-	</option>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/qualified_references">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>qualified_references</key>
-		<dc:comment/>
-		<order>0</order>
-		<conditions/>
-	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/qualified_references/same">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>same</key>
-		<path>qualified_references/same</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/qualified_references"/>
-		<order>1</order>
-		<text lang="en">Yes, the data include qualified references to other datasets from the same project</text>
-		<text lang="de">Ja, die Daten enthalten qualifizierte Referenzen zu anderen Datensätzen desselben Projekts</text>
-		<text lang="es">Sí, los datos incluyen referencias cualificadas a otros conjuntos de datos del mismo proyecto</text>
-		<text lang="fr">Oui, les données se réfèrent à d'autres jeux de données du même projet</text>
-		<text lang="it">Sì, i dati contengono riferimenti qualificati ad altre raccolte di dati dello stesso progetto</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/qualified_references/previous">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>previous</key>
-		<path>qualified_references/previous</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/qualified_references"/>
-		<order>2</order>
-		<text lang="en">Yes, the data include qualified references to other datasets from previous research</text>
-		<text lang="de">Ja, die Daten enthalten qualifizierte Referenzen zu anderen Datensätzen aus vorherigen Forschungsaktivitäten</text>
-		<text lang="es">Sí, los datos incluyen referencias cualificadas a otros conjuntos de datos de investigaciones anteriores</text>
-		<text lang="fr">Oui, les données se réfèrent à d'autres jeux de données de recherches antérieurs</text>
-		<text lang="it">Sì, i dati contengono riferimenti qualificati ad altre raccolte di dati da ricerche precedenti</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/qualified_references/none">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>none</key>
-		<path>qualified_references/none</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/qualified_references"/>
-		<order>3</order>
-		<text lang="en">No, the data do not include any references to other data</text>
-		<text lang="de">Nein, die Daten enthalten keine Referenzen anderer Daten</text>
-		<text lang="es">No, los datos no incluyen ninguna referencia a otros datos</text>
-		<text lang="fr">Non, les données ne font pas référence à d'autres données</text>
-		<text lang="it">No, i dati non fanno riferimenti ad altri dati</text>
-		<additional_input>True</additional_input>
-	</option>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>quality_procedures</key>
-		<dc:comment/>
-		<order>0</order>
-		<conditions/>
-	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/completeness">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>completeness</key>
-		<path>quality_procedures/completeness</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
-		<order>1</order>
-		<text lang="en">Completeness check</text>
-		<text lang="de">Prüfung auf Vollständigkeit</text>
-		<text lang="es">Control de integridad de los datos</text>
-		<text lang="fr">Contrôle d'intégralité des données</text>
-		<text lang="it">Controllo di integrità dei dati</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/reconciliation">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>reconciliation</key>
-		<path>quality_procedures/reconciliation</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
-		<order>2</order>
-		<text lang="en">Data reconciliation</text>
-		<text lang="de">Datenabgleich</text>
-		<text lang="es">Reconciliación de datos</text>
-		<text lang="fr">Réconciliation des données</text>
-		<text lang="it">Riconciliazione dei dati</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/sampling">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>sampling</key>
-		<path>quality_procedures/sampling</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
-		<order>3</order>
-		<text lang="en">Sampling procedures</text>
-		<text lang="de">Vorgehen bei der Probennahme</text>
-		<text lang="es">Procedimientos de muestreo</text>
-		<text lang="fr">Procédures d'échantillonnage</text>
-		<text lang="it">Procedure di campionamento</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/comparison">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>comparison</key>
-		<path>quality_procedures/comparison</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
-		<order>4</order>
-		<text lang="en">Repeated or comparative measurements</text>
-		<text lang="de">Wiederholte und vergleichbare Messungen</text>
-		<text lang="es">Mediciones repetidas o comparativas</text>
-		<text lang="fr">Mesures répétées ou comparées</text>
-		<text lang="it">Misure ripetute o comparative</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/standard">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>standard</key>
-		<path>quality_procedures/standard</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
-		<order>5</order>
-		<text lang="en">Adherence to standard procedures for data recording</text>
-		<text lang="de">Konformität zu Standardprozeduren zur Datenaufnahme</text>
-		<text lang="es">Cumplimiento de los procedimientos estándar de registro de datos</text>
-		<text lang="fr">Acquisition des données en cohérence avec des procédures de référence</text>
-		<text lang="it">Acquisizione dei dati conforme a procedure standard</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/terminology">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>terminology</key>
-		<path>quality_procedures/terminology</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
-		<order>6</order>
-		<text lang="en">Use of controlled vocabularies and standard terminology</text>
-		<text lang="de">Verwendung kontrollierter Vokabulare und von Standard-Ausdrucksweise</text>
-		<text lang="es">Uso de vocabularios controlados y terminología estándar</text>
-		<text lang="fr">Utilisation de vocabulaires réglementés et d'une terminologie de référence</text>
-		<text lang="it">Uso di vocabolari controllati e terminologia standard</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/setup">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>setup</key>
-		<path>quality_procedures/setup</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
-		<order>7</order>
-		<text lang="en">Metrological characterisation of the measurement set-up</text>
-		<text lang="de">Metrologische Charakterisierung des Messaufbaus</text>
-		<text lang="es">Caracterización metrológica del equipo de medición</text>
-		<text lang="fr">Charactérisation métrologique du procédé de mesure</text>
-		<text lang="it">Caratterizzazione metrologica dei procedimenti di misura</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/validation">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>validation</key>
-		<path>quality_procedures/validation</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
-		<order>8</order>
-		<text lang="en">Data validation</text>
-		<text lang="de">Datenvalidierung</text>
-		<text lang="es">Validación de datos</text>
-		<text lang="fr">Validation des données</text>
-		<text lang="it">Validazione dei dati</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/test">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>test</key>
-		<path>quality_procedures/test</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
-		<order>9</order>
-		<text lang="en">Provision of test results along with the data</text>
-		<text lang="de">Verfügbarmachung von Testergebnissen zusammen mit den Daten</text>
-		<text lang="es">Suministro de los resultados de las pruebas junto con los datos</text>
-		<text lang="fr">Fourniture avec les données de résultats de tests</text>
-		<text lang="it">Disponibilità dei risultati di tests insieme con i dati</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/peerreview">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>peerreview</key>
-		<path>quality_procedures/peerreview</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
-		<order>10</order>
-		<text lang="en">Peer review of textual publications based on the data</text>
-		<text lang="de">Peer-Review von Textpublikationen basierend auf den Daten</text>
-		<text lang="es">Revisión de las publicaciones textuales basadas en los datos</text>
-		<text lang="fr">Relecture par des paires de publication (textuel) se basant sur les données</text>
-		<text lang="it">Revisione di pubblicazioni testuali basate sui dati</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/other">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>other</key>
-		<path>quality_procedures/other</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
-		<order>20</order>
-		<text lang="en">Other</text>
-		<text lang="de">Sonstiges</text>
-		<text lang="es">Otro</text>
-		<text lang="fr">Autre</text>
-		<text lang="it">Altro</text>
-		<additional_input>True</additional_input>
-	</option>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>repository_arrangements_why</key>
-		<dc:comment/>
-		<order>0</order>
-		<conditions/>
-	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why/size">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>size</key>
-		<path>repository_arrangements_why/size</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why"/>
-		<order>1</order>
-		<text lang="en">Yes, because of the big size of the data</text>
-		<text lang="de">Ja, wegen des großen Datenvolumens</text>
-		<text lang="es">Sí, debido al gran tamaño de los datos</text>
-		<text lang="fr">Oui, en raison de la quantité élevée de données</text>
-		<text lang="it">Sì, a causa della grande quantità dei dati</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why/format">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>format</key>
-		<path>repository_arrangements_why/format</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why"/>
-		<order>2</order>
-		<text lang="en">Yes, because of the particular format of the data</text>
-		<text lang="de">Ja, wegen des speziellen Datenformats</text>
-		<text lang="es">Sí, debido al formato particular de los datos</text>
-		<text lang="fr">Oui, en raison du format particulier des données</text>
-		<text lang="it">Sì, a causa della grande quantità dei dati</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why/confidentiality">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>confidentiality</key>
-		<path>repository_arrangements_why/confidentiality</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why"/>
-		<order>3</order>
-		<text lang="en">Yes, because the data are confidential</text>
-		<text lang="de">Ja, weil die Daten vertraulich sind</text>
-		<text lang="es">Sí, porque los datos son confidenciales</text>
-		<text lang="fr">Oui, parce que les données sont confidencielles</text>
-		<text lang="it">Sì, perché i dati sono confidenziali</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why/legal_issues">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>legal_issues</key>
-		<path>repository_arrangements_why/legal_issues</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why"/>
-		<order>4</order>
-		<text lang="en">Yes, because of legal issues related to the data</text>
-		<text lang="de">Ja, wegen rechtlicher Probleme mit den Daten</text>
-		<text lang="es">Sí, por cuestiones legales relacionadas con los datos</text>
-		<text lang="fr">Oui, pour des raisons juridiques en lien avec les données</text>
-		<text lang="it">Sì, a causa di problemi legali collegati ai dati</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why/other">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>other</key>
-		<path>repository_arrangements_why/other</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why"/>
-		<order>5</order>
-		<text lang="en">Yes, for other reasons</text>
-		<text lang="de">Ja, aus anderen Gründen</text>
-		<text lang="es">Sí, por otras razones</text>
-		<text lang="fr">Oui, pour d'autres raisons</text>
-		<text lang="it">Sì, per altri motivi</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why/no">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>no</key>
-		<path>repository_arrangements_why/no</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why"/>
-		<order>6</order>
-		<text lang="en">No, the data will be uploaded via a standard procedure and require no special arrangements</text>
-		<text lang="de">Nein, die Daten werden mit Hilfe einer Standardprozedur hochgeladen und erfordern keine speziellen Vorbereitungen</text>
-		<text lang="es">No, los datos se cargarán a través de un procedimiento estándar y no requieren ningún acuerdo especial</text>
-		<text lang="fr">Non, les données seront téléversées en suivant une procédure et non pas besoin d'ajustement particulier</text>
-		<text lang="it">No, i dati si possono caricare con una procedura standard e non necessitano accordi particolari</text>
-		<additional_input>True</additional_input>
-	</option>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>repository_trusted_why</key>
-		<dc:comment>Source: https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf?page=155</dc:comment>
-		<order>0</order>
-		<conditions/>
-	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/basics">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>basics</key>
-		<path>repository_trusted_why/basics</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
-		<order>1</order>
-		<text lang="en">The repository meets the basic expectations of a research data repository: easy and free access while observing legal and ethical barriers, detailed metadata, protection against unauthorized access</text>
-		<text lang="de">Das Repositorium erfüllt die grundsätzlichen Erwartungen an ein Forschungsdatenrepositorium: leichter und kostenfreier Zugang bei Beachtung rechtlicher und ethischer Schranken, detaillierte Metadaten, Schutz gegen unautorisierten Zugriff</text>
-		<text lang="es">El repositorio cumple con las expectativas básicas de un repositorio de datos de investigación: acceso fácil y gratuito respetando las barreras legales y éticas, metadatos detallados, protección contra el acceso no autorizado</text>
-		<text lang="fr">Le dépôt remplit les attentes minimales en terme de stockage de données de recherche&#8239;: accès simple et gratuit, tout en proposant des barrières juridiques et ethiques, des métadonnées détaillées, et une protection contre les accès prohibés.</text>
-		<text lang="it">Il repositorio soddisfa le richieste minime per la conservazione dei dati della ricerca: accesso agevole e gratuito pur nel rispetto delle barriere legali ed etiche, metadati dettagliati, protezione contro l'accesso non autorizzati</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/standards">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>standards</key>
-		<path>repository_trusted_why/standards</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
-		<order>1</order>
-		<text lang="en">Machine-actionable and standardised metadata are used</text>
-		<text lang="de">Maschinenlesbare und standardisierte Metadaten werden verwendet</text>
-		<text lang="es">Se utilizan metadatos estandarizados y procesables por máquina</text>
-		<text lang="fr">Sont utilisées des métadonnées lisibles et exploitables par les machines (« machine-actionable ») et standardisées</text>
-		<text lang="it">Sono utilizzati metadati leggibili e riutilizzabili da una macchina  («machine-actionable») e conformi a uno standard</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/pids">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>pids</key>
-		<path>repository_trusted_why/pids</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
-		<order>1</order>
-		<text lang="en">The repository can provide persistent identifiers, e.g. a DOI</text>
-		<text lang="de">Das Repositorium kann persistente Identifikatoren vergeben (z.B. einen DOI)</text>
-		<text lang="es">El repositorio puede proporcionar identificadores persistentes, por ejemplo, un DOI</text>
-		<text lang="fr">Le dépôt fournit des identificateurs persistents, par ex. des DOI</text>
-		<text lang="it">Il repositorio fornisce identificatori persistenti, es. DOI</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/quality">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>quality</key>
-		<path>repository_trusted_why/quality</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
-		<order>1</order>
-		<text lang="en">The repository checks the quality of the data</text>
-		<text lang="de">Das Repositorium prüft die Qualität der Daten</text>
-		<text lang="es">El depósito comprueba la calidad de los datos</text>
-		<text lang="fr">Le dépôt contrôle la qualité des données</text>
-		<text lang="it">Il repositorio controlla la qualità dei dati</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/curation">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>curation</key>
-		<path>repository_trusted_why/curation</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
-		<order>1</order>
-		<text lang="en">The repository offers expert curation for the long-term archivation</text>
-		<text lang="de">Das Repositorium bietet eine Datenpflege für die Langzeitarchivierung durch Experten an</text>
-		<text lang="es">El repositorio ofrece la curación de expertos para el archivo a largo plazo</text>
-		<text lang="fr">Le dépôt a une expertise en conservation et propose un archivage durable</text>
-		<text lang="it">Il repositorio offre un servizio professionale di cura dei dati per la conservazione a lungo termine</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/services">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>services</key>
-		<path>repository_trusted_why/services</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
-		<order>1</order>
-		<text lang="en">The repository offers services and mechanisms that go beyond the usual data download, which facilitate the subsequent use of the data, e.g. visualization, analysis tools.</text>
-		<text lang="de">Das Repositorium bietet über den üblichen Daten-Download hinausgehende Dienste und Mechanismen an, die die Nachnutzung der Daten erleichtern, z.B. Visualisierung, Analysetools</text>
-		<text lang="es">El repositorio ofrece servicios y mecanismos que van más allá de la habitual descarga de datos, que facilitan el uso posterior de los mismos, por ejemplo, visualización, herramientas de análisis.</text>
-		<text lang="fr">Au-delà du simple téléchargement, le dépôt propose des services ou des outils facilitant les manipulations ultérieures des données, permettant par exemple une visualisation ou une analyse</text>
-		<text lang="it">Oltre allo scaricamento dei dati, il repositorio offre servizi aggiuntivi che facilitano il riutilizzo dei dati, per esempio la visualizazione o l'analisi</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/certified">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>certified</key>
-		<path>repository_trusted_why/certified</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
-		<order>1</order>
-		<text lang="en">The repository holds a certification</text>
-		<text lang="de">Das Repositorium ist zertifiziert</text>
-		<text lang="es">El depósito tiene una certificación</text>
-		<text lang="fr">Le dépôt a une certification à jour</text>
-		<text lang="it">Il repositorio possiede una certificazione ufficiale</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/disciplinary">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>disciplinary</key>
-		<path>repository_trusted_why/disciplinary</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
-		<order>2</order>
-		<text lang="en">The repository is internationally acknowledged for the a specific discipline/domain</text>
-		<text lang="de">Das Repositorium ist auf dem Fachgebiet international anerkannt</text>
-		<text lang="es">El repositorio está reconocido internacionalmente para una disciplina/dominio específico</text>
-		<text lang="fr">Le dépôt est reconnu internationallement pour un domaine particulier</text>
-		<text lang="it">Il repositorio gode di un riconoscimento internazionale per una disciplina o dominio specifico</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/institutional">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>institutional</key>
-		<path>repository_trusted_why/institutional</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
-		<order>3</order>
-		<text lang="en">The repository is managed by a trustworthy institution</text>
-		<text lang="de">Das Repositorium wird von einer vertrauenswürdigen Institution verwaltet</text>
-		<text lang="es">El depósito está gestionado por una institución de confianza</text>
-		<text lang="fr">Le dépôt est géré par un organisme de confiance</text>
-		<text lang="it">Il repositorio è gestito da un'istituzione considerata affidabile</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/policy">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>policy</key>
-		<path>repository_trusted_why/policy</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
-		<order>4</order>
-		<text lang="en">The repository's policy is available online</text>
-		<text lang="de">Die Nutzungsbedingungen des Repositoriums sind online verfügbar</text>
-		<text lang="es">La política del depósito está disponible en línea</text>
-		<text lang="fr">La politique du dépôt est disponible en ligne</text>
-		<text lang="it">La regolamentazione del repositorio è disponibile in linea</text>
-		<additional_input>True</additional_input>
-	</option>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/security_measures">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>security_measures</key>
-		<dc:comment/>
-		<order>0</order>
-		<conditions/>
-	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/security_measures/protection">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>protection</key>
-		<path>security_measures/protection</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/security_measures"/>
-		<order>1</order>
-		<text lang="en">Protection against unauthorized access</text>
-		<text lang="de">Schutz vor unerlaubtem Zugriff</text>
-		<text lang="es">Protección contra el acceso no autorizado</text>
-		<text lang="fr">Protection contre les accès indésirables</text>
-		<text lang="it">Protezione contro accessi indesiserati</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/security_measures/checksum">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>checksum</key>
-		<path>security_measures/checksum</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/security_measures"/>
-		<order>2</order>
-		<text lang="en">Data robustness: checksum</text>
-		<text lang="de">Datenrobustheit: Checksumme</text>
-		<text lang="es">Solidez de los datos: suma de comprobación</text>
-		<text lang="fr">Robustesse de données&#8239;: somme de contrôle</text>
-		<text lang="it">Robustezza dei dati: checksum</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/security_measures/encryption">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>encryption</key>
-		<path>security_measures/encryption</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/security_measures"/>
-		<order>3</order>
-		<text lang="en">Data robustness: encryption</text>
-		<text lang="de">Datenrobustheit: Verschlüsselung</text>
-		<text lang="es">Solidez de los datos: cifrado</text>
-		<text lang="fr">Robustesse de données&#8239;: chiffrement</text>
-		<text lang="it">Robustezza dei dati: cifratura</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/security_measures/backups">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>backups</key>
-		<path>security_measures/backups</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/security_measures"/>
-		<order>4</order>
-		<text lang="en">Data recovery: backups</text>
-		<text lang="de">Datenwiederherstellung: Backups</text>
-		<text lang="es">Recuperación de datos: copias de seguridad</text>
-		<text lang="fr">Récupération de données&#8239;: sauvegardes</text>
-		<text lang="it">Recupero dei dati: backup</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/security_measures/replicas">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>replicas</key>
-		<path>security_measures/replicas</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/security_measures"/>
-		<order>5</order>
-		<text lang="en">Data recovery: multiple replicas in a distributed file system</text>
-		<text lang="de">Datenwiederherstellung: redundante Kopien in einem verteilten Dateisystem</text>
-		<text lang="es">Recuperación de datos: múltiples réplicas en un sistema de archivos distribuido</text>
-		<text lang="fr">Récupération de données&#8239;: plusieures copies dans un système de fichier distribué</text>
-		<text lang="it">Recupero dei dati: copie multiple in un sistema distribuito di cartelle</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/security_measures/anonymisation">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>anonymisation</key>
-		<path>security_measures/anomymisation</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/security_measures"/>
-		<order>6</order>
-		<text lang="en">Sensitive data: anonymisation or pseudonymisation</text>
-		<text lang="de">Sensible Daten: Anonymisierung oder Pseudonymisierung</text>
-		<text lang="es">Datos sensibles: anonimización o seudonimización</text>
-		<text lang="fr">Données sensibles&#8239;: anonymisation ou pseudonymisation</text>
-		<text lang="it">Dati sensibili: anonimizzazione o pseudonimizzazione</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/security_measures/other">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>other</key>
-		<path>security_measures/other</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/security_measures"/>
-		<order>10</order>
-		<text lang="en">Other</text>
-		<text lang="de">Sonstiges</text>
-		<text lang="es">Otro</text>
-		<text lang="fr">Autre</text>
-		<text lang="it">Altro</text>
-		<additional_input>True</additional_input>
-	</option>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/usage_software">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>usage_software</key>
-		<dc:comment/>
-		<order>0</order>
-		<provider_key/>
-		<conditions/>
-	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/usage_software/existing_open">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>existing_open</key>
-		<path>usage_software/existing_open</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/usage_software"/>
-		<order>1</order>
-		<text lang="en">free software</text>
-		<text lang="de">Freie Software</text>
-		<text lang="es">software gratuito</text>
-		<text lang="fr">Logiciel libre</text>
-		<text lang="it">programma libero</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/usage_software/existing_commercial">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>existing_commercial</key>
-		<path>usage_software/existing_commercial</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/usage_software"/>
-		<order>2</order>
-		<text lang="en">common commercial software</text>
-		<text lang="de">Gängige kommerzielle Software</text>
-		<text lang="es">software comercial común</text>
-		<text lang="fr">Logiciel commercial propriétaire</text>
-		<text lang="it">programma commerciale</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/usage_software/selfgenerated">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>selfgenerated</key>
-		<path>usage_software/selfgenerated</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/usage_software"/>
-		<order>3</order>
-		<text lang="en">self-generated software or script</text>
-		<text lang="de">Selbsterzeugte Software oder Skript</text>
-		<text lang="es">software o script autogenerado</text>
-		<text lang="fr">Logiciel ou script auto-généré</text>
-		<text lang="it">programma o script autoprodotto</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/usage_software/other">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>other</key>
-		<path>usage_software/other</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/usage_software"/>
-		<order>5</order>
-		<text lang="en">Other</text>
-		<text lang="de">Sonstiges</text>
-		<text lang="es">Otro</text>
-		<text lang="fr">Autre</text>
-		<text lang="it">Altro</text>
-		<additional_input>True</additional_input>
-	</option>
 	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/control_tools">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>control_tools</key>
 		<dc:comment>Übersicht über Methoden zur Kontrolle und Dokumentation der Konsistenz und Qualität von erhobenen Daten</dc:comment>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/control_tools/1">
@@ -1735,6 +175,7 @@
 		<key>data_protection_laws</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/21">
@@ -2022,6 +463,7 @@
 		<key>dataset_anonymisation</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_anonymisation/41">
@@ -2085,6 +527,7 @@
 		<key>dataset_collaboration_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_collaboration_options/129">
@@ -2134,6 +577,7 @@
 		<key>dataset_copyright_laws</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_copyright_laws/50">
@@ -2211,6 +655,7 @@
 		<key>dataset_interoperability_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_interoperability_options/259">
@@ -2274,6 +719,7 @@
 		<key>dataset_license_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_options/239">
@@ -2309,6 +755,7 @@
 		<key>dataset_license_types</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/71">
@@ -2423,11 +870,146 @@
 		<text lang="it">Altra, o denominazione esatta – qualora nota</text>
 		<additional_input>True</additional_input>
 	</option>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>dataset_origin</key>
+		<dc:comment/>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin/project_data">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>project_data</key>
+		<path>dataset_origin/project_data</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin"/>
+		<order>1</order>
+		<text lang="en">Existing data: project own data</text>
+		<text lang="de">Bereits existierende Daten: projekteigene Daten</text>
+		<text lang="es">Datos existentes: datos específicos del proyecto</text>
+		<text lang="fr">Données existantes&#8239;: elles appartiennent au projet</text>
+		<text lang="it">Dati esistenti: disponibili internamente al progetto</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin/project_partner_data">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>project_partner_data</key>
+		<path>dataset_origin/project_partner_data</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin"/>
+		<order>2</order>
+		<text lang="en">Existing data: internal data of the project partners</text>
+		<text lang="de">Bereits existierende Daten: von Projektpartner geliefert</text>
+		<text lang="es">Datos existentes: datos internos de los socios del proyecto</text>
+		<text lang="fr">Données existantes&#8239;: elles appartiennent à certains partenaires du projet</text>
+		<text lang="it">Dati esistenti: forniti da membri del progetto</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin/public_data">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>public_data</key>
+		<path>dataset_origin/public_data</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin"/>
+		<order>3</order>
+		<text lang="en">Existing data: publicly available data</text>
+		<text lang="de">Bereits existierende Daten: öffentlich zugängliche Daten</text>
+		<text lang="es">Datos existentes: datos disponibles públicamente</text>
+		<text lang="fr">Données existantes&#8239;: elles sont déjà ouvertes au publique</text>
+		<text lang="it">Dati esistenti: già pubblicati</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin/experiments">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>experiments</key>
+		<path>dataset_origin/experiments</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin"/>
+		<order>5</order>
+		<text lang="en">Generated data: from experiments</text>
+		<text lang="de">Selbst erzeugte Daten: aus Experimenten</text>
+		<text lang="es">Datos generados: a partir de experimentos</text>
+		<text lang="fr">Données produites&#8239;: à partir d'expériences</text>
+		<text lang="it">Dati generati: da esperimenti</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin/simulations">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>simulations</key>
+		<path>dataset_origin/simulations</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin"/>
+		<order>6</order>
+		<text lang="en">Generated data: from simulations</text>
+		<text lang="de">Selbst erzeugte Daten: aus Simulationen</text>
+		<text lang="es">Datos generados: a partir de simulaciones</text>
+		<text lang="fr">Données produites&#8239;: à partir de simulations</text>
+		<text lang="it">Dati generati: da simulazioni</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin/observations">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>observations</key>
+		<path>dataset_origin/observations</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin"/>
+		<order>7</order>
+		<text lang="en">Generated data: from observations</text>
+		<text lang="de">Selbst erzeugte Daten: aus Beobachtungen</text>
+		<text lang="es">Datos generados: a partir de observaciones</text>
+		<text lang="fr">Données produites&#8239;: à partir d'observations</text>
+		<text lang="it">Dati generati: da studi osservativi</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin/surveys">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>surveys</key>
+		<path>dataset_origin/surveys</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin"/>
+		<order>8</order>
+		<text lang="en">Generated data: from surveys</text>
+		<text lang="de">Selbst erzeugte Daten: aus Umfragen</text>
+		<text lang="es">Datos generados: a partir de encuestas</text>
+		<text lang="fr">Données produites&#8239;: à partir de questionnaires ou sondages</text>
+		<text lang="it">Dati generati: da questionari o sondaggi</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin/transformation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>transformation</key>
+		<path>dataset_origin/transformation</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin"/>
+		<order>9</order>
+		<text lang="en">Generated data: from transformation/analysis of other data</text>
+		<text lang="de">Selbst erzeugte Daten: durch Transformation / Analyse anderer Daten</text>
+		<text lang="es">Datos generados: a partir de transformación o análisis de otros datos</text>
+		<text lang="fr">Données produites&#8239;: à partir de l'analyse ou du raffinement de données existantes</text>
+		<text lang="it">Dati generati: dalla trasformazione o analisi di dati esistenti</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin/other">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>other</key>
+		<path>dataset_origin/other</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin"/>
+		<order>10</order>
+		<text lang="en">Other</text>
+		<text lang="de">Sonstiges</text>
+		<text lang="es">Otro</text>
+		<text lang="fr">Autre</text>
+		<text lang="it">Altro</text>
+		<additional_input>True</additional_input>
+	</option>
 	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin_options">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>dataset_origin_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin_options/148">
@@ -2477,6 +1059,7 @@
 		<key>dataset_other_rights</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_other_rights/56">
@@ -2610,6 +1193,7 @@
 		<key>dataset_reproducible_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_reproducible_options/2">
@@ -2661,7 +1245,7 @@
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_reproducible_options"/>
 		<order>3</order>
-		<text lang="en">no, the data is not reproducible per se</text>
+		<text lang="en">no, the data are not reproducible per se</text>
 		<text lang="de">nein, die Daten sind per se nicht reproduzierbar</text>
 		<text lang="es">no, los datos no son reproducibles per se</text>
 		<text lang="fr">non, les données ne sont pas reproductibles en soi</text>
@@ -2673,36 +1257,9 @@
 		<key>dataset_sharing_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options/67">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>67</key>
-		<path>dataset_sharing_options/67</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options"/>
-		<order>4</order>
-		<text lang="en">Yes, internally with everyone, as long as they don't pass on the data</text>
-		<text lang="de">Ja, intern mit allen, solange sie die Daten nicht veröffentlichen oder nach außen weitergeben</text>
-		<text lang="es">Sí, internamente con todos, siempre que no pasen los datos</text>
-		<text lang="fr">Oui, en interne avec tout le monde, tant qu'ils ne transmettent pas les données</text>
-		<text lang="it">Sì, internamente con tutti, a condizione che i dati non vengano diffusi al pubblico</text>
-		<additional_input>False</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options/68">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>68</key>
-		<path>dataset_sharing_options/68</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options"/>
-		<order>3</order>
-		<text lang="en">Yes, externally limited with individual approval</text>
-		<text lang="de">Ja, extern in begrenztem Umfang mit individueller Freigabe</text>
-		<text lang="es">Sí, limitado externamente con aprobación individual</text>
-		<text lang="fr">Oui, limité en externe avec approbation individuelle</text>
-		<text lang="it">Sì, esternamente in una cerchia ristretta con approvazione individuale</text>
-		<additional_input>False</additional_input>
-	</option>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options/69">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>69</key>
@@ -2715,6 +1272,34 @@
 		<text lang="es">Sí, externamente para todos</text>
 		<text lang="fr">Oui, en externe pour tout le monde</text>
 		<text lang="it">Sì, esternamente per tutti</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options/68">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>68</key>
+		<path>dataset_sharing_options/68</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options"/>
+		<order>2</order>
+		<text lang="en">Yes, externally limited with individual approval</text>
+		<text lang="de">Ja, extern in begrenztem Umfang mit individueller Freigabe</text>
+		<text lang="es">Sí, limitado externamente con aprobación individual</text>
+		<text lang="fr">Oui, limité en externe avec approbation individuelle</text>
+		<text lang="it">Sì, esternamente in una cerchia ristretta con approvazione individuale</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options/67">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>67</key>
+		<path>dataset_sharing_options/67</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options"/>
+		<order>3</order>
+		<text lang="en">Yes, internally with everyone, as long as they don't pass on the data</text>
+		<text lang="de">Ja, intern mit allen, solange sie die Daten nicht veröffentlichen oder nach außen weitergeben</text>
+		<text lang="es">Sí, internamente con todos, siempre que no pasen los datos</text>
+		<text lang="fr">Oui, en interne avec tout le monde, tant qu'ils ne transmettent pas les données</text>
+		<text lang="it">Sì, internamente con tutti, a condizione che i dati non vengano diffusi al pubblico</text>
 		<additional_input>False</additional_input>
 	</option>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options/70">
@@ -2731,11 +1316,160 @@
 		<text lang="it">No</text>
 		<additional_input>False</additional_input>
 	</option>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>dataset_sharing_restrictions</key>
+		<dc:comment/>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/permission">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>permission</key>
+		<path>dataset_sharing_restrictions/permission</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
+		<order>1</order>
+		<text lang="en">Legal restrictions: Permission is required to access the data or the researched object, and the grantors do not consent to the data being disseminated</text>
+		<text lang="de">Rechtliche Hinderungsgründe: Für den Zugang zu den Daten oder zum beforschten Objekt ist eine Genehmigung erforderlich und die Erteiler der Genehmigung sind mit einer Weitergabe der Daten nicht einverstanden</text>
+		<text lang="es">Restricciones legales: el acceso a los datos es condicionado a un permiso, pero el responsable de eso no no aceptó poner los datos a disposición del público</text>
+		<text lang="fr">Restrictions juridiques&#8239;: une autorisation est nécessaire pour l'accès aux données, mais le responsable n'a pas accordé leur ouverture au publique</text>
+		<text lang="it">Restrizioni legali: l'accesso ai dati avviene previa autorizzazione, ma il responsabile  non ha acconsentito alla loro diffusione pubblica</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/privacy">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>privacy</key>
+		<path>dataset_sharing_restrictions/privacy</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
+		<order>2</order>
+		<text lang="en">Legal restrictions: sharing the data might reveal personal information for whose dissemination there is no consent</text>
+		<text lang="de">Rechtliche Hinderungsgründe: durch das Teilen der Daten könnten personenbezogene Informationen preisgegeben werden, für deren Weitergabe es keine Einwilligung gibt</text>
+		<text lang="es">Restricciones legales: El intercambio de datos podría revelar informaciones personales, para cuya condivisión no hay un acuerdo</text>
+		<text lang="fr">Restrictions juridiques&#8239;: le partage des données pourrait révéler des informations personnelles, dont la condivision n'est pas réglé par un accord</text>
+		<text lang="it">Restrizioni legali: la condivisione dei dati potrebbe rivelare informazioni personali sulla cui condivisione non è stato raggiunto un accordo</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/ipr">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>ipr</key>
+		<path>dataset_sharing_restrictions/ipr</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
+		<order>3</order>
+		<text lang="en">Legal restrictions: Parts of the data are intellectual property of a partner or of third parties and the project does not own the right to disseminate them</text>
+		<text lang="de">Rechtliche Hinderungsgründe: Teile der Daten sind geistiges Eigentum eines Partners oder Dritter und das Projekt besitzt nicht das Recht zu deren Weitergabe</text>
+		<text lang="es">Restricciones legales: una parte de los datos es propiedad intelectual de un socio o de terceros y el proyecto no conseguió autorización para compartirlos</text>
+		<text lang="fr">Restrictions juridiques&#8239;: une partie des données est propriété intellectuelle d'un partnenaire o de tiers et le projet n'a pas obtenu l'autorisation pour les partager</text>
+		<text lang="it">Restrizioni legali: una parte dei dati è proprietà intellettuale di un partner o di terzi e il progetto non è autorizzato a condividerli</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/law">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>law</key>
+		<path>dataset_sharing_restrictions/law</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
+		<order>4</order>
+		<text lang="en">Legal restrictions: Risk of possible violation of (inter)national law or any constraints from the Grant Agreement</text>
+		<text lang="de">Rechtliche Hinderungsgründe: Risiko einer möglichen Verletzung (inter)nationalen Rechts oder von Bedingungen im Fördervertrag</text>
+		<text lang="es">Restricciones legales: Riesgo de posible violación de la legislación (inter)nacional o de cualquier restricción del acuerdo de subvención</text>
+		<text lang="fr">Restrictions juridiques&#8239;: il existe un risque de violation d'une loi (y compris à l'étranger) ou d'une régle de l'accord de subvention</text>
+		<text lang="it">Restrizioni legali: rischio di possibile violazione di una legge (anche estera) o di una regola dell'accordo di finanziamento</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/ethics">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>ethics</key>
+		<path>dataset_sharing_restrictions/ethics</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
+		<order>5</order>
+		<text lang="en">Ethical restrictions, e.g. prevention of dual use, protection of vulnerable groups or endangered species, exclusion of stolen cultural assets</text>
+		<text lang="de">Ethische Hinderungsgründe, z.B. Beschränkung militärischer Nachnutzung, Schutz vulnerabler Gruppe oder gefährdeter Spezies, Ausschluss geraubter Kulturgüter</text>
+		<text lang="es">Restricciones éticas, por ejemplo, prevención del doble uso, protección de grupos vulnerables o especies en peligro, exclusión de bienes culturales robados</text>
+		<text lang="fr">Restrictions éthiques concernant par exemple des applications militaires, des groupes vulnérables, des espèces protégées ou l'exclusion de biens culturels volés</text>
+		<text lang="it">Restrizioni etiche: es. impedimento di riutilizzi militari, protezione di gruppi vulnerabili o specie protette, esclusione di beni culturali rubati</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/comprehensibility">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>comprehensibility</key>
+		<path>dataset_sharing_restrictions/comprehensibility</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
+		<order>6</order>
+		<text lang="en">Voluntary restrictions: Data economy and better comprehensibility (no publication of pre-processed data without a clear reason for doing so)</text>
+		<text lang="de">Freiwillige Beschränkungen: Datensparsamkeit und bessere Verständlichkeit (keine Veröffentlichung von Zwischenergebnissen ohnen einen triftigen Grund)</text>
+		<text lang="es">Restricciones voluntarias: Economía de datos y mayor comprensibilidad (no se publican datos preprocesados sin una razón clara para hacerlo)</text>
+		<text lang="fr">Restrictions propres&#8239;: économie de données et cohérence (aucune publication de données intermédiaires sans raison clairement valable)</text>
+		<text lang="it">Restrizioni volontarie: economia e comprensibilità (non pubblicazione di risultati intermedi senza una ragione specifica)</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/confirmation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>confirmation</key>
+		<path>dataset_sharing_restrictions/confirmation</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
+		<order>7</order>
+		<text lang="en">Voluntary restrictions: Use of results taken from past publications for confirmatory reasons only</text>
+		<text lang="de">Freiwillige Beschränkungen: Verwendung von Ergebnissen früherer Veröffentlichungen nur zu Bestätigungszwecken</text>
+		<text lang="es">Restricciones voluntarias: Utilización de resultados tomados de publicaciones anteriores sólo por razones de confirmación</text>
+		<text lang="fr">Restrictions propres&#8239;: les résultats publiés existants ne sont utilisés que pour comparaison</text>
+		<text lang="it">Restrizioni volontarie: utilizzo di risultati da pubblicazioni precedenti unicamente per confronto o conferma dei risultati</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/relevance">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>relevance</key>
+		<path>dataset_sharing_restrictions/relevance</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
+		<order>8</order>
+		<text lang="en">Voluntary restrictions: No direct relevance of the data for the main topic of the publication</text>
+		<text lang="de">Freiwillige Beschränkungen: keine direkte Relevanz der Daten für das Hauptthema der Textpublikation</text>
+		<text lang="es">Restricciones voluntarias: No hay relevancia directa de los datos para el tema principal de la publicación</text>
+		<text lang="fr">Restrictions propres&#8239;: aucune pertinence des données pour le sujet principal de la publication</text>
+		<text lang="it">Restrizioni volontarie: mancata pertinenza dei dati rispetto al soggetto principale della pubblicazione</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/redundancy">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>redundancy</key>
+		<path>dataset_sharing_restrictions/redundancy</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
+		<order>10</order>
+		<text lang="en">Voluntary restrictions: Redundancy of the data with the information already made available within a textual publication</text>
+		<text lang="de">Freiwillige Beschränkungen: Redundanz der Daten, wobei die Daten bereits in einer Textpublikation mit zur Verfügung gestellt worden sind</text>
+		<text lang="es">Restricciones voluntarias: Redundancia de los datos con la información ya disponible dentro de una publicación textual</text>
+		<text lang="fr">Restrictions propres&#8239;: redondance des données avec l'information rendue disponible dans une publication écrite</text>
+		<text lang="it">Restrizioni volontarie: ridondanza dei dati con l'informazione già contenuta in una pubblicazione testuale</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions/other">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>other</key>
+		<path>dataset_sharing_restrictions/other</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
+		<order>11</order>
+		<text lang="en">Other restrictions</text>
+		<text lang="de">Andere Hinderungsgründe</text>
+		<text lang="es">Otras restricciones</text>
+		<text lang="fr">Autres restrictions</text>
+		<text lang="it">Altre restrizioni</text>
+		<additional_input>True</additional_input>
+	</option>
 	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_size_options">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>dataset_size_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_size_options/251">
@@ -2813,6 +1547,7 @@
 		<key>dataset_versioning_technology_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_versioning_technology_options/166">
@@ -2871,11 +1606,260 @@
 		<text lang="it">Non ancora deciso</text>
 		<additional_input>False</additional_input>
 	</option>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/data_utility">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>data_utility</key>
+		<dc:comment/>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_utility/science">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>science</key>
+		<path>data_utility/science</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/data_utility"/>
+		<order>1</order>
+		<text lang="en">Other scientists (from the own or another field)</text>
+		<text lang="de">Andere Wissenschaftlerinnen und Wissenschaftler (aus dem eigenen oder anderen Forschungsfeldern)</text>
+		<text lang="es">Otros científicos (del mismo campo o de otro)</text>
+		<text lang="fr">Scientifiques autres (du même domaine ou non)</text>
+		<text lang="it">Altri ricercatori (nello stesso o in un altro campo)</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_utility/economy">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>economy</key>
+		<path>data_utility/economy</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/data_utility"/>
+		<order>2</order>
+		<text lang="en">Stakeholders from industry / economy</text>
+		<text lang="de">Entscheidungsträger aus Industrie / Wirtschaft</text>
+		<text lang="es">Actores de la industria o de la economía</text>
+		<text lang="fr">Acteurs industriels ou de l'économie</text>
+		<text lang="it">Attori dal mondo dell'industria o dell'economia</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_utility/standardisation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>standardisation</key>
+		<path>data_utility/standardisation</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/data_utility"/>
+		<order>3</order>
+		<text lang="en">Standardisation bodies</text>
+		<text lang="de">Normungsgremien</text>
+		<text lang="es">Organismos normativos</text>
+		<text lang="fr">Organismes de normalisation</text>
+		<text lang="it">Enti normativi</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_utility/politics">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>politics</key>
+		<path>data_utility/politics</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/data_utility"/>
+		<order>4</order>
+		<text lang="en">Politics / Decision makers</text>
+		<text lang="de">Politik / Entscheidungsträger</text>
+		<text lang="es">Responsables políticos o de la toma de decisiones</text>
+		<text lang="fr">Représentants politiques ou décideurs</text>
+		<text lang="it">Politici o decisori</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_utility/citizenship">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>citizenship</key>
+		<path>data_utility/citizenship</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/data_utility"/>
+		<order>5</order>
+		<text lang="en">Citizens</text>
+		<text lang="de">Öffentlichkeit</text>
+		<text lang="es">Ciudadanos</text>
+		<text lang="fr">Citoyens</text>
+		<text lang="it">Cittadini</text>
+		<additional_input>True</additional_input>
+	</option>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/documentation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>documentation</key>
+		<dc:comment/>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/documentation/generation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>generation</key>
+		<path>documentation/generation</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/documentation"/>
+		<order>1</order>
+		<text lang="en">Information on methodology used for data generation (creation or re-use) and transformation</text>
+		<text lang="de">Information zu Verfahren der Datenerzeugung und Weiterverarbeitung der Daten (auch bei Nachnutzung)</text>
+		<text lang="es">Información sobre la metodología utilizada para la generación (creación o reutilización) y transformación de datos</text>
+		<text lang="fr">Information sur la méthodologie employée pour la génération des données (création ou réutilisation) et leur transformation</text>
+		<text lang="it">Informazioni sui metodi usati per la creazione e la trasformazione dei dati</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/documentation/analysis">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>analysis</key>
+		<path>documentation/analysis</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/documentation"/>
+		<order>2</order>
+		<text lang="en">Information on methodology used for data cleaning and analysis</text>
+		<text lang="de">Information zu Verfahren der Datenbereinigung und -analyse</text>
+		<text lang="es">Información sobre la metodología utilizada para la selección y el análisis de los datos</text>
+		<text lang="fr">Information sur la méthodologie employée pour la filtration et l'analyse des données</text>
+		<text lang="it">Informazioni sui metodi usati per la selezione e l'analisi dei dati</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/documentation/variables">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>variables</key>
+		<path>documentation/variables</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/documentation"/>
+		<order>3</order>
+		<text lang="en">Description of variables used and respective units of measurement</text>
+		<text lang="de">Beschreibung der verwendeten Variablen und zugehörigen Maßeinheiten</text>
+		<text lang="es">Descripción de las variables utilizadas y sus respectivas unidades de medida</text>
+		<text lang="fr">Description des variables en jeu et leurs unités de mesure respectives</text>
+		<text lang="it">Descrizione delle variabili in gioco e delle rispettive unità di misura</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/documentation/quality">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>quality</key>
+		<path>documentation/quality</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/documentation"/>
+		<order>4</order>
+		<text lang="en">Quality control report</text>
+		<text lang="de">Qualitätskontrollbericht</text>
+		<text lang="es">Reporte de control de calidad</text>
+		<text lang="fr">Rapport de contrôle qualité</text>
+		<text lang="it">Rapporto del controllo qualità</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/documentation/versioning">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>versioning</key>
+		<path>documentation/versioning</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/documentation"/>
+		<order>5</order>
+		<text lang="en">Version information</text>
+		<text lang="de">Versionsinformation</text>
+		<text lang="es">Información sobre la versión</text>
+		<text lang="fr">Information de version</text>
+		<text lang="it">Informazione di versione</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/documentation/interviews">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>interviews</key>
+		<path>documentation/interviews</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/documentation"/>
+		<order>6</order>
+		<text lang="en">For survey data: survey instruments (questionnaires, ...), interviewer instructions, codebooks, scale manuals, technical reports</text>
+		<text lang="de">Für Umfragedaten: Erhebungsinstrumente (Fragebögen, ...), Intervieweranweisungen, Codebücher, Skalenhandbücher, technische Berichte</text>
+		<text lang="es">Para los datos de las encuestas: instrumentos de encuesta (cuestionarios, ...), instrucciones para el entrevistador, libros de códigos, manuales de escalas, informes técnicos</text>
+		<text lang="fr">En cas d'entrevues&#8239;: questionnaires, instructions pour les sondeurs, livres de code, manuelles d'échelle, rapports techniques</text>
+		<text lang="it">In caso di sondaggi: questionari, istruzioni per gli intervistatori, libri di codice, manuali di scala, rapporti tecnici</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/documentation/other">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>other</key>
+		<path>documentation/other</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/documentation"/>
+		<order>10</order>
+		<text lang="en">Other</text>
+		<text lang="de">Sonstiges</text>
+		<text lang="es">Otro</text>
+		<text lang="fr">Autre</text>
+		<text lang="it">Altro</text>
+		<additional_input>True</additional_input>
+	</option>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>embargo_why</key>
+		<dc:comment/>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why/publication">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>publication</key>
+		<path>embargo_why/publication</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why"/>
+		<order>1</order>
+		<text lang="en">Publication of the results in a peer-reviewed journal</text>
+		<text lang="de">Veröffentlichung der Ergebnisse in einer fachreferierten Zeitschrift</text>
+		<text lang="es">Publicación de los resultados en una revista revisada por expertos</text>
+		<text lang="fr">Publication des résultats dans une revue à comité de lecture</text>
+		<text lang="it">Pubblicazione dei risultati in una rivista con peer review</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why/rights">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>rights</key>
+		<path>embargo_why/rights</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why"/>
+		<order>2</order>
+		<text lang="en">Achievement of intellectual property rights such as</text>
+		<text lang="de">Erlangung intellektueller Rechte wie</text>
+		<text lang="es">Consecución de derechos de propiedad intelectual como</text>
+		<text lang="fr">Obtention de droits de propriété intellectuelle tels que</text>
+		<text lang="it">Conseguimento di diritti di proprietà intellettuale come</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why/thesis">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>thesis</key>
+		<path>embargo_why/thesis</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why"/>
+		<order>3</order>
+		<text lang="en">Finishing of a bachelor/master/doctor thesis</text>
+		<text lang="de">Anfertigung einer Abschlussarbeit (Bachelor-, Master- oder Doktor-)</text>
+		<text lang="es">Finalización de una tesis de pregrado/máster/doctorado</text>
+		<text lang="fr">Réalisation d'une thèse (de licence, de master ou de doctorat)</text>
+		<text lang="it">Completamento di una tesi (triennale, specialistica o di dottorato)</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why/other">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>other</key>
+		<path>embargo_why/other</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why"/>
+		<order>10</order>
+		<text lang="en">Other</text>
+		<text lang="de">Sonstiges</text>
+		<text lang="es">Otro</text>
+		<text lang="fr">Autre</text>
+		<text lang="it">Altro</text>
+		<additional_input>True</additional_input>
+	</option>
 	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/ethics_committee_approval_options">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>ethics_committee_approval_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/ethics_committee_approval_options/244">
@@ -2953,6 +1937,7 @@
 		<key>ethics_permit_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/ethics_permit_options/248">
@@ -3011,11 +1996,160 @@
 		<text lang="it">Sì. L'autorizzazione verrà richiesta il</text>
 		<additional_input>True</additional_input>
 	</option>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>file_type</key>
+		<dc:comment/>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/DT">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>DT</key>
+		<path>file_type/DT</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
+		<order>1</order>
+		<text lang="en">table</text>
+		<text lang="de">Tabelle</text>
+		<text lang="es">tabla</text>
+		<text lang="fr">tableau</text>
+		<text lang="it">tabella</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/GR">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>GR</key>
+		<path>file_type/GR</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
+		<order>2</order>
+		<text lang="en">graphics</text>
+		<text lang="de">Grafik</text>
+		<text lang="es">gráfico</text>
+		<text lang="fr">graphique</text>
+		<text lang="it">grafico</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/VO">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>VO</key>
+		<path>file_type/VO</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
+		<order>3</order>
+		<text lang="en">video</text>
+		<text lang="de">Video</text>
+		<text lang="es">video</text>
+		<text lang="fr">vidéo</text>
+		<text lang="it">video</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/AO">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>AO</key>
+		<path>file_type/AO</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
+		<order>4</order>
+		<text lang="en">audio</text>
+		<text lang="de">Audio</text>
+		<text lang="es">audio</text>
+		<text lang="fr">audio</text>
+		<text lang="it">audio</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/TT">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>TT</key>
+		<path>file_type/TT</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
+		<order>5</order>
+		<text lang="en">text</text>
+		<text lang="de">Text</text>
+		<text lang="es">texto</text>
+		<text lang="fr">texte</text>
+		<text lang="it">testo</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/DB">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>DB</key>
+		<path>file_type/DB</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
+		<order>6</order>
+		<text lang="en">database</text>
+		<text lang="de">Datenbank</text>
+		<text lang="es">base de datos</text>
+		<text lang="fr">base de données</text>
+		<text lang="it">banca dati</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/GG">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>GG</key>
+		<path>file_type/GG</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
+		<order>7</order>
+		<text lang="en">geospatial data</text>
+		<text lang="de">Geografische Information</text>
+		<text lang="es">datos geoespaciales</text>
+		<text lang="fr">données géospatiales</text>
+		<text lang="it">Dati geospaziali</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/CD">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>CD</key>
+		<path>file_type/CD</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
+		<order>8</order>
+		<text lang="en">computer-aided design</text>
+		<text lang="de">Computer Aided Design</text>
+		<text lang="es">diseño asistido por ordenador</text>
+		<text lang="fr">conception assistée par ordinateur</text>
+		<text lang="it">computer-aided design</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/ST">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>ST</key>
+		<path>file_type/ST</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
+		<order>9</order>
+		<text lang="en">statistical analysis</text>
+		<text lang="de">Statistische Auswertung</text>
+		<text lang="es">análisis estadístico</text>
+		<text lang="fr">analyse statistique</text>
+		<text lang="it">analisi statistica</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/file_type/SO">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>SO</key>
+		<path>file_type/SO</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/file_type"/>
+		<order>10</order>
+		<text lang="en">Other</text>
+		<text lang="de">Sonstiges</text>
+		<text lang="es">Otro</text>
+		<text lang="fr">Autre</text>
+		<text lang="it">Altro</text>
+		<additional_input>True</additional_input>
+	</option>
 	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/informed_consent_options">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>informed_consent_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/informed_consent_options/45">
@@ -3079,6 +2213,7 @@
 		<key>infrastructure_resources</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/infrastructure_resources/260">
@@ -3128,6 +2263,7 @@
 		<key>mandatory_metadata_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/mandatory_metadata_options/100">
@@ -3284,11 +2420,62 @@
 		<text lang="it">Altri</text>
 		<additional_input>True</additional_input>
 	</option>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/mappings">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>mappings</key>
+		<dc:comment/>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/mappings/informal">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>informal</key>
+		<path>mappings/informal</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/mappings"/>
+		<order>1</order>
+		<text lang="en">The generated ontologies and vocabularies for the published data are provided, together with appropriate mappings in an informal, lightweight form (glossaries, alignment tables, …) to more commonly used ontologies</text>
+		<text lang="de">Die generierten Ontologien und Vokabularien für die veröffentlichten Daten werden mitgeliefert, zusammen mit passenden Konkordanzen zu gängiger Terminologie, in einer leichten und informellen Weise (Glossar, Korrespondenztabelle, ...)</text>
+		<text lang="es">Se adjuntan las ontologías y vocabularios generados para los datos publicados. La correspondencia con terminologías de uso común se expresa de forma ligera e informal (glosario, tabla de alineación, ...).</text>
+		<text lang="fr">Les ontologies et vocabulaires générés pour les données publiées sont fournis. Les correspondances appropriées sont disposées de manière informelle et claire (glossaires, tableaux de correspondance, ...)</text>
+		<text lang="it">Le ontologie e i vocabolari generati per i dati pubblicati sono allegati. La corrispondenza a terminologie di uso comune è espressa in modo leggero e informale (glossario, tabella di allineamento, ...)</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/mappings/formal">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>formal</key>
+		<path>mappings/formal</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/mappings"/>
+		<order>2</order>
+		<text lang="en">The generated ontologies and vocabularies for the published data are provided, together with appropriate mappings in a formal, heavyweight form (OWL, RDF, …) to more commonly used ontologies</text>
+		<text lang="de">Die generierten Ontologien und Vokabularien für die veröffentlichten Daten werden mitgeliefert, zusammen mit passenden Konkordanzen zu gängiger Terminologie, in einer vertieften und formellen Weise (OWL-Sprache, RDF-Modell, ...)</text>
+		<text lang="es">Se adjuntan las ontologías y vocabularios generados para los datos publicados. La correspondencia con las terminologías de uso común se expresa de manera formal y detallada (lenguaje OWL, modelo RDF, ...).</text>
+		<text lang="fr">Les ontologies et vocabulaires générés pour les données publiées sont fournis. Les correspondances appropriées sont disposées de manière formelle et détaillée (langage OWL, modèle RDF, ...)</text>
+		<text lang="it">Le ontologie e i vocabolari generati per i dati pubblicati sono allegati. La corrispondenza a terminologie di uso comune è espressa in modo formale e dettagliato (linguaggio OWL, modello RDF, ...)</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/mappings/none">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>none</key>
+		<path>mappings/none</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/mappings"/>
+		<order>3</order>
+		<text lang="en">No mappings are necessary, as the datasets are described using standard terminologies / There is no need for a mapping, since the used terminology is chosen to be compatible with the existing literature</text>
+		<text lang="de">Das Mitliefern von Konkordanzen is nicht notwendig aufgrund der Kompatibilität der verwendeten Terminologie mit der bestehenden Literatur</text>
+		<text lang="es">No es necesario realizar mapeos, ya que los conjuntos de datos se describen utilizando terminologías estándar / No es necesario realizar mapeos, ya que la terminología utilizada se elige para que sea compatible con la literatura existente</text>
+		<text lang="fr">Comme le jeu de données utilise des terminologies de référence ou compatibles avec la littérature existante, aucune correspondance est nécessaire</text>
+		<text lang="it">Non c'è bisogno di riportare corrispondenze, dato cha la terminologia usata è compatibile con la letteratura esistente</text>
+		<additional_input>True</additional_input>
+	</option>
 	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/metadata_check_options">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>metadata_check_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/metadata_check_options/117">
@@ -3352,6 +2539,7 @@
 		<key>metadata_standards</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/metadata_standards/111">
@@ -3382,27 +2570,13 @@
 		<text lang="it">Si utilizza un proprio sistema di descrizione (si prega di descriverlo brevemente, aggiungendo un riferimento alla documentazione estesa, se necessario)</text>
 		<additional_input>True</additional_input>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/metadata_standards/110">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>110</key>
-		<path>metadata_standards/110</path>
-		<dc:comment/>
-		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/metadata_standards"/>
-		<order>3</order>
-		<text lang="en">No fixed system for the description is used</text>
-		<text lang="de">Es wird kein festgelegtes System zur Beschreibung genutzt</text>
-		<text lang="es">No se utiliza un sistema fijo para la descripción</text>
-		<text lang="fr">Aucun système fixe pour la description n'est utilisé</text>
-		<text lang="it">Non si utilizza nessun sistema fisso per la descrizione</text>
-		<additional_input>False</additional_input>
-	</option>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/metadata_standards/114">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>114</key>
 		<path>metadata_standards/114</path>
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/metadata_standards"/>
-		<order>4</order>
+		<order>3</order>
 		<text lang="en">Other</text>
 		<text lang="de">Sonstiges</text>
 		<text lang="es">Otro</text>
@@ -3416,12 +2590,26 @@
 		<path>metadata_standards/113</path>
 		<dc:comment/>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/metadata_standards"/>
+		<order>4</order>
+		<text lang="en">Within the project it will be decided with which system the metadata and contextual information will be described</text>
+		<text lang="de">Im Rahmen des Projekts wird festgelegt, mit welchem System die Metadaten und Kontextinformationen beschrieben werden</text>
+		<text lang="es">Durante el proyecto se decidirá con qué sistema se describirán los metadatos y la información contextual</text>
+		<text lang="fr">Dans le cadre du projet on décidera avec quel système les métadonnées et les informations contextuelles seront décrites</text>
+		<text lang="it">Durante il progetto verrà stabilito con quale sistema descrivere i metadati e le informazioni contestuali</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/metadata_standards/110">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>110</key>
+		<path>metadata_standards/110</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/metadata_standards"/>
 		<order>5</order>
-		<text lang="en">It has not yet been decided, with which system the metadata and contextual information will be described</text>
-		<text lang="de">Es wurde noch nicht entschieden, mit welchem System die Metadaten und Kontextinformationen beschrieben werden</text>
-		<text lang="es">Todavía no se ha decidido con qué sistema se describirán los metadatos y la información contextual</text>
-		<text lang="fr">Il n'a pas encore été décidé avec quel système les métadonnées et les informations contextuelles seront décrites</text>
-		<text lang="it">Non è ancora stato stabilito con quale sistema descrivere i metadati e le informazioni contestuali</text>
+		<text lang="en">No fixed system for the description is used</text>
+		<text lang="de">Es wird kein festgelegtes System zur Beschreibung genutzt</text>
+		<text lang="es">No se utiliza un sistema fijo para la descripción</text>
+		<text lang="fr">Aucun système fixe pour la description n'est utilisé</text>
+		<text lang="it">Non si utilizza nessun sistema fisso per la descrizione</text>
 		<additional_input>False</additional_input>
 	</option>
 	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_requirements_options">
@@ -3429,6 +2617,7 @@
 		<key>other_requirements_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_requirements_options/146">
@@ -3473,11 +2662,146 @@
 		<text lang="it">Da chiarire</text>
 		<additional_input>False</additional_input>
 	</option>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>other_research_output</key>
+		<dc:comment>Such outputs can be either digital (e.g. software, workflows, protocols, models, etc.) or physical (e.g. new materials, antibodies, reagents, samples, etc.).</dc:comment>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/software">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>software</key>
+		<path>other_research_output/software</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output"/>
+		<order>1</order>
+		<text lang="en">Software</text>
+		<text lang="de">Programme</text>
+		<text lang="es">Programas</text>
+		<text lang="fr">Logiciels</text>
+		<text lang="it">Programmi</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/workflows">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>workflows</key>
+		<path>other_research_output/workflows</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output"/>
+		<order>2</order>
+		<text lang="en">Workflows</text>
+		<text lang="de">Workflows</text>
+		<text lang="es">Workflows</text>
+		<text lang="fr">Workflows</text>
+		<text lang="it">Workflows</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/protocols">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>protocols</key>
+		<path>other_research_output/protocols</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output"/>
+		<order>3</order>
+		<text lang="en">Protocols</text>
+		<text lang="de">Protokolle</text>
+		<text lang="es">Protocolos</text>
+		<text lang="fr">Protocoles</text>
+		<text lang="it">Protocolli</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/models">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>models</key>
+		<path>other_research_output/models</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output"/>
+		<order>4</order>
+		<text lang="en">Models</text>
+		<text lang="de">Modelle</text>
+		<text lang="es">Modelos</text>
+		<text lang="fr">Modèles</text>
+		<text lang="it">Modelli</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/samples">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>samples</key>
+		<path>other_research_output/samples</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output"/>
+		<order>5</order>
+		<text lang="en">Samples</text>
+		<text lang="de">Proben</text>
+		<text lang="es">Muestras</text>
+		<text lang="fr">Échantillons</text>
+		<text lang="it">Campioni</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/materials">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>materials</key>
+		<path>other_research_output/materials</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output"/>
+		<order>6</order>
+		<text lang="en">New materials</text>
+		<text lang="de">Neue Werkstoffe</text>
+		<text lang="es">Nuevos materiales</text>
+		<text lang="fr">Nouveaux matériaux</text>
+		<text lang="it">Nuovi materiali</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/chemicals">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>chemicals</key>
+		<path>other_research_output/chemicals</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output"/>
+		<order>7</order>
+		<text lang="en">New chemical substances (reagents, ...)</text>
+		<text lang="de">Neue chemische Substanzen (Reagenzien, ...)</text>
+		<text lang="es">Nuevas sustancias químicas (reactivos, ...)</text>
+		<text lang="fr">Nouvelles substances chimiques (réactants, ...)</text>
+		<text lang="it">Nuove sostanze chimiche (reagenti, ...)</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/biological">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>biological</key>
+		<path>other_research_output/biological</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output"/>
+		<order>8</order>
+		<text lang="en">New biological substances (antibodies, ...)</text>
+		<text lang="de">Neue biologische Substanzen (Antikörper, ...)</text>
+		<text lang="es">Nuevas sustancias biológicas (anticuerpos, ...)</text>
+		<text lang="fr">Nouvelles substances biologiques (anticorps, ...)</text>
+		<text lang="it">Nuove sostanze biologiche (anticorpi, ...)</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/other">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>other</key>
+		<path>other_research_output/other</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output"/>
+		<order>10</order>
+		<text lang="en">Other</text>
+		<text lang="de">Sonstiges</text>
+		<text lang="es">Otro</text>
+		<text lang="fr">Autre</text>
+		<text lang="it">Altro</text>
+		<additional_input>True</additional_input>
+	</option>
 	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/pid_types">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>pid_types</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/pid_types/123">
@@ -3597,6 +2921,7 @@
 		<key>preservation_motivation_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_motivation_options/131">
@@ -3688,6 +3013,7 @@
 		<key>preservation_repository_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options/139">
@@ -3774,11 +3100,556 @@
 		<text lang="it">Altro</text>
 		<additional_input>True</additional_input>
 	</option>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>preservation_responsible</key>
+		<dc:comment/>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible/repository">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>repository</key>
+		<path>preservation_responsible/repository</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible"/>
+		<order>1</order>
+		<text lang="en">The repository</text>
+		<text lang="de">Das Repositorium</text>
+		<text lang="es">El repositorio</text>
+		<text lang="fr">Le dépôt</text>
+		<text lang="it">Il repositorio</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible/lib">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>lib</key>
+		<path>preservation_responsible/lib</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible"/>
+		<order>2</order>
+		<text lang="en">The institutional library</text>
+		<text lang="de">Die Bibliothek des Instituts</text>
+		<text lang="es">La biblioteca institucional</text>
+		<text lang="fr">Le centre de documentation de l'institution</text>
+		<text lang="it">La biblioteca dell’istituto</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible/calc">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>calc</key>
+		<path>preservation_responsible/calc</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible"/>
+		<order>3</order>
+		<text lang="en">The IT department of the institute</text>
+		<text lang="de">Das Rechenzentrum des Instituts</text>
+		<text lang="es">El departamento de informática del instituto</text>
+		<text lang="fr">Le service informatique de l'institution</text>
+		<text lang="it">Il centro di calcolo dell’istituto</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible/coordinator">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>coordinator</key>
+		<path>preservation_responsible/coordinator</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible"/>
+		<order>4</order>
+		<text lang="en">The project coordinator</text>
+		<text lang="de">Der Projektkoordinator</text>
+		<text lang="es">El coordinador del proyecto</text>
+		<text lang="fr">Le coordinateur du projet</text>
+		<text lang="it">Il coordinatore del progetto</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible/datacoord">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>datacoord</key>
+		<path>preservation_responsible/datacoord</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible"/>
+		<order>5</order>
+		<text lang="en">The data coordinator</text>
+		<text lang="de">Der Datenkoordinator</text>
+		<text lang="es">El responsable de los datos</text>
+		<text lang="fr">Le responsable des données</text>
+		<text lang="it">Il responsabile dei dati</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible/other">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>other</key>
+		<path>preservation_responsible/other</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_responsible"/>
+		<order>10</order>
+		<text lang="en">Other</text>
+		<text lang="de">Sonstiges</text>
+		<text lang="es">Otro</text>
+		<text lang="fr">Autre</text>
+		<text lang="it">Altro</text>
+		<additional_input>True</additional_input>
+	</option>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/qualified_references">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>qualified_references</key>
+		<dc:comment/>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/qualified_references/same">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>same</key>
+		<path>qualified_references/same</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/qualified_references"/>
+		<order>1</order>
+		<text lang="en">Yes, the data include qualified references to other datasets from the same project</text>
+		<text lang="de">Ja, die Daten enthalten qualifizierte Referenzen zu anderen Datensätzen desselben Projekts</text>
+		<text lang="es">Sí, los datos incluyen referencias cualificadas a otros conjuntos de datos del mismo proyecto</text>
+		<text lang="fr">Oui, les données se réfèrent à d'autres jeux de données du même projet</text>
+		<text lang="it">Sì, i dati contengono riferimenti qualificati ad altre raccolte di dati dello stesso progetto</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/qualified_references/previous">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>previous</key>
+		<path>qualified_references/previous</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/qualified_references"/>
+		<order>2</order>
+		<text lang="en">Yes, the data include qualified references to other datasets from previous research</text>
+		<text lang="de">Ja, die Daten enthalten qualifizierte Referenzen zu anderen Datensätzen aus vorherigen Forschungsaktivitäten</text>
+		<text lang="es">Sí, los datos incluyen referencias cualificadas a otros conjuntos de datos de investigaciones anteriores</text>
+		<text lang="fr">Oui, les données se réfèrent à d'autres jeux de données de recherches antérieurs</text>
+		<text lang="it">Sì, i dati contengono riferimenti qualificati ad altre raccolte di dati da ricerche precedenti</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/qualified_references/none">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>none</key>
+		<path>qualified_references/none</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/qualified_references"/>
+		<order>3</order>
+		<text lang="en">No, the data do not include any references to other data</text>
+		<text lang="de">Nein, die Daten enthalten keine Referenzen anderer Daten</text>
+		<text lang="es">No, los datos no incluyen ninguna referencia a otros datos</text>
+		<text lang="fr">Non, les données ne font pas référence à d'autres données</text>
+		<text lang="it">No, i dati non fanno riferimenti ad altri dati</text>
+		<additional_input>True</additional_input>
+	</option>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>quality_procedures</key>
+		<dc:comment/>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/completeness">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>completeness</key>
+		<path>quality_procedures/completeness</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
+		<order>1</order>
+		<text lang="en">Completeness check</text>
+		<text lang="de">Prüfung auf Vollständigkeit</text>
+		<text lang="es">Control de integridad de los datos</text>
+		<text lang="fr">Contrôle d'intégralité des données</text>
+		<text lang="it">Controllo di integrità dei dati</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/reconciliation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>reconciliation</key>
+		<path>quality_procedures/reconciliation</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
+		<order>2</order>
+		<text lang="en">Data reconciliation</text>
+		<text lang="de">Datenabgleich</text>
+		<text lang="es">Reconciliación de datos</text>
+		<text lang="fr">Réconciliation des données</text>
+		<text lang="it">Riconciliazione dei dati</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/sampling">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>sampling</key>
+		<path>quality_procedures/sampling</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
+		<order>3</order>
+		<text lang="en">Sampling procedures</text>
+		<text lang="de">Vorgehen bei der Probennahme</text>
+		<text lang="es">Procedimientos de muestreo</text>
+		<text lang="fr">Procédures d'échantillonnage</text>
+		<text lang="it">Procedure di campionamento</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/comparison">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>comparison</key>
+		<path>quality_procedures/comparison</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
+		<order>4</order>
+		<text lang="en">Repeated or comparative measurements</text>
+		<text lang="de">Wiederholte und vergleichbare Messungen</text>
+		<text lang="es">Mediciones repetidas o comparativas</text>
+		<text lang="fr">Mesures répétées ou comparées</text>
+		<text lang="it">Misure ripetute o comparative</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/standard">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>standard</key>
+		<path>quality_procedures/standard</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
+		<order>5</order>
+		<text lang="en">Adherence to standard procedures for data recording</text>
+		<text lang="de">Konformität zu Standardprozeduren zur Datenaufnahme</text>
+		<text lang="es">Cumplimiento de los procedimientos estándar de registro de datos</text>
+		<text lang="fr">Acquisition des données en cohérence avec des procédures de référence</text>
+		<text lang="it">Acquisizione dei dati conforme a procedure standard</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/terminology">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>terminology</key>
+		<path>quality_procedures/terminology</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
+		<order>6</order>
+		<text lang="en">Use of controlled vocabularies and standard terminology</text>
+		<text lang="de">Verwendung kontrollierter Vokabulare und von Standard-Ausdrucksweise</text>
+		<text lang="es">Uso de vocabularios controlados y terminología estándar</text>
+		<text lang="fr">Utilisation de vocabulaires réglementés et d'une terminologie de référence</text>
+		<text lang="it">Uso di vocabolari controllati e terminologia standard</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/setup">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>setup</key>
+		<path>quality_procedures/setup</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
+		<order>7</order>
+		<text lang="en">Metrological characterisation of the measurement set-up</text>
+		<text lang="de">Metrologische Charakterisierung des Messaufbaus</text>
+		<text lang="es">Caracterización metrológica del equipo de medición</text>
+		<text lang="fr">Charactérisation métrologique du procédé de mesure</text>
+		<text lang="it">Caratterizzazione metrologica dei procedimenti di misura</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/validation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>validation</key>
+		<path>quality_procedures/validation</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
+		<order>8</order>
+		<text lang="en">Data validation</text>
+		<text lang="de">Datenvalidierung</text>
+		<text lang="es">Validación de datos</text>
+		<text lang="fr">Validation des données</text>
+		<text lang="it">Validazione dei dati</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/test">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>test</key>
+		<path>quality_procedures/test</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
+		<order>9</order>
+		<text lang="en">Provision of test results along with the data</text>
+		<text lang="de">Verfügbarmachung von Testergebnissen zusammen mit den Daten</text>
+		<text lang="es">Suministro de los resultados de las pruebas junto con los datos</text>
+		<text lang="fr">Fourniture avec les données de résultats de tests</text>
+		<text lang="it">Disponibilità dei risultati di tests insieme con i dati</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/peerreview">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>peerreview</key>
+		<path>quality_procedures/peerreview</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
+		<order>10</order>
+		<text lang="en">Peer review of textual publications based on the data</text>
+		<text lang="de">Peer-Review von Textpublikationen basierend auf den Daten</text>
+		<text lang="es">Revisión de las publicaciones textuales basadas en los datos</text>
+		<text lang="fr">Relecture par des paires de publication (textuel) se basant sur les données</text>
+		<text lang="it">Revisione di pubblicazioni testuali basate sui dati</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures/other">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>other</key>
+		<path>quality_procedures/other</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/quality_procedures"/>
+		<order>20</order>
+		<text lang="en">Other</text>
+		<text lang="de">Sonstiges</text>
+		<text lang="es">Otro</text>
+		<text lang="fr">Autre</text>
+		<text lang="it">Altro</text>
+		<additional_input>True</additional_input>
+	</option>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>repository_arrangements_why</key>
+		<dc:comment/>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why/size">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>size</key>
+		<path>repository_arrangements_why/size</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why"/>
+		<order>1</order>
+		<text lang="en">Yes, because of the big size of the data</text>
+		<text lang="de">Ja, wegen des großen Datenvolumens</text>
+		<text lang="es">Sí, debido al gran tamaño de los datos</text>
+		<text lang="fr">Oui, en raison de la quantité élevée de données</text>
+		<text lang="it">Sì, a causa della grande quantità dei dati</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why/format">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>format</key>
+		<path>repository_arrangements_why/format</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why"/>
+		<order>2</order>
+		<text lang="en">Yes, because of the particular format of the data</text>
+		<text lang="de">Ja, wegen des speziellen Datenformats</text>
+		<text lang="es">Sí, debido al formato particular de los datos</text>
+		<text lang="fr">Oui, en raison du format particulier des données</text>
+		<text lang="it">Sì, a causa della grande quantità dei dati</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why/confidentiality">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>confidentiality</key>
+		<path>repository_arrangements_why/confidentiality</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why"/>
+		<order>3</order>
+		<text lang="en">Yes, because the data are confidential</text>
+		<text lang="de">Ja, weil die Daten vertraulich sind</text>
+		<text lang="es">Sí, porque los datos son confidenciales</text>
+		<text lang="fr">Oui, parce que les données sont confidencielles</text>
+		<text lang="it">Sì, perché i dati sono confidenziali</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why/legal_issues">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>legal_issues</key>
+		<path>repository_arrangements_why/legal_issues</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why"/>
+		<order>4</order>
+		<text lang="en">Yes, because of legal issues related to the data</text>
+		<text lang="de">Ja, wegen rechtlicher Probleme mit den Daten</text>
+		<text lang="es">Sí, por cuestiones legales relacionadas con los datos</text>
+		<text lang="fr">Oui, pour des raisons juridiques en lien avec les données</text>
+		<text lang="it">Sì, a causa di problemi legali collegati ai dati</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why/other">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>other</key>
+		<path>repository_arrangements_why/other</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why"/>
+		<order>5</order>
+		<text lang="en">Yes, for other reasons</text>
+		<text lang="de">Ja, aus anderen Gründen</text>
+		<text lang="es">Sí, por otras razones</text>
+		<text lang="fr">Oui, pour d'autres raisons</text>
+		<text lang="it">Sì, per altri motivi</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why/no">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>no</key>
+		<path>repository_arrangements_why/no</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why"/>
+		<order>6</order>
+		<text lang="en">No, the data will be uploaded via a standard procedure and require no special arrangements</text>
+		<text lang="de">Nein, die Daten werden mit Hilfe einer Standardprozedur hochgeladen und erfordern keine speziellen Vorbereitungen</text>
+		<text lang="es">No, los datos se cargarán a través de un procedimiento estándar y no requieren ningún acuerdo especial</text>
+		<text lang="fr">Non, les données seront téléversées en suivant une procédure et non pas besoin d'ajustement particulier</text>
+		<text lang="it">No, i dati si possono caricare con una procedura standard e non necessitano accordi particolari</text>
+		<additional_input>True</additional_input>
+	</option>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>repository_trusted_why</key>
+		<dc:comment>Source: https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf?page=155</dc:comment>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/basics">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>basics</key>
+		<path>repository_trusted_why/basics</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
+		<order>1</order>
+		<text lang="en">The repository meets the basic expectations of a research data repository: easy and free access while observing legal and ethical barriers, detailed metadata, protection against unauthorized access</text>
+		<text lang="de">Das Repositorium erfüllt die grundsätzlichen Erwartungen an ein Forschungsdatenrepositorium: leichter und kostenfreier Zugang bei Beachtung rechtlicher und ethischer Schranken, detaillierte Metadaten, Schutz gegen unautorisierten Zugriff</text>
+		<text lang="es">El repositorio cumple con las expectativas básicas de un repositorio de datos de investigación: acceso fácil y gratuito respetando las barreras legales y éticas, metadatos detallados, protección contra el acceso no autorizado</text>
+		<text lang="fr">Le dépôt remplit les attentes minimales en terme de stockage de données de recherche&#8239;: accès simple et gratuit, tout en proposant des barrières juridiques et ethiques, des métadonnées détaillées, et une protection contre les accès prohibés.</text>
+		<text lang="it">Il repositorio soddisfa le richieste minime per la conservazione dei dati della ricerca: accesso agevole e gratuito pur nel rispetto delle barriere legali ed etiche, metadati dettagliati, protezione contro l'accesso non autorizzati</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/standards">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>standards</key>
+		<path>repository_trusted_why/standards</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
+		<order>1</order>
+		<text lang="en">Machine-actionable and standardised metadata are used</text>
+		<text lang="de">Maschinenlesbare und standardisierte Metadaten werden verwendet</text>
+		<text lang="es">Se utilizan metadatos estandarizados y procesables por máquina</text>
+		<text lang="fr">Sont utilisées des métadonnées lisibles et exploitables par les machines (« machine-actionable ») et standardisées</text>
+		<text lang="it">Sono utilizzati metadati leggibili e riutilizzabili da una macchina  («machine-actionable») e conformi a uno standard</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/pids">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>pids</key>
+		<path>repository_trusted_why/pids</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
+		<order>1</order>
+		<text lang="en">The repository can provide persistent identifiers, e.g. a DOI</text>
+		<text lang="de">Das Repositorium kann persistente Identifikatoren vergeben (z.B. einen DOI)</text>
+		<text lang="es">El repositorio puede proporcionar identificadores persistentes, por ejemplo, un DOI</text>
+		<text lang="fr">Le dépôt fournit des identificateurs persistents, par ex. des DOI</text>
+		<text lang="it">Il repositorio fornisce identificatori persistenti, es. DOI</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/quality">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>quality</key>
+		<path>repository_trusted_why/quality</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
+		<order>1</order>
+		<text lang="en">The repository checks the quality of the data</text>
+		<text lang="de">Das Repositorium prüft die Qualität der Daten</text>
+		<text lang="es">El depósito comprueba la calidad de los datos</text>
+		<text lang="fr">Le dépôt contrôle la qualité des données</text>
+		<text lang="it">Il repositorio controlla la qualità dei dati</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/curation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>curation</key>
+		<path>repository_trusted_why/curation</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
+		<order>1</order>
+		<text lang="en">The repository offers expert curation for the long-term archivation</text>
+		<text lang="de">Das Repositorium bietet eine Datenpflege für die Langzeitarchivierung durch Experten an</text>
+		<text lang="es">El repositorio ofrece la curación de expertos para el archivo a largo plazo</text>
+		<text lang="fr">Le dépôt a une expertise en conservation et propose un archivage durable</text>
+		<text lang="it">Il repositorio offre un servizio professionale di cura dei dati per la conservazione a lungo termine</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/services">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>services</key>
+		<path>repository_trusted_why/services</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
+		<order>1</order>
+		<text lang="en">The repository offers services and mechanisms that go beyond the usual data download, which facilitate the subsequent use of the data, e.g. visualization, analysis tools.</text>
+		<text lang="de">Das Repositorium bietet über den üblichen Daten-Download hinausgehende Dienste und Mechanismen an, die die Nachnutzung der Daten erleichtern, z.B. Visualisierung, Analysetools</text>
+		<text lang="es">El repositorio ofrece servicios y mecanismos que van más allá de la habitual descarga de datos, que facilitan el uso posterior de los mismos, por ejemplo, visualización, herramientas de análisis.</text>
+		<text lang="fr">Au-delà du simple téléchargement, le dépôt propose des services ou des outils facilitant les manipulations ultérieures des données, permettant par exemple une visualisation ou une analyse</text>
+		<text lang="it">Oltre allo scaricamento dei dati, il repositorio offre servizi aggiuntivi che facilitano il riutilizzo dei dati, per esempio la visualizazione o l'analisi</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/certified">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>certified</key>
+		<path>repository_trusted_why/certified</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
+		<order>1</order>
+		<text lang="en">The repository holds a certification</text>
+		<text lang="de">Das Repositorium ist zertifiziert</text>
+		<text lang="es">El depósito tiene una certificación</text>
+		<text lang="fr">Le dépôt a une certification à jour</text>
+		<text lang="it">Il repositorio possiede una certificazione ufficiale</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/disciplinary">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>disciplinary</key>
+		<path>repository_trusted_why/disciplinary</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
+		<order>2</order>
+		<text lang="en">The repository is internationally acknowledged for the a specific discipline/domain</text>
+		<text lang="de">Das Repositorium ist auf dem Fachgebiet international anerkannt</text>
+		<text lang="es">El repositorio está reconocido internacionalmente para una disciplina/dominio específico</text>
+		<text lang="fr">Le dépôt est reconnu internationallement pour un domaine particulier</text>
+		<text lang="it">Il repositorio gode di un riconoscimento internazionale per una disciplina o dominio specifico</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/institutional">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>institutional</key>
+		<path>repository_trusted_why/institutional</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
+		<order>3</order>
+		<text lang="en">The repository is managed by a trustworthy institution</text>
+		<text lang="de">Das Repositorium wird von einer vertrauenswürdigen Institution verwaltet</text>
+		<text lang="es">El depósito está gestionado por una institución de confianza</text>
+		<text lang="fr">Le dépôt est géré par un organisme de confiance</text>
+		<text lang="it">Il repositorio è gestito da un'istituzione considerata affidabile</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why/policy">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>policy</key>
+		<path>repository_trusted_why/policy</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_trusted_why"/>
+		<order>4</order>
+		<text lang="en">The repository's policy is available online</text>
+		<text lang="de">Die Nutzungsbedingungen des Repositoriums sind online verfügbar</text>
+		<text lang="es">La política del depósito está disponible en línea</text>
+		<text lang="fr">La politique du dépôt est disponible en ligne</text>
+		<text lang="it">La regolamentazione del repositorio è disponibile in linea</text>
+		<additional_input>True</additional_input>
+	</option>
 	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/research_fields">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>research_fields</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/research_fields/169">
@@ -4453,11 +4324,118 @@
 		<text lang="it">Scienze ingegneristiche / Ingegneria civile</text>
 		<additional_input>False</additional_input>
 	</option>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/security_measures">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>security_measures</key>
+		<dc:comment/>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/security_measures/protection">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>protection</key>
+		<path>security_measures/protection</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/security_measures"/>
+		<order>1</order>
+		<text lang="en">Protection against unauthorized access</text>
+		<text lang="de">Schutz vor unerlaubtem Zugriff</text>
+		<text lang="es">Protección contra el acceso no autorizado</text>
+		<text lang="fr">Protection contre les accès indésirables</text>
+		<text lang="it">Protezione contro accessi indesiserati</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/security_measures/checksum">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>checksum</key>
+		<path>security_measures/checksum</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/security_measures"/>
+		<order>2</order>
+		<text lang="en">Data robustness: checksum</text>
+		<text lang="de">Datenrobustheit: Checksumme</text>
+		<text lang="es">Solidez de los datos: suma de comprobación</text>
+		<text lang="fr">Robustesse de données&#8239;: somme de contrôle</text>
+		<text lang="it">Robustezza dei dati: checksum</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/security_measures/encryption">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>encryption</key>
+		<path>security_measures/encryption</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/security_measures"/>
+		<order>3</order>
+		<text lang="en">Data robustness: encryption</text>
+		<text lang="de">Datenrobustheit: Verschlüsselung</text>
+		<text lang="es">Solidez de los datos: cifrado</text>
+		<text lang="fr">Robustesse de données&#8239;: chiffrement</text>
+		<text lang="it">Robustezza dei dati: cifratura</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/security_measures/backups">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>backups</key>
+		<path>security_measures/backups</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/security_measures"/>
+		<order>4</order>
+		<text lang="en">Data recovery: backups</text>
+		<text lang="de">Datenwiederherstellung: Backups</text>
+		<text lang="es">Recuperación de datos: copias de seguridad</text>
+		<text lang="fr">Récupération de données&#8239;: sauvegardes</text>
+		<text lang="it">Recupero dei dati: backup</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/security_measures/replicas">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>replicas</key>
+		<path>security_measures/replicas</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/security_measures"/>
+		<order>5</order>
+		<text lang="en">Data recovery: multiple replicas in a distributed file system</text>
+		<text lang="de">Datenwiederherstellung: redundante Kopien in einem verteilten Dateisystem</text>
+		<text lang="es">Recuperación de datos: múltiples réplicas en un sistema de archivos distribuido</text>
+		<text lang="fr">Récupération de données&#8239;: plusieures copies dans un système de fichier distribué</text>
+		<text lang="it">Recupero dei dati: copie multiple in un sistema distribuito di cartelle</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/security_measures/anonymisation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>anonymisation</key>
+		<path>security_measures/anomymisation</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/security_measures"/>
+		<order>6</order>
+		<text lang="en">Sensitive data: anonymisation or pseudonymisation</text>
+		<text lang="de">Sensible Daten: Anonymisierung oder Pseudonymisierung</text>
+		<text lang="es">Datos sensibles: anonimización o seudonimización</text>
+		<text lang="fr">Données sensibles&#8239;: anonymisation ou pseudonymisation</text>
+		<text lang="it">Dati sensibili: anonimizzazione o pseudonimizzazione</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/security_measures/other">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>other</key>
+		<path>security_measures/other</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/security_measures"/>
+		<order>10</order>
+		<text lang="en">Other</text>
+		<text lang="de">Sonstiges</text>
+		<text lang="es">Otro</text>
+		<text lang="fr">Autre</text>
+		<text lang="it">Altro</text>
+		<additional_input>True</additional_input>
+	</option>
 	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/software_copyright_laws">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>software_copyright_laws</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/software_copyright_laws/84">
@@ -4549,6 +4527,7 @@
 		<key>software_license_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/software_license_options/236">
@@ -4584,6 +4563,7 @@
 		<key>software_license_types</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/software_license_types/81">
@@ -4661,6 +4641,7 @@
 		<key>software_origin_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/software_origin_options/150">
@@ -4696,6 +4677,7 @@
 		<key>software_other_rights</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/software_other_rights/90">
@@ -4843,6 +4825,7 @@
 		<key>software_sharing_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/software_sharing_options/79">
@@ -4906,6 +4889,7 @@
 		<key>software_versioning_technology_options</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/software_versioning_technology_options/162">
@@ -4964,11 +4948,76 @@
 		<text lang="it">Non ancora deciso</text>
 		<additional_input>False</additional_input>
 	</option>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/usage_software">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>usage_software</key>
+		<dc:comment/>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/usage_software/existing_open">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>existing_open</key>
+		<path>usage_software/existing_open</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/usage_software"/>
+		<order>1</order>
+		<text lang="en">free software</text>
+		<text lang="de">Freie Software</text>
+		<text lang="es">software gratuito</text>
+		<text lang="fr">Logiciel libre</text>
+		<text lang="it">programma libero</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/usage_software/existing_commercial">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>existing_commercial</key>
+		<path>usage_software/existing_commercial</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/usage_software"/>
+		<order>2</order>
+		<text lang="en">common commercial software</text>
+		<text lang="de">Gängige kommerzielle Software</text>
+		<text lang="es">software comercial común</text>
+		<text lang="fr">Logiciel commercial propriétaire</text>
+		<text lang="it">programma commerciale</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/usage_software/selfgenerated">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>selfgenerated</key>
+		<path>usage_software/selfgenerated</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/usage_software"/>
+		<order>3</order>
+		<text lang="en">self-generated software or script</text>
+		<text lang="de">Selbsterzeugte Software oder Skript</text>
+		<text lang="es">software o script autogenerado</text>
+		<text lang="fr">Logiciel ou script auto-généré</text>
+		<text lang="it">programma o script autoprodotto</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/usage_software/other">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>other</key>
+		<path>usage_software/other</path>
+		<dc:comment/>
+		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/usage_software"/>
+		<order>5</order>
+		<text lang="en">Other</text>
+		<text lang="de">Sonstiges</text>
+		<text lang="es">Otro</text>
+		<text lang="fr">Autre</text>
+		<text lang="it">Altro</text>
+		<additional_input>True</additional_input>
+	</option>
 	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/yes_no_not_yet">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>yes_no_not_yet</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/yes_no_not_yet/yes">
@@ -5018,6 +5067,7 @@
 		<key>yes_with_text_no</key>
 		<dc:comment/>
 		<order>0</order>
+		<provider_key/>
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/yes_with_text_no/yes">
