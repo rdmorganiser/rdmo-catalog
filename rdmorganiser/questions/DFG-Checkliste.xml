@@ -39,10 +39,11 @@ The division into data sets helps to assess the value of the data with regard to
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<title lang="de">Inhaltliche Datenbeschreibung</title>
-		<help lang="de">&lt;p&gt;&lt;u&gt;Allgemeine Hinweise:&lt;/u&gt; Der vorliegende Fragenkatalog ist die von der DFG herausgegebene Checkliste ergänzt um Hilfetexte, Auswahllisten mit Textvorschlägen und weiterführende Hinweise. Die DFG Checkliste muss bei Antragstellung sowie bei Projektabschluss mit eingereicht werden und soll Ihnen helfen, Ihr Datenmanagement zu strukturieren. Bei Fragen wenden Sie sich bitte an das zentrale FDM-Team ihrer Einrichtung.&lt;/p&gt;
-&lt;p&gt;&lt;u&gt;Strukturierung in Datensätze:&lt;/u&gt; Wählen Sie als Datensatz eine logische Einheit Ihrer Forschungsdaten, für die gleiche Angaben bezüglich Methodik, Technik, Zugänglichkeit, usw. gelten. Zum Beispiel verschiedene Arten der Datenerhebung (Modalitäten), oder ob es sich um gemessene, simulierte oder analysierte Daten handelt. Die folgenden Fragen werden für jeden Datensatz beantwortet.&lt;/p&gt;
-&lt;p&gt;
-Die Einteilung in Datensätze hilft, den Wert der Daten hinsichtlich der potentiellen Nachnutzung und einer späteren Archivierung einschätzen zu können. Da alle Fragen für jeden einzelnen Datensatz beantwortet werden müssen, ist eine allzu feingranulare Struktur nicht sinnvoll.&lt;/p&gt;</help>
+		<help lang="de">&lt;u&gt;Allgemeine Hinweise:&lt;/u&gt; Der vorliegende Fragenkatalog ist die von der DFG herausgegebene Checkliste ergänzt um Hilfetexte, Auswahllisten mit Textvorschlägen und weiterführende Hinweise. Die DFG-Checkliste muss bei Antragstellung sowie bei Projektabschluss berücksichtigt werden und soll Ihnen helfen, Ihr Datenmanagement zu strukturieren. Bei Fragen wenden Sie sich bitte an das zentrale FDM-Team ihrer Einrichtung.
+
+&lt;u&gt;Strukturierung in Datensätze:&lt;/u&gt; Wählen Sie als Datensatz eine logische Einheit Ihrer Forschungsdaten, für die gleiche Angaben bezüglich Methodik, Technik, Zugänglichkeit, usw. gelten. Zum Beispiel verschiedene Arten der Datenerhebung (Modalitäten), oder ob es sich um gemessene, simulierte oder analysierte Daten handelt. Die folgenden Fragen werden für jeden Datensatz beantwortet.
+
+Die Einteilung in Datensätze hilft, den Wert der Daten hinsichtlich der potentiellen Nachnutzung und einer späteren Archivierung einschätzen zu können. Da alle Fragen für jeden einzelnen Datensatz beantwortet werden müssen, ist eine allzu feingranulare Struktur nicht sinnvoll.</help>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
 		<conditions/>
@@ -264,7 +265,7 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<key>dokumentation</key>
 		<path>DFG-Checkliste/doku_quality/dokumentation</path>
 		<dc:comment/>
-		<attribute/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="http://rdmo-dfg.de/questions/DFG-Checkliste/doku_quality"/>
 		<questionset/>
 		<is_collection>False</is_collection>
@@ -334,12 +335,14 @@ The establishment of standards for methods, the use of software, the collection 
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">&lt;p&gt;Um Daten nachnutzen zu können, werden neben den Daten selbst auch die Software, ggf. (Mess-)Geräte etc. und das Wissen über spezielle Verfahren zur Nutzung benötigt. &lt;/p&gt;
-&lt;p&gt;Da die Nutzung je nach Disziplin unterschiedlich sein kann, tauschen Sie sich entweder mit Ihren Kolleg*innen aus, oder wenden Sie sich an das in Ihrer Disziplin arbeitende &lt;i&gt;&lt;a href=&quot;https://www.nfdi.de/konsortien/&quot; target=&quot;_blank&quot;&gt;NFDI-Konsortium&lt;/a&gt;&lt;/i&gt;, wenn Sie nicht genau wissen, was nötig ist.&lt;/p&gt;
+		<help lang="de">Um Daten nachnutzen zu können, werden neben den Daten selbst auch die Software, ggf. (Mess-)Geräte etc. und das Wissen über spezielle Verfahren zur Nutzung benötigt.
+
+Da die Nutzung je nach Disziplin unterschiedlich sein kann, tauschen Sie sich entweder mit Ihren Kolleg*innen aus, oder wenden Sie sich an das in Ihrer Disziplin arbeitende &lt;i&gt;&lt;a href=&quot;https://www.nfdi.de/konsortien/&quot; target=&quot;_blank&quot;&gt;NFDI-Konsortium&lt;/a&gt;&lt;/i&gt;, wenn Sie nicht genau wissen, was nötig ist.
+
 &lt;details&gt;
 &lt;summary style=&quot;color:blue; cursor:pointer;&quot;&gt;Weiterlesen...&lt;/summary&gt;&lt;br/&gt;
-&lt;p&gt;Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablierter diese sind, desto einfacher ist i.d.R. eine Nachnutzung möglich.
-Die Etablierung von Standards bei Methoden, bei der Anwendung von Software, der Erhebung von Forschungsdaten sowie der Beschreibung von Forschungsergebnissen bildet eine wesentliche Voraussetzung für die Vergleichbarkeit und Übertragbarkeit von Forschungsergebnissen.&lt;/p&gt;
+Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablierter diese sind, desto einfacher ist i.d.R. eine Nachnutzung möglich.
+Die Etablierung von Standards bei Methoden, bei der Anwendung von Software, der Erhebung von Forschungsdaten sowie der Beschreibung von Forschungsergebnissen bildet eine wesentliche Voraussetzung für die Vergleichbarkeit und Übertragbarkeit von Forschungsergebnissen.
 &lt;/details&gt;</help>
 		<text lang="de">Welche digitalen Methoden und Werkzeuge (z. B. Software) sind zur Nutzung der Daten erforderlich?</text>
 		<default_text lang="de"/>
@@ -362,7 +365,7 @@ Die Etablierung von Standards bei Methoden, bei der Anwendung von Software, der 
 		<key>data_quality</key>
 		<path>DFG-Checkliste/doku_quality/data_quality</path>
 		<dc:comment/>
-		<attribute/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="http://rdmo-dfg.de/questions/DFG-Checkliste/doku_quality"/>
 		<questionset/>
 		<is_collection>False</is_collection>
@@ -427,8 +430,9 @@ Die Etablierung von Standards bei Methoden, bei der Anwendung von Software, der 
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">&lt;p&gt;Qualitätskontrollen können auf unterschiedlichen Wegen erfolgen. Sie können stark abhängig von Ihrer Disziplin und Ihren Strukturen am Institut oder im Projekt sein.&lt;/p&gt;
-&lt;p&gt;Wichtig ist, dass die Qualitätskontrolle unabhängig von den getroffenen Maßnahmen ist und sich auf das Produkt „Daten“ bezieht.&lt;/p&gt;</help>
+		<help lang="de">Qualitätskontrollen können auf unterschiedlichen Wegen erfolgen. Sie können stark abhängig von Ihrer Disziplin und Ihren Strukturen am Institut oder im Projekt sein.
+
+Wichtig ist, dass die Qualitätskontrolle unabhängig von den getroffenen Maßnahmen ist und sich auf das Produkt „Daten“ bezieht.</help>
 		<text lang="de">Sind Qualitätskontrollen vorgesehen und wenn ja, auf welche Weise?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -443,7 +447,7 @@ Die Etablierung von Standards bei Methoden, bei der Anwendung von Software, der 
 		<unit/>
 		<width/>
 		<optionsets>
-			<optionset dc:uri="https://rdmo-dfg.de/options/qualitycontrol"/>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/control_tools"/>
 		</optionsets>
 		<conditions/>
 	</question>
@@ -462,7 +466,7 @@ Die Etablierung von Standards bei Methoden, bei der Anwendung von Software, der 
 		<key>data_storage</key>
 		<path>DFG-Checkliste/storage_backup/data_storage</path>
 		<dc:comment/>
-		<attribute/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="http://rdmo-dfg.de/questions/DFG-Checkliste/storage_backup"/>
 		<questionset/>
 		<is_collection>False</is_collection>
@@ -499,10 +503,9 @@ Coscine is a platform developed at RWTH for free storage, management and archivi
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">&lt;p&gt;Beachten Sie, dass je nach Speicherort Ihre Daten nicht automatisch gesichert sind, wie z.B. bei der lokalen Speicherung der Daten auf dem eigenen Rechner. Welche Speichermedien welche Vor- und Nachteile haben, können Sie auf &lt;i&gt;&lt;a href=&quot;https://www.forschungsdaten.info/themen/speichern-und-rechnen/datenspeicherung-und-die-lebensdauer-von-datentraegern/&quot; target=&quot;_blank&quot;&gt;www.forschungsdaten.info&lt;/a&gt;&lt;/i&gt; nachlesen.&lt;/p&gt;
-&lt;p&gt;
-Die DFG möchte hier eine Beschreibung der von Ihnen zur Datenspeicherung und und Sicherung verwendeten Infrastruktur. Gehen Sie insbesondere auf die Nutzung von zentral an Ihrer Einrichtung angebotenen Speicher- und Backup- Infrastruktur ein oder begründen Sie Ihre lokalen oder (fach-)spezifischen Lösungen.
-&lt;/p&gt;</help>
+		<help lang="de">Beachten Sie, dass je nach Speicherort Ihre Daten nicht automatisch gesichert sind. Welche Speichermedien welche Vor- und Nachteile haben, können Sie auf &lt;i&gt;&lt;a href=&quot;https://www.forschungsdaten.info/themen/speichern-und-rechnen/datenspeicherung-und-die-lebensdauer-von-datentraegern/&quot; target=&quot;_blank&quot;&gt;www.forschungsdaten.info&lt;/a&gt;&lt;/i&gt; nachlesen.
+
+Die DFG möchte hier eine Beschreibung der von Ihnen zur Datenspeicherung und und Sicherung verwendeten Infrastruktur. Gehen Sie insbesondere auf die Nutzung von zentral an Ihrer Einrichtung angebotenen Speicher- und Backup- Infrastruktur ein oder begründen Sie Ihre lokalen oder (fach-)spezifischen Lösungen.</help>
 		<text lang="de">Auf welche Weise werden die Daten während der Projektlaufzeit gespeichert und gesichert?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -558,10 +561,11 @@ In the case of industrial cooperation, the access and usage rights are usually r
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">&lt;p&gt;Sensible Daten können in verschiedenen Kontexten auftreten, beispielsweise personenbezogene Daten oder Daten, die in wirtschaftlichen Kooperationsprojekten entstehen oder auch lizenzierte Daten.
-&lt;br/&gt;
-Bei Fragen zu personenbezogenen Daten und deren Sicherheit wenden Sie sich bitte an die lokalen Datenschutzbeauftragten Ihrer Einrichtung.. &lt;br/&gt;
-Bei wirtschaftlichen Kooperationesprojekten sind die Zugriffs- und Nutzungsrechte in der Regel in den Geheimhaltungserklärungen festgehalten&lt;/p&gt;</help>
+		<help lang="de">Sensible Daten können in verschiedenen Kontexten auftreten, beispielsweise personenbezogene Daten oder Daten, die in wirtschaftlichen Kooperationsprojekten entstehen oder auch lizenzierte Daten.
+
+Bei Fragen zu personenbezogenen Daten und deren Sicherheit wenden Sie sich bitte an die lokalen Datenschutzbeauftragten Ihrer Einrichtung.
+
+Bei wirtschaftlichen Kooperationesprojekten sind die Zugriffs- und Nutzungsrechte in der Regel in den Geheimhaltungserklärungen festgehalten</help>
 		<text lang="de">Wie wird die Sicherheit sensibler Daten während der Projektlaufzeit gewährleistet (Zugriffs- und Nutzungsverwaltung)?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -626,11 +630,11 @@ Please keep in mind that the data can be published after a certain blocking or e
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">&lt;p&gt;Es gibt Gründe, die gegen eine (direkte) Veröffentlichung der Daten sprechen können. Diese können beispielsweise der Schutz personenbezogener Daten oder die kommerzielle oder industrielle Verwertung der Daten sein.&lt;/p&gt;
-&lt;p&gt;
- Auch kann die Vertraulichkeit im Zusammenhang mit &lt;i&gt;&lt;a href=&quot;https://www.dfg.de/foerderung/grundlagen_rahmenbedingungen/sicherheitsrelevante_forschung/index.html&quot; target=&quot;_blank&quot;&gt;Sicherheitsfragen&lt;/a&gt;&lt;/i&gt; ein Grund sein. Weitere Informationen können Sie außerdem der &lt;i&gt;&lt;a href=&quot;https://wissenschaftliche-integritaet.de/kodex/herstellung-von-offentlichem-zugang-zu-forschungsergebnissen/&quot; target=&quot;_blank&quot;&gt;Leitlinie 13 des Kodex zur Guten Wissenschaftlichen Praxis&lt;/a&gt;&lt;/i&gt; entnehmen.&lt;br/&gt;
-Bedenken Sie bitte, dass nach einer gewissen Sperr- oder Embargofrist eine Publikation der Daten möglich ist und Sie diese Publikation auch jetzt schon vorbereiten können. Bei Fragen sprechen Sie dazu mit dem FDM-Team Ihrer Einrichtung.
-&lt;/p&gt;</help>
+		<help lang="de">Es gibt Gründe, die gegen eine (direkte) Veröffentlichung der Daten sprechen können. Diese können beispielsweise der Schutz personenbezogener Daten oder die kommerzielle oder industrielle Verwertung der Daten sein.
+
+Auch kann die Vertraulichkeit im Zusammenhang mit &lt;i&gt;&lt;a href=&quot;https://www.dfg.de/foerderung/grundlagen_rahmenbedingungen/sicherheitsrelevante_forschung/index.html&quot; target=&quot;_blank&quot;&gt;Sicherheitsfragen&lt;/a&gt;&lt;/i&gt; ein Grund sein. Weitere Informationen können Sie außerdem der &lt;i&gt;&lt;a href=&quot;https://wissenschaftliche-integritaet.de/kodex/herstellung-von-offentlichem-zugang-zu-forschungsergebnissen/&quot; target=&quot;_blank&quot;&gt;Leitlinie 13 des Kodex zur Guten Wissenschaftlichen Praxis&lt;/a&gt;&lt;/i&gt; entnehmen.
+
+Bedenken Sie bitte, dass nach einer gewissen Sperr- oder Embargofrist eine Publikation der Daten möglich ist und Sie diese Publikation auch jetzt schon vorbereiten können. Bei Fragen sprechen Sie dazu mit dem FDM-Team Ihrer Einrichtung.</help>
 		<text lang="de">Sind Auswirkungen oder Einschränkungen in Bezug auf die spätere Veröffentlichung bzw. Zugänglichkeit zu erwarten?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -990,9 +994,10 @@ In order for the data to be available and findable, it must also be maintained b
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">&lt;p&gt;Entsprechend der Guten wissenschaftlichen Praxis müssen Forschungsdaten in der Regel für 10 Jahre aufbewahrt werden (vgl. Sie hierzu die &lt;i&gt;&lt;a href=&quot;https://wissenschaftliche-integritaet.de/kodex/archivierung/&quot; target=&quot;_blank&quot;&gt;Leitlinie 17&lt;/a&gt;&lt;/i&gt; des Kodex zur Guten Wissenschaftlichen Praxis).
-Damit die Daten verfügbar und auffindbar bleiben, müssen diese auch über das Projekt hinaus gepflegt werden. Archivieren Sie die Daten in einem Datenzentrum oder -repositorium, wird die Verantwortung in der Regel von den Betreibenden übernommen. Bitte prüfen bzw. klären Sie vorab die Verantwortlichkeiten. Die Archivierung schließt Metadaten, Dokumentationen und ggf. relevanten Code /Software mit ein.&lt;/p&gt;</help>
-		<text lang="de">Planen Sie die Archivierung Ihrer Daten in einer geeigneten Infrastruktur?</text>
+		<help lang="de">Entsprechend der Guten wissenschaftlichen Praxis müssen Forschungsdaten in der Regel für 10 Jahre aufbewahrt werden (vgl. Sie hierzu die &lt;i&gt;&lt;a href=&quot;https://wissenschaftliche-integritaet.de/kodex/archivierung/&quot; target=&quot;_blank&quot;&gt;Leitlinie 17&lt;/a&gt;&lt;/i&gt; des Kodex zur Guten Wissenschaftlichen Praxis).
+
+Damit die Daten verfügbar und auffindbar bleiben, müssen diese auch über das Projekt hinaus gepflegt werden. Archivieren Sie die Daten in einem Datenzentrum oder -repositorium, wird die Verantwortung in der Regel von den Betreibenden übernommen. Bitte prüfen bzw. klären Sie vorab die Verantwortlichkeiten. Die Archivierung schließt Metadaten, Dokumentationen und ggf. relevanten Code /Software mit ein.</help>
+		<text lang="de">Planen Sie die Archivierung Ihrer Daten in einer geeigneten Infrastruktur? Wie und wo?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
