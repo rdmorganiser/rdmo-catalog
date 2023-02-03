@@ -268,7 +268,7 @@ Andere Daten wiederum lassen sich per se nicht erneut erheben. Dies ist etwa bei
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="http://rdmo-dfg.de/questions/DFG-Checkliste/doku_quality"/>
 		<questionset/>
-		<is_collection>False</is_collection>
+		<is_collection>True</is_collection>
 		<order>0</order>
 		<title lang="en">Documentation</title>
 		<help lang="en"/>
@@ -368,7 +368,7 @@ Die Etablierung von Standards bei Methoden, bei der Anwendung von Software, der 
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="http://rdmo-dfg.de/questions/DFG-Checkliste/doku_quality"/>
 		<questionset/>
-		<is_collection>False</is_collection>
+		<is_collection>True</is_collection>
 		<order>1</order>
 		<title lang="en">Data Quality</title>
 		<help lang="en"/>
@@ -447,7 +447,7 @@ Wichtig ist, dass die Qualitätskontrolle unabhängig von den getroffenen Maßna
 		<unit/>
 		<width/>
 		<optionsets>
-			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/control_tools"/>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/control_tools_long"/>
 		</optionsets>
 		<conditions/>
 	</question>
@@ -469,7 +469,7 @@ Wichtig ist, dass die Qualitätskontrolle unabhängig von den getroffenen Maßna
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="http://rdmo-dfg.de/questions/DFG-Checkliste/storage_backup"/>
 		<questionset/>
-		<is_collection>False</is_collection>
+		<is_collection>True</is_collection>
 		<order>0</order>
 		<title lang="en">Data storage during the project</title>
 		<help lang="en"/>
@@ -529,10 +529,10 @@ Die DFG möchte hier eine Beschreibung der von Ihnen zur Datenspeicherung und un
 		<key>data_backup</key>
 		<path>DFG-Checkliste/storage_backup/data_backup</path>
 		<dc:comment/>
-		<attribute/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="http://rdmo-dfg.de/questions/DFG-Checkliste/storage_backup"/>
 		<questionset/>
-		<is_collection>False</is_collection>
+		<is_collection>True</is_collection>
 		<order>1</order>
 		<title lang="en">Technical data backup during the project</title>
 		<help lang="en"/>
@@ -689,8 +689,9 @@ Bedenken Sie bitte, dass nach einer gewissen Sperr- oder Embargofrist eine Publi
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">&lt;p&gt;Neben allgemeinen wissenschaftlichen Kodizes kann es auch fachwissenschaftliche Kodizes geben. Falls Ihnen diese nicht bekannt sind, informieren Sie sich bei passenden NFDI-Konsortien oder Fachvereinigungen. Aufschluss gibt auch die Seite der &lt;i&gt;&lt;a href=&quot;https://wissenschaftliche-integritaet.de/&quot; target=&quot;_blank&quot;&gt;DFG zur wissenschaftlichen Integrität&lt;/a&gt;&lt;/i&gt;. Hier finden Sie Verweise auf Gesetze, &lt;a href=&quot;https://www.dfg.de/foerderung/grundlagen_rahmenbedingungen/forschungsdaten/empfehlungen/index.html&quot; target=&quot;_blank&quot;&gt;fachspezifische Kommentierungen der Leitlinien&lt;/a&gt;&lt;/i&gt; und Erläuterungen sowie Fallbeispiele.&lt;/p&gt;
-&lt;p&gt;Erkundigen Sie sich bei Ihrer Einrichtung nach dem für Sie zuständigen.&lt;/p&gt;</help>
+		<help lang="de">Neben allgemeinen wissenschaftlichen Kodizes kann es auch fachwissenschaftliche Kodizes geben. Falls Ihnen diese nicht bekannt sind, informieren Sie sich bei passenden NFDI-Konsortien oder Fachvereinigungen. Aufschluss gibt auch die Seite der &lt;i&gt;&lt;a href=&quot;https://wissenschaftliche-integritaet.de/&quot; target=&quot;_blank&quot;&gt;DFG zur wissenschaftlichen Integrität&lt;/a&gt;&lt;/i&gt;. Hier finden Sie Verweise auf Gesetze, &lt;a href=&quot;https://www.dfg.de/foerderung/grundlagen_rahmenbedingungen/forschungsdaten/empfehlungen/index.html&quot; target=&quot;_blank&quot;&gt;fachspezifische Kommentierungen der Leitlinien&lt;/a&gt;&lt;/i&gt; und Erläuterungen sowie Fallbeispiele.
+
+Erkundigen Sie sich bei Ihrer Einrichtung nach dem für Sie zuständigen.</help>
 		<text lang="de">Existieren wichtige wissenschaftliche Kodizes bzw. fachliche Normen, die Berücksichtigung finden sollten?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -841,7 +842,9 @@ If you have any questions about intellectual property or need support for patent
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de"/>
+		<help lang="de">Bitte wägen Sie ab, ob Ihre Daten nachgenutzt werden können.
+
+Dabei kann auch eine Rolle spielen, ob Daten erneut generiert werden können. Das ist der Fall bei Digitalisaten analoger Objekte (falls die Originale noch vorhanden sind), generell aber oft mit großem Aufwand auch bei naturwissenschaftlichen Experimenten. Derartige Daten müssen nicht zwingend bewahrt werden. Jegliche zeitgebundene Daten - Zeitreihen, episodische Ereignisse wie z.B. Erdbeben, auch sozialwissenschaftliche Umfragen - sind dagegen nicht wiederholbare einmalige Beobachtungen.</help>
 		<text lang="de">Bieten sich diese Daten für die Nachnutzung in anderen Kontexten an?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -924,21 +927,22 @@ The importance of data publication is underscored once again by the
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">&lt;p&gt;Den &lt;i&gt;&lt;a href=&quot;https://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/forschungsdaten/leitlinien_forschungsdaten.pdf&quot; target=&quot;_blank&quot;&gt;DFG–Leitlinien zum Forschungsdatenmanagement&lt;/a&gt;&lt;/i&gt; entsprechend sollten Forschungsdaten wenn möglich zeitnah verfügbar gemacht werden und folgen dabei im besten Fall den &lt;i&gt;&lt;a href=&quot;https://force11.org/info/guiding-principles-for-findable-accessible-interoperable-and-re-usable-data-publishing-version-b1-0/&quot; target=&quot;_blank&quot;&gt;FAIR-Prinzipien&lt;/a&gt;&lt;/i&gt;.&lt;/p&gt;
-&lt;p&gt;
+		<help lang="de">Den &lt;i&gt;&lt;a href=&quot;https://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/forschungsdaten/leitlinien_forschungsdaten.pdf&quot; target=&quot;_blank&quot;&gt;DFG–Leitlinien zum Forschungsdatenmanagement&lt;/a&gt;&lt;/i&gt; entsprechend sollten Forschungsdaten wenn möglich zeitnah verfügbar gemacht werden und folgen dabei im besten Fall den &lt;i&gt;&lt;a href=&quot;https://force11.org/info/guiding-principles-for-findable-accessible-interoperable-and-re-usable-data-publishing-version-b1-0/&quot; target=&quot;_blank&quot;&gt;FAIR-Prinzipien&lt;/a&gt;&lt;/i&gt;.
+
 Die Bedeutung der Datenpublikation wird noch einmal unterstrichen durch die 
 &lt;i&gt;&lt;a href=&quot;https://wissenschaftliche-integritaet.de/kodex/herstellung-von-offentlichem-zugang-zu-forschungsergebnissen/&quot; target=&quot;_blank&quot;&gt;Leitlinie 13 des Kodex zur Guten Wissenschaftlichen Praxis&lt;/a&gt;&lt;/i&gt;. Hier wird auf die disziplinspezifischen Gepflogenheiten hingewiesen.
-&lt;/p&gt;
+
 &lt;details&gt;
 &lt;summary style=&quot;color:blue; cursor:pointer;&quot;&gt;Empfohlene Repositorien&lt;/summary&gt;&lt;br/&gt;
-&lt;p&gt;Für die Publikation von Forschungsdaten wird empfohlen, bevorzugt fachspezifische Repositorien zu nutzen. Empfehlenswerte Verzeichnisse sind dafür: 
+Für die Publikation von Forschungsdaten wird empfohlen, bevorzugt fachspezifische Repositorien zu nutzen. Empfehlenswerte Verzeichnisse sind dafür: 
 &lt;ul&gt;
 &lt;li&gt;&lt;i&gt;&lt;a href=&quot;https://www.re3data.org/&quot; target=&quot;_blank&quot;&gt;re3data.org&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
 &lt;li&gt;&lt;i&gt;&lt;a href=&quot;https://fairsharing.org/&quot; target=&quot;_blank&quot;&gt;FAIRsharing.org&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/p&gt;
-&lt;p&gt;Falls kein geeignetes fachspezifisches Repositorium existiert, erkundigen Sie sich, ob Ihre Einrichtung ein institutionelles Repositorium betreibt. Eine weitere Alternative wäre &lt;i&gt;&lt;a href=&quot;https://zenodo.org/&quot; target=&quot;_blank&quot;&gt;Zenodo&lt;/a&gt;&lt;/i&gt;.
-&lt;/p&gt;
+
+
+Falls kein geeignetes fachspezifisches Repositorium existiert, erkundigen Sie sich, ob Ihre Einrichtung ein institutionelles Repositorium betreibt. Eine weitere Alternative wäre &lt;i&gt;&lt;a href=&quot;https://zenodo.org/&quot; target=&quot;_blank&quot;&gt;Zenodo&lt;/a&gt;&lt;/i&gt;.
+
 &lt;/details&gt;</help>
 		<text lang="de">Wann ist dieser Datensatz für Dritte nutzbar?</text>
 		<default_text lang="de"/>
@@ -983,14 +987,14 @@ Die Bedeutung der Datenpublikation wird noch einmal unterstrichen durch die
 		<key>archiving_infrastructure</key>
 		<path>DFG-Checkliste/exchange_access/archiving/archiving_infrastructure</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/yesno"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository"/>
 		<questionset dc:uri="http://rdmo-dfg.de/questions/DFG-Checkliste/exchange_access/archiving"/>
-		<is_collection>False</is_collection>
+		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
-		<order>0</order>
+		<order>1</order>
 		<help lang="en">&lt;p&gt;In accordance with good scientific practice, research data must generally be stored for 10 years (see the &lt;i&gt;&lt;a href=&quot;https://wissenschaften-integritaet.de/kodex/archivierung/&quot; target=&quot; _blank&quot;&gt;Guideline 17&lt;/a&gt;&lt;/i&gt; of the Code of Good Scientific Practice).
 In order for the data to be available and findable, it must also be maintained beyond the project. If you archive the data in a data center or repository, the responsibility is usually assumed by the operator. Please check or clarify the responsibilities in advance. Archiving includes metadata, documentation and any relevant code/software.&lt;/p&gt;</help>
-		<text lang="en">Are you planning to archive your data in a suitable infrastructure?</text>
+		<text lang="en">Are you planning to archive your data in a suitable infrastructure? How and where?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -998,38 +1002,6 @@ In order for the data to be available and findable, it must also be maintained b
 
 Damit die Daten verfügbar und auffindbar bleiben, müssen diese auch über das Projekt hinaus gepflegt werden. Archivieren Sie die Daten in einem Datenzentrum oder -repositorium, wird die Verantwortung in der Regel von den Betreibenden übernommen. Bitte prüfen bzw. klären Sie vorab die Verantwortlichkeiten. Die Archivierung schließt Metadaten, Dokumentationen und ggf. relevanten Code /Software mit ein.</help>
 		<text lang="de">Planen Sie die Archivierung Ihrer Daten in einer geeigneten Infrastruktur? Wie und wo?</text>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>text</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
-	<question dc:uri="http://rdmo-dfg.de/questions/DFG-Checkliste/exchange_access/archiving/archiving_yes">
-		<uri_prefix>http://rdmo-dfg.de/</uri_prefix>
-		<key>archiving_yes</key>
-		<path>DFG-Checkliste/exchange_access/archiving/archiving_yes</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository"/>
-		<questionset dc:uri="http://rdmo-dfg.de/questions/DFG-Checkliste/exchange_access/archiving"/>
-		<is_collection>True</is_collection>
-		<is_optional>False</is_optional>
-		<order>1</order>
-		<help lang="en"/>
-		<text lang="en">If so, how and where?</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<verbose_name_plural lang="en"/>
-		<help lang="de"/>
-		<text lang="de">Falls ja, wie und wo?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
