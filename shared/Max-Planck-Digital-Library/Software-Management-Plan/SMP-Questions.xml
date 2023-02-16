@@ -3,7 +3,7 @@
 	<catalog dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp">
 		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
 		<key>smp</key>
-		<dc:comment>This software project management catalogue was developed by the Max Planck Digital Library in 2022. Thanks to all our team colleagues for their support.
+		<dc:comment>This software project management catalogue was developed by the Max Planck Digital Library in 2022. This version is the revised version from 16th February 2023. Thanks to all our team colleagues for their support.
 This SMP template was inspired by some documentation, specially:
 * https://www.software.ac.uk/resources/guides/software-management-plans
 * https://opencarp.org/about/software-management-plan</dc:comment>
@@ -174,19 +174,19 @@ Es liegt in der Natur der Sache, dass diese Literaturhinweise nicht vollumfängl
 		<is_optional>False</is_optional>
 		<order>3</order>
 		<help lang="en">Please consider whether it would be more effective to purchase existing software or to adapt an existing open source instead of developing software yourself.</help>
-		<text lang="en">Are your sure that no suitable exists with the functionality your are planning?</text>
+		<text lang="en">Are your sure that no suitable exists with the functionality your are planning? If so, what software have similar purposes and what is missing there for you to use it?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bitte überlegen Sie, ob es nicht zielführender ist eine existierende Software einzukaufen oder eine bestehende Open Source-Variante anzupassen anstatt eine eigene Software vollständig selbst zu entwickeln.</help>
-		<text lang="de">Sind Sie sicher, dass es noch keine geeignete Software mit der von Ihnen geplanten Funktionalität gibt?</text>
+		<text lang="de">Sind Sie sicher, dass es noch keine geeignete Software mit der von Ihnen geplanten Funktionalität gibt? Wenn ja, welche Software hat einen ähnlichen Zweck und was fehlt noch, um sie zu nutzen?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
 		<default_option/>
 		<default_external_id/>
-		<widget_type>yesno</widget_type>
-		<value_type>boolean</value_type>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
@@ -254,7 +254,7 @@ Es liegt in der Natur der Sache, dass diese Literaturhinweise nicht vollumfängl
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder"/>
 		<questionset dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner"/>
-		<is_collection>True</is_collection>
+		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en">Here, for example, personnel or financial resources from the regular budget or already existing project funds can be mentioned.
@@ -450,7 +450,7 @@ Zur Unterstützung können diese Texte interessant sein:
 		<dc:comment/>
 		<attribute dc:uri="https://rdmo.mpdl.mpg.de/terms/domain/smp/track-tasks"/>
 		<questionset dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-management"/>
-		<is_collection>False</is_collection>
+		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en">The development of software goes hand in hand with a high degree of complexity. In order to keep track of the diverse requirements, tasks and problems, it is advisable to organise these points in a clear structure. At the same time, this enhances the traceability of developments.
@@ -469,7 +469,7 @@ Beispiele für Anwendungen sind etwa eigenständige Ticket-Systeme wie Jira oder
 		<verbose_name_plural lang="de"/>
 		<default_option/>
 		<default_external_id/>
-		<widget_type>textarea</widget_type>
+		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
@@ -589,14 +589,14 @@ Im Folgenden finden Sie eine Beispielsammlung für institutionelle Regelwerke mi
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<order>1</order>
-		<help lang="en">In addition to institutional requirements, there may also be other conditions that need to be taken into account when developing software in a scientific context. For example, if the software is developed in a third-party project, then the requirements of the funding body are binding. Likewise, there may be various agreements in one's own community that need to be taken into account in software development.
+		<help lang="en">In addition to institutional requirements, there may also be other conditions or communities that need to be taken into account when developing software in a scientific context. For example, if the software is developed in a third-party project, then the requirements of the funding body are binding. Likewise, there may be various agreements in one's own community that need to be taken into account in software development.
 
 It is advisable to familiarise yourself with the FAIR Principles for Research Software (&lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt;) at an early stage. For example, this question about requirement for software is required in &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; I1 and R3. At the same time, orientation towards the &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; principles can significantly increase the quality and acceptance of the software. An interactive guide to FAIR software can be found here: &lt;a href=&quot;https://fair-software.nl&quot; target=&quot;_blank&quot;&gt;https://fair-software.nl&lt;/a&gt;.</help>
 		<text lang="en">Are there requirements regarding the software development form other parties?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Neben institutionellen Anforderungen können ebenso weitere Bedingungen existieren, die es bei der Entwicklung von Software im wissenschaftlichen Kontext zu beachten gilt. Wenn beispielsweise die Software in einem Drittmittelprojekt entwickelt wird, dann sind die Vorgaben des Mittelgebers bindend. Ebenso können verschiedene Vereinbarungen in der eigenen Fächergruppe bestehen, die es bei der Software-Entwicklung zu berücksichtigen gilt.
+		<help lang="de">Neben institutionellen Anforderungen können ebenso weitere Bedingungen oder Communities existieren, die es bei der Entwicklung von Software im wissenschaftlichen Kontext zu beachten gilt. Wenn beispielsweise die Software in einem Drittmittelprojekt entwickelt wird, dann sind die Vorgaben des Mittelgebers bindend. Ebenso können verschiedene Vereinbarungen in der eigenen Fächergruppe bestehen, die es bei der Software-Entwicklung zu berücksichtigen gilt.
 
 Parallel dazu ist es empfehlenswert, sich mit den FAIR Principles for Research Software (&lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt;) schon frühzeitig vertraut zu machen. So wird beispielsweise diese Anforderung in &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; I1 und R3 gefordert. Die Orientierung an den &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt;-Prinzipien kann gleichzeitig die Qualität und Akzeptanz der Software deutlich steigern. Eine interaktive Hilfestellung zu FAIR Software findet sich hier: &lt;a href=&quot;https://fair-software.nl&quot; target=&quot;_blank&quot;&gt;https://fair-software.nl&lt;/a&gt;.</help>
 		<text lang="de">Gibt es Anforderungen bezüglich der Softwareentwicklung von externer Seite?</text>
@@ -688,7 +688,7 @@ An dieser Stelle bietet es sich zusätzlich an, zu dokumentieren, ob technische 
 		<dc:comment/>
 		<attribute dc:uri="https://rdmo.mpdl.mpg.de/terms/domain/smp/versioning"/>
 		<questionset dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/technical/code"/>
-		<is_collection>False</is_collection>
+		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en">Versioning code during development is strongly recommended. Applications such as Git systems are widespread.</help>
@@ -740,7 +740,7 @@ An dieser Stelle bietet es sich zusätzlich an, zu dokumentieren, ob technische 
 		<dc:comment/>
 		<attribute dc:uri="https://rdmo.mpdl.mpg.de/terms/domain/smp/external-components"/>
 		<questionset dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/technical/components"/>
-		<is_collection>False</is_collection>
+		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en">The use of external applications and existing libraries is an established practice in software development. However, the inclusion of external code can create dependencies. This in turn increases the complexity of the software. The more extensive the code, the more time-consuming it is to know and understand these dependencies. Failure of these services should also be planned for. It is therefore advisable in software development which and how external components will be used early on. This is also in terms of &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; I2 and R2 and particularly recommended for the further development and subsequent use of software.
@@ -1020,14 +1020,14 @@ Folgende Literatur könnte zusätzlich interessant sein:
 		<help lang="en">Applicable software is rarely a static product. Software is usually in a constant state of flux as a result of further developments of external components, security gaps in libraries that have been remedied or proprietary enhancements in the code. At the same time, the personnel and time required to maintain and update software increases with its age. It is therefore highly advisable to think in advance about how long the software should be (re-)usable.
 
 It is fundamentally important to document exactly how the software can be updated and which (technical) environment conditions are necessary for the software to run correctly.</help>
-		<text lang="en">How long should the software remain usable?</text>
+		<text lang="en">How long should the software remain usable? What steps will be taken to ensure that the software can continue to be used after the project?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Anwendbare Software ist in den seltensten Fällen ein statisches Produkt. Durch Fortentwicklungen von externen Komponenten, behobenen Sicherheitslücken bei Bibliotheken oder eigene Erweiterungen im Code befindet sich Software meist in einem stetigen Wandel. Gleichzeitig steigen der personelle und zeitliche Aufwand bei der Erhaltung und Fortführung von Software mit deren Alter. Es ist daher ratsam, sich schon im Vorfeld Gedanken darüber zu machen, wie lange die Software (nach-)nutzbar sein soll.
 
 Vor diesem Hintergrund ist es grundsätzlich wichtig, genau zu dokumentieren, wie die Software aktualisiert werden kann und welche (technischen) Rahmenbedingungen notwendig sind, damit die Software korrekt ausgeführt werden kann.</help>
-		<text lang="de">Wie lange soll die Software verwendbar bleiben?</text>
+		<text lang="de">Wie lange soll die Software verwendbar bleiben? Welche Schritte werden unternommen, damit die Software im Anschluss an das Projekt weiter werden kann?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
@@ -1379,12 +1379,12 @@ Folgende Fragen könnten in einer Dokumentation beantwortet werden:
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<order>1</order>
-		<help lang="en">It is useful to ensure that the documentation for the software is accessible to all team members. It has also proven useful to agree on a language for the formulation of documents right from the start. This is often English.</help>
+		<help lang="en">It is useful to ensure that the documentation for the software is accessible to all team members. Applications such as Readthedocs can be helpful here. It has also proven useful to agree on a language for the formulation of documents right from the start. This is often English.</help>
 		<text lang="en">Where will the documentation be stored or made available? Which language will be used?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Es ist sinnvoll dafür Sorge zu tragen, dass die Dokumentation zur Software für alle Teammitglieder erreichbar ist. Ebenso hat es sich bewährt, sich von Anfang an auf eine Sprache bei der Formulierung von Dokumenten zu einigen. Häufig ist dies Englisch.</help>
+		<help lang="de">Es ist sinnvoll dafür Sorge zu tragen, dass die Dokumentation zur Software für alle Teammitglieder erreichbar ist. Anwendungen wie z.B. Readthedocs können hierbei hilfreich sein. Ebenso hat es sich bewährt, sich von Anfang an auf eine Sprache bei der Formulierung von Dokumenten zu einigen. Häufig ist dies Englisch.</help>
 		<text lang="de">Wo wird die Dokumentation aufbewahrt oder verfügbar sein? Welche Sprache soll verwendet werden?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1428,7 +1428,7 @@ Folgende Fragen könnten in einer Dokumentation beantwortet werden:
 		<dc:comment/>
 		<attribute dc:uri="https://rdmo.mpdl.mpg.de/terms/domain/smp/test-strategy"/>
 		<questionset dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/quality-assurance/testing"/>
-		<is_collection>False</is_collection>
+		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en">It can be helpful to be clear about a testing strategy in advance. This avoids the eclectic search for errors, but leads to more targeted, structured testing. Following on from this, you need to be clear about which test principles you want to apply. In parallel, it should be clarified whether standards (e.g. &lt;a href=&quot;https://www.iso.org/standard/64764.html&quot; target=&quot;_blank&quot;&gt;ISO/IEC 25000:2014&lt;/a&gt;, &lt;a href=&quot;https://www.istqb.org&quot; target=&quot;_blank&quot;&gt;ISTQB&lt;/a&gt;) apply. Testing a software on different levels (Unit-, Integration-, E2E-Tests) is always useful. Depending on the project, different types of testing (security testing, functional tests / non-functional tests, performance testing etc.) are important. &lt;a href=&quot;https://www.ministryoftesting.com&quot; target=&quot;_blank&quot;&gt;Ministry of Testing&lt;/a&gt;, as a global community for software testing, is a useful first start to approach this topic.</help>
@@ -1460,7 +1460,7 @@ Folgende Fragen könnten in einer Dokumentation beantwortet werden:
 		<dc:comment/>
 		<attribute dc:uri="https://rdmo.mpdl.mpg.de/terms/domain/smp/test-documentation"/>
 		<questionset dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/quality-assurance/testing"/>
-		<is_collection>False</is_collection>
+		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en">There are different types of tests. Unit and integration tests are usually carried out by the developers, system tests by quality assurance persons, user tests by the users. It is therefore advisable to plan quality measures and the necessary process.</help>
@@ -1647,13 +1647,13 @@ Die &lt;a href=&quot;https://wissenschaftliche-integritaet.de/kodex/herstellung-
 		<order>1</order>
 		<help lang="en">If software is to be made publicly accessible, then it makes sense to find a suitable place for this. For example, &lt;a href=&quot;https://wissenschaftliche-integritaet.de/en/code-of-conduct/documentation/&quot; target=&quot;_blank&quot;&gt;Guideline 12 in the DFG Code of Good Scientific Practice&lt;/a&gt; recommends that &quot;[w]here research software is being developed, the source code is documented&quot;. 
 &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; F4 and A1 also explicitly ask how easy software can be found and to what extent scientific citation is supported.</help>
-		<text lang="en">In which repository or archive will the software be held? How easy can it be found?</text>
+		<text lang="en">In which repository or archive will the software be held? How easy can it be found? What strategy is used to keep the software usable?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Wenn Software öffentlich zugänglich gemacht werden soll, dann ist es sinnvoll, hierfür einen geeigneten Ort zu suchen. So empfiehlt etwa die &lt;a href=&quot;https://wissenschaftliche-integritaet.de/kodex/dokumentation/&quot; target=&quot;_blank&quot;&gt;Leitlinie 12 im DFG-Kodex &quot;Leitlinien zur Sicherung guter wissenschaftlicher Praxis&quot;&lt;/a&gt;, dass &quot;[b]ei der Entwicklung von Forschungssoftware [..] der Quellcode dokumentiert&quot; wird. 
 In &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; F4 und A1 wird auch explizit danach gefragt, wie leicht Software gefunden werden kann und inwiefern das wissenschaftliche Zitieren unterstützt wird.</help>
-		<text lang="de">In welchem Repository oder Archiv wird die Software aufbewahrt? Wie leicht kann es gefunden werden?</text>
+		<text lang="de">In welchem Repository oder Archiv wird die Software aufbewahrt? Wie leicht kann es gefunden werden? Welche Strategie wird angewandt, um die Software benutzbar zu halten?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
