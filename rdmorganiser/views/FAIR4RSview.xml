@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo created="2023-02-27T11:17:47.569886+01:00" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<view dc:uri="https://rdmo.mpdl.mpg.de/views/FAIR4RSview">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/</uri_prefix>
+		<key>FAIR4RSview</key>
+		<dc:comment>View of the FAIR Principles for Research Software (https://zenodo.org/record/6623556)</dc:comment>
+		<title lang="en">FAIR4RS</title>
+		<help lang="en">View of the FAIR Principles for Research Software (&lt;a href=&quot;https://zenodo.org/record/6623556&quot; target=&quot;_blank&quot;&gt;https://zenodo.org/record/6623556&lt;/a&gt;)</help>
+		<title lang="de">FAIR4RS</title>
+		<help lang="de">Ansicht der FAIR Principles for Research Software (&lt;a href=&quot;https://zenodo.org/record/6623556&quot; target=&quot;_blank&quot;&gt;https://zenodo.org/record/6623556&lt;/a&gt;)</help>
+		<catalogs/>
+		<template>{% load view_tags %}
+
+
+&lt;h1&gt;FAIR4RS&lt;/h1&gt;
+
+
+
+&lt;p&gt;&lt;strong&gt;Project title:&lt;/strong&gt; {% render_value 'project/title' %}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Start date:&lt;/strong&gt; {% render_value 'project/schedule/project_start' %}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;End date:&lt;/strong&gt; {% render_value 'project/schedule/project_end' %}&lt;/p&gt;
+
+
+&lt;p class=&quot;explanation&quot;&gt;Here, you can verify whether your responses to the Software Management Plan adress the the FAIR4RS principles. If you discover that you have not fully addressed FAIR-related questions, 
+you can revisit the Software Management Plan and provide the necessary details.&lt;/p&gt;
+
+&lt;h2&gt;Findable&lt;/h2&gt;
+&lt;h3&gt;F: Software, and its associated metadata, is easy for both humans and machines to find
+&lt;/h3&gt;
+
+   &lt;ul&gt;
+      &lt;li class=&quot;bold&quot;&gt;F1. Software is assigned a globally unique and persistent identifier&lt;/li&gt;
+        &lt;ul&gt;
+          &lt;li class=&quot;category&quot;&gt;F.1.1. Components of the software representing levels of granularity are assigned distinct identifiers &lt;/li&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;p&gt;{% render_value 'smp/development-process' %}&lt;/p&gt;&lt;/li&gt;
+              {% get_values 'smp/track-tasks' set_index=0 as keyword %}
+              {% for value in keyword %}
+                  &lt;li&gt;&lt;p&gt;{{ value.value }}&lt;/p&gt;&lt;/li&gt;   
+              {% endfor %}
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;category&quot;&gt;F1.2. Different versions of the software are assigned distinct identifiers&lt;/li&gt;
+            &lt;ul&gt;
+              {% get_values 'smp/versioning' set_index=0 as keyword %}
+              {% for value in keyword %}
+                  &lt;li&gt;&lt;p&gt;{{ value.value }}&lt;/p&gt;&lt;/li&gt;
+                  
+              {% endfor %}
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;li class=&quot;bold&quot;&gt;F2. Software is described with rich metadata&lt;/li&gt;
+      	&lt;ul&gt;
+      		&lt;li&gt;{% render_value 'smp/software-metadata' %}&lt;/li&gt;
+      	&lt;/ul&gt;
+      &lt;li class=&quot;bold&quot;&gt;F3. Metadata clearly and explicitly include the identifier of the software they describe&lt;/li&gt;
+      	&lt;ul&gt;
+      		&lt;li&gt;{% render_value 'smp/software-pid' %}&lt;/li&gt;
+      	&lt;/ul&gt;
+      &lt;li class=&quot;bold&quot;&gt;F4. Metadata are FAIR, searchable and indexable&lt;/li&gt;
+      	&lt;ul&gt;
+      		&lt;li&gt;{% render_value 'smp/software-pid' %}&lt;/li&gt;
+      	&lt;/ul&gt;
+    &lt;/ul&gt;
+ 
+&lt;h2&gt;Accessible&lt;/h2&gt;
+&lt;h3&gt;A: Software, and its metadata, is retrievable via standardized protocols&lt;/h3&gt;
+
+   &lt;ul&gt;
+      &lt;li class=&quot;bold&quot;&gt;A.1. Software is retrievable by its identifier using a standardized communications protocol&lt;/li&gt;
+        &lt;ul&gt;
+          &lt;li class=&quot;category&quot;&gt;A.1.1. Software is retrievable by its identifier using a standardized communications protocol&lt;/li&gt;
+            &lt;ul&gt;
+              &lt;li&gt;{% render_value 'smp/software-pid' %}&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;category&quot;&gt;A.1.2. The protocol allows for an authentication and authorization procedure, where necessary&lt;/li&gt;
+            &lt;ul&gt;
+              &lt;li&gt;{% render_value 'smp/software-sharing' %}&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;li class=&quot;bold&quot;&gt;A2. Metadata are accessible, even when the software is no longer available&lt;/li&gt;
+      	&lt;ul&gt;
+      		&lt;li&gt;&lt;p&gt;{% render_value 'smp/re-usable' %}&lt;/p&gt;&lt;/li&gt;
+      		&lt;li&gt;&lt;p&gt;{% render_value 'smp/preservation' %}&lt;/p&gt;&lt;/li&gt;
+      	&lt;/ul&gt;
+    &lt;/ul&gt;
+    
+&lt;h2&gt;Interoperable&lt;/h2&gt;
+&lt;h3&gt;I: Software interoperates with other software by exchanging data and/or metadata, and/or through interaction via application programming interfaces (APIs), described through standards&lt;/h3&gt; 
+  &lt;ul&gt;
+    &lt;li class=&quot;bold&quot;&gt;I1. Software reads, writes and exchanges data in a way that meets domain-relevant community standards&lt;/li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;p&gt;{% render_value 'smp/community-requirements' %}&lt;/p&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;p&gt;{% render_value 'smp/coding-standards' %}&lt;/p&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;li class=&quot;bold&quot;&gt;I2. Software includes qualified references to other objects&lt;/li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;{% render_value 'smp/web-services' %}&lt;/li&gt;
+      &lt;/ul&gt;
+  &lt;/ul&gt;
+
+&lt;h2&gt;Reusable&lt;/h2&gt;
+&lt;h3&gt;R: Software is both usable (can be executed) and reusable (can be understood, modified, built upon, or incorporated into other software)&lt;/h3&gt; 
+  &lt;ul&gt;
+    &lt;li class=&quot;bold&quot;&gt;R1. Software is described with a plurality of accurate and relevant attributes&lt;/li&gt;
+        &lt;ul&gt;
+          &lt;li class=&quot;category&quot;&gt;R1.1. Software is given a clear and accessible license&lt;/li&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;p&gt;{% render_value 'smp/software-license' %}&lt;/p&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;p&gt;{% render_value 'smp/third-party-licenses' %}&lt;/p&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;li class=&quot;category&quot;&gt;R1.2. Software is associated with detailed provenance&lt;/li&gt;
+            &lt;ul&gt;
+              &lt;li&gt;{% render_value 'smp/software-property-rights' %}&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/ul&gt;
+      &lt;li class=&quot;bold&quot;&gt;R2. Software includes qualified references to other software&lt;/li&gt;
+      	&lt;ul&gt;
+            {% get_values 'smp/external-components' set_index=0 as keyword %}
+              {% for value in keyword %}
+                  &lt;li&gt;&lt;p&gt;{{ value.value }}&lt;/p&gt;&lt;/li&gt;   
+              {% endfor %}
+      	&lt;/ul&gt;
+      &lt;li class=&quot;bold&quot;&gt;R3. Software meets domain-relevant community standards&lt;/li&gt;
+      	&lt;ul&gt;
+      		&lt;li&gt;{% render_value 'smp/community-requirements' %}&lt;/li&gt;
+      	&lt;/ul&gt;
+  &lt;/ul&gt;
+
+&lt;style&gt;
+	ul{
+    	list-style-type: none;
+        
+    }
+    h2, h3{
+      margin:0;
+    
+    }
+    h3{
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+    h2{
+    	margin-top: 28px;
+    }
+    .bold{
+        font-weight: bold;
+    }
+    .category{
+    	font-style: italic;
+    }
+    .explanation{
+    	font-style: italic;
+        margin-top: 28px;
+    }
+&lt;/style&gt;</template>
+	</view>
+</rdmo>
