@@ -16,13 +16,24 @@ If you encounter any problems with the questionaires, the domain model, or other
 
 For problems or bugs with the RDMO Software, please use the issues in the [rdmo](https://github.com/rdmorganiser/rdmo) repository: https://github.com/rdmorganiser/rdmo/issues. In order to file issues, you will need a GitHub account.
 
-## Shared catalogs
+## Content curated by the RDMO team
+
+| Coverage (funder, subject, geographical region) | File / Creators                                                                                                                        | Last update |
+| ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| All questions (long)                            | [RDMO team](rdmorganiser/questions/rdmo.xml)                                                                                           | 2016        |
+| All questions (short)                           | [RDMO team](rdmorganiser/questions/fhpshort.xml)                                                                                       | 2018        |
+| DFG checklist                                   | [RDMO team](rdmorganiser/questions/DFG-Checkliste.xml)                                                                                 | 11/2022     |
+| Horizon Europe                                  | **catalog:** [RDMO team](rdmorganiser/questions/horizon-europe.xml)<br /> **view:** [RDMO team](rdmorganiser/views/horizon-europe.xml) | 12/2022     |
+| Swiss National Fund                             | [RDMO team](rdmorganiser/questions/snf.xml)                                                                                            | 2018        |
+| DCC checklist                                   | [RDMO team](rdmorganiser/questions/dcc.xml)                                                                                            | 10/2018     |
+
+
+## Other content provided by the user community
 
 | Coverage (funder, subject, geographical region) | File / Creators                                                                                                                                                                                         | Last update |
 | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| All questions (long)                            | [RDMO team](rdmorganiser/questions/rdmo.xml)<br /> [FoDaKo](shared/fodako/all_5.xml)                                                                                                                    | 2016        |
-| All questions (short)                           | [RDMO team](rdmorganiser/questions/fhpshort.xml)                                                                                                                                                        | 2018        |
-| DFG checklist                                   | [RDMO team](rdmorganiser/questions/DFG-Checkliste.xml)<br /> [FoDaKo](shared/fodako/dfg_5.xml)                                                                                                          | 11/2022     |
+| All questions (long)                            | [FoDaKo](shared/fodako/all_5.xml)                                                                                                                                                                       | 2016        |
+| DFG checklist                                   | [FoDaKo](shared/fodako/dfg_5.xml)                                                                                                                                                                       | 11/2022     |
 | DFG Biodiversity research                       | [FoDaKo](shared/fodako/biodiversity_dfg_5.xml)                                                                                                                                                          | 11/2022     |
 | DFG Chemistry                                   | [FoDaKo](shared/fodako/chem_dfg_5.xml)<br /> [FDM Bayern eHumanities](shared/ub_fau_erlangen_nuernberg/dfg-chemie/dfg_Chemie.xml )                                                                      | 12/2022     |
 | DFG 101 Ancient Cultures                        | [FoDaKo](shared/fodako/101_dfg_5.xml)<br /> [FDM Bayern eHumanities](shared/ub_fau_erlangen_nuernberg/dfg-alte-kulturen/dfg_alte_kulturen_fk101.xml)                                                    | 11/2022     |
@@ -35,12 +46,9 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 | Emissions in animal husbandry                   | [EmiMin](shared/EmiMin/publisso_terms4life_emiminV1_questions.xml)<br /> [EmiMin (lead)](shared/EmiMin/publisso_terms4life_emimin_lead_V1_questions.xml)                                                |             |
 | Hessen State                                    | [HeFDI](shared/HeFDI/4_hefdi_template_questions_1.4.xml)                                                                                                                                                |             |
 | Horizon 2020                                    | **catalog:** [FDM Bayern eHumanities](shared/ub_fau_erlangen_nuernberg/h2020-ehum/ehum_h2020_fragebogen.xml)<br /> **view:** [FDM Bayern eHumanities](shared/ub_fau_erlangen_nuernberg/h2020-ehum/views_h2020.xml) |  |
-| Horizon Europe                                  | **catalog:** [RDMO team](rdmorganiser/questions/horizon-europe.xml)<br /> **view:** [RDMO team](rdmorganiser/views/horizon-europe.xml)                                                                  | 12/2022     |
 | Mathematics                                     | [DFG Excellence Cluster MATH+](shared/MATH+/mathplus_questions.xml)                                                                                                                                     | 11/2022     |
 | Mechanical Engineering                          | [NFDI4Ing](shared/nfdi4ing/rdmo_mechanical_engineering/catalog_mb_20190124.xml)                                                                                                                         |             |
 | Software Management Plan                        | [Max Planck Digital Library](shared/Max-Planck-Digital-Library/Software-Management-Plan/SMP-Questions.xml)                                                                                              |             |
 | VW Foundation - Science Europe                  | [FDM Bayern eHumanities](shared/ub_fau_erlangen_nuernberg/ScienceEurope_VW_Stiftung/catalog_VW_SE.xml)                                                                                                  |             |
-| Swiss National Fund                             | [RDMO team](rdmorganiser/questions/snf.xml)                                                                                                                                                             | 2018        |
-| DCC checklist                                   | [RDMO team](rdmorganiser/questions/dcc.xml)                                                                                                                                                             | 10/2018     |
 
 29 catalogs shared
