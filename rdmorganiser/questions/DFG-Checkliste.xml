@@ -515,7 +515,7 @@ The DFG expects here a description of the infrastructure you use for data storag
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Beachten Sie, dass je nach Speicherort Ihre Daten nicht automatisch gesichert sind. Welche Speichermedien welche Vor- und Nachteile haben, können Sie auf &lt;i&gt;&lt;a href="https://www.forschungsdaten.info/themen/speichern-und-rechnen/datenspeicherung-und-die-lebensdauer-von-datentraegern/" target="_blank"&gt;www.forschungsdaten.info&lt;/a&gt;&lt;/i&gt; nachlesen.
 
-Die DFG möchte hier eine Beschreibung der von Ihnen zur Datenspeicherung und und Sicherung verwendeten Infrastruktur. Gehen Sie insbesondere auf die Nutzung von zentral an Ihrer Einrichtung angebotener Speicher- und Backup- Infrastruktur ein oder begründen Sie Ihre lokalen oder (fach-)spezifischen Lösungen.</help>
+Die DFG möchte hier eine Beschreibung der von Ihnen zur Datenspeicherung und Sicherung verwendeten Infrastruktur. Gehen Sie insbesondere auf die Nutzung von zentral an Ihrer Einrichtung angebotener Speicher- und Backup- Infrastruktur ein oder begründen Sie Ihre lokalen oder (fach-)spezifischen Lösungen.</help>
 		<text lang="de">Auf welche Weise werden die Daten während der Projektlaufzeit gespeichert und gesichert?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -717,10 +717,10 @@ Bedenken Sie bitte, dass ggf. nach einer gewissen Sperr- oder Embargofrist eine 
 		<key>legal_restrictions</key>
 		<path>DFG-Checkliste/rights/legal_restrictions</path>
 		<dc:comment/>
-		<attribute/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/DFG-Checkliste/rights"/>
 		<questionset/>
-		<is_collection>False</is_collection>
+		<is_collection>True</is_collection>
 		<order>2</order>
 		<title lang="en">Legal Restrictions</title>
 		<help lang="en"/>
@@ -916,10 +916,8 @@ The importance of data publication is underscored once again by the
 &lt;details&gt;
 &lt;summary style="color:blue; cursor:pointer;"&gt;Recommended repositories&lt;/summary&gt;
 
-For the publication of research data, it is recommended to use subject-specific repositories. Recommended directories are:
+For the publication of research data, it is recommended to use subject-specific repositories. Recommended directories are &lt;i&gt;&lt;a href="https://www.re3data.org/" target="_blank"&gt;re3data.org&lt;/a&gt;&lt;/i&gt; and &lt;i&gt;&lt;a href="https://fairsharing.org/" target="_blank"&gt;FAIRsharing.org&lt;/a&gt;&lt;/i&gt;.
 
-* &lt;i&gt;&lt;a href="https://www.re3data.org/" target="_blank"&gt;re3data.org&lt;/a&gt;&lt;/i&gt;
-* &lt;i&gt;&lt;a href="https://fairsharing.org/" target="_blank"&gt;FAIRsharing.org&lt;/a&gt;&lt;/i&gt;
 If no suitable subject-specific repository exists, inquire whether your facility operates an institutional repository. Another alternative would be &lt;i&gt;&lt;a href="https://zenodo.org/" target="_blank"&gt;Zenodo&lt;/a&gt;&lt;/i&gt;.
 &lt;/details&gt;</help>
 		<text lang="en">When are the research data available for use by third parties?</text>
@@ -934,9 +932,8 @@ Die Bedeutung der Datenpublikation wird noch einmal unterstrichen durch die
 &lt;details&gt;
 &lt;summary style="color:blue; cursor:pointer;"&gt;Empfohlene Repositorien&lt;/summary&gt;
 
-Für die Publikation von Forschungsdaten wird empfohlen, bevorzugt fachspezifische Repositorien zu nutzen. Empfehlenswerte Verzeichnisse sind dafür: 
-* &lt;i&gt;&lt;a href="https://www.re3data.org/" target="_blank"&gt;re3data.org&lt;/a&gt;&lt;/i&gt;
-* &lt;i&gt;&lt;a href="https://fairsharing.org/" target="_blank"&gt;FAIRsharing.org&lt;/a&gt;&lt;/i&gt;
+Für die Publikation von Forschungsdaten wird empfohlen, bevorzugt fachspezifische Repositorien zu nutzen. Empfehlenswerte Verzeichnisse sind dafür &lt;i&gt;&lt;a href="https://www.re3data.org/" target="_blank"&gt;re3data.org&lt;/a&gt;&lt;/i&gt; und &lt;i&gt;&lt;a href="https://fairsharing.org/" target="_blank"&gt;FAIRsharing.org&lt;/a&gt;&lt;/i&gt;.
+
 Falls kein geeignetes fachspezifisches Repositorium existiert, erkundigen Sie sich, ob Ihre Einrichtung ein institutionelles Repositorium betreibt. Eine weitere Alternative wäre &lt;i&gt;&lt;a href="https://zenodo.org/" target="_blank"&gt;Zenodo&lt;/a&gt;&lt;/i&gt;.
 &lt;/details&gt;</help>
 		<text lang="de">Wann ist dieser Datensatz für Dritte nutzbar?</text>
@@ -1146,7 +1143,7 @@ If necessary, provide more detailed information on the respective items.</help>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Es kann sich hierbei sowohl um technische oder IT-Ressourcen handeln, als auch um Expertise, die z. B. für das Datenmanagement oder die IT eingebracht wird.
+		<help lang="de">Es kann sich hierbei sowohl um technische oder IT-Ressourcen handeln als auch um Expertise, die z. B. für das Datenmanagement oder die IT eingebracht wird.
 
 Machen Sie ggf. genauere Angaben zu den jeweiligen Posten.</help>
 		<text lang="de">Welche Ressourcen (Kosten, Zeit oder anderes) sind erforderlich, um einen adäquaten Umgang mit Forschungsdaten im Projekt umzusetzen?</text>
