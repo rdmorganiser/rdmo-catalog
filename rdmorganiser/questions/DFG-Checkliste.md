@@ -24,7 +24,6 @@ Several questions or linked optionsets of the catalog need institution-specific 
 * http://rdmo-dfg.de/questions/DFG-Checkliste/responsibilities/resources/datahandling_resources
 
 ## Installation
-
 Installing the DFG-checkliste to your rdmo instance from the command line you need to 
 ```
 ./manage.py import /path/to/domain/rdmo.xml
