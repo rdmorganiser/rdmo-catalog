@@ -1,5 +1,5 @@
-<?xml version="1.0" ?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/">
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2022-12-19T16:31:16.180308+01:00">
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>project</key>
@@ -342,6 +342,27 @@
 		<path>project/dataset/data_analysis_end</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/curation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>curation</key>
+		<path>project/dataset/curation</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/curation/responsible_person">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>responsible_person</key>
+		<path>project/dataset/curation/responsible_person</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/curation"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/curation/responsible_person/name">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>name</key>
+		<path>project/dataset/curation/responsible_person/name</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/curation/responsible_person"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_analysis_start">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -994,6 +1015,13 @@
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/findability">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>findability</key>
+		<path>project/dataset/sharing/findability</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing"/>
+	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/restrictions_explanation">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>restrictions_explanation</key>
@@ -1008,17 +1036,17 @@
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/uri">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>uri</key>
+		<path>project/dataset/sharing/uri</path>
+		<dc:comment>Link zum veröffentlichten Datensatz</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing"/>
+	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>yesno</key>
 		<path>project/dataset/sharing/yesno</path>
-		<dc:comment/>
-		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing"/>
-	</attribute>
-	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/findability">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>findability</key>
-		<path>project/dataset/sharing/findability</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing"/>
 	</attribute>
@@ -1674,24 +1702,24 @@
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/responsible_person/name">
-	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-	  <key>name</key>
-	  <path>project/dataset/preservation/responsible_person/name</path>
-	  <dc:comment>Refers to the permanent project owner: see https://github.com/rdmorganiser/rdmo-catalog/issues/110</dc:comment>
-	  <parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/responsible_person"/>
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>name</key>
+		<path>project/dataset/preservation/responsible_person/name</path>
+		<dc:comment>Refers to the permanent project owner: see https://github.com/rdmorganiser/rdmo-catalog/issues/110</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/responsible_person"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/responsible_person/email">
-	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-	  <key>email</key>
-	  <path>project/dataset/preservation/responsible_person/email</path>
-	  <dc:comment>Refers to the permanent project owner: see https://github.com/rdmorganiser/rdmo-catalog/issues/110</dc:comment>
-	  <parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/responsible_person"/>
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>email</key>
+		<path>project/dataset/preservation/responsible_person/email</path>
+		<dc:comment>Refers to the permanent project owner: see https://github.com/rdmorganiser/rdmo-catalog/issues/110</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/responsible_person"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/responsible_person">
-	  <uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-	  <key>responsible_person</key>
-	  <path>project/dataset/preservation/responsible_person</path>
-	  <dc:comment>Refers to the permanent project owner: see https://github.com/rdmorganiser/rdmo-catalog/issues/110</dc:comment>
-	  <parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation"/>
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>responsible_person</key>
+		<path>project/dataset/preservation/responsible_person</path>
+		<dc:comment>Refers to the permanent project owner: see https://github.com/rdmorganiser/rdmo-catalog/issues/110</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation"/>
 	</attribute>
 </rdmo>
