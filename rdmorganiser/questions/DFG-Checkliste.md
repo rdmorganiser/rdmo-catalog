@@ -18,10 +18,10 @@ RDMO standard domain and option sets required:
 
 ## Necessary instution-specific adjustments
 Several questions or linked optionsets of the catalog need institution-specific adjustements after import:
-* http://rdmo-dfg.de/questions/DFG-Checkliste/data_description/data_content
-* http://rdmo-dfg.de/questions/DFG-Checkliste/rights/publication_restrictions/publication_limitations
-* http://rdmo-dfg.de/questions/DFG-Checkliste/exchange_access/reuse/reuse_when
-* http://rdmo-dfg.de/questions/DFG-Checkliste/responsibilities/resources/datahandling_resources
+* https://rdmorganiser.github.io/terms/questions/DFG-Checkliste/data_description/data_content
+* https://rdmorganiser.github.io/terms/questions/DFG-Checkliste/rights/publication_restrictions/publication_limitations
+* https://rdmorganiser.github.io/terms/questions/DFG-Checkliste/exchange_access/reuse/reuse_when
+* https://rdmorganiser.github.io/terms/questions/DFG-Checkliste/responsibilities/resources/datahandling_resources
 
 ## Installation
 Installing the DFG-checkliste to your rdmo instance from the command line you need to 
