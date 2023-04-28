@@ -1,4 +1,4 @@
-Latest stable [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/fdm-uaruhr/rdmo-catalog-uaruhr?sort=semver&style=flat-square)](https://github.com/FDM-UARuhr/rdmo-catalog-uaruhr/releases)
+Latest stable [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/fdm-uaruhr/rdmo-catalog-uaruhr?style=flat-square)](https://github.com/FDM-UARuhr/rdmo-catalog-uaruhr/releases)
 
 
 # rdmo-catalog-uaruhr
