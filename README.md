@@ -27,7 +27,6 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 | Swiss National Fund                             | [RDMO team](rdmorganiser/questions/snf.xml)                                                                                            | 2018        |
 | DCC checklist                                   | [RDMO team](rdmorganiser/questions/dcc.xml)                                                                                            | 10/2018     |
 
-
 ## Other content provided by the user community
 
 | Coverage (funder, subject, geographical region) | File / Creators                                                                                                                                                                                         | Last update |
