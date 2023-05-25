@@ -61,5 +61,3 @@ make_table
 remove_old_table
 insert_new_table
 clean_up
-
-glow README.md
