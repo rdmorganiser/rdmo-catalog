@@ -28,6 +28,7 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 |Software Management Plan|[RDMO team](rdmorganiser/questions/SMP-Questions.xml) |08/2023|
 |Swiss National Fund     |[RDMO team](rdmorganiser/questions/snf.xml)           |2018   |
 
+
 ## Other content provided by the user community
 
 |Coverage (funder, subject, geographical region)|File / Creators         |Last update|
