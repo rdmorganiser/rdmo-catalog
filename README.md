@@ -28,6 +28,7 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 | DCC checklist                                   | [RDMO team](rdmorganiser/questions/dcc.xml)                                                                                            | 10/2018     |
 | Software Management Plan                        | [RDMO team](rdmorganiser/questions/SMP-Questions.xml)                                                                                  | 06/2023     |
 
+
 ## Other content provided by the user community
 
 | Coverage (funder, subject, geographical region) | File / Creators                                                                                                                                                                                         | Last update |
