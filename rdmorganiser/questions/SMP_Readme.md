@@ -38,6 +38,9 @@ A viewer for the presentation of the FAIR4RS principles is available under views
 # Talks on the Topic
 There were also some presentations on the development of this catalogue by the Max Planck Digital Library. See, for example, at the E-Science Days 2023 in Heidelberg: https://hdl.handle.net/21.11116/0000-000C-B40F-9.
 
+# Talks on the Topic
+There were also some presentations on the development of this catalogue. See, for example, at the E-Science Days 2023 in Heidelberg: https://hdl.handle.net/21.11116/0000-000C-B40F-9.
+
 # Feedback
 Of course, we are always happy to receive feedback: rdmo@mpdl.mpg.de.
 
