@@ -26,7 +26,7 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 | Horizon Europe                                  | **catalog:** [RDMO team](rdmorganiser/questions/horizon-europe.xml)<br /> **view:** [RDMO team](rdmorganiser/views/horizon-europe.xml) | 12/2022     |
 | Swiss National Fund                             | [RDMO team](rdmorganiser/questions/snf.xml)                                                                                            | 2018        |
 | DCC checklist                                   | [RDMO team](rdmorganiser/questions/dcc.xml)                                                                                            | 10/2018     |
-| Software Management Plan                                   | [RDMO team](rdmorganiser/questions/SMP-Questions.xml)                                                                                            | 06/2023  |
+| Software Management Plan                        | [RDMO team](rdmorganiser/questions/SMP-Questions.xml)                                                                                            | 06/2023     |
 
 ## Other content provided by the user community
 
