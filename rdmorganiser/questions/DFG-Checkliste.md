@@ -3,6 +3,9 @@
 * Version: 1.0
 * License: CC0
 
+# Changes from 2023-06-60
+* Attribute "https://rdmorganiser.github.io/terms/domain/project/dataset/curation/responsible_person/name" added to question "Who is responsible for curating the data after the end of the project?"
+
 # Scope
 This catalog is the [checklist published by the DFG](https://www.dfg.de/research_data/checklist), supplemented by help texts and option sets.
 
