@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-06-27T09:50:44.123706+02:00">
+	<condition dc:uri="https://rdmo.julius-kuehn.de/terms/conditions/dataset_preservation">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>dataset_preservation</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/yesno"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmo.julius-kuehn.de/terms/options/archiviving_yes_no/1"/>
+	</condition>
+	<condition dc:uri="https://rdmo.julius-kuehn.de/terms/conditions/dataset_publication">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>dataset_publication</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/yesno"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmo.julius-kuehn.de/terms/options/publication_yes_no_option/1"/>
+	</condition>
+	<condition dc:uri="https://rdmo.julius-kuehn.de/terms/conditions/rdm_cost_yes_no">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>rdm_cost_yes_no</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/costs/rdm/special_costs"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmo.julius-kuehn.de/terms/options/rdm_special_costs/rdm_special_costs_yes"/>
+	</condition>
+	<condition dc:uri="https://rdmo.julius-kuehn.de/terms/conditions/sensitive_data_exists">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>sensitive_data_exists</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/other/yesno"/>
+		<relation>neq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmo.julius-kuehn.de/terms/options/sensitive_data_yes_no_option/sensitive_no"/>
+	</condition>
+</rdmo>
