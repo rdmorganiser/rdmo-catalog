@@ -1,8 +1,9 @@
 # Über den JKI-BLE Fragenkatalog
 # Ziel und Zweck
 
-Der JKI-BLE Fragenkatalog wurde vom Team FDM am Julius Kühn-Institut (JKI) entworfen. Feedbacks und Anregungen vom Team Forschungsdaten-Services TU-Darmstadt und von der Hochschule Geisenheim wurden bei der Entwicklung berücksichtigt. Der Fragenkatalog soll das manuell auszufüllende Word-Template des Fördergebers BLE ersetzten. Der zu dem Fragenkatalog gehörende View, orientiert sich beim Layout an dem Word-Template der BLE.
-Inhaltlich zeichnet sich der Katalog durch wenig Freitext und viele Auswahloptionen aus. Er ist so gestaltet, dass er sich von Forschenden die keine tiefgreifende FDM-Kenntnisse haben, ausfüllen lässt. Bei Fragen, die sich mit dem Einsatz von Auswahlmenüs beantworten lassen, sind diese in mehreren Fällen auf die Bedarfe des JKI ausgelegt. Der Katalog ist auf Deutsch und Englisch verfügbar.
+Der JKI-BLE Fragenkatalog wurde vom Team FDM am Julius Kühn-Institut (JKI) entworfen. Feedbacks und Anregungen vom Team Forschungsdaten-Services TU-Darmstadt und von der Hochschule Geisenheim wurden bei der Entwicklung berücksichtigt. Der Fragenkatalog soll das manuell auszufüllende Word-Template des Fördergebers BLE (Bundesanstalt für Landwirtschaft und Ernährung) ersetzten. Der zu dem Fragenkatalog gehörende View orientiert sich beim Layout an dem Word-Template der BLE.
+Inhaltlich zeichnet sich der Katalog durch wenig Freitext und viele Auswahloptionen aus. Er ist so gestaltet, dass er sich von Forschenden, die keine tiefgreifende FDM-Kenntnisse haben, ausfüllen lässt. Bei Fragen, die sich mit dem Einsatz von Auswahlmenüs beantworten lassen, sind diese in mehreren Fällen auf die Bedarfe des JKI ausgelegt. Der Katalog ist auf Deutsch und Englisch verfügbar.
+
 
 
 ## Einrichtung des Fragenkatalogs
