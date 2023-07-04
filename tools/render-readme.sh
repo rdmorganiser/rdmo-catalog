@@ -8,15 +8,15 @@ readme_file="${basedir}/README.md"
 temp_readme="/tmp/readme.tmp"
 temp_table="/tmp/new_table.tmp"
 
-rm -f "${temp_readme}"
-rm -f "${temp_table}"
+truncate -s 0 "${temp_readme}"
+truncate -s 0 "${temp_table}"
 
 # functions
-function ett() {
+ett() {
     echo -e "${1}" >>"${temp_table}"
 }
 
-function make_table() {
+make_table() {
     coutner=0
     echo "Generate shared catalog table"
     ett "\n\n## Shared catalogs"

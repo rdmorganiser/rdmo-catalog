@@ -1,3 +1,8 @@
+# Preface
+This questionnaire was developed by the Max Planck Digital Library in the Collections area in late summer and autumn 2022. It can be used to create a software management plan in RDMO. Of course, we are always happy to receive feedback: rdmo@mpdl.mpg.de.
+
+The catalogue is available under the CC0 licence (https://creativecommons.org/share-your-work/public-domain/cc0/), so that it can be freely (re)used. Changes and adaptations by the RDMO community are of course welcome and can easily be made via GitHub.
+
 # General
 This RDMO catalogue supports the writing of a Software Management Plan. This questionnaire was developed by the Max Planck Digital Library in the Collections area in late summer and autumn 2022. It can be used to create a software management plan in RDMO.
 A software management plan (SMP) can help significantly with design, implementation and long-term availability. The essential advantage of an SMP filled out in advance is the explicit handling of the emerging research software with documented information. At the same time, it also makes it clearer which topics (fields) have not yet been solved or covered.
@@ -17,6 +22,15 @@ To use this SMP, the additional SMP elements "Condition", "Domain" and "Question
 
 # Transferability
 This catalogue introduces many custom attributes, as the generic RDMO attributes do not always cover the specific aspects of software. For this reason, the existing views in RDMO cannot be used for this catalogue, or only to a very limited extent.
+
+# Use outside RDMO
+Due to multiple requests, we have created a template on the SMP for use outside of RDMO. The Word document is freely writable, has a CC0 and is freely available via https://doi.org/10.17617/2.3481986 for your own re-use.
+
+# FAIR4RS Viewer
+A viewer for the presentation of the FAIR4RS principles is under development and will be made available soon.
+
+# Talks on the Topic
+There were also some presentations on the development of this catalogue. See, for example, at the E-Science Days 2023 in Heidelberg: https://hdl.handle.net/21.11116/0000-000C-B40F-9.
 
 # Feedback
 Of course, we are always happy to receive feedback: rdmo@mpdl.mpg.de.
