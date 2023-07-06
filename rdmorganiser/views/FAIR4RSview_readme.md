@@ -2,7 +2,7 @@
 
 ## Introduction
 The FAIR4RS viewer is an additional feature for the SMP catalogue. Through the viewer, the answers from the catalogue are listed in the chronology of the FAIR4RS principles (https://doi.org/10.15497/RDA00068). The display therefore rises and falls with one's own entries in the SMP catalogue.
-The matching for the FAIR44Rs viewer is listed below. This shows which attributes are displayed at which position in the viewer.
+The matching for the FAIR44Rs viewer is listed below. This shows which attributes are displayed at which position in the viewer. Currently, views are only possible in one language. Therefore, the viewer is only available in English for the time being.
 
 ## General Project Information
 First project title plus (start date -> end date)
