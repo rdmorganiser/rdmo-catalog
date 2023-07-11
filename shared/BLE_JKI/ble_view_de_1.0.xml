@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-06-26T15:57:47.474766+02:00">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-07-11T17:04:34.436220+02:00">
 	<view dc:uri="https://rdmo.julius-kuehn.de/terms/views/general-ble-german">
 		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
 		<key>general-ble-german</key>
@@ -9,13 +9,13 @@
 &amp;#9733; Funder BLE &amp;#9733; German &amp;#9733;General Answers &amp;#9733; 
 &lt;/b&gt;&lt;/font&gt;
 &lt;br&gt;
-&lt;small&gt;This view is suitable for the visualization of the &quot;BLE-Questionnaire&quot; in German and uses general answers. It formats the answers according to the specifications of the funder BLE. The view can be used as a basis for the submission of a data management plan in the draft stage. If necessary, the output must be checked for linguistic correctness.&lt;/small&gt;</help>
-		<title lang="de">BLE-DMP-Deutsch</title>
+&lt;small&gt;This view is suitable for the visualization of the &quot;JKI-Questionnaire&quot; in German and uses general answers. It formats the answers according to the specifications of the funder BLE. The view can be used as a basis for the submission of a data management plan in the draft stage. If necessary, the output must be checked for linguistic correctness.&lt;/small&gt;</help>
+		<title lang="de">BLE-DMP-Deutsch (institutsunabhängig)</title>
 		<help lang="de">&lt;b&gt; &lt;font color=#088A4B&gt;
 &amp;#9733; Fördergeber BLE &amp;#9733; Deutsch &amp;#9733; Allgemeine Antworten &amp;#9733; 
 &lt;/b&gt;&lt;/font&gt;
 &lt;br&gt;
-&lt;small&gt;Diese Ansicht eignet sich für die Darstellung des &quot;BLE-Fragebogens&quot; auf Deutsch und gibt allgemeine Antworten. Sie formatiert die Antworten gemäß den Vorgaben des Fördergebers BLE. Die Ansicht kann als Grundlage für die Einreichung eines Datenmanagementplans in der Skizzenphase verwendet werde. Ggfs. muss die Ausgabe auf sprachliche Korrektheit überprüft werden.&lt;/small&gt;</help>
+&lt;small&gt;Diese Ansicht eignet sich für die Darstellung des &quot;JKI-Fragebogens&quot; auf Deutsch und gibt allgemeine Antworten. Sie formatiert die Antworten gemäß den Vorgaben des Fördergebers BLE. Die Ansicht kann als Grundlage für die Einreichung eines Datenmanagementplans in der Skizzenphase verwendet werde. Ggfs. muss die Ausgabe auf sprachliche Korrektheit überprüft werden.&lt;/small&gt;</help>
 		<catalogs>
 			<catalog dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble"/>
 		</catalogs>
@@ -26,17 +26,10 @@
 &lt;head&gt;
     {% get_value 'project/title' as title %}
     &lt;title&gt;{{ title.value }}&lt;/title&gt;
-    &lt;h1&gt;{% render_value 'project/title' %}&lt;/h1&gt;
-    &lt;/p&gt;
-
-
-    &lt;hr noshade color=rgb(0, 157, 129) width=100% size=20&gt;
 &lt;/head&gt;
-&lt;p&gt;&lt;img src=&quot;https://rdmo.julius-kuehn.de/static/core/img/header/blelogo.png&quot;
-        alt=&quot;&quot; width=&quot;300&quot; height=&quot;109&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://rdmo.julius-kuehn.de/static/core/img/header/blelogo.png&quot; width=&quot;228&quot; height=&quot;87&quot; /&gt;&lt;/p&gt;
 
-&lt;h1&gt;Forschungsdatenmanagementplan (FDMP) – Skizzenphase&lt;/h1&gt;
-
+&lt;h1 style=&quot;text-align: center; font-weight: bold; font-size: 21px; color: black;&quot;&gt;Forschungsdatenmanagementplan (FDMP) – Skizzenphase&lt;/h1&gt;
 
 &lt;style type=&quot;text/css&quot;&gt;
     .tg {
@@ -74,15 +67,25 @@
         text-align: left;
         vertical-align: top
     }
+    
+    .tg .invisible-header {
+  	border: none;
+  	font-size: 0;
+  	color: transparent;
+	}
+   
 &lt;/style&gt;
 &lt;table class=&quot;tg&quot;&gt;
-    &lt;thead&gt;
         &lt;tr&gt;
-            &lt;th class=&quot;tg-0pky&quot; colspan=&quot;2&quot;&gt;&lt;strong&gt;1. Administrative Angaben&lt;/trong&gt;
-            &lt;/th&gt;
+            &lt;th class=&quot;invisible-header&quot;&gt;&lt;/th&gt;
         &lt;/tr&gt;
-    &lt;/thead&gt;
     &lt;tbody&gt;
+    
+        &lt;tr&gt;
+       
+            &lt;td class=&quot;tg-fymr&quot; colspan=&quot;2&quot;&gt;&lt;strong&gt;1. Administrative Angaben&lt;/strong&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
         &lt;tr&gt;
             &lt;td class=&quot;tg-0pky&quot;&gt;Projekttitel
             &lt;td class=&quot;tg-0pky&quot;&gt;{% render_value 'project/research_question/title' %} 
