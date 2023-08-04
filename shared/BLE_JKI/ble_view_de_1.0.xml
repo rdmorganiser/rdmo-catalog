@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-07-11T17:04:34.436220+02:00">
+	<view dc:uri="https://rdmo.julius-kuehn.de/terms/views/general-ble-german">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>general-ble-german</key>
+		<dc:comment/>
+		<title lang="en">BLE-DMP-German (general)</title>
+		<help lang="en">&lt;b&gt; &lt;font color=#088A4B&gt;
+&amp;#9733; Funder BLE &amp;#9733; German &amp;#9733;General Answers &amp;#9733; 
+&lt;/b&gt;&lt;/font&gt;
+&lt;br&gt;
+&lt;small&gt;This view is suitable for the visualization of the &quot;BLE-Questionnaire&quot; in German and uses general answers. It formats the answers according to the specifications of the funder BLE. The view can be used as a basis for the submission of a data management plan in the draft stage. If necessary, the output must be checked for linguistic correctness.&lt;/small&gt;</help>
+		<title lang="de">BLE-DMP-Deutsch</title>
+		<help lang="de">&lt;b&gt; &lt;font color=#088A4B&gt;
+&amp;#9733; Fördergeber BLE &amp;#9733; Deutsch &amp;#9733; Allgemeine Antworten &amp;#9733; 
+&lt;/b&gt;&lt;/font&gt;
+&lt;br&gt;
+&lt;small&gt;Diese Ansicht eignet sich für die Darstellung des &quot;BLE-Fragebogens&quot; auf Deutsch und gibt allgemeine Antworten. Sie formatiert die Antworten gemäß den Vorgaben des Fördergebers BLE. Die Ansicht kann als Grundlage für die Einreichung eines Datenmanagementplans in der Skizzenphase verwendet werde. Ggfs. muss die Ausgabe auf sprachliche Korrektheit überprüft werden.&lt;/small&gt;</help>
+		<catalogs>
+			<catalog dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble"/>
+		</catalogs>
+		<template>{% load view_tags %}
+{% get_set 'project/dataset/id' as datasets %}
+{% get_set 'project/dataset/data_sources' as data_sources %}
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;/&gt;
+&lt;head&gt;
+    {% get_value 'project/title' as title %}
+    &lt;title&gt;{{ title.value }}&lt;/title&gt;
+&lt;/head&gt;
+&lt;p&gt;&lt;img src=&quot;https://rdmo.julius-kuehn.de/static/core/img/header/blelogo.png&quot; width=&quot;228&quot; height=&quot;87&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 style=&quot;text-align: center; font-weight: bold; font-size: 21px; color: black;&quot;&gt;Forschungsdatenmanagementplan (FDMP) – Skizzenphase&lt;/h1&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+    .tg {
+        border-collapse: collapse;
+        border-spacing: 0;
+        table-layout: auto;
+        width: 100%;
+    }
+
+    .tg td {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        overflow: hidden;
+        padding: 10px 10px;
+        word-break: normal;
+    }
+
+    .tg th {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        overflow: hidden;
+        padding: 10px 10px;
+        word-break: normal;
+    }
+
+    .tg .tg-0pky {
+        border-color: inherit;
+        text-align: left;
+        vertical-align: top
+    }
+    
+    .tg .invisible-header {
+  	border: none;
+  	font-size: 0;
+  	color: transparent;
+	}
+   
+&lt;/style&gt;
+&lt;table class=&quot;tg&quot;&gt;
+        &lt;tr&gt;
+            &lt;th class=&quot;invisible-header&quot;&gt;&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;tbody&gt;
+    
+        &lt;tr&gt;
+       
+            &lt;td class=&quot;tg-fymr&quot; colspan=&quot;2&quot;&gt;&lt;strong&gt;1. Administrative Angaben&lt;/strong&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;Projekttitel
+            &lt;td class=&quot;tg-0pky&quot;&gt;{% render_value 'project/research_question/title' %} 
+ 
+ &lt;! -- Projektacronym nur in Klammern anzeigen, wenn es gesetzt ist--!&gt;
+	{% get_values 'project/research_question/acronym' as texts %}
+    {% if texts %}        
+        {% for text in texts %}
+        	{% if not text.is_empty %} 
+        		({{ text.value}})
+            {% endif %}   
+        {% endfor %}	
+    {% else %} 
+ {% endif %}   
+            
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;Skizzeneinreicher*in&lt;/td&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;{% render_value 'project/partner/contact_person/name' %}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;Projekt-/Verbundpartner&lt;/td&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;
+        {% get_values 'project/partner/name' set_index=0 as texts %}
+    	{% if texts %}
+        	{% for text in texts %}
+        		{{ text.value }}&lt;br&gt;
+            {% endfor %}
+        {% endif %}
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;Förderprogramm&lt;/td&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;{% render_value 'project/funder/programme/title' %}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;Bekanntmachung&lt;/td&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;{% render_value 'project/funder/programme/announcement' %}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;Datum&lt;/td&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;{% now &quot;d.m.Y&quot; %}&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+&lt;! ---------------------Block 2 ab hier--------------------------------------------------------------------------- --!&gt;          
+            &lt;td class=&quot;tg-fymr&quot; colspan=&quot;2&quot;&gt;&lt;strong&gt;2. Beschreibung der Datenerhebung und -verarbeitung&lt;/strong&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-fymr&quot; colspan=&quot;2&quot;&gt;
+                &lt;p&gt;{% render_value 'ble' %}&lt;/p&gt;
+    &lt;p&gt;&lt;/p&gt;
+    
+    {% render_value 'project/research_question' %}  
+    {% render_value 'project/dataset/reuse_scenario' %}
+
+
+ &lt;! -- Kosten / Aufwaende Bitte beschreiben Sie in vollständigen Sätzen wieso und in welcher Höhe--!&gt;
+    {% check_condition 'rdm_cost_yes_no' set_index=dataset.set_index as conditions %}
+    {% if conditions %} 
+	  {% get_set 'project/costs/rdm/rdm_cost_level' as texts %}
+            {% if texts is None %}
+              Es entstehen Kosten für das Forschungsdatenmanagement in noch nicht definierter Höhe.
+            {% else %}
+             {% get_values 'project/costs/rdm/rdm_cost_level' as costs %}
+               {% for cost in costs %}
+                 {% if cost.is_empty %}
+			     Es entstehen Kosten für das Forschungsdatenmanagement in noch nicht definierter Höhe.
+                 {% else %}
+                  {{ cost.value }}            
+                 {% endif %}
+               {% endfor %}
+             {% endif %}
+     {% endif %}  
+
+
+ &lt;! -- Von wem werden die Kosten/Aufwände für das Forschungsdatenmanagement getragen? --!&gt;
+    {% check_condition 'rdm_cost_yes_no' set_index=dataset.set_index as conditions %}
+    {% if conditions %} 
+    {% get_values 'project/costs/rdm/rdm_costs_payment' as texts %}
+       {% if texts %}
+        {% for text in texts %}
+			{% if &quot;Kosten/Personal wurde beantragt&quot; in text.value %}
+				Kosten wurden beantragt
+                {% if not forloop.last %}bzw.{% endif %}
+            {% elif &quot;Eigenleistung der eigenen Institution&quot; in text.value %}
+				Kosten werden von unserer Einrichtung getragen
+                {% if not forloop.last %}und{% endif %}                
+        	{% elif &quot;Eigenleistung des Projektpartners&quot; in text.value %}
+                {% if text.value|length &gt; 61 %}
+        			{{ text.value|slice:&quot;61:&quot; }} trägt die Kosten
+                {% else %}
+                     _______________________ trägt die Kosten
+                {% endif %} 
+                {% if not forloop.last %}bzw.{% endif %}                
+            {% elif &quot;Muss vor Projektbeginn noch geklärt werden&quot; in text.value %}
+				Kostenübernahme muss noch geklärt werden 
+                {% if not forloop.last %}und{% endif %}                
+        	{% elif &quot;Anders&quot; in text.value %}
+                {% if text.value|length &gt; 7 %}
+        			{{ text.value|slice:&quot;7:&quot; }}
+                {% else %}
+                     Die Kosten werden getragen von _______________________ 
+                {% endif %}                          
+            {% else %}
+            {% endif %}
+        {% endfor %} 
+     .
+    {% endif %}
+    {% endif %}
+
+
+ &lt;! -- Ansprechpartner*innen / Verantwortliche Personen --!&gt;
+    
+       {% get_values 'project/coordination/contact-person' as texts %}
+       {% if texts %}
+       	{% if texts|length == 1 %}
+        	Im Projekt wird es eine verantwortliche Person für FDM-Themen geben.
+       	{% elif texts|length &gt; 1 %}
+           Im Projekt wird es {{texts|length}} verantwortliche Personen für FDM-Themen geben.
+        {% endif %}   	
+    {% endif %}
+
+&lt;br&gt;&lt;br&gt;
+    {% if datasets %}
+       Folgende Datenkategorien werden in dem Projekt verwendet:
+    {% endif %}   
+&lt;br&gt;&lt;br&gt;
+
+&lt;! -- Bitte geben Sie die Art der Datenkategorie an --!&gt;
+{% for dataset in datasets %}
+	 &lt;p&gt;&lt;b&gt;&lt;i&gt;
+     {{ dataset.value }}&lt;/b&gt;&lt;/i&gt;    {% get_values 'project/dataset/nature_of_data' set_index=dataset.set_index as texts %}
+    {% if texts %}
+    	(
+        {% for text in texts %}
+            {{ text.value }}
+            {% if not forloop.last %}/{% else %}{% endif %}
+        {% endfor %}
+        )&lt;br&gt;    
+    {% endif %}
+
+
+&lt;! -- Bitte geben Sie die technische Struktur / Organisation der Daten aus dieser Datenkategorie an --!&gt;
+    
+    {% get_values 'project/dataset/technical_structure' set_index=dataset.set_index as texts %}
+    {% if texts %}
+    	Hierbei handelt es sich um
+        {% for text in texts %}
+            {{ text.value }}
+            {% if not forloop.last %}und{% else %}.{% endif %}
+        {% endfor %}
+    {% else %}
+    	Die technische Struktur bzw. Organisation der Daten muss noch geklärt werden.        
+    {% endif %}
+
+
+ &lt;! -- Die (Roh-)Daten dieser Datenkategorie werden im Rahmen des Projekts... --!&gt;
+	{% get_values 'project/dataset/origin' set_index=dataset.set_index as texts %}
+    {% if texts %}        
+          Sie werden im Rahmen des Projekts
+        {% for text in texts %}
+        	{% if &quot;(z.B. Zeitreihen, Langzeitversuch)&quot; in text.value %}
+            	{{ text.value|cut:&quot;(z.B. Zeitreihen, Langzeitversuch)&quot; }} 
+			{% elif &quot;:&quot; in text.value %}
+        		{{ text.value|cut:&quot;:&quot; }}	    
+			{% else %}
+        		{{ text.value }}
+        	{% endif %}
+        {% endfor %}
+     {% endif %}  
+
+&lt;! -- intern extern --!&gt;
+    	
+	{% get_values 'project/dataset/data_sources/internal_external' as intexts %}
+    {% get_values 'project/dataset/data_sources/origin' as origins %}
+    
+    {% if origins %}   
+     {% if dataset.set_index|slugify|add:&quot;-set_index&quot;  in origins|slugify %}
+       Die Orte der Datenerhebung bzw. die Quellen der (Roh-)Daten sind:&lt;br&gt;
+       {% endif %}
+         {% for origin in origins %}
+           {% if origin.set_prefix|slugify == dataset.set_index|slugify %}
+               {% if origin.value is not None %}
+                 - {{ origin.value }} 
+                 {% else %}
+                 - ______________________
+                {% endif %} 
+             {% for intext in intexts %}
+             {% if intext.set_prefix|slugify == dataset.set_index|slugify and intext.set_index == origin.set_index %}
+             ( {{ intext.value }} )&lt;br&gt; 
+             {% endif %} 
+            {% endfor %}
+           {% endif %}            
+         {% endfor %}
+       {% else %}
+	{% endif %}
+
+
+  &lt;! -- Für die Datenerhebung bzw. zum Abrufen der Daten aus dieser Datenkategorie werden folgende Instrumente, Software, Technologien oder Verfahren benötigt? (optional) --!&gt;
+    {% get_values 'project/dataset/creation_methods' set_index=dataset.set_index as texts %}
+    {% if texts %}
+    Für die Datenerhebung bzw. zum Abrufen wird  
+        {% for text in texts %}
+            {{ text.value }}
+            {% if not forloop.last %}und{% else %}{% endif %}
+        {% endfor %}benötigt.
+    {% endif %}
+
+
+ &lt;! -- (Roh-)Daten dieser Datenkategorie liegen in folgenden Dateiformaten vor: --!&gt;
+    {% get_values 'project/dataset/format' set_index=dataset.set_index as texts %}
+    {% if texts %}
+    	Verwendete Dateiformate sind
+        {% for text in texts %}
+            {{ text.value }}  
+            {% if not forloop.last %}und{% else %}Dateien.{% endif %}
+        {% endfor %}
+    {% else %}
+    	Die zu verwendeten Dateiformate müssen noch definiert werden.
+    {% endif %}
+
+
+  &lt;! -- Das erwartete Datenvolumen in [GB] in dieser Datenkategorie beträgt...... --!&gt;       
+	{% get_values 'project/dataset/size/volume' set_index=dataset.set_index as texts %}  	
+        	{% for text in texts %}
+            	{% if not text.is_empty %}
+                	 Das erwartete Datenvolumen beträgt
+        			{{ text.value }} GB.         
+    			{% else %}    
+    				Das erwartete Datenvolumen dieser Datenkategorie kann noch nicht abgeschätzt werden.
+            	{% endif %}
+        	{% endfor %}
+
+
+ &lt;! -- Handelt es sich bei den Daten dieser Datenkategorie um sensible Daten? --!&gt;
+     {% get_values 'project/dataset/sensitive_data/other/yesno' set_index=dataset.set_index as SensitivYesNo %}
+       {% if SensitivYesNo %}
+       	{% for Sensitiv in SensitivYesNo %}
+           {% if &quot;Ja, da&quot; in Sensitiv.value %}
+            	Bei den Daten dieser Datenkategorie handelt es sich um sensible Daten, da
+                {% if Sensitiv.value|length &gt; 8 %}
+        			{{ Sensitiv.value|slice:&quot;8:&quot; }}.
+                {% else %}
+                    ______________________.
+                {% endif %} 
+                
+  				&lt;! -- Wann werden Maßnahmen ergriffen, um die sensiblen Daten zu schützen? (optional) --!&gt;
+			    
+                Deshalb werden
+	  			
+                {% get_values 'project/dataset/sensitive_data/personal_data/anonymization' set_index=dataset.set_index as anonymizations %}
+				               
+                {% if anonymizations %}
+       			   {% for anonymization in anonymizations %}
+                    {% if anonymization.is_true %}
+                     (
+        			 {% if &quot;Anders (bitte in einem vollständigen Satz beschreiben)&quot; in anonymization.value %}
+                		{% if anonymization.value|length &gt; 56 %}
+        					{{ anonymization.value|slice:&quot;56:&quot; }}
+               			{% else %}
+                    		 _______________________
+                		{% endif %}
+            		 {% else %}
+            			{{anonymization.value}}
+        		 	 {% endif %}
+                     )
+        		    {% endif %}
+                   {% endfor %}
+                {% endif %}
+    			Maßnahmen        
+        
+				 &lt;! -- Welche Maßnahmen zum Schutz sensibler Daten werden ergriffen? --!&gt;
+	   			 {% get_values 'project/dataset/data_security/security_measures' set_index=dataset.set_index as measures %}
+        		 {% if measures %}
+                 ( 
+                  {% for measure in measures %}
+        	         {% if &quot;Anders (bitte in einem vollständigen Satz beschreiben)&quot; in measure.value %}
+                        {% if measure.value|length &gt; 56 %}
+        			       {{ measure.value|slice:&quot;56:&quot; }}
+                        {% else %}
+                            _______________________
+                        {% endif %}
+                    {% else %}
+            	      {{measure.value}}
+        	        {% endif %}
+                    {% if not forloop.last %},{% else %}){% endif %}
+                   {% endfor %}
+                   {% endif %}
+                   zum Schutz der Daten ergriffen.
+           {% endif %}
+        {% endfor %}
+       {% endif %}
+
+
+ &lt;! -- Wie werden die Daten dieser Datenkategorie beschrieben / dokumentiert? --!&gt;
+    {% get_values 'project/dataset/quality_assurance' set_index=dataset.set_index as texts %}
+       {% if texts %}
+		Zur Qualitätssicherung der Daten erfolgen folgende Maßnahmen:
+        {% for text in texts %}
+			  {% if &quot;Datenerhebung&quot; in text.value %}
+        			{{ text.value|slice:&quot;16:&quot; }}
+              {% elif &quot;Digitalisierung und Dateneingabe&quot; in text.value %}
+        			{{ text.value|slice:&quot;35:&quot; }}
+              {% elif &quot;Datenüberprüfung&quot; in text.value %}
+        			{{ text.value|slice:&quot;19:&quot; }}              
+              {% elif text.collection_index == 17 %}
+             	{% if text.value|length &gt; 10 %}
+        			{{ text.value|slice:&quot;10:&quot; }}
+                {% else %}
+                     _______________________
+                {% endif %}               
+            {% endif %}
+            {% if not forloop.last %}und{% else %}.{% endif %}
+        {% endfor %}     	
+    {% endif %}
+
+
+
+&lt;! -- Die Analyse der Daten erfolgt mit folgenden Tools (Software): --!&gt;
+    {% get_values 'project/dataset/metadata/scope' set_index=dataset.set_index as texts %}
+    {% if texts %}
+    	Die Analyse der Daten erfolgt mit
+        {% for text in texts %}
+        	{{ text.value }}
+        {% if not forloop.last %}und{% else %}.{% endif %}
+        {% endfor %}
+    {% endif %}
+    &lt;br&gt;
+    &lt;/p&gt;
+{% endfor %}                    
+
+&lt;! ---------------------Block 3 ab hier--------------------------------------------------------------------------- --!&gt;
+       &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-fymr&quot; colspan=&quot;2&quot;&gt;&lt;strong&gt;3. Dokumentation der Daten &lt;/strong&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-fymr&quot; colspan=&quot;2&quot;&gt;
+
+&lt;! -- Bitte geben Sie die Art der Datenkategorie an --!&gt;
+{% for dataset in datasets %}
+	 &lt;p&gt;&lt;b&gt;&lt;i&gt;
+     {{ dataset.value }}&lt;/b&gt;&lt;/i&gt;    {% get_values 'project/dataset/nature_of_data' set_index=dataset.set_index as texts %}
+    {% if texts %}
+    	(
+        {% for text in texts %}
+            {{ text.value }}
+            {% if not forloop.last %}/{% else %}{% endif %}
+        {% endfor %}
+        ) &lt;br&gt;    
+    {% endif %}
+
+
+ &lt;! -- Wo sollen die erhobenen oder nachgenutzten Daten dieser Datenkategorie gespeichert werden? --!&gt;
+    {% get_values 'project/dataset/storage/loacation' set_index=dataset.set_index as texts %}
+       {% if texts %}
+       Daten dieser Kategorie werden abgelegt in:&lt;br&gt;
+        {% for text in texts %}
+			{% if &quot;Zentraler Speicher der eigenen Institution&quot; in text.value %}
+           		- Zentrale Speicherinfrastruktur unserer Einrichtung&lt;br&gt;
+            {% elif &quot;Zentrale verwalteter Speicher des Projekt&quot; in text.value %}
+            	- Zentral verwaltete Speicherinfrastruktur des Projekt-/Verbundpartners
+                {% if text.value|length &gt; 79 %}
+        			{{ text.value|slice:&quot;79:&quot; }}&lt;br&gt;
+                {% else %}
+                     _______________________&lt;br&gt;
+                {% endif %}
+        	{% elif &quot;Sonstige Infrastruktur (z.B. Datenbank).&quot; in text.value %}
+                {% if text.value|length &gt; 49 %}
+        			- {{ text.value|slice:&quot;49:&quot; }} (Dateninfrastruktur)&lt;br&gt;
+                {% else %}
+                    - _______________________ (Dateninfrastruktur)&lt;br&gt;
+                {% endif %}    
+        	{% elif &quot;Cloud-Speicher. Anbieter&quot; in text.value %}
+             {% if text.value|length &gt; 26 %}
+        		   - {{text.value|slice:&quot;26:&quot;}} (Cloud-Speicher)&lt;br&gt;
+                {% else %}
+                    - _______________________ (Cloud-Speicher)&lt;br&gt;
+                {% endif %}
+     		{% elif &quot;Selbsverwaltete zentrale Lösung&quot; in text.value %}
+            	- Selbsverwaltete zentrale Speicherlösung (Fileserver / Netzwerkfestplatten) in
+				{% if text.value|length &gt; 81 %}
+        		{{ text.value|slice:&quot;81:&quot; }}&lt;br&gt;
+                {% else %}
+                     _______________________&lt;br&gt;
+                {% endif %}               
+			{% elif &quot;Dezentrale Datenträger ohne&quot; in text.value %}
+				- Dezentrale Datenträger ohne automatisches Backup&lt;br&gt;
+            {% elif &quot;Sonstige Speicherlösung&quot; in text.value %}
+             - {% if text.value|length &gt; 24 %}
+        		{{ text.value|slice:&quot;24:&quot; }}&lt;br&gt;
+                {% else %}
+                    Sonstige Speicherlösung _______________________&lt;br&gt;
+                {% endif %}               
+        {% else %}
+            {% endif %}
+        {% endfor %}     	
+    {% endif %}
+
+
+ &lt;! -- Müssen die Daten zum kollaborativen Arbeiten bereitgestellt werden? --!&gt;
+    {% get_values 'project/dataset/collaboration_tools' set_index=dataset.set_index as texts %}
+       {% if texts %}
+        {% for text in texts %}
+          {% if text.is_true %}
+			{% if &quot;Ja, intern (eigene Institution). Genutzte Plattform / Werkzeuge&quot; in text.value %}
+        		Einrichtungsintern müssen diese Daten zum kollaborativen Arbeiten bereitgestellt werden. Hierfür wird
+                {% if text.value|length &gt; 64 %}
+        			{{ text.value|slice:&quot;64:&quot; }} genutzt.
+                 {% else %}
+                              _______________________ genutzt.
+                 {% endif %}
+            {% elif &quot;Ja, Personen&quot; in text.value %}
+				Für Personen an verschiedenen Institutionen müssen diese Daten zum kollaborativen Arbeiten bereitgestellt werden. Hierür wird 
+                {% if text.value|length &gt; 76 %}
+        			{{ text.value|slice:&quot;76:&quot; }} genutzt.
+                 {% else %}
+                              _______________________ genutzt.
+                 {% endif %}        		
+        	{% elif &quot;Muss noch geklärt werden.&quot; in text.value %}
+            	Es muss noch geklärt werden, ob Daten zum kollaborativen Arbeiten bereitgestellt werden müssen.            
+        	{% elif &quot;Nein&quot; in text.value %}
+            {% endif %}
+           {% endif %}
+        {% endfor %}     	
+    {% endif %}
+
+
+ &lt;! -- Wie werden die Datendateien dieser Datenkategorie organisiert/abgelegt? --!&gt;
+    {% get_values 'project/dataset/storage/naming_policy' set_index=dataset.set_index as texts %}
+       {% if texts %}
+        {% for text in texts %}
+			{% if &quot;Standardisierte und vorher festgelegt&quot; in text.value %}
+               Die Ablage der Dateien erfolgt in einer standardisierten und vorher festgelegten Projektordnerstruktur.
+            {% elif &quot;Standardisierte Ablage gemäß den Vorgaben&quot; in text.value %}
+				Dateien, die in der Infrastruktur
+                {% if text.value|length &gt; 112 %}
+        			{{ text.value|slice:&quot;114:&quot; }}
+                {% else %}
+                     _______________________
+                {% endif %}
+                organisiert werden, werden gemäß des Infrastrukturstandards abgelegt.
+        	{% elif &quot;Modulare Dateibenennung&quot; in text.value %}
+            	Dateien werden modular benannt, z.B. [JJJJMMTT]-[INHALT]-[PROJEKTAKRONYM]-[ERSTELLER].xxx.         
+        	{% elif &quot;Versionskontrolle mittels Software&quot; in text.value %}
+            	Die Versionierung erfolgt mittels 
+             {% if text.value|length &gt; 74 %}
+        		{{ text.value|slice:&quot;74:&quot; }}.
+                {% else %}
+                     _______________________.
+                {% endif %}
+     		{% elif &quot;Versionskontrolle über Dateibenennung&quot; in text.value %}
+            	Die Versionskontrolle erfolgt über die Dateibenennung (z.B. [DATEINAME]-v1.xxx, [DATEINAME]-v2.1.xxx).                
+			{% elif &quot;Sonstiges (bitte in einem&quot; in text.value %}
+             {% if text.value|length &gt; 59 %}
+        		{{ text.value|slice:&quot;59:&quot; }}.
+                {% else %}
+                     _______________________ (Sonstige Datenorganisation).
+                {% endif %}
+            {% elif &quot;Es wurde noch nicht entschieden&quot; in text.value %}
+            	Die Organisation und Ablage muss noch spezifiziert werden.       
+        	{% elif &quot;Es wird kein festgelegtes System zur Organisation&quot; in text.value %}
+            	Zur Organisation und Ablage der Dateien wird kein festgelegtes System verwendet.               
+            {% else %}
+            {% endif %}
+        {% endfor %}     	
+    {% endif %}
+
+
+ &lt;! -- Wie werden die Daten dieser Datenkategorie beschrieben / dokumentiert? --!&gt;
+    {% get_values 'project/dataset/metadata/standards' set_index=dataset.set_index as texts %}
+       {% if texts %}
+
+        {% for text in texts %}
+			{% if text.collection_index == 0 %}
+                {% if text.value|length &gt; 137 %}
+        			{{ text.value|slice:&quot;137:&quot; }}
+                {% else %}
+                     Es wird ein eigenes System zur Beschreibung der Kontextinformation und Dokumentation genutzt.
+                {% endif %}              
+            {% elif text.collection_index == 1 %}
+				Die Metadaten werden nach den Vorgaben von
+                {% if text.value|length &gt; 104 %}
+        			{{ text.value|slice:&quot;104:&quot; }} zusammengestellt.
+                {% else %}
+                     _______________________ zusammengestellt.
+                {% endif %}
+        	{% elif text.collection_index == 2 %}
+                {% if text.value|length &gt; 142 %}
+        			 Es werden disziplinspezifische (Metadaten-) Standards, Klassifikationen etc., wie {{ text.value|slice:&quot;142:&quot; }}, zur Beschreibung genutzt.
+                {% else %}
+                     Es werden disziplinspezifische (Metadaten-) Standards, Klassifikationen etc., wie _______________________, zur Beschreibung genutzt.
+                {% endif %}
+        	{% elif text.collection_index == 3 %}
+            	Die genutzten Metadaten zur Beschreibung sind maschinenlesbar und interoperabel.
+     		{% elif text.collection_index == 4 %}
+            	Die Metadaten und Kontextinformationen werden vor Projektbeginn festgelegt und im Falle einer Antragseinreichung konkretisiert.
+			{% elif text.collection_index == 5 %}
+                {% if text.value|length &gt; 63 %}
+                	Es wird kein festgelegtes System zur Beschreibung genutzt, da
+        			{{ text.value|slice:&quot;63:&quot; }}.
+                {% else %}
+                    Es wird kein festgelegtes System zur Beschreibung genutzt, da _______________________ .
+                {% endif %} 	
+            {% else %}
+            {% endif %}
+        {% endfor %}     	
+    {% endif %}
+    
+    
+    
+ &lt;! -- Welche Backup-Strategie wird/soll für die aktiv genutzten Daten dieser Datenkategorie genutzt? --!&gt;
+    
+        {% get_values 'project/dataset/data_security/backups' set_index=dataset.set_index as texts %}
+       {% if texts %}
+        {% for text in texts %}
+          {% if text.is_true %}
+        	{% if &quot;Gemäß 3-2-1-Regel&quot; in text.value %}
+				Das Backup der Daten dieser Datenkategorie wird gemäß der 3-2-1-Regel erfolgen.  	
+        	{% elif &quot;Eigene Backup-Strategie&quot; in text.value %}
+            	{% if text.value|length &gt; 57 %}
+        			{{ text.value|slice:&quot;57:&quot; }}
+                 {% else %}
+                              _______________________ (eigene Backupstrategie).
+                 {% endif %}
+        	{% elif &quot;Noch nicht bekannt. Muss noch festgelegt werden.&quot; in text.value %}
+        		Es muss noch geklärt werden, welche Backup-Strategie zum Einsatz kommt.
+			{% elif &quot;Ein Backup der Daten ist nicht erforderlich, da&quot; in text.value %}
+        		Ein Backup der Daten ist nicht erforderlich, da
+                {% if text.value|length &gt; 48 %}
+        			{{ text.value|slice:&quot;48:&quot; }}
+                 {% else %}
+                              _______________________.
+                 {% endif %}
+			{% else %}
+            	Es muss noch geklärt werden, welche Backup-Strategie zu Einsatz kommt.
+            {% endif %}
+           {% endif %}
+        {% endfor %}     	
+    {% endif %}
+
+
+ &lt;! -- Nutzen Sie hierzu ein zentral verwaltetes Backup? --!&gt;
+    {% get_values 'project/dataset/data_security/central-backup-where' set_index=dataset.set_index as texts %}
+    {% if texts %}
+     {% for text in texts %}
+       {% if text.is_true %}
+     	{% if &quot;Zentrales Backup (gilt für zentral verwalteten Speicher der eigenen Institution)&quot; in text.value %}
+        	Um die Daten gegen Verlust oder versehentliches Löschen zu sichern, wird das zentrale Backup unserer Einrichtung genutzt.
+     	{% elif &quot;Zentrales Backup des Projekt&quot; in text.value %}
+     	 	Um die Daten gegen Verlust oder versehentliches Löschen zu sichern, wird das zentrale Backup des Projekt-/Verbundpartners (
+            {% if text.value|length &gt; 103 %}
+        		{{ text.value|slice:&quot;103:&quot; }}
+                ) genutzt.
+             {% else %}
+                 _______________________) genutzt.
+             {% endif %}
+     	{% elif &quot;Backup-Strategie der&quot; in text.value %}
+     	 	Als zentral verwaltetes Backup kommt die Strategie der genutzten Daten-Infrastruktur zum Einsatz (
+            {% if text.value|length &gt; 99 %}
+        		{{ text.value|slice:&quot;99:&quot; }}
+                )
+             {% else %}
+                 _______________________)
+             {% endif %}            
+     	{% elif &quot;Muss noch geklärt werden&quot; in text.value %}
+     		Es muss noch geklärt werden, ob ein zentral verwaltetes Backup verwendet wird.
+     	{% elif &quot;Nein&quot; in text.value %}
+     		Es kommt kein zentral verwaltetes Backup zum Einsatz.       
+    	{% endif %}
+       {% endif %} 
+     {% endfor %}
+    {% endif %}
+    
+&lt;br&gt;     
+&lt;/p&gt;
+
+{% endfor %}   
+
+&lt;! ---------------------Block 4 ab hier--------------------------------------------------------------------------- --!&gt;
+            
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-fymr&quot; colspan=&quot;2&quot;&gt;&lt;strong&gt;4. Datenselektion und Datenarchivierung&lt;/strong&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-fymr&quot; colspan=&quot;2&quot;&gt;
+
+
+&lt;! -- Bitte geben Sie die Art der Datenkategorie an --!&gt;
+{% for dataset in datasets %}
+	 &lt;p&gt;&lt;b&gt;&lt;i&gt;
+     {{ dataset.value }}&lt;/b&gt;&lt;/i&gt;    {% get_values 'project/dataset/nature_of_data' set_index=dataset.set_index as texts %}
+    {% if texts %}
+    	(
+        {% for text in texts %}
+            {{ text.value }}
+            {% if not forloop.last %}/{% else %}{% endif %}
+        {% endfor %}
+        )&lt;br&gt;    
+    {% endif %}
+     
+
+   &lt;! -- Müssen die Daten aus dieser Datenkategorie nach Projektende aufbewahrt und vorgehalten werden? --!&gt;
+    {% get_values 'project/dataset/preservation/yesno' set_index=dataset.set_index as texts %}
+    {% if texts %}
+       {% for text in texts %}
+         {% if &quot;vollständig&quot; in text.value %}
+            Daten dieser Datenkategorie werden nach Projektende aufbewahrt und vorgehalten.
+            {% if text.value|length &gt; 119 %}
+        		{{ text.value|slice:&quot;119:&quot; }}
+            {% else %}
+                 _______________________(Details zur Aufbewahrung).
+            {% endif %}
+
+
+ &lt;! -- Falls ja, für wie lange müssen die Daten aufbewahrt werden? (optional) --!&gt;
+            {% get_values 'project/dataset/preservation/duration' set_index=dataset.set_index as durations %}
+      
+            {% if durations %}
+                  {% for duration in durations %}
+					{% if &quot;Mindestens 10&quot; in duration.value %}
+                        Diese werden für mindestens 10 Jahre aufbewahrt. 
+                    {% elif &quot;Mindestens bis&quot; in duration.value %}
+                        Diese werden bis mindestens 
+                    	{% if duration.value|length &gt; 22 %}
+        					{{ duration.value|slice:&quot;22:&quot; }} aufbewahrt.
+          				{% else %}
+                		    _______________________ (Jahr) aufbewahrt.
+           				{% endif %} 
+                    {% elif &quot;Auf unbestimmte Zeit&quot; in duration.value %}
+                        Diese werden auf unbestimmte Zeit aufbewahrt.            
+                    {% elif &quot;Es wurde noch nicht entschieden&quot; in duration.value %}
+                        Die Dauer der Aufbewahrung muss noch festgelegt werden.
+                    {% elif &quot;Anderer Zeitraum&quot; in duration.value %}
+                       {% if duration.value|length &gt; 54 %}
+        					{{ duration.value|slice:&quot;54:&quot; }}
+          			   {% else %}
+                		    _______________________ (Zeitraum der Datenaufbewahrung).
+           			   {% endif %} 
+                    {% endif %}
+               {% endfor %}
+              {% endif %}
+              
+ 
+&lt;! -- Falls ja, wo sollen die Daten dieser Datenkategorie aufbewahrt werden? (optional) --!&gt;
+              {% get_values 'project/preservation/archive' set_index=dataset.set_index as archives %}
+              {% if archives %}
+                  {% for archive in archives %}
+                   {% if forloop.first %}
+                     {% if &quot;in den Speicherstrukturen der eigenen Institution&quot; in archive.value or &quot;Speicherstrukturen des Projekt&quot; in archive.value or &quot;externes Archiv&quot; in archive.value or &quot;Cloud-Speicher&quot; in archive.value %}
+                       Die Daten werden in
+                     {% endif %}
+                   {% endif %} 
+                     {% if &quot;in den Speicherstrukturen der eigenen Institution&quot; in archive.value %}
+                       den Speicherstrukturen unserer Einrichtung
+                     {% elif &quot;Speicherstrukturen des Projekt&quot; in archive.value %}
+                       den Speicherstrukturen des Projekt-/Verbundpartners 
+                         {% if archive.value|length &gt; 75 %}
+        					{{ archive.value|slice:&quot;75:&quot; }}
+          			     {% else %}
+                		    _______________________
+           			     {% endif %} 
+                      {% elif &quot;externes Archiv&quot; in archive.value %}
+                         {% if archive.value|length &gt; 75 %}
+        					{{ archive.value|slice:&quot;75:&quot; }}
+          			     {% else %}
+                		    _______________________
+           			     {% endif %} 
+                      {% elif &quot;Cloud-Speicher&quot; in archive.value %}
+                         {% if archive.value|length &gt; 25 %}
+        					{{ archive.value|slice:&quot;25:&quot; }} (Cloud-Speicher)
+          			     {% else %}
+                		    _______________________ (Cloud-Speicher)
+           			     {% endif %} 
+                       {% elif &quot;andere Aufbewahrung&quot; in archive.value %}
+                         {% if archive.value|length &gt; 20 %}
+        					{{ archive.value|slice:&quot;20:&quot; }}
+          			     {% else %}
+                		    _______________________ (andere Aufbewahrung).
+           			     {% endif %} 
+                      {% endif %}
+                      {% if not forloop.last %}und{% else %} zur Aufbewahrung abgelegt.{% endif %}
+                  {% endfor %} 
+                {% endif %}
+            
+   
+         {% elif &quot;bereits veröffentlicht&quot; in text.value %}
+            Da die Daten dieser Datenkategorie bereits veröffentlicht wurden bzw. vorgehalten werden, müssen diese nicht gesondert aufbewahrt werden.
+         {% elif &quot;Nein, da&quot; in text.value %}
+           Die Daten dieser Datenkategorie müssen nicht gesondert aufbewahrt werden, da
+            {% if text.value|length &gt; 9 %}
+        		{{ text.value|slice:&quot;9:&quot; }}.
+            {% else %}
+                 _______________________.
+            {% endif %}  
+         {% endif %}
+      {% endfor %}
+   {% endif %}
+ 
+
+{% endfor %}
+
+ 
+
+            &lt;/td&gt;
+        &lt;/tr&gt;
+&lt;! ---------------------Block 5 ab hier--------------------------------------------------------------------------- --!&gt;
+
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-fymr&quot; colspan=&quot;2&quot;&gt;&lt;strong&gt;5. Verfügbarmachung der Projektdaten&lt;/strong&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-fymr&quot; colspan=&quot;2&quot;&gt;
+
+
+&lt;! -- Bitte geben Sie die Art der Datenkategorie an --!&gt;
+{% for dataset in datasets %}
+	 &lt;p&gt;&lt;b&gt;&lt;i&gt;
+     {{ dataset.value }}&lt;/b&gt;&lt;/i&gt;    {% get_values 'project/dataset/nature_of_data' set_index=dataset.set_index as texts %}
+    {% if texts %}
+    	(
+        {% for text in texts %}
+            {{ text.value }}
+            {% if not forloop.last %}/{% else %}{% endif %}
+        {% endfor %}
+        )&lt;br&gt;    
+    {% endif %}
+     
+ &lt;! -- Sollen die Daten aus dieser Datenkategorie publiziert werden? --!&gt;
+	{% get_values 'project/dataset/sharing/yesno' set_index=dataset.set_index as texts %}
+       {% if texts %}
+        {% for text in texts %}
+			  {% if &quot;Ja, vollständig oder ein Teil der Daten&quot; in text.value %}
+        			Die Daten sollen publiziert werden.
+                    {% if text.value|length &gt; 119 %}
+        				{{ text.value|slice:&quot;119:&quot; }}
+           			{% else %}
+                		 _______________________ (Details der Publikation).
+            		{% endif %}  
+              {% elif &quot;Nein, die Daten wurden bereits veröffentlicht&quot; in text.value %}
+        			Eine Publikation der Daten ist nicht vorgesehen, da diese bereits veröffentlicht wurden.
+              {% elif &quot;Nein, die Daten dürfen nicht veröffentlicht werden&quot; in text.value %}
+        			Eine Publikation der Daten ist nicht möglich, da diese nicht veröffentlich werden dürfen.      
+              {% elif &quot;Nein, da&quot; in text.value %}
+             	     Eine Publikation der Daten ist nicht vorgesehen, da
+                    {% if text.value|length &gt; 9 %}
+        				{{ text.value|slice:&quot;9:&quot; }}.
+           			{% else %}
+                		 _______________________.
+            		{% endif %}                      
+        
+            {% endif %}
+        {% endfor %}     	
+    {% endif %}
+
+ &lt;! -- Wann sollen die Daten oder Teildaten dieser Datenkategorie publiziert werden? (optional) --!&gt;
+    {% check_condition 'dataset_publication' set_index=dataset.set_index as conditions %}
+    {% if conditions %}
+		{% get_values 'project/dataset/data_publication_date' set_index=dataset.set_index as texts %}
+    	{% if texts %}        
+        {% for text in texts %}
+        	{% if &quot;Noch während der Projektlaufzeit&quot; in text.value %}
+            	Dies soll noch während der Projektlaufzeit erfolgen.       
+        	{% elif &quot;Zum Projektende&quot; in text.value %}
+            	Die Publikation soll zum Projektende erfolgen.
+        	{% elif &quot;Nach einer Embargozeit. Begründung&quot; in text.value %}
+            	Dies soll nach einer Embargozeit erfolgen
+                    {% if text.value|length &gt; 66 %}
+        				 ({{ text.value|slice:&quot;66:&quot; }}).
+           			{% else %}
+                		 (_______________________).
+            		{% endif %}   
+        	{% endif %}
+        {% endfor %}
+        {% endif %}
+    {% endif %}
+
+
+ &lt;! -- In welchem Repositorium sollen Daten dieser Datenkategorie publiziert werden? --!&gt;
+    {% check_condition 'dataset_publication' set_index=dataset.set_index as conditions %}
+    {% if conditions %}
+		{% get_values 'project/dataset/preservation/repository' set_index=dataset.set_index as texts %}
+    	{% if texts %}
+        	{% for text in texts %}
+        		Die Daten werden im Repositorium {{ text.value }} publiziert.
+        {% endfor %}
+        {% endif %}
+    {% endif %}
+
+ &lt;! -- Falls ja, unter welcher Lizenz sollen die Daten publiziert werden? (optional) --!&gt;
+    {% check_condition 'dataset_publication' set_index=dataset.set_index as conditions %}
+    {% if conditions %}
+        {% get_values 'project/dataset/sharing/conditions' set_index=dataset.set_index as texts %}
+        {% if texts %}
+        {% for text in texts %}
+            {% if &quot;Daten: Creative&quot; in text.value %}
+                	Die Publikation erfolgt unter einer Creative Commons Lizenz
+                    {% if text.value|length &gt; 68 %}
+        				 ({{ text.value|slice:&quot;68:&quot; }}).
+           			{% else %}
+                		 (______________).
+            		{% endif %}                       
+            {% elif &quot;Daten: Datenlizenz Deutschland - Version 2.0&quot; in text.value %}
+                    Die Publikation erfolgt unter der Datenlizenz Deutschland - Version 2.0
+                    {% if text.value|length &gt; 77 %}
+        				 ({{ text.value|slice:&quot;77:&quot; }}).
+           			{% else %}
+                		 (______________).
+            		{% endif %} 
+            {% elif &quot;Software&quot; in text.value %}
+                 Die Publikation erfolgt unter einer {{ text.value|slice:&quot;10:&quot; }} (Software-Lizenz).           
+            {% elif &quot;Sonstige&quot; in text.value %}
+             	Die Publikation erfolgt unter 
+                    {% if text.value|length &gt; 9 %}
+        				 {{ text.value|slice:&quot;9:&quot; }}.
+           			{% else %}
+                		 ______________ (Lizenz).
+            		{% endif %}             
+            {% elif &quot;Es wurde noch nicht entschieden, unter welcher Lizenz&quot; in text.value %}
+                {{ text.value}}
+			{% elif &quot;Es werden keine Lizenzen vergeben, da&quot; in text.value %}
+            		Es werden keine Lizenzen vergeben, da
+                    {% if text.value|length &gt; 38 %}
+        				 {{ text.value|slice:&quot;38:&quot; }}.
+           			{% else %}
+                		 ______________.
+            		{% endif %}            	
+            {% endif %}            
+        {% endfor %}
+        {% endif %}
+    {% endif %}
+    &lt;br&gt;&lt;br&gt;
+
+
+{% endfor %}
+
+            &lt;/td&gt;
+        &lt;/tr&gt;
+
+    &lt;/tbody&gt;
+&lt;/table&gt;</template>
+	</view>
+</rdmo>
