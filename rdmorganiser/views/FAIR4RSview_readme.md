@@ -10,7 +10,7 @@ https://rdmorganiser.github.io/terms/domain/project/title
 https://rdmorganiser.github.io/terms/domain/project/schedule/project_start 
 https://rdmorganiser.github.io/terms/domain/project/schedule/project_end 
 
-## Findable
+## Findability
 F: Software, and its associated metadata, is easy for both humans and machines to find
 ### F1. Software is assigned a globally unique and persistent identifier
 #### F.1.1. Components of the software representing levels of granularity are assigned distinct identifiers
@@ -24,7 +24,7 @@ https://rdmorganiser.github.io/terms/domain/smp/software-metadata
 *See F4*
 ### F4. Metadata are FAIR, searchable and indexable
 https://rdmorganiser.github.io/terms/domain/smp/software-pid
-## Accessible
+## Accessibility
 A: Software, and its metadata, is retrievable via standardized protocols
 ### A.1. Software is retrievable by its identifier using a standardized communications protocol
 #### A.1.1. Software is retrievable by its identifier using a standardized communications protocol
@@ -33,14 +33,14 @@ https://rdmorganiser.github.io/terms/domain/smp/software-pid
 https://rdmorganiser.github.io/terms/domain/smp/software-sharing 
 ### A2. Metadata are accessible, even when the software is no longer available
 https://rdmorganiser.github.io/terms/domain/smp/re-usable https://rdmorganiser.github.io/terms/domain/smp/preservation 
-## Interoperable
+## Interoperability
 I: Software interoperates with other software by exchanging data and/or metadata, and/or through interaction via application programming interfaces (APIs), described through standards
 ### I.1. Software reads, writes and exchanges data in a way that meets domain-relevant community standards
 https://rdmorganiser.github.io/terms/domain/smp/community-requirements
 https://rdmorganiser.github.io/terms/domain/smp/coding-standards
 ### I2. Software includes qualified references to other objects
 https://rdmorganiser.github.io/terms/domain/smp/web-services 
-## Reusable
+## Reusability
 R: Software is both usable (can be executed) and reusable (can be understood, modified, built upon, or incorporated into other software)
 ### R1. Software is described with a plurality of accurate and relevant attributes
 #### R1.1. Software is given a clear and accessible license
