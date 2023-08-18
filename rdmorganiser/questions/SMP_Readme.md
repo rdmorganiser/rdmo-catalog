@@ -21,7 +21,7 @@ Furthermore, this SMP template was inspired by some documentations, specially:
 | -------- | -------- | -------- |
 | 1.0     | 5th December 2022     | Initatilisation|
 | 1.1     | 27th Februrary 2023     | Minor adjustments to help texts and some widget types of questions|
-| 2.0     | 18th August 2023     | a) Addition of a question regarding Qualifty References (reference to FAIR4RS I2 and R2); b) adjustments to questions and help texts for the FAIR4RS viewer; c) minor adjustments to help texts thanks to feedback; d) broken links repair|
+| 2.0     | 18th August 2023     | a) Addition of a question regarding Qualifty References (reference to FAIR4RS I2 and R2); b) adjustments to questions and help texts for the FAIR4RS viewer; c) minor adjustments to help texts thanks to feedback; d) broken links repair + Thanks a lot for the feedback by the RDMO Community!|
 
 # Implementing
 The catalogue uses some of the generic elements from RDMO. Therefore, all generic elements from "Conditions", "Domain", "Options" and "Questions" must already be implemented in advance.
