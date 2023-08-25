@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo created="2022-12-02T15:47:41.612652+01:00" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdmo created="2023-08-18T14:53:21.777351+02:00" xmlns:dc="http://purl.org/dc/elements/1.1/">
 	<catalog dc:uri="https://rdmorganiser.github.io/terms/questions/smp">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>smp</key>
-		<dc:comment>This software project management catalogue was developed by the Max Planck Digital Library in 2022. This version is the revised version from 16th February 2023. Thanks to all our team colleagues for their support.
+		<dc:comment>This software project management catalogue was developed by the Max Planck Digital Library in 2022. Thanks to all our team colleagues for their support.
 This SMP template was inspired by some documentation, specially:
 * https://www.software.ac.uk/resources/guides/software-management-plans
 * https://opencarp.org/about/software-management-plan</dc:comment>
 		<order>98</order>
 		<title lang="en">Software Management Plan for Researcher</title>
-		<help lang="en">This catalogue is for the management of scientific software projects. It supports scientists in the development and project organisation of software developments through fifty questions in different topic blocks.</help>
+		<help lang="en">This catalogue is for the management of scientific software projects. It supports scientists in the development and project organisation of software developments through fifty questions in different topic blocks. This is version 2.0 of the catalogue.</help>
 		<title lang="de">Software-Management-Plan für Forschende</title>
-		<help lang="de">Dieser Katalog ist für das Management von wissenschaftlichen Software-Projekten. Er unterstützt Wissenschaftler_innen bei der Entwicklung und der Projektorganisation von Software-Entwicklungen durch fünfzig Fragen in unterschiedlichen Themenblöcken.</help>
+		<help lang="de">Dieser Katalog ist für das Management von wissenschaftlichen Software-Projekten. Er unterstützt Wissenschaftler_innen bei der Entwicklung und der Projektorganisation von Software-Entwicklungen durch fünfzig Fragen in unterschiedlichen Themenblöcken. Dies ist Version 2.0.</help>
 	</catalog>
 	<section dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -34,11 +34,11 @@ This SMP template was inspired by some documentation, specially:
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<title lang="en">Topic</title>
-		<help lang="en">If you are looking for an introduction to the topic before completing a software management plan, then we recommend Martinez-Ortiz et al. (2022): Practical guide to Software Management Plans, v1.0, &lt;a href=&quot;https://doi.org/10.5281/zenodo.7038280&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.5281/zenodo.7038280&lt;/a&gt;.</help>
+		<help lang="en">If you are looking for an introduction to the topic before completing a software management plan, then we recommend Martinez-Ortiz et al. (2022): Practical guide to Software Management Plans, v1.0, &lt;a href=&quot;https://doi.org/10.5281/zenodo.7589725&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.5281/zenodo.7589725&lt;/a&gt;.</help>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<title lang="de">Thema</title>
-		<help lang="de">Falls Sie vor dem Ausfüllen eines Software-Management-Plans nach einer Einführung in das Thema suchen, dann empfehlen wir Martinez-Ortiz et al. (2022): Practical guide to Software Management Plans, v1.0, &lt;a href=&quot;https://doi.org/10.5281/zenodo.7038280&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.5281/zenodo.7038280&lt;/a&gt;.</help>
+		<help lang="de">Falls Sie vor dem Ausfüllen eines Software-Management-Plans nach einer Einführung in das Thema suchen, dann empfehlen wir Martinez-Ortiz et al. (2022): Practical guide to Software Management Plans, v1.0, &lt;a href=&quot;https://doi.org/10.5281/zenodo.7589725&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.5281/zenodo.7589725&lt;/a&gt;.</help>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
 		<conditions/>
@@ -174,12 +174,12 @@ Es liegt in der Natur der Sache, dass diese Literaturhinweise nicht vollumfängl
 		<is_optional>False</is_optional>
 		<order>3</order>
 		<help lang="en">Please consider whether it would be more effective to purchase existing software or to adapt an existing open source instead of developing software yourself.</help>
-		<text lang="en">Are your sure that no suitable software exists with the functionality your are planning? If so, what software have similar purposes and what is missing there for you to use it?</text>
+		<text lang="en">What function does the new software have that previous software does not cover? What related software exists and why is it not suitable?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bitte überlegen Sie, ob es nicht zielführender ist eine existierende Software einzukaufen oder eine bestehende Open Source-Variante anzupassen anstatt eine eigene Software vollständig selbst zu entwickeln.</help>
-		<text lang="de">Sind Sie sicher, dass es noch keine geeignete Software mit der von Ihnen geplanten Funktionalität gibt? Wenn ja, welche Software hat einen ähnlichen Zweck und was fehlt noch, um sie zu nutzen?</text>
+		<text lang="de">Welche Funktion hat die neue Software, die bisherige Software nicht abdeckt? Welche verwandte Software gibt es und warum ist diese nicht geeignet?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
@@ -523,7 +523,7 @@ Beispiele für Anwendungen sind etwa eigenständige Ticket-Systeme wie Jira oder
 		<order>4</order>
 		<title lang="en">Software Development Requirements</title>
 		<help lang="en"/>
-		<verbose_name lang="en"/>smp
+		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<title lang="de">Anforderungen an die Softwareentwicklung</title>
 		<help lang="de"/>
@@ -871,6 +871,38 @@ Folgende Literatur könnte zusätzlich interessant sein:
 		<optionsets/>
 		<conditions/>
 	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components/qualified-references">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>qualified-references</key>
+		<path>smp/technical/components/qualified-references</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/qualified-references"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>4</order>
+		<help lang="en">Research software sometimes contains references to external data objects and other software solutions that are required for its execution. This aspect is particularly in request for the &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; principles I2 and R2.</help>
+		<text lang="en">Does the software refer to other software projects or objects?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Forschungssoftware enthält manchmal Verweise auf externe Datenobjekte und andere Softwarelösungen, welche für die Ausführung erforderlich sind. Besonders bei den &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt;-Prinzipien I2 und R2 wird dieser Aspekt nachgefragt.</help>
+		<text lang="de">Verweist die Software auf andere Software-Projekte oder Objekte?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/Infrastructure">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>Infrastructure</key>
@@ -1019,15 +1051,19 @@ Folgende Literatur könnte zusätzlich interessant sein:
 		<order>0</order>
 		<help lang="en">Applicable software is rarely a static product. Software is usually in a constant state of flux as a result of further developments of external components, security gaps in libraries that have been remedied or proprietary enhancements in the code. At the same time, the personnel and time required to maintain and update software increases with its age. It is therefore highly advisable to think in advance about how long the software should be (re-)usable.
 
-It is fundamentally important to document exactly how the software can be updated and which (technical) environment conditions are necessary for the software to run correctly.</help>
+It is fundamentally important to document exactly how the software can be updated and which (technical) environment conditions are necessary for the software to run correctly.
+
+In this topic it is also useful to think about containerisation and general ways of maintaining a runtime environment for research software.  This is necessary so that the software can still run correctly in another environment. Such an environment description includes platforms, frameworks and technologies. This environment needs to be sufficiently descriptive and ideally provided via specification files. A well-known application for container virtualisation is Docker.</help>
 		<text lang="en">How long should the software remain usable? What steps will be taken to ensure that the software can continue to be used after the project?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Anwendbare Software ist in den seltensten Fällen ein statisches Produkt. Durch Fortentwicklungen von externen Komponenten, behobenen Sicherheitslücken bei Bibliotheken oder eigene Erweiterungen im Code befindet sich Software meist in einem stetigen Wandel. Gleichzeitig steigen der personelle und zeitliche Aufwand bei der Erhaltung und Fortführung von Software mit deren Alter. Es ist daher ratsam, sich schon im Vorfeld Gedanken darüber zu machen, wie lange die Software (nach-)nutzbar sein soll.
 
-Vor diesem Hintergrund ist es grundsätzlich wichtig, genau zu dokumentieren, wie die Software aktualisiert werden kann und welche (technischen) Rahmenbedingungen notwendig sind, damit die Software korrekt ausgeführt werden kann.</help>
-		<text lang="de">Wie lange soll die Software verwendbar bleiben? Welche Schritte werden unternommen, damit die Software im Anschluss an das Projekt weiter werden kann?</text>
+Vor diesem Hintergrund ist es grundsätzlich wichtig, genau zu dokumentieren, wie die Software aktualisiert werden kann und welche (technischen) Rahmenbedingungen notwendig sind, damit die Software korrekt ausgeführt werden kann.
+
+In diesem Zusammenhang ist es auch sinnvoll, über Containerisierung und generelle Möglichkeiten zur Erhaltung der Laufzeitumgebung von Forschungssoftware nachzudenken. Dies ist notwendig, damit die Software in einer anderen Umgebung korrekt ausgeführt werden kann. Eine solche Beschreibung der Umgebung umfasst Plattformen, Frameworks und Technologien. Diese Umgebung muss hinreichend beschreibend sein und idealerweise über Spezifikationsdateien zur Verfügung gestellt werden. Eine bekannte Anwendung für Containervirtualisierung ist beispielsweise Docker.</help>
+		<text lang="de">Wie lange soll die Software verwendbar bleiben? Welche Schritte werden unternommen, damit die Software im Anschluss an das Projekt weiter benutzt werden kann?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
@@ -1060,42 +1096,6 @@ Vor diesem Hintergrund ist es grundsätzlich wichtig, genau zu dokumentieren, wi
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Nach den gängigen Prinzipien der guten wissenschaftlichen Praxis müssen Ergebnisse mindestens für zehn Jahre aufbewahrt werden. Dies trifft auch auf Software zu. Daher muss sichergestellt werden, dass die Software für diesen Zeitraum (zumindest institutsintern) verfügbar bleibt. Dies kann natürlich darüber hinaus gehen oder weiterführende Maßnahmen erfordern, je nach lokaler Regelung. Falls Sie nicht sicher sind, was die gelebte Praxis an Ihrem Institut ist, so empfiehlt es sich, Ihre lokalen Kolleg_innen von IT, Scientific Computing Unit etc. diesbezüglich anzusprechen.</help>
 		<text lang="de">Muss diese Software längerfristig aufbewahrt werden?</text>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>textarea</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/preservation/store-software">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>store-software</key>
-		<path>smp/technical/preservation/store-software</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/store-software"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/preservation"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<order>2</order>
-		<help lang="en">An adequate place should be found for the storage of the resulting software. Depending on the requirements and possibilities, this can range from a simple, local solution to a specialised software repository.
-
-One far-reaching option for the long-term preservation of software is, for example, &lt;a href=&quot;https://www.softwareheritage.org/save-and-reference-research-software/&quot; target=&quot;_blank&quot;&gt;Software Heritage&lt;/a&gt; (for more repository examples, see also this article &lt;a href=&quot;https://doi.org/10.48550/arXiv.2012.13117&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.48550/arXiv.2012.13117&lt;/a&gt;). There are other places, that offer public, long-term availability. For example, &lt;a href=&quot;https://www.re3data.org/search?query=&amp;contentTypes%5B%5D=Software%20applications&quot; target=&quot;_blank&quot;&gt;re3data&lt;/a&gt; can be used to search for specific repositories through which software can be published.</help>
-		<text lang="en">Where will the software be stored? Does the storage place have a clear preservation policy?</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<verbose_name_plural lang="en"/>
-		<help lang="de">Für die Aufbewahrung der entstandenen Software sollte ein adäquater Ort gefunden werden. Je nach Anforderungen und Möglichkeiten kann dies von einer einfachen, lokalen Lösung bis hin zu einem spezialisierten Software-Repositorium reichen.
-
-Eine weitreichende Möglichkeit für den langfristigen Erhalt von Software ist beispielsweise &lt;a href=&quot;https://www.softwareheritage.org/save-and-reference-research-software/&quot; target=&quot;_blank&quot;&gt;Software Heritage &lt;/a&gt; (für weitere Repositoriums-Beispiele siehe auch diesen Artikel &lt;a href=&quot;https://doi.org/10.48550/arXiv.2012.13117&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.48550/arXiv.2012.13117&lt;/a&gt;). Es gibt aber noch weitere Orte, die sich für eine öffentliche, langfristige Verfügbarkeit anbieten. Über &lt;a href=&quot;https://www.re3data.org/search?query=&amp;contentTypes%5B%5D=Software%20applications&quot; target=&quot;_blank&quot;&gt;re3data&lt;/a&gt; lassen sich beispielsweise gezielt Repositorien suchen, über die Software publiziert werden kann.</help>
-		<text lang="de">Wo soll die Software gespeichert werden? Verfügt der Speicherort über eine klare Aufbewahrungsregelung?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
@@ -1145,7 +1145,7 @@ Eine weitreichende Möglichkeit für den langfristigen Erhalt von Software ist b
 
 The following documents may be relevant for you:
 
-* Adams et al (2021): Guide to Securing Scientific Software, &lt;a href=&quot;https://zenodo.org/record/5777646&quot; target=&quot;_blank&quot;&gt;https://zenodo.org/record/5777646&lt;/a&gt;.
+* Adams et al (2021): Guide to Securing Scientific Software, &lt;a href=&quot;https://doi.org/10.5281/zenodo.8137009&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.5281/zenodo.8137009&lt;/a&gt;.
 * Bundesamt für Sicherheit in der Informationstechnik: Technische Richtlinien, &lt;a href=&quot;https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/technische-richtlinien_node.html&quot; target=&quot;_blank&quot;&gt;https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/technische-richtlinien_node.html&lt;/a&gt;.
 * ISO/IEC 27001: Information technology — Security techniques — Information security management systems — Requirements, &lt;a href=&quot;https://www.iso.org/standard/54534.html&quot; target=&quot;_blank&quot;&gt;https://www.iso.org/standard/54534.html&lt;/a&gt;.</help>
 		<text lang="en">Which measures or provisions are in place to ensure software security?</text>
@@ -1156,7 +1156,7 @@ The following documents may be relevant for you:
 
 Folgende Dokumente können für Sie hierbei relevant sein:
 
-* Adams et al (2021): Guide to Securing Scientific Software, &lt;a href=&quot;https://zenodo.org/record/5777646&quot; target=&quot;_blank&quot;&gt;https://zenodo.org/record/5777646&lt;/a&gt;.
+* Adams et al (2021): Guide to Securing Scientific Software, &lt;a href=&quot;https://doi.org/10.5281/zenodo.8137009&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.5281/zenodo.8137009&lt;/a&gt;.
 * Bundesamt für Sicherheit in der Informationstechnik: Technische Richtlinien, &lt;a href=&quot;https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/technische-richtlinien_node.html&quot; target=&quot;_blank&quot;&gt;https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/technische-richtlinien_node.html&lt;/a&gt;.
 * ISO/IEC 27001: Information technology — Security techniques — Information security management systems — Requirements, &lt;a href=&quot;https://www.iso.org/standard/54534.html&quot; target=&quot;_blank&quot;&gt;https://www.iso.org/standard/54534.html&lt;/a&gt;.</help>
 		<text lang="de">Welche Maßnahmen oder Vorkehrungen gibt es, um die Sicherheit der Software zu gewährleisten?</text>
@@ -1247,12 +1247,16 @@ Folgende Dokumente können für Sie hierbei relevant sein:
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<order>0</order>
-		<help lang="en">Software development can be a project with complex requirements and structures. To deal with this, it is advisable, as &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; R1.1 does, to explicitly communicate the project-related process through documentation. Especially in larger collaborative projects, this can be particularly advisable for working with multiple partners. Examples include a joint Memorandum of Understanding (MoU) or something describing the process when a person joins or leaves the work team. Please consider here not only the pure process level, but also beyond that, i.e. ethical aspects. The publication &lt;a href=&quot;https://www.software.ac.uk/blog/2022-07-07-ethical-considerations-your-open-source-governance&quot; target=&quot;_blank&quot;&gt;Yehudi et al., Ethical considerations for your open source governance, 2022, Software Sustainability Institute Blog&lt;/a&gt;, is a good source of inspiration.</help>
+		<help lang="en">Software development can be a project with complex requirements and structures. To deal with this, it is advisable, as &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; R1.1 does, to explicitly communicate the project-related process through documentation. Especially in larger collaborative projects, this can be particularly advisable for working with multiple partners. Examples include a joint Memorandum of Understanding (MoU) or something describing the process when a person joins or leaves the work team. For example, this published &lt;a href=&quot;https://doi.org/10.5334/jors.307&quot; target=&quot;_blank&quot;&gt;checklist&lt;/a&gt; can be helpful.
+
+Please consider here not only the pure process level, but also beyond that, i.e. ethical aspects. The publication &lt;a href=&quot;https://www.software.ac.uk/blog/2022-07-07-ethical-considerations-your-open-source-governance&quot; target=&quot;_blank&quot;&gt;Yehudi et al., Ethical considerations for your open source governance, 2022, Software Sustainability Institute Blog&lt;/a&gt;, is a good source of inspiration.</help>
 		<text lang="en">Do you have a governance model for the software development?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Die Entwicklung von Software kann ein Projekt mit komplexen Anforderungen und Strukturen sein. Um dem zu begegnen ist es empfehlenswert, wie es &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; R1.1 tut, die projektbezogenen Prozesse durch eine Dokumentation explizit zu kommunizieren. Besonders in größeren Verbundprojekten kann dies für die Zusammenarbeit mit mehreren Partnern besonders empfehlenswert sein. Beispiel hierfür sind etwa ein gemeinsames Memorandum of Understandig (MoU) oder etwa die Beschreibung der Prozess bei Aufnahme oder Verlassen einer Person in das Arbeitsteam. Bitte beachten Sie hierbei nicht nur die reine Prozessebene, sondern denken Sie auch darüber hinaus. Als Anregung dazu bietet sich die Publikation &lt;a href=&quot;https://www.software.ac.uk/blog/2022-07-07-ethical-considerations-your-open-source-governance&quot; target=&quot;_blank&quot;&gt;Yehudi et al., Ethical considerations for your open source governance, 2022, Software Sustainability Institute Blog&lt;/a&gt; an.</help>
+		<help lang="de">Die Entwicklung von Software kann ein Projekt mit komplexen Anforderungen und Strukturen sein. Um dem zu begegnen ist es empfehlenswert, wie es &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; R1.1 tut, die projektbezogenen Prozesse durch eine Dokumentation explizit zu kommunizieren. Besonders in größeren Verbundprojekten kann dies für die Zusammenarbeit mit mehreren Partnern besonders empfehlenswert sein. Beispiel hierfür sind etwa ein gemeinsames Memorandum of Understandig (MoU) oder etwa die Beschreibung der Prozess bei Aufnahme oder Verlassen einer Person in das Arbeitsteam. Hierbei können beispielsweise diese veröffentlichten &lt;a href=&quot;https://doi.org/10.5334/jors.307&quot; target=&quot;_blank&quot;&gt;Checkliste&lt;/a&gt; hilfreich sein.
+
+Bitte beachten Sie hierbei nicht nur die reine Prozessebene, sondern denken Sie auch darüber hinaus. Als Anregung dazu bietet sich die Publikation &lt;a href=&quot;https://www.software.ac.uk/blog/2022-07-07-ethical-considerations-your-open-source-governance&quot; target=&quot;_blank&quot;&gt;Yehudi et al., Ethical considerations for your open source governance, 2022, Software Sustainability Institute Blog&lt;/a&gt; an.</help>
 		<text lang="de">Verfügen Sie über ein Steuerungsmodell für die Softwareentwicklung?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1279,12 +1283,12 @@ Folgende Dokumente können für Sie hierbei relevant sein:
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<order>1</order>
-		<help lang="en">When developing software, it can be helpful to adhere to certain standards. These can be, for example, common code conventions in the professional community or language-specific standards (e.g. &lt;a href=&quot;https://www.oracle.com/technetwork/java/codeconventions-150003.pdf&quot; target=&quot;_blank&quot;&gt;Java Coding Standards&lt;/a&gt;, &lt;a href=&quot;https://clean-code-developer.de&quot; target=&quot;_blank&quot;&gt;Clean Code Developer&lt;/a&gt;). Tools for static code analysis (e.g. Lint) can help to find problematic code.</help>
+		<help lang="en">When developing software, it can be helpful to adhere to certain standards. These can be, for example, common code conventions in the professional community or language-specific standards (e.g. &lt;a href=&quot;https://www.oracle.com/technetwork/java/codeconventions-150003.pdf&quot; target=&quot;_blank&quot;&gt;Java Coding Standards&lt;/a&gt;, &lt;a href=&quot;https://clean-code-developer.de&quot; target=&quot;_blank&quot;&gt;Clean Code Developer&lt;/a&gt;). Tools for static code analysis (e.g. Lint) can help to find problematic code. An (internal) code review can also be a suitable method of quality control.</help>
 		<text lang="en">Do you apply specific coding standards? How do you take care about code quality control?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Bei der Entwicklung von Software kann es hilfreich sein, bestimmte Standards einzuhalten. Dies können beispielsweise gemeinsame Code-Konventionen in der Fachgemeinschaft sein oder sprachspezifische Standards (z.B. &lt;a href=&quot;https://www.oracle.com/technetwork/java/codeconventions-150003.pdf&quot; target=&quot;_blank&quot;&gt;Java Coding Standards&lt;/a&gt;, &lt;a href=&quot;https://clean-code-developer.de&quot; target=&quot;_blank&quot;&gt;Clean Code Developer&lt;/a&gt;). Werkzeuge zur statischen Codeanalyse (z.B. Lint) können helfen, problematischen Code automatisch zu finden.</help>
+		<help lang="de">Bei der Entwicklung von Software kann es hilfreich sein, bestimmte Standards einzuhalten. Dies können beispielsweise gemeinsame Code-Konventionen in der Fachgemeinschaft sein oder sprachspezifische Standards (z.B. &lt;a href=&quot;https://www.oracle.com/technetwork/java/codeconventions-150003.pdf&quot; target=&quot;_blank&quot;&gt;Java Coding Standards&lt;/a&gt;, &lt;a href=&quot;https://clean-code-developer.de&quot; target=&quot;_blank&quot;&gt;Clean Code Developer&lt;/a&gt;). Werkzeuge zur statischen Codeanalyse (z.B. Lint) können helfen, problematischen Code automatisch zu finden. Auch ein (interner) Code Review kann eine geeignete Methode der Qualitätskontrolle darstellen.</help>
 		<text lang="de">Wenden Sie bestimmte Code-Standards an? Wie kümmern Sie sich um die Qualitätskontrolle des Codes?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1331,7 +1335,7 @@ Folgende Dokumente können für Sie hierbei relevant sein:
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<order>0</order>
-		<help lang="en">It is advisable to think about an adequate strategy for the documentation of the project, which also should be consistent with the framework conditions of the project. Documentation is only helpful if it corresponds to the current status of the software. Often, this is not given high priority compared to writing the code. It is, however, advisable to describe the developed software sensibly and completely. Documentation should also include statements about the software architecture, the development environment and the code style guide.
+		<help lang="en">It is advisable to think about an adequate strategy for the documentation of the project, which also should be consistent with the framework conditions of the project. Documentation is only helpful if it corresponds to the current status of the software. Often, this is not given high priority compared to writing the code. It is, however, advisable to describe the developed software sensibly and completely. Documentation should also include statements about the software architecture, the development environment, the code style guide and installation procedures.
 
 The following questions could be answered in a documentation:
 
@@ -1344,7 +1348,7 @@ The following questions could be answered in a documentation:
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Es ist empfehlenswert, sich adäquate Strategie für die Dokumentation des Projekts zu überlegen, die auch den Rahmenbedingungen des Projekts entspricht. Eine Dokumentation ist nur hilfreich, wenn sie dem aktuellen Stand der Software entspricht. Häufiger wird dem gegenüber dem Schreiben am Code keine hohe Priorität eingeräumt. Es ist jedoch ratsam, die entwickelte Software sinnvoll und vollständig zu beschreiben. Eine Dokumentation sollte auch Aussagen über die Software-Architektur, die Entwicklungsumgebung und den Code Style Guide treffen.
+		<help lang="de">Es ist empfehlenswert, sich adäquate Strategie für die Dokumentation des Projekts zu überlegen, die auch den Rahmenbedingungen des Projekts entspricht. Eine Dokumentation ist nur hilfreich, wenn sie dem aktuellen Stand der Software entspricht. Häufiger wird dem gegenüber dem Schreiben am Code keine hohe Priorität eingeräumt. Es ist jedoch ratsam, die entwickelte Software sinnvoll und vollständig zu beschreiben. Eine Dokumentation sollte auch Aussagen über die Software-Architektur, die Entwicklungsumgebung,den Code Style Guide und Installationsvorgaben treffen.
 
 Folgende Fragen könnten in einer Dokumentation beantwortet werden:
 
@@ -1384,7 +1388,7 @@ Folgende Fragen könnten in einer Dokumentation beantwortet werden:
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Es ist sinnvoll dafür Sorge zu tragen, dass die Dokumentation zur Software für alle Teammitglieder erreichbar ist. Anwendungen wie z.B. Readthedocs können hierbei hilfreich sein. Ebenso hat es sich bewährt, sich von Anfang an auf eine Sprache bei der Formulierung von Dokumenten zu einigen. Häufig ist dies Englisch.</help>
+		<help lang="de">Es ist sinnvoll dafür Sorge zu tragen, dass die Dokumentation zur Software für alle Teammitglieder erreichbar ist. Anwendungen wie z.B. Readthedocs können hierbei hilfreich sein. Ebenso hat es sich bewährt, sich von Anfang an auf eine Sprache bei der Formulierung von Dokumenten zu einigen; häufig ist dies Englisch.</help>
 		<text lang="de">Wo wird die Dokumentation aufbewahrt oder verfügbar sein? Welche Sprache soll verwendet werden?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1579,6 +1583,42 @@ Folgende Fragen könnten in einer Dokumentation beantwortet werden:
 		<optionsets/>
 		<conditions/>
 	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/releasing/store-software">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>store-software</key>
+		<path>smp/release-and-publish/releasing/store-software</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/store-software"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/releasing"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">An adequate place should be found for the storage of the resulting software. Depending on the requirements and possibilities, this can range from a simple, local solution to a specialised software repository.
+
+One far-reaching option for the long-term preservation of software is, for example, &lt;a href=&quot;https://www.softwareheritage.org/save-and-reference-research-software/&quot; target=&quot;_blank&quot;&gt;Software Heritage&lt;/a&gt; (for more repository examples, see also this article &lt;a href=&quot;https://doi.org/10.48550/arXiv.2012.13117&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.48550/arXiv.2012.13117&lt;/a&gt;). There are other places, that offer public, long-term availability. For example, &lt;a href=&quot;https://www.re3data.org/search?query=&amp;contentTypes%5B%5D=Software%20applications&quot; target=&quot;_blank&quot;&gt;re3data&lt;/a&gt; can be used to search for specific repositories through which software can be published.</help>
+		<text lang="en">Where will the software be stored? Does the storage place have a clear preservation policy?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Für die Aufbewahrung der entstandenen Software sollte ein adäquater Ort gefunden werden. Je nach Anforderungen und Möglichkeiten kann dies von einer einfachen, lokalen Lösung bis hin zu einem spezialisierten Software-Repositorium reichen.
+
+Eine weitreichende Möglichkeit für den langfristigen Erhalt von Software ist beispielsweise &lt;a href=&quot;https://www.softwareheritage.org/save-and-reference-research-software/&quot; target=&quot;_blank&quot;&gt;Software Heritage &lt;/a&gt; (für weitere Repositoriums-Beispiele siehe auch diesen Artikel &lt;a href=&quot;https://doi.org/10.48550/arXiv.2012.13117&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.48550/arXiv.2012.13117&lt;/a&gt;). Es gibt aber noch weitere Orte, die sich für eine öffentliche, langfristige Verfügbarkeit anbieten. Über &lt;a href=&quot;https://www.re3data.org/search?query=&amp;contentTypes%5B%5D=Software%20applications&quot; target=&quot;_blank&quot;&gt;re3data&lt;/a&gt; lassen sich beispielsweise gezielt Repositorien suchen, über die Software publiziert werden kann.</help>
+		<text lang="de">Wo soll die Software gespeichert werden? Verfügt der Speicherort über eine klare Aufbewahrungsregelung?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/publicly-available">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>publicly-available</key>
@@ -1611,14 +1651,18 @@ Folgende Fragen könnten in einer Dokumentation beantwortet werden:
 		<order>0</order>
 		<help lang="en">Software is increasingly perceived as a relevant outcome of the scientific knowledge process. Thus, the &lt;a href=&quot;https://www.ouvrirlascience.fr/second-national-plan-for-open-science/&quot; target=&quot;_blank&quot;&gt;Second French plan for Open Science&lt;/a&gt; foresees that software will become the third pillar in scientific publishing, alongside text and data publications.
 
-&lt;a href=&quot;https://wissenschaftliche-integritaet.de/en/code-of-conduct/providing-public-access-to-research-results/&quot; target=&quot;_blank&quot;&gt;Guideline 13 in the DFG Code &quot;Guidelines for Safeguarding Good Scientific Practice&quot;&lt;/a&gt; explicitly recommends that &quot;[s]oftware programmed by researchers themselves is made publicly available along with the source code&quot;.</help>
+&lt;a href=&quot;https://wissenschaftliche-integritaet.de/en/code-of-conduct/providing-public-access-to-research-results/&quot; target=&quot;_blank&quot;&gt;Guideline 13 in the DFG Code &quot;Guidelines for Safeguarding Good Scientific Practice&quot;&lt;/a&gt; explicitly recommends that &quot;[s]oftware programmed by researchers themselves is made publicly available along with the source code&quot;.
+
+It makes sense to define a contact person or email address who will be available as a contact person for the users over a longer period of time (beyond the project duration).</help>
 		<text lang="en">Will this software be publicly available?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Software wird zunehmend als relevantes Ergebnis des wissenschaftlichen Erkenntnisprozesses wahrgenommen. So sieht der &lt;a href=&quot;https://www.ouvrirlascience.fr/second-national-plan-for-open-science/&quot; target=&quot;_blank&quot;&gt;zweite französische Plan für Open Science&lt;/a&gt; vor, dass Software die dritte Säule im wissenschaftliche Publikationswesen werden soll, neben Text- und Daten-Veröffentlichungen.
 
-Die &lt;a href=&quot;https://wissenschaftliche-integritaet.de/kodex/herstellung-von-offentlichem-zugang-zu-forschungsergebnissen/&quot; target=&quot;_blank&quot;&gt;Leitlinie 13 im DFG-Kodex &quot;Leitlinien zur Sicherung guter wissenschaftlicher Praxis&quot;&lt;/a&gt; empfiehlt explizit, dass &quot;[s]elbst programmierte Software [..] unter Angabe des Quellcodes öffentlich zugänglich gemacht&quot; wird.</help>
+Die &lt;a href=&quot;https://wissenschaftliche-integritaet.de/kodex/herstellung-von-offentlichem-zugang-zu-forschungsergebnissen/&quot; target=&quot;_blank&quot;&gt;Leitlinie 13 im DFG-Kodex &quot;Leitlinien zur Sicherung guter wissenschaftlicher Praxis&quot;&lt;/a&gt; empfiehlt explizit, dass &quot;[s]elbst programmierte Software [..] unter Angabe des Quellcodes öffentlich zugänglich gemacht&quot; wird.
+
+Es ist sinnvoll eine Kontaktperson oder Emailadresse zu definieren, die über einen längeren Zeitraum (über die Projektlaufzeit hinaus) als Ansprechpartner für die Nutzer zur Verfügung steht.</help>
 		<text lang="de">Wird diese Software öffentlich zugänglich sein?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1809,12 +1853,12 @@ Beispielsweise mit einer &lt;a href=&quot;https://citation-file-format.github.io
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<order>1</order>
-		<help lang="en">For long-term availability and clear allocation, it is recommended to publish the software (version) with a persistent identifier. This recommendation goes hand in hand with &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; F3 and &lt;a href=&quot;https://wissenschaftliche-integritaet.de/en/code-of-conduct/cross-phase-quality-assurance/&quot; target=&quot;_blank&quot;&gt;guideline 7 in the DFG Code &quot;Guidelines for Safeguarding Good Scientific Practice&quot;&lt;/a&gt;. An example of a persistent identifier is the Digital Object Identifier (DOI).</help>
+		<help lang="en">For long-term availability and clear allocation, it is recommended to publish the software (version) with a persistent identifier. This recommendation goes hand in hand with &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; F3 and &lt;a href=&quot;https://wissenschaftliche-integritaet.de/en/code-of-conduct/cross-phase-quality-assurance/&quot; target=&quot;_blank&quot;&gt;guideline 7 in the DFG Code &quot;Guidelines for Safeguarding Good Scientific Practice&quot;&lt;/a&gt;. After &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; F1.1, it may also be useful to place a separate identifier on the individual software versions or components. An example of a persistent identifier is the Digital Object Identifier (DOI). In terms of research software, for example, a GitHub/GitLab Zenodo integration can generate a citable object including DOI.</help>
 		<text lang="en">Do you give a persistent identifier for you software?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Für die langfristige Verfügbarkeit und die klare Zuordnung ist es empfehlenswert, die Software(-version) mit einem persistenten Identifikator zu veröffentlichen. Diese Empfehlung geht einher mit &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; F3 und der &lt;a href=&quot;https://wissenschaftliche-integritaet.de/kodex/phasenubergreifende-qualitatssicherung/&quot; target=&quot;_blank&quot;&gt;Leitlinie 7 im DFG-Kodex &quot;Leitlinien zur Sicherung guter wissenschaftlicher Praxis&quot;&lt;/a&gt;. Ein Beispiel für einen persistenten Identifikator ist etwa der Digital Object Identifier (DOI).</help>
+		<help lang="de">Für die langfristige Verfügbarkeit und die klare Zuordnung ist es empfehlenswert, die Software(-version) mit einem persistenten Identifikator zu veröffentlichen. Diese Empfehlung geht einher mit &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; F3 und der &lt;a href=&quot;https://wissenschaftliche-integritaet.de/kodex/phasenubergreifende-qualitatssicherung/&quot; target=&quot;_blank&quot;&gt;Leitlinie 7 im DFG-Kodex &quot;Leitlinien zur Sicherung guter wissenschaftlicher Praxis&quot;&lt;/a&gt;. Ein Beispiel für einen persistenten Identifikator ist etwa der Digital Object Identifier (DOI). Nach &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; F1.1 kann es auch sinnvoll sein auf die einzelnen Software-Versionen oder -Komponenten einen eigenen Identifier zu legen. Bezogen auf Forschungssoftware kann beispielsweise eine GitHub-/GitLab-Zenodo-Integration ein zitierfähiges Objekt samt DOI erzeugen.</help>
 		<text lang="de">Geben Sie einen dauerhaften Identifikator für Ihre Software an?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
