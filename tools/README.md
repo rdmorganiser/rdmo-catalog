@@ -23,7 +23,10 @@ If there was any content that needed to be overwritten (currently there is no su
     * 1. `rdmorganiser/_changes/new_questions.xml` and 
     * 2. `rdmorganiser/questions/rdmo.xml`
     * 3. store these xml elements in `tools/all_questions.xml` after `<catalog> ... </catalog>` section and remove the old content except `<catalog> ... </catalog>`
-    * 4. replace all occurrences of `rdmo/` with `ua_ruhr/` and `/rdmo` with `/ua_ruhr`
+    * 4. replace all occurrences of `rdmo/` with `ua_ruhr/` and `/rdmo"` with `/ua_ruhr"`
+    * 5. replace `rdmo` with `ua_ruhr` in the opening and closing root xml node.
+    * 6. replace `RDMO` with `UA Ruhr` in the `title` nodes of the `catalog` node
+    * 7. replace `rdmo` with `ua-ruhr` in the content of the `key` node in the `catalog` node
 
 # Tools 
 ## Comparing two rdmo domain files 
