@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-06-26T15:58:47.205487+02:00">
+	<view dc:uri="https://rdmo.julius-kuehn.de/terms/views/general-ble-english">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>general-ble-english</key>
+		<dc:comment/>
+		<title lang="en">BLE-DMP-English</title>
+		<help lang="en">&lt;b&gt; &lt;font color=#088A4B&gt;
+&amp;#9733; Funder BLE &amp;#9733; English &amp;#9733;General Answers &amp;#9733; 
+&lt;/b&gt;&lt;/font&gt;
+&lt;br&gt;
+&lt;small&gt;This view is suitable for the visualization of the &quot;BLE-Questionnaire&quot; in English and uses general answers. It formats the answers according to the specifications of the funder BLE. The view can be used as a basis for the submission of a data management plan in the draft stage. If necessary, the output must be checked for linguistic correctness.&lt;/small&gt;</help>
+		<title lang="de">BLE-DMP-Englisch (institutsunabhängig)</title>
+		<help lang="de">&lt;b&gt; &lt;font color=#088A4B&gt;
+&amp;#9733; Fördergeber BLE &amp;#9733; Englisch &amp;#9733; Allgemeine Antworten &amp;#9733; 
+&lt;/b&gt;&lt;/font&gt;
+&lt;br&gt;
+&lt;small&gt;Diese Ansicht eignet sich für die Darstellung des &quot;BLE-Fragebogens&quot; auf Englisch und gibt allgemeine Antworten. Sie formatiert die Antworten gemäß den Vorgaben des Fördergebers BLE. Die Ansicht kann als Grundlage für die Einreichung eines Datenmanagementplans in der Skizzenphase verwendet werde. Ggfs. muss die Ausgabe auf sprachliche Korrektheit überprüft werden.&lt;/small&gt;</help>
+		<catalogs>
+			<catalog dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble"/>
+		</catalogs>
+		<template>{% load view_tags %}
+{% get_set 'project/dataset/id' as datasets %}
+{% get_set 'project/dataset/data_sources' as data_sources %}
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;/&gt;
+&lt;head&gt;
+    {% get_value 'project/title' as title %}
+    &lt;title&gt;{{ title.value }}&lt;/title&gt;
+    &lt;h1&gt;{% render_value 'project/title' %}&lt;/h1&gt;
+    &lt;/p&gt;
+
+
+    &lt;hr noshade color=rgb(0, 157, 129) width=100% size=20&gt;
+&lt;/head&gt;
+&lt;p&gt;&lt;img src=&quot;https://rdmo.julius-kuehn.de/static/core/img/header/blelogo.png&quot;
+        alt=&quot;&quot; width=&quot;300&quot; height=&quot;109&quot; /&gt;&lt;/p&gt;
+
+&lt;h1&gt;Reserach Data Management Plan – Draft Stage&lt;/h1&gt;
+
+
+&lt;style type=&quot;text/css&quot;&gt;
+    .tg {
+        border-collapse: collapse;
+        border-spacing: 0;
+        table-layout: auto;
+        width: 100%;
+    }
+
+    .tg td {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        overflow: hidden;
+        padding: 10px 10px;
+        word-break: normal;
+    }
+
+    .tg th {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        overflow: hidden;
+        padding: 10px 10px;
+        word-break: normal;
+    }
+
+    .tg .tg-0pky {
+        border-color: inherit;
+        text-align: left;
+        vertical-align: top
+    }
+&lt;/style&gt;
+&lt;table class=&quot;tg&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th class=&quot;tg-0pky&quot; colspan=&quot;2&quot;&gt;&lt;strong&gt;1. Administrative Information&lt;/trong&gt;
+            &lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;Project Title
+            &lt;td class=&quot;tg-0pky&quot;&gt;{% render_value 'project/research_question/title' %} 
+ 
+ &lt;! -- Show project acronym in brackets only if it is set--!&gt;
+	{% get_values 'project/research_question/acronym' as texts %}
+    {% if texts %}        
+        {% for text in texts %}
+        	{% if not text.is_empty %} 
+        		({{ text.value}})
+            {% endif %}   
+        {% endfor %}	
+    {% else %} 
+ {% endif %}   
+            
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;Submitting Person&lt;/td&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;{% render_value 'project/partner/contact_person/name' %}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;Project Partner&lt;/td&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;
+        {% get_values 'project/partner/name' set_index=0 as texts %}
+    	{% if texts %}
+        	{% for text in texts %}
+        		{{ text.value }}&lt;br&gt;
+            {% endfor %}
+        {% endif %}
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;Funding Program&lt;/td&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;{% render_value 'project/funder/programme/title' %}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;Announcement&lt;/td&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;{% render_value 'project/funder/programme/announcement' %}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;Date&lt;/td&gt;
+            &lt;td class=&quot;tg-0pky&quot;&gt;{% now &quot;d.m.Y&quot; %}&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+&lt;! ---------------------Block 2 ab hier--------------------------------------------------------------------------- --!&gt;          
+            &lt;td class=&quot;tg-fymr&quot; colspan=&quot;2&quot;&gt;&lt;strong&gt;2. Description of Data Collection and Processing&lt;/strong&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-fymr&quot; colspan=&quot;2&quot;&gt;
+                &lt;p&gt;{% render_value 'ble' %}&lt;/p&gt;
+    &lt;p&gt;&lt;/p&gt;
+    
+    {% render_value 'project/research_question' %}  
+    {% render_value 'project/dataset/reuse_scenario' %}
+
+
+ &lt;! -- Does the project require any special personnel or material costs for data management? Please describe in complete sentences why and in what amount. --!&gt;
+    {% check_condition 'rdm_cost_yes_no' set_index=dataset.set_index as conditions %}
+    {% if conditions %} 
+	  {% get_set 'project/costs/rdm/rdm_cost_level' as texts %}
+            {% if texts is None %}
+              There are costs for research data management in an amount not yet defined.
+            {% else %}
+             {% get_values 'project/costs/rdm/rdm_cost_level' as costs %}
+               {% for cost in costs %}
+                 {% if cost.is_empty %}
+			     There are costs for research data management in an amount not yet defined.
+                 {% else %}
+                  {{ cost.value }}            
+                 {% endif %}
+               {% endfor %}
+             {% endif %}
+     {% endif %}  
+
+
+ &lt;! -- By whom are the costs/efforts for research data management paid? --!&gt;
+    {% check_condition 'rdm_cost_yes_no' set_index=dataset.set_index as conditions %}
+    {% if conditions %} 
+    {% get_values 'project/costs/rdm/rdm_costs_payment' as texts %}
+       {% if texts %}
+        {% for text in texts %}
+			{% if &quot;Applied (Proposal)&quot; in text.value %}
+				Costs are applied for
+                {% if not forloop.last %}respectively{% endif %}
+            {% elif &quot;Own contribution (own institution)&quot; in text.value %}
+				Costs are covered by our institution
+                {% if not forloop.last %}and{% endif %}                
+        	{% elif &quot;Contribution project partner (name of the project partner)&quot; in text.value %}
+                {% if text.value|length &gt; 59 %}
+        			{{ text.value|slice:&quot;59:&quot; }} covers costs  
+                {% else %}
+                     _______________________  covers costs 
+                {% endif %} 
+                {% if not forloop.last %}respectively{% endif %}                
+            {% elif &quot;Needs to be clarified prior to project start.&quot; in text.value %}
+				Cost coverage still needs to be clarified
+                {% if not forloop.last %}and{% endif %}                
+        	{% elif &quot;Other&quot; in text.value %}
+                {% if text.value|length &gt; 6 %}
+        			{{ text.value|slice:&quot;6:&quot; }}
+                {% else %}
+                     Costs are covered by _______________________ 
+                {% endif %}                          
+            {% else %}
+            {% endif %}
+        {% endfor %} 
+     .
+    {% endif %}
+    {% endif %}
+
+
+ &lt;! -- Contact persons / responsible persons --!&gt;
+    
+       {% get_values 'project/coordination/contact-person' as texts %}
+       {% if texts %}
+       	{% if texts|length == 1 %}
+        	There will be one person responsible for RDM topics in the project.
+       	{% elif texts|length &gt; 1 %}
+           In the project there will be {{texts|length}} responsible persons for RDM topics.
+        {% endif %}   	
+    {% endif %}
+
+&lt;br&gt;&lt;br&gt;
+    {% if datasets %}
+       The following categories of data are used in the project:
+    {% endif %}   
+&lt;br&gt;&lt;br&gt;
+
+&lt;! -- Please specify the subject of the data category --!&gt;
+{% for dataset in datasets %}
+	 &lt;p&gt;&lt;b&gt;&lt;i&gt;
+     {{ dataset.value }}&lt;/b&gt;&lt;/i&gt;    {% get_values 'project/dataset/nature_of_data' set_index=dataset.set_index as texts %}
+    {% if texts %}
+    	(
+        {% for text in texts %}
+            {{ text.value }}
+            {% if not forloop.last %}/{% else %}{% endif %}
+        {% endfor %}
+        )&lt;br&gt;    
+    {% endif %}
+
+
+&lt;! -- Please specify technical structure / Organisation of the data from this data category --!&gt;
+    
+    {% get_values 'project/dataset/technical_structure' set_index=dataset.set_index as texts %}
+    {% if texts %}
+    	These are
+        {% for text in texts %}
+            {{ text.value }}
+            {% if not forloop.last %}and{% else %}.{% endif %}
+        {% endfor %}
+    {% else %}
+    	The technical structure or organization of the data still needs to be clarified.        
+    {% endif %}
+
+
+ &lt;! -- The (raw) data of this data category used for the project... --!&gt;
+	{% get_values 'project/dataset/origin' set_index=dataset.set_index as texts %}
+    {% if texts %}        
+          Within the framework of the project data of this data category are
+        {% for text in texts %}
+        	{% if &quot;(e.g. time series, long-term experiment)&quot; in text.value %}
+            	{{ text.value|cut:&quot;(e.g. time series, long-term experiment).&quot; }}. 
+			{% elif &quot;newly collected, because&quot; in text.value %}
+                		{% if text.value|length &gt; 26 %}
+        					newly collected, because {{ text.value|slice:&quot;26:&quot; }}.
+               			{% else %}
+                    		 newly collected, because _______________________.
+                		{% endif %}
+ 			{% else %}
+        		{{ text.value }}
+        	{% endif %}
+        {% endfor %}
+     {% endif %}  
+
+&lt;! -- intern extern --!&gt;
+    	
+	{% get_values 'project/dataset/data_sources/internal_external' as intexts %}
+    {% get_values 'project/dataset/data_sources/origin' as origins %}
+    
+    {% if origins %}   
+     {% if dataset.set_index|slugify|add:&quot;-set_index&quot;  in origins|slugify %}
+       The locations of data collection or the sources of (raw) data are:&lt;br&gt;
+       {% endif %}
+         {% for origin in origins %}
+           {% if origin.set_prefix|slugify == dataset.set_index|slugify %}
+               {% if origin.value is not None %}
+                 - {{ origin.value }} 
+                 {% else %}
+                 - ______________________
+                {% endif %} 
+             {% for intext in intexts %}
+             {% if intext.set_prefix|slugify == dataset.set_index|slugify and intext.set_index == origin.set_index %}
+             ( {{ intext.value }} )&lt;br&gt; 
+             {% endif %} 
+            {% endfor %}
+           {% endif %}            
+         {% endfor %}
+       {% else %}
+	{% endif %}
+
+
+  &lt;! -- The following tools, software, technologies, or procedures are needed to collect or retrieve data from this data category? (optional) --!&gt;
+    {% get_values 'project/dataset/creation_methods' set_index=dataset.set_index as texts %}
+    {% if texts %}
+    For the data collection or retrieval  
+        {% for text in texts %}
+            {{ text.value }}
+            {% if not forloop.last %}and{% else %}{% endif %}
+            {% if forloop.first and forloop.last %}is{% elif not forloop.first and forloop.last %}are{% endif %}
+        {% endfor %} used.
+    {% endif %}
+
+
+ &lt;! -- (Raw) Data of this data category are available in the following file formats: --!&gt;
+    {% get_values 'project/dataset/format' set_index=dataset.set_index as texts %}
+    {% if texts %}
+    	Used file formats are
+        {% for text in texts %}
+            {{ text.value }}  
+            {% if not forloop.last %}and{% endif %}
+        {% endfor %}
+        .
+    {% else %}
+    	The file formats to be used still need to be defined.
+    {% endif %}
+
+
+  &lt;! -- The expected data volume in [GB] in this data category is approximately...  --!&gt;       
+	{% get_values 'project/dataset/size/volume' set_index=dataset.set_index as texts %}  	
+        	{% for text in texts %}
+            	{% if not text.is_empty %}
+                	 The expected data volume is
+        			{{ text.value }} GB.         
+    			{% else %}    
+    				The expected data volume of this data category cannot yet be estimated.
+            	{% endif %}
+        	{% endfor %}
+
+
+ &lt;! -- Is the data in this data category sensitive data?  --!&gt;
+     {% get_values 'project/dataset/sensitive_data/other/yesno' set_index=dataset.set_index as SensitivYesNo %}
+       {% if SensitivYesNo %}
+       	{% for Sensitiv in SensitivYesNo %}
+           {% if &quot;Yes, due&quot; in Sensitiv.value %}
+            	These data are sensitive data, since
+                {% if Sensitiv.value|length &gt; 13 %}
+        			{{ Sensitiv.value|slice:&quot;13:&quot; }}.
+                {% else %}
+                    ______________________.
+                {% endif %} 
+                
+
+&lt;! -- What measures are taken to protect sensitive data? (optional) --!&gt;
+          
+        		Therefore, measures
+	  			
+	   			 {% get_values 'project/dataset/data_security/security_measures' set_index=dataset.set_index as measures %}
+        		 {% if measures %}
+                 ( 
+                  {% for measure in measures %}
+        	         {% if &quot;Different (please describe in a complete sentence)&quot;  in measure.value %}
+                        {% if measure.value|length &gt; 51 %}
+        			       {{ measure.value|slice:&quot;51:&quot; }}
+                        {% else %}
+                            _______________________
+                        {% endif %}
+                    {% else %}
+            	      {{measure.value}}
+        	        {% endif %}
+                    {% if not forloop.last %},{% else %}){% endif %}
+                   {% endfor %}
+                   {% endif %}
+                  are taken
+
+&lt;! -- When will action be taken to protect the sensitive data? (optional) --!&gt;
+	
+                 {% get_values 'project/dataset/sensitive_data/personal_data/anonymization' set_index=dataset.set_index as anonymizations %}
+				               
+                {% if anonymizations %}
+       			   {% for anonymization in anonymizations %}
+                    {% if anonymization.is_true %}
+                     (
+        			 {% if &quot;Different (please describe in a complete sentence)&quot; in anonymization.value %}
+                		{% if anonymization.value|length &gt; 51 %}
+        					{{ anonymization.value|slice:&quot;51:&quot; }}
+               			{% else %}
+                    		 _______________________
+                		{% endif %}
+            		 {% else %}
+            			{{anonymization.value}}
+        		 	 {% endif %}
+                     )
+        		    {% endif %}
+                   {% endfor %}
+                {% endif %}
+    			to protect sensitive data.        
+        
+           {% endif %}
+        {% endfor %}
+       {% endif %}
+
+
+ &lt;! -- What measures are taken to ensure the quality of the data collected in the project?  --!&gt;
+    {% get_values 'project/dataset/quality_assurance' set_index=dataset.set_index as texts %}
+       {% if texts %}
+		The following measures are taken to ensure the quality of the data:
+        {% for text in texts %}
+			  {% if &quot;Data collection&quot; in text.value %}
+        			{{ text.value|slice:&quot;17:&quot; }}
+              {% elif &quot;Digitization and data entry&quot; in text.value %}
+        			{{ text.value|slice:&quot;29:&quot; }}
+              {% elif &quot;Data verification&quot; in text.value %}
+        			{{ text.value|slice:&quot;19:&quot; }}              
+              {% elif text.collection_index == 17 %}
+             	{% if text.value|length &gt; 7 %}
+        			{{ text.value|slice:&quot;7:&quot; }}
+                {% else %}
+                     _______________________
+                {% endif %}               
+            {% endif %}
+            {% if not forloop.last %}and{% else %}.{% endif %}
+        {% endfor %}     	
+    {% endif %}
+
+
+
+&lt;! -- The analysis of the data is done with the following tools (software): --!&gt;
+    {% get_values 'project/dataset/metadata/scope' set_index=dataset.set_index as texts %}
+    {% if texts %}
+    	The data will be analyzed with
+        {% for text in texts %}
+        	{{ text.value }}
+        {% if not forloop.last %}and{% else %}.{% endif %}
+        {% endfor %}
+    {% endif %}
+    &lt;br&gt;
+    &lt;/p&gt;
+{% endfor %}                    
+
+&lt;! ---------------------Block 3 ab hier--------------------------------------------------------------------------- --!&gt;
+       &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-fymr&quot; colspan=&quot;2&quot;&gt;&lt;strong&gt;3. Data Documentation &lt;/strong&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-fymr&quot; colspan=&quot;2&quot;&gt;
+
+&lt;! -- Please specify the subject of the data category --!&gt;
+{% for dataset in datasets %}
+	 &lt;p&gt;&lt;b&gt;&lt;i&gt;
+     {{ dataset.value }}&lt;/b&gt;&lt;/i&gt;    {% get_values 'project/dataset/nature_of_data' set_index=dataset.set_index as texts %}
+    {% if texts %}
+    	(
+        {% for text in texts %}
+            {{ text.value }}
+            {% if not forloop.last %}/{% else %}{% endif %}
+        {% endfor %}
+        )&lt;br&gt;    
+    {% endif %}
+
+
+ &lt;! -- Where is the collected /retrieved data from this data category stored?  --!&gt;
+    {% get_values 'project/dataset/storage/loacation' set_index=dataset.set_index as texts %}
+       {% if texts %}
+       Data of this category is stored in:&lt;br&gt;
+        {% for text in texts %}
+			{% if &quot;Central storage of own institution&quot; in text.value %}
+           		- Central storage of our institution&lt;br&gt;
+            {% elif &quot;Centrally managed storage of the project partner&quot; in text.value %}
+            	- Centrally managed storage of the project partner
+                {% if text.value|length &gt; 67 %}
+        			{{ text.value|slice:&quot;67:&quot; }}&lt;br&gt;
+                {% else %}
+                     _______________________&lt;br&gt;
+                {% endif %}
+        	{% elif &quot;Other Infrastructure (Database)&quot; in text.value %}
+                {% if text.value|length &gt; 48 %}
+        			- {{ text.value|slice:&quot;48:&quot; }} (data infrastructure)&lt;br&gt;
+                {% else %}
+                    - _______________________ (data infrastructure)&lt;br&gt;
+                {% endif %}    
+        	{% elif &quot;Cloud-Storage. Provider&quot; in text.value %}
+             {% if text.value|length &gt; 24 %}
+        		   - {{text.value|slice:&quot;24:&quot;}} (cloud storage)&lt;br&gt;
+                {% else %}
+                    - _______________________ (cloud storage)&lt;br&gt;
+                {% endif %}
+     		{% elif &quot;Self-managed central storage (file server or network storage)&quot; in text.value %}
+            	- Self-managed central storage (file server or network storage) in
+				{% if text.value|length &gt; 62 %}
+        		{{ text.value|slice:&quot;62:&quot; }}&lt;br&gt;
+                {% else %}
+                     _______________________&lt;br&gt;
+                {% endif %}               
+			{% elif &quot;Decentral storage without auto-backup&quot; in text.value %}
+				- Decentral storage without auto-backup&lt;br&gt;
+            {% elif &quot;Other Storage Solution&quot; in text.value %}
+             - {% if text.value|length &gt; 24 %}
+        		{{ text.value|slice:&quot;24:&quot; }}&lt;br&gt;
+                {% else %}
+                    Other storage solution _______________________&lt;br&gt;
+                {% endif %}               
+        {% else %}
+            {% endif %}
+        {% endfor %}     	
+    {% endif %}
+
+
+ &lt;! -- Does the data need to be made available for collaborative working?  --!&gt;
+    {% get_values 'project/dataset/collaboration_tools' set_index=dataset.set_index as texts %}
+       {% if texts %}
+        {% for text in texts %}
+          {% if text.is_true %}
+			{% if &quot;Yes, internal (own institution). Platform / tools used&quot; in text.value %}
+        		The data must be made available internally for collaborative work.
+                {% if text.value|length &gt; 55 %}
+        			{{ text.value|slice:&quot;55:&quot; }} is used for this purpose.
+                 {% else %}
+                              _______________________ is used for this purpose.
+                 {% endif %}
+            {% elif &quot;Yes, multiple people at different institutions. &quot; in text.value %}
+				For people at different institutions, this data must be made available for collaborative work. 
+                {% if text.value|length &gt; 70 %}
+        			{{ text.value|slice:&quot;70:&quot; }} is used for this purpose.
+                 {% else %}
+                              _______________________  is used for this purpose.
+                 {% endif %}        		
+        	{% elif &quot;Still needs to be clarified.&quot; in text.value %}
+            	It still needs to be clarified whether data needs to be made available for collaborative working.            
+        	{% elif &quot;No&quot; in text.value %}
+            {% endif %}
+           {% endif %}
+        {% endfor %}     	
+    {% endif %}
+
+
+ &lt;! -- How is the data files of this category of data organized? --!&gt;
+    {% get_values 'project/dataset/storage/naming_policy' set_index=dataset.set_index as texts %}
+       {% if texts %}
+        {% for text in texts %}
+			{% if &quot;Standardized and predefined project folder structure&quot; in text.value %}
+               Files are stored in a standardized and predefined project folder structure.
+            {% elif &quot;Standardized storing according to the specifications of the used infrastructure&quot; in text.value %}
+				Files stored in the infrastructure
+                {% if text.value|length &gt; 120 %}
+        			{{ text.value|slice:&quot;120:&quot; }}
+                {% else %}
+                     _______________________
+                {% endif %}
+                are stored according to the infrastructure standard.
+        	{% elif &quot;Modular file naming (e.g. [YYYYMMDD]-[CONTENTS]-[PROJECTACRONYM]-[CREATOR].csv)&quot; in text.value %}
+            	Files are named modularly, e.g. [YYYYMMDD]-[CONTENT]-[PROJECTTRONYM]-[CREATOR].xxx.         
+        	{% elif &quot;Version Control via Software / Tool (e.g. git, GitHub, etc.). Name&quot; in text.value %}
+            	Data and file versioning is done with
+             {% if text.value|length &gt; 67 %}
+        		{{ text.value|slice:&quot;67:&quot; }}.
+                {% else %}
+                     _______________________.
+                {% endif %}
+     		{% elif &quot;Version Control via file naming&quot; in text.value %}
+            	The version control is done via the file naming convention (e.g. [FILE NAME]-v1.xxx, [FILE NAME]-v2.1.xxx).                
+			{% elif &quot;Other (please describe in a complete sentence)&quot; in text.value %}
+             {% if text.value|length &gt; 47 %}
+        		{{ text.value|slice:&quot;47:&quot; }}.
+                {% else %}
+                     _______________________ (other data organization).
+                {% endif %}
+            {% elif &quot;It has not yet been decided how the data will be organized / filed.&quot; in text.value %}
+            	The organization and storage of the data still needs to be specified.     
+        	{% elif &quot;No fixed system is used to organize / store the data.&quot; in text.value %}
+            	No fixed system is used to organize / store the data.               
+            {% else %}
+            {% endif %}
+        {% endfor %}     	
+    {% endif %}
+
+
+ &lt;! -- How are the data of this data category described / documented? --!&gt;
+    {% get_values 'project/dataset/metadata/standards' set_index=dataset.set_index as texts %}
+       {% if texts %}
+
+        {% for text in texts %}
+			{% if text.collection_index == 0 %}
+                {% if text.value|length &gt; 76 %}
+        			{{ text.value|slice:&quot;76:&quot; }}
+                {% else %}
+                     A custom description system is used to describe/document this data.
+                {% endif %}              
+            {% elif text.collection_index == 1 %}
+				Metadata to describe/document this data is collected according to the specifications of the infrastructure
+                {% if text.value|length &gt; 98 %}
+        			{{ text.value|slice:&quot;98:&quot; }}.
+                {% else %}
+                     _______________________.
+                {% endif %}
+        	{% elif text.collection_index == 2 %}
+                {% if text.value|length &gt; 134 %}
+        			 Discipline-specific (metadata) standards, classifications, etc., such as {{ text.value|slice:&quot;134:&quot; }}, are used for data description/documentation.
+                {% else %}
+                     Discipline-specific (metadata) standards, classifications, etc., such as _______________________, are used for data description/documentation.
+                {% endif %}
+        	{% elif text.collection_index == 3 %}
+            	Used metadata is mashine-readable and interoperable.
+     		{% elif text.collection_index == 4 %}
+            	The metadata and contextual information will be defined before the project starts and will be concretized in case of an application submission.
+			{% elif text.collection_index == 5 %}
+                No fixed system for the description is used, because
+                {% if text.value|length &gt; 53 %}
+                	{{ text.value|slice:&quot;53:&quot; }}.
+                {% else %}
+                     _______________________.
+                {% endif %} 	
+            {% else %}
+            {% endif %}
+        {% endfor %}     	
+    {% endif %}
+    
+    
+    
+ &lt;! -- Which backup strategy is used for the actively used data of this data category? --!&gt;
+    
+        {% get_values 'project/dataset/data_security/backups' set_index=dataset.set_index as texts %}
+       {% if texts %}
+        {% for text in texts %}
+          {% if text.is_true %}
+        	{% if &quot;According to the 3-2-1 rule&quot; in text.value %}
+				Backup of the data of this data category will be performed according to the 3-2-1 rule.  	
+        	{% elif &quot;Own backup strategy. Please describe in one sentence&quot; in text.value %}
+            	{% if text.value|length &gt; 53 %}
+        			{{ text.value|slice:&quot;53:&quot; }}
+                 {% else %}
+                              _______________________ (own backup strategy).
+                 {% endif %}
+        	{% elif &quot;Still to be determined.&quot; in text.value %}
+        		It still needs to be clarified which backup strategy will be used.
+			{% elif &quot;A backup of the data is not necessary, since&quot; in text.value %}
+        		A backup of the data is not necessary, since
+                {% if text.value|length &gt; 45 %}
+        			{{ text.value|slice:&quot;45:&quot; }}
+                 {% else %}
+                              _______________________.
+                 {% endif %}
+			{% else %}
+            	It still needs to be clarified which backup strategy will be used.
+            {% endif %}
+           {% endif %}
+        {% endfor %}     	
+    {% endif %}
+
+
+ &lt;! -- Do you use a centrally managed backup for this? --!&gt;
+    {% get_values 'project/dataset/data_security/central-backup-where' set_index=dataset.set_index as texts %}
+    {% if texts %}
+     {% for text in texts %}
+       {% if text.is_true %}
+     	{% if &quot;Central Backup (applies to centrally managed storage of own institution)&quot; in text.value %}
+        	To secure the data against loss or accidental deletion, the central backup at our institution is used.
+     	{% elif &quot;Central backup of the project partner.&quot; in text.value %}
+     	 	To secure the data against loss or accidental deletion, the central backup of the project partner (
+            {% if text.value|length &gt; 94 %}
+        		{{ text.value|slice:&quot;94:&quot; }}
+                ) is used.
+             {% else %}
+                 _______________________) is used.
+             {% endif %}
+     	{% elif &quot;Backup strategy of the data infrastructure used.&quot; in text.value %}
+     	 	As a centrally managed backup, the strategy of the used data infrastructure is used (
+            {% if text.value|length &gt; 91 %}
+        		{{ text.value|slice:&quot;91:&quot; }}
+                ).
+             {% else %}
+                 _______________________).
+             {% endif %}            
+     	{% elif &quot;Still to be determined.&quot; in text.value %}
+     		It still needs to be clarified whether a centrally managed backup will be used.
+     	{% elif &quot;No.&quot; in text.value %}
+     		No centrally managed backup is used.       
+    	{% endif %}
+       {% endif %} 
+     {% endfor %}
+    {% endif %}
+    
+&lt;br&gt;     
+&lt;/p&gt;
+
+{% endfor %}   
+
+&lt;! ---------------------Block 4 ab hier--------------------------------------------------------------------------- --!&gt;
+            
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-fymr&quot; colspan=&quot;2&quot;&gt;&lt;strong&gt;4. Data selection and archiving&lt;/strong&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-fymr&quot; colspan=&quot;2&quot;&gt;
+
+
+&lt;! -- Please specify the subject of the data category --!&gt;
+{% for dataset in datasets %}
+	 &lt;p&gt;&lt;b&gt;&lt;i&gt;
+     {{ dataset.value }}&lt;/b&gt;&lt;/i&gt;    {% get_values 'project/dataset/nature_of_data' set_index=dataset.set_index as texts %}
+    {% if texts %}
+    	(
+        {% for text in texts %}
+            {{ text.value }}
+            {% if not forloop.last %}/{% else %}{% endif %}
+        {% endfor %}
+        )&lt;br&gt;    
+    {% endif %}
+     
+
+   &lt;! -- Do the data from this data category have to be stored and kept after the end of the project? --!&gt;
+    {% get_values 'project/dataset/preservation/yesno' set_index=dataset.set_index as texts %}
+    {% if texts %}
+       {% for text in texts %}
+         {% if &quot;Yes, all or part of the data.&quot; in text.value %}
+            This data will be stored and kept after the end of the project.
+            {% if text.value|length &gt; 102 %}
+        		{{ text.value|slice:&quot;102:&quot; }}
+            {% else %}
+                 _______________________(details of data storage after the end of the project).
+            {% endif %}
+
+
+ &lt;! -- If yes, for how long must the data be retained? (optional) --!&gt;
+            {% get_values 'project/dataset/preservation/duration' set_index=dataset.set_index as durations %}
+      
+            {% if durations %}
+                  {% for duration in durations %}
+					{% if &quot;A minimum of 10 years&quot; in duration.value %}
+                        These are kept for at least 10 years.
+                    {% elif &quot;Minimum until (year)&quot; in duration.value %}
+                        These are kept until
+                    	{% if duration.value|length &gt; 21 %}
+        					{{ duration.value|slice:&quot;21:&quot; }}.
+          				{% else %}
+                		    ____________ (year).
+           				{% endif %} 
+                    {% elif &quot;For an indefinite period of time.&quot; in duration.value %}
+                       The data is kept for an indefinite period of time.        
+                    {% elif &quot;It has not yet been decided how long the data will be retained.&quot; in duration.value %}
+                       It must still be clarified how long the data must be kept.
+                    {% elif &quot;Other period (please give reasons in one sentence)&quot; in duration.value %}
+                       {% if duration.value|length &gt; 51 %}
+        					{{ duration.value|slice:&quot;51:&quot; }}.
+          			   {% else %}
+                		    _______________________ (duration of data retention).
+           			   {% endif %} 
+                    {% endif %}
+               {% endfor %}
+              {% endif %}
+              
+ 
+&lt;! -- If yes, where should the data for this category of data be kept? (optional) --!&gt;
+              {% get_values 'project/preservation/archive' set_index=dataset.set_index as archives %}
+              {% if archives %}
+                  {% for archive in archives %}
+                   {% if forloop.first %}
+                     {% if &quot;in the storage structures of own institution&quot; in archive.value or &quot;in the storage structures of the project/company partner&quot; in archive.value or &quot;External archive/repository/database/other infrastructure.&quot; in archive.value or &quot;Cloud-Speicher&quot; in archive.value %}
+                       They will be stored/kept in
+                     {% endif %}
+                   {% endif %} 
+                     {% if &quot;in the storage structures of own institution&quot; in archive.value %}
+                       the storage structures of our institution
+                     {% elif &quot;in the storage structures of the project partner&quot; in archive.value %}
+                       in the storage structures of the project partner
+                         {% if archive.value|length &gt; 67 %}
+        					{{ archive.value|slice:&quot;67:&quot; }}
+          			     {% else %}
+                		    _______________________
+           			     {% endif %} 
+                      {% elif &quot;External archive/repository/database/other infrastructure.&quot; in archive.value %}
+                         {% if archive.value|length &gt; 65 %}
+        					{{ archive.value|slice:&quot;65:&quot; }}
+          			     {% else %}
+                		    _______________________
+           			     {% endif %} 
+                      {% elif &quot;Cloud-Storage. Provider&quot; in archive.value %}
+                         {% if archive.value|length &gt; 24 %}
+        					{{ archive.value|slice:&quot;24:&quot; }} (cloud storage)
+          			     {% else %}
+                		    _______________________ (cloud storage)
+           			     {% endif %} 
+                       {% elif &quot;other storage&quot; in archive.value %}
+                         {% if archive.value|length &gt; 14 %}
+        					{{ archive.value|slice:&quot;14:&quot; }}
+          			     {% else %}
+                		    _______________________ (other storage)
+           			     {% endif %} 
+                      {% endif %}
+                      {% if not forloop.last %}and{% else %}.{% endif %}
+                  {% endfor %} 
+                {% endif %}
+            
+   
+         {% elif &quot;No, because already published&quot; in text.value %}
+            Since this data has already been published or is being kept, it does not need to be stored/kept separately after the project.
+         {% elif &quot;No, because&quot; in text.value %}
+           This data does not have to be stored/kept separately after the project, since
+            {% if text.value|length &gt; 12 %}
+        		{{ text.value|slice:&quot;12:&quot; }}.
+            {% else %}
+                 _______________________.
+            {% endif %}  
+         {% endif %}
+      {% endfor %}
+   {% endif %}
+ 
+
+{% endfor %}
+
+ 
+
+            &lt;/td&gt;
+        &lt;/tr&gt;
+&lt;! ---------------------Block 5 ab hier--------------------------------------------------------------------------- --!&gt;
+
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-fymr&quot; colspan=&quot;2&quot;&gt;&lt;strong&gt;5. Availability of Data&lt;/strong&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;tg-fymr&quot; colspan=&quot;2&quot;&gt;
+
+
+&lt;! -- Please specify the subject of the data category --!&gt;
+{% for dataset in datasets %}
+	 &lt;p&gt;&lt;b&gt;&lt;i&gt;
+     {{ dataset.value }}&lt;/b&gt;&lt;/i&gt;    {% get_values 'project/dataset/nature_of_data' set_index=dataset.set_index as texts %}
+    {% if texts %}
+    	(
+        {% for text in texts %}
+            {{ text.value }}
+            {% if not forloop.last %}/{% else %}{% endif %}
+        {% endfor %}
+        )&lt;br&gt;    
+    {% endif %}
+     
+ &lt;! -- Will data from this data category be published? --!&gt;
+	{% get_values 'project/dataset/sharing/yesno' set_index=dataset.set_index as texts %}
+       {% if texts %}
+        {% for text in texts %}
+			  {% if &quot;Yes, all or part of the data.&quot; in text.value %}
+        			Data will be published and made available.
+                    {% if text.value|length &gt; 102 %}
+        				{{ text.value|slice:&quot;102:&quot; }}
+           			{% else %}
+                		 _______________________ (details of data publication).
+            		{% endif %}  
+              {% elif &quot;No, because already published&quot; in text.value %}
+        			There are no plans to publish the data, as they have already been published.
+              {% elif &quot;No, the data may not be published&quot; in text.value %}
+        			A publication of the data is not possible, because they are not allowed to be published.      
+              {% elif &quot;No, because&quot; in text.value %}
+             	     Publication of the data is not planned, since
+                    {% if text.value|length &gt; 12 %}
+        				{{ text.value|slice:&quot;12:&quot; }}.
+           			{% else %}
+                		 _______________________.
+            		{% endif %}                      
+        
+            {% endif %}
+        {% endfor %}     	
+    {% endif %}
+
+ &lt;! -- When should the data or partial data of this data category be published? (optional) --!&gt;
+    {% check_condition 'dataset_publication' set_index=dataset.set_index as conditions %}
+    {% if conditions %}
+		{% get_values 'project/dataset/data_publication_date' set_index=dataset.set_index as texts %}
+    	{% if texts %}        
+        {% for text in texts %}
+        	{% if &quot;While the project is still running&quot; in text.value %}
+            	This is to be done during the project period.       
+        	{% elif &quot;At the end of the project&quot; in text.value %}
+            	Publication is planned for the end of the project.
+        	{% elif &quot;After an embargo period. Justification (in one complete sentence)&quot; in text.value %}
+            	The data will be published and made available after an embargo period
+                    {% if text.value|length &gt; 66 %}
+        				 ({{ text.value|slice:&quot;66:&quot; }}).
+           			{% else %}
+                		 (_______________________).
+            		{% endif %}   
+        	{% endif %}
+        {% endfor %}
+        {% endif %}
+    {% endif %}
+
+
+ &lt;! -- In welchem Repositorium sollen Daten dieser Datenkategorie publiziert werden? --!&gt;
+    {% check_condition 'dataset_publication' set_index=dataset.set_index as conditions %}
+    {% if conditions %}
+		{% get_values 'project/dataset/preservation/repository' set_index=dataset.set_index as texts %}
+    	{% if texts %}
+        	{% for text in texts %}
+        		The data is published and made available in the repository {{ text.value }}.
+        {% endfor %}
+        {% endif %}
+    {% endif %}
+
+ &lt;! -- Falls ja, unter welcher Lizenz sollen die Daten publiziert werden? (optional) --!&gt;
+    {% check_condition 'dataset_publication' set_index=dataset.set_index as conditions %}
+    {% if conditions %}
+        {% get_values 'project/dataset/sharing/conditions' set_index=dataset.set_index as texts %}
+        {% if texts %}
+        {% for text in texts %}
+            {% if &quot;Data: Creative&quot; in text.value %}
+                	The publication is made under a Creative Commons license
+                    {% if text.value|length &gt; 67 %}
+        				 ({{ text.value|slice:&quot;67:&quot; }}).
+           			{% else %}
+                		 (______________).
+            		{% endif %}                       
+            {% elif &quot;Data: Datenlizenz Deutschland - Version 2.0&quot; in text.value %}
+                    The publication is made under a Datenlizenz Deutschland - Version 2.0
+                    {% if text.value|length &gt; 71 %}
+        				 ({{ text.value|slice:&quot;71:&quot; }}).
+           			{% else %}
+                		 (______________).
+            		{% endif %} 
+            {% elif &quot;Software&quot; in text.value %}
+                 The publication is made under a {{ text.value|slice:&quot;10:&quot; }} (software licence).           
+            {% elif &quot;Other&quot; in text.value %}
+             	The publication is made under
+                    {% if text.value|length &gt; 6 %}
+        				 {{ text.value|slice:&quot;6:&quot; }} (licence).
+           			{% else %}
+                		 ______________ (licence).
+            		{% endif %}             
+            {% elif &quot;It has not yet been decided under which license the data will be published / shared.&quot; in text.value %}
+                {{ text.value}}
+			{% elif &quot;No licences will be assigned, because&quot; in text.value %}
+            		No licences will be assigned, because
+                    {% if text.value|length &gt; 38 %}
+        				 {{ text.value|slice:&quot;38:&quot; }}.
+           			{% else %}
+                		 ______________.
+            		{% endif %}            	
+            {% endif %}            
+        {% endfor %}
+        {% endif %}
+    {% endif %}
+    &lt;br&gt;&lt;br&gt;
+
+
+{% endfor %}
+
+            &lt;/td&gt;
+        &lt;/tr&gt;
+
+    &lt;/tbody&gt;
+&lt;/table&gt;</template>
+	</view>
+</rdmo>

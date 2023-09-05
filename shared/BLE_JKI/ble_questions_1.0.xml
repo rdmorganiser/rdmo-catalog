@@ -1,0 +1,2232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-06-27T13:40:27.327732+02:00">
+	<catalog dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>ble</key>
+		<dc:comment/>
+		<order>0</order>
+		<title lang="en">BLE-Questionnaire</title>
+		<help lang="en">This RDMO questionnaire developed at JKI covers all BLE-relevant questions and can be completed in German and English. It is suitable for creating the following data management plan views:&lt;br&gt;
+&lt;b&gt; &lt;font color=#088A4B&gt;
+&amp;#9733; BLE data management plan (Draft Phase)
+&lt;/b&gt;&lt;/font&gt;</help>
+		<title lang="de">BLE-Fragenkatalog</title>
+		<help lang="de">Dieser am JKI entwickelte RDMO-Fragebogen deckt alle BLE-relevanten Fragen ab und ist in den Sprachen Deutsch und Englisch ausfüllbar. Er eignet sich für die Erstellung folgender Datenmanagementplan-Ansichten:&lt;br&gt;
+&lt;b&gt; &lt;font color=#088A4B&gt;
+&amp;#9733; BLE Datenmanagementplan (Skizzenphase)
+&lt;/b&gt;&lt;/font&gt;</help>
+	</catalog>
+	<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>administrative</key>
+		<path>ble/administrative</path>
+		<dc:comment>Administrative Angaben</dc:comment>
+		<catalog dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble"/>
+		<order>0</order>
+		<title lang="en">General Project Information</title>
+		<title lang="de">Allgemeine Projektangaben</title>
+	</section>
+	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative/ble_general">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>ble_general</key>
+		<path>ble/administrative/ble_general</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
+		<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<title lang="en">Administrative Details</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Administrative Angaben</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative/ble_general/title_project">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>title_project</key>
+		<path>ble/administrative/ble_general/title_project</path>
+		<dc:comment>Titel des geplanten Forschungsprojekts</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question/title"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative/ble_general"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en">&lt;small&gt;
+(Project title written out)
+&lt;/small&gt;</help>
+		<text lang="en">Project Title</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Project Title</verbose_name>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">&lt;small&gt;
+(Ausgeschriebener Projekttitel)
+&lt;/small&gt;</help>
+		<text lang="de">Projekttitel</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Projekttitel</verbose_name>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative/ble_general/acronym">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>acronym</key>
+		<path>ble/administrative/ble_general/acronym</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/research_question/acronym"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative/ble_general"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<order>1</order>
+		<help lang="en"/>
+		<text lang="en">Project Acronym</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Project Acronym</verbose_name>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Projektakronym</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Prokektakronym</verbose_name>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative/ble_general/contact">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>contact</key>
+		<path>ble/administrative/ble_general/contact</path>
+		<dc:comment>Wer reicht die Skizze ein?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/contact_person/name"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative/ble_general"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">&lt;small&gt;
+(Given Name Last Name, Institution, City, Country)
+&lt;/small&gt;</help>
+		<text lang="en">Submitting Person</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Submitting Person</verbose_name>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">&lt;small&gt;
+(Vorname Name, Institution, Stadt, Land)
+&lt;/small&gt;</help>
+		<text lang="de">Skizzeneinreicher*in</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Skizzeneinreicher*in</verbose_name>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative/ble_general/name">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>name</key>
+		<path>ble/administrative/ble_general/name</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/name"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative/ble_general"/>
+		<is_collection>True</is_collection>
+		<is_optional>True</is_optional>
+		<order>3</order>
+		<help lang="en">&lt;/small&gt;
+(Given Name Last Name, Institution, City, Country)
+&lt;/small&gt;</help>
+		<text lang="en">Project Partner</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Project Partner</verbose_name>
+		<verbose_name_plural lang="en">Project Partners</verbose_name_plural>
+		<help lang="de">&lt;small&gt;
+(Vorname Name, Institution, Stadt, Land)
+&lt;/small&gt;</help>
+		<text lang="de">Projekt-/Verbundpartner</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Projekt-/Verbundpartner</verbose_name>
+		<verbose_name_plural lang="de">Projekt-/Verbundpartner</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative/ble_general/title_funder_programme">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>title_funder_programme</key>
+		<path>ble/administrative/ble_general/title_funder_programme</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/programme/title"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative/ble_general"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>4</order>
+		<help lang="en">&lt;small&gt;
+Example: &quot;Innovation Promotion Programme of the Federal Ministry of Food and Agriculture&quot;
+&lt;/small&gt;</help>
+		<text lang="en">Funding Programme</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Funding programme</verbose_name>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">&lt;small&gt;
+Beispiel: &quot;Programm zur Innovationsförderung des Bundesministeriums für Ernährung und Landwirtschaft&quot;
+&lt;/small&gt;</help>
+		<text lang="de">Förderprogramm</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Förderprogramm</verbose_name>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative/ble_general/announcement">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>announcement</key>
+		<path>ble/administrative/ble_general/announcement</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/funder/programme/announcement"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative/ble_general"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>5</order>
+		<help lang="en">&lt;small&gt;
+Example: &quot;Announcement on the promotion of innovations for the breeding of climate-adapted varieties and crops as part of the innovation promotion program&quot;
+&lt;/small&gt;</help>
+		<text lang="en">Announcement</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Announcement</verbose_name>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">&lt;small&gt;
+Beispiel: &quot;Bekanntmachung über die Förderung von Innovationen zur Züchtung von klimaangepassten Sorten und Kulturpflanzen im Rahmen des Programms zur Innovationsförderung&quot;
+&lt;/small&gt;</help>
+		<text lang="de">Bekanntmachung</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Bekanntmachung</verbose_name>
+		<verbose_name_plural lang="de">Bekanntmachungen</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/project-content">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>project-content</key>
+		<path>ble/project-content</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble"/>
+		<order>1</order>
+		<title lang="en">Project Content Information</title>
+		<title lang="de">Inhaltliche Angaben</title>
+	</section>
+	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/project-content/project-description">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>project-description</key>
+		<path>ble/project-content/project-description</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/project-content"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<title lang="en">Project Description</title>
+		<help lang="en"/>
+		<verbose_name lang="en">Project Description</verbose_name>
+		<verbose_name_plural lang="en">Project Description</verbose_name_plural>
+		<title lang="de">Projekt-Beschreibung</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Projekt-Beschreibung</verbose_name>
+		<verbose_name_plural lang="de">Projekt-Beschreibung</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/project-content/project-description/research_question">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>research_question</key>
+		<path>ble/project-content/project-description/research_question</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/project-content/project-description"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en">&lt;small&gt;
+The focus should be on the framework in which research data are collected or (re-)used.
+
+Example: &quot;In this project, species diversity and population dynamics of winged aphids will be assessed and analyzed using quantitative methods at three sites.&quot;
+&lt;/small&gt;</help>
+		<text lang="en">Briefly describe the research project</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Describe in one sentence the research project</verbose_name>
+		<verbose_name_plural lang="en">Describe in one sentence the research project</verbose_name_plural>
+		<help lang="de">&lt;small&gt;
+Der Fokus sollte dabei auf dem Rahmen, in welchem Forschungsdaten erzeugt oder genutzt werden, liegen.
+
+Beispiel: &quot;In diesem Projekt werden Artenspektrum und Populationsdynamiken geflügelter Blattläuse mittels quantitativer Methoden an drei Standorten erfasst und analysiert.&quot;
+&lt;/small&gt;</help>
+		<text lang="de">Beschreiben Sie kurz und knapp das Forschungsvorhaben</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Beschreiben Sie in einem Satz das Forschungsvorhaben</verbose_name>
+		<verbose_name_plural lang="de">Beschreiben Sie in einem Satz das Forschungsvorhaben</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/project-content/project-description/keywords">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>keywords</key>
+		<path>ble/project-content/project-description/keywords</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question/keywords"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/project-content/project-description"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">&lt;small&gt;
+Keywords that can be used to paraphrase the project, e.g., epidemiology, resistance, wheat, barley
+&lt;/small&gt;</help>
+		<text lang="en">Keywords</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">keyword</verbose_name>
+		<verbose_name_plural lang="en">keywords</verbose_name_plural>
+		<help lang="de">&lt;small&gt;
+Schlagworte mit denen das Projekt umschrieben werden kann, z. B.  Epidemiologie, Resistenz, Weizen, Gerste
+&lt;/small&gt;</help>
+		<text lang="de">Schlagworte</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Schlagwort</verbose_name>
+		<verbose_name_plural lang="de">Schlagwörter</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/project-content/project-description/reuse_scenario">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>reuse_scenario</key>
+		<path>ble/project-content/project-description/reuse_scenario</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reuse_scenario"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/project-content/project-description"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<order>2</order>
+		<help lang="en">&lt;small&gt;
+Please formulate full sentences.
+&lt;/small&gt;</help>
+		<text lang="en">For which individuals, groups, or institutions and why might the data from this project be of interest (for reuse)?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">&lt;small&gt;
+Bitte formulieren Sie ganze Sätze.
+&lt;/small&gt;</help>
+		<text lang="de">Für welche Personen, Gruppen oder Institutionen und warum könnten die Daten aus diesem Projekt (für die Nachnutzung) von Interesse sein?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/content-classification">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>content-classification</key>
+		<path>ble/content-classification</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble"/>
+		<order>2</order>
+		<title lang="en">Research Data Management in the Project</title>
+		<title lang="de">Forschungdatenmanagement im Projekt</title>
+	</section>
+	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/content-classification/rdm_responsibility">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>rdm_responsibility</key>
+		<path>ble/content-classification/rdm_responsibility</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/content-classification"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<title lang="en">Research Data Management</title>
+		<help lang="en"/>
+		<verbose_name lang="en">Person</verbose_name>
+		<verbose_name_plural lang="en">Persons</verbose_name_plural>
+		<title lang="de">Kosten/Aufwände</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Kosten/Aufwände</verbose_name>
+		<verbose_name_plural lang="de">Personen</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/content-classification/rdm_responsibility/special_costs">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>special_costs</key>
+		<path>ble/content-classification/rdm_responsibility/special_costs</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/costs/rdm/special_costs"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/content-classification/rdm_responsibility"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en"/>
+		<text lang="en">Does the project require any special personnel or material costs for data management?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Entstehen im Rahmen des Projekts ein besonderer Personalaufwand oder Sachkosten für das Datenmanagement?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/rdm_special_costs"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/content-classification/rdm_responsibility/rdm_cost_level">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>rdm_cost_level</key>
+		<path>ble/content-classification/rdm_responsibility/rdm_cost_level</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/costs/rdm/rdm_cost_level"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/content-classification/rdm_responsibility"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">Example: &quot;This project will incur costs of approximately 500€ for the storage of the research data.&quot;</help>
+		<text lang="en">Please describe in complete sentences why and in what amount</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Beispiel: &quot;Im Rahmen dieses Projektes entstehen Kosten in Höhe von ca. 500€ für die Aufbewahrung der Forschungsdaten.&quot;</help>
+		<text lang="de">Bitte beschreiben Sie in vollständigen Sätzen wieso und in welcher Höhe</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.julius-kuehn.de/terms/conditions/rdm_cost_yes_no"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/content-classification/rdm_responsibility/rdm_costs_payment">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>rdm_costs_payment</key>
+		<path>ble/content-classification/rdm_responsibility/rdm_costs_payment</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/costs/rdm/rdm_costs_payment"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/content-classification/rdm_responsibility"/>
+		<is_collection>True</is_collection>
+		<is_optional>True</is_optional>
+		<order>2</order>
+		<help lang="en">Examples include data publication, data archiving, hardware, training costs, and the like.</help>
+		<text lang="en">By whom are the costs/efforts for research data management paid?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Beispiele hierfür sind Datenpublikation, Datenarchivierung, Hardware, Weiterbildungskosten, o.ä.</help>
+		<text lang="de">Von wem werden die Kosten/Aufwände für das Forschungsdatenmanagement getragen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>12</width>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/rdm_costs_payment"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://rdmo.julius-kuehn.de/terms/conditions/rdm_cost_yes_no"/>
+		</conditions>
+	</question>
+	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/content-classification/contact_person">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>contact_person</key>
+		<path>ble/content-classification/contact_person</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/coordination/contact-person"/>
+		<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/content-classification"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>1</order>
+		<title lang="en">Contact / Responsible Person</title>
+		<help lang="en">Clearly defined contact persons and responsibilities within the project facilitate the daily research routine and the management of the data later on. If you have not already done so, please define them before the start of the project.
+
+&lt;font color=&quot;red&quot;&gt;When creating a new person, you will be asked for a &quot;Title&quot;. Enter a meaningful title for the person, such as &quot;Data Steward&quot;, &quot;FDM Manager&quot;, &quot;Project Manager&quot; or similar.&lt;/font&gt;</help>
+		<verbose_name lang="en">Person</verbose_name>
+		<verbose_name_plural lang="en">Persons</verbose_name_plural>
+		<title lang="de">Ansprechpartner*innen / Verantwortliche Personen</title>
+		<help lang="de">Klar definierte Ansprechpartner*innen und Verantwortlichkeiten innerhalb des Projekts erleichtern später den Forschungsalltag und das Management der Daten. Falls noch nicht bereits geschehen, legen Sie diese bitte vor Projektbeginn fest.
+
+&lt;font color=&quot;red&quot;&gt;Beim Anlegen einer neuen Person werden Sie nach einem &quot;Titel&quot; gefragt. Geben Sie dort der Person einen aussagekräftigen Titel wie zum Beispiel &quot;Data Steward&quot;, &quot;FDM-Verantwortliche*r&quot;, &quot;Projektleitung&quot; oder ähnlich an.&lt;/font&gt;</help>
+		<verbose_name lang="de">Person</verbose_name>
+		<verbose_name_plural lang="de">Einträge</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/content-classification/contact_person/rdm_contact_name">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>rdm_contact_name</key>
+		<path>ble/content-classification/contact_person/rdm_contact_name</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/rdm/contact_person/name"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/content-classification/contact_person"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en">&lt;font color=&quot;red&quot;&gt;(First name, Last name)&lt;/font&gt;</help>
+		<text lang="en">Name</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">&lt;font color=&quot;red&quot;&gt;(Vorname Name)&lt;/font&gt;</help>
+		<text lang="de">Name</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/content-classification/contact_person/rdm_responsibility_mail">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>rdm_responsibility_mail</key>
+		<path>ble/content-classification/contact_person/rdm_responsibility_mail</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/rdm/contact_person/mail"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/content-classification/contact_person"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">(max.mustermann@julius-kuehn.de)</help>
+		<text lang="en">E-Mail</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">&lt;font color=&quot;red&quot;&gt;(max.mustermann@julius-kuehn.de)&lt;/font&gt;</help>
+		<text lang="de">E-Mail</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/content-classification/contact_person/rdm_responsibility_topic">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>rdm_responsibility_topic</key>
+		<path>ble/content-classification/contact_person/rdm_responsibility_topic</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/rdm/contact_person/rdm_topics"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/content-classification/contact_person"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">&lt;font color=&quot;red&quot;&gt;
+Please check all that apply.
+&lt;/font&gt;</help>
+		<text lang="en">Topics</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">&lt;font color=&quot;red&quot;&gt;
+Alles zutreffende bitte ankreuzen.
+&lt;/font&gt;</help>
+		<text lang="de">Themen</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/rdm_topics"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>data</key>
+		<path>ble/data</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble"/>
+		<order>3</order>
+		<title lang="en">Research Data in the Project</title>
+		<title lang="de">Daten-Erhebung, -Abruf und Dokumentation</title>
+	</section>
+	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data_description">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>data_description</key>
+		<path>ble/data/data_description</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>0</order>
+		<title lang="en">Data Content Description</title>
+		<help lang="en">The following questions deal with the content of the generated or reused research data in the project and describe their management.
+
+If the research data in this project differ, for example, in terms of their context, collection, source, storage, documentation or subsequent use, please use different &quot;data categories&quot;. Assign a meaningful name for the respective &quot;data category&quot; with reference to the research question, e.g. field data, experimental data, population data, resistance data, yield data, mapping data etc. (the assigned name will then appear in a separate tab). Then classify the each data category and describe its management.</help>
+		<verbose_name lang="en">Data Category</verbose_name>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Inhaltliche Beschreibung</title>
+		<help lang="de">Die folgenden Fragen beschäftigen sich mit der inhaltlichen Einordnung und der Beschreibung des Managements der erzeugten oder nachgenutzten Forschungsdaten im Projekt.
+
+Unterscheiden sich die Forschungsdaten in diesem Projekt zum Beispiel in Bezug auf ihre thematische Einordnung, Erhebung, Quelle, Ablage, Dokumentation oder Nachnutzung, verwenden Sie hierfür bitte unterschiedliche &quot;Datenkategorien&quot;. Vergeben Sie einen aussagekräftigen Namen für die jeweilige &quot;Datenkategorie&quot; mit Bezug zur Forschungsfrage, z.B. Felddaten, Versuchsdaten, Populationsdaten, Resistenzdaten, Ertragsdaten, Kartierungsdaten etc. (der vergebene Name erscheint dann in einem seperaten Reiter). Ordnen Sie anschließend jede Datenkategorie inhaltlich ein und beschreiben Sie deren Management.</help>
+		<verbose_name lang="de">Datenkategorie</verbose_name>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data_description/nature_of_data">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>nature_of_data</key>
+		<path>ble/data/data_description/nature_of_data</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/dataset/nature_of_data"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data_description"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en">&lt;small&gt;
+&lt;font color=&quot;red&quot;&gt;
+Please check all that apply.
+&lt;/font&gt;
+&lt;/small&gt;</help>
+		<text lang="en">Please specify the subject of the data category</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Subject Type</verbose_name>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">&lt;small&gt;
+&lt;font color=&quot;red&quot;&gt;
+Alles zutreffende bitte ankreuzen.
+&lt;/font&gt;
+&lt;/small&gt;</help>
+		<text lang="de">Bitte geben Sie die Art der Datenkategorie an</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Datenkategorie</verbose_name>
+		<verbose_name_plural lang="de">Datenkategorien</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/nature_of_data_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data_description/technical_structure">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>technical_structure</key>
+		<path>ble/data/data_description/technical_structure</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/dataset/technical_structure"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data_description"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">&lt;small&gt;
+&lt;font color=&quot;red&quot;&gt;
+Please check all that apply.
+&lt;/font&gt;
+&lt;/small&gt;</help>
+		<text lang="en">Please specify technical structure / Organisation of the data from this data category</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">&lt;small&gt;
+&lt;font color=&quot;red&quot;&gt;
+Alles zutreffende bitte ankreuzen.
+&lt;/font&gt;
+&lt;/small&gt;</help>
+		<text lang="de">Bitte geben Sie die technische Struktur / Organisation der Daten aus dieser Datenkategorie an</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">tech. Struktur</verbose_name>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/technical_data_format"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data_description/sensitive_data">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>sensitive_data</key>
+		<path>ble/data/data_description/sensitive_data</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/other/yesno"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data_description"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">&lt;small&gt;
+&lt;font color=&quot;red&quot;&gt;
+e.g. data personal data or company secrets. It should be noted that a reference to a person does not always have to be obvious. For example, a geo-reference together with a legitimate interest may be sufficient to query the landowner in the land registry.
+&lt;/font&gt;
+&lt;/small&gt;</help>
+		<text lang="en">Is the data in this data category sensitive data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">&lt;small&gt;
+&lt;font color=&quot;red&quot;&gt;
+z.B. Daten mit Personenbezug oder Betriebsgeheimnisse. Es gilt zu beachten, dass ein Personenbezug nicht immer offensichtlich sein muss. So kann eine Georeferenz zusammen mit einem berechtigtem Interesse schon ausreichen, um den Landbesitzer im Grundbuchamt zu erfragen.
+&lt;/font&gt;
+&lt;/small&gt;</help>
+		<text lang="de">Handelt es sich bei den Daten dieser Datenkategorie um sensible Daten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/sensitive_data_yes_no_option"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data-collection">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>data-collection</key>
+		<path>ble/data/data-collection</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>1</order>
+		<title lang="en">Data Collection</title>
+		<help lang="en"/>
+		<verbose_name lang="en">Data Collection</verbose_name>
+		<verbose_name_plural lang="en">Data Collection</verbose_name_plural>
+		<title lang="de">Datenerhebung / Datenabruf</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datenkategorie</verbose_name>
+		<verbose_name_plural lang="de">Datenkategorien</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data-collection/source">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>source</key>
+		<path>ble/data/data-collection/source</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/dataset/data_sources"/>
+		<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data-collection"/>
+		<is_collection>True</is_collection>
+		<order>2</order>
+		<title lang="en">Please indicate the source(s) of the (raw) data.</title>
+		<help lang="en">Please distinguish between internal (at own institution) and external data collection or data sources (e.g. DOI, URL, repository or similar) in case of subsequent use.
+
+
+&lt;small&gt;
+Examples of internal and external locations/sources of data collection:
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;Internal&lt;/th&gt;
+&lt;th&gt;External&lt;/th&gt; 
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Experimental Field, Dahnsdorf, Germany&lt;/td&gt;
+&lt;td&gt;Exampleinstitut, Neustadt, Germany&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Institut für Strategien und Folgenabschätzung, Kleinmachnow, Deutschland &amp;nbsp &amp;nbsp &amp;nbsp &lt;/td&gt;
+&lt;td&gt;BonaRes Repository (www.Bonares.de)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;http://drosomon.julius-kuehn.de&lt;/td&gt;
+&lt;td&gt;DOI: 10.5073/20211013-105447&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Webservice -&gt; https://synops.julius-kuehn.de/emra/xy/{lat}/{lon}/{date1}/{date2}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/small&gt;</help>
+		<verbose_name lang="en">Source</verbose_name>
+		<verbose_name_plural lang="en">Sources</verbose_name_plural>
+		<title lang="de">Bitte geben Sie die Quelle(n) der (Roh-)Daten an.</title>
+		<help lang="de">Dabei unterscheiden Sie bitte zwischen interner (eigene Institution) und externer Datenerhebung bzw. Datenquellen (z.B. DOI, URL, Repositorium o.ä.) im Falle einer Nachnutzung.
+
+&lt;small&gt;
+Beispiele für interne und externe Orte/Quellen der Datenerhebung:
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;Intern&lt;/th&gt;
+&lt;th&gt;Extern&lt;/th&gt; 
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Versuchsflächen, Dahnsdorf, Deutschland&lt;/td&gt;
+&lt;td&gt;Musterinstitut, Neustadt, Deutschland&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Institut für Strategien und Folgenabschätzung, Kleinmachnow, Deutschland &amp;nbsp &amp;nbsp &amp;nbsp &lt;/td&gt;
+&lt;td&gt;BonaRes Repository (www.Bonares.de)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;http://drosomon.julius-kuehn.de&lt;/td&gt;
+&lt;td&gt;DOI: 10.5073/20211013-105447&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Webservice -&gt; https://synops.julius-kuehn.de/emra/xy/{lat}/{lon}/{date1}/{date2}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/small&gt;</help>
+		<verbose_name lang="de">Quellenangabe</verbose_name>
+		<verbose_name_plural lang="de">Quellenangaben</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data-collection/source/intern_extern">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>intern_extern</key>
+		<path>ble/data/data-collection/source/intern_extern</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/dataset/data_sources/internal_external"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data-collection/source"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en"/>
+		<text lang="en">Internal or external data collection/source?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Internal or external data collection/source</verbose_name>
+		<verbose_name_plural lang="en">Internal or external data collection/sources</verbose_name_plural>
+		<help lang="de"/>
+		<text lang="de">Interne oder externe Datenerhebung/Datenquelle?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Interne oder externe Datenerhebung/Quelle</verbose_name>
+		<verbose_name_plural lang="de">Interne oder externe Datenerhebungen/Quellen</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/internal_external_data_sources"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data-collection/source/data_origin">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>data_origin</key>
+		<path>ble/data/data-collection/source/data_origin</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/dataset/data_sources/origin"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data-collection/source"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en"/>
+		<text lang="en">Location / Source</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Location/Source</verbose_name>
+		<verbose_name_plural lang="en">Locations/Sources</verbose_name_plural>
+		<help lang="de"/>
+		<text lang="de">Ort / Quelle</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Ort/Quelle</verbose_name>
+		<verbose_name_plural lang="de">Orte/Quellen</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data-collection/source/reuse_rules">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>reuse_rules</key>
+		<path>ble/data/data-collection/source/reuse_rules</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data-collection/source"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<order>4</order>
+		<help lang="en"/>
+		<text lang="en">If known, specify the license of re-used data (e.g. CC-BY-ND)</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Falls bekannt, geben Sie die Lizenz von nachgenutzten Daten an (z.B. CC-BY-ND)</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data-collection/origin">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>origin</key>
+		<path>ble/data/data-collection/origin</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data-collection"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en"/>
+		<text lang="en">The (raw) data of this data category used for the project...</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Die (Roh-)Daten dieser Datenkategorie werden im Rahmen des Projekts...</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Rohdaten</verbose_name>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data-collection/creation_methods">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>creation_methods</key>
+		<path>ble/data/data-collection/creation_methods</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creation_methods"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data-collection"/>
+		<is_collection>True</is_collection>
+		<is_optional>True</is_optional>
+		<order>5</order>
+		<help lang="en"/>
+		<text lang="en">The following tools, software, technologies, or procedures are needed to collect or retrieve data from this data category?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">tool, software, technology or process</verbose_name>
+		<verbose_name_plural lang="en">tools, software, technologies or processes</verbose_name_plural>
+		<help lang="de"/>
+		<text lang="de">Für die Datenerhebung bzw. zum Abrufen der Daten aus dieser Datenkategorie werden folgende Instrumente, Software, Technologien oder Verfahren benötigt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Instrument, Software, Technologie oder Verfahren</verbose_name>
+		<verbose_name_plural lang="de">Instrumente, Software, Technologien oder Verfahren</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data-collection/data_sources_raw">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>data_sources_raw</key>
+		<path>ble/data/data-collection/data_sources_raw</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/format"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data-collection"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>6</order>
+		<help lang="en">Enter here the actual file extensions (without dot).
+
+&lt;font color=#808080&gt;Examples are &quot;csv&quot;, &quot;xlsx&quot;, &quot;txt&quot;, &quot;fasta&quot;, &quot;tiff&quot;, &quot;xml&quot;, &quot;geotiff&quot;, &quot;cdf&quot;, &quot;nc&quot;, &quot;shp&quot;, &quot;gpkg&quot;, and many more.&lt;/font&gt;</help>
+		<text lang="en">(Raw) Data of this data category are available in the following file formats:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">File Extension</verbose_name>
+		<verbose_name_plural lang="en">File Extensions</verbose_name_plural>
+		<help lang="de">&lt;small&gt;
+Geben Sie hier die tatsächliche Dateiendungen (ohne Punkt) an.
+
+&lt;font color=#808080&gt;Beispiele sind hierfür &quot;csv&quot;, &quot;xlsx&quot;, &quot;txt&quot;, &quot;fasta&quot;, &quot;tiff&quot;, &quot;xml&quot;, &quot;geotiff&quot;, &quot;cdf&quot;, &quot;nc&quot;, &quot;shp&quot;, &quot;gpkg&quot;, u.v.m.&lt;/font&gt;
+&lt;/small&gt;</help>
+		<text lang="de">(Roh-)Daten dieser Datenkategorie liegen in folgenden Dateiformaten vor:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Dateiendung</verbose_name>
+		<verbose_name_plural lang="de">Dateiendungen</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>autocomplete</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>12</width>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/ending"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data-collection/volume">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>volume</key>
+		<path>ble/data/data-collection/volume</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/size/volume"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/data-collection"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>7</order>
+		<help lang="en">&lt;small&gt;
+Estimate generously. Also consider any backup files, copies, etc. &lt;font color=&quot;red&quot;&gt;Round to an integer if appropriate. For less than 1 GB, use comma as decimal separator. Do not use units ( values are in GB).&lt;/font&gt;
+
+
+1TB = 1000 GB
+
+&lt;/small&gt;</help>
+		<text lang="en">The expected data volume in [GB] in this data category is approximately...</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Expected Data Volume</verbose_name>
+		<verbose_name_plural lang="en">Expected Data Volume</verbose_name_plural>
+		<help lang="de">&lt;small&gt;
+Schätzen Sie großzügig. Bedenken Sie ebenfalls eventuelle Backupdateien, Kopien, etc. &lt;font color=&quot;red&quot;&gt;Runden Sie, wenn sinnvoll auf eine Ganzzahl. Bei weniger als 1 GB nutzen Sie Komma als Dezimaltrennzeichen. Verwenden Sie keine Einheiten (Angaben sind in GB).&lt;/font&gt;
+
+
+1TB = 1000 GB
+
+&lt;/small&gt;</help>
+		<text lang="de">Das erwartete Datenvolumen in [GB] in dieser Datenkategorie beträgt...</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Erwartete Datenvolumen</verbose_name>
+		<verbose_name_plural lang="de">Erwartete Datenvolumen</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>integer</value_type>
+		<maximum>9999999.0</maximum>
+		<minimum>0.0</minimum>
+		<step/>
+		<unit>GB</unit>
+		<width>8</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/documentation">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>documentation</key>
+		<path>ble/data/documentation</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>3</order>
+		<title lang="en">Comprehensibility and documentation</title>
+		<help lang="en"/>
+		<verbose_name lang="en">Data Collection</verbose_name>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Nachvollziehbarkeit und Dokumentation</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datenkategorie</verbose_name>
+		<verbose_name_plural lang="de">Datenkategorien</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/documentation/data_organisation">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>data_organisation</key>
+		<path>ble/data/documentation/data_organisation</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage/naming_policy"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/documentation"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en">&lt;small&gt;
+&lt;font color=&quot;red&quot;&gt;
+Please check all that apply.
+&lt;/font&gt;
+&lt;/small&gt;</help>
+		<text lang="en">How is the data files of this category of data organized?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Siehe auch &lt;a href=&quot;https://www.cms.hu-berlin.de/de/dl/dataman/arbeiten/sichern/dateistruktur/dateien-strukturieren/&quot; target=&quot;_blank&quot;&gt;HU Berlin: Empfehlungen zur Verzeichnisstruktur und Dateibenennung&lt;/a&gt;
+&lt;br&gt;
+&lt;small&gt;
+&lt;font color=&quot;red&quot;&gt;
+Alles zutreffende bitte ankreuzen.
+&lt;/font&gt;
+&lt;/small&gt;</help>
+		<text lang="de">Wie werden die Datendateien dieser Datenkategorie organisiert/abgelegt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Datenbenennung</verbose_name>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/data_organisation"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/documentation/data_documentation">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>data_documentation</key>
+		<path>ble/data/documentation/data_documentation</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/standards"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/documentation"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">&lt;small&gt;
+Well-documented data provided with metadata is easier to find, traceable, reusable and reproducible. Metadata is structured data that contains information about other data (&quot;data about data&quot;).
+
+For example, if you use README files or additional spreadsheets to describe the data or files, describe this under the item &quot; A custom description system is used&quot;. A comprehensive description contains the following points:
+
+- Background information (project, date, description)
+- Details of the experiment (description, method)
+- Information about the responsible persons
+- Information about variables (e.g.: units or how exactly they were measured, etc.)
+- Information about the processing of the data
+- Information about placeholders in tables (e.g.: NA)</help>
+		<text lang="en">How are the data of this data category described / documented?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">&lt;small&gt;
+Gut dokumentierte bzw. mit Metadaten versehene Daten sind besser auffindbar, nachvollziehbar, nachnutzbar und reproduzierbar. Metadaten sind strukturierte Daten, die Informationen über andere Daten beinhalten („Daten über Daten“).
+
+Nutzen Sie zum Beispiel README-Dateien oder zusätzliche Tabellenblätter zur Beschreibung der Daten bzw. Dateien, beschreiben Sie dies unter dem Punkt &quot;Es wird ein eigenes System zur Beschreibung der Kontextinformation und Dokumentation genutzt&quot;. Eine umfangreiche Beschreibung enthält folgende Punkte:
+
+- Angaben zum Hintergrund (Projekt, Datum, Beschreibung)
+- Angaben zum Versuch (Beschreibung, Methode)
+- Angaben zu den verantwortlichen Personen
+- Angaben zu den Variablen (z.B.: Einheiten oder wie diese genau gemessen wurden etc.)
+- Angaben zur Prozessierung der Daten
+- Angaben zu Platzhaltern in Tabellen (z.B.: NA)
+
+Beispiele für Metadatenstandarts sind: 
+
+&lt;a href=&quot;https://www.ogc.org/standards/requests/151&quot; target=&quot;_blank&quot;&gt;OGC (Open Geospatial Consortium) ISO 19115&lt;/a&gt;  „Geographic Information – Metadata“
+
+&lt;a href=&quot;https://www.miappe.org/&quot; target=&quot;_blank&quot;&gt;MIAPPE&lt;/a&gt; (Minimum Information About Plant Phenotyping Experiments)
+
+&lt;a href=&quot;https://ist.blogs.inrae.fr/wdi/&quot; target=&quot;_blank&quot;&gt;Wheat Data Interoperability Guidelines&lt;/a&gt;
+
+&lt;/small&gt;</help>
+		<text lang="de">Wie werden die Daten dieser Datenkategorie beschrieben / dokumentiert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Datendokumentation</verbose_name>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/metadata_standards"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>storage</key>
+		<path>ble/storage</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble"/>
+		<order>4</order>
+		<title lang="en">Storage</title>
+		<title lang="de">Speicherung</title>
+	</section>
+	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_location">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>storage_location</key>
+		<path>ble/storage/storage_location</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>0</order>
+		<title lang="en">Storage location</title>
+		<help lang="en"/>
+		<verbose_name lang="en">Data Collection</verbose_name>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Speicherort</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datenkategorie</verbose_name>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_location/type">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>type</key>
+		<path>ble/storage/storage_location/type</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/dataset/storage/loacation"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_location"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en">This refers to storage for active use. This is not the same as archiving. A separate question follows on this.
+
+&lt;font color=&quot;red&quot;&gt;
+Please check all that apply.
+&lt;/font&gt;</help>
+		<text lang="en">Where is the collected /retrieved data from this data category stored?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Hiermit ist die Speicherung für die aktive Nutzung während der Projektlaufzeit gemeint. Dies ist nicht gleichzusetzen mit der Langzeitspeicherung/Archivierung nach Projektende. Hierzu folgt eine gesonderte Frage.
+
+&lt;font color=&quot;red&quot;&gt;
+Alles zutreffende bitte ankreuzen.
+&lt;/font&gt;</help>
+		<text lang="de">Wo sollen die erhobenen oder nachgenutzten Daten dieser Datenkategorie gespeichert werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/storage_location_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_location/tools">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>tools</key>
+		<path>ble/storage/storage_location/tools</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/collaboration_tools"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_location"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en"/>
+		<text lang="en">Does the data need to be made available for collaborative working?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Müssen die Daten zum kollaborativen Arbeiten bereitgestellt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/collaboration"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_period">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>storage_period</key>
+		<path>ble/storage/storage_period</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>1</order>
+		<title lang="en">Period</title>
+		<help lang="en">In what period of time will the data be collected and used or must the storage space described above be available for the data?</help>
+		<verbose_name lang="en">Data Collection</verbose_name>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Zeitraum</title>
+		<help lang="de">In welchem Zeitraum werden die Daten erhoben und genutzt bzw. muss der oben beschriebene Speicherplatz für die Daten bereitstehen?</help>
+		<verbose_name lang="de">Datenkategorie</verbose_name>
+		<verbose_name_plural lang="de">Datenkategorien</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_period/start_time_data_collection">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>start_time_data_collection</key>
+		<path>ble/storage/storage_period/start_time_data_collection</path>
+		<dc:comment>In welchem Zeitraum werden die Daten erhoben und genutzt bzw. muss der oben beschriebene Speicherplatz für die Daten bereitstehen?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_collection_start"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_period"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en"/>
+		<text lang="en">estimated start date</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">geschätztes Startdatum</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>date</widget_type>
+		<value_type>datetime</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_period/end_time_data_collection">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>end_time_data_collection</key>
+		<path>ble/storage/storage_period/end_time_data_collection</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_collection_end"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_period"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<order>2</order>
+		<help lang="en"/>
+		<text lang="en">estimated end date</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">geschätztes Enddatum</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>date</widget_type>
+		<value_type>datetime</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/backups">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>backups</key>
+		<path>ble/storage/backups</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>1</order>
+		<title lang="en">Backup</title>
+		<help lang="en"/>
+		<verbose_name lang="en">Data Collection</verbose_name>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Backup</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datenkategorie</verbose_name>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/backups/backups">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>backups</key>
+		<path>ble/storage/backups/backups</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backups"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/backups"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en"/>
+		<text lang="en">Which backup strategy is used for the actively used data of this data category?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Welche Backup-Strategie wird/soll für die aktiv genutzten Daten dieser Datenkategorie genutzt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/backup_strategy"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/backups/central-backup-where">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>central-backup-where</key>
+		<path>ble/storage/backups/central-backup-where</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/dataset/data_security/central-backup-where"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/backups"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en"/>
+		<text lang="en">Do you use a centrally managed backup for this?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Nutzen Sie hierzu ein zentral verwaltetes Backup?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/backup_central"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/archiving">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>archiving</key>
+		<path>ble/storage/archiving</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>2</order>
+		<title lang="en">Data storage</title>
+		<help lang="en"/>
+		<verbose_name lang="en">Data Collection</verbose_name>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Datenaufbewahrung</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datenkategorie</verbose_name>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/archiving/archiving_percentage">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>archiving_percentage</key>
+		<path>ble/storage/archiving/archiving_percentage</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/yesno"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/archiving"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en">&lt;p&gt;In addition to specific legal requirements,  &lt;a href=&quot;http://intranet.julius-kuehn.de/dienstliche-informationen-uebersicht/geschaeftsordnung&quot;&gt;the rules of good scientific practice at the JKI&lt;/a&gt; and the &lt;a href=&quot;https://www.julius-kuehn.de/sicherung-der-qualitaet-von-forschungsergebnissen/&quot;&gt;JKI-Data Policy&lt;/a&gt; apply. Accordingly, primary data as the basis for publications and the information necessary for the understanding of the research about used or emerging research data, method, evaluation and analysis steps must be stored on durable and secured carriers for 10 years where they originated (documentation security).&lt;/p&gt;</help>
+		<text lang="en">Do the data from this data category have to be stored and kept after the end of the project?</text>
+		<default_text lang="en">100%</default_text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">&lt;small&gt;Neben spezifischen gesetzlichen Anforderungen gelten die Regeln der &lt;a href=&quot;http://intranet.julius-kuehn.de/dienstliche-informationen-uebersicht/geschaeftsordnung&quot;&gt;Guten wissenschaftlichen Praxis am JKI&lt;/a&gt; und die &lt;a href=&quot;https://www.julius-kuehn.de/sicherung-der-qualitaet-von-forschungsergebnissen/&quot;&gt;JKI-Data Policy&lt;/a&gt;. Demzufolge m&amp;uuml;ssen Prim&amp;auml;rdaten als Grundlagen f&amp;uuml;r Ver&amp;ouml;ffentlichungen und die f&amp;uuml;r das Verst&amp;auml;ndnis der Forschung notwendigen Informationen &amp;uuml;ber verwendete oder entstehende Forschungsdaten, Methoden-, Auswertungs- und Analyseschritte auf haltbaren und gesicherten Tr&amp;auml;gern dort, wo sie entstanden sind, f&amp;uuml;r 10 Jahre aufbewahrt werden (Dokumentationssicherheit).&lt;/small&gt;</help>
+		<text lang="de">Müssen die Daten aus dieser Datenkategorie nach Projektende aufbewahrt und vorgehalten werden?</text>
+		<default_text lang="de">100%</default_text>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/archiviving_yes_no"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/archiving/duration">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>duration</key>
+		<path>ble/storage/archiving/duration</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/duration"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/archiving"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<order>1</order>
+		<help lang="en"/>
+		<text lang="en">If yes, for how long must the data be retained?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Falls ja, für wie lange müssen die Daten aufbewahrt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/archiving_duration"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://rdmo.julius-kuehn.de/terms/conditions/dataset_preservation"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/archiving/repository_archive">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>repository_archive</key>
+		<path>ble/storage/archiving/repository_archive</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/preservation/archive"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/archiving"/>
+		<is_collection>True</is_collection>
+		<is_optional>True</is_optional>
+		<order>2</order>
+		<help lang="en"/>
+		<text lang="en">If yes, where should the data for this category of data be kept?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Falls ja, wo sollen die Daten dieser Datenkategorie aufbewahrt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/archive_location_options"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://rdmo.julius-kuehn.de/terms/conditions/dataset_preservation"/>
+		</conditions>
+	</question>
+	<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data_processing">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>data_processing</key>
+		<path>ble/data_processing</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble"/>
+		<order>5</order>
+		<title lang="en">Data processing</title>
+		<title lang="de">Datenverarbeitung</title>
+	</section>
+	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data_processing/analyse">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>analyse</key>
+		<path>ble/data_processing/analyse</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data_processing"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>0</order>
+		<title lang="en">Analysis</title>
+		<help lang="en"/>
+		<verbose_name lang="en">Data Collection</verbose_name>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Analyse</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datenkategorie</verbose_name>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data_processing/analyse/measures">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>measures</key>
+		<path>ble/data_processing/analyse/measures</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/quality_assurance"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data_processing/analyse"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en">&lt;small&gt;
+This is not about reviewing the experimental design. It is assumed that this is done according to all rules of science, so that the experiment is valid, reliable and reproducible and achieves the necessary statistical significance and sensitivity.
+&lt;/small&gt;</help>
+		<text lang="en">What measures are taken to ensure the quality of the data collected in the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">&lt;small&gt;
+Hier geht es nicht um die Überprüfung des Versuchsaufbau. Es wird davon ausgegangen, dass diese nach allen Regeln der Wissenschaft geschieht, sodass der Versuch valide, zuverlässig und reproduzierbar ist sowie die nötige statistische Aussagekraft und Sensitivität erreicht.
+&lt;/small&gt;</help>
+		<text lang="de">Welche Maßnahmen werden zur Qualitätssicherung der im Projekt erhobenen Daten ergriffen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Qualitätssicherung</verbose_name>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/control_tools_long"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data_processing/analyse/scope">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>scope</key>
+		<path>ble/data_processing/analyse/scope</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/scope"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data_processing/analyse"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en"/>
+		<text lang="en">The analysis of the data is done with the following tools (software):</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">tools (software)</verbose_name>
+		<verbose_name_plural lang="en">tools (software)</verbose_name_plural>
+		<help lang="de"/>
+		<text lang="de">Die Analyse der Daten erfolgt mit folgenden Tools (Software):</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Software-Tools</verbose_name>
+		<verbose_name_plural lang="de">Software-Tools</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data_processing/security-access">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>security-access</key>
+		<path>ble/data_processing/security-access</path>
+		<dc:comment>Datensicherheit
+Verfügbarmachung und Datenschutz</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data_processing"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>1</order>
+		<title lang="en">Data security</title>
+		<help lang="en">Questions about data security only need to be answered if the data category is defined as sensitive.</help>
+		<verbose_name lang="en">Availability</verbose_name>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Datensicherheit</title>
+		<help lang="de">Fragen zur Datensicherheit müssen nur dann beantwortet werden, sofern die Datenkategorie als sensibel definiert ist.</help>
+		<verbose_name lang="de">Datenkategorie</verbose_name>
+		<verbose_name_plural lang="de">Datenkategorien</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data_processing/security-access/security_measures">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>security_measures</key>
+		<path>ble/data_processing/security-access/security_measures</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/security_measures"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data_processing/security-access"/>
+		<is_collection>True</is_collection>
+		<is_optional>True</is_optional>
+		<order>1</order>
+		<help lang="en">&lt;small&gt;
+While the anonymization of data thus completely eliminates the reference to persons and thus removes the processing from the scope of the GDPR, pseudonymization and encryption are methods provided for in the GDPR to protect personal data from misuse.
+&lt;/small&gt;</help>
+		<text lang="en">What measures are taken to protect sensitive data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">&lt;small&gt;
+Achten Sie darauf, den Zugriff physisch (abgeschlossener Schrank / Raum) und virtuell (Passwortschutz) zu beschränken. Diese Daten sollten Sie auf keinen Fall in einer Cloud abspeichern. Daten bei Cloud-Diensten wie z.B. &quot;Dropbox&quot; sind datenschutzrechtlich nicht ausreichend geschützt, da die Server dieser Dienste häufig nicht in Deutschland stehen.
+
+Durch eine Anonymisierung der Daten den Personenbezug beseitigen und sich somit den Anwendungsbereich der DSGVO entziehen. Pseudonymisierung und die Verschlüsselung stellen in der DSGVO vorgesehene Methoden dar, personenbezogene Daten vor Missbrauch zu schützen.
+
+Informationen zum Datenschutz am JKI siehe
+&lt;a href=&quot;http://intranet.julius-kuehn.de/beauftragte/datenschutz/&quot; target=&quot;_blank&quot;&gt;http://intranet.julius-kuehn.de/beauftragte/datenschutz&lt;/a&gt;
+
+&lt;/small&gt;</help>
+		<text lang="de">Welche Maßnahmen zum Schutz sensibler Daten werden ergriffen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/measures_sensitive_data"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://rdmo.julius-kuehn.de/terms/conditions/sensitive_data_exists"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data_processing/security-access/anonymization">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>anonymization</key>
+		<path>ble/data_processing/security-access/anonymization</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/anonymization"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data_processing/security-access"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<order>2</order>
+		<help lang="en"/>
+		<text lang="en">When will action be taken to protect the sensitive data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wann werden Maßnahmen ergriffen, um die sensiblen Daten zu schützen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_anonymisation"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://rdmo.julius-kuehn.de/terms/conditions/sensitive_data_exists"/>
+		</conditions>
+	</question>
+	<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/publication">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>publication</key>
+		<path>ble/publication</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble"/>
+		<order>6</order>
+		<title lang="en">Publication</title>
+		<title lang="de">Publikation</title>
+	</section>
+	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/publication/storage-and-long-term-preseravtion">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>storage-and-long-term-preseravtion</key>
+		<path>ble/publication/storage-and-long-term-preseravtion</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/publication"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>0</order>
+		<title lang="en">Making available</title>
+		<help lang="en"/>
+		<verbose_name lang="en">Data Collection</verbose_name>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Verfügbarmachung</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datenkategorie</verbose_name>
+		<verbose_name_plural lang="de">Datenkategorien</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/publication/storage-and-long-term-preseravtion/publication_yesno">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>publication_yesno</key>
+		<path>ble/publication/storage-and-long-term-preseravtion/publication_yesno</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/yesno"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/publication/storage-and-long-term-preseravtion"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>4</order>
+		<help lang="en">&lt;font color=&quot;red&quot;&gt;
+Please note that we are required to publish raw data (does not apply to sensitive data or if there are contractual reasons for not doing so) not only by funding agencies, but also by law (&lt;a href=&quot;https://www.gesetze-im-internet.de/egovg/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; color=&quot;red&quot;&gt;EGovG&lt;/a&gt;).  However, there may be legal (e.g. patent, copyright), competitive or ethical aspects that make it impossible to provide the data.
+&lt;/font&gt;
+
+Furthermore, there is a difference between archiving and publishing. Archiving does not mean publishing. If you want to make the dataset publicly available, then you should publish it in a suitable repository (question follows) and register it with a DOI (Digital Object Identifier).</help>
+		<text lang="en">Will data from this data category be published?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">&lt;font color=&quot;red&quot;&gt;
+Bitte beachten Sie, dass wir nicht nur seitens der Fördergeber, sondern auch seitens des Gesetzgebers (&lt;a href=&quot;https://www.gesetze-im-internet.de/egovg/__12.html&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; color=&quot;red&quot;&gt;EGovG&lt;/a&gt;) dazu verpflichtet sind, Rohdaten zu veröffentlichen. Allerdings können bspw. rechtliche (z.B. patentrechtliche, urheberrechtliche), wettbewerbliche oder ethischen Aspekten vorliegen, aufgrund derer eine Bereitstellung der Daten nicht möglich ist. 
+&lt;/font&gt;
+
+Wenn Sie den Datensatz öffentlich zur Verfügung stellen wollen, dann sollten Sie ihn in einem geeigneten Repositorium (Frage folgt) veröffentlichen und mit einen DOI (Digital Object Identifier) registrieren lassen.</help>
+		<text lang="de">Sollen die Daten aus dieser Datenkategorie publiziert werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/publication_yes_no_option"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/publication/storage-and-long-term-preseravtion/yesno">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>yesno</key>
+		<path>ble/publication/storage-and-long-term-preseravtion/yesno</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_publication_date"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/publication/storage-and-long-term-preseravtion"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<order>5</order>
+		<help lang="en"/>
+		<text lang="en">When should the data or partial data of this data category be published?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wann sollen die Daten oder Teildaten dieser Datenkategorie publiziert werden?</text>
+		<default_text lang="de">Ja</default_text>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/data_publication"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://rdmo.julius-kuehn.de/terms/conditions/dataset_publication"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/publication/storage-and-long-term-preseravtion/repository">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>repository</key>
+		<path>ble/publication/storage-and-long-term-preseravtion/repository</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/publication/storage-and-long-term-preseravtion"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<order>6</order>
+		<help lang="en">&lt;small&gt;
+* i.a. Web Services
+
+Procedure:
+
+1) Use a known discipline-specific repository, such as 
+&lt;a href=&quot; https://www.OpenAgrar.de&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Open Agrar&lt;/a&gt;, 
+&lt;a href=&quot; https://www.BonaRes.de&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;BonaRes&lt;/a&gt;,
+&lt;a href=&quot; https://www.Pangaea.de&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Pangaea&lt;/a&gt; or
+&lt;a href=&quot; https://edirepository.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;EDI&lt;/a&gt;.
+
+2) If none is known to you, search &lt;a href=&quot; https://www.re3data.org&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;re3data&lt;/a&gt; for a suitable repository (re3data offers several &lt;a href=&quot; https://www.re3data.org/search&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;filter options&lt;/a&gt;).
+
+3) Alternatively,
+&lt;a href=&quot; https://www.gfbio.org/data/dcrt&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;GfBio&lt;/a&gt; or 
+&lt;a href=&quot; https://www.publisso.de&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Publisso&lt;/a&gt;
+ offer a search/filter option for repositories in the life sciences.
+
+4) Alternatively, 
+&lt;a href=&quot; https://www.v2.sherpa.ac.uk/opendoar&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;OpenDOAR&lt;/a&gt; offers a list of open access repositories.
+
+5)  If you do not find what you are looking for, contact the &lt;a href=&quot;http://intranet.julius-kuehn.de/forschung&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt; JKI RDM Team&lt;/a&gt;. We will be happy to help with your search.
+
+&lt;/small&gt;</help>
+		<text lang="en">If yes, in which repository / infrastructure* should data of this data category be published?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">&lt;small&gt;
+* u.a. Webservices
+
+Vorgehen:
+
+1) Verwenden Sie ein bekanntes, Disziplin-spezifisches Repositorium/Infrastruktur, wie z.B. 
+&lt;a href=&quot; https://www.OpenAgrar.de&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Open Agrar&lt;/a&gt;, 
+&lt;a href=&quot; https://www.BonaRes.de&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;BonaRes&lt;/a&gt;, 
+&lt;a href=&quot; https://www.Pangaea.de&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Pangaea&lt;/a&gt; oder
+&lt;a href=&quot; https://edirepository.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;EDI&lt;/a&gt;.
+
+
+
+2) Falls Ihnen keines bekannt ist, durchsuchen Sie &lt;a href=&quot; https://www.re3data.org&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;re3data&lt;/a&gt; nach einem passenden Repositorium (re3data bietet mehrere &lt;a href=&quot; https://www.re3data.org/search&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Filteroptionen&lt;/a&gt;).
+
+
+
+3) Alternativ bietet auch
+&lt;a href=&quot; https://www.gfbio.org/data/dcrt&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;GfBio&lt;/a&gt; oder
+&lt;a href=&quot; https://www.publisso.de&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Publisso&lt;/a&gt;
+ eine Such- bzw. Filteroption für Repositorien im Bereich der Lebenswissenschaften.
+
+4) Alternativ bietet
+&lt;a href=&quot; https://www.v2.sherpa.ac.uk/opendoar&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;OpenDOAR&lt;/a&gt; eine Liste von Open-Access Repositorien.
+
+5)  Falls Sie nicht fündig werden, kontaktieren Sie das &lt;a href=&quot;http://intranet.julius-kuehn.de/forschung&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt; JKI FDM Team&lt;/a&gt;. Wir helfen gerne bei der Suche.
+
+&lt;/small&gt;</help>
+		<text lang="de">Falls ja, in welchem Repositorium / Infrastruktur* sollen Daten dieser Datenkategorie publiziert bzw. verfügbar gemacht werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.julius-kuehn.de/terms/conditions/dataset_publication"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/publication/storage-and-long-term-preseravtion/data_publication_licence">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>data_publication_licence</key>
+		<path>ble/publication/storage-and-long-term-preseravtion/data_publication_licence</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/conditions"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/publication/storage-and-long-term-preseravtion"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<order>7</order>
+		<help lang="en">Data that can be protected by copyright should be provided with a license that specifies the conditions for subsequent use. This can only be done by the owner of the rights of use him/herself. Even if data is not subject to copyright, it is advisable to make this clear with a legal notice. In this way, you create legal certainty. It is recommended not to restrict the use of the research data if possible. This facilitates subsequent use by third parties. If no license is granted, subsequent use is not possible without the consent of the author.
+
+&lt;font color=&quot;red&quot;&gt;Creative Commons licenses are to be preferred for data. These should be chosen as freely as possible (CC-BY).&lt;font&gt;</help>
+		<text lang="en">If yes, under which license shall the data be published?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Urheberrechtlich schutzfähige Daten sollten mit einer Lizenz versehen werden, die die Bedingung für eine Nachnutzung festlegen. Dies kann ausschließlich durch den/die Inhaber/in der Nutzungsrechte selbst getan werden. Auch wenn Daten nicht dem Urheberrecht unterliegen, ist es empfehlenswert, dies durch einen Rechtshinweis klarzustellen. Dadurch schaffen Sie Rechtssicherheit. Empfohlen wird die Nutzung der Forschungsdaten möglichst nicht einzuschränken. Dies erleichtert die Nachnutzung durch Dritte. Wird keine Lizenz vergeben ist eine Nachnutzung ohne ein Einverständnis des Urhebers nicht möglich.
+&lt;font color=&quot;red&quot;&gt;Creative Commons Lizenzen sind für Daten zu bevorzugen. Diese sollten so frei wie möglich gewählt werden (CC-BY).&lt;font&gt;</help>
+		<text lang="de">Falls ja, unter welcher Lizenz sollen die Daten publiziert werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/data_licences"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://rdmo.julius-kuehn.de/terms/conditions/dataset_publication"/>
+		</conditions>
+	</question>
+	<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/other">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>other</key>
+		<path>ble/other</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble"/>
+		<order>7</order>
+		<title lang="en">Additional data</title>
+		<title lang="de">Zusätzliche Angaben</title>
+	</section>
+	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/other/rdm">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>rdm</key>
+		<path>ble/other/rdm</path>
+		<dc:comment/>
+		<attribute/>
+		<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/other"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>0</order>
+		<title lang="en">Further notes</title>
+		<help lang="en">(Project-related and across data categories)</help>
+		<verbose_name lang="en">General Research Data Management</verbose_name>
+		<verbose_name_plural lang="en">General Research Data Management</verbose_name_plural>
+		<title lang="de">Weitere Anmerkungen</title>
+		<help lang="de">(Projektbezogen und Datenkategorieübergreifend)</help>
+		<verbose_name lang="de">Allgemeines (Forschungs)datenmanagament</verbose_name>
+		<verbose_name_plural lang="de">Allgemeines (Forschungs)datenmanagament</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/other/rdm/special_it_ressources">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>special_it_ressources</key>
+		<path>ble/other/rdm/special_it_ressources</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_infrastructure"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/other/rdm"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">&lt;small&gt;
+e.g. infrastructure resources (CPU hours, bandwidth, data transfer, storage, etc.), personnel support, or similar.
+&lt;/small&gt;</help>
+		<text lang="en">Are there any special IT requirements for this project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">&lt;small&gt;
+z.B. Infrastrukturressourcen (CPU-Stunden, Bandbreite, Datentransfer, Speicherplatz etc.), personelle Unterstützung, o.ä.
+&lt;/small&gt;</help>
+		<text lang="de">Bestehen besondere IT-Anforderung im Rahmen des Projekts?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/other/rdm/rdm_notes">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>rdm_notes</key>
+		<path>ble/other/rdm/rdm_notes</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/rdm/other_notes"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/other/rdm"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en">&lt;small&gt;
+Describe in full sentences what else is done in regards of research data management in this project that was not covered by the previous questions.
+&lt;/small&gt;</help>
+		<text lang="en">Other remarks on research data management</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">&lt;small&gt;
+Beschreiben Sie in ganzen Sätzen, was sonst noch in Bezug auf das Forschungsdatenmanagement in diesem Projekt getan wird, das nicht durch die vorherigen Fragen abgedeckt wurde.
+&lt;/small&gt;</help>
+		<text lang="de">Sonstige Anmerkungen zum Forschungsdatenmanagement</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+</rdmo>

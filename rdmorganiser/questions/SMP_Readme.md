@@ -1,3 +1,8 @@
+# Preface
+This questionnaire was developed by the [Max Planck Digital Library](https://www.mpdl.mpg.de) in the Collections area in late summer and autumn 2022. It can be used to create a software management plan in RDMO. Of course, we are always happy to receive feedback: rdmo@mpdl.mpg.de.
+
+The catalogue is available under the CC0 licence (https://creativecommons.org/share-your-work/public-domain/cc0/), so that it can be freely (re)used. Changes and adaptations by the RDMO community are of course welcome and can easily be made via GitHub.
+
 # General
 This RDMO catalogue supports the writing of a Software Management Plan. This questionnaire was developed by the Max Planck Digital Library in the Collections area in late summer and autumn 2022. It can be used to create a software management plan in RDMO.
 A software management plan (SMP) can help significantly with design, implementation and long-term availability. The essential advantage of an SMP filled out in advance is the explicit handling of the emerging research software with documented information. At the same time, it also makes it clearer which topics (fields) have not yet been solved or covered.
@@ -11,6 +16,13 @@ Furthermore, this SMP template was inspired by some documentations, specially:
 * https://zenodo.org/record/7248877
 * https://biohackrxiv.org/k8znb/
 
+# Versions of the SMP Catalogue
+| Version Number | Release Date | Description |
+| -------------- | ------------ | ----------- |
+| 1.0 | 5th December 2022   | Initatilisation|
+| 1.1 | 27th Februrary 2023 | Minor adjustments to help texts and some widget types of questions|
+| 2.0 | 18th August 2023    | a) Addition of a question regarding Qualifty References (reference to FAIR4RS I2 and R2); b) adjustments to questions and help texts for the FAIR4RS viewer; c) minor adjustments to help texts thanks to feedback; d) broken links repair + Thanks a lot for the feedback by the RDMO Community!|
+
 # Implementing
 The catalogue uses some of the generic elements from RDMO. Therefore, all generic elements from "Conditions", "Domain", "Options" and "Questions" must already be implemented in advance.
 To use this SMP, the additional SMP elements "Condition", "Domain" and "Questions" must then be imported into the own RDMO system. The respective order is documented in the [generic Readme file of the RDMO content](https://github.com/rdmorganiser/rdmo-catalog/tree/master/rdmorganiser#readme) and must be observed.
@@ -19,10 +31,13 @@ To use this SMP, the additional SMP elements "Condition", "Domain" and "Question
 This catalogue introduces many custom attributes, as the generic RDMO attributes do not always cover the specific aspects of software. For this reason, the existing views in RDMO cannot be used for this catalogue, or only to a very limited extent.
 
 # Use outside RDMO
-Due to multiple requests, we have created a template on the SMP for use outside of RDMO. The Word document is freely writable, has a CC0 and is freely available via https://doi.org/10.17617/2.3481986 for your own re-use.
+Due to multiple requests, we have created a template on the SMP for use outside of RDMO. The Word document is freely writable, has a CC0 and is freely available via https://doi.org/10.17617/2.3481986  (direct link to the docx. file: https://hdl.handle.net/21.11116/0000-000C-1076-D) for your own re-use.
 
 # FAIR4RS Viewer
-A viewer for the presentation of the FAIR4RS principles is under development and will be made available soon.
+A viewer for the presentation of the FAIR4RS principles is available under views. Using the Viewer only makes sense in combination with the SMP catalogue. With other RDMO catalogue this special viewer with focus on research software is not helpful. For more information, see the corresponding readme at the Viewer.
+
+# Talks on the Topic
+There were also some presentations on the development of this catalogue by the Max Planck Digital Library. See, for example, at the E-Science Days 2023 in Heidelberg: https://hdl.handle.net/21.11116/0000-000C-B40F-9.
 
 # Feedback
 Of course, we are always happy to receive feedback: rdmo@mpdl.mpg.de.
@@ -87,6 +102,8 @@ What is the process to keep track of the external software components? Can criti
 
 Do you plan to use third party web services?
 
+ Does the software refer to other software projects or objects?
+
 ### Infrastructure
 
 To what extend will infrastructure resources be required?
@@ -100,8 +117,6 @@ Are there technical aspects where competences are (still) lacking, so that suppo
 How long should the software remain usable?
 
 Does this software have to be preserved for a longer term?
-
-Where will the software be stored? Does the storage place have a clear preservation policy?
 
 ### Security
 
@@ -136,6 +151,8 @@ How is testing and test documentation organised?
 Are there defined release processes for the software?
 
 What is the decision process for releasing? How often will a software version be released?
+
+Where will the software be stored? Does the storage place have a clear preservation policy?
 
 ### Publicly Availability
 
