@@ -1,12 +1,12 @@
-# Content management for UA Ruhr 
+# Content management for UA Ruhr
 The general philosophy for managing the content of this repository (fork) is to keep the content in sync with the upstream https://github.com/rdmorganiser/rdmo-catalog. 
-Therefore, the majority of the content of this fork is identical to the upstream.  
+Therefore, the majority of the content of this fork is identical to the upstream.
 
 If new content needs to be added or changed, then
 * 1. Check if this is accepted as a pull request at Upstream https://github.com/rdmorganiser/rdmo-catalog.
 * 2. If not, e.g. if the content is only relevant to UA Ruhr, save the content under xml files at `rdmorganiser/_changes`.
 
-# Merge upstream and content  
+# Merge upstream and content
 local changes that need to be merged are stored in xml files under `rdmorganiser/_changes`.
 
 * `new_attribute.xml` new attributes from UA Ruhr 
@@ -14,7 +14,7 @@ local changes that need to be merged are stored in xml files under `rdmorganiser
 
 If there was any content that needed to be overwritten (currently there is no such case), this content would be stored in a file like `changed_questions.xml`. In this file, the full xml element, i.e. `<question> ... </question>`, which contains a change, would be stored.
   
-## Merging domains 
+## Merging domains
 * merge content `<rdmo> ... </rdmo>` xml elements of `rdmorganiser/_changes/new_attributes.xml` into `rdmorganiser/domain/rdmo.xml` and commit the latter. 
  
 ## Merging questions 
@@ -45,10 +45,14 @@ ua_ruhr/storage-and-long-term-preservation/long-term-preservation-costs/cover_ho
 ```
 In this example, the decision was made to add the question to the ua_ruhr and the proposal catlogs.
 
+## Create updated UA Ruhr catalogs
+See [the quick guide](#quick-guide) below.
+
+
 ## Automatized Catalog Generation 
 ### Quick Guide
 - implement changes regarding content and presentation to `tools/all_questions.xml`
-  - be sure, that all references to the domain, option sets and conditions are correct as well 
+  - be sure, that all references to the domain, option sets and conditions are correct as well
 - provide catalog information and composition within `cat_member.yaml`
 - run `python3 auto_catalog_creation.py`
 - IMPORTANT NOTE: for the 'training' catalog there is an additional manual step (see [README_training.md](README_training.md)
