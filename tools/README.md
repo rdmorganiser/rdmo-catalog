@@ -28,19 +28,6 @@ If there was any content that needed to be overwritten (currently there is no su
     * 6. replace `RDMO` with `UA Ruhr` in the `title` nodes of the `catalog` node
     * 7. replace `rdmo` with `ua-ruhr` in the content of the `key` node in the `catalog` node
 
-# Tools 
-## Comparing two rdmo domain files 
-`python3 compare_domains.py` compares two rdmo domains. Two files must be present at execution of the script: `domain.xml` and `rdmo.xml`.
-After a successful run the results will be available in three files `deleted.xml`, `changed.xml`, and `added.xml`.  
-
-## Comparing two rdmo question files 
-`rdmo_catalog_compare.py` will compare rdmo question files. As input two files must be present `rdmo_questions.xml` and `rdmo_catalog_latest_commit.xml`. Note, the question's URIs prefixes must be identical in both files. Furtermore, this script only works for question files with content matching rdmorganiser/rdmo >= v0.11 data model specifications.   
-The output 'questions_differences' will print all question uris. If differences are detected they are printed on the question text and help texts level.   
-
-## Checking compatibility between a Catalog and a View 
-
-see [README_catalog_view_compare.md](README_catalog_view_compare.md)
-
 ## Automatized Catalog Generation 
 ### Quick Guide
 - implement changes regarding content and presentation to `tools/all_questions.xml`
@@ -137,3 +124,17 @@ A detailed explanation about how these files work can be found in [the wiki of t
 
 ## Generate a html view of the catalogs 
 `catalog_html_conversion.py` reads in `all_questions.xml` and `cat_member.yaml` and outputs html pages for all catalogs being specified in `cat_member.yaml` catalog section. The output can be reused in the `gh-pages` branch. 
+
+
+# Tools 
+## Comparing two rdmo domain files 
+`python3 compare_domains.py` compares two rdmo domains. Two files must be present at execution of the script: `domain.xml` and `rdmo.xml`.
+After a successful run the results will be available in three files `deleted.xml`, `changed.xml`, and `added.xml`.  
+
+## Comparing two rdmo question files 
+`rdmo_catalog_compare.py` will compare rdmo question files. As input two files must be present `rdmo_questions.xml` and `rdmo_catalog_latest_commit.xml`. Note, the question's URIs prefixes must be identical in both files. Furtermore, this script only works for question files with content matching rdmorganiser/rdmo >= v0.11 data model specifications.   
+The output 'questions_differences' will print all question uris. If differences are detected they are printed on the question text and help texts level.
+
+## Checking compatibility between a Catalog and a View 
+
+see [README_catalog_view_compare.md](README_catalog_view_compare.md)
