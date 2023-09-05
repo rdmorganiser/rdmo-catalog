@@ -28,6 +28,23 @@ If there was any content that needed to be overwritten (currently there is no su
     * 6. replace `RDMO` with `UA Ruhr` in the `title` nodes of the `catalog` node
     * 7. replace `rdmo` with `ua-ruhr` in the content of the `key` node in the `catalog` node
 
+## Management of UR Ruhr specific catalog generation
+
+Add new upstream questions to the file `cat_member.yaml`.
+Each question receives an entry mapping catalog names to a boolean value, which denotes if that question is part of the specified catalog.
+For new questions from upstream, at least the UA Ruhr catalog should be set to true.
+Example:
+
+```yaml
+ua_ruhr/storage-and-long-term-preservation/long-term-preservation-costs/cover_how:
+  ua_ruhr: true
+  consultation: false
+  proposal: true
+  archive: false
+  training: false
+```
+In this example, the decision was made to add the question to the ua_ruhr and the proposal catlogs.
+
 ## Automatized Catalog Generation 
 ### Quick Guide
 - implement changes regarding content and presentation to `tools/all_questions.xml`
