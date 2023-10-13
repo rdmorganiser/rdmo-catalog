@@ -24,8 +24,24 @@ Erst im Anschluss kann der Fragenkatalog (ble_questions.xml) korrekt importiert 
 
 ## Einrichtung der Views
 
-Zuerst müssen die Dateien „ble_view_de“ und „ble_view_en.xml“ importiert werden. Damit das Layout ordnungsgemäß nach MS Word exportiert werden kann, empfiehlt sich der Export als HTML. Nachdem sich im Browser der View geöffnet hat, Rechtsklick und „Seite speichern unter …“ wählen. Die gespeicherte Datei in Word zur Durchsicht bzw. Nachbearbeitung öffnen. Final das Dokument aus Word heraus als docx oder pdf abspeichern.
-Wenn Änderungen im Fragenkatalog, in Optionen oder Bedingungen vorgenommen werden, dann müssen ggf. die Views angepasst werden. 
+Zuerst muss die Datei „ble_view.xml“ importiert werden. Damit das Layout ordnungsgemäß nach MS Word exportiert werden kann, muss die Datei „refDoc-BLE.docx“ auf dem Server abgelegt werden. 
+In dem config-file local.py muss das Wordtemplate dem View zugewiesen werden.
+
+/home/rdmo/rdmo-app/config/settings/local.py  -> folgendes unter EXPORT_REFERENCE_DOCX_VIEWS einfügen: 
+
+ 'https://rdmo.julius-kuehn.de/terms/views/jki-ble': 'Pfad zu refDoc-BLE.docx'
+ 
+Beispiel:
+
+EXPORT_REFERENCE_DOCX_VIEWS = {
+
+'https://rdmo.julius-kuehn.de/terms/views/general-ble': '/home/rdmo/rdmo-app/env/lib/python3.8/site-packages/rdmo/share/refDoc-BLE.docx‘
+
+}
+
+Final das Dokument aus Word heraus als docx oder pdf abspeichern.
+Wenn Änderungen im Fragenkatalog, in Optionen oder Bedingungen vorgenommen werden, dann müssen ggf. die Views angepasst werden.
+
 
 ## Rechtliches und Kontakt
 
