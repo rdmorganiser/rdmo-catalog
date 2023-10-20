@@ -35,7 +35,7 @@ Beispiel:
 
 EXPORT_REFERENCE_DOCX_VIEWS = {
 
-'https://rdmo.julius-kuehn.de/terms/views/general-ble': '/home/rdmo/rdmo-app/env/lib/python3.8/site-packages/rdmo/share/refDoc-BLE.docx‘
+'https://rdmo.julius-kuehn.de/terms/views/general-ble': '/home/rdmo/rdmo-app/env/lib/python3.8/site-packages/rdmo/share/refDoc-BLE.docx'
 
 }
 
