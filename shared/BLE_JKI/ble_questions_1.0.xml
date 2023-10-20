@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-06-27T13:40:27.327732+02:00">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-10-16T14:20:41.555074+02:00">
 	<catalog dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble">
 		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
 		<key>ble</key>
 		<dc:comment/>
 		<order>0</order>
-		<title lang="en">BLE-Questionnaire</title>
-		<help lang="en">This RDMO questionnaire developed at JKI covers all BLE-relevant questions and can be completed in German and English. It is suitable for creating the following data management plan views:&lt;br&gt;
+		<title lang="en">Data Management - Questionnaire</title>
+		<help lang="en">This questionnaire developed at JKI covers all relevant questions regarding data management and can be completed in German and English. It is suitable for creating the following data management plans:&lt;br&gt;
 &lt;b&gt; &lt;font color=#088A4B&gt;
-&amp;#9733; BLE data management plan (Draft Phase)
+&amp;#9733; Funder-independent data management plan&lt;br&gt;
+&amp;#9733; BLE data management plan&lt;br&gt;
+&amp;#9733; JKI-IT-specific data management plan
 &lt;/b&gt;&lt;/font&gt;</help>
-		<title lang="de">BLE-Fragenkatalog</title>
-		<help lang="de">Dieser am JKI entwickelte RDMO-Fragebogen deckt alle BLE-relevanten Fragen ab und ist in den Sprachen Deutsch und Englisch ausfüllbar. Er eignet sich für die Erstellung folgender Datenmanagementplan-Ansichten:&lt;br&gt;
+		<title lang="de">Datenmanagement - Fragebogen</title>
+		<help lang="de">Dieser am JKI entwickelte Fragebogen deckt alle relevanten Fragen des Datenmanagements ab und ist in den Sprachen Deutsch und Englisch ausfüllbar. Er eignet sich für die Erstellung folgender Datenmanagementpläne&lt;br&gt;
 &lt;b&gt; &lt;font color=#088A4B&gt;
-&amp;#9733; BLE Datenmanagementplan (Skizzenphase)
+&amp;#9733; Fördergeberunabhängiger Datenmanagementplan&lt;br&gt;
+&amp;#9733; BLE Datenmanagementplan&lt;br&gt;
+&amp;#9733; JKI-DV-spezifischer Datenmanagementplan 
 &lt;/b&gt;&lt;/font&gt;</help>
 	</catalog>
 	<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative">
@@ -256,6 +260,40 @@ Beispiel: &quot;Bekanntmachung über die Förderung von Innovationen zur Züchtu
 		<unit/>
 		<width/>
 		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative/ble_general/project_status">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>project_status</key>
+		<path>ble/administrative/ble_general/project_status</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/status"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative/ble_general"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>6</order>
+		<help lang="en"/>
+		<text lang="en">What is the project status?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Project status</verbose_name>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wie lautet der Projektstatus?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Projektstatus</verbose_name>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>select</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/project_status_option"/>
+		</optionsets>
 		<conditions/>
 	</question>
 	<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/project-content">
@@ -1158,7 +1196,9 @@ Schätzen Sie großzügig. Bedenken Sie ebenfalls eventuelle Backupdateien, Kopi
 		<step/>
 		<unit>GB</unit>
 		<width>8</width>
-		<optionsets/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_size_options"/>
+		</optionsets>
 		<conditions/>
 	</question>
 	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/data/documentation">
@@ -1395,90 +1435,6 @@ Alles zutreffende bitte ankreuzen.
 		</optionsets>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_period">
-		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
-		<key>storage_period</key>
-		<path>ble/storage/storage_period</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
-		<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage"/>
-		<questionset/>
-		<is_collection>True</is_collection>
-		<order>1</order>
-		<title lang="en">Period</title>
-		<help lang="en">In what period of time will the data be collected and used or must the storage space described above be available for the data?</help>
-		<verbose_name lang="en">Data Collection</verbose_name>
-		<verbose_name_plural lang="en"/>
-		<title lang="de">Zeitraum</title>
-		<help lang="de">In welchem Zeitraum werden die Daten erhoben und genutzt bzw. muss der oben beschriebene Speicherplatz für die Daten bereitstehen?</help>
-		<verbose_name lang="de">Datenkategorie</verbose_name>
-		<verbose_name_plural lang="de">Datenkategorien</verbose_name_plural>
-		<conditions/>
-	</questionset>
-	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_period/start_time_data_collection">
-		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
-		<key>start_time_data_collection</key>
-		<path>ble/storage/storage_period/start_time_data_collection</path>
-		<dc:comment>In welchem Zeitraum werden die Daten erhoben und genutzt bzw. muss der oben beschriebene Speicherplatz für die Daten bereitstehen?</dc:comment>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_collection_start"/>
-		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_period"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<order>1</order>
-		<help lang="en"/>
-		<text lang="en">estimated start date</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<verbose_name_plural lang="en"/>
-		<help lang="de"/>
-		<text lang="de">geschätztes Startdatum</text>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>date</widget_type>
-		<value_type>datetime</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
-	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_period/end_time_data_collection">
-		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
-		<key>end_time_data_collection</key>
-		<path>ble/storage/storage_period/end_time_data_collection</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_collection_end"/>
-		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_period"/>
-		<is_collection>False</is_collection>
-		<is_optional>True</is_optional>
-		<order>2</order>
-		<help lang="en"/>
-		<text lang="en">estimated end date</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<verbose_name_plural lang="en"/>
-		<help lang="de"/>
-		<text lang="de">geschätztes Enddatum</text>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>date</widget_type>
-		<value_type>datetime</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
 	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/backups">
 		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
 		<key>backups</key>
@@ -1565,6 +1521,90 @@ Alles zutreffende bitte ankreuzen.
 		<optionsets>
 			<optionset dc:uri="https://rdmo.julius-kuehn.de/terms/options/backup_central"/>
 		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_period">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>storage_period</key>
+		<path>ble/storage/storage_period</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>1</order>
+		<title lang="en">Period</title>
+		<help lang="en">In what period of time will the data be collected and used or must the storage space described above be available for the data?</help>
+		<verbose_name lang="en">Data Collection</verbose_name>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Zeitraum</title>
+		<help lang="de">In welchem Zeitraum werden die Daten erhoben und genutzt bzw. muss der oben beschriebene Speicherplatz für die Daten bereitstehen?</help>
+		<verbose_name lang="de">Datenkategorie</verbose_name>
+		<verbose_name_plural lang="de">Datenkategorien</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_period/start_time_data_collection">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>start_time_data_collection</key>
+		<path>ble/storage/storage_period/start_time_data_collection</path>
+		<dc:comment>In welchem Zeitraum werden die Daten erhoben und genutzt bzw. muss der oben beschriebene Speicherplatz für die Daten bereitstehen?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_collection_start"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_period"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en"/>
+		<text lang="en">estimated start date</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">geschätztes Startdatum</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>date</widget_type>
+		<value_type>datetime</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_period/end_time_data_collection">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>end_time_data_collection</key>
+		<path>ble/storage/storage_period/end_time_data_collection</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_collection_end"/>
+		<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/storage_period"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<order>2</order>
+		<help lang="en"/>
+		<text lang="en">estimated end date</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">geschätztes Enddatum</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>date</widget_type>
+		<value_type>datetime</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
 		<conditions/>
 	</question>
 	<questionset dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/storage/archiving">
