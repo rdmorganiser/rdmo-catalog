@@ -43,6 +43,25 @@ Final das Dokument aus Word heraus als docx oder pdf abspeichern.
 Wenn Änderungen im Fragenkatalog, in Optionen oder Bedingungen vorgenommen werden, dann müssen ggf. die Views angepasst werden.
 
 
+### Pandoc
+
+Damit der Export in ein Word-Dokument fehlerfrei funktioniert, muss auf dem RDMO-Server Pandoc in Version 3.1.5 oder aktueller installiert sein. 
+
+https://rdmo.readthedocs.io/en/latest/management/views.html#custom-pandoc-version
+
+Beispiel:
+
+/home/rdmo/rdmo-app/config/settings/local.py  -> folgendes einfügen: 
+
+import os
+
+os.environ.setdefault('PYPANDOC_PANDOC', '/home/rdmo/rdmo-app/env/lib/python3.8/site-packages/pandoc-3.1.5/bin/pandoc')
+
+
+
+
+
+
 ## Rechtliches und Kontakt
 
 Der Katalog steht unter der Lizenz CC0 zur freien Verfügung. Bei Fragen und Anmerkungen wenden Sie sich bitte an fdm@julius-kuehn.de .
