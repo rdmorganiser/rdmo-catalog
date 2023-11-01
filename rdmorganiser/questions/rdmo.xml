@@ -673,44 +673,44 @@
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/other-requirements-yesno">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/other-requirements">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>other-requirements-yesno</key>
-		<path>rdmo/general/other-requirements-yesno</path>
+		<key>other-requirements</key>
+		<path>rdmo/general/other-requirements</path>
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general"/>
 		<is_collection>False</is_collection>
 		<order>50</order>
-		<title lang="en">Other requirements I</title>
+		<title lang="en">Other requirements</title>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<title lang="de">Weitere Anforderungen I</title>
+		<title lang="de">Weitere Anforderungen</title>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<title lang="es">Otros requisitos I</title>
+		<title lang="es">Otros requisitos</title>
 		<help lang="es"/>
 		<verbose_name lang="es"/>
 		<verbose_name_plural lang="es"/>
-		<title lang="fr">Autres exigences I</title>
+		<title lang="fr">Autres exigences</title>
 		<help lang="fr"/>
 		<verbose_name lang="fr"/>
 		<verbose_name_plural lang="fr"/>
-		<title lang="it">Ulteriori condizioni I</title>
+		<title lang="it">Ulteriori condizioni</title>
 		<help lang="it"/>
 		<verbose_name lang="it"/>
 		<verbose_name_plural lang="it"/>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/other-requirements-yesno/yesno">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/other-requirements/yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>yesno</key>
-		<path>rdmo/general/other-requirements-yesno/yesno</path>
+		<path>rdmo/general/other-requirements/yesno</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/yesno"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/other-requirements-yesno"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/other-requirements"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<help lang="en">Examples of discipline-specific requirements:
@@ -751,59 +751,24 @@ Además las pautas específicas de la disciplina sobre el manejo de los datos de
 		<text lang="it">Esistono ulteriori condizioni sulla gestione dei dati di altra provenienza (per esempio dalla comunità accademica o scientifica)?</text>
 		<verbose_name lang="it"/>
 		<verbose_name_plural lang="it"/>
-		<widget_type>radio</widget_type>
+		<widget_type>yesno</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
-		<optionsets>
-			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_requirements_options"/>
-		</optionsets>
+		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/other-requirements-requirements">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>other-requirements-requirements</key>
-		<path>rdmo/general/other-requirements-requirements</path>
-		<dc:comment/>
-		<attribute/>
-		<section dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general"/>
-		<is_collection>False</is_collection>
-		<order>51</order>
-		<title lang="en">Other requirements II</title>
-		<help lang="en"/>
-		<verbose_name lang="en"/>
-		<verbose_name_plural lang="en"/>
-		<title lang="de">Weitere Anforderungen II</title>
-		<help lang="de"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="de"/>
-		<title lang="es">Otros requisitos II</title>
-		<help lang="es"/>
-		<verbose_name lang="es"/>
-		<verbose_name_plural lang="es"/>
-		<title lang="fr">Autres exigences II</title>
-		<help lang="fr"/>
-		<verbose_name lang="fr"/>
-		<verbose_name_plural lang="fr"/>
-		<title lang="it">Ulteriori condizioni II</title>
-		<help lang="it"/>
-		<verbose_name lang="it"/>
-		<verbose_name_plural lang="it"/>
-		<conditions>
-			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/additional_rdm_policy"/>
-		</conditions>
-	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/other-requirements-requirements/requirements">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/other-requirements/requirements">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>requirements</key>
-		<path>rdmo/general/other-requirements-requirements/requirements</path>
+		<path>rdmo/general/other-requirements/requirements</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/requirements"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/other-requirements-requirements"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/other-requirements"/>
 		<is_collection>False</is_collection>
-		<order>0</order>
+		<order>1</order>
 		<help lang="en">Please briefly outline them and refer to more detailed sources of information if necessary. Please also indicate, if the rules / guidelines are mandatory or optional.</help>
 		<text lang="en">Which are these additional requirements regarding data management?</text>
 		<verbose_name lang="en"/>
@@ -831,9 +796,10 @@ Además las pautas específicas de la disciplina sobre el manejo de los datos de
 		<step/>
 		<unit/>
 		<optionsets/>
-		<conditions/>
-	</question>
-	<section dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/content-classification">
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/additional_rdm_policy"/>
+		</conditions>
+	</question>	<section dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/content-classification">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>content-classification</key>
 		<path>rdmo/content-classification</path>
