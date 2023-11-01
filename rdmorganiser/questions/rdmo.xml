@@ -751,13 +751,15 @@ Además las pautas específicas de la disciplina sobre el manejo de los datos de
 		<text lang="it">Esistono ulteriori condizioni sulla gestione dei dati di altra provenienza (per esempio dalla comunità accademica o scientifica)?</text>
 		<verbose_name lang="it"/>
 		<verbose_name_plural lang="it"/>
-		<widget_type>yesno</widget_type>
-		<value_type>boolean</value_type>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
-		<optionsets/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_requirements_options"/>
+		</optionsets>
 		<conditions/>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/general/other-requirements/requirements">
