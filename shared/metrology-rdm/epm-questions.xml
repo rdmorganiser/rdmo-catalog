@@ -1,0 +1,3239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-11-03T13:40:08.281737+01:00">
+	<catalog dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>epm</key>
+		<dc:comment/>
+		<order>5</order>
+		<title lang="en">European Partnership on Metrology</title>
+		<help lang="en"/>
+		<title lang="de">Europäische Partnerschaft für Metrologie</title>
+		<help lang="de"/>
+	</catalog>
+	<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/general">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>general</key>
+		<path>epm/general</path>
+		<dc:comment/>
+		<catalog dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm"/>
+		<order>0</order>
+		<title lang="en">General</title>
+		<title lang="de">Allgemeines</title>
+	</section>
+	<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/general/general">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>general</key>
+		<path>epm/general/general</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
+		<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/general"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>1</order>
+		<title lang="en">Basic information on the project</title>
+		<help lang="en">This questionnaire is intended for research projects funded by EU Horizon Europe. It is compiled according to the &lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Data Management Plan Template, Version 1.0 from May 5, 2021&lt;/a&gt;. Some of the EU questions are broken down into sub-questions. In addition, for many questions there is the option of answering the question on a dataset-specific basis. There is a suitable view for the output of the data management plan, which
+
+- outputs the data management plan in the deliverable form desired by the EU,
+- uses the original EU questions,
+- automatically inserts references to questions that have already been asked in a similar form
+
+Once all questions in the questionnaire are answered, you can generate a EURAMET-compliant DMP. For that purpose, proceed as follows: 
+
+- Click &quot;Back to the project&quot;
+- Scroll down to the &quot;Views&quot;. Select &quot;European Partnership on Metrology&quot;
+- Scroll right to &quot;Export&quot;. Select &quot;Microsoft Office&quot;
+- Copy-and-paste the exported document (which possibly misses titlepage, headers, footers) into the MSU template.</help>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Eckdaten zum Projekt</title>
+		<help lang="de">Dieser Fragenkatalog ist für Forschungsprojekte gedacht, die durch EU Horizont Europa gefördert werden. Er ist nach dem &lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Data Management Plan Template, Version 1.0 vom 5. Mai 2021&lt;/a&gt;, zusammengestellt. Einige der EU-Fragen sind in Teilfragen aufgegliedert. Außerdem besteht bei vielen Fragen die Möglichkeit, die Frage datensatzspezifisch zu beantworten. Für die Ausgabe des Datenmanagementplans gibt es eine passende Ansicht, die
+
+- den Datenmanagementplan in der von der EU gewünschte Deliverable-Form ausgibt
+- die originalen EU-Fragen einsetzt
+- automatisch Verweise auf Fragen einfügt, die in ähnlicher Form schon einmal gestellt worden sind</help>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/general/general/grant_nr">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>grant_nr</key>
+		<path>epm/general/general/grant_nr</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/grant_nr"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/general/general"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">With which grant number was the funding awarded?</help>
+		<text lang="en">Project reference number:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Wie lautet das Förderkennzeichen dieser Förderung?</help>
+		<text lang="de">Projektnummer:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/general/general/project_name">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>project_name</key>
+		<path>epm/general/general/project_name</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/title"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/general/general"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">Full title of the project</help>
+		<text lang="en">Project title:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Titel des Projektes</help>
+		<text lang="de">Projekttitel:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/general/general/acronym">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>acronym</key>
+		<path>epm/general/general/acronym</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/acronym"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/general/general"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en">Short title / acronym of the project</help>
+		<text lang="en">Project acronym:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Kurztitel / Akronym des Projekts</help>
+		<text lang="de">Projektakronym:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/general/general/dmp_version">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>dmp_version</key>
+		<path>epm/general/general/dmp_version</path>
+		<dc:comment>Optionset</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/dmp_version"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/general/general"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>4</order>
+		<help lang="en">Which version of the data management plan is this?</help>
+		<text lang="en">DMP version:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Um welche Version des Datenmanagementplans handelt es sich hier?</help>
+		<text lang="de">DMP-Version:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum>3.0</maximum>
+		<minimum>1.0</minimum>
+		<step>1.0</step>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/DMP_version"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/general/general/other_regulations">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>other_regulations</key>
+		<path>epm/general/general/other_regulations</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/requirements"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/general/general"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>6</order>
+		<help lang="en">This question focuses on the specific project you are working on. It asks if there are any guidelines set internally for organizing data within this particular project and where they are documented. Please add references where space is provided.</help>
+		<text lang="en">What RDM regulations are relevant for this project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/other_rdm_requirements"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>data_summary</key>
+		<path>epm/data_summary</path>
+		<dc:comment/>
+		<catalog dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm"/>
+		<order>1</order>
+		<title lang="en">Data summary</title>
+		<title lang="de">Inhaltliche und technische Einordnung</title>
+	</section>
+	<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_groups">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>datasets_groups</key>
+		<path>epm/data_summary/datasets_groups</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>1</order>
+		<title lang="en">Origin of the data (dataset-specific)</title>
+		<help lang="en">Project data
+- Data are organised in &quot;data sets&quot;.
+- What all belongs to a single record is project specific.
+- Data sets can contain different file formats.
+
+In the data management plan (DMP)
+- Data sets are described.
+- Recommendation: Delimit data sets as planned later for repository.
+- Combine data that are &quot;managed&quot; similarly or in the same way into one dataset. 
+
+Data set options
+- If useful and clear, a single dataset can suffice.
+- Further data sets can be added later.
+- Click on the pencil icon to edit existing records.
+- New records can be added by clicking on the green button.
+- Existing records can also be changed or removed later.
+
+Start by creating a data record now:</help>
+		<verbose_name lang="en">dataset group</verbose_name>
+		<verbose_name_plural lang="en">dataset groups</verbose_name_plural>
+		<title lang="de"/>
+		<help lang="de">Projekt-Daten
+- Daten werden in &quot;Datensätzen&quot; organisiert
+- was alles zu einem einzelnen Datensatz gehört ist projektspezifisch
+- Datensätze können unterschiedliche Dateiformate enthalten
+
+Im Datenmanagementplan (DMP)
+- werden Datensätze beschrieben
+- Empfehlung: Abgrenzung der Datensätze wie später für Repositorium geplant
+- Daten die ähnlich oder gleich „gemanaged“ werden zu einem Datensatz zusammenfassen 
+
+Datensatz-Optionen
+- falls sinnvoll und übersichtlich kann auch ein einzelner Datensatz genügen
+- weitere Datensätze können später noch ergänzt werden
+- durch Klick auf das Bleistiftsymbol können bestehende Datensätze noch bearbeitet werden
+- neue Datensätze können mit dem grünen Button hinzugefügt werden
+- bestehende Datensätze können auch nachträglich noch geändert oder entfernt werden
+
+Starten Sie indem sie jetzt einen Datensatz anlegen:</help>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<conditions>
+			<condition dc:uri="https://dmp.metrology-rdm.eu/terms/conditions/dmp_not_initial"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_groups/dataset">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>dataset</key>
+		<path>epm/data_summary/datasets_groups/dataset</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/title"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_groups"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en"/>
+		<text lang="en">Please list all datasets belonging to this group.</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_groups/origin">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>origin</key>
+		<path>epm/data_summary/datasets_groups/origin</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_groups"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">Before data are newly created, it is advisable to check if there are existing data that could be re-used. This way, redundant collection or creation of research data is prevented. This saves efforts and costs.
+
+The &lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;sub-question&lt;/a&gt; &lt;i&gt;&quot;and what will you re-use them for?&quot;&lt;/i&gt; is asked again in a very similar form in the sub-section &quot;Purpose&quot; and can be answered there. If you use the Horizon Europe view to output this data management plan (DMP), a reference to the later question is automatically placed at this point. This is how the view behaves for all duplicate questions included in the &lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Horizon Europe Data Management Plan Template&lt;/a&gt;. In addition, the view brings the DMP into the deliverable form favoured by Horizon Europe.</help>
+		<text lang="en">Is the dataset being created or re-used?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Vor der Erzeugung von Daten empfiehlt es sich zu prüfen, ob bereits vorhandene Daten nachgenutzt werden können. Die Vermeidung doppelter Erhebungen spart Aufwand und Kosten.
+
+Die &lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Teilfrage&lt;/a&gt; &lt;i&gt;&quot;and what will you re-use it for?&quot;&lt;/i&gt; wird im Unterabschnitt &quot;Zweckbestimmung&quot; noch einmal in ganz ähnlicher Form gestellt und kann dort beantwortet werden. Wenn Sie die Ansicht Horizon Europe für die Ausgabe dieses Datenmanagementplans (DMP) nutzen, wird an dieser Stelle automatisch ein Verweis auf die spätere Frage platziert. So verfährt die Ansicht bei allen doppelt vorhandenen Fragen, die im &lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Horizon Europe Data Management Plan Template&lt;/a&gt; enthalten sind. Außerdem bringt die Ansicht den DMP in die von Horizon Europe gewünschte Deliverable-Form.</help>
+		<text lang="de">Wird der Datensatz selbst erzeugt oder nachgenutzt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_groups/provenance">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>provenance</key>
+		<path>epm/data_summary/datasets_groups/provenance</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/provenance/content"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_groups"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">The history of origin (provenance) of the data and even, if relevant for research data management, the provenance of the physical objects on which the data is based can be entered in this text area. However, you can also use the text area to uniformly define the post-processing of the data as soon as such details have been determined. This can include, for example, aggregation steps, unit conversions and format conversions.</help>
+		<text lang="en">Where do the data come from?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">In das Textfeld kann die Entstehungsgeschichte (Provenienz) der Daten und sogar - falls für das Forschungsdatenmanagement relevant - die Entstehungsgeschichte der den Daten zugrunde liegenden physischen Objekte eingetragen werden. Sie können das Textfeld aber auch nutzen, um die Nachbehandlung der Daten einheitlich festzulegen, sobald solche Details feststehen. Dazu können beispielsweise Aggregationsschritte, Einheitenkonversionen und Formatumwandlungen gehören.</help>
+		<text lang="de">Wie sind die Daten entstanden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_origin_reused"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://dmp.metrology-rdm.eu/terms/conditions/dataset_reused"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_groups/generation">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>generation</key>
+		<path>epm/data_summary/datasets_groups/generation</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creation_methods"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_groups"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">This information is relevant for all types of data in order to be able to understand their genesis.
+
+The way in which data are generated in your project depends on the disciplines involved - for example, it can be 3D modelling, the synthesis of a molecule, self-developed software, an online quantitative survey, etc.
+
+Please select the methodology used to generate the data.</help>
+		<text lang="en">How does your project generate new data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Diese Informationen sind für alle Arten von Daten relevant, um deren Genese nachvollziehen zu können.
+
+Die Art und Weise, wie Daten in Ihrem Projekt entstehen, hängt von den beteiligten Disziplinen ab – beispielsweise kann es sich um eine 3D-Modellierung, die Synthese eines Moleküls, eine selbst entwickelte Software, eine quantitative Online-Befragung, usw. handeln.
+
+Bitte wählen Sie aus, mit welcher Methodik die Daten generiert werden.</help>
+		<text lang="de">Auf welche Weise entstehen neue Daten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dfg_new_data"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://dmp.metrology-rdm.eu/terms/conditions/dataset_created"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_groups/uri">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>uri</key>
+		<path>epm/data_summary/datasets_groups/uri</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/uri"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_groups"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en"/>
+		<text lang="en">If re-used, under which address, PID or URL can the dataset be found?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wenn nachgenutzt, unter welcher Adresse, PID oder URL ist der Datensatz verfügbar?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://dmp.metrology-rdm.eu/terms/conditions/dataset_reused"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_groups/usage_description">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>usage_description</key>
+		<path>epm/data_summary/datasets_groups/usage_description</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_description"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_groups"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>4</order>
+		<help lang="en"/>
+		<text lang="en">How / for what purpose will these data be used during the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wozu / wie wird dieser Datensatz während des Projektes genutzt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dfg_reuse"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_groups/existing">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>existing</key>
+		<path>epm/data_summary/datasets_groups/existing</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reuse_existing"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_groups"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>5</order>
+		<help lang="en"/>
+		<text lang="en">If created, are already existing, similar research data available and why is their subsequent use not possible or useful here?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wenn selbst erzeugt, sind bereits existierende, ähnliche Forschungsdaten verfügbar und warum ist deren Nachnutzung hier nicht möglich bzw. sinnvoll?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://dmp.metrology-rdm.eu/terms/conditions/dataset_created"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_groups/usage_objectives">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>usage_objectives</key>
+		<path>epm/data_summary/datasets_groups/usage_objectives</path>
+		<dc:comment/>
+		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/dataset/usage_objectives"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_groups"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>5</order>
+		<help lang="en"/>
+		<text lang="en">What is their relation to the objectives of the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wozu / wie wird dieser Datensatz während des Projektes genutzt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_general">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>datasets_general</key>
+		<path>epm/data_summary/datasets_general</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+		<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>1</order>
+		<title lang="en">Origin of the data (in general)</title>
+		<help lang="en"/>
+		<verbose_name lang="en">dataset group</verbose_name>
+		<verbose_name_plural lang="en">dataset groups</verbose_name_plural>
+		<title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<conditions>
+			<condition dc:uri="https://dmp.metrology-rdm.eu/terms/conditions/dmp_initial"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_general/provenance">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>provenance</key>
+		<path>epm/data_summary/datasets_general/provenance</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/provenance/content"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_general"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">The history of origin (provenance) of the data and even, if relevant for research data management, the provenance of the physical objects on which the data is based can be entered in this text area. However, you can also use the text area to uniformly define the post-processing of the data as soon as such details have been determined. This can include, for example, aggregation steps, unit conversions and format conversions.</help>
+		<text lang="en">What data will the project reuse and where do they come from?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">In das Textfeld kann die Entstehungsgeschichte (Provenienz) der Daten und sogar - falls für das Forschungsdatenmanagement relevant - die Entstehungsgeschichte der den Daten zugrunde liegenden physischen Objekte eingetragen werden. Sie können das Textfeld aber auch nutzen, um die Nachbehandlung der Daten einheitlich festzulegen, sobald solche Details feststehen. Dazu können beispielsweise Aggregationsschritte, Einheitenkonversionen und Formatumwandlungen gehören.</help>
+		<text lang="de">Wie sind die Daten entstanden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_origin_reused"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_general/usage_description">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>usage_description</key>
+		<path>epm/data_summary/datasets_general/usage_description</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_description"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_general"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">Examples:  
+
+* for validation of the project's results;  
+* to test and validate a new theoretical model;  
+* to see if the new test bench was more effective;  
+* for comparison with simulation results...</help>
+		<text lang="en">How / for what purpose will already existing data be used, in relation to the objectives of the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wozu / wie werden die bereits existierenden Daten genutzt, im Bezug auf die Ziele des Projekts?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_general/generation">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>generation</key>
+		<path>epm/data_summary/datasets_general/generation</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creation_methods"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_general"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en">This information is relevant for all types of data in order to be able to understand their genesis.
+
+The way in which data are generated in your project depends on the disciplines involved - for example, it can be 3D modelling, the synthesis of a molecule, self-developed software, an online quantitative survey, etc.
+
+Please select the methodology used to generate the data.</help>
+		<text lang="en">How does your project generate new data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Diese Informationen sind für alle Arten von Daten relevant, um deren Genese nachvollziehen zu können.
+
+Die Art und Weise, wie Daten in Ihrem Projekt entstehen, hängt von den beteiligten Disziplinen ab – beispielsweise kann es sich um eine 3D-Modellierung, die Synthese eines Moleküls, eine selbst entwickelte Software, eine quantitative Online-Befragung, usw. handeln.
+
+Bitte wählen Sie aus, mit welcher Methodik die Daten generiert werden.</help>
+		<text lang="de">Auf welche Weise entstehen neue Daten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dfg_new_data"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_general/usage_objectives">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>usage_objectives</key>
+		<path>epm/data_summary/datasets_general/usage_objectives</path>
+		<dc:comment/>
+		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/dataset/usage_objectives"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_general"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>4</order>
+		<help lang="en"/>
+		<text lang="en">How / for what purpose will the generated data be used, in relation to the objectives of the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wozu / wie werden die generierten Daten genutzt, im Bezug auf die Ziele des Projekts?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_general/existing">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>existing</key>
+		<path>epm/data_summary/datasets_general/existing</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reuse_existing"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/datasets_general"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>5</order>
+		<help lang="en"/>
+		<text lang="en">Are already existing, similar research data available and why is their subsequent use not possible or useful here?</text>
+		<default_text lang="en">No existing data has been considered for re-use and then discarded</default_text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wenn selbst erzeugt, sind bereits existierende, ähnliche Forschungsdaten verfügbar und warum ist deren Nachnutzung hier nicht möglich bzw. sinnvoll?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/data_summary">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>data_summary</key>
+		<path>epm/data_summary/data_summary</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<title lang="en">Size, format, utility</title>
+		<help lang="en">&lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Original question:&lt;/a&gt; &lt;i&gt;What types and formats of data will the project generate or re-use?&lt;/i&gt;</help>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Datentyp</title>
+		<help lang="de">&lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Originalfrage:&lt;/a&gt; &lt;i&gt;What types and formats of data will the project generate or re-use?&lt;/i&gt;</help>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/data_summary/data_format">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>data_format</key>
+		<path>epm/data_summary/data_summary/data_format</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/format"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/data_summary"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>4</order>
+		<help lang="en">Please list the formats used as: type (format). Exemples: &quot;table (TSV)&quot;.
+
+When choosing a data format, one should consider the consequences for collaborative use, long-term preservation as well as re-use. It is advisable to prefer formats that are standardised, open, non-proprietary and well-established in the respective scholarly community. Recommendations can be found in &lt;a href=&quot;https://www.howtofair.dk/how-to-fair/file-formats/&quot; target=&quot;_blank&quot;&gt;How to FAIR&lt;/a&gt;, for example.</help>
+		<text lang="en">Which file formats are used?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Bei der Wahl des Dateiformates sollten auch die Konsequenzen für die kollaborative Nutzung, die Langzeitarchivierung sowie die Nachnutzung beachtet werden. Es empfiehlt sich, möglichst standardisierte, nicht-proprietäre und allgemein bzw. in der spezifischen Community verbreitete Formate zu nutzen. Empfehlungen sind z. B. unter &lt;a href=&quot;https://www.forschungsdaten.info/themen/veroeffentlichen-und-archivieren/formate-erhalten/&quot; target=&quot;_blank&quot;&gt;forschungsdaten.info&lt;/a&gt; zu finden.</help>
+		<text lang="de">In welchen Formaten liegen die Daten vor?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/data_summary/data_volume">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>data_volume</key>
+		<path>epm/data_summary/data_summary/data_volume</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/size/volume"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/data_summary"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>6</order>
+		<help lang="en">If large amounts of data are involved, financial resources for the provision of the infrastructure should be considered (see also section &quot;Funding&quot;).</help>
+		<text lang="en">What is the actual or expected size of the dataset?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Wenn große Datenmengen anfallen, sollten finanzielle Mittel zur Bereitstellung der Infrastruktur berücksichtigt werden (siehe auch Abschnitt „Förderung“).</help>
+		<text lang="de">Was ist die tatsächliche oder erwartete Größe des Datensatzes?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>float</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_size_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/data_summary/reuse_scenario">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>reuse_scenario</key>
+		<path>epm/data_summary/data_summary/reuse_scenario</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reuse_scenario"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/data_summary/data_summary"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>7</order>
+		<help lang="en">It is important to set the fundamental course as to whether or not the data will be permitted for reuse. Of course, the potential for subsequent use can not be the sole decision criterion, but legal impediments, such as privacy, copyright and business secrets must be taken into account. Otherwise, consider the re-use potential against the disadvantages, e.g. a decrease in the readiness to participate and the expected extra effort of a data publication.</help>
+		<text lang="en">Which individuals, groups or institutions could be interested in re-using these data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Wichtig ist die grundsätzliche Weichenstellung, ob die Daten zur Nachnutzung zugelassen werden oder nicht. Selbstverständlich kann das Nachnutzungspotential dabei nicht alleiniges Entscheidungskriterium sein, sondern rechtliche Hinderungsgründe, wie z.B. Datenschutz, Urheberrecht und die Wahrung von Geschäftsgeheimnissen, müssen berücksichtigt werden. Wägen Sie ansonsten das Nachnutzungspotential gegen die Nachteile ab, beispielsweise gegen ein Absinken der Teilnahmebereitschaft und den zu erwartenden Mehraufwand einer Datenveröffentlichung.</help>
+		<text lang="de">Für welche Personen, Gruppen oder Institutionen könnte dieser Datensatz (für die Nachnutzung) von Interesse sein?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/ethics">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>ethics</key>
+		<path>epm/ethics</path>
+		<dc:comment/>
+		<catalog dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm"/>
+		<order>2</order>
+		<title lang="en">Ethics</title>
+		<title lang="de">Ethik</title>
+	</section>
+	<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/ethics/sensitive-data">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>sensitive-data</key>
+		<path>epm/ethics/sensitive-data</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/ethics"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<title lang="en">Ethical and legal aspects</title>
+		<help lang="en"/>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Weitere sensible Daten</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/ethics/sensitive-data/description">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>description</key>
+		<path>epm/ethics/sensitive-data/description</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/other/description"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/ethics/sensitive-data"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">Examples are data that contain trade or business secrets or geoinformation on endangered species.
+
+Possible answers:
+
+•	Data acquired from third parties, e.g. manufacturers, will not be shared without their explicit consent. 
+•	Data collected by the consortium at commercial sites will not be shared without the site owner’s explicit consent. 
+•	Data from market surveys will be made anonymous to comply with the General Data Protection Regulation (GDPR).</help>
+		<text lang="en">Which sort of sensitive data (personal or non-personal) are used in the project, and what measures are taken upon sharing them?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Beispiele hierfür sind etwa Daten, die Betriebs- oder Geschäftsgeheimnisse oder Ortsangaben zu bedrohten Tier- oder Pflanzenarten enthalten.</help>
+		<text lang="de">Enthält dieser Datensatz nicht-personenbezogene sensible Daten? Wenn ja, um welche nicht personenbezogenen sensiblen Daten handelt es sich?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/sensitive_data"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/ethics/sensitive-data/where-when">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>where-when</key>
+		<path>epm/ethics/sensitive-data/where-when</path>
+		<dc:comment/>
+		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/dataset/sensitive_data/documentation"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/ethics/sensitive-data"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en"/>
+		<text lang="en">Where and when will the framework for ethical aspects in the project be defined?</text>
+		<default_text lang="en">Ethical issues will be addressed as the project will prepare and submit a report on the Dual Use of the project’s results</default_text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/ethics/sensitive-data/anonymization">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>anonymization</key>
+		<path>epm/ethics/sensitive-data/anonymization</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/anonymization"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/ethics/sensitive-data"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en"/>
+		<text lang="en">Will the data be anonymised or pseudonymised?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Werden die Daten anonymisiert oder pseudonymisiert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_anonymisation"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/ethics/sensitive-data/extent">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>extent</key>
+		<path>epm/ethics/sensitive-data/extent</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/consent/extent"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/ethics/sensitive-data"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>4</order>
+		<help lang="en">Basically, the collection, processing, archiving and publication of personal data is only admissible, when the &quot;informed consent&quot; of the person in question has been obtained. Only in a very few exceptional cases this is not required. If necessary, please contact the data protection officer of your institution for information about the necessary conditions for consent.</help>
+		<text lang="en">To what extent is the &quot;informed consent&quot; obtained from the persons concerned?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Grundsätzlich gilt, dass eine Erhebung, Verarbeitung, Archivierung und Veröffentlichung personenbezogener Daten nur zulässig ist, wenn eine entsprechende &quot;informierte Einwilligung&quot; der Betroffenen vorliegt. Nur in ganz wenigen Ausnahmefällen wird diese nicht benötigt. Bitte informieren Sie sich ggf. bei der/dem Datenschutzbeauftragten Ihrer Institution über die notwendigen Bedingungen für die Einwilligung.</help>
+		<text lang="de">In welchem Umfang wird die &quot;informierte Einwilligung&quot; der Betroffenen eingeholt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/informed_consent_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/ethics/sensitive-data/datatransfer">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>datatransfer</key>
+		<path>epm/ethics/sensitive-data/datatransfer</path>
+		<dc:comment/>
+		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/dataset/data_security/transfer"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/ethics/sensitive-data"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>5</order>
+		<help lang="en"/>
+		<text lang="en">What provisions are or will be in place for secure transfer of sensitive data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/measures_sensitive_data"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/ethics/sensitive-data/deletion">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>deletion</key>
+		<path>epm/ethics/sensitive-data/deletion</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/deletion"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/ethics/sensitive-data"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>6</order>
+		<help lang="en"/>
+		<text lang="en">By when will the (unanonymised or unpseudonymised) original data be safely deleted?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Bis wann werden die (unanonymisierten bzw. unpseudonymisierten) Originaldaten spätestens sicher vernichtet?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>date</widget_type>
+		<value_type>datetime</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/ethics/sensitive-data/other_rights">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>other_rights</key>
+		<path>epm/ethics/sensitive-data/other_rights</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/other_rights"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/ethics/sensitive-data"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>7</order>
+		<help lang="en"/>
+		<text lang="en">What intellectual property rights apply to the data used in the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Be- oder entstehen an diesem Datensatz andere Schutzrechte?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_other_rights"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>fair_data</key>
+		<path>epm/fair_data</path>
+		<dc:comment/>
+		<catalog dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm"/>
+		<order>3</order>
+		<title lang="en">FAIR data</title>
+		<title lang="de">FAIRe Daten</title>
+	</section>
+	<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/findable_data">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>findable_data</key>
+		<path>epm/fair_data/findable_data</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>1</order>
+		<title lang="en">Findability</title>
+		<help lang="en">Making data findable, including provisions for metadata. &lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Original questions:&lt;/a&gt;
+
+- &lt;i&gt;Will data be identified by a persistent identifier?&lt;/i&gt;
+
+- &lt;i&gt;Will rich metadata be provided to allow discovery? What metadata will be created? What disciplinary or general standards will be followed? In case metadata standards do not exist in your discipline, please outline what type of metadata will be created and how.&lt;/i&gt;
+
+- &lt;i&gt;Will search keywords be provided in the metadata to optimize the possibility for discovery and then potential re-use?&lt;/i&gt;
+
+- &lt;i&gt;Will metadata be offered in such a way that it can be harvested and indexed?&lt;/i&gt;</help>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Auffindbarkeit</title>
+		<help lang="de">Daten auffindbar machen, einschließlich der Bereitstellung von Metadaten. &lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Originalfragen:&lt;/a&gt;
+
+- &lt;i&gt;Will data be identified by a persistent identifier?&lt;/i&gt;
+
+- &lt;i&gt;Will rich metadata be provided to allow discovery? What metadata will be created? What disciplinary or general standards will be followed? In case metadata standards do not exist in your discipline, please outline what type of metadata will be created and how.&lt;/i&gt;
+
+- &lt;i&gt;Will search keywords be provided in the metadata to optimize the possibility for discovery and then potential re-use?&lt;/i&gt;
+
+- &lt;i&gt;Will metadata be offered in such a way that it can be harvested and indexed?&lt;/i&gt;</help>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/findable_data/pid_system">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>pid_system</key>
+		<path>epm/fair_data/findable_data/pid_system</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/pids/system"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/findable_data"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en"/>
+		<text lang="en">Which system of persistent identifiers shall be used?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Welches System von persistenten Identifikatoren soll genutzt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/pid_types"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/findable_data/metadata">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>metadata</key>
+		<path>epm/fair_data/findable_data/metadata</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/findable_data"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en"/>
+		<text lang="en">Which metadata will be provided to allow discovery?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">metadatum</verbose_name>
+		<verbose_name_plural lang="en">metadata</verbose_name_plural>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/metadata_classes"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/findable_data/metadata_keywords">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>metadata_keywords</key>
+		<path>epm/fair_data/findable_data/metadata_keywords</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/search_keywords"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/findable_data"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>5</order>
+		<help lang="en"/>
+		<text lang="en">Which search keywords are provided in the metadata to optimize the possibility for discovery and then potential re-use?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Werden Suchbegriffe in den Metadaten bereitgestellt, um so die Möglichkeit zu optimieren, sie zu finden und dann möglicherweise weiterzuverwenden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/findable_data/metadata_harvesting">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>metadata_harvesting</key>
+		<path>epm/fair_data/findable_data/metadata_harvesting</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/harvesting"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/findable_data"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>6</order>
+		<help lang="en">Harvesting is an automated copying of metadata from machine to machine. This enables the metadata to be centrally recorded for a cross-machine search in the metadata. Does the selected repository offer an interface for harvesting the metadata, e.g. OAI-PMH?</help>
+		<text lang="en">Will metadata be offered in such a way that they can be harvested and indexed?</text>
+		<default_text lang="en">The chosen repository complies with FAIR principles. The metadata are indexed in a searchable resource. Metadata are licensed under CC0, except for email addresses. All metadata are exported via OAI PMH and can be harvested.</default_text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Das Harvesting ist ein automatisiertes Kopieren der Metadaten von Maschine zu Maschine. Das ermöglicht die zentrale Erfassung der Metadaten für eine maschinenübergreifende Suche in den Metadaten. Bietet das ausgewählte Repositorium eine Schnittstelle für das Harvesting der Metadaten an, z. B. OAI-PMH?</help>
+		<text lang="de">Werden die Metadaten so angeboten, dass sie maschinell erfasst und verzeichnet werden können?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_repository">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>accessible_repository</key>
+		<path>epm/fair_data/accessible_repository</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<title lang="en">Accessibility: repository</title>
+		<help lang="en">&lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Original questions:&lt;/a&gt;
+
+- &lt;i&gt;Will the data be deposited in a trusted repository?&lt;/i&gt;
+
+- &lt;i&gt;Have you explored appropriate arrangements with the identified repository where your data will be deposited?&lt;/i&gt;
+
+- &lt;i&gt;Does the repository ensure that the data are assigned an identifier? Will the repository resolve the identifier to a digital object?&lt;/i&gt;</help>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Zugänglichkeit: Repositorium</title>
+		<help lang="de">&lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Originalfragen:&lt;/a&gt;
+
+- &lt;i&gt;Will the data be deposited in a trusted repository?&lt;/i&gt;
+
+- &lt;i&gt;Have you explored appropriate arrangements with the identified repository where your data will be deposited?&lt;/i&gt;
+
+- &lt;i&gt;Does the repository ensure that the data are assigned an identifier? Will the repository resolve the identifier to a digital object?&lt;/i&gt;</help>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_repository/storage_duringproject">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>storage_duringproject</key>
+		<path>epm/fair_data/accessible_repository/storage_duringproject</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage/type"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_repository"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en"/>
+		<text lang="en">Where will the data (including metadata, documentation and relevant code) be stored or shared during the project and what security measures are offered by the chosen media?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wo wird der Datensatz während des Projektes gespeichert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/storage_duringproject"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_repository/repository">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>repository</key>
+		<path>epm/fair_data/accessible_repository/repository</path>
+		<dc:comment>Ausführliche Hilfe nötig, wie Fragen zusammenhängen, in Ansicht teilweise übernehmen!</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_repository"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">Trusted repositories are defined in the EU’s Annotated Model Grant Agreement as: 
+•	“Certified repositories (e.g. CoreTrustSeal, nestor Seal DIN31644, ISO16363) or disciplinary and domain repositories commonly used and endorsed by the research communities. Such repositories should be recognised internationally.
+•	General-purpose repositories or institutional repositories that present the essential characteristics of trusted repositories, i.e.: etc etc”</help>
+		<text lang="en">Where will the data (including metadata, documentation and, if applicable, relevant code) be stored or archived after the end of the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wo werden die Daten (einschließlich Metadaten, Dokumentation und ggf. relevantem Code bzw. relevanter Software) nach Projektende gespeichert bzw. archiviert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/publishing_options_mb"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_repository/repository_arrangements">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>repository_arrangements</key>
+		<path>epm/fair_data/accessible_repository/repository_arrangements</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository_arrangements"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_repository"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">In addition to questions of quality assurance and data curation, it should also be discussed whether a persistent identifier is assigned to the data.</help>
+		<text lang="en">Have you explored appropriate arrangements with the identified repository?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Besprochen werden sollten neben Fragen der Qualitätssicherung und Datenkuration auch, ob für die Daten ein persistenter Identifikator vergeben wird.</help>
+		<text lang="de">Wurde mit dem Repositorium oder Datenzentrum bereits angemessene Archivierungslösungen besprochen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/repository_arrangements_why"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_repository/resolver">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>resolver</key>
+		<path>epm/fair_data/accessible_repository/resolver</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/pids/resolver"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_repository"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en"/>
+		<text lang="en">Will the repository resolve the identifier to a digital object?</text>
+		<default_text lang="en">The repository resolves the identifier to a digital object</default_text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Löst das Repository die Kennung auf ein digitales Objekt auf?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_data">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>accessible_data</key>
+		<path>epm/fair_data/accessible_data</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>3</order>
+		<title lang="en">Accessibility: data</title>
+		<help lang="en">&lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Original questions:&lt;/a&gt;
+
+- &lt;i&gt;Will all data be made openly available? If certain datasets cannot be shared (or need to be shared under restricted access conditions), explain why, clearly separating legal and contractual reasons from intentional restrictions. Note that in multi-beneficiary projects it is also possible for specific beneficiaries to keep their data closed if opening their data goes against their legitimate interests or other constraints as per the Grant Agreement.&lt;/i&gt;
+- &lt;i&gt;If an embargo is applied to give time to publish or seek protection of the intellectual property (e.g. patents), specify why and how long this will apply, bearing in mind that research data should be made available as soon as possible.&lt;/i&gt;
+
+- &lt;i&gt;Will the data be accessible through a free and standardized access protocol?&lt;/i&gt;
+
+- &lt;i&gt;If there are restrictions on use, how will access be provided to the data, both during and after the end of the project? How will the identity of the person accessing the data be ascertained?&lt;/i&gt;
+
+The question &lt;i&gt;Is there a need for a data access committee (e.g. to evaluate/approve access requests to personal/sensitive data)?&lt;/i&gt; is on the next page.</help>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Zugänglichkeit: Daten</title>
+		<help lang="de">&lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Originalfragen:&lt;/a&gt;
+
+- &lt;i&gt;Will all data be made openly available? If certain datasets cannot be shared (or need to be shared under restricted access conditions), explain why, clearly separating legal and contractual reasons from intentional restrictions. Note that in multi-beneficiary projects it is also possible for specific beneficiaries to keep their data closed if opening their data goes against their legitimate interests or other constraints as per the Grant Agreement.&lt;/i&gt;
+- &lt;i&gt;If an embargo is applied to give time to publish or seek protection of the intellectual property (e.g. patents), specify why and how long this will apply, bearing in mind that research data should be made available as soon as possible.&lt;/i&gt;
+
+- &lt;i&gt;Will the data be accessible through a free and standardized access protocol?&lt;/i&gt;
+
+- &lt;i&gt;If there are restrictions on use, how will access be provided to the data, both during and after the end of the project? How will the identity of the person accessing the data be ascertained?&lt;/i&gt;
+
+Die Frage &lt;i&gt;Is there a need for a data access committee (e.g. to evaluate/approve access requests to personal/sensitive data)?&lt;/i&gt; befindet sich auf der nächsten Seite.</help>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_data/sharing_yesno">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>sharing_yesno</key>
+		<path>epm/fair_data/accessible_data/sharing_yesno</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/yesno"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_data"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">From the &lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf&quot; target=_blank&gt;Horizon Europe Programme Guide&lt;/a&gt;:
+
+Beneficiaries of Horizon Europe have to ensure open access to research data generated in their projects under the principle &quot;as open as possible and as closed as necessary&quot;. This means that data are in principle open, unless beneficiaries decide to restrict access to some or all their research data for legitimate reasons.</help>
+		<text lang="en">Will all data be published or shared?</text>
+		<default_text lang="en">All data needed to validate the results presented in scientific publications will be made openly available as the default,  unless there is a specific reason not to publish the data. The level of data made available will also be considered, for example, pre-processed data will not be provided unless there is a clear reason for doing so</default_text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Aus dem &lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf&quot; target=_blank&gt;Horizon Europe Programme Guide (englisch)&lt;/a&gt;:
+
+Begünstigte von Horizon Europe müssen einen offenen Zugang zu Forschungsdaten, die in ihren Projekten generiert werden, nach dem Prinzip &quot;so offen wie möglich und so geschlossen wie nötig&quot; gewährleisten. Dies bedeutet, dass Daten grundsätzlich offen sind, es sei denn, Begünstigte entscheiden sich aus legitimen Gründen dafür, den Zugang zu einigen oder allen ihrer Forschungsdaten einzuschränken.</help>
+		<text lang="de">Soll dieser Datensatz veröffentlicht oder geteilt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_data/sharing_explanation">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>sharing_explanation</key>
+		<path>epm/fair_data/accessible_data/sharing_explanation</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/explanation"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_data"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en"/>
+		<text lang="en">Are there any reasons not to share these data? Please differentiate between legal and contractual reasons and voluntary restrictions.</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wenn nicht, begründen Sie dies bitte und unterscheiden Sie dabei zwischen rechtlichen und/oder vertraglichen Gründen und freiwilligen Einschränkungen.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_restrictions"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_data/sharing_embargo">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>sharing_embargo</key>
+		<path>epm/fair_data/accessible_data/sharing_embargo</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/embargo_period"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_data"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en"/>
+		<text lang="en">Are there any reason to set an embargo period before the data are made available?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Gibt es Gründe, um die Daten erst nach Ablauf einer Sperrfrist zugänglich zu machen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/embargo_why"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_data/access_restrictions_explanation">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>access_restrictions_explanation</key>
+		<path>epm/fair_data/accessible_data/access_restrictions_explanation</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/restrictions_explanation"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_data"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>5</order>
+		<help lang="en"/>
+		<text lang="en">If there are restrictions on use, how will access be provided to the data, both during and after the end of the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Sollte die Nachnutzung dieses Datensatzes Einschränkungen unterliegen, erläutern Sie bitte die Gründe.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/restrictions-reuse"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_data/access_authentication">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>access_authentication</key>
+		<path>epm/fair_data/accessible_data/access_authentication</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/access_authentication"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_data"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>6</order>
+		<help lang="en"/>
+		<text lang="en">How will the identity of the person accessing the data be ascertained?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wie wird die Identität von Personen, die auf die Daten zugreifen, verifiziert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/access_authentication"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_data/access_committee">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>access_committee</key>
+		<path>epm/fair_data/accessible_data/access_committee</path>
+		<dc:comment>Das gewählte Attribut ist nicht datensatzbezogen - passt so?</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval/data_access_committee"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_data"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>7</order>
+		<help lang="en">A data access committee is a group of experts responsible for evaluating and approving requests to access sensitive or restricted data. This committee decides who can use the data and for what purpose, especially when the data involves personal or sensitive information.</help>
+		<text lang="en">Is a data access committee needed to handle access requests to the published data of the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wird eine Datenzugangs-Kommission benötigt, die bei Zugriffsanfragen auf vom Projekt veröffentlichte Daten entscheidet, ob Zugang gewährt wird oder nicht?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/access_committee"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_metadata">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>accessible_metadata</key>
+		<path>epm/fair_data/accessible_metadata</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>5</order>
+		<title lang="en">Accessibility: metadata</title>
+		<help lang="en">&lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Original questions:&lt;/a&gt;
+
+- &lt;i&gt;Will metadata be made openly available and licensed under a public domain dedication CC0, as per the Grant Agreement? If not, please clarify why. Will metadata contain information to enable the user to access the data?&lt;/i&gt;
+
+- &lt;i&gt;How long will the data remain available and findable? Will metadata be guaranteed to remain available after data are no longer available?&lt;/i&gt;
+
+- &lt;i&gt;Will documentation or reference about any software be needed to access or read the data be included? Will it be possible to include the relevant software (e.g. in open source code)?&lt;/i&gt;</help>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Zugänglichkeit: Metadaten</title>
+		<help lang="de">&lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Originalfragen:&lt;/a&gt;
+
+- &lt;i&gt;Will metadata be made openly available and licensed under a public domain dedication CC0, as per the Grant Agreement? If not, please clarify why. Will metadata contain information to enable the user to access the data?&lt;/i&gt;
+
+- &lt;i&gt;How long will the data remain available and findable? Will metadata be guaranteed to remain available after data are no longer available?&lt;/i&gt;
+
+- &lt;i&gt;Will documentation or reference about any software be needed to access or read the data be included? Will it be possible to include the relevant software (e.g. in open source code)?&lt;/i&gt;</help>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_metadata/access_conditions_metadata">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>access_conditions_metadata</key>
+		<path>epm/fair_data/accessible_metadata/access_conditions_metadata</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/license_for_metadata"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_metadata"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">Will the descriptive information about the data, known as metadata, be openly accessible and licensed under the Creative Commons Zero (CC0) public domain dedication, in accordance with the terms of the Grant Agreement? If not, please specify the reasons for any restrictions.</help>
+		<text lang="en">Will metadata be made openly available and licensed under a public domain dedication CC0, as per the Grant Agreement? If not, please clarify why.</text>
+		<default_text lang="en">In the chosen repository, metadata are licensed under CC0, except for email addresses</default_text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Werden die Metadaten offen zugänglich gemacht und gemäß der Förderungsvereinbarung mit einer gemeinfreien Lizenz (CC0) versehen? Falls nicht, erläutern Sie bitte, warum.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_metadata/access_info_metadata">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>access_info_metadata</key>
+		<path>epm/fair_data/accessible_metadata/access_info_metadata</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/access_info"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_metadata"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">This is important if access to the data is subject to restrictions but not excluded, e.g. is subject to conditions or requires special software.</help>
+		<text lang="en">Will metadata contain information to enable the user to access the data?</text>
+		<default_text lang="en">All metadata are exported via OAI-PMH and can be harvested</default_text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Dies ist von Bedeutung, wenn der Zugang zu den Daten Einschränkungen unterliegt, aber nicht ausgeschlossen ist, z.B. an Bedingungen geknüpft ist oder besondere Software erfordert.</help>
+		<text lang="de">Werden die Metadaten Informationen für den Nutzer enthalten, damit dieser auf die Daten zugreifen kann?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_metadata/access_duration">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>access_duration</key>
+		<path>epm/fair_data/accessible_metadata/access_duration</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/reuse_duration"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_metadata"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en">According to good practice and contractual agreement, the data should remain available for at least 10 years.</help>
+		<text lang="en">How long is it intended that the data remain available and findable?</text>
+		<default_text lang="en">The data will remain available and findable for the lifetime of the chosen repository, which is expected to be a minimum of 20 years</default_text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Konform zur guten Praxis und zu verträglichen Vereinbarungen sollten Daten zumindest für eine Dauer von 10 Jahren zur Verfügung bleiben.</help>
+		<text lang="de">Wie lang sollen die Daten nach Projektende (nach)nutzbar sein?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_metadata/access_without_data">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>access_without_data</key>
+		<path>epm/fair_data/accessible_metadata/access_without_data</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/available_without_data"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_metadata"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>4</order>
+		<help lang="en">Many research data repositories make this possible, usually along with a web page called a &quot;tombstone&quot; that informs you that the research data itself is no longer available.</help>
+		<text lang="en">Will metadata be guaranteed to remain available after data are no longer available?</text>
+		<default_text lang="en">If data are withdrawn from the chosen repository, the DOI and the URL of the origin al object are retained. In case of closure of the repository, best efforts will be made to integrate all content into suitable alternative institutional and/or subject based repositories</default_text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Viele Forschungsdatenrepositorien ermöglichen das, meist zusammen mit einer Webseite, die als &quot;Tombstone&quot; bezeichnet wird und darüber informiert, dass die Forschungsdaten selbst nicht mehr zur Verfügung stehen.</help>
+		<text lang="de">Ist gewährleistet, dass die Metadaten auch dann noch verfügbar sind, wenn die Daten nicht mehr zur Verfügung stehen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_metadata/software_documentation">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>software_documentation</key>
+		<path>epm/fair_data/accessible_metadata/software_documentation</path>
+		<dc:comment>View: Verweis auf Frage 2.3-23 und Teil 3In welcher Form soll verwiesen werden? --&gt; Giacomo in der Ansicht</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/software_documentation"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/accessible_metadata"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>5</order>
+		<help lang="en">If the data management plan is exported with the associated view, a reference to the section &lt;i&gt;Other research outputs&lt;/i&gt; is automatically inserted for the second part of this question (provision of the software).</help>
+		<text lang="en">Is documentation about relevant software needed to use the data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Falls der Datenmanagementplan mit der zugehörigen Ansicht ausgegeben wird, wird für den zweiten Teil dieser Frage (Bereitstellung der Software) automatisch ein Verweis auf den Abschnitt &lt;i&gt;Sonstige Forschungsergebnisse&lt;/i&gt; eingefügt.</help>
+		<text lang="de">Wird die Dokumentation von ggf. zur Nutzung notwendiger Software benötigt, um die Daten zu nutzen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/usage_software"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/interoperable_data">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>interoperable_data</key>
+		<path>epm/fair_data/interoperable_data</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>6</order>
+		<title lang="en">Interoperability</title>
+		<help lang="en">Making data interoperable. &lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Original questions:&lt;/a&gt;
+
+- &lt;i&gt;What data and metadata vocabularies, standards, formats or methodologies will you follow to make your data interoperable to allow data exchange and re-use within and across disciplines? Will you follow community-endorsed interoperability best practices? Which ones?&lt;/i&gt;
+
+- &lt;i&gt;In case it is unavoidable that you use uncommon or generate project specific ontologies or vocabularies, will you provide mappings to more commonly used ontologies? Will you openly publish the generated ontologies or vocabularies to allow reusing, refining or extending them?&lt;/i&gt;
+
+- &lt;i&gt;Will your data include qualified references to other data (e.g. other data from your project, or datasets from previous research)?&lt;/i&gt;</help>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Interoperabilität</title>
+		<help lang="de">Daten interoperabel machen. &lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Originalfragen:&lt;/a&gt;
+
+- &lt;i&gt;What data and metadata vocabularies, standards, formats or methodologies will you follow to make your data interoperable to allow data exchange and re-use within and across disciplines? Will you follow community-endorsed interoperability best practices? Which ones?&lt;/i&gt;
+
+- &lt;i&gt;In case it is unavoidable that you use uncommon or generate project specific ontologies or vocabularies, will you provide mappings to more commonly used ontologies? Will you openly publish the generated ontologies or vocabularies to allow reusing, refining or extending them?&lt;/i&gt;
+
+- &lt;i&gt;Will your data include qualified references to other data (e.g. other data from your project, or datasets from previous research)?&lt;/i&gt;</help>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/interoperable_data/interoperability_standards">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>interoperability_standards</key>
+		<path>epm/fair_data/interoperable_data/interoperability_standards</path>
+		<dc:comment>Im generischen RDMO-Katalog beziehen sich die Fragen nach den Ontologien nur auf Metadaten, hier auf Daten und Metadaten. Generischen RDMO-Katalog und die Optionen entsprechend anpassen</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/standards"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/interoperable_data"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en"/>
+		<text lang="en">Which standards, ontologies, classifications etc. are used to describe the data and context information?</text>
+		<default_text lang="en">The datasets will use the trusted repository’s basic metadata scheme for bibliographic and administrative metadata, which is compliant with the recommended standards used by 
+&lt;a href=&quot;https://search.datacite.org/&quot; target=&quot;_blank&quot;&gt;DataCite&lt;/a&gt;, 
+&lt;a href=&quot;https://www.basesearch.net/&quot; target=&quot;_blank&quot;&gt;BASE search&lt;/a&gt; and 
+&lt;a href=&quot;https://www.openaire.eu/search&quot; target=&quot;_blank&quot;&gt;OpenAIRE&lt;/a&gt;</default_text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Welche Standards, Ontologien, Klassifikationen etc. werden zur Beschreibung der Daten und Kontextinformation genutzt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/interoperable_data/vocabularies_mappings">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>vocabularies_mappings</key>
+		<path>epm/fair_data/interoperable_data/vocabularies_mappings</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/mappings"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/interoperable_data"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en"/>
+		<text lang="en">In case it is unavoidable that you use uncommon or generate project-specific ontologies or vocabularies, will you provide mappings to more commonly used ontologies?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Sollte es unvermeidbar sein, projektspezifische oder seltene Ontologien, Metadatenschemata oder Vokabulare zu nutzen, werden Mappings zu gängigen Ontologien etc. erstellt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/mappings"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/interoperable_data/qualified_references">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>qualified_references</key>
+		<path>epm/fair_data/interoperable_data/qualified_references</path>
+		<dc:comment>Optionset</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/references_to_other_data"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/interoperable_data"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>5</order>
+		<help lang="en">From the &lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Horizon Europe Data Management Plan Template:&lt;/a&gt;
+
+A qualified reference is a cross-reference that explains its intent. For example, X is regulator of Y is a much more qualified reference than X is associated with Y, or X see also Y. The goal therefore is to create as many meaningful links as possible between (meta)data resources to enrich the contextual knowledge about the data. (&lt;a href=&quot;https://www.go-fair.org/fair-principles/i3-metadata-include-qualified-references-metadata/&quot; target=_blank&gt;Source&lt;/a&gt;)</help>
+		<text lang="en">Will your data include qualified references to other data (e.g. other data from your project, or datasets from previous research)?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Eine qualifizierte Referenz ist ein Querverweis, der seine Absicht erklärt. Zum Beispiel ist &quot;X ist Regulator von Y&quot; eine viel qualifiziertere Referenz als &quot;X ist mit Y verbunden&quot;, oder &quot;X siehe auch Y&quot;. Ziel ist es daher, möglichst viele sinnvolle Verknüpfungen zwischen (Meta-)Datenressourcen zu schaffen, um das Kontextwissen über die Daten zu bereichern. (&lt;a href=&quot;https://www.go-fair.org/fair-principles/i3-metadata-include-qualified-references-metadata/&quot; target=_blank&gt;Quelle&lt;/a&gt;)</help>
+		<text lang="de">Werden Ihre Daten qualifizierte Referenzen auf andere Daten enthalten (z. B. auf andere Daten aus Ihrem Projekt oder auf Datensätze aus früheren Forschungsarbeiten)?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/qualified_references"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/reusable_data">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>reusable_data</key>
+		<path>epm/fair_data/reusable_data</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>7</order>
+		<title lang="en">Re-usability</title>
+		<help lang="en">Increase data re-use. &lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Original questions:&lt;/a&gt;
+
+- &lt;i&gt;How will you provide documentation needed to validate data analysis and facilitate data re-use (e.g. readme files with information on methodology, codebooks, data cleaning, analyses, variable definitions, units of measurement, etc.)?&lt;/i&gt;
+- &lt;i&gt;Will the provenance of the data be thoroughly documented using the appropriate standards?&lt;/i&gt;
+
+- &lt;i&gt;Describe all relevant data quality assurance processes.&lt;/i&gt;
+
+If this data management plan is output using the associated view, for the further questions
+
+- &lt;i&gt; Will your data be made freely available in the public domain to permit the widest re-use possible? Will your data be licensed using standard reuse licenses, in line with the obligations set out in the Grant Agreement? &lt;/i&gt;
+
+- &lt;i&gt; Will the data produced in the project be useable by third parties, in particular after the end of the project? &lt;/i&gt;
+
+a reference to the section &quot;FAIR data / Accessibility: data&quot; is automatically inserted.</help>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Nachnutzbarkeit</title>
+		<help lang="de">Datennachnutzung erhöhen. &lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Originalfragen:&lt;/a&gt;
+
+- &lt;i&gt;How will you provide documentation needed to validate data analysis and facilitate data re-use (e.g. readme files with information on methodology, codebooks, data cleaning, analyses, variable definitions, units of measurement, etc.)?&lt;/i&gt;
+- &lt;i&gt;Will the provenance of the data be thoroughly documented using the appropriate standards?&lt;/i&gt;
+
+- &lt;i&gt;Describe all relevant data quality assurance processes.&lt;/i&gt;
+
+Falls dieser Datenmanagementplan unter Verwendung der zugehörigen Ansicht ausgegeben wird, wird für die weiteren Fragen
+
+- &lt;i&gt;Will your data be made freely available in the public domain to permit the widest re-use possible? Will your data be licensed using standard reuse licenses, in line with the obligations set out in the Grant Agreement?&lt;/i&gt;
+
+- &lt;i&gt;Will the data produced in the project be useable by third parties, in particular after the end of the project?&lt;/i&gt;
+
+automatisch ein Verweis auf Abschnitt &quot;FAIRe Daten / Zugänglichkeit: Daten&quot; eingefügt.</help>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/reusable_data/documentation">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>documentation</key>
+		<path>epm/fair_data/reusable_data/documentation</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/reusable_data"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">In this field, enter the components of the data documentation that are available with the data set and are not only supplied on request in the context of good scientific practice later.</help>
+		<text lang="en">Which components of the data documentation are available together with the dataset?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Tragen Sie in dieses Feld die Bestandteile der Datendokumentation ein, die mit dem Datensatz zur Verfügung stehen und nicht nur später auf Anfrage geliefert werden.</help>
+		<text lang="de">Welche Komponenten der Datendokumentation stehen zusammen mit dem Datensatz zur Verfügung?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/documentation"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/reusable_data/documentation_where">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>documentation_where</key>
+		<path>epm/fair_data/reusable_data/documentation_where</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation/where"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/reusable_data"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en"/>
+		<text lang="en">Where is the data documentation provided?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wo wird die Datendokumentation zur Verfügung gestellt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/documentation_form"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/reusable_data/access_conditions">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>access_conditions</key>
+		<path>epm/fair_data/reusable_data/access_conditions</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/conditions"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/reusable_data"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en">The options refer to the &lt;a href=&quot;https://creativecommons.org/licenses/?lang=en&quot; target=&quot;_blank&quot;&gt;Creative Commons licenses&lt;/a&gt;. The text field can be used to describe the license or (even with a CC license) to specify it exactly, e.g. &quot;CC BY 4.0 International&quot;.</help>
+		<text lang="en">Under which terms of use or license will the dataset be published or shared?</text>
+		<default_text lang="en">The data will either be licensed under the latest available version of the Creative Commons Attribution International Public License (CC-BY) or a license with equivalent rights as set out in the Grant Agreement. Users will be required to acknowledge the consortium and the source of the data in any resulting publications</default_text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Die Auswahlmöglichkeiten orientieren sich an Lizenzen von &lt;a href=&quot;https://creativecommons.org/licenses/?lang=de&quot; target=&quot;_blank&quot;&gt;Creative Commons&lt;/a&gt;. Das Textfeld kann genutzt werden, um die Lizenz zu beschreiben oder (auch im Falle einer CC-Lizenz) genau zu bezeichnen, z.B. &quot;CC BY 4.0 International&quot;.</help>
+		<text lang="de">Unter welchen Nutzungsbedingungen oder welcher Lizenz sollen die Daten veröffentlicht bzw. geteilt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/reusable_data/third-parties">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>third-parties</key>
+		<path>epm/fair_data/reusable_data/third-parties</path>
+		<dc:comment/>
+		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/dataset/sharing/third-parties"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/reusable_data"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>5</order>
+		<help lang="en"/>
+		<text lang="en">Will the data produced in the project be useable by third parties, in particular after the end of the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/availability-third-parties"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/reusable_data/quality_provenance">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>quality_provenance</key>
+		<path>epm/fair_data/reusable_data/quality_provenance</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/provenance/standards"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/reusable_data"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>5</order>
+		<help lang="en"/>
+		<text lang="en">How will the provenance of the data be thoroughly documented using the appropriate standards?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wie wird die Provenienz (Entstehungsgeschichte) der Daten unter Verwendung der entsprechenden Standards sorgfältig dokumentiert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/provenance"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/reusable_data/quality_procedures">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>quality_procedures</key>
+		<path>epm/fair_data/reusable_data/quality_procedures</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/quality_assurance"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/fair_data/reusable_data"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>6</order>
+		<help lang="en">Examples are checks for completeness, data reconciliation, sampling procedures. These measures serve to identify documentation errors and arithmetical anomalies.</help>
+		<text lang="en">Which measures of quality assurance are taken for this dataset?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Beispiele sind Überprüfung auf Vollständigkeit, Datenabgleich, Stichprobenverfahren. Diese Maßnahmen dienen dazu Dokumentationsfehler und rechnerische Auffälligkeiten zu ermitteln.</help>
+		<text lang="de">Welche Maßnahmen zur Qualitätssicherung werden für diesen Datensatz ergriffen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/quality_procedures"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>resources</key>
+		<path>epm/resources</path>
+		<dc:comment/>
+		<catalog dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm"/>
+		<order>4</order>
+		<title lang="en">Allocation of resources</title>
+		<title lang="de">Ressourcenallokation</title>
+	</section>
+	<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/costs">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>costs</key>
+		<path>epm/resources/costs</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs"/>
+		<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>1</order>
+		<title lang="en">Costs</title>
+		<help lang="en">&lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Original questions:&lt;/a&gt;
+
+- &lt;i&gt;What will the costs be for making data or other research outputs FAIR in your project (e.g. direct and indirect costs related to storage, archiving, re-use, security, etc.)?&lt;/i&gt;
+
+- &lt;i&gt;How will these be covered? Note that costs related to research data/output management are eligible as part of the Horizon Europe grant (if compliant with the Grant Agreement conditions)&lt;/i&gt;</help>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Kosten</title>
+		<help lang="de">&lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Originalfragen:&lt;/a&gt;
+
+- &lt;i&gt;What will the costs be for making data or other research outputs FAIR in your project (e.g. direct and indirect costs related to storage, archiving, re-use, security, etc.)?&lt;/i&gt;
+
+- &lt;i&gt;How will these be covered? Note that costs related to research data/output management are eligible as part of the Horizon Europe grant (if compliant with the Grant Agreement conditions)&lt;/i&gt;</help>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/costs/metadata_personnel">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>metadata_personnel</key>
+		<path>epm/resources/costs/metadata_personnel</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/metadata/personnel"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/costs"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">Please estimate the effort in person months.</help>
+		<text lang="en">What are the personnel costs associated with the data documentation and the creation of metadata in the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten.</help>
+		<text lang="de">Welcher Personalaufwand entsteht im Zusammenhang mit der Datendokumentation und der Erstellung der Metadaten im Projekt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>range</widget_type>
+		<value_type>float</value_type>
+		<maximum>12.0</maximum>
+		<minimum>0.0</minimum>
+		<step>0.1</step>
+		<unit>PM</unit>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/costs/metadata_non_personnel">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>metadata_non_personnel</key>
+		<path>epm/resources/costs/metadata_non_personnel</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/metadata/non_personnel"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/costs"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">Please estimate the costs in **Euro**.</help>
+		<text lang="en">What is the amount of non-personnel-costs associated with the documention and the creation of metadata and context information in the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Bitte schätzen sie die Kosten in **Euro**.</help>
+		<text lang="de">Welche Sachkosten entstehen im Zusammenhang mit der Dokumentation und der Erstellung von Metadaten und Kontextinformation im Projekt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>float</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit>Euro</unit>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/costs/cover_how">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>cover_how</key>
+		<path>epm/resources/costs/cover_how</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/preservation/cover_how"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/costs"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>9</order>
+		<help lang="en"/>
+		<text lang="en">How will the data management costs of the project be covered?</text>
+		<default_text lang="en">The costs for making the data FAIR are included in the project’s budget and will be claimed as far as compliant with the Grant Agreement’s conditions</default_text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wie werden die Kosten für das Datenmanagement im Projekt aufgebracht?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/responsible">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>responsible</key>
+		<path>epm/resources/responsible</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>2</order>
+		<title lang="en">Responsibility</title>
+		<help lang="en">&lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Original question:&lt;/a&gt; &lt;i&gt;Who will be responsible for data management in your project?&lt;/i&gt;</help>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Zuständigkeiten</title>
+		<help lang="de">&lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Originalfrage:&lt;/a&gt; &lt;i&gt;Who will be responsible for data management in your project?&lt;/i&gt;</help>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/responsible/responsible_storage">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>responsible_storage</key>
+		<path>epm/resources/responsible/responsible_storage</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backup_responsible/name"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/responsible"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en">This question refers to backups while the data are being worked with. Questions of long-term preservation will be adressed in the respective section.</help>
+		<text lang="en">Who is responsible for the backups?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Die Frage bezieht sich auf Backups während der Zeit, in denen mit den Daten gearbeitet wird. Fragen der Langzeitarchivierung werden gesondert im entsprechenden Abschnitt behandelt.</help>
+		<text lang="de">Wer ist verantwortlich für die Erstellung der Backups?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/preservation_responsible"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/responsible/responsible_documentation">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>responsible_documentation</key>
+		<path>epm/resources/responsible/responsible_documentation</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/responsible_person/name"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/responsible"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en"/>
+		<text lang="en">Who is responsible for data documentation and for checking if metadata and data documentation are correct and complete?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wer ist verantwortlich für die Datendokumentation und für die Prüfung der Metadaten und Datendokumentation auf Richtigkeit und Vollständigkeit?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/preservation_responsible"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/responsible/responsible_curation">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>responsible_curation</key>
+		<path>epm/resources/responsible/responsible_curation</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/curation/responsible_person/name"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/responsible"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en">In addition to pure data preservation (bitstream preservation), curating is an important task in long-term archiving. The maintenance of the persistent identifiers is part of the curating. A prerequisite for PIDs to work as promised is that they – as well as the objects they refer to – are maintained in a continuous and reliable way. This means, for example, that if the object location changes, this information is updated. When the data are stored in a data centre or repository, these tasks are usually taken care of by the data centre / repository. However, to be sure, the responsibilities should be checked beforehand.
+
+In the context of curating, it should also be avoided that data can no longer be read because it is saved in a format that is no longer used. The curating therefore also includes the object maintenance, the conversion of the data into current formats, if one of the data formats used threatens to become out of date. However, object maintenance is not regularly offered by research data repositories and data centers and, even if it is offered, is usually limited to certain data formats. With regard to object maintenance, it should always be checked who is responsible for what.</help>
+		<text lang="en">Who is responsible for curating the data once the project has ended?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Neben der reinen Datenerhaltung (Bitstream Preservation) ist die Kuratierung eine wichtige Aufgabe bei der Langzeitarchivierung. Zur Kuratierung gehört die Pflege der persistenten Identifikatoren.
+
+Die Voraussetzung dafür, dass persistente Identifikatoren auch wirklich halten, was sie versprechen, ist, dass sie – wie auch die Objekte, auf die referenziert wird – dauerhaft und verlässlich gepflegt werden. D.h. beispielsweise, dass bei einer Änderung des Speicherortes des Objekts die Information über den neuen Speicherort entsprechend aktualisiert werden muss. Werden die Daten in einem Datenzentrum oder -repositorium gespeichert, wird diese Verantwortung i.d.R. von diesem übernommen. Um sicher zu sein, sollten die Verantwortlichkeiten jedoch in jedem Fall geprüft bzw. geklärt werden.
+
+Zu vermeiden ist im Rahmen der Kuratierung außerdem, dass Daten nicht mehr lesbar sind, weil sie in einem nicht mehr gebräuchlichen Format gespeichert sind. Die Kuratierung umfasst daher auch die Objektpflege, die Konvertierung der Daten in aktuelle Formate, falls eines der verwendeten Datenformate zu veralten droht. Eine Objektpflege wird jedoch von Forschungsdatenrepositorien und Datenzentren nicht regelmäßig angeboten und ist - selbst wenn sie angeboten wird - in der Regel auf bestimmte Datenformate beschränkt. Auch bezüglich der Objektpflege sollte also stets geprüft werden, wer für was verantwortlich ist.</help>
+		<text lang="de">Wer ist nach Ende der Laufzeit des Projekts für das Kuratieren der Daten verantwortlich?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/preservation_responsible"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/preservation">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>preservation</key>
+		<path>epm/resources/preservation</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>3</order>
+		<title lang="en">Long-term preservation</title>
+		<help lang="en">&lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Original question:&lt;/a&gt; &lt;i&gt;How will long term preservation be ensured? Discuss the necessary resources to accomplish this (costs and potential value&lt;/i&gt;
+
+If this data management plan is output using the associated view, for the topic &lt;i&gt;costs&lt;/i&gt; a reference to the section &quot;Resource allocation / Costs&quot; and for the topic &lt;i&gt;potential value&lt;/i&gt; to the section &quot;Data summary / Data utility&quot; is automatically inserted.</help>
+		<verbose_name lang="en">dataset</verbose_name>
+		<verbose_name_plural lang="en">datasets</verbose_name_plural>
+		<title lang="de">Aufbewahrung</title>
+		<help lang="de">&lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Originalfrage:&lt;/a&gt; &lt;i&gt;How will long term preservation be ensured? Discuss the necessary resources to accomplish this (costs and potential value&lt;/i&gt;
+
+Falls dieser Datenmanagementplan unter Verwendung der zugehörigen Ansicht ausgegeben wird, wird für das Thema &lt;i&gt;Kosten&lt;/i&gt; automatisch ein Verweis auf Abschnitt &quot;Ressourcenallokation/Kosten&quot; und für das Thema &lt;i&gt;potentieller Nutzen&lt;/i&gt; ein Verweis auf Abschnitt &quot;Inhaltliche und technische Einordnung / Nachnutzungspotential&quot; eingefügt.</help>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<verbose_name_plural lang="de">Datensätze</verbose_name_plural>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/preservation/preservation_duration">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>preservation_duration</key>
+		<path>epm/resources/preservation/preservation_duration</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/duration"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/preservation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en"/>
+		<text lang="en">How long will the data be stored?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wie lange werden die Daten aufbewahrt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>range</widget_type>
+		<value_type>integer</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit>years</unit>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/preservation/personnel">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>personnel</key>
+		<path>epm/resources/preservation/personnel</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/preservation/personnel"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/preservation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">Please estimate the effort in person months.</help>
+		<text lang="en">What are the personnel costs associated with long-term preservation for the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten (1 PM = Monatsarbeitszeit eines Vollzeitbeschäftigten).</help>
+		<text lang="de">Welcher Personalaufwand entsteht im Zusammenhang mit Langzeitarchivierung für dieses Projekt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>range</widget_type>
+		<value_type>float</value_type>
+		<maximum>12.0</maximum>
+		<minimum>0.0</minimum>
+		<step>0.1</step>
+		<unit>PM</unit>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/preservation/non_personnel">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>non_personnel</key>
+		<path>epm/resources/preservation/non_personnel</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/preservation/non_personnel"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/preservation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">Please estimate the costs in **Euro**.</help>
+		<text lang="en">What is the amount of non-personnel-costs regarding long-term preservation for the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Bitte schätzen sie die Kosten in **Euro**.</help>
+		<text lang="de">Welche Sachkosten entstehen im Zusammenhang mit Langzeitarchivierung für dieses Projekt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>float</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit>Euro</unit>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/preservation/longterm_value">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>longterm_value</key>
+		<path>epm/resources/preservation/longterm_value</path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm-bayern.org/eHumanities/domain/project/dataset/preservation/longterm_value"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/preservation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en">Since long-term preservation comes with a non-trivial monetary and
+            administrative cost, one should carefully consider if the dataset has to be long-term
+            preserved.&lt;br /&gt; Some data is basically unique as it cannot be reproduced (weather
+            data on a given day in a given region, certain surveys ...) or reproducing the data
+            requires extreme efforts (expensive experimental setups, multiple years of observations
+            ...). Such data will generally have long-term value and should be preserved - provided
+            no other issues (research ethics, privacy protection, patents, contracts, ...) have to
+            be taken into account. Other data are relatively easy to reproduce and a detailed
+            description, e.g. of the experiment or the computer code that generated the data is more
+            useful to scientists as they can reproduce the data easily themselves. Some data may
+            also become obsolete after some time, as new technologies may provide much more refined
+            data. (The original data may still have been valuable to verify the feasibility of the
+            new method.)</help>
+		<text lang="en">Why should these data be long term preserved? What is their future value?</text>
+		<default_text lang="en">The data will increase in value over time because of their fundamental impact in a wide range of applications. They will enable the technologies developed in the project to be taken up by the measurement supply chain and by standards bodies including the ones listed in &lt;a href=&quot;Q07&quot;&gt;Question 7&lt;/a&gt;. These standards bodies will need access to the data to justify the robustness of future standards. The data will also be of value as they underpin the results of published datasets.</default_text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Da Langzeitarchivierung mit finanziellen Kosten und administrativem Aufwand
+            einhergeht, sollte geprüft werden, ob ein Datensatz langfristig aufbewahrt werden muss.
+            &lt;br /&gt; Manche Daten sind einzigartig und können nicht reproduziert werden
+            (Wetterdaten zu einem bestimmten Tag in einer bestimmten Region, Umfragen vor
+            einschneidenden Ereignissen,...) oder nur unter unverhältnismäßigem Aufwand
+            (erforderlich ist der Bau eines Satelliten, die Beobachtungen erstrecken sich über eine
+            Periode von mehreren Jahren,...). Daten dieser Art haben in der Regel langfristigen Wert
+            und sollten bewahrt werden, sofern keine anderen Gründe (Datenschutz, vertragliche
+            Absprachen,...) dagegen sprechen. Andere Daten lassen sich verhältnismäßig einfach
+            reproduzieren. In diesen Fällen ist eine detaillierte Dokumentation des Experimentes
+            oder des Computer-Codes unter Umständen wichtiger als die Daten selbst. Weiter können
+            Daten durch neue bessere Methoden langfristig obsolet werden. (Die Daten sind natürlich
+            wichtig, um die Validität der neuen Methodik zu verifizieren.)</help>
+		<text lang="de">Warum sollte dieser Datensatz langfristig bewahrt werden? Welchen Wert hat
+            er für die Zukunft?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/preservation/preservation__criteria">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>preservation__criteria</key>
+		<path>epm/resources/preservation/preservation__criteria</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/preservation/selection_criteria"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/preservation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>4</order>
+		<help lang="en">Examples: basis for a textual publication, potential for re-use; legal or contractual conditions; social or political relevance; quality considerations; reproducibility; etc.</help>
+		<text lang="en">What are the criteria / rules for the selection of the data to be archived (after the end of the project)?</text>
+		<default_text lang="en">{% render_value 'preservation/responsible_person/name' %} will decide on a case-by-case basis on what data will be kept and for how long</default_text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Beispiele: Grundlage einer Publikation; Potenzial für Nachnutzung; rechtliche oder vertragliche Auflagen; gesellschaftliche oder politische Relevanz; Qualitätserwägungen; Wiederherstellbarkeit; usw.</help>
+		<text lang="de">Auf Basis welcher Kriterien / Regeln werden die Daten zur Archivierung (nach Projektende) ausgesucht?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/preservation/preservation_responsible">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>preservation_responsible</key>
+		<path>epm/resources/preservation/preservation_responsible</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/preservation/responsible_person/name"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/resources/preservation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>5</order>
+		<help lang="en"/>
+		<text lang="en">Who selects the data to be archived?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Durch wen erfolgt die Auswahl?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/preservation_responsible"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>other_research_outputs</key>
+		<path>epm/other_research_outputs</path>
+		<dc:comment/>
+		<catalog dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm"/>
+		<order>5</order>
+		<title lang="en">Other research outputs</title>
+		<title lang="de">Sonstige Forschungsergebnisse</title>
+	</section>
+	<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/generic">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>generic</key>
+		<path>epm/other_research_outputs/generic</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/other_research_output"/>
+		<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs"/>
+		<questionset/>
+		<is_collection>False</is_collection>
+		<order>1</order>
+		<title lang="en">General information</title>
+		<help lang="en">&lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Original questions:&lt;/a&gt;
+
+- &lt;i&gt;In addition to the management of data, beneficiaries should also consider and plan for the management of other research outputs that may be generated or re-used throughout their projects. Such outputs can be either digital (e.g. software, workflows, protocols, models, etc.) or physical (e.g. new materials, antibodies, reagents, samples, etc.).&lt;/i&gt;
+- &lt;i&gt;Beneficiaries should consider which of the questions pertaining to FAIR data above, can apply to the management of other research outputs, and should strive to provide sufficient detail on how their research outputs will be managed and shared, or made available for re-use, in line with the FAIR principles.&lt;/i&gt;</help>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<title lang="de"/>
+		<help lang="de">&lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Originalfragen:&lt;/a&gt;
+
+- &lt;i&gt;In addition to the management of data, beneficiaries should also consider and plan for the management of other research outputs that may be generated or re-used throughout their projects. Such outputs can be either digital (e.g. software, workflows, protocols, models, etc.) or physical (e.g. new materials, antibodies, reagents, samples, etc.).&lt;/i&gt;
+- &lt;i&gt;Beneficiaries should consider which of the questions pertaining to FAIR data above, can apply to the management of other research outputs, and should strive to provide sufficient detail on how their research outputs will be managed and shared, or made available for re-use, in line with the FAIR principles.&lt;/i&gt;</help>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/generic/preservation_criteria">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>preservation_criteria</key>
+		<path>epm/other_research_outputs/generic/preservation_criteria</path>
+		<dc:comment/>
+		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/other_research_output/preservation_criteria"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/generic"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en">Examples: basis for a textual publication, potential for re-use; legal or contractual conditions; social or political relevance; quality considerations; reproducibility; etc.</help>
+		<text lang="en">What are the criteria / rules for the selection of the other research outputs to be archived (after the end of the project)?</text>
+		<default_text lang="en">{% render_value 'preservation/responsible_person/name' %} will decide on a case-by-case basis on what data will be kept and for how long</default_text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Beispiele: Grundlage einer Publikation; Potenzial für Nachnutzung; rechtliche oder vertragliche Auflagen; gesellschaftliche oder politische Relevanz; Qualitätserwägungen; Wiederherstellbarkeit; usw.</help>
+		<text lang="de">Auf Basis welcher Kriterien / Regeln werden die sonstige Forschungsoutputs zur Archivierung (nach Projektende) ausgesucht?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/generic/fair">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>fair</key>
+		<path>epm/other_research_outputs/generic/fair</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/other_research_output/fair"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/generic"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>5</order>
+		<help lang="en">Beneficiaries should consider which of the questions pertaining to FAIR data above, can apply to the management of other research outputs, and should strive to provide sufficient detail on how their research outputs will be managed and shared, or made available for re-use, in line with the FAIR principles.</help>
+		<text lang="en">Which management aspects of the FAIR principles will be applied also to the above mentioned other research outputs within your project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Die Begünstigten sollten überlegen, welche der oben genannten Fragen zu FAIR-Daten auf das Management anderen Forschungs-Outputs angewendet werden kann, und sollten sich bemühen, Einzelheiten darüber anzugeben, wie ihr anderer Forschungs-Output behandelt, geteilt oder zur Nachnutzung bereitgestellt wird im Einklang mit den FAIR-Prinzipien.</help>
+		<text lang="de">Welche Management-Aspekte unter den FAIR-Prinzipien werden auch für die oben gelisteten Outputs im Rahmen Ihres Projekts angewandt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/specific">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>specific</key>
+		<path>epm/other_research_outputs/specific</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/other_research_output"/>
+		<section dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>1</order>
+		<title lang="en">Specific information</title>
+		<help lang="en">&lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Original questions:&lt;/a&gt;
+
+- &lt;i&gt;In addition to the management of data, beneficiaries should also consider and plan for the management of other research outputs that may be generated or re-used throughout their projects. Such outputs can be either digital (e.g. software, workflows, protocols, models, etc.) or physical (e.g. new materials, antibodies, reagents, samples, etc.).&lt;/i&gt;
+- &lt;i&gt;Beneficiaries should consider which of the questions pertaining to FAIR data above, can apply to the management of other research outputs, and should strive to provide sufficient detail on how their research outputs will be managed and shared, or made available for re-use, in line with the FAIR principles.&lt;/i&gt;</help>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<title lang="de"/>
+		<help lang="de">&lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Originalfragen:&lt;/a&gt;
+
+- &lt;i&gt;In addition to the management of data, beneficiaries should also consider and plan for the management of other research outputs that may be generated or re-used throughout their projects. Such outputs can be either digital (e.g. software, workflows, protocols, models, etc.) or physical (e.g. new materials, antibodies, reagents, samples, etc.).&lt;/i&gt;
+- &lt;i&gt;Beneficiaries should consider which of the questions pertaining to FAIR data above, can apply to the management of other research outputs, and should strive to provide sufficient detail on how their research outputs will be managed and shared, or made available for re-use, in line with the FAIR principles.&lt;/i&gt;</help>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/specific/what">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>what</key>
+		<path>epm/other_research_outputs/specific/what</path>
+		<dc:comment/>
+		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/other_research_output/title"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/specific"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en"/>
+		<text lang="en">Please list all other research outputs of this kind.</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Bitte Listen alle sonstigen Forschungsoutputs dieser Art.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://dmp.metrology-rdm.eu/terms/conditions/dmp_not_initial"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/specific/existing">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>existing</key>
+		<path>epm/other_research_outputs/specific/existing</path>
+		<dc:comment/>
+		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/other_research_output/reuse_existing"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/specific"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en"/>
+		<text lang="en">If created, are already existing, similar other research outputs available and why is their subsequent use not possible or useful here?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wenn selbst erzeugt, sind bereits existierende, ähnliche sonstige Forschungsoutputs verfügbar und warum ist deren Nachnutzung hier nicht möglich bzw. sinnvoll?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/specific/storage_duringproject">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>storage_duringproject</key>
+		<path>epm/other_research_outputs/specific/storage_duringproject</path>
+		<dc:comment/>
+		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/other_research_output/storage_type"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/specific"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en"/>
+		<text lang="en">Where will the other research outputs (including metadata, documentation and relevant code) be stored or shared during the project and what security measures are offered by the chosen media?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wo werden die sonstigen Forschungsoutputs während des Projektes gespeichert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/storage_duringproject"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/specific/description">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>description</key>
+		<path>epm/other_research_outputs/specific/description</path>
+		<dc:comment/>
+		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/other_research_output/sensitive_data_description"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/specific"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">Examples are data that contain trade or business secrets or geoinformation on endangered species.</help>
+		<text lang="en">Which sort of sensitive data (personal or non-personal) are used in the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Beispiele hierfür sind etwa Daten, die Betriebs- oder Geschäftsgeheimnisse oder Ortsangaben zu bedrohten Tier- oder Pflanzenarten enthalten.</help>
+		<text lang="de">Welcher Art sensibler sonstiger Forschungsoutputs werden im Projekt verwendet?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/sensitive_data"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/specific/repository">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>repository</key>
+		<path>epm/other_research_outputs/specific/repository</path>
+		<dc:comment>Ausführliche Hilfe nötig, wie Fragen zusammenhängen, in Ansicht teilweise übernehmen!</dc:comment>
+		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/other_research_output/preservation_repository"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/specific"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">Trusted repositories are defined in the EU’s Annotated Model Grant Agreement as: 
+•	“Certified repositories (e.g. CoreTrustSeal, nestor Seal DIN31644, ISO16363) or disciplinary and domain repositories commonly used and endorsed by the research communities. Such repositories should be recognised internationally.
+•	General-purpose repositories or institutional repositories that present the essential characteristics of trusted repositories, i.e.: etc etc”</help>
+		<text lang="en">Where will the other research outputs (including metadata, documentation and, if applicable, relevant code) be stored or archived after the end of the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wo werden die sonstige Forschungsoutputs (einschließlich Metadaten, Dokumentation und ggf. relevantem Code bzw. relevanter Software) nach Projektende gespeichert bzw. archiviert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/publishing_options_mb"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/specific/datatransfer">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>datatransfer</key>
+		<path>epm/other_research_outputs/specific/datatransfer</path>
+		<dc:comment/>
+		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/other_research_output/security_transfer"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/specific"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en"/>
+		<text lang="en">What provisions are or will be in place for secure transfer of sensitive other research outputs?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Welche Maßnahmen werden angewandt für die sichere Übertragung sensibler sonstiger Forschungsoutputs?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/measures_sensitive_data"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/specific/access_conditions">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>access_conditions</key>
+		<path>epm/other_research_outputs/specific/access_conditions</path>
+		<dc:comment/>
+		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/other_research_output/sharing_conditions"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/specific"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>4</order>
+		<help lang="en"/>
+		<text lang="en">Under which terms of use or license will the other research outputs be published or shared?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Unter welchen Nutzungsbedingungen oder welcher Lizenz sollen die sonstige Forschungsoutputs veröffentlicht bzw. geteilt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/specific/quality_procedures">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>quality_procedures</key>
+		<path>epm/other_research_outputs/specific/quality_procedures</path>
+		<dc:comment/>
+		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/other_research_output/quality_assurance"/>
+		<questionset dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/other_research_outputs/specific"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>4</order>
+		<help lang="en">Examples are checks for completeness, data reconciliation, sampling procedures. These measures serve to identify documentation errors and arithmetical anomalies.</help>
+		<text lang="en">Which measures of quality assurance are taken for the other research outputs?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Beispiele sind Überprüfung auf Vollständigkeit, Datenabgleich, Stichprobenverfahren. Diese Maßnahmen dienen dazu Dokumentationsfehler und rechnerische Auffälligkeiten zu ermitteln.</help>
+		<text lang="de">Welche Maßnahmen zur Qualitätssicherung werden für die sonstige Forschungsoutputs ergriffen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/quality_procedures"/>
+		</optionsets>
+		<conditions/>
+	</question>
+</rdmo>
