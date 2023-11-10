@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-11-03T13:46:18.594211+01:00">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-11-10T13:20:27.577920+01:00">
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/access_committee">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<key>access_committee</key>
@@ -78,7 +78,7 @@
 		<dc:comment/>
 		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/availability-third-parties"/>
 		<order>2</order>
-		<text lang="en">The data that do not relate to peer reviewed publications will be made available for re use on a case by case basis</text>
+		<text lang="en">The data that do not relate to peer-reviewed publications are made available for re-use on a case-by-case basis</text>
 		<text lang="de"/>
 		<additional_input>False</additional_input>
 	</option>
@@ -89,7 +89,7 @@
 		<dc:comment/>
 		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/availability-third-parties"/>
 		<order>3</order>
-		<text lang="en">The data that do not relate to peer reviewed publications were not made available</text>
+		<text lang="en">The data that do not relate to peer-reviewed publications are not made available</text>
 		<text lang="de"/>
 		<additional_input>False</additional_input>
 	</option>
@@ -840,20 +840,9 @@
 		<dc:comment/>
 		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/mappings"/>
 		<order>1</order>
-		<text lang="en">The generated ontologies and vocabularies for the published data are provided, together with appropriate mappings in an informal, lightweight form (glossaries, alignment tables, …) to more commonly used ontologies</text>
+		<text lang="en">•	The compatibility of our project specific ontologies and vocabularies will be guaranteed through appropriate mappings (glossary, alignment tables, …) to more commonly used ontologies. The generated ontologies and vocabularies will be published.</text>
 		<text lang="de">Die generierten Ontologien und Vokabularien für die veröffentlichten Daten werden mitgeliefert, zusammen mit passenden Konkordanzen zu gängiger Terminologie, in einer leichten und informellen Weise (Glossar, Korrespondenztabelle, ...)</text>
-		<additional_input>True</additional_input>
-	</option>
-	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/mappings/formal">
-		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<key>formal</key>
-		<path>mappings/formal</path>
-		<dc:comment/>
-		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/mappings"/>
-		<order>2</order>
-		<text lang="en">The generated ontologies and vocabularies for the published data are provided, together with appropriate mappings in a formal, heavyweight form (OWL, RDF, …) to more commonly used ontologies</text>
-		<text lang="de">Die generierten Ontologien und Vokabularien für die veröffentlichten Daten werden mitgeliefert, zusammen mit passenden Konkordanzen zu gängiger Terminologie, in einer vertieften und formellen Weise (OWL-Sprache, RDF-Modell, ...)</text>
-		<additional_input>True</additional_input>
+		<additional_input>False</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/mappings/none">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -862,7 +851,7 @@
 		<dc:comment/>
 		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/mappings"/>
 		<order>3</order>
-		<text lang="en">No mappings are necessary, as the datasets are described using standard terminologies / There is no need for a mapping, since the used terminology is chosen to be compatible with the existing literature</text>
+		<text lang="en">No mappings are necessary, as the datasets are described using standard terminologies / There is no need for a mapping, since the used terminology is chosen to be compatible with the existing literature.</text>
 		<text lang="de">Das Mitliefern von Konkordanzen is nicht notwendig aufgrund der Kompatibilität der verwendeten Terminologie mit der bestehenden Literatur</text>
 		<additional_input>True</additional_input>
 	</option>
@@ -873,7 +862,7 @@
 		<dc:comment/>
 		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/mappings"/>
 		<order>4</order>
-		<text lang="en">No mapping can be provided, because data need human interpretation</text>
+		<text lang="en">No mapping can be provided, because data need human interpretation.</text>
 		<text lang="de"/>
 		<additional_input>False</additional_input>
 	</option>
@@ -903,7 +892,7 @@
 		<dc:comment/>
 		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/measures_sensitive_data"/>
 		<order>2</order>
-		<text lang="en">Sensitive information is transferred only after / anonymization (removal of personal reference)</text>
+		<text lang="en">Sensitive information is transferred only after anonymization (removal of personal reference)</text>
 		<text lang="de">Anonymisierung (Beseitigung des Personenbezugs)</text>
 		<additional_input>False</additional_input>
 	</option>
@@ -1431,6 +1420,47 @@
 		<text lang="de">Sonstiges</text>
 		<additional_input>True</additional_input>
 	</option>
+	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/protocol">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>protocol</key>
+		<dc:comment/>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/protocol/REST">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>REST</key>
+		<path>protocol/REST</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/protocol"/>
+		<order>1</order>
+		<text lang="en">Yes, data will be accessible through Zenodo’s REST API, which is documented here: https://developers.zenodo.org</text>
+		<text lang="de"/>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/protocol/OAI-PMH">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>OAI-PMH</key>
+		<path>protocol/OAI-PMH</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/protocol"/>
+		<order>2</order>
+		<text lang="en">Yes, the PTB Open Access Repository provides access to the data using the free and open OAI-PMH protocol, which is documented here: https://www.openarchives.org/pmh/</text>
+		<text lang="de"/>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/protocol/other">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>other</key>
+		<path>protocol/other</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/protocol"/>
+		<order>10</order>
+		<text lang="en">Other</text>
+		<text lang="de"/>
+		<additional_input>True</additional_input>
+	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/provenance">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<key>provenance</key>
@@ -1492,6 +1522,110 @@
 		<order>5</order>
 		<text lang="en">The provenance and context of the data will be thoroughly documented to meet relevant standards using</text>
 		<text lang="de"/>
+		<additional_input>True</additional_input>
+	</option>
+	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/publishing_options_mb">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>publishing_options_mb</key>
+		<dc:comment/>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/publishing_options_mb/zenodo">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>zenodo</key>
+		<path>publishing_options_mb/zenodo</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/publishing_options_mb"/>
+		<order>1</order>
+		<text lang="en">Zenodo</text>
+		<text lang="de">Zenodo</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/publishing_options_mb/ptb_oar">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>ptb_oar</key>
+		<path>publishing_options_mb/ptb_oar</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/publishing_options_mb"/>
+		<order>2</order>
+		<text lang="en">PTB-OAR</text>
+		<text lang="de">PTB-OAR</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/publishing_options_mb/other">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>other</key>
+		<path>publishing_options_mb/other</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/publishing_options_mb"/>
+		<order>3</order>
+		<text lang="en">Other</text>
+		<text lang="de">Sonstiges</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/publishing_options_mb/datajournal">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>datajournal</key>
+		<path>publishing_options_mb/datajournal</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/publishing_options_mb"/>
+		<order>4</order>
+		<text lang="en">Data journal</text>
+		<text lang="de">Datenzeitschrift</text>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/publishing_options_mb/103">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>103</key>
+		<path>publishing_options_mb/103</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/publishing_options_mb"/>
+		<order>10</order>
+		<text lang="en">Remains to be clarified</text>
+		<text lang="de">noch zu klären</text>
+		<additional_input>False</additional_input>
+	</option>
+	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/qualified_references">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>qualified_references</key>
+		<dc:comment/>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/qualified_references/same">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>same</key>
+		<path>qualified_references/same</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/qualified_references"/>
+		<order>1</order>
+		<text lang="en">Yes, the project's datasets deposited in the chosen repository include qualified references to other datasets from the same project</text>
+		<text lang="de">Ja, die auf dem gewählten Repositorium abgelegten Daten aus dem Projekt enthalten qualifizierte Referenzen zu anderen Datensätzen desselben Projekts</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/qualified_references/previous">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>previous</key>
+		<path>qualified_references/previous</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/qualified_references"/>
+		<order>2</order>
+		<text lang="en">Yes, the project's datasets deposited in the chosen repository include qualified references to other datasets from previous research</text>
+		<text lang="de">Ja, die auf dem gewählten Repositorium abgelegten Daten aus dem Projekt enthalten qualifizierte Referenzen zu anderen Datensätzen aus vorherigen Forschungsaktivitäten</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/qualified_references/none">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>none</key>
+		<path>qualified_references/none</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/qualified_references"/>
+		<order>3</order>
+		<text lang="en">No, the project's datasets do not include any references to other data</text>
+		<text lang="de">Nein, die Daten aus dem Projekt enthalten keine Referenzen anderer Daten</text>
 		<additional_input>True</additional_input>
 	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/quality_procedures">
@@ -1651,6 +1785,121 @@
 		<order>3</order>
 		<text lang="en">Ethical aspects</text>
 		<text lang="de"/>
+		<additional_input>True</additional_input>
+	</option>
+	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>repository_arrangements_why</key>
+		<dc:comment/>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/size">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>size</key>
+		<path>repository_arrangements_why/size</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why"/>
+		<order>1</order>
+		<text lang="en">Yes, separate arrangements with the host of the repository are necessary because of the big size of the data</text>
+		<text lang="de">Ja, gesonderte Absprachen mit dem Repositoriumsbetreiber sind notwendig aufgrund des großen Datenvolumens</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/format">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>format</key>
+		<path>repository_arrangements_why/format</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why"/>
+		<order>2</order>
+		<text lang="en">Yes, separate arrangements with the host of the repository are necessary, because of the particular format of the data</text>
+		<text lang="de">Ja, gesonderte Absprachen mit dem Repositoriumsbetreiber sind notwendig aufgrund des speziellen Datenformats</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/confidentiality">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>confidentiality</key>
+		<path>repository_arrangements_why/confidentiality</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why"/>
+		<order>3</order>
+		<text lang="en">Yes, separate arrangements with the host of the repository are necessary, because of the confidential nature of the data</text>
+		<text lang="de">Ja, gesonderte Absprachen mit dem Repositoriumsbetreiber sind notwendig aufgrund der Vertraulichkeit der Daten</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/legal_issues">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>legal_issues</key>
+		<path>repository_arrangements_why/legal_issues</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why"/>
+		<order>4</order>
+		<text lang="en">Yes, separate arrangements with the host of the repository are necessary, because of legal issues related to the data</text>
+		<text lang="de">Ja, gesonderte Absprachen mit dem Repositoriumsbetreiber sind notwendig aufgrund rechtlicher Probleme mit den Daten</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/other">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>other</key>
+		<path>repository_arrangements_why/other</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why"/>
+		<order>5</order>
+		<text lang="en">Yes, separate arrangements with the host of the repository are necessary, because</text>
+		<text lang="de">Ja, gesonderte Absprachen mit dem Repositoriumsbetreiber sind notwendig, weil</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/no">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>no</key>
+		<path>repository_arrangements_why/no</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why"/>
+		<order>6</order>
+		<text lang="en">No, the data will be uploaded via a standard procedure and require no special arrangements</text>
+		<text lang="de">Nein, die Daten werden mit Hilfe einer Standardprozedur hochgeladen und erfordern keine speziellen Vorbereitungen</text>
+		<additional_input>True</additional_input>
+	</option>
+	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository-security">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>repository-security</key>
+		<dc:comment/>
+		<order>0</order>
+		<provider_key/>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository-security/zenodo">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>zenodo</key>
+		<path>repository-security/zenodo</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository-security"/>
+		<order>1</order>
+		<text lang="en">Zenodo and the underlying Invenio Framework for digital repositories were designed according to the Open Archival Information Systems (OAIS) reference model. Zenodo is working towards ISO 16363 certification.</text>
+		<text lang="de"/>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository-security/ptb_oar">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>ptb_oar</key>
+		<path>repository-security/ptb_oar</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository-security"/>
+		<order>2</order>
+		<text lang="en">The PTB-OAR is stored on two physically and geographically separated servers that are regularly backed up. PTB is working towards German Initiative for Network Information (DINI) certification.</text>
+		<text lang="de"/>
+		<additional_input>False</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository-security/other">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>other</key>
+		<path>repository-security/other</path>
+		<dc:comment/>
+		<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository-security"/>
+		<order>10</order>
+		<text lang="en">Other</text>
+		<text lang="de">Sonstiges</text>
 		<additional_input>True</additional_input>
 	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/restrictions-reuse">

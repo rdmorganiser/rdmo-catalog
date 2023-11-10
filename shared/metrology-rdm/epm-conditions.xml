@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-11-03T13:45:20.372379+01:00">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-11-10T13:20:05.953776+01:00">
 	<condition dc:uri="https://dmp.metrology-rdm.eu/terms/conditions/dataset_created">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<key>dataset_created</key>
@@ -53,5 +53,23 @@
 		<relation>neq</relation>
 		<target_text/>
 		<target_option dc:uri="https://dmp.metrology-rdm.eu/terms/options/DMP_version/beginning"/>
+	</condition>
+	<condition dc:uri="https://dmp.metrology-rdm.eu/terms/conditions/repository_ptb_oar">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>repository_ptb_oar</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://dmp.metrology-rdm.eu/terms/options/publishing_options_mb/ptb_oar"/>
+	</condition>
+	<condition dc:uri="https://dmp.metrology-rdm.eu/terms/conditions/repository_zenodo">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>repository_zenodo</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://dmp.metrology-rdm.eu/terms/options/publishing_options_mb/zenodo"/>
 	</condition>
 </rdmo>
