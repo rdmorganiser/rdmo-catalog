@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-11-13T15:58:16.469540+01:00">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-11-14T15:51:13.078128+01:00">
 	<view dc:uri="https://tudmo.ulb.tu-darmstadt.de/views/dfg-checkliste">
 		<uri_prefix>https://tudmo.ulb.tu-darmstadt.de</uri_prefix>
 		<key>dfg-checkliste</key>
@@ -23,9 +23,9 @@
 
 &lt;div class="alert alert-info" role="alert"&gt;
 &lt;p&gt;&lt;b&gt;Hinweis&lt;/b&gt;&lt;/p&gt;
-&lt;i&gt;&lt;p&gt;Im Folgenden haben wir die von Ihnen eingegebenen Informationen über das 
+&lt;i&gt;&lt;p&gt;Im Folgenden haben wir die von Ihnen eingegebenen Informationen über das
 Projekt noch einmal zusammengefasst.&lt;/p&gt;
-&lt;p&gt;Bitte beachten Sie, dass diese Ansicht nochmals überprüft und bei Bedarf 
+&lt;p&gt;Bitte beachten Sie, dass diese Ansicht nochmals überprüft und bei Bedarf
 überarbeitet werden sollte.&lt;/p&gt;&lt;/i&gt;
 &lt;/div&gt;
 
@@ -43,15 +43,14 @@ Projekt noch einmal zusammengefasst.&lt;/p&gt;
 
 &lt;p&gt; Im Projekt entstehen Daten
 {% for dataset in datasets %}
-    {% if forloop.last and not forloop.first %}und {% endif %}      
-	im Bereich &lt;i&gt;{{dataset.value }}&lt;/i&gt; durch
-	{% get_set_values dataset 'project/dataset/creation_methods' as texts %}
+    {% if forloop.last and not forloop.first %}und {% endif %}
+    im Bereich &lt;i&gt;{{dataset.value}}&lt;/i&gt; durch
+    {% get_set_values dataset 'project/dataset/creation_methods' as texts %}
     {% for text in texts %}
         &lt;i&gt;{{ text.value }}&lt;/i&gt;
-        {% if not forloop.last %}, {% endif %}      
-	{% endfor %}
-    
-{% if not forloop.last %}, {% else %}.{% endif %}
+        {% if not forloop.last %}, {% endif %}
+    {% endfor %}
+    {% if not forloop.last %}; {% else %}.{% endif %}
 {% endfor %}
 &lt;/p&gt;
 
@@ -61,28 +60,26 @@ Projekt noch einmal zusammengefasst.&lt;/p&gt;
 
 &lt;p&gt;
 {% for dataset in datasets %}
-	{% get_set_values dataset 'project/dataset/origin' as texts %}
-      {% if forloop.last and not forloop.first %}und {% endif %}
-      {% for text in texts %}
-          {% if 'Ja' in text.value or 'Anderes' in text.value %}
-          Daten werden nachgenutzt im Bereich &lt;i&gt;{{dataset.value}}&lt;/i&gt;, diese
-          &lt;i&gt;{{ text.value|cut:'Ja, sie '|cut:'.'|cut:"Anderes:" }}&lt;/i&gt; 
-          {% if not forloop.last %}, {% else %}.{% endif %}
-          {% endif %}
-      
-      {% endfor %}
+    {% get_set_values dataset 'project/dataset/origin' as texts %}
+    {% if forloop.last and not forloop.first %}und {% endif %}
+    {% for text in texts %}
+        {% if 'Ja' in text.value or 'Anderes' in text.value %}
+            Daten werden nachgenutzt im Bereich &lt;i&gt;{{dataset.value}}&lt;/i&gt;; diese
+            &lt;i&gt;{{ text.value|cut:'Ja, sie '|cut:'.'|cut:"Anderes:" }}&lt;/i&gt;
+            {% if not forloop.last %}, {% else %}.{% endif %}
+        {% endif %}
+    {% endfor %}
 {% endfor %}
 
-
 {% for dataset in datasets %}
-	{% get_set_values dataset 'project/dataset/origin' as texts %}
-	{% for text in texts %}
-    	{% if 'Nein' in text.value or "Nach" in text.value %}
-        	Für den Bereich &lt;i&gt;{{dataset.value}}&lt;/i&gt; werden keine Daten nachgenutzt, 
-       		&lt;i&gt;{{ text.value|cut:'Nein, es werden keine existierenden Daten verwendet.'|cut:':' }}&lt;/i&gt;     
+    {% get_set_values dataset 'project/dataset/origin' as texts %}
+    {% for text in texts %}
+        {% if 'Nein' in text.value or "Nach" in text.value %}
+            Für den Bereich &lt;i&gt;{{dataset.value}}&lt;/i&gt; werden keine Daten nachgenutzt;
+            &lt;i&gt;{{ text.value|cut:'Nein, es werden keine existierenden Daten verwendet'|cut:'.'|cut:':' }}&lt;/i&gt;
         {% if not forloop.last %}und {% else %}.{% endif %}
         {% endif %}
-	{% endfor %}
+    {% endfor %}
 {% endfor %}
 &lt;/p&gt;
 
@@ -90,14 +87,13 @@ Projekt noch einmal zusammengefasst.&lt;/p&gt;
 &lt;h3&gt;Welche Datentypen, im Sinne von Datenformaten (z. B. Bilddaten, Textdaten oder Messdaten) entstehen in Ihrem Projekt?&lt;/h3&gt;
 {% endcomment %}
 
-&lt;p&gt; Die Daten liegen in den Formaten 
+&lt;p&gt; Die Daten liegen in den Formaten
 {% for dataset in datasets %}
-{% get_set_values dataset 'project/dataset/format' as texts %}
-{% for text in texts %}
-			&lt;i&gt;{{ text.value|cut:"Andere Datenformate:" }}&lt;/i&gt; {% if not forloop.last %}, {% endif %} 
-{% endfor %}
-        {% if not forloop.last %}, {% else %}{% endif %} 
-
+    {% get_set_values dataset 'project/dataset/format' as texts %}
+    {% for text in texts %}
+        &lt;i&gt;{{ text.value|cut:"Andere Datenformate:" }}&lt;/i&gt; {% if not forloop.last %}, {% endif %}
+    {% endfor %}
+    {% if not forloop.last %}, {% endif %}
 {% endfor %}
 vor,
 
@@ -107,19 +103,19 @@ vor,
 
 {% get_values 'project/dataset/format' as texts %}
 {% if texts %}
-mit einem Datenvolumen
-{% for dataset in datasets %}
-	{% get_set_values dataset 'project/dataset/size/volume' as texts %}
-    {% if texts and forloop.last %} und {% endif %}
-    {% if texts and not forloop.last and not forloop.first %}, {% endif %} 
-	{% for text in texts %}
-			für &lt;i&gt;{{ dataset.value }}&lt;/i&gt; 
+    mit einem Datenvolumen
+    {% for dataset in datasets %}
+        {% get_set_values dataset 'project/dataset/size/volume' as texts %}
+        {% if texts and forloop.last %} und {% endif %}
+        {% if texts and not forloop.last and not forloop.first %}, {% endif %}
+        {% for text in texts %}
+            für &lt;i&gt;{{ dataset.value }}&lt;/i&gt;
             {% if not "zwischen" in text.value %} von {% endif %}
-			&lt;i&gt;{{ text.value }}&lt;/i&gt; {% if not forloop.last %},{% endif %} 
-	{% endfor %}
-{% endfor %}
-. &lt;/p&gt;
+            &lt;i&gt;{{ text.value }}&lt;/i&gt; {% if not forloop.last %}, {% endif %}
+        {% endfor %}
+    {% endfor %}
 {% endif %}
+.&lt;/p&gt;
 
 {% comment "question" %}
 &lt;h3&gt;Auf welche Weise werden die Daten in Ihrem Projekt weiterverarbeitet?&lt;/h3&gt;
@@ -127,15 +123,14 @@ mit einem Datenvolumen
 
 &lt;p&gt;Die Weiterverarbeitung der Daten im Projekt erfolgt durch
 {% for dataset in datasets %}
-	{% get_set_values dataset 'project/dataset/usage_description' as texts %}
+    {% get_set_values dataset 'project/dataset/usage_description' as texts %}
     {% if texts and forloop.last %} und {% endif %}
-    {% if texts and not forloop.last and not forloop.first %}, {% endif %} 
-  	{% for text in texts %}
-              &lt;i&gt;{{ text.value }}&lt;/i&gt;
-  	{% endfor %}
+    {% if texts and not forloop.last and not forloop.first %}, {% endif %}
+    {% for text in texts %}
+        &lt;i&gt;{{ text.value }}&lt;/i&gt;
+    {% endfor %}
 {% endfor %}
 .&lt;/p&gt;
-
 
 
 &lt;h2&gt;Dokumentation und Datenqualität&lt;/h2&gt;
@@ -148,11 +143,11 @@ mit einem Datenvolumen
 {% for dataset in datasets %}
     {% get_set_values dataset 'project/dataset/metadata/standards' as texts %}
     {% if texts and forloop.last %} und {% endif %}
-    {% if texts and not forloop.last and not forloop.first %}, {% endif %} 
+    {% if texts and not forloop.last and not forloop.first %}, {% endif %}
     für den Bereich &lt;i&gt;{{dataset.value}}&lt;/i&gt; mit
     {% for text in texts %}
-      &lt;i&gt;{{ text.value|cut:"Es wird "|cut:'.' }}&lt;/i&gt;
-      {% if not forloop.last %},{% endif %}
+        &lt;i&gt;{{ text.value|cut:"Es wird "|cut:'.' }}&lt;/i&gt;
+        {% if not forloop.last %};{% endif %}
     {% endfor %}
 {% endfor %}
 .&lt;/p&gt;
@@ -163,11 +158,11 @@ mit einem Datenvolumen
 
 &lt;p&gt; Zur Datennutzung sind
 {% for dataset in datasets %}
-{% get_set_values dataset 'project/dataset/usage_technology' as texts %}
-{% for text in texts %}
-  &lt;i&gt;{{ text.value }}&lt;/i&gt;{% if not forloop.last %}, {% endif %}
-{% endfor %}
-{% if not forloop.last %}, {% endif %} 
+    {% get_set_values dataset 'project/dataset/usage_technology' as texts %}
+    {% for text in texts %}
+        &lt;i&gt;{{ text.value }}&lt;/i&gt;{% if not forloop.last %}, {% endif %}
+    {% endfor %}
+    {% if not forloop.last %}, {% endif %}
 {% endfor %}
 erforderlich.&lt;/p&gt;
 
@@ -178,13 +173,13 @@ erforderlich.&lt;/p&gt;
 
 &lt;p&gt; Die Qualitätssicherung erfolgt durch
 {% for dataset in datasets %}
-{% get_set_values dataset 'project/dataset/quality_assurance' as texts %}
+    {% get_set_values dataset 'project/dataset/quality_assurance' as texts %}
     {% if texts and forloop.last %} und {% endif %}
-    {% if texts and not forloop.last and not forloop.first %}, {% endif %} 
-{% for text in texts %}
-  &lt;i&gt;{{ text.value|cut:'.' }}&lt;/i&gt;
-  {% if not forloop.last %},{% endif %}
-{% endfor %}
+    {% if texts and not forloop.last and not forloop.first %}; {% endif %}
+    {% for text in texts %}
+        &lt;i&gt;{{ text.value|cut:'.' }}&lt;/i&gt;
+        {% if not forloop.last %},{% endif %}
+    {% endfor %}
 {% endfor %}
 .&lt;/p&gt;
 
@@ -195,14 +190,14 @@ erforderlich.&lt;/p&gt;
 
 &lt;p&gt; Unsere Qualitätskontrolle beinhaltet
 {% for dataset in datasets %}
-  {% get_set_values dataset 'project/dataset/control_tool' as texts %}
-      {% if texts and forloop.last %} und {% endif %}
-      {% if texts and not forloop.last and not forloop.first %}, {% endif %} 
-  für den Bereich &lt;i&gt;{{dataset.value}}&lt;/i&gt; 
-  {% for text in texts %}
-      &lt;i&gt;{{text.value|cut:'.' }}&lt;/i&gt;    
-      {% if not forloop.last %},{% endif %}
-  {% endfor %}
+    {% get_set_values dataset 'project/dataset/control_tool' as texts %}
+    {% if texts and forloop.last %} und {% endif %}
+    {% if texts and not forloop.last and not forloop.first %}; {% endif %}
+    für den Bereich &lt;i&gt;{{dataset.value}}&lt;/i&gt;
+    {% for text in texts %}
+        &lt;i&gt;{{text.value|cut:'.' }}&lt;/i&gt;
+        {% if not forloop.last %},{% endif %}
+    {% endfor %}
 {% endfor %}
 .&lt;/p&gt;
 
@@ -216,14 +211,14 @@ erforderlich.&lt;/p&gt;
 
 &lt;p&gt; Während der Projektlaufzeit werden die Daten
 {% for dataset in datasets %}
-{% get_set_values dataset 'project/dataset/storage/type' as texts %}
-      {% if texts and forloop.last %} und {% endif %}
-      {% if texts and not forloop.last and not forloop.first %}, {% endif %} 
-für den Bereich &lt;i&gt;{{dataset.value}}&lt;/i&gt;
-{% for text in texts %}
-    im &lt;i&gt;{{text.value|cut:'.' }}&lt;/i&gt;    
-    {% if not forloop.last %},{% endif %}
-{% endfor %}
+    {% get_set_values dataset 'project/dataset/storage/type' as texts %}
+    {% if texts and forloop.last %} und {% endif %}
+    {% if texts and not forloop.last and not forloop.first %}, {% endif %}
+    für den Bereich &lt;i&gt;{{dataset.value}}&lt;/i&gt;
+    {% for text in texts %}
+        im &lt;i&gt;{{text.value|cut:'.' }}&lt;/i&gt;
+        {% if not forloop.last %},{% endif %}
+    {% endfor %}
 {% endfor %}
 gespeichert.&lt;/p&gt;
 
@@ -235,15 +230,15 @@ gespeichert.&lt;/p&gt;
 
 &lt;p&gt; Die Sicherung sensibler Daten während der Projektlaufzeit werden
 {% for dataset in datasets %}
-{% get_set_values dataset 'project/dataset/data_security/security_measures' as texts %}
-      {% if texts and forloop.last %} und {% endif %}
-      {% if texts and not forloop.last and not forloop.first %}, {% endif %} 
-{% for text in texts %}
-	{% if text != "" %}
-    im Bereich &lt;i&gt;{{dataset.value}}&lt;/i&gt; &lt;i&gt;{{text.value}}&lt;/i&gt;    
-    {% if not forloop.last %},{% endif %}
-    {% endif %}
-{% endfor %}
+    {% get_set_values dataset 'project/dataset/data_security/security_measures' as texts %}
+    {% if texts and forloop.last %} und {% endif %}
+    {% if texts and not forloop.last and not forloop.first %}, {% endif %}
+    {% for text in texts %}
+        {% if text != "" %}
+        im Bereich &lt;i&gt;{{dataset.value}}&lt;/i&gt; &lt;i&gt;{{text.value|cut:'werden '}}&lt;/i&gt;
+        {% if not forloop.last %},{% endif %}
+        {% endif %}
+    {% endfor %}
 {% endfor %}
 .&lt;/p&gt;
 
@@ -257,19 +252,19 @@ gespeichert.&lt;/p&gt;
 
 &lt;p&gt;
 {% for dataset in datasets %}
-      {% get_set_values dataset 'project/dataset/sharing/restrictions_explanation' as texts %}
-      {% if texts and forloop.last %} und {% endif %}
-      {% if texts and not forloop.last and not forloop.first %}. {% endif %}
-      {% for text in texts %}   
-          {% if 'Ja' in text.value %}
-              Die Daten des Bereichs &lt;i&gt;{{dataset.value }}&lt;/i&gt;
-              &lt;i&gt;{{ text.value|cut:"Ja, " }}&lt;/i&gt;
-          {% endif %}
-          {% if 'Nein' in text.value %}
-        	 Es liegen keine Einschränkungen vor im Bereich &lt;i&gt;{{dataset.value }}&lt;/i&gt;
-          {% endif %}
-       {% endfor %}
-{% endfor %} 
+    {% get_set_values dataset 'project/dataset/sharing/restrictions_explanation' as texts %}
+    {% if texts and forloop.last %} und {% endif %}
+    {% if texts and not forloop.last and not forloop.first %}. {% endif %}
+    {% for text in texts %}
+        {% if 'Ja' in text.value %}
+            Die Daten des Bereichs &lt;i&gt;{{dataset.value }}&lt;/i&gt;
+            &lt;i&gt;{{ text.value|cut:"Ja, "|cut:'die Daten ' }}&lt;/i&gt;
+        {% endif %}
+        {% if 'Nein' in text.value %}
+            Es liegen keine Einschränkungen vor im Bereich &lt;i&gt;{{dataset.value }}&lt;/i&gt;
+        {% endif %}
+    {% endfor %}
+{% endfor %}
 .&lt;/p&gt;
 
 
@@ -279,13 +274,13 @@ gespeichert.&lt;/p&gt;
 
 {% get_values 'project/additional_rdm_policy/yesno' as texts %}
 {% if texts %}
-&lt;p&gt; Das gesamte Forschungsdatenmanagement orientiert sich 
-{% for text in texts %}
-	{% if forloop.last %}sowie {% endif %}
-    am &lt;i&gt;{{ text.value|cut:"\""|cut:"\„"}}&lt;/i&gt;
-    {% if not forloop.last %},{% else %}.{% endif %}
+    &lt;p&gt; Das gesamte Forschungsdatenmanagement orientiert sich
+    {% for text in texts %}
+        {% if forloop.last and not forloop.first %}sowie {% endif %}
+        am &lt;i&gt;{{ text.value|cut:"\""|cut:"\„"}}&lt;/i&gt;
+        {% if not forloop.last %},{% else %}.{% endif %}
     {% endfor %}
-&lt;/p&gt;
+    &lt;/p&gt;
 {% endif %}
 
 
@@ -296,19 +291,17 @@ gespeichert.&lt;/p&gt;
 &lt;p&gt; Für die Daten
 {% for dataset in datasets %}
     {% get_set_values dataset 'project/legal_aspects/ipr' as texts %}
-      {% if texts and forloop.last %} und {% endif %}
-      {% if texts and not forloop.last and not forloop.first %}, {% endif %}
-
+    {% if texts and forloop.last %} und {% endif %}
+    {% if texts and not forloop.last and not forloop.first %}, {% endif %}
     {% for text in texts %}
-    	{% if text %}
-   	 	im Bereich &lt;i&gt;{{dataset.value }}&lt;/i&gt; gilt
-        &lt;i&gt;{{ text.value|cut:"."}}&lt;/i&gt;
+        {% if text %}
+            im Bereich &lt;i&gt;{{dataset.value }}&lt;/i&gt; gilt
+            &lt;i&gt;{{ text.value|cut:"."}}&lt;/i&gt;
         {% endif %}
         {% if not forloop.last %},{% endif %}
-    {% endfor %}   
-
+    {% endfor %}
 {% endfor %}
-.&lt;/p&gt; 
+.&lt;/p&gt;
 
 
 {% comment "question" %}
@@ -318,8 +311,8 @@ gespeichert.&lt;/p&gt;
 &lt;p&gt; Weiterhin gilt
 {% for dataset in datasets %}
     {% get_set_values dataset 'project/legal_aspects' as texts %}
-      {% if texts and forloop.last %} und {% endif %}
-      {% if texts and not forloop.last and not forloop.first %}, {% endif %}
+    {% if texts and forloop.last %} und {% endif %}
+    {% if texts and not forloop.last and not forloop.first %}, {% endif %}
     {% if texts %}
         {% for text in texts %}
             {% if text != None %}
@@ -327,113 +320,104 @@ gespeichert.&lt;/p&gt;
             &lt;i&gt;{{ text.value}}&lt;/i&gt;
             {% endif %}
         {% if not forloop.last %},{% endif %}
-        {% endfor %}   
+        {% endfor %}
     {% endif %}
 {% endfor %}
-&lt;/p&gt; 
-
+&lt;/p&gt;
 
 
 &lt;h2&gt;Datenaustausch und dauerhafte Zugänglichkeit der Daten&lt;/h2&gt;
 
-
 {% for dataset in datasets %}
 
-&lt;p&gt; Im Bereich &lt;i&gt;{{ dataset.value }}&lt;/i&gt;
+    &lt;p&gt; Im Bereich &lt;i&gt;{{ dataset.value }}&lt;/i&gt;
 
-{% comment %}
-&lt;h3&gt;Welche Daten bieten sich für die Nachnutzung in anderen Kontexten besonders an? &lt;/h3&gt;
-{% endcomment %}
+    {% comment %}
+    &lt;h3&gt;Welche Daten bieten sich für die Nachnutzung in anderen Kontexten besonders an? &lt;/h3&gt;
+    {% endcomment %}
 
-{% get_values 'project/dataset/reuse_scenario' as texts %}
-{% if texts %}
-	{% get_set_values dataset 'project/dataset/reuse_scenario' as texts %}
+    {% get_values 'project/dataset/reuse_scenario' as texts %}
+    {% if texts %}
+        {% get_set_values dataset 'project/dataset/reuse_scenario' as texts %}
+        {% check_condition 'reuse_scenario' set_index=dataset.set_index as condition %}
+        {% if condition %}
+            {% if texts %}
+                ist
+                {% for text in texts %}
+                    {% if 'Ja' in text.value %}
+                        &lt;i&gt;{{ text.value|cut:"Ja, "|cut:"der Daten " }}&lt;/i&gt;
+                        {% if not forloop.last %},{% endif %}
+                    {% endif %}
+                {% endfor %}
+                .
+            {% endif %}
+        {% else %}
+            sind die Daten nicht für die Nachnutzung geeignet,
+            {% for text in texts %}
+                 &lt;i&gt;{{ text.value|cut:"Nein, ich kann mir kein Nachnutzungsszenario für die Daten vorstellen, weil:"|cut:"der Daten " }}&lt;/i&gt;
+            {% endfor %}
+        {% endif %}
+    {% endif %}
+
+    {% comment %}
+    Folgefragen ausblenden, wenn kein Reuse Szenario denkbar ist.
+    {% endcomment %}
+
     {% check_condition 'reuse_scenario' set_index=dataset.set_index as condition %}
     {% if condition %}
-    {% if texts %}
-    ist 
-    {% for text in texts %}
-    	{% if 'Ja' in text.value %}
- 
-        &lt;i&gt;{{ text.value|cut:"Ja, "|cut:"der Daten " }}&lt;/i&gt;
-        {% if not forloop.last %},{% endif %}     
+
+        {% comment %}
+        &lt;h3&gt;Nach welchen Kriterien werden Forschungsdaten ausgewählt, um diese für die Nachnutzung durch andere zur Verfügung zu stellen? &lt;/h3&gt;
+        {% endcomment %}
+
+        {% get_set_values dataset 'project/preservation/selection_criteria' as texts %}
+        {% if texts %}
+            Die Daten werden zur Verfügung gestellt, da
+            {% for text in texts %}
+                &lt;i&gt;{{ text.value }}&lt;/i&gt;{% if not forloop.last %},{% else %}.{% endif %}
+            {% endfor %}
         {% endif %}
-	{% endfor %}
-    .
-    {% endif %}
-    {% else %}
-    sind die Daten nicht für die Nachnutzung geeignet,
-    {% for text in texts %}
-    	 &lt;i&gt;{{ text.value|cut:"Nein, ich kann mir kein Nachnutzungsszenario für die Daten vorstellen, weil:"|cut:"der Daten " }}&lt;/i&gt;
-    {% endfor %}
-    {% endif %}
-{% endif %}
 
-{% comment %}
-&lt;h3&gt;Nach welchen Kriterien werden Forschungsdaten ausgewählt, um diese für die Nachnutzung durch andere zur Verfügung zu stellen? &lt;/h3&gt;
-{% endcomment %}
+        {% comment %}
+        &lt;h3&gt;Wann ist der Datensatz für dritte nutzbar?&lt;/h3&gt;
+        {% endcomment %}
 
-{% comment %}
-Folgefragen ausblenden, wenn kein Reuse Szenario denkbar ist.
-{% check_condition 'reuse_scenario' set_index=dataset.set_index as condition %}
-{% if condition %}
-{% endcomment %}
-
-{% check_condition 'reuse_scenario' set_index=dataset.set_index as condition %}
-{% if condition %}
-
-{% get_set_values dataset 'project/preservation/selection_criteria' as texts %}
-{% if texts %}
-Die Daten werden zur Verfügung gestellt, da
-	{% get_set_values dataset 'project/preservation/selection_criteria' as texts %}
-    {% for text in texts %}
-        &lt;i&gt;{{ text.value }}&lt;/i&gt;{% if not forloop.last %},{% else %}.{% endif %}      
-	{% endfor %}
-{% endif %}
-
-
-{% comment %}
-&lt;h3&gt;Wann ist der Datensatz für dritte nutzbar?&lt;/h3&gt;
-{% endcomment %}
-
-{% get_values 'project/dataset/data_publication_date' as texts %}
-{% if texts %}
-	{% get_set_values dataset 'project/dataset/data_publication_date' as texts %}
-    {% for text in texts %}
-  		{% if "Dieser Datensatz wird von uns nachgenutzt" in text.value %}
-        	wurden 
-        &lt;i&gt;{{ text.value|cut:"Dieser Datensatz wird von uns nachgenutzt und ist "|cut:"." }}&lt;/i&gt;
-        {% else %}
-        	Die Daten werden zur Verfügung gestellt
-        &lt;i&gt;{{ text.value|cut:"." }}&lt;/i&gt;
-        {% if not forloop.last %},{% endif %}     
+        {% get_values 'project/dataset/data_publication_date' as texts %}
+        {% if texts %}
+            {% get_set_values dataset 'project/dataset/data_publication_date' as texts %}
+            {% for text in texts %}
+                {% if "Dieser Datensatz wird von uns nachgenutzt" in text.value %}
+                    wurden
+                    &lt;i&gt;{{ text.value|cut:"Dieser Datensatz wird von uns nachgenutzt und ist "|cut:"." }}&lt;/i&gt;
+                {% else %}
+                    Die Daten werden zur Verfügung gestellt
+                    &lt;i&gt;{{ text.value|cut:"." }}&lt;/i&gt;
+                    {% if not forloop.last %},{% endif %}
+                {% endif %}
+            {% endfor %}
         {% endif %}
-	{% endfor %}
-{% endif %}
 
-{% check_condition 'data_published' set_index=dataset.set_index as condition %}
-{% if not condition %}
+    {% endif %}
 
-{% comment %}
-&lt;h3&gt;Planen Sie die Archivierung Ihrer Daten in einer geeigneten Infrastruktur? Falls ja, wie und wo? Gibt es Sperrfristen? Wann sind die Forschungsdaten für Dritte nutzbar?&lt;/h3&gt;
-{% endcomment %}
+    {% comment %}
+    &lt;h3&gt;Planen Sie die Archivierung Ihrer Daten in einer geeigneten Infrastruktur? Falls ja, wie und wo? Gibt es Sperrfristen? Wann sind die Forschungsdaten für Dritte nutzbar?&lt;/h3&gt;
+    {% endcomment %}
 
-{% get_set_values dataset 'project/dataset/preservation/yesno' as texts %}
-{% if texts.is_true == true %}
- in
-	{% get_set_values dataset 'project/dataset/preservation/repository' as texts %}
-    {% for text in texts %}
-        &lt;i&gt;{{ text.value|cut:'Sonstige:'|cut:"Andere: " }}&lt;/i&gt; 
-        {% if not forloop.last %},{% endif %}      
-	{% endfor %}
-{% endif %}
-{% endif %}
-.&lt;/p&gt; 
+    {% check_condition 'data_published' set_index=dataset.set_index as condition %}
+    {% if not condition %}
+        {% get_set_values dataset 'project/dataset/preservation/yesno' as texts %}
+        {% if texts.is_true == true %}
+            in
+            {% get_set_values dataset 'project/dataset/preservation/repository' as texts %}
+            {% for text in texts %}
+                &lt;i&gt;{{ text.value|cut:'Sonstige:'|cut:"Andere: " }}&lt;/i&gt;
+                {% if not forloop.last %},{% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endif %}
+    .&lt;/p&gt;
 
-
-{% endif %}
 {% endfor %}
-
 
 
 &lt;h2&gt;Verantwortlichkeiten und Ressourcen&lt;/h2&gt;
@@ -445,15 +429,14 @@ Die Daten werden zur Verfügung gestellt, da
 
 {% get_values 'project/support' as texts %}
 {% if texts %}
-&lt;p&gt;Verantwortlich für den adäquaten Umgang mit den Forschungsdaten sind
+    Verantwortlich für den adäquaten Umgang mit den Forschungsdaten sind
     {% for text in texts %}
-    {% if not forloop.last and not forloop.first %},{% endif %} 
-    {% if forloop.last and texts|length &gt; 1 %} und {% endif %}    
+        {% if not forloop.last and not forloop.first %},{% endif %}
+        {% if forloop.last and texts|length &gt; 1 %} und {% endif %}
         &lt;i&gt;{{ text.value|truncatewords:3}}&lt;/i&gt;
-        {% if forloop.last %}.{% endif %} 
-	{% endfor %}
+        {% if forloop.last %}.{% endif %}
+    {% endfor %}
 {% endif %}
-
 
 {% comment %}
 &lt;h3&gt;Wer ist nach Ende der Laufzeit des Projekts für das Kuratieren der Daten verantwortlich?&lt;/h3&gt;
@@ -461,16 +444,15 @@ Die Daten werden zur Verfügung gestellt, da
 
 {% get_values 'project/dataset/curation/responsible_person/name' as texts %}
 {% if texts %}
-Nach Ende der Laufzeit ist für das Kuratieren der Daten verantwortlich
+    Nach Ende der Laufzeit ist für das Kuratieren der Daten verantwortlich
     {% for text in texts %}
-    {% if forloop.last and texts|length &gt; 1 %} und {% endif %} 
-    {% if not forloop.last and not forloop.first %},{% endif %} 
-    &lt;i&gt;{{ text.value|truncatewords:3}}&lt;/i&gt;
-    {% if not forloop.last %}.{% endif %} 
-	{% endfor %}
-
-&lt;/p&gt;
+        {% if forloop.last and texts|length &gt; 1 %} und {% endif %}
+        {% if not forloop.last and not forloop.first %},{% endif %}
+        &lt;i&gt;{{ text.value|truncatewords:3}}&lt;/i&gt;
+        {% if not forloop.last %}.{% endif %}
+    {% endfor %}
 {% endif %}
+&lt;/p&gt;
 
 
 {% comment %}
@@ -482,8 +464,9 @@ Nach Ende der Laufzeit ist für das Kuratieren der Daten verantwortlich
 &lt;p&gt; Die benötigten Ressourcen für das Datenmanagement im Projekt sind:
     {% for text in texts %}
         &lt;i&gt;{{ text.value|cut:"Infrastrukturressource: "}}&lt;/i&gt;
-        {% if not forloop.last %},{% else %}.{% endif %}      
-	{% endfor %}
+        {% if not forloop.last %};{% else %}.{% endif %}
+    {% endfor %}
+&lt;/p&gt;
 {% endif %}
 
 &lt;/body&gt;</template>
