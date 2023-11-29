@@ -88,7 +88,7 @@ Projekt noch einmal zusammengefasst.&lt;/p&gt;
 {% for dataset in datasets %}
     {% get_set_values dataset 'project/dataset/format' as texts %}
     {% for text in texts %}
-        {{ text.value|dictsort:"value"|cut:"Andere Datenformate:" }} {% if not forloop.last %}, {% endif %}
+        {{ text.value|cut:"Andere Datenformate:" }} {% if not forloop.last %}, {% endif %}
     {% endfor %}
     {% if not forloop.last %}, {% endif %}
 {% endfor %}
