@@ -25,7 +25,7 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 |DCC checklist           |[catalog](rdmorganiser/questions/dcc.xml)           |     |2018-10|RDMO team      |
 |DFG checklist           |[catalog](rdmorganiser/questions/DFG-Checkliste.xml)|[view](rdmorganiser/views/dfg-checkliste.xml)       |2023-11|RDMO team       |
 |Horizon Europe          |[catalog](rdmorganiser/questions/horizon-europe.xml)|[view](rdmorganiser/views/horizon-europe.xml)       |2022-12|RDMO team       |
-|Software Management Plan|[catalog](rdmorganiser/questions/SMP-Questions.xml) |[view (FAIR4RS)](rdmorganiser/views/FAIR4RSview.xml)|2023-08|MPDL / RDMO team|
+|Software Management Plan|[catalog](rdmorganiser/questions/SMP-Questions.xml) |[view (FAIR4RS)](rdmorganiser/views/FAIR4RSview.xml)|2023-11|MPDL / RDMO team|
 |Swiss National Fund     |[catalog](rdmorganiser/questions/snf.xml)           |[view](rdmorganiser/views/snf.xml)                  |2020-08|RDMO team       |
 |Bielefeld               |            |[view](rdmorganiser/views/bielefeld.xml)     |2019-01|RDMO team      |
 |CITEC                   |            |[view](rdmorganiser/views/citec.xml)         |2019-01|RDMO team      |

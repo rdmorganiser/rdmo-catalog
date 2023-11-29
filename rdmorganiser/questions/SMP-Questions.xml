@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-11-29T11:13:47.452101+01:00" version="2.0.2">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-11-29T13:19:01.528337+01:00" version="2.0.2">
 	<catalog dc:uri="https://rdmorganiser.github.io/terms/questions/smp">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<uri_path>smp</uri_path>
@@ -121,56 +121,70 @@ This SMP template was inspired by some documentation, specially:
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/application-class">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<uri_path>application-class</uri_path>
-		<dc:comment>The application classes are essentially based on the &quot;DLR Software Engineering Guidelines&quot; (https://doi.org/10.5281/zenodo.1344612), p. 7-8.</dc:comment>
+		<dc:comment>The application classes are essentially based on the &quot;DLR Software Engineering Guidelines&quot; (https://zenodo.org/record/1344612), p. 7-8.</dc:comment>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/application-class"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
-		<help lang="en">The application classes are essentially based on the &quot;DLR Software Engineering Guidelines&quot; (https://doi.org/10.5281/zenodo.1344612), p. 7-8.
-
-Application Class 0:
-* Scripts to process data for a publication.
-* Simple administrative scripts to automate specific tasks.
-* Software that only demonstrates certain functions or is developed to test them
-
-Application Class 1:
-* Software that students develop during studies, bachelor or master theses.
-* Software resulting from dissertations in which the long-term development does not matter. 
-* Software resulting from third-party projects with focus on demonstration and without planned long-term development.
-
-Application Class 2:
-* Software resulting from dissertations in which maintainability and long-term usage matter.
-* Software from third-party projects in which maintenance and long-term usage matter beyond the project.
-* Large research frameworks which are developed by a majority of a department.
-
-Application Class 3:
-* Mission critical software, for example, in context of aircraft, autonomous vehicles, health care, patients relation, or space missions.
-* Software for which the facility gives a warranty within or outside the own institution (e.g., via an external company).
-* Software that makes a significant contribution to third party funding and research results of the facility, and must therefore work reliably.</help>
+		<help lang="en">The application classes are essentially based on the &quot;DLR Software Engineering Guidelines&quot; (&lt;a href=&quot;https://doi.org/10.5281/zenodo.1344612&quot; target=&quot; _blank&quot;&gt;https://doi.org/10.5281/zenodo.1344612&lt;/a&gt;), p. 7-8.
+&lt;details&gt;
+&lt;summary&gt;Click here for more information on the application classes for research software&lt;/summary&gt;
+&lt;b&gt;Application Class 0&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Scripts to process data for a publication.&lt;/li&gt;
+&lt;li&gt;Simple administrative scripts to automate specific tasks.&lt;/li&gt;
+&lt;li&gt;Software that only demonstrates certain functions or is developed to test them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;Application Class 1&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Software that students develop during studies, bachelor or master theses.&lt;/li&gt;
+&lt;li&gt;Software resulting from dissertations in which the long-term development does not matter. &lt;/li&gt;
+&lt;li&gt;Software resulting from third-party projects with focus on demonstration and without planned long-term development.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;Application Class 2&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Software resulting from dissertations in which maintainability and long-term usage matter.&lt;/li&gt;
+&lt;li&gt;Software from third-party projects in which maintenance and long-term usage matter beyond the project.&lt;/li&gt;
+&lt;li&gt;Large research frameworks which are developed by a majority of a department.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;Application Class 3&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Mission critical software, for example, in context of aircraft, autonomous vehicles, health care, patients relation, or space missions.&lt;/li&gt;
+&lt;li&gt;Software for which the facility gives a warranty within or outside the own institution (e.g., via an external company).&lt;/li&gt;
+&lt;li&gt;Software that makes a significant contribution to third party funding and research results of the facility, and must therefore work reliably.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;</help>
 		<text lang="en">In which application class is the software categorised?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Die Anwendungsklassen orientieren sich im Wesentlichen an den &quot;DLR-Richtlinien zur Softwaretechnik&quot; (https://doi.org/10.5281/zenodo.1344612), S. 7-8.
-
-Anwendungsklasse 0:
-* Skripte zur Verarbeitung von Daten für eine Publikation.
-* Einfache administrative Skripte, um bestimmte Aufgaben zu automatisieren.
-* Software, die nur bestimmte Funktionen demonstriert oder zu deren Test entwickelt wird.
-
-Anwendungsklasse 1:
-* Software, die Studenten im Rahmen von Studien-, Bachelor- oder Masterarbeiten entwickeln.
-* Software, die aus Dissertationen resultiert, bei denen die langfristige Entwicklung keine Rolle spielt. 
-* Software, die im Rahmen von Drittmittelprojekten mit Schwerpunkt auf Demonstration und ohne geplante langfristige Entwicklung entsteht.
-
-Anwendungsklasse 2:
-* Software aus Dissertationen, bei denen Wartbarkeit und langfristige Nutzung eine Rolle spielen.
-* Software aus Drittmittelprojekten, bei denen Wartung und langfristige Nutzung über das Projekt hinaus von Bedeutung sind.
-* Große Forschungs-Frameworks, die mehrheitlich von einer Abteilung entwickelt werden.
-
-Anwendungsklasse 3:
-* Einsatzkritische Software, z. B. im Zusammenhang mit Flugzeugen, autonomen Fahrzeugen, Gesundheitsfürsorge, Patientenbeziehungen oder Weltraummissionen.
-* Software, für die die Einrichtung innerhalb oder außerhalb der eigenen Institution (z. B. über ein externes Unternehmen) eine Garantie übernimmt.
-* Software, die einen wesentlichen Beitrag zu Drittmitteln und Forschungsergebnissen der Einrichtung leistet und daher zuverlässig funktionieren muss.</help>
+		<help lang="de">Die Anwendungsklassen orientieren sich im Wesentlichen an den &quot;DLR-Richtlinien für Softwaretechnik&quot; (&lt;a href=&quot;https://doi.org/10.5281/zenodo.1344612&quot; target=&quot; _blank&quot;&gt;https://doi.org/10.5281/zenodo.1344612&lt;/a&gt;), S. 7-8.
+&lt;Details&gt;
+&lt;summary&gt;Hier finden Sie weitere Informationen zu den Anwendungsklassen für Forschungssoftware&lt;/summary&gt;
+&lt;b&gt;Anwendungsklasse 0&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Skripte zur Verarbeitung von Daten für eine Publikation.&lt;/li&gt;
+&lt;li&gt;Einfache administrative Skripte, um bestimmte Aufgaben zu automatisieren.&lt;/li&gt;
+&lt;li&gt;Software, die nur bestimmte Funktionen demonstriert oder entwickelt wird, um sie zu testen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;Anwendungsklasse 1&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Software, die Studierende im Rahmen von Studien-, Bachelor- oder Masterarbeiten entwickeln.&lt;/li&gt;
+&lt;li&gt;Software, die aus Diplomarbeiten resultiert, bei denen die langfristige Entwicklung keine Rolle spielt. &lt;/li&gt;
+&lt;li&gt;Software, die aus Drittmittelprojekten mit Schwerpunkt auf Demonstration und ohne geplante langfristige Entwicklung resultiert.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;Anwendungsklasse 2&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Software, die aus Dissertationen resultiert, bei denen Wartbarkeit und langfristige Nutzung eine Rolle spielen.&lt;/li&gt;
+&lt;li&gt;Software aus Drittmittelprojekten, bei denen Wartung und langfristige Nutzung über das Projekt hinaus von Bedeutung sind.&lt;/li&gt;
+&lt;li&gt;Große Forschungsrahmenwerke, die mehrheitlich von einer Abteilung entwickelt werden.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;Anwendungsklasse 3&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Missionskritische Software, z.B. im Zusammenhang mit Flugzeugen, autonomen Fahrzeugen, Gesundheitsfürsorge, Patientenbeziehungen oder Weltraummissionen.&lt;/li&gt;
+&lt;li&gt;Software, für die die Einrichtung innerhalb oder außerhalb der eigenen Institution (z.B. über ein externes Unternehmen) eine Garantie übernimmt.&lt;/li&gt;
+&lt;li&gt;Software, die einen wesentlichen Beitrag zu Drittmitteln und Forschungsergebnissen der Einrichtung leistet und daher zuverlässig arbeiten muss.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;</help>
 		<text lang="de">In welche Anwendungsklasse wird die Software einordnen?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
