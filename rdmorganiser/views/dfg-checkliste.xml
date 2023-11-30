@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-11-29T16:26:27.150657+01:00" version="2.0.0">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-11-30T10:27:05.422374+01:00" version="2.0.0">
 	<view dc:uri="https://rdmorganiser.github.io/terms/views/dfg-checkliste">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<uri_path>dfg-checkliste</uri_path>
@@ -421,7 +421,7 @@ gespeichert.&lt;/p&gt;
     {% for text in texts %}
         {% if not forloop.last and not forloop.first %},{% endif %}
         {% if forloop.last and texts|length &gt; 1 %} und {% endif %}
-        {{ text.value|truncatewords:3 }}
+        {{ text.value|truncatewords:3|cut:"; …" }}
         {% if forloop.last %}.{% endif %}
     {% endfor %}
 {% endif %}
@@ -436,7 +436,7 @@ gespeichert.&lt;/p&gt;
     {% for text in texts %}
         {% if forloop.last and texts|length &gt; 1 %} und {% endif %}
         {% if not forloop.last and not forloop.first %},{% endif %}
-        {{ text.value|truncatewords:3 }}
+        {{ text.value|truncatewords:3|cut:"; …" }}
         {% if forloop.last %}.{% endif %}
     {% endfor %}
 {% endif %}
