@@ -2283,7 +2283,7 @@ Beispielsweise mit einer &lt;a href=&quot;https://citation-file-format.github.io
 		<uri_path>smp/legal-and-ethics/license/software-license</uri_path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/software-license"/>
-		<is_collection>False</is_collection>
+		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en">There are good arguments for assigning a license. &lt;a href=&quot;https://wissenschaftliche-integritaet.de/en/code-of-conduct/providing-public-access-to-research-results/&quot; target=&quot;_blank&quot;&gt;Guideline 13 in the DFG Code of Conduct &quot;Guidelines for Safeguarding Good Scientific Practice&quot;&lt;/a&gt; even explicitly states that if &quot;self-developed research software is to be made available to third parties, an appropriate licence is provided&quot;. &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; R1.1 also emphasises the same. Please also consider the compatibility with already integrated third-party libraries.
 
@@ -2311,14 +2311,16 @@ Folgende Seiten geben Ihnen einen ersten Überblick zu Software und Lizenzen:
 		<verbose_name_plural lang="de"/>
 		<default_option/>
 		<default_external_id/>
-		<widget_type>text</widget_type>
+		<widget_type>checkbox</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
 		<width/>
-		<optionsets/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/software-license"/>
+		</optionsets>
 		<conditions/>
 	</question>
 	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/dual-use">
