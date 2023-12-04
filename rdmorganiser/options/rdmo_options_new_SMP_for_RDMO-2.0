@@ -99,6 +99,51 @@
 		<text lang="de">Anderes</text>
 		<additional_input>True</additional_input>
 	</option>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/software_identifier">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>software_identifier</uri_path>
+		<dc:comment>list of identifiers according to cff standard 1.2.0: https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md#definitionsidentifier</dc:comment>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/software_identifier/doi" order="1"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/software_identifier/url" order="2"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/software_identifier/swh" order="3"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/software_identifier/other" order="4"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/software_identifier/doi">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>software_identifier/doi</uri_path>
+		<dc:comment/>
+		<text lang="en">DOI</text>
+		<text lang="de">DOI</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/software_identifier/url">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>software_identifier_url</uri_path>
+		<dc:comment/>
+		<text lang="en">URL</text>
+		<text lang="de">URL</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/software_identifier/swh">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>software_identifier/swh</uri_path>
+		<dc:comment/>
+		<text lang="en">Software Heritage Identifier</text>
+		<text lang="de">Software Heritage Identifier</text>
+		<additional_input>True</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/software_identifier/other">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>software_identifier/other</uri_path>
+		<dc:comment/>
+		<text lang="en">Other</text>
+		<text lang="de">Sonstige</text>
+		<additional_input>True</additional_input>
+	</option>
 		<optionset dc:uri="https://rdmorganiser.github.io/terms/options/testing">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<uri_path>testing</uri_path>
