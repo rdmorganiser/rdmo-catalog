@@ -19,10 +19,10 @@ Furthermore, this SMP template was inspired by some documentations, specially:
 # Versions of the SMP Catalogue
 | Version Number | Release Date | Description |
 | -------------- | ------------ | ----------- |
-| 1.0 | 5th December 2022   | Initatilisation|
-| 1.1 | 27th Februrary 2023 | Minor adjustments to help texts and some widget types of questions|
-| 2.0 | 18th August 2023    | a) Addition of a question regarding Qualifty References (reference to FAIR4RS I2 and R2); b) adjustments to questions and help texts for the FAIR4RS viewer; c) minor adjustments to help texts thanks to feedback; d) broken links repair + Thanks a lot for the feedback by the RDMO Community!|
-| 3.0 | 29th November 2023 | Implementing application classes and structure the appearence of different question after the DLR Research Software Guidelines (https://doi.org/10.5281/zenodo.1344612). This work was done within the NFDI4DataScience miniHackathons on maSMPs in 2023 at the ZB Med.
+| 1.0 | 5th December 2022  | Initialisation   |
+| 1.1 | 27th February 2023 | Minor adjustments to help texts and some widget types of questions|
+| 2.0 | 18th August 2023   | a) Addition of a question regarding Qualifty References (reference to FAIR4RS I2 and R2); b) adjustments to questions and help texts for the FAIR4RS viewer; c) minor adjustments to help texts thanks to feedback; d) broken links repair + Thanks a lot for the feedback by the RDMO Community!|
+| 3.0 | 29th November 2023 | Implementing application classes and structure the appearence of different question after the DLR Research Software Guidelines (https://doi.org/10.5281/zenodo.1344612). This work was done within the NFDI4DataScience miniHackathons on maSMPs in 2023 at the ZB Med.|
 
 # Implementing
 The catalogue uses the generic elements from RDMO. Therefore, all generic elements from "Conditions", "Domain", "Options" and "Questions" must already be implemented in advance.
