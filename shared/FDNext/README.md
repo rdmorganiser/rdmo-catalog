@@ -11,7 +11,7 @@ Die Nutzung des Generators vereinfacht den Prozess der Policy-Erstellung und ste
 **Wie funktioniert die Beantwortung der Fragen im Generator?**  
 Bei den meisten Fragen können Sie aus vorgegebenen Antworten auswählen und bei Bedarf individuelle Formulierungen hinzufügen. Einige Fragen erfordern nur Freitextantworten.  
 **Kann ich die Bearbeitung unterbrechen und später fortsetzen?**  
-Ja, es ist jederzeit möglich, die Bearbeitung zu unterbrechen und an späterer Stelle fortzusetzen. Auch können Sie über die Navigation zwischen Fragen hin- und herspringen und brauchen sie nicht in der vorgegebenen Reihenfolge zu bearbeiten. 
+Ja, es ist jederzeit möglich, die Bearbeitung zu unterbrechen und an späterer Stelle fortzusetzen. Auch können Sie über die Navigation zwischen Fragen hin- und herspringen und brauchen sie nicht in der vorgegebenen Reihenfolge zu bearbeiten.
 **In welcher Form werden die Textbausteine ausgegeben?**    
 Nachdem Sie den Fragebogen ausgefüllt haben, erhalten Sie eine Übersicht aller Fragen und Antworten, die Sie zur Formulierung Ihrer Policy nutzen können. Diese Übersicht kann in ein Textverarbeitungsprogramm exportiert und weiterbearbeitet werden.   
 **Wie lange dauert es, den Fragebogen auszufüllen?**  
@@ -21,7 +21,7 @@ Nein, alle Fragen sind optional. Sie brauchen nur diejenigen beantworten, die f�
 **Wo finde ich Beispiele für Forschungsdaten-Policies?**   
 Sie können Beispiele für Forschungsdaten-Policies auf [forschungsdaten.org](https://www.forschungsdaten.org/index.php/Data_Policies) finden.  
 **Gibt es weitere Hilfestellungen zur Erstellung einer Forschungsdaten-Policy?**  
-Ja, in der Publikation "Forschungsdaten-Policies für Forschungsprojekte: ein strukturierter Leitfaden" finden Sie zusätzliche Hinweise zur Erstellung einer projektinternen Forschungsdaten-Policy.  
+Ja, in der Publikation ["Forschungsdaten-Policies für Forschungsprojekte: ein strukturierter Leitfaden"](http://dx.doi.org/10.14279/depositonce-16196) finden Sie zusätzliche Hinweise zur Erstellung einer projektinternen Forschungsdaten-Policy.  
 **Zu welchem Zeitpunkt der Projektlaufzeit sollte das Tool verwendet werden?**  
 Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen, damit Sie sich im Team von Anfang an auf gemeinsame Ziele festlegen und genügend Zeit für die notwendigen Abstimmungsprozesse haben.  
 
@@ -48,12 +48,6 @@ Erst im Anschluss kann der Fragenkatalog (fdnext_template_questions.xml) korrekt
 > Attribut: https://fdm.ub.tu-berlin.de/domain/fdnext/description/description  
 > Widget-Typ: Textfeld
 
-### Ziele der Policy
-#### Mit der Forschungsdatenpolicy werden für das Projekt folgende Ziele verfolgt:
-> Attribut: https://fdm.ub.tu-berlin.de/domain/fdnext/goals/goals  
-> Widget-Typ: Ankreuzfelder  
-> Optionenset: https://fdm.ub.tu-berlin.de/options/fdnext-goals  
-
 ### Definitionen
 #### Folgende zentrale Begriffe sollen definiert werden:
 > Attribut: https://fdm.ub.tu-berlin.de/domain/fdnext/definitions/definitions  
@@ -63,6 +57,12 @@ Erst im Anschluss kann der Fragenkatalog (fdnext_template_questions.xml) korrekt
 #### Weitere für das Projekt relevante Definitionen:
 > Attribut: https://fdm.ub.tu-berlin.de/domain/fdnext/definitions/definitions01   
 > Widget-Typ: Textfeld  
+
+### Ziele der Policy
+#### Mit der Forschungsdatenpolicy werden für das Projekt folgende Ziele verfolgt:
+> Attribut: https://fdm.ub.tu-berlin.de/domain/fdnext/goals/goals  
+> Widget-Typ: Ankreuzfelder  
+> Optionenset: https://fdm.ub.tu-berlin.de/options/fdnext-goals  
 
 ## Geltungsbereich
 ### Personenkreis und Forschungsdaten
@@ -80,22 +80,22 @@ Erst im Anschluss kann der Fragenkatalog (fdnext_template_questions.xml) korrekt
 Neben dem Urheberrecht spielen folgende Gesetze, die den Umgang mit Forschungsdaten betreffen, im Projekt eine Rolle:
 > Attribut: https://fdm.ub.tu-berlin.de/domain/fdnext/legal/law  
 > Widget-Typ: Ankreuzfelder  
-> Optionen: https://fdm.ub.tu-berlin.de/options/law  
+> Optionenset: https://fdm.ub.tu-berlin.de/options/law  
 
 #### Der urheberrechtskonforme Umgang mit Forschungsdaten wird insbesondere durch folgende Maßnahmen gewährleistet:
 > Attribut: https://fdm.ub.tu-berlin.de/domain/fdnext/legal/lawm  
 > Widget-Typ: Ankreuzfelder  
-> Optionen: https://fdm.ub.tu-berlin.de/options/lawm  
+> Optionenset: https://fdm.ub.tu-berlin.de/options/lawm  
 
 #### Der datenschutzkonforme Umgang mit Forschungsdaten wird insbesondere durch folgende Maßnahmen gewährleistet:
 > Attribut: https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ipr  
 > Widget-Typ: Ankreuzfelder  
-> Optionen: https://fdm.ub.tu-berlin.de/options/data-protection  
+> Optionenset: https://fdm.ub.tu-berlin.de/options/data-protection  
 
 #### Darüber hinaus sind im Umgang mit den Forschungsdaten neben dem Kodex zur Sicherung guter wissenschaftlicher Praxis der DFG im Projekt folgende Richtlinien relevant:
 > Attribut: https://rdmorganiser.github.io/terms/domain/project/legal_aspects  
 > Widget-Typ: Ankreuzfelder  
-> Optionen: https://fdm.ub.tu-berlin.de/options/guidelines  
+> Optionenset: https://fdm.ub.tu-berlin.de/options/guidelines  
 
 ## Verantwortlichkeit
 ### Zuständigkeit für die Umsetzung der Policy
@@ -170,7 +170,3 @@ Für die Umsetzung der in der Policy formulierten Grundsätze sind die folgenden
 #### Gelesen und verstanden
 > Attribut: https://fdm.ub.tu-berlin.de/domain/fdnext/domain/yesno  
 > Widget-Typ: Ja/Nein
-
-
-
-
