@@ -31,7 +31,7 @@ The catalogue uses the generic elements from RDMO. Therefore, all generic elemen
 This catalogue introduces many custom attributes, as the generic RDMO attributes do not always cover the specific aspects of software. For this reason, the existing views in RDMO cannot be used for this catalogue, or only to a very limited extent.
 
 # Use outside RDMO
-Due to multiple requests, we have created a template on the SMP for use outside of RDMO. The Word document is freely writable, has a CC0 and is freely available via https://doi.org/10.17617/2.3481986  (direct link to the docx. file: https://hdl.handle.net/21.11116/0000-000C-1076-D) for your own re-use.
+Due to multiple requests, we have created a template on the SMP for use outside of RDMO. The Word document is freely writable, has a CC0 and is freely available via https://doi.org/10.17617/2.3481986  (direct link to the docx. file: https://hdl.handle.net/21.11116/0000-000C-1076-D) for your own re-use. A metadata crosswalk document is published via https://doi.org/10.5281/zenodo.10275895.
 
 # FAIR4RS Viewer
 A viewer for the presentation of the FAIR4RS principles is available under views. Using the Viewer only makes sense in combination with the SMP catalogue. With other RDMO catalogue this special viewer with focus on research software is not helpful. For more information, see the corresponding readme at the Viewer.
