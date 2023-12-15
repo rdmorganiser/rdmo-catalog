@@ -44,37 +44,51 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 
 ## Content curated by the RDMO team
 
-| Coverage (funder, subject, geographical region) | File / Creators                                                                                                                        | Last update |
-| ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| All questions (long)                            | [RDMO team](rdmorganiser/questions/rdmo.xml)                                                                                           | 2016        |
-| All questions (short)                           | [RDMO team](rdmorganiser/questions/fhpshort.xml)                                                                                       | 2018        |
-| DFG checklist                                   | [RDMO team](rdmorganiser/questions/DFG-Checkliste.xml)                                                                                 | 11/2022     |
-| Horizon Europe                                  | **catalog:** [RDMO team](rdmorganiser/questions/horizon-europe.xml)<br /> **view:** [RDMO team](rdmorganiser/views/horizon-europe.xml) | 12/2022     |
-| Swiss National Fund                             | [RDMO team](rdmorganiser/questions/snf.xml)                                                                                            | 2018        |
-| DCC checklist                                   | [RDMO team](rdmorganiser/questions/dcc.xml)                                                                                            | 10/2018     |
-| Software Management Plan                        | [RDMO team](rdmorganiser/questions/SMP-Questions.xml)                                                                                  | 08/2023     |
+|Subject/Coverage        |Catalog                                             |View |Last update |Creators  |
+|------------------------|----------------------------------------------------|-----|------------|----------|
+|All questions (long)    |[catalog](rdmorganiser/questions/rdmo.xml)          |     |2020-08|RDMO team      |
+|All questions (short)   |[catalog](rdmorganiser/questions/fhpshort.xml)      |     |2020-08|FHP / RDMO team|
+|DCC checklist           |[catalog](rdmorganiser/questions/dcc.xml)           |     |2018-10|RDMO team      |
+|DFG checklist           |[catalog](rdmorganiser/questions/DFG-Checkliste.xml)|[view](rdmorganiser/views/dfg-checkliste.xml)       |2023-11|RDMO team       |
+|Horizon Europe          |[catalog](rdmorganiser/questions/horizon-europe.xml)|[view](rdmorganiser/views/horizon-europe.xml)       |2022-12|RDMO team       |
+|Software Management Plan|[catalog](rdmorganiser/questions/SMP-Questions.xml) |[view (FAIR4RS)](rdmorganiser/views/FAIR4RSview.xml)|2023-08|MPDL / RDMO team|
+|Swiss National Fund     |[catalog](rdmorganiser/questions/snf.xml)           |[view](rdmorganiser/views/snf.xml)                  |2020-08|RDMO team       |
+|Bielefeld               |            |[view](rdmorganiser/views/bielefeld.xml)     |2019-01|RDMO team      |
+|CITEC                   |            |[view](rdmorganiser/views/citec.xml)         |2019-01|RDMO team      |
+|Costs                   |            |[view](rdmorganiser/views/costs.xml)         |2022-08|RDMO team      |
+|DMPonline               |            |[view](rdmorganiser/views/dmponline.xml)     |2019-01|RDMO team      |
+|DMPtool                 |            |[view](rdmorganiser/views/dmptool.xml)       |2019-01|RDMO team      |
+|Horizon 2020            |            |[view](rdmorganiser/views/horizon2020.xml)   |2019-01|RDMO team      |
+|All variables (to check)|            |[view](rdmorganiser/views/variable_check.xml)|2022-12|RDMO team      |
 
 ## Other content provided by the user community
 
-| Coverage (funder, subject, geographical region) | File / Creators                                                                                                                                                                                         | Last update |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| All questions (long)                            | [FoDaKo](shared/fodako/all_5.xml)                                                                                                                                                                       | 2016        |
-| BLE                                             | [Julius-Kühn-Institut](shared/BLE_JKI/)                                                                                                                                                                 | 06/2023     |
-| DFG checklist                                   | [FoDaKo](shared/fodako/dfg_5.xml)                                                                                                                                                                       | 11/2022     |
-| DFG Biodiversity research                       | [FoDaKo](shared/fodako/biodiversity_dfg_5.xml)                                                                                                                                                          | 11/2022     |
-| DFG Chemistry                                   | [FoDaKo](shared/fodako/chem_dfg_5.xml)<br /> [FDM Bayern eHumanities](shared/ub_fau_erlangen_nuernberg/dfg-chemie/dfg_Chemie.xml )                                                                      | 12/2022     |
-| DFG 101 Ancient Cultures                        | [FoDaKo](shared/fodako/101_dfg_5.xml)<br /> [FDM Bayern eHumanities](shared/ub_fau_erlangen_nuernberg/dfg-alte-kulturen/dfg_alte_kulturen_fk101.xml)                                                    | 11/2022     |
-| DFG 104 Spoken corpus                           | [FoDaKo](shared/fodako/spokencorpus_dfg_5.xml)                                                                                                                                                          | 11/2022     |
-| DFG 104 Text corpus                             | [FoDaKo](shared/fodako/textcorpus_dfg_5.xml)                                                                                                                                                            | 11/2022     |
-| DFG 105 Editions                                | [FoDaKo](shared/fodako/edition_dfg_5.xml)<br /> [FDM Bayern eHumanities](shared/ub_fau_erlangen_nuernberg/dfg-editionen/dfg_editions.xml)                                                               | 11/2022     |
-| DFG 106 Social & Cultural Anthropology [...]    | [FoDaKo](shared/fodako/106_dfg_5.xml)<br /> [FDM Bayern eHumanities](shared/ub_fau_erlangen_nuernberg/dfg-sozkulttheo/dfg_sozkulttheo_fk106.xml)                                                        | 11/2022     |
-| DFG 109 Educational Research                    | [FoDaKo](shared/fodako/109_dfg_5.xml)                                                                                                                                                                   | 11/2022     |
-| DFG 112 Economics                               | [FoDaKo](shared/fodako/112_dfg_5.xml)                                                                                                                                                                   | 11/2022     |
-| Emissions in animal husbandry                   | [EmiMin](shared/EmiMin/publisso_terms4life_emiminV1_questions.xml)<br /> [EmiMin (lead)](shared/EmiMin/publisso_terms4life_emimin_lead_V1_questions.xml)                                                |             |
-| Hessen State                                    | [HeFDI](shared/HeFDI/4_hefdi_template_questions_1.4.xml)                                                                                                                                                |             |
-| Horizon 2020                                    | **catalog:** [FDM Bayern eHumanities](shared/ub_fau_erlangen_nuernberg/h2020-ehum/ehum_h2020_fragebogen.xml)<br /> **view:** [FDM Bayern eHumanities](shared/ub_fau_erlangen_nuernberg/h2020-ehum/views_h2020.xml) |  |
-| Mathematics                                     | [DFG Excellence Cluster MATH+](shared/MATH+/mathplus_questions.xml)                                                                                                                                     | 11/2022     |
-| Mechanical Engineering                          | [NFDI4Ing](shared/nfdi4ing/rdmo_mechanical_engineering/catalog_mb_20190124.xml)                                                                                                                         |             |
-| VW Foundation - Science Europe                  | [FDM Bayern eHumanities](shared/ub_fau_erlangen_nuernberg/ScienceEurope_VW_Stiftung/catalog_VW_SE.xml)                                                                                                  |             |
+|Subject/Coverage         |Catalog                                        |View|Last update |Creators  |
+|-------------------------|-----------------------------------------------|----|------------|----------|
+|All questions (RDMO+DFG) |[catalog](shared/fodako/all_5.xml)             |    |2022-03|FoDaKo         |
+|BLE                      |[catalog](shared/BLE_JKI/)  |[view](shared/BLE_JKI/)|2023-10|Julius-Kühn-Institut|
+|DFG checklist            |[catalog](shared/fodako/dfg_5.xml)             |    |2022-03|FoDaKo         |
+|DFG Biodiversity research|[catalog](shared/fodako/biodiversity_dfg_5.xml)|    |2022-03|FoDaKo         |
+|DFG Chemistry            |[catalog](shared/fodako/chem_dfg_5.xml)        |    |2022-03|FoDaKo         |
+|DFG Chemistry            |[catalog](shared/ub_fau_erlangen_nuernberg/dfg-chemie/dfg_Chemie.xml)||2023-08|FDM Bayern eHumanities|
+|DFG Physics              |[catalog](shared/ub_fau_erlangen_nuernberg/dfg-physik/dfg_Physik.xml)||2023-08|FDM Bayern eHumanities|
+|DFG 101 Ancient Cultures |[catalog](shared/ub_fau_erlangen_nuernberg/dfg-alte-kulturen/dfg_alte_kulturen_fk101.xml)||2020-09|FDM Bayern eHumanities|
+|DFG 101 Ancient Cultures |[catalog](shared/fodako/101_dfg_5.xml)         |    |2022-03|FoDaKo|
+|DFG 104 Spoken corpus    |[catalog](shared/fodako/spokencorpus_dfg_5.xml)|    |2022-03|FoDaKo|
+|DFG 104 Text corpus      |[catalog](shared/fodako/textcorpus_dfg_5.xml)  |    |2022-03|FoDaKo|
+|DFG 105 Editions         |[catalog](shared/fodako/edition_dfg_5.xml)     |    |2022-03|FoDaKo|
+|DFG 105 Editions         |[catalog](shared/ub_fau_erlangen_nuernberg/dfg-editionen/dfg_editions.xml)||2020-09|FDM Bayern eHumanities|
+|DFG 106 Social & Cultural Anthropology|[catalog](shared/ub_fau_erlangen_nuernberg/dfg-sozkulttheo/dfg_sozkulttheo_fk106.xml)||2020-09|FDM Bayern eHumanities|
+|DFG 106 Social & Cultural Anthropology|[catalog](shared/fodako/106_dfg_5.xml)||2022-03|FoDaKo|
+|DFG 109 Educational Research          |[catalog](shared/fodako/109_dfg_5.xml)||2022-03|FoDaKo|
+|DFG 112 Economics |[catalog](shared/fodako/112_dfg_5.xml)                    ||2022-03|FoDaKo|
+|ERC grants        |[catalog](shared/ub_fau_erlangen_nuernberg/erc-grants/erc.xml)||2023-08|FDM Bayern eHumanities|
+|Emissions in animal husbandry|[catalog 1](shared/EmiMin/publisso_terms4life_emiminV1_questions.xml)<br />[catalog 2](shared/EmiMin/publisso_terms4life_emimin_lead_V1_questions.xml)||2021-04|EmiMin|
+|Hessen State      |[catalog](shared/HeFDI/4_hefdi_template_questions_1.4.xml)||2020-07|HeFDI|
+|Horizon 2020      |[catalog](shared/ub_fau_erlangen_nuernberg/h2020-ehum/ehum_h2020_fragebogen.xml)|[view](shared/ub_fau_erlangen_nuernberg/h2020-ehum/views_h2020.xml)|2020-09|FDM Bayern eHumanities|
+|Mathematics       |[catalog](shared/MATH+/mathplus_questions.xml)            ||2022-11|DFG Excellence Cluster MATH+|
+|Mechanical Engineering        |[catalog](shared/nfdi4ing/rdmo_mechanical_engineering/catalog_mb_20190124.xml)||2023-06|NFDI4Ing|
+|Research data policy generator|[catalog](shared/FDNext/)                     ||2023-11|FDNext|
+|VW Foundation - Science Europe|[catalog](shared/ub_fau_erlangen_nuernberg/ScienceEurope_VW_Stiftung/catalog_VW_SE.xml)||2021-04|FDM Bayern eHumanities|
 
-29 catalogs shared
+Total: 33 catalogs, 13 views
