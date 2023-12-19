@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-11-29T16:10:14.740331+01:00" version="2.0.2">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-11-29T16:10:14.740331+01:00" version="3.0.0">
 	<catalog dc:uri="https://rdmorganiser.github.io/terms/questions/smp">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<uri_path>smp</uri_path>
@@ -52,7 +52,7 @@ This SMP template was inspired by some documentation, specially:
 		<questions>
 			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic/project-title" order="0"/>
 			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic/research-field" order="1"/>
-			<question dc:uri="https://rdmorganiser.github.io/terms/questions/application-class" order="2"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic/application-class" order="2"/>
 			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic/intended-use" order="3"/>
 			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic/buy-or-make" order="4"/>
 		</questions>
@@ -118,9 +118,9 @@ This SMP template was inspired by some documentation, specially:
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/application-class">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic/application-class">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<uri_path>application-class</uri_path>
+		<uri_path>smp/general/topic/application-class</uri_path>
 		<dc:comment>The application classes are essentially based on the &quot;DLR Software Engineering Guidelines&quot; (https://zenodo.org/record/1344612), p. 7-8. Depending on the selection in this questions a selection of different questions is provided below.</dc:comment>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/application-class"/>
 		<is_collection>False</is_collection>
@@ -1166,7 +1166,7 @@ Folgende Literatur könnte zusätzlich interessant sein:
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<uri_path>smp/technical/preservation/re-usable</uri_path>
 		<dc:comment/>
-		<attribute/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/re-usable"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en">Applicable software is rarely a static product. Software is usually in a constant state of flux as a result of further developments of external components, security gaps in libraries that have been remedied or proprietary enhancements in the code. At the same time, the personnel and time required to maintain and update software increases with its age. It is therefore highly advisable to think in advance about how long the software should be (re-)usable.
