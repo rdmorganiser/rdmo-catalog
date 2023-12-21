@@ -99,7 +99,7 @@
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general/topic-research_question"/>
 		<is_collection>False</is_collection>
 		<order>1</order>
-		<help lang="en">Describe briefly the project and its aims.</help>
+		<help lang="en">Please describe briefly the project and its aims.</help>
 		<text lang="en">What is the main research question of the project?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -209,23 +209,23 @@
 		<is_collection>True</is_collection>
 		<order>21</order>
 		<title lang="en">Project partners</title>
-		<help lang="en"/>
+		<help lang="en">In this questionnaire the first "partner" is the very project applicant. So even if no further partners are involved in your project, please create at least one "partner" to enter the minimum required information for yourself.</help>
 		<verbose_name lang="en">project partner</verbose_name>
 		<verbose_name_plural lang="en">project partners</verbose_name_plural>
 		<title lang="de">Projektpartner</title>
-		<help lang="de"/>
+		<help lang="de">In diesem Fragebogen, der erste "Partner" ist der Antragsteller selbst. Also selbst wenn keine weitere Partner an Ihrem Projekt beteiligt sind, legen Sie bitte mindestens einen "Partner" an, um die erforderlichen Mindestangaben für sich selbst einzugeben.</help>
 		<verbose_name lang="de">Projektpartner</verbose_name>
 		<verbose_name_plural lang="de">Projektpartner</verbose_name_plural>
 		<title lang="es">Socios del proyecto</title>
-		<help lang="es"/>
+		<help lang="es">En este cuestionario, el primero "socio" es el solicitante mismo del proyecto. Luego, también si no hay otros socios implicados en su proyecto, cree al menos un socio para introducir la información mínima requerida para usted mismo.</help>
 		<verbose_name lang="es">Socio del proyecto</verbose_name>
 		<verbose_name_plural lang="es">Socios del proyecto</verbose_name_plural>
 		<title lang="fr">Partenaires du projet</title>
-		<help lang="fr"/>
+		<help lang="fr">Dans ce questionnaire le premier « partenaire » est l'appliquant même du projet. Ensuite, si aucun outre partenaire n'est impliqué dans votre projet, veuillez créer au moins un « partenaire », afin de saisir les informations minimes requises pour vous-même.</help>
 		<verbose_name lang="fr">Partenaire du projet</verbose_name>
 		<verbose_name_plural lang="fr">Partenaires du projet</verbose_name_plural>
 		<title lang="it">Partner del progetto</title>
-		<help lang="it"/>
+		<help lang="it">In questo questionario, il primo "partner" è il richiedente stesso del progetto. Perciò, anche se non ci sono partner coinvolti nel vostro progetto, create almeno un "partner" per inserire le informazioni minime richieste per voi stessi.</help>
 		<verbose_name lang="it">Partner del progetto</verbose_name>
 		<verbose_name_plural lang="it">Partner del progetto</verbose_name_plural>
 		<conditions/>
@@ -278,7 +278,7 @@
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<help lang="en">More and more universities and scientific institutions adopt research data management policies. These contain, among other things, recommendations and / or demands concerning the handling of research data by researchers of the institution.</help>
-		<text lang="en">Does your institution have rules or guidelines for the handling of research data? If yes, please briefly outline them and refer to more detailed sources of information if necessary. Please also indicate, if the rules / guidelines are mandatory or optional.</text>
+		<text lang="en">Does your institution have rules or guidelines for the handling of research data? If yes, please briefly outline them and refer to more detailed sources of information if necessary. Please indicate also if the rules / guidelines are mandatory or optional.</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Immer mehr Hochschulen und wissenschaftliche Einrichtungen verabschieden Leitlinien oder Richtlinien (oft auch als "Policies" bezeichnet) zum Forschungsdatenmanagement. Diese enthalten unter anderem Empfehlungen und/oder Vorgaben zum Umgang mit Forschungsdaten, die die Wissenschaftlerinnen und Wissenschaftler der Einrichtung beachten sollten oder müssen (je nach Grad der Verbindlichkeit), zum Beispiel die &lt;a href="http://www.uni-goettingen.de/de/01-juli-2014-forschungsdaten-leitlinie-der-universitaet-goettingen-einschl-umg/488918.html" target="_blank"&gt;Leitlinien zum Umgang mit Forschungsdaten&lt;/a&gt; der Georg-August-Universität Göttingen.</help>
@@ -385,7 +385,7 @@
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<help lang="en">Funders of research also increasingly specify requirements regarding the management of research data in funded projects.</help>
-		<text lang="en">Does the funder have rules or recommendations for data management? If yes, please briefly outline them and refer to more detailed sources of information if necessary. Please also indicate, if the rules / guidelines are mandatory or optional.</text>
+		<text lang="en">Does the funder have rules or recommendations for data management? If yes, please briefly outline them and refer to more detailed sources of information if necessary. Please indicate also if the rules / guidelines are mandatory or optional.</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Auch Forschungsförderer stellen zunehmend Anforderungen an das Datenmanagement in von ihnen geförderten Projekten. Beispiele sind die &lt;a href="https://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/forschungsdaten/leitlinien_forschungsdaten.pdf" target="_blank"&gt;DFG-Leitlinien zum Umgang mit Forschungsdaten&lt;/a&gt; oder die &lt;a href="http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf" target="_blank"&gt;Guidelines on Data Management in Horizon 2020&lt;/a&gt; der Europäischen Komission. Weitere fachspezifische Empfehlungen und Richtlinien zum Umgang mit Forschungsdaten werden beispielsweise von der &lt;a href="https://www.dfg.de/foerderung/antrag_gutachter_gremien/antragstellende/nachnutzung_forschungsdaten/" target="_blank"&gt;Deutschen Forschungsgemeinschaft (DFG)&lt;/a&gt; bereitgestellt.</help>
@@ -489,44 +489,84 @@
 		<optionsets/>
 		<conditions/>
 	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general/other-requirements-yesno">
+	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general/other-requirements">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>other-requirements-yesno</key>
-		<path>proposal/general/other-requirements-yesno</path>
+		<key>other-requirements</key>
+		<path>proposal/general/other-requirements</path>
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general"/>
 		<is_collection>False</is_collection>
 		<order>50</order>
-		<title lang="en">Other requirements I</title>
+		<title lang="en">Other requirements</title>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<title lang="de">Weitere Anforderungen I</title>
+		<title lang="de">Weitere Anforderungen</title>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<title lang="es">Otros requisitos I</title>
+		<title lang="es">Otros requisitos</title>
 		<help lang="es"/>
 		<verbose_name lang="es"/>
 		<verbose_name_plural lang="es"/>
-		<title lang="fr">Autres exigences I</title>
+		<title lang="fr">Autres exigences</title>
 		<help lang="fr"/>
 		<verbose_name lang="fr"/>
 		<verbose_name_plural lang="fr"/>
-		<title lang="it">Ulteriori condizioni I</title>
+		<title lang="it">Ulteriori condizioni</title>
 		<help lang="it"/>
 		<verbose_name lang="it"/>
 		<verbose_name_plural lang="it"/>
 		<conditions/>
 	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general/other-requirements-yesno/yesno">
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general/other-requirements/requirements">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>requirements</key>
+		<path>proposal/general/other-requirements/requirements</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/requirements"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general/other-requirements"/>
+		<is_collection>False</is_collection>
+		<order>1</order>
+		<help lang="en">Please briefly outline them and refer to more detailed sources of information if necessary. Please indicate also if the rules / guidelines are mandatory or optional.</help>
+		<text lang="en">Which are these additional requirements regarding data management?</text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Bitte skizzieren Sie sie kurz und verweisen Sie ggf. auf weiterführende Informationen. Geben Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</help>
+		<text lang="de">Welche Anforderungen an das Datenmanagement sind dies?</text>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<help lang="es">En caso afirmatico, escríbalos brevemente y consulte fuentes de información más detalladas si es necesario. Indique también si las reglas/directrices/políticas son obligatorias u opcionales.</help>
+		<text lang="es">¿Cuáles son estos requisitos adicionales (p.ej., reglas, directrices, políticas o recomendaciones) con respecto a la gestión de datos?</text>
+		<verbose_name lang="es"/>
+		<verbose_name_plural lang="es"/>
+		<help lang="fr">Veuillez les décrire brièvement et vous référer à des sources d'informations plus détaillées si nécessaire. Veuillez également indiquer si les règles / directives sont obligatoires ou facultatives.</help>
+		<text lang="fr">Quelles sont ces exigences supplémentaires concernant la gestion des données ?</text>
+		<verbose_name lang="fr"/>
+		<verbose_name_plural lang="fr"/>
+		<help lang="it">In caso affermativo, si prega di descriverle succintamente, inserendo riferimenti a fonti più dettagliate ove necessario. Si prega inoltre di indicare in che misura queste regole sono vincolanti.</help>
+		<text lang="it">Quali sono queste condizioni ulteriori sulla gestione dei dati?</text>
+		<verbose_name lang="it"/>
+		<verbose_name_plural lang="it"/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/additional_rdm_policy"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general/other-requirements/yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>yesno</key>
-		<path>proposal/general/other-requirements-yesno/yesno</path>
+		<path>proposal/general/other-requirements/yesno</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/yesno"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general/other-requirements-yesno"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general/other-requirements"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<help lang="en">Examples of discipline-specific requirements:
@@ -568,7 +608,7 @@ Además las pautas específicas de la disciplina sobre el manejo de los datos de
 		<verbose_name lang="it"/>
 		<verbose_name_plural lang="it"/>
 		<widget_type>radio</widget_type>
-		<value_type>boolean</value_type>
+		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
@@ -576,77 +616,6 @@ Además las pautas específicas de la disciplina sobre el manejo de los datos de
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_requirements_options"/>
 		</optionsets>
-		<conditions/>
-	</question>
-	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general/other-requirements-requirements">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>other-requirements-requirements</key>
-		<path>proposal/general/other-requirements-requirements</path>
-		<dc:comment/>
-		<attribute/>
-		<section dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general"/>
-		<is_collection>False</is_collection>
-		<order>51</order>
-		<title lang="en">Other requirements II</title>
-		<help lang="en"/>
-		<verbose_name lang="en"/>
-		<verbose_name_plural lang="en"/>
-		<title lang="de">Weitere Anforderungen II</title>
-		<help lang="de"/>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="de"/>
-		<title lang="es">Otros requisitos II</title>
-		<help lang="es"/>
-		<verbose_name lang="es"/>
-		<verbose_name_plural lang="es"/>
-		<title lang="fr">Autres exigences II</title>
-		<help lang="fr"/>
-		<verbose_name lang="fr"/>
-		<verbose_name_plural lang="fr"/>
-		<title lang="it">Ulteriori condizioni II</title>
-		<help lang="it"/>
-		<verbose_name lang="it"/>
-		<verbose_name_plural lang="it"/>
-		<conditions>
-			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/additional_rdm_policy"/>
-		</conditions>
-	</questionset>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general/other-requirements-requirements/requirements">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>requirements</key>
-		<path>proposal/general/other-requirements-requirements/requirements</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/requirements"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/general/other-requirements-requirements"/>
-		<is_collection>False</is_collection>
-		<order>0</order>
-		<help lang="en">Please briefly outline them and refer to more detailed sources of information if necessary. Please also indicate, if the rules / guidelines are mandatory or optional.</help>
-		<text lang="en">Which are these additional requirements regarding data management?</text>
-		<verbose_name lang="en"/>
-		<verbose_name_plural lang="en"/>
-		<help lang="de">Bitte skizzieren Sie sie kurz und verweisen Sie ggf. auf weiterführende Informationen. Geben Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</help>
-		<text lang="de">Welche Anforderungen an das Datenmanagement sind dies?</text>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="de"/>
-		<help lang="es">En caso afirmatico, escríbalos brevemente y consulte fuentes de información más detalladas si es necesario. Indique también si las reglas/directrices/políticas son obligatorias u opcionales.</help>
-		<text lang="es">¿Cuáles son estos requisitos adicionales (p.ej., reglas, directrices, políticas o recomendaciones) con respecto a la gestión de datos?</text>
-		<verbose_name lang="es"/>
-		<verbose_name_plural lang="es"/>
-		<help lang="fr">Veuillez les décrire brièvement et vous référer à des sources d'informations plus détaillées si nécessaire. Veuillez également indiquer si les règles / directives sont obligatoires ou facultatives.</help>
-		<text lang="fr">Quelles sont ces exigences supplémentaires concernant la gestion des données ?</text>
-		<verbose_name lang="fr"/>
-		<verbose_name_plural lang="fr"/>
-		<help lang="it">In caso affermativo, si prega di descriverle succintamente, inserendo riferimenti a fonti più dettagliate ove necessario. Si prega inoltre di indicare in che misura queste regole sono vincolanti.</help>
-		<text lang="it">Quali sono queste condizioni ulteriori sulla gestione dei dati?</text>
-		<verbose_name lang="it"/>
-		<verbose_name_plural lang="it"/>
-		<widget_type>textarea</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<optionsets/>
 		<conditions/>
 	</question>
 	<section dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/content-classification">
@@ -674,9 +643,9 @@ Además las pautas específicas de la disciplina sobre el manejo de los datos de
 		<title lang="en">Datasets</title>
 		<help lang="en">The following questions collect information on the data that is produced or used in the project. They also help to estimate the value of the data in terms of potential re-use and long-term preservation.
 
-Before data are newly created, it is advisable to check if there are existing data that could be re-used. This way, redundant collection or creation of research data is prevented. This saves efforts and costs.
+Before data are newly created, it is advisable to check if there are existing data that could be re-used. This way, redundant collection or creation of research data is prevented. This saves effort and costs.
 
-For example, a data set can consist of more data files of different types (numeric, image, text...) grouped together, which collect exhaustedly all results coming from an investigation series on a given research object.</help>
+For example, a dataset can consist of more data files of different types (numeric, image, text...) grouped together, which collect exhaustedly all results coming from an investigation series on a given research object.</help>
 		<verbose_name lang="en">dataset</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
 		<title lang="de">Datensätze</title>
@@ -730,7 +699,7 @@ Una raccolta di dati può ad esempio contenere più file di tipo differente (num
 * 3D model / digital reconstruction of a stone age settlement
 * software developed within the project
 
-Please also explain whether this is a fixed data set stored at a certain point in time or whether it is created dynamically over a certain period of time.</help>
+Please also explain whether this is a fixed dataset stored at a certain point in time or whether it is created dynamically over a certain period of time.</help>
 		<text lang="en">What kind of dataset is it?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -1526,7 +1495,7 @@ Analogamente ai formati, si raccomanda di adottare metodi il più standard, aper
 		<order>1</order>
 		<help lang="en">This information is necessary to be able to reconstruct the process by which the data was generated. It is also a prerequisite to judge the objectivity, reliability and validity of the dataset.
 
-For reproducible data, it is also required to re-generate the data if necessary. Therefore all devices, software, software version and also information about the procedure necessary to be able to recreate the data must be preserved.</help>
+For reproducible data it is also required to re-generate the data if necessary. Therefore all devices, software, software version and also information about the procedure necessary to be able to recreate the data must be preserved.</help>
 		<text lang="en">Which tools, software, technologies or processes are used to generate or collect the data?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
@@ -1733,7 +1702,7 @@ Per i dati riproducibili, sono anche indispensabili per ricreare i dati in caso 
 		<is_collection>True</is_collection>
 		<order>0</order>
 		<title lang="en">Usage scenarios</title>
-		<help lang="en">The following questions will help to estimate, which ressources are necessary to enable the envisioned data usage scenarios during the project. These can be technical / IT resources as well as expertise brought in by e.g. data management or IT experts.</help>
+		<help lang="en">The following questions will help to estimate which ressources are necessary to enable the envisioned data usage scenarios during the project. These can be technical / IT resources as well as expertise brought in by e.g. data management or IT experts.</help>
 		<verbose_name lang="en">dataset</verbose_name>
 		<verbose_name_plural lang="en">datasets</verbose_name_plural>
 		<title lang="de">Nutzungsszenarien</title>
@@ -1873,7 +1842,7 @@ Per i dati riproducibili, sono anche indispensabili per ricreare i dati in caso 
 		<is_collection>False</is_collection>
 		<order>4</order>
 		<help lang="en"/>
-		<text lang="en">Is there a internal project guideline for naming the data? If so, please briefly outline the naming conventions and, if necessary, link to the documentation.</text>
+		<text lang="en">Is there an internal project guideline for naming the data? If so, please briefly outline the naming conventions and, if necessary, link to the documentation.</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
@@ -2061,24 +2030,24 @@ Per i dati riproducibili, sono anche indispensabili per ricreare i dati in caso 
 		<order>3</order>
 		<help lang="en">This question refers to backups while the data are being worked with. Questions of long-term preservation will be adressed in the respective section.</help>
 		<text lang="en">Who is responsible for the backups?</text>
-		<verbose_name lang="en"/>
-		<verbose_name_plural lang="en"/>
+		<verbose_name lang="en">responsible</verbose_name>
+		<verbose_name_plural lang="en">responsibles</verbose_name_plural>
 		<help lang="de">Die Frage bezieht sich auf Backups während der Zeit, in denen mit den Daten gearbeitet wird. Fragen der Langzeitarchivierung werden gesondert im entsprechenden Abschnitt behandelt.</help>
 		<text lang="de">Wer ist verantwortlich für die Erstellung der Backups?</text>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="de"/>
+		<verbose_name lang="de">Verantwortliche(r)</verbose_name>
+		<verbose_name_plural lang="de">Verantwortliche</verbose_name_plural>
 		<help lang="es">Esta pregunta se refiere a las copias de seguridad mientras se trabaja con los datos. Las cuestiones de preservación de datos a largo plazo se abordarán en la sección respectiva.</help>
 		<text lang="es">¿Quién es el responsable de las copias de seguridad?</text>
-		<verbose_name lang="es"/>
-		<verbose_name_plural lang="es"/>
+		<verbose_name lang="es">responsable</verbose_name>
+		<verbose_name_plural lang="es">responsables</verbose_name_plural>
 		<help lang="fr">Cette question fait référence aux sauvegardes pendant le traitement des données. Les questions de conservation à long terme seront traitées dans la section correspondante.</help>
 		<text lang="fr">Qui est responsable des sauvegardes ?</text>
-		<verbose_name lang="fr"/>
-		<verbose_name_plural lang="fr"/>
+		<verbose_name lang="fr">responsable</verbose_name>
+		<verbose_name_plural lang="fr">responsables</verbose_name_plural>
 		<help lang="it">Questa domanda si riferisce alle copie di sicurezza nella fase in cui i dati vengono utilizzati e modificati. Domande relative all salvataggio a lungo termine vengono trattate nella sezione corrispondente.</help>
 		<text lang="it">Chi è il responsabile per le copie di sicurezza?</text>
-		<verbose_name lang="it"/>
-		<verbose_name_plural lang="it"/>
+		<verbose_name lang="it">responsabile</verbose_name>
+		<verbose_name_plural lang="it">responsabili</verbose_name_plural>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
@@ -2642,7 +2611,7 @@ Per i dati riproducibili, sono anche indispensabili per ricreare i dati in caso 
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/proposal/data-usage/quality-assurance-integration"/>
 		<is_collection>False</is_collection>
 		<order>0</order>
-		<help lang="en">How are the origin and the quality of the data documented?</help>
+		<help lang="en">How are the origin and quality of the data documented?</help>
 		<text lang="en">Is the integration between the re-used and newly created data ensured? If yes, by which means?</text>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
