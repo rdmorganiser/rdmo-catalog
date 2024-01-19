@@ -1,7 +1,7 @@
 #!/bin/bash
 scriptdir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 basedir=$(echo "${scriptdir}" | grep -Po ".*(?=\/)")
-arr=($(find "${basedir}/shared" -regex ".*\.xml$" | sort))
+mapfile -t arr < <(find "${basedir}/shared" -regex ".*\.xml$" | sort)
 
 placeholder="___NEW_TABLE___"
 readme_file="${basedir}/README.md"
@@ -17,7 +17,6 @@ ett() {
 }
 
 make_table() {
-    coutner=0
     echo "Generate shared catalog table"
     ett "\n\n## Shared catalogs"
     ett "\n|Title|File|"
@@ -26,8 +25,7 @@ make_table() {
         if [[ $(grep -Pc "<catalog\sdc:uri=.*>" "${f}") != 0 ]]; then
             counter=$((counter + 1))
             title=$(
-                cat "${f}" |
-                    tr '\n' ' ' |
+                tr '\n' ' ' <"${f}" |
                     grep -Po "<catalog\s.*<\/catalog>" |
                     grep -Po "(?<=title lang=\"en\">).*?(?=</title)"
             )
@@ -39,18 +37,18 @@ make_table() {
     ett "\n${counter} catalogs shared\n"
 }
 
-function remove_old_table() {
+remove_old_table() {
     echo "Remove old table"
     sed -ze "s/## Shared catalogs[^<]*catalogs shared/${placeholder}/g" \
         "${readme_file}" >"${temp_readme}"
 }
 
-function insert_new_table() {
+insert_new_table() {
     echo "Insert new table"
     sed -i "/${placeholder}/r ${temp_table}" "${temp_readme}"
 }
 
-function clean_up() {
+clean_up() {
     echo "Clean up README.md"
     sed -i "s/${placeholder}//g" "${temp_readme}"
     cat -s "${temp_readme}" >"${readme_file}"

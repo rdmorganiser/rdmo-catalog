@@ -18,6 +18,15 @@
 		<target_text>1</target_text>
 		<target_option/>
 	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/data_published">
+		<uri_prefix>https://rdmorganiser.github.io/terms/</uri_prefix>
+		<key>data_published</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_publication_date"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_using_when/dfg-uw_08"/>
+	</condition>
 	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/data_sharing">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>data_sharing</key>
@@ -116,6 +125,15 @@
 		<relation>neq</relation>
 		<target_text/>
 		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options/138"/>
+	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/reuse_scenario">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>reuse_scenario</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reuse_scenario"/>
+		<relation>neq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_reuse_context/dfg-rsc_04"/>
 	</condition>
 	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/rights_owner_clear">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>

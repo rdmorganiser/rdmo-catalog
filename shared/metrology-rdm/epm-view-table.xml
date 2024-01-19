@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-11-13T15:38:38.629760+01:00">
+	<view dc:uri="https://dmp.metrology-rdm.eu/terms/views/epm-table">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<key>epm-table</key>
+		<dc:comment>work in progress</dc:comment>
+		<title lang="en">European Partnerhip on Metrology</title>
+		<help lang="en">View (export template) for the funding framework program &quot;European Partnership on Metrology&quot;, based on &quot;Horizon Europe&quot; (2021-2027), funded by the European Commission via EURAMET</help>
+		<title lang="de">Europäische Partnerschaft für Metrologie</title>
+		<help lang="de">Ansicht (Exportvorlage) für das Förderprogramm &quot;European Partnership on Metrology&quot; angelehnt an &quot;Horizon Europe&quot; (2021-2027), durch die Europäische Kommission über EURAMET gefördert</help>
+		<catalogs/>
+		<template>{% load view_tags %}
+{% get_set 'project/partner/id' as partners %}
+{% get_set 'project/funder/id' as funders %}
+{% get_set 'project/dataset/id' as datasets %}
+{% get_set 'project/other_research_output' as other_outputs %}
+{% get_values 'project/dataset/preservation/repository' as repositories %}
+{% get_value 'project/dmp/dmp_version' as dmp_version %}
+{% check_condition 'dmp_initial' as dmp_initial %}
+{% check_condition 'dmp_not_initial' as dmp_not_initial %}
+{% check_condition 'dmp_midterm' as dmp_midterm %}
+{% check_condition 'dmp_final' as dmp_final %}
+{% check_condition 'repository_zenodo' as repository_zenodo %}
+{% check_condition 'repository_ptb_oar' as repository_ptb_oar %}
+
+&lt;head&gt;
+	&lt;div style=&quot;height:200;&quot;&gt;
+		&lt;b&gt;{% render_value 'project/funder/grant_nr' %} &amp;#8212; {% render_value 'project/acronym' %}&lt;/b&gt;
+		&lt;img src=&quot;https://www.euramet.org/fileadmin/Public/assets/logo.png&quot; alt=&quot;Logo EURAMET&quot; width=&quot;200&quot; style=&quot;float:right;&quot;&gt;
+    &lt;/div&gt;
+    &lt;br /&gt;
+	&lt;hr noshade color=rgb(0, 157, 129) width=100% size=20&gt;
+    &lt;br /&gt;
+	&lt;div id=&quot;Title&quot; style=&quot;color:white;background-color:black;text-align:center;line-height:21mm;font-size:2.5em;&quot;&gt;&lt;b&gt;DATA MANAGEMENT PLAN&lt;/b&gt;&lt;/div&gt;
+    &lt;br /&gt;
+	&lt;div&gt;
+    	&lt;span style=&quot;float:left;width:30%;&quot;&gt;Grant agreement number      &lt;/span&gt;{% render_value 'project/funder/grant_nr' %}&lt;br /&gt;&lt;br /&gt;
+		&lt;span style=&quot;float:left;width:30%;&quot;&gt;Project short name / acronym&lt;/span&gt;{% render_value 'project/acronym' %}        &lt;br /&gt;&lt;br /&gt;
+		&lt;span style=&quot;float:left;width:30%;&quot;&gt;Project full title          &lt;/span&gt;{% render_value 'project/title' %}          &lt;br /&gt;&lt;br /&gt;
+		&lt;span style=&quot;float:left;width:30%;&quot;&gt;Data management plan version&lt;/span&gt;
+			1&lt;sup&gt;st&lt;/sup&gt; (begin)   {% if dmp_initial %}&amp;#9745;{% else %}&amp;#9744;{% endif %}&amp;emsp;
+			2&lt;sup&gt;nd&lt;/sup&gt; (midterm) {% if dmp_midterm %}&amp;#9745;{% else %}&amp;#9744;{% endif %}&amp;emsp;
+			3&lt;sup&gt;rd&lt;/sup&gt; (end)     {% if  dmp_final  %}&amp;#9745;{% else %}&amp;#9744;{% endif %}&lt;br /&gt;&lt;br /&gt;
+    &lt;/div&gt;
+&lt;/head&gt;
+
+
+&lt;body&gt;
+&lt;div id=&quot;0&quot;&gt;&lt;h1&gt;Data management plan&lt;/h1&gt;&lt;/div&gt;
+&lt;div id=&quot;1&quot;&gt;&lt;h2&gt;Data Summary&lt;/h2&gt;
+	&lt;table border=&quot;1&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;30%&quot;&gt;&lt;col width=&quot;70%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Questions&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Answers&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+		&lt;tr id=&quot;Q01&quot;&gt;
+			&lt;td&gt;1 Will you re-use any existing data and what will you re-use them for?&lt;br /&gt;
+			State the reasons if re-use of any existing data has been considered but discarded.&lt;/td&gt;
+			&lt;td&gt;
+				{% if dmp_initial %}
+					This project will re-use:
+                    &lt;ul&gt;{% render_value_list 'project/dataset/provenance/content' %}&lt;/ul&gt;
+					These data will be used for this purpose:
+					&lt;ul&gt;{% render_value_list 'project/dataset/usage_description' set_index='*' %}&lt;/ul&gt;
+				{% else %}
+					This project re-used the following publicly available datasets:&lt;br /&gt;
+					{% for dataset in datasets %}
+						&lt;b&gt;Dataset {{ dataset.value }}:&lt;/b&gt;
+						{% render_value_list dataset 'project/dataset/provenance/content' %}&lt;br /&gt;
+						These data will be used for this purpose:
+						{% render_value_list dataset 'project/dataset/usage_description' %}&lt;br /&gt;
+					{% endfor %}
+					No existing data have been considered for re-use and then discarded.
+				{% endif %}
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q02&quot;&gt;
+			&lt;td&gt;2 What types and formats of data will the project generate or re-use?&lt;/td&gt;
+			&lt;td&gt;The project {% if dmp_initial %}will collect{% else %}collected{% endif %} data of the following types and formats:
+				&lt;ul&gt;{% render_value_list 'project/dataset/format' set_index='*' %}&lt;/ul&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q03&quot;&gt;
+			&lt;td&gt;3 What is the purpose of the data generation or re-use and its relation to the objectives of the project?&lt;/td&gt;
+			&lt;td&gt;
+				&lt;p&gt;&lt;u&gt;Purpose of the data generation or re-use&lt;/u&gt;&lt;/p&gt;
+				The data generated and re-used {% if dmp_initial %}will be{% else %}were{% endif %}
+                from {% render_value_inline_list 'project/dataset/creation_methods' %}.
+				They {% if dmp_initial %}will be{% else %}were{% endif %} used in meeting the project’s objectives and in conference and peer-reviewed publications.
+				&lt;p&gt;&lt;u&gt;Data generated in relation to the objectives of the project&lt;/u&gt;&lt;/p&gt;
+				&lt;p&gt;
+					{% if dmp_initial %}
+						Data will be generated for the following aims:
+						{% render_value_inline_list 'project/dataset/usage_objectives' set_index='*' %}
+					{% else %}
+						{% for dataset in datasets %}
+							{% check_condition dataset_created as dataset_created %}
+							{% if dataset_created %}
+								&lt;b&gt;Dataset {{ dataset.value }}:&lt;/b&gt;
+								{% render_value_list dataset 'project/dataset/usage_objectives' %}
+							{% endif %}
+						{% endfor %}
+					{% endif %}
+				&lt;/p&gt;
+				&lt;p&gt;&lt;u&gt;Data re-used in relation to the objectives of the project&lt;/u&gt;&lt;/p&gt;
+				&lt;p&gt;
+					{% if dmp_initial %}
+						Data will be re-used for the following aims:
+						{% render_value_inline_list 'project/dataset/usage_description' set_index='*' %}
+					{% else %}
+						{% for dataset in datasets %}
+							{% check_condition dataset_reused as dataset_reused %}
+							{% if dataset_reused %}
+								&lt;b&gt;Dataset {{ dataset.value }}:&lt;/b&gt;
+								{% render_value_list dataset 'project/dataset/usage_description' %}
+							{% endif %}
+						{% endfor %}
+					{% endif %}
+				&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q04&quot;&gt;
+			&lt;td&gt;4 What is the expected size of the data that you intend to generate or re-use?&lt;/td&gt;
+			&lt;td&gt;The overall size of the generated data is {% render_value 'project/dataset/size/volume' %}.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q05&quot;&gt;
+			&lt;td&gt;5 What is the origin/provenance of the data, either generated or re-used?&lt;/td&gt;
+			&lt;td&gt;
+				&lt;p&gt;&lt;u&gt;Data generated in the project&lt;/u&gt;&lt;/p&gt;
+				&lt;p&gt;
+					The data generated {% if dmp_initial %}will be{% else %}were{% endif %} from {% render_value_inline_list 'project/dataset/creation_methods' %}.
+					The data collected from domestic properties will remain confidential and will not be included in the repository.
+					{% if dmp_not_initial %}
+						The project generated [[N]] datasets. The provenance of the data generated is specified below:
+						{% for dataset in datasets %}
+							{% check_condition dataset_created as dataset_created %}
+							{% if dataset_created %}
+								&lt;b&gt;Dataset {{ dataset.value }}:&lt;/b&gt;
+								{% render_set_value dataset 'project/dataset/creation_methods' %}&lt;br /&gt;
+							{% endif %}
+						{% endfor %}
+					{% endif %}
+				&lt;/p&gt;
+				&lt;p&gt;&lt;u&gt;Re-used data&lt;/u&gt;&lt;/p&gt;
+				&lt;p&gt;
+					The existing data originate from several sources, which include: {% render_value_inline_list 'project/dataset/provenance/content' %}.
+					{% if dmp_not_initial %}
+						The project re-used [[N]] datasets which originated from the following external sources (from outside of this project):
+						{% for dataset in datasets %}
+							{% check_condition dataset_reused as dataset_reused %}
+							{% if dataset_reused %}
+								&lt;b&gt;Dataset {{ dataset.value }}:&lt;/b&gt;
+								{% render_set_value dataset 'project/dataset/provenance/content' %}&lt;br /&gt;
+								The data were created by
+								{% render_set_value dataset 'project/dataset/creator/name' %}
+								and can be found at the following address:
+								{% render_set_value dataset 'project/dataset/uri' %}
+							{% endif %}
+						{% endfor %}
+					{% endif %}
+				&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q06&quot;&gt;
+			&lt;td&gt;6 To whom might your data be useful ('data utility'), outside your project?&lt;/td&gt;
+			&lt;td&gt;The data might be useful to:
+			&lt;ul&gt;{% render_value_list 'project/dataset/reuse_scenario' %}&lt;/ul&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&quot;2&quot;&gt;&lt;h2&gt;FAIR data&lt;/h2&gt;&lt;/div&gt;
+&lt;div id=&quot;2.1&quot;&gt;&lt;h3&gt;Making data findable, including provisions for metadata&lt;/h3&gt;
+	&lt;table border=&quot;1&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;30%&quot;&gt;&lt;col width=&quot;70%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Questions&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Answers&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+		&lt;tr id=&quot;Q07&quot;&gt;
+			&lt;td&gt;7 Will the data be identified by a persistent identifier?&lt;/td&gt;
+			&lt;td&gt;Yes, each of the project's deposited datasets {% if dmp_initial %}will be{% else %}is{% endif %} identified by:
+			&lt;ul&gt;{% render_value_list 'project/dataset/pids/system' %}&lt;/ul&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q08&quot;&gt;
+			&lt;td&gt;8 Will rich metadata be provided to allow discovery? What metadata will be created? What disciplinary or general standards will be followed?&lt;br /&gt;
+			In case metadata standards do not exist in your discipline, please outline what type of metadata will be created and how.&lt;/td&gt;
+			&lt;td&gt;The metadata created for all of the project's datasets {% if dmp_initial %}will fulfil{% else %}fulfilled{% endif %}
+            the Grant Agreement’s requirement for a minimum set of metadata about:
+			{% render_value_inline_list 'project/dataset/metadata' %}.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q09&quot;&gt;
+			&lt;td&gt;9 Will search keywords be provided in the metadata to optimise the possibility for discovery and then potential re-use?&lt;/td&gt;
+			&lt;td&gt;Yes, the following search keywords {% if dmp_initial %}will be{% else %}were{% endif %} provided in the metadata
+			to optimise the discovery and potential re-use of the deposited datasets:
+			{% render_value_inline_list 'project/dataset/metadata/search_keywords' %}.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q10&quot;&gt;
+			&lt;td&gt;10 Will metadata be offered in such a way that it can be harvested and indexed?&lt;/td&gt;
+			&lt;td&gt;{% render_value_inline_list 'project/dataset/metadata/harvesting' %}&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&quot;2.2&quot;&gt;&lt;h3&gt;Making data accessible&lt;/h3&gt;
+	&lt;table border=&quot;1&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;30%&quot;&gt;&lt;col width=&quot;70%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Questions&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Answers&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+		&lt;tr id=&quot;2.2a&quot;&gt;&lt;td&gt;&lt;b&gt;Repository:&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+		&lt;tr id=&quot;Q11&quot;&gt;
+			&lt;td&gt;11 Will the data be deposited in a trusted repository?&lt;/td&gt;
+			&lt;td&gt;The data and associated metadata, documentation and code
+			{% if dmp_initial %}will be deposited{% else %}were made accessible by deposition{% endif %}
+			in the following trusted open access repository:
+			{% render_value_inline_list 'project/dataset/preservation/repository' %}
+            {% if repository_zenodo %}({{ &quot;https://zenodo.org&quot;|urlize }})
+            {% elif repository_ptb_oar %}{{ &quot;https://oar.ptb.de&quot;|urlize }}{% endif %}&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q12&quot;&gt;
+			&lt;td&gt;12 Have you explored appropriate arrangements with the identified repository where your data will be deposited?&lt;/td&gt;
+			&lt;td&gt;{% render_value_inline_list 'project/dataset/preservation/repository_arrangements' %}.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q13&quot;&gt;
+			&lt;td&gt;13 Does the repository ensure that the data are assigned an identifier? Will the repository resolve the identifier to a digital object?&lt;/td&gt;
+			&lt;td&gt;The chosen repository {% if dmp_initial %}will assign{% else %}assigned{% endif %} the following identifier(s)
+			to each of the project’s deposited datasets: {% render_value_inline_list 'project/dataset/pids/system' %}.
+			The repository 
+            {% if 'project/dataset/pids/resolver' %}{% if dmp_initial %}will resolve{% else %}resolves{% endif %}
+            {% else %}{% if dmp_initial %}will not resolve{% else %}does not resolve{% endif %}
+            {% endif %} resolve the identifier to a digital object.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;2.2b&quot;&gt;&lt;td&gt;&lt;b&gt;Data:&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+		&lt;tr id=&quot;Q14&quot;&gt;
+			&lt;td&gt;14 Will all data be made openly available? If certain datasets cannot be shared (or need to be shared under restricted access conditions), explain why, clearly separating legal and contractual reasons from intentional restrictions.
+				&lt;small&gt;Note that in multi-beneficiary projects it is also possible for specific beneficiaries to keep their data closed, if opening their data goes against their legitimate interests or other constraints as per the Grant Agreement.&lt;/small&gt;
+			&lt;/td&gt;
+			&lt;td&gt;
+				&lt;p&gt;All data needed to validate the results presented in scientific publications will be made openly available as the default
+				unless there is a specific reason not to publish the data.&lt;/p&gt;
+				&lt;p&gt;&lt;u&gt;Datasets which cannot be shared&lt;/u&gt;&lt;br /&gt;
+                Other data {% if dmp_initial %}may{% else %}were{% endif %} be made available on a case-by-case basis if relevant for third parties.&lt;br /&gt;
+                The following data {% if dmp_initial %}will not be{% else %}were not{% endif %} made publicly available:&lt;/p&gt;
+				&lt;ul&gt;{% render_value_list 'project/dataset/sharing/explanation' %}&lt;/ul&gt;
+                The level of data made available {% if dmp_initial %}will also be{% else %}was also{% endif %} considered.
+                For example, pre-processed data {% if dmp_initial %}will not be{% else %}were not{% endif %} provided {% if dmp_initial %}unless there is a{% else %}as there was no{% endif %} a clear reason for doing so.
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q15&quot;&gt;
+			&lt;td&gt;15 If an embargo is applied to give time to publish or seek protection of the intellectual property (e.g. patents), specify why and how long this will apply, bearing in mind that research data should be made available as soon as possible.&lt;/td&gt;
+			&lt;td&gt;
+				{% if dmp_initial %}
+					The data used in scientific publications, posters and oral communications {% if dmp_initial %}will be{% else %}were{% endif %} made available for re-use as soon as is reasonably possible.&lt;br /&gt;
+					Some of the data are {% if dmp_initial %}expected to be{% endif %} subject to an embargo period of {% render_value 'project/dataset/preservation/embargo_length' %} months
+					for the following purpose(s): {% render_value_inline_list 'project/dataset/preservation/embargo_period' %}.
+				{% else %}
+					{% for dataset in datasets %}
+						.....
+					{% endfor %}
+				{% endif %}
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q16&quot;&gt;
+			&lt;td&gt;16 Will the data be accessible through a free and standardised access protocol?&lt;/td&gt;
+			&lt;td&gt;{% render_value_inline_list 'project/dataset/preservation/access_protocol' %}.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q17&quot;&gt;
+			&lt;td&gt;17 If there are restrictions on use, how will access be provided to the data, both during and after the end of the project?&lt;/td&gt;
+			&lt;td&gt;{% render_value_inline_list 'project/dataset/sharing/restrictions_explanation' %}.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q18&quot;&gt;
+			&lt;td&gt;18 How will the identity of the person accessing the data be ascertained?&lt;/td&gt;
+			&lt;td&gt;{% render_value_inline_list 'project/dataset/preservation/access_authentication' %}.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q19&quot;&gt;
+			&lt;td&gt;19 Is there a need for a data access committee (e.g. to evaluate/approve access requests to personal/sensitive data)?&lt;/td&gt;
+			&lt;td&gt;{% render_value_inline_list 'project/legal_aspects/official_approval/data_access_committee' %}&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;2.2c&quot;&gt;&lt;td&gt;&lt;b&gt;Metadata:&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+		&lt;tr id=&quot;Q20&quot;&gt;
+			&lt;td&gt;20 Will metadata be made openly available and licenced under a public domain dedication CC0, as per the Grant Agreement? If not, please clarify why. Will metadata contain information to enable the user to access the data?&lt;/td&gt;
+			&lt;td&gt;{% render_value_inline_list 'project/dataset/metadata/license_for_metadata' %}.
+			{% render_value_inline_list 'project/dataset/metadata/access_info' %}.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q21&quot;&gt;
+			&lt;td&gt;21 How long will the data remain available and findable?
+			Will metadata be guaranteed to remain available after data are no longer available?&lt;/td&gt;
+			&lt;td&gt;The data will remain available and findable for the lifetime of the chosen repository
+            or, at least, for {% render_value 'project/dataset/preservation/duration' %}.&lt;br /&gt;
+			If data are withdrawn from the repository, the DOI and the URL of the original object are retained.
+			In case of closure of the repository, best efforts will be made by the repository to integrate all content into suitable alternative institutional and/or subject based repositories.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q22&quot;&gt;
+			&lt;td&gt;22 Will documentation or reference about any software be needed to access or read the data be included?&lt;br /&gt;
+			Will it be possible to include the relevant software (e.g. in open source code)?&lt;/td&gt;
+			&lt;td&gt;&lt;ul&gt;{% render_value_list 'project/dataset/software_documentation' %}&lt;/ul&gt;
+				{% if dmp_not_initial %}
+					{% for dataset in datasets %}
+					{% endfor %}
+				{% endif %}
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&quot;2.3&quot;&gt;&lt;h3&gt;Making data interoperable&lt;/h3&gt;
+	&lt;table border=&quot;1&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;30%&quot;&gt;&lt;col width=&quot;70%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Questions&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Answers&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+		&lt;tr id=&quot;Q23&quot;&gt;
+			&lt;td&gt;23 What data and metadata vocabularies, standards, formats or methodologies will you follow to make your data interoperable to allow data exchange and re-use within and across disciplines? Will you follow community-endorsed interoperability best practices? Which ones?&lt;/td&gt;
+			&lt;td&gt;The datasets use the trusted repository's basic metadata scheme for bibliographic metadata,
+			which is compliant with the recommended standards used by DataCite ({{ &quot;https://search.datacite.org/&quot;|urlize }}),
+			BASE search ({{ &quot;https://www.basesearch.net/&quot;|urlize }}) and OpenAIRE ({{ &quot;https://www.openaire.eu/search&quot;|urlize }}).&lt;br /&gt;
+			For individual datasets, we are using the following discipline-specific vocabularies, standards,
+			formats, and methodologies:
+            &lt;ol&gt;{% render_value_list 'project/dataset/metadata/standards' set_index='*' %}&lt;/ol&gt;.
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q24&quot;&gt;
+			&lt;td&gt;24 In case it is unavoidable that you use uncommon or generate project specific ontologies or vocabularies,
+			will you provide mappings to more commonly used ontologies?
+			Will you openly publish the generated ontologies or vocabularies to allow their reuse, refinement or extension?&lt;/td&gt;
+			&lt;td&gt;{% render_value_inline_list 'project/dataset/metadata/mappings' %}.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q25&quot;&gt;
+			&lt;td&gt;25 Will your data include qualified references &lt;a href=&quot;#Note1&quot;&gt;[1]&lt;/a&gt; to other data
+			(e.g. other data from your project, or datasets from previous research)?&lt;/td&gt;
+			&lt;td&gt;{% render_value_inline_list 'project/dataset/metadata/references_to_other_data' %}.&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;&lt;/table&gt;
+	&lt;div id=&quot;Note1&quot; style=&quot;font-size:7pt;&quot;&gt;
+		[1] A qualified reference is a cross-reference that explains its intent. For example, &quot;X is regulator of Y&quot; is a much more qualified reference than &quot;X is associated with Y&quot;, or &quot;X see also Y&quot;.
+		The goal therefore is to create as many meaningful links as possible between (meta)data resources to enrich the contextual knowledge about the data.
+		(Source: {{ &quot;https://www.go-fair.org/fair-principles/i3-metadata-include-qualified-references-metadata/&quot;|urlize }})
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;2.4&quot;&gt;&lt;h3&gt;Increase data re-use&lt;/h3&gt;
+	&lt;table border=&quot;1&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;30%&quot;&gt;&lt;col width=&quot;70%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Questions&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Answers&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+		&lt;tr id=&quot;Q26&quot;&gt;
+			&lt;td&gt;26 How will you provide documentation needed to validate data analysis and facilitate data re-use&lt;br/&gt;(e.g. readme files with information on methodology, codebooks, data cleaning, analyses, variable definitions, units of measurement, etc.)?&lt;/td&gt;
+			&lt;td&gt;
+			{% render_value_inline_list 'project/dataset/documentation/where' %}.&lt;br /&gt;
+			Data documentation includes: {% render_value_inline_list 'project/dataset/documentation' %}.
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q27&quot;&gt;
+			&lt;td&gt;27 Will your data be made freely available in the public domain to permit the widest re-use possible? Will your data be licensed using standard reuse licenses, in line with the obligations set out in the Grant Agreement?&lt;/td&gt;
+			&lt;td&gt;The data {% if dmp_initial %}will either be{% else %}were{% endif %} licensed
+            under the {% render_value_inline_list 'project/dataset/sharing/conditions' %}
+            or a license with equivalent rights as set out in the Grant Agreement.
+			Users will be required to acknowledge the consortium and the source of the data in any resulting publications.
+				{% if dmp_not_initial %}
+					{% for dataset in datasets %}
+						.....
+					{% endfor %}
+				{% endif %}
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q28&quot;&gt;
+			&lt;td&gt;28 Will the data produced in the project be useable by third parties, in particular after the end of the project?&lt;/td&gt;
+			&lt;td&gt;{% render_value_inline_list 'project/dataset/sharing/third-parties' %}.
+				{% if dmp_not_initial %}&lt;br /&gt;
+				Some of the project’s datasets are subject to restrictions on re use:
+					{% for dataset in datasets %}
+						.....
+					{% endfor %}
+				{% endif %}
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q29&quot;&gt;
+			&lt;td&gt;29 Will the provenance of the data be thoroughly documented using the appropriate standards?&lt;/td&gt;
+			&lt;td&gt;{% render_value_inline_list 'project/dataset/provenance/standards' %}.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q30&quot;&gt;
+			&lt;td&gt;30 Describe all relevant data quality assurance processes.&lt;/td&gt;
+			&lt;td&gt;Data quality is assured through the following procedures:
+				&lt;ul&gt;{% render_value_list 'project/dataset/quality_assurance' %}&lt;/ul&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q31&quot;&gt;
+			&lt;td&gt;31 Further to the FAIR principles, DMPs should also address research outputs other than data, and should carefully consider
+			aspects related to the allocation of resources, data security and ethical aspects.&lt;/td&gt;
+			&lt;td&gt;
+				&lt;p&gt;&lt;u&gt;Allocation of resources&lt;/u&gt;&lt;/p&gt;
+				&lt;p&gt;The estimated costs to make the data and other research outputs FAIR
+				are {% render_value 'project/costs/metadata/personnel' %} (personnel costs)
+			and {% render_value 'project/costs/metadata/non_personnel' %} (non-personnel costs)
+			(see &lt;a href=&quot;#Q34&quot;&gt;Question 34&lt;/a&gt;).
+			{% render_value_inline_list 'project/costs/preservation/cover_how' %}.&lt;br /&gt;
+			{% render_value_inline_list 'project/dataset/curation/responsible_person/name' %}
+			{% if dmp_initial %}will also have {% else %}had also {% endif %}
+			overall responsibility for managing other research outputs
+			(see &lt;a href=&quot;#Q36&quot;&gt;Question 36&lt;/a&gt;). Where feasible, long-term preservation
+			{% if dmp_initial %}will be {% else %}was {% endif %}ensured
+			by depositing the other research outputs in repositories.
+			{% render_value 'project/preservation/responsible_person/name' %}
+				{% render_value 'project/preservation/selection_criteria' %}
+				which other research outputs will be deposited and for how long.&lt;/p&gt;
+				&lt;p&gt;&lt;u&gt;Security of other research outputs&lt;/u&gt;&lt;/p&gt;
+				&lt;p&gt;The following practices are adopted for security and data quality: {% render_value_inline_list 'project/other_research_output/quality_assurance' %}.&lt;/p&gt;
+				&lt;p&gt;&lt;u&gt;Ethical aspects&lt;/u&gt;&lt;/p&gt;
+				&lt;p&gt;
+				The following sensitive outputs are used in the project: {% render_value_inline_list 'project/other_research_output/sensitive_data_description' %}.&lt;br /&gt;
+				{% render_value 'project/dataset/sensitive_data/documentation' %}.&lt;br /&gt;
+				The project will not share other research outputs with identifiable personal information.
+				Sensitive information relating to the other research outputs will be collected, separated as soon as possible and kept secure.
+				&lt;/p&gt;
+				&lt;p&gt;Please also see the information provided in &lt;a href=&quot;3&quot;&gt;section 1.3&lt;/a&gt; below.&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&quot;3&quot;&gt;&lt;h2&gt;Other research outputs&lt;/h2&gt;
+	&lt;table border=&quot;1&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;30%&quot;&gt;&lt;col width=&quot;70%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Questions&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Answers&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+		&lt;tr id=&quot;Q32&quot;&gt;
+			&lt;td&gt;32 In addition to the management of data, beneficiaries should also consider and plan for the management
+			of other research outputs that may be generated or re-used throughout their projects.&lt;br /&gt;
+			&lt;small&gt;Such outputs can be either digital (e.g. software, workflows, protocols, models, etc.)
+			or physical (e.g. new materials, antibodies, reagents, samples, etc.).&lt;/small&gt;&lt;/td&gt;
+			&lt;td&gt;
+				{% for other_output in other_outputs %}
+					&lt;b&gt;{{ other_output.value }}:&lt;/b&gt;
+					During the project, they will be stored in {% render_set_value_inline_list other_output 'project/other_research_output/storage_type' %}&lt;br /&gt;
+					After the project,  they will be stored in {% render_set_value_inline_list other_output 'project/other_research_output/preservation_repository' %}
+					and shared under the following conditions: {% render_set_value_inline_list other_output 'project/other_research_output/sharing_conditions' %}&lt;br /&gt;
+					{% if dmp_not_initial %}
+						{% render_value_inline_list other_output 'project/other_research_output/title' %}&lt;br /&gt;
+					{% endif %}
+					{{ other_output.preservation_repository.value }}&lt;br /&gt;
+					{{ other_output.sharing_conditions.value }}
+				{% endfor %}
+				{% if dmp_not_initial %}
+					The project generates and re-uses the following types of other research outputs: {% render_value_inline_list 'project/other_research_output/plan' %}
+					{% for other_output in other_outputs %}
+						.....
+					{% endfor %}
+				{% endif %}
+				This project {% if dmp_initial %}will only re-use {% else %}only re-used {% endif %}
+				existing data and will not re-use any other research outputs.
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q33&quot;&gt;
+			&lt;td&gt;33 Beneficiaries should consider which of the questions pertaining to FAIR data above
+			can apply to the management of other research outputs, and should strive to provide sufficient detail
+			on how their research outputs will be managed and shared, or made available for re-use, in line with the FAIR principles.&lt;/td&gt;
+			&lt;td&gt;As far as possible, the FAIR data approaches specified above
+			({% render_value_inline_list 'project/other_research_output/fair' %})
+			will be applied to the management of this project’s other research outputs.
+			This commitment will be met by {% render_value_inline_list 'project/other_research_output/quality_assurance' %}
+			in line with the requirements of the project’s consortium agreement
+			(see the answer to &lt;a href=&quot;#Q32&quot;&gt;Question 32&lt;/a&gt; for further details).
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&quot;4&quot;&gt;&lt;h2&gt;Allocation of resources&lt;/h2&gt;
+	&lt;table border=&quot;1&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;30%&quot;&gt;&lt;col width=&quot;70%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Questions&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Answers&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+		&lt;tr id=&quot;Q34&quot;&gt;
+			&lt;td&gt;34 What will the costs be for making data or other research outputs FAIR in your project (e.g. direct and indirect costs related to storage, archiving, re-use, security, etc.)?&lt;/td&gt;
+			&lt;td&gt;The estimated costs to make the data and other research outputs FAIR (findable, accessible, interoperable and reusable)
+			are {% render_value 'project/costs/metadata/personnel' %} (personnel costs)
+			and {% render_value 'project/costs/metadata/non_personnel' %} (non-personnel costs).
+			These costs have been kept to a minimum by using a free repository
+			and by making only relevant data and other outputs FAIR.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q35&quot;&gt;
+			&lt;td&gt;35 How will these be covered?&lt;br /&gt;
+				&lt;small&gt;Note that costs related to research data/output management are eligible as part of the European Partnership on Metrology grant (if compliant with the Grant Agreement conditions).&lt;/small&gt;
+			&lt;/td&gt;
+			&lt;td&gt;{% render_value_inline_list 'project/costs/preservation/cover_how' %}.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q36&quot;&gt;
+			&lt;td&gt;36 Who will be responsible for data management in your project?&lt;/td&gt;
+			&lt;td&gt;{% render_value_inline_list 'project/dataset/curation/responsible_person/name' %}
+			{% if dmp_initial %}will also have{% else %}had{% endif %} overall responsibility for research data management.
+			They are responsible for coordinating updates to the data management plan and for organising data backup and storage, data archiving and for depositing the data within the repositories.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q37&quot;&gt;
+			&lt;td&gt;37 How will long term preservation be ensured? Discuss the necessary resources to accomplish this (costs and potential value, who decides and how, what data will be kept and for how long).&lt;/td&gt;
+			&lt;td&gt;
+				Long-term preservation will be ensured by depositing the data within repositories.
+                There are no costs associated with the presevation of the data in these repositories.
+                &lt;br /&gt;
+				{% render_value 'project/dataset/preservation/longterm_value' %}&lt;br /&gt;
+				{% render_value_inline_list 'project/dataset/curation/responsible_person/name' %}
+				will decide on what data will be kept and how long. The data selection will take place
+				{% render_value 'project/preservation/selection_criteria' %}.
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&quot;5&quot;&gt;&lt;h2&gt;Data security&lt;/h2&gt;
+	&lt;table border=&quot;1&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;30%&quot;&gt;&lt;col width=&quot;70%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Questions&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Answers&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+		&lt;tr id=&quot;Q38&quot;&gt;
+			&lt;td&gt;38 What provisions are or will be in place for data security (including data recovery
+			as well as secure storage/archiving and transfer of sensitive data)?&lt;/td&gt;
+			&lt;td&gt;
+				&lt;p&gt;&lt;u&gt;Data recovery and secure storage&lt;/u&gt;&lt;/p&gt;
+				&lt;p&gt;During the project, data are stored on {% render_value_inline_list 'project/dataset/storage/type' %}.&lt;br /&gt;
+				After the end of the project, deposition in the chosen repository will provide additional security,
+                as it has multiple replicas on a distributed file system which is backed up on a nightly basis.&lt;/p&gt;
+				&lt;p&gt;&lt;u&gt;Transfer of sensitive data&lt;/u&gt;&lt;/p&gt;
+				&lt;ul&gt;{% render_value_list 'project/dataset/data_security/transfer' %}&lt;/ul&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q39&quot;&gt;
+			&lt;td&gt;39 Will the data be safely stored in trusted repositories for long-term preservation and curation?&lt;/td&gt;
+			&lt;td&gt;Yes, the data will be safely stored on the chosen open access repository.
+            {% render_value_inline_list 'project/dataset/preservation/repository_information' %}.&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&quot;6&quot;&gt;&lt;h2&gt;Ethical aspects&lt;/h2&gt;
+	&lt;table border=&quot;1&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;30%&quot;&gt;&lt;col width=&quot;70%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Questions&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Answers&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+		&lt;tr id=&quot;Q40&quot;&gt;
+			&lt;td&gt;40 Are there, or could there be, any ethics or legal issues that can have an impact on data sharing?&lt;br /&gt;
+				&lt;small&gt;These can also be discussed in the context of the ethics review. If relevant,
+				include references to ethics report(s) and the ethics section in the Annex 1.&lt;/small&gt;
+			&lt;/td&gt;
+			&lt;td&gt;
+			There are issues that might impact on data sharing:
+            &lt;ul&gt;{% render_value_list 'project/dataset/sensitive_data/other/description' %}&lt;/ul&gt;
+			{% render_value 'project/dataset/sensitive_data/documentation' %}.
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr id=&quot;Q41&quot;&gt;
+			&lt;td&gt;41 Will informed consent for data sharing and long-term preservation be included in questionnaires dealing with personal data?&lt;/td&gt;
+			&lt;td&gt;Informed consent will be requested {% render_value_inline_list 'project/dataset/sensitive_data/personal_data/consent/extent' %}.&lt;br /&gt;
+			{% render_value_inline_list 'project/dataset/data_security/transfer' %}.&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&quot;7&quot;&gt;&lt;h2&gt;Other issues&lt;/h2&gt;
+	&lt;table border=&quot;1&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;30%&quot;&gt;&lt;col width=&quot;70%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Questions&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Answers&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+		&lt;tr id=&quot;Q42&quot;&gt;
+			&lt;td&gt;42 Do you, or will you, make use of other national/funder/sectorial/departmental procedures for data management?
+			If yes, which ones? (Please list and briefly describe them.)&lt;/td&gt;
+			&lt;td&gt;Research data management is compliant with:
+				&lt;ul&gt;{% render_value_list 'project/additional_rdm_policy/requirements' %}&lt;/ul&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+{% if dmp_not_initial %}
+	&lt;div id=&quot;Annex&quot;&gt;&lt;h2&gt;Annex: overview of the datasets&lt;/h2&gt;
+		&lt;p&gt;The project has generated 38 datasets so far. These have been grouped
+		by topic / method / format / type as described below.
+		The answers to the questions in the DMP relate to the here defined groups.&lt;/p&gt;
+		&lt;ul&gt;
+			{% for dataset in datasets %}
+				&lt;li&gt;Dataset / group {{ dataset.value }}: {{ dataset.description.value }}&lt;/li&gt;
+			{% endfor %}
+		&lt;/ul&gt;
+	&lt;/div&gt;
+{% endif %}
+&lt;div&gt;&lt;h1&gt;Open Science: research data management&lt;/h1&gt;
+	&lt;table border=&quot;1&quot;&gt;
+    	&lt;colgroup&gt;&lt;col width=&quot;50%&quot;&gt;&lt;col width=&quot;10%&quot;&gt;&lt;col width=&quot;40%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;
+		&lt;tr&gt;&lt;th&gt;&lt;b&gt;Statement&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Put an &amp;#10005; in the box to confirm&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Or, list any exceptions to this&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;All participants have adhered to the requirements of the project’s GA and CA with respect to open science: research data management (GA Article 17 and its Annex 5) for this reporting period&lt;/td&gt;
+			&lt;td style=&quot;text-align:center;&quot;&gt;&amp;#9744;&lt;/td&gt;
+			&lt;td&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&quot;lastPage&quot; style=&quot;page-break-before:always;&quot;&gt;
+	&lt;img src=&quot;https://enterprise.ptb.de/metrology-rdm/fileadmin/documents/metrology-rdm/images/document_control_page.png&quot; alt=&quot;Document control page&quot; width=&quot;100%&quot;&gt;
+&lt;/div&gt;
+&lt;/body&gt;</template>
+	</view>
+</rdmo>
