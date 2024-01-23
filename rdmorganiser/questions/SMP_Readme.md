@@ -34,7 +34,7 @@ This catalogue introduces many custom attributes, as the generic RDMO attributes
 Due to multiple requests, we have created a standalone SMP template for use outside of RDMO. The Word document is freely available under a CC0 license via https://doi.org/10.17617/2.3481986 (direct link to the docx file: https://hdl.handle.net/21.11116/0000-000C-1076-D) for your own re-use.
 
 # Metadata crosswalk to the maSMP ontology
-The attributes we defined for a structured SMP have been aligned to the recommendations on machine-actionable software management plans (maSMPs) https://doi.org/10.5281/zenodo.7806638 being developed in the German SMP community. A metadata crosswalk document is published on https://doi.org/10.5281/zenodo.10275895.
+The attributes we defined for a structured SMP have been aligned to the recommendations on machine-actionable software management plans (maSMPs) https://doi.org/10.5281/zenodo.7806638 being developed in the German SMP community. A metadata crosswalk document is published on https://doi.org/10.5281/zenodo.10275895. More SMP metadata fields for this usage are available within https://github.com/zbmed-semtec/maSMPs and https://discovery.biothings.io/ns/maSMP.
 
 # FAIR4RS Viewer
 A viewer for the presentation of the FAIR4RS principles is available under views. Using the Viewer only makes sense in combination with the SMP catalogue. With other RDMO catalogue this special viewer with focus on research software is not helpful. For more information, see the corresponding readme at the Viewer.
