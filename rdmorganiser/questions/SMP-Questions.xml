@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo created="2023-08-18T14:53:21.777351+02:00" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-11-29T16:10:14.740331+01:00">
 	<catalog dc:uri="https://rdmorganiser.github.io/terms/questions/smp">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>smp</key>
@@ -9,9 +9,9 @@ This SMP template was inspired by some documentation, specially:
 * https://opencarp.org/about/software-management-plan</dc:comment>
 		<order>98</order>
 		<title lang="en">Software Management Plan for Researchers</title>
-		<help lang="en">This catalogue is for the management of scientific software projects. It supports scientists in the development and project organisation of software developments through fifty questions in different topic blocks. This is version 2.0 of the catalogue.</help>
+		<help lang="en">This catalogue is for the management of scientific software projects. It supports scientists in the development and project organisation of software developments through fifty questions in different topic blocks. This is version 3.0 of the catalogue.</help>
 		<title lang="de">Software-Management-Plan für Forschende</title>
-		<help lang="de">Dieser Katalog ist für das Management von wissenschaftlichen Software-Projekten. Er unterstützt Wissenschaftler_innen bei der Entwicklung und der Projektorganisation von Software-Entwicklungen durch fünfzig Fragen in unterschiedlichen Themenblöcken. Dies ist Version 2.0.</help>
+		<help lang="de">Dieser Katalog ist für das Management von wissenschaftlichen Software-Projekten. Er unterstützt Wissenschaftler_innen bei der Entwicklung und der Projektorganisation von Software-Entwicklungen durch fünfzig Fragen in unterschiedlichen Themenblöcken. Dies ist Version 3.0.</help>
 	</catalog>
 	<section dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -109,6 +109,94 @@ This SMP template was inspired by some documentation, specially:
 		</optionsets>
 		<conditions/>
 	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic/application-class">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>application_class</key>
+		<path>smp/general/topic/application-class</path>
+		<dc:comment>The application classes are essentially based on the &quot;DLR Software Engineering Guidelines&quot; (https://zenodo.org/record/1344612), p. 7-8. Depending on the selection in this questions a selection of different questions is provided below.</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/application-class"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en">The application classes are essentially based on the &quot;DLR Software Engineering Guidelines&quot; (&lt;a href=&quot;https://doi.org/10.5281/zenodo.1344612&quot; target=&quot; _blank&quot;&gt;https://doi.org/10.5281/zenodo.1344612&lt;/a&gt;), p. 7-8.  Depending on the selection in this questions a selection of different questions is provided below.
+&lt;details&gt;
+&lt;summary&gt;Click here for more information on the application classes for research software&lt;/summary&gt;
+&lt;b&gt;Application Class 0&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Scripts to process data for a publication.&lt;/li&gt;
+&lt;li&gt;Simple administrative scripts to automate specific tasks.&lt;/li&gt;
+&lt;li&gt;Software that only demonstrates certain functions or is developed to test them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;Application Class 1&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Software that students develop during studies, bachelor or master theses.&lt;/li&gt;
+&lt;li&gt;Software resulting from dissertations in which the long-term development does not matter. &lt;/li&gt;
+&lt;li&gt;Software resulting from third-party projects with focus on demonstration and without planned long-term development.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;Application Class 2&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Software resulting from dissertations in which maintainability and long-term usage matter.&lt;/li&gt;
+&lt;li&gt;Software from third-party projects in which maintenance and long-term usage matter beyond the project.&lt;/li&gt;
+&lt;li&gt;Large research frameworks which are developed by a majority of a department.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;Application Class 3&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Mission critical software, for example, in context of aircraft, autonomous vehicles, health care, patients relation, or space missions.&lt;/li&gt;
+&lt;li&gt;Software for which the facility gives a warranty within or outside the own institution (e.g., via an external company).&lt;/li&gt;
+&lt;li&gt;Software that makes a significant contribution to third party funding and research results of the facility, and must therefore work reliably.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;</help>
+		<text lang="en">In which application class is the software categorised?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Die Anwendungsklassen orientieren sich im Wesentlichen an den &quot;DLR Guidelines for Research Guidelines&quot; (&lt;a href=&quot;https://doi.org/10.5281/zenodo.1344612&quot; target=&quot; _blank&quot;&gt;https://doi.org/10.5281/zenodo.1344612&lt;/a&gt;), S. 7-8.  Abhängig von der Auswahl in diesen Fragen wird unten eine Auswahl verschiedener Fragen bereitgestellt.
+&lt;Details&gt;
+&lt;summary&gt;Hier finden Sie weitere Informationen zu den Anwendungsklassen für Forschungssoftware&lt;/summary&gt;
+&lt;b&gt;Anwendungsklasse 0&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Skripte zur Verarbeitung von Daten für eine Publikation.&lt;/li&gt;
+&lt;li&gt;Einfache administrative Skripte, um bestimmte Aufgaben zu automatisieren.&lt;/li&gt;
+&lt;li&gt;Software, die nur bestimmte Funktionen demonstriert oder entwickelt wird, um sie zu testen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;Anwendungsklasse 1&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Software, die Studierende im Rahmen von Studien-, Bachelor- oder Masterarbeiten entwickeln.&lt;/li&gt;
+&lt;li&gt;Software, die aus Diplomarbeiten resultiert, bei denen die langfristige Entwicklung keine Rolle spielt. &lt;/li&gt;
+&lt;li&gt;Software, die aus Drittmittelprojekten mit Schwerpunkt auf Demonstration und ohne geplante langfristige Entwicklung resultiert.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;Anwendungsklasse 2&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Software, die aus Dissertationen resultiert, bei denen Wartbarkeit und langfristige Nutzung eine Rolle spielen.&lt;/li&gt;
+&lt;li&gt;Software aus Drittmittelprojekten, bei denen Wartung und langfristige Nutzung über das Projekt hinaus von Bedeutung sind.&lt;/li&gt;
+&lt;li&gt;Große Forschungsrahmenwerke, die mehrheitlich von einer Abteilung entwickelt werden.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;Anwendungsklasse 3&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Missionskritische Software, z.B. im Zusammenhang mit Flugzeugen, autonomen Fahrzeugen, Gesundheitsfürsorge, Patientenbeziehungen oder Weltraummissionen.&lt;/li&gt;
+&lt;li&gt;Software, für die die Einrichtung innerhalb oder außerhalb der eigenen Institution (z.B. über ein externes Unternehmen) eine Garantie übernimmt.&lt;/li&gt;
+&lt;li&gt;Software, die einen wesentlichen Beitrag zu Drittmitteln und Forschungsergebnissen der Einrichtung leistet und daher zuverlässig arbeiten muss.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;</help>
+		<text lang="de">In welche Anwendungsklasse wird die Software eingeordnet?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/application-class"/>
+		</optionsets>
+		<conditions/>
+	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic/intended-use">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>intended-use</key>
@@ -118,7 +206,7 @@ This SMP template was inspired by some documentation, specially:
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
-		<order>2</order>
+		<order>3</order>
 		<help lang="en">The intention for developing software in a scientific context can be manifold. The same applies to the specific application of the software and the contribution to scientific knowledge. Depending on the scientific community, these points can also differ significantly from each other.
 
 We offer here some recommended reading that may be helpful in answering the questions:
@@ -172,13 +260,29 @@ Es liegt in der Natur der Sache, dass diese Literaturhinweise nicht vollumfängl
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
-		<order>3</order>
-		<help lang="en">Please consider whether it would be more effective to purchase existing software or to adapt an existing open source instead of developing software yourself.</help>
+		<order>4</order>
+		<help lang="en">Please consider whether it would be more effective to purchase existing software or to adapt an existing open source instead of developing software yourself.
+
+The following (selected) platforms can help:
+&lt;ul&gt;
+&lt;li&gt;bio.tools (&lt;a href=&quot;https://bio.tools&quot; target=&quot;_blank&quot; &gt;https://bio.tools&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;pypi (&lt;a href=&quot;https://pypi.org/&quot; target=&quot;_blank&quot; &gt;https://pypi.org/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Research Software Directory (&lt;a href=&quot;https://research-software-directory.org/&quot; target=&quot;_blank&quot; &gt;https://research-software-directory.org/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</help>
 		<text lang="en">What function does the new software have that previous software does not cover? What related software exists and why is it not suitable?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Bitte überlegen Sie, ob es nicht zielführender ist eine existierende Software einzukaufen oder eine bestehende Open Source-Variante anzupassen anstatt eine eigene Software vollständig selbst zu entwickeln.</help>
+		<help lang="de">Bitte überlegen Sie, ob es nicht zielführender ist eine existierende Software einzukaufen oder eine bestehende Open Source-Variante anzupassen anstatt eine eigene Software vollständig selbst zu entwickeln.
+
+Folgende (ausgewählte) Plattformen können hierbei helfen:
+&lt;ul&gt;
+&lt;li&gt;bio.tools (&lt;a href=&quot;https://bio.tools&quot; target=&quot;_blank&quot; &gt;https://bio.tools&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;pypi (&lt;a href=&quot;https://pypi.org/&quot; target=&quot;_blank&quot; &gt;https://pypi.org/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Research Software Directory (&lt;a href=&quot;https://research-software-directory.org/&quot; target=&quot;_blank&quot; &gt;https://research-software-directory.org/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</help>
 		<text lang="de">Welche Funktion hat die neue Software, die bisherige Software nicht abdeckt? Welche verwandte Software gibt es und warum ist diese nicht geeignet?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -213,7 +317,11 @@ Es liegt in der Natur der Sache, dass diese Literaturhinweise nicht vollumfängl
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-partner/project-participants">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -245,7 +353,10 @@ Es liegt in der Natur der Sache, dass diese Literaturhinweise nicht vollumfängl
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-partner/funding">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -291,7 +402,11 @@ Als weiterführenden Hinweise empfehlen wir diese Publikationen:
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/schedule">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -311,7 +426,11 @@ Als weiterführenden Hinweise empfehlen wir diese Publikationen:
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/schedule/start-date">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -395,7 +514,11 @@ Als weiterführenden Hinweise empfehlen wir diese Publikationen:
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-management/development-process">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -441,7 +564,10 @@ Zur Unterstützung können diese Texte interessant sein:
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-management/track-tasks">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -477,7 +603,11 @@ Beispiele für Anwendungen sind etwa eigenständige Ticket-Systeme wie Jira oder
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-management/specification-sheet">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -509,7 +639,10 @@ Beispiele für Anwendungen sind etwa eigenständige Ticket-Systeme wie Jira oder
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/software-requirements">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -529,7 +662,11 @@ Beispiele für Anwendungen sind etwa eigenständige Ticket-Systeme wie Jira oder
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/software-requirements/institutional-requirements">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -711,7 +848,11 @@ An dieser Stelle bietet es sich zusätzlich an, zu dokumentieren, ob technische 
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -773,7 +914,11 @@ Folgende Literatur könnte zusätzlich interessant sein:
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components/third-party-licenses">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -805,7 +950,10 @@ Folgende Literatur könnte zusätzlich interessant sein:
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components/track-external-software">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -837,7 +985,10 @@ Folgende Literatur könnte zusätzlich interessant sein:
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components/web-services">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -869,7 +1020,11 @@ Folgende Literatur könnte zusätzlich interessant sein:
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components/qualified-references">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -921,7 +1076,11 @@ Folgende Literatur könnte zusätzlich interessant sein:
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/Infrastructure/infrastructure-required">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1037,7 +1196,11 @@ Folgende Literatur könnte zusätzlich interessant sein:
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/preservation/re-usable">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1129,7 +1292,10 @@ In diesem Zusammenhang ist es auch sinnvoll, über Containerisierung und generel
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/security/security">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1173,7 +1339,10 @@ Folgende Dokumente können für Sie hierbei relevant sein:
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/security/safety">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1205,7 +1374,9 @@ Folgende Dokumente können für Sie hierbei relevant sein:
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<section dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1235,7 +1406,10 @@ Folgende Dokumente können für Sie hierbei relevant sein:
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/governance/governance-model">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1271,7 +1445,9 @@ Bitte beachten Sie hierbei nicht nur die reine Prozessebene, sondern denken Sie 
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/governance/coding-standards">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1280,7 +1456,7 @@ Bitte beachten Sie hierbei nicht nur die reine Prozessebene, sondern denken Sie 
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/coding-standards"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/governance"/>
-		<is_collection>False</is_collection>
+		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en">When developing software, it can be helpful to adhere to certain standards. These can be, for example, common code conventions in the professional community or language-specific standards (e.g. &lt;a href=&quot;https://www.oracle.com/technetwork/java/codeconventions-150003.pdf&quot; target=&quot;_blank&quot;&gt;Java Coding Standards&lt;/a&gt;, &lt;a href=&quot;https://clean-code-developer.de&quot; target=&quot;_blank&quot;&gt;Clean Code Developer&lt;/a&gt;). Tools for static code analysis (e.g. Lint) can help to find problematic code. An (internal) code review can also be a suitable method of quality control.</help>
@@ -1295,15 +1471,20 @@ Bitte beachten Sie hierbei nicht nur die reine Prozessebene, sondern denken Sie 
 		<verbose_name_plural lang="de"/>
 		<default_option/>
 		<default_external_id/>
-		<widget_type>textarea</widget_type>
+		<widget_type>checkbox</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
 		<width/>
-		<optionsets/>
-		<conditions/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/coding-standards"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/documentation">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1323,7 +1504,11 @@ Bitte beachten Sie hierbei nicht nur die reine Prozessebene, sondern denken Sie 
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/documentation/who-is-responsible">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1342,8 +1527,8 @@ The following questions could be answered in a documentation:
 * What should be documented, e.g. process, code or system?
 * For what purpose should documentation be done?
 * At what level of detail should be documented?
-* Who is the target group for which type of documentation?
-* In which formats will the documentation be produced?</help>
+* Who is the target group for which type of documentation, e.g. user documentation, programmers documentation, API documentation?
+* In which formats will the documentation be produced, e.g. README file, docstring, release notes, changelog?</help>
 		<text lang="en">How is software documentation created?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
@@ -1355,8 +1540,8 @@ Folgende Fragen könnten in einer Dokumentation beantwortet werden:
 *	Was soll dokumentiert werden, z.B. Prozess, Code oder System?
 *	Zu welchem Zweck soll dokumentiert werden?
 *	In welchem Detailgrad soll dokumentiert werden?
-*	Wer ist die Zielgruppe für welche Dokumentationsart?
-*	In welchen Formaten wird die Dokumentation erstellt?</help>
+*	Wer ist die Zielgruppe für welche Art von Dokumentation, z. B. Benutzerdokumentation, Programmiererdokumentation, API-Dokumentation?
+*	In welchen Formaten soll die Dokumentation erstellt werden, z. B. README-Datei, Docstring, Release Notes, Changelog?</help>
 		<text lang="de">Wie wird eine Software-Dokumentation erstellt?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1371,7 +1556,11 @@ Folgende Fragen könnten in einer Dokumentation beantwortet werden:
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/documentation/documentation-stored">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1403,7 +1592,10 @@ Folgende Fragen könnten in einer Dokumentation beantwortet werden:
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/testing">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1423,7 +1615,10 @@ Folgende Fragen könnten in einer Dokumentation beantwortet werden:
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/testing/test-strategy">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1447,14 +1642,16 @@ Folgende Fragen könnten in einer Dokumentation beantwortet werden:
 		<verbose_name_plural lang="de"/>
 		<default_option/>
 		<default_external_id/>
-		<widget_type>textarea</widget_type>
+		<widget_type>checkbox</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
 		<width/>
-		<optionsets/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/testing"/>
+		</optionsets>
 		<conditions/>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/testing/test-documentation">
@@ -1517,7 +1714,11 @@ Folgende Fragen könnten in einer Dokumentation beantwortet werden:
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/releasing/releasing-who">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1549,7 +1750,10 @@ Folgende Fragen könnten in einer Dokumentation beantwortet werden:
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/releasing/decision-releasing">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1581,7 +1785,10 @@ Folgende Fragen könnten in einer Dokumentation beantwortet werden:
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/releasing/store-software">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1617,7 +1824,11 @@ Eine weitreichende Möglichkeit für den langfristigen Erhalt von Software ist b
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/publicly-available">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1637,7 +1848,11 @@ Eine weitreichende Möglichkeit für den langfristigen Erhalt von Software ist b
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/publicly-available/software-sharing">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1677,7 +1892,11 @@ Es ist sinnvoll eine Kontaktperson oder Emailadresse zu definieren, die über ei
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/publicly-available/software-repository">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1711,7 +1930,11 @@ In &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/publicly-available/contribute-software">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1743,7 +1966,10 @@ In &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/publicly-available/peer-review">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1785,7 +2011,10 @@ Weitere Literaturhinweise zu dem Thema können ebenfalls interessant sein:
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/metadata">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1865,15 +2094,21 @@ Beispielsweise mit einer &lt;a href=&quot;https://citation-file-format.github.io
 		<verbose_name_plural lang="de"/>
 		<default_option/>
 		<default_external_id/>
-		<widget_type>textarea</widget_type>
+		<widget_type>checkbox</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
 		<width/>
-		<optionsets/>
-		<conditions/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/software_identifier"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/support">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1893,7 +2128,11 @@ Beispielsweise mit einer &lt;a href=&quot;https://citation-file-format.github.io
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/support/support-for-software">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1926,6 +2165,8 @@ Beispielsweise mit einer &lt;a href=&quot;https://citation-file-format.github.io
 		<width/>
 		<optionsets/>
 		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
 			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/publish-software"/>
 		</conditions>
 	</question>
@@ -1960,6 +2201,8 @@ Beispielsweise mit einer &lt;a href=&quot;https://citation-file-format.github.io
 		<width/>
 		<optionsets/>
 		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
 			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/publish-software"/>
 		</conditions>
 	</question>
@@ -1993,7 +2236,11 @@ Beispielsweise mit einer &lt;a href=&quot;https://citation-file-format.github.io
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/support/publish-smp">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -2027,7 +2274,10 @@ Beispielsweise mit einer &lt;a href=&quot;https://citation-file-format.github.io
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/yes_with_text_no"/>
 		</optionsets>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<section dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics">
 		<uri_prefix>https://rdmorganiser.github.io/terms/</uri_prefix>
@@ -2057,7 +2307,11 @@ Beispielsweise mit einer &lt;a href=&quot;https://citation-file-format.github.io
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/intellectual-rights/software-property-rights">
 		<uri_prefix>https://rdmorganiser.github.io/terms/</uri_prefix>
@@ -2089,7 +2343,11 @@ Beispielsweise mit einer &lt;a href=&quot;https://citation-file-format.github.io
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/intellectual-rights/external-software-rights">
 		<uri_prefix>https://rdmorganiser.github.io/terms/</uri_prefix>
@@ -2121,7 +2379,10 @@ Beispielsweise mit einer &lt;a href=&quot;https://citation-file-format.github.io
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/license">
 		<uri_prefix>https://rdmorganiser.github.io/terms/</uri_prefix>
@@ -2150,7 +2411,7 @@ Beispielsweise mit einer &lt;a href=&quot;https://citation-file-format.github.io
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/software-license"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/license"/>
-		<is_collection>False</is_collection>
+		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en">There are good arguments for assigning a license. &lt;a href=&quot;https://wissenschaftliche-integritaet.de/en/code-of-conduct/providing-public-access-to-research-results/&quot; target=&quot;_blank&quot;&gt;Guideline 13 in the DFG Code of Conduct &quot;Guidelines for Safeguarding Good Scientific Practice&quot;&lt;/a&gt; even explicitly states that if &quot;self-developed research software is to be made available to third parties, an appropriate licence is provided&quot;. &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; R1.1 also emphasises the same. Please also consider the compatibility with already integrated third-party libraries.
@@ -2179,14 +2440,16 @@ Folgende Seiten geben Ihnen einen ersten Überblick zu Software und Lizenzen:
 		<verbose_name_plural lang="de"/>
 		<default_option/>
 		<default_external_id/>
-		<widget_type>textarea</widget_type>
+		<widget_type>checkbox</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
 		<width/>
-		<optionsets/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/software-license"/>
+		</optionsets>
 		<conditions/>
 	</question>
 	<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/dual-use">
@@ -2207,7 +2470,9 @@ Folgende Seiten geben Ihnen einen ersten Überblick zu Software und Lizenzen:
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
-		<conditions/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
 	</questionset>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/dual-use/dual-use-software">
 		<uri_prefix>https://rdmorganiser.github.io/terms/</uri_prefix>
