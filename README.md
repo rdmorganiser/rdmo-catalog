@@ -25,7 +25,7 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 |DCC checklist           |[catalog](rdmorganiser/questions/dcc.xml)           |     |2018-10|RDMO team      |
 |DFG checklist           |[catalog](rdmorganiser/questions/DFG-Checkliste.xml)|[view](rdmorganiser/views/dfg-checkliste.xml)       |2023-11|RDMO team       |
 |Horizon Europe          |[catalog](rdmorganiser/questions/horizon-europe.xml)|[view](rdmorganiser/views/horizon-europe.xml)       |2022-12|RDMO team       |
-|Software Management Plan|[catalog](rdmorganiser/questions/SMP-Questions.xml) |[view (FAIR4RS)](rdmorganiser/views/FAIR4RSview.xml)|2023-08|MPDL / RDMO team|
+|Software Management Plan|[catalog](rdmorganiser/questions/SMP-Questions.xml) |[view (FAIR4RS)](rdmorganiser/views/FAIR4RSview.xml)|2023-11|MPDL / RDMO team|
 |Swiss National Fund     |[catalog](rdmorganiser/questions/snf.xml)           |[view](rdmorganiser/views/snf.xml)                  |2020-08|RDMO team       |
 |Bielefeld               |            |[view](rdmorganiser/views/bielefeld.xml)     |2019-01|RDMO team      |
 |CITEC                   |            |[view](rdmorganiser/views/citec.xml)         |2019-01|RDMO team      |
@@ -58,6 +58,7 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 |DFG 112 Economics |[catalog](shared/fodako/112_dfg_5.xml)                    ||2022-03|FoDaKo|
 |ERC grants        |[catalog](shared/ub_fau_erlangen_nuernberg/erc-grants/erc.xml)||2023-08|FDM Bayern eHumanities|
 |Emissions in animal husbandry|[catalog 1](shared/EmiMin/publisso_terms4life_emiminV1_questions.xml)<br />[catalog 2](shared/EmiMin/publisso_terms4life_emimin_lead_V1_questions.xml)||2021-04|EmiMin|
+|European Partnership on Metrology|[catalog](shared/metrology-rdm/epm-questions.xml)|[view](shared/metrology-rdm/epm-view-table.xml)|2023-10|TC-IM 1449|
 |Hessen State      |[catalog](shared/HeFDI/4_hefdi_template_questions_1.4.xml)||2020-07|HeFDI|
 |Horizon 2020      |[catalog](shared/ub_fau_erlangen_nuernberg/h2020-ehum/ehum_h2020_fragebogen.xml)|[view](shared/ub_fau_erlangen_nuernberg/h2020-ehum/views_h2020.xml)|2020-09|FDM Bayern eHumanities|
 |Mathematics       |[catalog](shared/MATH+/mathplus_questions.xml)            ||2022-11|DFG Excellence Cluster MATH+|
@@ -65,4 +66,4 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 |Research data policy generator|[catalog](shared/FDNext/)                     ||2023-11|FDNext|
 |VW Foundation - Science Europe|[catalog](shared/ub_fau_erlangen_nuernberg/ScienceEurope_VW_Stiftung/catalog_VW_SE.xml)||2021-04|FDM Bayern eHumanities|
 
-Total: 33 catalogs, 13 views
+Total: 34 catalogs, 14 views

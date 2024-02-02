@@ -19,18 +19,22 @@ Furthermore, this SMP template was inspired by some documentations, specially:
 # Versions of the SMP Catalogue
 | Version Number | Release Date | Description |
 | -------------- | ------------ | ----------- |
-| 1.0 | 5th December 2022   | Initatilisation|
-| 1.1 | 27th Februrary 2023 | Minor adjustments to help texts and some widget types of questions|
-| 2.0 | 18th August 2023    | a) Addition of a question regarding Qualifty References (reference to FAIR4RS I2 and R2); b) adjustments to questions and help texts for the FAIR4RS viewer; c) minor adjustments to help texts thanks to feedback; d) broken links repair + Thanks a lot for the feedback by the RDMO Community!|
+| 1.0 | 5th December 2022  | Initialisation   |
+| 1.1 | 27th February 2023 | Minor adjustments to help texts and some widget types of questions|
+| 2.0 | 18th August 2023   | a) Addition of a question regarding Qualifty References (reference to FAIR4RS I2 and R2); b) adjustments to questions and help texts for the FAIR4RS viewer; c) minor adjustments to help texts thanks to feedback; d) broken links repair + Thanks a lot for the feedback by the RDMO Community!|
+| 3.0 | 29th November 2023 | Implementing application classes and structure the appearence of different question after the DLR Research Software Guidelines (https://doi.org/10.5281/zenodo.1344612). This work was done within the NFDI4DataScience miniHackathons on maSMPs in 2023 at the ZB Med, see https://doi.org/10.5281/zenodo.10374839.|
 
 # Implementing
-The catalogue uses the generic elements from RDMO. Therefore, all generic elements from "Conditions", "Domain", "Options" and "Questions" must already be implemented in advance.
+The catalogue uses the generic elements from RDMO. Therefore, all generic elements from "Conditions", "Domain", "Options" and "Questions" must already be implemented in advance. The respective order is documented in the [generic Readme file of the RDMO content](https://github.com/rdmorganiser/rdmo-catalog/tree/master/rdmorganiser#readme) and must be observed.
 
 # Transferability
 This catalogue introduces many custom attributes, as the generic RDMO attributes do not always cover the specific aspects of software. For this reason, the existing views in RDMO cannot be used for this catalogue, or only to a very limited extent.
 
 # Use outside RDMO
-Due to multiple requests, we have created a template on the SMP for use outside of RDMO. The Word document is freely writable, has a CC0 and is freely available via https://doi.org/10.17617/2.3481986  (direct link to the docx. file: https://hdl.handle.net/21.11116/0000-000C-1076-D) for your own re-use.
+Due to multiple requests, we have created a standalone SMP template for use outside of RDMO. The Word document is freely available under a CC0 license via https://doi.org/10.17617/2.3481986 (direct link to the docx file: https://hdl.handle.net/21.11116/0000-000C-1076-D) for your own re-use.
+
+# Metadata crosswalk to the maSMP ontology
+The attributes we defined for a structured SMP have been aligned to the recommendations on machine-actionable software management plans (maSMPs) https://doi.org/10.5281/zenodo.7806638 being developed in the German SMP community. A metadata crosswalk document is published on https://doi.org/10.5281/zenodo.10275895. More SMP metadata fields for this usage are available within https://github.com/zbmed-semtec/maSMPs and https://discovery.biothings.io/ns/maSMP.
 
 # FAIR4RS Viewer
 A viewer for the presentation of the FAIR4RS principles is available under views. Using the Viewer only makes sense in combination with the SMP catalogue. With other RDMO catalogue this special viewer with focus on research software is not helpful. For more information, see the corresponding readme at the Viewer.
