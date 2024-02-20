@@ -56,7 +56,7 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 |DFG 106 Social & Cultural Anthropology|[catalog](shared/fodako/106_dfg_5.xml)||2022-03|FoDaKo|
 |DFG 109 Educational Research          |[catalog](shared/fodako/109_dfg_5.xml)||2022-03|FoDaKo|
 |DFG 112 Economics |[catalog](shared/fodako/112_dfg_5.xml)                    ||2022-03|FoDaKo|
-|ERC grants        |[catalog](shared/ub_fau_erlangen_nuernberg/erc-grants/erc.xml)||2023-08|FDM Bayern eHumanities|
+|ERC grants        |[catalog](shared/ub_fau_erlangen_nuernberg/erc-grants/erc.xml)|[view](shared/ub_fau_erlangen_nuernberg/erc-grants/ERC_views.xml)|2023-08|FDM Bayern eHumanities|
 |Emissions in animal husbandry|[catalog 1](shared/EmiMin/publisso_terms4life_emiminV1_questions.xml)<br />[catalog 2](shared/EmiMin/publisso_terms4life_emimin_lead_V1_questions.xml)||2021-04|EmiMin|
 |European Partnership on Metrology|[catalog](shared/metrology-rdm/epm-questions.xml)|[view](shared/metrology-rdm/epm-view-table.xml)|2023-10|TC-IM 1449|
 |Hessen State      |[catalog](shared/HeFDI/4_hefdi_template_questions_1.4.xml)||2020-07|HeFDI|
@@ -66,4 +66,4 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 |Research data policy generator|[catalog](shared/FDNext/)                     ||2023-11|FDNext|
 |VW Foundation - Science Europe|[catalog](shared/ub_fau_erlangen_nuernberg/ScienceEurope_VW_Stiftung/catalog_VW_SE.xml)||2021-04|FDM Bayern eHumanities|
 
-Total: 34 catalogs, 14 views
+Total: 34 catalogs, 15 views
