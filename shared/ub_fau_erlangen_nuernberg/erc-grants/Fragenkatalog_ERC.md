@@ -9,6 +9,9 @@ Der Fragebogen wurde im Rahmen des Projekts "eHumanities-interdisziplinär" (htt
 ## Beispiel-DMP
 Wir stellen ein kurzes DMP-Beispiel zur Verfügung, das mit Hilfe dieses Fragebogens erstellt wurde. Wenn Fragen von einer Beispielantwort profitieren, verlinken wir auf diesen. Der Beispiel-DMP ist kürzer als die üblichen ERC-DMPs: typische ERC-DMPs haben einen Umfang von 4-6 Seiten. Der DMP kann auf GitLab eingesehen werden: https://gitlab.lrz.de/UBderLMU-IT/FDM/rdmo-catalog/-/blob/master/Fragen/ERC/ERC_Example.md.
 
+## ERC Ansicht
+Zusätzlich stellen wir eine Ansicht (Exportvorlage) für den ERC Fragebogen zur Verfügung, die sich an dem Template des ERC Förderprogramms (Version vom 1. Dezember 2021) orientiert: https://erc.europa.eu/sites/default/files/document/file/ERC-Data-Management-Plan.docx. Die Ansicht ist in deutscher und englischer Sprache verfügbar, wobei die Verwendung der englischen Version empfohlen wird, da das ursprüngliche Template in englischer Sprache verfasst ist. Die Ansicht basiert auf dem RDMO-Optionenset mit dem Stand vom 31.01.2024.
+
 ## Einsatz und Lizenz
 Der Katalog wurde in erster Linie zur Vorbereitung von ERC-Anträgen erstellt. Die Fragen decken die Anforderungen / Themen ab, die im Antrag prinzipiell behandelt / erwähnt werden sollten. Forschende können die Fragen zur Selbstkontrolle des Antrags verwenden oder ihre knappen Antworten der Antragsberatung als Ausgangspunkt für einen Textvorschlag zur Verfügung stellen. 
 
