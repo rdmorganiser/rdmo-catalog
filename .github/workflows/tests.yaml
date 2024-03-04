@@ -20,6 +20,9 @@ jobs:
           cache: pip
           cache-dependency-path: .github/workflows/requirements.txt
 
+      - name: Apt update
+        run: sudo apt update -y
+
       - name: Install xmllint
         run: |
           sudo apt install --yes libxml2-utils
