@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2024-03-12T15:06:51.795847+01:00" version="2.1.3">
+	<view dc:uri="https://rdmorganiser.github.io/terms/views/dmponline">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>dmponline</uri_path>
+		<dc:comment>Source: https://dmponline.dcc.ac.uk/</dc:comment>
+		<order>0</order>
+		<title lang="en">DMPonline template</title>
+		<help lang="en">Template from DMPonline, based on &lt;a href="https://dmponline.dcc.ac.uk" target="_blank"&gt;https://dmponline.dcc.ac.uk&lt;/a&gt;</help>
+		<title lang="de">DMPonline template</title>
+		<help lang="de">Vorlage von DMPonline, basiert auf &lt;a href="https://dmponline.dcc.ac.uk" target="_blank"&gt;https://dmponline.dcc.ac.uk&lt;/a&gt;</help>
+		<title lang="fr">DMPonline template</title>
+		<help lang="fr">Modèle de DMPonline, sur la base de &lt;a href="https://dmponline.dcc.ac.uk" target="_blank"&gt;https://dmponline.dcc.ac.uk&lt;/a&gt;</help>
+		<title lang="it">DMPonline template</title>
+		<help lang="it">Modello di DMPonline, basato su &lt;a href="https://dmponline.dcc.ac.uk" target="_blank"&gt;https://dmponline.dcc.ac.uk&lt;/a&gt;</help>
+		<title lang="es">DMPonline template</title>
+		<help lang="es">Modelo de DMPonline, basado en &lt;a href="https://dmponline.dcc.ac.uk" target="_blank"&gt;https://dmponline.dcc.ac.uk&lt;/a&gt;</help>
+		<catalogs/>
+		<template>{% load view_tags %}
+
+{% get_set 'project/partner' as partners %}
+{% get_set 'project/dataset' as datasets %}
+
+&lt;h1&gt;DMPonline Template&lt;/h1&gt;
+
+&lt;h2&gt;Data Collection&lt;/h2&gt;
+&lt;p&gt;
+  &lt;b&gt;What data will you collect or create?&lt;/b&gt;
+&lt;/p&gt;
+
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/description' %},
+	data format: {% render_set_value dataset 'project/dataset/format' %}
+&lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;
+    &lt;b&gt;How will the data be collected or created?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/creation_methods' %}
+&lt;/p&gt;
+{% endfor %}
+
+&lt;h2&gt;Documentation and Metadata&lt;/h2&gt;
+&lt;p&gt;
+    &lt;b&gt;What documentation and metadata will accompany the data?&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;i&gt;Metadata&lt;/i&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/interoperability' %}
+&lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;
+    &lt;i&gt;Documentation&lt;/i&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/id/standards' %}
+&lt;/p&gt;
+{% endfor %}
+
+&lt;h2&gt;Ethics and Legal Compliance&lt;/h2&gt;
+
+&lt;p&gt;
+    &lt;b&gt;How will you manage any ethical issues?&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    {% render_value 'project/legal_aspects/sensitive_data/other/yesno' %}
+    {% render_value 'project/legal_aspects/sensitive_data/other/description' %}
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;b&gt;How will you manage copyright and Intellectual Property Rights (IPR) issues?&lt;/b&gt;
+&lt;/p&gt;
+
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	Applicable copyrights:
+    {% render_set_value dataset 'project/dataset/ipr/copyrights' %}
+&lt;/p&gt;
+&lt;p&gt;
+	Other applicable intellectual property rights:
+    {% render_set_value dataset 'project/dataset/ipr/other_rights' %}
+&lt;/p&gt;
+&lt;p&gt;
+	Rightsholder: {% render_set_value dataset 'project/dataset/ipr/owner/name' %}
+&lt;/p&gt;
+{% endfor %}
+
+&lt;h2&gt;Storage and Backup&lt;/h2&gt;
+&lt;p&gt;
+    &lt;b&gt;How will the data be stored and backed up during the research?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/storage/type' %}
+&lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;
+    &lt;b&gt;How will you manage access and security?&lt;/b&gt;
+&lt;/p&gt;
+			&lt;p&gt;{% render_value 'project/dataset/data_security' %}
+
+&lt;h2&gt;Selection and Preservation&lt;/h2&gt;
+
+&lt;p&gt;
+    &lt;b&gt;Which data are of long-term value and should be retained, shared, and/or preserved?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/preservation/yesno' %}.
+	{% render_set_value_inline_list dataset 'project/dataset/preservation/purpose' %}.
+&lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;
+    &lt;b&gt;What is the long-term preservation plan for the dataset?&lt;/b&gt;
+&lt;/p&gt;
+
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/preservation/duration' %}.
+	In: {% render_set_value dataset 'project/dataset/preservation/repository' %}
+&lt;/p&gt;
+{% endfor %}
+
+&lt;h2&gt;Data Sharing&lt;/h2&gt;
+
+&lt;p&gt;
+    &lt;b&gt;How will you share the data?&lt;/b&gt;
+&lt;/p&gt;
+
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/metadata/standards' %}
+&lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;
+    &lt;b&gt;Are any restrictions on data sharing required?&lt;/b&gt;
+&lt;/p&gt;
+
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/sharing/conditions' %}
+&lt;/p&gt;
+{% endfor %}
+
+&lt;h2&gt;Responsibilities and Resources&lt;/h2&gt;
+
+&lt;p&gt;
+    &lt;b&gt;Who will be responsible for data management?&lt;/b&gt;
+&lt;/p&gt;
+
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	Responsible person for the backups:
+	{% render_set_value dataset 'project/dataset/backup_responsible/name' %}
+&lt;/p&gt;
+&lt;p&gt;
+	Responsible person for documenting the metadata and context information:
+	{% render_set_value dataset 'project/dataset/metadata/responsible_person/name' %}
+&lt;/p&gt;
+	Responsible person for the maintenance of the PIDs and the object maintenance:
+	{% render_set_value dataset 'project/dataset/pids/responsible_person/name' %}
+&lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;
+	Person(s) who choose(s) the data to be archived:
+    {% render_value_inline_list 'project/preservation/responsible_person/name' %}
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;b&gt;What resources will you require to deliver your plan?&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;i&gt;Metadata costs&lt;/i&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+    Personnel: {% render_value 'project/costs/metadata/personnel' %}
+&lt;/p&gt;
+
+&lt;p&gt;
+    Other: {% render_value 'project/costs/metadata/non_personnel' %}
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;i&gt;Preservation costs&lt;/i&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+    Personnel: {% render_value 'project/costs/preservation/personnel' %}
+&lt;/p&gt;
+
+&lt;p&gt;
+    Other: {% render_value 'project/costs/preservation/non_personnel' %}
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;i&gt;Data sizes&lt;/i&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;i&gt;Dataset {% render_set_value dataset 'project/dataset/id' %}:&lt;/i&gt;
+	{% render_set_value dataset 'project/dataset/id/volume' %}
+&lt;/p&gt;
+{% endfor %}</template>
+	</view>
+</rdmo>

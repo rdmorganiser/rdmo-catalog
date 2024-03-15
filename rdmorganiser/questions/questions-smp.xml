@@ -1,0 +1,3080 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2024-03-12T14:56:06.262241+01:00" version="2.1.3">
+	<catalog dc:uri="https://rdmorganiser.github.io/terms/questions/smp">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp</uri_path>
+		<dc:comment>This software project management catalogue was developed by the Max Planck Digital Library in 2022. Thanks to all our team colleagues for their support.
+This SMP template was inspired by some documentation, specially:
+* https://www.software.ac.uk/resources/guides/software-management-plans
+* https://opencarp.org/about/software-management-plan</dc:comment>
+		<order>98</order>
+		<title lang="en">Software Management Plan for Researchers</title>
+		<help lang="en">This catalogue is for the management of scientific software projects. It supports scientists in the development and project organisation of software developments through fifty questions in different topic blocks. This is version 3.0 of the catalogue.</help>
+		<title lang="de">Software-Management-Plan für Forschende</title>
+		<help lang="de">Dieser Katalog ist für das Management von wissenschaftlichen Software-Projekten. Er unterstützt Wissenschaftler_innen bei der Entwicklung und der Projektorganisation von Software-Entwicklungen durch fünfzig Fragen in unterschiedlichen Themenblöcken. Dies ist Version 3.0.</help>
+		<title lang="fr">Plan de gestion des logiciels pour chercheurs</title>
+		<help lang="fr">Ce catalogue est destiné à la gestion de projets de logiciels scientifiques. Il aide les scientifiques à développer et à organiser des projets de développement de logiciels grâce à cinquante questions réparties en différents blocs thématiques. Il s'agit de la version 3.0.</help>
+		<title lang="it">Piano di gestione del software per ricercatori</title>
+		<help lang="it">Questo catalogo è destinato alla gestione di progetti software scientifici. Supporta gli scienziati nello sviluppo e nell'organizzazione di progetti software con cinquanta domande in diversi blocchi tematici. Questa è la versione 3.0.</help>
+		<title lang="es">Plan de gestión del software para investigadores</title>
+		<help lang="es">Este catálogo está destinado a la gestión de proyectos de software científico. Apoya a los científicos en el desarrollo y la organización de proyectos de desarrollo de software con cincuenta preguntas en diferentes bloques temáticos. Se trata de la versión 3.0.</help>
+		<sections>
+			<section dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general" order="0"/>
+			<section dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical" order="1"/>
+			<section dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance" order="2"/>
+			<section dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish" order="3"/>
+			<section dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics" order="4"/>
+		</sections>
+	</catalog>
+	<section dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general</uri_path>
+		<dc:comment/>
+		<title lang="en">General</title>
+		<title lang="de">Allgemein</title>
+		<title lang="fr"/>
+		<title lang="it"/>
+		<title lang="es"/>
+		<pages>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic" order="0"/>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-partner" order="1"/>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/schedule" order="2"/>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-management" order="3"/>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/software-requirements" order="4"/>
+		</pages>
+	</section>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general/topic</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Topic</title>
+		<help lang="en">If you are looking for an introduction to the topic before completing a software management plan, then we recommend Martinez-Ortiz et al. (2022): Practical guide to Software Management Plans, v1.0, &lt;a href=&quot;https://doi.org/10.5281/zenodo.7589725&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.5281/zenodo.7589725&lt;/a&gt;.</help>
+		<verbose_name lang="en"/>
+		<title lang="de">Thema</title>
+		<help lang="de">Falls Sie vor dem Ausfüllen eines Software-Management-Plans nach einer Einführung in das Thema suchen, dann empfehlen wir Martinez-Ortiz et al. (2022): Practical guide to Software Management Plans, v1.0, &lt;a href=&quot;https://doi.org/10.5281/zenodo.7589725&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.5281/zenodo.7589725&lt;/a&gt;.</help>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic/project-title" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic/research-field" order="1"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic/application-class" order="2"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic/intended-use" order="3"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic/buy-or-make" order="4"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic/project-title">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general/topic/project-title</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/title"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">The title of the software can, of course, still change or be specified in the course of a project. Nevertheless, it makes sense to give the project a specific name at the beginning in order to facilitate further (internal) communication about it.</help>
+		<text lang="en">What is the title of the software project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Der Titel der Software kann sich im Laufe eines Projekts noch ändern oder spezifiziert werden. Es ist dennoch schon zu Beginn sinnvoll, dem Projekt eine konkrete Bezeichnung zu geben, um die weitere (interne) Kommunikation darüber zu erleichtern.</help>
+		<text lang="de">Wie lautet der Titel des Softwareprojekts?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic/research-field">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general/topic/research-field</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_field"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">The list of disciplines follows the &lt;a href=&quot;http://www.dfg.de/en/dfg_profile/statutory_bodies/review_boards/subject_areas/index.jsp&quot; target=&quot;_blank&quot;&gt;subject classification of the DFG (German Research Foundation)&lt;/a&gt;.</help>
+		<text lang="en">Which research field(s) does this software belong to?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Die Liste der Disziplinen entspricht der &lt;a href=&quot;http://www.dfg.de/en/dfg_profile/statutory_bodies/review_boards/subject_areas/index.jsp&quot; target=&quot;_blank&quot;&gt;Fachsystematik der Deutschen Forschungsgemeinschaft (DFG)&lt;/a&gt;.</help>
+		<text lang="de">Zu welchem(n) Forschungsbereich(en) gehört diese Software?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>select</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/research_fields"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic/application-class">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general/topic/application-class</uri_path>
+		<dc:comment>The application classes are essentially based on the &quot;DLR Software Engineering Guidelines&quot; (https://zenodo.org/record/1344612), p. 7-8. Depending on the selection in this questions a selection of different questions is provided below.</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/application-class"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">The application classes are essentially based on the &quot;DLR Software Engineering Guidelines&quot; (&lt;a href=&quot;https://doi.org/10.5281/zenodo.1344612&quot; target=&quot; _blank&quot;&gt;https://doi.org/10.5281/zenodo.1344612&lt;/a&gt;), p. 7-8.  Depending on the selection in this questions a selection of different questions is provided below.
+&lt;details&gt;
+&lt;summary&gt;Click here for more information on the application classes for research software&lt;/summary&gt;
+&lt;b&gt;Application Class 0&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Scripts to process data for a publication.&lt;/li&gt;
+&lt;li&gt;Simple administrative scripts to automate specific tasks.&lt;/li&gt;
+&lt;li&gt;Software that only demonstrates certain functions or is developed to test them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;Application Class 1&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Software that students develop during studies, bachelor or master theses.&lt;/li&gt;
+&lt;li&gt;Software resulting from dissertations in which the long-term development does not matter. &lt;/li&gt;
+&lt;li&gt;Software resulting from third-party projects with focus on demonstration and without planned long-term development.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;Application Class 2&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Software resulting from dissertations in which maintainability and long-term usage matter.&lt;/li&gt;
+&lt;li&gt;Software from third-party projects in which maintenance and long-term usage matter beyond the project.&lt;/li&gt;
+&lt;li&gt;Large research frameworks which are developed by a majority of a department.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;Application Class 3&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Mission critical software, for example, in context of aircraft, autonomous vehicles, health care, patients relation, or space missions.&lt;/li&gt;
+&lt;li&gt;Software for which the facility gives a warranty within or outside the own institution (e.g., via an external company).&lt;/li&gt;
+&lt;li&gt;Software that makes a significant contribution to third party funding and research results of the facility, and must therefore work reliably.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;</help>
+		<text lang="en">In which application class is the software categorised?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Die Anwendungsklassen orientieren sich im Wesentlichen an den &quot;DLR Guidelines for Research Guidelines&quot; (&lt;a href=&quot;https://doi.org/10.5281/zenodo.1344612&quot; target=&quot; _blank&quot;&gt;https://doi.org/10.5281/zenodo.1344612&lt;/a&gt;), S. 7-8.  Abhängig von der Auswahl in diesen Fragen wird unten eine Auswahl verschiedener Fragen bereitgestellt.
+&lt;Details&gt;
+&lt;summary&gt;Hier finden Sie weitere Informationen zu den Anwendungsklassen für Forschungssoftware&lt;/summary&gt;
+&lt;b&gt;Anwendungsklasse 0&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Skripte zur Verarbeitung von Daten für eine Publikation.&lt;/li&gt;
+&lt;li&gt;Einfache administrative Skripte, um bestimmte Aufgaben zu automatisieren.&lt;/li&gt;
+&lt;li&gt;Software, die nur bestimmte Funktionen demonstriert oder entwickelt wird, um sie zu testen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;Anwendungsklasse 1&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Software, die Studierende im Rahmen von Studien-, Bachelor- oder Masterarbeiten entwickeln.&lt;/li&gt;
+&lt;li&gt;Software, die aus Diplomarbeiten resultiert, bei denen die langfristige Entwicklung keine Rolle spielt. &lt;/li&gt;
+&lt;li&gt;Software, die aus Drittmittelprojekten mit Schwerpunkt auf Demonstration und ohne geplante langfristige Entwicklung resultiert.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;Anwendungsklasse 2&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Software, die aus Dissertationen resultiert, bei denen Wartbarkeit und langfristige Nutzung eine Rolle spielen.&lt;/li&gt;
+&lt;li&gt;Software aus Drittmittelprojekten, bei denen Wartung und langfristige Nutzung über das Projekt hinaus von Bedeutung sind.&lt;/li&gt;
+&lt;li&gt;Große Forschungsrahmenwerke, die mehrheitlich von einer Abteilung entwickelt werden.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;Anwendungsklasse 3&lt;/b&gt;:
+&lt;ul&gt;
+&lt;li&gt;Missionskritische Software, z.B. im Zusammenhang mit Flugzeugen, autonomen Fahrzeugen, Gesundheitsfürsorge, Patientenbeziehungen oder Weltraummissionen.&lt;/li&gt;
+&lt;li&gt;Software, für die die Einrichtung innerhalb oder außerhalb der eigenen Institution (z.B. über ein externes Unternehmen) eine Garantie übernimmt.&lt;/li&gt;
+&lt;li&gt;Software, die einen wesentlichen Beitrag zu Drittmitteln und Forschungsergebnissen der Einrichtung leistet und daher zuverlässig arbeiten muss.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;</help>
+		<text lang="de">In welche Anwendungsklasse wird die Software eingeordnet?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/application-class"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic/intended-use">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general/topic/intended-use</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question/title"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">The intention for developing software in a scientific context can be manifold. The same applies to the specific application of the software and the contribution to scientific knowledge. Depending on the scientific community, these points can also differ significantly from each other.
+
+We offer here some recommended reading that may be helpful in answering the questions:
+
+* Anzt et al.(2021): deRSE Position Paper: &quot;An environment for sustainable research software in Germany and beyond: Current state, open challenges, and call for action&quot;, &lt;a href=&quot;https://doi.org/10.12688/f1000research.23224.2&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.12688/f1000research.23224.2&lt;/a&gt;.
+* Gardner et al. (2022): Sustained software development, not number of citations or journal choice, is indicative of accurate bioinformatic software, In: Genome Biology 23, 56, &lt;a href=&quot;https://doi.org/10.1186/s13059-022-02625-x&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.1186/s13059-022-02625-x&lt;/a&gt;.
+* Katerbow, &amp; Feulner (2018): Recommendations on the development, use and provision of Research Software, &lt;a href=&quot;https://doi.org/10.5281/zenodo.1172988&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.5281/zenodo.1172988&lt;/a&gt;.
+* Lee, et al. (2021): Barely sufficient practices in scientific computing, In: Patterns, 2(2), 100206, &lt;a href=&quot;https://doi.org/10.1016/j.patter.2021.100206&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.1016/j.patter.2021.100206&lt;/a&gt;.
+* Wuttke et al. (2022): Guidelines for collaborative development of sustainable data treatment software, In: Journal of Neutron Research, vol. 24, no. 1, pp. 33-72, &lt;a href=&quot;https://doi.org/10.3233/JNR-220002&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.3233/JNR-220002&lt;/a&gt;.
+* Wilson et al. (2017): Good enough practices in scientific computing, In: PLOS Computational Biology, 13(6), e1005510, &lt;a href=&quot;https://doi.org/10.1371/journal.pcbi.1005510&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.1371/journal.pcbi.1005510&lt;/a&gt;.
+
+By their very nature, these references are not exhaustive. If you need particular assistance in answering them, it is best to talk to your local colleagues from IT, the Scientific Computing Unit, and so on. They will probably be able to help you.</help>
+		<text lang="en">What is the intended use of the software? How will your software contribute to research?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Die Intention für die Entwicklung von Software im wissenschaftlichen Kontext kann vielfältig sein. Gleiches gilt für die konkrete Anwendung der Software und dem Beitrag zum wissenschaftlichen Erkenntnisgewinn. Je nach Fachkultur können sich diese Punkte auch deutlich voneinander unterscheiden.
+
+Zur Orientierung und als Unterstützung bieten wir hier einige Literaturempfehlungen, die bei der Beantwortung der Fragen hilfreich seinen können:
+
+* Anzt et al.(2021): deRSE Position Paper: &quot;An environment for sustainable research software in Germany and beyond: Current state, open challenges, and call for action&quot;, &lt;a href=&quot;https://doi.org/10.12688/f1000research.23224.2&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.12688/f1000research.23224.2&lt;/a&gt;.
+* Gardner et al. (2022): Sustained software development, not number of citations or journal choice, is indicative of accurate bioinformatic software, In: Genome Biology 23, 56, &lt;a href=&quot;https://doi.org/10.1186/s13059-022-02625-x&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.1186/s13059-022-02625-x&lt;/a&gt;.
+* Katerbow, &amp; Feulner (2018): Recommendations on the development, use and provision of Research Software, &lt;a href=&quot;https://doi.org/10.5281/zenodo.1172988&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.5281/zenodo.1172988&lt;/a&gt;.
+* Lee, et al. (2021): Barely sufficient practices in scientific computing, In: Patterns, 2(2), 100206, &lt;a href=&quot;https://doi.org/10.1016/j.patter.2021.100206&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.1016/j.patter.2021.100206&lt;/a&gt;.
+* Wuttke et al. (2022): Guidelines for collaborative development of sustainable data treatment software, In: Journal of Neutron Research, vol. 24, no. 1, pp. 33-72, &lt;a href=&quot;https://doi.org/10.3233/JNR-220002&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.3233/JNR-220002&lt;/a&gt;.
+* Wilson et al. (2017): Good enough practices in scientific computing, In: PLOS Computational Biology, 13(6), e1005510, &lt;a href=&quot;https://doi.org/10.1371/journal.pcbi.1005510&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.1371/journal.pcbi.1005510&lt;/a&gt;.
+
+Es liegt in der Natur der Sache, dass diese Literaturhinweise nicht vollumfänglich sind. Wenn Sie bei der Beantwortung konkrete Unterstützung benötigen, dann sprechen Sie am besten mit Ihren lokalen Kolleg_innen von der IT, der Scientific Computing Unit usw. Diese können Ihnen weiterhelfen.</help>
+		<text lang="de">Was ist der beabsichtigte Verwendungszweck der Software? Wie wird Ihre Software zur Forschung beitragen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic/buy-or-make">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general/topic/buy-or-make</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/buy-or-make"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Please consider whether it would be more effective to purchase existing software or to adapt an existing open source instead of developing software yourself.
+
+The following (selected) platforms can help:
+&lt;ul&gt;
+&lt;li&gt;bio.tools (&lt;a href=&quot;https://bio.tools&quot; target=&quot;_blank&quot; &gt;https://bio.tools&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;pypi (&lt;a href=&quot;https://pypi.org/&quot; target=&quot;_blank&quot; &gt;https://pypi.org/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Research Software Directory (&lt;a href=&quot;https://research-software-directory.org/&quot; target=&quot;_blank&quot; &gt;https://research-software-directory.org/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</help>
+		<text lang="en">What function does the new software have that previous software does not cover? What related software exists and why is it not suitable?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Bitte überlegen Sie, ob es nicht zielführender ist eine existierende Software einzukaufen oder eine bestehende Open Source-Variante anzupassen anstatt eine eigene Software vollständig selbst zu entwickeln.
+
+Folgende (ausgewählte) Plattformen können hierbei helfen:
+&lt;ul&gt;
+&lt;li&gt;bio.tools (&lt;a href=&quot;https://bio.tools&quot; target=&quot;_blank&quot; &gt;https://bio.tools&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;pypi (&lt;a href=&quot;https://pypi.org/&quot; target=&quot;_blank&quot; &gt;https://pypi.org/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Research Software Directory (&lt;a href=&quot;https://research-software-directory.org/&quot; target=&quot;_blank&quot; &gt;https://research-software-directory.org/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</help>
+		<text lang="de">Welche Funktion hat die neue Software, die bisherige Software nicht abdeckt? Welche verwandte Software gibt es und warum ist diese nicht geeignet?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-partner">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general/project-partner</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Software Project Partner(s)</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Software-Projektpartner</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-partner/project-participants" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-partner/funding" order="2"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-partner/project-participants">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general/project-partner/project-participants</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Please enter the name and contact details as well as institution, position as well as role in the software project, if applicable.</help>
+		<text lang="en">Who are the project participants that deal with this software?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Bitte geben Sie den Namen und Kontaktdaten sowie ggf. Institution und Position sowie Rolle im Software-Projekt.</help>
+		<text lang="de">Wer sind die Projektteilnehmer, die an dieser Software arbeiten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-partner/funding">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general/project-partner/funding</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Here, for example, personnel or financial resources from the regular budget or already existing project funds can be mentioned.
+
+Scientific software is becoming increasingly important as a source of knowledge. Therefore, the development of software in a scientific context is also becoming more and more relevant for funding organisations. A software management plan can be a useful basis for applying for (partial) project funding, as software is increasingly considered worthy of funding.
+
+For further reference, we recommend these publications:
+
+* Rand et al., Visibility of Research Software Engineers in research funding, 2022, Software Sustainability Institute Blog, &lt;a href=&quot;https://www.software.ac.uk/blog/2022-06-20-visibility-research-software-engineers-research-funding&quot; target=&quot;_blank&quot;&gt;https://www.software.ac.uk/blog/2022-06-20-visibility-research-software-engineers-research-funding&lt;/a&gt;.
+* Strasser et al. (2022): 10 Simple Rules for Funding Scientific Open Source Software, &lt;a href=&quot;https://doi.org/10.5281/ZENODO.6611500&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.5281/zenodo.6611500&lt;/a&gt;.</help>
+		<text lang="en">Is there existing (financial/personnel) resources or will there be specific funding for the software development?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Hier können beispielsweise personellen oder finanzielle Mittel aus dem regulären Haushalt oder bereits vorhandene Projektmittel erwähnt werden.
+
+Wissenschaftliche Software gewinnt als Erkenntnisgewinn zunehmend an Bedeutung. Daher wird die Entwicklung von Software im wissenschaftlichen Kontext auch für Förderorganisationen zunehmend relevanter. Ein Software-Management-Plan kann daher eine sinnvolle Grundlage für eine Beantragung von (Teil-)Projektmitteln sein, da Software zunehmend auch als förderwürdig erachtet wird.
+
+Als weiterführenden Hinweise empfehlen wir diese Publikationen:
+
+* Rand et al., Visibility of Research Software Engineers in research funding, 2022, Software Sustainability Institute Blog, &lt;a href=&quot;https://www.software.ac.uk/blog/2022-06-20-visibility-research-software-engineers-research-funding&quot; target=&quot;_blank&quot;&gt;https://www.software.ac.uk/blog/2022-06-20-visibility-research-software-engineers-research-funding&lt;/a&gt;.
+* Strasser et al. (2022): 10 Simple Rules for Funding Scientific Open Source Software, &lt;a href=&quot;https://doi.org/10.5281/ZENODO.6611500&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.5281/zenodo.6611500&lt;/a&gt;.</help>
+		<text lang="de">Gibt es existierende (personellen/finanziellen) Ressourcen oder wird es eine spezielle Finanzierung für die Softwareentwicklung geben?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/schedule">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general/schedule</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Software Project Schedule</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Zeitplan für Softwareprojekte</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/schedule/start-date" order="1"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/schedule/end-date" order="2"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/schedule/start-date">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general/schedule/start-date</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/schedule/project_start"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">When does the software project start?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wann beginnt das Softwareprojekt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>date</widget_type>
+		<value_type>datetime</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/schedule/end-date">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general/schedule/end-date</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/schedule/project_end"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">When does the software project end?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wann endet das Softwareprojekt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>date</widget_type>
+		<value_type>datetime</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-management">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general/project-management</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Software Project Management</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Software-Projekt-Management</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-management/development-process" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-management/track-tasks" order="1"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-management/specification-sheet" order="2"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-management/development-process">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general/project-management/development-process</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/development-process"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">For this question, it is useful to first describe the type of project management. Examples here would be agile methods such as Scrum. But a more classical approach like e.g. the &quot;waterfall&quot; model is also possible. Ultimately, it is crucial that the chosen method fits the goal and is communicated to and works for the people involved.
+
+Once a methodological approach has been established, it may be useful to define different roles for the software project. Examples would be &quot;Developer&quot;, &quot;Tester&quot;, &quot;Scrum Master&quot; etc. At the same time, it is advisable to already draft a specification document for the project with requirements, usage scenarios and other specifications. The requirements from the user's point of view should be clear so that the conception and specification process by the developers can start on this basis.
+
+For guidance, these texts may be of interest:
+
+* Smith, Srinivasan and Shankar (2019): Debunking the Myth That Upfront Requirements Are Infeasible for Scientific Computing Software, IEEE/ACM 14th International Workshop on Software Engineering for Science (SE4Science), pp. 33-40, &lt;a href=&quot;https://doi.org/10.1109/SE4Science.2019.00011&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.1109/SE4Science.2019.00011&lt;/a&gt;.
+* Marques and Milewicz (2022): User Stories in Scientific Software Development, Better Scientific Software Blog, &lt;a href=&quot;https://bssw.io/blog_posts/user-stories-in-scientific-software-development&quot; target=&quot;_blank&quot;&gt;https://bssw.io/blog_posts/user-stories-in-scientific-software-development&lt;/a&gt;.</help>
+		<text lang="en">Which software development process is defined? How will process roles be assigned?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Bei dieser Frage bietet es sich an, zuerst die Art des Projektmanagements zu beschreiben. Beispiele wären hier besonders die agilen Methoden, wie Scrum. Aber auch ein eher klassisches Vorgehen mit z.B. der &quot;Wasserfall&quot;-Methode ist möglich. Letztendlich ist es entscheidend, dass die gewählte Methode für das Ziel passt und an die beteiligten Personen kommuniziert ist sowie für diese funktioniert.
+
+Nach der Festlegung auf ein methodisches Vorgehen kann es sinnvoll sein, verschiedene Rollen für das Software-Projekt zu definieren. Beispiele hierfür wären &quot;Entwickler&quot;, &quot;Tester&quot;, &quot;Scrum Master&quot; etc. Gleichzeitig empfiehlt es sich, für das Projekt bereits einen Leistungskatalog mit Anforderungen, Nutzungsszenarien und Spezifikationen zu entwerfen. Die Anforderungen aus Nutzendensicht sollten klar vorliegen, sodass auf dessen Grundlage dann der Konzeptions- und Spezifikationsprozess durch die Entwickler beginnen kann.
+
+Zur Unterstützung können diese Texte interessant sein:
+
+* Smith, Srinivasan und Shankar (2019): Debunking the Myth That Upfront Requirements Are Infeasible for Scientific Computing Software, IEEE/ACM 14th International Workshop on Software Engineering for Science (SE4Science), S. 33-40, &lt;a href=&quot;https://doi.org/10.1109/SE4Science.2019.00011&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.1109/SE4Science.2019.00011&lt;/a&gt;.
+* Marques und Milewicz (2022): User Stories in Scientific Software Development, Better Scientific Software Blog, &lt;a href=&quot;https://bssw.io/blog_posts/user-stories-in-scientific-software-development&quot; target=&quot;_blank&quot;&gt;https://bssw.io/blog_posts/user-stories-in-scientific-software-development&lt;/a&gt;.</help>
+		<text lang="de">Welcher Softwareentwicklungsprozess wird definiert? Wie werden die Prozessrollen zugewiesen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-management/track-tasks">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general/project-management/track-tasks</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/track-tasks"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">The development of software goes hand in hand with a high degree of complexity. In order to keep track of the diverse requirements, tasks and problems, it is advisable to organise these points in a clear structure. At the same time, this enhances the traceability of developments.
+
+Examples of applications are stand-alone ticket systems such as Jira or Redmine. However, integrated systems can also be used just as well, such as provided in GitHub/GitLab (&lt;a href=&quot;https://carpentries-incubator.github.io/git-novice-branch-pr/&quot; target=&quot;_blank&quot;&gt;see for example the Carpentries Lesson&lt;/a&gt;). Working with a (digital) Kanban board can also support software development.</help>
+		<text lang="en">How do you track the different tasks and use cases?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Die Entwicklung von Software geht einher mit einer hohen Komplexität. Um die vielfältigen Anforderungen, Aufgaben und Probleme nachzuvollziehen, empfiehlt es sich diese Punkte in einer klaren Struktur zu organisieren. Gleichzeitig fördert dies die Rückverfolgbarkeit von Entwicklungen.
+
+Beispiele für Anwendungen sind etwa eigenständige Ticket-Systeme wie Jira oder Redmine. Ebenso gut können aber auch integrierte Systeme verwendet werden, wie etwa in GitHub/GitLab bereitgestellt (&lt;a href=&quot;https://carpentries-incubator.github.io/git-novice-branch-pr/&quot; target=&quot;_blank&quot;&gt;siehe etwa die Carpentries Lesson&lt;/a&gt;). Auch das Arbeiten mit einem (digitalen) Kanban-Board kann bei der Software-Entwicklung unterstützen.</help>
+		<text lang="de">Wie verfolgen Sie die verschiedenen Aufgaben und Anwendungsfälle?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-management/specification-sheet">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general/project-management/specification-sheet</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/specification-sheet"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">The description of the requirements can be one of the cornerstones for a successful software. It is therefore advisable to invest time resources into this right from the start.</help>
+		<text lang="en">Will there be a specification document (briefly) outlining the most important requirements?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Die Beschreibungen der Anforderungen kann einer der zentralen Grundstein für eine gelungene Software sein. Daher empfiehlt es sich hierfür von Beginn an zeitliche Ressourcen zu investieren.</help>
+		<text lang="de">Wird es einen Anforderungskatalog oder ein Lastenheft geben, in dem (kurz) die wichtigsten Anforderungen skizziert werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/software-requirements">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general/software-requirements</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Software Development Requirements</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Anforderungen an die Softwareentwicklung</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/software-requirements/institutional-requirements" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/software-requirements/community-requirements" order="1"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/software-requirements/institutional-requirements">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general/software-requirements/institutional-requirements</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/institutional-requirements"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">For the development of software in a scientific context, the rules of good scientific practice at one's own institution or organisation apply. Software might not explicitly mentioned there. Nevertheless, these rules for scientific results can apply to the development (and sharing) of software.
+
+At the same time, individual institutes, working groups, etc. can also impose rules on the use of software. If you are unsure about the institutional requirements that apply to you, it is best to contact your local colleagues from the Research Coordination or IT, Scientific Computing Unit, etc. They can provide you with competent support.
+
+Below you will find a collection of examples of institutional regulations related to software:
+
+* Budich &amp; Funk (2022): Software Licensing and Copyright Policy for Research Software CODE @ Max Planck Institute for Meteorology, &lt;a href=&quot;https://hdl.handle.net/21.11116/0000-000C-80B1-A&quot; target=&quot;_blank&quot;&gt;https://hdl.handle.net/21.11116/0000-000C-80B1-A&lt;/a&gt;.
+* European Space Agency: ESA Open Source Policy, &lt;a href=&quot;https://essr.esa.int/esa-open-source-policy&quot; target=&quot;_blank&quot;&gt;https://essr.esa.int/esa-open-source-policy&lt;/a&gt;.
+* Akhmerov et al. (2021): TU Delft Research Software Policy, &lt;a href=&quot;https://doi.org/10.5281/zenodo.4629662&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.5281/zenodo.4629662&lt;/a&gt;.</help>
+		<text lang="en">Are there institutional requirements for software development?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Für die Entwicklung von Software im wissenschaftlichen Kontext gelten die Regeln zur guten wissenschaftlichen Praxis der eigenen Institution oder Organisation. Software muss dort noch nicht explizit erwähnt. Dennoch können diese entsprechenden Regeln für wissenschaftliche Ergebnisse auch für die Entwicklung (und Veröffentlichung) von Software gelten.
+
+Gleichzeitig können sich auch einzelne Institute, Arbeitsgruppen etc. Regeln zum Umgang mit Software auferlegen. Sollten Sie unsicher sein, inwiefern institutionelle Anforderungen für Sie zutreffen, dann kontaktieren Sie am besten Ihre lokalen Kolleg_innen von der Forschungskoordination oder der IT, Scientific Computing Unit etc. Diese können Sie dabei kompetent unterstützen.
+
+Im Folgenden finden Sie eine Beispielsammlung für institutionelle Regelwerke mit Bezug zu Software:
+
+* Budich &amp; Funk (2022): Software Licensing and Copyright Policy for Research Software CODE @ Max Planck Institute for Meteorology, &lt;a href=&quot;https://hdl.handle.net/21.11116/0000-000C-80B1-A&quot; target=&quot;_blank&quot;&gt;https://hdl.handle.net/21.11116/0000-000C-80B1-A&lt;/a&gt;.
+* European Space Agency: ESA Open Source Policy, &lt;a href=&quot;https://essr.esa.int/esa-open-source-policy&quot; target=&quot;_blank&quot;&gt;https://essr.esa.int/esa-open-source-policy&lt;/a&gt;.
+* Akhmerov et al. (2021): TU Delft Research Software Policy, &lt;a href=&quot;https://doi.org/10.5281/zenodo.4629662&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.5281/zenodo.4629662&lt;/a&gt;.</help>
+		<text lang="de">Gibt es institutionelle Anforderungen an die Softwareentwicklung?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/software-requirements/community-requirements">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/general/software-requirements/community-requirements</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/community-requirements"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">In addition to institutional requirements, there may also be other conditions or communities that need to be taken into account when developing software in a scientific context. For example, if the software is developed in a third-party project, then the requirements of the funding body are binding. Likewise, there may be various agreements in one's own community that need to be taken into account in software development.
+
+It is advisable to familiarise yourself with the FAIR Principles for Research Software (&lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt;) at an early stage. For example, this question about requirement for software is required in &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; I1 and R3. At the same time, orientation towards the &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; principles can significantly increase the quality and acceptance of the software. An interactive guide to FAIR software can be found here: &lt;a href=&quot;https://fair-software.nl&quot; target=&quot;_blank&quot;&gt;https://fair-software.nl&lt;/a&gt;.</help>
+		<text lang="en">Are there requirements regarding the software development form other parties?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Neben institutionellen Anforderungen können ebenso weitere Bedingungen oder Communities existieren, die es bei der Entwicklung von Software im wissenschaftlichen Kontext zu beachten gilt. Wenn beispielsweise die Software in einem Drittmittelprojekt entwickelt wird, dann sind die Vorgaben des Mittelgebers bindend. Ebenso können verschiedene Vereinbarungen in der eigenen Fächergruppe bestehen, die es bei der Software-Entwicklung zu berücksichtigen gilt.
+
+Parallel dazu ist es empfehlenswert, sich mit den FAIR Principles for Research Software (&lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt;) schon frühzeitig vertraut zu machen. So wird beispielsweise diese Anforderung in &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; I1 und R3 gefordert. Die Orientierung an den &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt;-Prinzipien kann gleichzeitig die Qualität und Akzeptanz der Software deutlich steigern. Eine interaktive Hilfestellung zu FAIR Software findet sich hier: &lt;a href=&quot;https://fair-software.nl&quot; target=&quot;_blank&quot;&gt;https://fair-software.nl&lt;/a&gt;.</help>
+		<text lang="de">Gibt es Anforderungen bezüglich der Softwareentwicklung von externer Seite?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical</uri_path>
+		<dc:comment/>
+		<title lang="en">Technical</title>
+		<title lang="de">Technische Informationen</title>
+		<title lang="fr"/>
+		<title lang="it"/>
+		<title lang="es"/>
+		<pages>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/code" order="0"/>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components" order="1"/>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/Infrastructure" order="2"/>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/preservation" order="3"/>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/security" order="4"/>
+		</pages>
+	</section>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/code">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical/code</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Code</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Code</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/code/language" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/code/versioning" order="1"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/code/language">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical/code/language</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/language"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">The software languages go hand in hand with different methods, focuses and required skill levels. Here you can document which language(s) you choose and why. Examples of software languages can be Java, Python, R, etc.
+
+At this point it is also useful to document whether technical standards are relevant for the development of software. Examples include &lt;a href=&quot;https://www.iso.org/standard/38421.html&quot; target=&quot;_blank&quot;&gt;IEC Standard 62304&lt;/a&gt; for software in medical applications, or &lt;a href=&quot;https://ecss.nl/standard/ecss-e-st-40c-software-general-requirements/&quot; target=&quot;_blank&quot;&gt;ECSS-E-ST-40C&lt;/a&gt; for software in space applications, or &lt;a href=&quot;https://www.dicomstandard.org&quot; target=&quot;_blank&quot;&gt;DICOM&lt;/a&gt; for the exchange of medical image data.</help>
+		<text lang="en">Which programming language(s) do you plan to use?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Die Softwaresprachen gehen einher mit unterschiedlichen Methoden, Schwerpunkten und benötigten Fähigkeitsgraden. Hier können Sie dokumentieren, für welche Sprache(n) Sie sich entscheiden und weshalb. Beispiele für Softwaresprachen während Java, Python, R, usw.
+
+An dieser Stelle bietet es sich zusätzlich an, zu dokumentieren, ob technische Standards für die Entwicklung von Software relevant sind. Beispiele hierfür sind etwa der &lt;a href=&quot;https://www.iso.org/standard/38421.html&quot; target=&quot;_blank&quot;&gt;IEC Standard 62304&lt;/a&gt; für Software bei medizinischen Anwendungen, oder &lt;a href=&quot;https://ecss.nl/standard/ecss-e-st-40c-software-general-requirements/&quot; target=&quot;_blank&quot;&gt;ECSS-E-ST-40C&lt;/a&gt; bei Software für Anwendungen im Weltraum oder &lt;a href=&quot;https://www.dicomstandard.org&quot; target=&quot;_blank&quot;&gt;DICOM&lt;/a&gt; für den Austausch von medizinischen Bilddaten.</help>
+		<text lang="de">Welche Programmiersprache(n) planen Sie zu verwenden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/code/versioning">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical/code/versioning</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/versioning"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Versioning code during development is strongly recommended. Applications such as Git systems are widespread.</help>
+		<text lang="en">Which technology or process is used for versioning?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Das Versionieren von Code bei der Entwicklung ist dringend zu empfehlen. Code-Versionierungen auf Basis der Git-Software sind weitverbreitet.</help>
+		<text lang="de">Welche Technologie oder welches Verfahren wird für die Versionierung verwendet?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical/components</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Third Party Components and Libraries</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Externe Komponenten und Bibliotheken</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components/external-components" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components/third-party-licenses" order="1"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components/track-external-software" order="2"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components/web-services" order="3"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components/qualified-references" order="4"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components/external-components">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical/components/external-components</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/external-components"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">The use of external applications and existing libraries is an established practice in software development. However, the inclusion of external code can create dependencies. This in turn increases the complexity of the software. The more extensive the code, the more time-consuming it is to know and understand these dependencies. Failure of these services should also be planned for. It is therefore advisable in software development which and how external components will be used early on. This is also in terms of &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; I2 and R2 and particularly recommended for the further development and subsequent use of software.
+
+The following literature might also be of interest:
+
+* Carver et al. (2022): A survey of the state of the practice for research software in the United States, In: PeerJ Computer Science, 8:e963, &lt;a href=&quot;https://doi.org/10.7717/peerj-cs.963&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.7717/peerj-cs.963&lt;/a&gt;.
+* Nowogrodzki (2019): How to support open-source software and stay sane – Releasing lab-built open-source software often involves a mountain of unforeseen work for the developers, In: Nature 571, 133-134 (2019), &lt;a href=&quot;https://doi.org/10.1038/d41586-019-02046-0&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.1038/d41586-019-02046-0&lt;/a&gt;.</help>
+		<text lang="en">Which external software components will be used? What dependencies on software libraries do exist? How do you document this?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Die Nutzung von externen Anwendungen und existierenden Bibliotheken ist bei der Software-Entwicklung eine etablierte Praxis. Durch das Einbinden von externem Code können jedoch Abhängigkeiten entstehen. Dies steigert wiederum die Komplexität der Software. Je umfangreicher der Code ist, desto aufwendiger ist es, diese Abhängigkeiten zu kennen und zu verstehen. Auch ein Ausfall dieser Dienste sollte eingeplant werden. Es empfiehlt sich schon früh im Softwareentwicklungsprozess darüber im Klaren zu sein, welche und wie externe Komponenten verwendet werden. Dies ist auch im Sinne der &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; I2 und R2 und für die Weiterentwicklung und Nachnutzung von Software besonders empfehlenswert.
+
+Folgende Literatur könnte zusätzlich interessant sein:
+
+* Carver et al. (2022): A survey of the state of the practice for research software in the United States, In: PeerJ Computer Science, 8:e963, &lt;a href=&quot;https://doi.org/10.7717/peerj-cs.963&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.7717/peerj-cs.963&lt;/a&gt;.
+* Nowogrodzki (2019): How to support open-source software and stay sane – Releasing lab-built open-source software often involves a mountain of unforeseen work for the developers, In: Nature 571, 133-134 (2019), &lt;a href=&quot;https://doi.org/10.1038/d41586-019-02046-0&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.1038/d41586-019-02046-0&lt;/a&gt;.</help>
+		<text lang="de">Welche externen Software-Komponenten werden verwendet? Welche Abhängigkeiten von Software-Bibliotheken gibt es? Wie dokumentieren Sie dies?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components/third-party-licenses">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical/components/third-party-licenses</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/third-party-licenses"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">In connection with the use of external software components, special attention should be paid to the various licence conditions. For example, which licences are used by third-party software components? Can there be problems with the compatibility of licences for third-party elements?</help>
+		<text lang="en">What licences are on the third-party software components?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">In dem Zusammenhang mit der Verwendung von externen Software-Komponenten sind besonders die verschiedenen Lizenzbedingungen zu beachten. Etwa welche Lizenzen werden von den Softwarekomponenten von Drittanbietern verwendet? Kann es Probleme mit der Kompatibilität von Lizenzen für Elemente von Drittanbietern geben?</help>
+		<text lang="de">Welche Lizenzen liegen auf den Software-Komponenten von Drittanbietern?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components/track-external-software">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical/components/track-external-software</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/track-external-software"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">If external software components are used, it is advisable to document this. The aim here should not only be to obtain an overview, but also, if necessary, to obtain a (partially) automatic analysis of any dependencies that arise. Examples of different services to monitor the external components can be, &lt;a href=&quot;https://maven.apache.org&quot; target=&quot;_blank&quot;&gt;Maven&lt;/a&gt;, &lt;a href=&quot;https://gradle.org&quot; target=&quot;_blank&quot;&gt;Gradle&lt;/a&gt;, &lt;a href=&quot;https://www.npmjs.com&quot; target=&quot;_blank&quot;&gt;npm&lt;/a&gt;, &lt;a href=&quot;https://yarnpkg.com&quot; target=&quot;_blank&quot;&gt;Yarn&lt;/a&gt; and &lt;a href=&quot;https://pypi.org/project/pipenv/&quot; target=&quot;_blank&quot;&gt;pipenv&lt;/a&gt;. Please check with your local software officers for already existing services.</help>
+		<text lang="en">What is the process to keep track of the external software components? Can critical dependencies be eliminated or mitigated?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Wenn externe Software-Komponenten verwendet werden, dann ist es ratsam, dies zu dokumentieren. Ziel sollte es hierbei sein, nicht nur einen Überblick zu erlangen, sondern ggf. auch schon eine (teil-)automatische Analyse von entstehenden Abhängigkeiten zu erlangen. Beispiele für verschiedene Services, um die externen Komponenten zu beobachten, können beispielsweise &lt;a href=&quot;https://maven.apache.org&quot; target=&quot;_blank&quot;&gt;Maven&lt;/a&gt;, &lt;a href=&quot;https://gradle.org&quot; target=&quot;_blank&quot;&gt;Gradle&lt;/a&gt;, &lt;a href=&quot;https://www.npmjs.com&quot; target=&quot;_blank&quot;&gt;npm&lt;/a&gt;, &lt;a href=&quot;https://yarnpkg.com&quot; target=&quot;_blank&quot;&gt;Yarn&lt;/a&gt; und &lt;a href=&quot;https://pypi.org/project/pipenv/&quot; target=&quot;_blank&quot;&gt;pipenv&lt;/a&gt; sein. Bitte erkundigen Sie sich bei Ihren lokalen Softwarebeauftragten nach eventuell bereits vorhandenen Services.</help>
+		<text lang="de">Wie wird der Überblick über die externen Software-Komponenten behalten? Können kritische Abhängigkeiten eliminiert oder abgeschwächt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components/web-services">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical/components/web-services</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/web-services"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Software can be used to integrate external services. Examples of this are interface queries with other databases, external map applications, the use of external computing capacities, etc. For the correct use of external web services, it may be necessary to explicitly enable special ports or to fulfil further requirements. It is therefore advisable to contact local colleagues from IT, the Scientific Computing Unit etc. before using external web services for your own software.</help>
+		<text lang="en">Do you plan to use third party web services?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Mit Software lassen sich externe Dienste einbinden. Beispiele hierfür sind etwa Schnittstellenabfragen bei anderen Datenbanken, externe Kartenanwendungen, die Nutzung von externen Rechenkapazitäten usw. Für die korrekte Anwendung von externen Webdiensten kann es notwendig sein, dass spezielle Ports explizit freigeschaltet werden müssen oder weitere Voraussetzungen zu erfüllen sind. Es ist daher ratsam, bei der Nutzung von externen Webdiensten für die eigene Software im Vorfeld die lokale Kolleg_innen aus IT, Scientific Computing Unit etc. zu kontaktieren.</help>
+		<text lang="de">Planen Sie Webdienste von Drittanbietern zu nutzen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components/qualified-references">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical/components/qualified-references</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/qualified-references"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Research software sometimes contains references to external data objects and other software solutions that are required for its execution. This aspect is particularly in request for the &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; principles I2 and R2.</help>
+		<text lang="en">Does the software refer to other software projects or objects?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Forschungssoftware enthält manchmal Verweise auf externe Datenobjekte und andere Softwarelösungen, welche für die Ausführung erforderlich sind. Besonders bei den &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt;-Prinzipien I2 und R2 wird dieser Aspekt nachgefragt.</help>
+		<text lang="de">Verweist die Software auf andere Software-Projekte oder Objekte?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/Infrastructure">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical/Infrastructure</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Infrastructure</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Infrastruktur</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/Infrastructure/infrastructure-required" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/Infrastructure/infrastructure-existing" order="1"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/Infrastructure/technical-support" order="2"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/Infrastructure/infrastructure-required">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical/Infrastructure/infrastructure-required</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/infrastructure-required"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">When developing software, it can make sense and also be necessary to fall back on local infrastructure, e.g. servers, Git systems, storage media, software training courses. For robust planning and smooth availability, it is advisable to contact the local colleagues from IT, Scientific Computing Unit, etc. in advance.</help>
+		<text lang="en">What infrastructure resources are needed? To what extent?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Bei der Entwicklung von Software kann es sinnvoll und auch notwendig sein, auf lokale Infrastruktur, z.B. Server, Git-Systeme, Speichermedien, Software-Fortbildungsangebote, zurückzugreifen. Für die sichere Planung und reibungsfreie Verfügbarkeit ist es im Vorfeld empfehlenswert, sich mit den lokalen Kolleg_innen von IT, Scientific Computing Unit etc. in Kontakt zu setzen.</help>
+		<text lang="de">Welche Infrastrukturressourcen werden benötigt? In welchem Umfang?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/Infrastructure/infrastructure-existing">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical/Infrastructure/infrastructure-existing</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/infrastructure-existing"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Please get in touch with your local colleagues from IT, Scientific Computing Unit, etc. They have a good overview of the existing infrastructure. Please also ask your local software officers about any existing software licences. There may already be licence agreements in place, so new licences may not need to be explicitly purchased.</help>
+		<text lang="en">Is there already existing infrastructure for the software development? Where is the infrastructure hosted?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Bitte setzen Sie sich mit Ihren lokalen Kolleg_innen von IT, Scientific Computing Unit etc. in Kontakt. Diese haben einen guten Überblick über die bereits existierende Infrastruktur. Bitte erkundigen Sie sich ebenso bei Ihren lokalen Softwarebeauftragten nach eventuell bereits vorhandenen Software-Lizenzen. Es gibt eventuell schon Lizenzverträge, sodass neue Lizenzen eventuell nicht explizit gekauft werden müssen.</help>
+		<text lang="de">Gibt es bereits eine Infrastruktur für die Softwareentwicklung? Wo wird die Infrastruktur gehostet?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/Infrastructure/technical-support">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical/Infrastructure/technical-support</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/technical-support"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Perhaps new technologies are to be used for the software, where additional training is still needed to apply them safely. Or you may need an assessment of the software code at a later date. Ask your local colleagues from IT, Scientific Computing Unit, etc. about this. It may also be interesting to ask the &lt;a href=&quot;https://de-rse.org/de/join.html&quot; target=&quot;_blank&quot;&gt;de-RSE community&lt;/a&gt; for advice.</help>
+		<text lang="en">Are there technical aspects where competences are (still) lacking, so that support would be helpful?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Vielleicht sollen neue Technologien für die Software eingesetzt werden, bei denen noch ein zusätzliches Training benötigt wird, um diese sicher anzuwenden. Oder Sie benötigen zu einem späteren Zeitpunkt eine Einschätzung zum Software-Code. Fragen Sie hierzu Ihre lokalen Kolleg_innen von IT, Scientific Computing Unit etc. Darüber hinaus kann es auch interessant sein, die &lt;a href=&quot;https://de-rse.org/de/join.html&quot; target=&quot;_blank&quot;&gt;de-RSE-Community&lt;/a&gt; um Rat zu fragen.</help>
+		<text lang="de">Gibt es technische Aspekte, bei denen noch Kompetenzen fehlen und dabei Unterstützung hilfreich wäre?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/preservation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical/preservation</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Preservation</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Langfristige Erhaltung</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/preservation/re-usable" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/preservation/preservation" order="1"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/preservation/re-usable">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical/preservation/re-usable</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/re-usable"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Applicable software is rarely a static product. Software is usually in a constant state of flux as a result of further developments of external components, security gaps in libraries that have been remedied or proprietary enhancements in the code. At the same time, the personnel and time required to maintain and update software increases with its age. It is therefore highly advisable to think in advance about how long the software should be (re-)usable.
+
+It is fundamentally important to document exactly how the software can be updated and which (technical) environment conditions are necessary for the software to run correctly.
+
+In this topic it is also useful to think about containerisation and general ways of maintaining a runtime environment for research software.  This is necessary so that the software can still run correctly in another environment. Such an environment description includes platforms, frameworks and technologies. This environment needs to be sufficiently descriptive and ideally provided via specification files. A well-known application for container virtualisation is Docker.</help>
+		<text lang="en">How long should the software remain usable? What steps will be taken to ensure that the software can continue to be used after the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Anwendbare Software ist in den seltensten Fällen ein statisches Produkt. Durch Fortentwicklungen von externen Komponenten, behobenen Sicherheitslücken bei Bibliotheken oder eigene Erweiterungen im Code befindet sich Software meist in einem stetigen Wandel. Gleichzeitig steigen der personelle und zeitliche Aufwand bei der Erhaltung und Fortführung von Software mit deren Alter. Es ist daher ratsam, sich schon im Vorfeld Gedanken darüber zu machen, wie lange die Software (nach-)nutzbar sein soll.
+
+Vor diesem Hintergrund ist es grundsätzlich wichtig, genau zu dokumentieren, wie die Software aktualisiert werden kann und welche (technischen) Rahmenbedingungen notwendig sind, damit die Software korrekt ausgeführt werden kann.
+
+In diesem Zusammenhang ist es auch sinnvoll, über Containerisierung und generelle Möglichkeiten zur Erhaltung der Laufzeitumgebung von Forschungssoftware nachzudenken. Dies ist notwendig, damit die Software in einer anderen Umgebung korrekt ausgeführt werden kann. Eine solche Beschreibung der Umgebung umfasst Plattformen, Frameworks und Technologien. Diese Umgebung muss hinreichend beschreibend sein und idealerweise über Spezifikationsdateien zur Verfügung gestellt werden. Eine bekannte Anwendung für Containervirtualisierung ist beispielsweise Docker.</help>
+		<text lang="de">Wie lange soll die Software verwendbar bleiben? Welche Schritte werden unternommen, damit die Software im Anschluss an das Projekt weiter benutzt werden kann?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/preservation/preservation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical/preservation/preservation</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/preservation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">According to the established principles of good scientific practice, results must be stored for at least ten years. Of course, this also applies to software. Therefore, it must be ensured that the software remains available for this period (at least within the institution). This may be exceeded by local regulations. If you are not sure what the practice is at your institute, it is advisable to contact your local colleagues from IT, Scientific Computing Unit etc. about this.</help>
+		<text lang="en">Does this software have to be preserved for a longer term?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Nach den gängigen Prinzipien der guten wissenschaftlichen Praxis müssen Ergebnisse mindestens für zehn Jahre aufbewahrt werden. Dies trifft auch auf Software zu. Daher muss sichergestellt werden, dass die Software für diesen Zeitraum (zumindest institutsintern) verfügbar bleibt. Dies kann natürlich darüber hinaus gehen oder weiterführende Maßnahmen erfordern, je nach lokaler Regelung. Falls Sie nicht sicher sind, was die gelebte Praxis an Ihrem Institut ist, so empfiehlt es sich, Ihre lokalen Kolleg_innen von IT, Scientific Computing Unit etc. diesbezüglich anzusprechen.</help>
+		<text lang="de">Muss diese Software längerfristig aufbewahrt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/security">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical/security</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Security</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Sicherheit</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/security/security" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/security/safety" order="1"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/security/security">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical/security/security</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/security"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Depending on the application, aspects of IT security must be taken into account in the development of software. The focus here is particularly on passive protection. The aim is, that the software does not open any vulnerability through which, for example, external attacks are enabled.
+
+The following documents may be relevant for you:
+
+* Adams et al (2021): Guide to Securing Scientific Software, &lt;a href=&quot;https://doi.org/10.5281/zenodo.8137009&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.5281/zenodo.8137009&lt;/a&gt;.
+* Bundesamt für Sicherheit in der Informationstechnik: Technische Richtlinien, &lt;a href=&quot;https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/technische-richtlinien_node.html&quot; target=&quot;_blank&quot;&gt;https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/technische-richtlinien_node.html&lt;/a&gt;.
+* ISO/IEC 27001: Information technology — Security techniques — Information security management systems — Requirements, &lt;a href=&quot;https://www.iso.org/standard/54534.html&quot; target=&quot;_blank&quot;&gt;https://www.iso.org/standard/54534.html&lt;/a&gt;.</help>
+		<text lang="en">Which measures or provisions are in place to ensure software security?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Je nach Anwendungsfall müssen Aspekte zur IT-Sicherheit bei der Entwicklung von Software mitberücksichtigt werden. Besonders im Fokus steht hierbei der passive Schutz, damit die Software keine Lücken öffnet, durch welche beispielsweise externe Angriffe ermöglicht werden.
+
+Folgende Dokumente können für Sie hierbei relevant sein:
+
+* Adams et al (2021): Guide to Securing Scientific Software, &lt;a href=&quot;https://doi.org/10.5281/zenodo.8137009&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.5281/zenodo.8137009&lt;/a&gt;.
+* Bundesamt für Sicherheit in der Informationstechnik: Technische Richtlinien, &lt;a href=&quot;https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/technische-richtlinien_node.html&quot; target=&quot;_blank&quot;&gt;https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/technische-richtlinien_node.html&lt;/a&gt;.
+* ISO/IEC 27001: Information technology — Security techniques — Information security management systems — Requirements, &lt;a href=&quot;https://www.iso.org/standard/54534.html&quot; target=&quot;_blank&quot;&gt;https://www.iso.org/standard/54534.html&lt;/a&gt;.</help>
+		<text lang="de">Welche Maßnahmen oder Vorkehrungen gibt es, um die Sicherheit der Software zu gewährleisten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/security/safety">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/technical/security/safety</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/safety"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">In addition to avoiding security vulnerabilities, it is also necessary to ensure that the software developed is also protected against accidents. Various risk analysis procedures exist. For the identified risks, adequate measures can be recognized and documented within the framework of a quality assurance plan. For example, the programmed software should not be lost, which quickly happens in case it is only stored on a single USB stick. Such and similar vulnerabilities can be avoided in advance through distributed systems, a separate backup strategy or similar.</help>
+		<text lang="en">What measures do you take to minimise risks in relation to software development?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Neben der Vermeidung von Sicherheitslücken ist es auch notwendig sicherzustellen, dass die entwickelte Software auch vor Unfällen geschützt ist. Es existieren verschiedene Risikoanalyseverfahren. Für die identifizierten Risiken können im Rahmen eines Qualitätssicherungsplans adäquate Maßnahmen identifiziert und dokumentiert werden. Beispielsweise sollte die programmierte Software nicht verloren geht, was schnell der Fall sein könnte, wenn sie nur auf einem einzigen USB-Stick gespeichert wird. Solche und ähnliche Schwachstellen gilt es bereits im Vorhinein durch verteilte Systeme, eine eigene Backup-Strategie oder ähnliches zu vermeiden.</help>
+		<text lang="de">Welche Maßnahmen ergreifen Sie, Risiken in Bezug auf die Softwareentwicklung zu minimieren?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<section dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/quality-assurance</uri_path>
+		<dc:comment/>
+		<title lang="en">Quality Assurance</title>
+		<title lang="de">Qualitätssicherung</title>
+		<title lang="fr"/>
+		<title lang="it"/>
+		<title lang="es"/>
+		<pages>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/governance" order="0"/>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/documentation" order="1"/>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/testing" order="2"/>
+		</pages>
+	</section>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/governance">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/quality-assurance/governance</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Governance and Defined Processes</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Steuerung und definierte Prozesse</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/governance/governance-model" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/governance/coding-standards" order="1"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/governance/governance-model">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/quality-assurance/governance/governance-model</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/governance-model"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Software development can be a project with complex requirements and structures. To deal with this, it is advisable, as &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; R1.1 does, to explicitly communicate the project-related process through documentation. Especially in larger collaborative projects, this can be particularly advisable for working with multiple partners. Examples include a joint Memorandum of Understanding (MoU) or something describing the process when a person joins or leaves the work team. For example, this published &lt;a href=&quot;https://doi.org/10.5334/jors.307&quot; target=&quot;_blank&quot;&gt;checklist&lt;/a&gt; can be helpful.
+
+Please consider here not only the pure process level, but also beyond that, i.e. ethical aspects. The publication &lt;a href=&quot;https://www.software.ac.uk/blog/2022-07-07-ethical-considerations-your-open-source-governance&quot; target=&quot;_blank&quot;&gt;Yehudi et al., Ethical considerations for your open source governance, 2022, Software Sustainability Institute Blog&lt;/a&gt;, is a good source of inspiration.</help>
+		<text lang="en">Do you have a governance model for the software development?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Die Entwicklung von Software kann ein Projekt mit komplexen Anforderungen und Strukturen sein. Um dem zu begegnen ist es empfehlenswert, wie es &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; R1.1 tut, die projektbezogenen Prozesse durch eine Dokumentation explizit zu kommunizieren. Besonders in größeren Verbundprojekten kann dies für die Zusammenarbeit mit mehreren Partnern besonders empfehlenswert sein. Beispiel hierfür sind etwa ein gemeinsames Memorandum of Understandig (MoU) oder etwa die Beschreibung der Prozess bei Aufnahme oder Verlassen einer Person in das Arbeitsteam. Hierbei können beispielsweise diese veröffentlichten &lt;a href=&quot;https://doi.org/10.5334/jors.307&quot; target=&quot;_blank&quot;&gt;Checkliste&lt;/a&gt; hilfreich sein.
+
+Bitte beachten Sie hierbei nicht nur die reine Prozessebene, sondern denken Sie auch darüber hinaus. Als Anregung dazu bietet sich die Publikation &lt;a href=&quot;https://www.software.ac.uk/blog/2022-07-07-ethical-considerations-your-open-source-governance&quot; target=&quot;_blank&quot;&gt;Yehudi et al., Ethical considerations for your open source governance, 2022, Software Sustainability Institute Blog&lt;/a&gt; an.</help>
+		<text lang="de">Verfügen Sie über ein Steuerungsmodell für die Softwareentwicklung?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/governance/coding-standards">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/quality-assurance/governance/coding-standards</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/coding-standards"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">When developing software, it can be helpful to adhere to certain standards. These can be, for example, common code conventions in the professional community or language-specific standards (e.g. &lt;a href=&quot;https://www.oracle.com/technetwork/java/codeconventions-150003.pdf&quot; target=&quot;_blank&quot;&gt;Java Coding Standards&lt;/a&gt;, &lt;a href=&quot;https://clean-code-developer.de&quot; target=&quot;_blank&quot;&gt;Clean Code Developer&lt;/a&gt;). Tools for static code analysis (e.g. Lint) can help to find problematic code. An (internal) code review can also be a suitable method of quality control.</help>
+		<text lang="en">Do you apply specific coding standards? How do you take care about code quality control?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Bei der Entwicklung von Software kann es hilfreich sein, bestimmte Standards einzuhalten. Dies können beispielsweise gemeinsame Code-Konventionen in der Fachgemeinschaft sein oder sprachspezifische Standards (z.B. &lt;a href=&quot;https://www.oracle.com/technetwork/java/codeconventions-150003.pdf&quot; target=&quot;_blank&quot;&gt;Java Coding Standards&lt;/a&gt;, &lt;a href=&quot;https://clean-code-developer.de&quot; target=&quot;_blank&quot;&gt;Clean Code Developer&lt;/a&gt;). Werkzeuge zur statischen Codeanalyse (z.B. Lint) können helfen, problematischen Code automatisch zu finden. Auch ein (interner) Code Review kann eine geeignete Methode der Qualitätskontrolle darstellen.</help>
+		<text lang="de">Wenden Sie bestimmte Code-Standards an? Wie kümmern Sie sich um die Qualitätskontrolle des Codes?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/coding-standards"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/documentation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/quality-assurance/documentation</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Documentation</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Dokumentation</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/documentation/who-is-responsible" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/documentation/documentation-stored" order="1"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/documentation/who-is-responsible">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/quality-assurance/documentation/who-is-responsible</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/documentation/who-is-responsible"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">It is advisable to think about an adequate strategy for the documentation of the project, which also should be consistent with the framework conditions of the project. Documentation is only helpful if it corresponds to the current status of the software. Often, this is not given high priority compared to writing the code. It is, however, advisable to describe the developed software sensibly and completely. Documentation should also include statements about the software architecture, the development environment, the code style guide and installation procedures.
+
+The following questions could be answered in a documentation:
+
+* What should be documented, e.g. process, code or system?
+* For what purpose should documentation be done?
+* At what level of detail should be documented?
+* Who is the target group for which type of documentation, e.g. user documentation, programmers documentation, API documentation?
+* In which formats will the documentation be produced, e.g. README file, docstring, release notes, changelog?</help>
+		<text lang="en">How is software documentation created?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Es ist empfehlenswert, sich adäquate Strategie für die Dokumentation des Projekts zu überlegen, die auch den Rahmenbedingungen des Projekts entspricht. Eine Dokumentation ist nur hilfreich, wenn sie dem aktuellen Stand der Software entspricht. Häufiger wird dem gegenüber dem Schreiben am Code keine hohe Priorität eingeräumt. Es ist jedoch ratsam, die entwickelte Software sinnvoll und vollständig zu beschreiben. Eine Dokumentation sollte auch Aussagen über die Software-Architektur, die Entwicklungsumgebung,den Code Style Guide und Installationsvorgaben treffen.
+
+Folgende Fragen könnten in einer Dokumentation beantwortet werden:
+
+*	Was soll dokumentiert werden, z.B. Prozess, Code oder System?
+*	Zu welchem Zweck soll dokumentiert werden?
+*	In welchem Detailgrad soll dokumentiert werden?
+*	Wer ist die Zielgruppe für welche Art von Dokumentation, z. B. Benutzerdokumentation, Programmiererdokumentation, API-Dokumentation?
+*	In welchen Formaten soll die Dokumentation erstellt werden, z. B. README-Datei, Docstring, Release Notes, Changelog?</help>
+		<text lang="de">Wie wird eine Software-Dokumentation erstellt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/documentation/documentation-stored">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/quality-assurance/documentation/documentation-stored</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/documentation/documentation-stored"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">It is useful to ensure that the documentation for the software is accessible to all team members. Applications such as Readthedocs can be helpful here. It has also proven useful to agree on a language for the formulation of documents right from the start. This is often English.</help>
+		<text lang="en">Where will the documentation be stored or made available? Which language will be used?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Es ist sinnvoll dafür Sorge zu tragen, dass die Dokumentation zur Software für alle Teammitglieder erreichbar ist. Anwendungen wie z.B. Readthedocs können hierbei hilfreich sein. Ebenso hat es sich bewährt, sich von Anfang an auf eine Sprache bei der Formulierung von Dokumenten zu einigen; häufig ist dies Englisch.</help>
+		<text lang="de">Wo wird die Dokumentation aufbewahrt oder verfügbar sein? Welche Sprache soll verwendet werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/testing">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/quality-assurance/testing</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Testing</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Testing</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/testing/test-strategy" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/testing/test-documentation" order="1"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/testing/test-strategy">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/quality-assurance/testing/test-strategy</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/test-strategy"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">It can be helpful to be clear about a testing strategy in advance. This avoids the eclectic search for errors, but leads to more targeted, structured testing. Following on from this, you need to be clear about which test principles you want to apply. In parallel, it should be clarified whether standards (e.g. &lt;a href=&quot;https://www.iso.org/standard/64764.html&quot; target=&quot;_blank&quot;&gt;ISO/IEC 25000:2014&lt;/a&gt;, &lt;a href=&quot;https://www.istqb.org&quot; target=&quot;_blank&quot;&gt;ISTQB&lt;/a&gt;) apply. Testing a software on different levels (Unit-, Integration-, E2E-Tests) is always useful. Depending on the project, different types of testing (security testing, functional tests / non-functional tests, performance testing etc.) are important. &lt;a href=&quot;https://www.ministryoftesting.com&quot; target=&quot;_blank&quot;&gt;Ministry of Testing&lt;/a&gt;, as a global community for software testing, is a useful first start to approach this topic.</help>
+		<text lang="en">Which software test strategy are you going to follow? Which types of tests are planned for the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Es kann hilfreich sein, sich im Vorfeld bereits über eine Teststrategie im Klaren zu sein. Dies vermeidet die wahllose Suche nach Fehlern, sondern führt zu einem zielgerichteteren, strukturierten Testen. Daran anknüpfend muss man sich darüber im Klaren sein, welche Testprinzipien man anwenden möchte. Parallel dazu ist zu klären, ob Standards (z.B. &lt;a href=&quot;https://www.iso.org/standard/64764.html&quot; target=&quot;_blank&quot;&gt;ISO/IEC 25000:2014&lt;/a&gt;, &lt;a href=&quot;https://www.istqb.org&quot; target=&quot;_blank&quot;&gt;ISTQB&lt;/a&gt;) für die Software benötigt werden. Das Testen einer Software auf verschiedenen Ebenen (Unit-, Integrations-, E2E-Tests) kann sinnvoll sein. Je nach Projekt sind verschiedene Arten von Tests wie Security Testing, funktionale Tests bzw. nicht-funktionale Tests, Performance Testing etc. ebenso wichtig. &lt;a href=&quot;https://www.ministryoftesting.com&quot; target=&quot;_blank&quot;&gt;Ministry of Testing&lt;/a&gt; ist als globale Community für Software-Testing ein sinnvoller erster Start, um sich diesem Thema zu nähern.</help>
+		<text lang="de">Welche Software-Teststrategie werden Sie verfolgen? Welche Arten von Tests sind für das Projekt geplant?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/testing"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/quality-assurance/testing/test-documentation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/quality-assurance/testing/test-documentation</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/test-documentation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">There are different types of tests. Unit and integration tests are usually carried out by the developers, system tests by quality assurance persons, user tests by the users. It is therefore advisable to plan quality measures and the necessary process.</help>
+		<text lang="en">How is testing and test documentation organised?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Es gibt unterschiedliche Arten von Tests. Unit- und Integrationstests werden in der Regel von den Entwickler_innen durchgeführt, Systemtests von Qualitätssicherungs-Expert_innen, Nutzertests von den Anwendern. Es empfiehlt sich daher zu überlegen, wie man Qualitätsmaßnahmen plant und welche Prozesse dafür notwendig sind.</help>
+		<text lang="de">Wie ist das Testen und die Testdokumentation organisiert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/release-and-publish</uri_path>
+		<dc:comment/>
+		<title lang="en">Release and Publish</title>
+		<title lang="de">Release und öffentliche Verfügbarkeit</title>
+		<title lang="fr"/>
+		<title lang="it"/>
+		<title lang="es"/>
+		<pages>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/releasing" order="0"/>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/publicly-available" order="1"/>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/metadata" order="2"/>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/support" order="3"/>
+		</pages>
+	</section>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/releasing">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/release-and-publish/releasing</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Releasing</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Release</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/releasing/releasing-who" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/releasing/decision-releasing" order="1"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/releasing/store-software" order="2"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/releasing/releasing-who">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/release-and-publish/releasing/releasing-who</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/releasing-who"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Are there defined release processes for the software?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Gibt es definierte Release-Prozesse für die Software?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/releasing/decision-releasing">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/release-and-publish/releasing/decision-releasing</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/decision-releasing"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">It is advisable to be aware of the decision-making process for software release in advance. In particular, it should be clear which processes precede this and which quality criteria must be fulfilled in each case. Furthermore, it can be helpful for project planning to clarify in which intervals larger or smaller software releases are planned. When classifying version numbers, &lt;a href=&quot;https://semver.org&quot; target=&quot;_blank&quot;&gt;Semantic Versioning&lt;/a&gt; provides good orientation.</help>
+		<text lang="en">What is the decision process for releasing? How often will a software version be released?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Es ist empfehlenswert, sich im Vorfeld bereits über den Entscheidungsprozess zum Software-Freigabe (&quot;Release&quot;) bewusst zu werden. Besonders sollte hierbei klar werden, welche Prozesse dem vorausgehen und welche Qualitätskriterien hierfür jeweils erfüllt sein müssen. Darüber hinaus kann es hilfreich für die Projektplanung sein, zu klären, in welche Intervallen größere oder kleine Software-Freigaben geplant werden. Bei der Einordnung von Versionsnummern gibt &lt;a href=&quot;https://semver.org&quot; target=&quot;_blank&quot;&gt;Semantic Versioning&lt;/a&gt; eine gute Orientierung.</help>
+		<text lang="de">Wie sieht der Entscheidungsprozess für den Release aus? Wie oft wird eine Softwareversion erstellt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/releasing/store-software">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/release-and-publish/releasing/store-software</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/store-software"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">An adequate place should be found for the storage of the resulting software. Depending on the requirements and possibilities, this can range from a simple, local solution to a specialised software repository.
+
+One far-reaching option for the long-term preservation of software is, for example, &lt;a href=&quot;https://www.softwareheritage.org/save-and-reference-research-software/&quot; target=&quot;_blank&quot;&gt;Software Heritage&lt;/a&gt; (for more repository examples, see also this article &lt;a href=&quot;https://doi.org/10.48550/arXiv.2012.13117&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.48550/arXiv.2012.13117&lt;/a&gt;). There are other places, that offer public, long-term availability. For example, &lt;a href=&quot;https://www.re3data.org/search?query=&amp;contentTypes%5B%5D=Software%20applications&quot; target=&quot;_blank&quot;&gt;re3data&lt;/a&gt; can be used to search for specific repositories through which software can be published.</help>
+		<text lang="en">Where will the software be stored? Does the storage place have a clear preservation policy?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Für die Aufbewahrung der entstandenen Software sollte ein adäquater Ort gefunden werden. Je nach Anforderungen und Möglichkeiten kann dies von einer einfachen, lokalen Lösung bis hin zu einem spezialisierten Software-Repositorium reichen.
+
+Eine weitreichende Möglichkeit für den langfristigen Erhalt von Software ist beispielsweise &lt;a href=&quot;https://www.softwareheritage.org/save-and-reference-research-software/&quot; target=&quot;_blank&quot;&gt;Software Heritage &lt;/a&gt; (für weitere Repositoriums-Beispiele siehe auch diesen Artikel &lt;a href=&quot;https://doi.org/10.48550/arXiv.2012.13117&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.48550/arXiv.2012.13117&lt;/a&gt;). Es gibt aber noch weitere Orte, die sich für eine öffentliche, langfristige Verfügbarkeit anbieten. Über &lt;a href=&quot;https://www.re3data.org/search?query=&amp;contentTypes%5B%5D=Software%20applications&quot; target=&quot;_blank&quot;&gt;re3data&lt;/a&gt; lassen sich beispielsweise gezielt Repositorien suchen, über die Software publiziert werden kann.</help>
+		<text lang="de">Wo soll die Software gespeichert werden? Verfügt der Speicherort über eine klare Aufbewahrungsregelung?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/publicly-available">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/release-and-publish/publicly-available</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Publicly Availability</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Öffentliche Verfügbarkeit</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/publicly-available/software-sharing" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/publicly-available/software-repository" order="1"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/publicly-available/contribute-software" order="2"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/publicly-available/peer-review" order="3"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/publicly-available/software-sharing">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/release-and-publish/publicly-available/software-sharing</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/software-sharing"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Software is increasingly perceived as a relevant outcome of the scientific knowledge process. Thus, the &lt;a href=&quot;https://www.ouvrirlascience.fr/second-national-plan-for-open-science/&quot; target=&quot;_blank&quot;&gt;Second French plan for Open Science&lt;/a&gt; foresees that software will become the third pillar in scientific publishing, alongside text and data publications.
+
+&lt;a href=&quot;https://wissenschaftliche-integritaet.de/en/code-of-conduct/providing-public-access-to-research-results/&quot; target=&quot;_blank&quot;&gt;Guideline 13 in the DFG Code &quot;Guidelines for Safeguarding Good Scientific Practice&quot;&lt;/a&gt; explicitly recommends that &quot;[s]oftware programmed by researchers themselves is made publicly available along with the source code&quot;.
+
+It makes sense to define a contact person or email address who will be available as a contact person for the users over a longer period of time (beyond the project duration).</help>
+		<text lang="en">Will this software be publicly available?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Software wird zunehmend als relevantes Ergebnis des wissenschaftlichen Erkenntnisprozesses wahrgenommen. So sieht der &lt;a href=&quot;https://www.ouvrirlascience.fr/second-national-plan-for-open-science/&quot; target=&quot;_blank&quot;&gt;zweite französische Plan für Open Science&lt;/a&gt; vor, dass Software die dritte Säule im wissenschaftliche Publikationswesen werden soll, neben Text- und Daten-Veröffentlichungen.
+
+Die &lt;a href=&quot;https://wissenschaftliche-integritaet.de/kodex/herstellung-von-offentlichem-zugang-zu-forschungsergebnissen/&quot; target=&quot;_blank&quot;&gt;Leitlinie 13 im DFG-Kodex &quot;Leitlinien zur Sicherung guter wissenschaftlicher Praxis&quot;&lt;/a&gt; empfiehlt explizit, dass &quot;[s]elbst programmierte Software [..] unter Angabe des Quellcodes öffentlich zugänglich gemacht&quot; wird.
+
+Es ist sinnvoll eine Kontaktperson oder Emailadresse zu definieren, die über einen längeren Zeitraum (über die Projektlaufzeit hinaus) als Ansprechpartner für die Nutzer zur Verfügung steht.</help>
+		<text lang="de">Wird diese Software öffentlich zugänglich sein?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/publicly-available/software-repository">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/release-and-publish/publicly-available/software-repository</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/software-repository"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">If software is to be made publicly accessible, then it makes sense to find a suitable place for this. For example, &lt;a href=&quot;https://wissenschaftliche-integritaet.de/en/code-of-conduct/documentation/&quot; target=&quot;_blank&quot;&gt;Guideline 12 in the DFG Code of Good Scientific Practice&lt;/a&gt; recommends that &quot;[w]here research software is being developed, the source code is documented&quot;.
+&lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; F4 and A1 also explicitly ask how easy software can be found and to what extent scientific citation is supported.</help>
+		<text lang="en">In which repository or archive will the software be held? How easy can it be found? What strategy is used to keep the software usable?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Wenn Software öffentlich zugänglich gemacht werden soll, dann ist es sinnvoll, hierfür einen geeigneten Ort zu suchen. So empfiehlt etwa die &lt;a href=&quot;https://wissenschaftliche-integritaet.de/kodex/dokumentation/&quot; target=&quot;_blank&quot;&gt;Leitlinie 12 im DFG-Kodex &quot;Leitlinien zur Sicherung guter wissenschaftlicher Praxis&quot;&lt;/a&gt;, dass &quot;[b]ei der Entwicklung von Forschungssoftware [..] der Quellcode dokumentiert&quot; wird.
+In &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; F4 und A1 wird auch explizit danach gefragt, wie leicht Software gefunden werden kann und inwiefern das wissenschaftliche Zitieren unterstützt wird.</help>
+		<text lang="de">In welchem Repository oder Archiv wird die Software aufbewahrt? Wie leicht kann es gefunden werden? Welche Strategie wird angewandt, um die Software benutzbar zu halten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/publicly-available/contribute-software">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/release-and-publish/publicly-available/contribute-software</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/contribute-software"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">It is reasonable for software to be handed over to a scientific community for collective processing once it has reached a certain level of maturity. Such decisions should be planned well in advance. Experience shows that this can either mean a lot of communication work or no one taking notice of this possibility. For this purpose, for example, the corresponding Git system could enable external developer to contribute to the code.</help>
+		<text lang="en">Will users have the possibility to contribute to your software?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Es kann sinnvoll sein, dass Software ab einem gewissen Reifegrad an eine wissenschaftliche Gemeinschaft zur kollektiven Bearbeitung übergeben wird. Solche Entscheidungen sollten gut im Voraus geplant werden. Die Erfahrung zeigt, dass dies entweder viel Kommunikationsarbeit bedeuten kann oder aber niemand von dieser Möglichkeit Notiz nimmt. Hierfür könnte beispielsweise das entsprechende Git-System für das Software-Projekt geöffnet werden, damit auch Externe zum Code beitragen können.</help>
+		<text lang="de">Werden die Nutzer die Möglichkeit haben, zu Ihrer Software beizutragen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/publicly-available/peer-review">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/release-and-publish/publicly-available/peer-review</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/peer-review"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">For software in a scientific context, it is reasonable to subject it to an (open) review process. This can be in the form of a review or also a certification. For scientific software review, for example, there is the &lt;a href=&quot;https://joss.theoj.org&quot; target=&quot;_blank&quot;&gt;Journal of Open Source Software&lt;/a&gt;. Besides this, subject-specific standards for reviewing scientific software are also becoming established, for &lt;a href=&quot;https://doi.org/10.11588/ai.2020.1.81423&quot; target=&quot;_blank&quot;&gt;example in archaeology&lt;/a&gt;.
+
+Further literature references on the topic may also be of interest:
+
+* Eisty and Carver (2022): Developers perception of peer code review in research software development, In: Empirical Software Engineering 27, 13, &lt;a href=&quot;https://doi.org/10.1007/s10664-021-10053-x&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.1007/s10664-021-10053-x&lt;/a&gt;.
+* Bosu (2013): Modeling Modern Code Review Practices in Open Source Software Development Organizations, IDoESE '13 Baltimore, &lt;a href=&quot;https://www2.umbc.edu/eseiw2013/idoese/pdf/eseiw2013_IDoESE_188.pdf&quot; target=&quot;_blank&quot;&gt;https://www2.umbc.edu/eseiw2013/idoese/pdf/eseiw2013_IDoESE_188.pdf&lt;/a&gt;.</help>
+		<text lang="en">Is (Open) Peer Review planned for the software?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Für Software im wissenschaftlichen Kontext kann es Sinn ergeben, diese einem (offenen) Begutachtungsprozess zu unterziehen. Dies kann in Form einer Rezension oder auch einer Zertifizierung geschehen. Für wissenschaftliche Software gibt es beispielsweise das &lt;a href=&quot;https://joss.theoj.org&quot; target=&quot;_blank&quot;&gt;Journal of Open Source Software&lt;/a&gt;. Parallel dazu etablieren sich auch fachspezifische Standards zur Begutachtung von wissenschaftlicher Software, wie &lt;a href=&quot;https://doi.org/10.11588/ai.2020.1.81423&quot; target=&quot;_blank&quot;&gt;beispielsweise in der Archäologie&lt;/a&gt;.
+
+Weitere Literaturhinweise zu dem Thema können ebenfalls interessant sein:
+
+* Eisty und Carver (2022): Developers perception of peer code review in research software development, In: Empirical Software Engineering 27, 13, &lt;a href=&quot;https://doi.org/10.1007/s10664-021-10053-x&quot; target=&quot;_blank&quot;&gt;https://doi.org/10.1007/s10664-021-10053-x&lt;/a&gt;.
+* Bosu (2013): Modeling Modern Code Review Practices in Open Source Software Development Organizations, IDoESE '13 Baltimore, &lt;a href=&quot;https://www2.umbc.edu/eseiw2013/idoese/pdf/eseiw2013_IDoESE_188.pdf&quot; target=&quot;_blank&quot;&gt;https://www2.umbc.edu/eseiw2013/idoese/pdf/eseiw2013_IDoESE_188.pdf&lt;/a&gt;.</help>
+		<text lang="de">Ist (offenes) Peer Review für die Software geplant?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/metadata">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/release-and-publish/metadata</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Metadata</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Metadaten</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/metadata/assign-metadata" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/metadata/software-pid" order="1"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/metadata/assign-metadata">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/release-and-publish/metadata/assign-metadata</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/software-metadata"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">For the publication of software, it is strongly recommended to include metadata (see &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; F1 to F2 and A2). &lt;a href=&quot;https://wissenschaftliche-integritaet.de/en/code-of-conduct/cross-phase-quality-assurance/&quot; target=&quot;_blank&quot;&gt;Guideline 7 in the DFG Code &quot;Guidelines for Safeguarding Good Scientific Practice&quot;&lt;/a&gt; also stipulates that &quot;[t]he source code of publicly available software must be persistent, citable and documented&quot;. If no publication is planned, it can still be useful to enrich the software with metadata. This can be particularly helpful for long-term storage at the institute, to make it easier to use the software at a later stage.
+
+For example with a &lt;a href=&quot;https://citation-file-format.github.io&quot; target=&quot;_blank&quot;&gt;.cff file&lt;/a&gt; you can provide metadata in a human- and machine-readable way for your software. With the &lt;a href=&quot;https://w3id.org/okn/o/sd&quot; target=&quot;_blank&quot;&gt;Software Description Ontology&lt;/a&gt; you can also use an ontology to formally describe the software. And this handout on the &lt;a href=&quot;https://doi.org/10.12688/f1000research.26932.2&quot; target=&quot;_blank&quot;&gt;relevance of software citations&lt;/a&gt; once again collects the essential points on this complex of topics.</help>
+		<text lang="en">How do you assign metadata for your software?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Für die Veröffentlichung von Software ist es empfohlen die Software mit Metadaten zu beschreiben (siehe &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; F1 bis F2 und A2). Die &lt;a href=&quot;https://wissenschaftliche-integritaet.de/kodex/phasenubergreifende-qualitatssicherung/&quot; target=&quot;_blank&quot;&gt;Leitlinie 7 im DFG-Kodex &quot;Leitlinien zur Sicherung guter wissenschaftlicher Praxis&quot;&lt;/a&gt; schreibt ebenfalls vor, dass &quot;[d]er Quellcode von öffentlich zugänglicher Software [..] persistent zitierbar und dokumentiert sein&quot; muss. Falls keine Publikation geplant ist, kann es dennoch sinnvoll sein, die Software mit Metadaten anzureichern. Besonders für die langfristige Aufbewahrung am Institut kann dies hilfreich sein, um ein späteres Umgehen mit der Software zu erleichtern.
+
+Beispielsweise mit einer &lt;a href=&quot;https://citation-file-format.github.io&quot; target=&quot;_blank&quot;&gt;.cff-Datei&lt;/a&gt; können Sie vergleichsweise einfach Metadaten in menschen- und maschinenlesbarer Art zu Ihrer Software zur Verfügung stellen. Mit der &lt;a href=&quot;https://w3id.org/okn/o/sd&quot; target=&quot;_blank&quot;&gt;Software Description Ontology&lt;/a&gt; können Sie auch eine Ontologie zur formalen Beschreibung der Software verwenden. Diese Handreichung zur &lt;a href=&quot;https://doi.org/10.12688/f1000research.26932.2&quot; target=&quot;_blank&quot;&gt;Relevanz von Software-Zitationen&lt;/a&gt; sammelt nochmals die wesentlichen Punkte zu diesem Themenkomplex.</help>
+		<text lang="de">Wie vergeben Sie Metadaten für Ihre Software?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/metadata/software-pid">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/release-and-publish/metadata/software-pid</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/software-pid"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">For long-term availability and clear allocation, it is recommended to publish the software (version) with a persistent identifier. This recommendation goes hand in hand with &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; F3 and &lt;a href=&quot;https://wissenschaftliche-integritaet.de/en/code-of-conduct/cross-phase-quality-assurance/&quot; target=&quot;_blank&quot;&gt;guideline 7 in the DFG Code &quot;Guidelines for Safeguarding Good Scientific Practice&quot;&lt;/a&gt;. After &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; F1.1, it may also be useful to place a separate identifier on the individual software versions or components. An example of a persistent identifier is the Digital Object Identifier (DOI). In terms of research software, for example, a GitHub/GitLab Zenodo integration can generate a citable object including DOI.</help>
+		<text lang="en">Do you give a persistent identifier for you software?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Für die langfristige Verfügbarkeit und die klare Zuordnung ist es empfehlenswert, die Software(-version) mit einem persistenten Identifikator zu veröffentlichen. Diese Empfehlung geht einher mit &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; F3 und der &lt;a href=&quot;https://wissenschaftliche-integritaet.de/kodex/phasenubergreifende-qualitatssicherung/&quot; target=&quot;_blank&quot;&gt;Leitlinie 7 im DFG-Kodex &quot;Leitlinien zur Sicherung guter wissenschaftlicher Praxis&quot;&lt;/a&gt;. Ein Beispiel für einen persistenten Identifikator ist etwa der Digital Object Identifier (DOI). Nach &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; F1.1 kann es auch sinnvoll sein auf die einzelnen Software-Versionen oder -Komponenten einen eigenen Identifier zu legen. Bezogen auf Forschungssoftware kann beispielsweise eine GitHub-/GitLab-Zenodo-Integration ein zitierfähiges Objekt samt DOI erzeugen.</help>
+		<text lang="de">Geben Sie einen dauerhaften Identifikator für Ihre Software an?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/software_identifier"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/support">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/release-and-publish/support</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Support</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Support</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/support/support-for-software" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/support/feedback-process" order="1"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/support/relation-SMP-DMP" order="2"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/support/publish-smp" order="3"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/support/support-for-software">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/release-and-publish/support/support-for-software</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/support-for-software"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Do you plan to give support or help to re-users of your software?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Planen Sie Unterstützung oder Hilfe für Nutzende Ihrer Software anzubieten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/publish-software"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/support/feedback-process">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/release-and-publish/support/feedback-process</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/feedback-process"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">When you make your software available to interested parties, it is advisable to think about how communication processes should be set up. For example, which channels do you offer? And do you want to provide support on your own or is it reasonable to support a (developing) software community? Depending on the extent of communication with other users, it may be advisable to be aware of the organisation of incoming requests in advance. For example, Git systems already offer ticket systems with which external requests can be organised in a structured and transparent way.</help>
+		<text lang="en">How do you organise the support and feedback process with other users?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Wenn Sie Ihre Software Interessierten zur Verfügung stellen ist es ratsam sich auch gleich darüber Gedanken zu machen, wie eventuell Kommunikationsprozesse angelegt werden sollen. Welche Kanäle bietet man beispielsweise an? Und möchte man die Unterstützung alleine gewährleisten oder ist die Unterstützung einer (sich entwickelnden) Software-Gemeinschaft hierfür sinnvoll? Je nach Umfang der Kommunikation mit anderen Nutzenden kann es empfehlenswert sein sich schon im Vorfeld über die Organisation der eingehenden Anfragen bewusst zu werden. So bieten beispielsweise die Git-Systeme schon Ticket-Funktionen, mit denen externe Anfragen strukturiert und transparent organisiert werden können.</help>
+		<text lang="de">Wie organisieren Sie den Support- und Feedbackprozess mit anderen Nutzenden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/publish-software"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/support/relation-SMP-DMP">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/release-and-publish/support/relation-SMP-DMP</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/relation-SMP-DMP"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">If your software management plan is linked to other management plans, e.g. as a sub-project of a larger research network, you can document this here.</help>
+		<text lang="en">Does your Software Management Plan relate to other Software/Data Management Plans?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Wenn Ihr Software-Management-Plan in Verbindung mit anderen Management-Plänen steht, z.B. als Teilprojekt eines größeren Forschungsverbundes, dann können Sie dies hier dokumentieren.</help>
+		<text lang="de">Steht Ihr Software-Management-Plan in Beziehung zu anderen Software-/Daten-Management-Plänen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/support/publish-smp">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>smp/release-and-publish/support/publish-smp</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/publish-smp"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">If so, you can note the location here.</help>
+		<text lang="en">Do you intend to make your software management plan publicly available (later)?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Wenn ja, können Sie hier auch noch den Ort notieren.</help>
+		<text lang="de">Beabsichtigen Sie, Ihren Software-Management-Plan (später) öffentlich zugänglich zu machen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/yes_with_text_no"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<section dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics">
+		<uri_prefix>https://rdmorganiser.github.io/terms/</uri_prefix>
+		<uri_path>smp/legal-and-ethics</uri_path>
+		<dc:comment/>
+		<title lang="en">Legal and Ethics</title>
+		<title lang="de">Rechtliche und ethische Fragen</title>
+		<title lang="fr"/>
+		<title lang="it"/>
+		<title lang="es"/>
+		<pages>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/intellectual-rights" order="0"/>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/license" order="1"/>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/dual-use" order="2"/>
+		</pages>
+	</section>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/intellectual-rights">
+		<uri_prefix>https://rdmorganiser.github.io/terms/</uri_prefix>
+		<uri_path>smp/legal-and-ethics/intellectual-rights</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Intellectual Property Rights</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Rechte am geistigen Eigentum</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/intellectual-rights/software-property-rights" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/intellectual-rights/external-software-rights" order="1"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/intellectual-rights/software-property-rights">
+		<uri_prefix>https://rdmorganiser.github.io/terms/</uri_prefix>
+		<uri_path>smp/legal-and-ethics/intellectual-rights/software-property-rights</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/software-property-rights"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">It is advisable to be clear in advance about the legal situation of the software (see &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; R1.2). In addition to institutional regulations, labour law exploitation are particularly relevant here. In most cases, it is written down in the employment contracts. Please check this. If you are unsure about this, it is advisable to contact your own superior(s). It can also be useful to ask at your own institute for advice; colleagues from the IT, Scientific Computing Unit, Research Coordination, Legal Department, etc. can help you.</help>
+		<text lang="en">What is the legal ownership of the software?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Es ist empfehlenswert, sich im Vorfeld bereits über die rechtlichen Besitzverhältnisse an der Software klar zu werden (siehe &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; R1.2). Neben institutionellen Regelungen sind hier besonders arbeitsrechtliche Vorgaben relevant. Meist steht in den Arbeitsverträgen hierzu bereits etwas. Bitte überprüfen Sie dies. Wenn Sie sich hierbei unsicher sind, ist es ratsam, sich mit den eigenen Vorgesetzten in Verbindung zu setzen. Ebenso kann es sinnvoll sein, am eigenen Institut hierbei um Rat zu fragen; Kolleg_innen aus der IT, Scientific Computing Unit, Forschungskoordination, Rechtsabteilung etc. können Ihnen hierbei weiterhelfen.</help>
+		<text lang="de">Wie ist die rechtliche Situation?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/intellectual-rights/external-software-rights">
+		<uri_prefix>https://rdmorganiser.github.io/terms/</uri_prefix>
+		<uri_path>smp/legal-and-ethics/intellectual-rights/external-software-rights</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/external-software-rights"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">When using external code elements, you must clarify in advance to what extent you are allowed to use these components for your software. Especially if you are planning to publish the software and grant a licence, you must take this point into account. If in doubt, ask your local colleagues from the IT, Scientific Computing Unit, Research Coordination, Legal Department etc.</help>
+		<text lang="en">Does the project use and/or produce software that is protected by third party intellectual or industrial property rights?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Bei der Nutzung von externen Code-Elementen müssen Sie vorab schon klären, inwiefern Sie diese Komponenten für Ihre Software nutzen dürfen. Besonders wenn Sie eine Veröffentlichung der Software und eine Lizenzvergabe planen, müssen Sie diesen Punkt beachten. Im Zweifel fragen Sie Ihre lokalen Kolleg_innen aus der IT, Scientific Computing Unit, Forschungskoordination, Rechtsabteilung etc.</help>
+		<text lang="de">Wird im Rahmen des Projekts Software verwendet und/oder hergestellt, die durch geistige oder gewerbliche Eigentumsrechte Dritter geschützt ist?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</question>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/license">
+		<uri_prefix>https://rdmorganiser.github.io/terms/</uri_prefix>
+		<uri_path>smp/legal-and-ethics/license</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">License</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Lizenzen</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/license/software-license" order="0"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/license/software-license">
+		<uri_prefix>https://rdmorganiser.github.io/terms/</uri_prefix>
+		<uri_path>smp/legal-and-ethics/license/software-license</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/software-license"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">There are good arguments for assigning a license. &lt;a href=&quot;https://wissenschaftliche-integritaet.de/en/code-of-conduct/providing-public-access-to-research-results/&quot; target=&quot;_blank&quot;&gt;Guideline 13 in the DFG Code of Conduct &quot;Guidelines for Safeguarding Good Scientific Practice&quot;&lt;/a&gt; even explicitly states that if &quot;self-developed research software is to be made available to third parties, an appropriate licence is provided&quot;. &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; R1.1 also emphasises the same. Please also consider the compatibility with already integrated third-party libraries.
+
+The following websites give you an initial overview of software and licences:
+
+* &lt;a href=&quot;https://choosealicense.com&quot; target=&quot;_blank&quot;&gt;https://choosealicense.com&lt;/a&gt;
+* &lt;a href=&quot;https://github.com/readme/guides/open-source-licensing&quot; target=&quot;_blank&quot;&gt;https://github.com/readme/guides/open-source-licensing&lt;/a&gt;
+* &lt;a href=&quot;https://opensource.org/licenses&quot; target=&quot;_blank&quot;&gt;https://opensource.org/licenses&lt;/a&gt;
+* &lt;a href=&quot;https://tldrlegal.com&quot; target=&quot;_blank&quot;&gt;https://tldrlegal.com&lt;/a&gt;</help>
+		<text lang="en">Under what kind of license(s) will the software be published?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Wenn Sie eine Software entwickeln, spricht vieles dafür, diese auch mit einer Lizenz zu versehen. Die &lt;a href=&quot;https://wissenschaftliche-integritaet.de/kodex/herstellung-von-offentlichem-zugang-zu-forschungsergebnissen/&quot; target=&quot;_blank&quot;&gt;Leitlinie 13 im DFG-Kodex &quot;Leitlinien zur Sicherung guter wissenschaftlicher Praxis&quot;&lt;/a&gt; sieht dies explizit vor. Wenn Sie eine &quot;eigens entwickelte Forschungssoftware für Dritte bereitgestellt [wird, ist] diese mit einer angemessenen Lizenz [zu] versehen&quot;. Das Gleiche betont auch &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; R1.1. Beachten Sie bitte auch die Kompatibilität mit bereits eingebundenen Dritt-Bibliotheken.
+
+Folgende Seiten geben Ihnen einen ersten Überblick zu Software und Lizenzen:
+
+* &lt;a href=&quot;https://choosealicense.com&quot; target=&quot;_blank&quot;&gt;https://choosealicense.com&lt;/a&gt;
+* &lt;a href=&quot;https://github.com/readme/guides/open-source-licensing&quot; target=&quot;_blank&quot;&gt;https://github.com/readme/guides/open-source-licensing&lt;/a&gt;
+* &lt;a href=&quot;https://opensource.org/licenses&quot; target=&quot;_blank&quot;&gt;https://opensource.org/licenses&lt;/a&gt;
+* &lt;a href=&quot;https://tldrlegal.com&quot; target=&quot;_blank&quot;&gt;https://tldrlegal.com&lt;/a&gt;</help>
+		<text lang="de">Unter welche Art von Lizenz(en) wird die Software fallen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/software-license"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/dual-use">
+		<uri_prefix>https://rdmorganiser.github.io/terms/</uri_prefix>
+		<uri_path>smp/legal-and-ethics/dual-use</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Dual Use</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Doppelter Verwendungszweck (&quot;Dual Use&quot;)</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/dual-use/dual-use-software" order="0"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/dual-use/dual-use-software">
+		<uri_prefix>https://rdmorganiser.github.io/terms/</uri_prefix>
+		<uri_path>smp/legal-and-ethics/dual-use/dual-use-software</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/dual-use"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Please note that depending on the field of application, software may have a dual use potential (civil and military). If this is the case, special measures are required. With Regulation &lt;a href=&quot;http://data.europa.eu/eli/reg/2021/821/oj&quot; target=&quot;_blank&quot;&gt;EU 2021/821 (EU Dual-Use Regulation)&lt;/a&gt;, all EU Member States have established common licensing requirements and procedures for the export, technical assistance and transfer of dual use items (see the description of the &lt;a href=&quot;https://www.zoll.de/DE/Fachthemen/Aussenwirtschaft-Bargeldverkehr/Warenausfuhr/Waren/Dual-Use-Gueter/dual-use-gueter_node.html&quot; target=&quot;_blank&quot;&gt;Federal German Customs&lt;/a&gt;). The &lt;a href=&quot;https://www.bafa.de&quot; target=&quot;_blank&quot;&gt;Federal Office of Economics and Export Control&lt;/a&gt; is responsible for issuing export licenses in the Federal Republic.  If in doubt, contact your local IT security officer.</help>
+		<text lang="en">Can the software also be used for military purposes?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Bitte beachten Sie, dass Software, je nach Anwendungsfeld, eine doppelte Verwendungsmöglichkeit (zivil und militärisch) aufweisen kann. Sollte dies der Fall sein, sind besondere Maßnahmen erforderlich. Mit der Verordnung &lt;a href=&quot;http://data.europa.eu/eli/reg/2021/821/oj&quot; target=&quot;_blank&quot;&gt;EU 2021/821 (EU Dual-Use Regulation)&lt;/a&gt; haben alle EU-Mitgliedstaaten eine gemeinsame Genehmigungspflicht und Verfahrensweise bei der Ausfuhr, der technischen Unterstützung und der Verbringung von Gütern mit doppelter Verwendungsmöglichkeit festgelegt (siehe die &lt;a href=&quot;https://www.zoll.de/DE/Fachthemen/Aussenwirtschaft-Bargeldverkehr/Warenausfuhr/Waren/Dual-Use-Gueter/dual-use-gueter_node.html&quot; target=&quot;_blank&quot;&gt;Beschreibung des bundesdeutschen Zolls&lt;/a&gt;). Die Erteilung von Ausfuhrgenehmigungen in der Bundesrepublik geschieht durch das &lt;a href=&quot;https://www.bafa.de&quot; target=&quot;_blank&quot;&gt;Bundesamt für Wirtschaft und Ausfuhrkontrolle (BAFA)&lt;/a&gt;. Kontaktieren Sie im Zweifel Ihre lokalen IT-Sicherheitsbeauftragten.</help>
+		<text lang="de">Kann die Software auch für militärische Zwecke genutzt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+</rdmo>
