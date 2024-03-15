@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2024-03-12T15:07:15.743274+01:00" version="2.1.3">
+	<view dc:uri="https://rdmorganiser.github.io/terms/views/snf">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>snf</uri_path>
+		<dc:comment>Source: http://www.snf.ch/SiteCollectionDocuments/DMP_content_mySNF-form_de.pdf</dc:comment>
+		<order>0</order>
+		<title lang="en">SNF Template</title>
+		<help lang="en">DMP of the SNF (Switzerland)</help>
+		<title lang="de">SNF Vorlage</title>
+		<help lang="de">DMP für die SNF (Schweiz)</help>
+		<title lang="fr">Modèle SNF</title>
+		<help lang="fr">DMP per la SNF (Svizzera)</help>
+		<title lang="it">Modello SNF</title>
+		<help lang="it">DMP per la SNF (Svizzera)</help>
+		<title lang="es">Modelo SNF</title>
+		<help lang="es">DMP para la SNF (Suiza)</help>
+		<catalogs/>
+		<template>{% load view_tags %}
+
+{% get_set 'project/partner' as partners %}
+{% get_set 'project/dataset' as datasets %}
+
+&lt;h1&gt;Data Management Plan - SNF Formular&lt;/h1&gt;
+
+&lt;h2&gt;Allgemein&lt;/h2&gt;
+
+&lt;p&gt;
+    &lt;b&gt;Welche Personen oder Institutionen sind verantwortlich für die Projektkoordination?&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;{% render_value_inline_list 'project/coordination/name' %}&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;b&gt;Gibt es an Ihrer Einrichtung Regeln oder Richtlinien zum Umgang mit den im
+    Projekt erhobenen Forschungsdaten? Wenn ja, skizzieren Sie diese kurz und verweisen
+    Sie ggf. auf weiterführende Informationen. Geben Sie bitte auch an, welchen Grad an
+    Verbindlichkeit sie haben.&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	{% render_value 'project/additional_rdm_policy/yesno' %}
+	{% render_value 'project/additional_rdm_policy/requirements' %}
+&lt;/p&gt;
+
+&lt;p&gt;
+	&lt;b&gt;Wer ist bei diesem Partner der/die Ansprechpartner/in für das Datenmanagement?&lt;/b&gt;
+&lt;/p&gt;
+{% for partner in partners %}
+&lt;p&gt;
+    &lt;i&gt;{% render_set_value partner 'project/partner/name' %}:&lt;/i&gt;
+    Richtlinien: {% render_set_value partner 'project/partner/rdm_policy' %},
+    Ansprechpartner: {% render_set_value_inline_list partner 'project/partner/contact_person/name' %}
+&lt;/p&gt;
+{% endfor %}
+
+&lt;h2&gt;1. Datenerhebung und -dokumentation&lt;/h2&gt;
+&lt;h3&gt;1.1. Welche Daten werden Sie erheben, beobachten, generieren oder wiederverwerten?&lt;/h3&gt;
+
+&lt;p&gt;
+    &lt;b&gt;1.1.1. Welche Art, welches Format und welches Volumen von Daten werden Sie
+    erheben, beobachten, generieren oder weiterverwenden?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+        &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+        {% render_set_value dataset 'project/dataset/description' %};
+        Format: {% render_set_value dataset 'project/dataset/format' %},
+        Volumen: {% render_set_value dataset 'project/dataset/size/volume' %},
+        Rate: {% render_set_value dataset 'project/dataset/rate' %}
+&lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;
+    &lt;b&gt;1.1.2. Welche bestehenden (eigene oder externe) Daten werden Sie weiterverarbeiten?&lt;/p&gt;
+&lt;/b&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+    Datensatzerzeuger: {% render_set_value dataset 'project/dataset/creator/name' %},
+    Verfügbar unter: {% render_set_value dataset 'project/dataset/uri' %}
+&lt;/p&gt;
+{% endfor %}
+
+&lt;h3&gt;1.2 Wie werden die Daten erhoben, beobachtet oder generiert?&lt;/h3&gt;
+&lt;p&gt;
+    &lt;b&gt;1.2.1. Welche Standards, Methoden oder Qualitätssicherungsverfahren werden Sie verwenden?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+        &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+        Methoden:
+        {% render_set_value dataset 'project/dataset/creation_methods' %}
+        Technologien:
+        {% render_set_value dataset 'project/dataset/usage_technology' %}
+        Qualitätssicherungsverfahren:
+        {% render_set_value dataset 'project/dataset/control_tool' %}
+        Korrektheit &amp;amp; Vollständigkeit:
+        {% render_set_value dataset 'project/dataset/metadata/quality_assurance' %}
+        Datenintegration: {% render_set_value dataset 'project/dataset/integration' %}
+&lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;
+    &lt;b&gt;1.2.2. Wie werden Sie ihre Daten verwalten, wie gestalten Sie Versionierungen?&lt;/p&gt;
+&lt;/b&gt;
+{% for dataset in datasets %}
+&lt;p&gt;
+	&lt;em&gt; Datensatz {% render_set_value dataset 'project/dataset/id' %}: &lt;/em&gt;
+    Datenstruktur: {% render_set_value dataset 'project/dataset/structure' %}, {% render_set_value dataset 'project/storage/organisation_policy' %}
+    Dateibenennung: {% render_set_value dataset 'project/dataset/storage/naming_policy' %}
+    Versionierung: {% render_set_value dataset 'project/dataset/versioning_yesno' %}, {% render_set_value dataset 'project/dataset/versioning_strategy' %},
+    Tool: {% render_set_value dataset 'project/dataset/versioning_tool' %}
+&lt;/p&gt;
+{% endfor %}
+
+&lt;h3&gt;1.3. Welche Dokumentationen, Metadaten  und Standards für Metadaten sehen Sie im Zusammenhang mit den Daten vor?&lt;/h3&gt;
+&lt;p&gt;
+    &lt;b&gt;1.3.1. Welche Informationen benötigen Benutzer (Computer oder Menschen), um die Daten in Zukunft zu lesen und zu interpretieren?&lt;/p&gt;
+&lt;/b&gt;
+
+{% for dataset in datasets %}
+&lt;p&gt;
+    &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+    {% render_set_value dataset 'project/dataset/metadata/scope' %}
+    Software-Dokumentation: {% render_set_value dataset 'project/dataset/software_documentation' %}
+    Veröffentlichung: {% render_set_value dataset 'project/dataset/metadata/public' %}
+&lt;/p&gt;
+ {% endfor %}
+
+&lt;p&gt;
+    &lt;b&gt;1.3.2. Wie werden diese Informationen erstellt?&lt;/p&gt;
+&lt;/b&gt;
+
+{% for dataset in datasets %}
+    &lt;p&gt;
+        &lt;em&gt; Datensatz {% render_set_value dataset 'project/dataset/id' %}: &lt;/em&gt;
+        Standards:
+        {% render_set_value dataset 'project/dataset/metadata/standards' %}
+        Automatisch:
+        {% render_set_value dataset 'project/dataset/metadata/creation_automatic' %}
+        Semi-automatisch:
+        {% render_set_value dataset 'project/dataset/metadata/creation_semi_automatic' %}
+        Manuell:
+        {% render_set_value dataset 'project/dataset/metadata/creation_manual' %}
+        Mappings:
+        {% render_set_value dataset 'project/dataset/metadata/mappings' %}
+    &lt;/p&gt;
+    &lt;p&gt;
+        Verantwortlicher für Richtigkeit:
+        {% render_set_value_inline_list dataset 'project/dataset/metadata/responsible_person/name' %}
+    &lt;/p&gt;
+{% endfor %}
+
+&lt;h2&gt;2. Ethische, rechtliche und Sicherheitsfragen&lt;/h2&gt;
+&lt;h3&gt;2.1. Wie gestalten sich der Umfang mit und die Behandlung von ethischen Fragen?&lt;/h3&gt;
+&lt;p&gt;
+    &lt;b&gt;2.1.1. Welche Sicherheitsstandards sind für ihre Daten relevant? Sind Sie an eine Vertraulichkeitsvereinbarung gebunden?&lt;/p&gt;
+&lt;/b&gt;
+
+{% for dataset in datasets %}
+    &lt;p&gt;
+        &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+        Sicherheitsstandards:
+        Vertrauchlichkeitsvereinbarung:
+    &lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;
+    Rechtliche Situation verschiedener Länder: {% render_value 'project/legal_aspects/international_yesno' %}
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;b&gt;2.1.2. Verfügen Sie über die notwendigen Genehmigungen, um die Daten einzuholen, zu verarbeiten, zu speichern und weiterzuverarbeiten?&lt;/p&gt;
+&lt;/b&gt;
+
+{% for dataset in datasets %}
+    &lt;p&gt;
+        &lt;em&gt; Datensatz {% render_set_value dataset 'project/dataset/id' %}: &lt;/em&gt;
+    &lt;/p&gt;
+    Rechtinhaber recherchiert: {% render_set_value dataset 'project/dataset/ipr/owner/name' %}
+    {% get_set_value dataset 'project/dataset/ipr/copyrights' as val %}
+    {% if val.is_true %}
+        &lt;p&gt;Copyrights: {% render_set_value_inline_list dataset 'project/dataset/ipr/copyrights' %}&lt;/p&gt;
+    {% endif %}
+    {% get_set_value dataset 'project/dataset/ipr/other_rights' as val %}
+    {% if val.is_true %}
+        &lt;p&gt;Andere Rechte: {% render_set_value_inline_list dataset 'project/dataset/ipr/copyrights' %}&lt;/p&gt;
+    {% endif %}
+{% endfor %}
+
+&lt;p&gt;
+    &lt;b&gt;2.1.3. Wurden die Personen, deren Daten verwendet werden, informiert oder haben sie ihre Zustimmung gegeben?&lt;/p&gt;
+&lt;/b&gt;
+
+{% for dataset in datasets %}
+    &lt;p&gt;
+        &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+        {% render_set_value dataset 'project/dataset/sensitive_data/personal_data/consent/extent' %},
+        abegelegt: {% render_set_value dataset 'project/dataset/sensitive_data/personal_data/consent/record' %}
+        Begründung, falls keine Zustimmung eingeholt: {% render_set_value dataset 'project/dataset/sensitive_data/personal_data/consent/statement' %}
+    &lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;
+    &lt;b&gt;2.1.4. Mit welchen Methoden und Vorkehrungen planen Sie Personendaten und andere sensbile Daten zu schützen?&lt;/b&gt;
+&lt;/p&gt;
+{% for dataset in datasets %}
+    &lt;p&gt;
+        &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+        {% render_set_value dataset 'project/dataset/sensitive_data/personal_data/anonymization' %}
+        Gelöscht bis {% render_set_value dataset 'project/dataset/sensitive_data/personal_data/deletion' %}
+    &lt;/p&gt;
+{% endfor %}
+
+&lt;h3&gt;2.2. Wie werden der Zugriff auf Daten und die Datensicherung verwaltet?&lt;/h3&gt;
+&lt;p&gt;
+    &lt;b&gt;2.2.1. Welche sind die wesentlichen Bedenken bei der Datensicherheit, wie groß sind die Risiken und welche Maßnahmen zum Umgang mit Sicherheitsrisiken stehen zur Verfügung?&lt;/p&gt;
+&lt;/b&gt;
+
+{% for dataset in datasets %}
+    &lt;p&gt;
+        &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+        Maßnahmen: {% render_set_value dataset 'project/dataset/data_security/security_measures' %}
+    &lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;
+    &lt;b&gt;2.2.2. Wie werden Sie Zugriffsrechte auf Daten/Genehmigungen zur Sicherstellung der Datensicherheit behandeln?&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;b&gt;2.2.3. Wir wird im Umgang mit Personendaten oder mit anderen sensiblen Daten die sichere Datenspeicherung und -übertragung gewährleistet?&lt;/b&gt;
+&lt;/p&gt;
+
+{% for dataset in datasets %}
+    &lt;p&gt;
+        &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+        {% render_set_value dataset 'project/dataset/collaboration_organisation' %}
+    &lt;/p&gt;
+{% endfor %}
+
+&lt;h3&gt;2.3. Wie lösen Sie Urheberrechtsfragen und Fragen des geistigen Eigentums?&lt;/h3&gt;
+&lt;p&gt;
+    &lt;b&gt;2.3.1. Wer ist der Eigner der Daten?&lt;/p&gt;
+&lt;/b&gt;
+
+{% for dataset in datasets %}
+    &lt;p&gt;
+        &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+        {% render_set_value dataset 'project/dataset/ipr/owner/name' %}
+    &lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;
+    &lt;b&gt;2.3.2. Welche Lizenzen gelten für die Daten?&lt;/p&gt;
+&lt;/b&gt;
+
+{% for dataset in datasets %}
+    &lt;p&gt;
+        &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+        {% render_set_value_inline_list dataset 'project/dataset/sharing/conditions' %}
+    &lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;
+    &lt;b&gt;2.3.3. Welche Einschränkungen gelten für die Weiterverwendung von externen Daten?&lt;/b&gt;
+&lt;/p&gt;
+
+{% for dataset in datasets %}
+    &lt;p&gt;
+        &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+        {% render_set_value dataset 'project/dataset/sharing/restrictions_explanation' %}
+    &lt;/p&gt;
+{% endfor %}
+
+&lt;h2&gt; 3. Datenspeicherung und Datenerhalt&lt;/h2&gt;
+&lt;h3&gt;3.1. Wie werden Ihre Daten während der Forschungsarbeit gespeichert und gesichert?&lt;/h3&gt;
+&lt;p&gt;
+    &lt;b&gt;3.1.1. Über welche Speicherkapazitäten verfügen Sie und wo werden die Daten gespeichert?&lt;/b&gt;
+&lt;/p&gt;
+
+{% for dataset in datasets %}
+    &lt;p&gt;
+        &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt; Ort: {% render_set_value dataset 'project/dataset/storage/type' %}
+    &lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;
+    &lt;b&gt;3.1.2. Welche Verfahren dienen zur Datensicherung?&lt;/b&gt;
+&lt;/p&gt;
+
+{% for dataset in datasets %}
+    &lt;p&gt;
+        &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+        Zugangerlaubnis: {% render_set_value dataset 'project/dataset/data_security/access_permissions' %}
+        Backups: {% render_set_value dataset 'project/dataset/data_security/backups' %}
+        Verantwortlichkeit: {% render_set_value dataset 'project/dataset/data_security/backup_responsible/name' %}
+        Maßnahmen: {% render_set_value dataset 'project/dataset/data_security/security_measures' %}
+        Zugangsauthentification: {% render_set_value dataset 'project/dataset/preservation/access_authentication' %}
+        Benötigte Infrastrukturressourcen: {% render_set_value dataset 'project/dataset/usage_infrastructure' %}
+        Unterstützung notwendig: {% render_set_value dataset 'project/dataset/usage_support' %}
+    &lt;/p&gt;
+{% endfor %}
+
+&lt;h3&gt;3.2. Wie gestaltet sich ihre Planung für den Datenerhalt?&lt;/h3&gt;
+&lt;p&gt;
+    &lt;b&gt;3.2.1. Mittels welchen Verfahren werden die zu erhaltenden Daten ausgewählt?&lt;/p&gt;
+&lt;/b&gt;
+&lt;p&gt; {% render_value 'project/preservation/selection_criteria' %}&lt;/p&gt;
+&lt;p&gt;Zuständigkeit: {% render_value_inline_list 'project/dataset/preservation/responsible_person/name' %}&lt;/p&gt;
+&lt;p&gt;
+    &lt;b&gt;3.2.2. Welche Dateiformate werden zum Datenerhalt eingesetzt?&lt;/b&gt;
+&lt;/p&gt;
+
+{% for dataset in datasets %}
+    &lt;p&gt;
+        &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+        Muss aufbewahrt werden: {% render_set_value dataset 'project/dataset/preservation/yesno' %}
+        Begründung: {% render_set_value dataset 'project/dataset/preservation/purpose' %}
+        Dauer: {% render_set_value dataset 'project/dataset/preservation/duration' %}
+        Nachnutzung: {% render_set_value dataset 'project/dataset/preservation/reuse_duration' %}
+        Interoperabilität: {% render_set_value_inline_list dataset 'project/dataset/interoperability' %}
+        Ort: {% render_set_value dataset 'project/dataset/preservation/repository' %}
+        Zertifizierung: {% render_set_value dataset 'project/dataset/preservation/certification' %}
+    &lt;/p&gt;
+{% endfor %}
+
+&lt;h2&gt; 4. Datenaustausch und Weiterverwendung von Daten&lt;/h2&gt;
+&lt;h3&gt; 4.1. Wie und wo werden die Daten zugänglich gemacht? &lt;/h3&gt;
+&lt;p&gt;
+    &lt;b&gt; 4.1.1. In welchem Datenarchiv wollen Sie Ihre Daten zur Verfügung stellen?&lt;/b&gt;
+&lt;/p&gt;
+
+{% for dataset in datasets %}
+    &lt;p&gt;
+        &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+        Repository: {% render_set_value dataset 'project/dataset/preservation/repository' %}
+        Zertifiziert?: {% render_set_value dataset 'project/dataset/preservation/certification' %}
+        Archivierungslösungen: {% render_set_value dataset 'project/dataset/preservation/repository_arrangements' %}
+        wann archiviert: {% render_set_value dataset 'project/dataset/preservation/data_archiving_date' %}
+        veröffentlicht: {% render_set_value dataset 'project/dataset/data_publication_date' %}
+    &lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;
+    &lt;b&gt;4.1.2. Wie erfahren potentielle Benutzer von Ihren Daten?&lt;/b&gt;
+&lt;/p&gt;
+
+{% for dataset in datasets %}
+    &lt;p&gt;
+        &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+        Persistente Identifikatoren: {% render_set_value dataset 'project/dataset/pids' %}
+        System: {% render_set_value dataset 'project/dataset/pids/system' %}
+        Subentitäten: {% render_set_value dataset 'project/dataset/pids/subentities' %}
+    &lt;/p&gt;
+{% endfor %}
+
+&lt;h3&gt;4.2. Sind bestimmte Einschränkungen erforderlich, um sensible Daten zu schützen?&lt;/h3&gt;
+&lt;p&gt;
+    &lt;b&gt;4.2.1. Unter welchen Bedingungen werden die Daten zur Verfügung gestellt (Zeitpunkt der Datenfreigabe, Gründe für allfällige Verzögerungen)?&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+    Datenzugangskommitee: {% render_value 'project/legal_aspects/official_approval/data_access_committee' %},
+    {% render_value 'project/legal_aspects/official_approval/statutatory_approval/title' %}
+&lt;/p&gt;
+
+{% for dataset in datasets %}
+    &lt;p&gt;
+        &lt;em&gt;Datensatz {% render_set_value dataset 'project/dataset/id' %}:&lt;/em&gt;
+        Embargo-Zeit: {% render_set_value dataset 'project/dataset/preservation/embargo_period' %}
+    &lt;/p&gt;
+{% endfor %}
+
+&lt;p&gt;Zeitpunkt der Datenfreigabe:&lt;/p&gt;
+&lt;p&gt;Gründe für allfällige Verzögerungen:&lt;/p&gt;
+
+&lt;h3&gt; 4.3. Ich werde digitale Archive nutzen, die den FAIR Data Principiles entsprechen &lt;/h3&gt;
+&lt;p&gt;
+    {% render_value 'project/preservation/archive/yesno' %}
+   {% render_value 'project/preservation/archive/fair_archive' %}
+&lt;/p&gt;
+
+&lt;h3&gt; 4.4.  Ich werde digitale Archive wählen, die von einer gemeinnützigen Organisation verwaltet werden.&lt;/h3&gt;
+&lt;p&gt;
+    {% render_value 'project/preservation/archive/nonprofit/yesno' %}
+    {% render_value 'project/preservation/archive/nonprofit/explanation' %}
+&lt;/p&gt;</template>
+	</view>
+</rdmo>
