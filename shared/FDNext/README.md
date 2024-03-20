@@ -27,12 +27,7 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 
 ## 3. Einrichtung des Fragenkatalogs
 Als Voraussetzung müssen die vom RDMO-Projekt bereitgestellten Standard-Attribute und -Optionen in die eigene RDMO-Instanz importiert worden sein. Diese können unter https://github.com/rdmorganiser/rdmo-catalog/tree/master/rdmorganiser heruntergeladen werden.
-Der Fragenkatalog zur Erstellung einer Projekt-Forschungsdaten-Policy benötigt darüber hinaus zusätzliche Attribute und Optionen, die sich in den Dateien fdnext_template_domain.xml und fdnext_template_options.xml befinden. 
-Folgende Dateien müssen vor dem Import des eigentlichen Fragenkatalogs (fdnext_template_questions.xml) in der folgenden Reihenfolge in die eigene RDMO-Instanz importiert werden:  
-1) fdnext_template_domain.xml (Domain)  
-2) fdnext_template_options.xml (Options)
-
-Erst im Anschluss kann der Fragenkatalog (fdnext_template_questions.xml) korrekt importiert werden. Wird dieser versehentlich zuerst importiert, werden die Optionen und Bedingungen nicht verknüpft und der Katalog funktioniert nicht richtig. In diesem Fall hilft es, den Fragenkatalog zu löschen und, nach dem Import der oben genannten Dateien, neu zu importieren.
+Der Fragenkatalog zur Erstellung einer Projekt-Forschungsdaten-Policy wird über den Import der Datei fdnext_template.xml in RDMO eingebunden.
 
 # 4. Überblick über die Struktur des Fragenkatalogs und die verwendeten Attribute und Optionen. 
 
