@@ -1,18 +1,24 @@
 RDMO catalog
 ============
 
-This repository contains the content for [RDMO](https://github.com/rdmorganiser/rdmo) prepared by the [RDMO-Project](https://rdmorganiser.github.io).
+This folder contains the content for [RDMO](https://github.com/rdmorganiser/rdmo) curated by the [RDMO-Project](https://rdmorganiser.github.io).
 
-To install the catalog into a freshly installed instance of RDMO, use
+Install content
+---------------
+
+The RDMO content objects (catalogs, attributes, options, conditions, views, tasks) depend on each other, as shown in the [documentation](https://rdmo.readthedocs.io/en/latest/management/data-model.html).
+
+In particular, the installation of question catalogues requires the newest version of attributes, optionsets and conditions. 
+
+Therefore we suggest this sequence to install content in a RDMO instance:
 
 ```
 ./manage.py import /path/to/domain/rdmo.xml
-./manage.py import /path/to/conditions/rdmo.xml  # yes, again
 ./manage.py import /path/to/options/rdmo.xml
-./manage.py import /path/to/conditions/rdmo.xml  # yes, again
-./manage.py import /path/to/questions/rdmo.xml
-./manage.py import /path/to/tasks/rdmo.xml
-./manage.py import /path/to/views/rdmo.xml
+./manage.py import /path/to/conditions/rdmo.xml
+./manage.py import /path/to/questions/<chosen_catalog>.xml
+./manage.py import /path/to/tasks/<chosen_task>.xml
+./manage.py import /path/to/views/<chosen_view>.xml
 ```
 
 Use the same order when importing over the RDMO web interface.
