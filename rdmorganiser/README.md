@@ -1,7 +1,7 @@
 RDMO catalog
 ============
 
-This folder contains the content for [RDMO](https://github.com/rdmorganiser/rdmo) curated by the [RDMO-Project](https://rdmorganiser.github.io).
+This folder contains the content for [RDMO](https://github.com/rdmorganiser/rdmo) curated by the [RDMO Consortium](https://rdmorganiser.github.io/Community/).
 
 Install content
 ---------------
