@@ -26,7 +26,7 @@
 &lt;title&gt;{{ title.value }}&lt;/title&gt;
 &lt;h1&gt;{% render_value 'project/title' %}&lt;/h1&gt;
 
-&lt;div class=&quot;alert alert-info&quot; role=&quot;alert&quot;&gt;
+&lt;div class="alert alert-info" role="alert"&gt;
 &lt;p&gt;&lt;b&gt;Hinweis&lt;/b&gt;&lt;/p&gt;
 &lt;i&gt;&lt;p&gt;Im Folgenden haben wir die von Ihnen eingegebenen Informationen über das
 Projekt noch einmal zusammengefasst.&lt;/p&gt;
@@ -42,7 +42,7 @@ Projekt noch einmal zusammengefasst.&lt;/p&gt;
 &lt;h1&gt;Umgang mit Forschungsdaten&lt;/h1&gt;
 &lt;h2&gt;Datenbeschreibung&lt;/h2&gt;
 
-{% comment &quot;question&quot; %}
+{% comment "question" %}
 &lt;h3&gt;Auf welche Weise entstehen in Ihrem Projekt neue Daten?&lt;/h3&gt;
 {% endcomment %}
 
@@ -59,7 +59,7 @@ Projekt noch einmal zusammengefasst.&lt;/p&gt;
 {% endfor %}
 &lt;/p&gt;
 
-{% comment &quot;question&quot; %}
+{% comment "question" %}
 &lt;h3&gt;Werden existierende Daten wiederverwendet?&lt;/h3&gt;
 {% endcomment %}
 
@@ -69,7 +69,7 @@ Projekt noch einmal zusammengefasst.&lt;/p&gt;
     {% for text in texts %}
         {% if 'Ja' in text.value or 'Anderes' in text.value %}
             Daten werden nachgenutzt im Bereich &lt;i&gt;{{ dataset.value }}&lt;/i&gt;; diese
-            {{ text.value|cut:'Ja, sie '|cut:'.'|cut:&quot;Anderes:&quot; }}
+            {{ text.value|cut:'Ja, sie '|cut:'.'|cut:"Anderes:" }}
             {% if not forloop.last %}, {% else %}.{% endif %}
         {% endif %}
     {% endfor %}
@@ -78,7 +78,7 @@ Projekt noch einmal zusammengefasst.&lt;/p&gt;
 {% for dataset in datasets %}
     {% get_set_values dataset 'project/dataset/origin' as texts %}
     {% for text in texts %}
-        {% if 'Nein' in text.value or &quot;Nach&quot; in text.value %}
+        {% if 'Nein' in text.value or "Nach" in text.value %}
             Für den Bereich &lt;i&gt;{{ dataset.value }}&lt;/i&gt; werden keine Daten nachgenutzt;
             {{ text.value|cut:'Nein, es werden keine existierenden Daten verwendet'|cut:'.'|cut:':' }}
         {% if not forloop.last %}und {% else %}.{% endif %}
@@ -87,7 +87,7 @@ Projekt noch einmal zusammengefasst.&lt;/p&gt;
 {% endfor %}
 &lt;/p&gt;
 
-{% comment &quot;question&quot; %}
+{% comment "question" %}
 &lt;h3&gt;Welche Datentypen, im Sinne von Datenformaten (z. B. Bilddaten, Textdaten oder Messdaten) entstehen in Ihrem Projekt?&lt;/h3&gt;
 {% endcomment %}
 
@@ -95,13 +95,13 @@ Projekt noch einmal zusammengefasst.&lt;/p&gt;
 {% for dataset in datasets %}
     {% get_set_values dataset 'project/dataset/format' as texts %}
     {% for text in texts %}
-        {{ text.value|cut:&quot;Andere Datenformate:&quot; }} {% if not forloop.last %}, {% endif %}
+        {{ text.value|cut:"Andere Datenformate:" }} {% if not forloop.last %}, {% endif %}
     {% endfor %}
     {% if not forloop.last %}, {% endif %}
 {% endfor %}
 vor,
 
-{% comment &quot;question&quot; %}
+{% comment "question" %}
 &lt;h3&gt;In welchem Umfang fallen diese an bzw. welches Datenvolumen ist zu erwarten?&lt;/h3&gt;
 {% endcomment %}
 
@@ -114,14 +114,14 @@ vor,
         {% if texts and not forloop.last and not forloop.first %}, {% endif %}
         {% for text in texts %}
             für &lt;i&gt;{{ dataset.value }}&lt;/i&gt;
-            {% if not &quot;zwischen&quot; in text.value %} von {% endif %}
+            {% if not "zwischen" in text.value %} von {% endif %}
             {{ text.value }} {% if not forloop.last %}, {% endif %}
         {% endfor %}
     {% endfor %}
 {% endif %}
 .&lt;/p&gt;
 
-{% comment &quot;question&quot; %}
+{% comment "question" %}
 &lt;h3&gt;Auf welche Weise werden die Daten in Ihrem Projekt weiterverarbeitet?&lt;/h3&gt;
 {% endcomment %}
 
@@ -139,7 +139,7 @@ vor,
 
 &lt;h2&gt;Dokumentation und Datenqualität&lt;/h2&gt;
 
-{% comment &quot;question&quot; %}
+{% comment "question" %}
 &lt;h3&gt;Welche Ansätze werden verfolgt, um die Daten nachvollziehbar zu beschreiben (z. B. Nutzung vorhandener Metadaten- bzw. Dokumentationsstandards oder Ontologien)?&lt;/h3&gt;
 {% endcomment %}
 
@@ -150,13 +150,13 @@ vor,
     {% if texts and not forloop.last and not forloop.first %}; {% endif %}
     für den Bereich &lt;i&gt;{{ dataset.value }}&lt;/i&gt; mit
     {% for text in texts %}
-        {{ text.value|cut:&quot;Es wird &quot;|cut:&quot;Es werden &quot;|cut:&quot; genutzt&quot;|cut:&quot; verwendet&quot; }}
+        {{ text.value|cut:"Es wird "|cut:"Es werden "|cut:" genutzt"|cut:" verwendet" }}
         {% if not forloop.last %};{% endif %}
     {% endfor %}
 {% endfor %}
 .&lt;/p&gt;
 
-{% comment &quot;question&quot; %}
+{% comment "question" %}
 &lt;h3&gt;Welche digitalen Methoden und Werkzeuge (z. B. Software) sind zur Nutzung der Daten erforderlich?&lt;/h3&gt;
 {% endcomment %}
 
@@ -170,7 +170,7 @@ vor,
 {% endfor %}
 erforderlich.&lt;/p&gt;
 
-{% comment &quot;question&quot; %}
+{% comment "question" %}
 &lt;h3&gt;Welche Maßnahmen werden getroffen, um eine hohe Qualität der Daten zu gewährleisten? Sind Qualitätskontrollen vorgesehen und wenn ja, auf welche Weise?&lt;/h3&gt;
 {% endcomment %}
 
@@ -186,7 +186,7 @@ erforderlich.&lt;/p&gt;
 {% endfor %}
 .&lt;/p&gt;
 
-{% comment &quot;question&quot; %}
+{% comment "question" %}
 &lt;h3&gt;Sind Qualitätskontrollen vorgesehen und wenn ja, auf welche Weise?&lt;/h3&gt;
 {% endcomment %}
 
@@ -206,7 +206,7 @@ erforderlich.&lt;/p&gt;
 
 &lt;h2&gt;Speicherung und technische Sicherung während des Projekts&lt;/h2&gt;
 
-{% comment &quot;question&quot; %}
+{% comment "question" %}
 &lt;h3&gt;Auf welche Weise werden die Daten während der Projektlaufzeit gespeichert und gesichert?&lt;/h3&gt;
 {% endcomment %}
 
@@ -223,7 +223,7 @@ erforderlich.&lt;/p&gt;
 {% endfor %}
 gespeichert.&lt;/p&gt;
 
-{% comment &quot;question&quot; %}
+{% comment "question" %}
 &lt;h3&gt;Wie wird die Sicherheit sensibler Daten während der Projektlaufzeit gewährleistet (Zugriffs- und Nutzungsverwaltung)?&lt;/h3&gt;
 {% endcomment %}
 
@@ -233,7 +233,7 @@ gespeichert.&lt;/p&gt;
     {% if texts and forloop.last %} und {% endif %}
     {% if texts and not forloop.last and not forloop.first %}, {% endif %}
     {% for text in texts %}
-        {% if text != &quot;&quot; %}
+        {% if text != "" %}
         im Bereich &lt;i&gt;{{ dataset.value }}&lt;/i&gt; {{ text.value|cut:'werden '}}
         {% if not forloop.last %},{% endif %}
         {% endif %}
@@ -244,7 +244,7 @@ gespeichert.&lt;/p&gt;
 
 &lt;h2&gt;Rechtliche Verpflichtungen und Rahmenbedingungen&lt;/h2&gt;
 
-{% comment &quot;question&quot; %}
+{% comment "question" %}
 &lt;h3&gt;Sind Auswirkungen oder Einschränkungen in Bezug auf die spätere Veröffentlichung bzw. Zugänglichkeit zu erwarten?&lt;/h3&gt;
 {% endcomment %}
 
@@ -256,7 +256,7 @@ gespeichert.&lt;/p&gt;
     {% for text in texts %}
         {% if 'Ja' in text.value %}
             Die Daten des Bereichs &lt;i&gt;{{ dataset.value }}&lt;/i&gt;
-            {{ text.value|cut:&quot;Ja, &quot;|cut:'die Daten ' }}
+            {{ text.value|cut:"Ja, "|cut:'die Daten ' }}
         {% endif %}
         {% if 'Nein' in text.value %}
             Es liegen keine Einschränkungen vor im Bereich &lt;i&gt;{{ dataset.value }}&lt;/i&gt;
@@ -265,7 +265,7 @@ gespeichert.&lt;/p&gt;
 {% endfor %}
 .&lt;/p&gt;
 
-{% comment &quot;question&quot; %}
+{% comment "question" %}
 &lt;h3&gt;Existieren wichtige wissenschaftliche Kodizes bzw. fachliche Normen, die Berücksichtigung finden sollten?&lt;/h3&gt;
 {% endcomment %}
 
@@ -274,13 +274,13 @@ gespeichert.&lt;/p&gt;
     &lt;p&gt; Das gesamte Forschungsdatenmanagement orientiert sich
     {% for text in texts %}
         {% if forloop.last and not forloop.first %}sowie {% endif %}
-        am {{ text.value|cut:&quot;\&quot;&quot;|cut:&quot;\„&quot;}}
+        am {{ text.value|cut:"\""|cut:"\„"}}
         {% if not forloop.last %},{% else %}.{% endif %}
     {% endfor %}
     &lt;/p&gt;
 {% endif %}
 
-{% comment &quot;question&quot; %}
+{% comment "question" %}
 &lt;h3&gt;Auf welche Weise werden nutzungs- und urheberrechtliche Aspekte sowie Eigentumsfragen berücksichtigt?&lt;/h3&gt;
 {% endcomment %}
 
@@ -292,14 +292,14 @@ gespeichert.&lt;/p&gt;
     {% for text in texts %}
         {% if text %}
             im Bereich &lt;i&gt;{{ dataset.value }}&lt;/i&gt; gilt
-            {{ text.value|cut:&quot;.&quot;}}
+            {{ text.value|cut:"."}}
         {% endif %}
         {% if not forloop.last %},{% endif %}
     {% endfor %}
 {% endfor %}
 .&lt;/p&gt;
 
-{% comment &quot;question&quot; %}
+{% comment "question" %}
 &lt;h3&gt;Welche rechtlichen Besonderheiten bestehen im Zusammenhang mit dem Umgang mit Forschungsdaten in Ihrem Projekt?&lt;/h3&gt;
 {% endcomment %}
 
@@ -327,7 +327,7 @@ gespeichert.&lt;/p&gt;
 
     &lt;p&gt; Im Bereich &lt;i&gt;{{ dataset.value }}&lt;/i&gt;
 
-    {% comment &quot;question&quot; %}
+    {% comment "question" %}
     &lt;h3&gt;Welche Daten bieten sich für die Nachnutzung in anderen Kontexten besonders an?&lt;/h3&gt;
     {% endcomment %}
 
@@ -338,11 +338,11 @@ gespeichert.&lt;/p&gt;
             {% for text in texts %}
                 {% if 'Ja' in text.value %}
                     ist
-                    {{ text.value|cut:&quot;Ja, &quot;|cut:&quot;ist &quot;|cut:&quot;der Daten &quot; }}
+                    {{ text.value|cut:"Ja, "|cut:"ist "|cut:"der Daten " }}
                     {% if not forloop.last %};{% endif %}
                 {% else %}
                     sind die Daten nicht für die Nachnutzung geeignet, weil
-                    {{ text.value|cut:&quot;Nein, ich kann mir kein Nachnutzungsszenario für die Daten vorstellen, weil:&quot;|cut:&quot;der Daten &quot;|lower }}
+                    {{ text.value|cut:"Nein, ich kann mir kein Nachnutzungsszenario für die Daten vorstellen, weil:"|cut:"der Daten "|lower }}
                 {% endif %}
             {% endfor %}
         {% else %}
@@ -358,7 +358,7 @@ gespeichert.&lt;/p&gt;
     {% check_condition 'reuse_scenario' set_index=dataset.set_index as condition %}
 {#}    {% if condition %}#}
 
-        {% comment &quot;question&quot; %}
+        {% comment "question" %}
         &lt;h3&gt;Nach welchen Kriterien werden Forschungsdaten ausgewählt, um diese für die Nachnutzung durch andere zur Verfügung zu stellen? &lt;/h3&gt;
         {% endcomment %}
 
@@ -370,7 +370,7 @@ gespeichert.&lt;/p&gt;
             {% endfor %}
         {% endif %}
 
-        {% comment &quot;question&quot; %}
+        {% comment "question" %}
         &lt;h3&gt;Wann ist der Datensatz für dritte nutzbar?&lt;/h3&gt;
         {% endcomment %}
 
@@ -379,12 +379,12 @@ gespeichert.&lt;/p&gt;
             {% get_set_values dataset 'project/dataset/data_publication_date' as texts %}
             {% for text in texts %}
                 Die Daten
-                {% if &quot;Dieser Datensatz wird von uns nachgenutzt&quot; in text.value %}
+                {% if "Dieser Datensatz wird von uns nachgenutzt" in text.value %}
                     wurden
-                    {{ text.value|cut:&quot;Dieser Datensatz wird von uns nachgenutzt und ist &quot;|cut:&quot;.&quot; }}
+                    {{ text.value|cut:"Dieser Datensatz wird von uns nachgenutzt und ist "|cut:"." }}
                 {% else %}
                     werden
-                    {{ text.value|cut:&quot;.&quot;|lower }}
+                    {{ text.value|cut:"."|lower }}
                     {% if not forloop.last %},{% endif %} zur Verfügung gestellt
                 {% endif %}
             {% endfor %}
@@ -393,7 +393,7 @@ gespeichert.&lt;/p&gt;
 
 {#}    {% endif %}#}
 
-    {% comment &quot;question&quot; %}
+    {% comment "question" %}
     &lt;h3&gt;Planen Sie die Archivierung Ihrer Daten in einer geeigneten Infrastruktur? Falls ja, wie und wo? Gibt es Sperrfristen? Wann sind die Forschungsdaten für Dritte nutzbar?&lt;/h3&gt;
     {% endcomment %}
 
@@ -404,7 +404,7 @@ gespeichert.&lt;/p&gt;
             in
             {% get_set_values dataset 'project/dataset/preservation/repository' as texts %}
             {% for text in texts %}
-                {{ text.value|cut:'Sonstige:'|cut:&quot;Andere: &quot; }}
+                {{ text.value|cut:'Sonstige:'|cut:"Andere: " }}
                 {% if not forloop.last %},{% endif %}
             {% endfor %}
         {% endif %}
@@ -418,7 +418,7 @@ gespeichert.&lt;/p&gt;
 &lt;h2&gt;Verantwortlichkeiten und Ressourcen&lt;/h2&gt;
 
 &lt;p&gt;
-{% comment &quot;question&quot; %}
+{% comment "question" %}
 &lt;h3&gt;Wer ist verantwortlich für den adäquaten Umgang mit den Forschungsdaten (Beschreibung der Rollen und Verantwortlichkeiten innerhalb des Projekts)? &lt;/h3&gt;
 {% endcomment %}
 
@@ -428,12 +428,12 @@ gespeichert.&lt;/p&gt;
     {% for text in texts %}
         {% if not forloop.last and not forloop.first %},{% endif %}
         {% if forloop.last and texts|length &gt; 1 %} und {% endif %}
-        {{ text.value|truncatewords:3|cut:&quot;; …&quot; }}
+        {{ text.value|truncatewords:3|cut:"; …" }}
         {% if forloop.last %}.{% endif %}
     {% endfor %}
 {% endif %}
 
-{% comment &quot;question&quot; %}
+{% comment "question" %}
 &lt;h3&gt;Wer ist nach Ende der Laufzeit des Projekts für das Kuratieren der Daten verantwortlich?&lt;/h3&gt;
 {% endcomment %}
 
@@ -443,13 +443,13 @@ gespeichert.&lt;/p&gt;
     {% for text in texts %}
         {% if forloop.last and texts|length &gt; 1 %} und {% endif %}
         {% if not forloop.last and not forloop.first %},{% endif %}
-        {{ text.value|truncatewords:3|cut:&quot;; …&quot; }}
+        {{ text.value|truncatewords:3|cut:"; …" }}
         {% if forloop.last %}.{% endif %}
     {% endfor %}
 {% endif %}
 &lt;/p&gt;
 
-{% comment &quot;question&quot; %}
+{% comment "question" %}
 &lt;h3&gt;Welche Ressourcen (Kosten; Zeit oder anderes) sind erforderlich, um einen adäquaten Umgang mit Forschungsdaten im Projekt umzusetzen? &lt;/h3&gt;
 {% endcomment %}
 
@@ -457,7 +457,7 @@ gespeichert.&lt;/p&gt;
 {% if texts %}
 &lt;p&gt; Die benötigten Ressourcen für das Datenmanagement im Projekt sind:
     {% for text in texts %}
-        {{ text.value|cut:&quot;Infrastrukturressource: &quot;}}
+        {{ text.value|cut:"Infrastrukturressource: "}}
         {% if not forloop.last %};{% else %}.{% endif %}
     {% endfor %}
 &lt;/p&gt;
