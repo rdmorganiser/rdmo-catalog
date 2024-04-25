@@ -9,6 +9,33 @@
 		<target_text/>
 		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/other_requirements_options/146"/>
 	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>application-class-1</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/smp/application-class"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/application-class/1"/>
+	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>application-class-2</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/smp/application-class"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/application-class/2"/>
+	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>application-class-3</key>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/smp/application-class"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/application-class/3"/>
+	</condition>
 	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/costs_relevant">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>costs_relevant</key>
@@ -117,6 +144,15 @@
 		<target_text>1</target_text>
 		<target_option/>
 	</condition>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/publish-software">
+		<uri_prefix>https://rdmorganiser.github.io/terms/</uri_prefix>
+		<key>publish-software</key>
+		<dc:comment>introduced by the Max Planck Digital Library to implement the Software Management Plan</dc:comment>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/smp/software-sharing"/>
+		<relation>neq</relation>
+		<target_text>0</target_text>
+		<target_option/>
+	</condition>
 	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/repository_extern">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>repository_extern</key>
@@ -153,15 +189,6 @@
 		<target_text/>
 		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/yes_with_text_no/no"/>
 	</condition>
-	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/publish-software">
-		<uri_prefix>https://rdmorganiser.github.io/terms/</uri_prefix>
-		<key>publish-software</key>
-		<dc:comment>introduced by the Max Planck Digital Library to implement the Software Management Plan</dc:comment>
-		<source dc:uri="https://rdmorganiser.github.io/terms/domain/smp/software-sharing"/>
-		<relation>neq</relation>
-		<target_text>0</target_text>
-		<target_option/>
-	</condition>
 	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/usage_support">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>usage_support</key>
@@ -179,32 +206,5 @@
 		<relation>eq</relation>
 		<target_text/>
 		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/software_versioning_technology_options/164"/>
-	</condition>
-	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>application-class-1</key>
-		<dc:comment/>
-		<source dc:uri="https://rdmorganiser.github.io/terms/domain/smp/application-class"/>
-		<relation>eq</relation>
-		<target_text/>
-		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/application-class/1"/>
-	</condition>
-	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>application-class-2</key>
-		<dc:comment/>
-		<source dc:uri="https://rdmorganiser.github.io/terms/domain/smp/application-class"/>
-		<relation>eq</relation>
-		<target_text/>
-		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/application-class/2"/>
-	</condition>
-	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>application-class-3</key>
-		<dc:comment/>
-		<source dc:uri="https://rdmorganiser.github.io/terms/domain/smp/application-class"/>
-		<relation>eq</relation>
-		<target_text/>
-		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/application-class/3"/>
 	</condition>
 </rdmo>
