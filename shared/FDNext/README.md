@@ -27,9 +27,10 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 
 ## 3. Einrichtung des Fragenkatalogs
 Als Voraussetzung müssen die vom RDMO-Projekt bereitgestellten Standard-Attribute und -Optionen in die eigene RDMO-Instanz importiert worden sein. Diese können unter https://github.com/rdmorganiser/rdmo-catalog/tree/master/rdmorganiser heruntergeladen werden.
+
 Der Fragenkatalog zur Erstellung einer Projekt-Forschungsdaten-Policy wird über den Import der Datei fdnext_template.xml in RDMO eingebunden.
 
-# 4. Überblick über die Struktur des Fragenkatalogs und die verwendeten Attribute und Optionen. 
+# 4. Überblick über die Struktur des Fragenkatalogs und die verwendeten Attribute und Optionen.
 
 ## Allgemeine Hinweise / General information
 ### Einführung
@@ -122,7 +123,7 @@ Für die Umsetzung der in der Policy formulierten Grundsätze sind die folgenden
 > Optionenset: https://fdm.ub.tu-berlin.de/options/backup  
 
 ### Datendokumentation
-#### Die Forschungsdaten sollen in folgender Form dokumentiert werden: 
+#### Die Forschungsdaten sollen in folgender Form dokumentiert werden:
 > Attribut: https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/creation  
 > Widget-Typ: Ankreuzfelder  
 > Optionenset: https://fdm.ub.tu-berlin.de/options/options/documentation  
