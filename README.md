@@ -2,7 +2,11 @@
 
 ![Tests](https://github.com/rdmorganiser/rdmo-catalog/actions/workflows/tests.yaml/badge.svg)
 
-This repository contains all content objects (catalogs, attributes, options, conditions, views, tasks) to be used with the DMP software [RDMO](https://github.com/rdmorganiser/rdmo)
+This repository contains all content objects (catalogs, attributes, options, conditions, views, tasks) to be used with the DMP software [RDMO](https://github.com/rdmorganiser/rdmo).
+
+The main branch [master-rdmo2.x](https://github.com/rdmorganiser/rdmo-catalog/tree/master-rdmo2.x) contains material structured according to the recommended data model 2.0.0+. It is at the latest state and will be updated over time.
+
+The legacy branch [master-rdmo1.x](https://github.com/rdmorganiser/rdmo-catalog/tree/master-rdmo1.x) contains material structured according to the previous data model 1.6.0+. It is frozen at the state of April 2024 und will be not updated any more.
 
 The content officially curated by the [RDMO Consortium](https://rdmorganiser.github.io/Community/) is in the [`rdmorganiser`](./rdmorganiser) folder. We recommend to import these files to be able to make use of the official domain model, options, tasks and conditions. *Note that parts of these data are required to import user content because RDMO user's question catalogs may refer to parts of the official data*.
 
