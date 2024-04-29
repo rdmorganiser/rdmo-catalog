@@ -24,7 +24,7 @@ Therefore we suggest this sequence to install content in a RDMO instance:
 
 Management --> Attributes --> Import <domain_file>.xml
 Management --> Conditions --> Import <conditions_file>.xml
-Management --> Option sets --> Import <domain_file>.xml
+Management --> Option sets --> Import <options_file>.xml
 Management --> Conditions --> Import <conditions_file>.xml # yes, again
 Management --> Questions --> Import <catalog_file>.xml
 Management --> Tasks --> Import <tasks_file>.xml
