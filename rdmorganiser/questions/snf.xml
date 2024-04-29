@@ -1892,34 +1892,6 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		</optionsets>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights-dataset/other_rights">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>other_rights</key>
-		<path>snf/legal-and-ethics/intellectual-property-rights-dataset/other_rights</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/other_rights"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights-dataset"/>
-		<is_collection>True</is_collection>
-		<order>1</order>
-		<help lang="en"/>
-		<text lang="en">Do other intellectual property rights apply to this dataset?</text>
-		<verbose_name lang="en"/>
-		<verbose_name_plural lang="en"/>
-		<help lang="de"/>
-		<text lang="de">Be- oder entstehen an diesem Datensatz andere Schutzrechte?</text>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="de"/>
-		<widget_type>checkbox</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<optionsets>
-			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_other_rights"/>
-		</optionsets>
-		<conditions/>
-	</question>
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights-dataset/owner">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>owner</key>
@@ -1928,7 +1900,7 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner/name"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights-dataset"/>
 		<is_collection>False</is_collection>
-		<order>2</order>
+		<order>1</order>
 		<help lang="en"/>
 		<text lang="en">Was investigated who the rights owner is?</text>
 		<verbose_name lang="en"/>
@@ -1945,6 +1917,34 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<unit/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/yes_with_text_no"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights-dataset/other_rights">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>other_rights</key>
+		<path>snf/legal-and-ethics/intellectual-property-rights-dataset/other_rights</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/other_rights"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/snf/legal-and-ethics/intellectual-property-rights-dataset"/>
+		<is_collection>True</is_collection>
+		<order>2</order>
+		<help lang="en"/>
+		<text lang="en">Do other intellectual property rights apply to this dataset?</text>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Be- oder entstehen an diesem Datensatz andere Schutzrechte?</text>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_other_rights"/>
 		</optionsets>
 		<conditions/>
 	</question>
