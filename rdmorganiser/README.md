@@ -14,8 +14,9 @@ Therefore we suggest this sequence to install content in a RDMO instance:
 
 ```
 ./manage.py import /path/to/domain/rdmo.xml
-./manage.py import /path/to/options/rdmo.xml
 ./manage.py import /path/to/conditions/rdmo.xml
+./manage.py import /path/to/options/rdmo.xml
+./manage.py import /path/to/conditions/rdmo.xml # yes, again
 ./manage.py import /path/to/questions/<chosen_catalog>.xml
 ./manage.py import /path/to/tasks/<chosen_task>.xml
 ./manage.py import /path/to/views/<chosen_view>.xml
