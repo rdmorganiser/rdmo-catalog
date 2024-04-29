@@ -26,27 +26,26 @@ Therefore we suggest this sequence to install content in a RDMO instance:
 
 ## Via the RDMO web interface
 
-Management --> Attributes --> Import <domain_file>.xml
-Management --> Conditions --> Import <conditions_file>.xml
-Management --> Option sets --> Import <options_file>.xml
-Management --> Conditions --> Import <conditions_file>.xml # yes, again
-Management --> Questions --> Import <catalog_file>.xml
-Management --> Tasks --> Import <tasks_file>.xml
-Management --> Views --> Import <views_file>.xml
+Management --> Attributes  --> Import <chosen_domain_file>.xml
+Management --> Conditions  --> Import <chosen_conditions_file>.xml
+Management --> Option sets --> Import <chosen_options_file>.xml
+Management --> Conditions  --> Import <chosen_conditions_file>.xml  # yes, again
+Management --> Questions   --> Import <chosen_catalog_file>.xml
+Management --> Tasks       --> Import <chosen_task_file>.xml
+Management --> Views       --> Import <chosen_view_file>.xml
 
 REMARK: If the chosen catalog is available as a **full XML**, it already includes the necessary attributes, conditions and options.
 
 ## Via a Python script
 
 ```python
-./manage.py import /<path/to/domain>/rdmo.xml
-./manage.py import /<path/to/conditions>/rdmo.xml
-./manage.py import /<path/to/options>/rdmo.xml
-./manage.py import /<path/to/conditions>/rdmo.xml            # yes, again
-./manage.py import /<path/to/questions>/<chosen_catalog>.xml
-./manage.py import /<path/to/tasks>/<chosen_task>.xml
-./manage.py import /<path/to/views>/<chosen_view>.xml
-```
+./manage.py import /path/to/domain/<chosen_domain_file>.xml
+./manage.py import /path/to/conditions/<chosen_conditions_file>.xml
+./manage.py import /path/to/options/<chosen_options_file>.xml
+./manage.py import /path/to/conditions/<chosen_conditions_file>.xml  # yes, again
+./manage.py import /path/to/questions/<chosen_catalog_file>.xml
+./manage.py import /path/to/tasks>/<chosen_task_file>.xml
+./manage.py import /path/to/views>/<chosen_view_file>.xml
 
 Use the same order when importing over the RDMO web interface.
 
