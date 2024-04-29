@@ -63,7 +63,7 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 |Horizon 2020      |[catalog](shared/ub_fau_erlangen_nuernberg/h2020-ehum/ehum_h2020_fragebogen.xml)|[view](shared/ub_fau_erlangen_nuernberg/h2020-ehum/views_h2020.xml)|2020-09|FDM Bayern eHumanities|
 |Mathematics       |[catalog](shared/MATH+/mathplus_questions.xml)            ||2022-11|DFG Excellence Cluster MATH+|
 |Mechanical Engineering        |[catalog](shared/nfdi4ing/rdmo_mechanical_engineering/catalog_mb_20190124.xml)||2023-06|NFDI4Ing|
-|Research data policy generator|[catalog](shared/FDNext/)                     ||2023-11|FDNext|
+|Research data policy generator|[catalog](shared/FDNext/)                     ||2024-03|FDNext|
 |VW Foundation - Science Europe|[catalog](shared/ub_fau_erlangen_nuernberg/ScienceEurope_VW_Stiftung/catalog_VW_SE.xml)||2021-04|FDM Bayern eHumanities|
 
 Total: 34 catalogs, 15 views

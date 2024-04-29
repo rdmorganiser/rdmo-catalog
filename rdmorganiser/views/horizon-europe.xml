@@ -229,7 +229,7 @@
 		{% if pids %}
 			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {{ pids.value }}.&lt;/p&gt;
 		{% endif %}
-	{% endfor %} 
+	{% endfor %}
 
 	&lt;p class=&quot;question&quot;&gt;13b. Will the repository resolve the identifier to a digital object?&lt;/p&gt;
 	{% for dataset in datasets %}
@@ -252,7 +252,7 @@
 			&lt;p&gt;&lt;i&gt;Dataset {{ dataset.value }}:&lt;/i&gt; {{ data_sharing.value }}.&lt;/p&gt;
 		{% endif %}
 	{% endfor %}
-	
+
 	&lt;p class=&quot;question&quot;&gt;14b. If certain datasets cannot be shared (or need to be shared under restricted access conditions), explain why,
 	clearly separating legal and contractual reasons from intentional restrictions.&lt;br /&gt;
 	&lt;small&gt;Note that in multi-beneficiary projects it is also possible for specific beneficiaries to keep their data closed,
@@ -459,7 +459,7 @@
 			Yes, with the following license: {{ sharing_conditions.value }}.&lt;/p&gt;
 		{% endif %}
 	{% endfor %}
-		
+
 	&lt;p&gt;See &lt;a href=&quot;#2.2&quot;&gt;Section 2.2&lt;/a&gt; for further details.&lt;/p&gt;
 &lt;/div&gt;
 
@@ -636,11 +636,11 @@
 	{% endfor %}
 
 	&lt;p class=&quot;questionpart&quot;&gt;Official approval&lt;/p&gt;
-							  
+
 	{% get_value 'project/legal_aspects/official_approval/ethics_committee' as ethics_committee %}
 	{% get_value 'project/legal_aspects/official_approval/statutatory_approval/yesno' as statutatory_approval %}
 	{% if ethics_committee or statutatory_approval %}
-														   
+
 		{% if ethics_committee %}
 			&lt;p&gt;The research has been {{ ethics_committee.value|cut:&quot;Yes, &quot; }}.&lt;/p&gt;
 		{% endif %}
