@@ -27,12 +27,7 @@ We recommend creating a policy with our tool right at the beginning of the proje
  
 ## 3. Setting up the questionnaire
 As a prerequisite, the standard attributes and options provided by the RDMO project must have been imported into your own RDMO instance. These can be downloaded from https://github.com/rdmorganiser/rdmo-catalog/tree/master/rdmorganiser.
-The question catalogue for creating a project research data policy also requires additional attributes and options, which can be found in the files fdnext_template_domain.xml and fdnext_template_options.xml. 
-The following files must be imported into your own RDMO instance in the following order before importing the actual question catalogue (fdnext_template_questions.xml):  
-1) fdnext_template_domain.xml (domain)  
-2) fdnext_template_options.xml (options)
-
-Only then can the question catalogue (fdnext_template_questions.xml) be imported correctly. If this is inadvertently imported first, the options and conditions are not linked and the catalogue does not function correctly. In this case, it helps to delete the question catalogue and import it again after importing the above-mentioned files.
+The question catalogue for creating a project research data policy is imported to RDMO via the file fdnext_template.xml.
 
 # 4. Overview of the structure of the question catalogue and the attributes and options used 
 

@@ -2,13 +2,61 @@
 
 ![Tests](https://github.com/rdmorganiser/rdmo-catalog/actions/workflows/tests.yaml/badge.svg)
 
-The repository holds XML files that can be imported into RDMO. They contain different kinds of information like for example the domain model, question catalogs or optionsets.
+This repository contains all content objects (catalogs, attributes, options, conditions, views, tasks) to be used with the DMP software [RDMO](https://github.com/rdmorganiser/rdmo).
 
-The files that are officially provided by the RDMO project are in the `rdmorganiser` folder. We recommend to import these files to be able to make use of the official domain model, options, tasks and conditions. *Note that parts of these data are required to import user content because RDMO user's question catalogs may refer to parts of the official data*.
+The main branch [master-rdmo2.x](https://github.com/rdmorganiser/rdmo-catalog/tree/master-rdmo2.x) contains material structured according to the recommended data model 2.0.0+. It is at the latest state and will be updated over time.
 
-Content shared by RDMO Users can be found under `shared`. There may be multiple files in a folder like for example conditions, options and questions. Files in the same folder belong together. All of them should be imported. Please pay attention to the order in which you import files. Question catalogs referring to other content should be imported at last.
+The legacy branch [master-rdmo1.x](https://github.com/rdmorganiser/rdmo-catalog/tree/master-rdmo1.x) contains material structured according to the previous data model 1.6.0+. It is frozen at the state of April 2024 und will be not updated any more.
 
-Different scripts are located in `tools`. These are interesting for people maintaining this repo.
+The content officially curated by the [RDMO Consortium](https://rdmorganiser.github.io/Community/) is in the [`rdmorganiser`](./rdmorganiser) folder. We recommend to import these files to be able to make use of the official domain model, options, tasks and conditions. *Note that parts of these data are required to import user content because RDMO user's question catalogs may refer to parts of the official data*.
+
+Content shared by RDMO Users can be found under [`shared`](./shared). There may be multiple files in a folder like for example conditions, options and questions. Files in the same folder belong together: all of them should be imported.
+
+Please pay attention to the order in which you import files. Question catalogs referring to other content should be imported at last. See the following section for details.
+
+Different scripts are located in [`tools`](./tools). These are interesting for people maintaining this repo.
+
+# How to install content
+
+The RDMO content objects (catalogs, attributes, options, conditions, views, tasks) depend on each other, as shown in the [documentation](https://rdmo.readthedocs.io/en/latest/management/data-model.html).
+
+In particular, the installation of question catalogues requires the newest version of attributes, optionsets and conditions.
+
+Therefore we suggest this sequence to install content in a RDMO instance:
+
+## Via the RDMO web interface
+
+Management --> Attributes  --> Import <chosen_domain_file>.xml  
+Management --> Conditions  --> Import <chosen_conditions_file>.xml  
+Management --> Option sets --> Import <chosen_options_file>.xml  
+Management --> Conditions  --> Import <chosen_conditions_file>.xml  # yes, again  
+Management --> Questions   --> Import <chosen_catalog_file>.xml  
+Management --> Tasks       --> Import <chosen_task_file>.xml  
+Management --> Views       --> Import <chosen_view_file>.xml  
+
+REMARK: If the chosen catalog is available as a **full XML**, it already includes the necessary attributes, conditions and options.
+
+## Via a Python script
+
+```python
+./manage.py import /path/to/domain/<chosen_domain_file>.xml
+./manage.py import /path/to/conditions/<chosen_conditions_file>.xml
+./manage.py import /path/to/options/<chosen_options_file>.xml
+./manage.py import /path/to/conditions/<chosen_conditions_file>.xml  # yes, again
+./manage.py import /path/to/questions/<chosen_catalog_file>.xml
+./manage.py import /path/to/tasks>/<chosen_task_file>.xml
+./manage.py import /path/to/views>/<chosen_view_file>.xml
+```
+
+Use the same order when importing over the RDMO web interface.
+
+Please note that the master branch will only work with the latest version of RDMO. If you need the xml files for an older version, please browse the releases or contact us.
+
+To indent the XML files use:
+
+```bash
+for f in *.xml; do xmllint --format $f > /tmp/$f; mv /tmp/$f $f; done
+```
 
 ## Issues
 
@@ -63,7 +111,7 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 |Horizon 2020      |[catalog](shared/ub_fau_erlangen_nuernberg/h2020-ehum/ehum_h2020_fragebogen.xml)|[view](shared/ub_fau_erlangen_nuernberg/h2020-ehum/views_h2020.xml)|2020-09|FDM Bayern eHumanities|
 |Mathematics       |[catalog](shared/MATH+/mathplus_questions.xml)            ||2022-11|DFG Excellence Cluster MATH+|
 |Mechanical Engineering        |[catalog](shared/nfdi4ing/rdmo_mechanical_engineering/catalog_mb_20190124.xml)||2023-06|NFDI4Ing|
-|Research data policy generator|[catalog](shared/FDNext/)                     ||2023-11|FDNext|
+|Research data policy generator|[catalog](shared/FDNext/)                     ||2024-03|FDNext|
 |VW Foundation - Science Europe|[catalog](shared/ub_fau_erlangen_nuernberg/ScienceEurope_VW_Stiftung/catalog_VW_SE.xml)||2021-04|FDM Bayern eHumanities|
 
 Total: 34 catalogs, 15 views
