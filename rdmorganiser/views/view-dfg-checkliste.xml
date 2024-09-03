@@ -269,7 +269,7 @@ gespeichert.&lt;/p&gt;
 &lt;h3&gt;Existieren wichtige wissenschaftliche Kodizes bzw. fachliche Normen, die Berücksichtigung finden sollten?&lt;/h3&gt;
 {% endcomment %}
 
-{% get_values 'project/additional_rdm_policy/yesno' as texts %}
+{% get_values 'project/additional_rdm_policy/requirements' as texts %}
 {% if texts %}
     &lt;p&gt; Das gesamte Forschungsdatenmanagement orientiert sich
     {% for text in texts %}
