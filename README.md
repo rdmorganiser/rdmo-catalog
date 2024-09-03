@@ -66,22 +66,22 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 
 ## Content curated by the RDMO team
 
-|Subject/Coverage        |Catalog                                             |View |Last update |Creators  |
-|------------------------|----------------------------------------------------|-----|------------|----------|
-|All questions (long)    |[catalog](rdmorganiser/questions/rdmo.xml)          |     |2020-08|RDMO team      |
-|All questions (short)   |[catalog](rdmorganiser/questions/fhpshort.xml)      |     |2020-08|FHP / RDMO team|
-|DCC checklist           |[catalog](rdmorganiser/questions/dcc.xml)           |     |2018-10|RDMO team      |
-|DFG checklist           |[catalog](rdmorganiser/questions/DFG-Checkliste.xml)|[view](rdmorganiser/views/dfg-checkliste.xml)       |2023-11|RDMO team       |
-|Horizon Europe          |[catalog](rdmorganiser/questions/horizon-europe.xml)|[view](rdmorganiser/views/horizon-europe.xml)       |2022-12|RDMO team       |
-|Software Management Plan|[catalog](rdmorganiser/questions/SMP-Questions.xml) |[view (FAIR4RS)](rdmorganiser/views/FAIR4RSview.xml)|2023-11|MPDL / RDMO team|
-|Swiss National Fund     |[catalog](rdmorganiser/questions/snf.xml)           |[view](rdmorganiser/views/snf.xml)                  |2020-08|RDMO team       |
-|Bielefeld               |            |[view](rdmorganiser/views/bielefeld.xml)     |2019-01|RDMO team      |
-|CITEC                   |            |[view](rdmorganiser/views/citec.xml)         |2019-01|RDMO team      |
-|Costs                   |            |[view](rdmorganiser/views/costs.xml)         |2022-08|RDMO team      |
-|DMPonline               |            |[view](rdmorganiser/views/dmponline.xml)     |2019-01|RDMO team      |
-|DMPtool                 |            |[view](rdmorganiser/views/dmptool.xml)       |2019-01|RDMO team      |
-|Horizon 2020            |            |[view](rdmorganiser/views/horizon2020.xml)   |2019-01|RDMO team      |
-|All variables (to check)|            |[view](rdmorganiser/views/variable_check.xml)|2022-12|RDMO team      |
+|Subject/Coverage     |Catalog                                                 |View|Last update|Creators   |
+|---------------------|--------------------------------------------------------|----|-----------|-----------|
+|All questions (long) |[catalog](rdmorganiser/questions/questions-rdmo.xml)    |    |2020-08|RDMO team      |
+|All questions (short)|[catalog](rdmorganiser/questions/questions-fhpshort.xml)|    |2020-08|FHP / RDMO team|
+|DCC checklist        |[catalog](rdmorganiser/questions/questions-dcc.xml)     |    |2018-10|RDMO team      |
+|DFG checklist |[catalog](rdmorganiser/questions/questions-DFG-Checkliste.xml)|[view](rdmorganiser/views/view-dfg-checkliste.xml)|2023-11|RDMO team|
+|Horizon Europe|[catalog](rdmorganiser/questions/questions-horizon-europe.xml)|[view](rdmorganiser/views/view-horizon-europe.xml)|2022-12|RDMO team|
+|Software Management Plan|[catalog](rdmorganiser/questions/questions-smp.xml)|[view (FAIR4RS)](rdmorganiser/views/view-FAIR4RSview.xml)|2023-11|MPDL / RDMO team|
+|Swiss National Fund|[catalog](rdmorganiser/questions/questions-snf.xml)|[view](rdmorganiser/views/snf.xml)|2020-08|RDMO team|
+|Bielefeld            |          |[view](rdmorganiser/views/view-bielefeld.xml)     |2019-01|RDMO team      |
+|CITEC                |          |[view](rdmorganiser/views/view-citec.xml)         |2019-01|RDMO team      |
+|Costs                |          |[view](rdmorganiser/views/view-costs.xml)         |2022-08|RDMO team      |
+|DMPonline            |          |[view](rdmorganiser/views/view-dmponline.xml)     |2019-01|RDMO team      |
+|DMPtool              |          |[view](rdmorganiser/views/view-dmptool.xml)       |2019-01|RDMO team      |
+|Horizon 2020         |          |[view](rdmorganiser/views/view-horizon2020.xml)   |2019-01|RDMO team      |
+|All variables (to check)|       |[view](rdmorganiser/views/view-variable_check.xml)|2022-12|RDMO team      |
 
 ## Other content provided by the user community
 
@@ -92,14 +92,14 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 |DFG checklist            |[catalog](shared/fodako/dfg_5.xml)             |    |2022-03|FoDaKo         |
 |DFG Biodiversity research|[catalog](shared/fodako/biodiversity_dfg_5.xml)|    |2022-03|FoDaKo         |
 |DFG Chemistry            |[catalog](shared/fodako/chem_dfg_5.xml)        |    |2022-03|FoDaKo         |
-|DFG Chemistry            |[catalog](shared/ub_fau_erlangen_nuernberg/dfg-chemie/dfg_Chemie.xml)||2023-08|FDM Bayern eHumanities|
-|DFG Physics              |[catalog](shared/ub_fau_erlangen_nuernberg/dfg-physik/dfg_Physik.xml)||2023-08|FDM Bayern eHumanities|
+|DFG Chemistry|[catalog](shared/ub_fau_erlangen_nuernberg/dfg-chemie/dfg_Chemie.xml)||2023-08|FDM Bayern eHumanities|
+|DFG Physics  |[catalog](shared/ub_fau_erlangen_nuernberg/dfg-physik/dfg_Physik.xml)||2023-08|FDM Bayern eHumanities|
 |DFG 101 Ancient Cultures |[catalog](shared/ub_fau_erlangen_nuernberg/dfg-alte-kulturen/dfg_alte_kulturen_fk101.xml)||2020-09|FDM Bayern eHumanities|
 |DFG 101 Ancient Cultures |[catalog](shared/fodako/101_dfg_5.xml)         |    |2022-03|FoDaKo|
 |DFG 104 Spoken corpus    |[catalog](shared/fodako/spokencorpus_dfg_5.xml)|    |2022-03|FoDaKo|
 |DFG 104 Text corpus      |[catalog](shared/fodako/textcorpus_dfg_5.xml)  |    |2022-03|FoDaKo|
 |DFG 105 Editions         |[catalog](shared/fodako/edition_dfg_5.xml)     |    |2022-03|FoDaKo|
-|DFG 105 Editions         |[catalog](shared/ub_fau_erlangen_nuernberg/dfg-editionen/dfg_editions.xml)||2020-09|FDM Bayern eHumanities|
+|DFG 105 Editions|[catalog](shared/ub_fau_erlangen_nuernberg/dfg-editionen/dfg_editions.xml)||2020-09|FDM Bayern eHumanities|
 |DFG 106 Social & Cultural Anthropology|[catalog](shared/ub_fau_erlangen_nuernberg/dfg-sozkulttheo/dfg_sozkulttheo_fk106.xml)||2020-09|FDM Bayern eHumanities|
 |DFG 106 Social & Cultural Anthropology|[catalog](shared/fodako/106_dfg_5.xml)||2022-03|FoDaKo|
 |DFG 109 Educational Research          |[catalog](shared/fodako/109_dfg_5.xml)||2022-03|FoDaKo|
