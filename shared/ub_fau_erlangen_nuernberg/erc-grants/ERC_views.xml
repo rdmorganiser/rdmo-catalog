@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo created="2023-08-22T11:10:32.073646+02:00" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2024-09-18T14:02:36.572374+02:00" version="2.1.2">
 	<view dc:uri="https://fdm-bayern.org/eHumanities/views/ERC">
 		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
-		<key>ERC</key>
+		<uri_path>ERC</uri_path>
 		<dc:comment/>
+		<order>0</order>
 		<title lang="en">ERC DMP Template</title>
 		<help lang="en">View (export template) for the ERC funding framework &lt;a href="https://erc.europa.eu/sites/default/files/document/file/ERC-Data-Management-Plan.docx" target="_blank"&gt;(version of 1st December 2021)&lt;/a&gt;.
 
@@ -35,9 +36,8 @@ Diese Ansicht wurde für den "European Research Council (ERC)" Fragebogen geschr
 	.questionpart {	color: green; break-after: avoid;	}
 &lt;/style&gt;
 
-&lt;div id=&quot;Titel&quot; style=&quot;margin: 0 auto; line-height: 21mm; font-size: 2.5em; font-weight: bold;&quot;&gt;
-	&lt;br /&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/de/2/21/ERC_Logo.PNG&quot; alt=&quot;ERC Logo&quot; width=&quot;300&quot; /&gt;
-	&lt;br /&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg&quot; alt=&quot;EU Flag&quot; width=&quot;200&quot; /&gt;
+&lt;div id=&quot;Titel&quot; style=&quot;margin: 0 auto; line-height: 21mm;text-align: center; font-size: 2.5em; font-weight: bold;&quot;&gt;
+	&lt;br /&gt;&lt;img src=&quot;https://erc.europa.eu/sites/default/files/2023-06/LOGO_ERC-FLAG_FP.png&quot; alt=&quot;ERC Logo&quot; width=&quot;450&quot;/&gt; 
 	&lt;br /&gt;&lt;h1&gt;European Research Council (ERC)&lt;br /&gt;Data Management Plan Template&lt;/h1&gt;
 &lt;/div&gt;
 
@@ -293,16 +293,18 @@ Furthermore, all datasets will be stored with fundamental bibliographic metadata
 	&lt;br /&gt;
 {% endfor %}
 
-&lt;h3 id="63"&gt;Costs&lt;/h3&gt;
+&lt;h3 id=&quot;63&quot;&gt;Costs&lt;/h3&gt;
+&lt;h4 id=&quot;631&quot;&gt;Personnel and infrastructure costs&lt;/h4&gt;
 {% render_value 'project/costs' %}
-&lt;br /&gt;
-&lt;br /&gt;
+&lt;h4 id=&quot;632&quot;&gt;Financing&lt;/h4&gt;
 {% render_value 'project/costs/preservation/cover_how' %}
-&lt;br /&gt;
-&lt;br /&gt;
-Disclaimer: Please note that the ERC Data Management Plan is not a part of the Ethics Review. 
+
+
+&lt;div id=&quot;disclaimer&quot; style=&quot;margin: 10pt;&quot;&gt;
+&lt;b&gt;Disclaimer:&lt;/b&gt; Please note that the ERC Data Management Plan is not a part of the Ethics Review. 
 It is the responsibility of the Principal Investigator to inform the ERCEA Ethics Team of any ethics issues/concerns regarding the collection, 
 processing, sharing and storage of data in relation to the project. 
+&lt;/div&gt;
 
 {% endif %}
 
@@ -559,18 +561,17 @@ Die Interoperabilität wird durch die Verwendung etablierter und allgemein verwe
     &lt;br /&gt;
 {% endfor %}
 
-&lt;h3 id="63"&gt;Kosten&lt;/h3&gt;
+&lt;h3 id=&quot;63&quot;&gt;Kosten&lt;/h3&gt;
+&lt;h4 id=&quot;631&quot;&gt;Personal- und Infrastrukturkosten&lt;/h4&gt;
 {% render_value 'project/costs' %}
-&lt;br /&gt;
-&lt;br /&gt;
+
+&lt;h4 id=&quot;632&quot;&gt;Finanzierung&lt;/h4&gt;
 {% render_value 'project/costs/preservation/cover_how' %}
 
-&lt;br /&gt;
-&lt;br /&gt;
-
-Hinweis: Bitte beachten Sie, dass der ERC-Datenmanagementplan nicht Teil der Ethikprüfung ist. 
+&lt;div id=&quot;hinweis&quot; style=&quot;margin: 10pt;&quot;&gt; &lt;b&gt;Hinweis:&lt;/b&gt; Bitte beachten Sie, dass der ERC-Datenmanagementplan nicht Teil der Ethikprüfung ist. 
 Es liegt in der Verantwortung des Principal Investigators, das ERCEA-Ethik-Team über alle ethischen Fragen / Bedenken in Bezug auf die Erhebung, Verarbeitung, Weitergabe und Speicherung
 von Daten im Zusammenhang mit dem Projekt zu informieren.
+&lt;/div&gt;
 
 {% endif %}</template>
 	</view>
