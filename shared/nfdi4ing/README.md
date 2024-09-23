@@ -15,5 +15,5 @@ Compared to version 1, extensive adjustments have been made to questions, option
 ## Installation
 The xml is a "full xml" export and contains all elements required for the import into RDMO.
 
-The catalog makes use of the {more}-tag, available since RDMO release 2.1.0.
+The catalog makes use of the `{more}`-tag to hide and show parts of the text, available since RDMO release 2.1.0.
 
