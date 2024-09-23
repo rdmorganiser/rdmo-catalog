@@ -1,12 +1,14 @@
-<?xml version="1.0" ?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/">
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2024-09-23T10:29:17.079535+02:00">
 	<catalog dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin">
 		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
 		<key>emimin</key>
 		<dc:comment/>
 		<order>0</order>
 		<title lang="en">EmiMin V1.0</title>
+		<help lang="en"/>
 		<title lang="de">EmiMin V1.0</title>
+		<help lang="de"/>
 	</catalog>
 	<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/general">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -25,6 +27,7 @@
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/general"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<title lang="en">Institution</title>
@@ -45,21 +48,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/institution/name"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/general/institution-research_question"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en"/>
 		<text lang="en">Which institution is concerned?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en">Institution</verbose_name>
 		<verbose_name_plural lang="en">Institutions</verbose_name_plural>
 		<help lang="de"/>
 		<text lang="de">Um welche Einrichtung handelt es sich?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de">Einrichtung</verbose_name>
 		<verbose_name_plural lang="de">Einrichtungen</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -71,21 +80,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/institution/address"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/general/institution-research_question"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en">The address (street, house number, postcode, city) is sufficient as an answer. This question is primarily about naming a contact possibility. Directions, etc. are not necessary at this point.</help>
 		<text lang="en">Where is the institution?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en">Adress</verbose_name>
 		<verbose_name_plural lang="en">Adresses</verbose_name_plural>
 		<help lang="de">Die Adresse (Straße, Hausnummer, PLZ, Stadt) ist als Antwort ausreichend. Es geht bei dieser Frage in erster Linie darum, eine Kontaktmöglichkeit zu benennen. Wegbeschreibungen, etc sind an dieser Stelle nicht notwendig.</help>
 		<text lang="de">Wo befindet sich die Einrichtung?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de">Adresse</verbose_name>
 		<verbose_name_plural lang="de">Adressen</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -97,21 +112,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/institution/subproject"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/general/institution-research_question"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en"/>
 		<text lang="en">Which subproject is the institution assigned to?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en">Subproject</verbose_name>
 		<verbose_name_plural lang="en">Subprojects</verbose_name_plural>
 		<help lang="de"/>
 		<text lang="de">Welchem Teilprojekt ist die Einrichtung zugeordnet?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de">Teilprojekt</verbose_name>
 		<verbose_name_plural lang="de">Teilprojekte</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -123,21 +144,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/institution/research-question"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/general/institution-research_question"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>3</order>
 		<help lang="en"/>
 		<text lang="en">With which reasearch questions deals your institution within this project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en">Research question</verbose_name>
 		<verbose_name_plural lang="en">Research questions</verbose_name_plural>
 		<help lang="de"/>
 		<text lang="de">Welche Forschungsfragen werden in Ihrer Einrichtung im Rahmen des Projektes behandelt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de">Forschungsfrage</verbose_name>
 		<verbose_name_plural lang="de">Forschungsfragen</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -149,21 +176,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/institution/contact-person"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/general/institution-research_question"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>4</order>
 		<help lang="en">The question aims to name one (or more) contact persons who can centrally handle enquiries about the data in the project. Either directly in person, or by specifying a person with the corresponding expertise.</help>
 		<text lang="en">Who is/are the contact person(s) for data management questions in this project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en">Contact person</verbose_name>
 		<verbose_name_plural lang="en">Contact persons</verbose_name_plural>
 		<help lang="de">Die Frage zielt darauf, eine (oder mehrere) Ansprechpersonen zu benennen, die zentral Anfragen zu den Daten im Projekt bearbeiten kann. Entweder direkt persönlich, oder durch Angabe einer Person mit entsprechender Expertise.</help>
 		<text lang="de">Wer ist bei diesem Projekt der/die Ansprechpartner/in für das Datenmanagement?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de">Ansprechperson</verbose_name>
 		<verbose_name_plural lang="de">Ansprechpersonen</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -174,6 +207,7 @@
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/general"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<title lang="en">Belonging facilities</title>
@@ -194,21 +228,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/facilities_quantity/quantity"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/general/belonging_facilities"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en"/>
 		<text lang="en">How many facilities are supervised by the institution?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en">facility</verbose_name>
 		<verbose_name_plural lang="en">facilities</verbose_name_plural>
 		<help lang="de"/>
 		<text lang="de">Wieviele Betriebe werden im Projekt von der Einrichtung betreut?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de">Betrieb</verbose_name>
 		<verbose_name_plural lang="de">Betriebe</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>range</widget_type>
 		<value_type>integer</value_type>
 		<maximum>10.0</maximum>
 		<minimum>0.0</minimum>
 		<step>1.0</step>
 		<unit>facilities</unit>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -220,21 +260,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/facilities_quantity/name"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/general/belonging_facilities"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en"/>
 		<text lang="en">Which facilities are associated and with which research design?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Welche Betriebe mit welcher Versuchsanordnung sind angebunden?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -246,21 +292,27 @@
 		<attribute dc:uri="http://rdmo.publisso.de/terms4life/domain/project/facilities_quantity/species"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/general/belonging_facilities"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en">At this point, only the animal species is indicated. Further species specifications are requested at another point.</help>
 		<text lang="en">Which animal species is kept in the facilities?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">An dieser Stelle wird nur die Tierart angegeben. Weitere Spezifikationen werden an anderer Stelle abgefragt.</help>
 		<text lang="de">Welche Tierart wird in den Betrieben gehalten?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -272,21 +324,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/facilities_quantity/production_direction"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/general/belonging_facilities"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>3</order>
 		<help lang="en"/>
 		<text lang="en">Which production directions are investigated in the facilities?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en">production direction</verbose_name>
 		<verbose_name_plural lang="en">production directions</verbose_name_plural>
 		<help lang="de"/>
 		<text lang="de">Welche Produktionsrichtungen werden in den Betrieben untersucht?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de">Produktionsrichtung</verbose_name>
 		<verbose_name_plural lang="de">Produktionsrichtungen</verbose_name_plural>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -298,21 +356,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/facilities_quantity/facility-contact"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/general/belonging_facilities"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>4</order>
 		<help lang="en"/>
 		<text lang="en">Who is responsible for the project in the facility (contact person)?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wer ist dort veranwortlich für das Projekt (Kontaktperson)?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -324,21 +388,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/facilities_quantity/project-contact"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/general/belonging_facilities"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>5</order>
 		<help lang="en"/>
 		<text lang="en">Who is responsible for the organisation of the communication with the facilities?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wer ist verantwortlich für die Organisation der Kommunikation mit den Betrieben?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -349,6 +419,7 @@
 		<dc:comment/>
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/measurement_info"/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/general"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>3</order>
 		<title lang="en">General information on measurement</title>
@@ -369,99 +440,675 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/measurement_info/measuring_institute"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/general/measurement_info"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en"/>
 		<text lang="en">Which institution is responsible for the measurement technology and for carrying out the measurements?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
-		<text lang="de">Welches Einrichtung ist für die Messtechnik und Durchführung der Messungen verantwortlich?</text>
+		<text lang="de">Welche Einrichtung ist für die Messtechnik und Durchführung der Messungen verantwortlich?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="http://example.com/terms/questions/emimin/general/measurement_info/measurement_contact">
-		<uri_prefix>http://example.com/terms</uri_prefix>
+	<question dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/general/measurement_info/measurement_contact">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
 		<key>measurement_contact</key>
 		<path>emimin/general/measurement_info/measurement_contact</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/measurement_info/measurement_contact"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/general/measurement_info"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en"/>
 		<text lang="en">Who is responsible there as contact person for the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wer ist dort verantwortlich als Kontaktperson für das Projekt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="http://example.com/terms/questions/emimin/general/measurement_info/reduction_technique_manufacturer">
-		<uri_prefix>http://example.com/terms</uri_prefix>
+	<question dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/general/measurement_info/reduction_technique_manufacturer">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
 		<key>reduction_technique_manufacturer</key>
 		<path>emimin/general/measurement_info/reduction_technique_manufacturer</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/measurement_info/reduction_technique_manufacturer"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/general/measurement_info"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en"/>
 		<text lang="en">Which manufacturer is responsible for the reduction technology?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Welcher Hersteller ist für die Minderungstechnik verantwortlich?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="http://example.com/terms/questions/emimin/general/measurement_info/reduction_technique_contact">
-		<uri_prefix>http://example.com/terms</uri_prefix>
+	<question dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/general/measurement_info/reduction_technique_contact">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
 		<key>reduction_technique_contact</key>
 		<path>emimin/general/measurement_info/reduction_technique_contact</path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/measurement_info/reduction_technique_contact"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/general/measurement_info"/>
 		<is_collection>True</is_collection>
-		<order>3</order>
+		<is_optional>False</is_optional>
+		<order>2</order>
 		<help lang="en"/>
 		<text lang="en">Who is responsible there as contact person for the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wer ist dort verantwortlich als Kontaktperson für das Projekt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>Messungen</key>
+		<path>emimin/Messungen</path>
+		<dc:comment/>
+		<catalog dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin"/>
+		<order>1</order>
+		<title lang="en">Measurements</title>
+		<title lang="de">Messungen</title>
+	</section>
+	<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/Information_about_the_measuring_method">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>Information_about_the_measuring_method</key>
+		<path>emimin/Messungen/Information_about_the_measuring_method</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.publisso.de/terms/domain/information_on_measurements"/>
+		<section dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>0</order>
+		<title lang="en">Information about the measuring method</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Informationen zum Messverfahren</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/Information_about_the_measuring_method/selected_test_design">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>selected_test_design</key>
+		<path>emimin/Messungen/Information_about_the_measuring_method/selected_test_design</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/Messungen/Information_about_the_measuring_method/selected_test_design"/>
+		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/Information_about_the_measuring_method"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en"/>
+		<text lang="en">What is the selected test design? (Please mark)</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de">Machen Sie bitte eine Angabe zum am Standort eingesetzten Messverfahren.</help>
+		<text lang="de">Welches Test-Design wurde ausgewählt? (Bitte ankreuzen)</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.publisso.de/terms4life/options/selected_test_design"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/Information_about_the_measuring_method/measured_emission_parameters">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>measured_emission_parameters</key>
+		<path>emimin/Messungen/Information_about_the_measuring_method/measured_emission_parameters</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/Messungen/Information_about_the_measuring_method/measured_emission_parameters"/>
+		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/Information_about_the_measuring_method"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en"/>
+		<text lang="en">Which emission parameters are measured? (Please mark)</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Welche Emissionsparameter werden gemessen? (Bitte ankreuzen)</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.publisso.de/terms4life/options/measured_emission_parameters"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/Information_about_the_measuring_method/simultaneous_simulations">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>simultaneous_simulations</key>
+		<path>emimin/Messungen/Information_about_the_measuring_method/simultaneous_simulations</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/Messungen/Information_about_the_measuring_method/simultaneous_simulations"/>
+		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/Information_about_the_measuring_method"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en"/>
+		<text lang="en">Are simulations carried out concurrently? (Please mark)</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Werden die Simulationen gleichzeitig durchgeführt? (Bitte ankreuzen)</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.publisso.de/terms4life/options/simultaneous_simulations"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/Information_about_the_measuring_method/reference_methods_standards">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>reference_methods_standards</key>
+		<path>emimin/Messungen/Information_about_the_measuring_method/reference_methods_standards</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/Messungen/Information_about_the_measuring_method/reference_methods_standards"/>
+		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/Information_about_the_measuring_method"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en"/>
+		<text lang="en">Are reference methods, guidelines or standards used? (Please mark and specifie in free text)</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Werden Referenzmethoden oder Standards verwendet? (Bitt ankreuzen und im Freitextfeld konkretisieren)</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.publisso.de/terms4life/options/reference_methods_standards"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/Information_about_the_measuring_method/air_volume">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>air_volume</key>
+		<path>emimin/Messungen/Information_about_the_measuring_method/air_volume</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/Messungen/Information_about_the_measuring_method/air_volume"/>
+		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/Information_about_the_measuring_method"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>4</order>
+		<help lang="en"/>
+		<text lang="en">Which method is used to determine the air volume flow rate? (Please mark)</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Nach welcher Methode wird der Luftvolumenstrom ermittelt? (Bitte ankreuzen)</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.publisso.de/terms4life/options/air_volume"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/Information_about_the_measuring_method/additional_parameters">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>additional_parameters</key>
+		<path>emimin/Messungen/Information_about_the_measuring_method/additional_parameters</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/Messungen/Information_about_the_measuring_method/additional_parameters"/>
+		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/Information_about_the_measuring_method"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>5</order>
+		<help lang="en"/>
+		<text lang="en">Which additional parameters are measured? (Please mark)</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Welche Zusatzparameter werden gemessen? (Bitte ankreuzen)</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.publisso.de/terms4life/options/additional_parameters"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/measurement_site_conditions">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>measurement_site_conditions</key>
+		<path>emimin/Messungen/measurement_site_conditions</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/measurement_site_conditions"/>
+		<section dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen"/>
+		<questionset/>
+		<is_collection>True</is_collection>
+		<order>0</order>
+		<title lang="en">What are the general conditions at the measurement site?</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<title lang="de">Wie sind die allgemeinen Bedingungen am Messort?</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/measurement_site_conditions/location_site">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>location_site</key>
+		<path>emimin/Messungen/measurement_site_conditions/location_site</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/measurement_site_conditions/location_site"/>
+		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/measurement_site_conditions"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>0</order>
+		<help lang="en"/>
+		<text lang="en">Location (please mark)</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Standort (Bitte ankreuzen)</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.publisso.de/terms4life/options/measurement_site_location"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/measurement_site_conditions/construction_year">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>construction_year</key>
+		<path>emimin/Messungen/measurement_site_conditions/construction_year</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/measurement_site_conditions/construction_year"/>
+		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/measurement_site_conditions"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>1</order>
+		<help lang="en"/>
+		<text lang="en">Construction year</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Baujahr</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/measurement_site_conditions/last_modernisation">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>last_modernisation</key>
+		<path>emimin/Messungen/measurement_site_conditions/last_modernisation</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/measurement_site_conditions/last_modernisation"/>
+		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/measurement_site_conditions"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en"/>
+		<text lang="en">Last modernisation</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Letzte Modernisierung</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/measurement_site_conditions/number_of_animals">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>number_of_animals</key>
+		<path>emimin/Messungen/measurement_site_conditions/number_of_animals</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/measurement_site_conditions/number_of_animals"/>
+		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/measurement_site_conditions"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>3</order>
+		<help lang="en"/>
+		<text lang="en">Number of animals</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Anzahl der Tiere</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/measurement_site_conditions/animal_feeding">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>animal_feeding</key>
+		<path>emimin/Messungen/measurement_site_conditions/animal_feeding</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/measurement_site_conditions/animal_feeding"/>
+		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/measurement_site_conditions"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>4</order>
+		<help lang="en"/>
+		<text lang="en">Feeding (Please mark)</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Fütterung (Bitte ankreuzen)</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.publisso.de/terms4life/options/Feeding"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/measurement_site_conditions/main_wind_direction">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>main_wind_direction</key>
+		<path>emimin/Messungen/measurement_site_conditions/main_wind_direction</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/measurement_site_conditions/main_wind_direction"/>
+		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/measurement_site_conditions"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>5</order>
+		<help lang="en"/>
+		<text lang="en">Main wind direction (Please mark)</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Hauptwindrichtung (Bitte ankreuzen)</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.publisso.de/terms4life/options/main_wind_direction"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/measurement_site_conditions/emission_sources_surroundings">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>emission_sources_surroundings</key>
+		<path>emimin/Messungen/measurement_site_conditions/emission_sources_surroundings</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/measurement_site_conditions/emission_sources_surroundings"/>
+		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/measurement_site_conditions"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>6</order>
+		<help lang="en"/>
+		<text lang="en">Other potential emission sources in the surroundings (Please mark)</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Andere potenzielle Emissionsquellen in der Umgebung (Bitte ankreuzen)</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.publisso.de/terms4life/options/emission_sources_surroundings"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/measurement_site_conditions/Ventilation">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>Ventilation</key>
+		<path>emimin/Messungen/measurement_site_conditions/Ventilation</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/measurement_site_conditions/Ventilation"/>
+		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/measurement_site_conditions"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>7</order>
+		<help lang="en"/>
+		<text lang="en">Ventilation (Please mark)</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Belüftung (Bitte ankreuzen)</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.publisso.de/terms4life/options/Ventilation"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/measurement_site_conditions/other_characteristics">
+		<uri_prefix>https://rdmo.publisso.de/terms4life</uri_prefix>
+		<key>other_characteristics</key>
+		<path>emimin/Messungen/measurement_site_conditions/other_characteristics</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/measurement_site_conditions/other_characteristics"/>
+		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/Messungen/measurement_site_conditions"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<order>8</order>
+		<help lang="en"/>
+		<text lang="en">Other characteristics</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Sonstige Merkmale</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -471,7 +1118,7 @@
 		<path>emimin/requirements</path>
 		<dc:comment/>
 		<catalog dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin"/>
-		<order>1</order>
+		<order>2</order>
 		<title lang="en">Requirements</title>
 		<title lang="de">Anforderungen</title>
 	</section>
@@ -482,6 +1129,7 @@
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/requirements"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<title lang="en">Other requirements initial question</title>
@@ -502,33 +1150,39 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/yesno"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/requirements/other-requirements-yesno"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en">Examples of discipline-specific requirements are: 
 
-- &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/guidelines_biodiversity_research.pdf&quot; target=_blank&quot;&gt;Guidelines on the Handling of Research Data in Biodiversity Research&lt;/a&gt;
-- &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_bildungsforschung.pdf&quot; target=_blank&quot;&gt;Guidelines for the provision and use of quantitative data in education research (German)&lt;/a&gt;
-- &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/foerderkriterien_editionen_literaturwissenschaft.pdf&quot; target=_blank&quot;&gt;Elegibility criteria for funding for scholarly editions in the literary studies (German)&lt;/a&gt;
-- Recommendations on &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_sprachkorpora.pdf&quot; target=_blank&quot;&gt;data standards and tools&lt;/a&gt; as well as &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=_blank&quot;&gt;legal aspects&lt;/a&gt; associated with language corpora (German)</help>
+- &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/guidelines_biodiversity_research.pdf" target=_blank"&gt;Guidelines on the Handling of Research Data in Biodiversity Research&lt;/a&gt;
+- &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_bildungsforschung.pdf" target=_blank"&gt;Guidelines for the provision and use of quantitative data in education research (German)&lt;/a&gt;
+- &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/foerderkriterien_editionen_literaturwissenschaft.pdf" target=_blank"&gt;Elegibility criteria for funding for scholarly editions in the literary studies (German)&lt;/a&gt;
+- Recommendations on &lt;a href="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_sprachkorpora.pdf" target=_blank"&gt;data standards and tools&lt;/a&gt; as well as &lt;a href="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf" target=_blank"&gt;legal aspects&lt;/a&gt; associated with language corpora (German)</help>
 		<text lang="en">Are there requirements regarding the data management from external entities (e.g. the scholarly/scientific community)?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Beispiele für fachspezifische Empfehlungen und Richtlinien sind: 
 
-- &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_biodiversitaetsforschung.pdf&quot; target=_blank&quot;&gt;Richtlinien zum Umgang mit Forschungsdaten in der Biodiversitätsforschung&lt;/a&gt;
-- Empfehlungen zur &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_bildungsforschung.pdf&quot; target=_blank&quot;&gt;Bereitstellung und Nutzung quantitativer Daten in der Bildungsforschung&lt;/a&gt;
-- &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/foerderkriterien_editionen_literaturwissenschaft.pdf&quot; target=_blank&quot;&gt;Förderkriterien für wissenschaftliche Editionen in der Literaturwissenschaft&lt;/a&gt;
+- &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_biodiversitaetsforschung.pdf" target=_blank"&gt;Richtlinien zum Umgang mit Forschungsdaten in der Biodiversitätsforschung&lt;/a&gt;
+- Empfehlungen zur &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/richtlinien_forschungsdaten_bildungsforschung.pdf" target=_blank"&gt;Bereitstellung und Nutzung quantitativer Daten in der Bildungsforschung&lt;/a&gt;
+- &lt;a href="http://www.dfg.de/download/pdf/foerderung/antragstellung/forschungsdaten/foerderkriterien_editionen_literaturwissenschaft.pdf" target=_blank"&gt;Förderkriterien für wissenschaftliche Editionen in der Literaturwissenschaft&lt;/a&gt;
 - Empfehlungen zu 
-- &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_sprachkorpora.pdf&quot; target=_blank&quot;&gt;datentechnischen Standards und Tools&lt;/a&gt; sowie zu 
-- &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=_blank&quot;&gt;rechtlichen Fragen&lt;/a&gt; bei der Erhebung von Sprachkorpora</help>
+- &lt;a href="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_sprachkorpora.pdf" target=_blank"&gt;datentechnischen Standards und Tools&lt;/a&gt; sowie zu 
+- &lt;a href="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf" target=_blank"&gt;rechtlichen Fragen&lt;/a&gt; bei der Erhebung von Sprachkorpora</help>
 		<text lang="de">Gibt es von externen Stellen (z. B. von der Fachcommunity) Anforderungen an das Datenmanagement, die beachtet werden müssen?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>yesno</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_requirements_options"/>
 		</optionsets>
@@ -541,6 +1195,7 @@
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/requirements"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<title lang="en">Which other requirements</title>
@@ -561,21 +1216,27 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/requirements"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/requirements/other-requirements-requiremants_and_regulations"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en">Please briefly outline them and refer to more detailed sources of information if necessary. Please also indicate, if the rules / guidelines are mandatory or optional.</help>
 		<text lang="en">Which are these additional requirements regarding data management?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bitte skizzieren Sie sie kurz und verweisen Sie ggf. auf weiterführende Informationen. Geben Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</help>
 		<text lang="de">Welche Anforderungen an das Datenmanagement sind dies?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions>
 			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/additional_rdm_policy"/>
@@ -589,21 +1250,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/additional_rdm_policy/regulations"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/requirements/other-requirements-requiremants_and_regulations"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en"/>
 		<text lang="en">What is regulated in the requirements?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Was wird in den Anforderungen geregelt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/other_requirements_options"/>
 		</optionsets>
@@ -616,6 +1283,7 @@
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/requirements"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<title lang="en">Institutional requirements</title>
@@ -636,22 +1304,28 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/rdm_policy"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/requirements/other-requirements-rdm_policy"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en">More and more universities and scientific institutions adopt research data management policies. These contain, among other things, recommendations and / or demands concerning the handling of research data by researchers of the institution. 
- &lt;a href=&quot;https://data.uni-bielefeld.de/en/policy&quot; target=_blank&quot;&gt;Principles and guidelines on handling research data at Bielefeld University&lt;/a&gt; or the &lt;a href=&quot;http://www.uni-goettingen.de/en/488918.html&quot; target=_blank&quot;&gt;Research data policy of the Georg-August University Goettingen&lt;/a&gt;.</help>
+ &lt;a href="https://data.uni-bielefeld.de/en/policy" target=_blank"&gt;Principles and guidelines on handling research data at Bielefeld University&lt;/a&gt; or the &lt;a href="http://www.uni-goettingen.de/en/488918.html" target=_blank"&gt;Research data policy of the Georg-August University Goettingen&lt;/a&gt;.</help>
 		<text lang="en">Does your institution have rules or guidelines for the handling of research data? If yes, please briefly outline them and refer to more detailed sources of information if necessary. Please also indicate, if the rules / guidelines are mandatory or optional.</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Immer mehr Hochschulen und wissenschaftliche Einrichtungen verabschieden Leitlinien oder Richtlinien (oft auch als „Policies“ bezeichnet) zum Forschungsdatenmanagement. Diese enthalten unter anderem Empfehlungen und/oder Vorgaben zum Umgang mit Forschungsdaten, die die Wissenschaftlerinnen und Wissenschaftler der Einrichtung beachten sollten oder müssen (je nach Grad der Verbindlichkeit). Beispiele für solche Richtlinien sind die &lt;a href=&quot;https://data.uni-bielefeld.de/de/policy&quot; target=_blank&quot;&gt;Grundsätze zu Forschungsdaten&lt;/a&gt; der Universität Bielefeld oder die &lt;a href=&quot;http://www.uni-goettingen.de/de/01-juli-2014-forschungsdaten-leitlinie-der-universitaet-goettingen-einschl-umg/488918.html&quot; target=_blank&quot;&gt;Leitlinien zum Umgang mit Forschungsdaten&lt;/a&gt; der Georg-August-Universität Göttingen.</help>
+		<help lang="de">Immer mehr Hochschulen und wissenschaftliche Einrichtungen verabschieden Leitlinien oder Richtlinien (oft auch als „Policies“ bezeichnet) zum Forschungsdatenmanagement. Diese enthalten unter anderem Empfehlungen und/oder Vorgaben zum Umgang mit Forschungsdaten, die die Wissenschaftlerinnen und Wissenschaftler der Einrichtung beachten sollten oder müssen (je nach Grad der Verbindlichkeit). Beispiele für solche Richtlinien sind die &lt;a href="https://data.uni-bielefeld.de/de/policy" target=_blank"&gt;Grundsätze zu Forschungsdaten&lt;/a&gt; der Universität Bielefeld oder die &lt;a href="http://www.uni-goettingen.de/de/01-juli-2014-forschungsdaten-leitlinie-der-universitaet-goettingen-einschl-umg/488918.html" target=_blank"&gt;Leitlinien zum Umgang mit Forschungsdaten&lt;/a&gt; der Georg-August-Universität Göttingen.</help>
 		<text lang="de">Gibt es an Ihrer Einrichtung Regeln oder Richtlinien zum Umgang mit den im Projekt erhobenen Forschungsdaten? Wenn ja, skizzieren Sie diese kurz und verweisen Sie ggf. auf weiterführende Informationen. Geben Sie bitte auch an, welchen Grad an Verbindlichkeit sie haben.</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>checkbox</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmo.publisso.de/terms4life/options/institutional_rules"/>
 		</optionsets>
@@ -674,6 +1348,7 @@
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/exposures"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<title lang="en">Exposures?</title>
@@ -694,21 +1369,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/exposures/yesno"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/exposures/exposures_yesno"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en">The aim of this and the following questions in this section is to document known conditions in, on and/or around the barn being researched that may, or do, affect the measurements.</help>
 		<text lang="en">Are there pre-existing exposures at the facilities that have to be considered?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Ziel dieser und der folgenden Fragen in diesem Abschnitt ist die Dokumentation von bekannten Gegebenheiten in, am und/oder um den zu erforschenden Stall, die die Messungen beeinträchtigen können, oder es sogar tun.</help>
 		<text lang="de">Gibt es an den Versuchsstandorten Vorbelastungen, die zu beachten sind?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>yesno</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -719,6 +1400,7 @@
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/exposures"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<title lang="en">Handling of exposures</title>
@@ -741,21 +1423,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/exposures/which"/>
 		<questionset dc:uri="http://example.com/terms/questions/emimin/exposures/which_exposures"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en"/>
 		<text lang="en">Which exposures are there?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Welche Vorbelastungen sind das?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -767,21 +1455,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/exposures/handling"/>
 		<questionset dc:uri="http://example.com/terms/questions/emimin/exposures/which_exposures"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en"/>
 		<text lang="en">How is this handled?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wie wird damit umgegangen?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -792,6 +1486,7 @@
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/exposures"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<title lang="en">Chemicals?</title>
@@ -812,25 +1507,31 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/exposures/chemicals/yesno"/>
 		<questionset dc:uri="http://example.com/terms/questions/emimin/exposures/chemical_question"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en">Chemicals may be in place (not exhaustive):
 - Detergent
 - Biocides</help>
 		<text lang="en">Are chemicals or other substances used at the test sites, e.g. for pest control?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Chemikalien können an der Stelle sein (nicht abschliessend):
 - Reinigungsmittel
 - Biozide</help>
 		<text lang="de">Werden an den Versuchsstandorten Chemikalien oder andere Stoffe z.B. zur Schädlingsbekämpfung eingesetzt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>yesno</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -841,6 +1542,7 @@
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/exposures"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>3</order>
 		<title lang="en">Handling of chemicals</title>
@@ -863,21 +1565,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/exposures/chemicals/which"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/exposures/chemicals_which_and_how?"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en"/>
 		<text lang="en">What substances are these?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Welche Stoffe sind das?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -889,21 +1597,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/exposures/chemicals/yesno"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/exposures/chemicals_which_and_how?"/>
 		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en"/>
 		<text lang="en">Do these substances have effects on emission measurements?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Haben diese Stoffe Auswirkungen auf Emissionsmessungen?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>yesno</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -914,6 +1628,7 @@
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/exposures"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>4</order>
 		<title lang="en">Handling with chemical effects</title>
@@ -936,21 +1651,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/exposures/chemicals/handling"/>
 		<questionset dc:uri="http://example.com/terms/questions/emimin/exposures/effect_handling"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en"/>
 		<text lang="en">How is this handled?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wie wird damit umgegangen?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -961,6 +1682,7 @@
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/exposures"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>5</order>
 		<title lang="en">Other effects?</title>
@@ -981,21 +1703,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/exposures/other_factors/yesno"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/exposures/other_effects_question"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en">This question serves to query all other circumstances that (may) have an influence on the measurements. It is advisable to understand the question as comprehensively as possible.</help>
 		<text lang="en">Are there any other influencing factors (e.g. operating procedures or pest infestation, which could potentially affect measured values) at the test site that must be taken into account?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Diese Frage dient dazu, alle weiteren Gegebenheiten abzufragen, die einen Einfluss auf die Messungen haben (können). Es empfiehlt sich, die Frage möglichst umfassend zu verstehen.</help>
 		<text lang="de">Gibt es sonstige Einflussfaktoren (z.B. Betriebsabläufe oder Schädlingsbefall, welche potenziell Messwerte beeinträchtigen können) an der Versuchsstandorten, die zu beachten sind?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>yesno</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1006,6 +1734,7 @@
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/exposures"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>6</order>
 		<title lang="en">Handling of other influencing factors</title>
@@ -1028,21 +1757,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/exposures/other_factors/which"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/exposures/influencing_factors_handling"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en">Here, all circumstances should be named that do not relate to chemicals but (can) have a direct or indirect influence on the measurements.</help>
 		<text lang="en">Which factors are there?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Hier sollten alle Gegebenheiten benannt werden, die sich nicht auf Chemikalien beziehen, aber einen direkten oder indirekten Einfluss auf die Messungen haben (können).</help>
 		<text lang="de">Welche Faktoren sind das?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1054,21 +1789,27 @@
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/exposures/other_factors/handling"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/exposures/influencing_factors_handling"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en"/>
 		<text lang="en">How is this handled?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wie wird damit umgegangen?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1089,6 +1830,7 @@
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/technical-classification"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<title lang="en">Time frame</title>
@@ -1109,21 +1851,27 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_collection_start"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/technical-classification/time_frame-dates"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en"/>
 		<text lang="en">When does data collection or creation start?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wann beginnt die Erhebung bzw. Erstellung der Daten?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>date</widget_type>
 		<value_type>datetime</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1135,21 +1883,27 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_collection_end"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/technical-classification/time_frame-dates"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en"/>
 		<text lang="en">When does data collection or creation end?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wann endet die Erhebung bzw. Erstellung der Daten?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>date</widget_type>
 		<value_type>datetime</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1161,21 +1915,27 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_cleansing_start"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/technical-classification/time_frame-dates"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>3</order>
 		<help lang="en"/>
 		<text lang="en">When does data cleansing / data preparation start?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wann beginnt die Datenbereinigung / -aufbereitung?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1187,21 +1947,27 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_cleansing_end"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/technical-classification/time_frame-dates"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>4</order>
 		<help lang="en"/>
 		<text lang="en">When does data cleansing / data preparation end?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wann endet die Datenbereinigung / -aufbereitung?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1213,21 +1979,27 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_analysis_start"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/technical-classification/time_frame-dates"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>5</order>
 		<help lang="en"/>
 		<text lang="en">When does data analysis start?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wann beginnt die Datenanalyse?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1239,21 +2011,27 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_analysis_end"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/technical-classification/time_frame-dates"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>6</order>
 		<help lang="en"/>
 		<text lang="en">When does data analysis end?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wann endet die Datenanalyse?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1264,6 +2042,7 @@
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/technical-classification"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>12</order>
 		<title lang="en">Data volume</title>
@@ -1284,21 +2063,27 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/size/volume"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/technical-classification/data-volume"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en"/>
 		<text lang="en">What is the actual or expected size of the dataset?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Was ist die tatsächliche oder erwartete Größe des Datensatzes?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_size_options"/>
 		</optionsets>
@@ -1312,21 +2097,27 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/rate"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/technical-classification/data-volume"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en">Optional. This is only of concern if the data production rate reaches TB scale.</help>
 		<text lang="en">How much data is produced per year?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Optional. Dies ist nur relevant, wenn das Wachstum die TB-Größenordnung erreicht.</help>
 		<text lang="de">Wie hoch ist die erwartete Erzeugungsrate der Daten pro Jahr?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>integer</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1337,6 +2128,7 @@
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/technical-classification"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>13</order>
 		<title lang="en">Data formats</title>
@@ -1357,21 +2149,27 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/format"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/technical-classification/data-formats"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>4</order>
-		<help lang="en">When choosing a data format, one should consider the consequences for collaborative use, long-term preservation as well as re-use. It is advisable to prefer formats that are standardised, open, non-proprietary and well-established in the respective scholarly community. More criteria and detailed explanations can be found e.g. in the &lt;a href=&quot;https://escience.aip.de/wissgrid/publikationen/Leitfaden_Data-Management-WissGrid.pdf&quot; target=_blank&quot;&gt;WissGrid-Leitfaden, pp. 22 f.&lt;/a&gt;).</help>
+		<help lang="en">When choosing a data format, one should consider the consequences for collaborative use, long-term preservation as well as re-use. It is advisable to prefer formats that are standardised, open, non-proprietary and well-established in the respective scholarly community. More criteria and detailed explanations can be found e.g. in the &lt;a href="http://www.wissgrid.de/publikationen/Leitfaden_Data-Management-WissGrid.pdf" target=_blank"&gt;WissGrid-Leitfaden, pp. 22 f.&lt;/a&gt;).</help>
 		<text lang="en">Which file formats are used?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Bei der Wahl des Dateiformates sollten auch die Konsequenzen für die kollaborative Nutzung, die Langzeitarchivierung sowie die Nachnutzung beachtet werden. Es empfiehlt sich, möglichst standardisierte, nicht-proprietäre und allgemein bzw. in der spezifischen Community verbreitete Formate zu nutzen. Weitere Kriterien sowie detaillierte Erläuterungen sind z.B. im &lt;a href=&quot;https://escience.aip.de/wissgrid/publikationen/Leitfaden_Data-Management-WissGrid.pdf&quot; target=_blank&quot;&gt;WissGrid-Leitfaden, S. 22 f.&lt;/a&gt;) zu finden.</help>
+		<help lang="de">Bei der Wahl des Dateiformates sollten auch die Konsequenzen für die kollaborative Nutzung, die Langzeitarchivierung sowie die Nachnutzung beachtet werden. Es empfiehlt sich, möglichst standardisierte, nicht-proprietäre und allgemein bzw. in der spezifischen Community verbreitete Formate zu nutzen. Weitere Kriterien sowie detaillierte Erläuterungen sind z.B. im &lt;a href="http://www.wissgrid.de/publikationen/Leitfaden_Data-Management-WissGrid.pdf" target=_blank"&gt;WissGrid-Leitfaden, S. 22 f.&lt;/a&gt;) zu finden.</help>
 		<text lang="de">In welchen Formaten liegen die Daten vor?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1382,6 +2180,7 @@
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/technical-classification"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>14</order>
 		<title lang="en">Data documentation</title>
@@ -1402,22 +2201,28 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creation_methods"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/technical-classification/data-tools"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en">This information is necessary to be able to reconstruct the process by which the data was generated. It is also a prerequisite to judge the objectivity, reliability and validity of the dataset.  
 For reproducible data, it is also required to re-generate the data if need be.</help>
 		<text lang="en">Which tools, software, technologies or processes are used to generate or collect the data?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Diese Informationen sind für alle Arten von Daten relevant, um ihre Genese nachvollziehen zu können. Bei reproduzierbaren Daten kommt ein weiterer Aspekt hinzu. Diese müssen nicht notwendigerweise aufbewahrt werden - allerdings müssen alle Geräte, Software und auch Informationen über die Vorgehensweise erhalten bleiben, die notwendig sind, um die Daten erneut erstellen zu können.</help>
 		<text lang="de">Welche Instrumente, Software, Technologien oder Verfahren werden zur Erzeugung oder Erfassung der Daten genutzt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1429,23 +2234,29 @@ For reproducible data, it is also required to re-generate the data if need be.</
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_technology"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/technical-classification/data-tools"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en">To be able to re-use data (e.g. to replicate studies, for meta analysis or to solve new research questions), along with the data the software, equipment and knowledge about special methods to use the data are required . 
 Just as with the formats, the recommendation is: the more standardised, open and established, the better for re-use.</help>
 		<text lang="en">Which software, processes or technologies are necessary to use the data?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Um Daten nachnutzen zu können, bspw. für die Replikation von Studien, Metaanalysen oder die Beantwortung neuer Forschungsfragen, werden neben den Daten selbst auch die Software, Geräte etc. und das Wissen über spezielle Verfahren zur Nutzung benötigt.
 Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablierter diese sind, desto einfacher ist i.d.R. eine Nachnutzung möglich.</help>
 		<text lang="de">Welche Software, Verfahren oder Technologien sind notwendig, um die Daten zu nutzen?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1457,21 +2268,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/software_documentation"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/technical-classification/data-tools"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en"/>
 		<text lang="en">Is documentation about relevant software needed to use the data?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wird die Dokumentation von ggf. zur Nutzung notwendiger Software benötigt, um die Daten zu nutzen?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>yesno</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1482,6 +2299,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/technical-classification"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>15</order>
 		<title lang="en">Data reuse</title>
@@ -1502,21 +2320,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/dataset/data-reuse/data-reuse-yesno"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/technical-classification/data-data-reuse"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en"/>
 		<text lang="en">Will be data reused which already exists anywhere?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Werden Daten nachgenutzt, die bereits anderweitig vorhanden sind?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1528,21 +2352,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/dataset/data-reuse/data-reuse-which"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/technical-classification/data-data-reuse"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en"/>
 		<text lang="en">If yes: Which data is this?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wenn ja: Um was für Daten handelt es sich?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1554,21 +2384,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/dataset/data-reuse/reuse-location"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/technical-classification/data-data-reuse"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en"/>
 		<text lang="en">If yes: What is the source of the data?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wenn ja: Woher stammen diese Daten?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1580,21 +2416,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/dataset/data-reuse/data-reuse-withpid"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/technical-classification/data-data-reuse"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>3</order>
 		<help lang="en"/>
 		<text lang="en">If yes: Is this data available via a PID or URL?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wenn ja: Sind diese Daten z.B. über einen PID oder eine URL verfügbar?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1615,6 +2457,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<title lang="en">Usage scenarios</title>
@@ -1635,21 +2478,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_description"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/scenarios-usage"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en"/>
 		<text lang="en">How / for what purpose will this dataset be used during the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wozu / wie wird dieser Datensatz während des Projektes genutzt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1661,21 +2510,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_frequency"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/scenarios-usage"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>3</order>
 		<help lang="en"/>
 		<text lang="en">How often will this dataset be used?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wie häufig wird dieser Datensatz genutzt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1687,21 +2542,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_infrastructure"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/scenarios-usage"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>4</order>
 		<help lang="en"/>
 		<text lang="en">To what extent will infrastructure resources be required (e.g. CPU hours, bandwidth, storage space... etc.).</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">In welchem Umfang werden Infrastrukturressourcen benötigt (CPU-Stunden, Bandbreite, Speicherplatz etc.)?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/infrastructure_resources"/>
 		</optionsets>
@@ -1715,21 +2576,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_support"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/scenarios-usage"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>5</order>
 		<help lang="en"/>
 		<text lang="en">Are there actual or potential usage scenarios that could benefit from support by a data management or IT expert, or that even require such support?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Gibt es beabsichtigte (ggf. auch potentielle) Nutzungsszenarien, für die die Unterstützung durch Datenmanagement- oder IT-ExpertInnen sinnvoll oder notwendig ist?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/yes_with_text_no"/>
 		</optionsets>
@@ -1742,6 +2609,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>1</order>
 		<title lang="en">Data storage and security</title>
@@ -1762,21 +2630,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/dataset/storage/location"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/data-storage-and-security"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en"/>
 		<text lang="en">Where is the dataset stored during the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wo wird der Datensatz während des Projektes gespeichert?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1788,21 +2662,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/dataset/storage/authorized-user"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/data-storage-and-security"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en"/>
 		<text lang="en">Who has the permission to access the data?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wer darf auf die Daten zugreifen?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1813,6 +2693,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>2</order>
 		<title lang="en">Data backup</title>
@@ -1833,21 +2714,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backups"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/data-backup"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en">This question refers to backups while the data is being worked with. Questions of  long-term preservation will be adressed in the respective section.</help>
 		<text lang="en">How and how often will backups of the data be created?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Die Frage bezieht sich auf Backups während der Zeit, in denen mit den Daten gearbeitet wird. Fragen der Langzeitarchivierung werden gesondert im entsprechenden Abschnitt behandelt.</help>
 		<text lang="de">Wie und wie oft werden Backups der Daten erstellt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1859,21 +2746,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backup_responsible/name"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/data-backup"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>3</order>
 		<help lang="en">This question refers to backups while the data is being worked with. Questions of  long-term preservation will be adressed in the respective section.</help>
 		<text lang="en">Who is responsible for the backups?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Die Frage bezieht sich auf Backups während der Zeit, in denen mit den Daten gearbeitet wird. Fragen der Langzeitarchivierung werden gesondert im entsprechenden Abschnitt behandelt.</help>
 		<text lang="de">Wer ist verantwortlich für die Erstellung der Backups?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1885,21 +2778,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/security_measures"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/data-backup"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>4</order>
 		<help lang="en"/>
 		<text lang="en">Which measures or provisions are in place to ensure data security (e.g. protection against unauthorized access, data recovery, transfer of sensitive data)?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Welche Maßnahmen zur Gewährleistung der Datensicherheit werden getroffen (z. B. Schutz vor unbefugtem Zugriff, Datenwiederherstellung, Übertragung sensibler Daten)?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -1910,6 +2809,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>3</order>
 		<title lang="en">Open Data?</title>
@@ -1930,21 +2830,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/dataset/sharing/question"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/data-usage/open_data_question"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en">The question serves the purpose of determining whether data should be published at all. Of course it is clear that sensitive data must not be published. Which data should and should not be published is determined by the following questions.</help>
 		<text lang="en">Will this dataset be published or shared?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Die Frage dient dem Zweck, festzustellen, ob überhaupt Daten veröffentlicht werden sollen. Natürlich ist klar, dass sensible Daten nicht veröffentlicht werden dürfen. Welche Daten veröffentlich werden sollen und welche nicht, ergibt sich aus den folgenden Fragen.</help>
 		<text lang="de">Soll dieser Datensatz veröffentlicht oder geteilt werden?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>radio</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmo.publisso.de/terms4life/options/open_data_sharing_options"/>
 		</optionsets>
@@ -1957,6 +2863,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>4</order>
 		<title lang="en">Why is the data closed</title>
@@ -1979,21 +2886,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/explanation"/>
 		<questionset dc:uri="https://rdmo.publisso.de/terms4life/questions/emimin/data-usage/closed_data_why"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en"/>
 		<text lang="en">Please explain why the data will not be published. You should differentiate between legal and contractual reasons and voluntary restrictions.</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Begründen Sie bitte, warum die Daten nicht publiziert werden soll. Sie sollten dabei zwischen rechtlichen, vertraglichen Gründen und freiwilligen Einschränkungen unterscheiden.</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions>
 			<condition dc:uri="https://rdmo.publisso.de/terms4life/conditions/closed_data"/>
@@ -2006,6 +2919,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>32</order>
 		<title lang="en">Data sharing and re-use</title>
@@ -2028,21 +2942,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/conditions"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/data-sharing-and-re-use-publication"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>3</order>
 		<help lang="en"/>
 		<text lang="en">Under which terms of use or license will the dataset be published or shared?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Unter welchen Nutzungsbedingungen oder welcher Lizenz sollen die Daten veröffentlicht bzw. geteilt werden?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2054,21 +2974,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/dataset/sharing/published-data-parts"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/data-sharing-and-re-use-publication"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>3</order>
 		<help lang="en"/>
 		<text lang="en">Which data should be published?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Welche Daten sollen veröffentlicht werden?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2080,21 +3006,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/dataset/sharing/non-published-data-parts"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/data-sharing-and-re-use-publication"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>4</order>
 		<help lang="en"/>
 		<text lang="en">Which data should not be published?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Welche Daten sollen nicht veröffentlicht werden?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2106,21 +3038,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/dataset/sharing/why-parts"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/data-sharing-and-re-use-publication"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>5</order>
 		<help lang="en"/>
 		<text lang="en">Why should certain data not be published?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Warum werden bestimmte Daten nicht veröffentlicht?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2132,21 +3070,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_publication_date"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/data-sharing-and-re-use-publication"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>6</order>
 		<help lang="en"/>
 		<text lang="en">When will the data be published (if they are)?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wann werden die Daten veröffentlicht?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>datetime</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2157,6 +3101,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>53</order>
 		<title lang="en">Collaborative work</title>
@@ -2177,21 +3122,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/collaboration_yesno"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/collaborative-work-collaboration"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>6</order>
 		<help lang="en"/>
 		<text lang="en">Will the data be collaboratively used?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Werden die Daten kollaborativ genutzt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_collaboration_options"/>
 		</optionsets>
@@ -2205,21 +3156,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/collaboration_tools"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/collaborative-work-collaboration"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>7</order>
 		<help lang="en"/>
 		<text lang="en">Which platform / tools is / are used for collaboratively working on data and publications?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Welche Plattform, welche Werkzeuge werden zum kollaborativen Arbeiten an Daten und Publikationen genutzt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2231,21 +3188,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/collaboration_organisation"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/collaborative-work-collaboration"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>8</order>
 		<help lang="en"/>
 		<text lang="en">How is the collaborative work on the same files organised?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wie ist das kollaborative Arbeiten an denselben Dateien geregelt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2256,6 +3219,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>61</order>
 		<title lang="en">Quality assurance</title>
@@ -2276,21 +3240,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/quality_assurance"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/quality-assurance-dataset"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>7</order>
 		<help lang="en"/>
 		<text lang="en">Which measures of quality assurance are taken for this dataset?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Welche Maßnahmen zur Qualitätssicherung werden für diesen Datensatz ergriffen?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2301,6 +3271,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>70</order>
 		<title lang="en">Data management costs</title>
@@ -2321,21 +3292,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/creation/personnel"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/costs-dataset"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en">Please estimate the effort in person months.</help>
 		<text lang="en">What are the personnel costs for data management associated with the creation or acquisition of data in the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten.</help>
 		<text lang="de">Welcher Personalaufwand für das Datenmanagement entsteht im Rahmen der Erhebung, Erstellung oder Akquise der Daten im Projekt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2347,21 +3324,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/creation/non_personnel"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/costs-dataset"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en">Please estimate the effort in **Euro**.</help>
 		<text lang="en">What is the amount of non-personnel-costs for data management associated with the creation or acquisiton of data in the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bitte schätzen sie die Kosten in **Euro**.</help>
 		<text lang="de">Welche Sachkosten für das Datenmanagement entstehen im Rahmen der Erhebung, Erstellung oder Akquise der Daten im Projekt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2373,21 +3356,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/usage/personnel"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/costs-dataset"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>3</order>
 		<help lang="en">Please estimate the effort in person months.</help>
 		<text lang="en">What are the personnel costs for data management associated with the the usage of data in the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten.</help>
 		<text lang="de">Welcher Personalaufwand für das Datenmanagement entsteht im Zusammenhang mit der Nutzung der Daten im Projekt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2399,21 +3388,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/usage/non_personnel"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/costs-dataset"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>4</order>
 		<help lang="en">Please estimate the costs in  **Euro**.</help>
 		<text lang="en">What is the amount of non-personnel-costs for data management associated with the usage of data in the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bitte schätzen sie die Kosten in  **Euro**.</help>
 		<text lang="de">Welche Sachkosten für das Datenmanagement entstehen im Zusammenhang mit der Nutzung der Daten im Projekt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2425,21 +3420,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/storage/personnel"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/costs-dataset"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>5</order>
 		<help lang="en">Please estimate the effort in person months.</help>
 		<text lang="en">What are the personnel costs associated with data storage and data security in the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten.</help>
 		<text lang="de">Welcher Personalaufwand entsteht im Zusammenhang mit der Speicherung der Daten und Maßnahmen zur Datensicherheit während des Projektes?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2451,21 +3452,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/storage/non_personnel"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/data-usage/costs-dataset"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>6</order>
 		<help lang="en">Please estimate the costs in  **Euro**.</help>
 		<text lang="en">What is the amount of non-personnel costs associated with the storage of the data sets during the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bitte schätzen sie die Kosten in  **Euro**.</help>
 		<text lang="de">Welche Sachkosten entstehen im Zusammenhang mit der Speicherung der Datensätze während des Projektes?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2486,6 +3493,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>10</order>
 		<title lang="en">General legal issues</title>
@@ -2506,21 +3514,27 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/international_yesno"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics/general-legal-issues-international_yesno"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
-		<help lang="en">If you answer this question with &quot;Yes&quot;, please get in touch with the legal department or a respective contact person at your institution to clarify if this has consequences for the project and its data management and if yes, what consequences these are.</help>
+		<help lang="en">If you answer this question with "Yes", please get in touch with the legal department or a respective contact person at your institution to clarify if this has consequences for the project and its data management and if yes, what consequences these are.</help>
 		<text lang="en">Does the legal situation of different countries have to be considered?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Falls Sie diese Frage mit &quot;Ja&quot; beantworten, setzen Sie sich bitte mit der Rechtsabteilung bzw. einem/r entsprechenden Ansprechpartner/in an Ihrer Institution in Verbindung, um zu klären, ob sich daraus Konsequenzen für Ihr Projekt ergeben und wenn ja, welche dies sind.</help>
+		<help lang="de">Falls Sie diese Frage mit "Ja" beantworten, setzen Sie sich bitte mit der Rechtsabteilung bzw. einem/r entsprechenden Ansprechpartner/in an Ihrer Institution in Verbindung, um zu klären, ob sich daraus Konsequenzen für Ihr Projekt ergeben und wenn ja, welche dies sind.</help>
 		<text lang="de">Muss die rechtliche Situation verschiedener Länder berücksichtigt werden?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>yesno</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2531,6 +3545,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>21</order>
 		<title lang="en">Personal data</title>
@@ -2551,45 +3566,51 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data_yesno/yesno"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics/sensitive-data-personal_data_yesno"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en">European Data Protection Law may apply.
 
-The German Federal Data Protection Act defines personal data as „any information concerning the personal or material circumstances of an identified or identifiable individual (the data subject)” &lt;a href=&quot;https://www.gesetze-im-internet.de/bdsg_1990/__3.html&quot; target=_blank&quot;&gt;(BDSG, §3 Abs. 1)&lt;/a&gt;).  
+The German Federal Data Protection Act defines personal data as „any information concerning the personal or material circumstances of an identified or identifiable individual (the data subject)” &lt;a href="https://www.gesetze-im-internet.de/bdsg_1990/__3.html" target=_blank"&gt;(BDSG, §3 Abs. 1)&lt;/a&gt;).  
   
 A person is “identified” when it is obvious whom the data is associated with. A person is “identifiable” when it is possible to find out which person the data refers to with additional information (See Häder 2009, p. 7).   
   
 The handling of personal information is regulated by law. More information (in German only) can be found in the following publications:   
 
-* &lt;a href=&quot;http://www.ratswd.de/download/RatSWD_WP_2009/RatSWD_WP_90.pdf&quot; target=_blank&quot;&gt;Michael Häder (2009): Der Datenschutz in den Sozialwissenschaften. RatSWD Working Paper No. 90.&lt;/a&gt;   
+* &lt;a href="http://www.ratswd.de/download/RatSWD_WP_2009/RatSWD_WP_90.pdf" target=_blank"&gt;Michael Häder (2009): Der Datenschutz in den Sozialwissenschaften. RatSWD Working Paper No. 90.&lt;/a&gt;   
 
-* &lt;a href=&quot;http://www.gesis.org/fileadmin/upload/forschung/publikationen/gesis_reihen/gesis_methodenberichte/2012/TechnicalReport_2012-07.pdf&quot; target=_blank&quot;&gt;Uwe Jensen (2012): Leitlinien zum Management von Forschungsdaten. Sozialwissenschaftliche Umfragedaten. GESIS Technical Report 2012|07.&lt;/a&gt; (esp. pp. 13 ff)     
+* &lt;a href="http://www.gesis.org/fileadmin/upload/forschung/publikationen/gesis_reihen/gesis_methodenberichte/2012/TechnicalReport_2012-07.pdf" target=_blank"&gt;Uwe Jensen (2012): Leitlinien zum Management von Forschungsdaten. Sozialwissenschaftliche Umfragedaten. GESIS Technical Report 2012|07.&lt;/a&gt; (esp. pp. 13 ff)     
 
-* &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=_blank&quot;&gt;Handreichung: Informationen zu rechtlichen Aspekten bei der Handhabung von Sprachkorpora.&lt;/a&gt; (esp. part 1.1 and part 2.2)</help>
+* &lt;a href="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf" target=_blank"&gt;Handreichung: Informationen zu rechtlichen Aspekten bei der Handhabung von Sprachkorpora.&lt;/a&gt; (esp. part 1.1 and part 2.2)</help>
 		<text lang="en">Does this dataset contain personal data?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Europäisches Recht kann Geltung haben.
 
-Das Bundesdatenschutzgesetz definiert personenbezogene Daten als „Einzelangaben über persönliche oder sachliche Verhältnisse einer bestimmten oder bestimmbaren natürlichen Person“ &lt;a href=&quot;https://www.gesetze-im-internet.de/bdsg_1990/__3.html&quot; target=_blank&quot;&gt;(BDSG, §3 Abs. 1)&lt;/a&gt;
+Das Bundesdatenschutzgesetz definiert personenbezogene Daten als „Einzelangaben über persönliche oder sachliche Verhältnisse einer bestimmten oder bestimmbaren natürlichen Person“ &lt;a href="https://www.gesetze-im-internet.de/bdsg_1990/__3.html" target=_blank"&gt;(BDSG, §3 Abs. 1)&lt;/a&gt;
   
 Dabei wird von einer „bestimmten Person“ gesprochen, wenn eindeutig erkennbar ist, zu welcher Person die Daten gehören. Um eine „bestimmbare Person“ handelt es sich, wenn mittels Zusatzinformationen ermittelt werden kann, um welche Person es geht. (Vgl. Häder 2009, S. 7).  
  
 Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar auf bestimmte Disziplinen / Datentypen fokussiert, aber übertragbar) zum Thema bieten bspw.:  
 
-* &lt;a href=&quot;http://www.ratswd.de/download/RatSWD_WP_2009/RatSWD_WP_90.pdf&quot; target=_blank&quot;&gt;Michael Häder (2009): Der Datenschutz in den Sozialwissenschaften. RatSWD Working Paper No. 90.&lt;/a&gt;
+* &lt;a href="http://www.ratswd.de/download/RatSWD_WP_2009/RatSWD_WP_90.pdf" target=_blank"&gt;Michael Häder (2009): Der Datenschutz in den Sozialwissenschaften. RatSWD Working Paper No. 90.&lt;/a&gt;
  
-* &lt;a href=&quot;http://www.gesis.org/fileadmin/upload/forschung/publikationen/gesis_reihen/gesis_methodenberichte/2012/TechnicalReport_2012-07.pdf&quot; target=_blank&quot;&gt;Uwe Jensen (2012): Leitlinien zum Management von Forschungsdaten. Sozialwissenschaftliche Umfragedaten. GESIS Technical Report 2012|07.&lt;/a&gt; (v.a. S. 13ff.)  
+* &lt;a href="http://www.gesis.org/fileadmin/upload/forschung/publikationen/gesis_reihen/gesis_methodenberichte/2012/TechnicalReport_2012-07.pdf" target=_blank"&gt;Uwe Jensen (2012): Leitlinien zum Management von Forschungsdaten. Sozialwissenschaftliche Umfragedaten. GESIS Technical Report 2012|07.&lt;/a&gt; (v.a. S. 13ff.)  
 
-* &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=_blank&quot;&gt;Handreichung: Informationen zu rechtlichen Aspekten bei der Handhabung von Sprachkorpora.&lt;/a&gt; (v.a.  Teil 1.1 und Teil 2.2)</help>
+* &lt;a href="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf" target=_blank"&gt;Handreichung: Informationen zu rechtlichen Aspekten bei der Handhabung von Sprachkorpora.&lt;/a&gt; (v.a.  Teil 1.1 und Teil 2.2)</help>
 		<text lang="de">Enthält dieser Datensatz personenbezogene Daten?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>yesno</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2600,6 +3621,7 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>22</order>
 		<title lang="en">Data protection laws</title>
@@ -2620,24 +3642,30 @@ Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar a
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/sensitive_data/privacy_law"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics/sensitive-data-privacy_law"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
-		<help lang="en">It depends on the kind of institution which law applies. Federal public bodies and private institutions are subject to the Federal Data Protection Act (BDSG). To public bodies of the states (e.g. universities), the respective State Data Protection Acts apply. (See &lt;a href=&quot;http://www.ratswd.de/download/RatSWD_WP_2009/RatSWD_WP_90.pdf&quot; target=&quot;_blank&quot;&gt;Michael Häder (2009): Der Datenschutz in den Sozialwissenschaften. RatSWD Working Paper No. 90&lt;/a&gt;, pp. 6 f.).
+		<help lang="en">It depends on the kind of institution which law applies. Federal public bodies and private institutions are subject to the Federal Data Protection Act (BDSG). To public bodies of the states (e.g. universities), the respective State Data Protection Acts apply. (See &lt;a href="http://www.ratswd.de/download/RatSWD_WP_2009/RatSWD_WP_90.pdf" target="_blank"&gt;Michael Häder (2009): Der Datenschutz in den Sozialwissenschaften. RatSWD Working Paper No. 90&lt;/a&gt;, pp. 6 f.).
 &lt;/br&gt;&lt;/br&gt;
-In some areas, field-specific laws apply. These override the Federal and State Data Protection Acts. Examples are the Social Security Act X for medical data and the Federal Statistics Act for census data. (See &lt;a href=&quot;http://www.gesis.org/fileadmin/upload/forschung/publikationen/gesis_reihen/gesis_methodenberichte/2012/TechnicalReport_2012-07.pdf&quot; target=&quot;_blank&quot;&gt;Uwe Jensen (2012): Leitlinien zum Management von Forschungsdaten. Sozialwissenschaftliche Umfragedaten. 2012.&lt;/a&gt; p. 14.)</help>
+In some areas, field-specific laws apply. These override the Federal and State Data Protection Acts. Examples are the Social Security Act X for medical data and the Federal Statistics Act for census data. (See &lt;a href="http://www.gesis.org/fileadmin/upload/forschung/publikationen/gesis_reihen/gesis_methodenberichte/2012/TechnicalReport_2012-07.pdf" target="_blank"&gt;Uwe Jensen (2012): Leitlinien zum Management von Forschungsdaten. Sozialwissenschaftliche Umfragedaten. 2012.&lt;/a&gt; p. 14.)</help>
 		<text lang="en">Which law applies with respect to the aspects of data protection in the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
-		<help lang="de">Welches Gesetz gilt, hängt von der Art der Einrichtung ab. Für öffentliche Stellen sowie private Unternehmen ist das Bundesdatenschutzgesetz (BDSG) maßgeblich, für öffentlichen Stellen der Länder (z.B. Universitäten) das entsprechende Landesdatenschutzgesetz. (Vgl. &lt;a href=&quot;http://www.ratswd.de/download/RatSWD_WP_2009/RatSWD_WP_90.pdf&quot; target=&quot;_blank&quot;&gt;Michael Häder (2009): Der Datenschutz in den Sozialwissenschaften. RatSWD Working Paper No. 90&lt;/a&gt;, S. 6 f.). &lt;/br&gt;&lt;/br&gt;
-In bestimmten Bereichen gelten bereichsspezifische Gesetze, die über dem Bundesdatenschutzgesetz bzw. den Landesdatenschutzgesetze stehen. Für medizinischen Daten ist bspw. das Zehnte Sozialgesetzbuch (SBG X) anwendbar, für Daten des Mikrozensus das Bundesstatistikgesetz (BStatG). (Vgl. &lt;a href=&quot;http://www.gesis.org/fileadmin/upload/forschung/publikationen/gesis_reihen/gesis_methodenberichte/2012/TechnicalReport_2012-07.pdf&quot; target=&quot;_blank&quot;&gt;Uwe Jensen (2012): Leitlinien zum Management von Forschungsdaten. Sozialwissenschaftliche Umfragedaten. 2012.&lt;/a&gt; S. 14.)</help>
+		<help lang="de">Welches Gesetz gilt, hängt von der Art der Einrichtung ab. Für öffentliche Stellen sowie private Unternehmen ist das Bundesdatenschutzgesetz (BDSG) maßgeblich, für öffentlichen Stellen der Länder (z.B. Universitäten) das entsprechende Landesdatenschutzgesetz. (Vgl. &lt;a href="http://www.ratswd.de/download/RatSWD_WP_2009/RatSWD_WP_90.pdf" target="_blank"&gt;Michael Häder (2009): Der Datenschutz in den Sozialwissenschaften. RatSWD Working Paper No. 90&lt;/a&gt;, S. 6 f.). &lt;/br&gt;&lt;/br&gt;
+In bestimmten Bereichen gelten bereichsspezifische Gesetze, die über dem Bundesdatenschutzgesetz bzw. den Landesdatenschutzgesetze stehen. Für medizinischen Daten ist bspw. das Zehnte Sozialgesetzbuch (SBG X) anwendbar, für Daten des Mikrozensus das Bundesstatistikgesetz (BStatG). (Vgl. &lt;a href="http://www.gesis.org/fileadmin/upload/forschung/publikationen/gesis_reihen/gesis_methodenberichte/2012/TechnicalReport_2012-07.pdf" target="_blank"&gt;Uwe Jensen (2012): Leitlinien zum Management von Forschungsdaten. Sozialwissenschaftliche Umfragedaten. 2012.&lt;/a&gt; S. 14.)</help>
 		<text lang="de">Welches Gesetz ist bezüglich der Fragen des Datenschutzes für das Projekt maßgeblich?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>checkbox</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws"/>
 		</optionsets>
@@ -2650,6 +3678,7 @@ In bestimmten Bereichen gelten bereichsspezifische Gesetze, die über dem Bundes
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>26</order>
 		<title lang="en">Sensitive data</title>
@@ -2670,21 +3699,27 @@ In bestimmten Bereichen gelten bereichsspezifische Gesetze, die über dem Bundes
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/other/yesno"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics/sensitive-data-other"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en">Examples are data that contain trade or business secrets or geoinformation on endangered species.</help>
 		<text lang="en">Does this dataset contain sensitive data other than personal data?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Beispiele hierfür sind etwa Daten, die Betriebs- oder Geschäftsgeheimnisse oder Ortsangaben zu bedrohten Tier- oder Pflanzenarten enthalten.</help>
 		<text lang="de">Enthält dieser Datensatz nicht-personenbezogene sensible Daten?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>yesno</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2696,21 +3731,27 @@ In bestimmten Bereichen gelten bereichsspezifische Gesetze, die über dem Bundes
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/other/description"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics/sensitive-data-other"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en"/>
 		<text lang="en">If yes, please describe the non-personal sensitive data used in the project.</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wenn ja, um welche nicht personenbezogenen sensiblen Daten handelt es sich?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions>
 			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/other_sensitive_data"/>
@@ -2723,6 +3764,7 @@ In bestimmten Bereichen gelten bereichsspezifische Gesetze, die über dem Bundes
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>27</order>
 		<title lang="en">Costs for anonymization</title>
@@ -2746,21 +3788,27 @@ In bestimmten Bereichen gelten bereichsspezifische Gesetze, die über dem Bundes
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/sensitive_data/anonymization/personnel"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics/sensitive-data-costs"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en">Please estimate the effort in person months.</help>
 		<text lang="en">What are the personnel costs associated with the anonymization of sensitive data in the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten.</help>
 		<text lang="de">Welcher Personalaufwand entsteht für die Anonymisierung von sensiblen Daten im Projekt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2772,21 +3820,27 @@ In bestimmten Bereichen gelten bereichsspezifische Gesetze, die über dem Bundes
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/sensitive_data/anonymization/non_personnel"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics/sensitive-data-costs"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en">Please estimate the costs in  **Euro**.</help>
 		<text lang="en">What is the amount of non-personnel-costs associated with the anonymization of sensitive data in the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bitte schätzen sie die Kosten in  **Euro**.</help>
 		<text lang="de">Welche Sachkosten entstehen im Zusammenhang mit der Anonymisierung von sensiblen Daten im Projekt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2797,6 +3851,7 @@ In bestimmten Bereichen gelten bereichsspezifische Gesetze, die über dem Bundes
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>30</order>
 		<title lang="en">Intellectual property rights production</title>
@@ -2817,6 +3872,7 @@ In bestimmten Bereichen gelten bereichsspezifische Gesetze, die über dem Bundes
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ipr/yesno"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics/intellectual-property-rights-yesno"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en">Data or software can be subject to intellectual or industrial property rights. Applicable laws differ broadly even within EU.
 
@@ -2837,6 +3893,7 @@ Finally, according to § 4 copyright also extents to collected editions and data
 
 Other relevant property rights can be trademarks, patents, utility models, plant variety rights protection, integrated circuit layout design protection, geographical indications or registered designs.</help>
 		<text lang="en">Does the project use and/or produce data that is protected by intellectual or industrial property rights?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Daten oder Software können Urheber- oder anderen Schutzrechten unterliegen. Die Rechtslage kann selbst in der EU von Land zu Land erheblich abweichen.
@@ -2860,14 +3917,18 @@ Bei einem „Datenbankwerk im Sinne des Gesetzes“ handelt es sich um ein „Sa
 
 Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmuster, Sortenschutz [bei Pflanzenzüchtungen], Halbleiterschutz, Marken, geographische Herkunftsangaben, eingetragene Designs oder geschäftliche Bezeichnungen sein.</help>
 		<text lang="de">Werden Daten genutzt und/oder erstellt, die durch Urheber- oder verwandte Schutzrechte geschützt sind?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>yesno</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -2878,6 +3939,7 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>31</order>
 		<title lang="en">Intellectual property rights use</title>
@@ -2900,21 +3962,27 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/copyrights"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics/intellectual-property-rights-dataset"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en"/>
 		<text lang="en">Does copyright law apply to this dataset?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Be- oder entstehen an diesem Datensatz Urheberrechte?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>checkbox</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_copyright_laws"/>
 		</optionsets>
@@ -2928,21 +3996,27 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/other_rights"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics/intellectual-property-rights-dataset"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en"/>
 		<text lang="en">Do other intellectual property rights apply to this dataset?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Be- oder entstehen an diesem Datensatz andere Schutzrechte?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>checkbox</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_other_rights"/>
 		</optionsets>
@@ -2955,6 +4029,7 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/ipr"/>
 		<section dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics"/>
+		<questionset/>
 		<is_collection>True</is_collection>
 		<order>34</order>
 		<title lang="en">Intellectual property rights costs</title>
@@ -2977,21 +4052,27 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/ipr/personnel"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics/intellectual-property-rights-costs"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en">Please estimate the effort in person months.</help>
 		<text lang="en">What are the personnel costs associated with intellectual property rights in the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten.</help>
 		<text lang="de">Welcher Personalaufwand entsteht im Zusammenhang mit Urheber- oder verwandten Schutzrechten im Projekt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>range</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -3003,21 +4084,27 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/ipr/non_personnel"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/legal-and-ethics/intellectual-property-rights-costs"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>3</order>
 		<help lang="en">Please estimate the costs in  **Euro**.</help>
 		<text lang="en">What is the amount of non-personnel-costs regarding intellectual property rights in the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bitte schätzen sie die Kosten in  **Euro**.</help>
 		<text lang="de">Welche Sachkosten entstehen im Zusammenhang mit Urheber- und verwandten Schutzrechten im Projekt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -3038,6 +4125,7 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.io/terms/questions/emimin/metadata-and-referencing"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>10</order>
 		<title lang="en">Metadata guidelines and documentation</title>
@@ -3058,21 +4146,27 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/dataset/metadata/guidelines-yesno"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/metadata-and-referencing/metadata-dataset"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en"/>
 		<text lang="en">Do you use the internal guidelines to organise the data unitarily?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Nutzen Sie die projektinternen Richtlinien zur einheitlichen Organisation der Daten? Wenn ja, wo sind diese festgehalten?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -3081,24 +4175,30 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<key>internal-guidelines-namespace</key>
 		<path>emimin/metadata-and-referencing/metadata-dataset/internal-guidelines-namespace</path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmp.publisso.de/terms4life/domain/project/dataset/metadata/guidelines-data"/>
+		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/dataset/metadata/guidelines-data"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/metadata-and-referencing/metadata-dataset"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en"/>
 		<text lang="en">Do you use the internal guidelines to name the data? If yes, please outline them shortly and link to a detailed dokumentation if available.</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Nutzen Sie projektinterne Richtlinien zur Benennung der Daten? Wenn ja, bitte skizzieren Sie sie kurz und verlinken Sie ggf. zu einer ausführlicheren Dokumentation.</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -3110,21 +4210,27 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/responsible_person/name"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/metadata-and-referencing/metadata-dataset"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en"/>
 		<text lang="en">Who is responsible for documenting the metadata and context information and for checking if they are correct and complete?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wer ist verantwortlich für die Dokumentation und Prüfung der Metadaten und Kontextinformationen auf Richtigkeit und Vollständigkeit?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -3136,21 +4242,27 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/scope"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/metadata-and-referencing/metadata-dataset"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>4</order>
 		<help lang="en"/>
 		<text lang="en">Which information is necessary for other parties  to understand the data (that is, to understand their collection or creation, analysis, and research results obtained on its basis) and to re-use it?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Welche Informationen sind für Außenstehende notwendig, um die Daten zu verstehen (d. h. ihre Erhebung bzw. Entstehung, Analyse sowie die auf ihrer Basis gewonnenen Forschungsergebnisse nachvollziehen) und nachnutzen zu können?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/mandatory_metadata_options"/>
 		</optionsets>
@@ -3163,6 +4275,7 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.io/terms/questions/emimin/metadata-and-referencing"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>12</order>
 		<title lang="en">Metadata costs</title>
@@ -3183,21 +4296,27 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/metadata/personnel"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/metadata-and-referencing/metadata-costs"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en">Please estimate the effort in person months.</help>
 		<text lang="en">What are the personnel costs associated with the the creation of metadata and context information in the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten.</help>
 		<text lang="de">Welcher Personalaufwand entsteht im Zusammenhang mit der Erstellung von Metadaten und Kontextinformation im Projekt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -3209,21 +4328,27 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/metadata/non_personnel"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/metadata-and-referencing/metadata-costs"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en">Please estimate the costs in  **Euro**.</help>
 		<text lang="en">What is the amount of non-personnel-costs associated with the creation of metadata and context information in the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bitte schätzen sie die Kosten in  **Euro**.</help>
 		<text lang="de">Welche Sachkosten entstehen im Zusammenhang mit der Erstellung von Metadaten und Kontextinformation im Projekt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -3244,6 +4369,7 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.igithub.io/terms/questions/emimin/storage-and-long-term-preseravtion"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>0</order>
 		<title lang="en">Selection for preservation</title>
@@ -3264,21 +4390,27 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/preservation/selection_criteria"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/storage-and-long-term-preseravtion/selection-criteria"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>0</order>
 		<help lang="en"/>
 		<text lang="en">What are the criteria / rules for the selection of the data to be archived (after the end of the project)?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Auf Basis welcher Kriterien / Regeln werden die Daten zur Archivierung (nach Projektende) ausgesucht?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -3290,21 +4422,27 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/preservation/responsible_person/name"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/storage-and-long-term-preseravtion/selection-criteria"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en"/>
 		<text lang="en">Who selects the data to be archived?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Durch wen erfolgt die Auswahl?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -3315,6 +4453,7 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.igithub.io/terms/questions/emimin/storage-and-long-term-preseravtion"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>11</order>
 		<title lang="en">Preservation scope</title>
@@ -3335,47 +4474,27 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/dataset/preservation/legal-bases-yesno"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/storage-and-long-term-preseravtion/long-term-preservation-datasets"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en"/>
 		<text lang="en">Are there any legal or comparable bases, which make long-term perservation of the research data beyond the database of KTBL mandatory?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Gibt es rechtliche oder vergleichbare Grundlagen, die eine langfristige Speicherung von zu erhebenden Daten über die Datenbank von KTBL hinaus zwingend erforderlich machen?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>yesno</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
-		<optionsets/>
-		<conditions/>
-	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/storage-and-long-term-preseravtion/long-term-preservation-datasets/purpose">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>purpose</key>
-		<path>emimin/storage-and-long-term-preseravtion/long-term-preservation-datasets/purpose</path>
-		<dc:comment/>
-		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/dataset/preservation/legal-bases"/>
-		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/storage-and-long-term-preseravtion/long-term-preservation-datasets"/>
-		<is_collection>True</is_collection>
-		<order>2</order>
-		<help lang="en"/>
-		<text lang="en">If yes: Which bases are this?</text>
-		<verbose_name lang="en"/>
-		<verbose_name_plural lang="en"/>
-		<help lang="de"/>
-		<text lang="de">Wenn ja: Welche Grundlagen sind das?</text>
-		<verbose_name lang="de"/>
-		<verbose_name_plural lang="de"/>
-		<widget_type>text</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -3387,21 +4506,59 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/dataset/preservation/affected-data"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/storage-and-long-term-preseravtion/long-term-preservation-datasets"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en"/>
 		<text lang="en">If yes: Which data is affected?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wenn ja: Welche Daten sind davon betroffen?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/storage-and-long-term-preseravtion/long-term-preservation-datasets/purpose">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>purpose</key>
+		<path>emimin/storage-and-long-term-preseravtion/long-term-preservation-datasets/purpose</path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.publisso.de/terms4life/domain/project/dataset/preservation/legal-bases"/>
+		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/storage-and-long-term-preseravtion/long-term-preservation-datasets"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<order>2</order>
+		<help lang="en"/>
+		<text lang="en">If yes: Which bases are this?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<verbose_name_plural lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wenn ja: Welche Grundlagen sind das?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -3413,21 +4570,27 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/storage-and-long-term-preseravtion/long-term-preservation-datasets"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>3</order>
 		<help lang="en"/>
 		<text lang="en">If data should be preserved in the institution: Where will the data be stored after the end of the project (inkluding metadata, dokumentation and relevant code or software)</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wenn Daten innerhalb der Einrichtung verbleiben sollen: Wo werden die Daten (einschließlich Metadaten, Dokumentation und ggf. relevantem Code bzw. relevanter Software) nach Projektende gespeichert bzw. archiviert?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets>
 			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options"/>
 		</optionsets>
@@ -3441,21 +4604,27 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/data_archiving_date"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/storage-and-long-term-preseravtion/long-term-preservation-datasets"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>10</order>
 		<help lang="en"/>
 		<text lang="en">By when will the data be archived?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wann werden die Daten archiviert?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>datetime</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -3466,6 +4635,7 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<dc:comment/>
 		<attribute/>
 		<section dc:uri="https://rdmorganiser.igithub.io/terms/questions/emimin/storage-and-long-term-preseravtion"/>
+		<questionset/>
 		<is_collection>False</is_collection>
 		<order>13</order>
 		<title lang="en">Preservation expense</title>
@@ -3486,21 +4656,27 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/preservation/personnel"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/storage-and-long-term-preseravtion/long-term-preservation-costs"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>1</order>
 		<help lang="en">Please estimate the effort in person months.</help>
 		<text lang="en">What are the personnel costs associated with long-term preservation for the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bitte schätzen sie den Aufwand in Personenmonaten.</help>
 		<text lang="de">Welcher Personalaufwand entsteht im Zusammenhang mit Langzeitarchivierung für dieses Projekt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -3512,21 +4688,27 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/preservation/non_personnel"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/storage-and-long-term-preseravtion/long-term-preservation-costs"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en">Please estimate the costs in **Euro**.</help>
 		<text lang="en">What is the amount of non-personnel-costs regarding long-term preservation for the project?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de">Bitte schätzen sie die Kosten in **Euro**.</help>
 		<text lang="de">Welche Sachkosten entstehen im Zusammenhang mit Langzeitarchivierung für dieses Projekt?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>float</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
@@ -3538,21 +4720,27 @@ Weitere relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Geb
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/preservation/cover_how"/>
 		<questionset dc:uri="https://rdmorganiser.github.io/terms/questions/emimin/storage-and-long-term-preseravtion/long-term-preservation-costs"/>
 		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
 		<order>2</order>
 		<help lang="en"/>
 		<text lang="en">How will the datamanagement costs of the project be covered?</text>
+		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<verbose_name_plural lang="en"/>
 		<help lang="de"/>
 		<text lang="de">Wie werden die Kosten für das Datenmanagement im Projekt aufgebracht?</text>
+		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<verbose_name_plural lang="de"/>
+		<default_option/>
+		<default_external_id/>
 		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
+		<width/>
 		<optionsets/>
 		<conditions/>
 	</question>
