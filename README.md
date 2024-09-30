@@ -68,7 +68,7 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 
 |Subject/Coverage     |Catalog                                                 |View|Last update|Creators   |
 |---------------------|--------------------------------------------------------|----|-----------|-----------|
-|All questions (long) |[catalog](rdmorganiser/questions/questions-rdmo.xml)    |    |2020-08|RDMO team      |
+|All questions (long) |[catalog](rdmorganiser/questions/questions-rdmo.xml)    |    |2024-09|RDMO team      |
 |All questions (short)|[catalog](rdmorganiser/questions/questions-fhpshort.xml)|    |2020-08|FHP / RDMO team|
 |DCC checklist        |[catalog](rdmorganiser/questions/questions-dcc.xml)     |    |2018-10|RDMO team      |
 |DFG checklist |[catalog](rdmorganiser/questions/questions-DFG-Checkliste.xml)|[view](rdmorganiser/views/view-dfg-checkliste.xml)|2023-11|RDMO team|
@@ -81,7 +81,7 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 |DMPonline            |          |[view](rdmorganiser/views/view-dmponline.xml)     |2019-01|RDMO team      |
 |DMPtool              |          |[view](rdmorganiser/views/view-dmptool.xml)       |2019-01|RDMO team      |
 |Horizon 2020         |          |[view](rdmorganiser/views/view-horizon2020.xml)   |2019-01|RDMO team      |
-|All variables (to check)|       |[view](rdmorganiser/views/view-variable_check.xml)|2022-12|RDMO team      |
+|All variables        |          |[view](rdmorganiser/views/view-variable_check.xml)|2022-12|RDMO team      |
 
 ## Other content provided by the user community
 
