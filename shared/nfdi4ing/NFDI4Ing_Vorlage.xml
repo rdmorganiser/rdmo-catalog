@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2024-09-13T15:04:39.717600+02:00" version="2.1.3">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2024-10-22T13:58:28.109712+02:00" version="2.2.1">
 	<catalog dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/v2">
 		<uri_prefix>https://rdmo.nfdi4ing.de/terms</uri_prefix>
 		<uri_path>NFDI4Ing_Vorlage/v2</uri_path>
@@ -32,7 +32,9 @@ The catalog makes use of the {more}-tag, available since release 2.1.0. Compared
 		<uri_path>NFDI4Ing_Vorlage/v2/introduction</uri_path>
 		<dc:comment/>
 		<title lang="en">Introduction</title>
+		<short_title lang="en"/>
 		<title lang="de">Einleitung</title>
+		<short_title lang="de"/>
 		<pages>
 			<page dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/v2/introduction/introduction" order="1"/>
 		</pages>
@@ -44,6 +46,7 @@ The catalog makes use of the {more}-tag, available since release 2.1.0. Compared
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<is_collection>True</is_collection>
 		<title lang="en">Please add a dataset to your plan</title>
+		<short_title lang="en"/>
 		<help lang="en">The present catalog is the [checklist published by the DFG](https://www.dfg.de/research_data/checklist) supplemented by engineering content. The questions from the DFG checklist must be taken into account when submitting an application and completing the project and should help you to structure your data management.
 
 During the interview, you will be asked several questions about the various aspects of data management.  Depending on your research project, you may work with different types of data, so it might be necessary to plan different measures for each. Therefore, create as many sets as it makes sense for your approach. 
@@ -57,6 +60,7 @@ A logical unit for your research data could be, for example, based on
 You must create at least one set.</help>
 		<verbose_name lang="en"/>
 		<title lang="de">Legen Sie ein Datenset an</title>
+		<short_title lang="de"/>
 		<help lang="de">Der vorliegende Fragenkatalog ist die von der [DFG herausgegebene Checkliste](https://www.dfg.de/forschungsdaten/checkliste) ergänzt um ingenieurwissenschaftliche Inhalte. Die Fragen aus der Checkliste der DFG müssen bei der Antragstellung und beim Projektabschluss berücksichtigt werden und sollen Ihnen helfen, Ihr Datenmanagement zu strukturieren. 
 
 Im Laufe des Interviews werden Ihnen Fragen zu den verschiedenen Aspekten des Datenmanagements gestellt. 
@@ -81,12 +85,28 @@ Sie müssen mindestens ein Set anlegen.</help>
 		<dc:comment>Short ID for a dataset, used as questionset attribute for dataset related questionsets.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>dataset</key>
+		<path>project/dataset</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>project</key>
+		<path>project</path>
+		<dc:comment/>
+		<parent/>
+	</attribute>
 	<section dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/v2/data_description">
 		<uri_prefix>https://rdmo.nfdi4ing.de/terms</uri_prefix>
 		<uri_path>NFDI4Ing_Vorlage/v2/data_description</uri_path>
 		<dc:comment/>
 		<title lang="en">Data description</title>
+		<short_title lang="en"/>
 		<title lang="de">Datennutzung</title>
+		<short_title lang="de"/>
 		<pages>
 			<page dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/v2/data_description/data_content" order="0"/>
 			<page dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/v2/data_description/technical_description" order="1"/>
@@ -99,9 +119,11 @@ Sie müssen mindestens ein Set anlegen.</help>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<is_collection>True</is_collection>
 		<title lang="en">Content data description</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Inhaltliche Datenbeschreibung</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -782,9 +804,11 @@ Der [NFDI4Ing Data Collections Explorer](https://data-collections.nfdi4ing.de/) 
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<is_collection>True</is_collection>
 		<title lang="en">Technical data description</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Technische Datenbeschreibung</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -1642,6 +1666,13 @@ Bei der Frage der Entstehung ist die erstmalige Erstellung von Daten gemeint, so
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/size"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/size">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>size</key>
+		<path>project/dataset/size</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
 	<optionset dc:uri="https://rdmo.nfdi4ing.de/terms/options/v2/NFDI_dataset_size">
 		<uri_prefix>https://rdmo.nfdi4ing.de/terms</uri_prefix>
 		<uri_path>v2/NFDI_dataset_size</uri_path>
@@ -1695,7 +1726,9 @@ Bei der Frage der Entstehung ist die erstmalige Erstellung von Daten gemeint, so
 		<uri_path>NFDI4Ing_Vorlage/v2/doku_quality</uri_path>
 		<dc:comment/>
 		<title lang="en">Documentation and data quality</title>
+		<short_title lang="en"/>
 		<title lang="de">Dokumentation und Datenqualität</title>
+		<short_title lang="de"/>
 		<pages>
 			<page dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/v2/doku_quality/dokumentation" order="0"/>
 			<page dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/v2/doku_quality/data_quality" order="1"/>
@@ -1708,9 +1741,11 @@ Bei der Frage der Entstehung ist die erstmalige Erstellung von Daten gemeint, so
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<is_collection>True</is_collection>
 		<title lang="en">Documentation</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Dokumentation</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -1759,6 +1794,13 @@ Falls Sie keinen Metadatenstandard verwenden{more}, geben Sie bei dieser Frage b
 		<path>project/dataset/metadata/standards</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>metadata</key>
+		<path>project/dataset/metadata</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
 	<optionset dc:uri="https://rdmo.nfdi4ing.de/terms/options/v2/NFDI_description_standards">
 		<uri_prefix>https://rdmo.nfdi4ing.de/terms</uri_prefix>
@@ -2060,9 +2102,11 @@ The establishment of standards for methods, the use of software, the collection 
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<is_collection>True</is_collection>
 		<title lang="en">Data Quality</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Datenqualität</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -2557,7 +2601,9 @@ The establishment of standards for methods, the use of software, the collection 
 		<uri_path>NFDI4Ing_Vorlage/v2/storage_backup</uri_path>
 		<dc:comment/>
 		<title lang="en">Storage and technical backup during the project</title>
+		<short_title lang="en"/>
 		<title lang="de">Speicherung und technische Sicherung während des Projektverlaufs</title>
+		<short_title lang="de"/>
 		<pages>
 			<page dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/v2/storage_backup/data_storage" order="0"/>
 			<page dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/v2/storage_backup/data_backup" order="1"/>
@@ -2570,9 +2616,11 @@ The establishment of standards for methods, the use of software, the collection 
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<is_collection>True</is_collection>
 		<title lang="en">Data storage during the project</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Datenspeicherung während des Projekts</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -2618,6 +2666,13 @@ The establishment of standards for methods, the use of software, the collection 
 		<path>project/dataset/storage/type</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>storage</key>
+		<path>project/dataset/storage</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
 	<optionset dc:uri="https://rdmo.nfdi4ing.de/terms/options/v2/NFDI_storage">
 		<uri_prefix>https://rdmo.nfdi4ing.de/terms</uri_prefix>
@@ -2752,9 +2807,11 @@ The establishment of standards for methods, the use of software, the collection 
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<is_collection>True</is_collection>
 		<title lang="en">Technical data backup during the project</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Technische Datensicherung während des Projekts</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -2805,12 +2862,21 @@ Bei Industriekooperationen{more} sind die Zugriffs- und Nutzungsrechte in der Re
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>data_security</key>
+		<path>project/dataset/data_security</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
 	<section dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/v2/exchange_access">
 		<uri_prefix>https://rdmo.nfdi4ing.de/terms</uri_prefix>
 		<uri_path>NFDI4Ing_Vorlage/v2/exchange_access</uri_path>
 		<dc:comment/>
 		<title lang="en">Data exchange and permanent accessibility of data</title>
+		<short_title lang="en"/>
 		<title lang="de">Datenaustausch und dauerhafte Zugänglichkeit der Daten</title>
+		<short_title lang="de"/>
 		<pages>
 			<page dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/v2/exchange_access/reuse" order="0"/>
 			<page dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/v2/exchange_access/archiving" order="1"/>
@@ -2824,9 +2890,11 @@ Bei Industriekooperationen{more} sind die Zugriffs- und Nutzungsrechte in der Re
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<is_collection>True</is_collection>
 		<title lang="en">Reuse</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Nachnutzung</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -3299,9 +3367,11 @@ Für die Publikation von Forschungsdaten wird empfohlen, bevorzugt fachspezifisc
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<is_collection>True</is_collection>
 		<title lang="en">Archiving</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Archivierung</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -3349,6 +3419,13 @@ Damit die Daten verfügbar und auffindbar bleiben, müssen diese auch über das 
 		<path>project/dataset/preservation/yesno</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>preservation</key>
+		<path>project/dataset/preservation</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
 	<question dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/v2/exchange_access/archiving/archiving_yes">
 		<uri_prefix>https://rdmo.nfdi4ing.de/terms</uri_prefix>
@@ -3488,9 +3565,11 @@ Damit die Daten verfügbar und auffindbar bleiben, müssen diese auch über das 
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<is_collection>True</is_collection>
 		<title lang="en">Publication restrictions</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Beschränkungen bei der Veröffentlichung</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -3542,6 +3621,13 @@ Es gibt viele Gründe wie z.B. {more} die Reproduzierbarkeit, Beschreibung der A
 		<path>project/dataset/sharing/restrictions_explanation</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>sharing</key>
+		<path>project/dataset/sharing</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
 	<optionset dc:uri="https://rdmo.nfdi4ing.de/terms/options/v2/NFDI_publication-restrictions">
 		<uri_prefix>https://rdmo.nfdi4ing.de/terms</uri_prefix>
@@ -3622,7 +3708,9 @@ Es gibt viele Gründe wie z.B. {more} die Reproduzierbarkeit, Beschreibung der A
 		<uri_path>NFDI4Ing_Vorlage/v2/rights</uri_path>
 		<dc:comment/>
 		<title lang="en">Legal obligations and framework conditions</title>
+		<short_title lang="en"/>
 		<title lang="de">Rechtliche Verpflichtungen und Rahmenbedingungen</title>
+		<short_title lang="de"/>
 		<pages>
 			<page dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/v2/rights/scientific_specifics" order="0"/>
 			<page dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/v2/rights/legal_restrictions" order="1"/>
@@ -3635,9 +3723,11 @@ Es gibt viele Gründe wie z.B. {more} die Reproduzierbarkeit, Beschreibung der A
 		<attribute/>
 		<is_collection>False</is_collection>
 		<title lang="en">Scientific specifics</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Wissenschaftliche Besonderheiten</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -3681,6 +3771,13 @@ Es gibt viele Gründe wie z.B. {more} die Reproduzierbarkeit, Beschreibung der A
 		<path>project/additional_rdm_policy/requirements</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>additional_rdm_policy</key>
+		<path>project/additional_rdm_policy</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
 	</attribute>
 	<optionset dc:uri="https://rdmo.nfdi4ing.de/terms/options/NFDI_scientific_guidelines">
 		<uri_prefix>https://rdmo.nfdi4ing.de/terms</uri_prefix>
@@ -3776,9 +3873,11 @@ Es gibt viele Gründe wie z.B. {more} die Reproduzierbarkeit, Beschreibung der A
 		<attribute/>
 		<is_collection>False</is_collection>
 		<title lang="en">Legal Restrictions</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Rechtliche Einschränkungen</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -3826,6 +3925,20 @@ Information on this can be found{more}, for example, in the &lt;i&gt;&lt;a href=
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ipr"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ipr">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>ipr</key>
+		<path>project/legal_aspects/ipr</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>legal_aspects</key>
+		<path>project/legal_aspects</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
+	</attribute>
 	<question dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/v2/rights/legal_restrictions/legal_aspects">
 		<uri_prefix>https://rdmo.nfdi4ing.de/terms</uri_prefix>
 		<uri_path>NFDI4Ing_Vorlage/v2/rights/legal_restrictions/legal_aspects</uri_path>
@@ -3857,19 +3970,14 @@ Bei der Erhebung und Verarbeitung personenbezogener Daten oder im Rahmen von Ind
 		<optionsets/>
 		<conditions/>
 	</question>
-	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>legal_aspects</key>
-		<path>project/legal_aspects</path>
-		<dc:comment/>
-		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
-	</attribute>
 	<section dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/v2/responsibilities">
 		<uri_prefix>https://rdmo.nfdi4ing.de/terms</uri_prefix>
 		<uri_path>NFDI4Ing_Vorlage/v2/responsibilities</uri_path>
 		<dc:comment/>
 		<title lang="en">Responsibilities and resources</title>
+		<short_title lang="en"/>
 		<title lang="de">Verantwortlichkeiten und Ressourcen</title>
+		<short_title lang="de"/>
 		<pages>
 			<page dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/v2/responsibilities/responsibilities" order="0"/>
 			<page dc:uri="https://rdmo.nfdi4ing.de/terms/questions/NFDI4Ing_Vorlage/v2/responsibilities/resources" order="1"/>
@@ -3882,9 +3990,11 @@ Bei der Erhebung und Verarbeitung personenbezogener Daten oder im Rahmen von Ind
 		<attribute/>
 		<is_collection>False</is_collection>
 		<title lang="en">Responsibilities</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Verantwortlichkeiten</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets>
@@ -3954,6 +4064,13 @@ Bei der Erhebung und Verarbeitung personenbezogener Daten oder im Rahmen von Ind
 		<path>project/dataset/pids/responsible_person</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/pids"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/pids">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>pids</key>
+		<path>project/dataset/pids</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
 	<optionset dc:uri="https://rdmo.nfdi4ing.de/terms/options/v2/NFDI_responsible_person">
 		<uri_prefix>https://rdmo.nfdi4ing.de/terms</uri_prefix>
@@ -4116,9 +4233,11 @@ Bei der Erhebung und Verarbeitung personenbezogener Daten oder im Rahmen von Ind
 		<attribute/>
 		<is_collection>False</is_collection>
 		<title lang="en">Resources</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Ressourcen</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -4166,6 +4285,20 @@ Falls bei der Nutzung von Infrastrukturressourcen zusätzliche Kosten entstehen,
 		<path>project/costs/usage/non_personnel</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/usage"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/usage">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>usage</key>
+		<path>project/costs/usage</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>costs</key>
+		<path>project/costs</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
 	</attribute>
 	<optionset dc:uri="https://rdmo.nfdi4ing.de/terms/options/NFDI_resources">
 		<uri_prefix>https://rdmo.nfdi4ing.de/terms</uri_prefix>
