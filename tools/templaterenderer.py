@@ -21,7 +21,7 @@ for template, headerfile in files:
         except IndexError:
             print('# The files do not hold a template-section. We try the next one.\n')
             continue
-    outfile_path = os.path.join(os.getcwd(), 'rdmorganiser/views', os.path.basename(template).rsplit('.',1)[0] + '.xml')
+    outfile_path = os.path.join(os.path.dirname(__file__), '..', 'shared', os.path.basename(template).rsplit('.',1)[0] + '.xml')
     with open(
         outfile_path, 
         'w', 
