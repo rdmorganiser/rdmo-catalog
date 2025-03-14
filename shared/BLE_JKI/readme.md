@@ -32,13 +32,13 @@ In dem config-file local.py muss das Wordtemplate dem View zugewiesen werden.
  'https://rdmo.julius-kuehn.de/terms/views/jki-ble': 'Pfad zu refDoc-BLE.docx'
  
 Beispiel:
-
+```
 EXPORT_REFERENCE_DOCX_VIEWS = {
 
-'https://rdmo.julius-kuehn.de/terms/views/general-ble': '/home/rdmo/rdmo-app/env/lib/python3.8/site-packages/rdmo/share/refDoc-BLE.docx'
+'https://rdmo.julius-kuehn.de/terms/views/general-ble': '/srv/rdmo/rdmo-app/share/refDoc-BLE.docx'
 
 }
-
+```
 Final das Dokument aus Word heraus als docx oder pdf abspeichern.
 Wenn Änderungen im Fragenkatalog, in Optionen oder Bedingungen vorgenommen werden, dann müssen ggf. die Views angepasst werden.
 
@@ -52,11 +52,11 @@ https://rdmo.readthedocs.io/en/latest/management/views.html#custom-pandoc-versio
 Beispiel:
 
 /home/rdmo/rdmo-app/config/settings/local.py  -> folgendes einfügen: 
-
+```
 import os
 
 os.environ.setdefault('PYPANDOC_PANDOC', '/home/rdmo/rdmo-app/env/lib/python3.8/site-packages/pandoc-3.1.5/bin/pandoc')
-
+```
 
 
 
