@@ -1,0 +1,5 @@
+This repository contains an implementation of the ["Quality Assurance Tools"](https://euramet.org/european-metrology-networks/mathmet/activities/quality-assurance-tools) for data (QAT) and for software (SQAT) developed by the [European Metrology Network for Mathematics and Statistics (EMN Mathmet)](https://www.euramet.org/european-metrology-networks/mathmet).
+
+The questionnaires were created within a bilateral cooperation of Mathmet with the project [Research data management in European metrology (TC-IM 1449)](https://www.euramet.org/technical-committees/tc-projects/details/project/research-data-management-and-the-european-open-science-cloud/) and are implemented in the [RDMO instance for European Metrology (MetRDMO)](https://dmp.metrology-rdm.eu/), hosted by the [University and State Library Darmstadt](https://www.ulb.tu-darmstadt.de/die_bibliothek/index.de.jsp) and curated by the [Library of the Physikalisch-Technische Bundesanstalt (PTB)](https://www.ptb.de/cms/en/ptb/fachabteilungen/abtz/ref-z5.html#c134540).
+
+The files provided are full XML exports, i.e. they include all content (catalogues, attributes, conditions and answer options).

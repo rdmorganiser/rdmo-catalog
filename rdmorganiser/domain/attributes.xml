@@ -868,6 +868,20 @@
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/embargo_period/end_date">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>end_date</key>
+		<path>project/dataset/preservation/embargo_period/end_date</path>
+		<dc:comment>Added for the question &quot;Wann endet das Embargo?&quot; in DMP4NFDI</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/embargo_period"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/embargo_period/start_date">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>start_date</key>
+		<path>project/dataset/preservation/embargo_period/start_date</path>
+		<dc:comment>Added for the question &quot;Wann beginnt das Embargo?&quot; in DMP4NFDI</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/embargo_period"/>
+	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/purpose">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>purpose</key>
@@ -1273,6 +1287,13 @@
 		<path>project/dataset/usage_technology</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_technology/geo_location">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>geo_location</key>
+		<path>project/dataset/usage_technology/geo_location</path>
+		<dc:comment>Added for the question &quot;Standort des Instruments während der Kampagne&quot; in DMP4NFDI</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_technology"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/versioning_strategy">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
