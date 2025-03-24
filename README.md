@@ -4,9 +4,9 @@
 
 This repository contains all content objects (catalogs, attributes, options, conditions, views, tasks) to be used with the DMP software [RDMO](https://github.com/rdmorganiser/rdmo).
 
-The main branch [master-rdmo2.x](https://github.com/rdmorganiser/rdmo-catalog/tree/master-rdmo2.x) contains material structured according to the recommended data model 2.0.0+. It is at the latest state and will be updated over time.
+The [main branch](https://github.com/rdmorganiser/rdmo-catalog/tree/main) contains material structured according to the recommended data model 2.0.0+. It is at the latest state and will be updated over time.
 
-The legacy branch [master-rdmo1.x](https://github.com/rdmorganiser/rdmo-catalog/tree/master-rdmo1.x) contains material structured according to the previous data model 1.6.0+. It is frozen at the state of April 2024 und will be not updated any more.
+Material structured according to the previous data model 1.6.0+ [has been frozen at the state of April 2024](https://github.com/rdmorganiser/rdmo-catalog/releases/tag/1.4.1-rdmo-1.6.0) and will be not updated any more.
 
 The content officially curated by the [RDMO Consortium](https://rdmorganiser.github.io/Community/) is in the [`rdmorganiser`](./rdmorganiser) folder. We recommend to import these files to be able to make use of the official domain model, options, tasks and conditions. *Note that parts of these data are required also to import user-generated content, because RDMO user-generated question catalogs may refer to parts of the official data*.
 
@@ -66,22 +66,22 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 
 ## Content curated by the RDMO team
 
-|Subject/Coverage        |Catalog                  |View                |Last update|Creators        |
-|------------------------|-------------------------|--------------------|-----------|----------------|
-|All questions (long)    |[catalog][questions-rdmo]|                    |    2024-09|RDMO team       |
-|All questions (short)   |[catalog][questions-fhp] |                    |    2020-08|FHP / RDMO team |
-|DCC checklist           |[catalog][questions-dcc] |                    |    2018-10|RDMO team       |
-|DFG checklist           |[catalog][questions-dfg]|[view][view-dfg]     |    2023-11|RDMO team       |
-|Horizon Europe          |[catalog][questions-heu]|[view][view-heu]     |    2022-12|RDMO team       |
-|Software Management Plan|[catalog][questions-smp]|[view][view-smp](FAIR4RS)|2023-11|MPDL / RDMO team|
-|Swiss National Fund     |[catalog][questions-snf]|[view][view-snf]         |2020-08|RDMO team       |
-|Bielefeld               |                        |[view][view-bielefeld]   |2019-01|RDMO team       |
-|CITEC                   |                        |[view][view-citec]       |2019-01|RDMO team       |
-|Costs                   |                        |[view][view-costs]       |2022-08|RDMO team       |
-|DMPonline               |                        |[view][view-dmponline]   |2019-01|RDMO team       |
-|DMPtool                 |                        |[view][view-dmptool]     |2019-01|RDMO team       |
-|Horizon 2020            |                        |[view][view-h2020]       |2019-01|RDMO team       |
-|All variables           |                        |[view][view-varcheck]    |2022-12|RDMO team       |
+|Subject/Coverage        |Catalog          |View              |Last update|Creators        |
+|------------------------|-----------------|------------------|-----------|----------------|
+|All questions (long)    |[catalog][Q-rdmo]|                      |2024-09|RDMO team       |
+|All questions (short)   |[catalog][Q-fhp] |                      |2020-08|FHP / RDMO team |
+|DCC checklist           |[catalog][Q-dcc] |                      |2018-10|RDMO team       |
+|DFG checklist           |[catalog][Q-dfg] |[view][V-dfg]         |2023-11|RDMO team       |
+|Horizon Europe          |[catalog][Q-heu] |[view][V-heu]         |2022-12|RDMO team       |
+|Software Management Plan|[catalog][Q-smp] |[view][V-smp](FAIR4RS)|2023-11|MPDL / RDMO team|
+|Swiss National Fund     |[catalog][Q-snf] |[view][V-snf]         |2020-08|RDMO team       |
+|Bielefeld               |                 |[view][V-bielefeld]   |2019-01|RDMO team       |
+|CITEC                   |                 |[view][V-citec]       |2019-01|RDMO team       |
+|Costs                   |                 |[view][V-costs]       |2022-08|RDMO team       |
+|DMPonline               |                 |[view][V-dmponline]   |2019-01|RDMO team       |
+|DMPtool                 |                 |[view][V-dmptool]     |2019-01|RDMO team       |
+|Horizon 2020            |                 |[view][V-h2020]       |2019-01|RDMO team       |
+|All variables           |                 |[view][V-varcheck]    |2022-12|RDMO team       |
 
 ## Other content provided by the user community
 
@@ -95,46 +95,46 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 |DFG Physics             |[catalog][PHY]             |           |2023-08|FDM Bayern eHumanities|
 |DFG 101 Ancient Cultures|[catalog][AKU]             |           |2020-09|FDM Bayern eHumanities|
 |DFG 105 Editions        |[catalog][EDI]             |           |2020-09|FDM Bayern eHumanities|
-|DFG 106 Social & Cultural Anthropology|[catalog][SKT]  |        |2020-09|FDM Bayern eHumanities|
+|DFG 106 Social & Cultural Anthropology|[catalog][SKT]    |      |2020-09|FDM Bayern eHumanities|
 |Emissions in animal husbandry|[2 catalogs](shared/EmiMin)|      |2021-04|EmiMin                |
 |ERC grants                       |[catalog][ERC]    |[view][ERC]|2023-08|FDM Bayern eHumanities|
 |European Partnership on Metrology|[catalog][EPM]    |[view][EPM]|2023-10|TC-IM 1449            |
 |Hessen State                |[catalog](shared/HeFDI)|           |2020-07|HeFDI                 |
 |Horizon 2020                |[catalog][EHU]         |[view][EHU]|2020-09|FDM Bayern eHumanities|
 |Mathematics                 |[catalog](shared/MATH+)|     |2022-11|DFG Excellence Cluster MATH+|
-|Quality Assurance Tool for data    |[catalog](shared/Mathmet-QAT)||2025-01|Mathmet / TC-IM 1449|
-|Quality Assurance Tool for software|[catalog](shared/Mathmet-QAT)||2025-01|Mathmet / TC-IM 1449|
-|Research data policy generator     |[catalog](shared/FDNext)|   |2024-03|FDNext                |
-|VW Foundation - Science Europe     |[catalog][SEU]          |   |2021-04|FDM Bayern eHumanities|
+|Quality Assurance Tool for data    |[catalog][QAT]     |        |2025-01|Mathmet / TC-IM 1449  |
+|Quality Assurance Tool for software|[catalog][QAT]     |        |2025-01|Mathmet / TC-IM 1449  |
+|Research data policy generator|[catalog](shared/FDNext)|        |2024-03|FDNext                |
+|VW Foundation - Science Europe     |[catalog][SEU]     |        |2021-04|FDM Bayern eHumanities|
 
 Total: 27 catalogs, 15 views
 
-
-[AKU]: shared/ub_fau_erlangen_nuernberg/dfg-alte-kulturen/
-[CHE]: shared/ub_fau_erlangen_nuernberg/dfg-chemie/
-[PHY]: shared/ub_fau_erlangen_nuernberg/dfg-physik/
-[EDI]: shared/ub_fau_erlangen_nuernberg/dfg-editionen/
-[SKT]: shared/ub_fau_erlangen_nuernberg/dfg-sozkulttheo/
-[ERC]: shared/ub_fau_erlangen_nuernberg/erc-grants/
-[EHU]: shared/ub_fau_erlangen_nuernberg/h2020-ehum/
-[SEU]: shared/ub_fau_erlangen_nuernberg/ScienceEurope_VW_Stiftung/
-[EPM]: shared/metrology-rdm/
-[BLE]: shared/BLE_JKI/
-[questions-rdmo]:           rdmorganiser/questions/questions-rdmo.xml
-[questions-fhp]:       rdmorganiser/questions/questions-fhpshort.xml
-[questions-dcc]:            rdmorganiser/questions/questions-dcc.xml
-[questions-dfg]: rdmorganiser/questions/questions-DFG-Checkliste.xml
-[questions-heu]: rdmorganiser/questions/questions-horizon-europe.xml
-[questions-smp]:            rdmorganiser/questions/questions-smp.xml
-[questions-snf]:            rdmorganiser/questions/questions-snf.xml
-[view-dfg]:      rdmorganiser/views/view-dfg-checkliste.xml
-[view-heu]:      rdmorganiser/views/view-horizon-europe.xml
-[view-smp]:                 rdmorganiser/views/view-FAIR4RSview.xml
-[view-snf]:                 rdmorganiser/views/view-snf.xml
-[view-bielefeld]:           rdmorganiser/views/view-bielefeld.xml
-[view-citec]:               rdmorganiser/views/view-citec.xml
-[view-costs]:               rdmorganiser/views/view-costs.xml
-[view-dmponline]:           rdmorganiser/views/view-dmponline.xml
-[view-dmptool]:             rdmorganiser/views/view-dmptool.xml
-[view-h2020]:         rdmorganiser/views/view-horizon2020.xml
-[view-varcheck]:      rdmorganiser/views/view-variable_check.xml
+[AKU]:         shared/ub_fau_erlangen_nuernberg/dfg-alte-kulturen/
+[CHE]:         shared/ub_fau_erlangen_nuernberg/dfg-chemie/
+[PHY]:         shared/ub_fau_erlangen_nuernberg/dfg-physik/
+[EDI]:         shared/ub_fau_erlangen_nuernberg/dfg-editionen/
+[SKT]:         shared/ub_fau_erlangen_nuernberg/dfg-sozkulttheo/
+[ERC]:         shared/ub_fau_erlangen_nuernberg/erc-grants/
+[EHU]:         shared/ub_fau_erlangen_nuernberg/h2020-ehum/
+[SEU]:         shared/ub_fau_erlangen_nuernberg/ScienceEurope_VW_Stiftung/
+[QAT]:         shared/Mathmet-QAT
+[EPM]:         shared/metrology-rdm/
+[BLE]:         shared/BLE_JKI/
+[Q-rdmo]:      rdmorganiser/questions/questions-rdmo.xml
+[Q-fhp]:       rdmorganiser/questions/questions-fhpshort.xml
+[Q-dcc]:       rdmorganiser/questions/questions-dcc.xml
+[Q-dfg]:       rdmorganiser/questions/questions-DFG-Checkliste.xml
+[Q-heu]:       rdmorganiser/questions/questions-horizon-europe.xml
+[Q-smp]:       rdmorganiser/questions/questions-smp.xml
+[Q-snf]:       rdmorganiser/questions/questions-snf.xml
+[V-dfg]:       rdmorganiser/views/view-dfg-checkliste.xml
+[V-heu]:       rdmorganiser/views/view-horizon-europe.xml
+[V-smp]:       rdmorganiser/views/view-FAIR4RSview.xml
+[V-snf]:       rdmorganiser/views/view-snf.xml
+[V-bielefeld]: rdmorganiser/views/view-bielefeld.xml
+[V-citec]:     rdmorganiser/views/view-citec.xml
+[V-costs]:     rdmorganiser/views/view-costs.xml
+[V-dmponline]: rdmorganiser/views/view-dmponline.xml
+[V-dmptool]:   rdmorganiser/views/view-dmptool.xml
+[V-h2020]:     rdmorganiser/views/view-horizon2020.xml
+[V-varcheck]:  rdmorganiser/views/view-variable_check.xml
