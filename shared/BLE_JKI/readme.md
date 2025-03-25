@@ -8,9 +8,9 @@ Inhaltlich zeichnet sich der Katalog durch wenig Freitext und viele Auswahloptio
 
 ## Einrichtung des Fragenkatalogs
 
-Als Voraussetzung müssen die vom RDMO-Projekt bereitgestellten Standard-Attribute und -Optionen in die eigene RDMO-Instanz importiert worden sein. Diese können unter https://github.com/rdmorganiser/rdmo-catalog/tree/master/rdmorganiser heruntergeladen werden.
+Als Voraussetzung müssen die vom RDMO-Projekt bereitgestellten Standard-Attribute und -Optionen in die eigene RDMO-Instanz importiert worden sein. Diese können unter [Link](/rdmorganiser) heruntergeladen werden.
 
-Der JKI-BLE Fragenkatalog benötigt darüber hinaus zusätzliche Attribute, Optionen und Bedingungen, die sich in den Dateien ble_domain.xml, ble_options.xml und ble_conditions.xml befinden. Zudem sollte Autosave auf Ihrer RDMO-Instanz aktiviert sein, damit aufgrund von Bedingungen (nicht) relevante Fragen direkt ein- /ausgeblendet werden können. Ansonsten geschieht dies erst nachdem auf den „Sichern“-Button geklickt wurde. Ein Beispiel ist im Abschnitt Publikation unter -> Verfügbarmachung zu sehen. Wenn die Frage „Sollen die Daten aus dieser Datenkategorie publiziert werden?“ mit einer der Nein-Antworten beantwortet wird, dann sind die darunter folgenden Fragen überflüssig. Sie werden erst ausgeblendet, wenn auf „Sichern“ geklickt wird. 
+Der JKI-BLE Fragenkatalog benötigt darüber hinaus zusätzliche Attribute, Optionen und Bedingungen, die sich in den Dateien ble_domain.xml, ble_options.xml und ble_conditions.xml befinden. Zudem sollte Autosave auf Ihrer RDMO-Instanz aktiviert sein, damit aufgrund von Bedingungen (nicht) relevante Fragen direkt ein-/ausgeblendet werden können. Ansonsten geschieht dies erst nachdem auf den „Sichern“-Button geklickt wurde. Ein Beispiel ist im Abschnitt Publikation unter -> Verfügbarmachung zu sehen. Wenn die Frage „Sollen die Daten aus dieser Datenkategorie publiziert werden?“ mit einer der Nein-Antworten beantwortet wird, dann sind die darunter folgenden Fragen überflüssig. Sie werden erst ausgeblendet, wenn auf „Sichern“ geklickt wird. 
 
 **rdmo/core/Settings.py PROJECT_QUESTIONS_AUTOSAVE = True**
 

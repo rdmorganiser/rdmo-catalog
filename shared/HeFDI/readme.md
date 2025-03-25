@@ -6,7 +6,7 @@ Auf Grundlage der gegeben Antworten können die Servicestellen etwaige Handlungs
 Der Katalog besteht dazu aus einem übersichtlichen Set an Fragen mit umfangreichen Auswahloptionen, beispielsweise zu Dateiformaten. Bedingungen stellen sicher, dass Forschende nur die für sie relevanten Fragen beantworten müssen. Der Katalog ist auf Deutsch und Englisch verfügbar.
 
 ## Einrichtung des Fragenkatalogs
-Als Voraussetzung müssen die vom RDMO-Projekt bereitgestellten Standard-Attribute und -Optionen in die eigene RDMO-Instanz importiert worden sein. Diese können unter https://github.com/rdmorganiser/rdmo-catalog/tree/master-rdmo2.x/rdmorganiser heruntergeladen werden.
+Als Voraussetzung müssen die vom RDMO-Projekt bereitgestellten Standard-Attribute und -Optionen in die eigene RDMO-Instanz importiert worden sein. Diese können unter [Link](/rdmorganiser) heruntergeladen werden.
 
 Der HeFDI-Fragenkatalog benötigt darüber hinaus zusätzliche Attribute, Optionen und Bedingungen. Die sind alle in der Datei (full export) hefdi_template_FULL.xml enthalten.
 

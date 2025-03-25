@@ -3,7 +3,6 @@ library(xml2); library(stringr); library(magrittr); library(tidyverse)
 
 rm(list=ls())
 Dateiname <- "PRONTO/rdmo-questions.xml"
-# Dateiname <- "rdmo-catalog-master/rdmorganiser/options/rdmo.xml"
 
 # Liste_fr <- Liste_it <- xml_find_all(read_xml(Dateiname),'.//*[@lang="de"]')
 Dokument <- read_xml(Dateiname)

@@ -26,7 +26,7 @@ Yes, in the publication ["Forschungsdaten-Policies für Forschungsprojekte: ein 
 We recommend creating a policy with our tool right at the beginning of the project so that you can commit to common goals in the team right from the start and have enough time for the necessary coordination processes.
  
 ## 3. Setting up the questionnaire
-As a prerequisite, the standard attributes and options provided by the RDMO project must have been imported into your own RDMO instance. These can be downloaded from https://github.com/rdmorganiser/rdmo-catalog/tree/master/rdmorganiser.
+As a prerequisite, the standard attributes and options provided by the RDMO project must have been imported into your own RDMO instance. These can be downloaded from [Link](/rdmorganiser).
 The question catalogue for creating a project research data policy is imported to RDMO via the file fdnext_template.xml.
 
 # 4. Overview of the structure of the question catalogue and the attributes and options used 
