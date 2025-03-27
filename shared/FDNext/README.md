@@ -26,9 +26,7 @@ Ja, in der Publikation ["Forschungsdaten-Policies für Forschungsprojekte: ein s
 Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen, damit Sie sich im Team von Anfang an auf gemeinsame Ziele festlegen und genügend Zeit für die notwendigen Abstimmungsprozesse haben.  
 
 ## 3. Einrichtung des Fragenkatalogs
-Als Voraussetzung müssen die vom RDMO-Projekt bereitgestellten Standard-Attribute und -Optionen in die eigene RDMO-Instanz importiert worden sein. Diese können unter [Link](/rdmorganiser) heruntergeladen werden.
-
-Der Fragenkatalog zur Erstellung einer Projekt-Forschungsdaten-Policy wird über den Import der Datei fdnext_template.xml in RDMO eingebunden.
+Der Fragenkatalog zur Erstellung einer Projekt-Forschungsdaten-Policy wird über den Import der Datei fdnext_template.xml in RDMO eingebunden. Das Template wurde auf einer RDMO Version 2.2.2 erstellt und als "XML (full)" Katalog exportiert. Für den Import müssen Sie neben dem XML-Dokument nichts weiter importieren, aber ggf. kann es zu Importproblemen bei älteren Versionen von RDMO kommen. In diesem Fall kontaktieren Sie bitte den Administrator Ihrer eigenen RDMO-Instanz. 
 
 # 4. Überblick über die Struktur des Fragenkatalogs und die verwendeten Attribute und Optionen.
 

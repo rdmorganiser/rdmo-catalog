@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2024-07-25T15:04:41.768848+02:00" version="2.1.3">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2024-11-05T16:40:11.585302+01:00" version="2.2.2">
 	<catalog dc:uri="https://fdm.ub.tu-berlin.de/questions/fdnext-gen">
 		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
 		<uri_path>fdnext-gen</uri_path>
@@ -25,7 +25,9 @@
 		<uri_path>fdnext-gen/general-information</uri_path>
 		<dc:comment/>
 		<title lang="en">General Information</title>
+		<short_title lang="en"/>
 		<title lang="de">Allgemeine Hinweise</title>
+		<short_title lang="de"/>
 		<pages>
 			<page dc:uri="https://fdm.ub.tu-berlin.de/questions/fdnext-gen/general-information/general-information_text" order="1"/>
 		</pages>
@@ -37,6 +39,7 @@
 		<attribute/>
 		<is_collection>False</is_collection>
 		<title lang="en">Introduction</title>
+		<short_title lang="en"/>
 		<help lang="en">**What is the Research Data Policy Generator?**  
 
 The Research Data Policy Generator is a tool that supports you in creating a research data policy for your research project. It generates text modules based on your answers in the following questionnaire.
@@ -78,6 +81,7 @@ Yes, in the publication [&quot;Forschungsdaten-Policies für Forschungsprojekte:
 We recommend creating a policy with our tool right at the beginning of the project so that you can commit to common goals in the team right from the start and have enough time for the necessary coordination processes.</help>
 		<verbose_name lang="en"/>
 		<title lang="de">Einführung</title>
+		<short_title lang="de"/>
 		<help lang="de">**Was ist der Forschungsdaten-Policy-Generator?**  
 
 Der Forschungsdaten-Policy-Generator ist ein Werkzeug, das Sie bei der Erstellung einer Forschungsdaten-Policy für Ihr Forschungsprojekt unterstützt. Er generiert Textbausteine basierend auf Ihren Antworten im nachfolgenden Fragebogen.
@@ -163,7 +167,9 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<uri_path>fdnext-gen/preamble</uri_path>
 		<dc:comment/>
 		<title lang="en">Preamble</title>
+		<short_title lang="en"/>
 		<title lang="de">Präambel</title>
+		<short_title lang="de"/>
 		<pages>
 			<page dc:uri="https://fdm.ub.tu-berlin.de/questions/fdnext-gen/preamble/preamble_description" order="0"/>
 			<page dc:uri="https://fdm.ub.tu-berlin.de/questions/fdnext-gen/preamble/preamble_objectives" order="1"/>
@@ -177,9 +183,11 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<attribute/>
 		<is_collection>False</is_collection>
 		<title lang="en">Description of the research project</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Beschreibung des Forschungsprojekts</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -222,6 +230,20 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<dc:comment/>
 		<parent dc:uri="https://fdm.ub.tu-berlin.de/domain/fdnext/description"/>
 	</attribute>
+	<attribute dc:uri="https://fdm.ub.tu-berlin.de/domain/fdnext/description">
+		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
+		<key>description</key>
+		<path>fdnext/description</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.ub.tu-berlin.de/domain/fdnext"/>
+	</attribute>
+	<attribute dc:uri="https://fdm.ub.tu-berlin.de/domain/fdnext">
+		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
+		<key>fdnext</key>
+		<path>fdnext</path>
+		<dc:comment/>
+		<parent/>
+	</attribute>
 	<page dc:uri="https://fdm.ub.tu-berlin.de/questions/fdnext-gen/preamble/preamble_objectives">
 		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
 		<uri_path>fdnext-gen/preamble/preamble_objectives</uri_path>
@@ -229,9 +251,11 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<attribute/>
 		<is_collection>False</is_collection>
 		<title lang="en">Policy Objectives</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Ziele der Policy</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -275,6 +299,13 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<path>fdnext/goals/goals</path>
 		<dc:comment/>
 		<parent dc:uri="https://fdm.ub.tu-berlin.de/domain/fdnext/goals"/>
+	</attribute>
+	<attribute dc:uri="https://fdm.ub.tu-berlin.de/domain/fdnext/goals">
+		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
+		<key>goals</key>
+		<path>fdnext/goals</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.ub.tu-berlin.de/domain/fdnext"/>
 	</attribute>
 	<optionset dc:uri="https://fdm.ub.tu-berlin.de/options/fdnext-goals">
 		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
@@ -383,9 +414,11 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<attribute/>
 		<is_collection>False</is_collection>
 		<title lang="en">Definitions</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Definitionen</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -430,6 +463,13 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<path>fdnext/definitions/definitions</path>
 		<dc:comment/>
 		<parent dc:uri="https://fdm.ub.tu-berlin.de/domain/fdnext/definitions"/>
+	</attribute>
+	<attribute dc:uri="https://fdm.ub.tu-berlin.de/domain/fdnext/definitions">
+		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
+		<key>definitions</key>
+		<path>fdnext/definitions</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.ub.tu-berlin.de/domain/fdnext"/>
 	</attribute>
 	<optionset dc:uri="https://fdm.ub.tu-berlin.de/options/definitions">
 		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
@@ -544,7 +584,9 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<uri_path>fdnext-gen/scope</uri_path>
 		<dc:comment/>
 		<title lang="en">Scope</title>
+		<short_title lang="en"/>
 		<title lang="de">Geltungsbereich</title>
+		<short_title lang="de"/>
 		<pages>
 			<page dc:uri="https://fdm.ub.tu-berlin.de/questions/fdnext-gen/scope/scope" order="0"/>
 		</pages>
@@ -556,9 +598,11 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<attribute/>
 		<is_collection>False</is_collection>
 		<title lang="en">Persons and research data</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Personenkreis und Forschungsdaten</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -603,6 +647,13 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<path>fdnext/scope/persons</path>
 		<dc:comment/>
 		<parent dc:uri="https://fdm.ub.tu-berlin.de/domain/fdnext/scope"/>
+	</attribute>
+	<attribute dc:uri="https://fdm.ub.tu-berlin.de/domain/fdnext/scope">
+		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
+		<key>scope</key>
+		<path>fdnext/scope</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.ub.tu-berlin.de/domain/fdnext"/>
 	</attribute>
 	<optionset dc:uri="https://fdm.ub.tu-berlin.de/options/persons">
 		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
@@ -767,7 +818,9 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<uri_path>fdnext-gen/legal</uri_path>
 		<dc:comment/>
 		<title lang="en">Legal Aspects</title>
+		<short_title lang="en"/>
 		<title lang="de">Rechtliche Aspekte</title>
+		<short_title lang="de"/>
 		<pages>
 			<page dc:uri="https://fdm.ub.tu-berlin.de/questions/fdnext-gen/legal/legal" order="0"/>
 		</pages>
@@ -779,9 +832,11 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<attribute/>
 		<is_collection>False</is_collection>
 		<title lang="en">Ensuring legal compliance</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Gesetze und Richtlinien</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -828,6 +883,13 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<path>fdnext/legal/law</path>
 		<dc:comment/>
 		<parent dc:uri="https://fdm.ub.tu-berlin.de/domain/fdnext/legal"/>
+	</attribute>
+	<attribute dc:uri="https://fdm.ub.tu-berlin.de/domain/fdnext/legal">
+		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
+		<key>legal</key>
+		<path>fdnext/legal</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.ub.tu-berlin.de/domain/fdnext"/>
 	</attribute>
 	<optionset dc:uri="https://fdm.ub.tu-berlin.de/options/law">
 		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
@@ -901,7 +963,7 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<parent dc:uri="https://fdm.ub.tu-berlin.de/domain/fdnext/legal"/>
 	</attribute>
 	<optionset dc:uri="https://fdm.ub.tu-berlin.de/options/lawm">
-		<uri_prefix>https://fdm.ub.tu-berlin.de/</uri_prefix>
+		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
 		<uri_path>lawm</uri_path>
 		<dc:comment/>
 		<provider_key/>
@@ -913,7 +975,7 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://fdm.ub.tu-berlin.de/options/lawm/01">
-		<uri_prefix>https://fdm.ub.tu-berlin.de/</uri_prefix>
+		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
 		<uri_path>lawm/01</uri_path>
 		<dc:comment/>
 		<text lang="en">Copyright status is clarified in consultation with the legal departments of the institution(s).</text>
@@ -925,7 +987,7 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<additional_input/>
 	</option>
 	<option dc:uri="https://fdm.ub.tu-berlin.de/options/lawm/02">
-		<uri_prefix>https://fdm.ub.tu-berlin.de/</uri_prefix>
+		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
 		<uri_path>lawm/02</uri_path>
 		<dc:comment/>
 		<text lang="en">Agreements on data usage within the project are agreed with all members of the project, such as on authorship for data publications or usage rights for individual project members for the duration of the project as well as after leaving the project.</text>
@@ -937,7 +999,7 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<additional_input/>
 	</option>
 	<option dc:uri="https://fdm.ub.tu-berlin.de/options/lawm/03">
-		<uri_prefix>https://fdm.ub.tu-berlin.de/</uri_prefix>
+		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
 		<uri_path>lawm/03</uri_path>
 		<dc:comment/>
 		<text lang="en">Further measures include</text>
@@ -983,6 +1045,20 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<path>project/legal_aspects/ipr</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>legal_aspects</key>
+		<path>project/legal_aspects</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>project</key>
+		<path>project</path>
+		<dc:comment/>
+		<parent/>
 	</attribute>
 	<optionset dc:uri="https://fdm.ub.tu-berlin.de/options/data-protection">
 		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
@@ -1139,13 +1215,6 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		</optionsets>
 		<conditions/>
 	</question>
-	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>legal_aspects</key>
-		<path>project/legal_aspects</path>
-		<dc:comment/>
-		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
-	</attribute>
 	<optionset dc:uri="https://fdm.ub.tu-berlin.de/options/guidelines">
 		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
 		<uri_path>guidelines</uri_path>
@@ -1238,7 +1307,9 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<uri_path>fdnext-gen/accountability</uri_path>
 		<dc:comment/>
 		<title lang="en">Accountability</title>
+		<short_title lang="en"/>
 		<title lang="de">Verantwortlichkeit</title>
+		<short_title lang="de"/>
 		<pages>
 			<page dc:uri="https://fdm.ub.tu-berlin.de/questions/fdnext-gen/accountability/accountability" order="0"/>
 		</pages>
@@ -1250,9 +1321,11 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<attribute/>
 		<is_collection>False</is_collection>
 		<title lang="en">Responsibility for implementing the policy</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Zuständigkeit für die Umsetzung der Policy</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -1296,6 +1369,13 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<path>project/data_management/name</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>data_management</key>
+		<path>project/data_management</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
 	</attribute>
 	<optionset dc:uri="https://fdm.ub.tu-berlin.de/options/responsibility">
 		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
@@ -1441,7 +1521,9 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<uri_path>fdnext-gen/rd</uri_path>
 		<dc:comment/>
 		<title lang="en">Managing research data</title>
+		<short_title lang="en"/>
 		<title lang="de">Umgang mit Forschungsdaten</title>
+		<short_title lang="de"/>
 		<pages>
 			<page dc:uri="https://fdm.ub.tu-berlin.de/questions/fdnext-gen/rd/storage" order="1"/>
 			<page dc:uri="https://fdm.ub.tu-berlin.de/questions/fdnext-gen/rd/documentation" order="2"/>
@@ -1457,9 +1539,11 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<attribute/>
 		<is_collection>False</is_collection>
 		<title lang="en">Storage and data organization</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Speicherung und Datenorganisation</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -1506,6 +1590,13 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<path>project/dataset/id</path>
 		<dc:comment>Short ID for a dataset, used as questionset attribute for dataset related questionsets.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>dataset</key>
+		<path>project/dataset</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
 	</attribute>
 	<optionset dc:uri="https://fdm.ub.tu-berlin.de/options/storage">
 		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
@@ -1590,6 +1681,20 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<path>project/dataset/data_security/backup_responsible/name</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backup_responsible"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backup_responsible">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>backup_responsible</key>
+		<path>project/dataset/data_security/backup_responsible</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>data_security</key>
+		<path>project/dataset/data_security</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
 	<optionset dc:uri="https://fdm.ub.tu-berlin.de/options/backup">
 		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
@@ -1785,6 +1890,13 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>storage</key>
+		<path>project/dataset/storage</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
 	<optionset dc:uri="https://fdm.ub.tu-berlin.de/options/name">
 		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
 		<uri_path>name</uri_path>
@@ -1853,9 +1965,11 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<attribute/>
 		<is_collection>False</is_collection>
 		<title lang="en">Documenting data</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Datendokumentation</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -1900,8 +2014,15 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>metadata</key>
+		<path>project/dataset/metadata</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
 	<optionset dc:uri="https://fdm.ub.tu-berlin.de/options/options/documentation">
-		<uri_prefix>https://fdm.ub.tu-berlin.de/options/</uri_prefix>
+		<uri_prefix>https://fdm.ub.tu-berlin.de/options</uri_prefix>
 		<uri_path>documentation</uri_path>
 		<dc:comment/>
 		<provider_key/>
@@ -1914,7 +2035,7 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<conditions/>
 	</optionset>
 	<option dc:uri="https://fdm.ub.tu-berlin.de/options/options/documentation/01">
-		<uri_prefix>https://fdm.ub.tu-berlin.de/options/</uri_prefix>
+		<uri_prefix>https://fdm.ub.tu-berlin.de/options</uri_prefix>
 		<uri_path>documentation/01</uri_path>
 		<dc:comment/>
 		<text lang="en">The data documentation takes place in one or more separate files, for which suitable templates are made available to the project members.</text>
@@ -1926,7 +2047,7 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<additional_input/>
 	</option>
 	<option dc:uri="https://fdm.ub.tu-berlin.de/options/options/documentation/02">
-		<uri_prefix>https://fdm.ub.tu-berlin.de/options/</uri_prefix>
+		<uri_prefix>https://fdm.ub.tu-berlin.de/options</uri_prefix>
 		<uri_path>documentation/02</uri_path>
 		<dc:comment/>
 		<text lang="en">An electronic laboratory notebook is used for data documentation, namely</text>
@@ -1938,7 +2059,7 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://fdm.ub.tu-berlin.de/options/options/documentation/03">
-		<uri_prefix>https://fdm.ub.tu-berlin.de/options/</uri_prefix>
+		<uri_prefix>https://fdm.ub.tu-berlin.de/options</uri_prefix>
 		<uri_path>documentation/03</uri_path>
 		<dc:comment/>
 		<text lang="en">Data documentation is the responsibility of the individual project members.</text>
@@ -1950,7 +2071,7 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<additional_input/>
 	</option>
 	<option dc:uri="https://fdm.ub.tu-berlin.de/options/options/documentation/04">
-		<uri_prefix>https://fdm.ub.tu-berlin.de/options/</uri_prefix>
+		<uri_prefix>https://fdm.ub.tu-berlin.de/options</uri_prefix>
 		<uri_path>documentation/04</uri_path>
 		<dc:comment/>
 		<text lang="en">Further/other specifications</text>
@@ -1968,9 +2089,11 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<attribute/>
 		<is_collection>False</is_collection>
 		<title lang="en">Archiving</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Archivierung</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -2014,6 +2137,13 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<path>project/dataset/preservation/repository</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>preservation</key>
+		<path>project/dataset/preservation</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
 	<optionset dc:uri="https://fdm.ub.tu-berlin.de/options/archive-repo">
 		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
@@ -2070,9 +2200,11 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<attribute/>
 		<is_collection>False</is_collection>
 		<title lang="en">Publishing and licenses</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Veröffentlichung und Lizenzen</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -2118,6 +2250,13 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<path>project/dataset/sharing/yesno</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>sharing</key>
+		<path>project/dataset/sharing</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
 	<optionset dc:uri="https://fdm.ub.tu-berlin.de/options/publication">
 		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
@@ -2316,9 +2455,11 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<attribute/>
 		<is_collection>False</is_collection>
 		<title lang="en">Project-specific information</title>
+		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Projektspezifische Angaben</title>
+		<short_title lang="de"/>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -2361,12 +2502,21 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>additional_rdm_policy</key>
+		<path>project/additional_rdm_policy</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
+	</attribute>
 	<section dc:uri="https://fdm.ub.tu-berlin.de/questions/fdnext-gen/passage">
 		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
 		<uri_path>fdnext-gen/passage</uri_path>
 		<dc:comment/>
 		<title lang="en">Passage and Validity</title>
+		<short_title lang="en"/>
 		<title lang="de">Verabschiedung und Gültigkeit</title>
+		<short_title lang="de"/>
 		<pages>
 			<page dc:uri="https://fdm.ub.tu-berlin.de/questions/fdnext-gen/passage/passage" order="0"/>
 		</pages>
@@ -2378,9 +2528,11 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<attribute/>
 		<is_collection>False</is_collection>
 		<title lang="en">Date and approving body</title>
+		<short_title lang="en"/>
 		<help lang="en">Please enter the missing information.</help>
 		<verbose_name lang="en"/>
 		<title lang="de">Datum und Gremium</title>
+		<short_title lang="de"/>
 		<help lang="de">Bitte ergänzen Sie die fehlenden Angaben. Sie können den angegebenen Standardtext direkt bearbeiten und nach Ihren Bedarfen anpassen.</help>
 		<verbose_name lang="de"/>
 		<questionsets/>
@@ -2423,12 +2575,21 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<dc:comment>Date of this data management plan version, added for the text field &quot;Date&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>dmp</key>
+		<path>project/dmp</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
+	</attribute>
 	<section dc:uri="https://fdm.ub.tu-berlin.de/questions/fdnext-gen/end">
 		<uri_prefix>https://fdm.ub.tu-berlin.de</uri_prefix>
 		<uri_path>fdnext-gen/end</uri_path>
 		<dc:comment/>
 		<title lang="en">Final notes</title>
+		<short_title lang="en"/>
 		<title lang="de">Abschließende Hinweise</title>
+		<short_title lang="de"/>
 		<pages>
 			<page dc:uri="https://fdm.ub.tu-berlin.de/questions/fdnext-gen/end/end" order="0"/>
 		</pages>
@@ -2440,9 +2601,11 @@ Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen
 		<attribute/>
 		<is_collection>False</is_collection>
 		<title lang="en">Note</title>
+		<short_title lang="en"/>
 		<help lang="en">You have now reached the end of the questionnaire. If you click on &quot;Proceed&quot;, you will be taken to a page where you can view your answers. There you also have the option of having your answers output in various formats such as docx or pdf. In a word processing programme of your choice, you can then compile the research data policy for your research project from the text modules.</help>
 		<verbose_name lang="en"/>
 		<title lang="de">Hinweise</title>
+		<short_title lang="de"/>
 		<help lang="de">Sie sind nun am Ende des Fragebogens angelangt. Wenn Sie auf „Fortfahren“ klicken, gelangen Sie auf eine Seite, auf der Sie sich Ihre Antworten anzeigen lassen können. Dort haben Sie zudem die Möglichkeit, sich Ihre Antworten in verschiedenen Formaten wie docx oder pdf ausgeben zu lassen. In einem Textverarbeitungsprogramm Ihrer Wahl können Sie dann aus den Textbausteinen die Forschungsdaten-Policy für Ihr Forschungsprojekt zusammenstellen.</help>
 		<verbose_name lang="de"/>
 		<questionsets/>
