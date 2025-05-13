@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-03-19T17:18:53.003938+01:00" version="2.2.2">
+	<view dc:uri="https://fdm-bayern.org/eHumanities/views/view_vw_stiftung">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>view_vw_stiftung</uri_path>
+		<dc:comment/>
+		<order>0</order>
+		<title lang="en">VW Foundation Basic DMP</title>
+		<help lang="en">This view is designed to work with the DMP template of the VW foundation. It collects the answers according to the &lt;a href=&quot;https://www.volkswagenstiftung.de/sites/default/files/documents/Basis-Datenmanagementplan.docx&quot; target=&quot;_blank&quot;&gt;Basic DMP&lt;/a&gt; (Version January 2025)</help>
+		<title lang="de">VW-Stiftung Basis-Datenmanagementplan</title>
+		<help lang="de">Diese Ansicht wurde für den Fragenkatalog für die VW-Stiftung erstellt. Sie sammelt die Antworten entsprechend des &lt;a href=&quot;https://www.volkswagenstiftung.de/sites/default/files/documents/Basis-Datenmanagementplan.docx&quot; target=&quot;_blank&quot;&gt;VW Basis-DMPs&lt;/a&gt; (Version Januar 2025)</help>
+		<catalogs>
+			<catalog dc:uri="https://fdm-bayern.org/eHumanities/questions/vw_stiftung"/>
+		</catalogs>
+		<template>{% load view_tags %}
+{% load i18n %}
+{% get_set 'project/dataset/id' as datasets %}
+{% get_current_language as LANGUAGE_CODE %}
+
+
+&lt;style type=&quot;text/css&quot;&gt;
+	body {	font-family: arial;	}
+	h1, h3, h3, h4 {	font-family: verdana; font-weight:bold;	}
+	table {	table-layout: fixed; border: 0; white-space: nowrap; margin-left: auto; margin-right: auto;	}
+	td, th {	padding: 10px;	}
+    td { border:1px solid black; }
+	#Titel {	text-align: center; line-height: 21mm; font-size: 2.5em; font-weight: bold;	}
+	#Note1 {	font-size: small;	}
+	.question {	color: green; font-weight: bold; break-after: avoid;	}
+	.questionpart {	color: green; break-after: avoid;	}
+&lt;/style&gt;
+
+{% if LANGUAGE_CODE == &quot;de&quot; %}
+
+&lt;div id=&quot;Titel&quot; style=&quot;margin: 0 auto; line-height: 21mm; font-size: 2.5em; font-weight: bold;&quot;&gt;
+	&lt;br /&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Logo_Volkswagenstiftung.svg/640px-Logo_Volkswagenstiftung.svg.png&quot; alt=&quot;VW Stiftung logo&quot; width=&quot;300&quot; /&gt;
+	&lt;br /&gt;&lt;h1&gt;Volkswagen Stiftung&lt;br /&gt; Basis-Datenmanagementplan&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+    Unter den Bedingungen einer Daten intensiven Wissenschaft sind Forschungsdaten heute mehr denn je Grundlage und Ergebnis wissenschaftlichen Arbeitens. Die Vielfalt solcher Daten – Rohdaten wie Messdaten, Laborwerte, audiovisueller Informationen, Texte, Umfragedaten etc.; Sekundärdaten wie Softwareergebnisse, Simulationen, Annotationen etc. – entspricht der Vielfalt unterschiedlicher Disziplinen, Verfahren und Erkenntnisinteressen. Die Sicherung von substanziellen und relevanten Forschungsdaten ist dabei oft ebenso wichtig für die Replizierbarkeit von Untersuchungen wie als Ausgangspunkt für neue Forschungsfragen. Die VolkswagenStiftung unterstützt ganz generell die möglichst nachhaltige Speicherung und den möglichst offenen – hierbei rechtliche Fragen berücksichtigend – Zugang von Forschungsdaten. 
+&lt;/div&gt;
+
+&lt;h3 id=&quot;0&quot;&gt;Übersicht Datensätze&lt;/h3&gt;
+Im beantragten Forschungsprojekt werden die nachfolgenden Datensätze verwendet:
+&lt;ol&gt;
+{% for dataset in datasets %}
+    &lt;li&gt;   
+        {{ dataset.value }} &lt;br /&gt;
+     &lt;/li&gt; 
+{% endfor %}
+&lt;/ol&gt;
+
+
+
+&lt;h3 id=&quot;1&quot;&gt;(1) Welche bestehenden Daten/Kollektionen sollen im Projekt genutzt werden? Sind diese Daten frei zugänglich oder sind hier Urheber- oder Persönlichkeitsrechte zu berücksichtigen? &lt;/h3&gt;
+{% for dataset in datasets %}
+    {% get_set_value dataset 'project/dataset/origin' as origin %}
+    {% get_set_value dataset 'project/dataset/uri' as uri %}
+ {% if origin|length &gt; 0 %}
+      {% if origin.value == 'Nachgenutzt' %}
+        &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+        {% render_set_value dataset 'project/dataset/description'%} &lt;br /&gt;
+        Der bestehende Datensatz &lt;i&gt;{{ dataset.value }}&lt;/i&gt; wird im Projekt nachgenutzt.  
+        {% if uri|length &gt; 0 %}
+            Er wird über {% render_set_value dataset 'project/dataset/uri'%}  zugänglich gemacht. 
+        {% endif %}
+         &lt;br /&gt;
+        Insgesamt wird von einem Datenvolumen {% render_set_value dataset 'project/dataset/size/volume' %} ausgegangen.
+        &lt;br /&gt;
+        &lt;br /&gt;
+        {% render_set_value dataset 'project/legal_aspects'%} 
+    {% endif %}
+    {% if origin.value|truncatechars:6 == 'Beide…' %}
+        &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+        Der Datensatz &lt;i&gt;{{ dataset.value }}&lt;/i&gt; stellt eine Kombination von im Lauf des Projektes neu erzeugten und nachgenutzten Daten dar.  
+        {% if uri|length &gt; 0 %}
+            Die dafür verwendeten bestehenden Daten werden über {% render_set_value dataset 'project/dataset/uri'%} zugänglich gemacht.
+        {% endif %}
+    &lt;br /&gt;
+    &lt;br /&gt;
+        {% render_set_value dataset 'project/legal_aspects'%}
+    {% endif %}
+ {% endif %}
+ &lt;br /&gt;
+{% endfor %}
+
+
+
+&lt;h3 id=&quot;2&quot;&gt;(2) Welche Daten und Datentypen sollen im Projektverlauf generiert werden? Welches Datenvolumen ist zu erwarten?&lt;/h3&gt;
+{% for dataset in datasets %}
+{% get_set_value dataset 'project/dataset/origin' as origin %}
+{% if origin|length &gt; 0 %}
+    {% if origin.value == 'Erzeugt' %}
+        &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+        {% render_set_value dataset 'project/dataset/description'%} &lt;br /&gt;
+        Der Datensatz &lt;i&gt;{{ dataset.value }}&lt;/i&gt; wird im Projektverlauf erzeugt. Hierbei wird von einem Datenvolumen {% render_set_value dataset 'project/dataset/size/volume' %} ausgegangen.
+        &lt;br /&gt;
+        &lt;br /&gt;
+        {% render_set_value dataset 'project/legal_aspects'%}    
+    {% elif origin.value|truncatechars:6 == 'Beide…' %}
+        &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+        {% render_set_value dataset 'project/dataset/description'%} &lt;br /&gt;
+        Der Datensatz &lt;i&gt;{{ dataset.value }}&lt;/i&gt; entsteht aus einer Kombination bestehender und neu erzeugter Datensätze.
+        Siehe hierzu auch Abschnitt 1.
+        Insgesamt wird von einem Datenvolumen {% render_set_value dataset 'project/dataset/size/volume' %} ausgegangen.
+    {% endif %}
+ {% else %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+    {% render_set_value dataset 'project/dataset/description'%} &lt;br /&gt;
+    Insgesamt wird von einem Datenvolumen {% render_set_value dataset 'project/dataset/size/volume' %} ausgegangen.
+    &lt;br /&gt;
+    &lt;br /&gt;
+    {% render_set_value dataset 'project/legal_aspects'%}  
+{% endif %}
+&lt;br /&gt;
+&lt;br /&gt;
+{% endfor %}
+
+
+
+
+&lt;h3 id=&quot;3&quot;&gt;(3) Wie werden die Daten organisiert: Nach welchen Standards und Formaten werden die Daten gespeichert? Welche Metadaten werden nach welchen Standards generiert und in welchen Formaten werden sie gespeichert? Bekommen die Daten einen persistenten Identifikator (PID), mit dem sie nachhaltig referenzierbar und zitierfähig sind? &lt;/h3&gt;  
+
+{% for dataset in datasets %}
+   &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;&lt;br /&gt;
+    &lt;b&gt;Formate:&lt;/b&gt;&lt;br /&gt;
+     {% render_set_value dataset 'project/dataset/format'%}  
+   &lt;br /&gt;&lt;br /&gt;
+   &lt;b&gt;Metadaten:&lt;/b&gt;&lt;br /&gt;
+   	{% get_set_values dataset 'project/dataset/metadata/scope' as metadata %}
+ Neben grundlegenden bibliografischen 
+ Metadaten (einschließlich Titel, Autoren, Schlüsselwörter, Beschreibung, verwandte 
+ Veröffentlichungen, PIDs), die für Auffindbarkeit, Identifizierung und Referenzierung 
+ notwendig sind, werden für den Datensatz spezifische Metadaten erfasst:
+	{% if metadata|length &gt; 0 %}
+     &lt;ul&gt;
+       {% for meta in metadata %}
+          {% if meta.value == 'Ort' %}
+              &lt;li&gt;Ortsinformationen&lt;/li&gt;         
+          {% elif meta.value == 'Inhalt' %}
+              &lt;li&gt;detaillierte Beschreibung des Inhalts des Datensatzes&lt;/li&gt;
+          {% elif meta.value == 'Methodik' %}
+              &lt;li&gt;Informationen über die zur Erstellung des Datensatzes angewandte Methodik&lt;/li&gt;
+          {% elif meta.value == 'Erzeugungsprozess' %}
+              &lt;li&gt;Einzelheiten zum Entstehungsprozess&lt;/li&gt;
+          {% elif meta.value == 'Technologie' %}
+              &lt;li&gt;verwendete Instrumente und Software&lt;/li&gt;
+          {% elif meta.value == 'Dokumentation der zur Nutzung notwendigen Software' %}
+              &lt;li&gt;Dokumentation der für die Nutzung der Daten erforderlichen Software&lt;/li&gt;
+          {% elif meta.value == 'Zeit' %}
+              &lt;li&gt;Angaben zu Zeiten / Zeitspannen&lt;/li&gt;
+          {% elif meta.value == 'Quellen' %}
+              &lt;li&gt;zugrundeliegendes Quellenmaterial  &lt;/li&gt;
+          {% elif meta.value == 'Akteure' %}
+              &lt;li&gt;Akteure / Personen, die in dem Datensatz eine Rolle spielen&lt;/li&gt;
+          {% elif meta.value == 'Identifikatoren' %}
+              &lt;li&gt;Identifikatoren, die zur Verfolgung der Entstehungsgeschichte und der Herkunft verwendet werden können &lt;/li&gt;
+          {% elif meta.value|truncatechars:6 == 'Ander…' %}
+              &lt;li&gt;{{meta.value|cut:&quot;Anderes:&quot;}}&lt;/li&gt;
+          {% endif %}
+       {% endfor %}
+    &lt;/ul&gt;  
+	{% endif %} 
+     &lt;br /&gt;
+    &lt;b&gt;Standards:&lt;/b&gt;&lt;br /&gt;
+        {% get_set_value dataset 'project/dataset/metadata/standards' as metadata_standards %}
+        {% if metadata_standards %}
+         {% if metadata_standards.value|truncatechars:10 == 'Es wird k…' %}
+             {{ metadata_standards.value }}.
+         {% elif  metadata_standards.value|truncatechars:6 == 'Im Ra…' %}
+             {{ metadata_standards.value }}.
+         {% elif  metadata_standards.value|truncatechars:6 == 'Es we…' %}
+              Für die Erfassung der Metadaten verwenden wir etablierte Standards. Insbesondere:
+             {{ metadata_standards.value|cut:'Es werden disziplinspezifische Standards, Klassifikationen etc. genutzt:' }}
+         {% elif  metadata_standards.value|truncatechars:7 == 'Das vo…' %}
+              Das vom Projekt genutzte Repositorium, verwendet bereits einen Standard. Es handelt sich um:
+             {{ metadata_standards.value|cut:'Das von uns verwendete Repositorium nutzt den Standard:' }}
+         {% elif  metadata_standards.value|truncatechars:7 == 'Das ve…' %}
+             {{ metadata_standards.value}}
+         {% elif  metadata_standards.value|truncatechars:6 == 'Es wi…' %}
+             Die Metadaten und Kontextinformationen werden mithilfe eines eigens angepassten Systems erfasst: 
+             {{ metadata_standards.value|cut:'Es wird ein eigenes Beschreibungssystem genutzt (bitte beschreiben Sie dieses kurz und geben, wenn nötig, an, wo es ausführlicher dokumentiert ist):' }}
+         {% elif  metadata_standards.value|truncatechars:6 == 'Sonst…' %}
+             {{ metadata_standards.value|cut:'Sonstiges:' }}
+         {% endif %}
+	{% endif %}
+    &lt;br /&gt;&lt;br /&gt;
+    &lt;b&gt;PID:&lt;/b&gt;&lt;br /&gt;
+    {% get_set_value dataset 'project/dataset/pids/system' as pidsystem %}
+    {% if pidsystem|length &gt; 0 %}
+        {% if pidsystem.value == 'Keins' %}
+            Für diesen Datensatz werden keine Persistenten Identifikatoren vergeben.          
+        {% elif pidsystem.value == 'Handle / DOI' %}
+            Die Daten werden mit PIDs aus dem Handle-System (wozu auch DOI gehören) eindeutig identifizierbar und damit langfristig zitierbar gemacht.
+        {% elif pidsystem.value == 'PURL' %}
+            Die Daten werden durch Persistent Uniform Resource Locator (PURL) eindeutig identifizierbar und damit langfristig zitierbar gemacht.
+        {% elif pidsystem.value == 'ARK' %}
+            Für die Daten werden Archival Resource Keys (ARK) vergeben. Damit ist eine eindeutige Referenzierbarkeit und damit Zitierbarkeit sichergestellt.
+        {% elif pidsystem.value == 'ISLRN' %}
+            Mit ISLRN (International Standard Language Resource Number) steht ein Datentyp-spezifisches PID-System zur Verfügung, dass die garantiert, dass der Datensatz langfristig zitierbar ist.
+        {% elif pidsystem.value|truncatechars:6 == 'Ander…' %}
+            {{pidsystem.value|cut:&quot;Anderes:&quot;}}
+        {% elif pidsystem.value|truncatechars:6 == 'Commi…' %}
+            Der Datensatz ist durch die Commit-Nummer des Code Repositorium &lt;i&gt;{{pidsystem.value|cut:&quot;Commit-Nummer auf einem Code-Repositorium:&quot;}}&lt;/i&gt; zusammen mit der Identität des Repositorium eindeutig identifizierbar. So kann jede Version eindeutig zitiert werden. 
+        {% endif %}
+   {% endif %}
+&lt;br /&gt;
+&lt;br /&gt;
+{% endfor %}
+
+&lt;h3 id=&quot;4&quot;&gt;(4) Wie sind die Verwertungs- und Nutzungsrechte (z.B. durch Vergabe von Lizenzen) – sowohl im Projektverlauf zwischen den einzelnen in kollaborativen Projekten beteiligten Personen als auch nach Projektende für die Wissenschaft – geregelt? &lt;/h3&gt;
+
+&lt;h4 id = &quot;4.1&quot; &gt; Projektinterne Planungen / Regelungen:&lt;/h4&gt;
+{% render_value 'project/partner/agreement'%} 
+
+&lt;h4 id = &quot;4.2&quot; &gt; Zugang zu den Daten:&lt;/h4&gt;
+{% for dataset in datasets %}
+    {% get_set_value dataset 'project/dataset/sharing/yesno' as sharing %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+    {% if sharing|length &gt; 0 %}
+        {% if sharing.value == 'Nein' %}
+            Dieser Datensatz wird nicht geteilt werden. Gründe hierfür sind: {% render_set_value dataset 'project/dataset/sharing/explanation'%}         
+        {% elif sharing.value  == 'Ja, extern für alle' %}
+            Dieser Datensatz wird frei und ohne Einschränkungen mit der wissenschaftlichen Community geteilt werden. Dies wird durch entsprechende Lizenzen sichergestellt (siehe hierzu auch Abschnitt (7)). 
+        {% elif sharing.value == 'Ja, extern in begrenztem Umfang mit individueller Freigabe' %}
+            Die Daten werden aus Anfrage mit anderen geteilt werden. Die Freigabe und die Nutzungsbedingungen werden bilateral geklärt. Hintergrund: {% render_set_value dataset 'project/dataset/sharing/explanation'%}
+        {% endif %}
+        &lt;br /&gt;
+        &lt;br /&gt;
+   {% endif %}
+{% endfor %}
+
+&lt;h3 id=&quot;5&quot;&gt;(5) In welchen Repositorien und wie lange sollen die im Projekt generierten Daten und Metadaten nach Projektende gespeichert und zugänglich sein?&lt;/h3&gt;
+{% for dataset in datasets %}
+    {% get_set_values dataset 'project/dataset/preservation/repository' as repos %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+    {% if repos|length &gt; 0 %}
+    &lt;ul&gt;
+       {% for repo in repos %}
+            {% if repo.value == 'Eigene Institution' %}
+                &lt;li&gt;Dieser Datensatz wird auf Servern der eigenen Institution archiviert und langfristig gesichert.&lt;/li&gt;        
+            {% elif repo.value|truncatechars:6 == 'Eine …' %}
+                 &lt;li&gt;Dieser Datensatz wird an unserer Partner-Institution {{ repo.value|cut:'Eine andere Partner-Institution:' }} archiviert und langfristig gesichert.&lt;/li&gt;
+            {% elif repo.value|truncatechars:6 == 'Gener…' %}
+                &lt;li&gt;Dieser Datensatz wird in dem Repositorium {{ repo.value|cut:'Generisches Datenzentrum:' }} archiviert und langfristig gesichert.&lt;/li&gt;
+            {% elif repo.value|truncatechars:6 == 'Diszi…' %}
+                &lt;li&gt;Dieser Datensatz wird in dem fachlichen Repositorium {{ repo.value|cut:'Disziplinspezifisches Datenzentrum:' }} und langfristig gesichert.&lt;/li&gt;
+            {% elif repo.value|truncatechars:6 == 'Wird…' %}
+               &lt;li&gt;Es wurd noch nicht entschieden, wo der Datensatz langfritg archiviert werden wird. Es wird sich im Lauf der Datenerhebung herausstellen, welche Repositoriumslösung am besten geeignet ist. &lt;/li&gt;
+            {% elif repo.value|truncatechars:6 == 'Sonst…' %}
+               &lt;li&gt;{{ repo.value|cut:'Sonstiges:' }}&lt;/li&gt;
+            {% endif %}
+        {% endfor %}
+       &lt;/ul&gt;
+       &lt;b&gt;Verfügbarkeit:&lt;/b&gt; {% render_set_value dataset 'project/dataset/preservation/reuse_duration'%}  
+    {% endif %}
+&lt;br /&gt;
+&lt;br /&gt;
+{% endfor %}
+
+
+&lt;h3 id=&quot;6&quot;&gt;(6) Wer ist im Projekt für den adäquaten Umgang mit den Forschungsdaten verantwortlich? Bitte Angabe der verantwortlichen Person.&lt;/h3&gt;
+
+{% render_value 'project/support'%} 
+
+&lt;h3 id=&quot;7&quot;&gt;(7) Ab wann sollen die Daten der Wissenschaft unter welcher Lizenz zur Verfügung stehen?&lt;/h3&gt;
+Siehe hierzu auch die in Abschnitt (4) angegebenen Informationen.&lt;br /&gt;&lt;br /&gt;
+{% for dataset in datasets %}
+  {% get_set_values dataset 'project/dataset/sharing/sharing_license' as license %}
+  &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+  {% render_set_value dataset 'project/dataset/data_publication_date' %}
+  	{% if license|length &gt; 0 %}
+        Dann ist die Ressource verfügbar unter der Lizenz: {% render_set_value_inline_list dataset 'project/dataset/sharing/sharing_license' %}.
+	{% endif %}
+&lt;br /&gt;
+&lt;br /&gt;
+{% endfor %}
+{% endif %}
+
+
+
+
+{% if LANGUAGE_CODE == &quot;en&quot; %}
+
+&lt;div id=&quot;Titel&quot; style=&quot;margin: 0 auto; line-height: 21mm; font-size: 2.5em; font-weight: bold;&quot;&gt;
+	&lt;br /&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Logo_Volkswagenstiftung.svg/640px-Logo_Volkswagenstiftung.svg.png&quot; alt=&quot;VW Stiftung logo&quot; width=&quot;300&quot; /&gt;
+	&lt;br /&gt;&lt;h1&gt;Volkswagen Stiftung&lt;br /&gt;Basic Data Management Plan&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+   Due to an increasingly data driven science, research data has become a paramount foundation for and result of scientific work. The heterogeneity of such data (raw data such as measurement data, laboratory findings, audio-visual information, texts, survey data; secondary data such as statistics, simulations, annotations) corresponds to the heterogeneity of different disciplines, procedures and research questions. The secure storage of relevant research data is important for the replicability of experiments; it is equally important as a starting point for new research questions. VolkswagenStiftung supports the longterm storage of and the free access to research data, making allowance for respective legal questions. 
+&lt;/div&gt;
+
+&lt;h3 id=&quot;0&quot;&gt;Overview of Datasets&lt;/h3&gt;
+The following datasets will be used in the proposed research project:
+&lt;ol&gt;
+{% for dataset in datasets %}
+    &lt;li&gt;   
+        {{ dataset.value }} &lt;br /&gt;
+     &lt;/li&gt; 
+{% endfor %}
+&lt;/ol&gt;
+
+
+
+&lt;h3 id=&quot;1&quot;&gt;(1) Which existing data/data collections will be employed in the project? Is the data freely available (open data) or do you have to consider intellectual property rights or privacy issues?&lt;/h3&gt;
+{% for dataset in datasets %}
+    {% get_set_value dataset 'project/dataset/origin' as origin %}
+    {% get_set_value dataset 'project/dataset/uri' as uri %}
+ {% if origin|length &gt; 0 %}
+    {% if origin.value == 'Re-used' %}
+        &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+        {% render_set_value dataset 'project/dataset/description'%} &lt;br /&gt;
+        The dataset &lt;i&gt;{{ dataset.value }}&lt;/i&gt; already exists and will be reused in the project.  
+        {% if uri|length &gt; 0 %}
+            It is made available under {% render_set_value dataset 'project/dataset/uri'%}.
+        {% endif %}
+        &lt;br /&gt;
+        In total we expect a data volume  {% render_set_value dataset 'project/dataset/size/volume' %}.
+        &lt;br /&gt;
+        &lt;br /&gt;
+        {% render_set_value dataset 'project/legal_aspects'%} 
+    {% endif %}
+    {% if origin.value|truncatechars:5 == 'Both…' %}
+        &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+        The dataset &lt;i&gt;{{ dataset.value }}&lt;/i&gt; is a combination of an existing dataset and data that are collected within the project.  
+        {% if link|length &gt; 0 %}
+          The re-used dataset is made available under {% render_set_value dataset 'project/dataset/uri'%}.
+        {% endif %}
+    &lt;br /&gt;
+    &lt;br /&gt;
+        {% render_set_value dataset 'project/legal_aspects'%}
+    {% endif %}
+    {% endif %}
+{% endfor %}
+
+
+
+&lt;h3 id=&quot;2&quot;&gt;(2) Which data/types of data will be generated during the process of the project? What kind of data volume is to be expected?&lt;/h3&gt;
+{% for dataset in datasets %}
+{% get_set_value dataset 'project/dataset/origin' as origin %}
+{% if origin|length &gt; 0 %}
+    {% if origin.value == 'Created' %}
+        &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+        {% render_set_value dataset 'project/dataset/description'%} &lt;br /&gt;
+        The dataset &lt;i&gt;{{ dataset.value }}&lt;/i&gt; will be created within the project. A data volume {% render_set_value dataset 'project/dataset/size/volume' %} is expected.
+        &lt;br /&gt;
+        &lt;br /&gt;
+        {% render_set_value dataset 'project/legal_aspects'%}  
+    {% elif origin.value|truncatechars:5 == 'Both…' %}
+        &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+        {% render_set_value dataset 'project/dataset/description'%} &lt;br /&gt;
+        The dataset &lt;i&gt;{{ dataset.value }}&lt;/i&gt; extends an existing dataset. See Section 1.
+        In total we expect a data volume  {% render_set_value dataset 'project/dataset/size/volume' %}.
+    {% endif %}
+{% else %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+    {% render_set_value dataset 'project/dataset/description'%} &lt;br /&gt;
+    In total we expect a data volume  {% render_set_value dataset 'project/dataset/size/volume' %}.
+    &lt;br /&gt;
+    &lt;br /&gt;
+    {% render_set_value dataset 'project/legal_aspects'%}  
+{% endif %}
+ &lt;br /&gt;
+ &lt;br /&gt;
+   {% endfor %}
+
+
+&lt;h3 id=&quot;3&quot;&gt;(3) How will you organize the data: Which formats and standards will be applied to storing the data? Which standards do you employ for generating the metadata and which formats to store respective metadata? Will you assign persistent identifiers (PID) to the data to ensure a lasting referencing and citing?&lt;/h3&gt;  
+
+{% for dataset in datasets %}
+   &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;&lt;br /&gt;
+    &lt;b&gt;Formate:&lt;/b&gt;&lt;br /&gt;
+     {% render_set_value dataset 'project/dataset/format'%}  
+   &lt;br /&gt;
+   &lt;br /&gt;
+   &lt;b&gt;Metadaten:&lt;/b&gt;&lt;br /&gt;
+   	{% get_set_values dataset 'project/dataset/metadata/scope' as metadata %}
+ In addition to basic bibliographic 
+ metadata (including title, authors, keywords, description, related publications 
+ related publications, PIDs), which are necessary for findability, identification, and citability,
+ specific metadata are recorded for the data set:
+	{% if metadata|length &gt; 0 %}
+     &lt;ul&gt;
+       {% for meta in metadata %}
+          {% if meta.value == 'Location' %}
+              &lt;li&gt;the location&lt;/li&gt;         
+          {% elif meta.value == 'Content' %}
+              &lt;li&gt;detailed description of the content of the dataset&lt;/li&gt;
+          {% elif meta.value == 'Methodology' %}
+              &lt;li&gt;information about the methodology employed to create the dataset&lt;/li&gt;
+          {% elif meta.value == 'Creation process' %}
+              &lt;li&gt;details about the creation process&lt;/li&gt;
+          {% elif meta.value == 'Technology' %}
+              &lt;li&gt;instruments and software tools involved in the creation&lt;/li&gt;
+          {% elif meta.value == 'Documentation of the software necessary to use the data' %}
+              &lt;li&gt;documentation of the software necessary to use the data&lt;/li&gt;
+          {% elif meta.value == 'Time' %}
+              &lt;li&gt;time and time periods&lt;/li&gt;
+          {% elif meta.value == 'Sources' %}
+              &lt;li&gt;the source material underline the full dataset &lt;/li&gt;
+          {% elif meta.value == 'Agents' %}
+              &lt;li&gt;agents who play a role in the dataset&lt;/li&gt;
+          {% elif meta.value == 'Identifiers' %}
+              &lt;li&gt;identifiers that can be used to trace creation history and provenance &lt;/li&gt;
+          {% elif meta.value|truncatechars:6 == 'Other…' %}
+              &lt;li&gt;{{ meta.value|cut:'Other:' }}&lt;/li&gt;
+          {% endif %}
+       {% endfor %}
+    &lt;/ul&gt;  
+	{% endif %} 
+    &lt;br /&gt;
+    &lt;b&gt;Standards:&lt;/b&gt;&lt;br /&gt;
+        {% get_set_value dataset 'project/dataset/metadata/standards' as metadata_standards %}
+        {% if metadata_standards %}
+         {% if metadata_standards.value|truncatechars:6 == 'No fi…' %}
+             {{ metadata_standards.value }}.
+         {% elif  metadata_standards.value|truncatechars:6 == 'Withi…' %}
+             The project has not yet decided which description system will be used for metadata and contexual information. 
+         {% elif  metadata_standards.value|truncatechars:6 == 'Disci…' %}
+             We use established standards to record the metadata. In particular:
+             {{ metadata_standards.value|cut:'Discipline-specific standards, classifications etc. are used:' }}
+         {% elif  metadata_standards.value|truncatechars:6 == 'A cus…' %}
+             The metadata is recorded using a custom description system: 
+             {{ metadata_standards.value|cut:'A custom description system is used (please briefly outline and, if necessary, indicate where it is documented in more detail):' }}
+         {% elif  metadata_standards.value|truncatechars:6 == 'The r…' %}
+             The intended respository uses a standard: 
+             {{ metadata_standards.value|cut:'The repository we work with uses the standard:' }}
+         {% elif  metadata_standards.value|truncatechars:6 == 'The d…' %}
+             Details on the description system can be found here: 
+             {{ metadata_standards.value|cut:'The description system used is documented in more detail at the following address:' }}
+         {% elif  metadata_standards.value|truncatechars:6 == 'Other…' %}
+             {{ metadata_standards.value|cut:'Other:' }}
+         {% endif %}
+	{% endif %}
+    &lt;br /&gt;&lt;br /&gt;
+    &lt;b&gt;PID:&lt;/b&gt;&lt;br /&gt;
+    {% get_set_value dataset 'project/dataset/pids/system' as pidsystem %}
+    {% if pidsystem|length &gt; 0 %}
+        {% if pidsystem.value == 'None' %}
+            No persistent identifiers are assigned for this data set.         
+        {% elif pidsystem.value == 'Handle / DOI' %}
+             The data is clearly identifiable with PIDs from the handle system (including DOI) and can therefore be cited for a long time.
+        {% elif pidsystem.value == 'PURL' %}
+            The data is made uniquely identifiable by Persistent Uniform Resource Locator (PURL) and can therefore be cited for a long time.
+        {% elif pidsystem.value == 'ARK' %}
+            Archival Resource Keys (ARK) are assigned to the data. This ensures clear referencing and thus citation.
+        {% elif pidsystem.value == 'ISLRN' %}
+            ISLRN (International Standard Language Resource Number) is a data type-specific PID system that guarantees that the data set can be cited for a long time.
+        {% elif pidsystem.value|truncatechars:6 == 'Other…' %}
+            {{ pidsystem.value|cut:'Other:' }}
+        {% elif pidsystem.value|truncatechars:6 == 'Commi…' %}
+            The data set is uniquely identifiable by the commit tag of the code repository &lt;i&gt;{{pidsystem.value|cut:'Commit tag on a code repository:'}}&lt;/i&gt; together with the identity of the repository. This allows each version to be uniquely cited.
+        {% endif %}
+   {% endif %}
+&lt;br /&gt;
+&lt;br /&gt;
+{% endfor %}
+
+&lt;h3 id=&quot;4&quot;&gt;(4) Are the exploitation rights and the usage rights of the generated data defined (e.g. by awarding creative commons licences)? The definition of respective rights needs to be clarified between the individual researchers of the collaborating project teams in the course of the project, as well as after the completion of the project for the research community.&lt;/h3&gt;
+
+&lt;h4 id = &quot;4.1&quot; &gt; Internal project planning / regulations:&lt;/h4&gt;
+{% render_value 'project/partner/agreement'%} 
+
+&lt;h4 id = &quot;4.2&quot; &gt; Access to the data:&lt;/h4&gt;
+{% for dataset in datasets %}
+    {% get_set_value dataset 'project/dataset/sharing/yesno' as sharing %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+    {% if sharing|length &gt; 0 %}
+        {% if sharing.value == 'No' %}
+            This data set will not be shared. The reasons for this are: {% render_set_value dataset 'project/dataset/sharing/explanation'%}         
+        {% elif sharing.value  == 'Yes, externally for everyone' %}
+            This dataset will be shared freely and without restrictions with the scientific community. This is ensured by appropriate licences (see also section (7)).
+        {% elif sharing.value == 'Yes, externally limited with individual approval' %}
+            The data will be shared with others on request. The release and terms of use are determined bilaterally. Reasoning: {% render_set_value dataset 'project/dataset/sharing/explanation'%}
+        {% endif %}
+   &lt;br /&gt;
+   &lt;br /&gt;
+   {% endif %}
+{% endfor %}
+
+&lt;h3 id=&quot;5&quot;&gt;(5) In which repositories and for how long will the project-generated data and metadata be stored and made accessible after project completion?&lt;/h3&gt;
+{% for dataset in datasets %}
+    {% get_set_values dataset 'project/dataset/preservation/repository' as repos %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+    {% if repos|length &gt; 0 %}
+    &lt;ul&gt;
+       {% for repo in repos %}
+            {% if repo.value == 'Own institution' %}
+                &lt;li&gt;This data record is archived on the institution's own servers and long-term backed up.&lt;/li&gt;        
+            {% elif repo.value|truncatechars:6 == 'Anoth…' %}
+                 &lt;li&gt;This data set is archived at our partner institution {{ repo.value|cut:'Another partner institution:' }} and long-term preserved.&lt;/li&gt;
+            {% elif repo.value|truncatechars:6 == 'Gener…' %}
+                &lt;li&gt;This data set is archived in the repository {{ repo.value|cut:'Generic data center:' }} and saved for the long term.&lt;/li&gt;
+            {% elif repo.value|truncatechars:6 == 'Disci…' %}
+                &lt;li&gt;This data set is stored in the discipline-specific repository {{ repo.value|cut:'Discipline-specific data center:' }} and saved for the long term.&lt;/li&gt;
+            {% elif repo.value|truncatechars:6 == 'To be…' %}
+               &lt;li&gt;It has not yet been decided where the dataset will be archived in the long term. It will become clear in the course of data collection which repository solution is most suitable. &lt;/li&gt;
+            {% elif repo.value|truncatechars:6 == 'Other…' %}
+               &lt;li&gt;{{ repo.value|cut:'Other:' }}&lt;/li&gt;
+            {% endif %}
+        {% endfor %}
+       &lt;/ul&gt;
+       &lt;b&gt;Availability:&lt;/b&gt; {% render_set_value dataset 'project/dataset/preservation/reuse_duration'%}  
+    {% endif %}
+&lt;br /&gt;
+&lt;br /&gt;
+{% endfor %}
+
+
+&lt;h3 id=&quot;6&quot;&gt;(6) Who is responsible for the adequate handling of the research data in the project?&lt;/h3&gt;
+
+{% render_value 'project/support'%} 
+
+&lt;h3 id=&quot;7&quot;&gt;(7) When is the data available to the scientific community? And in which licence category?&lt;/h3&gt;
+See also the information provided in Section (4).&lt;br /&gt;&lt;br /&gt;
+{% for dataset in datasets %}
+  {% get_set_values dataset 'project/dataset/sharing/sharing_license' as license %}
+  &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+    {% render_set_value dataset 'project/dataset/data_publication_date' %}
+  	{% if license|length &gt; 0 %}
+	     The resource will be made available under the licence: {% render_set_value_inline_list dataset 'project/dataset/sharing/sharing_license' %}.
+	{% endif %}
+&lt;br /&gt;
+&lt;br /&gt;
+{% endfor %}
+{% endif %}</template>
+	</view>
+</rdmo>
