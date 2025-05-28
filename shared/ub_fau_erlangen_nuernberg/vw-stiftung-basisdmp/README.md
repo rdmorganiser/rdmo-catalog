@@ -2,7 +2,7 @@
 
 # Allgemeine Hinweise zur Verwendung des Fragenkatalogs VW Stiftung - DMP
 
-Der Fragebogen wurde kooperativ von der UB der FAU Erlangen-Nürnberg und der UB der LMU München erstellt. Diese Vorlage orientiert sich an dem Basis-Datenmanagementplan der VW-Stiftung ([Basis-DMP](https://www.volkswagenstiftung.de/sites/default/files/documents/Basis-Datenmanagementplan.docx)). Die Fragen folgen nicht genau dem offiziellen VW-Plan. Der Hauptgrund dafür ist, dass der offizielle Plan verwandte FDM-Themen in verschiedene Abschnitte aufteilt. Nach dem Ausfüllen dieses Fragebogens kann die entsprechende Ansicht (view_vw_stiftung.xml) genutzt werden, um die Antworten entsprechend der offiziellen VW-Vorlage zu formatieren und zu exportieren. Die Fragen und Hilfetexte sind in deutscher und englischer Sprache verfügbar. Es wurden für diesen Katalog keine neuen Attribute erstellt. Es wurde eine neue Bedingung (https://fdm-bayern.org/eHumanities/conditions/Data_is_Reused) und eine neue Option (https://fdm-bayern.org/eHumanities/options/dataset_sharing_options_yes_restricted_no) eingeführt. 
+Der Fragebogen wurde kooperativ von der UB der FAU Erlangen-Nürnberg und der UB der LMU München erstellt. Diese Vorlage orientiert sich an dem Basis-Datenmanagementplan der VW-Stiftung ([Basis-DMP](https://www.volkswagenstiftung.de/sites/default/files/documents/Basis-Datenmanagementplan.docx)). Die Fragen folgen nicht genau dem offiziellen VW-Plan. Der Hauptgrund dafür ist, dass der offizielle Plan verwandte FDM-Themen in verschiedene Abschnitte aufteilt. Nach dem Ausfüllen dieses Fragebogens kann die entsprechende Ansicht (view_vw_stiftung.xml) genutzt werden, um die Antworten entsprechend der offiziellen VW-Vorlage zu formatieren und zu exportieren. Die Fragen und Hilfetexte sind in deutscher und englischer Sprache verfügbar. Es wurden für diesen Katalog keine neuen Attribute erstellt. Es wurde eine neue Bedingung (https://fdm-bayern.org/eHumanities/conditions/data_reused) und eine neue Option (https://fdm-bayern.org/eHumanities/options/yes_restricted_no) eingeführt. 
 
 ## Besipielantworten
 Um eine Vorstellung davon zu vermitteln, wie die Antworten aussehen könnten, wurde ein kurzer DMP für ein fiktives Projekt unter Verwendung dieser Vorlage erstellt. Die Vorlage kann auf der GitLab-Instanz der FAU Erlangen-Nürnberg abgerufen werden: https://gitlab.rrze.fau.de/cdi/labs/literacy/proposal-self-service/-/tree/main/RDMO/VW_Stiftung?ref_type=heads 
@@ -51,7 +51,7 @@ Attribut: /project/dataset/uri
 
 Widget: text
 
-Bedingung: https://fdm-bayern.org/eHumanities/conditions/Data_is_Reused
+Bedingung: https://fdm-bayern.org/eHumanities/conditions/data_reused
 
 #### In welchem Rahmen liegt die tatsächliche oder erwartete Größe des Datensatzes? / What is the actual or expected size of the dataset?
 
@@ -117,7 +117,7 @@ Attribut: /project/dataset/sharing/yesno
 
 Widget: radio
 
-Option: https://fdm-bayern.org/eHumanities/options/dataset_sharing_options_yes_restricted_no
+Option: https://fdm-bayern.org/eHumanities/options/yes_restricted_no
 
 #### Wenn nicht, begründen Sie dies bitte und unterscheiden Sie dabei zwischen rechtlichen und/oder vertraglichen Gründen und freiwilligen Einschränkungen. / If no, please explain why not. Please differentiate between legal and contractual reasons and voluntary restrictions.
 
