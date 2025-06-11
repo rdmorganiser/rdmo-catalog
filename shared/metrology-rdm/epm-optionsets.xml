@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2024-05-17T16:38:03.508232+02:00" version="2.0.0">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-06-11T16:12:59.119437+02:00" version="2.2.2">
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/access_committee">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>access_committee</uri_path>
@@ -59,7 +59,7 @@
 		<text lang="de">Sonstiges</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/availability-third-parties">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -108,6 +108,167 @@
 		<help lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
+	</option>
+	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_descriptors">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>data_descriptors</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/metrology_vocabs__MR__" order="0"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_container__MR__" order="1"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/semantic__MR__" order="2"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/other" order="3"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/metrology_vocabs__MR__">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>metrology_vocabs__MR__</uri_path>
+		<dc:comment/>
+		<text lang="en">Metrology-specific vocabularies</text>
+		<help lang="en">VIM, GUM or similar.</help>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_container__MR__">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>data_container__MR__</uri_path>
+		<dc:comment/>
+		<text lang="en">Data and metadata containers</text>
+		<help lang="en">File formats that package data and metadata in the same file: HDF5, NetCDF, CityGML, DICOM etc.</help>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/semantic__MR__">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>semantic__MR__</uri_path>
+		<dc:comment/>
+		<text lang="en">Semantic descriptors</text>
+		<help lang="en">Ontologies, controlled dictionaries, terminologies etc.</help>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/other">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>standards_metrology/other</uri_path>
+		<dc:comment/>
+		<text lang="en">Other</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Sonstiges</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>data_utility</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/science" order="1"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/economy" order="2"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/nmi-di" order="3"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/standardisation" order="4"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/politics" order="5"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/citizenship" order="6"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/other" order="10"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/science">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>data_utility/science</uri_path>
+		<dc:comment/>
+		<text lang="en">Other scientists</text>
+		<help lang="en">(from the own or another field)</help>
+		<view_text lang="en"/>
+		<text lang="de">Andere Wissenschaftlerinnen und Wissenschaftler</text>
+		<help lang="de">(aus dem eigenen oder anderen Forschungsfeldern)</help>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/economy">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>data_utility/economy</uri_path>
+		<dc:comment/>
+		<text lang="en">Stakeholders from industry / economy</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Entscheidungsträger aus Industrie / Wirtschaft</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/nmi-di">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>data_utility/nmi-di</uri_path>
+		<dc:comment/>
+		<text lang="en">NMIs/DIs</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/standardisation">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>data_utility/standardisation</uri_path>
+		<dc:comment/>
+		<text lang="en">Standardisation bodies</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Normungsgremien</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/politics">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>data_utility/politics</uri_path>
+		<dc:comment/>
+		<text lang="en">Politics / Decision makers</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Politik / Entscheidungsträger</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/citizenship">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>data_utility/citizenship</uri_path>
+		<dc:comment/>
+		<text lang="en">Citizens</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Öffentlichkeit</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/other">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>data_utility/other</uri_path>
+		<dc:comment/>
+		<text lang="en">Other</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Sonstige</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
 	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_license_types">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -214,13 +375,100 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>dataset_license_types/233</uri_path>
 		<dc:comment/>
-		<text lang="en">Other, or exact designation – if known</text>
+		<text lang="en">Other – please specify</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de">Andere, bzw. genaue Bezeichnung – falls bekannt</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
+	</option>
+	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_origin_created">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>dataset_origin_created</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_origin_created/experiments" order="5"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_origin_created/simulations" order="6"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_origin_created/observations" order="7"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_origin_created/surveys" order="8"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_origin_created/transformation" order="9"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_origin_created/other" order="10"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_origin_created/experiments">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>dataset_origin_created/experiments</uri_path>
+		<dc:comment/>
+		<text lang="en">Generated data: from experiments</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Selbst erzeugte Daten: aus Experimenten</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_origin_created/simulations">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>dataset_origin_created/simulations</uri_path>
+		<dc:comment/>
+		<text lang="en">Generated data: from simulations</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Selbst erzeugte Daten: aus Simulationen</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_origin_created/observations">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>dataset_origin_created/observations</uri_path>
+		<dc:comment/>
+		<text lang="en">Generated data: from observations</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Selbst erzeugte Daten: aus Beobachtungen</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_origin_created/surveys">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>dataset_origin_created/surveys</uri_path>
+		<dc:comment/>
+		<text lang="en">Generated data: from surveys</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Selbst erzeugte Daten: aus Umfragen</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_origin_created/transformation">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>dataset_origin_created/transformation</uri_path>
+		<dc:comment/>
+		<text lang="en">Generated data: from transformation/analysis of other data</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Selbst erzeugte Daten: durch Transformation / Analyse anderer Daten</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_origin_created/other">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>dataset_origin_created/other</uri_path>
+		<dc:comment/>
+		<text lang="en">Other</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Sonstiges</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
 	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_origin_reused">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -239,37 +487,37 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>dataset_origin_reused/project_data</uri_path>
 		<dc:comment/>
-		<text lang="en">project confidential data</text>
+		<text lang="en">Project confidential data</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">projekteigene vertrauliche Daten</text>
+		<text lang="de">Projekteigene vertrauliche Daten</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_origin_reused/project_partner_data">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>dataset_origin_reused/project_partner_data</uri_path>
 		<dc:comment/>
-		<text lang="en">internal data of the project partners</text>
+		<text lang="en">Internal data of the project partners</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">von Projektpartner gelieferte Daten</text>
+		<text lang="de">Von Projektpartner gelieferte Daten</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_origin_reused/public_data">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>dataset_origin_reused/public_data</uri_path>
 		<dc:comment/>
-		<text lang="en">publicly available data</text>
+		<text lang="en">Publicly available data</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">öffentlich zugängliche Daten</text>
+		<text lang="de">Öffentlich zugängliche Daten</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_origin_reused/other">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -281,7 +529,7 @@
 		<text lang="de">Sonstiges</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_other_rights">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -306,7 +554,7 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>dataset_other_rights/copyright</uri_path>
 		<dc:comment/>
-		<text lang="en">copyright</text>
+		<text lang="en">Copyright</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de"/>
@@ -318,7 +566,7 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>dataset_other_rights/56</uri_path>
 		<dc:comment/>
-		<text lang="en">patent</text>
+		<text lang="en">Patent</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de">Patent</text>
@@ -330,7 +578,7 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>dataset_other_rights/57</uri_path>
 		<dc:comment/>
-		<text lang="en">utility model</text>
+		<text lang="en">Utility model</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de">Gebrauchsmuster</text>
@@ -342,7 +590,7 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>dataset_other_rights/58</uri_path>
 		<dc:comment/>
-		<text lang="en">trademark</text>
+		<text lang="en">Trademark</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de">Marke</text>
@@ -354,7 +602,7 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>dataset_other_rights/59</uri_path>
 		<dc:comment/>
-		<text lang="en">plant variety rights protection</text>
+		<text lang="en">Plant variety rights protection</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de">Sortenschutz</text>
@@ -366,7 +614,7 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>dataset_other_rights/60</uri_path>
 		<dc:comment/>
-		<text lang="en">integrated circuit layout design protection</text>
+		<text lang="en">Integrated circuit layout design protection</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de">Halbleiterschutz</text>
@@ -378,10 +626,10 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>dataset_other_rights/61</uri_path>
 		<dc:comment/>
-		<text lang="en">geographical indication</text>
+		<text lang="en">Geographical indication</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">geographische Herkunftsangabe</text>
+		<text lang="de">Geographische Herkunftsangabe</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
@@ -390,10 +638,10 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>dataset_other_rights/62</uri_path>
 		<dc:comment/>
-		<text lang="en">registered design</text>
+		<text lang="en">Registered design</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">eingetragenes Design</text>
+		<text lang="de">Eingetragenes Design</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
@@ -408,7 +656,7 @@
 		<text lang="de">Andere</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_other_rights/66">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -422,105 +670,157 @@
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility">
+	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<uri_path>data_utility</uri_path>
+		<uri_path>dataset_sharing_restrictions</uri_path>
 		<dc:comment/>
 		<provider_key/>
 		<options>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/science" order="1"/>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/economy" order="2"/>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/nmi-di" order="3"/>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/standardisation" order="4"/>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/politics" order="5"/>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/citizenship" order="6"/>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/other" order="10"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/permission" order="1"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/privacy" order="2"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/ipr" order="3"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/law" order="4"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/ethics" order="5"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/comprehensibility" order="6"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/confirmation" order="7"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/relevance" order="8"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/redundancy" order="10"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/technologies" order="11"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/other" order="20"/>
 		</options>
 		<conditions/>
 	</optionset>
-	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/science">
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/permission">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<uri_path>data_utility/science</uri_path>
+		<uri_path>dataset_sharing_restrictions/permission</uri_path>
 		<dc:comment/>
-		<text lang="en">Other scientists (from the own or another field)</text>
+		<text lang="en">Legal restrictions: Permission is required to access the data or the researched object, and the grantors do not consent to the data being disseminated</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">Andere Wissenschaftlerinnen und Wissenschaftler (aus dem eigenen oder anderen Forschungsfeldern)</text>
+		<text lang="de">Rechtliche Hinderungsgründe: Für den Zugang zu den Daten oder zum beforschten Objekt ist eine Genehmigung erforderlich und die Erteiler der Genehmigung sind mit einer Weitergabe der Daten nicht einverstanden</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
-	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/economy">
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/privacy">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<uri_path>data_utility/economy</uri_path>
+		<uri_path>dataset_sharing_restrictions/privacy</uri_path>
 		<dc:comment/>
-		<text lang="en">Stakeholders from industry / economy</text>
+		<text lang="en">Legal restrictions: sharing the data might reveal personal information for whose dissemination there is no consent</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">Entscheidungsträger aus Industrie / Wirtschaft</text>
+		<text lang="de">Rechtliche Hinderungsgründe: durch das Teilen der Daten könnten personenbezogene Informationen preisgegeben werden, für deren Weitergabe es keine Einwilligung gibt</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
-	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/nmi-di">
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/ipr">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<uri_path>data_utility/nmi-di</uri_path>
+		<uri_path>dataset_sharing_restrictions/ipr</uri_path>
 		<dc:comment/>
-		<text lang="en">NMIs/DIs</text>
+		<text lang="en">Legal restrictions: Parts of the data are intellectual property of a partner or of third parties and the project does not own the right to disseminate them</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Rechtliche Hinderungsgründe: Teile der Daten sind geistiges Eigentum eines Partners oder Dritter und das Projekt besitzt nicht das Recht zu deren Weitergabe</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/law">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>dataset_sharing_restrictions/law</uri_path>
+		<dc:comment/>
+		<text lang="en">Legal restrictions: Risk of possible violation of (inter)national law or any constraints from the Grant Agreement</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Rechtliche Hinderungsgründe: Risiko einer möglichen Verletzung (inter)nationalen Rechts oder von Bedingungen im Fördervertrag</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/ethics">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>dataset_sharing_restrictions/ethics</uri_path>
+		<dc:comment/>
+		<text lang="en">Ethical restrictions, e.g. prevention of dual use, protection of vulnerable groups or endangered species, exclusion of stolen cultural assets</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ethische Hinderungsgründe, z. B. Beschränkung militärischer Nachnutzung, Schutz vulnerabler Gruppe oder gefährdeter Spezies, Ausschluss geraubter Kulturgüter</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/comprehensibility">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>dataset_sharing_restrictions/comprehensibility</uri_path>
+		<dc:comment/>
+		<text lang="en">Voluntary restrictions: Data economy and better comprehensibility (no publication of pre-processed data without a clear reason for doing so)</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Freiwillige Beschränkungen: Datensparsamkeit und bessere Verständlichkeit (keine Veröffentlichung von Zwischenergebnissen ohnen einen triftigen Grund)</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/confirmation">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>dataset_sharing_restrictions/confirmation</uri_path>
+		<dc:comment/>
+		<text lang="en">Voluntary restrictions: Use of results taken from past publications for confirmatory reasons only</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Freiwillige Beschränkungen: Verwendung von Ergebnissen früherer Veröffentlichungen nur zu Bestätigungszwecken</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/relevance">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>dataset_sharing_restrictions/relevance</uri_path>
+		<dc:comment/>
+		<text lang="en">Voluntary restrictions: No direct relevance of the data for the main topic of the publication</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Freiwillige Beschränkungen: keine direkte Relevanz der Daten für das Hauptthema der Textpublikation</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/redundancy">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>dataset_sharing_restrictions/redundancy</uri_path>
+		<dc:comment/>
+		<text lang="en">Voluntary restrictions: Redundancy of the data with the information already made available within a textual publication</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Freiwillige Beschränkungen: Redundanz der Daten, wobei die Daten bereits in einer Textpublikation mit zur Verfügung gestellt worden sind</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/technologies">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>dataset_sharing_restrictions/technologies</uri_path>
+		<dc:comment/>
+		<text lang="en">Voluntary restrictions: Export controls for sensitive technologies or data</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de"/>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
-	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/standardisation">
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/dataset_sharing_restrictions/other">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<uri_path>data_utility/standardisation</uri_path>
+		<uri_path>dataset_sharing_restrictions/other</uri_path>
 		<dc:comment/>
-		<text lang="en">Standardisation bodies</text>
+		<text lang="en">Other restrictions</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">Normungsgremien</text>
+		<text lang="de">Andere Hinderungsgründe</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
-	</option>
-	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/politics">
-		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<uri_path>data_utility/politics</uri_path>
-		<dc:comment/>
-		<text lang="en">Politics / Decision makers</text>
-		<help lang="en"/>
-		<view_text lang="en"/>
-		<text lang="de">Politik / Entscheidungsträger</text>
-		<help lang="de"/>
-		<view_text lang="de"/>
-		<additional_input/>
-	</option>
-	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/citizenship">
-		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<uri_path>data_utility/citizenship</uri_path>
-		<dc:comment/>
-		<text lang="en">Citizens</text>
-		<help lang="en"/>
-		<view_text lang="en"/>
-		<text lang="de">Öffentlichkeit</text>
-		<help lang="de"/>
-		<view_text lang="de"/>
-		<additional_input/>
-	</option>
-	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/data_utility/other">
-		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<uri_path>data_utility/other</uri_path>
-		<dc:comment/>
-		<text lang="en">Other</text>
-		<help lang="en"/>
-		<view_text lang="en"/>
-		<text lang="de">Sonstige</text>
-		<help lang="de"/>
-		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/DMP_version">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -566,6 +866,293 @@
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de">Projektende</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/documentation_form">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>documentation_form</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/documentation_form/hefdi_template_option_veroeffentlichungmetadaten1" order="1"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/documentation_form/hefdi_template_option_veroeffentlichungmetadaten2" order="2"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/documentation_form/hefdi_template_option_veroeffentlichungmetadaten3" order="3"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/documentation_form/hefdi_template_option_veroeffentlichungmetadaten5" order="5"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/documentation_form/hefdi_template_option_veroeffentlichungmetadaten1">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>documentation_form/hefdi_template_option_veroeffentlichungmetadaten1</uri_path>
+		<dc:comment/>
+		<text lang="en">Standardized metadata is stored in a data archive</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Standardisierte Metadaten werden in einem Datenarchiv abgelegt</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/documentation_form/hefdi_template_option_veroeffentlichungmetadaten2">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>documentation_form/hefdi_template_option_veroeffentlichungmetadaten2</uri_path>
+		<dc:comment/>
+		<text lang="en">All data is documented in detail as a ReadMe file</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Es gibt eine ausführliche Dokumentation über alle Daten als ReadMe-Datei</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/documentation_form/hefdi_template_option_veroeffentlichungmetadaten3">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>documentation_form/hefdi_template_option_veroeffentlichungmetadaten3</uri_path>
+		<dc:comment/>
+		<text lang="en">The data set is described in a publication</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Der Datensatz wird in einer normalen Veröffentlichung beschrieben</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/documentation_form/hefdi_template_option_veroeffentlichungmetadaten5">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>documentation_form/hefdi_template_option_veroeffentlichungmetadaten5</uri_path>
+		<dc:comment/>
+		<text lang="en">Others</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Anderes, und zwar</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>file_type</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/DT" order="1"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/GR" order="2"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/VO" order="3"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/AO" order="4"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/TT" order="5"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/DB" order="6"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/GG" order="7"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/CD" order="8"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/ST" order="9"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/MM" order="10"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/SO" order="20"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/DT">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>file_type/DT</uri_path>
+		<dc:comment/>
+		<text lang="en">table</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Tabelle</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/GR">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>file_type/GR</uri_path>
+		<dc:comment/>
+		<text lang="en">graphics</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Grafik</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/VO">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>file_type/VO</uri_path>
+		<dc:comment/>
+		<text lang="en">video</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Video</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/AO">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>file_type/AO</uri_path>
+		<dc:comment/>
+		<text lang="en">audio</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Audio</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/TT">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>file_type/TT</uri_path>
+		<dc:comment/>
+		<text lang="en">text</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Text</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/DB">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>file_type/DB</uri_path>
+		<dc:comment/>
+		<text lang="en">database</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Datenbank</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/GG">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>file_type/GG</uri_path>
+		<dc:comment/>
+		<text lang="en">geospatial data</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Geografische Information</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/CD">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>file_type/CD</uri_path>
+		<dc:comment/>
+		<text lang="en">computer-aided design</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Computer Aided Design</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/ST">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>file_type/ST</uri_path>
+		<dc:comment/>
+		<text lang="en">statistical analysis</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Statistische Auswertung</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/MM">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>file_type/MM</uri_path>
+		<dc:comment/>
+		<text lang="en">mathematical model</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">mathematisches Modell</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/file_type/SO">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>file_type/SO</uri_path>
+		<dc:comment/>
+		<text lang="en">Other</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Sonstiges</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/how_access_data">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>how_access_data</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/restricted_access" order="1"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/software_identifier/doi" order="2"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/security_measures/checksum" order="3"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/software" order="4"/>
+			<option dc:uri="https://rdmo.julius-kuehn.de/terms/options/measures_sensitive_data/Passwords" order="5"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/restricted_access">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>restricted_access</uri_path>
+		<dc:comment/>
+		<text lang="en">Access restrictions</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/software_identifier/doi">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>software_identifier/doi</uri_path>
+		<dc:comment/>
+		<text lang="en">DOI</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">DOI</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/security_measures/checksum">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>security_measures/checksum</uri_path>
+		<dc:comment/>
+		<text lang="en">Data robustness: checksum</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Datenrobustheit: Checksumme</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/other_research_output/software">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>other_research_output/software</uri_path>
+		<dc:comment/>
+		<text lang="en">Software</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Programme</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmo.julius-kuehn.de/terms/options/measures_sensitive_data/Passwords">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<uri_path>measures_sensitive_data/Passwords</uri_path>
+		<dc:comment/>
+		<text lang="en">Passwords</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Passwortschutz</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
@@ -641,6 +1228,8 @@
 			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/mappings/formal" order="2"/>
 			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/mappings/none" order="3"/>
 			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/mappings/human" order="4"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/mappings/noontologies" order="5"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/mappings/outofscope" order="6"/>
 		</options>
 		<conditions/>
 	</optionset>
@@ -672,7 +1261,7 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>mappings/none</uri_path>
 		<dc:comment/>
-		<text lang="en">No mappings are necessary, as the datasets are described using standard terminologies / There is no need for a mapping, since the used terminology is chosen to be compatible with the existing literature</text>
+		<text lang="en">There is no need for a mapping, since the used terminology is chosen to be compatible with the existing literature</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de">Das Mitliefern von Konkordanzen is nicht notwendig aufgrund der Kompatibilität der verwendeten Terminologie mit der bestehenden Literatur</text>
@@ -685,6 +1274,30 @@
 		<uri_path>mappings/human</uri_path>
 		<dc:comment/>
 		<text lang="en">No mapping can be provided, because data need human interpretation</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/mappings/noontologies">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>mappings/noontologies</uri_path>
+		<dc:comment/>
+		<text lang="en">No mappings are possible, because no ontologies are currently available</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/mappings/outofscope">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>mappings/outofscope</uri_path>
+		<dc:comment/>
+		<text lang="en">No ontologies are available and terminology creation goes beyond the scope of the project</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de"/>
@@ -727,7 +1340,7 @@
 		<uri_path>measures_sensitive_data/anonymization</uri_path>
 		<dc:comment/>
 		<text lang="en">Sensitive information is transferred only after anonymization (removal of personal reference)</text>
-		<help lang="en"/>
+		<help lang="en">(Complete removal of personal reference, with the aim of irreversibly preventing the identification of the individual to whom it relates)</help>
 		<view_text lang="en"/>
 		<text lang="de">Anonymisierung (Beseitigung des Personenbezugs)</text>
 		<help lang="de"/>
@@ -739,7 +1352,7 @@
 		<uri_path>measures_sensitive_data/pseudonymization</uri_path>
 		<dc:comment/>
 		<text lang="en">Sensitive information is transferred only after pseudonymization (coding of personal reference with an an alphanumeric string)</text>
-		<help lang="en"/>
+		<help lang="en">(Replacement of personal reference with an an alphanumeric string which does not allow the data subject to be directly identified without the use of additional information, which is kept separately under technical and organisational security measures)</help>
 		<view_text lang="en"/>
 		<text lang="de">Pseudonymisierung</text>
 		<help lang="de"/>
@@ -762,8 +1375,8 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>measures_sensitive_data/protection_software</uri_path>
 		<dc:comment/>
-		<text lang="en">Sensitive data are protected at software level (e.g. data encryption, password protection)</text>
-		<help lang="en"/>
+		<text lang="en">Sensitive data are protected at software level</text>
+		<help lang="en">(e.g. data encryption, password protection)</help>
 		<view_text lang="en"/>
 		<text lang="de">Zugriffsschutz auf Softwareebene</text>
 		<help lang="de"/>
@@ -798,22 +1411,22 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>measures_sensitive_data/other</uri_path>
 		<dc:comment/>
-		<text lang="en">Different (please describe in a complete sentence)</text>
-		<help lang="en"/>
+		<text lang="en">Others</text>
+		<help lang="en">(please describe in a complete sentence)</help>
 		<view_text lang="en"/>
-		<text lang="de">Anders (bitte in einem vollständigen Satz beschreiben)</text>
-		<help lang="de"/>
+		<text lang="de">Anders</text>
+		<help lang="de">(bitte in einem vollständigen Satz beschreiben)</help>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/measures_sensitive_data/clarify">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>measures_sensitive_data/clarify</uri_path>
 		<dc:comment/>
-		<text lang="en">Still needs to be clarified.</text>
+		<text lang="en">Still needs to be clarified</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">Muss noch geklärt werden.</text>
+		<text lang="de">Muss noch geklärt werden</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
@@ -825,11 +1438,12 @@
 		<provider_key/>
 		<options>
 			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/metadata_classes/bibliographic" order="0"/>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/metadata_classes/funding" order="2"/>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/metadata_classes/licensing" order="3"/>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/metadata_classes/content" order="4"/>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/metadata_classes/other" order="10"/>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/metadata_classes/identifiers" order="11"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/metadata_classes/funding" order="1"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/metadata_classes/licensing" order="2"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/metadata_classes/content" order="3"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/metadata_classes/identifiers" order="4"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/metadata_classes/keywords" order="5"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/metadata_classes/other" order="6"/>
 		</options>
 		<conditions/>
 	</optionset>
@@ -837,7 +1451,7 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>metadata_classes/bibliographic</uri_path>
 		<dc:comment/>
-		<text lang="en">bibliographic information (authors, dataset description, date of deposit, possibly embargo)</text>
+		<text lang="en">Bibliographic information about the datasets themselves (description, date of deposit, author(s))</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de"/>
@@ -849,7 +1463,7 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>metadata_classes/funding</uri_path>
 		<dc:comment/>
-		<text lang="en">information on funding (EPM funding program, project name, acronym, and grant number)</text>
+		<text lang="en">The European Partnership on Metrology funding (project name, acronym, grant number, acknowledgement text)</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de"/>
@@ -861,7 +1475,7 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>metadata_classes/licensing</uri_path>
 		<dc:comment/>
-		<text lang="en">licensing terms</text>
+		<text lang="en">Licensing terms and further access conditions (e.g. embargo)</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de"/>
@@ -873,7 +1487,31 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>metadata_classes/content</uri_path>
 		<dc:comment/>
-		<text lang="en">content-specific information</text>
+		<text lang="en">Content-specific information</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/metadata_classes/identifiers">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>metadata_classes/identifiers</uri_path>
+		<dc:comment/>
+		<text lang="en">Where applicable, persistent identifiers for authors (ORCID), organisations (ROR, ISNI), funders (ROR, GRID, FundRef), related publications and research outputs (DOI, URN, ISBN, Handle)</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/metadata_classes/keywords">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>metadata_classes/keywords</uri_path>
+		<dc:comment/>
+		<text lang="en">Search keywords</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de"/>
@@ -885,25 +1523,13 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>metadata_classes/other</uri_path>
 		<dc:comment/>
-		<text lang="en">other</text>
+		<text lang="en">Other</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de">Sonstiges</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
-	</option>
-	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/metadata_classes/identifiers">
-		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<uri_path>metadata_classes/identifiers</uri_path>
-		<dc:comment/>
-		<text lang="en">where applicable, the metadata will include persistent identifiers for authors (ORCID), organisations (ROR, ISNI), funders (ROR, GRID, FundRef), related publications and research outputs (DOI, URN, ISBN, Handle)</text>
-		<help lang="en"/>
-		<view_text lang="en"/>
-		<text lang="de"/>
-		<help lang="de"/>
-		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/other_rdm_requirements">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -954,7 +1580,7 @@
 		<text lang="de"/>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/other_rdm_requirements/project">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -966,7 +1592,7 @@
 		<text lang="de"/>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/other_rdm_requirements/community">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -978,7 +1604,7 @@
 		<text lang="de"/>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/other_rdm_requirements/other">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -990,7 +1616,7 @@
 		<text lang="de"/>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/other_research_output">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -1086,11 +1712,11 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>other_research_output/chemicals</uri_path>
 		<dc:comment/>
-		<text lang="en">New chemical substances (reagents, ...)</text>
-		<help lang="en"/>
+		<text lang="en">New chemical substances</text>
+		<help lang="en">(reagents, ...)</help>
 		<view_text lang="en"/>
-		<text lang="de">Neue chemische Substanzen (Reagenzien, ...)</text>
-		<help lang="de"/>
+		<text lang="de">Neue chemische Substanzen</text>
+		<help lang="de">(Reagenzien, ...)</help>
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
@@ -1098,11 +1724,11 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>other_research_output/biological</uri_path>
 		<dc:comment/>
-		<text lang="en">New biological substances (antibodies, ...)</text>
-		<help lang="en"/>
+		<text lang="en">New biological substances</text>
+		<help lang="en">(antibodies, ...)</help>
 		<view_text lang="en"/>
-		<text lang="de">Neue biologische Substanzen (Antikörper, ...)</text>
-		<help lang="de"/>
+		<text lang="de">Neue biologische Substanzen</text>
+		<help lang="de">(Antikörper, ...)</help>
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
@@ -1116,7 +1742,7 @@
 		<text lang="de">Sonstiges</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/pid_types">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -1129,9 +1755,12 @@
 			<option dc:uri="https://rdmorganiser.github.io/terms/options/pid_types/124" order="3"/>
 			<option dc:uri="https://rdmorganiser.github.io/terms/options/pid_types/120" order="4"/>
 			<option dc:uri="https://rdmorganiser.github.io/terms/options/pid_types/154" order="5"/>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/pid_types/155" order="6"/>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/pid_types/160" order="7"/>
 			<option dc:uri="https://rdmorganiser.github.io/terms/options/pid_types/121" order="10"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/author_pid" order="11"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/organisation_pid" order="12"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/funder_pid" order="13"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/outputs_pid" order="14"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/other_pid" order="15"/>
 		</options>
 		<conditions/>
 	</optionset>
@@ -1195,30 +1824,6 @@
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/pid_types/155">
-		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<uri_path>pid_types/155</uri_path>
-		<dc:comment/>
-		<text lang="en">Commit tag on a code repository</text>
-		<help lang="en"/>
-		<view_text lang="en"/>
-		<text lang="de">Commit-Nummer auf einem Code-Repositorium</text>
-		<help lang="de"/>
-		<view_text lang="de"/>
-		<additional_input/>
-	</option>
-	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/pid_types/160">
-		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<uri_path>pid_types/160</uri_path>
-		<dc:comment/>
-		<text lang="en">None, because</text>
-		<help lang="en"/>
-		<view_text lang="en"/>
-		<text lang="de">Keins, weil</text>
-		<help lang="de"/>
-		<view_text lang="de"/>
-		<additional_input/>
-	</option>
 	<option dc:uri="https://rdmorganiser.github.io/terms/options/pid_types/121">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<uri_path>pid_types/121</uri_path>
@@ -1229,7 +1834,67 @@
 		<text lang="de">Anderes</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/author_pid">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>author_pid</uri_path>
+		<dc:comment/>
+		<text lang="en">PIDs for authors</text>
+		<help lang="en">ORCID or similar</help>
+		<view_text lang="en">ORCID or similar</view_text>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/organisation_pid">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>organisation_pid</uri_path>
+		<dc:comment/>
+		<text lang="en">PIDs for organisations</text>
+		<help lang="en">ROR, ISNI or similar</help>
+		<view_text lang="en">ROR, ISNI or similar</view_text>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/funder_pid">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>funder_pid</uri_path>
+		<dc:comment/>
+		<text lang="en">PIDs for funders</text>
+		<help lang="en">ROR, GRID, FundRef or similar</help>
+		<view_text lang="en">ROR, GRID, FundRef or similar</view_text>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/outputs_pid">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>outputs_pid</uri_path>
+		<dc:comment/>
+		<text lang="en">PIDs for related research outputs</text>
+		<help lang="en">DOI, URN, ISBN, Handle or similar</help>
+		<view_text lang="en">DOI, URN, ISBN, Handle or similar</view_text>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/other_pid">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>other_pid</uri_path>
+		<dc:comment/>
+		<text lang="en">Other</text>
+		<help lang="en">Please list other PID types if applicable.</help>
+		<view_text lang="en">Please list other PID types if applicable.</view_text>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
 	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/preservation_responsible">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -1355,7 +2020,7 @@
 		<text lang="de">Sonstiges</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/protocol">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -1363,9 +2028,10 @@
 		<dc:comment/>
 		<provider_key/>
 		<options>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/protocol/REST" order="1"/>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/protocol/OAI-PMH" order="2"/>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/protocol/other" order="10"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/protocol/REST" order="0"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/protocol/OAI-PMH" order="1"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/protocol/https" order="2"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/protocol/other" order="3"/>
 		</options>
 		<conditions/>
 	</optionset>
@@ -1373,7 +2039,7 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>protocol/REST</uri_path>
 		<dc:comment/>
-		<text lang="en">Yes, data will be accessible through Zenodo’s REST API, which is documented here: https://developers.zenodo.org</text>
+		<text lang="en">Yes, data will be accessible through Zenodo’s REST API, which is documented here: https://developers.zenodo.org/</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de"/>
@@ -1386,6 +2052,18 @@
 		<uri_path>protocol/OAI-PMH</uri_path>
 		<dc:comment/>
 		<text lang="en">Yes, the PTB Open Access Repository provides access to the data using the free and open OAI-PMH protocol, which is documented here: https://www.openarchives.org/pmh/</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/protocol/https">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>protocol/https</uri_path>
+		<dc:comment/>
+		<text lang="en">The data will be accessible through a free and standardised protocol (such as HTTPS or FTP)</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de"/>
@@ -1411,32 +2089,32 @@
 		<dc:comment/>
 		<provider_key/>
 		<options>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/provenance/accompanying" order="1"/>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/provenance/additional" order="2"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/provenance/metadata" order="1"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/provenance/data_format_description" order="2"/>
 			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/provenance/PCCS" order="3"/>
 			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/provenance/PROV" order="4"/>
 			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/provenance/other" order="5"/>
 		</options>
 		<conditions/>
 	</optionset>
-	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/provenance/accompanying">
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/provenance/metadata">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<uri_path>provenance/accompanying</uri_path>
+		<uri_path>provenance/metadata</uri_path>
 		<dc:comment/>
-		<text lang="en">Data are accompanied by information on how they were captured, processed, analysed, and validated</text>
-		<help lang="en"/>
+		<text lang="en">Metadata annotations</text>
+		<help lang="en">Metadata describing how dataset was captured, processed, analysed and validated will be included.</help>
 		<view_text lang="en"/>
 		<text lang="de"/>
 		<help lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/provenance/additional">
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/provenance/data_format_description">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<uri_path>provenance/additional</uri_path>
+		<uri_path>provenance/data_format_description</uri_path>
 		<dc:comment/>
-		<text lang="en">Other information that enables interpretation and use is also provided</text>
-		<help lang="en"/>
+		<text lang="en">Data format description</text>
+		<help lang="en">Comprehensive description of a non-standard data formats, including: value format, byte order, dimensions, dataset size, headers, offsets etc.</help>
 		<view_text lang="en"/>
 		<text lang="de"/>
 		<help lang="de"/>
@@ -1447,7 +2125,7 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>provenance/PCCS</uri_path>
 		<dc:comment/>
-		<text lang="en">The provenance and context of the data will be thoroughly documented to meet relevant standards using the Provenance and Context Content Standard matrix (PCCS)</text>
+		<text lang="en">Provenance and Context Content Standard matrix (PCCS)</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de"/>
@@ -1459,7 +2137,7 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>provenance/PROV</uri_path>
 		<dc:comment/>
-		<text lang="en">The provenance and context of the data will be thoroughly documented to meet relevant standards using the Provenance data model (PROV-DM) with the Provenance ontology (PROV-O)</text>
+		<text lang="en">Provenance data model (PROV-DM) with the Provenance ontology (PROV-O)</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de"/>
@@ -1471,13 +2149,13 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>provenance/other</uri_path>
 		<dc:comment/>
-		<text lang="en">The provenance and context of the data will be thoroughly documented to meet relevant standards using</text>
+		<text lang="en">Other standards</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de"/>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/publishing_options_mb">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -1527,7 +2205,7 @@
 		<text lang="de">Sonstiges</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/publishing_options_mb/datajournal">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -1539,7 +2217,7 @@
 		<text lang="de">Datenzeitschrift</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/publishing_options_mb/103">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -1552,6 +2230,54 @@
 		<help lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
+	</option>
+	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/qualified_references">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>qualified_references</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/qualified_references/same" order="1"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/qualified_references/previous" order="2"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/qualified_references/none" order="3"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/qualified_references/same">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>qualified_references/same</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes, the project's datasets deposited in the chosen repository include qualified references to other datasets from the same project</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja, die auf dem gewählten Repositorium abgelegten Daten aus dem Projekt enthalten qualifizierte Referenzen zu anderen Datensätzen desselben Projekts</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/qualified_references/previous">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>qualified_references/previous</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes, the project's datasets deposited in the chosen repository include qualified references to other datasets from previous research</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja, die auf dem gewählten Repositorium abgelegten Daten aus dem Projekt enthalten qualifizierte Referenzen zu anderen Datensätzen aus vorherigen Forschungsaktivitäten</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/qualified_references/none">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>qualified_references/none</uri_path>
+		<dc:comment/>
+		<text lang="en">No, the project's datasets do not include any references to other data</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Nein, die Daten aus dem Projekt enthalten keine Referenzen anderer Daten</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
 	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/quality_procedures">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -1690,7 +2416,7 @@
 		<text lang="de">Sonstiges</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/rdm_aspects">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -1701,6 +2427,7 @@
 			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/rdm_aspects/resources" order="1"/>
 			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/rdm_aspects/security" order="2"/>
 			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/rdm_aspects/ethics" order="3"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/rdm_aspects/pids" order="4"/>
 		</options>
 		<conditions/>
 	</optionset>
@@ -1739,6 +2466,105 @@
 		<help lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/rdm_aspects/pids">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>rdm_aspects/pids</uri_path>
+		<dc:comment/>
+		<text lang="en">Use of persistent identifiers</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>repository_arrangements_why</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/size" order="1"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/format" order="2"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/confidentiality" order="3"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/legal_issues" order="4"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/other" order="5"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/no" order="6"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/size">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>repository_arrangements_why/size</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes, separate arrangements with the host of the repository are necessary because of the big size of the data</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja, gesonderte Absprachen mit dem Repositoriumsbetreiber sind notwendig aufgrund des großen Datenvolumens</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/format">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>repository_arrangements_why/format</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes, separate arrangements with the host of the repository are necessary, because of the particular format of the data</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja, gesonderte Absprachen mit dem Repositoriumsbetreiber sind notwendig aufgrund des speziellen Datenformats</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/confidentiality">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>repository_arrangements_why/confidentiality</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes, separate arrangements with the host of the repository are necessary, because of the confidential nature of the data</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja, gesonderte Absprachen mit dem Repositoriumsbetreiber sind notwendig aufgrund der Vertraulichkeit der Daten</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/legal_issues">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>repository_arrangements_why/legal_issues</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes, separate arrangements with the host of the repository are necessary, because of legal issues related to the data</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja, gesonderte Absprachen mit dem Repositoriumsbetreiber sind notwendig aufgrund rechtlicher Probleme mit den Daten</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/other">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>repository_arrangements_why/other</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes, separate arrangements with the host of the repository are necessary, because</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja, gesonderte Absprachen mit dem Repositoriumsbetreiber sind notwendig, weil</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/no">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>repository_arrangements_why/no</uri_path>
+		<dc:comment/>
+		<text lang="en">No, the data will be uploaded via a standard procedure and require no special arrangements</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Nein, die Daten werden mit Hilfe einer Standardprozedur hochgeladen und erfordern keine speziellen Vorbereitungen</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
 	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository-security">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -1786,7 +2612,7 @@
 		<text lang="de">Sonstiges</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/restrictions-reuse">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -1822,7 +2648,7 @@
 		<text lang="de"/>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/restrictions-reuse/other">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -1832,6 +2658,216 @@
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de">Sonstiges</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_existing_objectives">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>reuse_existing_objectives</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_existing_objectives/validation_results" order="1"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_existing_objectives/validation_model" order="2"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_existing_objectives/testbench" order="3"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_existing_objectives/comparison_simulation" order="4"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/other" order="5"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_existing_objectives/validation_results">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>reuse_existing_objectives/validation_results</uri_path>
+		<dc:comment/>
+		<text lang="en">For validation of the project's results</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_existing_objectives/validation_model">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>reuse_existing_objectives/validation_model</uri_path>
+		<dc:comment/>
+		<text lang="en">To test and validate a new theoretical model</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_existing_objectives/testbench">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>reuse_existing_objectives/testbench</uri_path>
+		<dc:comment/>
+		<text lang="en">To see if the new test bench was more effective</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_existing_objectives/comparison_simulation">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>reuse_existing_objectives/comparison_simulation</uri_path>
+		<dc:comment/>
+		<text lang="en">For comparison with simulation results</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/other">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>other</uri_path>
+		<dc:comment/>
+		<text lang="en">Other</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_whatfor">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>reuse_whatfor</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_whatfor/dfg-re_00" order="0"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_whatfor/dfg-re_01" order="1"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_whatfor/dfg-re_02" order="2"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_whatfor/dfg-re_03" order="3"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_whatfor/dfg-re_04" order="4"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_whatfor/dfg-re_05" order="5"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_whatfor/dfg-re_00">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>reuse_whatfor/dfg-re_00</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes, they form the basis for the project</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja, sie bilden die Basis für das Projekt</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_whatfor/dfg-re_01">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>reuse_whatfor/dfg-re_01</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes, they are used for parts of the project</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja, sie werden für Teile des Projekts verwendet</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_whatfor/dfg-re_02">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>reuse_whatfor/dfg-re_02</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes, they are used for comparison with the newly generated data</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja, sie dienen zum Vergleich mit den neu generierten Daten</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_whatfor/dfg-re_03">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>reuse_whatfor/dfg-re_03</uri_path>
+		<dc:comment/>
+		<text lang="en">No, no existing data will be used</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Nein, es werden keine existierenden Daten verwendet</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_whatfor/dfg-re_04">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>reuse_whatfor/dfg-re_04</uri_path>
+		<dc:comment/>
+		<text lang="en">After own research, no suitable data are available</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Nach eigener Recherche stehen keine geeigneten Daten zur Verfügung</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/reuse_whatfor/dfg-re_05">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>reuse_whatfor/dfg-re_05</uri_path>
+		<dc:comment/>
+		<text lang="en">Other</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Anderes</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/reused_data_origin">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>reused_data_origin</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/external" order="1"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/partner_data" order="2"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/no_reused_data" order="3"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/other" order="4"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/external">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>external</uri_path>
+		<dc:comment/>
+		<text lang="en">Externally available data</text>
+		<help lang="en">Data generated by anyone else but the project partners.</help>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/partner_data">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>partner_data</uri_path>
+		<dc:comment/>
+		<text lang="en">Data from project partners</text>
+		<help lang="en">Data generated by project partners, including data from earlier projects, as well as from commercial activities.</help>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/no_reused_data">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>no_reused_data</uri_path>
+		<dc:comment/>
+		<text lang="en">Not applicable</text>
+		<help lang="en">The project will only use originally generated data.</help>
+		<view_text lang="en"/>
+		<text lang="de"/>
 		<help lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
@@ -1848,6 +2884,7 @@
 			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/sensitive_data/commercial" order="4"/>
 			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/sensitive_data/surveys" order="5"/>
 			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/sensitive_data/other" order="10"/>
+			<option dc:uri="https://rdmo.julius-kuehn.de/terms/options/sensitive_data_yes_no/sensitive_no" order="11"/>
 		</options>
 		<conditions/>
 	</optionset>
@@ -1855,7 +2892,7 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>sensitive_data/personal</uri_path>
 		<dc:comment/>
-		<text lang="en">personal data</text>
+		<text lang="en">Personal data</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de"/>
@@ -1867,7 +2904,7 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>sensitive_data/personal_identifying</uri_path>
 		<dc:comment/>
-		<text lang="en">sensitive / identifying personal data (biometrical data, health, opinions)</text>
+		<text lang="en">Sensitive / identifying personal data (biometrical data, health, opinions)</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de"/>
@@ -1880,36 +2917,36 @@
 		<uri_path>sensitive_data/thirdparties</uri_path>
 		<dc:comment/>
 		<text lang="en">Data acquired from third parties, e.g. manufacturers</text>
-		<help lang="en"/>
+		<help lang="en">will not be shared without their explicit consent</help>
 		<view_text lang="en"/>
 		<text lang="de"/>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/sensitive_data/commercial">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>sensitive_data/commercial</uri_path>
 		<dc:comment/>
 		<text lang="en">Data collected by the consortium at commercial sites</text>
-		<help lang="en"/>
+		<help lang="en">will not be shared without the site owner’s explicit consent</help>
 		<view_text lang="en"/>
 		<text lang="de"/>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/sensitive_data/surveys">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>sensitive_data/surveys</uri_path>
 		<dc:comment/>
 		<text lang="en">Data from market surveys</text>
-		<help lang="en"/>
+		<help lang="en">will be made anonymous to comply with the General Data Protection Regulation (GDPR).</help>
 		<view_text lang="en"/>
 		<text lang="de"/>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/sensitive_data/other">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -1919,6 +2956,18 @@
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de">Sonstiges</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://rdmo.julius-kuehn.de/terms/options/sensitive_data_yes_no/sensitive_no">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<uri_path>sensitive_data_yes_no/sensitive_no</uri_path>
+		<dc:comment/>
+		<text lang="en">No</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Nein</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
@@ -2037,18 +3086,6 @@
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/other">
-		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<uri_path>standards_metrology/other</uri_path>
-		<dc:comment/>
-		<text lang="en">Other</text>
-		<help lang="en"/>
-		<view_text lang="en"/>
-		<text lang="de">Sonstiges</text>
-		<help lang="de"/>
-		<view_text lang="de"/>
-		<additional_input/>
-	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/storage_duringproject">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>storage_duringproject</uri_path>
@@ -2079,19 +3116,19 @@
 		<text lang="de">Server im Fachbereich bei diesem Partner</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/storage_duringproject/developmentplatform">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>storage_duringproject/developmentplatform</uri_path>
 		<dc:comment/>
-		<text lang="en">Software development platform (e.g. Git, SVN, etc.)</text>
-		<help lang="en"/>
+		<text lang="en">Software development platform</text>
+		<help lang="en">(e.g. Git, SVN, etc.)</help>
 		<view_text lang="en"/>
-		<text lang="de">Versionierungswerkzeug (z.B. Git, SVN, etc.), und zwar</text>
-		<help lang="de"/>
+		<text lang="de">Versionierungswerkzeug, und zwar</text>
+		<help lang="de">(z.B. Git, SVN, etc.)</help>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/storage_duringproject/eln">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -2103,7 +3140,7 @@
 		<text lang="de">Elektronisches Laborbuch (ELN), und zwar</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/storage_duringproject/wiki">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -2115,19 +3152,19 @@
 		<text lang="de">Wiki-Software, und zwar</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/storage_duringproject/projectmanagement">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>storage_duringproject/projectmanagement</uri_path>
 		<dc:comment/>
-		<text lang="en">Project management software (e.g. OpenProject, etc.)</text>
-		<help lang="en"/>
+		<text lang="en">Project management software</text>
+		<help lang="en">(e.g. OpenProject, etc.)</help>
 		<view_text lang="en"/>
-		<text lang="de">Projektmanagementsoftware (z.B. OpenProject, etc.), und zwar</text>
-		<help lang="de"/>
+		<text lang="de">Projektmanagementsoftware, und zwar</text>
+		<help lang="de">(z.B. OpenProject, etc.)</help>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/storage_duringproject/labcomputer">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -2139,7 +3176,7 @@
 		<text lang="de">Laborcomputer</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/storage_duringproject/workplacecomputer">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -2157,13 +3194,13 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>storage_duringproject/externalmedia</uri_path>
 		<dc:comment/>
-		<text lang="en">external storage media (e.g. DVD. USB stick, etc)</text>
-		<help lang="en"/>
+		<text lang="en">External storage media</text>
+		<help lang="en">(e.g. DVD, USB stick, etc)</help>
 		<view_text lang="en"/>
-		<text lang="de">Externe Speichermedien (DVD, USB-Stick, etc.)</text>
-		<help lang="de"/>
+		<text lang="de">Externe Speichermedien</text>
+		<help lang="de">(DVD, USB-Stick, etc.)</help>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/storage_duringproject/datacloud">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -2175,7 +3212,7 @@
 		<text lang="de"/>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/storage_duringproject/other">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -2187,7 +3224,7 @@
 		<text lang="de">Anderes, und zwar</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/storage_duringproject/notyetdecided">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -2210,7 +3247,6 @@
 			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/usage_software/existing" order="1"/>
 			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/usage_software/existing_special" order="2"/>
 			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/usage_software/selfgenerated" order="3"/>
-			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/usage_software/format" order="4"/>
 			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/usage_software/other" order="10"/>
 		</options>
 		<conditions/>
@@ -2219,8 +3255,8 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>usage_software/existing</uri_path>
 		<dc:comment/>
-		<text lang="en">The data are in a usual format and can be read using common software (open source or commercial)</text>
-		<help lang="en"/>
+		<text lang="en">No specialised software is needed</text>
+		<help lang="en">Data are in standard format such as text, comma-separated-values, tiled image format (TIFF) etc.</help>
 		<view_text lang="en"/>
 		<text lang="de">Freie Software</text>
 		<help lang="de"/>
@@ -2231,31 +3267,19 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>usage_software/existing_special</uri_path>
 		<dc:comment/>
-		<text lang="en">The data can be read using a specialised scientific software (open source or commercial)</text>
-		<help lang="en"/>
+		<text lang="en">Dedicated software</text>
+		<help lang="en">Provide software name and version where applicable, f.e. 'DICOM viewers', 'EGSnrc v2023a'.</help>
 		<view_text lang="en"/>
 		<text lang="de">Gängige kommerzielle Software</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/usage_software/selfgenerated">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>usage_software/selfgenerated</uri_path>
 		<dc:comment/>
-		<text lang="en">The (self-developed) software recommended to read the data is additionally shared and documented</text>
-		<help lang="en"/>
-		<view_text lang="en"/>
-		<text lang="de">Selbsterzeugte Software oder Skript</text>
-		<help lang="de"/>
-		<view_text lang="de"/>
-		<additional_input/>
-	</option>
-	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/usage_software/format">
-		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<uri_path>usage_software/format</uri_path>
-		<dc:comment/>
-		<text lang="en">A comprehensive data format description is provided, together with instructions about how to read the data</text>
+		<text lang="en">Custom software will be provided with the dataset to access the data</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de">Selbsterzeugte Software oder Skript</text>
@@ -2267,12 +3291,12 @@
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>usage_software/other</uri_path>
 		<dc:comment/>
-		<text lang="en">Other</text>
+		<text lang="en">Other - please describe</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de">Sonstiges</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 </rdmo>
