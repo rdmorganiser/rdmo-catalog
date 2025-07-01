@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2023-11-13T15:38:38.629760+01:00">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-07-01T15:28:36.626952+02:00" required="2.1.0" version="2.3.1">
 	<view dc:uri="https://dmp.metrology-rdm.eu/terms/views/epm-table">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<key>epm-table</key>
+		<uri_path>epm-table</uri_path>
 		<dc:comment>work in progress</dc:comment>
+		<order>0</order>
 		<title lang="en">European Partnerhip on Metrology</title>
 		<help lang="en">View (export template) for the funding framework program &quot;European Partnership on Metrology&quot;, based on &quot;Horizon Europe&quot; (2021-2027), funded by the European Commission via EURAMET</help>
 		<title lang="de">Europäische Partnerschaft für Metrologie</title>
@@ -27,21 +28,21 @@
 	&lt;div style=&quot;height:200;&quot;&gt;
 		&lt;b&gt;{% render_value 'project/funder/grant_nr' %} &amp;#8212; {% render_value 'project/acronym' %}&lt;/b&gt;
 		&lt;img src=&quot;https://www.euramet.org/fileadmin/Public/assets/logo.png&quot; alt=&quot;Logo EURAMET&quot; width=&quot;200&quot; style=&quot;float:right;&quot;&gt;
-    &lt;/div&gt;
-    &lt;br /&gt;
+	&lt;/div&gt;
+	&lt;br /&gt;
 	&lt;hr noshade color=rgb(0, 157, 129) width=100% size=20&gt;
-    &lt;br /&gt;
+	&lt;br /&gt;
 	&lt;div id=&quot;Title&quot; style=&quot;color:white;background-color:black;text-align:center;line-height:21mm;font-size:2.5em;&quot;&gt;&lt;b&gt;DATA MANAGEMENT PLAN&lt;/b&gt;&lt;/div&gt;
-    &lt;br /&gt;
+	&lt;br /&gt;
 	&lt;div&gt;
-    	&lt;span style=&quot;float:left;width:30%;&quot;&gt;Grant agreement number      &lt;/span&gt;{% render_value 'project/funder/grant_nr' %}&lt;br /&gt;&lt;br /&gt;
+		&lt;span style=&quot;float:left;width:30%;&quot;&gt;Grant agreement number      &lt;/span&gt;{% render_value 'project/funder/grant_nr' %}&lt;br /&gt;&lt;br /&gt;
 		&lt;span style=&quot;float:left;width:30%;&quot;&gt;Project short name / acronym&lt;/span&gt;{% render_value 'project/acronym' %}        &lt;br /&gt;&lt;br /&gt;
 		&lt;span style=&quot;float:left;width:30%;&quot;&gt;Project full title          &lt;/span&gt;{% render_value 'project/title' %}          &lt;br /&gt;&lt;br /&gt;
 		&lt;span style=&quot;float:left;width:30%;&quot;&gt;Data management plan version&lt;/span&gt;
 			1&lt;sup&gt;st&lt;/sup&gt; (begin)   {% if dmp_initial %}&amp;#9745;{% else %}&amp;#9744;{% endif %}&amp;emsp;
 			2&lt;sup&gt;nd&lt;/sup&gt; (midterm) {% if dmp_midterm %}&amp;#9745;{% else %}&amp;#9744;{% endif %}&amp;emsp;
 			3&lt;sup&gt;rd&lt;/sup&gt; (end)     {% if  dmp_final  %}&amp;#9745;{% else %}&amp;#9744;{% endif %}&lt;br /&gt;&lt;br /&gt;
-    &lt;/div&gt;
+	&lt;/div&gt;
 &lt;/head&gt;
 
 
@@ -55,16 +56,16 @@
 			&lt;td&gt;
 				{% if dmp_initial %}
 					This project will re-use:
-                    &lt;ul&gt;{% render_value_list 'project/dataset/provenance/content' %}&lt;/ul&gt;
+					&lt;ul&gt;{% render_value_list 'project/dataset/provenance/content' %}&lt;/ul&gt;
 					These data will be used for this purpose:
 					&lt;ul&gt;{% render_value_list 'project/dataset/usage_description' set_index='*' %}&lt;/ul&gt;
 				{% else %}
 					This project re-used the following publicly available datasets:&lt;br /&gt;
 					{% for dataset in datasets %}
 						&lt;b&gt;Dataset {{ dataset.value }}:&lt;/b&gt;
-						{% render_value_list dataset 'project/dataset/provenance/content' %}&lt;br /&gt;
+						{% render_value_list dataset 'project/dataset/provenance/content_multiple' %}&lt;br /&gt;
 						These data will be used for this purpose:
-						{% render_value_list dataset 'project/dataset/usage_description' %}&lt;br /&gt;
+						{% render_value_list dataset 'project/dataset/usage_description_multiple' %}&lt;br /&gt;
 					{% endfor %}
 					No existing data have been considered for re-use and then discarded.
 				{% endif %}
@@ -80,8 +81,11 @@
 			&lt;td&gt;3 What is the purpose of the data generation or re-use and its relation to the objectives of the project?&lt;/td&gt;
 			&lt;td&gt;
 				&lt;p&gt;&lt;u&gt;Purpose of the data generation or re-use&lt;/u&gt;&lt;/p&gt;
-				The data generated and re-used {% if dmp_initial %}will be{% else %}were{% endif %}
-                from {% render_value_inline_list 'project/dataset/creation_methods' %}.
+				{% if dmp_initial %}
+					The data generated and re-used will be from {% render_value_inline_list 'project/dataset/creation_methods' %}.
+				{% else %}
+					The data generated and re-used were from {% render_value_inline_list 'project/dataset/creation_methods_multiple' %}.
+				{% endif %}
 				They {% if dmp_initial %}will be{% else %}were{% endif %} used in meeting the project’s objectives and in conference and peer-reviewed publications.
 				&lt;p&gt;&lt;u&gt;Data generated in relation to the objectives of the project&lt;/u&gt;&lt;/p&gt;
 				&lt;p&gt;
@@ -93,7 +97,7 @@
 							{% check_condition dataset_created as dataset_created %}
 							{% if dataset_created %}
 								&lt;b&gt;Dataset {{ dataset.value }}:&lt;/b&gt;
-								{% render_value_list dataset 'project/dataset/usage_objectives' %}
+								{% render_value_list dataset 'project/dataset/usage_objectives_multiple' %}
 							{% endif %}
 						{% endfor %}
 					{% endif %}
@@ -108,7 +112,7 @@
 							{% check_condition dataset_reused as dataset_reused %}
 							{% if dataset_reused %}
 								&lt;b&gt;Dataset {{ dataset.value }}:&lt;/b&gt;
-								{% render_value_list dataset 'project/dataset/usage_description' %}
+								{% render_value_list dataset 'project/dataset/usage_description_multiple' %}
 							{% endif %}
 						{% endfor %}
 					{% endif %}
@@ -123,8 +127,10 @@
 			&lt;td&gt;5 What is the origin/provenance of the data, either generated or re-used?&lt;/td&gt;
 			&lt;td&gt;
 				&lt;p&gt;&lt;u&gt;Data generated in the project&lt;/u&gt;&lt;/p&gt;
-				&lt;p&gt;
-					The data generated {% if dmp_initial %}will be{% else %}were{% endif %} from {% render_value_inline_list 'project/dataset/creation_methods' %}.
+				&lt;p&gt;{% if dmp_initial %}
+					The data generated will be from {% render_value_inline_list 'project/dataset/creation_methods' %}.
+					{% else %}The data generated were from {% render_value_inline_list 'project/dataset/creation_methods_multiple' %}
+					{% endif %}
 					The data collected from domestic properties will remain confidential and will not be included in the repository.
 					{% if dmp_not_initial %}
 						The project generated [[N]] datasets. The provenance of the data generated is specified below:
@@ -132,21 +138,26 @@
 							{% check_condition dataset_created as dataset_created %}
 							{% if dataset_created %}
 								&lt;b&gt;Dataset {{ dataset.value }}:&lt;/b&gt;
-								{% render_set_value dataset 'project/dataset/creation_methods' %}&lt;br /&gt;
+								{% render_set_value dataset 'project/dataset/creation_methods_multiple' %}&lt;br /&gt;
 							{% endif %}
 						{% endfor %}
 					{% endif %}
 				&lt;/p&gt;
 				&lt;p&gt;&lt;u&gt;Re-used data&lt;/u&gt;&lt;/p&gt;
 				&lt;p&gt;
-					The existing data originate from several sources, which include: {% render_value_inline_list 'project/dataset/provenance/content' %}.
+					The existing data originate from several sources, which include:
+					{% if dmp_initial %}{% render_value_inline_list 'project/dataset/provenance/content' %}
+					{% else %}{% render_value_inline_list 'project/dataset/provenance/content_multiple' %}{% endif %}.
+					The existing data originate from several sources, which include:
+					{% if dmp_initial %}{% render_value_inline_list 'project/dataset/provenance/content' %}
+					{% else %}{% render_value_inline_list 'project/dataset/provenance/content_multiple' %}{% endif %}.
 					{% if dmp_not_initial %}
 						The project re-used [[N]] datasets which originated from the following external sources (from outside of this project):
 						{% for dataset in datasets %}
 							{% check_condition dataset_reused as dataset_reused %}
 							{% if dataset_reused %}
 								&lt;b&gt;Dataset {{ dataset.value }}:&lt;/b&gt;
-								{% render_set_value dataset 'project/dataset/provenance/content' %}&lt;br /&gt;
+								{% render_set_value dataset 'project/dataset/provenance/content_multiple' %}&lt;br /&gt;
 								The data were created by
 								{% render_set_value dataset 'project/dataset/creator/name' %}
 								and can be found at the following address:
@@ -176,7 +187,7 @@
 			&lt;td&gt;8 Will rich metadata be provided to allow discovery? What metadata will be created? What disciplinary or general standards will be followed?&lt;br /&gt;
 			In case metadata standards do not exist in your discipline, please outline what type of metadata will be created and how.&lt;/td&gt;
 			&lt;td&gt;The metadata created for all of the project's datasets {% if dmp_initial %}will fulfil{% else %}fulfilled{% endif %}
-            the Grant Agreement’s requirement for a minimum set of metadata about:
+			the Grant Agreement’s requirement for a minimum set of metadata about:
 			{% render_value_inline_list 'project/dataset/metadata' %}.&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr id=&quot;Q09&quot;&gt;
@@ -200,8 +211,8 @@
 			{% if dmp_initial %}will be deposited{% else %}were made accessible by deposition{% endif %}
 			in the following trusted open access repository:
 			{% render_value_inline_list 'project/dataset/preservation/repository' %}
-            {% if repository_zenodo %}({{ &quot;https://zenodo.org&quot;|urlize }})
-            {% elif repository_ptb_oar %}{{ &quot;https://oar.ptb.de&quot;|urlize }}{% endif %}&lt;/td&gt;
+			{% if repository_zenodo %}({{ &quot;https://zenodo.org&quot;|urlize }})
+			{% elif repository_ptb_oar %}{{ &quot;https://oar.ptb.de&quot;|urlize }}{% endif %}&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr id=&quot;Q12&quot;&gt;
 			&lt;td&gt;12 Have you explored appropriate arrangements with the identified repository where your data will be deposited?&lt;/td&gt;
@@ -212,9 +223,9 @@
 			&lt;td&gt;The chosen repository {% if dmp_initial %}will assign{% else %}assigned{% endif %} the following identifier(s)
 			to each of the project’s deposited datasets: {% render_value_inline_list 'project/dataset/pids/system' %}.
 			The repository 
-            {% if 'project/dataset/pids/resolver' %}{% if dmp_initial %}will resolve{% else %}resolves{% endif %}
-            {% else %}{% if dmp_initial %}will not resolve{% else %}does not resolve{% endif %}
-            {% endif %} resolve the identifier to a digital object.&lt;/td&gt;
+			{% if 'project/dataset/pids/resolver' %}{% if dmp_initial %}will resolve{% else %}resolves{% endif %}
+			{% else %}{% if dmp_initial %}will not resolve{% else %}does not resolve{% endif %}
+			{% endif %} resolve the identifier to a digital object.&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr id=&quot;2.2b&quot;&gt;&lt;td&gt;&lt;b&gt;Data:&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
 		&lt;tr id=&quot;Q14&quot;&gt;
@@ -225,11 +236,11 @@
 				&lt;p&gt;All data needed to validate the results presented in scientific publications will be made openly available as the default
 				unless there is a specific reason not to publish the data.&lt;/p&gt;
 				&lt;p&gt;&lt;u&gt;Datasets which cannot be shared&lt;/u&gt;&lt;br /&gt;
-                Other data {% if dmp_initial %}may{% else %}were{% endif %} be made available on a case-by-case basis if relevant for third parties.&lt;br /&gt;
-                The following data {% if dmp_initial %}will not be{% else %}were not{% endif %} made publicly available:&lt;/p&gt;
+				Other data {% if dmp_initial %}may{% else %}were{% endif %} be made available on a case-by-case basis if relevant for third parties.&lt;br /&gt;
+				The following data {% if dmp_initial %}will not be{% else %}were not{% endif %} made publicly available:&lt;/p&gt;
 				&lt;ul&gt;{% render_value_list 'project/dataset/sharing/explanation' %}&lt;/ul&gt;
-                The level of data made available {% if dmp_initial %}will also be{% else %}was also{% endif %} considered.
-                For example, pre-processed data {% if dmp_initial %}will not be{% else %}were not{% endif %} provided {% if dmp_initial %}unless there is a{% else %}as there was no{% endif %} a clear reason for doing so.
+				The level of data made available {% if dmp_initial %}will also be{% else %}was also{% endif %} considered.
+				For example, pre-processed data {% if dmp_initial %}will not be{% else %}were not{% endif %} provided {% if dmp_initial %}unless there is a{% else %}as there was no{% endif %} a clear reason for doing so.
 			&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr id=&quot;Q15&quot;&gt;
@@ -272,7 +283,7 @@
 			&lt;td&gt;21 How long will the data remain available and findable?
 			Will metadata be guaranteed to remain available after data are no longer available?&lt;/td&gt;
 			&lt;td&gt;The data will remain available and findable for the lifetime of the chosen repository
-            or, at least, for {% render_value 'project/dataset/preservation/duration' %}.&lt;br /&gt;
+			or, at least, for {% render_value 'project/dataset/preservation/duration' %}.&lt;br /&gt;
 			If data are withdrawn from the repository, the DOI and the URL of the original object are retained.
 			In case of closure of the repository, best efforts will be made by the repository to integrate all content into suitable alternative institutional and/or subject based repositories.&lt;/td&gt;
 		&lt;/tr&gt;
@@ -297,7 +308,7 @@
 			BASE search ({{ &quot;https://www.basesearch.net/&quot;|urlize }}) and OpenAIRE ({{ &quot;https://www.openaire.eu/search&quot;|urlize }}).&lt;br /&gt;
 			For individual datasets, we are using the following discipline-specific vocabularies, standards,
 			formats, and methodologies:
-            &lt;ol&gt;{% render_value_list 'project/dataset/metadata/standards' set_index='*' %}&lt;/ol&gt;.
+			&lt;ol&gt;{% render_value_list 'project/dataset/metadata/standards' set_index='*' %}&lt;/ol&gt;.
 			&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr id=&quot;Q24&quot;&gt;
@@ -330,8 +341,8 @@
 		&lt;tr id=&quot;Q27&quot;&gt;
 			&lt;td&gt;27 Will your data be made freely available in the public domain to permit the widest re-use possible? Will your data be licensed using standard reuse licenses, in line with the obligations set out in the Grant Agreement?&lt;/td&gt;
 			&lt;td&gt;The data {% if dmp_initial %}will either be{% else %}were{% endif %} licensed
-            under the {% render_value_inline_list 'project/dataset/sharing/conditions' %}
-            or a license with equivalent rights as set out in the Grant Agreement.
+			under the {% render_value_inline_list 'project/dataset/sharing/conditions' %}
+			or a license with equivalent rights as set out in the Grant Agreement.
 			Users will be required to acknowledge the consortium and the source of the data in any resulting publications.
 				{% if dmp_not_initial %}
 					{% for dataset in datasets %}
@@ -463,8 +474,8 @@
 			&lt;td&gt;37 How will long term preservation be ensured? Discuss the necessary resources to accomplish this (costs and potential value, who decides and how, what data will be kept and for how long).&lt;/td&gt;
 			&lt;td&gt;
 				Long-term preservation will be ensured by depositing the data within repositories.
-                There are no costs associated with the presevation of the data in these repositories.
-                &lt;br /&gt;
+				There are no costs associated with the presevation of the data in these repositories.
+				&lt;br /&gt;
 				{% render_value 'project/dataset/preservation/longterm_value' %}&lt;br /&gt;
 				{% render_value_inline_list 'project/dataset/curation/responsible_person/name' %}
 				will decide on what data will be kept and how long. The data selection will take place
@@ -482,7 +493,7 @@
 				&lt;p&gt;&lt;u&gt;Data recovery and secure storage&lt;/u&gt;&lt;/p&gt;
 				&lt;p&gt;During the project, data are stored on {% render_value_inline_list 'project/dataset/storage/type' %}.&lt;br /&gt;
 				After the end of the project, deposition in the chosen repository will provide additional security,
-                as it has multiple replicas on a distributed file system which is backed up on a nightly basis.&lt;/p&gt;
+				as it has multiple replicas on a distributed file system which is backed up on a nightly basis.&lt;/p&gt;
 				&lt;p&gt;&lt;u&gt;Transfer of sensitive data&lt;/u&gt;&lt;/p&gt;
 				&lt;ul&gt;{% render_value_list 'project/dataset/data_security/transfer' %}&lt;/ul&gt;
 			&lt;/td&gt;
@@ -490,7 +501,7 @@
 		&lt;tr id=&quot;Q39&quot;&gt;
 			&lt;td&gt;39 Will the data be safely stored in trusted repositories for long-term preservation and curation?&lt;/td&gt;
 			&lt;td&gt;Yes, the data will be safely stored on the chosen open access repository.
-            {% render_value_inline_list 'project/dataset/preservation/repository_information' %}.&lt;/td&gt;
+			{% render_value_inline_list 'project/dataset/preservation/repository_information' %}.&lt;/td&gt;
 		&lt;/tr&gt;
 	&lt;/tbody&gt;&lt;/table&gt;
 &lt;/div&gt;
@@ -503,7 +514,7 @@
 			&lt;/td&gt;
 			&lt;td&gt;
 			There are issues that might impact on data sharing:
-            &lt;ul&gt;{% render_value_list 'project/dataset/sensitive_data/other/description' %}&lt;/ul&gt;
+			&lt;ul&gt;{% render_value_list 'project/dataset/sensitive_data/other/description' %}&lt;/ul&gt;
 			{% render_value 'project/dataset/sensitive_data/documentation' %}.
 			&lt;/td&gt;
 		&lt;/tr&gt;
@@ -538,12 +549,13 @@
 	&lt;/div&gt;
 {% endif %}
 &lt;div&gt;&lt;h1&gt;Open Science: research data management&lt;/h1&gt;
+	{% get_value 'project/GArequirements' as GArequirements %}
 	&lt;table border=&quot;1&quot;&gt;
-    	&lt;colgroup&gt;&lt;col width=&quot;50%&quot;&gt;&lt;col width=&quot;10%&quot;&gt;&lt;col width=&quot;40%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;
+		&lt;colgroup&gt;&lt;col width=&quot;50%&quot;&gt;&lt;col width=&quot;10%&quot;&gt;&lt;col width=&quot;40%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;
 		&lt;tr&gt;&lt;th&gt;&lt;b&gt;Statement&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Put an &amp;#10005; in the box to confirm&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Or, list any exceptions to this&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
 		&lt;tr&gt;
 			&lt;td&gt;All participants have adhered to the requirements of the project’s GA and CA with respect to open science: research data management (GA Article 17 and its Annex 5) for this reporting period&lt;/td&gt;
-			&lt;td style=&quot;text-align:center;&quot;&gt;&amp;#9744;&lt;/td&gt;
+			&lt;td style=&quot;text-align:center;&quot;&gt;{% if GArequirements %}&amp;#9745;{% else %}&amp;#9744;{% endif %}&lt;/td&gt;
 			&lt;td&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 	&lt;/tbody&gt;&lt;/table&gt;
