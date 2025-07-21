@@ -44,8 +44,8 @@ REMARK: If the chosen catalog is available as a **full XML**, it already include
 ./manage.py import /path/to/options/<chosen_options_file>.xml
 ./manage.py import /path/to/conditions/<chosen_conditions_file>.xml  # yes, again
 ./manage.py import /path/to/questions/<chosen_catalog_file>.xml
-./manage.py import /path/to/tasks>/<chosen_task_file>.xml
-./manage.py import /path/to/views>/<chosen_view_file>.xml
+./manage.py import /path/to/tasks/<chosen_task_file>.xml
+./manage.py import /path/to/views/<chosen_view_file>.xml
 ```
 
 Use the same order when importing over the RDMO web interface.
@@ -60,9 +60,13 @@ for f in *.xml; do xmllint --format $f > /tmp/$f; mv /tmp/$f $f; done
 
 ## Issues
 
-If you encounter any problems with the questionnaires, the domain model, or other content of this repository, please file an issue here: https://github.com/rdmorganiser/rdmo-catalog/issues.
+If you encounter any problems with the questionnaires, the domain model, or other content of this repository, please file an issue here:  
+<https://github.com/rdmorganiser/rdmo-catalog/issues>.
 
-For problems or bugs with the RDMO Software, please use the issues in the [rdmo](https://github.com/rdmorganiser/rdmo) repository: https://github.com/rdmorganiser/rdmo/issues. In order to file issues, you will need a GitHub account.
+For problems or bugs with the RDMO Software, please use the issues in the [rdmo software](https://github.com/rdmorganiser/rdmo) repository:  
+<https://github.com/rdmorganiser/rdmo/issues>.
+
+In order to file issues, you will need a GitHub account.
 
 ## Content curated by the RDMO team
 
@@ -73,7 +77,7 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 |DCC checklist           |[catalog][Q-dcc] |                      |2018-10|RDMO team       |
 |DFG checklist           |[catalog][Q-dfg] |[view][V-dfg]         |2023-11|RDMO team       |
 |Horizon Europe          |[catalog][Q-heu] |[view][V-heu]         |2022-12|RDMO team       |
-|Software Management Plan|[catalog][Q-smp] |[view][V-smp](FAIR4RS)|2023-11|MPDL / RDMO team|
+|Software Management Plan|[catalog][Q-smp]|[view][V-smp] (FAIR4RS)|2023-11|MPDL / RDMO team|
 |Swiss National Fund     |[catalog][Q-snf] |[view][V-snf]         |2020-08|RDMO team       |
 |Bielefeld               |                 |[view][V-bielefeld]   |2019-01|RDMO team       |
 |CITEC                   |                 |[view][V-citec]       |2019-01|RDMO team       |
@@ -87,7 +91,7 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 
 |Subject/Coverage        |Catalog                    |View  |Last update |Creators              |
 |------------------------|---------------------------|------|------------|----------------------|
-|All questions (RDMO+DFG)|[catalog](shared/fodako)   |           |2022-03|FoDaKo                |
+|All questions (RDMO+DFG)|[catalog](shared/FoDaKo)   |           |2025-05|FoDaKo                |
 |BLE                     |[catalog][BLE]             |[view][BLE]|2023-10|Julius-Kühn-Institut  |
 |DFG Chemistry           |[catalog][CHE]             |           |2023-08|FDM Bayern eHumanities|
 |DFG Chemistry           |[catalog](shared/nfdi4chem)|           |2024-06|NFDI4Chem             |
@@ -99,15 +103,17 @@ For problems or bugs with the RDMO Software, please use the issues in the [rdmo]
 |Emissions in animal husbandry|[2 catalogs](shared/EmiMin)|      |2021-04|EmiMin                |
 |ERC grants                       |[catalog][ERC]    |[view][ERC]|2023-08|FDM Bayern eHumanities|
 |European Partnership on Metrology|[catalog][EPM]    |[view][EPM]|2023-10|TC-IM 1449            |
-|Hessen State                |[catalog](shared/HeFDI)|           |2020-07|HeFDI                 |
-|Horizon 2020                |[catalog][EHU]         |[view][EHU]|2020-09|FDM Bayern eHumanities|
-|Mathematics                 |[catalog](shared/MATH+)|     |2022-11|DFG Excellence Cluster MATH+|
-|Quality Assurance Tool for data    |[catalog][QAT]     |        |2025-01|Mathmet / TC-IM 1449  |
-|Quality Assurance Tool for software|[catalog][QAT]     |        |2025-01|Mathmet / TC-IM 1449  |
-|Research data policy generator|[catalog](shared/FDNext)|        |2024-03|FDNext                |
-|VW Foundation - Science Europe     |[catalog][SEU]     |        |2021-04|FDM Bayern eHumanities|
+|Hessen State            |[catalog](shared/HeFDI)    |           |2020-07|HeFDI                 |
+|Horizon 2020            |[catalog][EHU]             |[view][EHU]|2020-09|FDM Bayern eHumanities|
+|Mathematics             |[catalog](shared/MATH+)    |     |2022-11|DFG Excellence Cluster MATH+|
+|NFDI DMP Template       |[catalog](shared/DMP4NFDI) |           |2025-06|DMP4NFDI              |
+|Quality Assurance Tool for data    |[catalog][QAT]  |           |2025-03|Mathmet / TC-IM 1449  |
+|Quality Assurance Tool for software|[catalog][QAT]  |           |2025-03|Mathmet / TC-IM 1449  |
+|Research data policy generator|[catalog](shared/FDNext)|        |2025-04|FDNext                |
+|VW Foundation - Basic DMP     |[catalog][VWBDMP]    |           |2025-06|FDM Bayern eHumanities|
+|VW Foundation - Science Europe|[catalog][VWSEU]     |           |2021-04|FDM Bayern eHumanities|
 
-Total: 27 catalogs, 15 views
+Total: 29 catalogs, 15 views
 
 [AKU]:         shared/ub_fau_erlangen_nuernberg/dfg-alte-kulturen/
 [CHE]:         shared/ub_fau_erlangen_nuernberg/dfg-chemie/
@@ -116,7 +122,8 @@ Total: 27 catalogs, 15 views
 [SKT]:         shared/ub_fau_erlangen_nuernberg/dfg-sozkulttheo/
 [ERC]:         shared/ub_fau_erlangen_nuernberg/erc-grants/
 [EHU]:         shared/ub_fau_erlangen_nuernberg/h2020-ehum/
-[SEU]:         shared/ub_fau_erlangen_nuernberg/ScienceEurope_VW_Stiftung/
+[VWBDMP]:      shared/ub_fau_erlangen_nuernberg/vw-stiftung-basisdmp
+[VWSEU]:       shared/ub_fau_erlangen_nuernberg/ScienceEurope_VW_Stiftung/
 [QAT]:         shared/Mathmet-QAT
 [EPM]:         shared/metrology-rdm/
 [BLE]:         shared/BLE_JKI/
