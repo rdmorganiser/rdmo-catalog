@@ -2323,9 +2323,9 @@
 		</options>
 		<conditions/>
 	</optionset>
-	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/free_text">
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/qualified_reference_types/free_text">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<uri_path>free_text</uri_path>
+		<uri_path>qualified_reference_types/free_text</uri_path>
 		<dc:comment/>
 		<text lang="en">as free text (including URI)</text>
 		<help lang="en"/>
@@ -2337,9 +2337,9 @@
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/rdf">
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/qualified_reference_types/rdf">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<uri_path>rdf</uri_path>
+		<uri_path>qualified_reference_types/rdf</uri_path>
 		<dc:comment/>
 		<text lang="en">Structured reference using Resource Description Framework (RDF)</text>
 		<help lang="en">Example: http://www.uniprot.org/uniprot/C8V1L6.rdf</help>
@@ -2351,9 +2351,9 @@
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/fdp">
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/qualified_reference_types/fdp">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<uri_path>fdp</uri_path>
+		<uri_path>qualified_reference_types/fdp</uri_path>
 		<dc:comment/>
 		<text lang="en">Structured reference using FAIR Data Point software (FDP)</text>
 		<help lang="en">Example: https://github.com/FAIRDataTeam/FAIRDataPoint-Spec</help>
@@ -2592,6 +2592,93 @@
 		<default_text lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
+	</option>
+	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>repository_arrangements_why</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/size" order="1"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/format" order="2"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/confidentiality" order="3"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/legal_issues" order="4"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/other" order="5"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/no" order="6"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/size">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>repository_arrangements_why/size</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes, separate arrangements with the host of the repository are necessary because of the big size of the data</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja, gesonderte Absprachen mit dem Repositoriumsbetreiber sind notwendig aufgrund des großen Datenvolumens</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/format">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>repository_arrangements_why/format</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes, separate arrangements with the host of the repository are necessary, because of the particular format of the data</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja, gesonderte Absprachen mit dem Repositoriumsbetreiber sind notwendig aufgrund des speziellen Datenformats</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/confidentiality">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>repository_arrangements_why/confidentiality</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes, separate arrangements with the host of the repository are necessary, because of the confidential nature of the data</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja, gesonderte Absprachen mit dem Repositoriumsbetreiber sind notwendig aufgrund der Vertraulichkeit der Daten</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/legal_issues">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>repository_arrangements_why/legal_issues</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes, separate arrangements with the host of the repository are necessary, because of legal issues related to the data</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja, gesonderte Absprachen mit dem Repositoriumsbetreiber sind notwendig aufgrund rechtlicher Probleme mit den Daten</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/other">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>repository_arrangements_why/other</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes, separate arrangements with the host of the repository are necessary, because</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja, gesonderte Absprachen mit dem Repositoriumsbetreiber sind notwendig, weil</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository_arrangements_why/no">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>repository_arrangements_why/no</uri_path>
+		<dc:comment/>
+		<text lang="en">No, the data will be uploaded via a standard procedure and require no special arrangements</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Nein, die Daten werden mit Hilfe einer Standardprozedur hochgeladen und erfordern keine speziellen Vorbereitungen</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
 	</option>
 	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/repository-security">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
@@ -3050,6 +3137,120 @@
 		<text lang="de">Nein</text>
 		<help lang="de"/>
 		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>standards_metrology</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/SI" order="0"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/VIM" order="1"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/OBO" order="2"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/DICOM" order="3"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/NetCDF" order="4"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/HDF5" order="5"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/CityGML" order="6"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/INSPEC" order="7"/>
+			<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/other" order="10"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/SI">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>standards_metrology/SI</uri_path>
+		<dc:comment/>
+		<text lang="en">BIPM SI brochure (vocabulary; subject-independent)</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/VIM">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>standards_metrology/VIM</uri_path>
+		<dc:comment/>
+		<text lang="en">VIM (vocabulary; subject-independent)</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/OBO">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>standards_metrology/OBO</uri_path>
+		<dc:comment/>
+		<text lang="en">OBO (metadata schema; biological sciences)</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/DICOM">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>standards_metrology/DICOM</uri_path>
+		<dc:comment/>
+		<text lang="en">DICOM (MD schema + file format; biomedical imaging)</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/NetCDF">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>standards_metrology/NetCDF</uri_path>
+		<dc:comment/>
+		<text lang="en">NetCDF (file container format; geographical information)</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/HDF5">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>standards_metrology/HDF5</uri_path>
+		<dc:comment/>
+		<text lang="en">HDF5 (hierarchical file format; subject-independent)</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/CityGML">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>standards_metrology/CityGML</uri_path>
+		<dc:comment/>
+		<text lang="en">CityGML (file format; smart cities)</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://dmp.metrology-rdm.eu/terms/options/standards_metrology/INSPEC">
+		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
+		<uri_path>standards_metrology/INSPEC</uri_path>
+		<dc:comment/>
+		<text lang="en">INSPEC (vocabulary + classification; physics)</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
