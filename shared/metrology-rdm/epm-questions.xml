@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-06-11T16:01:57.798406+02:00" version="2.2.2">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-07-01T15:27:11.509595+02:00" required="2.1.0" version="2.3.1">
 	<catalog dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm">
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>epm</uri_path>
@@ -287,7 +287,7 @@ At the end of the procedure the platform produces an export (&quot;view&quot;) o
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 		<is_collection>False</is_collection>
 		<title lang="en">Initial DMP: origin of the data (dataset-independent answers)</title>
-		<short_title lang="en"/>
+		<short_title lang="en">Data origin (general)</short_title>
 		<help lang="en">In the initial DMP a number of details may not yet be known (such as persistent identifiers). However, the plans and intentions should be considered and explained in the following questions.</help>
 		<verbose_name lang="en">dataset group</verbose_name>
 		<title lang="de"/>
@@ -461,7 +461,7 @@ Bitte wählen Sie aus, mit welcher Methodik die Daten generiert werden.</help>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 		<is_collection>True</is_collection>
 		<title lang="en">Midterm or final DMP: origin of the data (dataset-specific answers)</title>
-		<short_title lang="en"/>
+		<short_title lang="en">Data origin (dataset-specific)</short_title>
 		<help lang="en">This is the version of the questionnaire being used for a midterm or final DMP. Contrary to the initial DMP, it is required to answer some questions for single datasets, or for groups of similar datasets.
 
 List the datasets that your project will generate or use. We recommend grouping together data that are &quot;managed&quot; similarly, e.g. published together, shared with the same restriction on reuse, sharing the same security issues, labelled by the same keywords, etc.
@@ -553,7 +553,7 @@ Die &lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/doc
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>epm/data_summary/datasets_groups/generation</uri_path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creation_methods"/>
+		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/dataset/creation_methods_multiple"/>
 		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en">This information is relevant for all types of data in order to be able to understand their genesis.
@@ -592,7 +592,7 @@ Bitte wählen Sie aus, mit welcher Methodik die Daten generiert werden.</help>
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>epm/data_summary/datasets_groups/provenance</uri_path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/provenance/content"/>
+		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/dataset/provenance/content_multiple"/>
 		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en">The history of origin (provenance) of the data and even, if relevant for research data management, the provenance of the physical objects on which the data is based can be entered in this text area. However, you can also use the text area to uniformly define the post-processing of the data as soon as such details have been determined. This can include, for example, aggregation steps, unit conversions and format conversions.</help>
@@ -652,7 +652,7 @@ Bitte wählen Sie aus, mit welcher Methodik die Daten generiert werden.</help>
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>epm/data_summary/datasets_groups/usage_description</uri_path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_description"/>
+		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/dataset/usage_description_multiple"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en">Explain briefly how the datasets aid in the reaching the project objectives.</help>
@@ -683,7 +683,7 @@ Bitte wählen Sie aus, mit welcher Methodik die Daten generiert werden.</help>
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>epm/data_summary/datasets_groups/existing</uri_path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reuse_existing"/>
+		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/dataset/reuse_existing_multiple"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en"/>
@@ -712,7 +712,7 @@ Bitte wählen Sie aus, mit welcher Methodik die Daten generiert werden.</help>
 		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
 		<uri_path>epm/data_summary/datasets_groups/usage_objectives</uri_path>
 		<dc:comment/>
-		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/dataset/usage_objectives"/>
+		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/dataset/usage_objectives_multiple"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en"/>
@@ -836,7 +836,7 @@ When choosing a data format, one should consider the consequences for collaborat
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<is_collection>False</is_collection>
 		<title lang="en">Reasons to share or not to share data</title>
-		<short_title lang="en"/>
+		<short_title lang="en">Motivation for/against sharing</short_title>
 		<help lang="en"/>
 		<verbose_name lang="en">dataset</verbose_name>
 		<title lang="de">Gründe, um Daten zu teilen oder nicht zu teilen</title>
@@ -944,7 +944,7 @@ When choosing a data format, one should consider the consequences for collaborat
 		<uri_path>epm/sharing/reasons/sharing_embargo_length</uri_path>
 		<dc:comment/>
 		<attribute dc:uri="https://dmp.metrology-rdm.eu/terms/domain/project/dataset/preservation/embargo_length"/>
-		<is_collection>True</is_collection>
+		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en"/>
 		<text lang="en">How long should the embargo period be? (in months)</text>
@@ -1308,7 +1308,7 @@ _Begünstigte von Horizon Europe müssen einen offenen Zugang zu Forschungsdaten
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<is_collection>False</is_collection>
 		<title lang="en">Technical details about the repository</title>
-		<short_title lang="en"/>
+		<short_title lang="en">Repository details</short_title>
 		<help lang="en"/>
 		<verbose_name lang="en">dataset</verbose_name>
 		<title lang="de">Technische Details über das Repositorium</title>
@@ -1373,7 +1373,7 @@ _Begünstigte von Horizon Europe müssen einen offenen Zugang zu Forschungsdaten
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/pids/system"/>
 		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
-		<help lang="en"/>
+		<help lang="en">Persistent identifiers (PIDs) can be used to allow data lookup and discovery. PIDs can be assigned to authors (ORCID); organisations (ROR, ISNI); funders (ROR, GRID, FundRef); research outputs, including text/data/software publications (DOI, URN, ISBN, Handle).</help>
 		<text lang="en">Which system of persistent identifiers shall be used?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
@@ -1593,7 +1593,7 @@ _Begünstigte von Horizon Europe müssen einen offenen Zugang zu Forschungsdaten
 		<uri_path>epm/documentation</uri_path>
 		<dc:comment/>
 		<title lang="en">Data description and documentation</title>
-		<short_title lang="en"/>
+		<short_title lang="en">Description and documentation</short_title>
 		<title lang="de"/>
 		<short_title lang="de"/>
 		<pages>
@@ -1608,7 +1608,7 @@ _Begünstigte von Horizon Europe müssen einen offenen Zugang zu Forschungsdaten
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<is_collection>False</is_collection>
 		<title lang="en">Information to describe the data</title>
-		<short_title lang="en"/>
+		<short_title lang="en">Data description</short_title>
 		<help lang="en">Making data interoperable. &lt;a href=&quot;https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan_he_en.docx&quot; target=_blank&gt;Original questions:&lt;/a&gt;
 
 - &lt;i&gt;What data and metadata vocabularies, standards, formats or methodologies will you follow to make your data interoperable to allow data exchange and re-use within and across disciplines? Will you follow community-endorsed interoperability best practices? Which ones?&lt;/i&gt;
@@ -1631,7 +1631,6 @@ _Begünstigte von Horizon Europe müssen einen offenen Zugang zu Forschungsdaten
 		<questions>
 			<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/documentation/description/metadata" order="0"/>
 			<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/documentation/description/metadata_keywords" order="1"/>
-			<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/PIDs" order="2"/>
 			<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/documentation/description/interoperability_standards" order="3"/>
 			<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/documentation/description/vocabularies_mappings" order="4"/>
 			<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/documentation/description/qualified_references" order="5"/>
@@ -1692,35 +1691,6 @@ _Begünstigte von Horizon Europe müssen einen offenen Zugang zu Forschungsdaten
 		<unit/>
 		<width/>
 		<optionsets/>
-		<conditions/>
-	</question>
-	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/PIDs">
-		<uri_prefix>https://dmp.metrology-rdm.eu/terms</uri_prefix>
-		<uri_path>PIDs</uri_path>
-		<dc:comment/>
-		<attribute/>
-		<is_collection>True</is_collection>
-		<is_optional>False</is_optional>
-		<help lang="en">Persistent identifiers (PIDs) can be used to allow data lookup and discovery. PIDs can be assigned to authors (ORCID); organisations (ROR, ISNI); funders (ROR, GRID, FundRef); research outputs, including text/data/software publications (DOI, URN, ISBN, Handle).</help>
-		<text lang="en">Which Persistent Identifiers will be used?</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en">Which persistent identifiers will be used?</verbose_name>
-		<help lang="de"/>
-		<text lang="de"/>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>checkbox</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets>
-			<optionset dc:uri="https://dmp.metrology-rdm.eu/terms/options/pid_types"/>
-		</optionsets>
 		<conditions/>
 	</question>
 	<question dc:uri="https://dmp.metrology-rdm.eu/terms/questions/epm/documentation/description/interoperability_standards">
@@ -1820,7 +1790,7 @@ _Begünstigte von Horizon Europe müssen einen offenen Zugang zu Forschungsdaten
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<is_collection>False</is_collection>
 		<title lang="en">Documentation of data generation and quality</title>
-		<short_title lang="en"/>
+		<short_title lang="en">Data documentation</short_title>
 		<help lang="en"/>
 		<verbose_name lang="en">dataset</verbose_name>
 		<title lang="de">Dokumentation der Datengenerierung und -qualität</title>
@@ -2118,7 +2088,7 @@ automatisch ein Verweis auf Abschnitt &quot;FAIRe Daten / Zugänglichkeit: Daten
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<is_collection>False</is_collection>
-		<title lang="en">Responsibility</title>
+		<title lang="en">Responsibilities</title>
 		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en">dataset</verbose_name>
@@ -2423,7 +2393,7 @@ Data may be stored, archived or deleted. Good scientific practice and EURAMET's 
 		<uri_path>epm/ethics</uri_path>
 		<dc:comment/>
 		<title lang="en">Ethics, legal aspects and data security</title>
-		<short_title lang="en"/>
+		<short_title lang="en">Ethics, law and security</short_title>
 		<title lang="de">Ethik</title>
 		<short_title lang="de"/>
 		<pages>
@@ -2629,7 +2599,7 @@ gdpr.eu/gdpr-consent-requirements: Informed consent means the data subject knows
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/other_research_output"/>
 		<is_collection>False</is_collection>
 		<title lang="en">Other research outputs: general information</title>
-		<short_title lang="en"/>
+		<short_title lang="en">Other outputs (general)</short_title>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de"/>
@@ -2739,7 +2709,7 @@ gdpr.eu/gdpr-consent-requirements: Informed consent means the data subject knows
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/other_research_output"/>
 		<is_collection>True</is_collection>
 		<title lang="en">Other research outputs: format-specific information</title>
-		<short_title lang="en"/>
+		<short_title lang="en">Other outputs (format-specific)</short_title>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de"/>
@@ -2788,7 +2758,6 @@ gdpr.eu/gdpr-consent-requirements: Informed consent means the data subject knows
 		<width/>
 		<optionsets/>
 		<conditions>
-			<condition dc:uri="https://dmp.metrology-rdm.eu/terms/conditions/dmp_final"/>
 			<condition dc:uri="https://dmp.metrology-rdm.eu/terms/conditions/dmp_not_initial"/>
 		</conditions>
 	</question>
