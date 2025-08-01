@@ -17,3 +17,6 @@ The xml is a "full xml" export and contains all elements required for the import
 
 The catalog makes use of the `{more}`-tag to hide and show parts of the text, available since RDMO release 2.1.0.
 
+## Acknowledgements
+The authors would like to thank the Federal Government and the Heads of Government of the Länder, as well as the Joint Science Conference (GWK), for their funding and support within the framework of the NFDI4ING consortium. Funded by the German Research Foundation (DFG) - project number [442146713](https://gepris.dfg.de/gepris/projekt/442146713).
+
