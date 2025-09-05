@@ -53,29 +53,138 @@
 		<short_title lang="en"/>
 		<help lang="en">&lt;u&gt;General notes:&lt;/u&gt; This catalogue of questions is based on the checklist published by the German Research Foundation (DFG) and has been supplemented with help texts, selection lists containing suggested text and additional information. The DFG checklist must be taken into account when submitting a proposal or finalising a project, and it should help you structure your data management. If you have any questions, please contact the central research data management team at your instituion.
 
-&lt;u&gt;Structuring into data sets:&lt;/u&gt; Select a logical unit of your research data as a data set, for which the same information regarding methodology, technology, accessibility, etc. applies. Examples of this include different types of data collection (modalities) and the distinction between measured, simulated, or analysed data. The following questions must be answered for each data set.
+&lt;u&gt;Structuring into data sets:&lt;/u&gt; The following questions deal with the content, format, and origin of the research data generated or reused in the project and describe their management. The best way to address these questions is by clustering the data in logical units. For each  of those &quot;data sets&quot; the same questions will be asked. Data sets may represent rather broader categories with similar constraints/properties regarding data management.
 
-Categorising your data into sets helps you to assess its value with regard to potential subsequent use and archiving. As all questions must be answered for each data set, a structure that is too granular does not make sense.</help>
+Assign a meaningful but short name to each &quot;data set&quot; with reference to the research question, and use it to label the corresponding tab in RDMO.
+
+&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Some tips for choosing data sets&lt;/summary&gt;
+
+You can proceed like that:
+
+* Gain an overview of the data being generated or used within your research activity.
+* Evaluate each data category with respect to the following criteria:
+  * origin/generation: generated (observation/measurement, experiment, survey, simulation, web-crawl,…) or reused;
+  * storage (space) requirements: e.g.: &lt;1GB, ~10TB
+  * documentation requirements: e.g. extensive description of survey sampling and survey implementation or detailed references to meta-data and re-used data retrieved from a research data repository
+  * data privacy aspects:  personal data, sensitive non-personal, public data
+  * relevance / reuse potential: high (reference data), middle (scientific main study), low (preliminary study)
+  * data publication
+  * long term preservation
+* Assign a meaningful but short name to each "data category" with reference to the research question, and use it to label the corresponding tab in RDMO. Then describe each data category using the checkboxes/text fields on this page and the following ones. 
+
+Examples of two project with data organised in categories is to be found on the &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;GitLab page&lt;/a&gt;.
+
+Please fill in the form for each tab. The same tabs may be used later on other pages. You can add a new tab using the green button. Once created, you can edit or delete tabs using the buttons in the top right corner.
+
+&lt;/details&gt;</help>
 		<verbose_name lang="en">Data set</verbose_name>
 		<title lang="de">Inhaltliche Datenbeschreibung</title>
 		<short_title lang="de"/>
 		<help lang="de">&lt;u&gt;Allgemeine Hinweise:&lt;/u&gt; Der vorliegende Fragenkatalog  basiert auf der von der Deutschen Forschungsgemeinschaft (DFG) herausgegebenen Checkliste und wurde um Hilfetexte, Auswahllisten mit Textvorschlägen sowie weiterführenden Hinweise ergänzt. Die DFG-Checkliste muss bei Antragstellung sowie bei Projektabschluss berücksichtigt werden und soll Ihnen dabei helfen, Ihr Datenmanagement zu strukturieren. Bei Fragen wenden Sie sich bitte an das zentrale Team für Forschungsdatenmanagement ihrer Einrichtung.
 
-&lt;u&gt;Strukturierung in Datensätze:&lt;/u&gt; Wählen Sie als Datensatz eine logische Einheit Ihrer Forschungsdaten, für die gleiche Angaben bezüglich Methodik, Technik, Zugänglichkeit, usw. gelten. Beispiele hierfür sind verschiedene Arten der Datenerhebung (Modalitäten) oder die Unterscheidung zwischen gemessenen, simulierten oder analysierten Daten. Die folgenden Fragen werden für jeden Datensatz beantwortet.
+&lt;u&gt;Strukturierung in Datensätze:&lt;/u&gt; Die folgenden Fragen befassen sich mit dem Inhalt, dem Format und der Herkunft der im Projekt generierten oder wiederverwendeten Forschungsdaten und beschreiben deren Verwaltung. Am besten lassen sich diese Fragen beantworten, indem die Daten in logischen Einheiten zusammengefasst werden. Für jeden dieser &quot;Datensätze&quot; werden dieselben Fragen gestellt. Datensätze können eher breitere Kategorien mit ähnlichen Einschränkungen/Eigenschaften hinsichtlich der Datenverwaltung darstellen.
+Weisen Sie jedem &quot;Datensatz&quot; einen aussagekräftigen, aber kurzen Namen zu, der sich auf die Forschungsfrage bezieht, und verwenden Sie diesen Namen, um den entsprechenden Tab in RDMO zu beschriften.
 
-Die Einteilung in Datensätze hilft dabei, den Wert der Daten hinsichtlich einer potenziellen Nachnutzung und einer späteren Archivierung einschätzen zu können. Da alle Fragen für jeden einzelnen Datensatz beantwortet werden müssen, ist eine zu feingranulare Struktur nicht sinnvoll.</help>
+&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Einige Tipps zur Auswahl von Datensätzen&lt;/summary&gt;
+
+Sie können wie folgt vorgehen:
+
+* Verschaffen Sie sich einen Überblick über die Daten, die im Rahmen Ihrer Forschungsaktivitäten generiert oder verwendet werden.
+* Bewerten Sie jede Datenkategorie anhand der folgenden Kriterien:
+  * Herkunft/Generierung: generiert (Beobachtung/Messung, Experiment, Umfrage, Simulation, Web-Crawl,…) oder wiederverwendet;
+  * Speicherplatzanforderungen: z. B.: &lt;1 GB, ~10 TB
+  * Dokumentationsanforderungen: z. B. ausführliche Beschreibung der Stichprobenziehung und Durchführung der Umfrage oder detaillierte Verweise auf Metadaten und wiederverwendete Daten, die aus einem Forschungsdaten-Archiv abgerufen wurden
+  * Datenschutzaspekte: personenbezogene Daten, sensible nicht personenbezogene Daten, öffentliche Daten
+  * Relevanz/Wiederverwendungspotenzial: hoch (Referenzdaten), mittel (wissenschaftliche Hauptstudie), gering (Vorstudie)
+  * Veröffentlichung der Daten
+  * Langzeitarchivierung
+* Geben Sie jeder "Datenkategorie" einen aussagekräftigen, aber kurzen Namen, der sich auf die Forschungsfrage bezieht, und beschriften Sie damit die entsprechende Registerkarte in RDMO. Beschreiben Sie dann jede Datenkategorie mithilfe der Kontrollkästchen/Textfelder auf dieser und den folgenden Seiten.
+
+Beispiele für zwei Projekte mit nach Kategorien geordneten Daten finden Sie auf der &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;GitLab-Seite&lt;/a&gt;
+
+Bitte füllen Sie das Formular für jede Registerkarte aus. Die gleichen Registerkarten können später auf anderen Seiten verwendet werden. Über die grüne Schaltfläche können Sie eine neue Registerkarte hinzufügen. Wenn Sie eine Registerkarte erstellt haben, können Sie sie mit den Schaltflächen in der oberen rechten Ecke bearbeiten oder löschen.
+
+&lt;/details&gt;</help>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<title lang="fr"/>
 		<short_title lang="fr"/>
-		<help lang="fr">PLATZHALTER</help>
+		<help lang="fr">Les questions suivantes portent sur le contenu, le format et l'origine des données de recherche générées ou réutilisées dans le projet et décrivent leur gestion. La meilleure façon de répondre à ces questions est de regrouper les données en unités logiques. Les mêmes questions sont posées pour chacun de ces &quot;ensembles de données&quot ;. Les ensembles de données peuvent représenter des catégories plutôt larges avec des contraintes/propriétés similaires en termes de gestion des données.
+
+Attribuez à chaque &quot;ensemble de données&quot ; un nom significatif mais court, en rapport avec la question de recherche, et utilisez ce nom pour étiqueter l'onglet correspondant dans RDMO.
+
+&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Quelques conseils pour la sélection des jeux de données&lt;/summary&gt ;
+
+Vous pouvez procéder comme suit :
+
+* Obtenez une vue d'ensemble des données qui sont générées ou utilisées dans le cadre de vos activités de recherche.
+* Évaluez chaque catégorie de données sur la base des critères suivants :
+  * origine/génération : générées (observation/mesure, expérience, enquête, simulation, web crawl,...) ou réutilisées ;
+  * exigences en matière de stockage : par ex : &lt;1 GB, ~10 TB
+  * Exigences en matière de documentation : par ex. description détaillée de l'échantillonnage et de la réalisation de l'enquête ou références détaillées aux métadonnées et aux données réutilisées extraites d'une archive de données de recherche
+  * aspects relatifs à la protection des données : données personnelles, données sensibles non personnelles, données publiques
+  * pertinence/potentiel de réutilisation : élevé (données de référence), moyen (étude scientifique principale), faible (étude préliminaire)
+  * publication des données
+  * archivage à long terme
+* Donnez à chaque "catégorie de données" un nom significatif mais court, en rapport avec la question de recherche, et étiquetez-le sur l'onglet correspondant dans RDMO. Décrivez ensuite chaque catégorie de données à l'aide des cases à cocher/champs de texte de cette page et des pages suivantes.
+
+Vous trouverez des exemples de deux projets avec des données classées par catégories sur la page &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot ; target=&quot;_blank&quot;&gt;GitLab&lt;/a&gt ;
+
+Veuillez remplir le formulaire pour chaque onglet. Les mêmes onglets peuvent être utilisés plus tard sur d'autres pages. Vous pouvez ajouter un nouvel onglet en cliquant sur le bouton vert. Une fois que vous avez créé un onglet, vous pouvez le modifier ou le supprimer à l'aide des boutons situés dans le coin supérieur droit.
+
+&lt;/details&gt;</help>
 		<verbose_name lang="fr"/>
 		<title lang="it"/>
 		<short_title lang="it"/>
-		<help lang="it">PLATZHALTER</help>
+		<help lang="it">Le domande seguenti riguardano il contenuto, il formato e l'origine dei dati di ricerca generati o riutilizzati nel progetto e ne descrivono la gestione. Il modo migliore per rispondere a queste domande è riassumere i dati in unità logiche. Le stesse domande vengono poste per ciascuno di questi &quot;insiemi di dati&quot;. I set di dati possono tendere a rappresentare categorie più ampie con vincoli/caratteristiche simili in termini di gestione dei dati.
+
+Assegnare a ciascun &quot;dataset&quot; un nome significativo ma breve che si riferisca alla domanda di ricerca e utilizzare questo nome per etichettare la scheda corrispondente in RDMO.
+
+&lt;dettagli&gt;&lt;sommario style=&quot;cursore:puntatore&quot;&gt;Alcuni consigli per la selezione dei dataset&lt;/sommario&gt;
+
+Si può procedere come segue:
+
+* Ottenere una panoramica dei dati che verranno generati o utilizzati nell'ambito delle attività di ricerca.
+* Valutare ogni categoria di dati in base ai seguenti criteri:
+  * Origine/generazione: generati (osservazione/misurazione, esperimento, sondaggio, simulazione, web crawl,...) o riutilizzati;
+  * Requisiti di spazio di archiviazione: ad es: 1 GB, ~10 TB
+  * Requisiti di documentazione: ad es. Descrizione dettagliata dell'implementazione del campionamento e dell'indagine o riferimenti dettagliati ai metadati e ai dati riutilizzati recuperati da un archivio di dati di ricerca
+  * Aspetti di protezione dei dati: dati personali, dati sensibili non personali, dati pubblici
+  * Pertinenza/potenziale di riutilizzo: alto (dati di riferimento), medio (studio scientifico principale), basso (studio preliminare)
+  * Pubblicazione dei dati
+  * Archiviazione a lungo termine
+* Assegnare a ogni "categoria di dati" un nome significativo ma breve che si riferisca alla domanda di ricerca ed etichettare la scheda corrispondente in RDMO. Descrivete quindi ogni categoria di dati utilizzando le caselle di controllo/di testo presenti in questa e nelle pagine seguenti.
+
+Esempi di due progetti con dati organizzati per categoria si trovano nella pagina GitLab&lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;GitLab&lt;/a&gt;
+
+Compilare il modulo per ogni scheda. Le stesse schede possono essere utilizzate successivamente in altre pagine. È possibile aggiungere una nuova scheda utilizzando il pulsante verde. Una volta creata una scheda, è possibile modificarla o eliminarla utilizzando i pulsanti in alto a destra.
+
+&lt;/details&gt;</help>
 		<verbose_name lang="it"/>
 		<title lang="es"/>
 		<short_title lang="es"/>
-		<help lang="es">PLATZHALTER</help>
+		<help lang="es">Las siguientes preguntas se refieren al contenido, formato y origen de los datos de investigación generados o reutilizados en el proyecto y describen su gestión. La mejor manera de responder a estas preguntas es resumir los datos en unidades lógicas. Se plantean las mismas preguntas para cada uno de estos &quot;conjuntos de datos&quot;. Los conjuntos de datos pueden tender a representar categorías más amplias con limitaciones/características similares en términos de gestión de datos.
+
+Asigne a cada &quot;conjunto de datos&quot; un nombre significativo pero corto que esté relacionado con la pregunta de investigación y utilice este nombre para etiquetar la pestaña correspondiente en RDMO.
+
+&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Algunos consejos para seleccionar conjuntos de datos&lt;/summary&gt;
+
+Puede proceder de la siguiente manera:
+
+* Obtenga una visión general de los datos que se generarán o utilizarán como parte de sus actividades de investigación.
+* Evalúe cada categoría de datos en función de los siguientes criterios:
+  * Origen/generación: generados (observación/medición, experimento, encuesta, simulación, rastreo web,...) o reutilizados;
+  * Requisitos de espacio de almacenamiento: p. ej: 1 GB, ~10 TB
+  * Requisitos de documentación: p. ej. Aspectos de protección de datos: datos personales, datos sensibles no personales, datos públicos
+  * Relevancia/potencial de reutilización: alta (datos de referencia), media (estudio científico principal), baja (estudio preliminar)
+  * Publicación de datos
+  * Archivo a largo plazo
+* Asigne a cada "categoría de datos" un nombre significativo pero corto que esté relacionado con la pregunta de investigación y etiquete la pestaña correspondiente en RDMO. A continuación, describa cada categoría de datos utilizando las casillas de verificación/texto de esta página y de las siguientes.
+
+Encontrará ejemplos de dos proyectos con datos organizados por categorías en la página de &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;GitLab&lt;/a&gt;
+
+Rellene el formulario para cada pestaña. Las mismas pestañas pueden utilizarse posteriormente en otras páginas. Puedes añadir una nueva pestaña utilizando el botón verde. Una vez creada una pestaña, puedes editarla o eliminarla utilizando los botones de la esquina superior derecha.
+
+&lt;/details&gt;</help>
 		<verbose_name lang="es"/>
 		<questionsets/>
 		<questions>
