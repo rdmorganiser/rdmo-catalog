@@ -110,10 +110,11 @@ In order to file issues, you will need a GitHub account.
 |Quality Assurance Tool for data    |[catalog][QAT]  |           |2025-03|Mathmet / TC-IM 1449  |
 |Quality Assurance Tool for software|[catalog][QAT]  |           |2025-03|Mathmet / TC-IM 1449  |
 |Research data policy generator|[catalog](shared/FDNext)|        |2025-04|FDNext                |
+|Software for collection management|[2 catalogs](shared/NFDI4Culture)||  |NFDI4Culture          |
 |VW Foundation - Basic DMP     |[catalog][VWBDMP]    |           |2025-06|FDM Bayern eHumanities|
 |VW Foundation - Science Europe|[catalog][VWSEU]     |           |2021-04|FDM Bayern eHumanities|
 
-Total: 29 catalogs, 15 views
+Total: 31 catalogs, 15 views
 
 [AKU]:         shared/ub_fau_erlangen_nuernberg/dfg-alte-kulturen/
 [CHE]:         shared/ub_fau_erlangen_nuernberg/dfg-chemie/
