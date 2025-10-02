@@ -6,9 +6,9 @@ Licence: https://creativecommons.org/licenses/by-nc-sa/4.0/
 The catalogues help museums and collections to select the most suitable software for managing their collections. They complement each other in terms of their functions, covering the most important areas between them.
 
 About the templates:
-One template (Katalog für Museen und Sammlungen.xml) is designed from the user's perspective and helps clarify specific requirements and select the right software. It can be completed in preparation for a detailed consultation. Based on the answers provided, any special requirements can be identified and addressed.
+One template (collection_software_user.xml) is designed from the user's perspective and helps clarify specific requirements and select the right software. It can be completed in preparation for a detailed consultation. Based on the answers provided, any special requirements can be identified and addressed.
 
-The other template (Katalog für Softwareanbieter.xml) lists evaluation criteria and enables software products to be described in detail from the provider's perspective, making them comparable for user institutions. This facilitates a match between software providers and customers. Questions that are mandatory or core and must be answered to ensure comparability are marked with three asterisks (***). Both catalogues contain a large number of important questions with extensive selection options.
+The other template (collection_software_provider.xml) lists evaluation criteria and enables software products to be described in detail from the provider's perspective, making them comparable for user institutions. This facilitates a match between software providers and customers. Questions that are mandatory or core and must be answered to ensure comparability are marked with three asterisks (***). Both catalogues contain a large number of important questions with extensive selection options.
 
 The catalogues are available in German and English and can be accessed via https://rdmo.nfdi4culture.de/ (funded by the Deutsche Forschungsgemeinschaft (DFG) – project number 441958017). They were created as part of NFDI's basic service, DMP4NFDI. DMP4NFDI's main objective is to support NFDI consortia in developing and providing standardised data and software management plan services.
 
