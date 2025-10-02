@@ -107,14 +107,15 @@ In order to file issues, you will need a GitHub account.
 |Horizon 2020                     |[catalog][EHU]|[view][EHU]|2020-09|FDM Bayern eHumanities|
 |Mathematics                      |[catalog][MAT]|     |2022-11|DFG Excellence Cluster MATH+|
 |NFDI DMP Template                |[catalog][D4N]|           |2025-06|DMP4NFDI              |
+|Offboarding checklist            |[catalog][UDA]|           |2025-09|TU Darmstadt          |
 |Quality Assurance Tool for data  |[catalog][QAT]|           |2025-03|Mathmet / TC-IM 1449  |
 |Quality Assurance Tool for software  |[catalog][QAT]|       |2025-03|Mathmet / TC-IM 1449  |
 |Research data policy generator       |[catalog][FDN]|       |2025-04|FDNext                |
-|Software for collection management|[2 catalogs][N4Q]|       |       |NFDI4Culture          |
+|Software for collection management|[2 catalogs][N4Q]|       |2025-09|NFDI4Culture          |
 |VW Foundation - Basic DMP            |[catalog][VWB]|       |2025-06|FDM Bayern eHumanities|
 |VW Foundation - Science Europe       |[catalog][VWE]|       |2021-04|FDM Bayern eHumanities|
 
-Total: 31 catalogs, 15 views
+Total: 32 catalogs, 15 views
 
 [AKU]:         shared/ub_fau_erlangen_nuernberg/dfg-alte-kulturen/
 [CHE]:         shared/ub_fau_erlangen_nuernberg/dfg-chemie/
@@ -137,6 +138,7 @@ Total: 31 catalogs, 15 views
 [MAT]:         shared/MATH+
 [QAT]:         shared/Mathmet-QAT
 [EPM]:         shared/metrology-rdm/
+[UDA]:         shared/ulb_darmstadt/
 [Q-rdmo]:      rdmorganiser/questions/questions-rdmo.xml
 [Q-fhp]:       rdmorganiser/questions/questions-fhpshort.xml
 [Q-dcc]:       rdmorganiser/questions/questions-dcc.xml
@@ -152,6 +154,9 @@ Total: 31 catalogs, 15 views
 [V-citec]:     rdmorganiser/views/view-citec.xml
 [V-costs]:     rdmorganiser/views/view-costs.xml
 [V-dmponline]: rdmorganiser/views/view-dmponline.xml
+[V-dmptool]:   rdmorganiser/views/view-dmptool.xml
+[V-h2020]:     rdmorganiser/views/view-horizon2020.xml
+[V-varcheck]:  rdmorganiser/views/view-variable_check.xml
 [V-dmptool]:   rdmorganiser/views/view-dmptool.xml
 [V-h2020]:     rdmorganiser/views/view-horizon2020.xml
 [V-varcheck]:  rdmorganiser/views/view-variable_check.xml
