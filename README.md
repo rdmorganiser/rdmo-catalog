@@ -157,6 +157,3 @@ Total: 32 catalogs, 15 views
 [V-dmptool]:   rdmorganiser/views/view-dmptool.xml
 [V-h2020]:     rdmorganiser/views/view-horizon2020.xml
 [V-varcheck]:  rdmorganiser/views/view-variable_check.xml
-[V-dmptool]:   rdmorganiser/views/view-dmptool.xml
-[V-h2020]:     rdmorganiser/views/view-horizon2020.xml
-[V-varcheck]:  rdmorganiser/views/view-variable_check.xml
