@@ -107,7 +107,7 @@ In order to file issues, you will need a GitHub account.
 |Horizon 2020                     |[catalog][EHU]|[view][EHU]|2020-09|FDM Bayern eHumanities|
 |Mathematics                      |[catalog][MAT]|     |2022-11|DFG Excellence Cluster MATH+|
 |NFDI DMP Template                |[catalog][D4N]|           |2025-06|DMP4NFDI              |
-|Offboarding checklist            |[catalog][UDA]|           |2025-09|TU Darmstadt          |
+|Offboarding checklist            |[catalog][UDA]|           |2025-09|ULB Darmstadt          |
 |Quality Assurance Tool for data  |[catalog][QAT]|           |2025-03|Mathmet / TC-IM 1449  |
 |Quality Assurance Tool for software  |[catalog][QAT]|       |2025-03|Mathmet / TC-IM 1449  |
 |Research data policy generator       |[catalog][FDN]|       |2025-04|FDNext                |
