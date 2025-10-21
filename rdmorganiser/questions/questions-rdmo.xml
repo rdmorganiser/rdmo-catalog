@@ -939,13 +939,11 @@ You can proceed like that:
     &lt;li&gt;storage (space) requirements: e.g.: &amp;lt;1GB, ~10TB;&lt;/li&gt;
     &lt;li&gt;documentation requirements:&lt;ul&gt;
       &lt;li&gt;example A: extensive description of survey sampling and survey implementation;&lt;/li&gt;
-      &lt;li&gt;example B: measurement setup and measuring parameters;&lt;/li&gt;
-    &lt;/ul&gt;&lt;/li&gt;
-    &lt;li&gt;data privacy aspects:  personal data, sensitive non-personal, public data;&lt;/li&gt;
+      &lt;li&gt;example B: measurement setup and measuring parameters;&lt;/li&gt; &lt;/ul&gt;&lt;/li&gt;
+    &lt;li&gt;data privacy aspects: personal data, sensitive non-personal, public data;&lt;/li&gt;
     &lt;li&gt;relevance / reuse potential: high (reference data), middle (scientific main study), low (preliminary study);&lt;/li&gt;
     &lt;li&gt;data publication: no/yes, intended repository, intended organisation and funding;&lt;/li&gt;
-    &lt;li&gt;long term preservation: no/yes,techical issues, intended organisation and funding.&lt;/li&gt;
-  &lt;/ul&gt;&lt;/li&gt;
+    &lt;li&gt;long term preservation: no/yes,techical issues, intended organisation and funding.&lt;/li&gt; &lt;/ul&gt;&lt;/li&gt;
   &lt;li&gt;Decide on the most useful way of subdividing the project data into data sets so that only data differing substantially with regard to these criteria are defined as separate data sets. Define &amp;lt;i&amp;gt;as few data sets as possible &amp;lt;/i&amp;gt; (to avoid a need to provide the same answers repeatedly for too many different data sets) and &amp;lt;i&amp;gt; as many as necessary &amp;lt;/i&amp;gt; (to avoid a need to provide conditional answers, i.e. &#8220;if&#8230; then&#8230;, else, &#8230;&#8221; for individual data sets).&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -977,13 +975,11 @@ Sie können wie folgt vorgehen:
     &lt;li&gt;Speicherplatzanforderungen: z. B.: &lt;1 GB, ~10 TB;&lt;/li&gt;
     &lt;li&gt;Dokumentationsanforderungen:&lt;ul&gt;
       &lt;li&gt;Beispiel A: Ausführliche Beschreibung von Stichprobengenerierung und Datenerhebung;&lt;/li&gt;
-      &lt;li&gt;Beispiel B: Beschreibung von Messvorrichtungen und Messparametern;&lt;/li&gt;
-    &lt;/ul&gt;&lt;/li&gt;
+      &lt;li&gt;Beispiel B: Beschreibung von Messvorrichtungen und Messparametern;&lt;/li&gt; &lt;/ul&gt;&lt;/li&gt;
     &lt;li&gt;Datenschutzaspekte: personenbezogene Daten, sensible nicht personenbezogene Daten, öffentliche Daten;&lt;/li&gt;
     &lt;li&gt;Relevanz/Wiederverwendungspotenzial: hoch (Referenzdaten), mittel (wissenschaftliche Hauptstudie), gering (Vorstudie);&lt;/li&gt;
     &lt;li&gt;Veröffentlichung der Daten: nein/ja, geplantes Repositorium, geplante Durchführung und Finanzierung;&lt;/li&gt;
-    &lt;li&gt;Langzeitarchivierung: nein/ja, geplantes Datenformat, geplante Durchführung und Finanzierung.&lt;/li&gt;
-  &lt;/ul&gt;&lt;/li&gt;
+    &lt;li&gt;Langzeitarchivierung: nein/ja, geplantes Datenformat, geplante Durchführung und Finanzierung.&lt;/li&gt; &lt;/ul&gt;&lt;/li&gt;
   &lt;li&gt;Entscheiden Sie sich für die günstigste Unterteilung der Projektdaten in Datensätze, so dass nur Daten, die sich hinsichtlich dieser Kriterien erheblich unterscheiden, verschiedenen Datensätzen zugeordnet werden. Definieren Sie &lt;i&gt; so wenige Datensätze wie möglich &lt;/i&gt; (um die Notwendigkeit gleichartiger Fragenbeantwortung für mehrere Datensätze zu vermeiden) und &lt;i&gt; so viele wie nötig &lt;/i&gt; (um die Notwendigkeit von Fallunterscheidungen bei der Fragenbeantwortung für einzele Datensätze zu vermeiden).&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -996,83 +992,108 @@ Bearbeiten Sie dann bitte die Kontrollkästchen/Textfelder auf jeder Registerkar
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<title lang="fr">Jeux de données</title>
 		<short_title lang="fr"/>
-		<help lang="fr">Les questions suivantes portent sur le contenu, le format et l'origine des données de recherche générées ou réutilisées dans le projet et décrivent leur gestion. La meilleure façon de répondre à ces questions est de regrouper les données en unités logiques. Les mêmes questions sont posées pour chacun de ces &quot;ensembles de données&quot;. Les ensembles de données peuvent représenter des catégories plutôt larges avec des contraintes/propriétés similaires en termes de gestion des données.
+		<help lang="fr">Les questions suivantes sont destinées à décrire les ensembles de données générés et/ou utilisés dans le cadre du projet. Elles permettent également d'évaluer la valeur des données en termes de réutilisation potentielle et d'archivage ultérieur.
 
-Attribuez à chaque &quot;ensemble de données&quot; un nom significatif mais court, en rapport avec la question de recherche, et utilisez ce nom pour étiqueter l'onglet correspondant dans RDMO.
+Avant de générer de nouvelles données, il est conseillé de vérifier si les données existantes peuvent être réutilisées. Éviter la collecte de données en double permet d'économiser des efforts et des coûts.
 
-&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Quelques conseils pour la sélection des jeux de données&lt;/summary&gt;
+Les questions suivantes portent sur le contenu, le format et l'origine des données de recherche générées ou réutilisées dans le projet et décrivent leur gestion. La meilleure façon de répondre à ces questions est de regrouper les données en unités logiques. Les mêmes questions sont posées pour chacun de ces &quot;ensembles de données&quot;. Les ensembles de données peuvent représenter des catégories plutôt larges avec des contraintes/propriétés similaires en termes de gestion des données.
+
+&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Quelques conseils pour subdiviser les données d'un projet en ensembles de données&lt;/summary&gt;
 
 Vous pouvez procéder comme suit :
 
-* Obtenez une vue d'ensemble des données qui sont générées ou utilisées dans le cadre de vos activités de recherche.
-* Évaluez chaque catégorie de données sur la base des critères suivants :
-  * origine/génération : générées (observation/mesure, expérience, enquête, simulation, web crawl,...) ou réutilisées ;
-  * exigences en matière de stockage : par ex : &lt;1 GB, ~10 TB
-  * Exigences en matière de documentation : par ex. description détaillée de l'échantillonnage et de la réalisation de l'enquête ou références détaillées aux métadonnées et aux données réutilisées extraites d'une archive de données de recherche
-  * aspects relatifs à la protection des données : données personnelles, données sensibles non personnelles, données publiques
-  * pertinence/potentiel de réutilisation : élevé (données de référence), moyen (étude scientifique principale), faible (étude préliminaire)
-  * publication des données
-  * archivage à long terme
-* Donnez à chaque "catégorie de données" un nom significatif mais court, en rapport avec la question de recherche, et étiquetez-le sur l'onglet correspondant dans RDMO. Décrivez ensuite chaque catégorie de données à l'aide des cases à cocher/champs de texte de cette page et des pages suivantes.
+&lt;ul&gt;
+  &lt;li&gt;Obtenez une vue d'ensemble des données générées ou utilisées dans le cadre de votre activité de recherche.&lt;/li&gt;
+  &lt;li&gt;Évaluez chaque partie de ces données sur la base des critères suivants :&lt;ul&gt;
+    &lt;li&gt;origine/génération : générées (observation/mesure, expérience, enquête, simulation, exploration du web,&#8230;) ou réutilisées ;&lt;/li&gt;
+    &lt;li&gt;exigences en matière de stockage (espace) : par ex. : &amp;lt;1GB, ~10TB ;&lt;/li&gt;
+    &lt;li&gt;exigences en matière de documentation:&lt;ul&gt;
+      &lt;li&gt;exemple A : description détaillée de l'échantillonnage et de la mise en œuvre de l'enquête ;&lt;/li&gt;
+      &lt;li&gt;exemple B : configuration des mesures et paramètres de mesure ;&lt;/li&gt; &lt;/ul&gt;&lt;/li&gt;
+    &lt;li&gt;aspects relatifs à la confidentialité des données : données personnelles, données sensibles non personnelles, données publiques ;&lt;/li&gt;
+    &lt;li&gt;pertinence / potentiel de réutilisation : élevé (données de référence), moyen (étude scientifique principale), faible (étude préliminaire) ;&lt;/li&gt;
+    &lt;li&gt;publication des données : non/oui, dépôt prévu, organisation et financement prévus ;&lt;/li&gt;
+    &lt;li&gt;conservation à long terme : non/oui, questions techniques, organisation et financement prévus.&lt;/li&gt; &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Décidez de la manière la plus utile de subdiviser les données du projet en ensembles de données de sorte que seules les données différant substantiellement en ce qui concerne ces critères soient définies comme des ensembles de données distincts. Définissez &amp;lt;i&amp;gt;aussi peu d'ensembles de données que possible &amp;lt;/i&amp;gt; (pour éviter de devoir fournir les mêmes réponses à plusieurs reprises pour un trop grand nombre d'ensembles de données différents) et &amp;lt;i&amp;gt; autant que nécessaire &amp;lt;/i&amp;gt; (pour éviter de devoir fournir des réponses conditionnelles, i.e. &#8220;if&#8230; then&#8230;, else, &#8230;&#8221; pour des ensembles de données individuels).&lt;/li&gt;
+&lt;/ul&gt;
 
-Vous trouverez des exemples de deux projets avec des données classées par catégories sur la page &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;GitLab&lt;/a&gt;
+Des exemples de deux projets avec des données organisées en catégories sont disponibles sur la page &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;GitLab&lt;/a&gt;.
+&lt;/details&gt;
 
-Veuillez remplir le formulaire pour chaque onglet. Les mêmes onglets peuvent être utilisés plus tard sur d'autres pages. Vous pouvez ajouter un nouvel onglet en cliquant sur le bouton vert. Une fois que vous avez créé un onglet, vous pouvez le modifier ou le supprimer à l'aide des boutons situés dans le coin supérieur droit.
+Attribuez à chaque &quot;ensemble de données&quot; un nom significatif mais court, en rapport avec la question de recherche, et utilisez ce nom pour étiqueter l'onglet correspondant dans RDMO. Les mêmes onglets peuvent être utilisés plus tard sur d'autres pages. Vous pouvez ajouter un nouvel onglet en cliquant sur le bouton vert. Une fois que vous avez créé un onglet, vous pouvez le modifier ou le supprimer à l'aide des boutons situés dans le coin supérieur droit.
 
-&lt;/details&gt;</help>
+Veuillez ensuite remplir le formulaire sous chaque onglet, c'est-à-dire pour chaque ensemble de données, en utilisant les cases à cocher/champs de texte sur cette page et les suivantes.</help>
 		<verbose_name lang="fr">jeu de données</verbose_name>
 		<title lang="it">raccolte di dati</title>
 		<short_title lang="it"/>
-		<help lang="it">Le domande seguenti riguardano il contenuto, il formato e l'origine dei dati di ricerca generati o riutilizzati nel progetto e ne descrivono la gestione. Il modo migliore per rispondere a queste domande è riassumere i dati in unità logiche. Le stesse domande vengono poste per ciascuno di questi &quot;insiemi di dati&quot;. I set di dati possono tendere a rappresentare categorie più ampie con vincoli/caratteristiche simili in termini di gestione dei dati.
+		<help lang="it">Le domande che seguono hanno lo scopo di descrivere gli insiemi di dati generati e/o utilizzati nel progetto. Inoltre, aiutano a valutare il valore dei dati in termini di potenziale riutilizzo e successiva archiviazione.
 
-Assegnare a ciascun &quot;dataset&quot; un nome significativo ma breve che si riferisca alla domanda di ricerca e utilizzare questo nome per etichettare la scheda corrispondente in RDMO.
+Prima di generare nuovi dati, è consigliabile verificare se quelli esistenti possono essere riutilizzati. Evitare la raccolta di dati doppi consente di risparmiare sforzi e costi.
 
-&lt;dettagli&gt;&lt;sommario style=&quot;cursore:puntatore&quot;&gt;Alcuni consigli per la selezione dei dataset&lt;/sommario&gt;
+Se sono coinvolti dati personali, i principi del Regolamento generale sulla protezione dei dati dell'UE (&lt;a href=&quot;https://gdpr-info.eu&quot; target=&quot;_blank&quot;&gt;GDPR&lt;/a&gt;), come la minimizzazione dei dati (&lt;a href=&quot;https://gdpr-info.eu/art-5-gdpr/&quot; target=&quot;_blank&quot;&gt;Art.5 Para.1&lt;/a&gt;) e la legge federale tedesca sulla protezione dei dati (&lt;a href=&quot;https://gdpr-info.eu&quot; target=&quot;_blank&quot;&gt;BDSG&lt;/a&gt;).
 
-Si può procedere come segue:
+Le domande seguenti riguardano il contenuto, il formato e l'origine dei dati di ricerca generati o riutilizzati nel progetto e ne descrivono la gestione. Il modo migliore per rispondere a queste domande è suddividere i dati in unità logiche. Per ciascuna di queste &quot;raccolte di dati&quot; verranno poste le stesse domande. Le raccolte di dati possono rappresentare categorie più ampie con proprietà e requisiti simili per quanto riguarda la gestione dei dati.
 
-* Ottenere una panoramica dei dati che verranno generati o utilizzati nell'ambito delle attività di ricerca.
-* Valutare ogni categoria di dati in base ai seguenti criteri:
-  * Origine/generazione: generati (osservazione/misurazione, esperimento, sondaggio, simulazione, web crawl,...) o riutilizzati;
-  * Requisiti di spazio di archiviazione: ad es: 1 GB, ~10 TB
-  * Requisiti di documentazione: ad es. Descrizione dettagliata dell'implementazione del campionamento e dell'indagine o riferimenti dettagliati ai metadati e ai dati riutilizzati recuperati da un archivio di dati di ricerca
-  * Aspetti di protezione dei dati: dati personali, dati sensibili non personali, dati pubblici
-  * Pertinenza/potenziale di riutilizzo: alto (dati di riferimento), medio (studio scientifico principale), basso (studio preliminare)
-  * Pubblicazione dei dati
-  * Archiviazione a lungo termine
-* Assegnare a ogni "categoria di dati" un nome significativo ma breve che si riferisca alla domanda di ricerca ed etichettare la scheda corrispondente in RDMO. Descrivete quindi ogni categoria di dati utilizzando le caselle di controllo/di testo presenti in questa e nelle pagine seguenti.
+&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Alcuni suggerimenti per la suddivisione dei dati del progetto in raccolte di dati&lt;/summary&gt;
 
-Esempi di due progetti con dati organizzati per categoria si trovano nella pagina GitLab&lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;GitLab&lt;/a&gt;
+Si può procedere in questo modo:
 
-Compilare il modulo per ogni scheda. Le stesse schede possono essere utilizzate successivamente in altre pagine. È possibile aggiungere una nuova scheda utilizzando il pulsante verde. Una volta creata una scheda, è possibile modificarla o eliminarla utilizzando i pulsanti in alto a destra.
+&lt;ul&gt; 
+  &lt;li&gt;Ottenere una panoramica dei dati generati o utilizzati nell'ambito della propria attività di ricerca.
+  Valutare ogni parte di questi dati in base ai seguenti criteri:&lt;ul&gt; 
+    &lt;li&gt;origine/generazione: generati (osservazione/misurazione, esperimento, sondaggio, simulazione, web crawl,&#8230;) o riutilizzati;&lt;/li&gt; 
+    &lt;li&gt;requisiti di archiviazione (spazio): es.: 1GB, ~10TB;&lt;/li&gt; 
+    &lt;li&gt;Requisiti di documentazione:&lt;ul&gt; 
+      &lt;li&gt;esempio A: descrizione dettagliata del campionamento dell'indagine e dell'implementazione dell'indagine;&lt;/li&gt; 
+      &lt;li&gt;esempio B: impostazione della misurazione e parametri di misurazione;&lt;/li&gt; &lt;/ul&gt;&lt;/li&gt;
+    &lt;li&gt;Aspetti relativi alla protezione dei dati: dati personali, dati sensibili non personali, dati pubblici;&lt;/li&gt; 
+    &lt;li&gt;Rilevanza / potenziale di riutilizzo: alto (dati di riferimento), medio (studio scientifico principale), basso (studio preliminare);&lt;/li&gt;
+    &lt;li&gt;pubblicazione dei dati: no/sì, archivio previsto, organizzazione e finanziamento previsti;&lt;/li&gt; 
+    &lt;li&gt;conservazione a lungo termine: no/sì, questioni tecniche, organizzazione e finanziamento previsti.&lt;/li&gt; &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Decidere il modo più utile per suddividere i dati del progetto in raccolte di dati, in modo che solo i dati che differiscono sostanzialmente rispetto a questi criteri siano definiti come raccolte di dati separati. Definire &amp;lt;i&amp;gt;il minor numero possibile di insiemi di dati &amp;lt;/i&amp;gt; (per evitare di dover fornire ripetutamente le stesse risposte per un numero eccessivo di insiemi di dati diversi) e &amp;lt;i&amp;gt;il numero necessario &amp;lt;/i&amp;gt; (per evitare di dover fornire risposte condizionali, ad es.Se&#8230; allora&#8230;, else, &#8230;&#8221; per le singole raccolte di dati).&lt;/li&gt; &lt;/ul&gt;
 
-&lt;/details&gt;</help>
+Esempi di due progetti con dati organizzati per categorie si trovano nella pagina GitLab&lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;.
+&lt;/details&gt;
+
+Assegnare un nome significativo ma breve a ciascuna raccolta di dati con riferimento all'argomento della ricerca. Questo viene utilizzato per etichettare la scheda corrispondente in RDMO. Le schede possono essere utilizzate successivamente per altri argomenti. È possibile aggiungere una nuova scheda utilizzando il pulsante verde. Una volta creata una scheda, è possibile modificarla o eliminarla utilizzando i pulsanti in alto a destra.
+
+Compilare quindi il modulo per ogni scheda, cioè per ogni raccolta di dati, utilizzando le caselle di controllo e i campi di testo di questa pagina e delle successive.</help>
 		<verbose_name lang="it">raccolta di dati</verbose_name>
 		<title lang="es">Colecciones de datos</title>
 		<short_title lang="es"/>
-		<help lang="es">Las siguientes preguntas se refieren al contenido, formato y origen de los datos de investigación generados o reutilizados en el proyecto y describen su gestión. La mejor manera de responder a estas preguntas es resumir los datos en unidades lógicas. Se plantean las mismas preguntas para cada uno de estos &quot;conjuntos de datos&quot;. Los conjuntos de datos pueden tender a representar categorías más amplias con limitaciones/características similares en términos de gestión de datos.
+		<help lang="es">Las siguientes preguntas están diseñadas para describir los conjuntos de datos generados y/o utilizados en el proyecto. También ayudan a evaluar el valor de los datos en cuanto a su posible reutilización y posterior archivo.
 
-Asigne a cada &quot;conjunto de datos&quot; un nombre significativo pero corto que esté relacionado con la pregunta de investigación y utilice este nombre para etiquetar la pestaña correspondiente en RDMO.
+Antes de generar nuevos datos, conviene comprobar si los existentes pueden reutilizarse. Evitar la duplicación de la recogida de datos ahorra esfuerzos y costes.
 
-&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Algunos consejos para seleccionar conjuntos de datos&lt;/summary&gt;
+Si se trata de datos personales, los principios del Reglamento General de Protección de Datos de la UE (&lt;a href=&quot;https://gdpr-info.eu&quot; target=&quot;_blank&quot;&gt;GDPR&lt;/a&gt;), como la minimización de datos (&lt;a href=&quot;https://gdpr-info.eu/art-5-gdpr/&quot; target=&quot;_blank&quot;&gt;Art.5 Para.1&lt;/a&gt;) y la Ley Federal Alemana de Protección de Datos (&lt;a href=&quot;https://gdpr-info.eu&quot; target=&quot;_blank&quot;&gt;BDSG&lt;/a&gt;).
+
+Las siguientes preguntas se refieren al contenido, formato y origen de los datos de investigación generados o reutilizados en el proyecto y describen su gestión. La mejor manera de responder a estas preguntas es resumir los datos en unidades lógicas que requieran respuestas distintas para cada unidad. Se plantean las mismas preguntas para cada uno de estos &quot;conjuntos de datos&quot;. Los conjuntos de datos pueden representar categorías bastante más amplias con propiedades similares y requisitos parecidos en términos de gestión de datos.
+
+&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Algunos consejos para subdividir los datos del proyecto en conjuntos de datos&lt;/summary&gt;
 
 Puede proceder de la siguiente manera:
 
-* Obtenga una visión general de los datos que se generarán o utilizarán como parte de sus actividades de investigación.
-* Evalúe cada categoría de datos en función de los siguientes criterios:
-  * Origen/generación: generados (observación/medición, experimento, encuesta, simulación, rastreo web,...) o reutilizados;
-  * Requisitos de espacio de almacenamiento: p. ej: 1 GB, ~10 TB
-  * Requisitos de documentación: p. ej. Aspectos de protección de datos: datos personales, datos sensibles no personales, datos públicos
-  * Relevancia/potencial de reutilización: alta (datos de referencia), media (estudio científico principal), baja (estudio preliminar)
-  * Publicación de datos
-  * Archivo a largo plazo
-* Asigne a cada "categoría de datos" un nombre significativo pero corto que esté relacionado con la pregunta de investigación y etiquete la pestaña correspondiente en RDMO. A continuación, describa cada categoría de datos utilizando las casillas de verificación/texto de esta página y de las siguientes.
+&lt;ul&gt;
+  &lt;li&gt;Obtenga una visión general de los datos que se generarán o utilizarán como parte de de su actividad de investigación.&lt;/li&gt; 
+  &lt;li&gt;Evalúe cada parte de estos datos en función de los siguientes criterios:&lt;ul&gt; 
+    &lt;li&gt;Origen/generación: generados (observación/medición, experimento, encuesta, simulación, rastreo web,&#8230;) o reutilizados;&lt;/li&gt; 
+    &lt;li&gt;Requisitos de espacio de almacenamiento: p. ej.: 1 GB, ~10 TB;&lt;/li&gt; 
+    &lt;li&gt;Requisitos de documentación:&lt;ul&gt; 
+      &lt;li&gt;ejemplo A: descripción extensa del muestreo y la realización de la encuesta;&lt;/li&gt; 
+      &lt;li&gt;ejemplo B: configuración de la medición y parámetros de medición;&lt;/li&gt; &lt;/ul&gt;&lt;/li&gt; 
+    &lt;li&gt;Aspectos de protección de los datos: datos personales, datos sensibles no personales, datos públicos;&lt;/li&gt; 
+  &lt;li&gt;Relevancia / potencial de reutilización: alta (datos de referencia), media (estudio científico principal), baja (estudio preliminar);&lt;/li&gt; 
+  &lt;li&gt;Publicación de datos: no/sí, repositorio previsto, organización y financiación previstas.&lt;/li&gt; &lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Conservación a largo plazo: no/sí, cuestiones técnicas, organización y financiación previstas.
+  
+  Defina &amp;lt;i&amp;gt;el menor número posible de conjuntos de datos &amp;lt;/i&amp;gt; (para evitar la necesidad de proporcionar repetidamente las mismas respuestas para demasiados conjuntos de datos diferentes) y &amp;lt;i&amp;gt; el mayor número posible &amp;lt;/i&amp;gt; (para evitar la necesidad de proporcionar respuestas condicionales, es decir.e. &#8220;if&#8230; then&#8230;, else, &#8230;&#8221; para conjuntos de datos individuales).&lt;/li&gt; &lt;/ul&gt;
 
-Encontrará ejemplos de dos proyectos con datos organizados por categorías en la página de &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;GitLab&lt;/a&gt;
+Encontrará ejemplos de dos proyectos con datos organizados por categorías en la página de &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;GitLab&lt;/a&gt;.
+&lt;/details&gt;
 
-Rellene el formulario para cada pestaña. Las mismas pestañas pueden utilizarse posteriormente en otras páginas. Puedes añadir una nueva pestaña utilizando el botón verde. Una vez creada una pestaña, puedes editarla o eliminarla utilizando los botones de la esquina superior derecha.
+Asigne a cada &quot;conjunto de datos&quot; un nombre significativo pero corto que esté relacionado con la pregunta de investigación. Esto se utiliza para etiquetar la pestaña correspondiente en RDMO. Las mismas pestañas pueden utilizarse posteriormente en otras páginas. Puede añadir una nueva pestaña utilizando el botón verde. Una vez creada una pestaña, puedes editarla o eliminarla utilizando los botones de la esquina superior derecha.
 
-&lt;/details&gt;</help>
+A continuación, rellene el formulario para cada pestaña, es decir, para cada conjunto de datos, utilizando las casillas de verificación / campos de texto de esta página y de las siguientes.</help>
 		<verbose_name lang="es">colección de datos</verbose_name>
 		<questionsets/>
 		<questions>
