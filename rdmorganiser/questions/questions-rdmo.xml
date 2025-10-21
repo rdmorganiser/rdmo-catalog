@@ -920,16 +920,14 @@ Además las pautas específicas de la disciplina sobre el manejo de los datos de
 		<is_collection>True</is_collection>
 		<title lang="en">Data sets</title>
 		<short_title lang="en"/>
-		<help lang="en">The following questions deal with the content, format, and origin of the research data generated or reused in the project and describe their management. The best way to address these questions is by clustering the data in logical units. For each  of those &quot;data sets&quot; the same questions will be asked. Data sets may represent rather broader categories with similar constraints/properties regarding data management.
+		<help lang="en">The following questions deal with the content, format, and origin of the research data generated or reused in the project and describe their management. The best way to address these questions is by subdividing the data into logical units which require answers that are distinct for each unit. For each of those &quot;data sets&quot; the same questions will be asked. Data sets may represent rather broader categories with similar properties and similar requirements regarding data management.		
 
-Assign a meaningful but short name to each &quot;data set&quot; with reference to the research question, and use it to label the corresponding tab in RDMO.
-
-&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Some tips for choosing data sets&lt;/summary&gt;
+&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Some tips for subdividing project data into data sets&lt;/summary&gt;
 
 You can proceed like that:
 
 * Gain an overview of the data being generated or used within your research activity.
-* Evaluate each data category with respect to the following criteria:
+* Evaluate each part of these data with respect to the following criteria:
   * origin/generation: generated (observation/measurement, experiment, survey, simulation, web-crawl,…) or reused;
   * storage (space) requirements: e.g.: &lt;1GB, ~10TB
   * documentation requirements:
@@ -937,22 +935,22 @@ You can proceed like that:
     * example B: measurement setup and measuring parameters
   * data privacy aspects:  personal data, sensitive non-personal, public data
   * relevance / reuse potential: high (reference data), middle (scientific main study), low (preliminary study)
-  * data publication
-  * long term preservation
-* Assign a meaningful but short name to each "data category" with reference to the research question, and use it to label the corresponding tab in RDMO. Then describe each data category using the checkboxes/text fields on this page and the following ones. 
+  * data publication: no/yes, intended repository, intended organisation and funding
+  * long term preservation: no/yes,techical issues, intended organisation and funding
+* Decide on the most useful way of subdividing the project data into data sets so that only data differing substantially with regard to these criteria are defined as separate data sets. Define &lt;i&gt;as few data sets as possible &lt;/i&gt; (to avoid a need to provide the same answers repeatedly for too many different data sets) and &lt;i&gt; as many as necessary &lt;/i&gt; (to avoid a need to provide conditional answers, i.e. “if… then…, else, …” for individual data sets).
+				
+Examples of two projects with data organised in categories can be found on the &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;GitLab page&lt;/a&gt;.
+&lt;/details&gt;
 
-Examples of two project with data organised in categories is to be found on the &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;GitLab page&lt;/a&gt;.
+Assign a meaningful but short name to each data set with reference to the research topic. This is used to label the corresponding tab in RDMO. The tabs may be used later on other topics again. You can add a new tab using the green button. Once created, you can edit or delete tabs using the buttons in the top right corner.
 
-Please fill in the form for each tab. The same tabs may be used later on other pages. You can add a new tab using the green button. Once created, you can edit or delete tabs using the buttons in the top right corner.
-
-&lt;/details&gt;</help>
+Then please fill in the form under each tab, i.e. for each data set, using the checkboxes/text fields on this page and the following ones.</help>
 		<verbose_name lang="en">data set</verbose_name>
 		<title lang="de">Datensätze</title>
 		<short_title lang="de"/>
-		<help lang="de">Die folgenden Fragen befassen sich mit dem Inhalt, dem Format und der Herkunft der im Projekt generierten oder wiederverwendeten Forschungsdaten und beschreiben deren Verwaltung. Am besten lassen sich diese Fragen beantworten, indem die Daten in logischen Einheiten zusammengefasst werden. Für jeden dieser &quot;Datensätze&quot; werden dieselben Fragen gestellt. Datensätze können eher breitere Kategorien mit ähnlichen Einschränkungen/Eigenschaften hinsichtlich der Datenverwaltung darstellen.
-Weisen Sie jedem &quot;Datensatz&quot; einen aussagekräftigen, aber kurzen Namen zu, der sich auf die Forschungsfrage bezieht, und verwenden Sie diesen Namen, um den entsprechenden Tab in RDMO zu beschriften.
+		<help lang="de">Die folgenden Fragen befassen sich mit dem Inhalt, dem Format und der Herkunft der im Projekt generierten oder wiederverwendeten Forschungsdaten und beschreiben deren Verwaltung. Am besten lassen sich diese Fragen beantworten, indem die Daten in logische Einheiten aufgeteilt werden, die jeweils unterschiedliche Beantwortung der Fragen erfordern. Für jeden dieser &quot;Datensätze&quot; werden dieselben Fragen gestellt. Datensätze können eher breitere Kategorien mit ähnlichen Eigenschaften und Erfordernissen hinsichtlich der Datenverwaltung darstellen.
 
-&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Einige Tipps zur Auswahl von Datensätzen&lt;/summary&gt;
+&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Tipps zur Unterteilung der Projektdaten in Datensätze&lt;/summary&gt;
 
 Sie können wie folgt vorgehen:
 
@@ -960,18 +958,21 @@ Sie können wie folgt vorgehen:
 * Bewerten Sie jede Datenkategorie anhand der folgenden Kriterien:
   * Herkunft/Generierung: generiert (Beobachtung/Messung, Experiment, Umfrage, Simulation, Web-Crawl,…) oder wiederverwendet;
   * Speicherplatzanforderungen: z. B.: &lt;1 GB, ~10 TB
-  * Dokumentationsanforderungen: z. B. ausführliche Beschreibung der Stichprobenziehung und Durchführung der Umfrage oder detaillierte Verweise auf Metadaten und wiederverwendete Daten, die aus einem Forschungsdaten-Archiv abgerufen wurden
+  * Dokumentationsanforderungen:
+    * Beispiel A: Ausführliche Beschreibung von Stichprobengenerierung und Datenerhebung
+    * Beispiel B: Beschreibung von Messvorrichtungen und Messparametern 
   * Datenschutzaspekte: personenbezogene Daten, sensible nicht personenbezogene Daten, öffentliche Daten
   * Relevanz/Wiederverwendungspotenzial: hoch (Referenzdaten), mittel (wissenschaftliche Hauptstudie), gering (Vorstudie)
-  * Veröffentlichung der Daten
-  * Langzeitarchivierung
-* Geben Sie jeder "Datenkategorie" einen aussagekräftigen, aber kurzen Namen, der sich auf die Forschungsfrage bezieht, und beschriften Sie damit die entsprechende Registerkarte in RDMO. Beschreiben Sie dann jede Datenkategorie mithilfe der Kontrollkästchen/Textfelder auf dieser und den folgenden Seiten.
+  * Veröffentlichung der Daten: nein/ja, geplantes Repositorium, geplante Durchführung und Finanzierung
+  * Langzeitarchivierung: nein/ja, geplantes Datenformat, geplante Durchführung und Finanzierung
+* Entscheiden Sie sich für die günstigste Unterteilung der Projektdaten in Datensätze, so dass nur Daten, die sich hinsichtlich dieser Kriterien erheblich unterscheiden, verschiedenen Datensätzen zugeordnet werden. Definieren Sie &lt;i&gt; so wenige Datensätze wie möglich &lt;/i&gt; (um die Notwendigkeit gleichartiger Fragenbeantwortung für mehrere Datensätze zu vermeiden) und &lt;i&gt; so viele wie nötig &lt;/i&gt; (um die Notwendigkeit von Fallunterscheidungen bei der Fragenbeantwortung für einzele Datensätze zu vermeiden).
 
 Beispiele für zwei Projekte mit nach Kategorien geordneten Daten finden Sie auf der &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;GitLab-Seite&lt;/a&gt;
+&lt;/details&gt;
 
-Bitte füllen Sie das Formular für jede Registerkarte aus. Die gleichen Registerkarten können später auf anderen Seiten verwendet werden. Über die grüne Schaltfläche können Sie eine neue Registerkarte hinzufügen. Wenn Sie eine Registerkarte erstellt haben, können Sie sie mit den Schaltflächen in der oberen rechten Ecke bearbeiten oder löschen.
+Geben Sie jedem "Datensatz" einen im Sinne der Forschungsarbeit aussagekräftigen, aber kurzen Namen. Er wird zur Beschriftung der entsprechenden Registerkarte in RDMO verwendet. Die gleichen Registerkarten können später auch auf anderen Seiten verwendet werden. Über die grüne Schaltfläche können Sie neue Registerkarten hinzufügen und mit den Schaltflächen in der oberen rechten Ecke Registerkarten umbenennen oder löschen.
 
-&lt;/details&gt;</help>
+Bearbeiten Sie dann bitte die Kontrollkästchen/Textfelder auf jeder Registerkarte, d.h. für jeden Datensatz, auf dieser und den folgenden Seiten.</help>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<title lang="fr">Jeux de données</title>
 		<short_title lang="fr"/>
