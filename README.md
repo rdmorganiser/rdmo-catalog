@@ -114,8 +114,9 @@ In order to file issues, you will need a GitHub account.
 |Software for collection management|[2 catalogs][N4Q]|       |2025-09|NFDI4Culture          |
 |VW Foundation - Basic DMP            |[catalog][VWB]|       |2025-06|FDM Bayern eHumanities|
 |VW Foundation - Science Europe       |[catalog][VWE]|       |2021-04|FDM Bayern eHumanities|
+|Humanities|[catalog][MWS]||2025-12|Max Weber Stiftung| 
 
-Total: 32 catalogs, 15 views
+Total: 33 catalogs, 15 views
 
 [AKU]:         shared/ub_fau_erlangen_nuernberg/dfg-alte-kulturen/
 [CHE]:         shared/ub_fau_erlangen_nuernberg/dfg-chemie/
@@ -131,6 +132,7 @@ Total: 32 catalogs, 15 views
 [FDK]:         shared/FoDaKo
 [FDN]:         shared/FDNext/
 [N4Q]:         shared/NFDI4Culture/
+[MWS]:         shared/MaxWeberStiftung/
 [N4C]:         shared/nfdi4chem
 [N4I]:         shared/nfdi4ing
 [EMM]:         shared/EmiMin
