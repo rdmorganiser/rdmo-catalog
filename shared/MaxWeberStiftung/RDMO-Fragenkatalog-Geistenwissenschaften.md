@@ -1,4 +1,4 @@
-# RDMO-Fragenkatalog der Max Weber Stiftung
+# RDMO-Fragenkatalog der Max Weber Stiftung für Geisteswissenschaftler
 
 ## Allgemeine Hinweise zur Verwendung des Fragenkatalogs "*MWS Projects (First Registration*)" der MWS
 
