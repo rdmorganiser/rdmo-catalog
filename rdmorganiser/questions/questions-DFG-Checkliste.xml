@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-11-17T15:09:30.126112+01:00" required="2.1.0" version="2.3.2">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-12-04T16:34:35.086019+01:00" required="2.1.0" version="2.3.2">
 	<catalog dc:uri="https://rdmorganiser.github.io/terms/questions/DFG-Checkliste">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<uri_path>DFG-Checkliste</uri_path>
@@ -51,14 +51,14 @@
 		<attribute/>
 		<is_collection>False</is_collection>
 		<title lang="en">Introductory Remarks</title>
-		<short_title lang="en">Intro</short_title>
-		<help lang="en">This catalogue of questions is based on the checklist published by the German Research Foundation (DFG) and has been supplemented with help texts, selection lists containing suggested text and additional information. The underlying &lt;a href=&quot;https://www.dfg.de/resource/blob/174736/92691e48e89bf4ac88c8eb91b8f783b0/forschungsdaten-checkliste-en-data.pdf&quot; target=&quot;_blank&quot;&gt;DFG document&lt;/a&gt; was published on 21.12.2021. The DFG checklist must be taken into account when submitting a proposal or finalising a project, and it should help you structure your data management. 
+		<short_title lang="en">Introduction</short_title>
+		<help lang="en">This catalogue of questions is based on the checklist published by the German Research Foundation (DFG) , to which help texts, selection lists containing suggested text, and additional information have been added. The underlying &lt;a href=&quot;https://www.dfg.de/resource/blob/174736/92691e48e89bf4ac88c8eb91b8f783b0/forschungsdaten-checkliste-en-data.pdf&quot; target=&quot;_blank&quot;&gt;DFG document&lt;/a&gt; was published on 21 December 2021. The DFG checklist must be taken into account when submitting a proposal or finalising a project, and should help you to structure your data management.
 
 If you have any questions, please contact the central research data management team at your institution.</help>
 		<verbose_name lang="en"/>
 		<title lang="de">Einleitende Informationen</title>
 		<short_title lang="de">Einleitung</short_title>
-		<help lang="de">Der vorliegende Fragenkatalog basiert auf der von der Deutschen Forschungsgemeinschaft (DFG) herausgegebenen Checkliste und wurde um Hilfetexte, Auswahllisten mit Textvorschlägen sowie weiterführenden Hinweise ergänzt. Das zugrundeliegende &lt;a href=&quot;https://www.dfg.de/resource/blob/174732/forschungsdaten-checkliste-de.pdf&quot; target=&quot;_blank&quot;&gt;DFG-Dokument&lt;/a&gt; wurde am 21.12.2021 veröffentlicht. Die DFG-Checkliste muss bei Antragstellung sowie bei Projektabschluss berücksichtigt werden und soll Ihnen dabei helfen, Ihr Datenmanagement zu strukturieren. 
+		<help lang="de">Der vorliegende Fragenkatalog basiert auf der von der Deutschen Forschungsgemeinschaft (DFG) herausgegebenen Checkliste und wurde um Hilfetexte, Auswahllisten mit Textvorschlägen sowie weiterführenden Hinweise ergänzt. Das zugrundeliegende &lt;a href=&quot;https://www.dfg.de/resource/blob/174732/forschungsdaten-checkliste-de.pdf&quot; target=&quot;_blank&quot;&gt;DFG-Dokument&lt;/a&gt; wurde am 21.12.2021 veröffentlicht. Die DFG-Checkliste muss bei Antragstellung sowie bei Projektabschluss berücksichtigt werden und soll Ihnen dabei helfen, Ihr Datenmanagement zu strukturieren.
 
 Bei Fragen wenden Sie sich bitte an das zentrale Team für Forschungsdatenmanagement ihrer Einrichtung.</help>
 		<verbose_name lang="de"/>
@@ -88,7 +88,7 @@ Bei Fragen wenden Sie sich bitte an das zentrale Team für Forschungsdatenmanage
 		<short_title lang="en"/>
 		<help lang="en">&lt;h3&gt;Organisation of data into data sets&lt;/h3&gt;
 
-The following questions address the content, format and origin of the research data generated or reused in the project, as well as how this data is managed. It is best to answer these questions by dividing the data into logical units, as each unit will require different answers. The same questions are asked for each of these 'data sets'. Data sets can represent broader categories with similar characteristics and data management requirements.
+The following questions address the content, format, origin and management of the research data generated or reused in the project. It is best to answer these questions by dividing the data into logical units, since each unit will require different answers. The same questions are asked for each of these 'data sets'. Data sets may represent broader categories with similar characteristics and data management requirements.
 
 &lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Click here to see tips for dividing project data into data sets&lt;/summary&gt;
 
@@ -96,7 +96,7 @@ The following questions address the content, format and origin of the research d
 
 &lt;ul style=&quot;margin-bottom:5px;&quot;&gt;
   &lt;li&gt;Obtain an overview of the data generated or used in your research activities.&lt;/li&gt;
-  &lt;li&gt;Evaluate each data set based on the following criteria:&lt;ul&gt;
+  &lt;li&gt;Evaluate the data based on the following criteria:&lt;ul&gt;
     &lt;li&gt;Origin/generation: generated (e.g. observation/measurement, experiment, survey, simulation, web-crawl) or reused;&lt;/li&gt;
     &lt;li&gt;Storage space requirements: e.g.: &amp;lt;1 GB, ~10 TB;&lt;/li&gt;
     &lt;li&gt;Documentation requirements:&lt;ul&gt;
@@ -106,10 +106,10 @@ The following questions address the content, format and origin of the research d
     &lt;li&gt;Relevance/reuse potential: High (reference data), medium (main scientific study), low (preliminary study);&lt;/li&gt;
     &lt;li&gt;Publication of data: Yes/no, planned repository, planned implementation and financing;&lt;/li&gt;
     &lt;li&gt;Long-term archiving: Yes/no, planned data format, planned implementation and financing.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
-  &lt;li&gt;Decide on the most favourable division of project data into datasets, ensuring that only data which differ significantly in terms of these criteria are assigned to different data sets. Define a convenient number of homogeneous data sets, which should be many enough to avoid conditional phrasing and few enough to avoid repeating the same phrasing multiple times.&lt;/li&gt;
+  &lt;li&gt;Decide on the most favourable division of project data into data sets, ensuring that only data which differ significantly in terms of these criteria are assigned to different data sets. Create a suitable number of homogeneous data sets: enough to avoid case distinctions, but few enough to prevent repetition of the same answers.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p style=&quot;text-indent: 2em;&quot;&gt;Examples of two projects in which the data are sorted by category can be found &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p style=&quot;text-indent: 2em;&quot;&gt;Examples of two projects in which the data are sorted into data sets can be found &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;/details&gt;
 
@@ -127,7 +127,7 @@ Die folgenden Fragen befassen sich mit dem Inhalt, dem Format und der Herkunft d
 
 &lt;ul style=&quot;margin-bottom:5px;&quot;&gt;
   &lt;li&gt;Verschaffen Sie sich einen Überblick über die Daten, die im Rahmen Ihrer Forschungsaktivitäten generiert oder verwendet werden.&lt;/li&gt;
-  &lt;li&gt;Bewerten Sie jeden Datensatz anhand der folgenden Kriterien:&lt;ul&gt;
+  &lt;li&gt;Bewerten Sie die Daten anhand der folgenden Kriterien:&lt;ul&gt;
     &lt;li&gt;Herkunft/Generierung: generiert (Beobachtung/Messung, Experiment, Umfrage, Simulation, Web-Crawl,…) oder wiederverwendet;&lt;/li&gt;
     &lt;li&gt;Speicherplatzanforderungen: z. B.: &amp;lt;1 GB, ~10 TB;&lt;/li&gt;
     &lt;li&gt;Dokumentationsanforderungen:&lt;ul&gt;
@@ -137,10 +137,11 @@ Die folgenden Fragen befassen sich mit dem Inhalt, dem Format und der Herkunft d
     &lt;li&gt;Relevanz/Wiederverwendungspotenzial: hoch (Referenzdaten), mittel (wissenschaftliche Hauptstudie), gering (Vorstudie);&lt;/li&gt;
     &lt;li&gt;Veröffentlichung der Daten: ja/nein, geplantes Repositorium, geplante Durchführung und Finanzierung;&lt;/li&gt;
     &lt;li&gt;Langzeitarchivierung: ja/nein, geplantes Datenformat, geplante Durchführung und Finanzierung.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
-  &lt;li&gt;Entscheiden Sie sich für die günstigste Unterteilung der Projektdaten in Datensätze, so dass nur Daten, die sich hinsichtlich dieser Kriterien erheblich unterscheiden, verschiedenen Datensätzen zugeordnet werden. Legen Sie eine angemessene Anzahl homogener Datensätze an: ausreichend viele, um Fallunterscheidungen zu vermeiden, und wenige genug, um Wiederholungen derselben Antworte vorzubeugen.&lt;/li&gt;
+  &lt;li&gt;Entscheiden Sie sich für die günstigste Unterteilung der Projektdaten in Datensätze, so dass nur Daten, die sich hinsichtlich dieser Kriterien erheblich unterscheiden, verschiedenen Datensätzen zugeordnet werden. Legen Sie eine angemessene Anzahl homogener Datensätze an: ausreichend viele, um Fallunterscheidungen zu vermeiden, und wenige genug, um Wiederholungen derselben Antworten vorzubeugen.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p style=&quot;text-indent: 2em;&quot;&gt;Beispiele für zwei Projekte mit nach Kategorien geordneten Daten finden Sie &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;hier&lt;/a&gt;.&lt;/p&gt;
+&lt;p style=&quot;text-indent: 2em;&quot;&gt;Zwei Beispiele, wie Daten in Projekten Datensätzen zugeordnet wurden, finden Sie &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_de.md&quot; target=&quot;_blank&quot;&gt;hier&lt;/a&gt;.&lt;/p&gt;
+
 &lt;/details&gt;
 
 Geben Sie jedem &quot;Datensatz&quot; einen im Sinne der Forschungsarbeit aussagekräftigen, aber kurzen Namen. Er wird zur Beschriftung des entsprechenden Tabs in RDMO verwendet.</help>
