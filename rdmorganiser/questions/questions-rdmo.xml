@@ -726,7 +726,7 @@
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en">Research funding organisations are also increasingly imposing data management requirements on the projects they fund. Examples include the  &lt;a href=&quot;https://www.dfg.de/resource/blob/174736/92691e48e89bf4ac88c8eb91b8f783b0/forschungsdaten-checkliste-en-data.pdf&quot; target=&quot;_blank&quot;&gt;German Research Foundation's guidelines on handling research data&lt;/a&gt; and the  &lt;a href=&quot;http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf&quot; target=&quot;_blank&quot;&gt; European Commission's Guidelines on Data Management in Horizon 2020&lt;/a&gt;.
-Other discipline-specific recommendations and guidelines for handling research data are, e.g., provided by the 
+Other discipline-specific recommendations and guidelines for handling research data are, e.g., provided by the
  &lt;a href=&quot;https://www.dfg.de/en/basics-topics/basics-and-principles-of-funding/research-data/recommendations&quot; target=&quot;_blank&quot;&gt;German Research Foundation (DFG)&lt;/a&gt;.</help>
 		<text lang="en">Does the research funding organisation have any specifications or guidelines regarding the handling of research data collected in the project? If so, please briefly outline them and refer to further information if necessary. Please also indicate the extent to which they are binding.</text>
 		<default_text lang="en"/>
@@ -922,47 +922,184 @@ Además las pautas específicas de la disciplina sobre el manejo de los datos de
 		<short_title lang="en"/>
 		<help lang="en">The following questions are designed to describe the data sets generated and/or used in the project. They also help to assess the value of the data in terms of potential reuse and subsequent archiving.
 
-Before generating data, it is advisable to check whether existing data can be reused. Avoiding duplicate data collection saves effort and costs.
-			
-			If personal data are involved, the principles of the EU General Data Protection Regulation (&lt;a href=&quot;https://gdpr-info.eu&quot; target=&quot;_blank&quot;&gt;GDPR&lt;/a&gt;), such as data minimisation  (&lt;a href=&quot;https://gdpr-info.eu/art-5-gdpr/&quot; target=&quot;_blank&quot;&gt;Art.5 Para.1&lt;/a&gt;) , and the German Federal Data Protection Act (&lt;a href=&quot;https://gdpr-info.eu&quot; target=&quot;_blank&quot;&gt;BDSG&lt;/a&gt;) apply.
+Before generating new data, it is advisable to check whether existing data can be reused. Avoiding duplicate data collection saves effort and costs.
 
-The information about the data generated or used in the project is structured according to 'data sets'. The definition of what constitutes a data set is an important conceptual decision that needs to be made and carefully considered for each project.
+If personal data are involved, the principles of the EU General Data Protection Regulation (&lt;a href=&quot;https://gdpr-info.eu&quot; target=&quot;_blank&quot;&gt;GDPR&lt;/a&gt;), such as data minimisation  (&lt;a href=&quot;https://gdpr-info.eu/art-5-gdpr/&quot; target=&quot;_blank&quot;&gt;Art.5 Para.1&lt;/a&gt;) , and the German Federal Data Protection Act (&lt;a href=&quot;https://gdpr-info.eu&quot; target=&quot;_blank&quot;&gt;BDSG&lt;/a&gt;) apply.
 
-For example, a data set may consist of a number of files of different types (numerical, graphical, textual...) grouped together, all containing the results of a series of tests on a defined test object.</help>
+&lt;h3&gt;Organisation of data into data sets&lt;/h3&gt;
+
+The following questions address the content, format, origin and management of the research data generated or reused in the project. It is best to answer these questions by dividing the data into logical units, since each unit will require different answers. The same questions are asked for each of these 'data sets'. Data sets may represent broader categories with similar characteristics and data management requirements.
+
+&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Click here to see tips for dividing project data into data sets&lt;/summary&gt;
+
+&lt;p style=&quot;text-indent: 2em;margin-bottom:5px;&quot;&gt;You can proceed as follows:&lt;/p&gt;
+
+&lt;ul style=&quot;margin-bottom:5px;&quot;&gt;
+  &lt;li&gt;Obtain an overview of the data generated or used in your research activities.&lt;/li&gt;
+  &lt;li&gt;Evaluate the data based on the following criteria:&lt;ul&gt;
+    &lt;li&gt;Origin/generation: generated (e.g. observation/measurement, experiment, survey, simulation, web-crawl) or reused;&lt;/li&gt;
+    &lt;li&gt;Storage space requirements: e.g.: &amp;lt;1 GB, ~10 TB;&lt;/li&gt;
+    &lt;li&gt;Documentation requirements:&lt;ul&gt;
+      &lt;li&gt;Example A: Detailed description of sample generation and data collection;&lt;/li&gt;
+      &lt;li&gt;Example B: Description of measuring devices and measurement parameters;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+    &lt;li&gt;Data protection aspects: Personal data, sensitive non-personal data, public data;&lt;/li&gt;
+    &lt;li&gt;Relevance/reuse potential: High (reference data), medium (main scientific study), low (preliminary study);&lt;/li&gt;
+    &lt;li&gt;Publication of data: Yes/no, planned repository, planned implementation and financing;&lt;/li&gt;
+    &lt;li&gt;Long-term archiving: Yes/no, planned data format, planned implementation and financing.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Decide on the most favourable division of project data into data sets, ensuring that only data which differ significantly in terms of these criteria are assigned to different data sets. Create a suitable number of homogeneous data sets: enough to avoid the need for conditional answers, but few enough to prevent repetition of the same answers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;text-indent: 2em;&quot;&gt;Examples of two projects in which the data are sorted into data sets can be found &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/details&gt;
+
+Give each 'data set' a meaningful but short name that reflects the research work. This name will be used to label the corresponding tab in RDMO.</help>
 		<verbose_name lang="en">data set</verbose_name>
 		<title lang="de">Datensätze</title>
 		<short_title lang="de"/>
 		<help lang="de">Die nächsten Fragen dienen zur Beschreibung der Datensätze, die im Projekt erzeugt und/oder verwendet werden. Sie helfen zudem, den Wert der Daten hinsichtlich der potentiellen Nachnutzung und einer späteren Archivierung einschätzen zu können.
 
-Vor der Erzeugung von Daten empfiehlt es sich, zu prüfen, ob bereits vorhandene Daten nachgenutzt werden können. Die Vermeidung doppelter Erhebungen spart Aufwand und Kosten. Handelt es sich um personenbezogene Daten, gelten die Grundsätze der EU-Datenschutzgrundverordnung (&lt;a href=&quot;https://dsgvo-gesetz.de/&quot; target=&quot;_blank&quot;&gt;DSGVO&lt;/a&gt;) wie z. B. Datenminimierung (&lt;a href=&quot;https://dsgvo-gesetz.de/art-5-dsgvo/&quot; target=&quot;_blank&quot;&gt;Art.5 Abs.1&lt;/a&gt;) und das Bundesdatenschutzgesetz (&lt;a href=&quot;https://dsgvo-gesetz.de/bdsg/&quot; target=&quot;_blank&quot;&gt;BDSG&lt;/a&gt;).
+Vor der Erzeugung von Daten empfiehlt es sich, zu prüfen, ob bereits vorhandene Daten nachgenutzt werden können. Die Vermeidung doppelter Erhebungen spart Aufwand und Kosten.
 
-Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach &quot;Datensätzen&quot; strukturiert. Die Definition dessen, was jeweils ein Datensatz ist, ist eine wichtige konzeptionelle Entscheidung, die für jedes Vorhaben bzw. Projekt individuell getroffen und sorgfältig abgewogen werden muss.
+Handelt es sich um personenbezogene Daten, gelten die Grundsätze der EU-Datenschutzgrundverordnung (&lt;a href=&quot;https://dsgvo-gesetz.de/&quot; target=&quot;_blank&quot;&gt;DSGVO&lt;/a&gt;) wie z. B. Datenminimierung (&lt;a href=&quot;https://dsgvo-gesetz.de/art-5-dsgvo/&quot; target=&quot;_blank&quot;&gt;Art.5 Abs.1&lt;/a&gt;) und das Bundesdatenschutzgesetz (&lt;a href=&quot;https://dsgvo-gesetz.de/bdsg/&quot; target=&quot;_blank&quot;&gt;BDSG&lt;/a&gt;).
 
-Ein Datensatz kann beispielweise aus mehreren zusammen gruppierten Dateien verschiedener Arten (numerisch, bild- oder textbasiert...) bestehen, die alle aus einer Versuchsreihe auf einem definierten Versuchsobjekt entstandene Ergebnisse enthalten.</help>
+&lt;h3&gt;Organisation der Daten in Datensätze&lt;/h3&gt;
+
+Die folgenden Fragen befassen sich mit dem Inhalt, dem Format und der Herkunft der im Projekt generierten oder wiederverwendeten Forschungsdaten und beschreiben deren Verwaltung. Am besten lassen sich diese Fragen beantworten, indem die Daten in logische Einheiten aufgeteilt werden, die jeweils unterschiedliche Beantwortung der Fragen erfordern. Für jeden dieser &quot;Datensätze&quot; werden dieselben Fragen gestellt. Datensätze können eher breitere Kategorien mit ähnlichen Eigenschaften und Erfordernissen hinsichtlich der Datenverwaltung darstellen.
+
+&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Klicken Sie hier für Tipps zur Unterteilung der Projektdaten in Datensätze&lt;/summary&gt;
+
+&lt;p style=&quot;text-indent: 2em;margin-bottom:5px;&quot;&gt;Sie können wie folgt vorgehen:&lt;/p&gt;
+
+&lt;ul style=&quot;margin-bottom:5px;&quot;&gt;
+  &lt;li&gt;Verschaffen Sie sich einen Überblick über die Daten, die im Rahmen Ihrer Forschungsaktivitäten generiert oder verwendet werden.&lt;/li&gt;
+  &lt;li&gt;Bewerten Sie die Daten anhand der folgenden Kriterien:&lt;ul&gt;
+    &lt;li&gt;Herkunft/Generierung: generiert (Beobachtung/Messung, Experiment, Umfrage, Simulation, Web-Crawl,…) oder wiederverwendet;&lt;/li&gt;
+    &lt;li&gt;Speicherplatzanforderungen: z. B.: &amp;lt;1 GB, ~10 TB;&lt;/li&gt;
+    &lt;li&gt;Dokumentationsanforderungen:&lt;ul&gt;
+      &lt;li&gt;Beispiel A: Ausführliche Beschreibung von Stichprobengenerierung und Datenerhebung;&lt;/li&gt;
+      &lt;li&gt;Beispiel B: Beschreibung von Messvorrichtungen und Messparametern;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+    &lt;li&gt;Datenschutzaspekte: personenbezogene Daten, sensible nicht personenbezogene Daten, öffentliche Daten;&lt;/li&gt;
+    &lt;li&gt;Relevanz/Wiederverwendungspotenzial: hoch (Referenzdaten), mittel (wissenschaftliche Hauptstudie), gering (Vorstudie);&lt;/li&gt;
+    &lt;li&gt;Veröffentlichung der Daten: ja/nein, geplantes Repositorium, geplante Durchführung und Finanzierung;&lt;/li&gt;
+    &lt;li&gt;Langzeitarchivierung: ja/nein, geplantes Datenformat, geplante Durchführung und Finanzierung.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Entscheiden Sie sich für die günstigste Unterteilung der Projektdaten in Datensätze, so dass nur Daten, die sich hinsichtlich dieser Kriterien erheblich unterscheiden, verschiedenen Datensätzen zugeordnet werden. Legen Sie eine angemessene Anzahl homogener Datensätze an: ausreichend viele, um Fallunterscheidungen zu vermeiden, und wenige genug, um Wiederholungen derselben Antworten vorzubeugen.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;text-indent: 2em;&quot;&gt;Zwei Beispiele, wie Daten in Projekten Datensätzen zugeordnet wurden, finden Sie &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_de.md&quot; target=&quot;_blank&quot;&gt;hier&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/details&gt;
+
+Geben Sie jedem &quot;Datensatz&quot; einen im Sinne der Forschungsarbeit aussagekräftigen, aber kurzen Namen. Er wird zur Beschriftung des entsprechenden Tabs in RDMO verwendet.</help>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<title lang="fr">Jeux de données</title>
 		<short_title lang="fr"/>
-		<help lang="fr">Les questions suivantes collectent des informations sur les données produites ou utilisées dans le projet. Ils aident également à estimer la valeur des données en termes de réutilisation potentielle et de conservation à long terme.
+		<help lang="fr">Les questions suivantes sont destinées à décrire les jeux de données générés et/ou utilisés dans le cadre du projet. Elles permettent également d'évaluer la valeur des données en termes de réutilisation potentielle et d'archivage ultérieur.
 
-Avant de créer de nouvelles données, il est conseillé de vérifier s'il existe des données existantes qui pourraient être réutilisées. De cette façon, la collecte ou la création de données de recherche redondantes est empêchée. Cela permet d'économiser des efforts et des coûts.
+Avant de générer de nouvelles données, il est conseillé de vérifier si les données existantes peuvent être réutilisées. Éviter la collecte de données en double permet d'économiser des efforts et des coûts.
 
-Un jeu de donnés peut contenir par exemple plusieurs fichiers de nature différente (numérique, image, texte ...) groupés ensemble, qui récueuillent tous les résultats provenants d'une série d'investigations sur un objet de recherche spécifié.</help>
+&lt;h3&gt;Organisation des données en jeux de données&lt;/h3&gt;
+
+Les questions suivantes portent sur le contenu, le format et l'origine des données de recherche générées ou réutilisées dans le projet et décrivent leur gestion. La meilleure façon de répondre à ces questions est de regrouper les données en unités logiques, car les réponses vont être différentes pour chacune de ces unités. Les mêmes questions sont posées pour chacun de ces &quot;jeux de données&quot;. Les jeux de données peuvent représenter des catégories plutôt larges avec des contraintes/propriétés similaires en termes de gestion des données.
+
+&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Cliquez ici pour voir des conseils pour diviser les données d'un projet en jeux de données&lt;/summary&gt;
+
+&lt;p style=&quot;text-indent:2em;margin-bottom:5px;&quot;&gt;Vous pouvez procéder comme suit :&lt;/p&gt;
+
+&lt;ul style=&quot;margin-bottom:5px;&quot;&gt;
+  &lt;li&gt;Obtenez une vue d'ensemble des données générées ou utilisées dans le cadre de votre activité de recherche.&lt;/li&gt;
+  &lt;li&gt;Évaluez les données sur la base des critères suivants :&lt;ul&gt;
+    &lt;li&gt;origine/génération : générées (observation/mesure, expérience, enquête, simulation, exploration du web,...) ou réutilisées ;&lt;/li&gt;
+    &lt;li&gt;exigences en matière de stockage (espace) : par ex. : &amp;lt;1 GB, ~10 TB ;&lt;/li&gt;
+    &lt;li&gt;exigences en matière de documentation:&lt;ul&gt;
+      &lt;li&gt;exemple A : description détaillée de l'échantillonnage et de la mise en œuvre de l'enquête ;&lt;/li&gt;
+      &lt;li&gt;exemple B : configuration des mesures et paramètres de mesure ;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+    &lt;li&gt;aspects relatifs à la confidentialité des données : données personnelles, données sensibles non personnelles, données publiques ;&lt;/li&gt;
+    &lt;li&gt;pertinence / potentiel de réutilisation : élevé (données de référence), moyen (étude scientifique principale), faible (étude préliminaire) ;&lt;/li&gt;
+    &lt;li&gt;publication des données : oui/non, dépôt prévu, organisation et financement prévus ;&lt;/li&gt;
+    &lt;li&gt;conservation à long terme : oui/non, questions techniques, organisation et financement prévus.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Déterminez la subdivision la plus appropriée des données du projet en jeux de données, de sorte que seules les données qui diffèrent considérablement en termes de ces critères soient attribuées à différents jeux de données. Créez un nombre approprié de jeux de données homogènes : suffisamment nombreux pour éviter la nécessité de réponses conditionnelles, et suffisamment peu nombreux pour éviter la répétition des mêmes réponses.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;text-indent:2em;&quot;&gt;Des exemples de deux projets dans lesquels les données sont classées en jeux de données peuvent être trouvés &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;ici&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/details&gt;
+
+Attribuez à chaque &quot;jeu de données&quot; un nom significatif mais court qui reflète le travail de recherche. Ce nom sera utilisé pour étiqueter l'onglet correspondant dans RDMO.</help>
 		<verbose_name lang="fr">jeu de données</verbose_name>
 		<title lang="it">raccolte di dati</title>
 		<short_title lang="it"/>
-		<help lang="it">Le domande seguenti servono a descrivere le raccolte di dati generate e/o utilizzate nel progetto. Inoltre aiutano a stimare il valore dei dati sulla base del potenziale riutilizzo.
+		<help lang="it">Le domande che seguono hanno lo scopo di descrivere gli insiemi di dati generati e/o utilizzati nel progetto. Inoltre, aiutano a valutare il valore dei dati in termini di potenziale riutilizzo e successiva archiviazione.
 
-Prima di generare dati nuovi conviene verificare la possibilità di riutilizzare dati già esistenti, in modo da evitare lavoro superfluo e risparmiare sforzi e costi.
+Prima di generare nuovi dati, è consigliabile verificare se quelli esistenti possono essere riutilizzati. Evitare la raccolta di dati doppi consente di risparmiare sforzi e costi.
 
-Una raccolta di dati può ad esempio contenere più file di tipo differente (numerico, immagine, testo...) che raggruppano tutti i risultati generati in una serie di misure su un oggetto di ricerca ben definito.</help>
+Se sono coinvolti dati personali, i principi del Regolamento generale sulla protezione dei dati dell'UE (&lt;a href=&quot;https://gdpr-info.eu&quot; target=&quot;_blank&quot;&gt;GDPR&lt;/a&gt;), come la minimizzazione dei dati (&lt;a href=&quot;https://gdpr-info.eu/art-5-gdpr/&quot; target=&quot;_blank&quot;&gt;Art.5 Para.1&lt;/a&gt;) e la legge federale tedesca sulla protezione dei dati (&lt;a href=&quot;https://gdpr-info.eu&quot; target=&quot;_blank&quot;&gt;BDSG&lt;/a&gt;).
+
+&lt;h3&gt;Organizzazione dei dati in raccolte di dati&lt;/h3&gt;
+
+Le domande seguenti riguardano il contenuto, il formato e l'origine dei dati di ricerca generati o riutilizzati nel progetto e ne descrivono la gestione. Il modo migliore per rispondere a queste domande è suddividere i dati in unità logiche per le quali le domande vanno risposte in modo differente. Per ciascuna di queste &quot;raccolte di dati&quot; verranno poste le stesse domande. Le raccolte di dati possono rappresentare categorie più ampie con proprietà e requisiti simili per quanto riguarda la gestione dei dati.
+
+&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Alcuni suggerimenti per la suddivisione dei dati del progetto in raccolte di dati&lt;/summary&gt;
+
+Si può procedere in questo modo:
+
+&lt;ul style=&quot;margin-bottom:5px;&quot;&gt;
+  &lt;li&gt;Ottenere una panoramica dei dati generati o utilizzati nell'ambito della propria attività di ricerca.&lt;/li&gt;
+  &lt;li&gt;Valutare i dati in base ai seguenti criteri:&lt;ul&gt;
+    &lt;li&gt;origine/generazione: generati (osservazione/misurazione, esperimento, sondaggio, simulazione, web crawl,...) o riutilizzati;&lt;/li&gt;
+    &lt;li&gt;requisiti di archiviazione (spazio): es.: 1 GB, ~10 TB;&lt;/li&gt;
+    &lt;li&gt;Requisiti di documentazione:&lt;ul&gt;
+      &lt;li&gt;esempio A: descrizione dettagliata del campionamento dell'indagine e dell'implementazione dell'indagine;&lt;/li&gt;
+      &lt;li&gt;esempio B: impostazione della misurazione e parametri di misurazione;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+    &lt;li&gt;Aspetti relativi alla protezione dei dati: dati personali, dati sensibili non personali, dati pubblici;&lt;/li&gt;
+    &lt;li&gt;Rilevanza / potenziale di riutilizzo: alto (dati di riferimento), medio (studio scientifico principale), basso (studio preliminare);&lt;/li&gt;
+    &lt;li&gt;pubblicazione dei dati: sì/no, archivio previsto, organizzazione e finanziamento previsti;&lt;/li&gt;
+    &lt;li&gt;conservazione a lungo termine: sì/no, questioni tecniche, organizzazione e finanziamento previsti.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Stabilire la suddivisione più favorevole dei dati del progetto in raccolte di dati, in modo che solo i dati che differiscono significativamente rispetto a questi criteri siano assegnati a insiemi di dati diversi. Creare un numero adeguato di insiemi di dati omogenei: abbastanza per evitare distinzioni di casi, ma abbastanza pochi per evitare la ripetizione delle stesse risposte.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;text-indent: 2em;&quot;&gt;Esempi di due progetti in cui i dati sono organizzati in raccolte di dati si possono trovare &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;qui&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/details&gt;
+
+Assegnare a ciascuna raccolta di dati un nome significativo ma breve che rifletta il lavoro di ricerca. Questo nome verrà utilizzato per etichettare la scheda corrispondente in RDMO.</help>
 		<verbose_name lang="it">raccolta di dati</verbose_name>
 		<title lang="es">Colecciones de datos</title>
 		<short_title lang="es"/>
-		<help lang="es">Las siguientes preguntas recopilan información sobre los datos que se producen o utilizan en el proyecto. También ayudan a estimar el valor de los datos en términos de reutilización potencial y preservación de datos a largo plazo.
+		<help lang="es">Las siguientes preguntas están diseñadas para describir los conjuntos de datos generados y/o utilizados en el proyecto. También ayudan a evaluar el valor de los datos en cuanto a su posible reutilización y posterior archivo.
 
-Antes de que se creen datos nuevos, es recomendable verificar si hay datos existentes que podrían reutilizarse. De esta forma, se evita la recopilación redundante o la re-creación de datos de investigación. Esto ahorra esfuerzos y costes.
+Antes de generar nuevos datos, conviene comprobar si los existentes pueden reutilizarse. Evitar la duplicación de la recogida de datos ahorra esfuerzos y costes.
 
-Por ejemplo, una colección de datos puede consistir en más archivos de datos de diferentes tipos (numéricos, de imagen, de texto...) agrupados, que recopilan exhaustivamente todos los resultados provenientes de una serie de investigaciones sobre un objeto de investigación determinado.</help>
+Si se trata de datos personales, los principios del Reglamento General de Protección de Datos de la UE (&lt;a href=&quot;https://gdpr-info.eu&quot; target=&quot;_blank&quot;&gt;GDPR&lt;/a&gt;), como la minimización de datos (&lt;a href=&quot;https://gdpr-info.eu/art-5-gdpr/&quot; target=&quot;_blank&quot;&gt;Art.5 Para.1&lt;/a&gt;) y la Ley Federal Alemana de Protección de Datos (&lt;a href=&quot;https://gdpr-info.eu&quot; target=&quot;_blank&quot;&gt;BDSG&lt;/a&gt;).
+
+&lt;h3&gt;Organización de los datos en conjuntos de datos&lt;/h3&gt;
+
+Las siguientes preguntas se refieren al contenido, formato y origen de los datos de investigación generados o reutilizados en el proyecto y describen su gestión. La mejor manera de responder a estas preguntas es resumir los datos en unidades lógicas que requieran respuestas distintas para cada unidad. Se plantean las mismas preguntas para cada uno de estos &quot;conjuntos de datos&quot;. Los conjuntos de datos pueden representar categorías bastante más amplias con propiedades similares y requisitos parecidos en términos de gestión de datos.
+
+&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Algunos consejos para subdividir los datos del proyecto en conjuntos de datos&lt;/summary&gt;
+
+Puede proceder de la siguiente manera:
+
+&lt;ul style=&quot;margin-bottom:5px;&quot;&gt;
+  &lt;li&gt;Obtenga una visión general de los datos que se generarán o utilizarán como parte de de su actividad de investigación.&lt;/li&gt;
+  &lt;li&gt;Evalúe los datos en función de los siguientes criterios:&lt;ul&gt;
+    &lt;li&gt;Origen/generación: generados (observación/medición, experimento, encuesta, simulación, rastreo web,...) o reutilizados;&lt;/li&gt;
+    &lt;li&gt;Requisitos de espacio de almacenamiento: p. ej.: 1 GB, ~10 TB;&lt;/li&gt;
+    &lt;li&gt;Requisitos de documentación:&lt;ul&gt;
+      &lt;li&gt;ejemplo A: descripción extensa del muestreo y la realización de la encuesta;&lt;/li&gt;
+      &lt;li&gt;ejemplo B: configuración de la medición y parámetros de medición;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+    &lt;li&gt;Aspectos de protección de los datos: datos personales, datos sensibles no personales, datos públicos;&lt;/li&gt;
+    &lt;li&gt;Relevancia / potencial de reutilización: alta (datos de referencia), media (estudio científico principal), baja (estudio preliminar);&lt;/li&gt;
+    &lt;li&gt;Publicación de datos: sí/no, repositorio previsto, organización y financiación previstas.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+    &lt;li&gt;Conservación a largo plazo: sí/no, cuestiones técnicas, organización y financiación previstas.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Decidir la división más favorable de los datos del proyecto en conjuntos de datos, asegurándose de que sólo se asignen a conjuntos de datos diferentes los datos que difieran significativamente en función de estos criterios. Crear un número adecuado de conjuntos de datos homogéneos: suficientes para evitar para evitar la necesidad de respuestas condicionales, pero suficientemente pocos como para evitar la repetición de las mismas respuestas.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;text-indent: 2em;&quot;&gt;Puede encontrar ejemplos de dos proyectos en los que los datos están ordenados por categorías &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;aquí&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/details&gt;
+
+Asigne a cada &quot;conjunto de datos&quot; un nombre significativo pero breve que refleje el trabajo de investigación. Este nombre se utilizará para etiquetar la pestaña correspondiente en RDMO.</help>
 		<verbose_name lang="es">colección de datos</verbose_name>
 		<questionsets/>
 		<questions>
@@ -1003,7 +1140,7 @@ Bitte erläutern Sie ergänzend, ob es sich um einen festen, zu einem bestimmten
 * modèle 3D / reconstruction numérique d'une colonie de l'âge de pierre
 * logiciel développé dans le cadre du projet
 
-Veuillez également expliquer si l'ensemble de données est fixe et stocké à un certain moment ou s'il est dynamique, c'est-à-dire créé en continu sur une certaine période.</help>
+Veuillez également expliquer si le jeu de données est fixe et stocké à un certain moment ou s'il est dynamique, c'est-à-dire créé en continu sur une certaine période.</help>
 		<text lang="fr">De quel type de jeu de données s'agit-il ?</text>
 		<default_text lang="fr"/>
 		<verbose_name lang="fr"/>
@@ -1780,13 +1917,13 @@ Otros datos no se pueden recopilar ni crear de nuevo.</help>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/size/volume"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
-		<help lang="en">Provide an estimate if the project has not yet started. 
+		<help lang="en">Provide an estimate if the project has not yet started.
 
 If large amounts of data will be generated, financial resources to provide the infrastructure should be considered (see also section on 'funding').</help>
 		<text lang="en">What is the size of the data set?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Geben Sie eine Schätzung an, falls das Projekt noch nicht gestartet ist. 
+		<help lang="de">Geben Sie eine Schätzung an, falls das Projekt noch nicht gestartet ist.
 
 Wenn große Datenmengen anfallen, sollten finanzielle Mittel zur Bereitstellung der Infrastruktur berücksichtigt werden (siehe auch Abschnitt „Förderung“).</help>
 		<text lang="de">Was ist die Größe des Datensatzes?</text>

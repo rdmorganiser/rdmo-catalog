@@ -178,7 +178,7 @@
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/rdm_policy"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
-		<help lang="en">More and more universities and scientific institutions adopt research data management policies. These contain, among other things, recommendations and / or demands concerning the handling of research data by researchers of the institution. 
+		<help lang="en">More and more universities and scientific institutions adopt research data management policies. These contain, among other things, recommendations and / or demands concerning the handling of research data by researchers of the institution.
  &lt;a href=&quot;https://data.uni-bielefeld.de/en/policy&quot; target=&quot;_blank&quot;&gt;Principles and guidelines on handling research data at Bielefeld University&lt;/a&gt; or the &lt;a href=&quot;http://www.uni-goettingen.de/en/488918.html&quot; target=&quot;_blank&quot;&gt;Research data policy of the Georg-August University Goettingen&lt;/a&gt;.</help>
 		<text lang="en">Does your institution have rules or guidelines for the handling of research data? If yes, please briefly outline them and refer to more detailed sources of information if necessary. Please also indicate, if the rules / guidelines are mandatory or optional.</text>
 		<default_text lang="en"/>
@@ -222,8 +222,7 @@
 		<text lang="en">Who is/are the contact person(s) for data management questions?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Bitte geben Sie den Namen und eine Email Adresse
-an.</help>
+		<help lang="de">Bitte geben Sie den Namen und eine E-Mail-Adresse an.</help>
 		<text lang="de">Wer ist bei diesem Partner der/die Ansprechpartner/in für das Datenmanagement?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -282,18 +281,72 @@ an.</help>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<is_collection>True</is_collection>
 		<title lang="en">Data set</title>
-		<help lang="en">The following questions collect information on the data that is produced or used in the project. They also help to estimate the value of the data in terms of potential re-use and long-term preservation. 
+		<help lang="en">The following questions collect information on the data that is produced or used in the project. They also help to estimate the value of the data in terms of potential re-use and long-term preservation.
 
-Before data is newly created, it is advisable to check if there is existing data that could be re-used. This way, redundant collection or creation of research data is prevented. This saves efforts and costs. Also, there shall be collected no more information than necessary.
+Before generating new data, it is advisable to check if there is existing data that could be re-used. This way, redundant collection or creation of research data is prevented. This saves efforts and costs. Also, there shall be collected no more information than necessary.
 
-The information regarding the data collected, produced or used in the project is gathered along datasets. The definition of these datasets is an important conceptional decision that has to be made individually and carefully for each project.</help>
+&lt;h3&gt;Organisation of data into data sets&lt;/h3&gt;
+
+The following questions address the content, format, origin and management of the research data generated or reused in the project. It is best to answer these questions by dividing the data into logical units, since each unit will require different answers. The same questions are asked for each of these 'data sets'. Data sets may represent broader categories with similar characteristics and data management requirements.
+
+&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Click here to see tips for dividing project data into data sets&lt;/summary&gt;
+
+&lt;p style=&quot;text-indent: 2em;margin-bottom:5px;&quot;&gt;You can proceed as follows:&lt;/p&gt;
+
+&lt;ul style=&quot;margin-bottom:5px;&quot;&gt;
+  &lt;li&gt;Obtain an overview of the data generated or used in your research activities.&lt;/li&gt;
+  &lt;li&gt;Evaluate the data based on the following criteria:&lt;ul&gt;
+    &lt;li&gt;Origin/generation: generated (e.g. observation/measurement, experiment, survey, simulation, web-crawl) or reused;&lt;/li&gt;
+    &lt;li&gt;Storage space requirements: e.g.: &amp;lt;1 GB, ~10 TB;&lt;/li&gt;
+    &lt;li&gt;Documentation requirements:&lt;ul&gt;
+      &lt;li&gt;Example A: Detailed description of sample generation and data collection;&lt;/li&gt;
+      &lt;li&gt;Example B: Description of measuring devices and measurement parameters;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+    &lt;li&gt;Data protection aspects: Personal data, sensitive non-personal data, public data;&lt;/li&gt;
+    &lt;li&gt;Relevance/reuse potential: High (reference data), medium (main scientific study), low (preliminary study);&lt;/li&gt;
+    &lt;li&gt;Publication of data: Yes/no, planned repository, planned implementation and financing;&lt;/li&gt;
+    &lt;li&gt;Long-term archiving: Yes/no, planned data format, planned implementation and financing.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Decide on the most favourable division of project data into data sets, ensuring that only data which differ significantly in terms of these criteria are assigned to different data sets. Create a suitable number of homogeneous data sets: enough to avoid the need for conditional answers, but few enough to prevent repetition of the same answers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;text-indent: 2em;&quot;&gt;Examples of two projects in which the data are sorted into data sets can be found &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/details&gt;
+
+Give each 'data set' a meaningful but short name that reflects the research work. This name will be used to label the corresponding tab in RDMO.</help>
 		<verbose_name lang="en">dataset</verbose_name>
 		<title lang="de">Datensatz</title>
 		<help lang="de">Die nächsten Fragen dienen zur Beschreibung der Datensätze, die im Projekt erzeugt und/oder verwendet werden. Sie helfen zudem, den Wert der Daten hinsichtlich der potentiellen Nachnutzung und einer späteren Archivierung einschätzen zu können.
 
-Vor der Erzeugung von Daten empfiehlt es sich zu prüfen, ob bereits vorhandene Daten nachgenutzt werden können. Die Vermeidung doppelter Erhebungen spart Aufwand und Kosten. 
+Vor der Erzeugung von Daten empfiehlt es sich zu prüfen, ob bereits vorhandene Daten nachgenutzt werden können. Die Vermeidung doppelter Erhebungen spart Aufwand und Kosten.
 
-Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Datensätzen“ strukturiert. Die Definition dessen, was jeweils ein Datensatz ist, ist eine wichtige konzeptionelle Entscheidung, die für jedes Vorhaben bzw. Projekt individuell getroffen und sorgfältig abgewogen werden muss.</help>
+&lt;h3&gt;Organisation der Daten in Datensätze&lt;/h3&gt;
+
+Die folgenden Fragen befassen sich mit dem Inhalt, dem Format und der Herkunft der im Projekt generierten oder wiederverwendeten Forschungsdaten und beschreiben deren Verwaltung. Am besten lassen sich diese Fragen beantworten, indem die Daten in logische Einheiten aufgeteilt werden, die jeweils unterschiedliche Beantwortung der Fragen erfordern. Für jeden dieser &quot;Datensätze&quot; werden dieselben Fragen gestellt. Datensätze können eher breitere Kategorien mit ähnlichen Eigenschaften und Erfordernissen hinsichtlich der Datenverwaltung darstellen.
+
+&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Klicken Sie hier für Tipps zur Unterteilung der Projektdaten in Datensätze&lt;/summary&gt;
+
+&lt;p style=&quot;text-indent: 2em;margin-bottom:5px;&quot;&gt;Sie können wie folgt vorgehen:&lt;/p&gt;
+
+&lt;ul style=&quot;margin-bottom:5px;&quot;&gt;
+  &lt;li&gt;Verschaffen Sie sich einen Überblick über die Daten, die im Rahmen Ihrer Forschungsaktivitäten generiert oder verwendet werden.&lt;/li&gt;
+  &lt;li&gt;Bewerten Sie die Daten anhand der folgenden Kriterien:&lt;ul&gt;
+    &lt;li&gt;Herkunft/Generierung: generiert (Beobachtung/Messung, Experiment, Umfrage, Simulation, Web-Crawl,…) oder wiederverwendet;&lt;/li&gt;
+    &lt;li&gt;Speicherplatzanforderungen: z. B.: &amp;lt;1 GB, ~10 TB;&lt;/li&gt;
+    &lt;li&gt;Dokumentationsanforderungen:&lt;ul&gt;
+      &lt;li&gt;Beispiel A: Ausführliche Beschreibung von Stichprobengenerierung und Datenerhebung;&lt;/li&gt;
+      &lt;li&gt;Beispiel B: Beschreibung von Messvorrichtungen und Messparametern;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+    &lt;li&gt;Datenschutzaspekte: personenbezogene Daten, sensible nicht personenbezogene Daten, öffentliche Daten;&lt;/li&gt;
+    &lt;li&gt;Relevanz/Wiederverwendungspotenzial: hoch (Referenzdaten), mittel (wissenschaftliche Hauptstudie), gering (Vorstudie);&lt;/li&gt;
+    &lt;li&gt;Veröffentlichung der Daten: ja/nein, geplantes Repositorium, geplante Durchführung und Finanzierung;&lt;/li&gt;
+    &lt;li&gt;Langzeitarchivierung: ja/nein, geplantes Datenformat, geplante Durchführung und Finanzierung.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Entscheiden Sie sich für die günstigste Unterteilung der Projektdaten in Datensätze, so dass nur Daten, die sich hinsichtlich dieser Kriterien erheblich unterscheiden, verschiedenen Datensätzen zugeordnet werden. Legen Sie eine angemessene Anzahl homogener Datensätze an: ausreichend viele, um Fallunterscheidungen zu vermeiden, und wenige genug, um Wiederholungen derselben Antworten vorzubeugen.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;text-indent: 2em;&quot;&gt;Zwei Beispiele, wie Daten in Projekten Datensätzen zugeordnet wurden, finden Sie &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_de.md&quot; target=&quot;_blank&quot;&gt;hier&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/details&gt;
+
+Geben Sie jedem &quot;Datensatz&quot; einen im Sinne der Forschungsarbeit aussagekräftigen, aber kurzen Namen. Er wird zur Beschriftung des entsprechenden Tabs in RDMO verwendet.</help>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<title lang="fr"/>
 		<help lang="fr"/>
@@ -317,9 +370,9 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/description"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
-		<help lang="en">Please briefly describe the data type and / or the method used to create or collect the data, for example:   
+		<help lang="en">Please briefly describe the data type and / or the method used to create or collect the data, for example:
 
-* quantitative online survey   
+* quantitative online survey
 * 3D model / digital reconstruction of a stone age settlement
 * software developed within the project</help>
 		<text lang="en">What kind of dataset is it?</text>
@@ -327,7 +380,7 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<verbose_name lang="en"/>
 		<help lang="de">Bitte beschreiben Sie hier kurz, um welchen Datentyp es sich handelt und mit welcher Methode die Daten erhoben oder erstellt wurden, z. B.:
 
-* quantitative Online-Befragung     
+* quantitative Online-Befragung
 * 3D-Modellierung / digitale Rekonstruktion einer steinzeitlichen Siedlung
 * Software, die im Projekt entwickelt wird</help>
 		<text lang="de">Um was für einen Datensatz handelt es sich?</text>
@@ -716,7 +769,7 @@ Die Angaben zu den im Projekt erzeugten oder verwendeten Daten sind nach „Date
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creation_methods"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
-		<help lang="en">This information is necessary to be able to reconstruct the process by which the data was generated. It is also a prerequisite to judge the objectivity, reliability and validity of the dataset.  
+		<help lang="en">This information is necessary to be able to reconstruct the process by which the data was generated. It is also a prerequisite to judge the objectivity, reliability and validity of the dataset.
 For reproducible data, it is also required to re-generate the data if need be.</help>
 		<text lang="en">Which tools, software, technologies or processes are used to generate or collect the data?</text>
 		<default_text lang="en"/>
@@ -756,7 +809,7 @@ For reproducible data, it is also required to re-generate the data if need be.</
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_technology"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
-		<help lang="en">To be able to re-use data (e.g. to replicate studies, for meta analysis or to solve new research questions), along with the data the software, equipment and knowledge about special methods to use the data are required . 
+		<help lang="en">To be able to re-use data (e.g. to replicate studies, for meta analysis or to solve new research questions), along with the data the software, equipment and knowledge about special methods to use the data are required .
 Just as with the formats, the recommendation is: the more standardised, open and established, the better for re-use.</help>
 		<text lang="en">Which software, processes or technologies are necessary to use the data?</text>
 		<default_text lang="en"/>
@@ -1052,7 +1105,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/yesno"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
-		<help lang="en">Examples of discipline-specific requirements are: 
+		<help lang="en">Examples of discipline-specific requirements are:
 
 - &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/forschungsdaten/guidelines_biodiversity_research.pdf&quot; target=&quot;_blank&quot;&gt;Guidelines on the Handling of Research Data in Biodiversity Research&lt;/a&gt;
 - &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/forschungsdaten/richtlinien_forschungsdaten_bildungsforschung.pdf&quot; target=&quot;_blank&quot;&gt;Guidelines for the provision and use of quantitative data in education research (German)&lt;/a&gt;
@@ -1061,12 +1114,12 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 		<text lang="en">Are there requirements regarding the data management from other parties  (e.g. the scholarly/scientific community)?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Beispiele für fachspezifische Empfehlungen und Richtlinien sind: 
+		<help lang="de">Beispiele für fachspezifische Empfehlungen und Richtlinien sind:
 
 - &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/forschungsdaten/richtlinien_forschungsdaten_biodiversitaetsforschung.pdf&quot; target=&quot;_blank&quot;&gt;Richtlinien zum Umgang mit Forschungsdaten in der Biodiversitätsforschung&lt;/a&gt;
 - Empfehlungen zur &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/forschungsdaten/richtlinien_forschungsdaten_bildungsforschung.pdf&quot; target=&quot;_blank&quot;&gt;Bereitstellung und Nutzung quantitativer Daten in der Bildungsforschung&lt;/a&gt;
 - &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/forschungsdaten/foerderkriterien_editionen_literaturwissenschaft.pdf&quot; target=&quot;_blank&quot;&gt;Förderkriterien für wissenschaftliche Editionen in der Literaturwissenschaft&lt;/a&gt;
-- Empfehlungen zu &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_sprachkorpora.pdf&quot; target=&quot;_blank&quot;&gt;datentechnischen Standards und Tools&lt;/a&gt; sowie zu 
+- Empfehlungen zu &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_sprachkorpora.pdf&quot; target=&quot;_blank&quot;&gt;datentechnischen Standards und Tools&lt;/a&gt; sowie zu
 - &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=&quot;_blank&quot;&gt;rechtlichen Fragen&lt;/a&gt; bei der Erhebung von Sprachkorpora</help>
 		<text lang="de">Gibt es von weiteren Seiten (z. B. von der Fachcommunity) Anforderungen an das Datenmanagement, die beachtet werden müssen?</text>
 		<default_text lang="de"/>
@@ -1195,7 +1248,7 @@ Ebenso wie bei den Formaten gilt hier: je standardisierter, offener und etablier
 	<question dc:uri="https://rdmorganiser.github.io/terms/questions/snf/content-classification/technical-integration/integration">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<uri_path>snf/content-classification/technical-integration/integration</uri_path>
-		<dc:comment>the stipulation that re-used and created data are of the same type (= and thus capable to be integrated) is problematic, since this implies properties of the  data that are not a given. May be this shoud be reformulated to : Is the connection between 
+		<dc:comment>the stipulation that re-used and created data are of the same type (= and thus capable to be integrated) is problematic, since this implies properties of the  data that are not a given. May be this shoud be reformulated to : Is the connection between
 re-used and created data ensures (which goes into the provenance realm)</dc:comment>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/integration"/>
 		<is_collection>False</is_collection>
@@ -1697,7 +1750,7 @@ re-used and created data ensures (which goes into the provenance realm)</dc:comm
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
 		<is_collection>True</is_collection>
 		<title lang="en">Persistent Identifiers (PIDs)</title>
-		<help lang="en">The purpose of Persistent Identifiers (PIDs) is to ensure the permanent reference of (in particular) digital objects like online publications and research data. When traditional hyperlinks are used as reference, they point directly to the storage location of the data. The problem is, that if the storage location is changed, the link will not work anymore. A PID serves as an intermediate from which requests are directed to the current object location (this is called &quot;resolving&quot; of a PID). The PID stays the same, even if the storage location changes. While a mere hyperlink in this case would lead to nowhere, via the PID the object is still accessible. 
+		<help lang="en">The purpose of Persistent Identifiers (PIDs) is to ensure the permanent reference of (in particular) digital objects like online publications and research data. When traditional hyperlinks are used as reference, they point directly to the storage location of the data. The problem is, that if the storage location is changed, the link will not work anymore. A PID serves as an intermediate from which requests are directed to the current object location (this is called &quot;resolving&quot; of a PID). The PID stays the same, even if the storage location changes. While a mere hyperlink in this case would lead to nowhere, via the PID the object is still accessible.
 
 You can find more information about the mode of operation, usage and different kinds of PIDs in e.g. an &lt;a href=&quot;http://training.dasish.eu/training/3/&quot; target=&quot;_blank&quot;&gt;online tutorial&lt;/a&gt; created by the DASISH project or in the &lt;a href=&quot;http://www.ands.org.au/guides#identify&quot; target=&quot;_blank&quot;&gt;information material of the Australian National Data Service (ANDS)&lt;/a&gt; (scroll down to &quot;Identifying data and researchers&quot;).</help>
 		<verbose_name lang="en">dataset</verbose_name>
@@ -1963,15 +2016,15 @@ Mehr Informationen zur Funktionsweise, Verwendung und verschiedenen Arten von PI
 		<is_optional>False</is_optional>
 		<help lang="en">European Data Protection Law may apply.
 
-The Switzer Federal  Act defines personal data as „all information related to particular or  determinable person” &lt;a href=&quot;https://www.admin.ch/opc/de/classified-compilation/19920153/201401010000/235.1.pdf&quot; target=&quot;_blank&quot;&gt;(Art. 3 Bst. a des Bundesgesetzes über den Datenschutz)&lt;/a&gt;).  
-  
-A person is “identified” when it is obvious whom the data is associated with. A person is “identifiable” when it is possible to find out which person the data refers to with additional information (See Häder 2009, p. 7).   
-  
-The handling of personal information is regulated by law. More information (in German only) can be found in the following publications:   
+The Swiss Federal  Act defines personal data as „all information related to particular or  determinable person” &lt;a href=&quot;https://www.admin.ch/opc/de/classified-compilation/19920153/201401010000/235.1.pdf&quot; target=&quot;_blank&quot;&gt;(Art. 3 Bst. a des Bundesgesetzes über den Datenschutz)&lt;/a&gt;).
 
-* &lt;a href=&quot;http://www.ratswd.de/download/RatSWD_WP_2009/RatSWD_WP_90.pdf&quot; target=&quot;_blank&quot;&gt;Michael Häder (2009): Der Datenschutz in den Sozialwissenschaften. RatSWD Working Paper No. 90.&lt;/a&gt;   
+A person is “identified” when it is obvious whom the data is associated with. A person is “identifiable” when it is possible to find out which person the data refers to with additional information (See Häder 2009, p. 7).
 
-* &lt;a href=&quot;http://www.gesis.org/fileadmin/upload/forschung/publikationen/gesis_reihen/gesis_methodenberichte/2012/TechnicalReport_2012-07.pdf&quot; target=&quot;_blank&quot;&gt;Uwe Jensen (2012): Leitlinien zum Management von Forschungsdaten. Sozialwissenschaftliche Umfragedaten. GESIS Technical Report 2012|07.&lt;/a&gt; (esp. pp. 13 ff)     
+The handling of personal information is regulated by law. More information (in German only) can be found in the following publications:
+
+* &lt;a href=&quot;http://www.ratswd.de/download/RatSWD_WP_2009/RatSWD_WP_90.pdf&quot; target=&quot;_blank&quot;&gt;Michael Häder (2009): Der Datenschutz in den Sozialwissenschaften. RatSWD Working Paper No. 90.&lt;/a&gt;
+
+* &lt;a href=&quot;http://www.gesis.org/fileadmin/upload/forschung/publikationen/gesis_reihen/gesis_methodenberichte/2012/TechnicalReport_2012-07.pdf&quot; target=&quot;_blank&quot;&gt;Uwe Jensen (2012): Leitlinien zum Management von Forschungsdaten. Sozialwissenschaftliche Umfragedaten. GESIS Technical Report 2012|07.&lt;/a&gt; (esp. pp. 13 ff)
 
 * &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=&quot;_blank&quot;&gt;Handreichung: Informationen zu rechtlichen Aspekten bei der Handhabung von Sprachkorpora.&lt;/a&gt; (esp. part 1.1 and part 2.2)</help>
 		<text lang="en">Does this dataset contain personal data?</text>
@@ -1980,14 +2033,14 @@ The handling of personal information is regulated by law. More information (in G
 		<help lang="de">Europäisches Recht kann Geltung haben.
 
 Das Schweizer Bundesgesetz definiert Personendaten als &quot;alle Angaben, die sich auf eine bestimmte oder bestimmbare Person beziehen“  &lt;a href=&quot;https://www.admin.ch/opc/de/classified-compilation/19920153/201401010000/235.1.pdf&quot; target=&quot;_blank&quot;&gt;(Art. 3 Bst. a des Bundesgesetzes über den Datenschutz)&lt;/a&gt;
-  
-Dabei wird von einer „bestimmten Person“ gesprochen, wenn eindeutig erkennbar ist, zu welcher Person die Daten gehören. Um eine „bestimmbare Person“ handelt es sich, wenn mittels Zusatzinformationen ermittelt werden kann, um welche Person es geht. (Vgl. Häder 2009, S. 7).  
- 
-Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar auf bestimmte Disziplinen / Datentypen fokussiert, aber übertragbar) zum Thema bieten bspw.:  
+
+Dabei wird von einer „bestimmten Person“ gesprochen, wenn eindeutig erkennbar ist, zu welcher Person die Daten gehören. Um eine „bestimmbare Person“ handelt es sich, wenn mittels Zusatzinformationen ermittelt werden kann, um welche Person es geht. (Vgl. Häder 2009, S. 7).
+
+Der Umgang mit solchen Daten ist gesetzlich geregelt. Mehr Informationen (zwar auf bestimmte Disziplinen / Datentypen fokussiert, aber übertragbar) zum Thema bieten bspw.:
 
 * &lt;a href=&quot;http://www.ratswd.de/download/RatSWD_WP_2009/RatSWD_WP_90.pdf&quot; target=&quot;_blank&quot;&gt;Michael Häder (2009): Der Datenschutz in den Sozialwissenschaften. RatSWD Working Paper No. 90.&lt;/a&gt;
- 
-* &lt;a href=&quot;http://www.gesis.org/fileadmin/upload/forschung/publikationen/gesis_reihen/gesis_methodenberichte/2012/TechnicalReport_2012-07.pdf&quot; target=&quot;_blank&quot;&gt;Uwe Jensen (2012): Leitlinien zum Management von Forschungsdaten. Sozialwissenschaftliche Umfragedaten. GESIS Technical Report 2012|07.&lt;/a&gt; (v.a. S. 13ff.)  
+
+* &lt;a href=&quot;http://www.gesis.org/fileadmin/upload/forschung/publikationen/gesis_reihen/gesis_methodenberichte/2012/TechnicalReport_2012-07.pdf&quot; target=&quot;_blank&quot;&gt;Uwe Jensen (2012): Leitlinien zum Management von Forschungsdaten. Sozialwissenschaftliche Umfragedaten. GESIS Technical Report 2012|07.&lt;/a&gt; (v.a. S. 13ff.)
 
 * &lt;a href=&quot;http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/standards_recht.pdf&quot; target=&quot;_blank&quot;&gt;Handreichung: Informationen zu rechtlichen Aspekten bei der Handhabung von Sprachkorpora.&lt;/a&gt; (v.a.  Teil 1.1 und Teil 2.2)</help>
 		<text lang="de">Enthält dieser Datensatz personenbezogene Daten?</text>
@@ -3474,12 +3527,12 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en"/>
-		<text lang="en">Is the repository or data centre chosen certified (e.g. Data Seal of Approval, nestor Seal or ISO 16363)? 
+		<text lang="en">Is the repository or data centre chosen certified (e.g. Data Seal of Approval, nestor Seal or ISO 16363)?
 (If the dataset is archived at several places, you may answer this question with yes, if this applies to at least one of these.)</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<help lang="de"/>
-		<text lang="de">Handelt es sich dabei um ein zertifiziertes Repositorium oder Datenzentrum (z. B. durch das Data Seal of Approval, nestor-Siegel oder ISO 16363)? 
+		<text lang="de">Handelt es sich dabei um ein zertifiziertes Repositorium oder Datenzentrum (z. B. durch das Data Seal of Approval, nestor-Siegel oder ISO 16363)?
 (Wurden mehrere Langzeitarchivierungsoptionen ausgewählt, kann die Frage bejaht werden, wenn dies auf mindestens eine der Optionen zutrifft).</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -4248,9 +4301,7 @@ Relevante Schutzrechte können gewerbliche Schutzrechte wie Patente, Gebrauchsmu
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<help lang="de"/>
-		<text lang="de">Ich werde digitale Archive wählen,  die 
-von einer gemeinnützigen  Organisation 
-verwaltet werden.</text>
+		<text lang="de">Ich werde digitale Archive wählen, die von einer gemeinnützigen Organisation verwaltet werden.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<help lang="fr"/>
