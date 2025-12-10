@@ -1,11 +1,15 @@
-# RDMO-Fragenkatalog der Max Weber Stiftung für Geisteswissenschaftler
+# RDMO-Fragenkatalog der Max Weber Stiftung für Geisteswissenschaften
 
 ## Allgemeine Hinweise zur Verwendung des Fragenkatalogs "*MWS Projects (First Registration*)" der MWS
 
 Der Fragenkatalog wurde gemeinsam vom „Global Data Steward Network” der MWS entwickelt und richtet sich primär an die Anforderungen der Forschenden der MWS. Als ursprüngliche Ausgangsbasis diente der detaillierte RDMO-Katalog der RDMO Community. Dieser wurde entsprechend den gemeinsam bei der MWS erarbeiteten Anforderungen gekürzt und mit fachspezifischen Beispielen und Links erweitert.
 
 
-Im Fragenkatalog werden die folgenden [Plugins](https://github.com/rdmorganiser/rdmo-plugins) verwendet: GND, ROR, Wikidata, ORCID
+Im Fragenkatalog werden die folgenden [Plugins](https://github.com/rdmorganiser/rdmo-plugins) verwendet:
+* [GND](https://github.com/rdmorganiser/rdmo-plugins-gnd),
+* [ROR](https://github.com/rdmorganiser/rdmo-plugins-ror),
+* [Wikidata](https://github.com/rdmorganiser/rdmo-plugins-wikidata),
+* [ORCID](https://github.com/rdmorganiser/rdmo-plugins-orcid).
 Es wurde neue Attribute und Optionensätze definiert.
 
 
