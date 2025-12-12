@@ -1253,7 +1253,7 @@ Wir empfehlen, den Abteilungsleiter oder die Abteilung selbst zu benennen.</help
 		<uri_prefix>https://dmp.service.base4nfdi.de/terms</uri_prefix>
 		<uri_path>dmp4nfdi/v1-0-0/DMP/Cost/rdadmp_description_costs_non-personnel</uri_path>
 		<dc:comment/>
-		<attribute/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/usage/non_personnel">
 		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en">Name both the resources that you bring in as your own contribution or as part of the basic equipment, as well as the resources for which you are applying for funds. &lt;br/&gt;
@@ -1281,6 +1281,13 @@ Es kann sich hierbei sowohl um technische bzw. IT-Ressourcen handeln, als auch u
 		</optionsets>
 		<conditions/>
 	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/usage/non_personnel">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>non_personnel</key>
+		<path>project/costs/usage/non_personnel</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/usage"/>
+	</attribute>
 	<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/dmp4nfdi/v1-0-0/resources_non-personnel">
 		<uri_prefix>https://dmp.service.base4nfdi.de/terms</uri_prefix>
 		<uri_path>dmp4nfdi/v1-0-0/resources_non-personnel</uri_path>
