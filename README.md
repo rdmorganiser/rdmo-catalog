@@ -150,7 +150,7 @@ Total: 33 catalogs, 15 views
 [Q-snf]:       rdmorganiser/questions/questions-snf.xml
 [V-dfg]:       rdmorganiser/views/view-dfg-checkliste.xml
 [V-heu]:       rdmorganiser/views/view-horizon-europe.xml
-[V-smp]:       rdmorganiser/views/view-FAIR4RSview.xml
+[V-smp]:       rdmorganiser/views/view-FAIR4RS.xml
 [V-snf]:       rdmorganiser/views/view-snf.xml
 [V-bielefeld]: rdmorganiser/views/view-bielefeld.xml
 [V-citec]:     rdmorganiser/views/view-citec.xml
