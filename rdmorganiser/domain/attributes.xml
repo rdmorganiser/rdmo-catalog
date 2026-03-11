@@ -53,7 +53,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>organization</key>
 		<path>project/coordination/organization</path>
-		<dc:comment>equivalent to rda:dmp/contributor/affiliation/name and dataplan:$_PARTNERS</dc:comment>
+		<dc:comment>Introduced to enable interoperability with different maDMP approaches. Equivalent to rda:dmp/contributor/affiliation/name and dataplan:$_PARTNERS.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs">
@@ -340,7 +340,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>mbox</key>
 		<path>project/data_management/mbox</path>
-		<dc:comment>equivalent to rda:dmp/contact/mbox and dataplan:$_EMAIL</dc:comment>
+		<dc:comment>Introduced to enable interoperability with different maDMP approaches. Equivalent to rda:dmp/contact/mbox and dataplan:$_EMAIL.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/name">
@@ -1449,12 +1449,18 @@
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
 	</attribute>
-	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ethical_issues_description">
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ethical_issues">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>ethical_issues_description</key>
+		<key>ethical_issues</key>
 		<path>project/legal_aspects/ethical_issues_description</path>
-		<dc:comment>equivalent to rda:dmp/ethical_issues_description and dataplan:text-ethical-en</dc:comment>
+		<dc:comment>Introduced to enable interoperability with different maDMP approaches. Parent to other attributes.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects"/>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ethical_issues/description">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>description</key>
+		<path>project/legal_aspects/ethical_issues/description</path>
+		<dc:comment>Introduced to enable interoperability with different maDMP approaches. Equivalent to rda:dmp/ethical_issues_description and dataplan:text-ethical-en.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ethical_issues"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/international_yesno">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
