@@ -92,6 +92,7 @@ In order to file issues, you will need a GitHub account.
 |Subject/Coverage                 |Catalog       |View  |Last update |Creators              |
 |---------------------------------|--------------|------|------------|----------------------|
 |All questions (RDMO+DFG)         |[catalog][FDK]|           |2025-05|FoDaKo                |
+|Animaldata                    |[catalog][animaldata]|           |2026-02|KI-TIERWOHL           |
 |BLE                              |[catalog][BLE]|[view][BLE]|2023-10|Julius-Kühn-Institut  |
 |DFG Chemistry                    |[catalog][CHE]|           |2023-08|FDM Bayern eHumanities|
 |DFG Chemistry                    |[catalog][N4C]|           |2024-06|NFDI4Chem             |
@@ -116,7 +117,7 @@ In order to file issues, you will need a GitHub account.
 |VW Foundation - Basic DMP            |[catalog][VWB]|       |2025-06|FDM Bayern eHumanities|
 |VW Foundation - Science Europe       |[catalog][VWE]|       |2021-04|FDM Bayern eHumanities|
 
-Total: 33 catalogs, 15 views
+Total: 34 catalogs, 15 views
 
 [AKU]:         shared/ub_fau_erlangen_nuernberg/dfg-alte-kulturen/
 [CHE]:         shared/ub_fau_erlangen_nuernberg/dfg-chemie/
@@ -127,6 +128,7 @@ Total: 33 catalogs, 15 views
 [EHU]:         shared/ub_fau_erlangen_nuernberg/h2020-ehum/
 [VWB]:         shared/ub_fau_erlangen_nuernberg/vw-stiftung-basisdmp
 [VWE]:         shared/ub_fau_erlangen_nuernberg/ScienceEurope_VW_Stiftung/
+[animaldata]:  shared/animaldata_v1/
 [BLE]:         shared/BLE_JKI/
 [D4N]:         shared/DMP4NFDI
 [FDK]:         shared/FoDaKo
