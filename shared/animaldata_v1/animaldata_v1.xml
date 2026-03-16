@@ -1,0 +1,3037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2026-01-16T16:37:25.574975+01:00" required="2.1.0" version="2.3.2">
+	<catalog dc:uri="https://rdmo.uni-rostock.de/questions/animaldata">
+		<uri_prefix>https://rdmo.uni-rostock.de</uri_prefix>
+		<uri_path>animaldata</uri_path>
+		<dc:comment/>
+		<order>0</order>
+		<title lang="en">DMP for animaldata</title>
+		<help lang="en">This catalogue is designed to record data management plans for animal experimental research.</help>
+		<title lang="de">DMP für Tierdaten</title>
+		<help lang="de">Dieser Katalog dient der Erfassung von Datenmanagementplänen für tierexperimentelle Forschung.</help>
+		<sections>
+			<section dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/general" order="1"/>
+			<section dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/specifics" order="2"/>
+			<section dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical" order="4"/>
+			<section dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/legal" order="5"/>
+		</sections>
+	</catalog>
+	<section dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/general">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>general</uri_path>
+		<dc:comment/>
+		<title lang="en">General information</title>
+		<short_title lang="en">general</short_title>
+		<title lang="de">Allgemeine Angaben</title>
+		<short_title lang="de">Allgemein</short_title>
+		<pages>
+			<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/administrative" order="1"/>
+			<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/administrative/dataset" order="2"/>
+		</pages>
+	</section>
+	<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/administrative">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>administrative</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Administrative informations</title>
+		<short_title lang="en">administrative</short_title>
+		<help lang="en">&lt;small&gt;
+This page collects all the information necessary for assigning and organizing the data. The page can only be filled out once for all datasets that have been integrated into this data management plan. 
+&lt;/small&gt;</help>
+		<verbose_name lang="en">1. administrative information</verbose_name>
+		<title lang="de">Administrative Informationen</title>
+		<short_title lang="de">Administrativ</short_title>
+		<help lang="de">&lt;small&gt;
+Auf dieser Seite werden alle Informationen gesammelt, die für die Zuordnung und Organisation der Daten notwendig sind. Die Seite kann nur einmal für alle Datensätze, die in diesem Datenmanagementplan integriert wurden, ausgefüllt werden. 
+&lt;/small&gt;</help>
+		<verbose_name lang="de">1. Administrative Informationen</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/administrative/project_title" order="0"/>
+			<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative/ble_general/acronym" order="1"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/administrative/project_sub-title" order="2"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/administrative/project_description" order="3"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/administrative/pi_responsible" order="4"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/reuse" order="5"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/archiving" order="6"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/administrative/project_title">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>administrative/project_title</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/title"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">&lt;small&gt;
+Project title written out
+&lt;/small&gt;</help>
+		<text lang="en">Title of the project</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Title of the project</verbose_name>
+		<help lang="de">&lt;small&gt;
+Ausgeschriebener Projekttitel
+&lt;/small&gt;</help>
+		<text lang="de">Titel des Projekts</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Titel des Projekts</verbose_name>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/title">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>title</key>
+		<path>project/title</path>
+		<dc:comment>Full project title, added for the text field &quot;Action Title&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>project</key>
+		<path>project</path>
+		<dc:comment/>
+		<parent/>
+	</attribute>
+	<question dc:uri="https://rdmo.julius-kuehn.de/terms/questions/ble/administrative/ble_general/acronym">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<uri_path>ble/administrative/ble_general/acronym</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/research_question/acronym"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">&lt;small&gt;
+Is there a short name for your project?
+&lt;/small&gt;</help>
+		<text lang="en">Project Acronym</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Project Acronym</verbose_name>
+		<help lang="de">&lt;small&gt;
+Gibt es einen Kurztitel für Ihr Projekt?
+&lt;/small&gt;</help>
+		<text lang="de">Projektakronym</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Prokektakronym</verbose_name>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/research_question/acronym">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>acronym</key>
+		<path>project/research_question/acronym</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/research_question"/>
+	</attribute>
+	<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project/research_question">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>research_question</key>
+		<path>project/research_question</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project"/>
+	</attribute>
+	<attribute dc:uri="https://rdmo.julius-kuehn.de/terms/domain/project">
+		<uri_prefix>https://rdmo.julius-kuehn.de/terms</uri_prefix>
+		<key>project</key>
+		<path>project</path>
+		<dc:comment/>
+		<parent/>
+	</attribute>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/administrative/project_sub-title">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>administrative/project_sub-title</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question/title"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">&lt;small&gt;
+Please enter the work package or another ID that uniquely identifies this sub-project here. 
+&lt;/small&gt;</help>
+		<text lang="en">Sub-Project Title</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">&lt;small&gt;
+Bitte hier das Arbeitspaket oder eine andere ID eingeben, die dieses Teilprojekt eindeutig identifiziert. 
+&lt;/small&gt;</help>
+		<text lang="de">Teilprojekttitel</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question/title">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>title</key>
+		<path>project/research_question/title</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>research_question</key>
+		<path>project/research_question</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
+	</attribute>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/administrative/project_description">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>administrative/project_description</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">&lt;small&gt;
+Summarise the goals of the project or sub-project in a few sentences.
+&lt;/small&gt;</help>
+		<text lang="en">Project or sub-project description</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">&lt;small&gt;
+Beschreiben Sie kurz und knapp die Ziele des Projekts oder Teilprojekts.
+&lt;/small&gt;</help>
+		<text lang="de">Projekt- oder Teilprojektbeschreibung</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/administrative/pi_responsible">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>administrative/pi_responsible</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">&lt;small&gt;
+Given Name Last Name, Institution, City, Country
+&lt;/small&gt;</help>
+		<text lang="en">Principal Investigator (PI)</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Principal Investigator (PI)</verbose_name>
+		<help lang="de">&lt;small&gt;
+Vorname Name, Institution, Stadt, Land
+&lt;/small&gt;</help>
+		<text lang="de">Projekt- oder Teilprojektleiter:in (PI)</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Projekt- oder Teilprojektleiter:in (PI)</verbose_name>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>partner</key>
+		<path>project/partner</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
+	</attribute>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/reuse">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/reuse</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reuse_scenario"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en"/>
+		<text lang="en">Who might be interested in reusing your data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Who might be interested in reusing your data?</verbose_name>
+		<help lang="de"/>
+		<text lang="de">Für wen könnte die Nachnutzung Ihrer Daten interessant sein?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Who might be interested in reusing your data?</verbose_name>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reuse_scenario">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>reuse_scenario</key>
+		<path>project/dataset/reuse_scenario</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>dataset</key>
+		<path>project/dataset</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
+	</attribute>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/archiving">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/archiving</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/data_archiving_date"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Where will the data be archived for a period of at least 10 years?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wo werden die Daten für die Dauer von mindestens 10 Jahren archiviert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/options/archiving_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/data_archiving_date">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>data_archiving_date</key>
+		<path>project/dataset/preservation/data_archiving_date</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>preservation</key>
+		<path>project/dataset/preservation</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<optionset dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/options/archiving_options">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata/terms</uri_prefix>
+		<uri_path>archiving_options</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/archiving_options/1" order="0"/>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/archiving_options/3" order="1"/>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/archiving_options/2" order="2"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/archiving_options/1">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>archiving_options/1</uri_path>
+		<dc:comment/>
+		<text lang="en">Central archiving for the project, at</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Zentraler Archivierung des Projekts, in</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/archiving_options/3">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>archiving_options/3</uri_path>
+		<dc:comment/>
+		<text lang="en">Central archiving at the institution</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Zentrale Archivierung in der Einrichtung</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/archiving_options/2">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>archiving_options/2</uri_path>
+		<dc:comment/>
+		<text lang="en">Other</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Andere</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/administrative/dataset">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>administrative/dataset</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">Record-specific persons</title>
+		<short_title lang="en">dataset persons</short_title>
+		<help lang="en">&lt;small&gt;
+Whenever you see one of these green buttons labelled ‘+Dataset’, you can create one or several datasets. This involves collecting descriptive metadata for this dataset. To access the questionnaire, you must create a dataset the first time you use it. You can name it as you wish. A data record usually contains an experiment or a group of data that belong together. On all subsequent pages, the tab for this data record will be displayed and you can also add the following information to the corresponding data record. On the following pages, you will also have the option to create a new data record.
+&lt;/small&gt;</help>
+		<verbose_name lang="en">dataset</verbose_name>
+		<title lang="de">Datensatzspezifische Personen</title>
+		<short_title lang="de">Personen Datensatz</short_title>
+		<help lang="de">&lt;small&gt;
+Immer wenn sie einen dieser grünen Buttons mit der Benennung &quot;+Datensatz&quot; sehen, können sie einen bzw. mehrere Datensätze anlegen. Dabei handelt es sich um die Erfassung der beschreibenden Metadaten für diesen Datensatz. Um den Fragenkatalog aufzurufen, muss bei der ersten Nutzung ein Datensatz angelegt werden. Diesen können sie nach ihren Wünschen benennen. Ein Datensatz umfasst meist ein Experiment oder eine Gruppe an Daten, die zusammengehören. Im Folgenden wird ihnen auf allen nachfolgenden Seiten der Reiter für diesen Datensatz angezeigt und sie können die nachfolgenden Informationen ebenfalls im entsprechenden Datensatz ergänzen. Auch auf den nachfolgenden Seiten wird ihnen weiterhin die Möglichkeit geboten, einen neuen Datensatz anzulegen. 
+&lt;/small&gt;</help>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/researchers" order="3"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/contact" order="4"/>
+		</questions>
+		<conditions/>
+	</page>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>id</key>
+		<path>project/dataset/id</path>
+		<dc:comment>Short ID for a dataset, used as questionset attribute for dataset related questionsets.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/researchers">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/researchers</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/contributor"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">&lt;small&gt;
+All persons involved in the creation of this dataset can be listed here (first name, surname, institution, country).
+&lt;/small&gt;</help>
+		<text lang="en">Persons involved in this dataset</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Researchers involved in this dataset</verbose_name>
+		<help lang="de">&lt;small&gt;
+Hier können alle Personen, die an der Erstellung dieses Datensatzes beteiligt sind, aufgelistet werden (Vorname Name, Institution, Land).
+&lt;/small&gt;</help>
+		<text lang="de">Beteiligte Personen an diesem Datensatz</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Beteiligte Forschende an diesem Datensatz</verbose_name>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/contributor">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata/terms</uri_prefix>
+		<key>contributor</key>
+		<path>project/dataset/contributor</path>
+		<dc:comment>https://rdmorganiser.github.io/terms/domain/project/dataset/creator</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/contact">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/contact</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/responsible_person"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">&lt;small&gt;
+This person will be named as the contact person in the case of publishing this data and will be the contact person for the FDM team during the project period. 
+(Given Name Last Name, Institution, Country, contact)
+&lt;/small&gt;</help>
+		<text lang="en">Person(s) responsible for this dataset</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Person responsible for this dataset</verbose_name>
+		<help lang="de">&lt;small&gt;
+Diese Person wird im Falle der Veröffentlichungen dieser Daten als Ansprechperson genannt und dient während der Projektlaufzeit dem FDM-Team als Ansprechperson. 
+(Vorname Name, Institution, Land, Kontakt)
+&lt;/small&gt;</help>
+		<text lang="de">Verantwortliche Person(en) für diesen Datensatz</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Verantwortliche Person für dieses Datenset</verbose_name>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/responsible_person">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata/terms</uri_prefix>
+		<key>responsible_person</key>
+		<path>project/dataset/responsible_person</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<section dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/specifics">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>specifics</uri_path>
+		<dc:comment>In diesem Abschnitt werden die Informationen erfasst, die für einzelne Experimente spezifisch sind und von den allgemeinen Informationen abweichen können. Dieser Abschnitt beinhaltet die Möglichkeit, mehrere Sets einzutragen (für einzelne Experimente), die anschließend in einem Dokument des DMP zusammengefasst werden.</dc:comment>
+		<title lang="en">Specific details about the datasets</title>
+		<short_title lang="en">specific</short_title>
+		<title lang="de">Spezifische Angaben zu den Datensets</title>
+		<short_title lang="de">Spezifisch</short_title>
+		<pages>
+			<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset" order="0"/>
+			<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/quality" order="1"/>
+			<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/sharing" order="2"/>
+			<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/documentation" order="3"/>
+		</pages>
+	</section>
+	<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">Data description</title>
+		<short_title lang="en">data description</short_title>
+		<help lang="en"/>
+		<verbose_name lang="en">Dataset</verbose_name>
+		<title lang="de">Datenbeschreibung</title>
+		<short_title lang="de">Datenbeschreibung</short_title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/description" order="0"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/description/keywords" order="1"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/volume" order="2"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/formats" order="3"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/content-classification/data-existing_data/origin" order="4"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/content-classification/data-existing_data/creator_name" order="5"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/data-existing_data/uri" order="6"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/quality-assurance-integration/integration" order="7"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/description">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/description</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/description"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">&lt;small&gt;
+Please briefly describe the experiment, the type of data and the method used to collect or generate the data.
+&lt;/small&gt;</help>
+		<text lang="en">What kind of data set is it?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">&lt;small&gt;
+Bitte beschreiben sie hier kurz den Versuch, um welchen Datentyp es sich handelt und mit welcher Methode die Daten erhoben oder erstellt wurden oder werden.
+&lt;/small&gt;</help>
+		<text lang="de">Um was für einen Datensatz handelt es sich?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/description">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>description</key>
+		<path>project/dataset/description</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/description/keywords">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/description/keywords</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/search_keywords"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">&lt;small&gt;
+Keywords that can be used to paraphrase the project, e.g., audio, video, individual animal recognition
+&lt;/small&gt;</help>
+		<text lang="en">Keywords</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Keywords</verbose_name>
+		<help lang="de">&lt;small&gt;
+Schlagworte mit denen das Projekt umschrieben werden kann, z. B.  Audio, Video, Einzeltiererkennung
+&lt;/small&gt;</help>
+		<text lang="de">Schlagworte</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Schlagworte</verbose_name>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/search_keywords">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>search_keywords</key>
+		<path>project/dataset/metadata/search_keywords</path>
+		<dc:comment>Added for the question &quot;Will search keywords be provided in the metadata to optimize the possibility for discovery and then potential re-use?&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>metadata</key>
+		<path>project/dataset/metadata</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/volume">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/volume</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/size/volume"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Which size of the data or which data volume is expected?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Welchen Umfang haben die Daten bzw. welches Datenvolumen wird erwartet?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>integer</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit>GB</unit>
+		<width>6</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/size/volume">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>volume</key>
+		<path>project/dataset/size/volume</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/size"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/size">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>size</key>
+		<path>project/dataset/size</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/formats">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/formats</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/format"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">&lt;smal&gt;
+Please enter **all** file formats contained in this dataset.
+&lt;/smal&gt;</help>
+		<text lang="en">Which formats are the data available in?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">&lt;small&gt;
+Bitte geben sie **alle** Formate der Dateien an, die in diesem Datensatz enthalten sind.
+&lt;/small&gt;</help>
+		<text lang="de">In welchen Formaten liegen die Daten vor?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/options/formats"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/format">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>format</key>
+		<path>project/dataset/format</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<optionset dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/options/formats">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata/terms</uri_prefix>
+		<uri_path>formats</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/formats/1" order="1"/>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/formats/2" order="2"/>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/formats/3" order="3"/>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/formats/4" order="4"/>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/formats/5" order="5"/>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/formats/6" order="6"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/formats/1">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>formats/1</uri_path>
+		<dc:comment/>
+		<text lang="en">.jpg, .png</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">.jpg, .png</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/formats/2">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>formats/2</uri_path>
+		<dc:comment/>
+		<text lang="en">.avi, .mov, .mp4</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">.avi, .mov, .mp4</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/formats/3">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>formats/3</uri_path>
+		<dc:comment/>
+		<text lang="en">.txt, .doc, .docx</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">.txt, .doc, .docx</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/formats/4">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>formats/4</uri_path>
+		<dc:comment/>
+		<text lang="en">.mp3, .wav</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">.mp3, .wav</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/formats/5">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>formats/5</uri_path>
+		<dc:comment/>
+		<text lang="en">.xlsx, .csv</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">.xlsx, .csv</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/formats/6">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>formats/6</uri_path>
+		<dc:comment/>
+		<text lang="en">other</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">andere</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/content-classification/data-existing_data/origin">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/content-classification/data-existing_data/origin</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Is the data set generated or reused?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wird der Datensatz selbst erzeugt oder nachgenutzt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>origin</key>
+		<path>project/dataset/origin</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin_options">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>dataset_origin_options</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin_options/148" order="1"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin_options/147" order="2"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin_options/146" order="3"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin_options/148">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>dataset_origin_options/148</uri_path>
+		<dc:comment/>
+		<text lang="en">Created</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Erzeugt</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin_options/147">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>dataset_origin_options/147</uri_path>
+		<dc:comment/>
+		<text lang="en">Re-used</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Nachgenutzt</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin_options/146">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>dataset_origin_options/146</uri_path>
+		<dc:comment/>
+		<text lang="en">Both (combination of re-used and newly generated data)</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Beides (Kombination aus nachgenutzten und neu erzeugten Daten)</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/content-classification/data-existing_data/creator_name">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/content-classification/data-existing_data/creator_name</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator/name"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">If reused, who created the data set?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wenn nachgenutzt, wer hat den Datensatz erzeugt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/if_reused1"/>
+			<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/if_reused2"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator/name">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>name</key>
+		<path>project/dataset/creator/name</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>creator</key>
+		<path>project/dataset/creator</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/if_reused1">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>if_reused1</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin"/>
+		<relation>eq</relation>
+		<target_text>[&quot;Nachgenutzt&quot;]</target_text>
+		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin_options/147"/>
+	</condition>
+	<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/if_reused2">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>if_reused2</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin"/>
+		<relation>eq</relation>
+		<target_text>[&quot;Beides (Kombination aus nachgenutzten und neu erzeugten Daten)&quot;]</target_text>
+		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin_options/146"/>
+	</condition>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/data-existing_data/uri">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/data-existing_data/uri</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/uri"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">If reused, at what address, PID or URL is the data set available?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">New PID or URL</verbose_name>
+		<help lang="de"/>
+		<text lang="de">Wenn nachgenutzt, unter welcher Adresse, PID oder URL ist der Datensatz verfügbar?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Neuer PID oder URL</verbose_name>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/if_reused1"/>
+			<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/if_reused2"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/uri">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>uri</key>
+		<path>project/dataset/uri</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/quality-assurance-integration/integration">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/data-usage/quality-assurance-integration/integration</uri_path>
+		<dc:comment>The stipulation that reused and created data are of the same type (= and thus capable to be integrated) is problematic, since this implies properties of the data that are not a given. May be this shoud be reformulated to: Is the connection between re-used and created data ensures (which goes into the provenance realm)</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/integration"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">For example, how is the origin and quality of the data documented?</help>
+		<text lang="en">Is integration between reused and newly created data ensured? If so, how?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Wie wird z. B. Herkunft und Qualität der Daten dokumentiert?</help>
+		<text lang="de">Wird die Integration zwischen nachgenutzten und erzeugten Daten gewährleistet? Wenn ja, wie?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/if_reused1"/>
+			<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/if_reused2"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/integration">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>integration</key>
+		<path>project/dataset/integration</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/quality">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/quality</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">Data quality</title>
+		<short_title lang="en">quality</short_title>
+		<help lang="en"/>
+		<verbose_name lang="en">Dataset</verbose_name>
+		<title lang="de">Datenqualität</title>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/quality-assurance-dataset/measures" order="0"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/quality/sop" order="1"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/quality/other_files" order="2"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/quality-assurance-dataset/measures">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/data-usage/quality-assurance-dataset/measures</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/quality_assurance"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Examples include completeness checks, data reconciliation, sampling procedures. These measures are used to identify documentation errors and arithmetic anomalies.</help>
+		<text lang="en">What quality assurance measures are in place for this data set?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Beispiele sind Überprüfung auf Vollständigkeit, Datenabgleich, Stichprobenverfahren. Diese Maßnahmen dienen dazu Dokumentationsfehler und rechnerische Auffälligkeiten zu ermitteln.</help>
+		<text lang="de">Welche Maßnahmen zur Qualitätssicherung werden für diesen Datensatz ergriffen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/quality_assurance">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>quality_assurance</key>
+		<path>project/dataset/quality_assurance</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/quality/sop">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/quality/sop</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/method/sop"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Which SOPs apply to this data set?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">New SOP</verbose_name>
+		<help lang="de">&lt;small&gt;
+
+&lt;/small&gt;</help>
+		<text lang="de">Welche SOPs sind für diesen Datensatz zutreffend?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Weitere SOP</verbose_name>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/method/sop">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata/terms</uri_prefix>
+		<key>sop</key>
+		<path>project/dataset/method/sop</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/method"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/method">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>method</key>
+		<path>project/dataset/method</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/quality/other_files">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/quality/other_files</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/documentation/documents"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Are there any other documents relvant to the dataset?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Gibt es weitere Dokumente die für den Datensatz relevant sind?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>file</widget_type>
+		<value_type>file</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/documentation/documents">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata/terms</uri_prefix>
+		<key>documents</key>
+		<path>project/dataset/documentation/documents</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>documentation</key>
+		<path>project/dataset/documentation</path>
+		<dc:comment>Added for the question which documentation will be available together with the data</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/sharing">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/sharing</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">Data sharing and long-term access to the data</title>
+		<short_title lang="en">sharing and long-term access</short_title>
+		<help lang="en"/>
+		<verbose_name lang="en">Dataset</verbose_name>
+		<title lang="de">Datenaustausch und dauerhafte Zugänglichkeit der Daten</title>
+		<short_title lang="de">Austausch und Zugänglichkeit</short_title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use-publication/yesno" order="2"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use-publication/repository" order="3"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use-publication/conditions" order="4"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/sharing/restrictions" order="7"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use-publication/yesno">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/data-usage/data-sharing-and-re-use-publication/yesno</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Will this data set be published or shared?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wird dieser Datensatz veröffentlicht oder geteilt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/yesno">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>yesno</key>
+		<path>project/dataset/sharing/yesno</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>sharing</key>
+		<path>project/dataset/sharing</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>dataset_sharing_options</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options/69" order="1"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options/68" order="2"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options/67" order="3"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options/70" order="4"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options/69">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>dataset_sharing_options/69</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes, externally for everyone</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja, extern für alle</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options/68">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>dataset_sharing_options/68</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes, externally limited with individual approval</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja, extern in begrenztem Umfang mit individueller Freigabe</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options/67">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>dataset_sharing_options/67</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes, internally with everyone, as long as they don't pass on the data</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja, intern mit allen, solange sie die Daten nicht veröffentlichen oder nach außen weitergeben</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options/70">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>dataset_sharing_options/70</uri_path>
+		<dc:comment/>
+		<text lang="en">No</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Nein</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use-publication/repository">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/data-usage/data-sharing-and-re-use-publication/repository</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/repository"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Please provide information about the repository/database.</help>
+		<text lang="en">If so, where are the data published?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Nennen Sie das Repositorium/die Datenbank, ggf. mit Link.</help>
+		<text lang="de">Wenn ja, wo werden die Daten veröffentlicht?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/sharing_yes1"/>
+			<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/sharing_yes2"/>
+			<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/sharing_yes3"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/repository">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>repository</key>
+		<path>project/dataset/sharing/repository</path>
+		<dc:comment>Refers to the place of publication, which must be distinguished from the place of storaging and archiving (see https://github.com/rdmorganiser/rdmo-catalog/issues/55)</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing"/>
+	</attribute>
+	<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/sharing_yes1">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>sharing_yes1</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/yesno"/>
+		<relation>eq</relation>
+		<target_text>[&quot;Ja, extern für alle&quot;]</target_text>
+		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options/69"/>
+	</condition>
+	<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/sharing_yes2">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>sharing_yes2</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/yesno"/>
+		<relation>eq</relation>
+		<target_text>[&quot;Ja, extern in begrenztem Umfang mit individueller Freigabe&quot;]</target_text>
+		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options/68"/>
+	</condition>
+	<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/sharing_yes3">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>sharing_yes3</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/yesno"/>
+		<relation>eq</relation>
+		<target_text>[&quot;Ja, intern mit allen, solange sie die Daten nicht veröffentlichen oder nach außen weitergeben&quot;]</target_text>
+		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_sharing_options/67"/>
+	</condition>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use-publication/conditions">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/data-usage/data-sharing-and-re-use-publication/conditions</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/conditions"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">The options refer to the licenses of the &lt;a href=&quot;https://creativecommons.org/licenses/?lang=en&quot; target=&quot;_blank&quot;&gt;Creative Commons family&lt;/a&gt;.</help>
+		<text lang="en">If so, under which terms of use or license is the data set published or shared?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Die Auswahlmöglichkeiten orientieren sich an Lizenzen der &lt;a href=&quot;https://creativecommons.org/licenses/?lang=de&quot; target=&quot;_blank&quot;&gt;Creative-Commons-Familie&lt;/a&gt;.</help>
+		<text lang="de">Wenn ja, unter welchen Nutzungsbedingungen oder welcher Lizenz werden die Daten veröffentlicht bzw. geteilt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/sharing_yes1"/>
+			<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/sharing_yes2"/>
+			<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/sharing_yes3"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/conditions">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>conditions</key>
+		<path>project/dataset/sharing/conditions</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing"/>
+	</attribute>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>dataset_license_types</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/71" order="1"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/73" order="2"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/74" order="3"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/75" order="4"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/ODC-By" order="5"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/ODbl" order="6"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/cc0" order="7"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/233" order="8"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/71">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>dataset_license_types/71</uri_path>
+		<dc:comment>https://creativecommons.org/licenses/by/4.0/legalcode</dc:comment>
+		<text lang="en">Creative Commons Attribution (CC-BY)</text>
+		<help lang="en">https://creativecommons.org/licenses/by/4.0/legalcode.en</help>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Creative Commons Namensnennung (CC-BY)</text>
+		<help lang="de">https://creativecommons.org/licenses/by/4.0/legalcode.de</help>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/73">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>dataset_license_types/73</uri_path>
+		<dc:comment>https://creativecommons.org/licenses/by-nc/4.0/legalcode</dc:comment>
+		<text lang="en">Creative Commons Attribution-NonCommercial (CC-BY-NC)</text>
+		<help lang="en">https://creativecommons.org/licenses/by-nc/4.0/legalcode.en</help>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Creative Commons Namensnennung-Nicht kommerziell (CC-BY-NC)</text>
+		<help lang="de">https://creativecommons.org/licenses/by-nc/4.0/legalcode.de</help>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/74">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>dataset_license_types/74</uri_path>
+		<dc:comment>https://creativecommons.org/licenses/by-nd/4.0/legalcode</dc:comment>
+		<text lang="en">Creative Commons Attribution-NoDerivatives (CC-BY-ND)</text>
+		<help lang="en">https://creativecommons.org/licenses/by-nd/4.0/legalcode.en</help>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Creative Commons Namensnennung-Keine Bearbeitungen (CC-BY-ND)</text>
+		<help lang="de">https://creativecommons.org/licenses/by-nd/4.0/legalcode.de</help>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/75">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>dataset_license_types/75</uri_path>
+		<dc:comment>https://creativecommons.org/licenses/by-sa/4.0/legalcode</dc:comment>
+		<text lang="en">Creative Commons Attribution-ShareAlike (CC-BY-SA)</text>
+		<help lang="en">https://creativecommons.org/licenses/by-sa/4.0/legalcode.en</help>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Creative Commons Namensnennung-ShareAlike (CC-BY-SA)</text>
+		<help lang="de">https://creativecommons.org/licenses/by-sa/4.0/legalcode.de</help>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/ODC-By">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>dataset_license_types/ODC-By</uri_path>
+		<dc:comment>https://opendatacommons.org/licenses/by/1-0/</dc:comment>
+		<text lang="en">Open Data Commons Attribution</text>
+		<help lang="en">https://opendatacommons.org/licenses/by/1-0/</help>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Open Data Commons Attribution</text>
+		<help lang="de">https://opendatacommons.org/licenses/by/1-0/</help>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/ODbl">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>dataset_license_types/ODbl</uri_path>
+		<dc:comment>https://opendatacommons.org/licenses/odbl/1-0/</dc:comment>
+		<text lang="en">Open Data Commons Open Database</text>
+		<help lang="en">https://opendatacommons.org/licenses/odbl/1-0/</help>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Open Data Commons Open Database</text>
+		<help lang="de">https://opendatacommons.org/licenses/odbl/1-0/</help>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/cc0">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>dataset_license_types/cc0</uri_path>
+		<dc:comment/>
+		<text lang="en">Public domain (CC0)</text>
+		<help lang="en">https://creativecommons.org/publicdomain/zero/1.0/legalcode.en or https://opendatacommons.org/licenses/pddl/1-0/</help>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Gemeinfrei (CC0)</text>
+		<help lang="de">https://creativecommons.org/publicdomain/zero/1.0/legalcode.de or https://opendatacommons.org/licenses/pddl/1-0/</help>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/233">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>dataset_license_types/233</uri_path>
+		<dc:comment/>
+		<text lang="en">Other, or exact designation – if known</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Andere, bzw. genaue Bezeichnung – falls bekannt</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/sharing/restrictions">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/sharing/restrictions</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/restrictions_explanation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">&lt;small&gt;
+If you do not wish to share the data, please explain your decision.
+If the data is only to be exchanged between research institutions, please enter the specifications for internal data exchange in this field and select a license option (if possible) anyway.  
+&lt;/small&gt;</help>
+		<text lang="en">If the reuse of this dataset is subject to restrictions, please explain the reasons.</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">&lt;small&gt;
+Falls sie die Daten nicht teilen wollen, begründen sie diese Entscheidung.
+Falls die Daten nur zwischen Forschungseinrichtungen ausgetauscht werden sollen, hinterlegen sie in diesem Feld bitte die Vorgaben für den internen Datenaustausch und wählen sie (falls möglich) trotzdem eine Lizenz-Option. 
+&lt;/small&gt;</help>
+		<text lang="de">Unterliegt die Nachnutzung dieses Datensatzes Einschränkungen, erläutern Sie bitte die Gründe.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/restrictions_explanation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>restrictions_explanation</key>
+		<path>project/dataset/sharing/restrictions_explanation</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing"/>
+	</attribute>
+	<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/documentation">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/documentation</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Data documentation</title>
+		<short_title lang="en">documentation</short_title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Dokumentation der Daten</title>
+		<short_title lang="de">Dokumentation</short_title>
+		<help lang="de"/>
+		<verbose_name lang="de">4. Dokumentation der Daten</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/documentation/scheme_file" order="2"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/documentation/location" order="3"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/documentation/scheme_file">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/documentation/scheme_file</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/documentation/schema"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">&lt;small&gt;
+Provide information here to ensure the readability of your filing system. If you use a standardised system, please specify this, e.g.:
+
+* 7-folder system
+* own filing system
+&lt;/small&gt;</help>
+		<text lang="en">Details about the file-system</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">&lt;small&gt;
+Hinterlegen sie hier Informationen für die Lesbarkeit ihrer Ablage, falls Sie ein standardisiertes System verwenden geben Sie dieses an, z. B.:
+
+* 7-Ordner-System
+* eigenes Ablagesystem
+&lt;/small&gt;</help>
+		<text lang="de">Angaben zum Ablagesystem</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/documentation/schema">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata/terms</uri_prefix>
+		<key>schema</key>
+		<path>project/dataset/documentation/schema</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation"/>
+	</attribute>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/dataset/documentation/location">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/documentation/location</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation/where"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">&lt;small&gt;
+Please enter the storage order (path) of the documentation for the storage system here.
+&lt;/small&gt;</help>
+		<text lang="en">location of the storage documentation</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">&lt;small&gt;
+Bitte geben sie hier den Ablageorder (Pfad) der Dokumentation für das Ablagesystem an.
+&lt;/small&gt;</help>
+		<text lang="de">Ablageort der Dokumentation</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation/where">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>where</key>
+		<path>project/dataset/documentation/where</path>
+		<dc:comment>Added for the question where the documentation can be found</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation"/>
+	</attribute>
+	<section dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>technical</uri_path>
+		<dc:comment/>
+		<title lang="en">Technical informations</title>
+		<short_title lang="en">technical</short_title>
+		<title lang="de">Technische Angaben</title>
+		<short_title lang="de">Technisch</short_title>
+		<pages>
+			<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical/storage_security" order="1"/>
+			<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical/cost_assessment" order="2"/>
+		</pages>
+	</section>
+	<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical/storage_security">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>technical/storage_security</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">Storage and data security during the project period</title>
+		<short_title lang="en">storage and security</short_title>
+		<help lang="en"/>
+		<verbose_name lang="en">Dataset</verbose_name>
+		<title lang="de">Speicherung und Datensicherheit während der Projektlaufzeit</title>
+		<short_title lang="de">Speicherung und Sicherheit</short_title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-storage-and-security-storage/type" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-storage-and-security-data_security/access_permissions" order="1"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical/storage/backups" order="2"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical/storage/rates" order="3"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-storage-and-security-data_security/security_measures" order="4"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-storage-and-security-storage/type">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/data-usage/data-storage-and-security-storage/type</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage/type"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Where is the data set stored during the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wo wird der Datensatz während des Projektes gespeichert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage/type">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>type</key>
+		<path>project/dataset/storage/type</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>storage</key>
+		<path>project/dataset/storage</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-storage-and-security-data_security/access_permissions">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/data-usage/data-storage-and-security-data_security/access_permissions</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/access_permissions"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">e.g. project members, project partners, internal only, external partners</help>
+		<text lang="en">Who can access the data set?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">z. B. Projektmitglieder, Projektpartner, nur Interne, externe Partner</help>
+		<text lang="de">Wer darf auf den Datensatz zugreifen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/access_permissions">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>access_permissions</key>
+		<path>project/dataset/data_security/access_permissions</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>data_security</key>
+		<path>project/dataset/data_security</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical/storage/backups">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>technical/storage/backups</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backups"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">How and how often will the data be backed up?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wie und wie oft werden Backups der Daten erstellt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/options/backup_strategy"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backups">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>backups</key>
+		<path>project/dataset/data_security/backups</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security"/>
+	</attribute>
+	<optionset dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/options/backup_strategy">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata/terms</uri_prefix>
+		<uri_path>backup_strategy</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/backup_strategy/1" order="1"/>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/backup_strategy/2" order="2"/>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/backup_strategy/3" order="3"/>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/backup_strategy/4" order="4"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/backup_strategy/1">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>backup_strategy/1</uri_path>
+		<dc:comment/>
+		<text lang="en">weekly by the institution</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">wöchentlich durch die Einrichtung</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/backup_strategy/2">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>backup_strategy/2</uri_path>
+		<dc:comment/>
+		<text lang="en">monthly by the institution</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">monatlich durch die Einrichtung</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/backup_strategy/3">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>backup_strategy/3</uri_path>
+		<dc:comment/>
+		<text lang="en">at a different frequency through the institution</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">in einem anderen Rhythmus durch die Einrichtung</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/backup_strategy/4">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>backup_strategy/4</uri_path>
+		<dc:comment/>
+		<text lang="en">different frequency and/or provider</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">anderer Rhythmus und/oder Anbieter</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical/storage/rates">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>technical/storage/rates</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage/organisation_policy"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">&lt;small&gt;
+e.g. different backup rates for different file formats
+&lt;/small&gt;</help>
+		<text lang="en">Are there any special features of the backup or storage strategy in your institution (with regard to the data in this dataset)?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">&lt;small&gt;
+z. B. unterschiedliche Backup-Raten für unterschiedliche Dateiformate
+&lt;/small&gt;</help>
+		<text lang="de">Gibt es Besonderheiten für die Backup- oder Speicher-Strategie in ihrer Einrichtung (bezogen auf die Daten in diesem Datensatz)?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage/organisation_policy">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>organisation_policy</key>
+		<path>project/dataset/storage/organisation_policy</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage"/>
+	</attribute>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-storage-and-security-data_security/security_measures">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/data-usage/data-storage-and-security-data_security/security_measures</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/security_measures"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">What measures or provisions are in place to ensure data security (e.g. protection against unauthorised access, data recovery, transmission of sensitive data)?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Welche Maßnahmen zur Gewährleistung der Datensicherheit werden getroffen (z. B. Schutz vor unbefugtem Zugriff, Datenwiederherstellung, Übertragung sensibler Daten)?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/security_measures">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>security_measures</key>
+		<path>project/dataset/data_security/security_measures</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security"/>
+	</attribute>
+	<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical/cost_assessment">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>technical/cost_assessment</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">Cost assessment for implementation</title>
+		<short_title lang="en">Cost assessment</short_title>
+		<help lang="en"/>
+		<verbose_name lang="en">Dataset</verbose_name>
+		<title lang="de">Kostenerhebung für die Implementierung</title>
+		<short_title lang="de">Kostenerhebung</short_title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<questionsets>
+			<questionset dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical/cost_assessment_special_events" order="5"/>
+		</questionsets>
+		<questions/>
+		<conditions/>
+	</page>
+	<questionset dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical/cost_assessment_special_events">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>technical/cost_assessment_special_events</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/costs"/>
+		<is_collection>True</is_collection>
+		<title lang="en">Provide the following information for each event.</title>
+		<help lang="en"/>
+		<verbose_name lang="en">New event</verbose_name>
+		<title lang="de">Geben Sie folgende Informationen zu jedem Ereignis an.</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Neues Ereignis</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical/cost_assessment_special_events/type" order="1"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical/cost_assessment_special_events/why" order="2"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical/cost_assessment_special_events/what" order="3"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical/cost_assessment_special_events/who" order="4"/>
+		</questions>
+		<conditions/>
+	</questionset>
+	<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/costs">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata/terms</uri_prefix>
+		<key>costs</key>
+		<path>project/dataset/costs</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical/cost_assessment_special_events/type">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>technical/cost_assessment_special_events/type</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/costs/type"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">What is the reason for being there?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Was ist der Grund für den Aufenthalt vor Ort?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.uni-rostock.de/animaldata/options/dataset/costs"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/costs/type">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata/terms</uri_prefix>
+		<key>type</key>
+		<path>project/dataset/costs/type</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/costs"/>
+	</attribute>
+	<optionset dc:uri="https://rdmo.uni-rostock.de/animaldata/options/dataset/costs">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/costs</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/dataset/costs/type/installation" order="1"/>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/dataset/costs/type/maintenance" order="2"/>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/dataset/costs/type/extraordinary" order="3"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/dataset/costs/type/installation">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/costs/type/installation</uri_path>
+		<dc:comment/>
+		<text lang="en">installation</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Installation</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/dataset/costs/type/maintenance">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/costs/type/maintenance</uri_path>
+		<dc:comment/>
+		<text lang="en">Ongoing (regular) maintenance/inspection</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Laufende (reguläre) Wartung/Kontrolle</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/dataset/costs/type/extraordinary">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>dataset/costs/type/extraordinary</uri_path>
+		<dc:comment/>
+		<text lang="en">extraordinary event</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Außergewöhnlicher Vorfall</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical/cost_assessment_special_events/why">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>technical/cost_assessment_special_events/why</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/costs/reason"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Why was a visit necessary?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Warum war ein Aufenthalt notwendig?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/costs_type_installation"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/costs/reason">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata/terms</uri_prefix>
+		<key>reason</key>
+		<path>project/dataset/costs/reason</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/costs"/>
+	</attribute>
+	<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/costs_type_installation">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>costs_type_installation</uri_path>
+		<dc:comment>sensitive data within the dataset.</dc:comment>
+		<source dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/costs/type"/>
+		<relation>neq</relation>
+		<target_text/>
+		<target_option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/dataset/costs/type/installation"/>
+	</condition>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical/cost_assessment_special_events/what">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>technical/cost_assessment_special_events/what</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/costs/activity"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">What was done and which materials were used?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Was wurde gemacht und welche Materialien wurden dabei verbraucht?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/costs/activity">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata/terms</uri_prefix>
+		<key>activity</key>
+		<path>project/dataset/costs/activity</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/costs"/>
+	</attribute>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/technical/cost_assessment_special_events/who">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>technical/cost_assessment_special_events/who</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/costs/person"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Which person worked on the event and for how long?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Durch welche Person wurde wie lange am Ereignis gearbeitet?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/costs/person">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata/terms</uri_prefix>
+		<key>person</key>
+		<path>project/dataset/costs/person</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/domain/project/dataset/costs"/>
+	</attribute>
+	<section dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/legal">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>legal</uri_path>
+		<dc:comment/>
+		<title lang="en">Legal informations</title>
+		<short_title lang="en">legal</short_title>
+		<title lang="de">Rechtliche Angaben</title>
+		<short_title lang="de">Rechtlich</short_title>
+		<pages>
+			<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/legal/international" order="1"/>
+			<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/legal/national" order="2"/>
+			<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/legal/national/sensitive_data" order="3"/>
+		</pages>
+	</section>
+	<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/legal/international">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>legal/international</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">International laws</title>
+		<short_title lang="en">international</short_title>
+		<help lang="en"/>
+		<verbose_name lang="en">Dataset</verbose_name>
+		<title lang="de">Internationale Rechtslage</title>
+		<short_title lang="de">International</short_title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/legal-and-ethics/general-legal-issues-international_yesno/international_yesno" order="0"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/legal-and-ethics/general-legal-issues-international_yesno/international_yesno">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/legal-and-ethics/general-legal-issues-international_yesno/international_yesno</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/international_yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">If the answer to this question is yes, please contact your institution's legal department or equivalent to see what, if any, implications there are for your project.</help>
+		<text lang="en">Does the legal situation of different countries have to be considered?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Falls Sie diese Frage mit &quot;Ja&quot; beantworten, setzen Sie sich bitte mit der Rechtsabteilung bzw. einem/r entsprechenden Ansprechpartner/in an Ihrer Institution in Verbindung, um zu klären, ob sich daraus Konsequenzen für Ihr Projekt ergeben und wenn ja, welche dies sind.</help>
+		<text lang="de">Muss die rechtliche Situation verschiedener Länder berücksichtigt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/international_yesno">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>international_yesno</key>
+		<path>project/legal_aspects/international_yesno</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>legal_aspects</key>
+		<path>project/legal_aspects</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
+	</attribute>
+	<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/legal/national">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>legal/national</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">National law</title>
+		<short_title lang="en">national</short_title>
+		<help lang="en"/>
+		<verbose_name lang="en">Dataset</verbose_name>
+		<title lang="de">Nationale Rechtslage</title>
+		<short_title lang="de">National</short_title>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/legal-and-ethics/sensitive-data-privacy_law/privacy_law" order="0"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/legal/national/special_law" order="1"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/legal-and-ethics/sensitive-data-privacy_law/privacy_law">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/legal-and-ethics/sensitive-data-privacy_law/privacy_law</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/sensitive_data/privacy_law"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">The &lt;a href=&quot;https://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32016R0679&quot; target=&quot;_blank&quot;&gt;EU General Data Protection Regulation (GDPR)&lt;/a&gt; takes precedence over German national law. It has been in force since 25 May 2018. For universities, state data protection laws continue to apply, which may contain certain provisions of the GDPR, such as the &lt;a href=&quot;https://recht.nrw.de/lmi/owa/br_text_anzeigen?v_id=3520071121100436275&quot; target=&quot;_blank&quot;&gt;Data Protection Act of North Rhine-Westphalia (DSG NRW)&lt;/a&gt;.
+
+In certain areas, specific laws apply that take precedence over the state data protection laws or the  &lt;a href=&quot;https://www.gesetze-im-internet.de/englisch_bdsg/index.html&quot; target=&quot;_blank&quot;&gt; Federal Data Protection Act (BDSG)&lt;/a&gt;.
+
+* For example, the Tenth Social Code (SGB X) applies to medical data,
+
+* For microcensus data, the Federal Statistics Act (BStatG) applies.
+
+Thus, depending on the research project, more than one law may apply.</help>
+		<text lang="en">In addition to the European GDPR, what other data protection laws are applicable to the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Die &lt;a href=&quot;https://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32016R0679&quot; target=&quot;_blank&quot;&gt;EU Datenschutzgrundverordnung (DSGVO)&lt;/a&gt; hat Vorrang vor deutsch-nationalem Recht. Sie findet seit dem 25.05.2018 Anwendung. Für Hochschulen finden weiterhin die Landesdatenschutzgesetze Anwendung, die bestimmte Regelungen der DSGVO ausgestalten können, z. B. &lt;a href=&quot;https://recht.nrw.de/lmi/owa/br_text_anzeigen?v_id=3520071121100436275&quot; target=&quot;_blank&quot;&gt;Datenschutzgesetz Nordrhein-Westfalen (DSG NRW)&lt;/a&gt;.
+
+In bestimmten Bereichen gelten spezifische Gesetze, die über den Landesdatenschutzgesetzen bzw. &lt;a href=&quot;http://www.gesetze-im-internet.de/bdsg_2018/&quot; target=&quot;_blank&quot;&gt;Bundesdatenschutzgesetz (BDSG)&lt;/a&gt; stehen.
+
+* Für medizinischen Daten ist bspw. das Zehnte Sozialgesetzbuch (SGB X) anwendbar,
+* Für Daten des Mikrozensus das Bundesstatistikgesetz (BStatG).
+* Für Forschung in Schulen in NRW das Schulgesetz NRW (SchulG NRW)
+
+Demzufolge können je nach Forschungsprojekt auch mehrere Gesetze betroffen sein.</help>
+		<text lang="de">Welche Gesetze sind neben der europäischen DSGVO bezüglich der Fragen des Datenschutzes für das Projekt zu beachten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/sensitive_data/privacy_law">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>privacy_law</key>
+		<path>project/legal_aspects/sensitive_data/privacy_law</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/sensitive_data"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/sensitive_data">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>sensitive_data</key>
+		<path>project/legal_aspects/sensitive_data</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects"/>
+	</attribute>
+	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/21" order="1"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/22" order="2"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/23" order="3"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/24" order="4"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/25" order="5"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/26" order="6"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/27" order="7"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/28" order="8"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/29" order="9"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/30" order="10"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/31" order="11"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/32" order="12"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/33" order="13"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/34" order="14"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/35" order="15"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/36" order="16"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/37" order="17"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/38" order="18"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/39" order="19"/>
+			<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/155" order="100"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/21">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/21</uri_path>
+		<dc:comment/>
+		<text lang="en">Bundesdatenschutzgesetz (BDSG, Federal Data Protection Act)</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Bundesdatenschutzgesetz (BDSG)</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/22">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/22</uri_path>
+		<dc:comment/>
+		<text lang="en">Landesdatenschutzgesetz Baden-Württemberg (State Data Protection Act of Baden-Württemberg)</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Landesdatenschutzgesetz Baden-Württemberg</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/23">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/23</uri_path>
+		<dc:comment/>
+		<text lang="en">Landesdatenschutzgesetz Bayern (State Data Protection Act of Bavaria)</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Landesdatenschutzgesetz Bayern</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/24">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/24</uri_path>
+		<dc:comment/>
+		<text lang="en">Landesdatenschutzgesetz Berlin (State Data Protection Act of Berlin)</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Landesdatenschutzgesetz Berlin</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/25">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/25</uri_path>
+		<dc:comment/>
+		<text lang="en">Landesdatenschutzgesetz Bremen (State Data Protection Act of Bremen)</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Landesdatenschutzgesetz Bremen</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/26">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/26</uri_path>
+		<dc:comment/>
+		<text lang="en">Landesdatenschutzgesetz Brandenburg (State Data Protection Act of Brandenburg)</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Landesdatenschutzgesetz Brandenburg</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/27">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/27</uri_path>
+		<dc:comment/>
+		<text lang="en">Landesdatenschutzgesetz Hamburg (State Data Protection Act of Hamburg)</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Landesdatenschutzgesetz Hamburg</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/28">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/28</uri_path>
+		<dc:comment/>
+		<text lang="en">Landesdatenschutzgesetz Mecklenburg-Vorpommern (State Data Protection Act of Mecklenburg-Vorpommern)</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Landesdatenschutzgesetz Mecklenburg-Vorpommern</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/29">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/29</uri_path>
+		<dc:comment/>
+		<text lang="en">Landesdatenschutzgesetz Hessen (State Data Protection Act of Hesse)</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Landesdatenschutzgesetz Hessen</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/30">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/30</uri_path>
+		<dc:comment/>
+		<text lang="en">Landesdatenschutzgesetz Nordrhein-Westfalen (State Data Protection Act of North Rhine-Westphalia)</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Landesdatenschutzgesetz Nordrhein-Westfalen</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/31">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/31</uri_path>
+		<dc:comment/>
+		<text lang="en">Landesdatenschutzgesetz Rheinland-Pfalz (State Data Protection Act of Rhineland-Palatinate)</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Landesdatenschutzgesetz Rheinland-Pfalz</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/32">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/32</uri_path>
+		<dc:comment/>
+		<text lang="en">Landesdatenschutzgesetz Niedersachsen (State Data Protection Act of Lower Saxony)</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Landesdatenschutzgesetz Niedersachsen</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/33">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/33</uri_path>
+		<dc:comment/>
+		<text lang="en">Landesdatenschutzgesetz Saarland (State Data Protection Act of Saarland)</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Landesdatenschutzgesetz Saarland</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/34">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/34</uri_path>
+		<dc:comment/>
+		<text lang="en">Landesdatenschutzgesetz Sachsen (State Data Protection Act of Saxony)</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Landesdatenschutzgesetz Sachsen</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/35">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/35</uri_path>
+		<dc:comment/>
+		<text lang="en">Landesdatenschutzgesetz Sachsen-Anhalt (State Data Protection Act of Saxony-Anhalt)</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Landesdatenschutzgesetz Sachsen-Anhalt</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/36">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/36</uri_path>
+		<dc:comment/>
+		<text lang="en">Landesdatenschutzgesetz Schleswig-Holstein (State Data Protection Act of Schleswig-Holstein)</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Landesdatenschutzgesetz Schleswig-Holstein</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/37">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/37</uri_path>
+		<dc:comment/>
+		<text lang="en">Landesdatenschutzgesetz Thüringen (State Data Protection Act of Thuringia)</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Landesdatenschutzgesetz Thüringen</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/38">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/38</uri_path>
+		<dc:comment/>
+		<text lang="en">Sozialgesetzbuch X (Volume X of the German Social Insurance Code), e.g. for medical data</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Sozialgesetzbuch X (z. B. für medizinische Daten)</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/39">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/39</uri_path>
+		<dc:comment/>
+		<text lang="en">Bundesstatistikgesetz (German Federal Statistics Act), e.g. for census data</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Bundesstatistikgesetz (z. B. für Zensusdaten)</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/data_protection_laws/155">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>data_protection_laws/155</uri_path>
+		<dc:comment/>
+		<text lang="en">Other</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Sonstiges</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/legal/national/special_law">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>legal/national/special_law</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/other_rights"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Which legal aspects should be considered in relation to your dataset?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Welche rechtlichen Besonderheiten sind bei Ihren Datensatz zu beachten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/options/animal_specific_law"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/other_rights">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>other_rights</key>
+		<path>project/dataset/ipr/other_rights</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>ipr</key>
+		<path>project/dataset/ipr</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<optionset dc:uri="https://rdmo.uni-rostock.de/animaldata/terms/options/animal_specific_law">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata/terms</uri_prefix>
+		<uri_path>animal_specific_law</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/animal_specific_law/1" order="0"/>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/animal_specific_law/2" order="1"/>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/animal_specific_law/3" order="2"/>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/animal_specific_law/5" order="3"/>
+			<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/animal_specific_law/4" order="4"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/animal_specific_law/1">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>animal_specific_law/1</uri_path>
+		<dc:comment/>
+		<text lang="en">German Animal Welfare Act</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Deutsches Tierschutzgesetz</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/animal_specific_law/2">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>animal_specific_law/2</uri_path>
+		<dc:comment/>
+		<text lang="en">Animal Welfare (Laboratory Animals) Regulations</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Tierschutzversuchstierverordnung</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/animal_specific_law/3">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>animal_specific_law/3</uri_path>
+		<dc:comment/>
+		<text lang="en">EU-guideline 2010/63/EU</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">EU-Richtlinie 2010/63/EU</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/animal_specific_law/5">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>animal_specific_law/5</uri_path>
+		<dc:comment/>
+		<text lang="en">Arrive guidelines 2.0</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Arrive guidelines 2.0</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmo.uni-rostock.de/animaldata/options/animal_specific_law/4">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>animal_specific_law/4</uri_path>
+		<dc:comment/>
+		<text lang="en">Other</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Andere</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input>text</additional_input>
+	</option>
+	<page dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/legal/national/sensitive_data">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>legal/national/sensitive_data</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">Sensitive data</title>
+		<short_title lang="en">sensitive data</short_title>
+		<help lang="en"/>
+		<verbose_name lang="en">Dataset</verbose_name>
+		<title lang="de">Sensible Daten</title>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/legal-and-ethics/sensitive-data-other/yesno" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/legal-and-ethics/sensitive-data-other/description" order="1"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/legal/national/sensitiv_data/personal_data/yesno" order="2"/>
+			<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/legal/national/sensitiv_data/personal_data" order="3"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/legal-and-ethics/sensitive-data-other/yesno">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/legal-and-ethics/sensitive-data-other/yesno</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/other/yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Examples of this include data containing trade or business secrets or location information on endangered animal or plant species.</help>
+		<text lang="en">Does this data set contain non-personal sensitive data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Beispiele hierfür sind etwa Daten, die Betriebs- oder Geschäftsgeheimnisse oder Ortsangaben zu bedrohten Tier- oder Pflanzenarten enthalten.</help>
+		<text lang="de">Enthält dieser Datensatz nicht-personenbezogene sensible Daten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/other/yesno">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>yesno</key>
+		<path>project/dataset/sensitive_data/other/yesno</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/other"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/other">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>other</key>
+		<path>project/dataset/sensitive_data/other</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>sensitive_data</key>
+		<path>project/dataset/sensitive_data</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/legal-and-ethics/sensitive-data-other/description">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/legal-and-ethics/sensitive-data-other/description</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/other/description"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">If so, what non-personal sensitive data are involved?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wenn ja, um welche nicht personenbezogenen sensiblen Daten handelt es sich?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/other_sensitive_data"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/other/description">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>description</key>
+		<path>project/dataset/sensitive_data/other/description</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/other"/>
+	</attribute>
+	<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/other_sensitive_data">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>other_sensitive_data</uri_path>
+		<dc:comment>Other sensitive data being used in the project.</dc:comment>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/other/yesno"/>
+		<relation>eq</relation>
+		<target_text>1</target_text>
+		<target_option/>
+	</condition>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/legal/national/sensitiv_data/personal_data/yesno">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>legal/national/sensitiv_data/personal_data/yesno</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data_yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Does this dataset contain personal data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Enthält dieser Datensatz personenbezogenen Daten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data_yesno">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>personal_data_yesno</key>
+		<path>project/dataset/sensitive_data/personal_data_yesno</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data"/>
+	</attribute>
+	<question dc:uri="https://rdmo.uni-rostock.de/animaldata/questions/legal/national/sensitiv_data/personal_data">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>legal/national/sensitiv_data/personal_data</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">If so, which personal data is involved?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wenn ja, um welche personenbezogenen Daten handelt es sich?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/sensitive_data/is_personal_data"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>personal_data</key>
+		<path>project/dataset/sensitive_data/personal_data</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data"/>
+	</attribute>
+	<condition dc:uri="https://rdmo.uni-rostock.de/animaldata/conditions/sensitive_data/is_personal_data">
+		<uri_prefix>https://rdmo.uni-rostock.de/animaldata</uri_prefix>
+		<uri_path>sensitive_data/is_personal_data</uri_path>
+		<dc:comment>sensitive data within the dataset.</dc:comment>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data_yesno"/>
+		<relation>eq</relation>
+		<target_text>1</target_text>
+		<target_option/>
+	</condition>
+</rdmo>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-06-26T12:22:04.792738+02:00" required="2.1.0" version="2.3.1">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-12-04T16:34:35.086019+01:00" required="2.1.0" version="2.3.2">
 	<catalog dc:uri="https://rdmorganiser.github.io/terms/questions/DFG-Checkliste">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<uri_path>DFG-Checkliste</uri_path>
@@ -39,10 +39,45 @@
 		<title lang="es"/>
 		<short_title lang="es"/>
 		<pages>
-			<page dc:uri="https://rdmorganiser.github.io/terms/questions/DFG-Checkliste/data_description/data_content" order="0"/>
-			<page dc:uri="https://rdmorganiser.github.io/terms/questions/DFG-Checkliste/data_description/technical_description" order="1"/>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/DFG-Checkliste/introduction" order="0"/>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/DFG-Checkliste/data_description/data_content" order="1"/>
+			<page dc:uri="https://rdmorganiser.github.io/terms/questions/DFG-Checkliste/data_description/technical_description" order="2"/>
 		</pages>
 	</section>
+	<page dc:uri="https://rdmorganiser.github.io/terms/questions/DFG-Checkliste/introduction">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>DFG-Checkliste/introduction</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Introductory Remarks</title>
+		<short_title lang="en">Introduction</short_title>
+		<help lang="en">This catalogue of questions is based on the checklist published by the German Research Foundation (DFG) , to which help texts, selection lists containing suggested text, and additional information have been added. The underlying &lt;a href=&quot;https://www.dfg.de/resource/blob/174736/92691e48e89bf4ac88c8eb91b8f783b0/forschungsdaten-checkliste-en-data.pdf&quot; target=&quot;_blank&quot;&gt;DFG document&lt;/a&gt; was published on 21 December 2021. The DFG checklist must be taken into account when submitting a proposal or finalising a project, and should help you to structure your data management.
+
+If you have any questions, please contact the central research data management team at your institution.</help>
+		<verbose_name lang="en"/>
+		<title lang="de">Einleitende Informationen</title>
+		<short_title lang="de">Einleitung</short_title>
+		<help lang="de">Der vorliegende Fragenkatalog basiert auf der von der Deutschen Forschungsgemeinschaft (DFG) herausgegebenen Checkliste und wurde um Hilfetexte, Auswahllisten mit Textvorschlägen sowie weiterführenden Hinweise ergänzt. Das zugrundeliegende &lt;a href=&quot;https://www.dfg.de/resource/blob/174732/forschungsdaten-checkliste-de.pdf&quot; target=&quot;_blank&quot;&gt;DFG-Dokument&lt;/a&gt; wurde am 21.12.2021 veröffentlicht. Die DFG-Checkliste muss bei Antragstellung sowie bei Projektabschluss berücksichtigt werden und soll Ihnen dabei helfen, Ihr Datenmanagement zu strukturieren.
+
+Bei Fragen wenden Sie sich bitte an das zentrale Team für Forschungsdatenmanagement ihrer Einrichtung.</help>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions/>
+		<conditions/>
+	</page>
 	<page dc:uri="https://rdmorganiser.github.io/terms/questions/DFG-Checkliste/data_description/data_content">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<uri_path>DFG-Checkliste/data_description/data_content</uri_path>
@@ -51,19 +86,65 @@
 		<is_collection>True</is_collection>
 		<title lang="en">Content-wise data description</title>
 		<short_title lang="en"/>
-		<help lang="en">&lt;u&gt;General notes:&lt;/u&gt; This catalogue of questions is based on the checklist published by the German Research Foundation (DFG) and has been supplemented with help texts, selection lists containing suggested text and additional information. The DFG checklist must be taken into account when submitting a proposal or finalising a project, and it should help you structure your data management. If you have any questions, please contact the central research data management team at your instituion.
+		<help lang="en">&lt;h3&gt;Organisation of data into data sets&lt;/h3&gt;
 
-&lt;u&gt;Structuring into data sets:&lt;/u&gt; Select a logical unit of your research data as a data set, for which the same information regarding methodology, technology, accessibility, etc. applies. Examples of this include different types of data collection (modalities) and the distinction between measured, simulated, or analysed data. The following questions must be answered for each data set.
+The following questions address the content, format, origin and management of the research data generated or reused in the project. It is best to answer these questions by dividing the data into logical units, since each unit will require different answers. The same questions are asked for each of these 'data sets'. Data sets may represent broader categories with similar characteristics and data management requirements.
 
-Categorising your data into sets helps you to assess its value with regard to potential subsequent use and archiving. As all questions must be answered for each data set, a structure that is too granular does not make sense.</help>
+&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Click here to see tips for dividing project data into data sets&lt;/summary&gt;
+
+&lt;p style=&quot;text-indent: 2em;margin-bottom:5px;&quot;&gt;You can proceed as follows:&lt;/p&gt;
+
+&lt;ul style=&quot;margin-bottom:5px;&quot;&gt;
+  &lt;li&gt;Obtain an overview of the data generated or used in your research activities.&lt;/li&gt;
+  &lt;li&gt;Evaluate the data based on the following criteria:&lt;ul&gt;
+    &lt;li&gt;Origin/generation: generated (e.g. observation/measurement, experiment, survey, simulation, web-crawl) or reused;&lt;/li&gt;
+    &lt;li&gt;Storage space requirements: e.g.: &amp;lt;1 GB, ~10 TB;&lt;/li&gt;
+    &lt;li&gt;Documentation requirements:&lt;ul&gt;
+      &lt;li&gt;Example A: Detailed description of sample generation and data collection;&lt;/li&gt;
+      &lt;li&gt;Example B: Description of measuring devices and measurement parameters;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+    &lt;li&gt;Data protection aspects: Personal data, sensitive non-personal data, public data;&lt;/li&gt;
+    &lt;li&gt;Relevance/reuse potential: High (reference data), medium (main scientific study), low (preliminary study);&lt;/li&gt;
+    &lt;li&gt;Publication of data: Yes/no, planned repository, planned implementation and financing;&lt;/li&gt;
+    &lt;li&gt;Long-term archiving: Yes/no, planned data format, planned implementation and financing.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Decide on the most favourable division of project data into data sets, ensuring that only data which differ significantly in terms of these criteria are assigned to different data sets. Create a suitable number of homogeneous data sets: enough to avoid the need for conditional answers, but few enough to prevent repetition of the same answers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;text-indent: 2em;&quot;&gt;Examples of two projects in which the data are sorted into data sets can be found &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_en.md&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/details&gt;
+
+Give each 'data set' a meaningful but short name that reflects the research work. This name will be used to label the corresponding tab in RDMO.</help>
 		<verbose_name lang="en">Data set</verbose_name>
 		<title lang="de">Inhaltliche Datenbeschreibung</title>
 		<short_title lang="de"/>
-		<help lang="de">&lt;u&gt;Allgemeine Hinweise:&lt;/u&gt; Der vorliegende Fragenkatalog  basiert auf der von der Deutschen Forschungsgemeinschaft (DFG) herausgegebenen Checkliste und wurde um Hilfetexte, Auswahllisten mit Textvorschlägen sowie weiterführenden Hinweise ergänzt. Die DFG-Checkliste muss bei Antragstellung sowie bei Projektabschluss berücksichtigt werden und soll Ihnen dabei helfen, Ihr Datenmanagement zu strukturieren. Bei Fragen wenden Sie sich bitte an das zentrale Team für Forschungsdatenmanagement ihrer Einrichtung.
+		<help lang="de">&lt;h3&gt;Organisation der Daten in Datensätze&lt;/h3&gt;
 
-&lt;u&gt;Strukturierung in Datensätze:&lt;/u&gt; Wählen Sie als Datensatz eine logische Einheit Ihrer Forschungsdaten, für die gleiche Angaben bezüglich Methodik, Technik, Zugänglichkeit, usw. gelten. Beispiele hierfür sind verschiedene Arten der Datenerhebung (Modalitäten) oder die Unterscheidung zwischen gemessenen, simulierten oder analysierten Daten. Die folgenden Fragen werden für jeden Datensatz beantwortet.
+Die folgenden Fragen befassen sich mit dem Inhalt, dem Format und der Herkunft der im Projekt generierten oder wiederverwendeten Forschungsdaten und beschreiben deren Verwaltung. Am besten lassen sich diese Fragen beantworten, indem die Daten in logische Einheiten aufgeteilt werden, die jeweils unterschiedliche Beantwortung der Fragen erfordern. Für jeden dieser &quot;Datensätze&quot; werden dieselben Fragen gestellt. Datensätze können eher breitere Kategorien mit ähnlichen Eigenschaften und Erfordernissen hinsichtlich der Datenverwaltung darstellen.
 
-Die Einteilung in Datensätze hilft dabei, den Wert der Daten hinsichtlich einer potenziellen Nachnutzung und einer späteren Archivierung einschätzen zu können. Da alle Fragen für jeden einzelnen Datensatz beantwortet werden müssen, ist eine zu feingranulare Struktur nicht sinnvoll.</help>
+&lt;details&gt;&lt;summary style=&quot;cursor:pointer&quot;&gt;Klicken Sie hier für Tipps zur Unterteilung der Projektdaten in Datensätze&lt;/summary&gt;
+
+&lt;p style=&quot;text-indent: 2em;margin-bottom:5px;&quot;&gt;Sie können wie folgt vorgehen:&lt;/p&gt;
+
+&lt;ul style=&quot;margin-bottom:5px;&quot;&gt;
+  &lt;li&gt;Verschaffen Sie sich einen Überblick über die Daten, die im Rahmen Ihrer Forschungsaktivitäten generiert oder verwendet werden.&lt;/li&gt;
+  &lt;li&gt;Bewerten Sie die Daten anhand der folgenden Kriterien:&lt;ul&gt;
+    &lt;li&gt;Herkunft/Generierung: generiert (Beobachtung/Messung, Experiment, Umfrage, Simulation, Web-Crawl,…) oder wiederverwendet;&lt;/li&gt;
+    &lt;li&gt;Speicherplatzanforderungen: z. B.: &amp;lt;1 GB, ~10 TB;&lt;/li&gt;
+    &lt;li&gt;Dokumentationsanforderungen:&lt;ul&gt;
+      &lt;li&gt;Beispiel A: Ausführliche Beschreibung von Stichprobengenerierung und Datenerhebung;&lt;/li&gt;
+      &lt;li&gt;Beispiel B: Beschreibung von Messvorrichtungen und Messparametern;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+    &lt;li&gt;Datenschutzaspekte: personenbezogene Daten, sensible nicht personenbezogene Daten, öffentliche Daten;&lt;/li&gt;
+    &lt;li&gt;Relevanz/Wiederverwendungspotenzial: hoch (Referenzdaten), mittel (wissenschaftliche Hauptstudie), gering (Vorstudie);&lt;/li&gt;
+    &lt;li&gt;Veröffentlichung der Daten: ja/nein, geplantes Repositorium, geplante Durchführung und Finanzierung;&lt;/li&gt;
+    &lt;li&gt;Langzeitarchivierung: ja/nein, geplantes Datenformat, geplante Durchführung und Finanzierung.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+  &lt;li&gt;Entscheiden Sie sich für die günstigste Unterteilung der Projektdaten in Datensätze, so dass nur Daten, die sich hinsichtlich dieser Kriterien erheblich unterscheiden, verschiedenen Datensätzen zugeordnet werden. Legen Sie eine angemessene Anzahl homogener Datensätze an: ausreichend viele, um Fallunterscheidungen zu vermeiden, und wenige genug, um Wiederholungen derselben Antworten vorzubeugen.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&quot;text-indent: 2em;&quot;&gt;Zwei Beispiele, wie Daten in Projekten Datensätzen zugeordnet wurden, finden Sie &lt;a href=&quot;https://gl.mathhub.info/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/Beispiele_und_Hilfen/Hilfe_Datenkategorie_de.md&quot; target=&quot;_blank&quot;&gt;hier&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/details&gt;
+
+Geben Sie jedem &quot;Datensatz&quot; einen im Sinne der Forschungsarbeit aussagekräftigen, aber kurzen Namen. Er wird zur Beschriftung des entsprechenden Tabs in RDMO verwendet.</help>
 		<verbose_name lang="de">Datensatz</verbose_name>
 		<title lang="fr"/>
 		<short_title lang="fr"/>
@@ -145,7 +226,7 @@ Bitte wählen Sie aus, mit welcher Methodik die Daten generiert werden.</help>
 &lt;details&gt;
 &lt;summary style=&quot;color:blue; cursor:pointer;&quot;&gt;Explanation:&lt;/summary&gt;
 
-In principle, some data can be re-created at any time. Examples include scientific experiment data and digital copies of analogue objects (provided the originals are available). However, the effort and costs involved can be considerable. Regarding the necessity of subsequent archiving, the cost of re-creation should be weighed against the archiving cost. 
+In principle, some data can be re-created at any time. Examples include scientific experiment data and digital copies of analogue objects (provided the originals are available). However, the effort and costs involved can be considerable. Regarding the necessity of subsequent archiving, the cost of re-creation should be weighed against the archiving cost.
 
 Other data, on the other hand, cannot be collected again as such. This applies to any kind of episodic observation, as these depict a specific phenomenon at a specific time and/or in a specific place, and are therefore generally not repeatable. The value of such data for subsequent use by others, as well as the consequences of unsuccessful archiving, is incomparably higher than that of reproducible data.
 &lt;/details&gt;</help>
@@ -409,7 +490,7 @@ The &lt;i&gt;&lt;a href=&quot;https://schema.datacite.org/&quot; target=&quot;_b
 		<text lang="en">What approaches are used to make the data comprehensible?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Beispielsweise könnte man vorhandene Metadaten- bzw. Dokumentationsstandards oder Ontologien nutzen. 
+		<help lang="de">Beispielsweise könnte man vorhandene Metadaten- bzw. Dokumentationsstandards oder Ontologien nutzen.
 
 Geben Sie auch den Metadatenstandard (Beschreibungssystem) an, sofern bereits feststeht, welcher verwendet werden soll, beispielsweise weil das ausgewählte Daten-Repositorium einen solchen vorgibt oder Sie an einen fachspezifischen Metadatenstandard gebunden sind. Ein Beispiel für ein allgemeines Metadatenschema für Daten ist das &lt;i&gt;&lt;a href=&quot;https://schema.datacite.org/&quot; target=&quot;_blank&quot;&gt;Datacite-Schema&lt;/a&gt;&lt;/i&gt;.</help>
 		<text lang="de">Welche Ansätze werden verfolgt, um die Daten nachvollziehbar zu beschreiben?</text>
@@ -580,7 +661,7 @@ Die Etablierung von Standards bei Methoden, bei der Anwendung von Software, der 
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/control_tool"/>
 		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
-		<help lang="en">There are different ways in which quality controls can be carried out. The method used depends on your discipline and the structures at the institute or within the project. 
+		<help lang="en">There are different ways in which quality controls can be carried out. The method used depends on your discipline and the structures at the institute or within the project.
 
 It is important that quality control is independent of the measures taken and relates to the product &quot;data&quot;.</help>
 		<text lang="en">Are there any planned quality controls, and if so, how will they be carried out?</text>
@@ -1038,12 +1119,12 @@ Bitte beachten Sie, dass eine Publikation der Daten ggf. nach einer gewissen Spe
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
-		<help lang="en">For example: 
+		<help lang="en">For example:
 Does the legal situation in different countries need to considered? Does every employee have the same access rights?</help>
 		<text lang="en">Which further legal specifics apply to the handling of research data in your project?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Zu nennen wären beispielsweise: 
+		<help lang="de">Zu nennen wären beispielsweise:
 Muss die rechtliche Situation verschiedener Länder beachtet werden? Haben alle Mitarbeitenden die gleichen Zugriffsrechte?</help>
 		<text lang="de">Welche weiteren rechtlichen Besonderheiten bestehen im Zusammenhang mit dem Umgang mit Forschungsdaten in Ihrem Projekt?</text>
 		<default_text lang="de"/>
@@ -1234,7 +1315,7 @@ If there is no suitable subject-specific repository, check whether your institut
 		<verbose_name lang="en"/>
 		<help lang="de">Entsprechend den &lt;i&gt;&lt;a href=&quot;https://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/forschungsdaten/leitlinien_forschungsdaten.pdf&quot; target=&quot;_blank&quot;&gt;DFG–Leitlinien zum Forschungsdatenmanagement&lt;/a&gt;&lt;/i&gt; sollten Forschungsdaten wenn möglich zeitnah verfügbar gemacht werden.Im besten Fall folgen sie dabei den &lt;i&gt;&lt;a href=&quot;https://force11.org/info/guiding-principles-for-findable-accessible-interoperable-and-re-usable-data-publishing-version-b1-0/&quot; target=&quot;_blank&quot;&gt;FAIR-Prinzipien&lt;/a&gt;&lt;/i&gt;.
 
-Die Bedeutung der Datenpublikation wird durch die 
+Die Bedeutung der Datenpublikation wird durch die
 &lt;i&gt;&lt;a href=&quot;https://wissenschaftliche-integritaet.de/kodex/herstellung-von-offentlichem-zugang-zu-forschungsergebnissen/&quot; target=&quot;_blank&quot;&gt;Leitlinie 13 des Kodex zur Guten Wissenschaftlichen Praxis&lt;/a&gt;&lt;/i&gt; noch einmal unterstrichen. Hier wird auf die disziplinspezifischen Gepflogenheiten hingewiesen.
 
 &lt;details&gt;

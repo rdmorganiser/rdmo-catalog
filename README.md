@@ -92,6 +92,7 @@ In order to file issues, you will need a GitHub account.
 |Subject/Coverage                 |Catalog       |View  |Last update |Creators              |
 |---------------------------------|--------------|------|------------|----------------------|
 |All questions (RDMO+DFG)         |[catalog][FDK]|           |2025-05|FoDaKo                |
+|Animaldata                    |[catalog][animaldata]|           |2026-02|KI-TIERWOHL           |
 |BLE                              |[catalog][BLE]|[view][BLE]|2023-10|Julius-Kühn-Institut  |
 |DFG Chemistry                    |[catalog][CHE]|           |2023-08|FDM Bayern eHumanities|
 |DFG Chemistry                    |[catalog][N4C]|           |2024-06|NFDI4Chem             |
@@ -99,15 +100,16 @@ In order to file issues, you will need a GitHub account.
 |DFG Physics                      |[catalog][PHY]|           |2023-08|FDM Bayern eHumanities|
 |DFG 101 Ancient Cultures         |[catalog][AKU]|           |2020-09|FDM Bayern eHumanities|
 |DFG 105 Editions                 |[catalog][EDI]|           |2020-09|FDM Bayern eHumanities|
-|DFG 106 Social & Cultural Anthropology|[catalog][SKT]|      |2020-09|FDM Bayern eHumanities|
-|Emissions in animal husbandry |[2 catalogs][EMM]|           |2021-04|EmiMin                |
+|DFG 106 Social & Cultural Anthropology|[catalog][SKT]   |   |2020-09|FDM Bayern eHumanities|
+|Emissions in animal husbandry         |[2 catalogs][EMM]|   |2021-04|EmiMin                |
 |ERC grants                       |[catalog][ERC]|[view][ERC]|2023-08|FDM Bayern eHumanities|
 |European Partnership on Metrology|[catalog][EPM]|[view][EPM]|2023-10|TC-IM 1449            |
 |Hessen State                     |[catalog][HFD]|           |2020-07|HeFDI                 |
 |Horizon 2020                     |[catalog][EHU]|[view][EHU]|2020-09|FDM Bayern eHumanities|
+|Humanities                       |[catalog][MWS]|           |2025-12|Max Weber Stiftung    | 
 |Mathematics                      |[catalog][MAT]|     |2022-11|DFG Excellence Cluster MATH+|
 |NFDI DMP Template                |[catalog][D4N]|           |2025-06|DMP4NFDI              |
-|Offboarding checklist            |[catalog][UDA]|           |2025-09|ULB Darmstadt          |
+|Offboarding checklist            |[catalog][UDA]|           |2025-09|ULB Darmstadt         |
 |Quality Assurance Tool for data  |[catalog][QAT]|           |2025-03|Mathmet / TC-IM 1449  |
 |Quality Assurance Tool for software  |[catalog][QAT]|       |2025-03|Mathmet / TC-IM 1449  |
 |Research data policy generator       |[catalog][FDN]|       |2025-04|FDNext                |
@@ -115,7 +117,7 @@ In order to file issues, you will need a GitHub account.
 |VW Foundation - Basic DMP            |[catalog][VWB]|       |2025-06|FDM Bayern eHumanities|
 |VW Foundation - Science Europe       |[catalog][VWE]|       |2021-04|FDM Bayern eHumanities|
 
-Total: 32 catalogs, 15 views
+Total: 34 catalogs, 15 views
 
 [AKU]:         shared/ub_fau_erlangen_nuernberg/dfg-alte-kulturen/
 [CHE]:         shared/ub_fau_erlangen_nuernberg/dfg-chemie/
@@ -126,10 +128,12 @@ Total: 32 catalogs, 15 views
 [EHU]:         shared/ub_fau_erlangen_nuernberg/h2020-ehum/
 [VWB]:         shared/ub_fau_erlangen_nuernberg/vw-stiftung-basisdmp
 [VWE]:         shared/ub_fau_erlangen_nuernberg/ScienceEurope_VW_Stiftung/
+[animaldata]:  shared/animaldata_v1/
 [BLE]:         shared/BLE_JKI/
 [D4N]:         shared/DMP4NFDI
 [FDK]:         shared/FoDaKo
 [FDN]:         shared/FDNext/
+[MWS]:         shared/MaxWeberStiftung/
 [N4Q]:         shared/NFDI4Culture/
 [N4C]:         shared/nfdi4chem
 [N4I]:         shared/nfdi4ing
@@ -148,7 +152,7 @@ Total: 32 catalogs, 15 views
 [Q-snf]:       rdmorganiser/questions/questions-snf.xml
 [V-dfg]:       rdmorganiser/views/view-dfg-checkliste.xml
 [V-heu]:       rdmorganiser/views/view-horizon-europe.xml
-[V-smp]:       rdmorganiser/views/view-FAIR4RSview.xml
+[V-smp]:       rdmorganiser/views/view-FAIR4RS.xml
 [V-snf]:       rdmorganiser/views/view-snf.xml
 [V-bielefeld]: rdmorganiser/views/view-bielefeld.xml
 [V-citec]:     rdmorganiser/views/view-citec.xml
