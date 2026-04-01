@@ -27,7 +27,7 @@ RDMO standard domain and option sets required:
 * domain/attributes.xml
 * options/optionsets.xml
 
-## Necessary instution-specific adjustments
+## Necessary institution-specific adjustments
 Several questions or linked optionsets of the catalog need institution-specific adjustements after import:
 * https://rdmorganiser.github.io/terms/questions/DFG-Checkliste/data_description/data_content
 * https://rdmorganiser.github.io/terms/questions/DFG-Checkliste/rights/publication_restrictions/publication_limitations
