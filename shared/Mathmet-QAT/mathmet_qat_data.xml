@@ -1,0 +1,4201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-01-17T16:03:24.715535+01:00" version="2.2.2">
+	<catalog dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data</uri_path>
+		<dc:comment>See help.</dc:comment>
+		<order>0</order>
+		<title lang="en">Mathmet Data Quality Assurance Plan</title>
+		<help lang="en">Mathmet quality assurance tools (QAT) plans support the documentation of the people, procedures and activities performed to fulfil predefined quality objectives during the development and maintenance of a specific dataset or meaningful group of datasets, within the metrology community and wider scientific domains, in which quality and trustworthiness are essential. Based on version 19 of PDF template.
+
+A completed data quality assurance plan facilitates the auditing of datasets, particularly with respect to the ISO 8000 series of standards.</help>
+		<title lang="de"/>
+		<help lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<sections>
+			<section dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/general_information" order="0"/>
+			<section dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/data_integrity_level" order="1"/>
+			<section dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/fitness_for_purpose" order="2"/>
+			<section dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/quality" order="3"/>
+			<section dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/data_documentation" order="7"/>
+			<section dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/metrological_soundness" order="8"/>
+		</sections>
+	</catalog>
+	<section dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/general_information">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/general_information</uri_path>
+		<dc:comment>Dataset name etc.</dc:comment>
+		<title lang="en">General Information</title>
+		<short_title lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<pages>
+			<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/introduction" order="0"/>
+			<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/dataset_details" order="1"/>
+			<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/roles" order="2"/>
+			<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/DQM_plan" order="3"/>
+		</pages>
+	</section>
+	<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/introduction">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/introduction</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Introduction</title>
+		<short_title lang="en"/>
+		<help lang="en">The following questionnaire helps completing a Mathmet Data Quality Assurance Plan (DQP), which supports the documentation of the people, procedures and activities performed to fulfil predefined quality objectives during the development and maintenance of a specific dataset or meaningful group of datasets, within the metrology community and wider scientific domains, in which quality and trustworthiness are essential.
+
+A completed data quality assurance plan facilitates the auditing of datasets, particularly with respect to the ISO 8000 [1] series of standards.
+
+Further details of the approach taken in this plan are provided in
+&lt;a href=&quot;https://doi.org/10.21014/actaimeko.v11i4.1348&quot; target=&quot;_blank&quot;&gt;the corresponding publication by Mathmet&lt;/a&gt;.
+
+Describe how non-conformities are identified and documented. Internal reporting and customer reporting could have different channels. For example, the development team can set up a procedure to assign priority levels to non-conformities. ISO 8000 standards characterise data quality according to its consistency with its format (syntactic quality), its meaning (semantic quality), and its usefulness (pragmatic quality).
+
+&lt;figure&gt;
+  &lt;img src=&quot;https://www.metrology-rdm.eu/fileadmin/documents/metrology-rdm/images/Mathmet_QAT_data_Figure01-Plan_do_act_check.png&quot;  style=&quot;width:50%&quot;&gt;
+  &lt;caption&gt;Figure 1 :  Plan/Do/Check/Act pattern for data quality (source: ISO 8000)&lt;/caption&gt;
+&lt;/figure&gt;
+
+&lt;h1&gt;Glossary&lt;/h1&gt;
+
+&lt;table&gt;
+    &lt;tr&gt;&lt;th style=&quot;text-align: center;&quot;&gt;Term                      &lt;/th&gt;&lt;th style=&quot;text-align: center;&quot;&gt;Definition                                                                                                                                                                                                   &lt;/th&gt;&lt;th style=&quot;text-align: center;&quot;&gt;Source&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Audit                     &lt;/th&gt;&lt;td&gt;Systematic, independent, and documented process for obtaining objective evidence and evaluating it objectively to determine the extent to which the audit criteria are fulfilled.                            &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:9000&quot; target=&quot;_blank&quot;&gt;ISO   9000:2015&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Business impact analysis  &lt;/th&gt;&lt;td&gt;Process of analysing the impact over time of a disruption on the organization.                                                                                                                               &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:22300&quot; target=&quot;_blank&quot;&gt;ISO  22300:2021&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Customer                  &lt;/th&gt;&lt;td&gt;Person or organization that could or does receive a product or a service that is intended for or required by this person or organization. A customer can be internal or external to the organization.        &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:9000&quot; target=&quot;_blank&quot;&gt;ISO   9000:2015&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Data                      &lt;/th&gt;&lt;td&gt;Reinterpretable representation of information in a formalized manner suitable for communication, interpretation, or processing.                                                                              &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:8000:-2&quot; target=&quot;_blank&quot;&gt;ISO 8000-2:2020&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Data administrator&lt;/th&gt;&lt;td&gt;Person who controls and coordinates the work of data technicians by defining criteria needed to maintain data quality, by designing data schemata, and by analysing the causes of errors to prevent their recurrence.&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:8000:-2&quot; target=&quot;_blank&quot;&gt;ISO 8000-2:2020&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Data dictionary           &lt;/th&gt;&lt;td&gt;Collection of data dictionary entries that allows lookup by entity identifier.                                                                                                                               &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:8000:-2&quot; target=&quot;_blank&quot;&gt;ISO 8000-2:2020&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Data Integrity Level (DIL)&lt;/th&gt;&lt;td&gt;A risk assessment metric that accounts for complexity and criticality levels.                                                                                                                                &lt;/td&gt;&lt;td&gt;own definition&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Data life cycle           &lt;/th&gt;&lt;td&gt;All stages in the process of data usage from initial establishment to its discontinuation.                                                                                                                   &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:21710&quot; target=&quot;_blank&quot;&gt;ISO 21710:2020&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Data manager&lt;/th&gt;&lt;td&gt;Person who establishes plans for data quality improvement in an organization, grants data administrators the authority to trace and correct data over the information systems or organization, and maintains data consistency in individual information systems through the organization-wide data architecture.&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:8000:-2&quot; target=&quot;_blank&quot;&gt;ISO 8000-2:2020&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Data processing&lt;/th&gt;&lt;td&gt;Systematic performance of operations upon data. Examples: Arithmetic or logic operations upon data, merging or sorting of data, assembling or compiling of programs, or operations on text, such as editing, sorting, merging, storing, retrieving, displaying, or printing.&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso-iec:2382&quot; target=&quot;_blank&quot;&gt;ISO 2382:2015&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Data quality              &lt;/th&gt;&lt;td&gt;Degree to which a set of inherent characteristics of data fulfils requirements.                                                                                                                              &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:8000:-2&quot; target=&quot;_blank&quot;&gt;ISO 8000-2:2020&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Data quality management   &lt;/th&gt;&lt;td&gt;Coordinated activities to direct and control an organization with regard to data quality.                                                                                                                    &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:8000:-2&quot; target=&quot;_blank&quot;&gt;ISO 8000-2:2020&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Data set (or dataset)     &lt;/th&gt;&lt;td&gt;Logically meaningful grouping of data.                                                                                                                                                                       &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:8000:-2&quot; target=&quot;_blank&quot;&gt;ISO 8000-2:2020&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Data specification        &lt;/th&gt;&lt;td&gt;Set of requirements covering the characteristics of data being fit for one or more particular purposes.                                                                                                      &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:8000:-2&quot; target=&quot;_blank&quot;&gt;ISO 8000-2:2020&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Data steward              &lt;/th&gt;&lt;td&gt;Person or organization delegated the responsibility for managing a specific set of data resources.                                                                                                           &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:8000:-2&quot; target=&quot;_blank&quot;&gt;ISO 8000-2:2020&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Data technician  &lt;/th&gt;&lt;td&gt;Person who creates, reads, modifies, and deletes data in accordance with the guidelines for data quality management, and measures data quality and corrects data errors found as a result of measuring data quality.  &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:8000:-2&quot; target=&quot;_blank&quot;&gt;ISO 8000-2:2020&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Management system&lt;/th&gt;&lt;td&gt;A management system is a set of interrelated or interacting elements of an organization to establish:&lt;ul&gt;&lt;li&gt;policies, intentions and direction of an organization as formally expressed by its top management;&lt;/li&gt;&lt;li&gt;objectives, results to be achieved;&lt;/li&gt;&lt;li&gt;processes, sets of interrelated or interacting activities that use inputs to deliver an intended result, to achieve those objectives.&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:9000&quot; target=&quot;_blank&quot;&gt;ISO 9000:2015&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Measurement uncertainty               &lt;/th&gt;&lt;td&gt;Parameter, associated with the result of a measurement, that characterizes the dispersion of the values that could reasonably be attributed to the measurand.                                    &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://doi.org/10.59161/JCGM100-2008E&quot; target=&quot;_blank&quot;&gt;JCGM  100:2008&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Non-conformity                        &lt;/th&gt;&lt;td&gt;Non-fulfillment of a requirement.                                                                                                                                                                &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso-iec:33020&quot; target=&quot;_blank&quot;&gt;ISO 33020:2019&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Quality                               &lt;/th&gt;&lt;td&gt;The degree to which a set of inherent characteristics of an object fulfils requirements.                                                                                                         &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:9000&quot; target=&quot;_blank&quot;&gt;ISO  9000:2015&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Quality control                       &lt;/th&gt;&lt;td&gt;Part of quality management focused on fulfilling quality requirements.                                                                                                                           &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:9000&quot; target=&quot;_blank&quot;&gt;ISO  9000:2015&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Quality management system realization &lt;/th&gt;&lt;td&gt;Process of establishing, documenting, implementing, maintaining, and continually improving a quality management system.                                                                          &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:9000&quot; target=&quot;_blank&quot;&gt;ISO  9000:2015&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Quality planning                      &lt;/th&gt;&lt;td&gt;Part of quality management focused on setting quality objectives and specifying necessary operational processes, and related resources to achieve the quality objectives.                        &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:9000&quot; target=&quot;_blank&quot;&gt;ISO  9000:2015&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Quality requirement                   &lt;/th&gt;&lt;td&gt;Need or expectation that is stated, generally implied or obligatory, related to data.                                                                                                            &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso:9000&quot; target=&quot;_blank&quot;&gt;ISO  9000:2015&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Repeatability condition of measurement&lt;/th&gt;&lt;td&gt;Condition of measurement, out of a set of conditions that includes the same measurement procedure, same operators, same measuring system, same operating conditions and same location, and replicate measurements on the same or similar objects over a short period of time.&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://doi.org/10.59161/JCGM200-2012&quot; target=&quot;_blank&quot;&gt;JCGM 200:2012&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Reproducibility condition of measurement&lt;/th&gt;&lt;td&gt;Condition of measurement, out of a set of conditions that includes different locations, operators, measuring systems, and replicate measurements on the same or similar objects.               &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://doi.org/10.59161/JCGM200-2012&quot; target=&quot;_blank&quot;&gt;JCGM 200:2012&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Risk analysis                           &lt;/th&gt;&lt;td&gt;Systematic use of available information to identify hazards and to estimate the risk.                                                                                                          &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso-iec:guide:51&quot; target=&quot;_blank&quot;&gt;ISO   51:2014&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Risk assessment                         &lt;/th&gt;&lt;td&gt;Overall process comprising a risk analysis and a risk evaluation.                                                                                                                              &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso-iec:guide:51&quot; target=&quot;_blank&quot;&gt;ISO   51:2014&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Risk evaluation                         &lt;/th&gt;&lt;td&gt;Procedure based on the risk analysis to determine whether tolerable risk has been exceeded.                                                                                                    &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://www.iso.org/obp/ui/#iso:std:iso-iec:guide:51&quot; target=&quot;_blank&quot;&gt;ISO   51:2014&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Uncertainty budget                      &lt;/th&gt;&lt;td&gt;Statement of a measurement uncertainty, of the components of that measurement uncertainty, and of their calculation and combination.                                                           &lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://doi.org/10.59161/JCGM200-2012&quot; target=&quot;_blank&quot;&gt;JCGM 200:2012&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</help>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions/>
+		<conditions/>
+	</page>
+	<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/dataset_details">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/dataset_details</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">General information about the dataset</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q01" order="0"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q02" order="1"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q01">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q01</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Provide a meaningful name for the dataset(s). The name will also serve as a title for the **Data Quality Assurance Plan**.</help>
+		<text lang="en">Q01 Dataset label &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>id</key>
+		<path>project/dataset/id</path>
+		<dc:comment>Short ID for a dataset, used as questionset attribute for dataset related questionsets.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>dataset</key>
+		<path>project/dataset</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>project</key>
+		<path>project</path>
+		<dc:comment/>
+		<parent/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q02">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q02</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/description"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Give general information about the project. Describe what the dataset is, what its purpose is, where it is stored (e.g., link to a &lt;span title=&quot;Collection of data dictionary entries that allows lookup by entity identifier&quot; style=&quot;font-weight:bold;background-color:powderblue;&quot;&gt;data dictionary&lt;/span&gt;), where the project’s documentation is stored etc.</help>
+		<text lang="en">Q02 Brief description &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/description">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>description</key>
+		<path>project/dataset/description</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/roles">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/roles</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Responsibilities in the data lifecycle</title>
+		<short_title lang="en"/>
+		<help lang="en">A Data Quality Assurance Plan is established by the dataset development team. Team members may have different roles:
+&lt;span title=&quot;Person who establishes plans for data quality improvement in an organization, grants data administrators the authority to trace and correct data over the information systems or organization, and maintains data consistency in individual information systems through the organization-wide data architecture&quot; style=&quot;font-weight:bold;background-color:powderblue;&quot;&gt;data manager(s)&lt;/span&gt;,
+&lt;span title=&quot;Person who controls and coordinates the work of data technicians by defining criteria needed to maintain data quality, by designing data schemata, and by analysing the causes of errors to prevent their recurrence.&quot; style=&quot;font-weight:bold;background-color:powderblue;&quot;&gt;data administrator(s)&lt;/span&gt;,
+&lt;span title=&quot;Person who creates, reads, modifies, and deletes data in accordance with the guidelines for data quality management, and measures data quality and corrects data errors found as a result of measuring data quality&quot; style=&quot;font-weight:bold;background-color:powderblue;&quot;&gt;data technician(s)&lt;/span&gt; and
+&lt;span title=&quot;Person or organization delegated the responsibility for managing a specific set of data resources&quot; style=&quot;font-weight:bold;background-color:powderblue;&quot;&gt;data steward(s)&lt;/span&gt;.
+These roles are defined by the [ISO 8000](https://www.iso.org/obp/ui#d7868633e259) series of standards. The most essential roles are **data technician** and **data steward**. Smaller development teams might be composed of a small number of **data technicians** and/or **data stewards**. For example, a team might have a single member, who creates (as **data technician**) and manages (as **data steward**) the dataset.</help>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q03" order="0"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q04" order="1"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q05" order="2"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q06" order="3"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q03">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q03</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/curation/responsible_person/mathmet_data_manager"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Q03 Data managers</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/curation/responsible_person/mathmet_data_manager">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>mathmet_data_manager</key>
+		<path>project/dataset/curation/responsible_person/mathmet_data_manager</path>
+		<dc:comment>Data managers for Mathmet Data Quality.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/curation/responsible_person"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/curation/responsible_person">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>responsible_person</key>
+		<path>project/dataset/curation/responsible_person</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/curation"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/curation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>curation</key>
+		<path>project/dataset/curation</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q04">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q04</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/curation/responsible_person/mathmet_data_administrator"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Q04 Data administrators</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/curation/responsible_person/mathmet_data_administrator">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>mathmet_data_administrator</key>
+		<path>project/dataset/curation/responsible_person/mathmet_data_administrator</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/curation/responsible_person"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q05">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q05</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/curation/responsible_person/mathmet_data_steward"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Q05 Data stewards</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/curation/responsible_person/mathmet_data_steward">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>mathmet_data_steward</key>
+		<path>project/dataset/curation/responsible_person/mathmet_data_steward</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/curation/responsible_person"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q06">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q06</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/curation/responsible_person/mathmet_data_technician"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Q06 Data technicians</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/curation/responsible_person/mathmet_data_technician">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>mathmet_data_technician</key>
+		<path>project/dataset/curation/responsible_person/mathmet_data_technician</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/curation/responsible_person"/>
+	</attribute>
+	<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/DQM_plan">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/DQM_plan</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">About the data quality management plan</title>
+		<short_title lang="en"/>
+		<help lang="en">Provide information about the **Data Quality Assurance Plan** itself: the current status of the plan, still a draft or issued, the latest date when the plan underwent significant changes, and an identifier for the current version of the plan.</help>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q07" order="0"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q08a" order="1"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q08b" order="2"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q07">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q07</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/mathmet_dqm_plan_status"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Q07 Data quality management plan status</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>integer</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.mathmet.eu/options/mathmet_status"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/mathmet_dqm_plan_status">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>mathmet_dqm_plan_status</key>
+		<path>mathmet_dqm_plan_status</path>
+		<dc:comment/>
+		<parent/>
+	</attribute>
+	<optionset dc:uri="https://rdmo.mathmet.eu/options/mathmet_status">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_status</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://rdmo.mathmet.eu/questions/options/options/mathmet_status/draft" order="1"/>
+			<option dc:uri="https://rdmo.mathmet.eu/questions/options/options/mathmet_status/issued" order="2"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmo.mathmet.eu/questions/options/options/mathmet_status/draft">
+		<uri_prefix>https://rdmo.mathmet.eu/questions/options</uri_prefix>
+		<uri_path>mathmet_status/draft</uri_path>
+		<dc:comment/>
+		<text lang="en">Draft</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<text lang="fr"/>
+		<help lang="fr"/>
+		<view_text lang="fr"/>
+		<text lang="it"/>
+		<help lang="it"/>
+		<view_text lang="it"/>
+		<text lang="es"/>
+		<help lang="es"/>
+		<view_text lang="es"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmo.mathmet.eu/questions/options/options/mathmet_status/issued">
+		<uri_prefix>https://rdmo.mathmet.eu/questions/options</uri_prefix>
+		<uri_path>mathmet_status/issued</uri_path>
+		<dc:comment/>
+		<text lang="en">Issued</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<text lang="fr"/>
+		<help lang="fr"/>
+		<view_text lang="fr"/>
+		<text lang="it"/>
+		<help lang="it"/>
+		<view_text lang="it"/>
+		<text lang="es"/>
+		<help lang="es"/>
+		<view_text lang="es"/>
+		<additional_input/>
+	</option>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q08a">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q08a</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/mathmet_dqm_plan_date"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Q08a Data quality management plan date</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>date</widget_type>
+		<value_type>datetime</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/mathmet_dqm_plan_date">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>mathmet_dqm_plan_date</key>
+		<path>mathmet_dqm_plan_date</path>
+		<dc:comment/>
+		<parent/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q08b">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q08b</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/mathmet_dqm_plan_version"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Q08b Data quality management plan version</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/mathmet_dqm_plan_version">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>mathmet_dqm_plan_version</key>
+		<path>mathmet_dqm_plan_version</path>
+		<dc:comment/>
+		<parent/>
+	</attribute>
+	<section dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/data_integrity_level">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/data_integrity_level</uri_path>
+		<dc:comment/>
+		<title lang="en">Data integrity level</title>
+		<short_title lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<pages>
+			<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/data_integrity_level/calculate" order="1"/>
+		</pages>
+	</section>
+	<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/data_integrity_level/calculate">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/data_integrity_level/calculate</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL"/>
+		<is_collection>False</is_collection>
+		<title lang="en">Calculation of the data integrity level</title>
+		<short_title lang="en"/>
+		<help lang="en">A &lt;span title=&quot;Systematic use of available information to identify hazards and to estimate the risk&quot; style=&quot;font-weight:bold;background-color:powderblue;&quot;&gt;risk analysis&lt;/span&gt; results in the calculation of a &lt;span title=&quot;A risk assessment metric that accounts for complexity and criticality levels&quot; style=&quot;font-weight:bold;background-color:powderblue;&quot;&gt;Data Integrity Level (DIL)&lt;/span&gt;. The DIL is a value from a numeric scale between 1 and 4 that reflects the potential impact of quality on the overall dataset development project.
+
+&lt;style&gt;
+    table, th, td { border: 1px solid white; border-collapse: collapse; }
+    th, td { padding: 10px; }
+    th { background-color:#c0c0c0;font-weight: bold;text-align:center; }
+    table td:nth-child(1) { text-align: center; }
+    ._1 { background-color:#00ff00; }
+    ._2 { background-color:#ffff00; }
+    ._3 { background-color:#ffcc00; }
+    ._4 { background-color:#ff0000; }
+&lt;/style&gt;</help>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q09" order="1"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q10" order="2"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q11a" order="3"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q11b" order="4"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q11c" order="5"/>
+		</questions>
+		<conditions/>
+	</page>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>mathmet_DIL</key>
+		<path>mathmet_DIL</path>
+		<dc:comment/>
+		<parent/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q09">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q09</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL_complexity"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Evaluate the anticipated complexity of the dataset(s). Dataset complexity (CP) can be defined considering (a) the size of the dataset(s), (b) the amount of effort needed for dataset consolidation, and (c) the degree of self-explainingness of the dataset.
+
+&lt;table&gt;
+    &lt;caption&gt;&lt;em&gt;Table 1: Data complexity levels, typical features, and examples.&lt;/em&gt;&lt;/caption&gt;
+    &lt;tr&gt;&lt;th&gt;Code&lt;/th&gt;&lt;th&gt;Descriptive name&lt;/th&gt;&lt;th&gt;Typical features&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr class=&quot;_1&quot;&gt;
+        &lt;td&gt;CP&amp;nbsp;1&lt;/td&gt;&lt;td&gt;Very simple&lt;/td&gt;
+        &lt;td&gt;&lt;ul&gt;&lt;li&gt;Commonly used datatypes (e.g. numeric).&lt;/li&gt;
+                &lt;li&gt;Few datatypes.&lt;/li&gt;
+                &lt;li&gt;Small amount of data.&lt;/li&gt;
+                &lt;li&gt;Simple/unexpensive capture/generation/processing/storage infrastructure.&lt;/li&gt;
+                &lt;li&gt;Simple uncertainty budget.&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+        &lt;td&gt;Hourly time series of a single room temperature sensor readings over one month.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;_2&quot;&gt;
+        &lt;td&gt;CP&amp;nbsp;2&lt;/td&gt;&lt;td&gt;Simple&lt;/td&gt;
+        &lt;td&gt;&lt;ul&gt;&lt;li&gt;Easy to represent visually (e.g. numeric matrix).&lt;/li&gt;
+                &lt;li&gt;Moderate number of datatypes.&lt;/li&gt;
+                &lt;li&gt;Moderate amount of data.&lt;/li&gt;
+                &lt;li&gt;Intermediate capture/generation/processing/storage infrastructure.&lt;/li&gt;
+                &lt;li&gt;Intermediate uncertainty budget.&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+        &lt;td&gt;Hourly time series of room temperature, relative humidity and CO2 concentration sensor readings of a large building over one year.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;_3&quot;&gt;
+        &lt;td&gt;CP&amp;nbsp;3&lt;/td&gt;&lt;td&gt;Moderate&lt;/td&gt;
+        &lt;td&gt;&lt;ul&gt;&lt;li&gt;Non-trivial datatypes.&lt;/li&gt;
+                &lt;li&gt;Fair number of datatypes.&lt;/li&gt;
+                &lt;li&gt;Large or very large datasets.&lt;/li&gt;
+                &lt;li&gt;Complex/expensive capture/generation/processing/storage infrastructure.&lt;/li&gt;
+                &lt;li&gt;Complicated uncertainty budget.&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+        &lt;td&gt;Combined thermographic, photogrammetric and 3D point cloud data of a large building.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;_4&quot;&gt;
+        &lt;td&gt;CP&amp;nbsp;4&lt;/td&gt;&lt;td&gt;Complex&lt;/td&gt;
+        &lt;td&gt;&lt;ul&gt;&lt;li&gt;Non-trivial datatypes.&lt;/li&gt;
+                &lt;li&gt;Combination of many datatypes.&lt;/li&gt;
+                &lt;li&gt;Very complex/expensive capture/generation/processing/storage infrastructure.&lt;/li&gt;
+                &lt;li&gt;Very complicated uncertainty budget.&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+        &lt;td&gt;Multi-spectral satellite imagery of a continent.&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</help>
+		<text lang="en">Q09 Dataset level of complexity &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>integer</value_type>
+		<maximum>4.0</maximum>
+		<minimum>1.0</minimum>
+		<step>1.0</step>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.mathmet.eu/options/level-1-4"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL_complexity">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>mathmet_DIL_complexity</key>
+		<path>mathmet_DIL_complexity</path>
+		<dc:comment/>
+		<parent/>
+	</attribute>
+	<optionset dc:uri="https://rdmo.mathmet.eu/options/level-1-4">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>level-1-4</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://rdmo.mathmet.eu/options/level-1-4/1" order="1"/>
+			<option dc:uri="https://rdmo.mathmet.eu/options/level-1-4/2" order="2"/>
+			<option dc:uri="https://rdmo.mathmet.eu/options/level-1-4/3" order="3"/>
+			<option dc:uri="https://rdmo.mathmet.eu/options/level-1-4/4" order="4"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://rdmo.mathmet.eu/options/level-1-4/1">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>level-1-4/1</uri_path>
+		<dc:comment/>
+		<text lang="en">1</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<text lang="fr"/>
+		<help lang="fr"/>
+		<view_text lang="fr"/>
+		<text lang="it"/>
+		<help lang="it"/>
+		<view_text lang="it"/>
+		<text lang="es"/>
+		<help lang="es"/>
+		<view_text lang="es"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmo.mathmet.eu/options/level-1-4/2">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>level-1-4/2</uri_path>
+		<dc:comment/>
+		<text lang="en">2</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<text lang="fr"/>
+		<help lang="fr"/>
+		<view_text lang="fr"/>
+		<text lang="it"/>
+		<help lang="it"/>
+		<view_text lang="it"/>
+		<text lang="es"/>
+		<help lang="es"/>
+		<view_text lang="es"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmo.mathmet.eu/options/level-1-4/3">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>level-1-4/3</uri_path>
+		<dc:comment/>
+		<text lang="en">3</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<text lang="fr"/>
+		<help lang="fr"/>
+		<view_text lang="fr"/>
+		<text lang="it"/>
+		<help lang="it"/>
+		<view_text lang="it"/>
+		<text lang="es"/>
+		<help lang="es"/>
+		<view_text lang="es"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://rdmo.mathmet.eu/options/level-1-4/4">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>level-1-4/4</uri_path>
+		<dc:comment/>
+		<text lang="en">4</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de"/>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<text lang="fr"/>
+		<help lang="fr"/>
+		<view_text lang="fr"/>
+		<text lang="it"/>
+		<help lang="it"/>
+		<view_text lang="it"/>
+		<text lang="es"/>
+		<help lang="es"/>
+		<view_text lang="es"/>
+		<additional_input/>
+	</option>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q10">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q10</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL_criticality"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Evaluate the expected criticality of usage (CU) for the product dataset(s), i.e. An estimate of the consequences (e.g. on business, reputation, life, environment, heritage) arising from usage of data of inappropriate quality or from wrong usage of the dataset.
+
+&lt;table&gt;
+    &lt;caption&gt;&lt;em&gt;Table 2: Data criticality levels, explanations, and examples.&lt;/em&gt;&lt;/caption&gt;
+    &lt;tr&gt;&lt;th&gt;Code&lt;/th&gt;&lt;th&gt;Descriptive name&lt;/th&gt;&lt;th&gt;Explanation&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr class=&quot;_1&quot;&gt;
+        &lt;td&gt;CU&amp;nbsp;1&lt;/td&gt;&lt;td&gt;Not critical&lt;/td&gt;
+        &lt;td&gt;No danger of loss of income or reputation.&lt;br/&gt;Short life, will not require maintenance in future.&lt;/td&gt;
+        &lt;td&gt;Prototype dataset for internal use.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;_2&quot;&gt;
+        &lt;td&gt;CU&amp;nbsp;2&lt;/td&gt;&lt;td&gt;Significant&lt;/td&gt;
+        &lt;td&gt;Potential for loss of income or reputation.&lt;/td&gt;
+        &lt;td&gt;Dataset used for scientific research.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;_3&quot;&gt;
+        &lt;td&gt;CU&amp;nbsp;3&lt;/td&gt;&lt;td&gt;Substantial&lt;/td&gt;
+        &lt;td&gt;Likely to lead to loss of income or reputation if faulty.&lt;/td&gt;
+        &lt;td&gt;Dataset used for commercial applications.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;_4&quot;&gt;
+        &lt;td&gt;CU&amp;nbsp;4&lt;/td&gt;&lt;td&gt;Life critical&lt;/td&gt;
+        &lt;td&gt;May result in personal injury or loss of life.&lt;/td&gt;
+        &lt;td&gt;Avionics reference standards.&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</help>
+		<text lang="en">Q10 Dataset level of criticality &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>integer</value_type>
+		<maximum>4.0</maximum>
+		<minimum>1.0</minimum>
+		<step>1.0</step>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.mathmet.eu/options/level-1-4"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL_criticality">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>mathmet_DIL_criticality</key>
+		<path>mathmet_DIL_criticality</path>
+		<dc:comment/>
+		<parent/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q11a">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q11a</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL_suitable_yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">The DIL can be calculated with the following formula:
+
+```
+if(CU==1) DIL=1 else DIL=max(CU, CP)
+```
+
+This recommended DIL can be accepted, or it could be revised by the team. For example, if inexperienced **data technicians** are involved, the team can decide to increase the DIL. If the DIL value is revised, then the project-specific factors that justify increasing or decreasing the recommended DIL value must be documented.
+
+&lt;table style=&quot;text-align: center;&quot;&gt;
+    &lt;caption&gt;&lt;em&gt;Table 3: Calculating Data Integrity Level.&lt;/em&gt;&lt;/caption&gt;
+    &lt;tr&gt;
+        &lt;th&gt;&lt;/th&gt;&lt;th&gt;CP&amp;nbsp;1&lt;/th&gt;&lt;th&gt;CP&amp;nbsp;2&lt;/th&gt;&lt;th&gt;CP&amp;nbsp;3&lt;/th&gt;&lt;th&gt;CP&amp;nbsp;4&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;_1&quot;&gt;
+        &lt;th&gt;CU&amp;nbsp;1&lt;/th&gt;&lt;td&gt;DIL&amp;nbsp;1&lt;/td&gt;&lt;td&gt;DIL&amp;nbsp;1&lt;/td&gt;&lt;td&gt;DIL&amp;nbsp;1&lt;/td&gt;&lt;td&gt;DIL&amp;nbsp;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;CU&amp;nbsp;2&lt;/th&gt;&lt;td class=&quot;_2&quot;&gt;DIL&amp;nbsp;2&lt;/td&gt;&lt;td class=&quot;_2&quot;&gt;DIL&amp;nbsp;2&lt;/td&gt;&lt;td class=&quot;_3&quot;&gt;DIL&amp;nbsp;3&lt;/td&gt;&lt;td class=&quot;_4&quot;&gt;DIL&amp;nbsp;4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;CU&amp;nbsp;3&lt;/th&gt;&lt;td class=&quot;_3&quot;&gt;DIL&amp;nbsp;3&lt;/td&gt;&lt;td class=&quot;_3&quot;&gt;DIL&amp;nbsp;3&lt;/td&gt;&lt;td class=&quot;_3&quot;&gt;DIL&amp;nbsp;3&lt;/td&gt;&lt;td class=&quot;_4&quot;&gt;DIL&amp;nbsp;4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;_4&quot;&gt;
+        &lt;th&gt;CU&amp;nbsp;4&lt;/th&gt;&lt;td&gt;DIL&amp;nbsp;4&lt;/td&gt;&lt;td&gt;DIL&amp;nbsp;4&lt;/td&gt;&lt;td&gt;DIL&amp;nbsp;4&lt;/td&gt;&lt;td&gt;DIL&amp;nbsp;4&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</help>
+		<text lang="en">Q11a Does the calculated DIL seem suitable? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL_suitable_yesno">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>mathmet_DIL_suitable_yesno</key>
+		<path>mathmet_DIL_suitable_yesno</path>
+		<dc:comment/>
+		<parent/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q11b">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q11b</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL_drivers"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Q11b Factors that justify increasing or decreasing the DIL:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Factor</verbose_name>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DIL_not_suitable"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL_drivers">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>mathmet_DIL_drivers</key>
+		<path>mathmet_DIL_drivers</path>
+		<dc:comment/>
+		<parent/>
+	</attribute>
+	<condition dc:uri="https://rdmo.mathmet.eu/conditions/DIL_not_suitable">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>DIL_not_suitable</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL_suitable_yesno"/>
+		<relation>eq</relation>
+		<target_text>0</target_text>
+		<target_option/>
+	</condition>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q11c">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q11c</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Q11c Amended DIL: &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>integer</value_type>
+		<maximum>4.0</maximum>
+		<minimum>1.0</minimum>
+		<step>1.0</step>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.mathmet.eu/options/level-1-4"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<section dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/fitness_for_purpose">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/fitness_for_purpose</uri_path>
+		<dc:comment/>
+		<title lang="en">Fitness for purpose</title>
+		<short_title lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<pages>
+			<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/fitness_for_purpose/user_reqs" order="1"/>
+			<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/fitness_for_purpose/approval" order="2"/>
+		</pages>
+	</section>
+	<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/fitness_for_purpose/user_reqs">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/fitness_for_purpose/user_reqs</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Procedures for documentation of the user requirements</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q12" order="0"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q13m" order="1"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q13r" order="2"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q12">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q12</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/requirements_documentation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Document user requirements (&lt;span title=&quot;Set of requirements covering the characteristics of data being fit for one or more particular purposes&quot; style=&quot;font-weight:bold;background-color:powderblue;&quot;&gt;data specification&lt;/span&gt;) in any case, regardless of the DIL value. However, it is expected that higher DIL levels have more detailed user requirements. For example, datasets with higher levels of complexity might have longer mathematical specifications.
+
+From Q12, all answer fields support rich and long text, however good practice is to provide a short explanation and a link to a working document (stored in a persistent accessible location).</help>
+		<text lang="en">Q12 How will the dataset user requirements be documented? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/requirements_documentation">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>requirements_documentation</key>
+		<path>project/dataset/documentation/requirements_documentation</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 12</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>documentation</key>
+		<path>project/dataset/documentation</path>
+		<dc:comment>Added for the question which documentation will be available together with the data</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q13m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q13m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/lifecycle_documentation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Document the &lt;span title=&quot;All stages in the process of data usage from initial establishment to its discontinuation&quot; style=&quot;font-weight:bold;background-color:powderblue;&quot;&gt;data life cycle&lt;/span&gt;: from creation to long-term preservation. For example, provide a short explanation and link to a flow diagram, or for a more complex project, link a Gantt chart, a task board etc. **Data life cycle processes** can include how data is captured (how it is discovered, acquired, recombined from static or dynamic sources), how it is created (data pipeline, if it is synthetic data), how it is formatted (and what format conversions have been applied), how it is annotated (are there metadata?), how it is validated (detection/mitigation of abnormalities is also covered by the data quality monitoring section of the plan), how it is anonymised (for privacy purposes), how the data will be preserved (e.g., is there a retention period?) etc.</help>
+		<text lang="en">Q13 How will the data life cycle be documented? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILgeq3"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/lifecycle_documentation">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>lifecycle_documentation</key>
+		<path>project/dataset/documentation/lifecycle_documentation</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 13</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation"/>
+	</attribute>
+	<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILgeq3">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>DILgeq3</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL"/>
+		<relation>gte</relation>
+		<target_text>3</target_text>
+		<target_option/>
+	</condition>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q13r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q13r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/lifecycle_documentation"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Document the &lt;span title=&quot;All stages in the process of data usage from initial establishment to its discontinuation&quot; style=&quot;font-weight:bold;background-color:powderblue;&quot;&gt;data life cycle&lt;/span&gt;: from creation to long-term preservation. For example, provide a short explanation and link to a flow diagram, or for a more complex project, link a Gantt chart, a task board etc. **Data life cycle processes** can include how data is captured (how it is discovered, acquired, recombined from static or dynamic sources), how it is created (data pipeline, if it is synthetic data), how it is formatted (and what format conversions have been applied), how it is annotated (are there metadata?), how it is validated (detection/mitigation of abnormalities is also covered by the data quality monitoring section of the plan), how it is anonymised (for privacy purposes), how the data will be preserved (e.g., is there a retention period?) etc.</help>
+		<text lang="en">Q13 How will the data life cycle be documented?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq2"/>
+		</conditions>
+	</question>
+	<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq2">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>DILeq2</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL"/>
+		<relation>eq</relation>
+		<target_text>2</target_text>
+		<target_option/>
+	</condition>
+	<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/fitness_for_purpose/approval">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/fitness_for_purpose/approval</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Procedures for approval</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q14m" order="0"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q14r" order="1"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q15m" order="2"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q15r" order="3"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q16" order="4"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q14m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q14m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/requirements_approval_team"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Describe the procedure for approval of the user requirements within the development team. Who oversees collating user requirements? Who approves them within the team? How is the approval traced (email thread, merge request if using a version control system, digital signature, meeting minutes…)?</help>
+		<text lang="en">Q14 How will the project team approve the dataset user requirements internally? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILgeq2"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/requirements_approval_team">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>requirements_approval_team</key>
+		<path>project/dataset/requirements_approval_team</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 14</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILgeq2">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>DILgeq2</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL"/>
+		<relation>gte</relation>
+		<target_text>2</target_text>
+		<target_option dc:uri="https://rdmo.mathmet.eu/options/level-1-4/2"/>
+	</condition>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q14r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q14r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/requirements_approval_team"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Describe the procedure for approval of the user requirements within the development team. Who oversees collating user requirements? Who approves them within the team? How is the approval traced (email thread, merge request if using a version control system, digital signature, meeting minutes…)?</help>
+		<text lang="en">Q14 How will the project team approve the dataset user requirements internally?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq1"/>
+		</conditions>
+	</question>
+	<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq1">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>DILeq1</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL"/>
+		<relation>eq</relation>
+		<target_text>1</target_text>
+		<target_option/>
+	</condition>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q15m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q15m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/requirements_approval_customer"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Who is the &lt;span title=&quot;Person or organization that could or does receive a product or a service that is intended for or required by this person or organization. A customer can be internal or external to the organization.&quot; style=&quot;font-weight:bold;background-color:powderblue;&quot;&gt;customer&lt;/span&gt;? Who is the **customer** proxy, if any? Describe the procedure for approval by the **customer**. How is user requirement documentation communicated to the **customer**? How is the approval traced (email thread, merge request, digital signature, meeting minutes…)? If the **customer** is not involved in this procedure, which team members act as a proxy?</help>
+		<text lang="en">Q15 How will the customer or customer proxy approve the dataset user requirements? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILgeq3"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/requirements_approval_customer">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>requirements_approval_customer</key>
+		<path>project/dataset/requirements_approval_customer</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 15</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q15r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q15r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/requirements_approval_customer"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Who is the &lt;span title=&quot;Person or organization that could or does receive a product or a service that is intended for or required by this person or organization. A customer can be internal or external to the organization.&quot; style=&quot;font-weight:bold;background-color:powderblue;&quot;&gt;customer&lt;/span&gt;? Who is the **customer** proxy, if any? Describe the procedure for approval by the **customer**. How is user requirement documentation communicated to the **customer**? How is the approval traced (email thread, merge request, digital signature, meeting minutes…)? If the **customer** is not involved in this procedure, which team members act as a proxy?</help>
+		<text lang="en">Q15 How will the customer or customer proxy approve the dataset user requirements?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq2"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q16">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q16</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/objectivity_requirements"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Describe how an independent person/organisation will review the user requirements. Depending on the criticality of usage of the dataset, it could be someone in the same organisation with expertise but not directly involved in the development, or an external assessor with an accepted level of authoritativeness/accreditation.</help>
+		<text lang="en">Q16 How will the objectivity of the dataset user requirements review be ensured? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILgeq3"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/objectivity_requirements">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>objectivity_requirements</key>
+		<path>project/dataset/objectivity_requirements</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 16</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<section dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/quality">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/quality</uri_path>
+		<dc:comment/>
+		<title lang="en">Data quality aspects</title>
+		<short_title lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<pages>
+			<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/quality_planning" order="0"/>
+			<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/quality_monitoring" order="1"/>
+			<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/quality_assurance" order="2"/>
+		</pages>
+	</section>
+	<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/quality_planning">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/quality_planning</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Quality planning</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q17r" order="0"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q17m" order="1"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q18r" order="2"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q18m" order="3"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q19m" order="4"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q19r" order="5"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q20m" order="6"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q20r" order="7"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILgeq2"/>
+		</conditions>
+	</page>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q17r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q17r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/roadmap_documentation"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Detail the roadmap for the  implementation of the data quality interventions, for example by providing a link to a document: a flow diagram (for example, a sub-diagram of the data life cycle diagram) or for more complex projects: Gantt chart, task board… It could also be a link to an external platform, e.g., a project tracker.</help>
+		<text lang="en">Q17 Describe how the roadmap of data quality procedures will be documented.</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq2"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/roadmap_documentation">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>roadmap_documentation</key>
+		<path>project/dataset/documentation/roadmap_documentation</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 17</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q17m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q17m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/roadmap_documentation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Detail the roadmap for the  implementation of the data quality interventions, for example by providing a link to a document: a flow diagram (for example, a sub-diagram of the data life cycle diagram) or for more complex projects: Gantt chart, task board… It could also be a link to an external platform, e.g., a project tracker.</help>
+		<text lang="en">Q17 Describe how the roadmap of data quality procedures will be documented. &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILgeq3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q18r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q18r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/progress_documentation"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Describe the procedure that will be implemented to track progress against the roadmap. For example, progress review meetings with minutes, or approval procedure in a project tracker.</help>
+		<text lang="en">Q18 Describe how the implementation progress against the roadmap for data quality procedures will be tracked.</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq3"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/progress_documentation">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>progress_documentation</key>
+		<path>project/dataset/documentation/progress_documentation</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 18</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation"/>
+	</attribute>
+	<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq3">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>DILeq3</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL"/>
+		<relation>eq</relation>
+		<target_text>3</target_text>
+		<target_option/>
+	</condition>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q18m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q18m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/progress_documentation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Describe the procedure that will be implemented to track progress against the roadmap. For example, progress review meetings with minutes, or approval procedure in a project tracker.</help>
+		<text lang="en">Q18 Describe how the implementation progress against the roadmap for data quality procedures will be tracked. &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq4"/>
+		</conditions>
+	</question>
+	<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq4">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>DILeq4</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL"/>
+		<relation>eq</relation>
+		<target_text>4</target_text>
+		<target_option/>
+	</condition>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q19m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q19m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/data_security/risk_mitigation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Document the risk assessment associated to the development of the dataset. What could go wrong and how to mitigate? For examples, having redundant instruments, setting up data backup procedures.</help>
+		<text lang="en">Q19 How will the risks associated to developing the dataset be assessed and mitigated? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq4"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/data_security/risk_mitigation">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>risk_mitigation</key>
+		<path>project/dataset/data_security/risk_mitigation</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 19</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>data_security</key>
+		<path>project/dataset/data_security</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q19r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q19r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/data_security/risk_mitigation"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Document the risk assessment associated to the development of the dataset. What could go wrong and how to mitigate? For examples, having redundant instruments, setting up data backup procedures.</help>
+		<text lang="en">Q19 How will the risks associated to developing the dataset be assessed and mitigated?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq2"/>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q20m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q20m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/business_impact"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">For higher DIL values, provide a more detailed criticality assessment and mitigation plan, e.g., a &lt;span title=&quot;Process of analysing the impact over time of a disruption on the organization&quot; style=&quot;font-weight:bold;background-color:powderblue;&quot;&gt;business impact analysis&lt;/span&gt;.</help>
+		<text lang="en">Q20 How will the potential negative impact on business/ reputation of non-conformities in the dataset  be assessed and mitigated? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq4"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/business_impact">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>business_impact</key>
+		<path>project/dataset/business_impact</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 20</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q20r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q20r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/business_impact"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">For higher DIL values, provide a more detailed criticality assessment and mitigation plan, e.g., a &lt;span title=&quot;Process of analysing the impact over time of a disruption on the organization&quot; style=&quot;font-weight:bold;background-color:powderblue;&quot;&gt;business impact analysis&lt;/span&gt;.</help>
+		<text lang="en">Q20 How will the potential negative impact on business/ reputation of non-conformities in the dataset  be assessed and mitigated?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq2"/>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq3"/>
+		</conditions>
+	</question>
+	<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/quality_monitoring">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/quality_monitoring</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Quality monitoring, control and improvement</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q21m" order="0"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q21r" order="1"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q22m" order="2"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q22r" order="3"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q23m" order="4"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q23r" order="5"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q24m" order="6"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q24r" order="7"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q21m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q21m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/nonconformities_report"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Describe how non-conformities are identified and documented. Internal reporting and customer reporting could have different channels. For example, the development team can set up a procedure to assign priority levels to non-conformities. ISO 8000 standards characterise data quality according to its consistency with its format (syntactic quality), its meaning (semantic quality), and its usefulness (pragmatic quality).
+
+ &lt;figure&gt;
+  &lt;img src=&quot;https://www.metrology-rdm.eu/fileadmin/documents/metrology-rdm/images/Mathmet_QAT_data_Figure21.png&quot; alt=&quot;&quot; style=&quot;width:50%&quot;&gt;
+&lt;/figure&gt;</help>
+		<text lang="en">Q21 How will non-conformities in the dataset be reported? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILgeq2"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/nonconformities_report">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>nonconformities_report</key>
+		<path>project/dataset/nonconformities_report</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 21</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q21r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q21r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/nonconformities_report"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Describe how non-conformities are identified and documented. Internal reporting and customer reporting could have different channels. For example, the development team can set up a procedure to assign priority levels to non-conformities. ISO 8000 standards characterise data quality according to its consistency with its format (syntactic quality), its meaning (semantic quality), and its usefulness (pragmatic quality).
+
+ &lt;figure&gt;
+  &lt;img src=&quot;https://www.metrology-rdm.eu/fileadmin/documents/metrology-rdm/images/Mathmet_QAT_data_Figure21.png&quot; alt=&quot;&quot; style=&quot;width:50%&quot;&gt;
+&lt;/figure&gt;</help>
+		<text lang="en">Q21 How will non-conformities in the dataset be reported?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq1"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q22m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q22m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/nonconformities_correction"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Provide a short description and/or a link to an external document, or a link to an interactive platform such as an issue tracker.</help>
+		<text lang="en">Q22 How will corrective actions on non-conformities in the dataset be logged? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILgeq3"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/nonconformities_correction">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>nonconformities_correction</key>
+		<path>project/dataset/nonconformities_correction</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 22</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q22r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q22r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/nonconformities_correction"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Provide a short description and/or a link to an external document, or a link to an interactive platform such as an issue tracker.</help>
+		<text lang="en">Q22 How will corrective actions on non-conformities in the dataset be logged?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq2"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q23m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q23m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/nonconformities_prevention"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Describe the procedures that will be implemented to prevent non-conformities. For example, provide a link to a testing/verification plan or to a comparison dataset.</help>
+		<text lang="en">Q23 How will non-conformities in the dataset be prevented? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILgeq3"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/nonconformities_prevention">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>nonconformities_prevention</key>
+		<path>project/dataset/nonconformities_prevention</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 23</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q23r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q23r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/nonconformities_prevention"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Describe the procedures that will be implemented to prevent non-conformities. For example, provide a link to a testing/verification plan or to a comparison dataset.</help>
+		<text lang="en">Q23 How will non-conformities in the dataset be prevented?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq2"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q24m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q24m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/nonconformities_responsibility"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Assign team members or organisational units to the management of non-conformities in the dataset(s).</help>
+		<text lang="en">Q24 Who will oversee dealing with non-conformities in the dataset? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILgeq3"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/nonconformities_responsibility">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>nonconformities_responsibility</key>
+		<path>project/dataset/nonconformities_responsibility</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 24</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q24r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q24r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/nonconformities_responsibility"/>
+		<is_collection>True</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Assign team members or organisational units to the management of non-conformities in the dataset(s).</help>
+		<text lang="en">Q24 Who will oversee dealing with non-conformities in the dataset?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq2"/>
+		</conditions>
+	</question>
+	<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/quality_assurance">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/quality_assurance</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Quality assurance</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets>
+			<questionset dc:uri="https://rdmo.mathmet.eu/questions/quality_review" order="3"/>
+		</questionsets>
+		<questions>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q25m" order="0"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q25r" order="1"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q26r" order="2"/>
+		</questions>
+		<conditions/>
+	</page>
+	<questionset dc:uri="https://rdmo.mathmet.eu/questions/quality_review">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>quality_review</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q26m" order="0"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q27" order="1"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q28" order="2"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILgeq2"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q26m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q26m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation_review_team"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Provide, for example, a link to an agenda for review meetings with minutes, or a link to a chat history that is private to the team.</help>
+		<text lang="en">Q26 How will the project team review data quality issues? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation_review_team">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>documentation_review_team</key>
+		<path>project/dataset/documentation_review_team</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 26</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q27">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q27</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation_review_customer"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Describe how data quality issues will be communicated to the customer (through email, in meetings with minutes, via an access to an issue tracker...).</help>
+		<text lang="en">Q27 How will the customer or customer proxy review data quality issues? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation_review_customer">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>documentation_review_customer</key>
+		<path>project/dataset/documentation_review_customer</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 27</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q28">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q28</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/objectivity"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Describe how the processes for review and mitigation of data quality issues will be reviewed independently. Depending on the criticality level, the independent reviewer can be someone in the same organisation who is not involved in the development of the dataset, or an external expert.</help>
+		<text lang="en">Q28 How will the objectivity of the data quality issue review be ensured? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/objectivity">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>objectivity</key>
+		<path>project/dataset/objectivity</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 28</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q25m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q25m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation_availability"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Provide a link to a document (for example, a shared Word document in review mode), or a link to a dedicated platform (for example, an issue tracker).</help>
+		<text lang="en">Q25 How will data quality be documented and made available for review? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILgeq3"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation_availability">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>documentation_availability</key>
+		<path>project/dataset/documentation_availability</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 25</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q25r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q25r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation_availability"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Provide a link to a document (for example, a shared Word document in review mode), or a link to a dedicated platform (for example, an issue tracker).</help>
+		<text lang="en">Q25 How will data quality be documented and made available for review?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq2"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q26r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q26r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation_review_team"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Provide, for example, a link to an agenda for review meetings with minutes, or a link to a chat history that is private to the team.</help>
+		<text lang="en">Q26 How will the project team review data quality issues?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq1"/>
+		</conditions>
+	</question>
+	<section dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/data_documentation">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/data_documentation</uri_path>
+		<dc:comment/>
+		<title lang="en">Data documentation</title>
+		<short_title lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<pages>
+			<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/data_documentation/metadata_doc" order="1"/>
+		</pages>
+	</section>
+	<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/data_documentation/metadata_doc">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/data_documentation/metadata_doc</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Data documentation</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q29m" order="0"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q29r" order="1"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q30" order="2"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q31" order="3"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q32m" order="4"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q32r" order="5"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q29m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q29m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/data_meaning"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Provide a link to a &lt;span title=&quot;Set of requirements covering the characteristics of data being fit for one or more particular purposes.&quot; style=&quot;font-weight:bold;background-color:powderblue;&quot;&gt;data specification&lt;/span&gt; document. A machine-interpretable format specification must be provided if compliance with the [FAIR principles](https://www.go-fair.org/fair-principles/) is desired, e.g., the dataset is intended to be shared in an open science data repository.</help>
+		<text lang="en">Q29 How will the meaning of the data be formalised? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILgeq3"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/data_meaning">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>data_meaning</key>
+		<path>project/dataset/data_meaning</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 29</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q29r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q29r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/data_meaning"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Provide a link to a &lt;span title=&quot;Set of requirements covering the characteristics of data being fit for one or more particular purposes.&quot; style=&quot;font-weight:bold;background-color:powderblue;&quot;&gt;data specification&lt;/span&gt; document. A machine-interpretable format specification must be provided if compliance with the [FAIR principles](https://www.go-fair.org/fair-principles/) is desired, e.g., the dataset is intended to be shared in an open science data repository.</help>
+		<text lang="en">Q29 How will the meaning of the data be formalised?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILleq2"/>
+		</conditions>
+	</question>
+	<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILleq2">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>DILleq2</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL"/>
+		<relation>lte</relation>
+		<target_text>2</target_text>
+		<target_option/>
+	</condition>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q30">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q30</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/data_structure_documentation"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Provide a link to a data model document/diagram (e.g., a UML diagram), or a database schema with metadata (e.g., the dataset is kept in a relational database). A machine-interpretable format specification needs to be provided to comply with the [FAIR principles](https://www.go-fair.org/fair-principles/).</help>
+		<text lang="en">Q30 How will the structure of the dataset be documented?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/data_structure_documentation">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>data_structure_documentation</key>
+		<path>project/dataset/documentation/data_structure_documentation</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 30</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q31">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q31</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/metadata_documentation"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Provide a link to metadata database schema, a controlled vocabulary, a taxonomy… In simpler cases, a README file that explains the headers, if the data is shared in a tabular format. A machine-interpretable format specification needs to be provided to comply with the [FAIR principles](https://www.go-fair.org/fair-principles/).</help>
+		<text lang="en">Q31 How will the metadata be documented?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/metadata_documentation">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>metadata_documentation</key>
+		<path>project/dataset/documentation/metadata_documentation</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 31</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q32m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q32m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/exploitation_guide"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Detail how customers will learn about the dataset usage. For example, provide a link to a user manual in PDF format, or a link to a documentation wiki/web site. For more complex datasets/intended usage, describe how training will be provided, e.g., online or via in-person workshops/classes…</help>
+		<text lang="en">Q32 How will the customer know how to exploit the dataset? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq4"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/exploitation_guide">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>exploitation_guide</key>
+		<path>project/dataset/exploitation_guide</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 32</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q32r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q32r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/exploitation_guide"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Detail how customers will learn about the dataset usage. For example, provide a link to a user manual in PDF format, or a link to a documentation wiki/web site. For more complex datasets/intended usage, describe how training will be provided, e.g., online or via in-person workshops/classes…</help>
+		<text lang="en">Q32 How will the customer know how to exploit the dataset?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILleq3"/>
+		</conditions>
+	</question>
+	<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILleq3">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>DILleq3</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://rdmo.mathmet.eu/domain/mathmet_DIL"/>
+		<relation>lte</relation>
+		<target_text>3</target_text>
+		<target_option/>
+	</condition>
+	<section dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/metrological_soundness">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/metrological_soundness</uri_path>
+		<dc:comment/>
+		<title lang="en">Metrological soundness</title>
+		<short_title lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<pages>
+			<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/data_operations" order="1"/>
+			<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/reproducibility" order="2"/>
+			<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/confidence" order="3"/>
+		</pages>
+	</section>
+	<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/data_operations">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/data_operations</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Dataset operations</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets>
+			<questionset dc:uri="https://rdmo.mathmet.eu/questions/data_log" order="1"/>
+		</questionsets>
+		<questions>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q33" order="0"/>
+		</questions>
+		<conditions/>
+	</page>
+	<questionset dc:uri="https://rdmo.mathmet.eu/questions/data_log">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>data_log</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q34m" order="0"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q34r" order="1"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q35m" order="2"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q35r" order="3"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/dataset_measurement"/>
+		</conditions>
+	</questionset>
+	<condition dc:uri="https://rdmo.mathmet.eu/conditions/dataset_measurement">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>dataset_measurement</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/measurement_yesno"/>
+		<relation>eq</relation>
+		<target_text>1</target_text>
+		<target_option/>
+	</condition>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/measurement_yesno">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>measurement_yesno</key>
+		<path>project/dataset/measurement_yesno</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 33</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q34m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q34m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/data_operation_logging_main"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">If the dataset contains measurement data, describe the logging procedure for the main operation, e.g., by providing a link to a document/diagram.</help>
+		<text lang="en">Q34 How will the main operations applied to the dataset be logged? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq2"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/data_operation_logging_main">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>data_operation_logging_main</key>
+		<path>project/dataset/documentation/data_operation_logging_main</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 34</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q34r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q34r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/data_operation_logging_main"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">If the dataset contains measurement data, describe the logging procedure for the main operation, e.g., by providing a link to a document/diagram.</help>
+		<text lang="en">Q34 How will the main operations applied to the dataset be logged?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq1"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q35m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q35m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/data_operation_logging_all"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">For higher levels of criticality/complexity, describe all operations performed on or in relation to the dataset, e.g., provide a processing pipeline specification.</help>
+		<text lang="en">Q35 How will the operations applied to the dataset be logged? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILgeq3"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/data_operation_logging_all">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>data_operation_logging_all</key>
+		<path>project/dataset/documentation/data_operation_logging_all</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 35</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q35r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q35r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/data_operation_logging_all"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">For higher levels of criticality/complexity, describe all operations performed on or in relation to the dataset, e.g., provide a processing pipeline specification.</help>
+		<text lang="en">Q35 How will the operations applied to the dataset be logged?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq2"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q33">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q33</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/measurement_yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">“Measurement data” here refers to values obtained experimentally, either by comparison of quantities with reference quantities or units or counting of entities, as well as values derived from experimental results using models and calculations.</help>
+		<text lang="en">Q33 Will the dataset contain measurement data or data derived from measurements? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/reproducibility">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/reproducibility</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Repeatability and reproducibility</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets>
+			<questionset dc:uri="https://rdmo.mathmet.eu/questions/reprep1" order="0"/>
+			<questionset dc:uri="https://rdmo.mathmet.eu/questions/reprep2" order="1"/>
+			<questionset dc:uri="https://rdmo.mathmet.eu/questions/reprep3" order="2"/>
+		</questionsets>
+		<questions/>
+		<conditions/>
+	</page>
+	<questionset dc:uri="https://rdmo.mathmet.eu/questions/reprep1">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>reprep1</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q36r" order="0"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q37r" order="1"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q38r" order="2"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q39r" order="3"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq1"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q36r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q36r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/repeatability_yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Repeatability is defined as: _Condition of measurement, out of a set of conditions that includes **the same** measurement procedure, **same** operators, **same** measuring system, **same** operating conditions and **same location**, and replicate measurements on the same or similar objects **over a short period of time**._ (Source: [International Vocabulary of Metrology (VIM)](https://doi.org/10.59161/JCGM200-2012))</help>
+		<text lang="en">Q36 Is the dataset generation intended to be repeatable?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq1"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/repeatability_yesno">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>repeatability_yesno</key>
+		<path>project/dataset/repeatability_yesno</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 36</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q37r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q37r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/repeatability_documentation"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Detail how repeatability conditions are documented. For example, provide a link to a document which details how to find the persons, locations, artifacts, instruments, and procedures involved in any repeated experiment.</help>
+		<text lang="en">Q37 How will the dataset’s repeatability conditions be documented?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/dataset_repeatable"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/repeatability_documentation">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>repeatability_documentation</key>
+		<path>project/dataset/documentation/repeatability_documentation</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 37</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation"/>
+	</attribute>
+	<condition dc:uri="https://rdmo.mathmet.eu/conditions/dataset_repeatable">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>dataset_repeatable</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/repeatability_yesno"/>
+		<relation>eq</relation>
+		<target_text>1</target_text>
+		<target_option/>
+	</condition>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q38r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q38r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reproducibility"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Reproducibility: _Condition of measurement, out of a set of conditions that includes **different** locations, operators, measuring systems, and replicate measurements on the same or similar objects._ (Source: [International Vocabulary of Metrology (VIM)](https://doi.org/10.59161/JCGM200-2012))</help>
+		<text lang="en">Q38 Is the dataset generation intended to be reproducible?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILleq2"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reproducibility">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>reproducibility</key>
+		<path>project/dataset/reproducibility</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q39r">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q39r</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/reproducibility_documentation"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en"/>
+		<text lang="en">Q39 How will the dataset’s reproducibility conditions be documented?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/dataset_reproducible"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/reproducibility_documentation">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>reproducibility_documentation</key>
+		<path>project/dataset/documentation/reproducibility_documentation</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 39</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation"/>
+	</attribute>
+	<condition dc:uri="https://rdmo.mathmet.eu/conditions/dataset_reproducible">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>dataset_reproducible</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reproducibility"/>
+		<relation>eq</relation>
+		<target_text>1</target_text>
+		<target_option/>
+	</condition>
+	<questionset dc:uri="https://rdmo.mathmet.eu/questions/reprep2">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>reprep2</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q36m" order="0"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q37m" order="1"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q38r" order="2"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q39r" order="3"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILeq2"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q36m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q36m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/repeatability_yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Repeatability: _Condition of measurement, out of a set of conditions that includes **the same** measurement procedure, **same** operators, **same** measuring system, **same** operating conditions and **same location**, and replicate measurements on the same or similar objects **over a short period of time**._ (Source: [International Vocabulary of Metrology (VIM)](https://doi.org/10.59161/JCGM200-2012))</help>
+		<text lang="en">Q36 Is the dataset generation intended to be repeatable? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILgeq2"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q37m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q37m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/repeatability_documentation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Q37 How will the dataset’s repeatability conditions be documented? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/dataset_repeatable"/>
+		</conditions>
+	</question>
+	<questionset dc:uri="https://rdmo.mathmet.eu/questions/reprep3">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>reprep3</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q36m" order="0"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q37m" order="1"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q38m" order="2"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q39m" order="3"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILgeq3"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q38m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q38m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reproducibility"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Reproducibility is defined as: _Condition of measurement, out of a set of conditions that includes **different** locations, operators, measuring systems, and replicate measurements on the same or similar objects._ (Source: [International Vocabulary of Metrology (VIM)](https://doi.org/10.59161/JCGM200-2012))</help>
+		<text lang="en">Q38 Is the dataset generation intended to be reproducible? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/DILgeq3"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q39m">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q39m</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/reproducibility_documentation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Detail how reproducibility conditions are documented. For example, provide a link to a document that describes the persons, locations, artifacts, instruments, and procedures involved in the original experiment and the degree of similitude expected from any reproduction.</help>
+		<text lang="en">Q39 How will the dataset’s reproducibility conditions be documented? &lt;span style=&quot;color:#800080;&quot;&gt;*&lt;/span&gt;</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mathmet.eu/conditions/dataset_reproducible"/>
+		</conditions>
+	</question>
+	<page dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/confidence">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/confidence</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Uncertainty and confidence</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q40" order="0"/>
+			<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q41" order="1"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q40">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q40</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/uncertainty_evaluation"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Document how **measurement uncertainty** is expressed/evaluated. Refer to the [Guide to the expression of uncertainty in measurement (GUM)](https://doi.org/ 10.59161/JCGM100-2008E) when possible, or provide links to explanatory documents (reports, papers) when the uncertainty evaluation is not traceable to the GUM. If there is an uncertainty budget, provide a link and explain how it is traceable to the GUM, if not, justify why there isn't one.
+
+If the evaluation is performed using commercial software: specify the tools and version used. If it is performed using in-house software, specify tools and version used, and link to the source code and/or a software quality plan.</help>
+		<text lang="en">Q40 How will measurement uncertainty be expressed and evaluated?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/uncertainty_evaluation">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>uncertainty_evaluation</key>
+		<path>project/dataset/uncertainty_evaluation</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 40</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<question dc:uri="https://rdmo.mathmet.eu/questions/mathmet_qat_data/q41">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<uri_path>mathmet_qat_data/q41</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/confidence_documentation"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">For higher levels of criticality of usage, this could be a link to a recent accreditation certificate conform to the [ISO/IEC 17025 &quot;General requirements for the competence of testing and calibration laboratories&quot;](https://www.iso.org/standard/66912.html).</help>
+		<text lang="en">Q41 How will confidence in the dataset generation process be demonstrated?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://rdmo.mathmet.eu/domain/project/dataset/documentation/confidence_documentation">
+		<uri_prefix>https://rdmo.mathmet.eu</uri_prefix>
+		<key>confidence_documentation</key>
+		<path>project/dataset/documentation/confidence_documentation</path>
+		<dc:comment>Created for Mathmet Data Quality Assurance Plan, Question 41</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/documentation"/>
+	</attribute>
+</rdmo>
