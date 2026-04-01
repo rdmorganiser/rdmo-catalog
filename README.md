@@ -75,7 +75,7 @@ In order to file issues, you will need a GitHub account.
 |All questions (long)    |[catalog][Q-rdmo]|                      |2024-09|RDMO team       |
 |All questions (short)   |[catalog][Q-fhp] |                      |2020-08|FHP / RDMO team |
 |DCC checklist           |[catalog][Q-dcc] |                      |2018-10|RDMO team       |
-|DFG checklist           |[catalog][Q-dfg] |[view][V-dfg]         |2023-11|RDMO team       |
+|DFG checklist        |[2 catalogs][Q-dfg] |[view][V-dfg]         |2023-11|RDMO team       |
 |Horizon Europe          |[catalog][Q-heu] |[view][V-heu]         |2022-12|RDMO team       |
 |Software Management Plan|[catalog][Q-smp]|[view][V-smp] (FAIR4RS)|2023-11|MPDL / RDMO team|
 |Swiss National Fund     |[catalog][Q-snf] |[view][V-snf]         |2020-08|RDMO team       |
@@ -117,7 +117,7 @@ In order to file issues, you will need a GitHub account.
 |VW Foundation - Basic DMP            |[catalog][VWB]|       |2025-06|FDM Bayern eHumanities|
 |VW Foundation - Science Europe       |[catalog][VWE]|       |2021-04|FDM Bayern eHumanities|
 
-Total: 34 catalogs, 15 views
+Total: 35 catalogs, 15 views
 
 [AKU]:         shared/ub_fau_erlangen_nuernberg/dfg-alte-kulturen/
 [CHE]:         shared/ub_fau_erlangen_nuernberg/dfg-chemie/
@@ -146,7 +146,7 @@ Total: 34 catalogs, 15 views
 [Q-rdmo]:      rdmorganiser/questions/questions-rdmo.xml
 [Q-fhp]:       rdmorganiser/questions/questions-fhpshort.xml
 [Q-dcc]:       rdmorganiser/questions/questions-dcc.xml
-[Q-dfg]:       rdmorganiser/questions/questions-DFG-Checkliste.xml
+[Q-dfg]:       rdmorganiser/questions/DFG-Checkliste/
 [Q-heu]:       rdmorganiser/questions/questions-horizon-europe.xml
 [Q-smp]:       rdmorganiser/questions/questions-smp.xml
 [Q-snf]:       rdmorganiser/questions/questions-snf.xml
