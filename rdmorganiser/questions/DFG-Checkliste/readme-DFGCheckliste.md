@@ -17,12 +17,15 @@ This catalog is the [checklist published by the DFG](https://www.dfg.de/research
 # Import
 
 ## Files
-* questions/DFG-Checkliste.xml
+* questions/questions-DFGCheckliste-simple.xml
+OR:
+* questions/questions-DFGCheckliste-fullexport.xml
+
 
 ## Dependencies
 RDMO standard domain and option sets required:
-* domain/rdmo.xml
-* options/rdmo.xml
+* domain/attributes.xml
+* options/optionsets.xml
 
 ## Necessary instution-specific adjustments
 Several questions or linked optionsets of the catalog need institution-specific adjustements after import:
