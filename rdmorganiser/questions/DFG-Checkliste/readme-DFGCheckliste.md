@@ -5,8 +5,8 @@
 
 # Changes from 2026-03-30
 There are now two versions of the xml file. Depending on your RDMO system, you should chose the appropriate one:
-* **DFG-Checkliste_greater_RDMO-Vers.2** for import in RDMO systems with versions greater than 2.0
-* **DFG-Checkliste_greater_RDMO-Vers.2** for import in RDMO systems with versions lower than 2.0
+* **questions-DFGCheckliste-fullexport.xml** for import in RDMO systems with versions greater than 2.0
+* **questions-DFGCheckliste-simple.xml** for import in RDMO systems with versions lower than 2.0
 
 # Changes from 2023-06-60
 * Attribute "https://rdmorganiser.github.io/terms/domain/project/dataset/curation/responsible_person/name" added to question "Who is responsible for curating the data after the end of the project?"
