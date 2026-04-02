@@ -1,12 +1,10 @@
 # DFG-Checkliste
 * Contact / Maintainer: RDMO community, rdmo-contact@listserv.dfn.de
-* Version: 1.0
+* Version: 1.1
 * License: CC0
 
 # Changes from 2026-03-30
-There are now two versions of the xml file. Depending on your RDMO system, you should chose the appropriate one:
-* **questions-DFGCheckliste-fullexport.xml** for import in RDMO systems with versions greater than 2.0
-* **questions-DFGCheckliste-simple.xml** for import in RDMO systems with versions lower than 2.0
+There are now two versions of the xml file. The default file to be used is **questions-DFGCheckliste-simple.xml**, which is also maintained on the long term. For RDMO _software_ versions between 2.0 and 2.5 excluded, it is recommended to use **questions-DFGCheckliste-fullexport.xml** which contains also the needed attributes, options and conditions.
 
 # Changes from 2023-06-60
 * Attribute "https://rdmorganiser.github.io/terms/domain/project/dataset/curation/responsible_person/name" added to question "Who is responsible for curating the data after the end of the project?"
