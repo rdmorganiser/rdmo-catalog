@@ -75,7 +75,7 @@ In order to file issues, you will need a GitHub account.
 |All questions (long)    |[catalog][Q-rdmo]|                      |2024-09|RDMO team       |
 |All questions (short)   |[catalog][Q-fhp] |                      |2020-08|FHP / RDMO team |
 |DCC checklist           |[catalog][Q-dcc] |                      |2018-10|RDMO team       |
-|DFG checklist        |[2 catalogs][Q-dfg] |[view][V-dfg]         |2023-11|RDMO team       |
+|DFG checklist        |[2 catalogs][Q-dfg] |[view][V-dfg]         |2025-11|RDMO team       |
 |Horizon Europe          |[catalog][Q-heu] |[view][V-heu]         |2022-12|RDMO team       |
 |Software Management Plan|[catalog][Q-smp]|[view][V-smp] (FAIR4RS)|2023-11|MPDL / RDMO team|
 |Swiss National Fund     |[catalog][Q-snf] |[view][V-snf]         |2020-08|RDMO team       |
