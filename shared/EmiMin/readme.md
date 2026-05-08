@@ -65,7 +65,7 @@ aus anderen laufenden (z. B. EmiDaT) und geplanten Projekten offen.
 
 Im Rahmen von EmiMin sind 2 Fragenkataloge entstanden. Einer dient der Erstellung eines Datenmanagementplans für die Projektkoordination (publisso_terms4life_emimin_lead_V1_questions.xml). Der andere Fragenkatalog richtet sich an die Teilprojekte, welche in den Ställen emissionsmindernde Maßnahmen erforschen (publisso_terms4life_emiminV1_questions.xml).
 
-Als Voraussetzung müssen die vom RDMO-Projekt bereitgestellten Standard-Attribute und -Optionen in die eigene RDMO-Instanz importiert worden sein. Diese können unter [Link](https://github.com/rdmorganiser/rdmo-catalog/tree/master/rdmorganiser) heruntergeladen werden.
+Als Voraussetzung müssen die vom RDMO-Projekt bereitgestellten Standard-Attribute und -Optionen in die eigene RDMO-Instanz importiert worden sein. Diese können unter [Link](/rdmorganiser) heruntergeladen werden.
 
 Unabhängig davon, ob nur ein Fragenkatalog alleine, oder beide zusammen eingerichtet werden soll, bedarf es Anpassungen an der Domäne, den Optionen und Bedingungen. Die dafür notwendigen Erweiterungen befinden sich in den Dateien publisso_terms4life_emiminV1_domain.xml, publisso_terms4life_emiminV1_options.xml und publisso_terms4life_emiminV1_conditions.xml.
 

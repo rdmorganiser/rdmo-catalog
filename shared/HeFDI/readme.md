@@ -4,25 +4,20 @@ Der HeFDI-RDMO-Fragenkatalog wurde vom HeFDI-Projekt [Hessische Forschungsdateni
 Auf Grundlage der gegeben Antworten können die Servicestellen etwaige Handlungs-, Schulungs-, oder Informationsbedarfe erkennen und bedarfsgerecht beantworten.
 
 Der Katalog besteht dazu aus einem übersichtlichen Set an Fragen mit umfangreichen Auswahloptionen, beispielsweise zu Dateiformaten. Bedingungen stellen sicher, dass Forschende nur die für sie relevanten Fragen beantworten müssen. Der Katalog ist auf Deutsch und Englisch verfügbar.
+
 ## Einrichtung des Fragenkatalogs
-Als Voraussetzung müssen die vom RDMO-Projekt bereitgestellten Standard-Attribute und -Optionen in die eigene RDMO-Instanz importiert worden sein. Diese können unter https://github.com/rdmorganiser/rdmo-catalog/tree/master/rdmorganiser heruntergeladen werden.
+Als Voraussetzung müssen die vom RDMO-Projekt bereitgestellten Standard-Attribute und -Optionen in die eigene RDMO-Instanz importiert worden sein. Diese können unter [Link](/rdmorganiser) heruntergeladen werden.
 
-Der HeFDI-Fragenkatalog benötigt darüber hinaus zusätzliche Attribute, Optionen und Bedingungen, die sich in den Dateien hefdi_template_domain.xml, hefdi_template_options.xml und hefdi_template_conditions.xml befinden.
+Der HeFDI-Fragenkatalog benötigt darüber hinaus zusätzliche Attribute, Optionen und Bedingungen. Die sind alle in der Datei (full export) hefdi_template_FULL.xml enthalten.
 
-Vor dem Import in RDMO müssen in der Datei hefdi_template_options.xml die Optionen des Optionensets "https<span></span>://hefdi.de/terms/options/hefdi_template_optionenset_fachbereich" angepasst werden. Die beiden Optionen des Optionensets beginnen in [Zeile 10](2_hefdi_template_options_1.4.xml#L10) bzw. [Zeile 21](2_hefdi_template_options_1.4.xml#L21) und enthalten die Beispiel-Fachbereiche “Law and Economics” sowie “History and Social Sciences” als Platzhalter. Diese müssen durch die gewünschten Organisationseinheiten der eigenen Institution ersetzt werden. Einträge für weitere Organisationseinheiten können angelegt werden, indem hinter die bestehenden Einträge weitere &lt;option>-Elemente mit demselben Aufbau eingefügt werden. Dabei ist zu beachten, dass für jede neue Option ein neuer Key vergeben werden muss:<br>
-&lt;option
-dc:uri=”[...]/hefdi_template_option_fachbereich2”>  
-&nbsp; &lt;key>hefdi_template_option_fachbereich2&lt;/key>  
-&nbsp; &lt;path>[...]/hefdi_template_option_fachbereich2&lt;/path>  
+Vor dem Import in RDMO müssen die Optionen des Optionensets "https://hefdi.de/terms/options/hefdi_template_optionenset_fachbereich" angepasst werden. Die beiden Optionen des Optionensets beginnen in [Zeile 960](hefdi_template_FULL.xml#L960) bzw. [Zeile 972](hefdi_template_FULL.xml#L972) und enthalten die Beispiel-Fachbereiche “Law and Economics” sowie “History and Social Sciences” als Platzhalter. Diese müssen durch die gewünschten Organisationseinheiten der eigenen Institution ersetzt werden. Einträge für weitere Organisationseinheiten können angelegt werden, indem hinter die bestehenden Einträge weitere <option>-Elemente mit demselben Aufbau eingefügt werden. Dabei ist zu beachten, dass für jede neue Option ein neuer Key vergeben werden muss:  
+```xml
+    <option dc:uri="[...]/hefdi_template_option_fachbereich2">  
+        <uri_prefix>https://hefdi.de/terms</uri_prefix>
+        <uri_path>[...]/hefdi_template_option_fachbereich2</uri_path>
+        ...  
+```
 Alternativ können die Fachbereiche nach dem Import im Managementbereich unter “Options” angepasst und ergänzt werden.
-
-Die oben genannten Dateien müssen vor dem Import des eigentlichen HeFDI-Fragenkatalogs (hefdi_template_questions.xml) in der folgenden Reihenfolge in die eigene RDMO-Instanz importiert werden:
-
-1) [hefdi_template_domain.xml](1_hefdi_template_domain_1.4.xml)
-2) [hefdi_template_options.xml](2_hefdi_template_options_1.4.xml)
-3) [hefdi_template_conditions.xml](3_hefdi_template_conditions_1.4.xml)  
-
-Erst danach kann der HeFDI-Fragenkatalog ([hefdi_template_questions.xml](4_hefdi_template_questions_1.4.xml)) störungsfrei importiert werden. Wird dieser versehentlich zuerst importiert, werden die Optionen und Bedingungen nicht verknüpft und der Katalog funktioniert nicht richtig. In diesem Fall hilft es, den HeFDI-Fragenkatalog zu löschen und, nach dem Import der oben genannten Dateien, neu zu importieren.
 
 ## Entstehung, Weiterverwendung, Kontakt
 Der Katalog ist im Rahmen von [HeFDI (Hessische Forschungsdateninfrastrukturen)](https://www.hefdi.de) entstanden und wird bedarfsgerecht weiterentwickelt.

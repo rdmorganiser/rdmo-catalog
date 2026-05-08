@@ -26,15 +26,9 @@ Ja, in der Publikation ["Forschungsdaten-Policies für Forschungsprojekte: ein s
 Wir empfehlen, direkt zu Projektbeginn eine Policy mit unserem Tool zu erstellen, damit Sie sich im Team von Anfang an auf gemeinsame Ziele festlegen und genügend Zeit für die notwendigen Abstimmungsprozesse haben.  
 
 ## 3. Einrichtung des Fragenkatalogs
-Als Voraussetzung müssen die vom RDMO-Projekt bereitgestellten Standard-Attribute und -Optionen in die eigene RDMO-Instanz importiert worden sein. Diese können unter https://github.com/rdmorganiser/rdmo-catalog/tree/master/rdmorganiser heruntergeladen werden.
-Der Fragenkatalog zur Erstellung einer Projekt-Forschungsdaten-Policy benötigt darüber hinaus zusätzliche Attribute und Optionen, die sich in den Dateien fdnext_template_domain.xml und fdnext_template_options.xml befinden. 
-Folgende Dateien müssen vor dem Import des eigentlichen Fragenkatalogs (fdnext_template_questions.xml) in der folgenden Reihenfolge in die eigene RDMO-Instanz importiert werden:  
-1) fdnext_template_domain.xml (Domain)  
-2) fdnext_template_options.xml (Options)
+Der Fragenkatalog zur Erstellung einer Projekt-Forschungsdaten-Policy wird über den Import der Datei fdnext_template.xml in RDMO eingebunden. Das Template wurde auf einer RDMO Version 2.2.2 erstellt und als "XML (full)" Katalog exportiert. Für den Import müssen Sie neben dem XML-Dokument nichts weiter importieren, aber ggf. kann es zu Importproblemen bei älteren Versionen von RDMO kommen. In diesem Fall kontaktieren Sie bitte den Administrator Ihrer eigenen RDMO-Instanz. 
 
-Erst im Anschluss kann der Fragenkatalog (fdnext_template_questions.xml) korrekt importiert werden. Wird dieser versehentlich zuerst importiert, werden die Optionen und Bedingungen nicht verknüpft und der Katalog funktioniert nicht richtig. In diesem Fall hilft es, den Fragenkatalog zu löschen und, nach dem Import der oben genannten Dateien, neu zu importieren.
-
-# 4. Überblick über die Struktur des Fragenkatalogs und die verwendeten Attribute und Optionen. 
+# 4. Überblick über die Struktur des Fragenkatalogs und die verwendeten Attribute und Optionen.
 
 ## Allgemeine Hinweise / General information
 ### Einführung
@@ -127,7 +121,7 @@ Für die Umsetzung der in der Policy formulierten Grundsätze sind die folgenden
 > Optionenset: https://fdm.ub.tu-berlin.de/options/backup  
 
 ### Datendokumentation
-#### Die Forschungsdaten sollen in folgender Form dokumentiert werden: 
+#### Die Forschungsdaten sollen in folgender Form dokumentiert werden:
 > Attribut: https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/creation  
 > Widget-Typ: Ankreuzfelder  
 > Optionenset: https://fdm.ub.tu-berlin.de/options/options/documentation  

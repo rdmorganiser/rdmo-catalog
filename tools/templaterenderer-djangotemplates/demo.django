@@ -1,0 +1,28 @@
+{% load view_tags %}
+{% get_set 'project/dataset' as datasets %}
+
+<head>
+{% get_value 'project/title' as title %}
+<title>{{ title.value }}</title>
+<h1>{% render_value 'project/title' %}</h1>
+
+<div class="alert alert-info" role="alert">
+<p><b>Hinweis</b></p>
+<i><p>Im Folgenden haben wir die von Ihnen eingegebenen Informationen über das
+Projekt noch einmal zusammengefasst.</p>
+<p>Bitte beachten Sie, dass diese Ansicht nochmals überprüft und bei Bedarf
+überarbeitet werden sollte.</p></i>
+</div>
+
+<hr noshade color=rgb(0, 157, 129) width=100% size=20>
+</head>
+
+
+<body>
+<h1>Umgang mit Forschungsdaten</h1>
+<h2>Datenbeschreibung</h2>
+
+{% comment "question" %}
+<h3>Auf welche Weise entstehen in Ihrem Projekt neue Daten?</h3>
+{% endcomment %}
+</body>

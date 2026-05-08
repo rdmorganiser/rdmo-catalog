@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2024-09-18T14:02:36.572374+02:00" version="2.1.2">
+	<view dc:uri="https://fdm-bayern.org/eHumanities/views/ERC">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>ERC</uri_path>
+		<dc:comment/>
+		<order>0</order>
+		<title lang="en">ERC DMP Template</title>
+		<help lang="en">View (export template) for the ERC funding framework &lt;a href="https://erc.europa.eu/sites/default/files/document/file/ERC-Data-Management-Plan.docx" target="_blank"&gt;(version of 1st December 2021)&lt;/a&gt;.
+
+This view was written for the "European Research Council (ERC)" questionnaire. Be sure to use the RDMO language setting corresponding to the language that was used to answer the DMP questionnaire.</help>
+		<title lang="de">ERC DMP Template</title>
+		<help lang="de">Ansicht (Exportvorlage) für das ERC Förderprogramm  &lt;a href="https://erc.europa.eu/sites/default/files/document/file/ERC-Data-Management-Plan.docx" target="_blank"&gt;(Version vom 1. Dezember 2021)&lt;/a&gt;
+
+Diese Ansicht wurde für den "European Research Council (ERC)" Fragebogen geschrieben. Bei Verwendung bitte &lt;b&gt;auf die Spracheinstellung von RDMO&lt;/b&gt; achten.</help>
+		<catalogs>
+			<catalog dc:uri="https://fdm-bayern.org/eHumanities/questions/erc"/>
+		</catalogs>
+		<template>{% load view_tags %}
+{% load i18n %}
+{% get_set 'project/dataset/id' as datasets %}
+{% get_set 'project/partner/id' as partners %}
+{% get_set 'project/funder/id' as funders %}
+{% get_current_language as LANGUAGE_CODE %}
+
+
+&lt;style type="text/css"&gt;
+	body {	font-family: arial;	}
+	h1, h2, h3, h4 {	font-family: verdana; font-weight:bold;	}
+	table {	table-layout: fixed; border: 0; white-space: nowrap; margin-left: auto; margin-right: auto;	}
+	td, th {	padding: 10px;	}
+    td { border:1px solid black; }
+	#Titel {	text-align: center; line-height: 21mm; font-size: 2.5em; font-weight: bold;	}
+	#Note1 {	font-size: small;	}
+	.question {	color: green; font-weight: bold; break-after: avoid;	}
+	.questionpart {	color: green; break-after: avoid;	}
+&lt;/style&gt;
+
+&lt;div id=&quot;Titel&quot; style=&quot;margin: 0 auto; line-height: 21mm;text-align: center; font-size: 2.5em; font-weight: bold;&quot;&gt;
+	&lt;br /&gt;&lt;img src=&quot;https://erc.europa.eu/sites/default/files/2023-06/LOGO_ERC-FLAG_FP.png&quot; alt=&quot;ERC Logo&quot; width=&quot;450&quot;/&gt; 
+	&lt;br /&gt;&lt;h1&gt;European Research Council (ERC)&lt;br /&gt;Data Management Plan Template&lt;/h1&gt;
+&lt;/div&gt;
+
+
+{% if LANGUAGE_CODE == "en" %}
+
+&lt;div id="Intro" style="height:80mm"&gt;
+	&lt;br /&gt;
+	&lt;table&gt;
+		&lt;tr id="Intro1"&gt;	
+        &lt;th&gt;&lt;b&gt;Project Acronym:&lt;/b&gt;&lt;/th&gt; 
+        &lt;th&gt;&lt;b&gt;Project Number:&lt;/b&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+	&lt;tr id="Intro2"&gt;	
+        &lt;td&gt;{% render_value 'project/acronym' %}&lt;/td&gt;	
+       	&lt;td&gt;{% render_value 'project/funder/grant_nr' %}&lt;/td&gt;	
+    &lt;/tr&gt;
+	&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+Template for the ERC Open Research Data Management Plan (DMP). The following sections should describe how you plan to make the project data Findable, Accessible, Interoperable and Reusable (FAIR). Each of the following five issues should be addressed with a level of detail appropriate to the project.
+&lt;/div&gt;
+
+
+&lt;h2 id="1"&gt;SUMMARY &lt;/h2&gt;
+(dataset (several datasets may be included into a single DMP) reference and name; origin and expected size of the data generated / collected; data types and formats)
+&lt;br /&gt;
+&lt;br /&gt;
+
+
+The {% render_value 'project/acronym' %} project generates the following categories of research data:
+&lt;ol&gt;
+{% for dataset in datasets %}
+    &lt;li&gt;   
+        {{ dataset.value }}
+     &lt;/li&gt; 
+{% endfor %}
+&lt;/ol&gt;
+
+&lt;br /&gt;
+{% for dataset in datasets %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+    {% render_set_value dataset 'project/dataset/description' %}
+	&lt;br /&gt;
+    &lt;br /&gt;
+	{% get_set_value dataset 'project/dataset/origin' as origin %}
+	This dataset is {{ origin.value|lower|cut:"both ("|cut:")"}}.
+	{% get_set_value dataset 'project/dataset/creator/name' as name %}
+    &lt;br /&gt;
+    &lt;br /&gt;
+	{% if name %} 
+	    The re-used data was created by {% render_set_value dataset 'project/dataset/creator/name'%}.
+        &lt;br /&gt;
+        &lt;br /&gt;
+	{% endif %}
+	{% get_set_value dataset 'project/dataset/uri' as uri %}
+	{% if uri %} 
+	    It can be found here: {% render_set_value dataset 'project/dataset/uri'%}.
+        &lt;br /&gt;
+        &lt;br /&gt;
+	{% endif %}
+	&lt;i&gt;Formats and volume: &lt;/i&gt;&lt;br /&gt;
+    {% render_set_value dataset 'project/dataset/format' %} 
+    &lt;br /&gt;
+    &lt;br /&gt;
+	{% get_set_value dataset 'project/dataset/size/volume' as volume %}
+	{% if volume %} 
+	     In total, the dataset consists of roughly {% render_set_value dataset 'project/dataset/format' %}
+         &lt;br /&gt;
+	     &lt;br /&gt;
+	{% endif %}
+		 &lt;i&gt;Quality control and Support:&lt;/i&gt; &lt;br /&gt;
+	     {% render_set_value dataset 'project/dataset/quality_assurance' %} 
+         &lt;br /&gt;
+		 &lt;br /&gt;
+		 {% render_set_value dataset 'project/support' %}
+	     &lt;br /&gt;
+		 &lt;br /&gt;
+{% endfor %}
+
+
+
+
+&lt;h2 id="2"&gt;1. MAKING DATA FINDABLE &lt;/h2&gt;
+(dataset description: metadata, persistent and unique identifiers e.g., DOI)
+&lt;br /&gt;
+&lt;br /&gt;
+
+{% for dataset in datasets %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+    {% render_set_value dataset 'project/dataset/documentation' %}
+    &lt;br /&gt;
+    &lt;br /&gt;
+	{% render_set_value dataset 'project/dataset/metadata/creation' %}
+    &lt;br /&gt;
+	&lt;br /&gt;
+{% endfor %}
+
+
+
+
+&lt;h2 id="3"&gt;2. MAKING DATA OPENLY ACCESSIBLE &lt;/h2&gt; 
+(which data will be made openly available and if some datasets remain closed, the reasons for not giving access; where the data and associated metadata, documentation and code are deposited (repository?); how the data can be accessed (are relevant software tools/methods provided?))
+&lt;br /&gt;
+&lt;br /&gt;
+{% for dataset in datasets %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+    {% render_set_value dataset 'project/dataset/sharing/explanation' %}
+    &lt;br /&gt;
+    &lt;br /&gt;
+	{% render_set_value dataset 'project/dataset/sharing/restrictions_explanation' %}
+    &lt;br /&gt;
+    &lt;br /&gt;
+	{% get_set_values dataset 'project/dataset/preservation/repository' as repository %}
+	{% if repository|length &gt; 0 %}
+	     The dataset is stored in a {% render_set_value_inline_list dataset 'project/dataset/preservation/repository' %}.
+         &lt;br /&gt;
+         &lt;br /&gt;
+	{% endif %}
+    {% render_set_value dataset 'project/dataset/sharing/conditions' %}
+    &lt;br /&gt;
+    &lt;br /&gt;
+{% endfor %}
+
+
+
+&lt;h2 id="4"&gt;3. MAKING DATA INTEROPERABLE  &lt;/h2&gt;
+(which standard or field-specific data and metadata vocabularies and methods will be used)
+&lt;br /&gt;
+&lt;br /&gt;
+Interoperability will be ensured by using established and commonly used data formats (see summary) in combination with clear documention.
+
+Furthermore, all datasets will be stored with fundamental bibliographic metadata (including title, creators, keywords, description, related publications, PIDs). 
+
+ In addition each dataset is accompanied by a specific metadata:
+&lt;br /&gt;
+&lt;br /&gt;
+ {% for dataset in datasets %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+	{% get_set_values dataset 'project/dataset/metadata/scope' as metadata %}
+	{% if metadata|length &gt; 0 %}
+     &lt;ul&gt;
+       {% for meta in metadata %}
+          {% if meta.value == 'Location' %}
+              &lt;li&gt;the location&lt;/li&gt;         
+          {% elif meta.value == 'Content' %}
+              &lt;li&gt;detailed description of the content of the dataset&lt;/li&gt;
+          {% elif meta.value == 'Methodology' %}
+              &lt;li&gt;information about the methodology employed to create the dataset&lt;/li&gt;
+          {% elif meta.value == 'Creation process' %}
+              &lt;li&gt;details about the creation process&lt;/li&gt;
+          {% elif meta.value == 'Technology' %}
+              &lt;li&gt;instruments and software tools involved in the creation&lt;/li&gt;
+          {% elif meta.value == 'Documentation of the software necessary to use the data' %}
+              &lt;li&gt;documentation of the software necessary to use the data&lt;/li&gt;
+          {% elif meta.value == 'Time' %}
+              &lt;li&gt;time and time periods&lt;/li&gt;
+          {% elif meta.value == 'Sources' %}
+              &lt;li&gt;the source material underline the full dataset &lt;/li&gt;
+          {% elif meta.value == 'Agents' %}
+              &lt;li&gt;agents who play a role in the dataset&lt;/li&gt;
+          {% elif meta.value == 'Identifiers' %}
+              &lt;li&gt;identifiers that can be used to trace creation history and provenance &lt;/li&gt;
+          {% elif meta.value|truncatechars:6 == 'Other…' %}
+              &lt;li&gt;{{meta.value|cut:"Other:"}}&lt;/li&gt;
+          {% endif %}
+      {% endfor %}
+    &lt;/ul&gt;  
+	{% endif %}
+   
+    {% get_set_value dataset 'project/dataset/metadata/standards' as metadata_standards %}
+    {% if metadata_standards %}
+         {% if metadata_standards.value|truncatechars:6 == 'No fi…' %}
+             {{ metadata_standards.value }}.
+         {% elif  metadata_standards.value|truncatechars:6 == 'Withi…' %}
+             The project has not yet decided which description system will be used for metadata and contexual information. 
+         {% elif  metadata_standards.value|truncatechars:6 == 'Disci…' %}
+             We use established standards to record the metadata. In particular:
+             {{ metadata_standards.value|cut:'Discipline-specific standards, classifications etc. are used:' }}
+         {% elif  metadata_standards.value|truncatechars:6 == 'A cus…' %}
+             The metadata is recorded using a custom description system: 
+             {{ metadata_standards.value|cut:'A custom description system is used (please briefly outline and, if necessary, indicate where it is documented in more detail):' }}
+         {% elif  metadata_standards.value|truncatechars:6 == 'The r…' %}
+             The intended respository uses a standard: 
+             {{ metadata_standards.value|cut:'The repository we work with uses the standard:' }}
+         {% elif  metadata_standards.value|truncatechars:6 == 'The d…' %}
+             Details on the description system can be found here: 
+             {{ metadata_standards.value|cut:'The description system used is documented in more detail at the following address:' }}
+         {% elif  metadata_standards.value|truncatechars:6 == 'Other…' %}
+             {{ metadata_standards.value|cut:'Other:' }}
+         {% endif %}
+	&lt;br /&gt;
+    &lt;br /&gt;
+    {% endif %}
+{% endfor %}
+
+
+&lt;h2 id="5"&gt;4. INCREASE DATA RE-USE&lt;/h2&gt;
+(what data will remain re-usable and for how long, is embargo foreseen; how the data is licensed;  data quality assurance procedures) 
+&lt;br /&gt;
+&lt;br /&gt;
+{% for dataset in datasets %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+    {% render_set_value dataset 'project/dataset/preservation' %}
+    &lt;br /&gt;
+    &lt;br /&gt;
+	{% get_set_values dataset 'project/dataset/sharing/sharing_license' as licence %}
+	{% if licence|length &gt; 0 %}
+	     The dataset will be licensed under a {% render_set_value_inline_list dataset 'project/dataset/sharing/sharing_license' %}.
+         &lt;br /&gt;
+         &lt;br /&gt;
+	{% endif %}
+	{% render_set_value dataset 'project/dataset/preservation/embargo_period' %}
+    &lt;br /&gt;
+	&lt;br /&gt;
+{% endfor %}
+
+
+
+
+&lt;h2 id="6"&gt;5. ALLOCATION OF RESOURCES and DATA SECURITY&lt;/h2&gt;
+(estimated costs for making the project data open access and potential value of long-term data preservation; procedures for data backup and recovery; transfer of sensitive data and secure storage in repositories for long term preservation and curation)
+
+&lt;h3 id="61"&gt;Security and Storage&lt;/h3&gt;
+
+{% for dataset in datasets %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+    {% render_set_value dataset 'project/dataset/storage' %}
+    &lt;br /&gt;
+    &lt;br /&gt;
+	{% render_set_value dataset 'project/dataset/storage/organisation_policy' %}
+	&lt;br /&gt;
+    &lt;br /&gt;
+    {% get_set_values dataset 'project/dataset/data_security/security_measures' as security %}
+    	{% if security|length &gt; 0 %}
+	     To ensure security of this dataset, the following measures are in place:
+		 &lt;ul&gt;
+		  {% get_set_values dataset 'project/dataset/data_security/security_measures' as security_measures  %}
+          {% for measure in security_measures|is_not_empty %}
+			&lt;li&gt;{{ measure.value }}&lt;/li&gt;
+		  {% endfor %}
+        &lt;/ul&gt;
+         &lt;br /&gt;
+	    {% endif %}
+{% endfor %}
+
+&lt;h3 id="62"&gt;Long term prospects&lt;/h3&gt;
+{% for dataset in datasets %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+    {% render_set_value dataset 'project/dataset/reuse_scenario' %}
+    &lt;br /&gt;
+	&lt;br /&gt;
+{% endfor %}
+
+&lt;h3 id=&quot;63&quot;&gt;Costs&lt;/h3&gt;
+&lt;h4 id=&quot;631&quot;&gt;Personnel and infrastructure costs&lt;/h4&gt;
+{% render_value 'project/costs' %}
+&lt;h4 id=&quot;632&quot;&gt;Financing&lt;/h4&gt;
+{% render_value 'project/costs/preservation/cover_how' %}
+&lt;br /&gt;
+
+&lt;div id=&quot;disclaimer&quot; style=&quot;margin: 10pt;&quot;&gt;
+&lt;b&gt;Disclaimer:&lt;/b&gt; Please note that the ERC Data Management Plan is not a part of the Ethics Review. 
+It is the responsibility of the Principal Investigator to inform the ERCEA Ethics Team of any ethics issues/concerns regarding the collection, 
+processing, sharing and storage of data in relation to the project. 
+&lt;/div&gt;
+
+{% endif %}
+
+
+
+
+{% if LANGUAGE_CODE == "de" %}
+
+&lt;div id="Intro" style="height:80mm"&gt;
+	&lt;br /&gt;
+	&lt;table&gt;
+		&lt;tr id="Intro1"&gt;	
+        &lt;th&gt;&lt;b&gt;Projekt-Akronym:&lt;/b&gt;&lt;/th&gt; 
+        &lt;th&gt;&lt;b&gt;Projekt-Number:&lt;/b&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+	&lt;tr id="Intro2"&gt;	
+        &lt;td&gt;{% render_value 'project/acronym' %}&lt;/td&gt;	
+       	&lt;td&gt;{% render_value 'project/funder/grant_nr' %}&lt;/td&gt;	
+    &lt;/tr&gt;
+	&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+DMP-Vorlage für den ERC Open Research Data Management Plan (DMP). Sie sollten darlegen, wie Ihre Daten "Findable", "Accessible", "Interoperable" und "Reusable" (FAIR) gemacht werden. Jeder der folgenden fünf Themenbereiche sollte mit einem dem Projekt entsprechenden Detailgrad beantwortet werden. D.h. Projekte, die auf einer komplexen, vielseitigen Datengrundlage aufbauen, sollten entsprechend ausführliche Antworten enthalten.
+&lt;/div&gt;
+
+
+&lt;h2 id="1"&gt;ZUSAMMENFASSUNG &lt;/h2&gt;
+(Referenz und Name des Datensatzes (es ist möglich, mehrere Datensätze in einen DMP aufzunehmen); Ursprung und erwarteter Umfang der erzeugten / gesammelten Daten; Datentypen und -formate)
+&lt;br /&gt;
+&lt;br /&gt;
+
+
+Das {% render_value 'project/acronym' %} Projekt erzeugt die nachfolgenden Kategorien von Forschungsdaten:
+&lt;ol&gt;
+{% for dataset in datasets %}
+    &lt;li&gt;   
+        {{ dataset.value }}
+     &lt;/li&gt; 
+{% endfor %}
+&lt;/ol&gt;
+
+&lt;br /&gt;
+
+{% for dataset in datasets %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+    {% render_set_value dataset 'project/dataset/description' %}
+	&lt;br /&gt;
+    &lt;br /&gt;
+	{% get_set_value dataset 'project/dataset/origin' as origin %}
+	Dieser Datensatz ist {{ origin.value|lower|cut:"Beides ("|cut:")"}}.
+    &lt;br /&gt;
+    &lt;br /&gt;
+	{% get_set_value dataset 'project/dataset/creator/name' as name %}
+	{% if name %} 
+	    Der Datensatz wurde erzeugt von: {% render_set_value dataset 'project/dataset/creator/name'%}.
+        &lt;br /&gt;
+        &lt;br /&gt;
+	{% endif %}
+	{% get_set_value dataset 'project/dataset/uri' as uri %}
+	{% if uri %} 
+	    Zugang zu dem Datensatz besteht via: {% render_set_value dataset 'project/dataset/uri'%}.
+        &lt;br /&gt;
+	    &lt;br /&gt;
+	{% endif %}
+	&lt;i&gt;Formate und Volumen: &lt;/i&gt;&lt;br /&gt;
+    {% render_set_value dataset 'project/dataset/format' %} 
+    &lt;br /&gt;
+	&lt;br /&gt;
+	{% get_set_value dataset 'project/dataset/size/volume' as volume %}
+	{% if volume %} 
+	     Insgesamt umfasst der Datensatz {% render_set_value dataset 'project/dataset/format' %}.
+         &lt;br /&gt;
+	     &lt;br /&gt;
+	{% endif %}
+	&lt;i&gt;Qualitätskontrolle und externe Unterstützung:&lt;/i&gt; &lt;br /&gt;
+	     {% render_set_value dataset 'project/dataset/quality_assurance' %} &lt;br /&gt; &lt;br /&gt;
+		 {% render_set_value dataset 'project/support' %}
+	     &lt;br /&gt;
+		 &lt;br /&gt;
+{% endfor %}
+
+
+
+
+&lt;h2 id="2"&gt;1. DATEN AUFFINDBAR MACHEN &lt;/h2&gt;
+(Datensatzbeschreibung: Metadaten, dauerhafte und eindeutige Identifikatoren, z.B. DOI)
+&lt;br /&gt;
+&lt;br /&gt;
+
+{% for dataset in datasets %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+    {% render_set_value dataset 'project/dataset/documentation' %}
+    &lt;br /&gt;
+    &lt;br /&gt;
+	{% render_set_value dataset 'project/dataset/metadata/creation' %}
+&lt;br /&gt;
+&lt;br /&gt;
+{% endfor %}
+
+
+
+
+&lt;h2 id="3"&gt;2. DATEN ZUGÄNGLICH MACHEN &lt;/h2&gt;  
+(Welche Daten werden offen zugänglich gemacht und wie lauten die Gründe für die Verweigerung des Zugangs, falls einige Datensätze nicht zugänglich gemacht werden? Wo werden die Daten und die zugehörigen Metadaten, die Dokumentation und der Code hinterlegt (z.B. in einem Repositorium)? Wie kann auf die Daten zugegriffen werden? Werden relevante Software-Tools/Methoden bereitgestellt?)
+&lt;br /&gt;
+&lt;br /&gt;
+
+
+{% for dataset in datasets %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+    {% render_set_value dataset 'project/dataset/sharing/explanation' %}
+    &lt;br /&gt;
+    &lt;br /&gt;
+	{% render_set_value dataset 'project/dataset/sharing/restrictions_explanation' %}
+    &lt;br /&gt;
+    &lt;br /&gt;
+	{% get_set_values dataset 'project/dataset/preservation/repository' as repository %}
+	{% if repository|length &gt; 0 %}
+	     Speicherlösung für den Datensatz: {% render_set_value_inline_list dataset 'project/dataset/preservation/repository' %} 
+         &lt;br /&gt;
+         &lt;br /&gt;
+	{% endif %}
+    {% render_set_value dataset 'project/dataset/sharing/conditions' %}
+    &lt;br /&gt;
+    &lt;br /&gt;
+{% endfor %}
+
+
+
+&lt;h2 id="4"&gt;3. INTEROPERABILITÄT DER DATEN &lt;/h2&gt;
+(Welche Standard- oder fachspezifischen Daten- und Metadatenvokabulare und Methoden werden verwendet?)
+&lt;br /&gt;
+&lt;br /&gt;
+Die Interoperabilität wird durch die Verwendung etablierter und allgemein verwendeter Datenformate (siehe Zusammenfassung) in Verbindung mit einer klaren Dokumentation gewährleistet.
+
+ Darüber hinaus werden alle Datensätze zusammen mit grundlegenden bibliografischen Metadaten (einschließlich Titel, Autoren, Schlüsselwörter, Beschreibung, verwandte Veröffentlichungen, PIDs) gespeichert.  
+
+ Ferner wird jeder Datensatz von spezifischen Metadaten begleitet:
+&lt;br /&gt;
+&lt;br /&gt;
+ {% for dataset in datasets %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+	{% get_set_values dataset 'project/dataset/metadata/scope' as metadata %}
+	{% if metadata|length &gt; 0 %}
+     &lt;ul&gt;
+       {% for meta in metadata %}
+          {% if meta.value == 'Ort' %}
+              &lt;li&gt;Ortsinformationen&lt;/li&gt;         
+          {% elif meta.value == 'Inhalt' %}
+              &lt;li&gt;detaillierte Beschreibung des Inhalts des Datensatzes&lt;/li&gt;
+          {% elif meta.value == 'Methodik' %}
+              &lt;li&gt;Informationen über die zur Erstellung des Datensatzes angewandte Methodik&lt;/li&gt;
+          {% elif meta.value == 'Erzeugungsprozess' %}
+              &lt;li&gt;Einzelheiten zum Entstehungsprozess&lt;/li&gt;
+          {% elif meta.value == 'Technologie' %}
+              &lt;li&gt;verwendete Instrumente und Software&lt;/li&gt;
+          {% elif meta.value == 'Dokumentation der zur Nutzung notwendigen Software' %}
+              &lt;li&gt;Dokumentation der für die Nutzung der Daten erforderlichen Software&lt;/li&gt;
+          {% elif meta.value == 'Zeit' %}
+              &lt;li&gt;Angaben zu Zeiten / Zeitspannen&lt;/li&gt;
+          {% elif meta.value == 'Quellen' %}
+              &lt;li&gt;zugrundeliegendes Quellenmaterial  &lt;/li&gt;
+          {% elif meta.value == 'Akteure' %}
+              &lt;li&gt;Akteure / Personen, die in dem Datensatz eine Rolle spielen&lt;/li&gt;
+          {% elif meta.value == 'Identifikatoren' %}
+              &lt;li&gt;Identifikatoren, die zur Verfolgung der Entstehungsgeschichte und der Herkunft verwendet werden können &lt;/li&gt;
+          {% elif meta.value|truncatechars:6 == 'Ander…' %}
+              &lt;li&gt;{{meta.value|cut:"Andere:"}}&lt;/li&gt;
+          {% endif %}
+      {% endfor %}
+    &lt;/ul&gt;  
+	{% endif %}
+
+    {% get_set_value dataset 'project/dataset/metadata/standards' as metadata_standards %}
+    {% if metadata_standards %}
+         {% if metadata_standards.value|truncatechars:10 == 'Es wird k…' %}
+             {{ metadata_standards.value }}.
+         {% elif  metadata_standards.value|truncatechars:6 == 'Im Ra…' %}
+             {{ metadata_standards.value }}.
+         {% elif  metadata_standards.value|truncatechars:6 == 'Es we…' %}
+              Für die Erfassung der Metadaten verwenden wir etablierte Standards. Insbesondere:
+             {{ metadata_standards.value|cut:'Es werden disziplinspezifische Standards, Klassifikationen etc. genutzt:' }}
+         {% elif  metadata_standards.value|truncatechars:7 == 'Das vo…' %}
+              Das vom Projekt genutzte Repositorium, verwendet bereits einen Standard. Es handelt sich um:
+             {{ metadata_standards.value|cut:'Das von uns verwendete Repositorium nutzt den Standard:' }}
+         {% elif  metadata_standards.value|truncatechars:7 == 'Das ve…' %}
+             {{ metadata_standards.value}}
+         {% elif  metadata_standards.value|truncatechars:6 == 'Es wi…' %}
+             Die Metadaten und Kontextinformationen werden mithilfe eines eigens angepassten Systems erfasst: 
+             {{ metadata_standards.value|cut:'Es wird ein eigenes Beschreibungssystem genutzt (bitte beschreiben Sie dieses kurz und geben, wenn nötig, an, wo es ausführlicher dokumentiert ist):' }}
+         {% elif  metadata_standards.value|truncatechars:6 == 'Sonst…' %}
+             {{ metadata_standards.value|cut:'Sonstiges:' }}
+         {% endif %}
+    &lt;br /&gt;
+    &lt;br /&gt;
+	{% endif %}
+{% endfor %}
+
+
+&lt;h2 id="5"&gt;4. DATENNACHNUTZUNG&lt;/h2&gt;
+(Welche Daten werden wiederverwendbar bleiben und für welche Dauer? Ist eine Embargo-Frist vorgesehen? Wie werden die Daten lizenziert? Verfahren zur Qualitätssicherung der Daten)
+&lt;br /&gt;
+&lt;br /&gt;
+{% for dataset in datasets %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+    {% render_set_value dataset 'project/dataset/preservation' %}
+    &lt;br /&gt;
+    &lt;br /&gt;
+	{% get_set_values dataset 'project/dataset/sharing/sharing_license' as licence %}
+	{% if licence|length &gt; 0 %}
+	     Der Datensatz wird unter der folgenden Lizenz zugänglich gemacht: {% render_set_value_inline_list dataset 'project/dataset/sharing/sharing_license' %}.
+         &lt;br /&gt;
+         &lt;br /&gt;
+	{% endif %}
+	{% render_set_value dataset 'project/dataset/preservation/embargo_period' %}
+    &lt;br /&gt;
+	&lt;br /&gt;
+{% endfor %}
+
+
+
+
+&lt;h2 id="6"&gt;5. RESSOURCEN und DATENSICHERHEIT&lt;/h2&gt;
+(Wie hoch sind die geschätzten Kosten für den offenen Zugang zu den Projektdaten und die langfristigen Datenaufbewahrung? Verfahren für die Datensicherung und -wiederherstellung; Übertragung sensibler Daten und sichere Aufbewahrung in Repositorien für die langfristige Aufbewahrung und Kuratierung)
+
+&lt;h3 id="61"&gt;Speicherung und Sicherheit&lt;/h3&gt;
+{% for dataset in datasets %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+    {% render_set_value dataset 'project/dataset/storage' %}
+    &lt;br /&gt;
+    &lt;br /&gt;
+	{% render_set_value dataset 'project/dataset/storage/organisation_policy' %}
+	&lt;br /&gt;
+    &lt;br /&gt;
+    {% get_set_values dataset 'project/dataset/data_security/security_measures' as security %}
+    	{% if security|length &gt; 0 %}
+	     Um die Sicherheit dieses Datensatzes zu gewährleisten, werden die folgenden Maßnahmen ergriffen:
+		 &lt;ul&gt;
+		  {% get_set_values dataset 'project/dataset/data_security/security_measures' as security_measures  %}
+          {% for measure in security_measures|is_not_empty %}
+			&lt;li&gt;{{ measure.value }}&lt;/li&gt;
+		  {% endfor %}
+        &lt;/ul&gt;
+        &lt;br /&gt;
+	    {% endif %}
+{% endfor %}
+
+&lt;h3 id="62"&gt;Langfristige Perspektiven&lt;/h3&gt;
+{% for dataset in datasets %}
+    &lt;i&gt;&lt;b&gt;{{ dataset.value }}:&lt;/b&gt;&lt;/i&gt;&lt;br /&gt;
+    {% render_set_value dataset 'project/dataset/reuse_scenario' %}
+	&lt;br /&gt;
+    &lt;br /&gt;
+{% endfor %}
+
+&lt;h3 id=&quot;63&quot;&gt;Kosten&lt;/h3&gt;
+&lt;h4 id=&quot;631&quot;&gt;Personal- und Infrastrukturkosten&lt;/h4&gt;
+{% render_value 'project/costs' %}
+
+&lt;h4 id=&quot;632&quot;&gt;Finanzierung&lt;/h4&gt;
+{% render_value 'project/costs/preservation/cover_how' %}
+&lt;br /&gt;
+
+&lt;div id=&quot;hinweis&quot; style=&quot;margin: 10pt;&quot;&gt; &lt;b&gt;Hinweis:&lt;/b&gt; Bitte beachten Sie, dass der ERC-Datenmanagementplan nicht Teil der Ethikprüfung ist. 
+Es liegt in der Verantwortung des Principal Investigators, das ERCEA-Ethik-Team über alle ethischen Fragen / Bedenken in Bezug auf die Erhebung, Verarbeitung, Weitergabe und Speicherung
+von Daten im Zusammenhang mit dem Projekt zu informieren.
+&lt;/div&gt;
+
+{% endif %}</template>
+	</view>
+</rdmo>

@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-03-19T17:20:32.811420+01:00" version="2.2.2">
+	<catalog dc:uri="https://fdm-bayern.org/eHumanities/questions/vw_stiftung">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>vw_stiftung</uri_path>
+		<dc:comment>Katalog für die neuen Vorlagen der VW-Stiftung (2024)</dc:comment>
+		<order>98</order>
+		<title lang="en">VW Foundation  -  DMP</title>
+		<help lang="en"/>
+		<title lang="de">VW Stiftung  - DMP</title>
+		<help lang="de"/>
+		<sections>
+			<section dc:uri="https://fdm-bayern.org/eHumanities/questions/introduction" order="0"/>
+			<section dc:uri="https://fdm-bayern.org/eHumanities/questions/data_description" order="1"/>
+			<section dc:uri="https://fdm-bayern.org/eHumanities/questions/legal_rights" order="2"/>
+			<section dc:uri="https://fdm-bayern.org/eHumanities/questions/repositories" order="3"/>
+			<section dc:uri="https://fdm-bayern.org/eHumanities/questions/responsibilities" order="4"/>
+		</sections>
+	</catalog>
+	<section dc:uri="https://fdm-bayern.org/eHumanities/questions/introduction">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>introduction</uri_path>
+		<dc:comment/>
+		<title lang="en">Introduction</title>
+		<short_title lang="en"/>
+		<title lang="de">Einleitung</title>
+		<short_title lang="de"/>
+		<pages>
+			<page dc:uri="https://fdm-bayern.org/eHumanities/questions/intro" order="1"/>
+		</pages>
+	</section>
+	<page dc:uri="https://fdm-bayern.org/eHumanities/questions/intro">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>intro</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">General information</title>
+		<short_title lang="en"/>
+		<help lang="en">This template is based on the VW Foundation's basic data management plan (&lt;a href=&quot;https://www.volkswagenstiftung.com/sites/default/files/documents/Basic_Data_Management_Plan.docx&quot; target=&quot;_blank&quot;&gt;Basic DMP&lt;/a&gt;).
+The questions do **not** precisely follow the offical VW template. The main reason for this is that the offical plan chooses to separate related RDM topics in different sections. Once this questionnaire has been completed you can use the corresponding view (which can be found on the overview page for this project in RDMO) to format your answers in the form of the offical VW template and export it.  
+
+Regarding DMPs, the VW Foundation states: &lt;br/&gt;
+&quot;If your project generates large amounts of data, the Foundation requires you to provide a data management plan as an attachment to your application. This may also be included as a topic of the review. &quot; (&lt;a href=&quot;https://www.volkswagenstiftung.de/en/funding/information-applicants&quot; target=&quot;_blank&quot;&gt;Source&lt;/a&gt;)
+
+The basic DMP should only be used if you do not yet know where you want to publish the data, or if the repository does not provide a specific DMP template. Whether a repository has its own DMP template can usually be found directly on the pages of the data repository. For example, ZPID offers a detailed DMP for &lt;a href=&quot;https://psychdata.com//&quot; target=&quot;_blank&quot;&gt;PsychData&lt;/a&gt; in the &lt;a href=&quot;https://datawiz.leibniz-psychology.org/DataWiz/&quot; target=&quot;_blank&quot;&gt;DataWiz&lt;/a&gt; tool.
+
+To give an idea of what the answers might look like, a short DMP for a fictitious project has been created using this template. It can be found &lt;a href=&quot;https://gitlab.rrze.fau.de/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/VW_Stiftung/Example_Answers.md?ref_type=heads&quot; target=&quot;_blank&quot;&gt;on GitLab&lt;/a&gt;.</help>
+		<verbose_name lang="en"/>
+		<title lang="de">Allgemeine Informationen</title>
+		<short_title lang="de"/>
+		<help lang="de">Diese Vorlage orientiert sich an dem Basis-Datenmanagementplan der VW-Stiftung (&lt;a href=&quot;https://www.volkswagenstiftung.de/sites/default/files/documents/Basis-Datenmanagementplan.docx&quot; target=&quot;_blank&quot;&gt;Basis-DMP&lt;/a&gt;). Die Fragen folgen **nicht** genau dem offiziellen VW-Template. Der Hauptgrund dafür ist, dass das offizielle Template verwandte FDM-Themen in verschiedene Abschnitte aufteilt. Nach dem Ausfüllen dieses Fragebogens können Sie die entsprechende Ansicht (zu finden auf der Übersichtsseite für dieses Projekt in RDMO) verwenden, um Ihre Antworten entsprechend der offiziellen VW-Vorlage zu formatieren und zu exportieren.
+
+Zum Thema DMP sagt die VW-Stiftung: &lt;br/&gt;
+&quot;Wenn in Ihrem Vorhaben größere Datenmengen erzeugt werden, erwartet die Stiftung einen Datenmanagementplan als Antragsanlage. Dieser ist ggf. Gegenstand der Begutachtung. Wenn Sie in Ihrem Projekt Daten generieren wollen, aber noch nicht wissen, in welchem Repositorium Sie ihre Daten speichern wollen, nutzen Sie bitte den Basis-Datenmanagementplan [...]. Ansonsten nutzen Sie den Datenmanagementplan des Zielrepositoriums.&quot; (&lt;a href=&quot;https://www.volkswagenstiftung.de/de/infos-fuer-antragstellende&quot; target=&quot;_blank&quot;&gt;Quelle&lt;/a&gt;)
+
+Das heißt, dass der Basis-DMP nur dann genutzt werden sollte, wenn Ihnen entweder noch kein Zielrepositorium für die Daten vorschwebt oder das Repositorium keinen eigenen DMP hat. Ob ein Repositorium ein eigene DMP-Vorlage hat, findet sich meist direkt auf den Seiten des Datenrepositoriums. Beispielsweise bietet das ZPID für &lt;a href=&quot;https://psychdata.com//&quot; target=&quot;_blank&quot;&gt;PsychData&lt;/a&gt; einen ausführlichen DMP im Werkzeug &lt;a href=&quot;https://datawiz.leibniz-psychology.org/DataWiz/&quot; target=&quot;_blank&quot;&gt;DataWiz&lt;/a&gt;.
+
+Um eine Vorstellung davon zu vermitteln, wie die Antworten aussehen könnten, wurde ein kurzer DMP für ein fiktives Projekt unter Verwendung dieser Vorlage erstellt. Es kann &lt;a href=&quot;https://gitlab.rrze.fau.de/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/VW_Stiftung/Beispielantworten.md?ref_type=heads&quot; target=&quot;_blank&quot;&gt;hier auf GitLab&lt;/a&gt; eingesehen werden.</help>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions/>
+		<conditions/>
+	</page>
+	<section dc:uri="https://fdm-bayern.org/eHumanities/questions/data_description">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>data_description</uri_path>
+		<dc:comment/>
+		<title lang="en">Data description</title>
+		<short_title lang="en"/>
+		<title lang="de">Datenbeschreibung</title>
+		<short_title lang="de"/>
+		<pages>
+			<page dc:uri="https://fdm-bayern.org/eHumanities/questions/datasets" order="1"/>
+			<page dc:uri="https://fdm-bayern.org/eHumanities/questions/dataorganisation" order="2"/>
+		</pages>
+	</section>
+	<page dc:uri="https://fdm-bayern.org/eHumanities/questions/datasets">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>datasets</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">Datasets</title>
+		<short_title lang="en"/>
+		<help lang="en">This section deals with datasets that you plan to reuse or create in your project. 
+First, create a new entry for each dataset and give it a concise name.
+
+Link to &lt;a href=&quot;https://gitlab.rrze.fau.de/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/VW_Stiftung/Example_Answers.md?ref_type=heads#data-description&quot; target=&quot;_blank&quot;&gt;example answer&lt;/a&gt;.</help>
+		<verbose_name lang="en">Dataset</verbose_name>
+		<title lang="de">Datensätze</title>
+		<short_title lang="de"/>
+		<help lang="de">In diesem Abschnitt geht es um Datensätze, die Sie in Ihrem Projekt wiederverwenden oder erstellen möchten. 
+Erstellen Sie einen neuen Eintrag pro Datensatz und geben Sie diesen einen prägnanten Namen.
+
+Link zur &lt;a href=&quot;https://gitlab.rrze.fau.de/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/VW_Stiftung/Beispielantworten.md?ref_type=heads#datenbeschreibung&quot; target=&quot;_blank&quot;&gt;Antwortbeispiel&lt;/a&gt;.</help>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/content-classification/data-dataset/description" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/content-classification/data-existing_data/origin" order="1"/>
+			<question dc:uri="https://fdm-bayern.org/eHumanities/questions/reuse_and_access" order="2"/>
+			<question dc:uri="https://fdm-bayern.org/eHumanities/questions/access_link" order="3"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/technical-classification/data-volume/volume" order="4"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/content-classification/data-dataset/description">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/content-classification/data-dataset/description</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/description"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Please briefly describe the data type and / or the method used to create or collect the data, for example:   
+
+* quantitative online survey   
+* 3D model / digital reconstruction of a stone age settlement
+* software developed within the project</help>
+		<text lang="en">What kind of dataset is it?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Bitte beschreiben Sie hier kurz, um welchen Datentyp es sich handelt und mit welcher Methode die Daten erhoben oder erstellt werden, z.B.:
+
+* quantitative Online-Befragung     
+* 3D-Modellierung / digitale Rekonstruktion einer steinzeitlichen Siedlung
+* Software, die im Projekt entwickelt wird</help>
+		<text lang="de">Um welche Art Datensatz handelt es sich?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/content-classification/data-existing_data/origin">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/content-classification/data-existing_data/origin</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Is the dataset being created or reused?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wird der Datensatz selbst erzeugt oder nachgenutzt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_origin_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://fdm-bayern.org/eHumanities/questions/reuse_and_access">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>reuse_and_access</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">The VW Foundation speaks of personal rights, but this primarily refers to protecting personal data in the dataset.
+
+Copyrights can regularly occur with text corpora or image corpora. Access to the materials may be possible via licensed databases, but they cannot be passed on to third parties or published later. Other legal aspects, such as contractual agreements with data providers, should also be mentioned here.</help>
+		<text lang="en">Are these datasets freely accessible, or must copyright, data protection regulations, personality rights be considered?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Die VW-Stiftung spricht von Persönlichkeitsrechten, damit ist aber in erster Linie der Schutz personenbezogener Daten in dem Datensatz gemeint.
+
+Urheberrechte können regelmäßig bei Textkopora oder Bildkorpora auftreten. So ist es denkbar, dass über lizenzierte Datenbanken Zugang zu den Materialen möglich ist, diese jedoch später nicht an Dritte weitergegeben oder gar publiziert werden dürfen. Andere rechtliche Aspekte, wie vertragliche Vereinbarungen mit Datengebern, sollten hier auch genannt werden.</help>
+		<text lang="de">Sind diese Daten frei zugänglich oder sind hier Urheber- oder Persönlichkeitsrechte zu berücksichtigen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://fdm-bayern.org/eHumanities/questions/access_link">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>access_link</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/uri"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en"/>
+		<text lang="en">If you have a link to the dataset, e.g., in a repository, or a DOI, please give it here:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Falls Sie einen Link oder einen DOI zu dem Datensatz haben, etwa weil er in einem Repositorium liegt, geben Sie diesen hier an:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://fdm-bayern.org/eHumanities/conditions/data_reused"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/technical-classification/data-volume/volume">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/technical-classification/data-volume/volume</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/size/volume"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">What is the actual or expected size of the dataset?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">In welchem Rahmen liegt die tatsächliche oder erwartete Größe des Datensatzes?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>float</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_size_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<page dc:uri="https://fdm-bayern.org/eHumanities/questions/dataorganisation">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>dataorganisation</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">Data organisation and metadata</title>
+		<short_title lang="en"/>
+		<help lang="en">In addition to the data itself, central contextual information that is necessary or helpful for identifying and using the data should be recorded. This metadata can be recorded in free form, for example, in a ReadMe file, or structured according to a standard and filled in using a controlled vocabulary. Such standards facilitate, among other things, the automated collection of data. However, internationally recognized standards have not yet been established for all types of data. 
+
+Two central pieces of metadata are the data format and, if available, a persistent identifier (PID for short). The format often gives an immediate indication of whether the data can be used, and with what software. PIDs are used to uniquely reference (and therefore cite) the data and make it easier to find.
+
+Link to &lt;a href=&quot;https://gitlab.rrze.fau.de/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/VW_Stiftung/Example_Answers.md?ref_type=heads#data-organisation-and-metadata&quot; target=&quot;_blank&quot;&gt;example answers&lt;/a&gt;.</help>
+		<verbose_name lang="en">Dataset</verbose_name>
+		<title lang="de">Datenorganisation und Metadaten</title>
+		<short_title lang="de"/>
+		<help lang="de">Parallel zu den Daten selbst sollten zentrale Kontextinformationen, die zur Identifikation und Nutzung der Daten notwendig oder hilfreich sind, erfasst werden. Diese Metadaten können in freier Form etwa in einer ReadMe Datei erfasst werden oder nach einem Standard strukturiert und mit Hilfe eines normierten Bezeichnungsschemas befüllt werden. Solche Standards erleichtern es unter anderem, die Daten automatisiert zu erfassen. Allerdings haben sich noch nicht für jeden Datentyp international verbreitete Standards etabliert. 
+
+Zwei zentrale Metadaten sind das Datenformat und, sofern vorhanden, ein persistenter Identifikator (kurz PID). Das Format erlaubt oft direkte Rückschlüsse, ob und mit welcher Software die Daten verwendet werden können. PID dienen der eindeutigen Referenzierbarkeit (und damit Zitierbarkeit)  der Daten und erleichtern es, die Daten zu finden.
+
+Link zu den &lt;a href=&quot;https://gitlab.rrze.fau.de/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/VW_Stiftung/Beispielantworten.md?ref_type=heads#datenorganisation-und-metadaten&quot; target=&quot;_blank&quot;&gt;Beispielantworten&lt;/a&gt;.</help>
+		<verbose_name lang="de">Datensatz</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/technical-classification/data-formats/format" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/metadata-and-referencing/metadata-dataset/scope" order="1"/>
+			<question dc:uri="https://fdm-bayern.org/eHumanities/questions/erc/interoperable/documentation/standards" order="2"/>
+			<question dc:uri="https://fdm-bayern.org/eHumanities/questions/PID" order="4"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/technical-classification/data-formats/format">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/technical-classification/data-formats/format</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/format"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">When choosing a data format, one should consider the consequences for collaborative use, long-term preservation as well as reuse. It is recommended to prefer formats that are standardised, open, non-proprietary and well-established in the respective scientific community. More criteria and detailed explanations can be found, e.g., in the &lt;a href=&quot;https://www.forschungsdaten.org/images/b/b0/Leitfaden_Data-Management-WissGrid.pdf&quot; target=_blank&quot;&gt;WissGrid-Leitfaden, pp. 22 f.&lt;/a&gt; (in German only).</help>
+		<text lang="en">Which file formats are used?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Bei der Wahl des Dateiformates sollten auch die Konsequenzen für die kollaborative Nutzung, die Langzeitarchivierung sowie die Nachnutzung beachtet werden. Es empfiehlt sich, möglichst standardisierte, nicht-proprietäre und allgemein bzw. in der spezifischen Community verbreitete Formate zu nutzen. Weitere Kriterien sowie detaillierte Erläuterungen sind z.B. im &lt;a href=&quot;https://www.forschungsdaten.org/images/b/b0/Leitfaden_Data-Management-WissGrid.pdf&quot; target=_blank&quot;&gt;WissGrid-Leitfaden, S. 22 f.&lt;/a&gt; zu finden.</help>
+		<text lang="de">In welchen Formaten liegen die Daten vor?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/metadata-and-referencing/metadata-dataset/scope">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/metadata-and-referencing/metadata-dataset/scope</uri_path>
+		<dc:comment>probably we should introduce  a separate question for  being  findable and reused</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/scope"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Which information is necessary for other parties to understand the data (that is, to understand their collection or creation, analysis, and research results obtained on its basis) and to reuse it?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Welche Informationen sind für Außenstehende notwendig, um die Daten zu verstehen (d.h. ihre Erhebung bzw. Entstehung, Analyse sowie die auf ihrer Basis gewonnenen Forschungsergebnisse nachvollziehen) und nachnutzen zu können?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/mandatory_metadata_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://fdm-bayern.org/eHumanities/questions/erc/interoperable/documentation/standards">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>erc/interoperable/documentation/standards</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/standards"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Also specify the metadata standard if it is already clear which will be used, e.g., because the repository specifies one.</help>
+		<text lang="en">Which standards, ontologies, classifications etc. are used to describe the data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Geben Sie auch den Metadatenstandard an, wenn bereits klar ist, welcher verwendet werden soll, z.B. weil das Repositorium einen vorgibt.</help>
+		<text lang="de">Welche Standards, Ontologien, Klassifikationen etc. werden zur Beschreibung der Daten genutzt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/metadata_standards"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://fdm-bayern.org/eHumanities/questions/PID">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>PID</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/pids/system"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">A PID is an identifier that is permanently linked to a (digital) object, in this case a dataset. The PID is used to make the dataset uniquely identifiable and citable. PIDs are usually registered with central authorities and managed by them. An internal project number usually does not meet the requirements of a PID, as it is not unique worldwide.
+
+The best known PID system is the &lt;a href=&quot;https://www.doi.org/&quot; target=&quot;_blank&quot;&gt;DOI&lt;/a&gt;. 
+Data are usually only assigned a PID when the dataset is considered complete or static. For example, when a dataset has been archived. The PID should also be recorded in the metadata.</help>
+		<text lang="en">Is a persistent identifier (PID) assigned to the data so that it can be referenced and cited in a sustainable manner?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Ein PID ist ein Identifikator, der langfristig mit einem (digitalen) Objekt, hier einem Datensatz, verknüpft ist. Der PID dient dazu den Datensatz eindeutig identifizierbar und zitierbar zu machen. PID werden meist bei zentralen Stellen registriert und von diesen verwaltet. Eine projektinterne Nummer erfüllt meist nicht die Anforderungen an einen PID, da diese in der Regel nicht weltweit eindeutig sind.
+
+Das bekannteste PID-System ist der &lt;a href=&quot;https://www.doi.org/&quot; target=&quot;_blank&quot;&gt;DOI&lt;/a&gt;. 
+Daten bekommen einen PID meist nur nachdem der Datensatz als abgeschlossen oder statisch gesehen wird. Etwa wenn ein Datensatz in ein Archivsystem eingebracht wurde. Die PID sollten ebenfalls in den Metadaten aufgezeichnet werden.</help>
+		<text lang="de">Bekommen die Daten einen persistenten Identifikator (PID), mit dem sie nachhaltig referenzierbar und zitierfähig sind?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/pid_types"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<section dc:uri="https://fdm-bayern.org/eHumanities/questions/legal_rights">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>legal_rights</uri_path>
+		<dc:comment/>
+		<title lang="en">Rights to use and agreements</title>
+		<short_title lang="en"/>
+		<title lang="de">Nutzungsrechte und Vereinbarungen</title>
+		<short_title lang="de"/>
+		<pages>
+			<page dc:uri="https://fdm-bayern.org/eHumanities/questions/use_in_project" order="1"/>
+			<page dc:uri="https://fdm-bayern.org/eHumanities/questions/sharing_external" order="2"/>
+		</pages>
+	</section>
+	<page dc:uri="https://fdm-bayern.org/eHumanities/questions/use_in_project">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>use_in_project</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner"/>
+		<is_collection>False</is_collection>
+		<title lang="en">Project-internal agreements</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Vereinbarungen im Projekt</title>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://fdm-bayern.org/eHumanities/questions/sharing" order="1"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://fdm-bayern.org/eHumanities/questions/sharing">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>sharing</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/agreement"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Especially in collaborative projects in which several working groups cooperate, it is important to have an agreed upon set of rules. Guiding questions can be:
+
+* Who may access datasets (collected by another group) during the project and for what purpose?
+* How is access to the data regulated after the end of the project? Individual datasets may remain at one institution, but partners may want access to the data at a later stage (for another project).
+* Who decides whether data is shared with third parties (e.g., after the end of the project)? Note: Existing plans to share data with third parties are discussed on the next page of this questionnaire.
+
+
+Here you can find a very short &lt;a target=&quot;_blank&quot; href=&quot;https://gitlab.rrze.fau.de/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/VW_Stiftung/Example_Answers.md?ref_type=heads#project-internal-agreements&quot;&gt;example answer&lt;/a&gt;.</help>
+		<text lang="en">How does the project regulate access to and use of the data within the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Gerade in kollaborativen Projekten, in denen mehrere Arbeitsgruppen kooperieren, ist es wichtig, Regelungen zu haben. Leitfragen können sein:
+
+* Wer (außerhalb der Gruppe, die die Daten erhoben hat) darf auf die Datensätze während der Projektlaufzeit zugreifen und für welche Zwecke nutzen?
+* Wie wird der Zugriff auf die Daten nach Projektende geregelt? Unter Umständen verbleiben einzelne Datensätze an einer Einrichtung, aber Partner wünschen später (für ein anderes Projekt) Zugang zu den Daten.
+* Wer entscheidet darüber, ob Daten mit Dritten geteilt werden (etwa nach Ende des Projektes)? Dies ist vor allem dann relevant, wenn es bislang keine Planungen gibt, Daten mit Dritten zu teilen. Sollte es solche geben,  werden diese auf der nächsten Seite des Fragenkatalogs thematisiert.
+
+Hier finden Sie ein sehr knappe &lt;a target=&quot;_blank&quot; href=&quot;https://gitlab.rrze.fau.de/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/VW_Stiftung/Beispielantworten.md?ref_type=heads#vereinbarungen-im-projekt&quot;&gt;Beispielantwort&lt;/a&gt;.</help>
+		<text lang="de">Wie wird die Nutzung / Verwertung der Daten innerhalb des Projektes geregelt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<page dc:uri="https://fdm-bayern.org/eHumanities/questions/sharing_external">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>sharing_external</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">Reuse and data sharing</title>
+		<short_title lang="en"/>
+		<help lang="en">Sharing datasets is generally strongly encouraged (e.g., by DFG). If there are circumstances that prevent sharing (data protecting, copyrights, patent applications, etc.), it is advisable to justify these restrictions on data sharing.  
+
+If a dataset is made fully or partially accessible, this will usually be done in the course of the publication of an associated journal article or in collected form at the end of the project, possibly with an appropriate embargo period.
+
+Link to &lt;a target=&quot;_blank&quot; href=&quot;https://gitlab.rrze.fau.de/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/VW_Stiftung/Example_Answers.md?ref_type=heads#reuse-and-data-sharing&quot;&gt;example answers&lt;/a&gt;.</help>
+		<verbose_name lang="en"/>
+		<title lang="de">Nachnutzung und Teilen der Daten</title>
+		<short_title lang="de"/>
+		<help lang="de">Die gemeinsame Nutzung von Datensätzen wird generell stark gefördert (z.B. von der DFG). Wenn es Umstände gibt, die eine gemeinsame Nutzung verhindern (Datenschutz, Urheberrechte, Patentanmeldungen usw.), empfiehlt es sich, diese Einschränkungen der Datenweitergabe zu begründen.  
+
+Wird ein Datensatz ganz oder in Teilen zugänglich gemacht, so sind typische Zeitpunkte hierfür die Veröffentlichung im Zuge der Publikation eines zugehörigen Zeitschriftenartikels oder am Ende der Projektlaufzeit in gesammelter Form, ggf. mit einer entsprechend gewählten Embargofrist.
+
+Link zu den &lt;a target=&quot;_blank&quot; href=&quot;https://gitlab.rrze.fau.de/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/VW_Stiftung/Beispielantworten.md?ref_type=heads#nachnutzung-und-teilen-der-daten&quot;&gt;Beispielantworten&lt;/a&gt;.</help>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://fdm-bayern.org/eHumanities/questions/data-usage/data-sharing-and-re-use-publication/yes-restricted-no" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use-publication/explanation" order="1"/>
+			<question dc:uri="https://fdm-bayern.org/eHumanities/questions/erc/reuse/long-term-preservation/licence" order="2"/>
+			<question dc:uri="https://fdm-bayern.org/eHumanities/questions/sharing_when" order="3"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://fdm-bayern.org/eHumanities/questions/data-usage/data-sharing-and-re-use-publication/yes-restricted-no">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>data-usage/data-sharing-and-re-use-publication/yes-restricted-no</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Will this dataset be published or shared?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Soll dieser Datensatz veröffentlicht oder geteilt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://fdm-bayern.org/eHumanities/options/yes_restricted_no"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/data-usage/data-sharing-and-re-use-publication/explanation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/data-usage/data-sharing-and-re-use-publication/explanation</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/explanation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">If no, please explain why not. Please differentiate between legal and contractual reasons and voluntary restrictions.</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wenn nicht, begründen Sie dies bitte und unterscheiden Sie dabei zwischen rechtlichen und/oder vertraglichen Gründen und freiwilligen Einschränkungen.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://fdm-bayern.org/eHumanities/questions/erc/reuse/long-term-preservation/licence">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>erc/reuse/long-term-preservation/licence</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/sharing_license"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">The answer options follow the &lt;a target=&quot;_blank&quot; href=&quot;https://creativecommons.org/licenses/?lang=en&quot;&gt;Creative Commons licenses&lt;/a&gt;. There are, however, various other licenses. Common licenses for software are Apache, MIT or the GNU General Public License.</help>
+		<text lang="en">Under what license will the data be made available?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Die Antwortoptionen orientieren sich grob an den  &lt;a target=&quot;_blank&quot; href=&quot;https://creativecommons.org/licenses/?lang=en&quot;&gt;Creative Commons-Lizenzen&lt;/a&gt;. Allerdings können auch andere Lizenzen verwendet werden. Gerade wenn es sich um Software handelt, sind unter anderem MIT-, Apache- oder GNU GP-Lizenzen verbreitet.</help>
+		<text lang="de">Unter welcher Lizenz werden die Daten zur Verfügung gestellt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://fdm-bayern.org/eHumanities/questions/sharing_when">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>sharing_when</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_publication_date"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">When will the dataset be made available to the community?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wann wird der Datensatz mit der wissenschaftlichen Community geteilt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<section dc:uri="https://fdm-bayern.org/eHumanities/questions/repositories">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>repositories</uri_path>
+		<dc:comment/>
+		<title lang="en">Repositories and data archives</title>
+		<short_title lang="en"/>
+		<title lang="de">Repositorien und Datenarchive</title>
+		<short_title lang="de"/>
+		<pages>
+			<page dc:uri="https://fdm-bayern.org/eHumanities/questions/data_repo" order="1"/>
+		</pages>
+	</section>
+	<page dc:uri="https://fdm-bayern.org/eHumanities/questions/data_repo">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>data_repo</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">Data storage in repositories</title>
+		<short_title lang="en"/>
+		<help lang="en">Repositories are usually data archives run by scientific societies, large research centres or universities. It is generally recommended to choose a repository that is geared towards your discipline (e.g., linguistics or astronomy) and is run by an institution that can be expected to exists for the foreseeable future.
+		
+Link to &lt;a href=&quot;https://gitlab.rrze.fau.de/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/VW_Stiftung/Example_Answers.md?ref_type=heads#repositories-and-data-archives&quot; target=&quot;_blank&quot;&gt;example answers&lt;/a&gt;.</help>
+		<verbose_name lang="en"/>
+		<title lang="de">Datensicherung in Repositorien</title>
+		<short_title lang="de"/>
+		<help lang="de">Repositorien sind in der Regel Datenarchive, die von wissenschaftlichen Gesellschaften, großen Forschungszentren oder Universitäten betrieben werden. Im Allgemeinen wird empfohlen, ein Repositorium zu wählen, das auf Ihr Fachgebiet ausgerichtet ist (z.B. Linguistik oder Astronomie) und von einer Einrichtung betrieben wird, von der zu erwarten ist, dass sie auf absehbare Zeit weiterbestehen wird. 
+
+Link zu den &lt;a target=&quot;_blank&quot; href=&quot;https://gitlab.rrze.fau.de/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/VW_Stiftung/Beispielantworten.md?ref_type=heads#repositorien-und-datenarchive&quot;&gt;Beispielantworten&lt;/a&gt;.</help>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/storage-and-long-term-preservation/long-term-preservation-datasets/repository" order="0"/>
+			<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/storage-and-long-term-preservation/long-term-preservation-datasets/reuse_duration" order="1"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/storage-and-long-term-preservation/long-term-preservation-datasets/repository">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/storage-and-long-term-preservation/long-term-preservation-datasets/repository</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Where will the data (including metadata, documentation and, if applicable, relevant code) be stored or archived after the end of the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wo werden die Daten (einschließlich Metadaten, Dokumentation und ggf. relevantem Code bzw. relevanter Software) nach Projektende gespeichert bzw. archiviert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmorganiser.github.io/terms/questions/rdmo/storage-and-long-term-preservation/long-term-preservation-datasets/reuse_duration">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>rdmo/storage-and-long-term-preservation/long-term-preservation-datasets/reuse_duration</uri_path>
+		<dc:comment>Original H2020 question</dc:comment>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/reuse_duration"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">How long is it intended that the data remains reusable.</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wie lange sollen die Daten nach Projektende (nach)nutzbar sein?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<section dc:uri="https://fdm-bayern.org/eHumanities/questions/responsibilities">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>responsibilities</uri_path>
+		<dc:comment/>
+		<title lang="en">Responsibilities</title>
+		<short_title lang="en"/>
+		<title lang="de">Verantwortlichkeiten</title>
+		<short_title lang="de"/>
+		<pages>
+			<page dc:uri="https://fdm-bayern.org/eHumanities/questions/persons" order="1"/>
+		</pages>
+	</section>
+	<page dc:uri="https://fdm-bayern.org/eHumanities/questions/persons">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>persons</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/responsibilities"/>
+		<is_collection>False</is_collection>
+		<title lang="en">Responsible persons for data management</title>
+		<short_title lang="en"/>
+		<help lang="en">Link to &lt;a href=&quot;https://gitlab.rrze.fau.de/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/VW_Stiftung/Example_Answers.md?ref_type=heads#responsibilities&quot; target=&quot;_blank&quot;&gt;example answers&lt;/a&gt;.</help>
+		<verbose_name lang="en"/>
+		<title lang="de">Verantwortliche für Datenmanagement</title>
+		<short_title lang="de"/>
+		<help lang="de">Link zu den &lt;a target=&quot;_blank&quot; href=&quot;https://gitlab.rrze.fau.de/cdi/labs/literacy/proposal-self-service/-/blob/main/RDMO/VW_Stiftung/Beispielantworten.md?ref_type=heads#verantwortlichkeitene&quot;&gt;Beispielantworten&lt;/a&gt;.</help>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://fdm-bayern.org/eHumanities/questions/persons_responsible_for_RDM" order="1"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://fdm-bayern.org/eHumanities/questions/persons_responsible_for_RDM">
+		<uri_prefix>https://fdm-bayern.org/eHumanities</uri_prefix>
+		<uri_path>persons_responsible_for_RDM</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/support"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">In larger projects, different people may be responsible for RDM topics such as backups, managing archived data after the end of the project, communicating with repositories or quality control before publication. The heads of the working groups are often responsible for communicating the common rules and training new project members. 
+
+The VW Foundation expects that names are mentioned here and not, for example, a to-be-filled project coordinator position.</help>
+		<text lang="en">Who is responsible for the appropriate handling of research data in the project? Please specify the person responsible.</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">In größeren Projekten kann es sein, dass die FDM-Themen, wie Backup und die Verwaltung archivierter Daten nach Projektende, Kommunikation mit Repositorien oder Qualitätskontrolle vor der Publikation, von unterschiedlichen Personen betreut werden. Für die Kommunikation der gemeinsamen Regeln und die Einarbeitung neuer Projektmitglieder sind häufig die Leitenden der Arbeitsgruppen zuständig. 
+
+Die VW Stiftung erwartet an dieser Stelle eine konkrete Namensnennung und nicht beispielsweise FDM als Aufgabe einer noch zu besetzenden Projektkoordinationsstelle.</help>
+		<text lang="de">Wer ist im Projekt für den adäquaten Umgang mit den Forschungsdaten verantwortlich? Bitte Angabe der verantwortlichen Person.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+</rdmo>
