@@ -114,10 +114,7 @@ In order to file issues, you will need a GitHub account.
 |Quality Assurance Tool for software  |[catalog][QAT]|       |2025-03|Mathmet / TC-IM 1449  |
 |Research data policy generator       |[catalog][FDN]|       |2025-04|FDNext                |
 |Software for collection management|[2 catalogs][N4Q]|       |2025-09|NFDI4Culture          |
-|Text+ | [catalog][TXT] | | 2026-06| Text+ | 
-|VW Foundation - Basic DMP            |[catalog][VWB]|       |2025-06|FDM Bayern eHumanities|
-|Software for collection management|[2 catalogs][N4Q]|       |2025-09|NFDI4Culture          |
-|Text+                                |[catalog][TXT]|       |2026-06|Text+      | 
+|Text+                                |[catalog][TXT]|       |2026-06|Text+           | 
 |VW Foundation - Basic DMP            |[catalog][VWB]|       |2025-06|FDM Bayern eHumanities|
 
 Total: 36 catalogs, 15 views
