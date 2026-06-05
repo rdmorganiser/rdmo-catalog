@@ -116,7 +116,9 @@ In order to file issues, you will need a GitHub account.
 |Software for collection management|[2 catalogs][N4Q]|       |2025-09|NFDI4Culture          |
 |Text+ | [catalog][TXT] | | 2026-06| Text+ | 
 |VW Foundation - Basic DMP            |[catalog][VWB]|       |2025-06|FDM Bayern eHumanities|
-|VW Foundation - Science Europe       |[catalog][VWE]|       |2021-04|FDM Bayern eHumanities|
+|Software for collection management|[2 catalogs][N4Q]|       |2025-09|NFDI4Culture          |
+|Text+                                |[catalog][TXT]|       |2026-06|Text+      | 
+|VW Foundation - Basic DMP            |[catalog][VWB]|       |2025-06|FDM Bayern eHumanities|
 
 Total: 36 catalogs, 15 views
 
