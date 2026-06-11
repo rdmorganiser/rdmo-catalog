@@ -9,7 +9,10 @@ This catalogue was developed by the NFDI consortium [Text+](https://text-plus.or
 This catalogue is closely based on the [RDMO catalogue of the Max Weber Foundation](https://github.com/rdmorganiser/rdmo-catalog/tree/main/shared/MaxWeberStiftung). It was adapted in collaboration with participants of the Text+ consortium and expanded with discipline-specific examples.
 
 ## Installation
-The xml is a "full xml" export and contains all elements required for the import into RDMO.
+The xml is a "full xml" export and contains all options and attributes required for the import into RDMO.
 
+Before importing it, please make sure that the [plugins](https://github.com/rdmorganiser/rdmo-plugins) for GND and Wikidata are installed.
+
+WARNING: importing the catalogue may overwrite options and attributes already present on your instance. Updates to the standard options and attributes issued after this catalogue might be thus lost.
 ## Acknowledgements
 Text+ is funded by the German Research Foundation (DFG) under project number 460033370, https://gepris.dfg.de/gepris/projekt/460033370?language=en.
