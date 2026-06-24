@@ -93,6 +93,8 @@ In order to file issues, you will need a GitHub account.
 |---------------------------------|--------------|------|------------|----------------------|
 |All questions (RDMO+DFG)         |[catalog][FDK]|           |2025-05|FoDaKo                |
 |Animaldata                    |[catalog][animaldata]|           |2026-02|KI-TIERWOHL           |
+|All questions (RDMO+DFG)         |[catalog][FDK]|           |2025-05|FoDaKo                |
+|Animaldata                    |[catalog][animaldata]|       |2026-02|KI-TIERWOHL           |
 |BLE                              |[catalog][BLE]|[view][BLE]|2023-10|Julius-Kühn-Institut  |
 |DFG Chemistry                    |[catalog][CHE]|           |2023-08|FDM Bayern eHumanities|
 |DFG Chemistry                    |[catalog][N4C]|           |2024-06|NFDI4Chem             |
