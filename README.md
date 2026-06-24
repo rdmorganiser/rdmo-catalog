@@ -106,7 +106,7 @@ In order to file issues, you will need a GitHub account.
 |European Partnership on Metrology|[catalog][EPM]|[view][EPM]|2023-10|TC-IM 1449            |
 |Hessen State                     |[catalog][HFD]|           |2020-07|HeFDI                 |
 |Horizon 2020                     |[catalog][EHU]|[view][EHU]|2020-09|FDM Bayern eHumanities|
-|Humanities                       |[catalog][MWS]|           |2025-12|Max Weber Stiftung    | 
+|Humanities                       |[catalog][MWS]|           |2026-06|Max Weber Stiftung    | 
 |Mathematics                      |[catalog][MAT]|     |2022-11|DFG Excellence Cluster MATH+|
 |NFDI DMP Template                |[catalog][D4N]|           |2025-06|DMP4NFDI              |
 |Offboarding checklist            |[catalog][UDA]|           |2025-09|ULB Darmstadt         |
