@@ -7,10 +7,9 @@ Version: 1.3
 
 The question catalog  'MWS Projects (First Registration)' was jointly developed by the Global Data Steward Network of the MWS. It is primarily tailored to the needs of MWS researchers. The detailed RDMO catalogue produced by the RDMO Community served as starting point. It was adjusted in line with the requirements of MWS researchers and expanded to include subject-specific examples and links.
 
-:::success
 **Green DMP**
-In the interests of conserving resources when handling research data, additional notes and questions have been included in the questionnaire in the following sections (highlighted in green). Diese basieren auf den [Empfehlungen der AG Greening DH](https://doi.org/10.5281/zenodo.15288095) sowie auf der [Bachelorarbeit von Carolin Menzer](https://nbn-resolving.org/urn:nbn:de:kobv:525-36789). 
-:::
+In the interests of conserving resources when handling research data, additional notes and questions have been included in the questionnaire in the following sections (highlighted in green). These are based on the recommendations of the [working group "Greening DH"](https://doi.org/10.5281/zenodo.15288095) as well as on the [bachelor's thesis by Carolin Menzer](https://nbn-resolving.org/urn:nbn:de:kobv:525-36789). 
+
 
 **Structure:**
 * General
