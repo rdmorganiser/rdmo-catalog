@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2024-03-12T14:56:06.262241+01:00" version="2.1.3">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2026-01-08T10:07:30.568071+01:00" required="2.1.0" version="2.3.2">
 	<catalog dc:uri="https://rdmorganiser.github.io/terms/questions/smp">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<uri_path>smp</uri_path>
@@ -37,10 +37,11 @@ This SMP template was inspired by some documentation, specially:
 		<title lang="es"/>
 		<pages>
 			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic" order="0"/>
-			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-partner" order="1"/>
-			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/schedule" order="2"/>
-			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-management" order="3"/>
-			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/software-requirements" order="4"/>
+			<page dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner" order="1"/>
+			<page dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-funding" order="2"/>
+			<page dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/schedule" order="3"/>
+			<page dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-management" order="4"/>
+			<page dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/software-requirements" order="5"/>
 		</pages>
 	</section>
 	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/topic">
@@ -365,16 +366,54 @@ Folgende (ausgewählte) Plattformen können hierbei helfen:
 		<optionsets/>
 		<conditions/>
 	</question>
-	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-partner">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<page dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
 		<uri_path>smp/general/project-partner</uri_path>
 		<dc:comment/>
-		<attribute/>
-		<is_collection>False</is_collection>
-		<title lang="en">Software Project Partner(s)</title>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">Contributor(s)</title>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
-		<title lang="de">Software-Projektpartner</title>
+		<title lang="de">Beitragende</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets>
+			<questionset dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/employment" order="7"/>
+		</questionsets>
+		<questions>
+			<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/type" order="0"/>
+			<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/orcid-autocomplete" order="1"/>
+			<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/family-name" order="2"/>
+			<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/given-name" order="3"/>
+			<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/name" order="4"/>
+			<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/orcid" order="5"/>
+			<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/website" order="6"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
+		</conditions>
+	</page>
+	<questionset dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/employment">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
+		<uri_path>smp/general/project-partner/employment</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>True</is_collection>
+		<title lang="en">Role(s) and Affiliation(s)</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Rolle(n) und Affiliation(en)</title>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<title lang="fr"/>
@@ -388,28 +427,270 @@ Folgende (ausgewählte) Plattformen können hierbei helfen:
 		<verbose_name lang="es"/>
 		<questionsets/>
 		<questions>
-			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-partner/project-participants" order="0"/>
-			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-partner/funding" order="2"/>
+			<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/role" order="0"/>
+			<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/affiliation/ror-autocomplete" order="1"/>
+			<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/affiliation" order="2"/>
+			<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/affiliation/ror_id" order="3"/>
 		</questions>
-		<conditions>
-			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
-			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
-			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
-		</conditions>
-	</page>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-partner/project-participants">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<uri_path>smp/general/project-partner/project-participants</uri_path>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/role">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
+		<uri_path>smp/general/project-partner/role</uri_path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner"/>
-		<is_collection>True</is_collection>
+		<attribute dc:uri="https://rdmo.mpdl.mpg.de/terms/domain/project/partner/role"/>
+		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
-		<help lang="en">Please enter the name and contact details as well as institution, position as well as role in the software project, if applicable.</help>
-		<text lang="en">Who are the project participants that deal with this software?</text>
+		<help lang="en"/>
+		<text lang="en">Role</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Bitte geben Sie den Namen und Kontaktdaten sowie ggf. Institution und Position sowie Rolle im Software-Projekt.</help>
-		<text lang="de">Wer sind die Projektteilnehmer, die an dieser Software arbeiten?</text>
+		<help lang="de"/>
+		<text lang="de">Rolle</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/affiliation/ror-autocomplete">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
+		<uri_path>smp/general/project-partner/affiliation/ror-autocomplete</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mpdl.mpg.de/terms/domain/project/partner/affiliation/ror-autocomplete"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Type a name or a ROR id and choose the right organization from the matching options</help>
+		<text lang="en">ROR search</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Geben Sie einen Namen oder eine ROR id ein und wählen Sie die richtige Organisation aus den Optionen aus</help>
+		<text lang="de">ROR-Suche</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>select</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.mpdl.mpg.de/terms/options/ror-provider"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://rdmo.mpdl.mpg.de/terms/conditions/partner_without_ror_id"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/affiliation">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
+		<uri_path>smp/general/project-partner/affiliation</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mpdl.mpg.de/terms/domain/project/partner/affiliation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Affiliation</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Affiliation</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/affiliation/ror_id">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
+		<uri_path>smp/general/project-partner/affiliation/ror_id</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mpdl.mpg.de/terms/domain/project/partner/affiliation/ror-id"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">ROR ID</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">ROR ID</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/type">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
+		<uri_path>smp/general/project-partner/type</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mpdl.mpg.de/terms/domain/project/partner/type"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Following the cff schema, project contributors can be of two types: person or entity. An example entity contributor would be a research group. For more details, check the &lt;a href=&quot;https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md#authors&quot;&gt;CFF Schema Guide&lt;/a&gt;.</help>
+		<text lang="en">Type</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Nach dem cff-Schema können Projektbeitragende zwei Typen haben: Person oder Entität. Eine Beispielentität wäre eine Forschungsgruppe. Weitere Informationen finden Sie unter diesem Link: &lt;a href=&quot;https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md#authors&quot;&gt;&lt;i&gt;CFF Schema Guide&lt;/i&gt;&lt;/a&gt;.</help>
+		<text lang="de">Typ</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.mpdl.mpg.de/terms/options/partner-types"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/orcid-autocomplete">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
+		<uri_path>smp/general/project-partner/orcid-autocomplete</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mpdl.mpg.de/terms/domain/project/partner/orcid-autocomplete"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Type a name and affiliation or an ORCID and choose the right person from the matching options</help>
+		<text lang="en">ORCID search</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Geben Sie einen Namen und eine Affiliation oder eine ORCID ein und wählen Sie die richtige Person aus den Optionen aus</help>
+		<text lang="de">ORCID-Suche</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>select</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.mpdl.mpg.de/terms/options/orcid-provider"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://rdmo.mpdl.mpg.de/terms/conditions/partner_with_type_person"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/family-name">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
+		<uri_path>smp/general/project-partner/family-name</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mpdl.mpg.de/terms/domain/project/partner/family-name"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Family name(s)</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Familienname(n)</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<help lang="fr"/>
@@ -435,13 +716,212 @@ Folgende (ausgewählte) Plattformen können hierbei helfen:
 		<width/>
 		<optionsets/>
 		<conditions>
+			<condition dc:uri="https://rdmo.mpdl.mpg.de/terms/conditions/partner_with_type_person"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/given-name">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
+		<uri_path>smp/general/project-partner/given-name</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mpdl.mpg.de/terms/domain/project/partner/given-name"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Given name(s)</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Rufname(n)</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mpdl.mpg.de/terms/conditions/partner_with_type_person"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/name">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
+		<uri_path>smp/general/project-partner/name</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/name"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Name</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Name</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mpdl.mpg.de/terms/conditions/partner_with_type_entity"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/orcid">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
+		<uri_path>smp/general/project-partner/orcid</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mpdl.mpg.de/terms/domain/project/partner/orcid"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">ORCID</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">ORCID</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mpdl.mpg.de/terms/conditions/partner_with_type_person"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-partner/website">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
+		<uri_path>smp/general/project-partner/website</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmo.mpdl.mpg.de/terms/domain/project/partner/website"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Website</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Webseite</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<help lang="fr"/>
+		<text lang="fr"/>
+		<default_text lang="fr"/>
+		<verbose_name lang="fr"/>
+		<help lang="it"/>
+		<text lang="it"/>
+		<default_text lang="it"/>
+		<verbose_name lang="it"/>
+		<help lang="es"/>
+		<text lang="es"/>
+		<default_text lang="es"/>
+		<verbose_name lang="es"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://rdmo.mpdl.mpg.de/terms/conditions/partner_with_type_entity"/>
+		</conditions>
+	</question>
+	<page dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-funding">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
+		<uri_path>smp/general/project-funding</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Funding</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Finanzierung</title>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<title lang="fr"/>
+		<short_title lang="fr"/>
+		<help lang="fr"/>
+		<verbose_name lang="fr"/>
+		<title lang="it"/>
+		<short_title lang="it"/>
+		<help lang="it"/>
+		<verbose_name lang="it"/>
+		<title lang="es"/>
+		<short_title lang="es"/>
+		<help lang="es"/>
+		<verbose_name lang="es"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-funding/funding" order="0"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-1"/>
 			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-2"/>
 			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
 		</conditions>
-	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-partner/funding">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<uri_path>smp/general/project-partner/funding</uri_path>
+	</page>
+	<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-funding/funding">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
+		<uri_path>smp/general/project-funding/funding</uri_path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder"/>
 		<is_collection>False</is_collection>
@@ -496,16 +976,16 @@ Als weiterführenden Hinweise empfehlen wir diese Publikationen:
 			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
 		</conditions>
 	</question>
-	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/schedule">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<page dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/schedule">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
 		<uri_path>smp/general/schedule</uri_path>
 		<dc:comment/>
 		<attribute/>
 		<is_collection>False</is_collection>
-		<title lang="en">Software Project Schedule</title>
+		<title lang="en">Schedule</title>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
-		<title lang="de">Zeitplan für Softwareprojekte</title>
+		<title lang="de">Zeitplan</title>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<title lang="fr"/>
@@ -606,16 +1086,16 @@ Als weiterführenden Hinweise empfehlen wir diese Publikationen:
 		<optionsets/>
 		<conditions/>
 	</question>
-	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/project-management">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<page dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/project-management">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
 		<uri_path>smp/general/project-management</uri_path>
 		<dc:comment/>
 		<attribute/>
 		<is_collection>False</is_collection>
-		<title lang="en">Software Project Management</title>
+		<title lang="en">Project Management</title>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
-		<title lang="de">Software-Projekt-Management</title>
+		<title lang="de">Projekt-Management</title>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<title lang="fr"/>
@@ -784,16 +1264,16 @@ Beispiele für Anwendungen sind etwa eigenständige Ticket-Systeme wie Jira oder
 			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
 		</conditions>
 	</question>
-	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/general/software-requirements">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<page dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/general/software-requirements">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
 		<uri_path>smp/general/software-requirements</uri_path>
 		<dc:comment/>
 		<attribute/>
 		<is_collection>False</is_collection>
-		<title lang="en">Software Development Requirements</title>
+		<title lang="en">Development Requirements</title>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
-		<title lang="de">Anforderungen an die Softwareentwicklung</title>
+		<title lang="de">Entwicklungsanforderungen</title>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<title lang="fr"/>
@@ -925,7 +1405,7 @@ Parallel dazu ist es empfehlenswert, sich mit den FAIR Principles for Research S
 		<title lang="es"/>
 		<pages>
 			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/code" order="0"/>
-			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components" order="1"/>
+			<page dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/technical/components" order="1"/>
 			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/Infrastructure" order="2"/>
 			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/preservation" order="3"/>
 			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/security" order="4"/>
@@ -1045,13 +1525,13 @@ An dieser Stelle bietet es sich zusätzlich an, zu dokumentieren, ob technische 
 			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
 		</conditions>
 	</question>
-	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/technical/components">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<page dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/technical/components">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
 		<uri_path>smp/technical/components</uri_path>
 		<dc:comment/>
 		<attribute/>
 		<is_collection>False</is_collection>
-		<title lang="en">Third Party Components and Libraries</title>
+		<title lang="en">Third-Party Components and Libraries</title>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Externe Komponenten und Bibliotheken</title>
@@ -2496,7 +2976,7 @@ Weitere Literaturhinweise zu dem Thema können ebenfalls interessant sein:
 		<questionsets/>
 		<questions>
 			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/metadata/assign-metadata" order="0"/>
-			<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/metadata/software-pid" order="1"/>
+			<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/release-and-publish/metadata/software-pid" order="1"/>
 		</questions>
 		<conditions/>
 	</page>
@@ -2543,12 +3023,12 @@ Beispielsweise mit einer &lt;a href=&quot;https://citation-file-format.github.io
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://rdmorganiser.github.io/terms/questions/smp/release-and-publish/metadata/software-pid">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<question dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/release-and-publish/metadata/software-pid">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
 		<uri_path>smp/release-and-publish/metadata/software-pid</uri_path>
 		<dc:comment/>
 		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp/software-pid"/>
-		<is_collection>False</is_collection>
+		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en">For long-term availability and clear allocation, it is recommended to publish the software (version) with a persistent identifier. This recommendation goes hand in hand with &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; F3 and &lt;a href=&quot;https://wissenschaftliche-integritaet.de/en/code-of-conduct/cross-phase-quality-assurance/&quot; target=&quot;_blank&quot;&gt;guideline 7 in the DFG Code &quot;Guidelines for Safeguarding Good Scientific Practice&quot;&lt;/a&gt;. After &lt;a href=&quot;https://doi.org/10.15497/RDA00068&quot; target=&quot;_blank&quot;&gt;FAIR4RS&lt;/a&gt; F1.1, it may also be useful to place a separate identifier on the individual software versions or components. An example of a persistent identifier is the Digital Object Identifier (DOI). In terms of research software, for example, a GitHub/GitLab Zenodo integration can generate a citable object including DOI.</help>
 		<text lang="en">Do you give a persistent identifier for you software?</text>
@@ -2806,7 +3286,7 @@ Beispielsweise mit einer &lt;a href=&quot;https://citation-file-format.github.io
 		<title lang="es"/>
 		<pages>
 			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/intellectual-rights" order="0"/>
-			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/license" order="1"/>
+			<page dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/legal-and-ethics/license" order="1"/>
 			<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/dual-use" order="2"/>
 		</pages>
 	</section>
@@ -2927,16 +3407,16 @@ Beispielsweise mit einer &lt;a href=&quot;https://citation-file-format.github.io
 			<condition dc:uri="https://rdmorganiser.github.io/terms/conditions/application-class-3"/>
 		</conditions>
 	</question>
-	<page dc:uri="https://rdmorganiser.github.io/terms/questions/smp/legal-and-ethics/license">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<page dc:uri="https://rdmo.mpdl.mpg.de/terms/questions/smp/legal-and-ethics/license">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
 		<uri_path>smp/legal-and-ethics/license</uri_path>
 		<dc:comment/>
 		<attribute/>
 		<is_collection>False</is_collection>
-		<title lang="en">License</title>
+		<title lang="en">License(s)</title>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
-		<title lang="de">Lizenzen</title>
+		<title lang="de">Lizenz(en)</title>
 		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<title lang="fr"/>
