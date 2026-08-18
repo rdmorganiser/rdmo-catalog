@@ -1,4 +1,4 @@
-# MAUS Updates
+# Updates from the project [MAUS](https://gepris.dfg.de/gepris/projekt/543616919)
 
 ## General remarks
 
