@@ -26,7 +26,8 @@ The first 3 views are templates for the corresponding metadata files. `view-smp-
 
 ## History
 
-The SMP catalog was developed at the Max Planck Digital Library to support scientists developing research software documenting the development work....  
+The SMP catalog was created at the Max Planck Digital Library (Max Planck Information and Technology) to support scientists developing research software to plan and document their work. This catalog was inspired by some documentation, specially https://www.software.ac.uk/resources/guides/software-management-plans and https://opencarp.org/about/software-management-plan.
+
 The first version (2021-2023) was developed by Yves Vincent Grossmann, including a FAIR4RS view by Jan Matthiesen.  
-The second version (2026) was developed by Laura Bahamón Jiménez within the DFG project MAUS (MAschinelle Unterstützung von Software-Management-Plänen), ...
+The second version (2026) was developed within the DFG project MAUS (MAschinelle Unterstützung von Software-Management-Plänen), including 4 views (`view-smp-citation.xml`, `view-smp-codemeta.xml`, `view-smp-readme.xml`, `view-smp-report.xml`)
 
