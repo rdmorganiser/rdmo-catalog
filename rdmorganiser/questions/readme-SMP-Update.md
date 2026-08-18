@@ -23,3 +23,10 @@ We added 4 views for the SMP catalog:
     - `view-smp-report.xml`
 
 The first 3 views are templates for the corresponding metadata files. `view-smp-report.xml` is a template that displays the answers in the SMP project as a continuous-text report.
+
+## History
+
+The SMP catalog was developed at the Max Planck Digital Library to support scientists developing research software documenting the development work....  
+The first version (2021-2023) was developed by Yves Vincent Grossmann, including a FAIR4RS view by Jan Matthiesen.  
+The second version (2026) was developed by Laura Bahamón Jiménez within the DFG project MAUS (MAschinelle Unterstützung von Software-Management-Plänen), ...
+
