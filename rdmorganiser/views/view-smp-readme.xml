@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2026-05-29T15:43:06.514036+02:00" required="2.1.0" version="2.4.4">
+	<view dc:uri="https://rdmo.mpdl.mpg.de/terms/views/smp-readme">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
+		<uri_path>smp-readme</uri_path>
+		<dc:comment>Helper view of a README file for Research Software.</dc:comment>
+		<order>0</order>
+		<title lang="en">SMP Readme Template</title>
+		<help lang="en">Helper view of a README file for Research Software.</help>
+		<title lang="de">SMP Readme Template</title>
+		<help lang="de">Hilfe-Ansicht einer README-Datei für Forschungssoftware.</help>
+		<catalogs>
+			<catalog dc:uri="https://rdmorganiser.github.io/terms/questions/smp"/>
+		</catalogs>
+		<template>{% load view_tags %}
+{% get_value 'project/title' as title %}
+{% get_values 'project/research_field' as research_fields %}
+{% get_value 'project/research_question/title' as research_question_title %}
+{% get_set 'project/partner/id' as partners %}
+{% get_values 'smp/software-license' as software_licenses %}
+
+{# ############# #}
+{# PROJECT TITLE #}
+{# ############# #}
+&lt;h1&gt;{{ title.value }}&lt;/h1&gt;
+
+{# ################# #}
+{# RESEARCH FIELD(S) #}
+{# ################# #}
+{% if research_fields|length %}
+    &lt;p&gt;This software belongs to the research field{{ research_fields|pluralize }}: {% if research_fields|length == 1 %}{{ research_fields.0.value }}
+        {% elif research_fields|length &gt; 1 %}
+        &lt;ul&gt;
+        {% for rf in research_fields %}
+            &lt;li&gt;{{ rf.value }}&lt;/li&gt;
+        {% endfor %}
+        &lt;/ul&gt;
+        {% endif %}
+    &lt;/p&gt;
+{% endif %}
+
+{# ######################################### #}
+{# INTENDED USE AND CONTRIBUTION TO RESEARCH #}
+{# ######################################### #}
+{% if research_question_title and research_question_title.value != '' %}
+    &lt;p&gt;Its intended use and its contribution to research:&lt;/p&gt;
+    &lt;p&gt;{{ research_question_title.value|linebreaks }}&lt;/p&gt;
+{% endif %}
+
+{# ############## #}
+{# CONTRIBUTOR(S) #}
+{# ############## #}
+{% if partners|length %}
+    &lt;p&gt;Contributor{{ partners|pluralize }}:
+    &lt;ul&gt;
+    {% for p in partners %}
+        {% with p_set_index_str=p.set_index|stringformat:'s' %}
+        {% get_set_value p 'project/partner/type' as p_type %}
+        {% get_set_value p 'project/partner/orcid' as p_orcid %}
+        {% get_set_value p 'project/partner/website' as p_website %}
+        {% get_set_value p 'project/partner/given-name' as p_given_name %}
+        {% get_set_value p 'project/partner/family-name' as p_family_name %}
+        {% get_set_value p 'project/partner/name' as p_name %}
+        {% get_values 'project/partner/affiliation' p_set_index_str as p_affiliations %}
+        {% get_values 'project/partner/role' p_set_index_str as p_roles %}
+        &lt;li&gt;{% if p_type.option_uri == 'https://rdmo.mpdl.mpg.de/terms/options/partner-types/person' and p_given_name.value and p_family_name.value %}{{ p_given_name.value }} {{ p_family_name.value }}{% elif p_type.option_uri == 'https://rdmo.mpdl.mpg.de/terms/options/partner-types/entity' and p_name.value %}{{ p_name.value }}{% else %}{{ p.value }}{% endif %}{% if p_type.option_uri == 'https://rdmo.mpdl.mpg.de/terms/options/partner-types/person' and p_orcid.value %} ({{ p_orcid.value }}){% elif p_type.option_uri == 'https://rdmo.mpdl.mpg.de/terms/options/partner-types/entity' and p_website.value %} ({{ p_website.value }}){% endif %}{% if p_affiliations %}, {% for a in p_affiliations %}{% for r in p_roles %}{% if r.set_index == a.set_index %}{{ r.value }} at {% endif %}{% endfor %}{{ a.value }}{% if not forloop.last %} &amp; {% endif %}{% endfor %}{% else %}{% if p_roles %}, {% for r in p_roles %}{{ r.value }}{% if not forloop.last %} &amp; {% endif %}{% endfor %}{% endif %}{% endif %}&lt;/li&gt;
+        {% endwith %}
+    {% endfor %}
+    &lt;/ul&gt;
+    &lt;/p&gt;
+{% endif %}
+
+{# ########## #}
+{# LICENSE(S) #}
+{# ########## #}
+{% if software_licenses|length %}
+    &lt;p&gt;Software license{{ software_licenses|pluralize }}: {% if software_licenses|length == 1 %}{% if software_licenses.0.text %}{{ software_licenses.0.text }}{% else %}{{ software_licenses.0.option_text }}{% endif %}
+    {% elif software_licenses|length &gt; 1 %}
+    &lt;ul&gt;
+        {% for sl in software_licenses %}
+        &lt;li&gt;{% if sl.text %}{{ sl.text }}{% else %}{{ sl.option_text }}{% endif %}&lt;/li&gt;
+        {% endfor %}
+    &lt;/ul&gt;
+    {% endif %}
+    &lt;/p&gt;
+{% endif %}</template>
+	</view>
+</rdmo>

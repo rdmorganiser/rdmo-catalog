@@ -1,0 +1,33 @@
+# Updates from the project [MAUS](https://gepris.dfg.de/gepris/projekt/543616919)
+
+## General remarks
+
+- All additions / updates were made with the uri prefix: `https://rdmo.mpdl.mpg.de/terms`
+
+## Updates to SMP catalog
+
+- We are including:
+    - our current version of the whole SMP catalog, i.e. an updated version of `questions-smp.xml` of this repo
+    - a subset of `questions-smp.xml` (`questions-smp-subset.xml`) containing only updated or added catalog elements. We also included the parent element, so that it is clear where the updated / element belongs (for example, if a new question was added, we also included the new question's page)
+
+- The main modifications were:
+    - the structuring of the project contributors (before: Software Project Partner(s))
+    - the inclusion of 2 option set providers: ORCID and ROR
+
+## New Views
+
+We added 4 views for the SMP catalog:
+    - `view-smp-citation.xml`
+    - `view-smp-codemeta.xml`
+    - `view-smp-readme.xml`
+    - `view-smp-report.xml`
+
+The first 3 views are templates for the corresponding metadata files. `view-smp-report.xml` is a template that displays the answers in the SMP project as a continuous-text report.
+
+## History
+
+The SMP catalog was created at the Max Planck Digital Library (Max Planck Information and Technology) to support scientists developing research software to plan and document their work. This catalog was inspired by some documentation, specially https://www.software.ac.uk/resources/guides/software-management-plans and https://opencarp.org/about/software-management-plan.
+
+The first version (2021-2023) was developed by Yves Vincent Grossmann, including a FAIR4RS view by Jan Matthiesen.  
+The second version (2026) was developed within the DFG project MAUS (MAschinelle Unterstützung von Software-Management-Plänen), including 4 views (`view-smp-citation.xml`, `view-smp-codemeta.xml`, `view-smp-readme.xml`, `view-smp-report.xml`)
+
