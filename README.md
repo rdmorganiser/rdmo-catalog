@@ -75,7 +75,7 @@ In order to file issues, you will need a GitHub account.
 |All questions (long)    |[catalog][Q-rdmo]|                      |2024-09|RDMO team       |
 |All questions (short)   |[catalog][Q-fhp] |                      |2020-08|FHP / RDMO team |
 |DCC checklist           |[catalog][Q-dcc] |                      |2018-10|RDMO team       |
-|DFG checklist           |[catalog][Q-dfg] |[view][V-dfg]         |2023-11|RDMO team       |
+|DFG checklist        |[2 catalogs][Q-dfg] |[view][V-dfg]         |2025-11|RDMO team       |
 |Horizon Europe          |[catalog][Q-heu] |[view][V-heu]         |2022-12|RDMO team       |
 |Software Management Plan|[catalog][Q-smp]|[view][V-smp] (FAIR4RS)|2023-11|MPDL / RDMO team|
 |Swiss National Fund     |[catalog][Q-snf] |[view][V-snf]         |2020-08|RDMO team       |
@@ -92,7 +92,7 @@ In order to file issues, you will need a GitHub account.
 |Subject/Coverage                 |Catalog       |View  |Last update |Creators              |
 |---------------------------------|--------------|------|------------|----------------------|
 |All questions (RDMO+DFG)         |[catalog][FDK]|           |2025-05|FoDaKo                |
-|Animaldata                    |[catalog][animaldata]|           |2026-02|KI-TIERWOHL           |
+|Animaldata                       |[catalog][animaldata]|    |2026-02|KI-TIERWOHL           |
 |BLE                              |[catalog][BLE]|[view][BLE]|2023-10|Julius-Kühn-Institut  |
 |DFG Chemistry                    |[catalog][CHE]|           |2023-08|FDM Bayern eHumanities|
 |DFG Chemistry                    |[catalog][N4C]|           |2024-06|NFDI4Chem             |
@@ -106,7 +106,7 @@ In order to file issues, you will need a GitHub account.
 |European Partnership on Metrology|[catalog][EPM]|[view][EPM]|2023-10|TC-IM 1449            |
 |Hessen State                     |[catalog][HFD]|           |2020-07|HeFDI                 |
 |Horizon 2020                     |[catalog][EHU]|[view][EHU]|2020-09|FDM Bayern eHumanities|
-|Humanities                       |[catalog][MWS]|           |2025-12|Max Weber Stiftung    | 
+|Humanities, including green RDM aspects|[catalog][MWS]|     |2026-06|Max Weber Stiftung    | 
 |Mathematics                      |[catalog][MAT]|     |2022-11|DFG Excellence Cluster MATH+|
 |NFDI DMP Template                |[catalog][D4N]|           |2025-06|DMP4NFDI              |
 |Offboarding checklist            |[catalog][UDA]|           |2025-09|ULB Darmstadt         |
@@ -114,10 +114,11 @@ In order to file issues, you will need a GitHub account.
 |Quality Assurance Tool for software  |[catalog][QAT]|       |2025-03|Mathmet / TC-IM 1449  |
 |Research data policy generator       |[catalog][FDN]|       |2025-04|FDNext                |
 |Software for collection management|[2 catalogs][N4Q]|       |2025-09|NFDI4Culture          |
+|Text+                                |[catalog][TXT]|       |2026-06|Text+                 | 
 |VW Foundation - Basic DMP            |[catalog][VWB]|       |2025-06|FDM Bayern eHumanities|
 |VW Foundation - Science Europe       |[catalog][VWE]|       |2021-04|FDM Bayern eHumanities|
 
-Total: 34 catalogs, 15 views
+Total: 36 catalogs, 15 views
 
 [AKU]:         shared/ub_fau_erlangen_nuernberg/dfg-alte-kulturen/
 [CHE]:         shared/ub_fau_erlangen_nuernberg/dfg-chemie/
@@ -135,6 +136,7 @@ Total: 34 catalogs, 15 views
 [FDN]:         shared/FDNext/
 [MWS]:         shared/MaxWeberStiftung/
 [N4Q]:         shared/NFDI4Culture/
+[TXT]:         shared/Text+/
 [N4C]:         shared/nfdi4chem
 [N4I]:         shared/nfdi4ing
 [EMM]:         shared/EmiMin
@@ -146,7 +148,7 @@ Total: 34 catalogs, 15 views
 [Q-rdmo]:      rdmorganiser/questions/questions-rdmo.xml
 [Q-fhp]:       rdmorganiser/questions/questions-fhpshort.xml
 [Q-dcc]:       rdmorganiser/questions/questions-dcc.xml
-[Q-dfg]:       rdmorganiser/questions/questions-DFG-Checkliste.xml
+[Q-dfg]:       rdmorganiser/questions/DFG-Checkliste/
 [Q-heu]:       rdmorganiser/questions/questions-horizon-europe.xml
 [Q-smp]:       rdmorganiser/questions/questions-smp.xml
 [Q-snf]:       rdmorganiser/questions/questions-snf.xml

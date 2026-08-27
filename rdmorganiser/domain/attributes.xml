@@ -357,6 +357,13 @@
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/usage"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/value">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>value</key>
+		<path>project/costs/value</path>
+		<dc:comment>Total cost for RDM measures in the project. More detailed questions regarding cost by single RDM measures can use more specialized attributes such as `costs/creation/personnel`, `costs/preservation/non_personnel`. Introduced to enable interoperability with different maDMP approaches. Equivalent to rda:dmp/cost/value.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs"/>
+	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>data_management</key>
@@ -531,6 +538,13 @@
 		<path>project/dataset/data_security/access_permissions</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backups/frequency">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>frequency</key>
+		<path>project/dataset/data_security/backups/frequency</path>
+		<dc:comment>Frequency of data backups (daily, monthly, ...). Introduced to enable interoperability with different maDMP approaches. Equivalent to rda:dmp/dataset/distribution/host/backup_frequency</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backups"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backup_responsible">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -825,6 +839,13 @@
 		<path>project/dataset/origin</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin/source_name">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>source_name</key>
+		<path>project/dataset/origin/source_name</path>
+		<dc:comment>Origin or provenance of reused datasets. Introduced to enable interoperability with different maDMP approaches. Equivalent to rda:dmp/dataset/is_reused_source_name and dataplan:list-reuse-en.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin_license">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1323,6 +1344,13 @@
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/type">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>type</key>
+		<path>project/dataset/type</path>
+		<dc:comment>Verbose description of a dataset type, e.g. "RNA sequency data". Introduced to enable interoperability with different maDMP approaches. Equivalent to rda:dmp/dataset/type and dataplan:list-dataType-en.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
+	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/uri">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>uri</key>
@@ -1418,7 +1446,14 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>dmp_date</key>
 		<path>project/dmp/dmp_date</path>
-		<dc:comment>Date of this data management plan version, added for the text field &quot;Date&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<dc:comment>Creation date of the data management plan, added for the text field &quot;Date&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/dmp_date_modification">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>dmp_date_modification</key>
+		<path>project/dmp/dmp_date_modification</path>
+		<dc:comment>Date of this data management plan version. Introduced to enable interoperability with different maDMP approaches. Equivalent to rda:dmp/modified_date and dataplan:$_MODIFICATIONDATE.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/dmp_version">
@@ -1515,7 +1550,7 @@
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ethical_issues">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>ethical_issues</key>
-		<path>project/legal_aspects/ethical_issues_description</path>
+		<path>project/legal_aspects/ethical_issues</path>
 		<dc:comment>Introduced to enable interoperability with different maDMP approaches. Parent to other attributes.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects"/>
 	</attribute>

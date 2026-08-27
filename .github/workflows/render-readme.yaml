@@ -11,7 +11,7 @@ jobs:
     name: Render README
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
       - name: Render README
         run: tools/render-readme.sh
       - name: Commit results
