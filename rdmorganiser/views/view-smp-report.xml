@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2026-05-29T16:25:05.875188+02:00" required="2.1.0" version="2.4.4">
+	<view dc:uri="https://rdmo.mpdl.mpg.de/terms/views/smp-report">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
+		<uri_path>smp-report</uri_path>
+		<dc:comment/>
+		<order>0</order>
+		<title lang="en">SMP Report</title>
+		<help lang="en">View of all answers in SMP projects, in a report format</help>
+		<title lang="de">SMP-Report</title>
+		<help lang="de">Ansicht aller Antworten in einem SMP-Projekt, formatiert als Report</help>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<catalogs/>
+		<template>{% load view_tags %}
+{% load core_tags %}
+
+{% if project.catalog.uri != 'https://rdmorganiser.github.io/terms/questions/smp' %}
+
+  &lt;h2&gt;SMP Report&lt;/h2&gt;
+  &lt;p&gt;This view only works for projects with the Software Management Plan catalogue.&lt;/p&gt;
+
+{% else %}
+
+{% get_value 'project/title' as title %}
+&lt;h1&gt;{{ title.value }}&lt;/h1&gt;
+
+{% with sections=project.catalog.sections %}
+
+{# ############### #}
+{# SECTION GENERAL #}
+{# ############### #}
+{% comment %}
+    0. topic
+        0. project-title
+        1. research-field
+        2. application-class
+        3. intended-use
+        4. buy-or-make
+    1. project-partner 
+    2. project-funding
+        0. funding
+    3. schedule
+        0. start-date
+        1. end-date
+    4. project-management
+        0. development-process
+        1. track-tasks
+        2. specification-sheet
+    5. development-requirements
+        0. institutional-requirements
+        1. community-requirements
+{% endcomment %}
+
+{# VALUES OF SECTION GENERAL #}
+
+{# topic #}
+{% get_value 'https://rdmorganiser.github.io/terms/domain/project/title' as software_project_title  %}
+{% get_values 'project/research_field' as research_fields %}
+{% get_value 'smp/application-class' as application_class %}
+{% get_value 'project/research_question/title' as research_question_title %}
+{% get_value 'smp/buy-or-make' as buy_or_make %}
+
+{# project-partner #}
+{% get_set 'project/partner/id' as partners %}
+
+{# project-funding #}
+{% get_value 'project/funder' as funder %}
+
+{# schedule #}
+{% get_value 'project/schedule/project_start' as project_start_date %}
+{% get_value 'project/schedule/project_end' as project_end_date %}
+
+{# project-management #}
+{% get_value 'smp/development-process' as development_process %}
+{% get_values 'smp/track-tasks' as tracking_methods %}
+{% get_value 'smp/specification-sheet' as ss %}
+
+{# development-requirements #}
+{% get_value 'smp/institutional-requirements' as institutional_requirements %}
+{% get_value 'smp/community-requirements' as community_requirements %}
+
+{% if software_project_title or research_fields|length or application_class or research_question_title or buy_or_make or partners or funder or project_start_date or project_end_date or development_process or tracking_methods|length or ss or institutional_requirements or community_requirements %}
+&lt;h2&gt;General&lt;/h2&gt;
+{% with section_pages=sections.0.elements %}
+  {% comment %}
+    Pages:
+    0. topic
+    1. project-partner 
+    2. project-funding
+    3. schedule
+    4. project-management
+    5. software-requirements
+  {% endcomment %}
+
+  {% check_element section_pages.0 project=project as topic_page_result %}
+  {% if topic_page_result %}
+    {% comment %}
+      Questions:
+      0. project-title
+      1. research-field
+      2. application-class
+      3. intended-use
+      4. buy-or-make
+    {% endcomment %}
+
+    {% with page_questions=section_pages.0.elements %}
+    {% if software_project_title or research_fields|length or application_class or research_question_title or buy_or_make %}
+    &lt;h3&gt;Topic&lt;/h3&gt;
+      
+      {% check_element page_questions.0 project=project as software_project_title_question_result %}
+      {% if software_project_title_question_result %}
+        {% if software_project_title %}
+        &lt;p&gt;The title of the software project is: {{ software_project_title.value }}&lt;/p&gt;
+        {% endif %}
+      {% endif %}
+
+      {% check_element page_questions.1 project=project as rf_question_result %}
+      {% if rf_question_result %}
+        {% if research_fields|length %}
+        &lt;p&gt;The software belongs to the research field{{ research_fields|pluralize }}: {% if research_fields|length == 1 %}{{ research_fields.0.value }}
+          {% elif research_fields|length &gt; 1 %}
+          &lt;ul&gt;
+          {% for rf in research_fields %}
+            &lt;li&gt;{{ rf.value }}&lt;/li&gt;
+          {% endfor %}
+          &lt;/ul&gt;
+          {% endif %}
+        &lt;/p&gt;
+        {% endif %}
+      {% endif %}
+    
+      {% check_element page_questions.2 project=project as ac_question_result %}
+      {% if ac_question_result %}
+        {% if application_class %}
+        &lt;p&gt;It is categorized in {{ application_class.value }}&lt;/p&gt;
+        {% endif %}
+      {% endif %}
+    
+      {% check_element page_questions.3 project=project as rq_question_result %}
+      {% if rq_question_result %}
+        {% if research_question_title %}
+        &lt;p&gt;Its intended use and its contribution to research:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ research_question_title.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+      
+      {% check_element page_questions.4 project=project as novelty_question_result %}
+      {% if novelty_question_result %}
+        {% if buy_or_make %}
+        &lt;p&gt;Its novelty:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ buy_or_make.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+    {% endif %}
+    {% endwith %} 
+  {% endif %}
+  
+  {% check_element section_pages.1 project=project as partner_page_result %}
+  {% if partner_page_result %}
+    {% if partners %}
+    &lt;h3&gt;Contributor{{ partners|pluralize }}&lt;/h3&gt;
+      &lt;ul&gt;
+      {% for p in partners %}
+        {% with p_set_index_str=p.set_index|stringformat:'s' %}
+        {% get_set_value p 'project/partner/type' as p_type %}
+        {% get_set_value p 'project/partner/orcid' as p_orcid %}
+        {% get_set_value p 'project/partner/website' as p_website %}
+        {% get_set_value p 'project/partner/given-name' as p_given_name %}
+        {% get_set_value p 'project/partner/family-name' as p_family_name %}
+        {% get_set_value p 'project/partner/name' as p_name %}
+        {% get_values 'project/partner/affiliation' p_set_index_str as p_affiliations %}
+        {% get_values 'project/partner/role' p_set_index_str as p_roles %}
+
+        &lt;li&gt;{% if p_type.option_uri == 'https://rdmo.mpdl.mpg.de/terms/options/partner-types/person' and p_given_name.value and p_family_name.value %}{{ p_given_name.value }} {{ p_family_name.value }}{% elif p_type.option_uri == 'https://rdmo.mpdl.mpg.de/terms/options/partner-types/entity' and p_name.value %}{{ p_name.value }}{% else %}{{ p.value }}{% endif %}{% if p_type.option_uri == 'https://rdmo.mpdl.mpg.de/terms/options/partner-types/person' and p_orcid.value %} ({{ p_orcid.value }}){% endif %}{% if p_type.option_uri == 'https://rdmo.mpdl.mpg.de/terms/options/partner-types/entity' and p_website.value %} ({{ p_website.value }}){% endif %}{% if p_affiliations %}, {% for a in p_affiliations %}{% for r in p_roles %}{% if r.set_index == a.set_index %}{{ r.value }} at {% endif %}{% endfor %}{{ a.value }}{% if not forloop.last %} &amp; {% endif %}{% endfor %}{% endif %}&lt;/li&gt;
+        
+        {% endwith %}
+      {% endfor %}
+      &lt;/ul&gt;
+    {% endif %}
+  {% endif %}
+  
+  {% check_element section_pages.2 project=project as funding_page_result %}
+  {% if funding_page_result %}
+    {% if funder %}
+    &lt;h3&gt;Funding&lt;/h3&gt;
+    {% with page_questions=section_pages.2.elements %}
+      {% comment %}
+        Questions:
+        0. funding    
+      {% endcomment %}
+    
+      {% check_element page_questions.0 project=project as funding_question_result %}
+      {% if funding_question_result %}
+        {% if funder %}
+        &lt;p&gt;Existing (financial or personnel) resources or specific funding for the software development:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ funder.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+  
+    {% endwith %}
+    {% endif %}
+  
+  {% endif %}
+  
+  {% check_element section_pages.3 project=project as schedule_page_result %}
+  {% if schedule_page_result %}
+    {% if project_start_date or project_end_date %}
+    &lt;h3&gt;Schedule&lt;/h3&gt;
+    {% with page_questions=section_pages.3.elements %}
+      {% comment %}
+        Questions:
+        0. start-date
+        1. end-date
+      {% endcomment %}
+    
+      {% check_element page_questions.0 project=project as sd_question_result %}
+      {% if sd_question_result %}
+        {% if project_start_date %}
+        &lt;p&gt;Project's start date: {{ project_start_date.value }}&lt;/p&gt;
+        {% endif %}
+      {% endif %}
+
+      {% check_element page_questions.1 project=project as ed_question_result %}
+      {% if ed_question_result %}
+        {% if project_end_date %}
+        &lt;p&gt;Project's end date: {{ project_end_date.value }}&lt;/p&gt;
+        {% endif %}
+      {% endif %}
+
+    {% endwith %}
+    {% endif %}
+  
+  {% endif %}
+  
+  {% check_element section_pages.4 project=project as pm_page_result %}
+  {% if pm_page_result %}
+    {% if development_process or tracking_methods|length or ss %}
+    &lt;h3&gt;Project Management&lt;/h3&gt;
+    {% with page_questions=section_pages.4.elements %}
+      {% comment %}
+        Questions:
+        0. development-process
+        1. track-tasks
+        2. specification-sheet
+      {% endcomment %}
+    
+      {% check_element page_questions.0 project=project as dp_question_result %}
+      {% if dp_question_result %}
+        {% if development_process %}
+        &lt;p&gt;Development process and roles:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ development_process.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+    
+      {% check_element page_questions.1 project=project as tm_question_result %}
+      {% if tm_question_result %}
+        {% if tracking_methods|length %}
+        &lt;p&gt;Tasks and use cases will be tracked with: {% if tracking_methods|length == 1 %}{{ tracking_methods.0.value }}
+          {% elif tracking_methods|length &gt; 1 %}
+          &lt;ul&gt;
+          {% for tm in tracking_methods %}
+            &lt;li&gt;{{ tm.value }}&lt;/li&gt;
+          {% endfor %}
+          &lt;/ul&gt;
+          {% endif %} 
+        &lt;/p&gt;
+        {% endif %}
+      {% endif %}
+    
+      {% check_element page_questions.2 project=project as ss_question_result %}
+      {% if ss_question_result %}
+        {% if ss %}
+        &lt;p&gt;{% if ss.is_true %}The software's most important requirements will be (briefly) outlined by a specification document.
+        {% else %}There will not be any specification document outlining the software's most important requirements.
+        {% endif %}
+        &lt;/p&gt;
+        {% endif %}
+      {% endif %}
+
+    {% endwith %}
+    {% endif %}
+
+  {% endif %}
+
+  {% check_element section_pages.5 project=project as sr_page_result %}
+  {% if sr_page_result %}
+    {% if institutional_requirements or community_requirements %}
+    &lt;h3&gt;Development Requirements&lt;/h3&gt;
+    {% with page_questions=section_pages.5.elements %}
+      {% comment %}
+        Questions:
+        0. institutional-requirements
+        1. community-requirements
+      {% endcomment %}
+    
+      {% check_element page_questions.0 project=project as ir_question_result %}
+      {% if ir_question_result %}
+        {% if institutional_requirements %}
+        &lt;p&gt;Institutional requirements for software development:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ institutional_requirements.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+      {% check_element page_questions.1 project=project as cr_question_result %}
+      {% if cr_question_result %}
+        {% if community_requirements %}
+        &lt;p&gt;Requirements for software development from other parties:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ community_requirements.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+    {% endwith %}
+    {% endif %}
+      
+  {% endif %}  
+
+{% endwith %}
+{% endif %}
+
+{# ############################################################################################# #}
+{# ################# #}
+{# SECTION TECHNICAL #}
+{# ################# #}
+{% comment %}
+    0. code
+        0. language
+        1. versioning
+    1. third-party-components
+        0. external-components
+        1. third-party-licenses
+        2. track-external-software
+        3. web-services
+        4. qualified-references
+    2. infrastructure
+        0. infrastructure-required
+        1. infrastructure-existing
+        2. technical-support
+    3. preservation
+        0. re-usable
+        1. preservation
+    4. security
+        0. security
+        1. safety
+{% endcomment %}
+
+{# VALUES OF SECTION TECHNICAL #}
+
+{# code #}
+{% get_values 'smp/language' as programming_languages %}
+{% get_value 'smp/versioning' as versioning %}
+
+{# third-party-components #}
+{% get_value 'smp/external-components' as external_components %}
+{% get_value 'smp/third-party-licenses' as third_party_licenses %}
+{% get_value 'smp/track-external-software' as track_external_software %}
+{% get_value 'smp/web-services' as web_services %}
+{% get_value 'smp/qualified-references' as qualified_references %}
+
+{# infrastructure #}
+{% get_value 'smp/infrastructure-required' as infrastructure_required %}
+{% get_value 'smp/infrastructure-existing' as infrastructure_existing %}
+{% get_value 'smp/technical-support' as technical_support %}
+
+{# preservation #}
+{% get_value 'smp/re-usable' as reusable %}
+{% get_value 'smp/preservation' as preservation %}
+
+{# security #}
+{% get_value 'smp/security' as security %}
+{% get_value 'smp/safety' as safety %}
+
+{% if programming_languages|length or versioning or external_components or third_party_licenses or track_external_software or web_services or qualified_references or infrastructure_required or infrastructure_existing or technical_support or reusable or preservation or security or safety %}
+&lt;h2&gt;Technical&lt;/h2&gt;
+{% with section_pages=sections.1.elements %}
+  {% comment %}
+      Pages:
+      0. code
+      1. components 
+      2. infrastructure
+      3. preservation
+      4. security
+  {% endcomment %}
+
+  {% check_element section_pages.0 project=project as code_page_result %}
+  {% if code_page_result %}
+    {% if programming_languages|length or versioning %}
+    &lt;h3&gt;Code&lt;/h3&gt;
+    {% with page_questions=section_pages.0.elements %}
+        {% comment %}
+          Questions:
+          0. language
+          1. versioning
+        {% endcomment %}
+      
+        {% check_element page_questions.0 project=project as language_question_result %}
+        {% if language_question_result %}
+          {% if programming_languages|length %}
+          &lt;p&gt;Programming language{{ programming_languages|pluralize }}: {% if programming_languages|length == 1 %}{{ programming_languages.0.value }}
+            {% elif programming_languages|length &gt; 1 %}
+            &lt;ul&gt;
+            {% for language in programming_languages %}
+              &lt;li&gt;{{ language.value }}&lt;/li&gt;
+            {% endfor %}
+            &lt;/ul&gt;
+            {% endif %}
+          &lt;/p&gt;
+          {% endif %}
+        {% endif %}
+  
+        {% check_element page_questions.1 project=project as versioning_question_result %}
+        {% if versioning_question_result %}
+          {% if versioning %}
+          &lt;p&gt;Technology or process used for versioning:&lt;/p&gt;
+          &lt;div class="textarea"&gt;{{ versioning.value|linebreaks }}&lt;/div&gt;
+          {% endif %}
+        {% endif %}
+
+    {% endwith %}
+    {% endif %}
+    
+  {% endif %}
+
+  {% check_element section_pages.1 project=project as components_page_result %}
+  {% if components_page_result %}
+    {% if external_components or third_party_licenses or track_external_software or web_services or qualified_references %}
+    &lt;h3&gt;Third-Party Components and Libraries&lt;/h3&gt;
+    {% with page_questions=section_pages.1.elements %}
+        {% comment %}
+          Questions:
+          0. external-components
+          1. third-party-licenses
+          2. track-external-software
+          3. web-services
+          4. qualified-references
+        {% endcomment %}
+      
+        {% check_element page_questions.0 project=project as ec_question_result %}
+        {% if ec_question_result %}
+          {% if external_components %}
+          &lt;p&gt;Dependencies and documentation of used third-party software components and libraries:&lt;/p&gt;
+          &lt;div class="textarea"&gt;{{ external_components.value|linebreaks }}&lt;/div&gt;
+          {% endif %}
+        {% endif %}
+
+        {% check_element page_questions.1 project=project as tpl_question_result %}
+        {% if tpl_question_result %}
+          {% if third_party_licenses %}
+          &lt;p&gt;Licenses of used third-party software components:&lt;/p&gt;
+          &lt;div class="textarea"&gt;{{ third_party_licenses.value|linebreaks }}&lt;/div&gt;
+          {% endif %}
+        {% endif %}
+
+        {% check_element page_questions.2 project=project as tes_question_result %}
+        {% if tes_question_result %}
+          {% if track_external_software %}
+          &lt;p&gt;Tracking of external software components and dependency mitigation/elimination:&lt;/p&gt;
+          &lt;div class="textarea"&gt;{{ track_external_software.value|linebreaks }}&lt;/div&gt;
+          {% endif %}
+        {% endif %}
+
+        {% check_element page_questions.3 project=project as ws_question_result %}
+        {% if ws_question_result %}
+          {% if web_services %}
+          &lt;p&gt;Planned use of third-party web services:&lt;/p&gt;
+          &lt;div class="textarea"&gt;{{ web_services.value|linebreaks }}&lt;/div&gt;
+          {% endif %}
+        {% endif %}
+
+        {% check_element page_questions.4 project=project as qr_question_result %}
+        {% if qr_question_result %}
+          {% if qualified_references %}
+          &lt;p&gt;Reference to other software or objects:&lt;/p&gt;
+          &lt;div class="textarea"&gt;{{ qualified_references.value|linebreaks }}&lt;/div&gt;
+          {% endif %}
+        {% endif %}
+
+    {% endwith %}
+    {% endif %}
+
+  {% endif %}
+
+  {% check_element section_pages.2 project=project as infrastructure_page_result %}
+  {% if infrastructure_page_result %}
+    {% if infrastructure_required or infrastructure_existing or technical_support %}
+    &lt;h3&gt;Infrastructure&lt;/h3&gt;
+    {% with page_questions=section_pages.2.elements %}
+        {% comment %}
+          Questions:
+          0. infrastructure-required
+          1. infrastructure-existing
+          2. technical-support
+        {% endcomment %}
+      
+        {% check_element page_questions.0 project=project as ir_question_result %}
+        {% if ir_question_result %}
+          {% if infrastructure_required %}
+          &lt;p&gt;Needed infrastructure resources:&lt;/p&gt;
+          &lt;div class="textarea"&gt;{{ infrastructure_required.value|linebreaks }}&lt;/div&gt;
+          {% endif %}
+        {% endif %}
+
+        {% check_element page_questions.1 project=project as ie_question_result %}
+        {% if ie_question_result %}
+          {% if infrastructure_existing %}
+          &lt;p&gt;Existing infrastructure for the software development:&lt;/p&gt;
+          &lt;div class="textarea"&gt;{{ infrastructure_existing.value|linebreaks }}&lt;/div&gt;
+          {% endif %}
+        {% endif %}
+
+        {% check_element page_questions.2 project=project as ts_question_result %}
+        {% if ts_question_result %}
+          {% if technical_support %}
+          &lt;p&gt;Needed technical training or code-reviewing process:&lt;/p&gt;
+          &lt;div class="textarea"&gt;{{ technical_support.value|linebreaks }}&lt;/div&gt;
+          {% endif %}
+        {% endif %}
+    
+    {% endwith %}
+    {% endif %}
+
+  {% endif %}
+
+  {% check_element section_pages.3 project=project as preservation_page_result %}
+  {% if preservation_page_result %}
+    {% if reusable or preservation %}
+    &lt;h3&gt;Preservation&lt;/h3&gt;
+    {% with page_questions=section_pages.3.elements %}
+        {% comment %}
+          Questions:
+          0. re-usable
+          1. preservation
+        {% endcomment %}
+      
+        {% check_element page_questions.0 project=project as reusable_question_result %}
+        {% if reusable_question_result %}
+          {% if reusable %}
+          &lt;p&gt;Time horizon and taken measures for software reusability: &lt;/p&gt;
+          &lt;div class="textarea"&gt;{{ reusable.value|linebreaks }}&lt;/div&gt;
+          {% endif %}
+        {% endif %}
+
+        {% check_element page_questions.1 project=project as preservation_question_result %}
+        {% if preservation_question_result %}
+          {% if preservation %}
+          &lt;p&gt;Time horizon for software preservation:&lt;/p&gt;
+          &lt;div class="textarea"&gt;{{ preservation.value|linebreaks }}&lt;/div&gt;
+          {% endif %}
+        {% endif %}
+
+    {% endwith %}
+    {% endif %}
+
+  {% endif %}
+  
+  {% check_element section_pages.4 project=project as security_page_result %}
+  {% if security_page_result %}
+    {% if security or safety %}
+    &lt;h3&gt;Security&lt;/h3&gt;
+    {% with page_questions=section_pages.4.elements %}
+      {% comment %}
+        Questions:
+        0. security
+        1. safety
+      {% endcomment %}
+    
+      {% check_element page_questions.0 project=project as security_question_result %}
+      {% if security_question_result %}
+        {% if security %}
+        &lt;p&gt;Measures or provisions in place to ensure software IT security:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ security.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+      {% check_element page_questions.1 project=project as safety_question_result %}
+      {% if safety_question_result %}
+        {% if safety %}
+        &lt;p&gt;Measures to minimise risks in relation to software development:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ safety.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+    {% endwith %}
+    {% endif %}
+
+  {% endif %}
+
+{% endwith %}
+{% endif %}
+
+{# ############################################################################################# #}
+{# ######################### #}
+{# SECTION QUALITY ASSURANCE #}
+{# ######################### #}
+{% comment %}
+    0. governance
+        0. governance-model
+        1. coding-standards
+    1. documentation
+        0. who-is-responsible
+        1. documentation-stored
+    2. testing
+        0. test-strategy
+        1. test-documentation
+{% endcomment %}
+
+{# VALUES OF SECTION QUALITY ASSURANCE #}
+
+{# governance #}
+{% get_value 'smp/governance-model' as governance_model %}
+{% get_values 'smp/coding-standards' as coding_standards %}
+
+{# documentation #}
+{% get_value 'smp/documentation/who-is-responsible' as who_is_responsible %}
+{% get_value 'smp/documentation/documentation-stored' as documentation_stored %}
+
+{# testing #}
+{% get_values 'smp/test-strategy' as test_strategies %}
+{% get_value 'smp/test-documentation' as test_documentation %}
+
+{% if governance_model or coding_standards or who_is_responsible or documentation_stored or test_strategies or test_documentation %}
+&lt;h2&gt;Quality Assurance&lt;/h2&gt;
+{% with section_pages=sections.2.elements %}
+  {% comment %}
+    Pages:
+    0. governance
+    1. documentation 
+    2. testing
+  {% endcomment %}
+
+  {% check_element section_pages.0 project=project as governance_page_result %}
+  {% if governance_page_result %}
+    {% if governance_model or coding_standards %}
+    &lt;h3&gt;Governance and Defined Processes&lt;/h3&gt;
+    {% with page_questions=section_pages.0.elements %}
+      {% comment %}
+        Questions:
+        0. governance-model
+        1. coding-standards
+      {% endcomment %}
+    
+      {% check_element page_questions.0 project=project as gm_question_result %}
+      {% if gm_question_result %}
+        {% if governance_model %}
+        &lt;p&gt;Governance model for software development:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ governance_model.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+      {% check_element page_questions.1 project=project as cs_question_result %}
+      {% if cs_question_result %}
+        {% if coding_standards %}
+        &lt;p&gt;Coding standard{{ coding_standards|pluralize }} and quality control{{ coding_standards|pluralize }}: {% if coding_standards|length == 1 %}{% if coding_standards.0.text %}{{ coding_standards.0.text }}{% else %}{{ coding_standards.0.value }}{% endif %}
+          {% elif coding_standards|length &gt; 1 %}
+          &lt;ul&gt;
+          {% for cs in coding_standards %}
+            &lt;li&gt;{% if cs.text %}{{ cs.text }}{% else %}{{ cs.value }}{% endif %}&lt;/li&gt;
+          {% endfor %}
+          &lt;/ul&gt;
+          {% endif %}
+        &lt;/p&gt;
+        {% endif %}
+      {% endif %}
+
+    {% endwith %}
+    {% endif %}
+
+  {% endif %}
+
+  {% check_element section_pages.1 project=project as documentation_page_result %}
+  {% if documentation_page_result %}
+    {% if who_is_responsible or documentation_stored %}
+    &lt;h3&gt;Documentation&lt;/h3&gt;
+    {% with page_questions=section_pages.1.elements %}
+      {% comment %}
+        Questions:
+        0. who-is-responsible
+        1. documentation-stored
+      {% endcomment %}
+    
+      {% check_element page_questions.0 project=project as wir_question_result %}
+      {% if wir_question_result %}
+        {% if who_is_responsible %}
+        &lt;p&gt;Software documentation:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ who_is_responsible.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+      {% check_element page_questions.1 project=project as ds_question_result %}
+      {% if ds_question_result %}
+        {% if documentation_stored %}
+        &lt;p&gt;Documentation storage and language:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ documentation_stored.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+    {% endwith %}
+    {% endif %}
+
+  {% endif %}
+
+  {% check_element section_pages.2 project=project as testing_page_result %}
+  {% if testing_page_result %}
+    {% if test_strategies or test_documentation %}
+    &lt;h3&gt;Testing&lt;/h3&gt;
+    {% with page_questions=section_pages.2.elements %}
+      {% comment %}
+        Questions:
+        0. test-strategy
+        1. test-documentation
+      {% endcomment %}
+    
+      {% check_element page_questions.0 project=project as ts_question_result %}
+      {% if ts_question_result %}
+        {% if test_strategies %}
+        &lt;p&gt;Test strateg{{ test_strategies|pluralize:'y,ies' }}: {% if test_strategies|length == 1 %}{% if test_strategies.0.text %}{{ test_strategies.0.text }}{% else %}{{ test_strategies.0.value }}{% endif %}
+          {% elif test_strategies|length &gt; 1 %}
+          &lt;ul&gt;
+          {% for ts in test_strategies %}
+            &lt;li&gt;{% if ts.text %}{{ ts.text }}{% else %}{{ ts.value }}{% endif %}&lt;/li&gt;
+          {% endfor %}
+          &lt;/ul&gt;
+          {% endif %}
+        &lt;/p&gt;
+        {% endif %}
+      {% endif %}
+
+      {% check_element page_questions.1 project=project as td_question_result %}
+      {% if td_question_result %}
+        {% if test_documentation %}
+        &lt;p&gt;Test documentation:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ test_documentation.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+    {% endwith %}
+    {% endif %}
+
+  {% endif %}
+
+{% endwith %}
+{% endif %}
+
+
+{# ############################################################################################# #}
+{# ########################### #}
+{# SECTION RELEASE AND PUBLISH #}
+{# ########################### #}
+{% comment %}
+    0. releasing
+        0. releasing-who
+        1. decision-releasing
+        2. store-software
+    1. publicly-available
+        0. software-sharing
+        1. software-repository
+        2. contribute-software
+        3. peer-review
+    2. metadata
+        0. assign-metadata
+        1. software-pid
+    3. support
+        0. support-for-software
+        1. feedback-process
+        2. relation-SMP-DMP
+        3. publish-smp
+{% endcomment %}
+
+{# VALUES OF SECTION RELEASE AND PUBLISH #}
+
+{# releasing #}
+{% get_value 'smp/releasing-who' as releasing_who %}
+{% get_value 'smp/decision-releasing' as decision_releasing %}
+{% get_value 'smp/store-software' as store_software %}
+
+{# publicly-available #}
+{% get_value 'smp/software-sharing' as software_sharing %}
+{% get_value 'smp/software-repository' as software_repository %}
+{% get_value 'smp/contribute-software' as contribute_software %}
+{% get_value 'smp/peer-review' as peer_review %}
+
+{# metadata #}
+{% get_value 'smp/software-metadata' as software_metadata %}
+{% get_values 'smp/software-pid' as software_pids %}
+
+{# support #}
+{% get_value 'smp/support-for-software' as sfs %}
+{% get_value 'smp/feedback-process' as feedback_process %}
+{% get_value 'smp/relation-SMP-DMP' as relation_smp_dmp %}
+{% get_value 'smp/publish-smp' as ps %}
+
+
+{% if releasing_who or decision_releasing or store_software or software_sharing or software_repository or contribute_software or peer_review or software_metadata or software_pids|length or sfs or feedback_process or relation_smp_dmp or ps %}
+&lt;h2&gt;Release and Publish&lt;/h2&gt;
+{% with section_pages=sections.3.elements %}
+  {% comment %}
+    Pages:
+    0. releasing
+    1. publicly-available 
+    2. metadata
+    3. support
+  {% endcomment %}
+
+  {% check_element section_pages.0 project=project as releasing_page_result %}
+  {% if releasing_page_result %}
+    {% if releasing_who or decision_releasing or store_software %}
+    &lt;h3&gt;Releasing&lt;/h3&gt;
+    {% with page_questions=section_pages.0.elements %}
+      {% comment %}
+        Questions:
+        0. releasing-who
+        1. decision-releasing
+        2. store-software
+      {% endcomment %}
+    
+      {% check_element page_questions.0 project=project as rw_question_result %}
+      {% if rw_question_result %}
+        {% if releasing_who %}
+        &lt;p&gt;Release process:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ releasing_who.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+      {% check_element page_questions.1 project=project as dr_question_result %}
+      {% if dr_question_result %}
+        {% if decision_releasing %}
+        &lt;p&gt;Decision process for releasing and releasing frequency:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ decision_releasing.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+      {% check_element page_questions.2 project=project as ss_question_result %}
+      {% if ss_question_result %}
+        {% if store_software %}
+        &lt;p&gt;Software storage and preservation policy:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ store_software.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+    {% endwith %}
+    {% endif %}
+
+  {% endif %}
+
+  {% check_element section_pages.1 project=project as pa_page_result %}
+  {% if pa_page_result %}
+    {% if software_sharing or software_repository or contribute_software or peer_review %}
+    &lt;h3&gt;Publicly Availability&lt;/h3&gt;
+    {% with page_questions=section_pages.1.elements %}
+      {% comment %}
+        Questions:
+        0. software-sharing
+        1. software-repository
+        2. contribute-software
+        3. peer-review
+      {% endcomment %}
+    
+      {% check_element page_questions.0 project=project as ss_question_result %}
+      {% if ss_question_result %}
+        {% if software_sharing %}
+        &lt;p&gt;{% if software_sharing.is_true %}The software will be publicly available.
+        {% else %}The software will not be publicly available.
+        {% endif %}
+        &lt;/p&gt;
+        {% endif %}
+      {% endif %}
+
+      {% check_element page_questions.1 project=project as sr_question_result %}
+      {% if sr_question_result %}
+        {% if software_repository %}
+        &lt;p&gt;Software repository or archive, findability and usability:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ software_repository.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+      {% check_element page_questions.2 project=project as cs_question_result %}
+      {% if cs_question_result %}
+        {% if contribute_software %}
+        &lt;p&gt;Software contributions from the community:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ contribute_software.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+      {% check_element page_questions.3 project=project as pr_question_result %}
+      {% if pr_question_result %}
+        {% if peer_review %}
+        &lt;p&gt;Planned (Open) Peer Review for the software:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ peer_review.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+    
+    {% endwith %}
+    {% endif %}
+
+  {% endif %}
+
+  {% check_element section_pages.2 project=project as metadata_page_result %}
+  {% if metadata_page_result %}
+    {% if software_metadata or software_pids|length %}
+    &lt;h3&gt;Metadata&lt;/h3&gt;
+    {% with page_questions=section_pages.2.elements %}
+      {% comment %}
+        Questions:
+        0. assign-metadata
+        1. software-pid
+      {% endcomment %}
+    
+      {% check_element page_questions.0 project=project as am_question_result %}
+      {% if am_question_result %}
+        {% if software_metadata %}
+        &lt;p&gt;Software's metadata assignment:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ software_metadata.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+      {% check_element page_questions.1 project=project as sp_question_result %}
+      {% if sp_question_result %}
+        {% if software_pids|length %}
+        &lt;p&gt;Software's persistent identifier{{ software_pids|pluralize }}: {% if software_pids|length == 1 %}{{ software_pids.0.value }}
+        {% elif software_pids|length &gt; 1 %}
+        &lt;ul&gt;
+          {% for sp in software_pids %}
+            &lt;li&gt;{{ sp.value }}&lt;/li&gt;
+          {% endfor %}
+        &lt;/ul&gt;
+        {% endif %}
+        &lt;/p&gt;
+        {% endif %}
+      {% endif %}
+
+    {% endwith %}
+    {% endif %}
+
+  {% endif %}
+
+  {% check_element section_pages.3 project=project as support_page_result %}
+  {% if support_page_result %}
+    {% if sfs or feedback_process or relation_smp_dmp or ps %}
+    &lt;h3&gt;Support&lt;/h3&gt;
+    {% with page_questions=section_pages.3.elements %}
+      {% comment %}
+        Questions:
+        0. support-for-software
+        1. feedback-process
+        2. relation-SMP-DMP
+        3. publish-smp
+      {% endcomment %}
+    
+      {% check_element page_questions.0 project=project as sfs_question_result %}
+      {% if sfs_question_result %}
+        {% if sfs %}
+        &lt;p&gt;{% if sfs.is_true %}There will be support and help to re-users of the software.
+        {% else %}There will not be support for the software.
+        {% endif %}
+        &lt;/p&gt;
+        {% endif %}
+      {% endif %}
+
+      {% check_element page_questions.1 project=project as fp_question_result %}
+      {% if fp_question_result %}
+        {% if feedback_process %}
+        &lt;p&gt;Support and feedback process with users:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ feedback_process.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+      {% check_element page_questions.2 project=project as rsmpdmp_question_result %}
+      {% if rsmpdmp_question_result %}
+        {% if relation_smp_dmp %}
+        &lt;p&gt;Relation of this Software Management Plan to other Software or Data Management Plan(s):&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ relation_smp_dmp.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+      {% check_element page_questions.3 project=project as ps_question_result %}
+      {% if ps_question_result %}
+        {% if ps %}
+        &lt;p&gt;{% if ps.text %}This Software Management Plan will be publicly available in {{ ps.text }}.
+        {% else %}This Software Management Plan will not be publicly available. 
+        {% endif %}
+        &lt;/p&gt;
+        {% endif %}
+      {% endif %}
+
+    {% endwith %}
+    {% endif %}
+
+  {% endif %}
+   
+{% endwith %}
+{% endif %}
+
+{# ############################################################################################# #}
+{# ######################## #}
+{# SECTION LEGAL AND ETHICS #}
+{# ######################## #}
+{% comment %}
+    0. intellectual-rights
+        0. software-property-rights
+        1. external-software-rights
+    1. license
+        0. software-license
+    2. dual-use
+        0. dual-use-software
+  {% endcomment %}
+
+{# VALUES OF SECTION LEGAL AND ETHICS #}
+
+{# intellectual-rights #}
+{% get_value 'smp/software-property-rights' as property_rights %}
+{% get_value 'smp/external-software-rights' as external_software_rights %}
+
+{# license #}
+{% get_values 'smp/software-license' as software_licenses %}
+
+{# dual-use #}
+{% get_value 'smp/dual-use' as dual_use %}
+
+{% if property_rights or external_software_rights or software_licenses|length or dual_use %}
+&lt;h2&gt;Legal and Ethics&lt;/h2&gt;
+{% with section_pages=sections.4.elements %}
+  {% comment %}
+    Pages:
+    0. intellectual-rights
+    1. license
+    2. dual-use
+  {% endcomment %}
+
+  {% check_element section_pages.0 project=project as ir_page_result %}
+  {% if ir_page_result %}
+    {% if property_rights or external_software_rights %}
+    &lt;h3&gt;Intellectual Property Rights&lt;/h3&gt;
+    {% with page_questions=section_pages.0.elements %}
+      {% comment %}
+        Questions:
+        0. software-property-rights
+        1. external-software-rights
+      {% endcomment %}
+    
+      {% check_element page_questions.0 project=project as spr_question_result %}
+      {% if spr_question_result %}
+        {% if property_rights %}
+        &lt;p&gt;Legal ownership of the software:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ property_rights.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+      {% check_element page_questions.1 project=project as esr_question_result %}
+      {% if esr_question_result %}
+        {% if external_software_rights %}
+        &lt;p&gt;Third-party intellectual or industrial property rights:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ external_software_rights.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+    {% endwith %}
+    {% endif %}
+
+  {% endif %}
+
+  {% check_element section_pages.1 project=project as license_page_result %}
+  {% if license_page_result %}
+    {% if software_licenses|length %}
+    &lt;h3&gt;License&lt;/h3&gt;
+    {% with page_questions=section_pages.1.elements %}
+      {% comment %}
+        Questions:
+        0. software-license
+      {% endcomment %}
+    
+      {% check_element page_questions.0 project=project as sl_question_result %}
+      {% if sl_question_result %}
+        {% if software_licenses|length %}
+        &lt;p&gt;The software will be published under {{ software_licenses|pluralize:'this,these' }} license{{ software_licenses|pluralize }}: {% if software_licenses|length == 1 %}{% if software_licenses.0.text %}{{ software_licenses.0.text }}{% else %}{{ software_licenses.0.option_text }}{% endif %}
+        {% elif software_licenses|length &gt; 1 %}
+        &lt;ul&gt;
+          {% for sl in software_licenses %}
+            &lt;li&gt;{% if sl.text %}{{ sl.text }}{% else %}{{ sl.option_text }}{% endif %}&lt;/li&gt;
+          {% endfor %}
+        &lt;/ul&gt;
+        {% endif %}
+        &lt;/p&gt;
+        {% endif %}
+      {% endif %}
+
+    {% endwith %}
+    {% endif %}
+
+  {% endif %}
+
+  {% check_element section_pages.2 project=project as du_page_result %}
+  {% if du_page_result %}
+    {% if dual_use %}
+    &lt;h3&gt;Dual Use&lt;/h3&gt;
+    {% with page_questions=section_pages.2.elements %}
+      {% comment %}
+        Questions:
+        0. dual-use-software
+      {% endcomment %}
+    
+      {% check_element page_questions.0 project=project as dus_question_result %}
+      {% if dus_question_result %}
+        {% if dual_use %}
+        &lt;p&gt;Software's use for military purposes:&lt;/p&gt;
+        &lt;div class="textarea"&gt;{{ dual_use.value|linebreaks }}&lt;/div&gt;
+        {% endif %}
+      {% endif %}
+
+    {% endwith %}
+    {% endif %}
+
+  {% endif %}
+
+{% endwith %}
+{% endif %}
+
+
+
+{# sections #}
+{% endwith %}
+
+{# project.catalog.uri #}
+{% endif %}
+
+&lt;style&gt;
+  .textarea{
+    margin: 0 30px 0;
+  }
+&lt;/style&gt;</template>
+	</view>
+</rdmo>

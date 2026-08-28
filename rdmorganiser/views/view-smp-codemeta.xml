@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2026-06-02T12:21:28.466422+02:00" required="2.1.0" version="2.4.4">
+	<view dc:uri="https://rdmo.mpdl.mpg.de/terms/views/smp-codemeta">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
+		<uri_path>smp-codemeta</uri_path>
+		<dc:comment>Helper view of a CodeMeta file for Research Software.</dc:comment>
+		<order>0</order>
+		<title lang="en">SMP CodeMeta Template</title>
+		<help lang="en">Helper view of a CodeMeta file for Research Software.</help>
+		<title lang="de">SMP CodeMeta Template</title>
+		<help lang="de">Hilfe-Ansicht einer CodeMeta-Datei für Forschungssoftware.</help>
+		<title lang="fr"/>
+		<help lang="fr"/>
+		<title lang="it"/>
+		<help lang="it"/>
+		<title lang="es"/>
+		<help lang="es"/>
+		<catalogs>
+			<catalog dc:uri="https://rdmorganiser.github.io/terms/questions/smp"/>
+		</catalogs>
+		<template>{% load view_tags %}
+{% get_values 'project/research_field' as research_fields %}
+{% get_set 'project/partner/id' as partners %}
+{% get_value 'project/title' as title %}
+{% get_value 'project/schedule/project_end' as release_date %}
+{% get_values 'smp/software-pid' as software_pids %}
+{% get_values 'smp/software-license' as software_licenses %}
+{% get_values 'smp/language' as programming_languages %}
+&lt;pre&gt;
+{
+    &quot;@context&quot;: &quot;https://w3id.org/codemeta/3.0&quot;,
+    &quot;name&quot;: &quot;{{ title.value }}&quot;,
+    &quot;@type&quot;: &quot;SoftwareSourceCode&quot;{% if research_fields|length == 1 %},    
+    &quot;applicationCategory&quot;: &quot;{{ research_fields.0.value }}&quot;{% elif research_fields|length &gt; 1 %},
+    &quot;applicationCategory&quot;: [
+        {% for rf in research_fields %}&quot;{{ rf.value }}&quot;{% if not forloop.last %},
+        {% endif %}{% endfor %}
+    ]{% endif %}{% if partners|length %},
+    &quot;contributor&quot;: [{% for p in partners %} {% with p_set_index_str=p.set_index|stringformat:&quot;s&quot; %} {% get_set_value p 'project/partner/type' as p_type %} {% get_set_value p 'project/partner/family-name' as p_family_name %} {% get_set_value p 'project/partner/given-name' as p_given_name %} {% get_set_value p 'project/partner/name' as p_name %} {% get_set_value p 'project/partner/orcid' as p_orcid %} {% get_set_value p 'project/partner/website' as p_website %} {% get_values 'project/partner/affiliation' p_set_index_str as p_affiliations %} {% get_values 'project/partner/affiliation/ror-id' p_set_index_str as p_ror_ids %} {% get_values 'project/partner/role' p_set_index_str as p_roles %}
+        {% if p_type.option_uri == 'https://rdmo.mpdl.mpg.de/terms/options/partner-types/person' %}{
+            {% if p_orcid.value %}&quot;@id&quot;: &quot;{{ p_orcid.value }}&quot;,
+            {% endif %}&quot;@type&quot;: &quot;Person&quot;,
+            &quot;familyName&quot;: &quot;{{ p_family_name.value }}&quot;,
+            &quot;givenName&quot;: &quot;{{ p_given_name.value }}&quot;{% elif p_type.option_uri == 'https://rdmo.mpdl.mpg.de/terms/options/partner-types/entity' %}{
+            {% if p_website.value %}&quot;@id&quot;: &quot;{{ p_website.value }}&quot;,
+            {% endif %}&quot;@type&quot;: &quot;Organization&quot;,
+            &quot;name&quot;: &quot;{{ p_name.value }}&quot;{% endif %}{% if p_affiliations|length and p_affiliations|length == 1 and p_affiliations.0.value %},
+            &quot;affiliation&quot;: {
+                {% if p_ror_ids|length and p_ror_ids.0.value %}&quot;@id&quot;: &quot;{{ p_ror_ids.0.value }}&quot;,
+                {% else %}{% endif %}&quot;@type&quot;: &quot;Organization&quot;,
+                &quot;name&quot;: &quot;{{ p_affiliations.0.value }}&quot;
+            }{% elif p_affiliations|length and p_affiliations|length &gt; 1 %},
+            &quot;affiliation&quot;: [
+                {% for p_affiliation in p_affiliations %}{% if not forloop.first %}    {% endif %}{% if p_affiliation.value %}{ {% if p_ror_ids|length %}{% for p_ror_id in p_ror_ids %}{% if p_ror_id.set_index == p_affiliation.set_index and p_ror_id.value %}
+                    &quot;@id&quot;: &quot;{{ p_ror_id.value }}&quot;,{% endif %}{% endfor %}
+                    {% else %}
+                    {% endif %}&quot;@type&quot;: &quot;Organization&quot;,
+                    &quot;name&quot;: &quot;{{ p_affiliation.value }}&quot;
+                }{% if not forloop.last %}, {% endif %}{% endif %}
+            {% endfor %}]{% endif %}
+        {% if p_type.option_uri %}}{% endif %}{% if p_orcid.value or p_website.value %}{%if p_roles|length %},
+        {% for p_role in p_roles %}{% if p_role.value %}{
+            &quot;@type&quot;: &quot;Role&quot;,
+            &quot;contributor&quot;: &quot;{% if p_orcid.value %}{{ p_orcid.value }}{% elif p_website.value %}{{ p_website.value }}{% endif %}&quot;,
+            &quot;roleName&quot;: &quot;{{ p_role.value }}&quot;
+        }{% if not forloop.last %}, 
+        {% endif %}{% endif %}{% endfor %}{% endif %}{% endif %}{% if not forloop.last %}{% if p_type.option_uri %},{% endif %}{% endif %}{% endwith %}{% endfor %}
+    ]{% endif %}{% if software_licenses|length == 1 %},
+    &quot;license&quot;: {% if software_licenses.0.text %}&quot;{{ software_licenses.0.text }}&quot;{% else %}&quot;https://spdx.org/licenses/{{ software_licenses.0.option_text }}&quot;{% endif %}{% elif software_licenses|length &gt; 1 %},
+    &quot;license&quot;: [
+        {% for sl in software_licenses %}{% if sl.text %}&quot;{{ sl.text }}&quot;{% else %}&quot;https://spdx.org/licenses/{{ sl.option_text }}&quot;{% endif %}{% if not forloop.last %},
+        {% endif %}{% endfor %}
+    ]{% endif %}{% if software_pids|length == 1 %},
+    &quot;identifier&quot;: {
+        &quot;@type&quot;: &quot;PropertyValue&quot;,
+        &quot;propertyID&quot;: &quot;{{ software_pids.0.option_text|lower }}&quot;,
+        &quot;value&quot;:  &quot;{{ software_pids.0.text }}&quot;
+    }{% elif software_pids|length &gt; 1 %},
+    &quot;identifier&quot;: [{% for sp in software_pids %}
+        {
+            &quot;@type&quot;: &quot;PropertyValue&quot;,
+            &quot;propertyID&quot;: &quot;{{ sp.option_text|lower }}&quot;,
+            &quot;value&quot;:  &quot;{{ sp.text }}&quot;
+        }{% if not forloop.last %}, {% endif %}{% endfor %}
+    ]{% endif %}{% if release_date.value %},
+    &quot;datePublished&quot;: &quot;{{ release_date.value|date:&quot;Y-m-d&quot; }}&quot;{% endif %}{% if programming_languages|length == 1 %},
+    &quot;programmingLanguage&quot;: &quot;{{ programming_languages.0.value }}&quot;{% elif programming_languages|length &gt; 1 %},
+    &quot;programmingLanguage&quot;: [
+        {% for pl in programming_languages %}{% if not forloop.first %}    {% endif %}&quot;{{ pl.value }}&quot;{% if not forloop.last %},{% endif %}
+    {% endfor %}]{% endif %}
+}
+&lt;/pre&gt;</template>
+	</view>
+</rdmo>
