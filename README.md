@@ -109,6 +109,7 @@ In order to file issues, you will need a GitHub account.
 |Humanities, including green RDM aspects|[catalog][MWS]|     |2026-06|Max Weber Stiftung    | 
 |Mathematics                      |[catalog][MAT]|     |2022-11|DFG Excellence Cluster MATH+|
 |NFDI DMP Template                |[catalog][D4N]|           |2025-06|DMP4NFDI              |
+|NFDI4Memory                      |[catalog][N4M]|           |2026-08|DMP4NFDI              |
 |Offboarding checklist            |[catalog][UDA]|           |2025-09|ULB Darmstadt         |
 |Quality Assurance Tool for data  |[catalog][QAT]|           |2025-03|Mathmet / TC-IM 1449  |
 |Quality Assurance Tool for software  |[catalog][QAT]|       |2025-03|Mathmet / TC-IM 1449  |
@@ -118,7 +119,7 @@ In order to file issues, you will need a GitHub account.
 |VW Foundation - Basic DMP            |[catalog][VWB]|       |2025-06|FDM Bayern eHumanities|
 |VW Foundation - Science Europe       |[catalog][VWE]|       |2021-04|FDM Bayern eHumanities|
 
-Total: 36 catalogs, 15 views
+Total: 37 catalogs, 15 views
 
 [AKU]:         shared/ub_fau_erlangen_nuernberg/dfg-alte-kulturen/
 [CHE]:         shared/ub_fau_erlangen_nuernberg/dfg-chemie/
@@ -136,6 +137,7 @@ Total: 36 catalogs, 15 views
 [FDN]:         shared/FDNext/
 [MWS]:         shared/MaxWeberStiftung/
 [N4Q]:         shared/NFDI4Culture/
+[N4M]:         shared/NFDI_catalogs/NFDI4Memory/
 [TXT]:         shared/Text+/
 [N4C]:         shared/nfdi4chem
 [N4I]:         shared/nfdi4ing
