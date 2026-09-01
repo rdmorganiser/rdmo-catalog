@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2024-09-24T08:29:53.032244+02:00" version="2.0.0">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2026-09-01T18:26:16.810284+02:00" required="2.1.0" version="2.5.2">
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>project</key>
@@ -434,10 +434,45 @@
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator/affiliation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>affiliation</key>
+		<path>project/dataset/creator/affiliation</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator/email">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>email</key>
+		<path>project/dataset/creator/email</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator/family_name">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>family_name</key>
+		<path>project/dataset/creator/family_name</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator/given_name">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>given_name</key>
+		<path>project/dataset/creator/given_name</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator"/>
+	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator/name">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>name</key>
 		<path>project/dataset/creator/name</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator/orcid">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>orcid</key>
+		<path>project/dataset/creator/orcid</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator"/>
 	</attribute>
@@ -672,10 +707,45 @@
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner/affiliation">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>affiliation</key>
+		<path>project/dataset/ipr/owner/affiliation</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner/email">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>email</key>
+		<path>project/dataset/ipr/owner/email</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner/family_name">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>family_name</key>
+		<path>project/dataset/ipr/owner/family_name</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner/given_name">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>given_name</key>
+		<path>project/dataset/ipr/owner/given_name</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner"/>
+	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner/name">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>name</key>
 		<path>project/dataset/ipr/owner/name</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner/orcid">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>orcid</key>
+		<path>project/dataset/ipr/owner/orcid</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/ipr/owner"/>
 	</attribute>
@@ -1484,12 +1554,40 @@
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/terms/domain/project/funder/grant">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>grant</key>
+		<path>project/funder/grant</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder"/>
+	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/grant_nr">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>grant_nr</key>
 		<path>project/funder/grant_nr</path>
 		<dc:comment>Added for the text field &quot;Action Number&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/grant/identifier">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>identifier</key>
+		<path>project/funder/grant/identifier</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/grant"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/grant/name">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>name</key>
+		<path>project/funder/grant/name</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/grant"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/grant/url">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>url</key>
+		<path>project/funder/grant/url</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/grant"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/id">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -1530,6 +1628,13 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>rdm_policy</key>
 		<path>project/funder/rdm_policy</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/ror">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>ror</key>
+		<path>project/funder/ror</path>
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder"/>
 	</attribute>
