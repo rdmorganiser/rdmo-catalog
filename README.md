@@ -8,6 +8,9 @@ The [main branch](https://github.com/rdmorganiser/rdmo-catalog/tree/main) contai
 
 Material structured according to the previous data model 1.6.0+ [has been frozen at the state of April 2024](https://github.com/rdmorganiser/rdmo-catalog/releases/tag/1.4.1-rdmo-1.6.0) and will be not updated any more.
 
+
+
+
 The content officially curated by the [RDMO Consortium](https://rdmorganiser.github.io/Community/) is in the [`rdmorganiser`](./rdmorganiser) folder. We recommend to import these files to be able to make use of the official domain model, options, tasks and conditions. *Note that parts of these data are required also to import user-generated content, because RDMO user-generated question catalogs may refer to parts of the official data*.
 
 Content shared by RDMO users can be found under [`shared`](./shared). It can be organised as a single file ("full XML export") or as a collection of multiple files containing additional conditions, options and questions. Files in the same folder belong together: all of them should be imported.
