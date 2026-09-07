@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2026-05-26T17:31:31.970612+02:00" required="2.1.0" version="2.4.4">
+	<view dc:uri="https://rdmo.mpdl.mpg.de/terms/views/smp-citation">
+		<uri_prefix>https://rdmo.mpdl.mpg.de/terms</uri_prefix>
+		<uri_path>smp-citation</uri_path>
+		<dc:comment>Helper view of a CITATION file for Research Software.</dc:comment>
+		<order>0</order>
+		<title lang="en">SMP Citation Template</title>
+		<help lang="en">Helper view of a CITATION file for Research Software.</help>
+		<title lang="de">SMP Citation Template</title>
+		<help lang="de">Hilfe-Ansicht einer CITATION-Datei für Forschungssoftware.</help>
+		<catalogs>
+			<catalog dc:uri="https://rdmorganiser.github.io/terms/questions/smp"/>
+		</catalogs>
+		<template>{% load view_tags %}
+{% get_set 'project/partner/id' as partners %}
+{% get_value 'project/title' as title %}
+{% get_value 'project/schedule/project_end' as release_date %}
+{% get_values 'smp/software-pid' as software_pids %}
+{% get_values 'smp/software-license' as software_licenses %}
+&lt;pre&gt;
+cff-version: 1.2.0
+message: &quot;If you use this software, please cite it as below.&quot;
+title: {% if ' ' in title.value %}&quot;{{ title.value }}&quot;{% else %}{{  title.value}}{% endif %}
+type: software
+{% if partners|length %}authors:{% for p in partners %} {% with p_set_index_str=p.set_index|stringformat:&quot;s&quot; %} {% get_set_value p 'project/partner/type' as p_type %} {% get_set_value p 'project/partner/family-name' as p_family_name %} {% get_set_value p 'project/partner/given-name' as p_given_name %} {% get_set_value p 'project/partner/name' as p_name %} {% get_set_value p 'project/partner/orcid' as p_orcid %} {% get_set_value p 'project/partner/website' as p_website %} {% get_values 'project/partner/affiliation' p_set_index_str as p_affiliations %}
+    {% if p_type.option_uri == 'https://rdmo.mpdl.mpg.de/terms/options/partner-types/person' %}- family-names: {% if ' ' in p_family_name.value or p_family_name.value == '' %}&quot;{{ p_family_name.value }}&quot;{% else %}{{ p_family_name.value }}{% endif %}&lt;br&gt;      given-names: {% if ' ' in p_given_name.value or p_given_name.value == '' %}&quot;{{ p_given_name.value }}&quot;{% else %}{{ p_given_name.value }}{% endif %}{% if p_orcid.value %}&lt;br&gt;      orcid: {{ p_orcid.value }}{% endif %}{% elif p_type.option_uri == 'https://rdmo.mpdl.mpg.de/terms/options/partner-types/entity' %}- name: {% if ' ' in p_name.value or p_name.value == '' %}&quot;{{ p_name.value }}&quot;{% else %}{{ p_name.value }}{% endif %}{% if p_website.value %}&lt;br&gt;      website: {{ p_website.value }}{% endif %}{% endif %}{% if p_affiliations|length %}&lt;br&gt;      affiliation: &quot;{% for a in p_affiliations %}{{ a.value }}{% if not forloop.last %} &amp; {% endif %}{% endfor %}&quot;{% endif %}{% endwith %}{% endfor %}
+{% endif %}{% if software_pids|length == 1 %}{% if software_pids.0.option_text == 'DOI' or software_pids.0.option_text == 'URL' %}{{ software_pids.0.option_text|lower }}: {% if ' ' in software_pids.0.text or software_pids.0.text == '' %}&quot;{{ software_pids.0.text }}&quot;{% else %}{{ software_pids.0.text }}{% endif %}&lt;br&gt;{% else %}identifiers: {% for sp in software_pids %}
+    - type: {% if sp.option_text == 'Software Heritage Identifier' %}swh{% else %}{{ sp.option_text|lower }}{% endif %}
+      value: {% if ' ' in sp.text or sp.text == '' %}&quot;{{ sp.text }}&quot;{% else %}{{ sp.text }}{% endif %}{% endfor %}{% endif %}{% elif software_pids|length &gt; 1 %}identifiers: {% for sp in software_pids %}
+    - type: {% if sp.option_text == 'Software Heritage Identifier' %}swh{% else %}{{ sp.option_text|lower }}{% endif %}
+      value: {% if ' ' in sp.text or sp.text == '' %}&quot;{{ sp.text }}&quot;{% else %}{{ sp.text }}{% endif %}{% endfor %}
+{% endif %}{% if software_licenses|length == 1 %}license: {% if software_licenses.0.text %}{% if ' ' in software_licenses.0.text or software_licenses.0.text == '' %}&quot;{{ software_licenses.0.text }}&quot;{% else %}{{ software_licenses.0.text }}{% endif %}{% else %}{{ software_licenses.0.option_text }}{% endif %}
+{% elif software_licenses|length &gt; 1 %}license: {% for sl in software_licenses %}{% if forloop.first %}&lt;br&gt;{% endif %}    {% if sl.text %}{% if ' ' in sl.text or sl.text == '' %}- &quot;{{ sl.text }}&quot;{% else %}- {{ sl.text }}{% endif %}{% else %}- {{ sl.option_text }}{% endif %}
+{% endfor %}{% endif %}{% if release_date %}date-released: {{ release_date.value|date:&quot;Y-m-d&quot; }}{% endif %}
+&lt;/pre&gt;</template>
+	</view>
+</rdmo>
