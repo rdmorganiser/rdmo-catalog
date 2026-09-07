@@ -77,7 +77,7 @@ In order to file issues, you will need a GitHub account.
 |DCC checklist           |[catalog][Q-dcc] |                      |2018-10|RDMO team       |
 |DFG checklist        |[2 catalogs][Q-dfg] |[view][V-dfg]         |2025-11|RDMO team       |
 |Horizon Europe          |[catalog][Q-heu] |[view][V-heu]         |2022-12|RDMO team       |
-|Software Management Plan|[catalog][Q-smp]|[view][V-smp] (FAIR4RS)|2023-11|MPDL / RDMO team|
+|Software Management Plan|[catalog][Q-smp] |[4 views][V-smp]      |2026-08|MPDL / RDMO team|
 |Swiss National Fund     |[catalog][Q-snf] |[view][V-snf]         |2020-08|RDMO team       |
 |Bielefeld               |                 |[view][V-bielefeld]   |2019-01|RDMO team       |
 |CITEC                   |                 |[view][V-citec]       |2019-01|RDMO team       |
@@ -119,7 +119,7 @@ In order to file issues, you will need a GitHub account.
 |VW Foundation - Basic DMP            |[catalog][VWB]|       |2025-06|FDM Bayern eHumanities|
 |VW Foundation - Science Europe       |[catalog][VWE]|       |2021-04|FDM Bayern eHumanities|
 
-Total: 37 catalogs, 15 views
+Total: 37 catalogs, 19 views
 
 [AKU]:         shared/ub_fau_erlangen_nuernberg/dfg-alte-kulturen/
 [CHE]:         shared/ub_fau_erlangen_nuernberg/dfg-chemie/
@@ -156,7 +156,7 @@ Total: 37 catalogs, 15 views
 [Q-snf]:       rdmorganiser/questions/questions-snf.xml
 [V-dfg]:       rdmorganiser/views/view-dfg-checkliste.xml
 [V-heu]:       rdmorganiser/views/view-horizon-europe.xml
-[V-smp]:       rdmorganiser/views/view-FAIR4RS.xml
+[V-smp]:       rdmorganiser/views
 [V-snf]:       rdmorganiser/views/view-snf.xml
 [V-bielefeld]: rdmorganiser/views/view-bielefeld.xml
 [V-citec]:     rdmorganiser/views/view-citec.xml
