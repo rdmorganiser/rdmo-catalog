@@ -77,7 +77,7 @@ In order to file issues, you will need a GitHub account.
 |DCC checklist           |[catalog][Q-dcc] |                      |2018-10|RDMO team       |
 |DFG checklist        |[2 catalogs][Q-dfg] |[view][V-dfg]         |2025-11|RDMO team       |
 |Horizon Europe          |[catalog][Q-heu] |[view][V-heu]         |2022-12|RDMO team       |
-|Software Management Plan|[catalog][Q-smp] |[4 views][V-smp]      |2026-08|MPDL / RDMO team|
+|Software Management Plan|[catalog][Q-smp] |[5 views][V-smp]      |2026-08|MPDL / RDMO team|
 |Swiss National Fund     |[catalog][Q-snf] |[view][V-snf]         |2020-08|RDMO team       |
 |Bielefeld               |                 |[view][V-bielefeld]   |2019-01|RDMO team       |
 |CITEC                   |                 |[view][V-citec]       |2019-01|RDMO team       |
