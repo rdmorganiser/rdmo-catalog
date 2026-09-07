@@ -1,13 +1,57 @@
-# Preface
-This questionnaire was developed by the [Max Planck Digital Library](https://www.mpdl.mpg.de) in the Collections area in late summer and autumn 2022. It can be used to create a software management plan in RDMO. Of course, we are always happy to receive feedback: rdmo@mpdl.mpg.de.
+# Software Management Plan for Researchers
 
-The catalogue is available under the CC0 licence (https://creativecommons.org/share-your-work/public-domain/cc0/), so that it can be freely (re)used. Changes and adaptations by the RDMO community are of course welcome and can easily be made via GitHub.
+## Scope / Preface / General
 
-# General
-This RDMO catalogue supports the writing of a Software Management Plan. This questionnaire was developed by the Max Planck Digital Library in the Collections area in late summer and autumn 2022. It can be used to create a software management plan in RDMO.
+This RDMO catalogue supports the writing of a Software Management Plan. This questionnaire was developed by the Max Planck Digital Library in the Collections area in late summer and autumn 2022. It can be used to create a software management plan in RDMO.  
 A software management plan (SMP) can help significantly with design, implementation and long-term availability. The essential advantage of an SMP filled out in advance is the explicit handling of the emerging research software with documented information. At the same time, it also makes it clearer which topics (fields) have not yet been solved or covered.
 
-# Development
+
+
+
+
+The Software Management Plan for Researchers has been created at the Max Planck Digital Library (Max Planck Information and Technology).  
+It was designed to support scientists developing research software to plan and document their work. Its structure was inspired by some documentation, specially https://www.software.ac.uk/resources/guides/software-management-plans and https://opencarp.org/about/software-management-plan.  
+
+It has been included in the collection of the RDMO core catalogs. The catalogue is available under the CC0 licence (https://creativecommons.org/share-your-work/public-domain/cc0/), so that it can be freely (re)used. Changes and adaptations by the RDMO community are of course welcome and can easily be made via GitHub.
+
+The first version (2021-2023) was developed by Yves Vincent Grossmann, including a FAIR4RS view by Jan Matthiesen.  
+The second version (2026) was developed within the DFG project [MAUS (MAschinelle Unterstützung von Software-Management-Plänen)](https://gepris.dfg.de/gepris/projekt/543616919), including 4 views (`view-smp-citation.xml`, `view-smp-codemeta.xml`, `view-smp-readme.xml`, `view-smp-report.xml`)
+
+
+
+
+
+
+
+## Content
+
+The RDMO package for SMPs contains the following components:
+
+- A question catalog: `questions-smp.xml`.
+- ~a subset of `questions-smp.xml` (`questions-smp-subset.xml`) containing only updated or added catalog elements. We also included the parent element, so that it is clear where the updated / element belongs (for example, if a new question was added, we also included the new question's page)~
+
+- Attributes, conditions and optionsets already included in the core RDMO package.
+- Five views (export templates):
+    - `view-smp-citation.xml`
+    - `view-smp-codemeta.xml`
+    - `view-smp-readme.xml`
+    - `view-smp-report.xml`
+    - `view-FAIR4RS.xml`
+
+The first 3 views generate the corresponding metadata files required by software repositories. `view-smp-report.xml` displays the answers in the SMP project as a continuous-text report. `view-FAIR4RS.xml` displays the answers structured according to the FAIR principles for research software.
+
+## Dependencies
+
+The 2026 version of the catalog contains a call to 2 option set providers - ORCID and ROR - which requires a previous installation of the following plugins:
+- https://github.com/MPDL/rdmo-plugins-orcid -> the fork of https://github.com/rdmorganiser/rdmo-plugins-orcid adapted for the SMP catalog
+- https://github.com/MPDL/rdmo-plugins-ror -> the fork of https://github.com/rdmorganiser/rdmo-plugins-ror adapted for the SMP catalog
+
+If you want to automatically carry the exported metadata files to a software repository on GitHub or GitLab, you additionally need the following plugins:
+- https://github.com/rdmorganiser/rdmo-plugins-github
+- https://github.com/rdmorganiser/rdmo-plugins-gitlab
+
+## Development
+
 This catalogue was developed through many conversations and iterations. It represents an attempt or approximation of what a Software Management Plan could possibly be. The main focus from our side was on added value for scientists who write software for their research themselves, but have not learned how to do this or have learned it only a little. At the same time, such an SMP can also be helpful in advising information and infrastructure experts.
 
 Furthermore, this SMP template was inspired by some documentations, specially:
@@ -16,13 +60,25 @@ Furthermore, this SMP template was inspired by some documentations, specially:
 * https://zenodo.org/record/7248877
 * https://biohackrxiv.org/k8znb/
 
-# Versions of the SMP Catalogue
+## History
+
+The SMP catalog was created at the Max Planck Digital Library (Max Planck Information and Technology) to support scientists developing research software to plan and document their work. This catalog was inspired by some documentation, specially https://www.software.ac.uk/resources/guides/software-management-plans and https://opencarp.org/about/software-management-plan.
+
+The first version (2021-2023) was developed by Yves Vincent Grossmann, including a FAIR4RS view by Jan Matthiesen.  
+The second version (2026) was developed within the DFG project [MAUS (MAschinelle Unterstützung von Software-Management-Plänen)](https://gepris.dfg.de/gepris/projekt/543616919), including 4 views (`view-smp-citation.xml`, `view-smp-codemeta.xml`, `view-smp-readme.xml`, `view-smp-report.xml`)
+
+- The main modifications were:
+    - the structuring of the project contributors (before: Software Project Partner(s))
+    - the inclusion of 2 option set providers: ORCID and ROR
+
+## Versions of the SMP Catalogue
 | Version Number | Release Date | Description |
 | -------------- | ------------ | ----------- |
-| 1.0 | 5th December 2022  | Initialisation   |
-| 1.1 | 27th February 2023 | Minor adjustments to help texts and some widget types of questions|
-| 2.0 | 18th August 2023   | a) Addition of a question regarding Qualifty References (reference to FAIR4RS I2 and R2); b) adjustments to questions and help texts for the FAIR4RS viewer; c) minor adjustments to help texts thanks to feedback; d) broken links repair + Thanks a lot for the feedback by the RDMO Community!|
-| 3.0 | 29th November 2023 | Implementing application classes and structure the appearence of different question after the DLR Research Software Guidelines (https://doi.org/10.5281/zenodo.1344612). This work was done within the NFDI4DataScience miniHackathons on maSMPs in 2023 at the ZB Med, see https://doi.org/10.5281/zenodo.10374839.|
+| 1.0 | 2022-12-05 | Initialisation   |
+| 1.1 | 2023-02-27 | Minor adjustments to help texts and some widget types of questions|
+| 2.0 | 2023-08-18 | a) Addition of a question regarding Qualifty References (reference to FAIR4RS I2 and R2); b) adjustments to questions and help texts for the FAIR4RS viewer; c) minor adjustments to help texts thanks to feedback; d) broken links repair + Thanks a lot for the feedback by the RDMO Community!|
+| 3.0 | 2023-11-29 | Implementing application classes and structure the appearence of different question after the DLR Research Software Guidelines (https://doi.org/10.5281/zenodo.1344612). This work was done within the NFDI4DataScience miniHackathons on maSMPs in 2023 at the ZB Med, see https://doi.org/10.5281/zenodo.10374839.|
+| 4.0 | 2026-08-XX | New views; fine-grained description of contributors; integration of the ORCID plugin |
 
 # Implementing
 The catalogue uses the generic elements from RDMO. Therefore, all generic elements from "Conditions", "Domain", "Options" and "Questions" must already be implemented in advance. The respective order is documented in the [generic Readme file of the RDMO content](/README.md) and must be observed.
@@ -44,156 +100,3 @@ There were also some presentations on the development of this catalogue by the M
 
 # Feedback
 Of course, we are always happy to receive feedback: rdmo@mpdl.mpg.de.
-
-# Selection of Questions used for the SMP
-
-## General
-### Topic
-
-What is the title of the software project?
-
-Which research field(s) does this software belong to?
-
-What is the intended use of the software? How will your software contribute to research?
-
-Are your sure that no suitable software exists with the functionality your are planning?
-
-### Software Project Partner(s)
-
-Who are the project participants that deal with this software?
-
-Where do the (financial/personnel) resources come from?
-
-Is there or will there be specific funding for the software development?
-
-
-### Software Project Schedule
-
-When does the software project start?
-
-When does the software project end?
-
-### Software Project Management
-
-Which software development process is defined? How will process roles be assigned?
-
-How do you track the different tasks and use cases?
-
-Will there be a specification document (briefly) outlining the most important requirements?
-
-### Software Development Requirements
-
-Are there institutional requirements for software development?
-
-Are there requirements regarding the software development form other parties?
-
-## Technical
-
-### Code
-
-Which programming language(s) do you plan to use?
-
-Which technology or process is used for versioning?
-
-### Third Party Components and Libraries
-
-Which external software components will be used? What dependencies on software libraries do exist? How do you document this?
-
-What licences are on the third-party software components?
-
-What is the process to keep track of the external software components? Can critical dependencies be eliminated or mitigated?
-
-Do you plan to use third party web services?
-
- Does the software refer to other software projects or objects?
-
-### Infrastructure
-
-To what extend will infrastructure resources be required?
-
-Is there already existing infrastructure for the software development? Where is the infrastructure hosted?
-
-Are there technical aspects where competences are (still) lacking, so that support would be helpful?
-
-### Preservation
-
-How long should the software remain usable?
-
-Does this software have to be preserved for a longer term?
-
-### Security
-
-Which measures or provisions are in place to ensure software security?
-
-What Measures Do You Take to Minimise Risks in Relation to Software Development?
-
-## Quality Assurance
-
-### Governance and Defined Processes
-
-Do you have a governance model for the software development?
-
-Do you apply specific coding standards? How do you take care about code quality control?
-
-### Documentation
-
-How is software documentation created?
-
-Where will the documentation be stored or made available? Which language will be used?
-
-### Testing
-
-Which software test strategy are you going to follow? Which types of tests are planned for the project?
-
-How is testing and test documentation organised?
-
-## Release and Publish
-
-### Releasing
-
-Are there defined release processes for the software?
-
-What is the decision process for releasing? How often will a software version be released?
-
-Where will the software be stored? Does the storage place have a clear preservation policy?
-
-### Publicly Availability
-
-Will this software be publicly available?
-
-In which repository or archive will the software be held? How easy can it be found?
-
-Will users have the possibility to contribute to your software?
-
-Is (Open) Peer Review planned for the software?
-
-### Metadata
-
-How do you assign metadata for your software?
-
-Do you give a persistent identifier for you software?
-
-### Support
-
-Do you plan to give support or help to re-users of your software?
-
-How do you organise the support and feedback process with other users?
-
-Does your Software Management Plan relate to other Software/Data Management Plans?
-
-Do you intend to make your software management plan publicly available (later)?
-
-## Legal and Ethics
-
-### Intellectual Property Rights
-
-What is the legal ownership of the software?
-
-Does the project use and/or produce software that is protected by third party intellectual or industrial property rights?
-### License
-
-Under what kind of license(s) will the software be published?
-
-### Dual Use
-
-Can the software also be used for military purposes?
