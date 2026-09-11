@@ -13,6 +13,7 @@ It has been included in the collection of the RDMO core catalogs. The catalogue 
 The RDMO package for SMPs contains the following components:
 
 - The Software Management Plan (SMP) catalogue: `questions-smp.xml`
+- The Software Management Plan (SMP) catalogue **without** the ORCID and ROR optionset provider plugins: `questions-smp-without-orcid-and-ror.xml`
 - ~A subset of `questions-smp.xml` (`questions-smp-subset.xml`) containing only updated or added catalog elements from the 2026 version. The parent element is also included, so that it is clear where the updated / new element belongs (for example, if a new question was added, the new question's (old) page is also included)~
 - Attributes, conditions and optionsets already included in the core RDMO package
 - Five views (export templates):
