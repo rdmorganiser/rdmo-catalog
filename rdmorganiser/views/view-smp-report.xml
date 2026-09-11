@@ -41,7 +41,7 @@
         2. application-class
         3. intended-use
         4. buy-or-make
-    1. project-partner 
+    1. project-partner
     2. project-funding
         0. funding
     3. schedule
@@ -66,7 +66,7 @@
 {% get_value 'smp/buy-or-make' as buy_or_make %}
 
 {# project-partner #}
-{% get_set 'project/partner/id' as partners %}
+{% get_set 'project/contributor/id' as partners %}
 
 {# project-funding #}
 {% get_value 'project/funder' as funder %}
@@ -168,16 +168,16 @@
       &lt;ul&gt;
       {% for p in partners %}
         {% with p_set_index_str=p.set_index|stringformat:'s' %}
-        {% get_set_value p 'project/partner/type' as p_type %}
-        {% get_set_value p 'project/partner/orcid' as p_orcid %}
-        {% get_set_value p 'project/partner/website' as p_website %}
-        {% get_set_value p 'project/partner/given-name' as p_given_name %}
-        {% get_set_value p 'project/partner/family-name' as p_family_name %}
-        {% get_set_value p 'project/partner/name' as p_name %}
-        {% get_values 'project/partner/affiliation' p_set_index_str as p_affiliations %}
-        {% get_values 'project/partner/role' p_set_index_str as p_roles %}
+        {% get_set_value p 'project/contributor/person_or_entity' as p_type %}
+        {% get_set_value p 'project/contributor/orcid' as p_orcid %}
+        {% get_set_value p 'project/contributor/organization/url' as p_website %}
+        {% get_set_value p 'project/contributor/given_name' as p_given_name %}
+        {% get_set_value p 'project/contributor/family_name' as p_family_name %}
+        {% get_set_value p 'project/contributor/name' as p_name %}
+        {% get_values 'project/contributor/organization' p_set_index_str as p_affiliations %}
+        {% get_values 'project/contributor/role' p_set_index_str as p_roles %}
 
-        &lt;li&gt;{% if p_type.option_uri == 'https://rdmo.mpdl.mpg.de/terms/options/partner-types/person' and p_given_name.value and p_family_name.value %}{{ p_given_name.value }} {{ p_family_name.value }}{% elif p_type.option_uri == 'https://rdmo.mpdl.mpg.de/terms/options/partner-types/entity' and p_name.value %}{{ p_name.value }}{% else %}{{ p.value }}{% endif %}{% if p_type.option_uri == 'https://rdmo.mpdl.mpg.de/terms/options/partner-types/person' and p_orcid.value %} ({{ p_orcid.value }}){% endif %}{% if p_type.option_uri == 'https://rdmo.mpdl.mpg.de/terms/options/partner-types/entity' and p_website.value %} ({{ p_website.value }}){% endif %}{% if p_affiliations %}, {% for a in p_affiliations %}{% for r in p_roles %}{% if r.set_index == a.set_index %}{{ r.value }} at {% endif %}{% endfor %}{{ a.value }}{% if not forloop.last %} &amp; {% endif %}{% endfor %}{% endif %}&lt;/li&gt;
+        &lt;li&gt;{% if p_type.option_uri == 'https://rdmorganiser.github.io/terms/options/partner-types/person' and p_given_name.value and p_family_name.value %}{{ p_given_name.value }} {{ p_family_name.value }}{% elif p_type.option_uri == 'https://rdmorganiser.github.io/terms/options/partner-types/entity' and p_name.value %}{{ p_name.value }}{% else %}{{ p.value }}{% endif %}{% if p_type.option_uri == 'https://rdmorganiser.github.io/terms/options/partner-types/person' and p_orcid.value %} ({{ p_orcid.value }}){% endif %}{% if p_type.option_uri == 'https://rdmorganiser.github.io/terms/options/partner-types/entity' and p_website.value %} ({{ p_website.value }}){% endif %}{% if p_affiliations %}, {% for a in p_affiliations %}{% for r in p_roles %}{% if r.set_index == a.set_index %}{{ r.value }} at {% endif %}{% endfor %}{{ a.value }}{% if not forloop.last %} &amp; {% endif %}{% endfor %}{% endif %}&lt;/li&gt;
         
         {% endwith %}
       {% endfor %}
