@@ -4,7 +4,7 @@
 
 A software management plan (SMP) can help significantly with design, implementation and long-term availability of a software project. The essential advantage of an SMP filled out in advance is the explicit handling of the emerging research software with documented information. At the same time, it also makes it clearer which topics have not yet been solved or covered.
 
-This RDMO catalogue was developed by the [Max Planck Digital Library, MaxIT](https://www.mpdl.mpg.de/) Collections division. The first version (2022) was developed by Yves Vincent Grossmann, including a FAIR4RS view by Jan Matthiesen. The second version (2026) was developed within the DFG project [MAUS (MAschinelle Unterstützung von Software-Management-Plänen)](https://gepris.dfg.de/gepris/projekt/543616919), including 4 views (`view-smp-citation.xml`, `view-smp-codemeta.xml`, `view-smp-readme.xml`, `view-smp-report.xml`).
+This RDMO catalogue was developed by the [Max Planck Digital Library, MaxIT](https://www.mpdl.mpg.de/) Collections division. The first version (2022) was developed by Yves Vincent Grossmann, including a FAIR4RS view by Jan Matthiesen. The currrent version (2026) was developed within the DFG project [MAUS (MAschinelle Unterstützung von Software-Management-Plänen)](https://gepris.dfg.de/gepris/projekt/543616919), including 4 views (`view-smp-citation.xml`, `view-smp-codemeta.xml`, `view-smp-readme.xml`, `view-smp-report.xml`).
 
 It has been included in the collection of the RDMO core catalogs. The catalogue is available under the CC0 waiver (https://creativecommons.org/share-your-work/public-domain/cc0/), so that it can be freely (re)used. Changes and adaptations by the RDMO community are of course welcome and can easily be made via GitHub. 
 
@@ -52,7 +52,7 @@ Furthermore, this SMP template was inspired by some documentations, especially:
 | 1.1 | 2023-02-27 | Minor adjustments to help texts and some widget types of questions|
 | 2.0 | 2023-08-18 | a) Addition of a question regarding Qualifty References (reference to FAIR4RS I2 and R2); b) adjustments to questions and help texts for the FAIR4RS viewer; c) minor adjustments to help texts thanks to feedback; d) broken links repair + Thanks a lot for the feedback by the RDMO Community!|
 | 3.0 | 2023-11-29 | Implementing application classes and structure the appearence of different question after the DLR Research Software Guidelines (https://doi.org/10.5281/zenodo.1344612). This work was done within the NFDI4DataScience miniHackathons on maSMPs in 2023 at the ZB Med, see https://doi.org/10.5281/zenodo.10374839.|
-| 4.0 | 2026-08-XX | New views; fine-grained description of contributors; integration of the ORCID plugin |
+| 4.0 | 2026-08-XX | New views; fine-grained description of contributors; integration of the ORCID and ROR plugins |
 
 # Implementing
 The catalogue uses the generic elements from RDMO. Therefore, all generic elements from "Conditions", "Domain", "Options" and "Questions" must already be implemented in advance. The respective order is documented in the [generic Readme file of the RDMO content](/README.md) and must be observed.
