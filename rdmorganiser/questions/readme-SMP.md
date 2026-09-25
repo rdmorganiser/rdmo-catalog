@@ -2,7 +2,7 @@
 
 ## General
 
-A software management plan (SMP) can help significantly with design, implementation and long-term availability of a software project. The essential advantage of an SMP filled out in advance is the explicit handling of the emerging research software with documented information. At the same time, it also makes it clearer which topics have not yet been solved or covered.
+A software management plan (SMP) can help significantly with design, implementation and long-term availability of a software project. Compiling a SMP in advance allows clarifying the organisational framework needed to achieve functional, well understandable software code. It encompasses cooperation rules among contributors, versioning, security measures to prevent loss and corruption, keep clarity about objective, scope, and prerequisites for functionality, as well as clarification on IPR issues. Completing an appropriately designed SMP template makes clear which conditions relevant for state-of-the-art software production still need to be addressed/specified.
 
 This RDMO catalogue was developed by the [Max Planck Digital Library, MaxIT](https://www.mpdl.mpg.de/) Collections division. The first version (2022) was developed by Yves Vincent Grossmann, including a FAIR4RS view by Jan Matthiesen. The currrent version (2026) was developed within the DFG project [MAUS (MAschinelle Unterstützung von Software-Management-Plänen)](https://gepris.dfg.de/gepris/projekt/543616919), including 4 views (`view-smp-citation.xml`, `view-smp-codemeta.xml`, `view-smp-readme.xml`, `view-smp-report.xml`).
 
