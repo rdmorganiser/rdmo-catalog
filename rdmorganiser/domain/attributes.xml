@@ -245,6 +245,90 @@
 		<dc:comment>Introduced to enable interoperability with different maDMP approaches. Equivalent to rda:dmp/contributor/affiliation/name and dataplan:$_PARTNERS.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>PI</key>
+		<path>project/coordination/PI</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI/family_name">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>family_name</key>
+		<path>project/coordination/PI/family_name</path>
+		<dc:comment>Family name of the PI as the project coordinator. Introduced for interoperability with Coscine, where the PI is explicitly asked for. Suggested TF field dmp/project/coordinator/PI/family_name.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI/given_name">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>given_name</key>
+		<path>project/coordination/PI/given_name</path>
+		<dc:comment>Given name of the PI as the project coordinator. Introduced for interoperability with Coscine, where the PI is explicitly asked for. Suggested TF field dmp/project/coordinator/PI/given_name.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI/identifier">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>identifier</key>
+		<path>project/coordination/PI/identifier</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI/identifier/orcid">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>orcid</key>
+		<path>project/coordination/PI/identifier/orcid</path>
+		<dc:comment>The ORCID value for the PI as the project coordinator. NOTE: Here, a PI is explicitly requested! Used for interoperability with Coscine. Suggested TF field dmp/project/coordinator/PI_id/orcid.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI/identifier"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI/identifier/type">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>type</key>
+		<path>project/coordination/PI/identifier/type</path>
+		<dc:comment>The identifier type for the PI as the project coordinator. NOTE: Here, a PI is explicitly requested! Suggested TF field dmp/project/coordinator/PI_id/type.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI/identifier"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI/identifier/value">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>value</key>
+		<path>project/coordination/PI/identifier/value</path>
+		<dc:comment>The identifier value for the PI as the project coordinator. NOTE: Here, a PI is explicitly requested! Suggested TF field dmp/project/coordinator/PI_id/identifier.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI/identifier"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI/organization">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>organization</key>
+		<path>project/coordination/PI/organization</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI/organization/identifier">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>identifier</key>
+		<path>project/coordination/PI/organization/identifier</path>
+		<dc:comment/>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI/organization"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI/organization/identifier/type">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>type</key>
+		<path>project/coordination/PI/organization/identifier/type</path>
+		<dc:comment>The identifier type of the organization of the PI as the project coordinator. Suggested TF field dmp/project/coordinator/PI/organization_id/type</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI/organization/identifier"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI/organization/identifier/value">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>value</key>
+		<path>project/coordination/PI/organization/identifier/value</path>
+		<dc:comment>The identifier value of the organization of the PI as the project coordinator. Always use in combination with https://rdmorganiser.github.io/terms/domain/project/coordination/PI/organization/identifier/type. If you just provide one field with one possible type, use project/coordination/PI/organization/{name-of-the-identifier} instead. Suggested TF field dmp/project/coordinator/PI/organization_id/identifier</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI/organization/identifier"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI/organization/ror">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>ror</key>
+		<path>project/coordination/PI/organization/ror</path>
+		<dc:comment>The ROR ID of the organization of the PI as the project coordinator. NOTE: Here, a PI is explicitly requested! Used for interoperability with Coscine. Suggested TF field: dmp/project/dmp/project/coordinator/PI/organization_id/identifier_ror</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/PI/organization"/>
+	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>costs</key>
