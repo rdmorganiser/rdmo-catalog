@@ -16,3 +16,5 @@ Before importing it, please make sure that the [plugins](https://github.com/rdmo
 WARNING: importing the catalogue may overwrite options and attributes already present on your instance. Updates to the standard options and attributes issued after this catalogue might be thus lost.
 ## Acknowledgements
 Text+ is funded by the German Research Foundation (DFG) under project number 460033370, https://gepris.dfg.de/gepris/projekt/460033370?language=en.
+
+DMP4NFDI is a Basic Service of the NFDI, funded by the German Research Foundation (DFG) under project 521453681.
