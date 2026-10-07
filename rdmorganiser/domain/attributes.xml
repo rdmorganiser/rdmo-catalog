@@ -620,7 +620,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>creation_methods</key>
 		<path>project/dataset/creation_methods</path>
-		<dc:comment/>
+		<dc:comment>Description of how data is generated and the tools and techniques used for this purpose. Suggested TF field: dmp/dataset/creation_methods</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creator">
@@ -809,7 +809,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>format</key>
 		<path>project/dataset/format</path>
-		<dc:comment/>
+		<dc:comment>Used format of the dataset. Equivalent to rda:dmp/dataset/distribution/format</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id">
@@ -1012,7 +1012,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>standards</key>
 		<path>project/dataset/metadata/standards</path>
-		<dc:comment/>
+		<dc:comment>Description of the metadata standards that are used within the data set. Equivalent to rda:dmp/dataset/metadata/description</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/vocabularies_open">
@@ -1033,14 +1033,14 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>origin</key>
 		<path>project/dataset/origin</path>
-		<dc:comment/>
+		<dc:comment>Conditional question, if data is reused. Equivalent to rda:dmp/dataset/is_reused</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin/source_name">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>source_name</key>
 		<path>project/dataset/origin/source_name</path>
-		<dc:comment>Origin or provenance of reused datasets. Introduced to enable interoperability with different maDMP approaches. Equivalent to rda:dmp/dataset/is_reused_source_name and dataplan:list-reuse-en.</dc:comment>
+		<dc:comment>Origin or provenance of reused datasets. Introduced to enable interoperability with different maDMP approaches. Suggested TF field: dmp/dataset/is_reused/source_name and dataplan:list-reuse-en.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin_license">
@@ -1243,7 +1243,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>quality_assurance</key>
 		<path>project/dataset/quality_assurance</path>
-		<dc:comment/>
+		<dc:comment>The steps and methods used to ensure data quality. Equivalent to rda:dmp/dataset/data_quality_assurance</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/rate">
@@ -1299,7 +1299,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>description</key>
 		<path>project/dataset/sensitive_data/other/description</path>
-		<dc:comment/>
+		<dc:comment>Description of the sensitive data used in the dataset. These do not necessarily have to be personal data. Suggested TF field: dmp/dataset/sensitive_data_description</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/other"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/other/yesno">
@@ -1439,7 +1439,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>yesno</key>
 		<path>project/dataset/sharing/yesno</path>
-		<dc:comment/>
+		<dc:comment>A question, if the dataset will be published or shared. Equivalent to rda:dmp/dataset/distribution/data_access </dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/why_no">
@@ -1474,7 +1474,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>volume</key>
 		<path>project/dataset/size/volume</path>
-		<dc:comment/>
+		<dc:comment>The size of the data set. Equivalent to rda:dmp/dataset/distribution/byte_size</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/size"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/software_documentation">
@@ -1558,7 +1558,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>usage_description</key>
 		<path>project/dataset/usage_description</path>
-		<dc:comment/>
+		<dc:comment>Description of what this dataset will be used for. Suggested TF field: dmp/dataset/usage_description</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_frequency">
@@ -1712,7 +1712,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>title</key>
 		<path>project/funder/programme/title</path>
-		<dc:comment/>
+		<dc:comment>The program under which the funding is announced. Suggested TF field: dmp/project/funding/programme_name</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/programme"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/programme/url">
