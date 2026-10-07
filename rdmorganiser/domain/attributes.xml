@@ -11,7 +11,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>acronym</key>
 		<path>project/acronym</path>
-		<dc:comment>Short project title, added for the text field &quot;Action Acronym&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<dc:comment>Short project title, added for the text field &quot;Action Acronym&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx. Suggested TF field: dmp/project/acronym</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy">
@@ -76,6 +76,41 @@
 		<path>project/contributor/name</path>
 		<dc:comment>Introduced to enable interoperability with different maDMP approaches. Equivalent to rda:dmp/contributor/name.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor/organization">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>organization</key>
+		<path>project/contributor/organization</path>
+		<dc:comment>Page or question set, if “is collection” is activated. (Optional: conditional question if there is an organization that can be mentioned.) Equivalent to rda:dmp/contributor/affiliation</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor/organization/identifier">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>identifier</key>
+		<path>project/contributor/organization/identifier</path>
+		<dc:comment>Page or question set, if “is collection” is activated. (Optional: conditional question if the ID of the organization can be mentioned.) Equivalent to rda:dmp/contributor/affiliation/affiliation_id.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor/organization"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor/organization/identifier/type">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>type</key>
+		<path>project/contributor/organization/identifier/type</path>
+		<dc:comment>The type of the contributor's organizational identifier. Equivalent to rda:dmp/contributor/affiliation/affiliation_id/type</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor/organization/identifier"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor/organization/identifier/value">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>value</key>
+		<path>project/contributor/organization/identifier/value</path>
+		<dc:comment>The identifier value for the contributor's organization. Note: Always use in combination with https://rdmorganiser.github.io/terms/domain/project/contributor/organization/identifier/type. If you just provide one field with one possible type, use project/contributor/organization/identifier/{name-of-the-identifier} instead. Equivalent to rda:dmp/contributor/affiliation/affiliation_id/identifier.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor/organization/identifier"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor/organization/name">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>name</key>
+		<path>project/contributor/organization/name</path>
+		<dc:comment>The contributor's organization name. Equivalent to rda:dmp/contributor/affiliation/name</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor/organization"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor/role">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -207,7 +242,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>name</key>
 		<path>project/coordination/name</path>
-		<dc:comment/>
+		<dc:comment>Used to provide the project coordinator's full name.  Suggested TF field dmp/project/coordinator/name. Equivalent to dataplan:$_ADDPROJECTCOORDINATOR.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/email">
@@ -396,7 +431,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>cover_how</key>
 		<path>project/costs/preservation/cover_how</path>
-		<dc:comment/>
+		<dc:comment>Description of how the costs will be covered. Suggested TF field: dmp/cost/usage_description/coverage</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/preservation"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/preservation/non_personnel">
@@ -543,7 +578,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>name</key>
 		<path>project/data_management/name</path>
-		<dc:comment/>
+		<dc:comment>The name of the person responsible for data management within the project. Equivalent to rda:dmp/contact/name</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset">
@@ -1607,28 +1642,28 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>dmp_date</key>
 		<path>project/dmp/dmp_date</path>
-		<dc:comment>Creation date of the data management plan, added for the text field &quot;Date&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<dc:comment>Creation date of the data management plan, added for the text field &quot;Date&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx. Equivalent to rda:dmp/created.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/dmp_date_modification">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>dmp_date_modification</key>
 		<path>project/dmp/dmp_date_modification</path>
-		<dc:comment>Date of this data management plan version. Introduced to enable interoperability with different maDMP approaches. Equivalent to rda:dmp/modified_date and dataplan:$_MODIFICATIONDATE.</dc:comment>
+		<dc:comment>Date of this data management plan version. Introduced to enable interoperability with different maDMP approaches. Equivalent to rda:dmp/modified and dataplan:$_MODIFICATIONDATE.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/dmp_version">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>dmp_version</key>
 		<path>project/dmp/dmp_version</path>
-		<dc:comment>Version of this data management plan, added for the text field &quot;DMP version&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<dc:comment>Version of this data management plan, added for the text field &quot;DMP version&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx. Suggested TF field: dmp/version</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/name">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>name</key>
 		<path>project/dmp/name</path>
-		<dc:comment/>
+		<dc:comment>The name/title for the DMP itself. Equivalent to rda:dmp/title.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/external_services">
@@ -2062,7 +2097,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>title</key>
 		<path>project/research_field/title</path>
-		<dc:comment/>
+		<dc:comment>Question about the research field the project belongs to. Optional: Used in combination with the Optionset for the scientific discipline(s) of the project according to the DFG classification. Suggested TF field: dmp/project/discipline</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_field"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question">
@@ -2111,7 +2146,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>title</key>
 		<path>project/research_question/title</path>
-		<dc:comment/>
+		<dc:comment>Question about the aim of the project. Equivalent to rda:dmp/project/description</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/schedule">
@@ -2160,7 +2195,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>title</key>
 		<path>project/title</path>
-		<dc:comment>Full project title, added for the text field &quot;Action Title&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx</dc:comment>
+		<dc:comment>Full project title, added for the text field &quot;Action Title&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx. Equivalent to rda:dmp/project/title</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/smp">
