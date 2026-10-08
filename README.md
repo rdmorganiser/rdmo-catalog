@@ -95,8 +95,6 @@ In order to file issues, you will need a GitHub account.
 |Animaldata                       |[catalog][animaldata]|    |2026-02|KI-TIERWOHL           |
 |BLE                              |[catalog][BLE]|[view][BLE]|2023-10|Julius-Kühn-Institut  |
 |DFG Chemistry                    |[catalog][CHE]|           |2023-08|FDM Bayern eHumanities|
-|DFG Chemistry                    |[catalog][N4C]|           |2024-06|NFDI4Chem             |
-|DFG Engineering                  |[catalog][N4I]|           |2024-09|NFDI4Ing              |
 |DFG Physics                      |[catalog][PHY]|           |2023-08|FDM Bayern eHumanities|
 |DFG 101 Ancient Cultures         |[catalog][AKU]|           |2020-09|FDM Bayern eHumanities|
 |DFG 105 Editions                 |[catalog][EDI]|           |2020-09|FDM Bayern eHumanities|
@@ -108,14 +106,17 @@ In order to file issues, you will need a GitHub account.
 |Horizon 2020                     |[catalog][EHU]|[view][EHU]|2020-09|FDM Bayern eHumanities|
 |Humanities, including green RDM aspects|[catalog][MWS]|     |2026-06|Max Weber Stiftung    | 
 |Mathematics                      |[catalog][MAT]|     |2022-11|DFG Excellence Cluster MATH+|
-|NFDI DMP Template                |[catalog][D4N]|           |2025-06|DMP4NFDI              |
-|NFDI4Memory                      |[catalog][N4M]|           |2026-08|DMP4NFDI              |
+|NFDI_catalogs / NFDI DMP Template  |[catalog][D4N]|           |2025-06|DMP4NFDI            |
+|NFDI_catalogs / DFG Chemistry    |[catalog][N4C]|           |2024-06|NFDI4Chem             |
+|NFDI_catalogs / DFG Culture    |[2 catalogs][N4Q]|           |2024-06|NFDI4Culture         |
+|NFDI_catalogs / DFG Engineering  |[catalog][N4I]|           |2024-09|NFDI4Ing              |
+|NFDI_catalogs / NFDI4Memory     |[catalog][N4M]|            |2026-08|NFDI4Memory           |
+|NFDI_catalogs / Text+           |[catalog][TXT]|            |2026-06|Text+                 | 
 |Offboarding checklist            |[catalog][UDA]|           |2025-09|ULB Darmstadt         |
 |Quality Assurance Tool for data  |[catalog][QAT]|           |2025-03|Mathmet / TC-IM 1449  |
 |Quality Assurance Tool for software  |[catalog][QAT]|       |2025-03|Mathmet / TC-IM 1449  |
 |Research data policy generator       |[catalog][FDN]|       |2025-04|FDNext                |
 |Software for collection management|[2 catalogs][N4Q]|       |2025-09|NFDI4Culture          |
-|Text+                                |[catalog][TXT]|       |2026-06|Text+                 | 
 |VW Foundation - Basic DMP            |[catalog][VWB]|       |2025-06|FDM Bayern eHumanities|
 |VW Foundation - Science Europe       |[catalog][VWE]|       |2021-04|FDM Bayern eHumanities|
 
@@ -132,15 +133,15 @@ Total: 37 catalogs, 19 views
 [VWE]:         shared/ub_fau_erlangen_nuernberg/ScienceEurope_VW_Stiftung/
 [animaldata]:  shared/animaldata_v1/
 [BLE]:         shared/BLE_JKI/
-[D4N]:         shared/DMP4NFDI
 [FDK]:         shared/FoDaKo
 [FDN]:         shared/FDNext/
 [MWS]:         shared/MaxWeberStiftung/
-[N4Q]:         shared/NFDI4Culture/
+[D4N]:         shared/NFDI_catalogs/DMP4NFDI/
+[N4C]:         shared/NFDI_catalogs/NFDI4Chem/
+[N4Q]:         shared/NFDI_catalogs/NFDI4Culture/
+[N4I]:         shared/NFDI_catalogs/NFDI4Ing/
 [N4M]:         shared/NFDI_catalogs/NFDI4Memory/
-[TXT]:         shared/Text+/
-[N4C]:         shared/nfdi4chem
-[N4I]:         shared/nfdi4ing
+[TXT]:         shared/NFDI_catalogs/Text+/
 [EMM]:         shared/EmiMin
 [HFD]:         shared/HeFDI
 [MAT]:         shared/MATH+
