@@ -17,4 +17,4 @@ WARNING: importing the catalogue may overwrite options and attributes already pr
 ## Acknowledgements
 Text+ is funded by the German Research Foundation (DFG) under project number 460033370, https://gepris.dfg.de/gepris/projekt/460033370?language=en.
 
-DMP4NFDI is a Basic Service of the NFDI, funded by the German Research Foundation (DFG) under project 521453681.
+The DMP4NFDI service is developed as a service in Base4NFDI, funded by the German Research Foundation (DFG) under project 521453681.
