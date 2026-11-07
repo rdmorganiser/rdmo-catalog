@@ -53,15 +53,29 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>person_or_entity</key>
 		<path>project/contributor/person_or_entity</path>
-		<dc:comment>Introduced to enable interoperability with different maDMP approaches. Equivalent to rda:dmp/contributor/person_or_entity.</dc:comment>
+		<dc:comment>Selection question, if the user wants to provide a person or an institution as a partner. Suggested TF field dmp/contributor/person_or_entity.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor/task">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>task</key>
 		<path>project/contributor/task</path>
-		<dc:comment>Introduced to enable interoperability with different maDMP approaches. Equivalent to rda:dmp/contributor/task.</dc:comment>
+		<dc:comment>Introduced to enable interoperability with different maDMP approaches. Suggested TF field: dmp/contributor/task.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor/task/type">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>type</key>
+		<path>project/contributor/task/type</path>
+		<dc:comment>The type of the contributor's specific task - available in a predefined list. Suggested TF field: dmp/contributor/task/type.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor/task"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor/task/value">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>value</key>
+		<path>project/contributor/task/value</path>
+		<dc:comment>The name of the contributor's specific task. Suggested TF field: dmp/contributor/task/identifier.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor/task"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/contributor/email">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
@@ -574,6 +588,41 @@
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/identifier">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>identifier</key>
+		<path>project/data_management/identifier</path>
+		<dc:comment>Page or question set, if “is collection” is activated. (Optional: Conditional question, if the contact person for data management can be specified by an ID.) Equivalent to RDA's dmp/contact/contact_id.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/identifier/orcid">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>orcid</key>
+		<path>project/data_management/identifier/orcid</path>
+		<dc:comment>ORCID of the person responsible for data management on the project. Suggested TF field dmp/contact/contact_id/orcid.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/identifier"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/identifier/ror">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>ror</key>
+		<path>project/data_management/identifier/ror</path>
+		<dc:comment>ROR of the responsible person for data management within the project. Suggested TF field dmp/contact/contact_id/ror.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/identifier"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/identifier/type">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>type</key>
+		<path>project/data_management/identifier/type</path>
+		<dc:comment>The type of the identifier. Equivalent to the RDA's property dmp/contact/contact_id/type.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/identifier"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/identifier/value">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>value</key>
+		<path>project/data_management/identifier/value</path>
+		<dc:comment>The actual content or answer to the question about identifying the contact person for data management or RDM in general, e.g., &quot;Max Mustermann&quot;. Note: Always use in combination with https://rdmorganiser.github.io/terms/domain/project/data_management/identifier/type. If you just provide one field with one possible type, use project/data_management/identifier/{name-of-the-identifier} instead.  Equivalent to the RDA's property dmp/contact/contact_id/identifier.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/identifier"/>
+	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/mbox">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>mbox</key>
@@ -586,6 +635,48 @@
 		<key>name</key>
 		<path>project/data_management/name</path>
 		<dc:comment>The name of the person responsible for data management within the project. Equivalent to rda:dmp/contact/name</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/organization">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>organization</key>
+		<path>project/data_management/organization</path>
+		<dc:comment>Page or question set if “is collection” is activated. (Optional: Conditional question if the user wants to provide additional information on the appropriate affiliation). Equivalent to rda:dmp/contact/affiliation.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/organization/identifier">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>identifier</key>
+		<path>project/data_management/organization/identifier</path>
+		<dc:comment>Page or question set, if “is collection” is activated. (Optional: Conditional question if the organization ID exists.) Equivalent to rda:dmp/contact/affiliation/affiliation_id.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/organization"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/organization/identifier/type">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>type</key>
+		<path>project/data_management/organization/identifier/type</path>
+		<dc:comment>The type of identifier of the organization with which the person acting as the contact for data management-related tasks is affiliated. Used for questions with a list of possible types. Equivalent to rda:dmp/contact/affiliation/affiliation_id/type.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/organization/identifier"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/organization/identifier/value">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>value</key>
+		<path>project/data_management/organization/identifier/value</path>
+		<dc:comment>The ID of the organization with which the person acting as the contact for data management-related tasks is affiliated. Always use in combination with https://rdmorganiser.github.io/terms/domain/project/data_management/organization/identifier/type. If you just provide one field with one possible type, use project/data_management/organization/identifier/{name-of-the-identifier} instead. Equivalent to rda:dmp/contact/affiliation/affiliation_id/identifier.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/organization/identifier"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/organization/name">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>name</key>
+		<path>project/data_management/organization/name</path>
+		<dc:comment>The name of the organization with which the person acting as the contact for data management-related tasks is affiliated. Equivalent to rda:dmp/contact/affiliation/name.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/organization"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/role">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>role</key>
+		<path>project/data_management/role</path>
+		<dc:comment>The role that the responsible person for data management within the project inherits. Suggested TF field dmp/contact/role.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset">
@@ -1666,11 +1757,39 @@
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
 	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/alternate_identifier">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>alternate_identifier</key>
+		<path>project/dmp/alternate_identifier</path>
+		<dc:comment>Page or question set, if “is collection” is activated. (optional: Conditional question, if an alternate ID exists.) Equivalent to rda:dmp/alternate_identifier</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/alternate_identifier/type">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>type</key>
+		<path>project/dmp/alternate_identifier/type</path>
+		<dc:comment>The type of the alternate identifier. Equivalent to rda:dmp/alternate_identifier/type</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/alternate_identifier"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/alternate_identifier/value">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>value</key>
+		<path>project/dmp/alternate_identifier/value</path>
+		<dc:comment>The actual content of the alternate identifier. Equivalent to rda:dmp/alternate_identifier/identifier</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/alternate_identifier"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/description">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>description</key>
+		<path>project/dmp/description</path>
+		<dc:comment>Description of the DMP and any important information related to it. Equivalent to the RDA's dmp/description.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
+	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/dmp_date">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>dmp_date</key>
 		<path>project/dmp/dmp_date</path>
-		<dc:comment>Creation date of the data management plan, added for the text field &quot;Date&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx. Equivalent to rda:dmp/created.</dc:comment>
+		<dc:commentCreation date for the current version of the DMP, added for the text field &quot;Date&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx. Equivalent to rda:dmp/created.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/dmp_date_modification">
@@ -1685,6 +1804,34 @@
 		<key>dmp_version</key>
 		<path>project/dmp/dmp_version</path>
 		<dc:comment>Version of this data management plan, added for the text field &quot;DMP version&quot;, required in the Horizon Europe Data Management Plan Template, 05.05.2021, https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/temp-form/report/data-management-plan-template_he_en.docx. Suggested TF field: dmp/version</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/identifier">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>identifier</key>
+		<path>project/dmp/identifier</path>
+		<dc:comment>Page or question set, if “is collection” is activated. (optional: Conditional question, if an ID of the DMP exists.) When transferring to other systems, it should be filled in automatically. Equivalent to rda:dmp/dmp_id</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/identifier/type">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>type</key>
+		<path>project/dmp/identifier/type</path>
+		<dc:comment>The type of the dmp's identifier. Equivalent to rda:dmp/dmp_id/type</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/identifier"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/identifier/value">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>value</key>
+		<path>project/dmp/identifier/value</path>
+		<dc:comment>The actual content or answer, e.g. "DMP123456". Equivalent to rda:dmp/dmp_id/identifier</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/identifier"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/language">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>language</key>
+		<path>project/dmp/language</path>
+		<dc:comment>Term from a controlled vocabulary (ISO 639), e.g., “eng”. Equivalent to rda:DMP/language.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/name">
@@ -1775,14 +1922,21 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>ethical_issues</key>
 		<path>project/legal_aspects/ethical_issues</path>
-		<dc:comment>Introduced to enable interoperability with different maDMP approaches. Parent to other attributes.</dc:comment>
+		<dc:comment>To indicate whether there is an ethical approval needed related to the data within a project. Equivalent to rda:dmp/ethical_issues_exist.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ethical_issues/description">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>description</key>
 		<path>project/legal_aspects/ethical_issues/description</path>
-		<dc:comment>Introduced to enable interoperability with different maDMP approaches. Equivalent to rda:dmp/ethical_issues_description and dataplan:text-ethical-en.</dc:comment>
+		<dc:comment>This question refers to general ethical issues within a project and can be asked even if an ethical approval is not required. Equivalent to rda:dmp/ethical_issues_description and dataplan:text-ethical-en.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ethical_issues"/>
+	</attribute>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ethical_issues/url">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<key>url</key>
+		<path>project/legal_aspects/ethical_issues/url</path>
+		<dc:comment>Location of a document that includes a summary of all ethical issues within a project. Equivalent to rda:DMP/ethical_issues_report.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ethical_issues"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/international_yesno">
