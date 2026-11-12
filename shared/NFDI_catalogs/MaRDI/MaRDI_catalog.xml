@@ -1,0 +1,3759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2026-11-11T20:24:18.189414+01:00" required="2.1.0" version="2.5.2">
+	<catalog dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0</uri_path>
+		<dc:comment>Version 2.0.0</dc:comment>
+		<order>-1</order>
+		<title lang="en">MaRDI4NFDI DMP Template</title>
+		<help lang="en">Catalog based on the NFDI DMP Template Framework, supplemented with mathematics-specific content.</help>
+		<title lang="de">MaRDI4NFDI DMP-Vorlage</title>
+		<help lang="de">Katalog auf Basis des NFDI-DMP-Template-Frameworks ergänzt um mathematikspezifische Inhalte.</help>
+		<sections>
+			<section dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP_Project" order="0"/>
+			<section dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights" order="1"/>
+			<section dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Data" order="2"/>
+			<section dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/Dataset" order="3"/>
+			<section dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Host/Access" order="6"/>
+		</sections>
+	</catalog>
+	<section dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP_Project">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP_Project</uri_path>
+		<dc:comment/>
+		<title lang="en">General Information</title>
+		<short_title lang="en"/>
+		<title lang="de">Allgemeine Informationen</title>
+		<short_title lang="de"/>
+		<pages>
+			<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP_Funder" order="0"/>
+			<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/project" order="1"/>
+			<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Responsibilities_Resources" order="2"/>
+		</pages>
+	</section>
+	<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP_Funder">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP_Funder</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Advance Information</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Vorabinformationen</title>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Project/Funding" order="0"/>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP" order="1"/>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Projectframe" order="2"/>
+		</questionsets>
+		<questions/>
+		<conditions/>
+	</page>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Project/Funding">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Project/Funding</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Funding:</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Förderung:</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Project/Funding/rdadmp_funder_id_identifier2" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Project/Funding/rdadmp_grant_id_identifier2" order="1"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/Funding/rdadmp_funder_programme2" order="2"/>
+		</questions>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Project/Funding/rdadmp_funder_id_identifier2">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Project/Funding/rdadmp_funder_id_identifier2</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/name"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Who is funding the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wer fördert das Projekt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Project/Funding/rdadmp_grant_id_identifier2">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Project/Funding/rdadmp_grant_id_identifier2</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/grant_nr"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">With which grant number was the funding awarded?</help>
+		<text lang="en">Project reference number:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Wie lautet das Förderkennzeichen dieser Förderung?</help>
+		<text lang="de">Projektnummer:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/Funding/rdadmp_funder_programme2">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>Funding/rdadmp_funder_programme2</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/programme/title"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Funding Programme:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Förderprogramm:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Project</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Projekt</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/modifications" order="3"/>
+		</questionsets>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_created" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Project/rdadmp_title" order="1"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/project_acronym" order="2"/>
+		</questions>
+		<conditions/>
+	</questionset>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/modifications">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/modifications</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>True</is_collection>
+		<title lang="en">In case of publishing, please provide the following information.</title>
+		<help lang="en"/>
+		<verbose_name lang="en">Information</verbose_name>
+		<title lang="de">Falls der DMP publiziert werden soll, geben Sie bitte nachfolgende Informationen an.</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Information</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/name" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_modified_version" order="1"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_modified_date" order="2"/>
+		</questions>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/name">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/name</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/name"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">DMP name:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">DMP-Name:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>4</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_modified_version">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/rdadmp_modified_version</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/dmp_version"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">DMP version:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">DMP-Version:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>integer</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>4</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_modified_date">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/rdadmp_modified_date</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/dmp_date_modification"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Version date:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Versionsdatum:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>date</widget_type>
+		<value_type>datetime</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>4</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_created">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/rdadmp_created</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp/dmp_date"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Date:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Datum:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>date</widget_type>
+		<value_type>datetime</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>3</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Project/rdadmp_title">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Project/rdadmp_title</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/title"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Project title:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Projekttitel:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/project_acronym">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/project_acronym</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/acronym"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Project acronym:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Projektakronym:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>3</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Projectframe">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Projectframe</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Project Timeframe</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Projektzeitrahmen</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Project/rdadmp_start" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Project/rdadmp_end" order="1"/>
+		</questions>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Project/rdadmp_start">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Project/rdadmp_start</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/schedule/project_start"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Enter the expected date if the project has not yet started.</help>
+		<text lang="en">When does the project start?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Geben Sie das voraussichtliche Datum an, falls das Projekt noch nicht gestartet ist.</help>
+		<text lang="de">Wann beginnt die Projektlaufzeit?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>date</widget_type>
+		<value_type>datetime</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Project/rdadmp_end">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Project/rdadmp_end</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/schedule/project_end"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Enter the expected date if the project has not yet started.</help>
+		<text lang="en">When does the project end?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Geben Sie das voraussichtliche Datum an, falls das Projekt noch nicht geendet ist.</help>
+		<text lang="de">Wann endet die Projektlaufzeit?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>date</widget_type>
+		<value_type>datetime</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/project">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/project</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Project Information</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Projektinformationen</title>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contributor" order="1"/>
+		</questionsets>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Project/rdadmp_description" order="0"/>
+		</questions>
+		<conditions/>
+	</page>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contributor">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Contributor</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Project coordination:</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Projektkoordination:</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contributor/rdadmp_name" order="1"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contributor/rdadmp_organization_name" order="2"/>
+		</questions>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contributor/rdadmp_name">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Contributor/rdadmp_name</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/name"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Which persons are responsible for the project coordination?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Person</verbose_name>
+		<help lang="de"/>
+		<text lang="de">Welche Personen oder Institutionen sind verantwortlich für die Projektkoordination?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Person</verbose_name>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contributor/rdadmp_organization_name">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Contributor/rdadmp_organization_name</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination/organization"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Which institute or organization is responsible for the project coordination?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">Organization</verbose_name>
+		<help lang="de"/>
+		<text lang="de">Welche Einrichtung oder Organisation ist für die Projektkoordination zuständig?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">Organisation</verbose_name>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Project/rdadmp_description">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Project/rdadmp_description</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_question/title"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Please briefly describe the project and its objectives.</help>
+		<text lang="en">What is the main research question of the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Bitte beschreiben Sie kurz das Projekt und dessen Ziele.</help>
+		<text lang="de">Wie lautet die primäre Forschungsfrage des Projektes?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>12</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Responsibilities_Resources">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Responsibilities_Resources</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Responsibilities and Resources</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Verantwortlichkeiten und Ressourcen</title>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contact" order="0"/>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/contributor/rdadmp_role_datamanagement" order="2"/>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/contributor/rdadmp_role_pid" order="3"/>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/contributor/rdadmp_role_metadata" order="4"/>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/contributor/rdadmp_role_backup" order="5"/>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/contributor/rdadmp_role_digital_preservation" order="6"/>
+		</questionsets>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contributor/rdadmp_role" order="1"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Cost/rdadmp_description_costs_non-personnel" order="7"/>
+		</questions>
+		<conditions/>
+	</page>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contact">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Contact</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Who is the main contact person for questions related to data management during the project period?</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Wer ist während der Projektlaufzeit der Hauptansprechpartner für Fragen zum Datenmanagement?</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/rdadmp_role" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contact/rdadmp_name" order="1"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contact/rdadmp_mbox" order="2"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contact/Affiliation/rdadmp_name" order="3"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/ror" order="4"/>
+		</questions>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/rdadmp_role">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>rdadmp_role</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/role"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Please define the role of the person within the project.</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Bitte definieren Sie die Rolle der Person innerhalb des Projekts.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/DataCite_roles"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contact/rdadmp_name">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Contact/rdadmp_name</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/name"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Name:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Name:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contact/rdadmp_mbox">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Contact/rdadmp_mbox</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/mbox"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">E-Mail:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">E-Mail:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contact/Affiliation/rdadmp_name">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Contact/Affiliation/rdadmp_name</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/orcid"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en"/>
+		<text lang="en">ORCID:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">ORCID:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>select</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/orcid_integration"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/ror">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>ror</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/identifier/ror"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en"/>
+		<text lang="en">ROR:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">ROR:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>select</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/ror_integration"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/contributor/rdadmp_role_datamanagement">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>contributor/rdadmp_role_datamanagement</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>True</is_collection>
+		<title lang="en">Who is also responsible for adequate handling of the research data?</title>
+		<help lang="en"/>
+		<verbose_name lang="en">Person</verbose_name>
+		<title lang="de">Wer ist noch verantwortlich für den adäquaten Umgang mit den Forschungsdaten?</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Person</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/contributor/role_datamanagement/rdadmp_name" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/contributor/role_datamanagement/contributor_id/rdadmp_identifier" order="1"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/dmp4nfdi_v2-0-0_contributor_datamanagement"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/contributor/role_datamanagement/rdadmp_name">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>contributor/role_datamanagement/rdadmp_name</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/support"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Name:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Name:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/dmp4nfdi_v2-0-0_contributor_datamanagement"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/contributor/role_datamanagement/contributor_id/rdadmp_identifier">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>contributor/role_datamanagement/contributor_id/rdadmp_identifier</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/orcid"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en"/>
+		<text lang="en">ORCID:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">ORCID:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>select</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/orcid_integration"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/contributor/rdadmp_role_pid">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>contributor/rdadmp_role_pid</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>True</is_collection>
+		<title lang="en">Who is responsible for the maintenance of the PIDs?</title>
+		<help lang="en"/>
+		<verbose_name lang="en">Person</verbose_name>
+		<title lang="de">Wer ist für die Pflege der PIDs verantwortlich?</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Person</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contributor/rdadmp_role_pid" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/contributor/role_pid/contributor_id/rdadmp_identifier" order="1"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/dmp4nfdi_v2-0-0_contributor_pid"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contributor/rdadmp_role_pid">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Contributor/rdadmp_role_pid</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/pids/responsible_person/name"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Name:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Name:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/dmp4nfdi_v2-0-0_contributor_pid"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/contributor/role_pid/contributor_id/rdadmp_identifier">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>contributor/role_pid/contributor_id/rdadmp_identifier</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/pids/responsible_person/orcid"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en"/>
+		<text lang="en">ORCID:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">ORCID:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>select</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/orcid_integration"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/dmp4nfdi_v2-0-0_contributor_pid"/>
+		</conditions>
+	</question>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/contributor/rdadmp_role_metadata">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>contributor/rdadmp_role_metadata</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>True</is_collection>
+		<title lang="en">Who is responsible for the data documentation and for checking the metadata and data documentation for accuracy and completeness?</title>
+		<help lang="en"/>
+		<verbose_name lang="en">Person</verbose_name>
+		<title lang="de">Wer ist verantwortlich für die Datendokumentation und für die Prüfung der Metadaten und Datendokumentation auf Richtigkeit und Vollständigkeit?</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Person</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contributor/rdadmp_role_metadata" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/contributor/role_metadata/contributor_id/rdadmp_identifier_orcid" order="1"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/dmp4nfdi_v2-0-0_contributor_metadata"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contributor/rdadmp_role_metadata">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Contributor/rdadmp_role_metadata</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/responsible_person/name"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Name:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Name:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/dmp4nfdi_v2-0-0_contributor_metadata"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/contributor/role_metadata/contributor_id/rdadmp_identifier_orcid">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>contributor/role_metadata/contributor_id/rdadmp_identifier_orcid</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/responsible_person/orcid"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en"/>
+		<text lang="en">ORCID:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">ORCID:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>select</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/orcid_integration"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/dmp4nfdi_v2-0-0_contributor_metadata"/>
+		</conditions>
+	</question>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/contributor/rdadmp_role_backup">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>contributor/rdadmp_role_backup</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>True</is_collection>
+		<title lang="en">Who is responsible for the backups?</title>
+		<help lang="en"/>
+		<verbose_name lang="en">Person</verbose_name>
+		<title lang="de">Wer ist für die Backups verantwortlich?</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Person</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contributor/rdadmp_role_backup" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/contributor/role_backup/contributor_id/rdadmp_identifier" order="1"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/dmp4nfdi_v2-0-0_contributor_backups"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contributor/rdadmp_role_backup">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Contributor/rdadmp_role_backup</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backup_responsible/name"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Name:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Name:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/dmp4nfdi_v2-0-0_contributor_backups"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/contributor/role_backup/contributor_id/rdadmp_identifier">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>contributor/role_backup/contributor_id/rdadmp_identifier</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backup_responsible/orcid"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en"/>
+		<text lang="en">ORCID:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">ORCID:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>select</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/orcid_integration"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/dmp4nfdi_v2-0-0_contributor_backups"/>
+		</conditions>
+	</question>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/contributor/rdadmp_role_digital_preservation">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>contributor/rdadmp_role_digital_preservation</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>True</is_collection>
+		<title lang="en">What Persons or institutions can be mentioned as the long-term contact who can decide on the data?</title>
+		<help lang="en"/>
+		<verbose_name lang="en">Contact</verbose_name>
+		<title lang="de">Welche Personen oder Institutionen können als langfristige Ansprechpartner genannt werden, die über die Daten entscheiden können?</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Kontakt</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/Contributor/rdadmp_role_digital_preservation" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/contributor/role_digital_preservation/contributor_id/rdadmp_identifier" order="1"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/dmp4nfdi_v2-0-0_contributor_preservation"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/Contributor/rdadmp_role_digital_preservation">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/Contributor/rdadmp_role_digital_preservation</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/responsible_person/name"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Name:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Name:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/dmp4nfdi_v2-0-0_contributor_preservation"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/contributor/role_digital_preservation/contributor_id/rdadmp_identifier">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>contributor/role_digital_preservation/contributor_id/rdadmp_identifier</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/responsible_person/orcid"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en"/>
+		<text lang="en">ORCID:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">ORCID:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>select</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/orcid_integration"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/dmp4nfdi_v2-0-0_contributor_preservation"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Contributor/rdadmp_role">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Contributor/rdadmp_role</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/name"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Are there other project partners who are responsible for subtasks in the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Gibt es andere Projektpartner, die für weitere Teilaufgaben im Projekt verantwortlich sind?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/contributor_responsibilities"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Cost/rdadmp_description_costs_non-personnel">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Cost/rdadmp_description_costs_non-personnel</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/costs/usage/non_personnel"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Name both the resources that you bring in as your own contribution or as part of the basic equipment, as well as the resources for which you are applying for funds.</help>
+		<text lang="en">Which resources (costs; time or other) are required to implement adequate handling of research data within the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Nennen Sie hier sowohl Ressourcen, die Sie als Eigenleistung bzw. im Rahmen der Grundausstattung einbringen, als auch Ressourcen, für die Sie Mittel beantragen.</help>
+		<text lang="de">Welche Ressourcen (Kosten; Zeit oder anderes) sind erforderlich, um einen adäquaten Umgang mit Forschungsdaten im Projekt umzusetzen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/resources_non-personnel"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<section dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights</uri_path>
+		<dc:comment/>
+		<title lang="en">Legal and Regulatory Requirements</title>
+		<short_title lang="en"/>
+		<title lang="de">Rechtliche und regulatorische Anforderungen</title>
+		<short_title lang="de"/>
+		<pages>
+			<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/general" order="0"/>
+			<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/IPR" order="1"/>
+			<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/data_protection" order="2"/>
+			<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/data_security" order="3"/>
+			<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Cooperation" order="4"/>
+			<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Ethics" order="5"/>
+			<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Policies" order="6"/>
+		</pages>
+	</section>
+	<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/general">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/general</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Assignment of legal Topics</title>
+		<short_title lang="en"/>
+		<help lang="en">&lt;h2 style=&quot;color:green;&quot;&gt;Information&lt;/h2&gt;
+
+On this page, you can indicate which legal issues will arise during your project and should be considered. Depending on your selections, further questions will appear in the interview.
+
+Regardless of your selection, you will be asked questions on various topics that are a prerequisite for applying for funding and therefore cannot be skipped.
+&lt;br/&gt;</help>
+		<verbose_name lang="en"/>
+		<title lang="de">Zuordnung rechtlicher Themen</title>
+		<short_title lang="de"/>
+		<help lang="de">&lt;h2 style=&quot;color:green;&quot;&gt;Information&lt;/h2&gt;
+
+Auf dieser Seite können Sie angeben, welche rechtlichen Themen während Ihres Projekts auftreten und berücksichtigt werden sollten. Je nachdem, was Sie ankreuzen, erscheinen im Interview weitere Fragen.
+
+Unabhängig von Ihrer Auswahl werden Fragen zu verschiedenen Themen gestellt, die Voraussetzung für die Beantragung von Fördermitteln sind und daher nicht übersprungen werden können.
+&lt;br/&gt;</help>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/rdadmp_rights" order="1"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/rdadmp_rights">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/rdadmp_rights</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">What legal, ethical, and copyright aspects arise in your research project to regulate the ownership, protection, and proper handling of research data throughout its entire life cycle?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Welche rechtlichen, ethischen und urheberrechtlichen Aspekte treten in Ihrem Forschungsprojekt auf, um das Eigentum, den Schutz und die vorschriftsmäßige Handhabung der Forschungsdaten während ihres gesamten Lebenszyklus zu regeln?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/rights_selection"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/IPR">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/IPR</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Intellectual Property Rights</title>
+		<short_title lang="en"/>
+		<help lang="en">Use, copyright and questions of ownership must be taken into account when &lt;b&gt;you use data from others&lt;/b&gt; or when &lt;b&gt;you generate data&lt;/b&gt;. 
+&lt;br/&gt;
+For later use, you should explain which legal rules apply and, if applicable, under which licenses you will make the data available (publication and sharing, long-term storage and/or digital preservation).</help>
+		<verbose_name lang="en"/>
+		<title lang="de">Rechte an geistigem Eigentum</title>
+		<short_title lang="de"/>
+		<help lang="de">&lt;details&gt;
+&lt;summary style=&quot;color:blue; cursor:pointer;&quot;&gt;Siehe Informationen&lt;/summary&gt;
+Nutzung, Urheberrecht und Eigentumsfragen müssen beachtet werden, wenn Sie &lt;b&gt;Daten von anderen verwenden&lt;/b&gt; oder &lt;b&gt;selbst Daten erstellen&lt;/b&gt;.&lt;br/&gt;
+Wenn Sie Daten gemeinsam mit Partnern erstellen, regeln Sie, wer welche Nutzungsrechte an den Daten hat.&lt;br/&gt;
+Für die spätere Verwendung sollten Sie erläutern, welche rechtlichen Bestimmungen gelten und gegebenenfalls unter welchen Lizenzen Sie die Daten zur Verfügung stellen (Veröffentlichung und Weitergabe, Langzeitspeicherung und/oder digitale Archivierung).&lt;br/&gt;
+Ob Ihre Daten urheberrechtlich geschützt sind, hängt unter anderem vom Grad ihrer Originalität ab. Informationen hierzu finden Sie beispielsweise im &lt;a href=&quot;https://www.rwth-aachen.de/global/show_document.asp?id=aaaaaaaaaavchxo&quot; target=&quot;_blank&quot;&gt;Informationsblatt zum Urheberrechtsschutz&lt;/a&gt; von Forschungsdaten oder im &lt;a href=&quot;https://zenodo.org/record/5243232&quot; target=&quot;_blank&quot;&gt;Urheberrecht und Lizenzierung von Forschungsdaten&lt;/a&gt;.
+&lt;/details&gt;</help>
+		<verbose_name lang="de"/>
+		<questionsets>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/IPR/copyright" order="0"/>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/IPR/ownership" order="1"/>
+		</questionsets>
+		<questions/>
+		<conditions/>
+	</page>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/IPR/copyright">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/IPR/copyright</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Use and Copyright Law</title>
+		<help lang="en">This question ensures that the data can be used and shared legally. It clarifies whether external material is included and under which conditions others may reuse the dataset.</help>
+		<verbose_name lang="en"/>
+		<title lang="de">Nutzungs- und Urheberrecht</title>
+		<help lang="de">Diese Frage gewährleistet die rechtmäßige Nutzung und Weitergabe der Daten. Sie klären, ob externes Material einbezogen wird und unter welchen Bedingungen andere den Datensatz wiederverwenden dürfen.</help>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/IPR/rdadmp_copyright" order="0"/>
+		</questions>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/IPR/rdadmp_copyright">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/IPR/rdadmp_copyright</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ipr"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">What aspects of use and copyright law must be taken into account?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Auf welche Weise werden nutzungs- und urheberrechtliche Aspekte berücksichtigt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/rights_ipr_copyright"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/IPR/ownership">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/IPR/ownership</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Ownership Issues</title>
+		<help lang="en">This clarifies who legally controls the data. Ownership determines who can publish, share or license the dataset. This is particularly relevant in collaborative or funded projects and aligns with expectations from the Research Data Alliance.</help>
+		<verbose_name lang="en"/>
+		<title lang="de">Eigentumsfragen</title>
+		<help lang="de">Dies klärt, wer die rechtliche Kontrolle über die Daten hat. Die Eigentumsverhältnisse bestimmen, wer den Datensatz veröffentlichen, weitergeben oder lizenzieren darf. Dies ist insbesondere bei Kooperations- oder geförderten Projekten relevant und entspricht den Erwartungen der Research Data Alliance.</help>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/IPR/rdadmp_ownership" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/Host/rdadmp_availability" order="1"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_license/rdadmp_start_date" order="2"/>
+		</questions>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/IPR/rdadmp_ownership">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/IPR/rdadmp_ownership</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ipr/ownership"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">What ownership issues must be considered?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Welche Eigentumsfragen müssen berücksichtigt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>8</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/rights_ipr_ownership"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/Host/rdadmp_availability">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/Host/rdadmp_availability</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/restrictions_explanation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Does the selection of relevant ownership aspects influence the possibility of data sharing?</help>
+		<text lang="en">Do you anticipate any implications or restrictions regarding subsequent publication, reuse or accessibility?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Hat die Auswahl der relevanten Eigentumsaspekte Einfluss auf die Möglichkeit zum Datenteilen?</help>
+		<text lang="de">Sind Auswirkungen oder Einschränkungen in Bezug auf die spätere Veröffentlichung bzw. Zugänglichkeit zu erwarten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/ownership_sharing"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_license/rdadmp_start_date">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_license/rdadmp_start_date</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/embargo_period"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">If yes, provide a clear justification for the embargo period and explain the rationale and expected benefits. Inquire about the mechanisms for monitoring and reviewing the embargo period to ensure its continued necessity.</help>
+		<text lang="en">Can the data be made accessible after an embargo period has expired?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Wenn ja, geben Sie eine klare Begründung für die Embargofrist und erläutern Sie die Gründe und den erwarteten Nutzen. Erkundigen Sie sich nach den Mechanismen zur Überwachung und Überprüfung der Embargofrist, um sicherzustellen, dass sie weiterhin notwendig ist.</help>
+		<text lang="de">Können die Daten nach Ablauf einer Embargofrist zugänglich gemacht werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://nfdi.mardi.de/terms/options/retention_period"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/data_protection">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/data_protection</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Data Handling and Data Protection</title>
+		<short_title lang="en"/>
+		<help lang="en">Identify all legal and regulatory requirements governing the collection, processing, storage and sharing of research data. This includes data protection laws, ethical approvals and institutional policies.
+Does every employee have the same access rights? Is there personal data, possibly even with special protection requirements?</help>
+		<verbose_name lang="en"/>
+		<title lang="de">Datenverarbeitung und Datenschutz</title>
+		<short_title lang="de"/>
+		<help lang="de">Ermitteln Sie alle rechtlichen und regulatorischen Anforderungen, die die Erhebung, Verarbeitung, Speicherung und Weitergabe von Forschungsdaten regeln. Dies umfasst Datenschutzgesetze, Ethikgenehmigungen und institutionelle Richtlinien.
+
+Hat jeder Mitarbeiter die gleichen Zugriffsrechte? Gibt es personenbezogene Daten, evtl. sogar mit besonderem Schutzbedarf?</help>
+		<verbose_name lang="de"/>
+		<questionsets>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/Informed_Consent" order="4"/>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/Retention_Period" order="5"/>
+		</questionsets>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/rdadmp_law" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/rdadmp_international" order="1"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_personal_data" order="2"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_sensitive_data" order="3"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/data_protection_yes"/>
+		</conditions>
+	</page>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/Informed_Consent">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/Informed_Consent</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Informed Consent</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Informierte Einwilligung</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/rdadmp_consent_exist" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/rdadmp_consent_url" order="1"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/personal_data_yes"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/rdadmp_consent_exist">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/rdadmp_consent_exist</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/consent/extent"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en"/>
+		<text lang="en">To what extent is the &quot;informed consent&quot; obtained from the persons concerned?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">In welchem ​​Umfang wird die „Einwilligung nach Aufklärung“ von den betroffenen Personen eingeholt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/personal_data_yes"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/rdadmp_consent_url">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/rdadmp_consent_url</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/consent/record"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en">Please describe the storage location and the security measures in place.</help>
+		<text lang="en">Where and how is the &quot;informed consent&quot; documented?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Bitte beschreiben Sie den Ort der Ablage, sowie die Sicherungsmaßnahmen.</help>
+		<text lang="de">Wo und wie wird die „Einwilligung nach Aufklärung“ dokumentiert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/personal_data_yes"/>
+		</conditions>
+	</question>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/Retention_Period">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/Retention_Period</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Retention Period</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Aufbewahrungsfristen</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/rdadmp_retention_period_exist" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/rdadmp_retention_period_description" order="1"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/rdadmp_deletion" order="2"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/rdadmp_retention_period_title" order="3"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/personal_data_yes"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/rdadmp_retention_period_exist">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/rdadmp_retention_period_exist</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/retention_period"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Under GDPR, data should not be kept for longer than necessary to fulfill its purpose. Define clear retention periods and ensure regular reviews.</help>
+		<text lang="en">What is the retention period for the personal data within the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Gemäß der DSGVO dürfen Daten nicht länger als zur Erfüllung ihres Zwecks erforderlich aufbewahrt werden. Definieren Sie klare Aufbewahrungsfristen und stellen Sie regelmäßige Überprüfungen sicher.</help>
+		<text lang="de">Wie lange werden die personenbezogenen Daten innerhalb des Projekts aufbewahrt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>8</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/retention_period"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/personal_data_yes"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/rdadmp_retention_period_description">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/rdadmp_retention_period_description</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/retention_period/explanation"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en"/>
+		<text lang="en">How is it justified?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wie lässt sich das rechtfertigen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>4</width>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/personal_data_yes"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/rdadmp_deletion">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/rdadmp_deletion</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/deletion"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">When will the (unanonymised or unpseudonymised) original data be safely deleted?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wann werden die (nicht anonymisierten oder nicht pseudonymisierten) Originaldaten sicher gelöscht sein?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>date</widget_type>
+		<value_type>datetime</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>4</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/rdadmp_retention_period_title">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/personal_data/rdadmp_retention_period_title</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data/retention_period/obligation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">What are the requirements of the retention or deletion obligations?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Welche Anforderungen gelten für die Aufbewahrungs- bzw. Löschpflichten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/retention_obligation"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/rdadmp_law">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/rdadmp_law</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/sensitive_data/privacy_law"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">If there is a data protection law which applies, ensure that the Data Usage and Data Storage and Security sections include measures that comply with these.</help>
+		<text lang="en">Which data protection law applies to this project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Sofern ein Datenschutzgesetz Anwendung findet, stellen Sie sicher, dass die Abschnitte „Datennutzung“ und „Datenspeicherung und -sicherheit“ Maßnahmen enthalten, die diesem Gesetz entsprechen.</help>
+		<text lang="de">Welche Datenschutzrechte spielen im Projekt eine Rolle?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/data_protection_laws"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/rdadmp_international">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/rdadmp_international</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/international_yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en"/>
+		<text lang="en">Does the legal situation in different countries have to be taken into account?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Muss die Rechtslage in den verschiedenen Ländern berücksichtigt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/international_regulations"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_personal_data">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_personal_data</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/personal_data_yesno/yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">&lt;details&gt;
+&lt;summary style=&quot;color:blue; cursor:pointer;&quot;&gt;Explanation:&lt;/summary&gt;
+The GDPR defines personal data as information related to an identified or identifiable natural person (Art. 4 GDPR, para. 1). A person is:
+
+&lt;ul&gt;
+&lt;li&gt;Identified: Clearly recognizable as the data subject.&lt;/li&gt;
+&lt;li&gt;Identifiable: Can be identified using additional information.&lt;/li&gt;
+&lt;/ul&gt;
+
+If your data falls in the personal data category, it is a good practice to consider the following instruments in place:
+
+&lt;ul&gt;
+&lt;li&gt;Data Processing Agreement (DPA): If the research involves the processing of personal data in a joint research project, inquire about the existence of a DPA between the collaborating institutions.&lt;/li&gt;
+&lt;li&gt;Data Protection Impact Assessment (DPIA): Include a question about whether a DPIA has been conducted, as required by the GDPR for high-risk data processing activities.&lt;/li&gt;
+&lt;li&gt;Data Subject Rights: Remind researchers of their obligations to ensure data subjects are aware of their rights (e.g., access, rectification, erasure).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;</help>
+		<text lang="en">Do you work with personal data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">&lt;details&gt;
+&lt;summary style=&quot;color:blue; cursor:pointer;&quot;&gt;Erklärung:&lt;/summary&gt;
+Die DSGVO definiert personenbezogene Daten als Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen (Art. 4 Abs. 1 DSGVO). Eine Person ist:
+
+&lt;ul&gt;
+&lt;li&gt;Identifiziert: Klar als betroffene Person erkennbar.&lt;/li&gt;
+&lt;li&gt;Identifizierbar: Kann anhand zusätzlicher Informationen identifiziert werden.&lt;/li&gt;
+&lt;/ul&gt;
+
+Wenn Ihre Daten in die Kategorie personenbezogener Daten fallen, empfiehlt es sich, die folgenden Instrumente in Betracht zu ziehen:
+
+&lt;ul&gt;
+&lt;li&gt;Datenverarbeitungsvereinbarung (DPA): Wenn die Forschung die Verarbeitung personenbezogener Daten in einem gemeinsamen Forschungsprojekt umfasst, erkundigen Sie sich nach dem Bestehen einer DPA zwischen den kooperierenden Institutionen.&lt;/li&gt;
+&lt;li&gt;Datenschutz-Folgenabschätzung (DPIA): Fügen Sie eine Frage dazu ein, ob eine DPIA durchgeführt wurde, wie in der DSGVO für Datenverarbeitungsaktivitäten mit hohem Risiko erforderlich.&lt;/li&gt;
+&lt;li&gt;Rechte betroffener Personen: Erinnern Sie Forscher an ihre Pflichten, sicherzustellen, dass betroffene Personen sich ihrer Rechte bewusst sind (z. B. Zugang, Berichtigung, Löschung).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;</help>
+		<text lang="de">Arbeiten Sie mit personenbezogenen Daten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/sensitive_data"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_sensitive_data">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_sensitive_data</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sensitive_data/other/yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">&lt;details&gt;
+&lt;summary style=&quot;color:blue; cursor:pointer;&quot;&gt;Explanation:&lt;/summary&gt;
+Examples include:
+
+&lt;ul&gt;
+&lt;li&gt;Data with high usage or protection requirements (e.g., protected due to ethical, security, or legal requirements)&lt;/li&gt;
+&lt;li&gt;Data vulnerable to re-identification (data that, in combination with other information, could allow inferences to be made about individuals, even if it initially appears anonymized)&lt;/li&gt;
+&lt;li&gt;Sensitive group information (e.g., data on health conditions, confidentiality, or risk factors that could cause discrimination or stigmatization, even if individuals cannot be directly identified)&lt;/li&gt;
+&lt;li&gt;Confidentiality or secrecy data (e.g., operational or research data that is contractually, ethically, or legally confidential)&lt;/li&gt;
+&lt;li&gt;Data that indirectly relates to special categories of personal data (e.g., rare characteristics in combination with other data could enable identification)&lt;/li&gt;
+&lt;li&gt;Intellectual property and proprietary data (e.g., research data that is copyrighted or considered trade secrets)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;</help>
+		<text lang="en">Do you work with non-personal sensitive data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">&lt;details&gt;
+&lt;summary style=&quot;color:blue; cursor:pointer;&quot;&gt;Erklärung:&lt;/summary&gt;
+Beispiele sind unter anderem:
+&lt;ul&gt;
+&lt;li&gt;Daten mit hoher Verwendungs- oder Schutzbedingung (bspw. die aufgrund von Ethik-, Sicherheits- oder Rechtsvorgaben geschützt sind)&lt;/li&gt;
+&lt;li&gt;Reidentifizierungsgefährdete Daten (Daten, die in Kombination mit anderen Informationen Rückschlüsse auf Personen zulassen könnten, auch wenn sie zunächst anonymisiert scheinen)&lt;/li&gt;
+&lt;li&gt;Schutzbedürftige Gruppeninformationen (z.B. Daten zu Gesundheitszuständen, Geheimhaltungs- oder Risikofaktoren, die Diskriminierung oder Stigmatisierung verursachen könnten, selbst wenn Personen nicht direkt identifiziert werden können)&lt;/li&gt;
+&lt;li&gt;Geheimhaltungs- oder Vertraulichkeitsdaten (bspw. Betriebs- oder Forschungsdaten, die vertraglich, ethisch oder gesetzlich vertraulich sind)&lt;/li&gt;
+&lt;li&gt;Daten, die besondere Kategorien personenbezogener Daten indirekt betreffen (hier können z. B. seltene Merkmale in Kombination mit anderen Daten eine Identifikation ermöglichen)&lt;/li&gt;
+&lt;li&gt;Geistiges Eigentum und proprietäre Daten (z.B. Forschungsdaten, die urheberrechtlich geschützt oder als Betriebsgeheimnisse gelten)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/details&gt;</help>
+		<text lang="de">Arbeiten Sie mit nicht-personenbezogenen sensiblen Daten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/sensitive_data"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/data_security">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/data_security</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Data Security</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Datensicherheit</title>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Security_Privacy/rdadmp_title" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Security_Privacy/rdadmp_description" order="1"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Security_Privacy/rdadmp_title">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Security_Privacy/rdadmp_title</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/security_measures"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Check the appropriate measure and add further information, such as responsible persons, intervals for carrying out the measure, etc.
+
+&lt;details&gt;
+&lt;summary style=&quot;color:blue; cursor:pointer;&quot;&gt;read more&lt;/summary&gt;
+Sensitive data can appear in various contexts, such as personal data, economic cooperation projects, geolocation data, or licensed data.
+&lt;ul&gt;
+&lt;li&gt;For personal data and its security, contact your institution's local data protection officer.&lt;/li&gt;
+&lt;li&gt;For economic cooperation projects, refer to non-disclosure agreements for access and usage rights.&lt;/li&gt;
+&lt;li&gt;Usage conditions for licensed data are detailed in the license agreements.&lt;/li&gt;
+&lt;/ul&gt;
+
+Select all applicable answers and describe the implementation to ensure unauthorized access, prevent data loss and make data recovery possible:
+&lt;ul&gt;
+&lt;li&gt;For protection against unauthorized access, emphasize the importance of granular access control mechanisms like ACLs to restrict access to data based on roles and permissions.&lt;/li&gt;
+&lt;li&gt;For data encryption, describe, what procedures ensure protection of the data at rest and in transit, ensuring unauthorized users cannot access the information?&lt;/li&gt;
+&lt;li&gt;For data recovery backups or multiple replicas in a distributed file system would be valuable possibilities. Here you should describe the strategies to ensure data recovery in case of an incident. Data Loss Prevention (DLP) tools can help to prevent accidental or malicious data exfiltration.&lt;/li&gt;
+&lt;li&gt;If  personal or sensitive data is processed, how do you employ robust anonymization techniques to make data unidentifiable, or pseudonymization to make re-identification harder but possible? How often are security audits and penetration tests conducted to identify and address vulnerabilities?&lt;/li&gt;
+&lt;li&gt;Does the organization have an incident response plan in place to handle data breaches, and what measures ensure its effectiveness?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;</help>
+		<text lang="en">What measures or provisions are in place to ensure data security (e.g., protection against unauthorized access, data recovery, transmission of sensitive data)?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Kreuzen Sie die entsprechende Maßnahme an und ergänzen Sie weitere Informationen, wie zum Beispiel verantwortliche Personen, Intervalle der Durchführung der entsprechenden Maßnahme usw.
+
+&lt;details&gt;
+&lt;summary style=&quot;color:blue; cursor:pointer;&quot;&gt;read more&lt;/summary&gt;
+Sensible Daten können in verschiedenen Kontexten auftreten, beispielsweise als personenbezogene Daten, wirtschaftliche Kooperationsprojekte, Geolokalisierungsdaten oder lizenzierte Daten.
+&lt;ul&gt;
+&lt;li&gt;Informationen zu personenbezogenen Daten und deren Sicherheit erhalten Sie vom örtlichen Datenschutzbeauftragten Ihrer Einrichtung.&lt;/li&gt;
+&lt;li&gt;Für wirtschaftliche Kooperationsprojekte beachten Sie bitte die Geheimhaltungsvereinbarungen zu Zugangs- und Nutzungsrechten.&lt;/li&gt;
+&lt;li&gt;Nutzungsbedingungen für lizenzierte Daten sind in den Lizenzvereinbarungen aufgeführt.&lt;/li&gt;
+&lt;/ul&gt;
+
+Wählen Sie alle zutreffenden Antworten aus und beschreiben Sie die Implementierung, um unbefugten Zugriff sicherzustellen, Datenverlust zu verhindern und eine Datenwiederherstellung zu ermöglichen:
+&lt;ul&gt;
+&lt;li&gt;Betonen Sie zum Schutz vor unbefugtem Zugriff die Bedeutung granularer Zugriffskontrollmechanismen wie ACLs, um den Zugriff auf Daten basierend auf Rollen und Berechtigungen einzuschränken.&lt;/li&gt;
+&lt;li&gt;Beschreiben Sie für die Datenverschlüsselung, welche Verfahren den Schutz der Daten im Ruhezustand und während der Übertragung gewährleisten und sicherstellen, dass unbefugte Benutzer nicht auf die Informationen zugreifen können?&lt;/li&gt;
+&lt;li&gt;Für die Datenwiederherstellung wären Backups oder mehrere Replikate in einem verteilten Dateisystem wertvolle Möglichkeiten. Hier sollten Sie die Strategien beschreiben, um die Datenwiederherstellung im Falle eines Vorfalls sicherzustellen. Tools zur Verhinderung von Datenverlust (DLP) können dabei helfen, versehentliche oder böswillige Datenexfiltration zu verhindern.&lt;/li&gt;
+&lt;li&gt;Wenn persönliche oder sensible Daten verarbeitet werden, wie setzen Sie robuste Anonymisierungstechniken ein, um die Daten nicht identifizierbar zu machen, oder Pseudonymisierung, um eine erneute Identifizierung schwieriger, aber möglich zu machen? Wie oft werden Sicherheitsüberprüfungen und Penetrationstests durchgeführt, um Schwachstellen zu identifizieren und zu beheben?&lt;/li&gt;
+&lt;li&gt;Verfügt die Organisation über einen Vorfallreaktionsplan zur Bewältigung von Datenschutzverletzungen und welche Maßnahmen stellen dessen Wirksamkeit sicher?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;</help>
+		<text lang="de">Welche Maßnahmen oder Vorkehrungen gibt es zur Gewährleistung der Datensicherheit (z. B. Schutz vor unbefugtem Zugriff, Datenwiederherstellung, Übermittlung sensibler Daten)?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/security_measures"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Security_Privacy/rdadmp_description">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Security_Privacy/rdadmp_description</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/security_measures_explanation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">How is compliance ensured?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wie wird die Einhaltung der Vorschriften sichergestellt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/data_security_yes"/>
+		</conditions>
+	</question>
+	<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Cooperation">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/Cooperation</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">(Inter)national Cooperation</title>
+		<short_title lang="en"/>
+		<help lang="en">Below you can provide information for each contractual partner that will be important for the collaboration and must be taken into account in the research project.</help>
+		<verbose_name lang="en">Contracting Party</verbose_name>
+		<title lang="de">(Inter)nationale Kooperationen</title>
+		<short_title lang="de"/>
+		<help lang="de">Im Folgenden können Sie für jeden Vertragspartner Informationen bereitstellen, die für die Zusammenarbeit wichtig sein werden und im Forschungsprojekt berücksichtigt werden müssen.</help>
+		<verbose_name lang="de">Vertragspartner</verbose_name>
+		<questionsets>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/Description" order="3"/>
+		</questionsets>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/rdadmp_start_date" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/end_date" order="1"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/rdadmp_objective" order="2"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/rdadmp_restriction" order="4"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/rdadmp_commercialization" order="5"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/cooperation_yes"/>
+		</conditions>
+	</page>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/Description">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/Description</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>True</is_collection>
+		<title lang="en">Contractual regulations</title>
+		<help lang="en"/>
+		<verbose_name lang="en">Regulation</verbose_name>
+		<title lang="de">Vertragliche Regelungen</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Regelung</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/rdadmp_description" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/description/Contact/rdadmp_name" order="1"/>
+		</questions>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/rdadmp_description">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/rdadmp_description</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/agreement"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Which aspects of the collaboration are contractually regulated?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Welche Aspekte der Zusammenarbeit sind vertraglich geregelt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>select_creatable</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>8</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/contractual_regulations"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/description/Contact/rdadmp_name">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/description/Contact/rdadmp_name</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/responsibilities"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Who is the responsible person or organization for this task?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wer ist die für diese Aufgabe verantwortliche Person oder Organisation?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>4</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/rdadmp_start_date">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/rdadmp_start_date</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/cooperation/start"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">When does the cooperation start?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wann beginnt die Zusammenarbeit?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>date</widget_type>
+		<value_type>datetime</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/end_date">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/end_date</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/cooperation/end"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">When does the cooperation end?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wann endet die Zusammenarbeit?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>date</widget_type>
+		<value_type>datetime</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/rdadmp_objective">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/rdadmp_objective</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/cooperation/objective"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Please describe the benefits for each partner and take into account long-term strategies, sustainability aspects and social relevance.</help>
+		<text lang="en">What is the goal of this cooperation?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Bitte beschreiben Sie die Vorteile für jeden Partner und berücksichtigen Sie dabei langfristige Strategien, Nachhaltigkeitsaspekte und die soziale Relevanz.</help>
+		<text lang="de">Was ist das Ziel dieser Zusammenarbeit?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/rdadmp_restriction">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/rdadmp_restriction</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/cooperation/restrictions"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Take into account that long-term access and reuse including migration to current file formats, transfer of data between systems and between responsible organisations needs rights for copying (in context of copyright), clearly defined access rights and reuse rights which must be applicable far into the future.</help>
+		<text lang="en">Are there any contractual agreements that influence the handling and use of data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Zu berücksichtigen ist, dass für den langfristigen Zugriff und die Wiederverwendung, einschließlich der Migration auf aktuelle Dateiformate, der Datenübertragung zwischen Systemen und zwischen verantwortlichen Organisationen, Rechte zur Vervielfältigung (im Kontext des Urheberrechts), klar definierte Zugriffsrechte und Wiederverwendungsrechte erforderlich sind, die auch in ferner Zukunft gelten müssen.</help>
+		<text lang="de">Gibt es vertragliche Regelungen, die den Umgang mit und die Nutzung von Daten beeinflussen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>8</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/contractual_agreement_restrictions"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/rdadmp_commercialization">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/Cooperation/rdadmp_commercialization</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/partner/cooperation/data_publication"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">When can the results be published scientifically or used commercially?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wann können die Ergebnisse wissenschaftlich veröffentlicht oder kommerziell genutzt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>date</widget_type>
+		<value_type>datetime</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>4</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Ethics">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/Ethics</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Ethical Requirements</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Ethische Anforderungen</title>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/ethical_issues/Ethics_Committee" order="4"/>
+		</questionsets>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_description" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_exist" order="1"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_title" order="2"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_report" order="3"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/ethical_requirements"/>
+		</conditions>
+	</page>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/ethical_issues/Ethics_Committee">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/ethical_issues/Ethics_Committee</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Ethics Committee</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Ethikkommission</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_approval" order="1"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_access_control" order="2"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_access_restriction" order="3"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/ethical_issues_yes"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_approval">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_approval</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval/ethics_committee"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Has the project been approved by a research ethics committee?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wurde das Projekt von einer Ethikkommission genehmigt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/ethics_committee"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_access_control">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_access_control</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval/data_access_committee"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Is a data access committee needed to handle access requests to the published data of the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Ist ein Datenzugriffsausschuss erforderlich, um Zugriffsanfragen auf die veröffentlichten Daten des Projekts zu bearbeiten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/ethics_committee"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_access_restriction">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_access_restriction</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/access_permissions"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Who is allowed to access the data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wer hat Zugriff auf die Daten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_description">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_description</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ethical_issues/description"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">What ethical issues exist in your research project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Welche ethischen Fragen ergeben sich aus Ihrem Forschungsprojekt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_exist">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_exist</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ethical_issues"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Is an ethical approval or a legal permit required?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Ist eine Ethikgenehmigung oder eine rechtliche Erlaubnis erforderlich?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/ethical_issues_exist"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_title">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_title</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ethical_issues/title"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Specify the approval or permit.</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Geben Sie die Genehmigung oder Erlaubnis an.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/ethical_issues_yes"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_report">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_report</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ethical_issues/url"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en"/>
+		<text lang="en">Where can a report/document be found that details all identified ethical issues?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wo kann ein Bericht/Dokument gefunden werden, das alle identifizierten ethischen Probleme detailliert auflistet?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/ethical_issues_yes"/>
+		</conditions>
+	</question>
+	<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Policies">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/Policies</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Policies</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Policies</title>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rights/policy/rdadmp_agreement" order="1"/>
+		</questionsets>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/policy" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Policy/rdadmp_rule" order="2"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Policy/rdadmp_statutory_approval_exist" order="3"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Policy/rdadmp_statutory_approval_title" order="4"/>
+		</questions>
+		<conditions/>
+	</page>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rights/policy/rdadmp_agreement">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/rights/policy/rdadmp_agreement</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>True</is_collection>
+		<title lang="en">Funder's recommendation:</title>
+		<help lang="en">Please briefly outline them and refer to more detailed sources of information if necessary.</help>
+		<verbose_name lang="en">Recommendation</verbose_name>
+		<title lang="de">Empfehlung des Geldgebers:</title>
+		<help lang="de">Beschreiben Sie diese bitte kurz und verweisen Sie gegebenenfalls auf detailliertere Informationsquellen.</help>
+		<verbose_name lang="de">Empfehlung</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rights/policy/agreement/rdadmp_name" order="1"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Policy/Agreement/rdadmp_obligation" order="2"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rights/policy/agreement/rdadmp_download_url" order="3"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/funder_rules"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rights/policy/agreement/rdadmp_name">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/rights/policy/agreement/rdadmp_name</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/rdm_policy_name"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Name or description of the requirement:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Name oder Beschreibung der Anforderung:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Policy/Agreement/rdadmp_obligation">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/Policy/Agreement/rdadmp_obligation</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/rdm_policy_obligation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Obligation:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Verpflichtung:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>3</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/funder_rules_obligation"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rights/policy/agreement/rdadmp_download_url">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/rights/policy/agreement/rdadmp_download_url</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/rdm_policy_url"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en"/>
+		<text lang="en">Link to more detailed sources of information:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Link zu detaillierteren Informationsquellen:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>3</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/policy">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/policy</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/funder/rdm_policy"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Does the funder have rules or recommendations for data management?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Gibt es seitens des Geldgebers Regeln oder Empfehlungen für das Datenmanagement?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/policy_yes"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Policy/rdadmp_rule">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/Policy/rdadmp_rule</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/additional_rdm_policy/yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">In addition to general scientific codes, there can also be specialist codes. If you do not know these, you can find out more from the NFDI consortium that has emerged in your discipline.
+The &lt;a href=&quot;https://www.dfg.de/en/research_funding/principles_dfg_funding/research_data/recommendations/index.html&quot; target=&quot;_blank&quot;&gt;DFG's page on scientific integrity&lt;/a&gt; also provides information. Here you will find references to laws, subject-specific comments on the guidelines and explanations, case studies and &lt;a href=&quot;https://wissenschaftliche-integritaet.de/en/comments/further-links-relating-to-legal-and-ethical-frameworks/&quot; target=&quot;_blank&quot;&gt;further links to legal and ethical frameworks&lt;/a&gt;.</help>
+		<text lang="en">Are there any significant research codes or professional standards to be taken into account?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Neben allgemeinen wissenschaftlichen Kodizes kann es auch fachwissenschaftliche Kodizes geben. Falls Ihnen diese nicht bekannt sind, können Sie sich bei dem in Ihrer Disziplin entstandenen NFDI-Konsortium informieren. 
+Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-integritaet.de/&quot; target=&quot;_blank&quot;&gt;DFG zur wissenschaftlichen Integrität&lt;/a&gt;. Hier finden sie Verweise auf Gesetze, fachspezifische Kommentierungen der Leitlinien und Erläuterungen, Fallbeispiele sowie &lt;a href=&quot;https://wissenschaftliche-integritaet.de/kommentare/links-rechtliche-ethische-rahmenbedingungen-nutzungsrechte/chapter/146/&quot; target=&quot;_blank&quot;&gt;weiterführende Links zu rechtlichen und ethischen Rahmenbedingungen&lt;/a&gt;.&lt;/p&gt;</help>
+		<text lang="de">Existieren wichtige wissenschaftliche Kodizes bzw. fachliche Normen, die Berücksichtigung finden sollten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Policy/rdadmp_statutory_approval_exist">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/Policy/rdadmp_statutory_approval_exist</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval/statutatory_approval/yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Is a statutory approval / permit needed for the research?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wird für das Forschungsvorhaben eine gesetzliche Genehmigung benötigt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>8</width>
+		<optionsets>
+			<optionset dc:uri="https://nfdi.mardi.de/terms/options/ethics_permit_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Policy/rdadmp_statutory_approval_title">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Rights/Policy/rdadmp_statutory_approval_title</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval/statutatory_approval/title"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en"/>
+		<text lang="en">Which permit?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Um welche Genehmigung handelt es sich?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>4</width>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/statutory_approval"/>
+		</conditions>
+	</question>
+	<section dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Data">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Data</uri_path>
+		<dc:comment/>
+		<title lang="en">Data Documentation</title>
+		<short_title lang="en"/>
+		<title lang="de">Datendokumentation</title>
+		<short_title lang="de"/>
+		<pages>
+			<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Data/data_description" order="0"/>
+			<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Data_quality" order="1"/>
+			<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Storage" order="2"/>
+		</pages>
+	</section>
+	<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Data/data_description">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Data/data_description</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Data Description</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Datenbeschreibung</title>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Metadata/rdadmp_description" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Technical_Resource/rdadmp_description" order="1"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Metadata/rdadmp_description">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Metadata/rdadmp_description</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/standards"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">What standards, ontologies, classifications, etc. are used to describe the data and contextual information?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Welche Standards, Ontologien, Klassifikationen etc. werden zur Beschreibung der Daten und Kontextinformation genutzt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/standards_ontologies"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Technical_Resource/rdadmp_description">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Technical_Resource/rdadmp_description</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_technology"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Is special software required to use the data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Ist eine bestimmte Software notwendig, um die Daten zu nutzen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/usage_requirements"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Data_quality">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Data_quality</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Data Quality</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Datenqualität</title>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_data_quality_assurance" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Data_quality_tools" order="1"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_data_quality_assurance">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_data_quality_assurance</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/quality_assurance"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Depending on the discipline, the quality of the data can be ensured by various measures.</help>
+		<text lang="en">What measures are being adopted to ensure high data quality?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Die Qualität der Daten kann je nach Fachdisziplin durch verschiedene Maßnahmen gesichert werden.</help>
+		<text lang="de">Welche Maßnahmen werden getroffen, um eine hohe Qualität der Daten zu gewährleisten?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/dataset_quality"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Data_quality_tools">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Data_quality_tools</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/control_tool"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Quality controls can relate to both the processes and the data itself. If necessary, describe which automated controls or controls by other persons are planned.</help>
+		<text lang="en">Which quality controls are in place and how do they operate?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Qualitätskontrollen können sich sowohl auf die Prozesse als auch die Daten selbst beziehen. Stellen Sie ggfs. dar, welche automatisierten Kontrollen oder Kontrollen durch weitere Personen vorgesehen sind.</help>
+		<text lang="de">Welche Qualitätskontrollen sind vorgesehen und auf welche Weise werden sie durchgeführt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://nfdi.mardi.de/terms/options/control_tools_long"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/dmp4nfdi_v2-0-0_control_tool"/>
+		</conditions>
+	</question>
+	<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Storage">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Storage</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Data Storage</title>
+		<short_title lang="en"/>
+		<help lang="en">Storage is relevant for data actively in use as well as finalized data. Please note that depending on the storage location, your data is not automatically backed up. You can find out advantages and disadvantages of storage media at &lt;i&gt;&lt;a href=&quot;https://www.forschungsdaten.info/themen/speichern-und-rechnen/datenspeicherung-und-die-lebensdauer-von-datentraegern/&quot; target=&quot;_blank&quot;&gt;www.forschungsdaten.info&lt;/a&gt;&lt;/i&gt;.</help>
+		<verbose_name lang="en"/>
+		<title lang="de">Datenspeicherung</title>
+		<short_title lang="de"/>
+		<help lang="de">Die Speicherung ist sowohl für aktiv genutzte als auch für finalisierte Daten relevant. Beachten Sie, dass je nach Speicherort Ihre Daten nicht automatisch gesichert sind. Welche Speichermedien welche Vor- und Nachteile haben, können Sie auf &lt;i&gt;&lt;a href=&quot;https://www.forschungsdaten.info/themen/speichern-und-rechnen/datenspeicherung-und-die-lebensdauer-von-datentraegern/&quot; target=&quot;_blank&quot;&gt;www.forschungsdaten.info&lt;/a&gt;&lt;/i&gt; nachlesen.</help>
+		<verbose_name lang="de"/>
+		<questionsets>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Host/Backup" order="2"/>
+		</questionsets>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Host/rdadmp_storage_type" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Host/rdadmp_support_versioning" order="1"/>
+		</questions>
+		<conditions/>
+	</page>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Host/Backup">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Host/Backup</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Backup</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Backup</title>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Host/rdadmp_backup_type" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Host/rdadmp_backup_frequency" order="1"/>
+		</questions>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Host/rdadmp_backup_type">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Host/rdadmp_backup_type</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backups"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">How will the data be backed up?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wie werden Backups der Daten erstellt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>8</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Host/rdadmp_backup_frequency">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Host/rdadmp_backup_frequency</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security/backups/frequency"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">How often?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wie oft?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>4</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Host/rdadmp_storage_type">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Host/rdadmp_storage_type</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/storage/type"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">The DFG expects here a description of the infrastructure you use for data storage and backup. In particular, describe the use of storage and backup infrastructure offered centrally at your institution or justify your use of local or (subject)-specific solutions.</help>
+		<text lang="en">How is the data to be stored throughout the project duration?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Die DFG möchte hier eine Beschreibung der von Ihnen zur Datenspeicherung und Sicherung verwendeten Infrastruktur. Gehen Sie insbesondere auf die Nutzung von zentral an Ihrer Einrichtung angebotener Speicher- und Backup- Infrastruktur ein oder begründen Sie Ihre lokalen oder (fach-)spezifischen Lösungen.</help>
+		<text lang="de">Auf welche Weise werden die Daten während der Projektlaufzeit gespeichert?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Host/rdadmp_support_versioning">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Host/rdadmp_support_versioning</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/versioning_tool"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Is a technology or tool used for versioning?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Werden Technologien oder Tools zur Versionierung verwendet?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/versioning_tool"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<section dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/Dataset">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/Dataset</uri_path>
+		<dc:comment/>
+		<title lang="en">DATASET</title>
+		<short_title lang="en"/>
+		<title lang="de">Datenbeschreibung</title>
+		<short_title lang="de"/>
+		<pages>
+			<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/dataset_description" order="0"/>
+			<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Reused_Data" order="1"/>
+		</pages>
+	</section>
+	<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/dataset_description">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/dataset_description</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">Dataset Description</title>
+		<short_title lang="en"/>
+		<help lang="en">&lt;p&gt;In the following, a &lt;b&gt;dataset&lt;/b&gt; serves to &lt;b&gt;represent an overarching inquiry, an abstract problem, or a comprehensive research question&lt;/b&gt;. Likewise, a workflow may also be subsumed under this category. The objective is to cover this overarching framework as comprehensively as possible through the subsequent questions.
+The questions posed regarding the respective datasets are designed to capture the various data collection methods and analysis procedures employed throughout the research process. To this end, existing mathematical objects from the MaRDI portal may be integrated. &lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://portal.mardi4nfdi.de/wiki/Portal&quot;&gt;MaRDI Portal&lt;/a&gt; is a knowledge base for mathematical research data, providing access to a wide range of resources including mathematical models, algorithms, interdisciplinary workflows, publications, and datasets. Here you can indicate whether you have reused a mathematical model, algorithm, or interdisciplinary workflow from the portal in your research.&lt;/p&gt;</help>
+		<verbose_name lang="en"/>
+		<title lang="de">Datensatzbeschreibung</title>
+		<short_title lang="de"/>
+		<help lang="de">&lt;p&gt;Im Folgenden versteht sich ein &lt;b&gt;Datensatz als eine übergeordnete Fragestellung, ein abstraktes Problem oder eine umfassende Forschungsfrage&lt;/b&gt;. Gleichfalls kann auch ein Workflow darunter subsumiert werden. Ziel ist es, den übergeordneten Rahmen so vollständig wie möglich durch die nachfolgenden Fragen abzudecken. 
+Die Fragen, die zu den jeweiligen Datensätzen gestellt werden, dienen dazu, die unterschiedlichen Erhebungsmethoden und Analyseverfahren zu erfassen, die im Laufe der Forschung genutzt werden. Hierfür können existierende mathematische Objekte aus dem MaRDI-Portal integriert werden.&lt;/p&gt;
+&lt;p&gt;Das &lt;a href=&quot;https://portal.mardi4nfdi.de/wiki/Portal&quot;&gt;MaRDI-Portal&lt;/a&gt; ist eine Wissensbasis für mathematische Forschungsdaten, die Zugang zu einer Vielzahl von Ressourcen bietet, darunter mathematische Modelle, Algorithmen, interdisziplinäre Workflows, Publikationen und Datensätze. Hier können Sie angeben, ob Sie ein mathematisches Modell, einen Algorithmus oder einen interdisziplinären Workflow aus dem Portal in Ihrer Forschung wiederverwendet haben.&lt;/p&gt;</help>
+		<verbose_name lang="de"/>
+		<questionsets>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset" order="3"/>
+		</questionsets>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_title" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Project/rdadmp_discipline" order="1"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_is_reused" order="2"/>
+		</questions>
+		<conditions/>
+	</page>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_title" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_format" order="1"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_byte_size" order="2"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_description" order="3"/>
+		</questions>
+		<conditions/>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_title">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_title</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/description"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">What kind of dataset is it?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Um was für einen Datensatz handelt es sich?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://nfdi.mardi.de/terms/options/rdadmp_title_dataset"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_format">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_format</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/format"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">The options to be selected are based on the media types suggested by the RDA from &lt;a href=“https://www.iana.org/assignments/media-types/media-types.xhtml” target=“_blank”&gt;https://www.iana.org/assignments/media-types/media-types.xhtml&lt;/a&gt;. Select an option and specify the corresponding format, e.g. in the form &lt;l&gt;text/csv&lt;/l&gt;.</help>
+		<text lang="en">Used file formats:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Die auszuwählenden Optionen richten sich nach den von der RDA vorgeschlagenen Medientypen von &lt;a href=&quot;https://www.iana.org/assignments/media-types/media-types.xhtml&quot; target=&quot;_blank&quot;&gt;https://www.iana.org/assignments/media-types/media-types.xhtml&lt;/a&gt;. Wählen Sie eine Option und spezifizieren Sie das entsprechende Format bspw. in der Form &lt;l&gt;text/csv&lt;/l&gt;.</help>
+		<text lang="de">Verwendete Datenformate:</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/file_formats"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_byte_size">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_byte_size</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/size/volume"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Please enter the approximate quantity as a number with the corresponding unit of measurement.</help>
+		<text lang="en">Actual or expected size:</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Bitte geben Sie die ungefähre Menge als Zahl mit der dazugehörigen Maßeinheit ein.</help>
+		<text lang="de">Was ist die tatsächliche oder erwartete Größe des Datensatzes?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>3</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_description">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_description</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/usage_description"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">What will this data set be used for?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wozu wird dieser Datensatz während des Projektes genutzt und wie wird er weiterverarbeitet?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>9</width>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_title">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_title</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/creation_methods"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">How do you obtain this data set?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wie erheben Sie diesen Datensatz?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://nfdi.mardi.de/terms/options/rdadmp_title_distribution"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Project/rdadmp_discipline">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Project/rdadmp_discipline</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/research_field/title"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">To which Mathematics Subject Classification (MSC) does this data set belong to?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en">MSC</verbose_name>
+		<help lang="de"/>
+		<text lang="de">Zu welcher Mathematics Subject Classification (MSC) gehört dieser Datensatz?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de">MSC</verbose_name>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>select_creatable</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://nfdi.mardi.de/terms/options/rdadmp_discipline_msc"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_is_reused">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_is_reused</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Is there a mathematical model, algorithm or interdisciplinary workflow related to this dataset, that has already been published on the MaRDI portal?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Gibt es ein mathematisches Modell, einen Algorithmus oder einen interdisziplinären Workflow im Zusammenhang mit diesem Datensatz, der bereits auf dem MaRDI-Portal veröffentlicht ist?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>yesno</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Reused_Data">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Reused_Data</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">MaRDI Portal Entities</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">MaRDI-Portal-Entität</title>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets>
+			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/is_reused" order="0"/>
+		</questionsets>
+		<questions/>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/is_reused"/>
+		</conditions>
+	</page>
+	<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/is_reused">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/is_reused</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>True</is_collection>
+		<title lang="en">MaRDI Portal Entity</title>
+		<help lang="en"/>
+		<verbose_name lang="en">MaRDI Portal Entity</verbose_name>
+		<title lang="de">MaRDI-Portal-Entität</title>
+		<help lang="de"/>
+		<verbose_name lang="de">MaRDI-Portal-Entität</verbose_name>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/is_reused_source_name" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_is_reused_source" order="1"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_is_reused_url" order="2"/>
+		</questions>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/is_reused"/>
+		</conditions>
+	</questionset>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/is_reused_source_name">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/is_reused_source_name</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin/source_name"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Select the appropriate algorithm, model or workflow from the MaRDI portal!</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wählen Sie den passenden Algorithmus, das Modell oder den Workflow aus dem MaRDI-Portal aus!</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>select</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.mardi4nfdi.de/terms/options/portal_request"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_is_reused_source">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_is_reused_source</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin/source"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en"/>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de"/>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets>
+			<optionset dc:uri="https://nfdi.mardi.de/terms/options/import_model"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/is_reused"/>
+		</conditions>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_is_reused_url">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_is_reused_url</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin/usage_description"/>
+		<is_collection>False</is_collection>
+		<is_optional>True</is_optional>
+		<help lang="en"/>
+		<text lang="en">What is this model from the MaRDI portal used for within your dataset?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Wofür wird dieses Modell aus dem MaRDI-Portal in Ihrem Datensatz verwendet?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width>6</width>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/is_reused"/>
+		</conditions>
+	</question>
+	<section dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Host/Access">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Host/Access</uri_path>
+		<dc:comment/>
+		<title lang="en">Data Exchange and long-term Data Accessibility</title>
+		<short_title lang="en"/>
+		<title lang="de">Datenaustausch und langfristige Zugänglichkeit von Daten</title>
+		<short_title lang="de"/>
+		<pages>
+			<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Technical_Resource/Reuse" order="0"/>
+			<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Host/Sharing" order="1"/>
+			<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Host/archiving" order="2"/>
+		</pages>
+	</section>
+	<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Technical_Resource/Reuse">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Technical_Resource/Reuse</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">Reuse</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Nachnutzung</title>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Technical_Resource/rdadmp_xxxxxxx" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_issued" order="1"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/Host/rdadmp_title" order="2"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Technical_Resource/rdadmp_xxxxxxx">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Technical_Resource/rdadmp_xxxxxxx</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/reuse_scenario"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Please consider whether your data can be reused. The reusability of data does not mean its publication, but e.g. the value of the data for follow-up projects, new collaborations, etc. In the evaluation, it can also play a role whether data can be generated again.</help>
+		<text lang="en">Are these data suitable for subsequent use in other contexts? Which individuals, groups or institutions could be interested in re-using this dataset?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Bitte wägen Sie ab, ob Ihre Daten nachgenutzt werden können. Nachnutzbarkeit von Daten meint nicht deren Publikation, sondern z. B. den Wert der Daten für Folgeprojekte, neue Kooperationen o. ä. Bei der Bewertung kann auch eine Rolle spielen, ob Daten erneut generiert werden können.</help>
+		<text lang="de">Bieten sich die Daten für die Nachnutzung in anderen Kontexten an? Für welche Personen, Gruppen oder Institutionen könnte dieser Datensatz (für die Nachnutzung) von Interesse sein?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://nfdi.mardi.de/terms/options/dfg_reuse_context"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_issued">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_issued</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_publication_date"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Select the appropriate option and, if possible, specify the exact date in the form YYYY-MM-DD.</help>
+		<text lang="en">When is the data set available for use by third parties?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Wählen Sie die zutreffende Option aus und präzisieren Sie, wenn möglich, das genaue Datum in der Form YYYY-MM-DD.</help>
+		<text lang="de">Wann ist der Datensatz für Dritte nutzbar?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/dataset_availability"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/Host/rdadmp_title">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/Host/rdadmp_title</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/repository"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Please provide information about the repository/database.  In order to allow digital preservation of your data, deposit it in a trustworthy data repository (TDR).</help>
+		<text lang="en">Where is the data set deposited and made accessible?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Nennen Sie das Repositorium/die Datenbank, ggf. mit Link. Um die Langzeitarchivierung Ihrer Daten zu ermöglichen, legen Sie diese in einem vertrauenswürdigen Datenrepositorium (TDR) ab.</help>
+		<text lang="de">Wo wird der Datensatz gespeichert und zugänglich gemacht?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Host/Sharing">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Host/Sharing</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">Sharing and Publication</title>
+		<short_title lang="en"/>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Datenaustausch und Publikation</title>
+		<short_title lang="de"/>
+		<help lang="de"/>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_data_access" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_license/rdadmp_license_ref" order="1"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_data_access">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_data_access</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/yesno"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">It is advisable to ensure open access to research data generated in projects according to the principle of “as open as possible and as closed as necessary”. This means that data is generally open unless you decide, for legitimate reasons, to restrict access to some or all of your research data. Metadata is generally openly accessible. This definition of sharing includes offering data to an archival institution with respective legal mandates (e. g. a national archive, a state archive).</help>
+		<text lang="en">Will this dataset be published or shared?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Es empfiehlt sich, einen offenen Zugang zu Forschungsdaten, die im Projekten generiert werden, nach dem Prinzip &quot;so offen wie möglich und so geschlossen wie nötig&quot; zu gewährleisten. Dies bedeutet, dass Daten grundsätzlich offen sind, es sei denn, man entscheidet sich aus legitimen Gründen dafür, den Zugang zu einigen oder allen ihrer Forschungsdaten einzuschränken. Metadaten sind grundsätzlich öffentlich zugänglich. Diese Definition der Weitergabe umfasst auch die Bereitstellung von Daten an eine Archivinstitution mit entsprechendem gesetzlichen Auftrag (z. B. ein Nationalarchiv, ein Staatsarchiv).</help>
+		<text lang="de">Soll dieser Datensatz veröffentlicht oder geteilt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://nfdi.mardi.de/terms/options/dataset_sharing_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_license/rdadmp_license_ref">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_license/rdadmp_license_ref</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/conditions"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Refer to the Creative Commons Licenses. Use the text field to specify licenses, including details like CC BY 4.0 International. For code refer to software licenses (&lt;a href=&quot;https://choosealicense.com/&quot; target=&quot;_blank&quot;&gt;https://choosealicense.com/&lt;/a&gt;). If not provided by the publication or sharing service, add machine readable URLs in the metadata, e .g. &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/&quot; target=&quot;_blank&quot;&gt;https://creativecommons.org/licenses/by/4.0/&lt;/a&gt; or &lt;a href=&quot;https://spdx.org/licenses/MIT.html&quot; target=&quot;_blank&quot;&gt;https://spdx.org/licenses/MIT.html&lt;/a&gt;, so that the legal situation regarding the handling of the data is permanently secured and accessible. 
+&lt;br/&gt;
+If use of general licenses is not possible, specify access rights (which group of persons or which personnel function is allowed to access data under which conditions?) and which usage rights apply (is copying and reuse in general or for research allowed. Be aware that every transfer to another system and many maintenance and preservation actions are inherently copying data).</help>
+		<text lang="en">Under which terms of use or license will the dataset be published or shared?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Verweisen Sie auf die Creative-Commons-Lizenzen. Nutzen Sie das Textfeld, um Lizenzen anzugeben – einschließlich spezifischer Details wie „CC BY 4.0 International“. Für Programmcode verweisen Sie bitte auf entsprechende Softwarelizenzen (&lt;a href=&quot;https://choosealicense.com/&quot; target=&quot;_blank&quot;&gt;https://choosealicense.com/&lt;/a&gt;). Sofern dies nicht bereits durch den Publikations- oder Sharing-Dienst bereitgestellt wird, fügen Sie den Metadaten maschinenlesbare URLs hinzu – z. B. &lt;a href=&quot;https://creativecommons.org/licenses/by/4.0/&quot; target=&quot;_blank&quot;&gt;https://creativecommons.org/licenses/by/4.0/&lt;/a&gt; oder &lt;a href=&quot;https://spdx.org/licenses/MIT.html&quot; target=&quot;_blank&quot;&gt;https://spdx.org/licenses/MIT.html&lt;/a&gt; –, um die rechtliche Situation bezüglich der Datennutzung dauerhaft abzusichern und zugänglich zu machen. 
+&lt;br/&gt;
+Sollte die Verwendung allgemeiner Lizenzen nicht möglich sein, spezifizieren Sie bitte die Zugriffsrechte (welche Personengruppe oder welche personelle Funktion darf unter welchen Bedingungen auf die Daten zugreifen?) sowie die geltenden Nutzungsrechte (ist das Kopieren und die Wiederverwendung – allgemein oder speziell für Forschungszwecke – gestattet?). Bitte beachten Sie dabei, dass jede Übertragung in ein anderes System sowie zahlreiche Wartungs- und Archivierungsmaßnahmen zwangsläufig mit dem Kopieren von Daten verbunden sind.</help>
+		<text lang="de">Unter welchen Nutzungs- oder Lizenzbedingungen wird der Datensatz veröffentlicht oder weitergegeben?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://nfdi.mardi.de/terms/options/dataset_license_types"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://rdmo.dmp4nfdi.de/terms/conditions/sharing_yes"/>
+		</conditions>
+	</question>
+	<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Host/archiving">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Host/archiving</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/id"/>
+		<is_collection>True</is_collection>
+		<title lang="en">Archiving and Digital Preservation</title>
+		<short_title lang="en"/>
+		<help lang="en">Digital preservation (also called long-term preservation) facilitates accessibility, authenticity and reusability of data over a long timespan, especially beyond changes of technology, hardware, software and standards. 
+&lt;details&gt;
+&lt;summary style=&quot;color:blue; cursor:pointer;&quot;&gt;read more&lt;/summary&gt;
+In contrast to storage during the project, the timespan is not defined in years, it is understood as an indefinite time period during which technological and organisational changes will take place. It is  typically carried out by a responsible and trustworthy preservation service. Digital preservation aims for long-term access and reuse, including measures such as migration to current file formats, transfer of data between systems and between responsible organisations and usually follows best practices like CoreTrustSeal certification or nestor certification. 
+
+
+Please select data for preservation, clarify where it should be preserved and specify which personnel transfers the data need to be ready tor a preservation service/data service/legal archive or similar. Take into account that a preservation service/archive may have its own sets of guidelines and regulations. The transfer may be conducted after a specified period during which data are simply stored. A publication service may also already include preservation or may transfer data to a preservation service/digital archive or similar automatically.
+&lt;/details&gt;</help>
+		<verbose_name lang="en"/>
+		<title lang="de">Archivierung und Erhaltung</title>
+		<short_title lang="de"/>
+		<help lang="de">Digitale Erhaltung (auch Langzeitarchivierung genannt) erleichtert den Zugang, die Authentizität und die Wiederverwendbarkeit von Daten über einen langen Zeitraum hinweg, insbesondere über Veränderungen in Technologie, Hardware, Software und Standards hinweg. 
+&lt;details&gt;
+&lt;summary style=&quot;color:blue; cursor:pointer;&quot;&gt;mehr&lt;/summary&gt;
+Im Gegensatz zur Speicherung während des Projekts ist hier der Zeitraum zwar nicht in Jahren definiert, wird jedoch als unbegrenzter Zeitraum verstanden, in dem technologische und organisatorische Veränderungen stattfinden werden. Sie wird in der Regel von einem verantwortungsbewussten und vertrauenswürdigen Archivierungsdienst durchgeführt. Die digitale Archivierung zielt auf langfristigen Zugriff und Wiederverwendung ab, einschließlich Maßnahmen wie der Migration zu aktuellen Dateiformaten, der Übertragung von Daten zwischen Systemen und zwischen verantwortlichen Organisationen, und folgt in der Regel Best Practices wie der CoreTrustSeal-Zertifizierung oder der nestor-Zertifizierung. 
+
+
+Bitte wählen Sie die zu archivierenden Daten aus, klären Sie, wo sie archiviert werden sollen, und geben Sie an, welche Mitarbeiter für die Übertragung der Daten bereitstehen müssen, um einen Archivierungsdienst/Datendienst/rechtliches Archiv oder ähnliches zu nutzen. Beachten Sie, dass ein Archivierungsdienst/Archiv möglicherweise eigene Richtlinien und Vorschriften hat. Die Übertragung kann nach einer bestimmten Zeitspanne erfolgen, in der die Daten einfach gespeichert werden. Ein Veröffentlichungsdienst kann auch bereits die Archivierung umfassen oder Daten automatisch an einen Archivierungsdienst/ein digitales Archiv oder ähnliches übertragen.
+&lt;/details&gt;</help>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_preservation_statement" order="0"/>
+			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_description" order="1"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_preservation_statement">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_preservation_statement</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/preservation/selection_criteria"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">“Retained” includes publishing, sharing, long-term storage and/or digital preservation of data.</help>
+		<text lang="en">What are the reasons for this data set to be retained for the long-term?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">„Aufbewahrt“ umfasst die Veröffentlichung, Weitergabe, langfristige Speicherung und/oder Erhaltung von Daten.</help>
+		<text lang="de">Aus welchen Gründen müssen die Daten langfristig aufbewahrt werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://nfdi.mardi.de/terms/options/preservation_motivation_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_description">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
+		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Distribution/rdadmp_description</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation/repository"/>
+		<is_collection>True</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en">Data should be deposited with a service that at least provides backup and monitors integrity of the bitstream, with clear responsibility who maintains the backup and integrity functions. The service should also allow findability based on the metadata deposited alongside data (data themselves do not have to be openly accessible).</help>
+		<text lang="en">Where will the data (including metadata, documentation and, if applicable, relevant code) be preserved after the end of the project?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Daten sollten bei einem Dienst hinterlegt werden, der mindestens Backups bereitstellt und die Integrität des Bitstroms überwacht. Dabei sollte klar definiert sein, wer für Backup und Integrität zuständig ist. Der Dienst sollte zudem die Auffindbarkeit anhand der mit den Daten hinterlegten Metadaten ermöglichen (die Daten selbst müssen nicht öffentlich zugänglich sein).</help>
+		<text lang="de">Wo werden die Daten (einschließlich Metadaten, Dokumentation und ggf. relevantem Code bzw. relevanter Software) nach Projektende aufbewahrt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>checkbox</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://nfdi.mardi.de/terms/options/preservation_repository_options"/>
+		</optionsets>
+		<conditions/>
+	</question>
+</rdmo>

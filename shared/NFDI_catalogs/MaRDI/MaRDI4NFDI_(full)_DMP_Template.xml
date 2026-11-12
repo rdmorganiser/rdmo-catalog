@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2026-09-23T13:42:50.469787+02:00" required="2.1.0" version="2.5.1">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2026-11-11T20:23:52.302960+01:00" required="2.1.0" version="2.5.2">
 	<catalog dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0">
 		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dmp4nfdi/v2-0-0</uri_path>
@@ -269,7 +269,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>name</key>
 		<path>project/dmp/name</path>
-		<dc:comment/>
+		<dc:comment>The name/title for the DMP itself. Equivalent to rda:dmp/title.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp">
@@ -344,7 +344,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>dmp_date_modification</key>
 		<path>project/dmp/dmp_date_modification</path>
-		<dc:comment/>
+		<dc:comment>The date on which this questionnaire was updated. Also refers to the new version of a DMP. Equivalent to the RDA's dmp/modified.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dmp"/>
 	</attribute>
 	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_created">
@@ -615,7 +615,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>name</key>
 		<path>project/coordination/name</path>
-		<dc:comment/>
+		<dc:comment>Used to provide the project coordinator's full name.  Suggested TF field dmp/project/coordinator/name. Equivalent to dataplan:$_ADDPROJECTCOORDINATOR.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/coordination">
@@ -783,7 +783,7 @@
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>role</key>
 		<path>project/data_management/role</path>
-		<dc:comment/>
+		<dc:comment>The role that the responsible person for data management within the project inherits. Suggested TF field dmp/contact/role.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management">
@@ -1053,7 +1053,7 @@
 		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>ror</uri_path>
 		<dc:comment/>
-		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/id/ror"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/identifier/ror"/>
 		<is_collection>False</is_collection>
 		<is_optional>True</is_optional>
 		<help lang="en"/>
@@ -1078,18 +1078,18 @@
 		</optionsets>
 		<conditions/>
 	</question>
-	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/id/ror">
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/identifier/ror">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>ror</key>
-		<path>project/data_management/id/ror</path>
-		<dc:comment/>
-		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/id"/>
+		<path>project/data_management/identifier/ror</path>
+		<dc:comment>ROR of the responsible person for data management within the project. Suggested TF field dmp/contact/contact_id/identifier_ror.</dc:comment>
+		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/identifier"/>
 	</attribute>
-	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/id">
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management/identifier">
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<key>id</key>
-		<path>project/data_management/id</path>
-		<dc:comment/>
+		<key>identifier</key>
+		<path>project/data_management/identifier</path>
+		<dc:comment>Page or question set, if “is collection” is activated. (Optional: Conditional question, if the contact person for data management can be specified by an ID.) Equivalent to RDA's dmp/contact/contact_id.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/data_management"/>
 	</attribute>
 	<optionset dc:uri="https://dmp.service.base4nfdi.de/terms/options/ror_integration">
@@ -1264,11 +1264,11 @@
 		<uri_prefix>https://dmp.service.base4nfdi.de/terms</uri_prefix>
 		<uri_path>cr01</uri_path>
 		<dc:comment/>
-		<text lang="en">There are further contact persons for the long-term object accessibility.</text>
+		<text lang="en">There are further contact persons for data curation.</text>
 		<help lang="en"/>
 		<default_text lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">Es gibt weitere Ansprechpartner für die langfristige Zugänglichkeit der Objekte.</text>
+		<text lang="de">Es gibt weitere Ansprechpartner für die Datenkuration.</text>
 		<help lang="de"/>
 		<default_text lang="de"/>
 		<view_text lang="de"/>
@@ -1641,10 +1641,10 @@
 		<is_collection>True</is_collection>
 		<title lang="en">What Persons or institutions can be mentioned as the long-term contact who can decide on the data?</title>
 		<help lang="en"/>
-		<verbose_name lang="en">Person/Institution</verbose_name>
+		<verbose_name lang="en">Contact</verbose_name>
 		<title lang="de">Welche Personen oder Institutionen können als langfristige Ansprechpartner genannt werden, die über die Daten entscheiden können?</title>
 		<help lang="de"/>
-		<verbose_name lang="de">Person/Institution</verbose_name>
+		<verbose_name lang="de">Kontakt</verbose_name>
 		<questionsets/>
 		<questions>
 			<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/Contributor/rdadmp_role_digital_preservation" order="0"/>
@@ -4910,7 +4910,7 @@ Wählen Sie alle zutreffenden Antworten aus und beschreiben Sie die Implementier
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>ethics_committee</key>
 		<path>project/legal_aspects/official_approval/ethics_committee</path>
-		<dc:comment/>
+		<dc:comment>Information on anything related to approvals for the research, the data or project. Suggested TF property DMP/ethical_issues_approval.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval"/>
 	</attribute>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval">
@@ -5007,7 +5007,7 @@ Wählen Sie alle zutreffenden Antworten aus und beschreiben Sie die Implementier
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>data_access_committee</key>
 		<path>project/legal_aspects/official_approval/data_access_committee</path>
-		<dc:comment/>
+		<dc:comment>Information on how access to ethically sensitive data is regulated. Suggested TF property DMP/ethical_issues_access_control.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval"/>
 	</attribute>
 	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_access_restriction">
@@ -5041,7 +5041,7 @@ Wählen Sie alle zutreffenden Antworten aus und beschreiben Sie die Implementier
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>access_permissions</key>
 		<path>project/dataset/data_security/access_permissions</path>
-		<dc:comment/>
+		<dc:comment>Information on restrictions regarding the use of sensitive data that raise issues. Suggested TF property DMP/ethical_issues_access_restriction.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/data_security"/>
 	</attribute>
 	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_description">
@@ -5180,7 +5180,7 @@ Wählen Sie alle zutreffenden Antworten aus und beschreiben Sie die Implementier
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>title</key>
 		<path>project/legal_aspects/ethical_issues/title</path>
-		<dc:comment/>
+		<dc:comment>Title or name of the approval. Suggested TF property DMP/ethical_issues_title.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ethical_issues"/>
 	</attribute>
 	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/rdadmp_ethical_issues_report">
@@ -5216,7 +5216,7 @@ Wählen Sie alle zutreffenden Antworten aus und beschreiben Sie die Implementier
 		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>url</key>
 		<path>project/legal_aspects/ethical_issues/url</path>
-		<dc:comment/>
+		<dc:comment>Location of a document that includes a summary of all ethical issues within a project. Equivalent to rda:DMP/ethical_issues_report.</dc:comment>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/ethical_issues"/>
 	</attribute>
 	<page dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Rights/Policies">
@@ -5371,7 +5371,7 @@ Wählen Sie alle zutreffenden Antworten aus und beschreiben Sie die Implementier
 		<help lang="en"/>
 		<default_text lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">obigatorisch</text>
+		<text lang="de">obligatorisch</text>
 		<help lang="de"/>
 		<default_text lang="de"/>
 		<view_text lang="de"/>
@@ -5531,7 +5531,7 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		<unit/>
 		<width>8</width>
 		<optionsets>
-			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/ethics_permit_options"/>
+			<optionset dc:uri="https://nfdi.mardi.de/terms/options/ethics_permit_options"/>
 		</optionsets>
 		<conditions/>
 	</question>
@@ -5549,21 +5549,21 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/legal_aspects/official_approval"/>
 	</attribute>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/ethics_permit_options">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<optionset dc:uri="https://nfdi.mardi.de/terms/options/ethics_permit_options">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>ethics_permit_options</uri_path>
 		<dc:comment/>
 		<provider_key/>
 		<options>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/ethics_permit_options/248" order="0"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/ethics_permit_options/246" order="1"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/ethics_permit_options/247" order="2"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/ethics_permit_options/245" order="3"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/ethics_permit_options/248" order="0"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/ethics_permit_options/246" order="1"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/ethics_permit_options/247" order="2"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/ethics_permit_options/245" order="3"/>
 		</options>
 		<conditions/>
 	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/ethics_permit_options/248">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/ethics_permit_options/248">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>ethics_permit_options/248</uri_path>
 		<dc:comment/>
 		<text lang="en">No</text>
@@ -5576,22 +5576,22 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/ethics_permit_options/246">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/ethics_permit_options/246">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>ethics_permit_options/246</uri_path>
 		<dc:comment/>
-		<text lang="en">Yes. The permit has been received</text>
+		<text lang="en">Yes. The permit has been received.</text>
 		<help lang="en"/>
 		<default_text lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">Ja. Die Genehmigung liegt bereits vor</text>
+		<text lang="de">Ja. Die Genehmigung liegt bereits vor.</text>
 		<help lang="de"/>
 		<default_text lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/ethics_permit_options/247">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/ethics_permit_options/247">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>ethics_permit_options/247</uri_path>
 		<dc:comment/>
 		<text lang="en">Yes. The permit has been applied for on</text>
@@ -5604,8 +5604,8 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		<view_text lang="de"/>
 		<additional_input>text</additional_input>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/ethics_permit_options/245">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/ethics_permit_options/245">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>ethics_permit_options/245</uri_path>
 		<dc:comment/>
 		<text lang="en">Yes. The permit will be applied for by</text>
@@ -5663,6 +5663,20 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		<target_text/>
 		<target_option dc:uri="https://rdmorganiser.github.io/terms/options/ethics_permit_options/248"/>
 	</condition>
+	<option dc:uri="https://rdmorganiser.github.io/terms/options/ethics_permit_options/248">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+		<uri_path>ethics_permit_options/248</uri_path>
+		<dc:comment/>
+		<text lang="en">No</text>
+		<help lang="en"/>
+		<default_text lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Nein</text>
+		<help lang="de"/>
+		<default_text lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
 	<section dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Data">
 		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dmp4nfdi/v2-0-0/DMP/Data</uri_path>
@@ -5702,7 +5716,7 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/Metadata/rdadmp_description</uri_path>
 		<dc:comment/>
-		<attribute dc:uri="https://dmplink.de/terms/domain/project/dataset/metadata/standards"/>
+		<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/standards"/>
 		<is_collection>True</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en"/>
@@ -5727,8 +5741,8 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		</optionsets>
 		<conditions/>
 	</question>
-	<attribute dc:uri="https://dmplink.de/terms/domain/project/dataset/metadata/standards">
-		<uri_prefix>https://dmplink.de/terms</uri_prefix>
+	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/metadata/standards">
+		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
 		<key>standards</key>
 		<path>project/dataset/metadata/standards</path>
 		<dc:comment/>
@@ -5934,7 +5948,7 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		<help lang="en"/>
 		<default_text lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">Nein, die Daten können mit allgemein verfügbaren Tools genutzt werden.</text>
+		<text lang="de">Nein, die Daten können mit allgemein verfügbarten Tools genutzt werden.</text>
 		<help lang="de"/>
 		<default_text lang="de"/>
 		<view_text lang="de"/>
@@ -5962,7 +5976,7 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		<help lang="en"/>
 		<default_text lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">Noch nicht entschieden.</text>
+		<text lang="de">Noch nicht entscheiden.</text>
 		<help lang="de"/>
 		<default_text lang="de"/>
 		<view_text lang="de"/>
@@ -6600,7 +6614,7 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		<unit/>
 		<width/>
 		<optionsets>
-			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage"/>
+			<optionset dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage"/>
 		</optionsets>
 		<conditions/>
 	</question>
@@ -6618,26 +6632,26 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<optionset dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dfg_storage</uri_path>
 		<dc:comment/>
 		<provider_key/>
 		<options>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage/dfg-st_00" order="0"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage/dfg-st_01" order="1"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage/dfg-st_02" order="2"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage/dfg-st_03" order="3"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage/dfg-st_04" order="4"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage/dfg-st_05" order="5"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage/dfg-st_06" order="6"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage/dfg-st_07" order="7"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage/dfg-st_08" order="8"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage/dfg-st_00" order="0"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage/dfg-st_01" order="1"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage/dfg-st_02" order="2"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage/dfg-st_03" order="3"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage/dfg-st_04" order="4"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage/dfg-st_05" order="5"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage/dfg-st_06" order="6"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage/dfg-st_07" order="7"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage/dfg-st_08" order="8"/>
 		</options>
 		<conditions/>
 	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage/dfg-st_00">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage/dfg-st_00">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dfg_storage/dfg-st_00</uri_path>
 		<dc:comment/>
 		<text lang="en">Facility's central storage and data management service</text>
@@ -6650,8 +6664,8 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		<view_text lang="de"/>
 		<additional_input>text</additional_input>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage/dfg-st_01">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage/dfg-st_01">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dfg_storage/dfg-st_01</uri_path>
 		<dc:comment/>
 		<text lang="en">Central cloud service of the facility</text>
@@ -6664,8 +6678,8 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		<view_text lang="de"/>
 		<additional_input>text</additional_input>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage/dfg-st_02">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage/dfg-st_02">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dfg_storage/dfg-st_02</uri_path>
 		<dc:comment/>
 		<text lang="en">GitHub/GitLab</text>
@@ -6678,8 +6692,8 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage/dfg-st_03">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage/dfg-st_03">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dfg_storage/dfg-st_03</uri_path>
 		<dc:comment/>
 		<text lang="en">Other cloud solution</text>
@@ -6692,8 +6706,8 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		<view_text lang="de"/>
 		<additional_input>text</additional_input>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage/dfg-st_04">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage/dfg-st_04">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dfg_storage/dfg-st_04</uri_path>
 		<dc:comment/>
 		<text lang="en">Central solution (e.g. network disks and automatic data mirroring, use of the institution’s central server infrastructure, archiving of data on university servers, etc.)</text>
@@ -6706,8 +6720,8 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage/dfg-st_05">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage/dfg-st_05">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dfg_storage/dfg-st_05</uri_path>
 		<dc:comment/>
 		<text lang="en">Decentralized solution (e.g. server in the institute or chair, etc.)</text>
@@ -6720,8 +6734,8 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage/dfg-st_06">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage/dfg-st_06">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dfg_storage/dfg-st_06</uri_path>
 		<dc:comment/>
 		<text lang="en">Local computer</text>
@@ -6734,8 +6748,8 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage/dfg-st_07">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage/dfg-st_07">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dfg_storage/dfg-st_07</uri_path>
 		<dc:comment/>
 		<text lang="en">external hard drives</text>
@@ -6748,8 +6762,8 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_storage/dfg-st_08">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_storage/dfg-st_08">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dfg_storage/dfg-st_08</uri_path>
 		<dc:comment/>
 		<text lang="en">Other</text>
@@ -6876,13 +6890,13 @@ Aufschluss gibt auch die Seite der &lt;a href=&quot;https://wissenschaftliche-in
 		<help lang="en">&lt;p&gt;In the following, a &lt;b&gt;dataset&lt;/b&gt; serves to &lt;b&gt;represent an overarching inquiry, an abstract problem, or a comprehensive research question&lt;/b&gt;. Likewise, a workflow may also be subsumed under this category. The objective is to cover this overarching framework as comprehensively as possible through the subsequent questions.
 The questions posed regarding the respective datasets are designed to capture the various data collection methods and analysis procedures employed throughout the research process. To this end, existing mathematical objects from the MaRDI portal may be integrated. &lt;/p&gt;
 &lt;p&gt;The &lt;a href=&quot;https://portal.mardi4nfdi.de/wiki/Portal&quot;&gt;MaRDI Portal&lt;/a&gt; is a knowledge base for mathematical research data, providing access to a wide range of resources including mathematical models, algorithms, interdisciplinary workflows, publications, and datasets. Here you can indicate whether you have reused a mathematical model, algorithm, or interdisciplinary workflow from the portal in your research.&lt;/p&gt;</help>
-		<verbose_name lang="en">Dataset</verbose_name>
+		<verbose_name lang="en"/>
 		<title lang="de">Datensatzbeschreibung</title>
 		<short_title lang="de"/>
 		<help lang="de">&lt;p&gt;Im Folgenden versteht sich ein &lt;b&gt;Datensatz als eine übergeordnete Fragestellung, ein abstraktes Problem oder eine umfassende Forschungsfrage&lt;/b&gt;. Gleichfalls kann auch ein Workflow darunter subsumiert werden. Ziel ist es, den übergeordneten Rahmen so vollständig wie möglich durch die nachfolgenden Fragen abzudecken. 
 Die Fragen, die zu den jeweiligen Datensätzen gestellt werden, dienen dazu, die unterschiedlichen Erhebungsmethoden und Analyseverfahren zu erfassen, die im Laufe der Forschung genutzt werden. Hierfür können existierende mathematische Objekte aus dem MaRDI-Portal integriert werden.&lt;/p&gt;
 &lt;p&gt;Das &lt;a href=&quot;https://portal.mardi4nfdi.de/wiki/Portal&quot;&gt;MaRDI-Portal&lt;/a&gt; ist eine Wissensbasis für mathematische Forschungsdaten, die Zugang zu einer Vielzahl von Ressourcen bietet, darunter mathematische Modelle, Algorithmen, interdisziplinäre Workflows, Publikationen und Datensätze. Hier können Sie angeben, ob Sie ein mathematisches Modell, einen Algorithmus oder einen interdisziplinären Workflow aus dem Portal in Ihrer Forschung wiederverwendet haben.&lt;/p&gt;</help>
-		<verbose_name lang="de">Dataset</verbose_name>
+		<verbose_name lang="de"/>
 		<questionsets>
 			<questionset dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset" order="3"/>
 		</questionsets>
@@ -8712,14 +8726,16 @@ Die Fragen, die zu den jeweiligen Datensätzen gestellt werden, dienen dazu, die
 		<verbose_name lang="de"/>
 		<default_option/>
 		<default_external_id/>
-		<widget_type>text</widget_type>
+		<widget_type>select</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
 		<step/>
 		<unit/>
 		<width/>
-		<optionsets/>
+		<optionsets>
+			<optionset dc:uri="https://rdmo.mardi4nfdi.de/terms/options/portal_request"/>
+		</optionsets>
 		<conditions/>
 	</question>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin/source_name">
@@ -8729,6 +8745,14 @@ Die Fragen, die zu den jeweiligen Datensätzen gestellt werden, dienen dazu, die
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/origin"/>
 	</attribute>
+	<optionset dc:uri="https://rdmo.mardi4nfdi.de/terms/options/portal_request">
+		<uri_prefix>https://rdmo.mardi4nfdi.de/terms</uri_prefix>
+		<uri_path>portal_request</uri_path>
+		<dc:comment/>
+		<provider_key>MaRDIPortalItem</provider_key>
+		<options/>
+		<conditions/>
+	</optionset>
 	<question dc:uri="https://nfdi.mardi.de/terms/questions/dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_is_reused_source">
 		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dmp4nfdi/v2-0-0/DMP/Dataset/rdadmp_is_reused_source</uri_path>
@@ -8933,7 +8957,7 @@ Die Fragen, die zu den jeweiligen Datensätzen gestellt werden, dienen dazu, die
 		<unit/>
 		<width/>
 		<optionsets>
-			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dfg_reuse_context"/>
+			<optionset dc:uri="https://nfdi.mardi.de/terms/options/dfg_reuse_context"/>
 		</optionsets>
 		<conditions/>
 	</question>
@@ -8944,22 +8968,22 @@ Die Fragen, die zu den jeweiligen Datensätzen gestellt werden, dienen dazu, die
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset"/>
 	</attribute>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dfg_reuse_context">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<optionset dc:uri="https://nfdi.mardi.de/terms/options/dfg_reuse_context">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dfg_reuse_context</uri_path>
 		<dc:comment/>
 		<provider_key/>
 		<options>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_reuse_context/dfg-rsc_00" order="0"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_reuse_context/dfg-rsc_01" order="1"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_reuse_context/dfg-rsc_02" order="2"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_reuse_context/dfg-rsc_03" order="3"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_reuse_context/dfg-rsc_04" order="4"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_reuse_context/dfg-rsc_00" order="0"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_reuse_context/dfg-rsc_01" order="1"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_reuse_context/dfg-rsc_02" order="2"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_reuse_context/dfg-rsc_03" order="3"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_reuse_context/dfg-rsc_04" order="4"/>
 		</options>
 		<conditions/>
 	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_reuse_context/dfg-rsc_00">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_reuse_context/dfg-rsc_00">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dfg_reuse_context/dfg-rsc_00</uri_path>
 		<dc:comment/>
 		<text lang="en">Yes, the data can be used scientifically by</text>
@@ -8972,8 +8996,8 @@ Die Fragen, die zu den jeweiligen Datensätzen gestellt werden, dienen dazu, die
 		<view_text lang="de"/>
 		<additional_input>text</additional_input>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_reuse_context/dfg-rsc_01">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_reuse_context/dfg-rsc_01">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dfg_reuse_context/dfg-rsc_01</uri_path>
 		<dc:comment/>
 		<text lang="en">Yes, re-using the data in teaching is conceivable</text>
@@ -8986,8 +9010,8 @@ Die Fragen, die zu den jeweiligen Datensätzen gestellt werden, dienen dazu, die
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_reuse_context/dfg-rsc_02">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_reuse_context/dfg-rsc_02">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dfg_reuse_context/dfg-rsc_02</uri_path>
 		<dc:comment/>
 		<text lang="en">Yes, my research is socially relevant and the data can be reused by society</text>
@@ -9000,8 +9024,8 @@ Die Fragen, die zu den jeweiligen Datensätzen gestellt werden, dienen dazu, die
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_reuse_context/dfg-rsc_03">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_reuse_context/dfg-rsc_03">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dfg_reuse_context/dfg-rsc_03</uri_path>
 		<dc:comment/>
 		<text lang="en">Yes, because</text>
@@ -9014,8 +9038,8 @@ Die Fragen, die zu den jeweiligen Datensätzen gestellt werden, dienen dazu, die
 		<view_text lang="de"/>
 		<additional_input>text</additional_input>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dfg_reuse_context/dfg-rsc_04">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dfg_reuse_context/dfg-rsc_04">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dfg_reuse_context/dfg-rsc_04</uri_path>
 		<dc:comment/>
 		<text lang="en">No, I can't imagine a future use scenario for the data, because</text>
@@ -9352,10 +9376,10 @@ Sollte die Verwendung allgemeiner Lizenzen nicht möglich sein, spezifizieren Si
 		<unit/>
 		<width/>
 		<optionsets>
-			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types"/>
+			<optionset dc:uri="https://nfdi.mardi.de/terms/options/dataset_license_types"/>
 		</optionsets>
 		<conditions>
-			<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/sharing_yes"/>
+			<condition dc:uri="https://rdmo.dmp4nfdi.de/terms/conditions/sharing_yes"/>
 		</conditions>
 	</question>
 	<attribute dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/conditions">
@@ -9365,8 +9389,8 @@ Sollte die Verwendung allgemeiner Lizenzen nicht möglich sein, spezifizieren Si
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing"/>
 	</attribute>
-	<condition dc:uri="https://dmp.service.base4nfdi.de/terms/conditions/sharing_yes">
-		<uri_prefix>https://dmp.service.base4nfdi.de/terms</uri_prefix>
+	<condition dc:uri="https://rdmo.dmp4nfdi.de/terms/conditions/sharing_yes">
+		<uri_prefix>https://rdmo.dmp4nfdi.de/terms</uri_prefix>
 		<uri_path>sharing_yes</uri_path>
 		<dc:comment/>
 		<source dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/sharing/yesno"/>
@@ -9388,109 +9412,79 @@ Sollte die Verwendung allgemeiner Lizenzen nicht möglich sein, spezifizieren Si
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<optionset dc:uri="https://nfdi.mardi.de/terms/options/dataset_license_types">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dataset_license_types</uri_path>
 		<dc:comment/>
 		<provider_key/>
 		<options>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/71" order="1"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/73" order="2"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/74" order="3"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/75" order="4"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/ODC-By" order="5"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/ODbl" order="6"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/cc0" order="7"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/233" order="8"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dataset_license_types/71" order="1"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dataset_license_types/73" order="2"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dataset_license_types/74" order="3"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dataset_license_types/75" order="4"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dataset_license_types/cc0" order="5"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/dataset_license_types/233" order="6"/>
 		</options>
 		<conditions/>
 	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/71">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dataset_license_types/71">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dataset_license_types/71</uri_path>
 		<dc:comment>https://creativecommons.org/licenses/by/4.0/legalcode</dc:comment>
-		<text lang="en">Creative Commons Attribution (CC-BY)</text>
+		<text lang="en">Attribution (BY)</text>
 		<help lang="en"/>
 		<default_text lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">Creative Commons Namensnennung (CC-BY)</text>
+		<text lang="de">Namensnennung (BY)</text>
 		<help lang="de"/>
 		<default_text lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/73">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dataset_license_types/73">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dataset_license_types/73</uri_path>
 		<dc:comment>https://creativecommons.org/licenses/by-nc/4.0/legalcode</dc:comment>
-		<text lang="en">Creative Commons Attribution-NonCommercial (CC-BY-NC)</text>
+		<text lang="en">Non-commercial (NC)</text>
 		<help lang="en"/>
 		<default_text lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">Creative Commons Namensnennung-Nicht kommerziell (CC-BY-NC)</text>
+		<text lang="de">keine kommerzielle Nutzung (NC)</text>
 		<help lang="de"/>
 		<default_text lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/74">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dataset_license_types/74">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dataset_license_types/74</uri_path>
 		<dc:comment>https://creativecommons.org/licenses/by-nd/4.0/legalcode</dc:comment>
-		<text lang="en">Creative Commons Attribution-NoDerivatives (CC-BY-ND)</text>
+		<text lang="en">No derivative work (ND)</text>
 		<help lang="en"/>
 		<default_text lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">Creative Commons Namensnennung-Keine Bearbeitungen (CC-BY-ND)</text>
+		<text lang="de">keine Bearbeitung (ND)</text>
 		<help lang="de"/>
 		<default_text lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/75">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dataset_license_types/75">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dataset_license_types/75</uri_path>
 		<dc:comment>https://creativecommons.org/licenses/by-sa/4.0/legalcode</dc:comment>
-		<text lang="en">Creative Commons Attribution-ShareAlike (CC-BY-SA)</text>
+		<text lang="en">Share-alike (SA)</text>
 		<help lang="en"/>
 		<default_text lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">Creative Commons Namensnennung-ShareAlike (CC-BY-SA)</text>
+		<text lang="de">Weitergabe unter gleichen Bedingungen (SA)</text>
 		<help lang="de"/>
 		<default_text lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/ODC-By">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<uri_path>dataset_license_types/ODC-By</uri_path>
-		<dc:comment>https://opendatacommons.org/licenses/by/1-0/</dc:comment>
-		<text lang="en">Open Data Commons Attribution</text>
-		<help lang="en"/>
-		<default_text lang="en"/>
-		<view_text lang="en"/>
-		<text lang="de">Open Data Commons Attribution</text>
-		<help lang="de"/>
-		<default_text lang="de"/>
-		<view_text lang="de"/>
-		<additional_input>text</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/ODbl">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<uri_path>dataset_license_types/ODbl</uri_path>
-		<dc:comment>https://opendatacommons.org/licenses/odbl/1-0/</dc:comment>
-		<text lang="en">Open Data Commons Open Database</text>
-		<help lang="en"/>
-		<default_text lang="en"/>
-		<view_text lang="en"/>
-		<text lang="de">Open Data Commons Open Database</text>
-		<help lang="de"/>
-		<default_text lang="de"/>
-		<view_text lang="de"/>
-		<additional_input>text</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/cc0">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dataset_license_types/cc0">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dataset_license_types/cc0</uri_path>
 		<dc:comment/>
 		<text lang="en">Public domain (CC0)</text>
@@ -9503,15 +9497,15 @@ Sollte die Verwendung allgemeiner Lizenzen nicht möglich sein, spezifizieren Si
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/dataset_license_types/233">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/dataset_license_types/233">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>dataset_license_types/233</uri_path>
 		<dc:comment/>
-		<text lang="en">Other, or exact designation – if known</text>
+		<text lang="en">Other</text>
 		<help lang="en"/>
 		<default_text lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">Andere, bzw. genaue Bezeichnung – falls bekannt</text>
+		<text lang="de">Andere</text>
 		<help lang="de"/>
 		<default_text lang="de"/>
 		<view_text lang="de"/>
@@ -9577,7 +9571,7 @@ Bitte wählen Sie die zu archivierenden Daten aus, klären Sie, wo sie archivier
 		<unit/>
 		<width/>
 		<optionsets>
-			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_motivation_options"/>
+			<optionset dc:uri="https://nfdi.mardi.de/terms/options/preservation_motivation_options"/>
 		</optionsets>
 		<conditions/>
 	</question>
@@ -9595,26 +9589,26 @@ Bitte wählen Sie die zu archivierenden Daten aus, klären Sie, wo sie archivier
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project"/>
 	</attribute>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_motivation_options">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<optionset dc:uri="https://nfdi.mardi.de/terms/options/preservation_motivation_options">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>preservation_motivation_options</uri_path>
 		<dc:comment/>
 		<provider_key/>
 		<options>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_motivation_options/131" order="1"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_motivation_options/130" order="2"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_motivation_options/132" order="3"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_motivation_options/133" order="4"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_motivation_options/134" order="5"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_motivation_options/135" order="6"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_motivation_options/131" order="1"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_motivation_options/130" order="2"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_motivation_options/132" order="3"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_motivation_options/133" order="4"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_motivation_options/134" order="5"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_motivation_options/135" order="6"/>
 		</options>
 		<conditions/>
 	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_motivation_options/131">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_motivation_options/131">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>preservation_motivation_options/131</uri_path>
 		<dc:comment/>
-		<text lang="en">Basis of a publication / proof of good scientific practice</text>
+		<text lang="en">Used in a publication / proof of good scientific practice</text>
 		<help lang="en"/>
 		<default_text lang="en"/>
 		<view_text lang="en"/>
@@ -9624,8 +9618,8 @@ Bitte wählen Sie die zu archivierenden Daten aus, klären Sie, wo sie archivier
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_motivation_options/130">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_motivation_options/130">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>preservation_motivation_options/130</uri_path>
 		<dc:comment/>
 		<text lang="en">Re-use in subsequent projects or by others</text>
@@ -9638,8 +9632,8 @@ Bitte wählen Sie die zu archivierenden Daten aus, klären Sie, wo sie archivier
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_motivation_options/132">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_motivation_options/132">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>preservation_motivation_options/132</uri_path>
 		<dc:comment/>
 		<text lang="en">Legal obligations</text>
@@ -9652,11 +9646,11 @@ Bitte wählen Sie die zu archivierenden Daten aus, klären Sie, wo sie archivier
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_motivation_options/133">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_motivation_options/133">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>preservation_motivation_options/133</uri_path>
 		<dc:comment/>
-		<text lang="en">Documentation, because of their societal relevance</text>
+		<text lang="en">Documentation, because it is relevant to society</text>
 		<help lang="en"/>
 		<default_text lang="en"/>
 		<view_text lang="en"/>
@@ -9666,8 +9660,8 @@ Bitte wählen Sie die zu archivierenden Daten aus, klären Sie, wo sie archivier
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_motivation_options/134">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_motivation_options/134">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>preservation_motivation_options/134</uri_path>
 		<dc:comment/>
 		<text lang="en">Self-commitment</text>
@@ -9680,8 +9674,8 @@ Bitte wählen Sie die zu archivierenden Daten aus, klären Sie, wo sie archivier
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_motivation_options/135">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_motivation_options/135">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>preservation_motivation_options/135</uri_path>
 		<dc:comment/>
 		<text lang="en">Other</text>
@@ -9719,7 +9713,7 @@ Bitte wählen Sie die zu archivierenden Daten aus, klären Sie, wo sie archivier
 		<unit/>
 		<width/>
 		<optionsets>
-			<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options"/>
+			<optionset dc:uri="https://nfdi.mardi.de/terms/options/preservation_repository_options"/>
 		</optionsets>
 		<conditions/>
 	</question>
@@ -9730,23 +9724,22 @@ Bitte wählen Sie die zu archivierenden Daten aus, klären Sie, wo sie archivier
 		<dc:comment/>
 		<parent dc:uri="https://rdmorganiser.github.io/terms/domain/project/dataset/preservation"/>
 	</attribute>
-	<optionset dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<optionset dc:uri="https://nfdi.mardi.de/terms/options/preservation_repository_options">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>preservation_repository_options</uri_path>
 		<dc:comment/>
 		<provider_key/>
 		<options>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options/139" order="0"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options/138" order="1"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options/140" order="2"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options/141" order="3"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options/143" order="4"/>
-			<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options/142" order="5"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_repository_options/139" order="1"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_repository_options/140" order="2"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_repository_options/141" order="3"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_repository_options/143" order="4"/>
+			<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_repository_options/142" order="5"/>
 		</options>
 		<conditions/>
 	</optionset>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options/139">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_repository_options/139">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>preservation_repository_options/139</uri_path>
 		<dc:comment/>
 		<text lang="en">Own institution</text>
@@ -9759,22 +9752,8 @@ Bitte wählen Sie die zu archivierenden Daten aus, klären Sie, wo sie archivier
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options/138">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
-		<uri_path>preservation_repository_options/138</uri_path>
-		<dc:comment/>
-		<text lang="en">Another partner institution</text>
-		<help lang="en"/>
-		<default_text lang="en"/>
-		<view_text lang="en"/>
-		<text lang="de">Eine andere Partner-Institution</text>
-		<help lang="de"/>
-		<default_text lang="de"/>
-		<view_text lang="de"/>
-		<additional_input>text</additional_input>
-	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options/140">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_repository_options/140">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>preservation_repository_options/140</uri_path>
 		<dc:comment/>
 		<text lang="en">Discipline specific data center</text>
@@ -9787,8 +9766,8 @@ Bitte wählen Sie die zu archivierenden Daten aus, klären Sie, wo sie archivier
 		<view_text lang="de"/>
 		<additional_input>text</additional_input>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options/141">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_repository_options/141">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>preservation_repository_options/141</uri_path>
 		<dc:comment/>
 		<text lang="en">Generic data center</text>
@@ -9801,22 +9780,22 @@ Bitte wählen Sie die zu archivierenden Daten aus, klären Sie, wo sie archivier
 		<view_text lang="de"/>
 		<additional_input>text</additional_input>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options/143">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_repository_options/143">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>preservation_repository_options/143</uri_path>
 		<dc:comment/>
-		<text lang="en">To be decided</text>
+		<text lang="en">Has not yet been decided</text>
 		<help lang="en"/>
 		<default_text lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">Wird noch entschieden</text>
+		<text lang="de">Wurde noch nicht entschieden</text>
 		<help lang="de"/>
 		<default_text lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<option dc:uri="https://rdmorganiser.github.io/terms/options/preservation_repository_options/142">
-		<uri_prefix>https://rdmorganiser.github.io/terms</uri_prefix>
+	<option dc:uri="https://nfdi.mardi.de/terms/options/preservation_repository_options/142">
+		<uri_prefix>https://nfdi.mardi.de/terms</uri_prefix>
 		<uri_path>preservation_repository_options/142</uri_path>
 		<dc:comment/>
 		<text lang="en">Other</text>
