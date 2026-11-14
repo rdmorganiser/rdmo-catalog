@@ -13,6 +13,18 @@ Ein Dienst von MaRDI4NFDI, entwickelt im Rahmen von [DMP4NFDI](https://dmp.servi
 
 *MaRDI4NFDI_(full)_DMP_Template.xml* ist der gesamte Katalog samt Optionen und Bedingungen. Für die Optionen wurden teilweise für die DFG erstellte Optionensätze nachgenutzt. Damit diese vorhandene Optionen nicht überschreiben, wurde von allen Elementen eine komplette Kopie gemacht.
 
-*MaRDI_catalog.xml* ist der Katalog ohne Optionen und Bedingungen. Diese finden sich separat in den jeweiligen Ordnern und sollten vor dem Katalog importiert werden.
+*MaRDI_catalog.xml* ist der Katalog ohne Optionen und Bedingungen. Diese finden sich separat in den jeweiligen Dateien und sollten vor dem Katalog importiert werden.
 
 Die *.pdf*-Dateien enthalten alle Elemente des Katalogs in lesbarer Form.
+
+## Import
+
+Wenn Sie den kompletten (Full)-Export importieren möchten, sollten Sie folgende Reihenfolge beachten:
+1. Import MaRDI_attributes.xml
+2. Import MaRDI4NFDI_(full)_DMP_Template.xml
+
+Wenn Sie alle einzelnen Elemente importieren möchten, sollten Sie folgende Reihenfolge beachten:
+1. Import MaRDI_attributes.xml
+2. Import MaRDI_conditions.xml
+3. Import MaRDI_Optionsets.xml
+4. Import MaRDI_catalog.xml
