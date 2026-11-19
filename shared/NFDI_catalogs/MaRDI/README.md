@@ -17,6 +17,10 @@ Ein Dienst von MaRDI4NFDI, entwickelt im Rahmen von [DMP4NFDI](https://dmp.servi
 
 Die *.pdf*-Dateien enthalten alle Elemente des Katalogs in lesbarer Form.
 
+# Plugin
+
+Neben den verfügbaren ORCID- und ROR-Plugins, verwendet der Katalog ein eigens erstelltes Plugin zur Integration von Entitäten, die auf dem MaRDI-Portal zur Verfügung stehen. Das Plugin liegt [hier](https://github.com/MarcoReidelbach/mardi-portal-request).
+
 ## Import
 
 Wenn Sie den kompletten (Full)-Export importieren möchten, sollten Sie folgende Reihenfolge beachten:
